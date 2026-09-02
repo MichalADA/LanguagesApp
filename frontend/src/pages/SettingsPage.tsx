@@ -2,13 +2,12 @@ import { useState } from "react";
 import type { ReactNode } from "react";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
-import { STORAGE_KEY } from "@/progress/repository";
 import { useI18n, UI_LOCALES } from "@/i18n";
 import type { UiLocale } from "@/i18n/types";
 
 export function SettingsPage() {
   const { t, locale, setLocale } = useI18n();
-  const { state, updateSettings, reset } = useProgress();
+  const { state, updateSettings, reset, storageKey } = useProgress();
   const { entries, datasetUrl } = useVocabulary();
   const [confirming, setConfirming] = useState(false);
   const s = state.settings;
@@ -112,7 +111,7 @@ export function SettingsPage() {
           <div className="list-row">
             <span className="muted">{t("settings.progressKey")}</span>
             <span className="mono dim" style={{ fontSize: 13 }}>
-              localStorage · {STORAGE_KEY}
+              localStorage · {storageKey ?? "—"}
             </span>
           </div>
         </div>

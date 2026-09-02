@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useUser, initialsOf } from "@/user/UserProvider";
+import { useAuth } from "@/auth/useAuth";
+import { initialsOf } from "@/auth/types";
 import { useT } from "@/i18n";
 
 export function UserMenu() {
   const t = useT();
   const navigate = useNavigate();
-  const { user, signOut } = useUser();
+  const { user, status, logout } = useAuth();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -29,6 +30,8 @@ export function UserMenu() {
     navigate(to);
   };
 
+  if (!user) return null;
+
   return (
     <div className="usermenu" ref={ref}>
       <button
@@ -44,7 +47,7 @@ export function UserMenu() {
         <span className="usermenu-name">
           <span className="usermenu-display">{user.displayName}</span>
           <span className="usermenu-status">
-            {user.authenticated ? (user.email ?? "") : t("user.notLoggedIn")}
+            {status === "authenticated" ? (user.email ?? "") : t("user.notLoggedIn")}
           </span>
         </span>
         <span className="usermenu-caret" aria-hidden="true">
@@ -64,13 +67,13 @@ export function UserMenu() {
             {t("nav.settings")}
           </button>
           <div className="usermenu-sep" />
-          {user.authenticated ? (
+          {status === "authenticated" ? (
             <button
               type="button"
               role="menuitem"
               onClick={() => {
-                signOut();
                 setOpen(false);
+                void logout().then(() => navigate("/login", { replace: true }));
               }}
             >
               {t("auth.logout")}

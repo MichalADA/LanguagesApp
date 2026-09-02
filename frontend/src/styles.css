@@ -319,6 +319,7 @@ p { margin: 0; text-wrap: pretty; }
   display: inline-block;
 }
 .btn-ghost:hover { border-color: var(--accent-hover); color: var(--text); }
+.btn-ghost:disabled { opacity: 0.4; cursor: not-allowed; }
 .btn-danger:hover { border-color: var(--bad); color: var(--text); }
 
 .linklike {
@@ -332,6 +333,7 @@ p { margin: 0; text-wrap: pretty; }
   text-underline-offset: 3px;
 }
 .linklike:hover { color: var(--accent-text); }
+.linklike:disabled { opacity: 0.45; cursor: not-allowed; }
 
 .chip {
   flex: 0 0 auto;
@@ -608,6 +610,22 @@ p { margin: 0; text-wrap: pretty; }
   transition: border-color 0.14s var(--ease);
 }
 .login-input:focus { border-color: var(--accent-hover); }
+.login-input:disabled { opacity: 0.65; cursor: not-allowed; }
+.form-message {
+  margin: 0;
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+}
+.form-message.error {
+  border-color: color-mix(in srgb, var(--bad) 48%, var(--line));
+  color: var(--bad);
+  background: color-mix(in srgb, var(--bad) 8%, transparent);
+}
 .login-divider {
   display: flex;
   align-items: center;

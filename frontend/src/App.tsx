@@ -10,6 +10,8 @@ import { SettingsPage } from "@/pages/SettingsPage";
 import { CoursesPage } from "@/pages/CoursesPage";
 import { ProfilePage } from "@/pages/ProfilePage";
 import { LoginPage } from "@/pages/LoginPage";
+import { ProtectedRoute } from "@/components/ProtectedRoute";
+import { useAuth } from "@/auth/useAuth";
 
 function ShellLayout() {
   return (
@@ -20,22 +22,37 @@ function ShellLayout() {
 }
 
 export default function App() {
+  const { status } = useAuth();
+
+  if (status === "loading") {
+    return (
+      <div className="login-screen" role="status" aria-live="polite">
+        <span className="loading">Sprawdzam sesję…</span>
+      </div>
+    );
+  }
+
   return (
     <Routes>
       {/* Logowanie ma własny, pełnoekranowy układ — bez sidebaru. */}
-      <Route path="/login" element={<LoginPage />} />
+      <Route
+        path="/login"
+        element={status === "authenticated" ? <Navigate to="/" replace /> : <LoginPage />}
+      />
 
-      <Route element={<ShellLayout />}>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/gry" element={<GamesPage />} />
-        <Route path="/gry/:gameId" element={<PlayPage />} />
-        <Route path="/powtorki" element={<ReviewPage />} />
-        <Route path="/statystyki" element={<StatsPage />} />
-        <Route path="/postep" element={<ProgressPage />} />
-        <Route path="/jezyki" element={<CoursesPage />} />
-        <Route path="/profil" element={<ProfilePage />} />
-        <Route path="/ustawienia" element={<SettingsPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+      <Route element={<ProtectedRoute />}>
+        <Route element={<ShellLayout />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/gry" element={<GamesPage />} />
+          <Route path="/gry/:gameId" element={<PlayPage />} />
+          <Route path="/powtorki" element={<ReviewPage />} />
+          <Route path="/statystyki" element={<StatsPage />} />
+          <Route path="/postep" element={<ProgressPage />} />
+          <Route path="/jezyki" element={<CoursesPage />} />
+          <Route path="/profil" element={<ProfilePage />} />
+          <Route path="/ustawienia" element={<SettingsPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
       </Route>
     </Routes>
   );

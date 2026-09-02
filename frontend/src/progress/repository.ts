@@ -29,13 +29,16 @@ export function emptyProgress(): ProgressState {
 }
 
 export class LocalProgressRepository implements ProgressRepository {
-  constructor(private key = STORAGE_KEY) {}
+  constructor(
+    private key = STORAGE_KEY,
+    private allowLegacyMigration = true,
+  ) {}
 
   async load(): Promise<ProgressState> {
     try {
       const raw = localStorage.getItem(this.key);
       if (raw) return normalize(JSON.parse(raw) as Partial<ProgressState>);
-      return migrateLegacy();
+      return this.allowLegacyMigration ? migrateLegacy() : emptyProgress();
     } catch {
       return emptyProgress();
     }
@@ -56,6 +59,10 @@ export class LocalProgressRepository implements ProgressRepository {
       /* noop */
     }
   }
+}
+
+export function progressStorageKey(scope: "guest" | string): string {
+  return `${STORAGE_KEY}.${scope}`;
 }
 
 function normalize(parsed: Partial<ProgressState>): ProgressState {
@@ -131,5 +138,3 @@ function migrateLegacy(): ProgressState {
   if (touched) state.courses[LEGACY_COURSE] = course;
   return state;
 }
-
-export const progressRepository: ProgressRepository = new LocalProgressRepository();

@@ -7,7 +7,7 @@ import { CourseProvider } from "@/courses/CourseProvider";
 import { VocabularyProvider } from "@/vocabulary/VocabularyProvider";
 import { GrammarProvider } from "@/grammar/GrammarProvider";
 import { ProgressProvider } from "@/progress/ProgressProvider";
-import { UserProvider } from "@/user/UserProvider";
+import { AuthProvider } from "@/auth/AuthContext";
 import "./styles.css";
 
 /**
@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <I18nProvider>
-        <UserProvider>
+        <AuthProvider>
           <CourseProvider>
             <VocabularyProvider>
               <GrammarProvider>
@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
               </GrammarProvider>
             </VocabularyProvider>
           </CourseProvider>
-        </UserProvider>
+        </AuthProvider>
       </I18nProvider>
     </BrowserRouter>
   </React.StrictMode>,

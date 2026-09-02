@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useCourse } from "@/courses/CourseProvider";
@@ -7,13 +7,41 @@ import { StatCard, ProgressBar } from "@/components/StatCard";
 import { GAMES } from "@/games/registry";
 import { currentStreak, formatRelative } from "@/utils/date";
 import { useT } from "@/i18n";
+import { useAuth } from "@/auth/useAuth";
+import { fetchUserStatistics } from "@/statistics/statisticsApi";
+import type { UserStatistics } from "@/statistics/statisticsApi";
 
 export function StatsPage() {
   const t = useT();
+  const { status, apiRequest } = useAuth();
   const { course } = useCourse();
   const { entries } = useVocabulary();
   const { state, current, courseId } = useProgress();
   const summary = summarize(state, courseId);
+  const [accountStatistics, setAccountStatistics] = useState<UserStatistics | null>(null);
+  const [statisticsError, setStatisticsError] = useState(false);
+  const [reload, setReload] = useState(0);
+
+  useEffect(() => {
+    if (status !== "authenticated") {
+      setAccountStatistics(null);
+      setStatisticsError(false);
+      return;
+    }
+    let active = true;
+    setAccountStatistics(null);
+    setStatisticsError(false);
+    void fetchUserStatistics(apiRequest, course.id)
+      .then((result) => {
+        if (active) setAccountStatistics(result);
+      })
+      .catch(() => {
+        if (active) setStatisticsError(true);
+      });
+    return () => {
+      active = false;
+    };
+  }, [status, apiRequest, course.id, reload]);
 
   const lastActivity = useMemo(() => {
     const times = Object.values(current.words).map((w) => w.lastSeen);
@@ -33,6 +61,44 @@ export function StatsPage() {
       .slice(0, 6)
       .map(([pos, count]) => ({ pos, count, learned: learned.get(pos) ?? 0 }));
   }, [entries, state, courseId]);
+
+  if (status === "authenticated") {
+    return (
+      <div className="page">
+        <header className="page-head">
+          <span className="eyebrow">{t("stats.eyebrow")}</span>
+          <h1>{t("stats.title")}</h1>
+          <p className="lede">{t("stats.accountData")}</p>
+        </header>
+
+        {!accountStatistics && !statisticsError && (
+          <section className="panel panel-pad">
+            <span className="loading">{t("stats.loadingAccount")}</span>
+          </section>
+        )}
+
+        {statisticsError && (
+          <section className="panel panel-pad stack" style={{ gap: 12 }}>
+            <p className="form-message error" role="alert">{t("stats.loadError")}</p>
+            <button type="button" className="btn-ghost" onClick={() => setReload((value) => value + 1)}>
+              {t("stats.retry")}
+            </button>
+          </section>
+        )}
+
+        {accountStatistics && (
+          <section className="grid grid-3">
+            <StatCard value={accountStatistics.totalAnswers} label={t("stats.attempts")} />
+            <StatCard value={accountStatistics.correctAnswers} label={t("stats.correct")} />
+            <StatCard value={`${accountStatistics.accuracy}%`} label={t("dashboard.accuracy")} />
+            <StatCard value={accountStatistics.wordsLearned} label={t("stats.wordsLearned")} />
+            <StatCard tone="gold" value={accountStatistics.currentStreak} label={t("dashboard.streak")} />
+            <StatCard value={accountStatistics.totalSessions} label={t("stats.sessions")} />
+          </section>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="page">

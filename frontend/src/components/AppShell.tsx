@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 import { useT } from "@/i18n";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
+import { useAuth } from "@/auth/useAuth";
 import { Logo } from "./Logo";
 import { Topbar } from "./Topbar";
 
@@ -27,6 +28,7 @@ const NAV: NavItem[] = [
 export function AppShell({ children }: { children: ReactNode }) {
   const t = useT();
   const { entries, error } = useVocabulary();
+  const { status } = useAuth();
 
   return (
     <div className="shell">
@@ -67,7 +69,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             <>
               {entries.length || "…"} {t("common.words")}
               <br />
-              {t("user.localProfile")}
+              {t(status === "authenticated" ? "user.accountProfile" : "user.localProfile")}
             </>
           )}
         </div>

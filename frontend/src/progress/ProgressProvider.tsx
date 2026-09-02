@@ -1,7 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { useCourse } from "@/courses/CourseProvider";
-import { emptyProgress, progressRepository } from "./repository";
+import { useAuth } from "@/auth/useAuth";
+import { emptyProgress, LocalProgressRepository, progressStorageKey } from "./repository";
 import { applyGrammarRound, applyRound, courseProgress, setJourney, statFor } from "./service";
 import type { GrammarRoundResult, RoundResult } from "./service";
 import type {
@@ -18,6 +19,7 @@ interface ProgressApi {
   /** Postęp aktywnego kursu — najczęściej to wystarcza. */
   current: CourseProgress;
   courseId: string;
+  storageKey: string | null;
   ready: boolean;
   statOf: (entry: VocabularyEntry) => ReturnType<typeof statFor>;
   recordRound: (result: Omit<RoundResult, "courseId">) => void;
@@ -34,22 +36,43 @@ const Ctx = createContext<ProgressApi | null>(null);
 
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const { course } = useCourse();
+  const { status, user } = useAuth();
   const [state, setState] = useState<ProgressState>(emptyProgress);
   const [ready, setReady] = useState(false);
   const dirty = useRef(false);
 
+  const owner = status === "authenticated" && user
+    ? `user.${user.id}`
+    : status === "guest"
+      ? "guest"
+      : null;
+  const storageKey = owner ? progressStorageKey(owner) : null;
+  const repository = useMemo(
+    () => storageKey ? new LocalProgressRepository(storageKey, owner === "guest") : null,
+    [storageKey, owner],
+  );
+
   useEffect(() => {
-    progressRepository.load().then((loaded) => {
+    dirty.current = false;
+    setState(emptyProgress());
+    setReady(false);
+    if (!repository) return;
+    let active = true;
+    void repository.load().then((loaded) => {
+      if (!active) return;
       setState(loaded);
       setReady(true);
     });
-  }, []);
+    return () => {
+      active = false;
+    };
+  }, [repository]);
 
   useEffect(() => {
-    if (!ready || !dirty.current) return;
-    const t = setTimeout(() => void progressRepository.save(state), 250);
+    if (!ready || !dirty.current || !repository) return;
+    const t = setTimeout(() => void repository.save(state), 250);
     return () => clearTimeout(t);
-  }, [state, ready]);
+  }, [state, ready, repository]);
 
   const mutate = useCallback((fn: (s: ProgressState) => ProgressState) => {
     dirty.current = true;
@@ -62,6 +85,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     () => ({
       state,
       courseId,
+      storageKey,
       current: courseProgress(state, courseId),
       ready,
       statOf: (entry) => statFor(state, courseId, entry),
@@ -88,11 +112,11 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       updateSettings: (patch) => mutate((s) => ({ ...s, settings: { ...s.settings, ...patch } })),
       reset: () => {
         dirty.current = true;
-        void progressRepository.clear();
+        if (repository) void repository.clear();
         setState(emptyProgress());
       },
     }),
-    [state, ready, mutate, courseId],
+    [state, ready, mutate, courseId, storageKey, repository],
   );
 
   return <Ctx.Provider value={api}>{children}</Ctx.Provider>;
