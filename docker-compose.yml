@@ -1,13 +1,17 @@
 services:
-  web:
+  frontend:
     build:
-      context: .
+      context: ./frontend
       dockerfile: Dockerfile
-    image: bura-hr:latest
-    container_name: bura-hr
+
+    image: lexodromia-frontend:latest
+    container_name: lexodromia-frontend
+
     ports:
       - "8080:80"
+
     restart: unless-stopped
+
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost/"]
       interval: 30s
