@@ -1,20 +1,68 @@
 services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: lexodromia-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-lexo}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-lexo}
+      POSTGRES_DB: ${POSTGRES_DB:-lexodromia}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-lexo} -d ${POSTGRES_DB:-lexodromia}"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: lexodromia-backend:latest
+    container_name: lexodromia-backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DATABASE_URL: postgresql://${POSTGRES_USER:-lexo}:${POSTGRES_PASSWORD:-lexo}@postgres:5432/${POSTGRES_DB:-lexodromia}?schema=public
+      JWT_SECRET: ${JWT_SECRET:-change-me-access-secret}
+      JWT_ACCESS_EXPIRATION: ${JWT_ACCESS_EXPIRATION:-15m}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-change-me-refresh-secret}
+      JWT_REFRESH_EXPIRATION: ${JWT_REFRESH_EXPIRATION:-30d}
+      BCRYPT_SALT_ROUNDS: ${BCRYPT_SALT_ROUNDS:-12}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:5173,http://localhost:8080}
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/docs-json"]
+      interval: 30s
+      timeout: 3s
+      retries: 5
+      start_period: 15s
+
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-
     image: lexodromia-frontend:latest
     container_name: lexodromia-frontend
-
+    depends_on:
+      - backend
     ports:
       - "8080:80"
-
     restart: unless-stopped
-
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost/"]
       interval: 30s
       timeout: 3s
       retries: 3
       start_period: 5s
+
+volumes:
+  postgres_data:
