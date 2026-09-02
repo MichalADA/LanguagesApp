@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
-import { useUser, initialsOf } from "@/user/UserProvider";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "@/auth/useAuth";
+import { initialsOf } from "@/auth/types";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useCourse } from "@/courses/CourseProvider";
 import { summarize } from "@/progress/service";
@@ -7,12 +9,31 @@ import { useI18n } from "@/i18n";
 
 export function ProfilePage() {
   const { t, locale } = useI18n();
-  const { user, rename, signOut } = useUser();
+  const { user, status, updateDisplayName, logout } = useAuth();
+  const navigate = useNavigate();
   const { course } = useCourse();
   const { state, current, courseId } = useProgress();
   const summary = summarize(state, courseId);
 
+  const [displayName, setDisplayName] = useState(user?.displayName ?? "");
+  const [profileError, setProfileError] = useState<string | null>(null);
+
+  useEffect(() => setDisplayName(user?.displayName ?? ""), [user?.displayName]);
+
+  if (!user) return null;
+
   const since = new Date(user.since).toLocaleDateString(locale === "pl" ? "pl-PL" : "en-GB");
+
+  const saveDisplayName = async () => {
+    if (!displayName.trim() || displayName.trim() === user.displayName) return;
+    setProfileError(null);
+    try {
+      await updateDisplayName(displayName);
+    } catch {
+      setDisplayName(user.displayName);
+      setProfileError(t("profile.updateError"));
+    }
+  };
 
   return (
     <div className="page">
@@ -30,14 +51,15 @@ export function ProfilePage() {
             <span className="eyebrow">{t("profile.displayName")}</span>
             <input
               className="login-input"
-              value={user.displayName}
-              onChange={(e) => rename(e.target.value)}
-              maxLength={40}
+              value={displayName}
+              onChange={(e) => setDisplayName(e.target.value)}
+              onBlur={() => void saveDisplayName()}
+              maxLength={80}
             />
           </label>
           <div className="row" style={{ gap: 18 }}>
             <span className="mono dim" style={{ fontSize: 12 }}>
-              {t("profile.status")}: {user.authenticated ? (user.email ?? "—") : t("user.guest")}
+              {t("profile.status")}: {status === "authenticated" ? (user.email ?? "—") : t("user.guest")}
             </span>
             <span className="mono dim" style={{ fontSize: 12 }}>
               {t("profile.memberSince")}: {since}
@@ -45,6 +67,7 @@ export function ProfilePage() {
           </div>
         </div>
       </section>
+      {profileError && <p className="form-message error" role="alert">{profileError}</p>}
 
       <section className="grid grid-3">
         <div className="panel stat">
@@ -66,11 +89,17 @@ export function ProfilePage() {
         </div>
       </section>
 
-      <p className="stat-note">{t("profile.demoNote")}</p>
+      <p className="stat-note">
+        {t(status === "authenticated" ? "profile.accountNote" : "profile.guestNote")}
+      </p>
 
       <div className="row" style={{ gap: 10 }}>
-        {user.authenticated ? (
-          <button type="button" className="btn-ghost btn-danger" onClick={signOut}>
+        {status === "authenticated" ? (
+          <button
+            type="button"
+            className="btn-ghost btn-danger"
+            onClick={() => void logout().then(() => navigate("/login", { replace: true }))}
+          >
             {t("auth.logout")}
           </button>
         ) : (
