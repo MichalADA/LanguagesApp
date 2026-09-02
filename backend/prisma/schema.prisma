@@ -1,0 +1,131 @@
+// Lexodromia backend — Prisma schema.
+//
+// Design notes:
+//   - All user-owned data (progress, sessions, answers) FK to User with onDelete: Cascade.
+//   - Every user-scoped query in the API filters by `userId` derived from JWT — this schema
+//     supports it but does not enforce it. Guards + services do.
+//   - Language / Course are neutral: no language name is hardcoded. Seed adds
+//     Polish, Croatian, English + a pl→hr demo course.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  displayName  String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  lastLoginAt  DateTime?
+
+  refreshTokens    RefreshToken[]
+  courseProgress   UserCourseProgress[]
+  learningSessions LearningSession[]
+  learningAnswers  LearningAnswer[]
+
+  @@index([email])
+}
+
+model RefreshToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  // Refresh tokens are stored HASHED (bcrypt of the raw token). The raw token
+  // exists only in the response to the client and never rests on the server.
+  tokenHash String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  revokedAt DateTime?
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Language {
+  id   String @id @default(cuid())
+  code String @unique
+  name String
+
+  coursesAsSource Course[] @relation("CourseSource")
+  coursesAsTarget Course[] @relation("CourseTarget")
+}
+
+model Course {
+  id               String @id @default(cuid())
+  slug             String @unique
+  name             String
+  sourceLanguageId String
+  targetLanguageId String
+
+  sourceLanguage Language @relation("CourseSource", fields: [sourceLanguageId], references: [id])
+  targetLanguage Language @relation("CourseTarget", fields: [targetLanguageId], references: [id])
+
+  progress UserCourseProgress[]
+  sessions LearningSession[]
+
+  @@unique([sourceLanguageId, targetLanguageId])
+  @@index([sourceLanguageId])
+  @@index([targetLanguageId])
+}
+
+model UserCourseProgress {
+  id             String   @id @default(cuid())
+  userId         String
+  courseId       String
+  startedAt      DateTime @default(now())
+  lastActivityAt DateTime @default(now())
+  totalAnswers   Int      @default(0)
+  correctAnswers Int      @default(0)
+  wrongAnswers   Int      @default(0)
+  wordsLearned   Int      @default(0)
+  currentStreak  Int      @default(0)
+  longestStreak  Int      @default(0)
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, courseId])
+  @@index([userId])
+}
+
+model LearningSession {
+  id             String    @id @default(cuid())
+  userId         String
+  courseId       String
+  startedAt      DateTime  @default(now())
+  finishedAt     DateTime?
+  totalAnswers   Int       @default(0)
+  correctAnswers Int       @default(0)
+  wrongAnswers   Int       @default(0)
+
+  user    User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course  Course           @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  answers LearningAnswer[]
+
+  @@index([userId])
+  @@index([userId, courseId])
+}
+
+model LearningAnswer {
+  id        String   @id @default(cuid())
+  sessionId String
+  userId    String
+  // Neutral reference — a word rank id, exercise id, or "verb:person" for grammar.
+  wordRef   String
+  answer    String
+  correct   Boolean
+  createdAt DateTime @default(now())
+
+  session LearningSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  user    User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([sessionId])
+  @@index([userId])
+}
