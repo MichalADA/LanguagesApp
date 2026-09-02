@@ -1,0 +1,103 @@
+Rank;Infinitive;Polish;Ja;Ti;OnOnaOno;Mi;Vi;OniOneOna;ExampleCroatian;ExamplePolish;Type;Note;Tags
+1;biti;być;jesam;jesi;je;jesmo;jeste;jesu;Ja sam iz Poljske.;Jestem z Polski.;irregular;Odmiana całkowicie nieregularna. Formy krótkie (sam, si, je, smo, ste, su) stoją po pierwszym wyrazie, długie (jesam, jesi...) w pytaniach i przy nacisku.;verb present irregular core
+2;imati;mieć;imam;imaš;ima;imamo;imate;imaju;Imam dvije sestre.;Mam dwie siostry.;irregular_or_difficult;Sama odmiana jest zwykła, ale przeczenie jest nieregularne: nemam, nemaš, nema.;verb present core
+3;moći;móc;mogu;možeš;može;možemo;možete;mogu;Ne mogu doći danas.;Nie mogę dziś przyjść.;irregular;Ja i oni mają tę samą formę: mogu. W pozostałych osobach g przechodzi w ž.;verb present irregular core
+4;htjeti;chcieć;hoću;hoćeš;hoće;hoćemo;hoćete;hoće;Hoću kavu bez šećera.;Chcę kawę bez cukru.;irregular;Bezokolicznik htjeti, temat hoć-. Przeczenie: neću, nećeš, neće.;verb present irregular core
+5;morati;musieć;moram;moraš;mora;moramo;morate;moraju;Moram raditi do pet.;Muszę pracować do piątej.;irregular_or_difficult;Odmiana zwykła, ale łatwo pomylić z moći: moram znaczy muszę, mogu znaczy mogę.;verb present core
+6;ići;iść;idem;ideš;ide;idemo;idete;idu;Idem danas u grad.;Idę dzisiaj do miasta.;irregular;Temat id- w ogóle nie wynika z bezokolicznika.;verb present irregular motion core
+7;doći;przyjść;dođem;dođeš;dođe;dođemo;dođete;dođu;Dođem sutra u osam.;Przyjdę jutro o ósmej.;irregular;Temat dođ- z đ. Czasownik dokonany, więc forma teraźniejsza ma znaczenie przyszłe.;verb present irregular motion core
+8;znati;wiedzieć;znam;znaš;zna;znamo;znate;znaju;Ne znam gdje je kolodvor.;Nie wiem, gdzie jest dworzec.;irregular_or_difficult;Bardzo krótki temat zna-. W trzeciej osobie mnogiej znaju, nigdy znadu.;verb present core
+9;vidjeti;widzieć;vidim;vidiš;vidi;vidimo;vidite;vide;Vidim more s balkona.;Widzę morze z balkonu.;irregular_or_difficult;Bezokolicznik na -jeti, ale odmiana na -im. Oni vide, nie vidiju.;verb present core
+10;reći;powiedzieć;rečem;rečeš;reče;rečemo;rečete;reku;Reče mi istinu.;Powie mi prawdę.;irregular;Wymiana k na č w temacie, w trzeciej osobie mnogiej wraca k: reku. W mowie częściej używa się kažem od kazati.;verb present irregular core
+11;kazati;mówić;kažem;kažeš;kaže;kažemo;kažete;kažu;Kaže da nema vremena.;Mówi, że nie ma czasu.;irregular;Wymiana z na ž w całej odmianie.;verb present irregular core
+12;dati;dać;dam;daš;da;damo;date;daju;Dam ti ključ.;Dam ci klucz.;irregular_or_difficult;Bardzo krótki temat da-. Nie mieszać z niedokonanym davati (dajem).;verb present core
+13;davati;dawać;dajem;daješ;daje;dajemo;dajete;daju;Djeca daju bombone psu.;Dzieci dają psu cukierki.;irregular;Temat daj-, inny niż w dati.;verb present irregular
+14;uzeti;wziąć;uzmem;uzmeš;uzme;uzmemo;uzmete;uzmu;Uzmem tvoj kišobran.;Wezmę twój parasol.;irregular;W temacie pojawia się m: uzm-.;verb present irregular core
+15;jesti;jeść;jedem;jedeš;jede;jedemo;jedete;jedu;Jedemo ribu svaki petak.;Jemy rybę w każdy piątek.;irregular;Temat jed-, w bezokoliczniku d znika przed -ti.;verb present irregular food core
+16;piti;pić;pijem;piješ;pije;pijemo;pijete;piju;Piješ li vino ili vodu?;Pijesz wino czy wodę?;irregular;W temacie pojawia się j: pij-.;verb present irregular food core
+17;čuti;słyszeć;čujem;čuješ;čuje;čujemo;čujete;čuju;Ne čujem te dobro.;Nie słyszę cię dobrze.;irregular;Temat čuj-. Tak samo odmieniają się inne czasowniki na -uti.;verb present irregular core
+18;živjeti;mieszkać;živim;živiš;živi;živimo;živite;žive;Živim u Splitu pet godina.;Mieszkam w Splicie od pięciu lat.;irregular_or_difficult;Bezokolicznik na -jeti, odmiana na -im. Znaczy i żyć, i mieszkać.;verb present core
+19;voljeti;kochać;volim;voliš;voli;volimo;volite;vole;Volim ljeto na otoku.;Kocham lato na wyspie.;irregular_or_difficult;Bezokolicznik na -jeti, odmiana na -im. Volim znaczy też lubię.;verb present core
+20;željeti;pragnąć;želim;želiš;želi;želimo;želite;žele;Želim ti sve najbolje.;Życzę ci wszystkiego najlepszego.;irregular_or_difficult;Bezokolicznik na -jeti, odmiana na -im.;verb present core
+21;trebati;potrzebować;trebam;trebaš;treba;trebamo;trebate;trebaju;Trebam pomoć s prijevodom.;Potrzebuję pomocy z tłumaczeniem.;irregular_or_difficult;Bardzo częsta jest forma nieosobowa: treba mi vode, treba ići.;verb present core
+22;smjeti;mieć pozwolenie;smijem;smiješ;smije;smijemo;smijete;smiju;Smijem li ovdje parkirati?;Czy mogę tu zaparkować?;irregular;Temat smij-, je przechodzi w ij.;verb present irregular
+23;umjeti;umieć;umijem;umiješ;umije;umijemo;umijete;umiju;Umijem plivati.;Umiem pływać.;irregular;Temat umij-, jak w smjeti i razumjeti.;verb present irregular
+24;razumjeti;rozumieć;razumijem;razumiješ;razumije;razumijemo;razumijete;razumiju;Ne razumijem ovu riječ.;Nie rozumiem tego słowa.;irregular;Wydłużenie je na ije w całej odmianie.;verb present irregular core
+25;uspjeti;zdołać;uspijem;uspiješ;uspije;uspijemo;uspijete;uspiju;Uspijem stići na vlak.;Zdążę na pociąg.;irregular;je przechodzi w ije, jak w razumjeti.;verb present irregular
+26;pisati;pisać;pišem;pišeš;piše;pišemo;pišete;pišu;Pišem pismo baki.;Piszę list do babci.;irregular;Wymiana s na š w całej odmianie.;verb present irregular core
+27;otići;odejść;odem;odeš;ode;odemo;odete;odu;Odem li sada, stižem na vlak.;Jeśli teraz wyjdę, zdążę na pociąg.;irregular;Temat od-, bez i. Nie mieszać z niedokonanym odlaziti (odlazim).;verb present irregular motion
+28;ući;wejść;uđem;uđeš;uđe;uđemo;uđete;uđu;Uđem u sobu i sjednem.;Wchodzę do pokoju i siadam.;irregular;Temat uđ- z đ, jak w doći.;verb present irregular motion
+29;izaći;wyjść;izađem;izađeš;izađe;izađemo;izađete;izađu;Izađem iz kuće u sedam.;Wychodzę z domu o siódmej.;irregular;Temat izađ-. Wariant iziđem jest również poprawny.;verb present irregular motion
+30;naći;znaleźć;nađem;nađeš;nađe;nađemo;nađete;nađu;Ne mogu naći ključeve.;Nie mogę znaleźć kluczy.;irregular;Temat nađ- z đ.;verb present irregular core
+31;proći;przejść;prođem;prođeš;prođe;prođemo;prođete;prođu;Prođemo kroz park i eto nas.;Przejdziemy przez park i jesteśmy.;irregular;Temat prođ-.;verb present irregular motion
+32;prijeći;przejść przez;prijeđem;prijeđeš;prijeđe;prijeđemo;prijeđete;prijeđu;Prijeđem ulicu na zebri.;Przechodzę ulicę na pasach.;irregular;Temat prijeđ-, ije zostaje w całej odmianie.;verb present irregular motion
+33;sići;zejść;siđem;siđeš;siđe;siđemo;siđete;siđu;Siđem na prvoj stanici.;Wysiadam na pierwszym przystanku.;irregular;Temat siđ-, bez ije.;verb present irregular motion
+34;pomoći;pomóc;pomognem;pomogneš;pomogne;pomognemo;pomognete;pomognu;Pomognem ti s torbama.;Pomogę ci z torbami.;irregular;Temat pomogn-, inny niż w moći.;verb present irregular
+35;stići;dotrzeć;stignem;stigneš;stigne;stignemo;stignete;stignu;Stignem na sastanak u devet.;Dotrę na spotkanie o dziewiątej.;irregular;Temat stign-.;verb present irregular motion
+36;leći;położyć się;legnem;legneš;legne;legnemo;legnete;legnu;Legnem ranije jer sam umoran.;Położę się wcześniej, bo jestem zmęczony.;irregular;Temat legn-.;verb present irregular
+37;peći;piec;pečem;pečeš;peče;pečemo;pečete;peku;Pečem kruh svake subote.;Piekę chleb co sobotę.;irregular;k przechodzi w č, ale w trzeciej osobie mnogiej zostaje: peku.;verb present irregular food
+38;teći;płynąć;tečem;tečeš;teče;tečemo;tečete;teku;Rijeka teče kroz grad.;Rzeka płynie przez miasto.;irregular;k na č, w oni wraca k: teku.;verb present irregular
+39;vući;ciągnąć;vučem;vučeš;vuče;vučemo;vučete;vuku;Vučem kofer po peronu.;Ciągnę walizkę po peronie.;irregular;k na č, w oni wraca k: vuku.;verb present irregular
+40;tući;bić;tučem;tučeš;tuče;tučemo;tučete;tuku;Djeca se tuku za igračke.;Dzieci biją się o zabawki.;irregular;k na č, w oni wraca k: tuku.;verb present irregular
+41;sjeći;ciąć;siječem;siječeš;siječe;siječemo;siječete;sijeku;Siječem kruh na kriške.;Kroję chleb na kromki.;irregular;e przechodzi w ije w temacie, w oni sijeku.;verb present irregular
+42;početi;zacząć;počnem;počneš;počne;počnemo;počnete;počnu;Počnemo u devet.;Zaczynamy o dziewiątej.;irregular;Temat počn-, bez samogłoski.;verb present irregular core
+43;počinjati;zaczynać;počinjem;počinješ;počinje;počinjemo;počinjete;počinju;Film počinje u osam.;Film zaczyna się o ósmej.;irregular;Niedokonany odpowiednik početi, temat počinj-.;verb present irregular
+44;prestati;przestać;prestanem;prestaneš;prestane;prestanemo;prestanete;prestanu;Prestanem pušiti od ponedjeljka.;Przestanę palić od poniedziałku.;irregular;W temacie pojawia się n: prestan-.;verb present irregular
+45;ostati;zostać;ostanem;ostaneš;ostane;ostanemo;ostanete;ostanu;Ostanem kod kuće večeras.;Zostanę dziś wieczorem w domu.;irregular;W temacie pojawia się n: ostan-.;verb present irregular core
+46;postati;stać się;postanem;postaneš;postane;postanemo;postanete;postanu;Postanem nervozan u gužvi.;Staję się nerwowy w tłumie.;irregular;W temacie pojawia się n, jak w ostati.;verb present irregular
+47;nestati;zniknąć;nestanem;nestaneš;nestane;nestanemo;nestanete;nestanu;Ključevi nestanu svaki dan.;Klucze znikają codziennie.;irregular;W temacie pojawia się n.;verb present irregular
+48;stati;stanąć;stanem;staneš;stane;stanemo;stanete;stanu;Autobus stane pred hotelom.;Autobus staje przed hotelem.;irregular;Nie mieszać ze stajati, gdzie stojim znaczy stoję.;verb present irregular
+49;ustati;wstać;ustanem;ustaneš;ustane;ustanemo;ustanete;ustanu;Ustanem u šest svaki dan.;Wstaję codziennie o szóstej.;irregular;W temacie pojawia się n.;verb present irregular
+50;sjesti;siąść;sjednem;sjedneš;sjedne;sjednemo;sjednete;sjednu;Sjednem pored tebe.;Siądę obok ciebie.;irregular;Temat sjedn-. Nie mieszać ze sjediti, gdzie sjedim znaczy siedzę.;verb present irregular
+51;sjediti;siedzieć;sjedim;sjediš;sjedi;sjedimo;sjedite;sjede;Sjedimo na terasi.;Siedzimy na tarasie.;irregular_or_difficult;Odmiana na -im, w oni sjede.;verb present
+52;ležati;leżeć;ležim;ležiš;leži;ležimo;ležite;leže;Knjiga leži na stolu.;Książka leży na stole.;irregular_or_difficult;Bezokolicznik na -ati, ale odmiana na -im.;verb present
+53;stajati;stać;stojim;stojiš;stoji;stojimo;stojite;stoje;Stojim u redu pola sata.;Stoję w kolejce pół godziny.;irregular;Temat stoj-, zupełnie inny niż bezokolicznik.;verb present irregular
+54;pasti;upaść;padnem;padneš;padne;padnemo;padnete;padnu;Pazi da ne padneš.;Uważaj, żebyś nie upadł.;irregular;Temat padn-.;verb present irregular
+55;rasti;rosnąć;rastem;rasteš;raste;rastemo;rastete;rastu;Djeca rastu prebrzo.;Dzieci rosną za szybko.;irregular;Temat rast-, w bezokoliczniku t znika.;verb present irregular
+56;zvati;wołać;zovem;zoveš;zove;zovemo;zovete;zovu;Kako se zoveš?;Jak się nazywasz?;irregular;Temat zov-, a nie zva-. Zvati se znaczy nazywać się.;verb present irregular core
+57;nazvati;zadzwonić;nazovem;nazoveš;nazove;nazovemo;nazovete;nazovu;Nazovem te večeras.;Zadzwonię do ciebie wieczorem.;irregular;Temat nazov-, jak w zvati.;verb present irregular
+58;slati;posyłać;šaljem;šalješ;šalje;šaljemo;šaljete;šalju;Šaljem ti fotografije.;Wysyłam ci zdjęcia.;irregular;Temat šalj-, całkiem inny niż bezokolicznik.;verb present irregular
+59;poslati;posłać;pošaljem;pošalješ;pošalje;pošaljemo;pošaljete;pošalju;Pošaljem ti adresu.;Wyślę ci adres.;irregular;Temat pošalj-.;verb present irregular
+60;prati;prać;perem;pereš;pere;peremo;perete;peru;Perem suđe nakon večere.;Zmywam naczynia po kolacji.;irregular;Temat per-. Znaczy prać i myć.;verb present irregular
+61;oprati;umyć;operem;opereš;opere;operemo;operete;operu;Operem ruke prije jela.;Umyję ręce przed jedzeniem.;irregular;Temat oper-, jak w prati.;verb present irregular
+62;brati;zbierać;berem;bereš;bere;beremo;berete;beru;Beremo smokve u kolovozu.;Zbieramy figi w sierpniu.;irregular;Temat ber-.;verb present irregular
+63;izabrati;wybrać;izaberem;izabereš;izabere;izaberemo;izaberete;izaberu;Izaberem jedno jelo.;Wybieram jedno danie.;irregular;Temat izaber-.;verb present irregular
+64;donijeti;przynieść;donesem;doneseš;donese;donesemo;donesete;donesu;Donesem ti vodu.;Przyniosę ci wodę.;irregular;Temat dones-, bez ije.;verb present irregular
+65;odnijeti;zanieść;odnesem;odneseš;odnese;odnesemo;odnesete;odnesu;Odnesem smeće svako jutro.;Wynoszę śmieci każdego ranka.;irregular;Temat odnes-.;verb present irregular
+66;ukrasti;ukraść;ukradem;ukradeš;ukrade;ukrademo;ukradete;ukradu;Netko mi ukrade bicikl svake godine.;Ktoś kradnie mi rower każdego roku.;irregular;Temat ukrad-.;verb present irregular
+67;umrijeti;umrzeć;umrem;umreš;umre;umremo;umrete;umru;Cvijeće umre bez vode.;Kwiaty umierają bez wody.;irregular;Temat umr-, ije wypada.;verb present irregular
+68;dobiti;dostać;dobijem;dobiješ;dobije;dobijemo;dobijete;dobiju;Dobijem plaću petnaestog.;Dostaję pensję piętnastego.;irregular;Temat dobij-.;verb present irregular
+69;razbiti;rozbić;razbijem;razbiješ;razbije;razbijemo;razbijete;razbiju;Razbijem čašu svaki mjesec.;Rozbijam szklankę co miesiąc.;irregular;Temat razbij-, jak w piti.;verb present irregular
+70;šiti;szyć;šijem;šiješ;šije;šijemo;šijete;šiju;Šijem si haljinu.;Szyję sobie sukienkę.;irregular;Temat šij-.;verb present irregular
+71;kriti;ukrywać;krijem;kriješ;krije;krijemo;krijete;kriju;Kriju istinu od nas.;Ukrywają przed nami prawdę.;irregular;Temat krij-.;verb present irregular
+72;smijati se;śmiać się;smijem se;smiješ se;smije se;smijemo se;smijete se;smiju se;Smijemo se cijelu večer.;Śmiejemy się cały wieczór.;irregular;Zawsze z zaimkiem se. Temat smij-.;verb present irregular reflexive
+73;bojati se;bać się;bojim se;bojiš se;boji se;bojimo se;bojite se;boje se;Bojim se pauka.;Boję się pająków.;irregular;Temat boj- z końcówkami -im. Zawsze z se.;verb present irregular reflexive
+74;brinuti se;martwić się;brinem se;brineš se;brine se;brinemo se;brinete se;brinu se;Ne brinem se za novac.;Nie martwię się o pieniądze.;irregular;Temat brin-, se obowiązkowe w tym znaczeniu.;verb present irregular reflexive
+75;radovati se;cieszyć się;radujem se;raduješ se;raduje se;radujemo se;radujete se;raduju se;Radujem se putovanju.;Cieszę się na podróż.;irregular;Bezokoliczniki na -ovati mają temat na -uj-.;verb present irregular reflexive
+76;vjerovati;wierzyć;vjerujem;vjeruješ;vjeruje;vjerujemo;vjerujete;vjeruju;Vjerujem ti.;Wierzę ci.;irregular;Zamiana -ovati na -ujem.;verb present irregular
+77;kupovati;kupować;kupujem;kupuješ;kupuje;kupujemo;kupujete;kupuju;Kupujemo kruh u pekarnici.;Kupujemy chleb w piekarni.;irregular;Zamiana -ovati na -ujem. Dokonane kupiti odmienia się kupim.;verb present irregular shopping
+78;putovati;podróżować;putujem;putuješ;putuje;putujemo;putujete;putuju;Putujem u Zagreb vlakom.;Podróżuję do Zagrzebia pociągiem.;irregular;Zamiana -ovati na -ujem.;verb present irregular travel
+79;stanovati;mieszkać;stanujem;stanuješ;stanuje;stanujemo;stanujete;stanuju;Stanujem u zgradi kraj mora.;Mieszkam w bloku przy morzu.;irregular;Zamiana -ovati na -ujem. W mowie częściej živim.;verb present irregular
+80;doručkovati;jeść śniadanie;doručkujem;doručkuješ;doručkuje;doručkujemo;doručkujete;doručkuju;Doručkujem samo kavu.;Na śniadanie jem tylko kawę.;irregular;Zamiana -ovati na -ujem.;verb present irregular food
+81;pokazivati;pokazywać;pokazujem;pokazuješ;pokazuje;pokazujemo;pokazujete;pokazuju;Pokazujem im stari grad.;Pokazuję im stare miasto.;irregular;Zamiana -ivati na -ujem.;verb present irregular
+82;plesati;tańczyć;plešem;plešeš;pleše;plešemo;plešete;plešu;Plešemo do jutra.;Tańczymy do rana.;irregular;Wymiana s na š.;verb present irregular
+83;plakati;płakać;plačem;plačeš;plače;plačemo;plačete;plaču;Beba plače cijelu noć.;Dziecko płacze całą noc.;irregular;Wymiana k na č.;verb present irregular
+84;skakati;skakać;skačem;skačeš;skače;skačemo;skačete;skaču;Djeca skaču u more.;Dzieci skaczą do morza.;irregular;Wymiana k na č.;verb present irregular
+85;vikati;krzyczeć;vičem;vičeš;viče;vičemo;vičete;viču;Ne vičem na tebe.;Nie krzyczę na ciebie.;irregular;Wymiana k na č.;verb present irregular
+86;disati;oddychać;dišem;dišeš;diše;dišemo;dišete;dišu;Dišem duboko i mirno.;Oddycham głęboko i spokojnie.;irregular;Wymiana s na š.;verb present irregular
+87;brisati;wycierać;brišem;brišeš;briše;brišemo;brišete;brišu;Brišem prašinu s police.;Wycieram kurz z półki.;irregular;Wymiana s na š.;verb present irregular
+88;micati;ruszać;mičem;mičeš;miče;mičemo;mičete;miču;Ne mičem se odavde.;Nie ruszam się stąd.;irregular;Wymiana c na č.;verb present irregular
+89;mazati;smarować;mažem;mažeš;maže;mažemo;mažete;mažu;Mažem maslac na kruh.;Smaruję masło na chleb.;irregular;Wymiana z na ž.;verb present irregular
+90;lagati;kłamać;lažem;lažeš;laže;lažemo;lažete;lažu;Ne lažem ti.;Nie kłamię ci.;irregular;Wymiana g na ž.;verb present irregular
+91;letjeti;lecieć;letim;letiš;leti;letimo;letite;lete;Letimo u ponedjeljak.;Lecimy w poniedziałek.;irregular_or_difficult;Bezokolicznik na -jeti, odmiana na -im.;verb present travel
+92;trčati;biegać;trčim;trčiš;trči;trčimo;trčite;trče;Trčim uz obalu svako jutro.;Biegam wzdłuż brzegu każdego ranka.;irregular_or_difficult;Bezokolicznik na -ati, odmiana na -im.;verb present
+93;bježati;uciekać;bježim;bježiš;bježi;bježimo;bježite;bježe;Bježimo od gužve.;Uciekamy od tłumu.;irregular_or_difficult;Bezokolicznik na -ati, odmiana na -im.;verb present
+94;držati;trzymać;držim;držiš;drži;držimo;držite;drže;Držim ti mjesto.;Trzymam ci miejsce.;irregular_or_difficult;Bezokolicznik na -ati, odmiana na -im.;verb present
+95;boljeti;boleć;bolim;boliš;boli;bolimo;bolite;bole;Boli me glava.;Boli mnie głowa.;irregular_or_difficult;W praktyce prawie zawsze w trzeciej osobie: boli me, bole me noge.;verb present body
+96;zaspati;zasnąć;zaspim;zaspiš;zaspi;zaspimo;zaspite;zaspe;Zaspim tek oko dva.;Zasypiam dopiero około drugiej.;irregular;Bezokolicznik na -ati, odmiana na -im, w oni zaspe.;verb present irregular
+97;krenuti;wyruszyć;krenem;kreneš;krene;krenemo;krenete;krenu;Krenemo u pet ujutro.;Wyruszamy o piątej rano.;irregular;Czasowniki na -nuti tracą u: temat kren-.;verb present irregular travel
+98;maknuti;przesunąć;maknem;makneš;makne;maknemo;maknete;maknu;Maknem auto s ceste.;Przestawię samochód z drogi.;irregular;Zamiana -nuti na -nem.;verb present irregular
+99;dignuti;podnieść;dignem;digneš;digne;dignemo;dignete;dignu;Dignem ruku ako znam.;Podnoszę rękę, jeśli wiem.;irregular;Wariant bezokolicznika dići. Temat dign-.;verb present irregular
+100;prodati;sprzedać;prodam;prodaš;proda;prodamo;prodate;prodaju;Prodam stan do ljeta.;Sprzedam mieszkanie do lata.;irregular_or_difficult;Krótki temat proda-, jak w dati.;verb present shopping
+101;prodavati;sprzedawać;prodajem;prodaješ;prodaje;prodajemo;prodajete;prodaju;Prodaju ribu na tržnici.;Sprzedają rybę na targu.;irregular;Temat prodaj-, jak w davati.;verb present irregular shopping
+102;dolaziti;przychodzić;dolazim;dolaziš;dolazi;dolazimo;dolazite;dolaze;Dolazim svaki utorak.;Przychodzę w każdy wtorek.;irregular_or_difficult;Niedokonany odpowiednik doći, ale odmiana zwykła na -im.;verb present motion
