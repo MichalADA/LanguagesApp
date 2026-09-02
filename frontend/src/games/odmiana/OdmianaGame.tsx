@@ -12,6 +12,7 @@ import { DEFAULT_POOL } from "@/hooks/useWordPool";
 import { AnswerInput } from "@/components/AnswerInput";
 import { SpecialCharacters } from "@/components/SpecialCharacters";
 import { useT } from "@/i18n";
+import { useLearningSession } from "@/learning/useLearningSession";
 import {
   DEFAULT_LEVEL,
   FULL_CLEAN_BONUS,
@@ -56,6 +57,11 @@ export function OdmianaGame() {
   const { course } = useCourse();
   const { verbs, loading, error, available } = useGrammar();
   const { state, current, recordGrammarRound, rememberActivity } = useProgress();
+  const {
+    start: startLearning,
+    record: recordLearning,
+    finish: finishLearning,
+  } = useLearningSession();
   const settings = state.settings;
 
   const [phase, setPhase] = useState<Phase>("menu");
@@ -121,6 +127,7 @@ export function OdmianaGame() {
   const start = useCallback(() => {
     if (pool.length === 0) return;
     rememberActivity(ODMIANA_ID, DEFAULT_POOL);
+    startLearning(course.id);
     recentVerbs.current = [];
     recentPersons.current = [];
     streakRef.current = 0;
@@ -133,10 +140,10 @@ export function OdmianaGame() {
     setAnswered([]);
     setPhase("play");
     serve(0);
-  }, [pool.length, rememberActivity, serve]);
+  }, [pool.length, rememberActivity, startLearning, course.id, serve]);
 
   const registerForm = useCallback(
-    (verb: VerbEntry, person: PersonId, verdict: Verdict) => {
+    (verb: VerbEntry, person: PersonId, verdict: Verdict, answer: string) => {
       setAnswered((prev) => [
         ...prev,
         {
@@ -148,6 +155,11 @@ export function OdmianaGame() {
         },
       ]);
       const ok = verdict !== "miss";
+      recordLearning({
+        wordRef: formKey(verb.id, person),
+        answer: answer.trim(),
+        correct: ok,
+      });
       if (ok) setHits((n) => n + 1);
       else setMisses((n) => n + 1);
       // Seria idzie przez ref, bo w pełnej odmianie liczymy sześć form w jednej
@@ -158,7 +170,7 @@ export function OdmianaGame() {
       setBestStreak((b) => Math.max(b, nextStreak));
       if (ok) setScore((s) => s + pointsFor(verdict, verb, level));
     },
-    [level],
+    [level, recordLearning],
   );
 
   const submitSingle = useCallback(
@@ -171,7 +183,7 @@ export function OdmianaGame() {
         input,
         settings.lenientDiacritics,
       );
-      registerForm(question.verb, question.person, verdict);
+      registerForm(question.verb, question.person, verdict, input ?? "");
       setOutcome({ kind: "single", verdict, answer: (input ?? "").trim() });
     },
     [question, outcome, course, settings.lenientDiacritics, registerForm],
@@ -191,15 +203,16 @@ export function OdmianaGame() {
       );
       verdicts[p.id] = verdict;
       if (verdict !== "hit") clean = false;
-      registerForm(question.verb, p.id, verdict);
+      registerForm(question.verb, p.id, verdict, fields[p.id]);
     }
     if (clean) setScore((s) => s + FULL_CLEAN_BONUS);
     setOutcome({ kind: "full", verdicts, answers: { ...fields } });
   }, [question, outcome, course, fields, settings.lenientDiacritics, registerForm]);
 
   const finish = useCallback(() => {
+    void finishLearning();
     setPhase("over");
-  }, []);
+  }, [finishLearning]);
 
   const advance = useCallback(() => {
     const done = asked + 1;

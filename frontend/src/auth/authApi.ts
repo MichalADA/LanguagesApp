@@ -1,4 +1,3 @@
-import { tokenStorage } from "./tokenStorage";
 import type { ApiUser, AuthResponse, LoginInput, RegisterInput } from "./types";
 
 export type AuthErrorCode =
@@ -75,18 +74,16 @@ async function send<T>(
 
 function rememberSession(response: AuthResponse): AuthResponse {
   accessToken = response.tokens.accessToken;
-  tokenStorage.writeRefreshToken(response.tokens.refreshToken);
+  clearLegacyRefreshToken();
   return response;
 }
 
 async function refreshSession(): Promise<AuthResponse> {
   if (refreshInFlight) return refreshInFlight;
-  const refreshToken = tokenStorage.readRefreshToken();
-  if (!refreshToken) throw new AuthApiError("SESSION_EXPIRED", 401);
 
   refreshInFlight = send<AuthResponse>(
     "/auth/refresh",
-    { method: "POST", ...jsonBody({ refreshToken }) },
+    { method: "POST" },
     null,
     "SESSION_EXPIRED",
   )
@@ -94,7 +91,7 @@ async function refreshSession(): Promise<AuthResponse> {
     .catch((error: unknown) => {
       accessToken = null;
       if (error instanceof AuthApiError && error.code === "NETWORK") throw error;
-      tokenStorage.clear();
+      clearLegacyRefreshToken();
       throw new AuthApiError("SESSION_EXPIRED", 401);
     })
     .finally(() => {
@@ -106,7 +103,7 @@ async function refreshSession(): Promise<AuthResponse> {
 
 export function clearSession(): void {
   accessToken = null;
-  tokenStorage.clear();
+  clearLegacyRefreshToken();
 }
 
 export async function requestWithAuth<T>(path: string, init: RequestInit = {}): Promise<T> {
@@ -147,10 +144,9 @@ export function getCurrentUser(): Promise<ApiUser> {
 
 export async function restoreSession(): Promise<ApiUser | null> {
   if (restoreInFlight) return restoreInFlight;
-  if (!tokenStorage.readRefreshToken()) return null;
 
-  // Jedna obietnica chroni rotowany refresh token przed podwójnym użyciem w
-  // React StrictMode podczas startu aplikacji.
+  // Jedna obietnica chroni rotowany cookie przed podwójnym użyciem w React
+  // StrictMode podczas startu aplikacji.
   restoreInFlight = (async () => {
     try {
       await refreshSession();
@@ -158,7 +154,7 @@ export async function restoreSession(): Promise<ApiUser | null> {
     } catch (error) {
       if (error instanceof AuthApiError && error.code === "NETWORK") throw error;
       clearSession();
-      throw new AuthApiError("SESSION_EXPIRED", 401);
+      return null;
     }
   })();
 
@@ -166,19 +162,19 @@ export async function restoreSession(): Promise<ApiUser | null> {
 }
 
 export async function logout(): Promise<void> {
-  const refreshToken = tokenStorage.readRefreshToken();
   try {
-    if (!accessToken && refreshToken) await refreshSession();
-    if (accessToken) {
-      await send<void>(
-        "/auth/logout",
-        { method: "POST", ...jsonBody({ refreshToken: refreshToken ?? undefined }) },
-        accessToken,
-      );
-    }
+    await send<void>("/auth/logout", { method: "POST" });
   } catch {
     // Wylogowanie lokalne musi zadziałać również przy niedostępnym backendzie.
   } finally {
     clearSession();
+  }
+}
+
+function clearLegacyRefreshToken(): void {
+  try {
+    localStorage.removeItem("lexodromia.auth.refreshToken");
+  } catch {
+    /* noop */
   }
 }

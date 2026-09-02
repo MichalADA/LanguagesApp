@@ -5,15 +5,15 @@ dla wszystkich trybów, architektura wielojęzyczna od pierwszego dnia.
 
 **Demo:** jeden pełny kurs **polski → chorwacki**, 2000 słów, trzy działające gry (Bura, Trasa, Odmiana) plus dataset odmiany ~100 czasowników.
 
-React + TypeScript + Vite, serwowane przez nginx, `docker compose up -d`. Bez backendu, bez konta —
-postęp siedzi w `localStorage` za interfejsem repozytorium, gotowym do podmiany na API.
+React + TypeScript + Vite oraz backend NestJS + Prisma + PostgreSQL. Konto zapisuje sesje nauki
+i statystyki w backendzie; tryb gościa pozostaje całkowicie lokalny.
 
 ---
 
 ## Uruchomienie
 
 ```bash
-cd app
+cp .env.example .env
 docker compose up -d --build     # http://localhost:8080
 ```
 
@@ -26,8 +26,8 @@ npm run build      # tsc --noEmit && vite build
 npm run typecheck
 ```
 
-Deployment nie zmienił się od poprzedniej wersji: ten sam `Dockerfile`, `docker-compose.yml`,
-`nginx.conf`, ten sam port 8080 i `restart: unless-stopped`.
+Backend udostępnia Swagger pod `http://localhost:3000/api/docs`, a readiness check pod
+`http://localhost:3000/health/ready`.
 
 ---
 
@@ -156,10 +156,10 @@ iteracja po punktach kodowych), więc nie ma tu nic do przepisywania.
 - **SRS** — `src/progress/service.ts`, funkcja `applyRound`. `WordProgress` ma już puste pola
   `nextReview`, `interval`, `stability`, `reviewCount`. Wystarczy je wyliczyć po policzeniu
   `next` i wszystkie gry zaczną karmić jeden harmonogram powtórek.
-- **Backend auth** — `src/user/UserProvider.tsx` (`signIn`) i `src/pages/LoginPage.tsx` (`onSubmit`).
-  Dziś formularz nic nie wysyła i nigdzie nie zapisuje hasła.
-- **Backend postępu** — `src/progress/repository.ts`. Napisz `HttpProgressRepository implements
-  ProgressRepository` i podmień ostatnią linijkę pliku. Żadna gra ani strona się nie zmieni.
+- **Auth** — `src/auth/AuthContext.tsx` i `src/auth/authApi.ts`; access token żyje w pamięci,
+  a rotowany refresh token w `HttpOnly` cookie.
+- **Synchronizacja nauki** — `src/learning/useLearningSession.ts`; zalogowani zapisują sesje,
+  odpowiedzi i statystyki w API, a gość nadal korzysta wyłącznie z lokalnego postępu.
 - **Audio** — `VocabularyEntry.audioUrl` jest opcjonalne i dziś zawsze puste; brak wartości nie
   wywołuje żadnego błędu. Dodaj kolumnę do datasetu i zmapuj ją w `dataset.columns.audioUrl`.
 - **Google Maps** — `src/components/maps/RouteMap.tsx`. Zastąp komponent implementacją o tym samym

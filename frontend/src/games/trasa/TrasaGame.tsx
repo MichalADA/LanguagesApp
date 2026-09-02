@@ -12,6 +12,7 @@ import { PoolPicker } from "@/components/PoolPicker";
 import { AnswerInput } from "@/components/AnswerInput";
 import { RouteMap } from "@/components/maps/RouteMap";
 import { useI18n } from "@/i18n";
+import { useLearningSession } from "@/learning/useLearningSession";
 import { sample } from "@/utils/random";
 
 export const TRASA_ID = "trasa";
@@ -32,6 +33,11 @@ export function TrasaGame() {
   const { course } = useCourse();
   const { loading } = useVocabulary();
   const { current, recordRound, saveJourney, rememberActivity } = useProgress();
+  const {
+    start: startLearning,
+    record: recordLearning,
+    finish: finishLearning,
+  } = useLearningSession();
 
   const route: CourseRoute | undefined = course.routes[0];
 
@@ -78,14 +84,16 @@ export function TrasaGame() {
   const start = useCallback(() => {
     if (!route || pool.length === 0) return;
     rememberActivity(TRASA_ID, selection);
+    startLearning(course.id);
     setPhase("playing");
     drawNext(pool);
-  }, [route, pool, rememberActivity, selection, drawNext]);
+  }, [route, pool, rememberActivity, selection, startLearning, course.id, drawNext]);
 
   const submit = useCallback(() => {
     if (!route || !entry || verdict) return;
     const { verdict: v } = checkAnswer(course, entry, typed, { lenient: false });
     setVerdict(v);
+    recordLearning({ wordRef: entry.id, answer: typed.trim(), correct: v !== "miss" });
 
     // Każda odpowiedź od razu ląduje we wspólnym postępie słowa.
     recordRound({
@@ -113,6 +121,7 @@ export function TrasaGame() {
         completedAt: done ? Date.now() : journey.completedAt,
       };
       persist(next);
+      void finishLearning();
       if (done) {
         recordRound({ gameId: TRASA_ID, score: correct, bestStreak: 0, answered: [] });
         setPhase("finished");
@@ -123,13 +132,26 @@ export function TrasaGame() {
     }
 
     persist({ ...journey, answersInLeg, correct });
-  }, [route, entry, verdict, course, typed, recordRound, selection, journey, persist]);
+  }, [
+    route,
+    entry,
+    verdict,
+    course,
+    typed,
+    recordLearning,
+    finishLearning,
+    recordRound,
+    selection,
+    journey,
+    persist,
+  ]);
 
   const restart = useCallback(() => {
     persist(emptyJourney());
+    startLearning(course.id);
     setPhase("playing");
     drawNext(pool);
-  }, [persist, drawNext, pool]);
+  }, [persist, startLearning, course.id, drawNext, pool]);
 
   const accuracy = useMemo(() => {
     const total = journey.correct + journey.incorrect;
@@ -228,6 +250,7 @@ export function TrasaGame() {
                 type="button"
                 className="btn"
                 onClick={() => {
+                  startLearning(course.id);
                   setPhase("playing");
                   drawNext(pool);
                 }}

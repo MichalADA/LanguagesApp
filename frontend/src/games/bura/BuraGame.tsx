@@ -12,6 +12,7 @@ import { useWordPool, DEFAULT_POOL } from "@/hooks/useWordPool";
 import { PoolPicker } from "@/components/PoolPicker";
 import { AnswerInput } from "@/components/AnswerInput";
 import { useI18n } from "@/i18n";
+import { useLearningSession } from "@/learning/useLearningSession";
 import { sample } from "@/utils/random";
 import { BURA_ID, HINT_COST, multiplierFor, pointsFor } from "./logic";
 
@@ -28,6 +29,11 @@ export function BuraGame() {
   const { course } = useCourse();
   const { loading } = useVocabulary();
   const { state, current, recordRound, rememberActivity } = useProgress();
+  const {
+    start: startLearning,
+    record: recordLearning,
+    finish: finishLearning,
+  } = useLearningSession();
   const settings = state.settings;
 
   const [selection, setSelection] = useState<PoolSelection>(
@@ -67,6 +73,11 @@ export function BuraGame() {
       });
       setVerdict(v);
       setAnswered((prev) => [...prev, { entry: target, verdict: v }]);
+      recordLearning({
+        wordRef: target.id,
+        answer: input ?? "",
+        correct: v !== "miss",
+      });
       if (v === "miss") {
         setStreak(0);
         setLives((l) => l - 1);
@@ -77,7 +88,7 @@ export function BuraGame() {
         setBestStreak((b) => Math.max(b, nextStreak));
       }
     },
-    [queue, idx, verdict, course, settings.lenientDiacritics, streak],
+    [queue, idx, verdict, course, settings.lenientDiacritics, streak, recordLearning],
   );
 
   useEffect(() => {
@@ -98,8 +109,9 @@ export function BuraGame() {
       answered,
       activity: { gameId: BURA_ID, pool: selection, at: Date.now() },
     });
+    void finishLearning();
     setPhase("over");
-  }, [recordRound, score, bestStreak, answered, selection]);
+  }, [recordRound, score, bestStreak, answered, selection, finishLearning]);
 
   const next = useCallback(() => {
     if (lives <= 0 || idx >= queue.length - 1) {
@@ -116,6 +128,7 @@ export function BuraGame() {
   const start = useCallback(() => {
     if (pool.length === 0) return;
     rememberActivity(BURA_ID, selection);
+    startLearning(course.id);
     setQueue(sample(pool, settings.roundLength));
     setIdx(0);
     setScore(0);
@@ -128,7 +141,7 @@ export function BuraGame() {
     setAnswered([]);
     setPhase("playing");
     arm();
-  }, [pool, selection, rememberActivity, settings.roundLength, settings.lives, arm]);
+  }, [pool, selection, rememberActivity, startLearning, course.id, settings.roundLength, settings.lives, arm]);
 
   useEffect(() => {
     if (phase !== "playing" || !verdict) return;

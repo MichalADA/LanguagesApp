@@ -1,5 +1,9 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
+import { Prisma } from '@prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
+
+const MASTERED_ANSWER_COUNT = 3;
+type DatabaseClient = PrismaService | Prisma.TransactionClient;
 
 @Injectable()
 export class ProgressService {
@@ -47,18 +51,21 @@ export class ProgressService {
 
   /**
    * Upsert progress for a user on a course. Called after a learning session
-   * finishes; callers pass wordsLearned as an authoritative snapshot for now.
+   * finishes. It can participate in the caller's transaction so marking a
+   * session finished and updating aggregate progress stay atomic.
    */
-  async recordSessionRollup(input: {
-    userId: string;
-    courseId: string;
-    correct: number;
-    wrong: number;
-    wordsLearnedDelta?: number;
-    streakOnSuccess?: boolean;
-  }) {
+  async recordSessionRollup(
+    input: {
+      userId: string;
+      courseId: string;
+      correct: number;
+      wrong: number;
+      streakOnSuccess?: boolean;
+    },
+    db: DatabaseClient = this.prisma,
+  ) {
     const { userId, courseId, correct, wrong } = input;
-    const existing = await this.prisma.userCourseProgress.findUnique({
+    const existing = await db.userCourseProgress.findUnique({
       where: { userId_courseId: { userId, courseId } },
     });
     const total = correct + wrong;
@@ -66,15 +73,16 @@ export class ProgressService {
       ? (existing?.currentStreak ?? 0) + 1
       : 0;
     const longest = Math.max(existing?.longestStreak ?? 0, newStreak);
+    const wordsLearned = await this.countMasteredItems(db, userId, courseId);
 
-    return this.prisma.userCourseProgress.upsert({
+    return db.userCourseProgress.upsert({
       where: { userId_courseId: { userId, courseId } },
       update: {
         lastActivityAt: new Date(),
         totalAnswers: { increment: total },
         correctAnswers: { increment: correct },
         wrongAnswers: { increment: wrong },
-        wordsLearned: { increment: input.wordsLearnedDelta ?? 0 },
+        wordsLearned,
         currentStreak: newStreak,
         longestStreak: longest,
       },
@@ -84,10 +92,28 @@ export class ProgressService {
         totalAnswers: total,
         correctAnswers: correct,
         wrongAnswers: wrong,
-        wordsLearned: input.wordsLearnedDelta ?? 0,
+        wordsLearned,
         currentStreak: newStreak,
         longestStreak: newStreak,
       },
     });
+  }
+
+  private async countMasteredItems(
+    db: DatabaseClient,
+    userId: string,
+    courseId: string,
+  ): Promise<number> {
+    const items = await db.learningAnswer.groupBy({
+      by: ['wordRef'],
+      where: {
+        userId,
+        correct: true,
+        session: { courseId, finishedAt: { not: null } },
+      },
+      _count: { wordRef: true },
+      having: { wordRef: { _count: { gte: MASTERED_ANSWER_COUNT } } },
+    });
+    return items.length;
   }
 }
