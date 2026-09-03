@@ -1,12 +1,18 @@
 import { ConflictException, Injectable, UnauthorizedException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
+import { Prisma } from '@prisma/client';
 import * as bcrypt from 'bcrypt';
+import { randomBytes } from 'crypto';
 
 import { PrismaService } from '../prisma/prisma.service';
 import type { RegisterDto } from './dto/register.dto';
 import type { LoginDto } from './dto/login.dto';
 import type { AuthResponseDto, AuthUserDto } from './dto/auth-response.dto';
+
+export interface AuthSession extends AuthResponseDto {
+  refreshToken: string;
+}
 
 @Injectable()
 export class AuthService {
@@ -21,33 +27,45 @@ export class AuthService {
     private readonly jwt: JwtService,
     config: ConfigService,
   ) {
-    this.saltRounds = Number(config.get('BCRYPT_SALT_ROUNDS') ?? 12);
-    this.accessSecret = config.get<string>('JWT_SECRET') ?? 'change-me-access-secret';
-    this.accessExpiration = config.get<string>('JWT_ACCESS_EXPIRATION') ?? '15m';
-    this.refreshSecret = config.get<string>('JWT_REFRESH_SECRET') ?? 'change-me-refresh-secret';
-    this.refreshExpiration = config.get<string>('JWT_REFRESH_EXPIRATION') ?? '30d';
+    this.saltRounds = config.getOrThrow<number>('BCRYPT_SALT_ROUNDS');
+    this.accessSecret = config.getOrThrow<string>('JWT_SECRET');
+    this.accessExpiration = config.getOrThrow<string>('JWT_ACCESS_EXPIRATION');
+    this.refreshSecret = config.getOrThrow<string>('JWT_REFRESH_SECRET');
+    this.refreshExpiration = config.getOrThrow<string>('JWT_REFRESH_EXPIRATION');
   }
 
-  async register(dto: RegisterDto): Promise<AuthResponseDto> {
+  async register(dto: RegisterDto): Promise<AuthSession> {
     const email = dto.email.toLowerCase().trim();
     const existing = await this.prisma.user.findUnique({ where: { email } });
     if (existing) throw new ConflictException('Email is already registered');
 
     const passwordHash = await bcrypt.hash(dto.password, this.saltRounds);
-    const user = await this.prisma.user.create({
-      data: {
-        email,
-        passwordHash,
-        displayName: dto.displayName.trim(),
-        lastLoginAt: new Date(),
-      },
-    });
+    let user;
+    try {
+      user = await this.prisma.user.create({
+        data: {
+          email,
+          passwordHash,
+          displayName: dto.displayName.trim(),
+          lastLoginAt: new Date(),
+        },
+      });
+    } catch (error) {
+      if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === 'P2002') {
+        throw new ConflictException('Email is already registered');
+      }
+      throw error;
+    }
 
     const tokens = await this.issueTokens(user.id, user.email);
-    return { user: toAuthUser(user), tokens };
+    return {
+      user: toAuthUser(user),
+      tokens: { accessToken: tokens.accessToken },
+      refreshToken: tokens.refreshToken,
+    };
   }
 
-  async login(dto: LoginDto): Promise<AuthResponseDto> {
+  async login(dto: LoginDto): Promise<AuthSession> {
     const email = dto.email.toLowerCase().trim();
     const user = await this.prisma.user.findUnique({ where: { email } });
     // Uniform failure message: do not leak whether the email exists.
@@ -65,11 +83,12 @@ export class AuthService {
     const tokens = await this.issueTokens(user.id, user.email);
     return {
       user: toAuthUser({ ...user, lastLoginAt: new Date() }),
-      tokens,
+      tokens: { accessToken: tokens.accessToken },
+      refreshToken: tokens.refreshToken,
     };
   }
 
-  async refresh(refreshToken: string): Promise<AuthResponseDto> {
+  async refresh(refreshToken: string): Promise<AuthSession> {
     let payload: { sub: string; email: string; jti: string };
     try {
       payload = await this.jwt.verifyAsync(refreshToken, { secret: this.refreshSecret });
@@ -88,41 +107,37 @@ export class AuthService {
     const matches = await bcrypt.compare(refreshToken, stored.tokenHash);
     if (!matches) throw new UnauthorizedException('Refresh token mismatch');
 
-    // Rotate: revoke old, issue new.
-    await this.prisma.refreshToken.update({
-      where: { id: stored.id },
+    // Atomically claim the token. Only one concurrent refresh may rotate it.
+    const claimed = await this.prisma.refreshToken.updateMany({
+      where: { id: stored.id, userId: payload.sub, revokedAt: null, expiresAt: { gt: new Date() } },
       data: { revokedAt: new Date() },
     });
+    if (claimed.count !== 1) throw new UnauthorizedException('Refresh token already used');
 
     const user = await this.prisma.user.findUnique({ where: { id: payload.sub } });
     if (!user) throw new UnauthorizedException();
 
     const tokens = await this.issueTokens(user.id, user.email);
-    return { user: toAuthUser(user), tokens };
+    return {
+      user: toAuthUser(user),
+      tokens: { accessToken: tokens.accessToken },
+      refreshToken: tokens.refreshToken,
+    };
   }
 
-  async logout(refreshToken: string | undefined, userId: string): Promise<void> {
-    if (refreshToken) {
-      try {
-        const payload = await this.jwt.verifyAsync<{ jti: string; sub: string }>(refreshToken, {
-          secret: this.refreshSecret,
-        });
-        if (payload.sub === userId) {
-          await this.prisma.refreshToken.updateMany({
-            where: { id: payload.jti, userId, revokedAt: null },
-            data: { revokedAt: new Date() },
-          });
-          return;
-        }
-      } catch {
-        /* fall through to bulk revoke below */
-      }
+  async logout(refreshToken: string | undefined): Promise<void> {
+    if (!refreshToken) return;
+    try {
+      const payload = await this.jwt.verifyAsync<{ jti: string; sub: string }>(refreshToken, {
+        secret: this.refreshSecret,
+      });
+      await this.prisma.refreshToken.updateMany({
+        where: { id: payload.jti, userId: payload.sub, revokedAt: null },
+        data: { revokedAt: new Date() },
+      });
+    } catch {
+      // An invalid/expired cookie is cleared by the controller; logout stays idempotent.
     }
-    // No valid token provided → revoke everything active for this user.
-    await this.prisma.refreshToken.updateMany({
-      where: { userId, revokedAt: null },
-      data: { revokedAt: new Date() },
-    });
   }
 
   async me(userId: string): Promise<AuthUserDto> {
@@ -169,7 +184,5 @@ function toAuthUser(user: {
 }
 
 function cryptoRandomId(): string {
-  // 24-byte base64url — enough entropy for a JWT jti and matches Prisma cuid style.
-  const bytes = require('crypto').randomBytes(24) as Buffer;
-  return bytes.toString('base64url');
+  return randomBytes(24).toString('base64url');
 }

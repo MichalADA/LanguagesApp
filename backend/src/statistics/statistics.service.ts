@@ -20,7 +20,11 @@ export class StatisticsService {
   async forUser(userId: string, courseFilter?: string): Promise<StatisticsResponse> {
     const courseId = courseFilter ? await this.resolveCourseId(courseFilter) : undefined;
 
-    const sessionWhere = { userId, ...(courseId ? { courseId } : {}) };
+    const sessionWhere = {
+      userId,
+      finishedAt: { not: null },
+      ...(courseId ? { courseId } : {}),
+    };
     const totalSessions = await this.prisma.learningSession.count({ where: sessionWhere });
 
     const progressWhere = { userId, ...(courseId ? { courseId } : {}) };

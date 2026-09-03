@@ -18,6 +18,8 @@ import { PrismaService } from '../src/prisma/prisma.service';
 describe('Auth + data isolation (e2e)', () => {
   let app: INestApplication;
   let prisma: PrismaService;
+  let aliceAgent: ReturnType<typeof request.agent>;
+  let bobAgent: ReturnType<typeof request.agent>;
 
   const alice = {
     email: `alice+${Date.now()}@example.com`,
@@ -36,6 +38,8 @@ describe('Auth + data isolation (e2e)', () => {
     app.useGlobalPipes(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true, transform: true }));
     await app.init();
     prisma = app.get(PrismaService);
+    aliceAgent = request.agent(app.getHttpServer());
+    bobAgent = request.agent(app.getHttpServer());
   });
 
   afterAll(async () => {
@@ -47,15 +51,34 @@ describe('Auth + data isolation (e2e)', () => {
     await app.close();
   });
 
+  it('reports liveness and database readiness', async () => {
+    await request(app.getHttpServer()).get('/health/live').expect(200, { status: 'ok' });
+    await request(app.getHttpServer()).get('/health/ready').expect(200, { status: 'ok' });
+  });
+
   it('registers a new user', async () => {
-    const res = await request(app.getHttpServer()).post('/auth/register').send(alice).expect(201);
+    const res = await aliceAgent.post('/auth/register').send(alice).expect(201);
     expect(res.body.user.email).toBe(alice.email);
     expect(res.body.tokens.accessToken).toBeDefined();
+    expect(res.body.tokens.refreshToken).toBeUndefined();
+    expect(res.headers['set-cookie']?.[0]).toContain('HttpOnly');
     expect(res.body.user.passwordHash).toBeUndefined();
   });
 
+  it('rejects duplicate email registration', async () => {
+    await request(app.getHttpServer()).post('/auth/register').send(alice).expect(409);
+  });
+
+  it('restores a session by rotating the HttpOnly refresh cookie', async () => {
+    const res = await aliceAgent.post('/auth/refresh').expect(200);
+    expect(res.body.tokens.accessToken).toBeDefined();
+    expect(res.body.tokens.refreshToken).toBeUndefined();
+    expect(res.headers['set-cookie']?.[0]).toContain('lexodromia_refresh=');
+    await request(app.getHttpServer()).post('/auth/refresh').expect(401);
+  });
+
   it('logs in with correct password', async () => {
-    const res = await request(app.getHttpServer())
+    const res = await aliceAgent
       .post('/auth/login')
       .send({ email: alice.email, password: alice.password })
       .expect(200);
@@ -77,14 +100,14 @@ describe('Auth + data isolation (e2e)', () => {
 
   it('isolates user data: Bob cannot see Alice statistics', async () => {
     // Register Bob.
-    await request(app.getHttpServer()).post('/auth/register').send(bob).expect(201);
+    await bobAgent.post('/auth/register').send(bob).expect(201);
 
     // Log both in fresh.
-    const aliceLogin = await request(app.getHttpServer())
+    const aliceLogin = await aliceAgent
       .post('/auth/login')
       .send({ email: alice.email, password: alice.password })
       .expect(200);
-    const bobLogin = await request(app.getHttpServer())
+    const bobLogin = await bobAgent
       .post('/auth/login')
       .send({ email: bob.email, password: bob.password })
       .expect(200);
@@ -117,6 +140,17 @@ describe('Auth + data isolation (e2e)', () => {
       .set('Authorization', `Bearer ${aliceToken}`)
       .expect(201);
 
+    // Finishing is idempotent and closed sessions reject late answers.
+    await request(app.getHttpServer())
+      .post(`/me/learning/sessions/${aliceSessionId}/finish`)
+      .set('Authorization', `Bearer ${aliceToken}`)
+      .expect(201);
+    await request(app.getHttpServer())
+      .post(`/me/learning/sessions/${aliceSessionId}/answers`)
+      .set('Authorization', `Bearer ${aliceToken}`)
+      .send({ wordRef: 'late', answer: 'late', correct: true })
+      .expect(409);
+
     // Alice stats should reflect her session.
     const aliceStats = await request(app.getHttpServer())
       .get('/me/statistics')
@@ -126,6 +160,7 @@ describe('Auth + data isolation (e2e)', () => {
     expect(aliceStats.body.correctAnswers).toBe(2);
     expect(aliceStats.body.wrongAnswers).toBe(1);
     expect(aliceStats.body.totalSessions).toBe(1);
+    expect(aliceStats.body.wordsLearned).toBe(0);
 
     // Bob stats must be zero — no leakage.
     const bobStats = await request(app.getHttpServer())
@@ -149,5 +184,64 @@ describe('Auth + data isolation (e2e)', () => {
       .set('Authorization', `Bearer ${bobToken}`)
       .send({ wordRef: 'w1', answer: 'foo', correct: true })
       .expect(403);
+  });
+
+  it('counts only completed sessions and marks an item learned after three correct answers', async () => {
+    const login = await aliceAgent
+      .post('/auth/login')
+      .send({ email: alice.email, password: alice.password })
+      .expect(200);
+    const token = login.body.tokens.accessToken;
+    const course = (await request(app.getHttpServer()).get('/courses').expect(200)).body[0];
+
+    const unfinished = await request(app.getHttpServer())
+      .post('/me/learning/sessions')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ course: course.slug })
+      .expect(201);
+
+    const before = await request(app.getHttpServer())
+      .get('/me/statistics')
+      .set('Authorization', `Bearer ${token}`)
+      .expect(200);
+    expect(before.body.totalSessions).toBe(1);
+
+    await request(app.getHttpServer())
+      .post(`/me/learning/sessions/${unfinished.body.id}/answers`)
+      .set('Authorization', `Bearer ${token}`)
+      .send({ wordRef: 'w1', answer: 'foo', correct: true })
+      .expect(201);
+    await request(app.getHttpServer())
+      .post(`/me/learning/sessions/${unfinished.body.id}/finish`)
+      .set('Authorization', `Bearer ${token}`)
+      .expect(201);
+
+    const after = await request(app.getHttpServer())
+      .get('/me/statistics')
+      .set('Authorization', `Bearer ${token}`)
+      .expect(200);
+    expect(after.body.totalSessions).toBe(2);
+    expect(after.body.wordsLearned).toBe(1);
+  });
+
+  it('logs out by revoking and clearing the refresh cookie', async () => {
+    const logout = await aliceAgent.post('/auth/logout').expect(204);
+    expect(logout.headers['set-cookie']?.[0]).toContain('lexodromia_refresh=;');
+    await aliceAgent.post('/auth/refresh').expect(401);
+  });
+
+  it('rate limits repeated login attempts', async () => {
+    let rateLimited = false;
+    for (let attempt = 0; attempt < 21; attempt += 1) {
+      const response = await request(app.getHttpServer())
+        .post('/auth/login')
+        .send({ email: 'nobody@example.com', password: 'wrong-password' });
+      if (response.status === 429) {
+        rateLimited = true;
+        break;
+      }
+      expect(response.status).toBe(401);
+    }
+    expect(rateLimited).toBe(true);
   });
 });

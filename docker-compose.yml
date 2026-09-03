@@ -27,20 +27,23 @@ services:
       postgres:
         condition: service_healthy
     environment:
-      NODE_ENV: production
+      NODE_ENV: ${NODE_ENV:-development}
       PORT: 3000
       DATABASE_URL: postgresql://${POSTGRES_USER:-lexo}:${POSTGRES_PASSWORD:-lexo}@postgres:5432/${POSTGRES_DB:-lexodromia}?schema=public
-      JWT_SECRET: ${JWT_SECRET:-change-me-access-secret}
+      JWT_SECRET: ${JWT_SECRET:-development-access-secret-change-before-production}
       JWT_ACCESS_EXPIRATION: ${JWT_ACCESS_EXPIRATION:-15m}
-      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-change-me-refresh-secret}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-development-refresh-secret-change-before-production}
       JWT_REFRESH_EXPIRATION: ${JWT_REFRESH_EXPIRATION:-30d}
       BCRYPT_SALT_ROUNDS: ${BCRYPT_SALT_ROUNDS:-12}
+      AUTH_COOKIE_NAME: ${AUTH_COOKIE_NAME:-lexodromia_refresh}
+      AUTH_COOKIE_SECURE: ${AUTH_COOKIE_SECURE:-false}
+      AUTH_REFRESH_COOKIE_MAX_AGE_MS: ${AUTH_REFRESH_COOKIE_MAX_AGE_MS:-2592000000}
       CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:5173,http://localhost:8080}
     ports:
       - "3000:3000"
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/docs-json"]
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health/ready"]
       interval: 30s
       timeout: 3s
       retries: 5
@@ -53,7 +56,8 @@ services:
     image: lexodromia-frontend:latest
     container_name: lexodromia-frontend
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
     ports:
       - "8080:80"
     restart: unless-stopped

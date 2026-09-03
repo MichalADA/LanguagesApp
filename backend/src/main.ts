@@ -8,6 +8,8 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { bufferLogs: false });
+  app.enableShutdownHooks();
+  app.getHttpAdapter().getInstance().set('trust proxy', 1);
 
   const port = Number(process.env.PORT ?? 3000);
   const corsOrigin = (process.env.CORS_ORIGIN ?? 'http://localhost:5173')
@@ -36,6 +38,7 @@ async function bootstrap() {
     .setDescription('Auth, courses, per-user progress and statistics')
     .setVersion('0.1.0')
     .addBearerAuth()
+    .addCookieAuth('lexodromia_refresh', { type: 'apiKey', in: 'cookie' }, 'refresh-cookie')
     .build();
   const document = SwaggerModule.createDocument(app, swagger);
   SwaggerModule.setup('api/docs', app, document);

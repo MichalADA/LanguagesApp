@@ -10,7 +10,6 @@ export class AuthUserDto {
 
 export class AuthTokensDto {
   @ApiProperty() accessToken!: string;
-  @ApiProperty() refreshToken!: string;
 }
 
 export class AuthResponseDto {
