@@ -5,6 +5,8 @@ import { GamesPage } from "@/pages/GamesPage";
 import { PlayPage } from "@/pages/PlayPage";
 import { StatsPage } from "@/pages/StatsPage";
 import { ReviewPage } from "@/pages/ReviewPage";
+import { FiszkiPage } from "@/pages/FiszkiPage";
+import { FiszkiSessionPage } from "@/pages/FiszkiSessionPage";
 import { ProgressPage } from "@/pages/ProgressPage";
 import { SettingsPage } from "@/pages/SettingsPage";
 import { CoursesPage } from "@/pages/CoursesPage";
@@ -46,6 +48,8 @@ export default function App() {
           <Route path="/gry" element={<GamesPage />} />
           <Route path="/gry/:gameId" element={<PlayPage />} />
           <Route path="/powtorki" element={<ReviewPage />} />
+          <Route path="/fiszki" element={<FiszkiPage />} />
+          <Route path="/fiszki/sesja" element={<FiszkiSessionPage />} />
           <Route path="/statystyki" element={<StatsPage />} />
           <Route path="/postep" element={<ProgressPage />} />
           <Route path="/jezyki" element={<CoursesPage />} />

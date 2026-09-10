@@ -41,4 +41,6 @@ COPY prisma ./prisma
 
 EXPOSE 3000
 
-CMD ["sh", "-c", "node node_modules/prisma/build/index.js migrate deploy && node dist/main.js"]
+# Migracje tworzą schemat, a seed idempotentnie gwarantuje dane bazowe
+# (języki + kurs pl-hr) przy każdym starcie świeżej bazy.
+CMD ["sh", "-c", "node node_modules/prisma/build/index.js migrate deploy && node prisma/seed.js && node dist/main.js"]

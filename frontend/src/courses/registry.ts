@@ -71,6 +71,8 @@ export const COURSE_PL_HR: Course = {
     { id: "HR_0501_1000", range: "501–1000" },
     { id: "HR_1001_1500", range: "1001–1500" },
     { id: "HR_1501_2000", range: "1501–2000" },
+    { id: "HR_2001_2500", range: "2001–2500" },
+    { id: "HR_2501_3000", range: "2501–3000" },
   ],
   routes: [
     {

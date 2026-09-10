@@ -1999,3 +1999,1003 @@
 1998;miłego dnia;ugodan dan;phrase;;Ugodan dan i vidimo se.;Miłego dnia i do zobaczenia.;NO;;HR_1501_2000 conversation
 1999;dobranoc;laku noć;phrase;;Laku noć i lijepo spavaj.;Dobranoc i śpij dobrze.;NO;;HR_1501_2000 conversation
 2000;na zdrowie (po kichnięciu);nazdravlje;phrase;;Nazdravlje i ozdravi brzo.;Na zdrowie i szybko wyzdrowiej.;NO;;HR_1501_2000 conversation
+2001;stawać się (proces);postajati;verb;1. os.: postajem - niedokonany;Postaje sve jasnije.;Staje się coraz jaśniejsze.;NO;;HR_2001_2500 verb
+2002;istnieć;postojati;verb;1. os.: postojim;Postoji mnogo razloga.;Istnieje wiele powodów.;NO;;HR_2001_2500 verb
+2003;powstawać;nastati;verb;1. os.: nastanem - nastao je - dokonany;Nastala je tišina.;Powstała cisza.;NO;;HR_2001_2500 verb
+2004;powstawać (proces);nastajati;verb;1. os.: nastajem;Nastaju novi problemi.;Powstają nowe problemy.;NO;;HR_2001_2500 verb
+2005;zawierać;sadržavati;verb;1. os.: sadržavam - często: sadržati;Piće sadrži šećer.;Napój zawiera cukier.;NO;;HR_2001_2500 verb
+2006;obejmować;obuhvaćati;verb;1. os.: obuhvaćam;Cijena obuhvaća doručak.;Cena obejmuje śniadanie.;NO;;HR_2001_2500 verb
+2007;dotyczyć;odnositi se;verb;1. os.: odnosim se - na koga/što;To se odnosi na sve.;To dotyczy wszystkich.;NO;;HR_2001_2500 verb
+2008;należeć;pripadati;verb;1. os.: pripadam - kome;Ova knjiga pripada meni.;Ta książka należy do mnie.;NO;;HR_2001_2500 verb
+2009;przedstawiać;predstavljati;verb;1. os.: predstavljam;Ovo predstavlja veliki problem.;To stanowi wielki problem.;NO;;HR_2001_2500 verb
+2010;łączyć;povezivati;verb;1. os.: povezujem;Most povezuje dvije obale.;Most łączy dwa brzegi.;NO;;HR_2001_2500 verb
+2011;połączyć;povezati;verb;1. os.: povežem - dokonany;Povežimo se na Zoomu.;Połączmy się na Zoomie.;NO;;HR_2001_2500 verb work
+2012;odłączać;odvajati;verb;1. os.: odvajam;Odvajam smeće po vrstama.;Segreguję śmieci według rodzajów.;NO;;HR_2001_2500 verb home
+2013;śledzić;slijediti;verb;1. os.: slijedim;Slijedim upute.;Śledzę instrukcje.;NO;;HR_2001_2500 verb
+2014;obserwować;promatrati;verb;1. os.: promatram;Promatramo situaciju.;Obserwujemy sytuację.;NO;;HR_2001_2500 verb
+2015;rozważać;razmatrati;verb;1. os.: razmatram;Razmatramo tvoju ponudu.;Rozważamy twoją ofertę.;NO;;HR_2001_2500 verb work
+2016;wnioskować;zaključivati;verb;1. os.: zaključujem;Zaključujem da si u pravu.;Wnioskuję że masz rację.;NO;;HR_2001_2500 verb
+2017;wywnioskować;zaključiti;verb;1. os.: zaključim - dokonany;Zaključio sam pogrešno.;Wywnioskowałem błędnie.;NO;;HR_2001_2500 verb
+2018;wybierać (spośród);birati;verb;1. os.: biram - niedokonany;Biram između dvije opcije.;Wybieram między dwiema opcjami.;NO;;HR_2001_2500 verb
+2019;wybrać (kogoś);odabrati;verb;1. os.: odaberem;Odaberi jedan primjer.;Wybierz jeden przykład.;NO;;HR_2001_2500 verb
+2020;wybór (opcja);odabir;noun;rodzaj męski - synonim: izbor;Odabir je vaš.;Wybór należy do państwa.;NO;;HR_2001_2500 noun
+2021;zakładać (przypuszczać);pretpostavljati;verb;1. os.: pretpostavljam;Pretpostavljam da će doći.;Zakładam że przyjdzie.;NO;;HR_2001_2500 verb
+2022;założyć (przypuścić);pretpostaviti;verb;1. os.: pretpostavim - dokonany;Pretpostavio sam najgore.;Założyłem najgorsze.;NO;;HR_2001_2500 verb
+2023;wyobrażać sobie;zamišljati;verb;1. os.: zamišljam - povratni: zamišljati si;Zamišljam more.;Wyobrażam sobie morze.;NO;;HR_2001_2500 verb
+2024;wyobrazić sobie;zamisliti;verb;1. os.: zamislim - dokonany;Zamisli da si pobijedio.;Wyobraź sobie że wygrałeś.;NO;;HR_2001_2500 verb
+2025;osiągać;postizati;verb;1. os.: postižem;Postižemo dobre rezultate.;Osiągamy dobre wyniki.;NO;;HR_2001_2500 verb work
+2026;sięgać;dosezati;verb;1. os.: dosežem;Voda doseže do koljena.;Woda sięga do kolana.;NO;;HR_2001_2500 verb
+2027;sięgnąć;dosegnuti;verb;1. os.: dosegnem;Dosegnula je najviši nivo.;Sięgnęła najwyższego poziomu.;NO;;HR_2001_2500 verb
+2028;zbliżać się;približavati se;verb;1. os.: približavam se;Približavamo se cilju.;Zbliżamy się do celu.;NO;;HR_2001_2500 verb
+2029;zbliżyć się;približiti se;verb;1. os.: približim se;Približi se kamerom.;Zbliż się kamerą.;NO;;HR_2001_2500 verb
+2030;oddalać się;udaljavati se;verb;1. os.: udaljavam se;Udaljavaju se od obale.;Oddalają się od brzegu.;NO;;HR_2001_2500 verb
+2031;unikać;izbjegavati;verb;1. os.: izbjegavam;Izbjegavam gužve.;Unikam tłumów.;NO;;HR_2001_2500 verb
+2032;uniknąć;izbjeći;verb;1. os.: izbjegnem;Izbjegli smo nesreću.;Uniknęliśmy wypadku.;NO;;HR_2001_2500 verb
+2033;zapobiegać;sprječavati;verb;1. os.: sprječavam;Sprječavamo požare.;Zapobiegamy pożarom.;NO;;HR_2001_2500 verb
+2034;zapobiec;spriječiti;verb;1. os.: spriječim;Spriječi krađu na vrijeme.;Zapobiegaj kradzieży na czas.;NO;;HR_2001_2500 verb
+2035;umożliwiać;omogućavati;verb;1. os.: omogućavam;Aplikacija omogućava plaćanje.;Aplikacja umożliwia płatność.;NO;;HR_2001_2500 verb
+2036;umożliwić;omogućiti;verb;1. os.: omogućim - dokonany;Omogućili su nam prijevoz.;Umożliwili nam transport.;NO;;HR_2001_2500 verb
+2037;ograniczać;ograničavati;verb;1. os.: ograničavam;Ograničavamo potrošnju.;Ograniczamy zużycie.;NO;;HR_2001_2500 verb
+2038;ograniczyć;ograničiti;verb;1. os.: ograničim;Ograniči količinu soli.;Ogranicz ilość soli.;NO;;HR_2001_2500 verb food
+2039;rozszerzać;proširivati;verb;1. os.: proširujem;Proširujemo ponudu.;Rozszerzamy ofertę.;NO;;HR_2001_2500 verb work
+2040;rozszerzyć;proširiti;verb;1. os.: proširim;Proširili su cestu.;Rozszerzyli drogę.;NO;;HR_2001_2500 verb transportation
+2041;zwiększać;povećavati;verb;1. os.: povećavam;Povećavaju cijene.;Zwiększają ceny.;NO;;HR_2001_2500 verb
+2042;zmniejszać;smanjivati;verb;1. os.: smanjujem;Smanjujemo troškove.;Zmniejszamy koszty.;NO;;HR_2001_2500 verb work
+2043;rozwinąć się;razviti se;verb;1. os.: razvijem se;Razvio se u pravu osobu.;Rozwinął się na właściwą osobę.;NO;;HR_2001_2500 verb
+2044;polepszać;poboljšavati;verb;1. os.: poboljšavam;Poboljšavamo kvalitetu.;Polepszamy jakość.;NO;;HR_2001_2500 verb work
+2045;pogarszać;pogoršavati;verb;1. os.: pogoršavam;Ne pogoršavaj situaciju.;Nie pogarszaj sytuacji.;NO;;HR_2001_2500 verb
+2046;zmieniać;promijeniti;verb;1. os.: promijenim - dokonany od mijenjati;Promijenio sam plan.;Zmieniłem plan.;NO;;HR_2001_2500 verb
+2047;zamieniać;zamjenjivati;verb;1. os.: zamjenjujem;Zamjenjujemo dijelove.;Wymieniamy części.;NO;;HR_2001_2500 verb
+2048;przemieniać;pretvarati;verb;1. os.: pretvaram;Pretvaram vino u ocat.;Zamieniam wino w ocet.;NO;;HR_2001_2500 verb
+2049;przemienić;pretvoriti;verb;1. os.: pretvorim;Pretvorimo problem u priliku.;Zamieńmy problem w szansę.;NO;;HR_2001_2500 verb
+2050;kontynuować;nastavljati;verb;1. os.: nastavljam;Nastavljam raditi.;Kontynuuję pracę.;NO;;HR_2001_2500 verb work
+2051;kończyć (proces);završavati;verb;1. os.: završavam;Završavamo projekt.;Kończymy projekt.;NO;;HR_2001_2500 verb work
+2052;dokończyć;dovršiti;verb;1. os.: dovršim;Dovrši zadaću.;Dokończ zadanie.;NO;;HR_2001_2500 verb
+2053;przerywać;prekidati;verb;1. os.: prekidam;Ne prekidaj me.;Nie przerywaj mi.;NO;;HR_2001_2500 verb conversation
+2054;siadać;sjedati;verb;1. os.: sjedam;Sjedam za stol.;Siadam do stołu.;NO;;HR_2001_2500 verb
+2055;usiąść;sjesti;verb;1. os.: sjednem;Sjedni ovdje.;Usiądź tutaj.;NO;;HR_2001_2500 verb
+2056;wstawać (codziennie);ustajati;verb;1. os.: ustajem;Ustajem u sedam.;Wstaję o siódmej.;NO;;HR_2001_2500 verb
+2057;kłaść się;lijegati;verb;1. os.: liježem;Liježem rano.;Kładę się wcześnie.;NO;;HR_2001_2500 verb
+2058;położyć się;leći;verb;1. os.: legnem;Legnem malo.;Położę się na chwilę.;NO;;HR_2001_2500 verb
+2059;podnosić;podizati;verb;1. os.: podižem;Podižem novac.;Wypłacam pieniądze.;NO;;HR_2001_2500 verb
+2060;spuszczać;spuštati;verb;1. os.: spuštam;Spuštamo kofere.;Spuszczamy walizki.;NO;;HR_2001_2500 verb travel
+2061;spuścić;spustiti;verb;1. os.: spustim;Spusti glavu.;Spuść głowę.;NO;;HR_2001_2500 verb
+2062;przejść;proći;verb;1. os.: prođem;Prošao sam ispit.;Zdałem egzamin.;NO;;HR_2001_2500 verb
+2063;zdawać (egzamin);polagati;verb;1. os.: polažem;Sutra polažem ispit.;Jutro zdaję egzamin.;NO;;HR_2001_2500 verb work
+2064;odchodzić;odlaziti;verb;1. os.: odlazim;Odlazim za pola sata.;Odchodzę za pół godziny.;NO;;HR_2001_2500 verb
+2065;odejść;otići;verb;1. os.: odem;Otiđi ranije.;Odejdź wcześniej.;NO;;HR_2001_2500 verb
+2066;porzucać;napuštati;verb;1. os.: napuštam;Ne napušta prijatelje.;Nie porzuca przyjaciół.;NO;;HR_2001_2500 verb people
+2067;porzucić;napustiti;verb;1. os.: napustim;Napustio je posao.;Porzucił pracę.;NO;;HR_2001_2500 verb work
+2068;zostawiać;ostavljati;verb;1. os.: ostavljam;Ostavljam ključ na stolu.;Zostawiam klucz na stole.;NO;;HR_2001_2500 verb home
+2069;pozostawać;ostajati;verb;1. os.: ostajem;Ostajem kod kuće.;Pozostaję w domu.;NO;;HR_2001_2500 verb
+2070;wysyłać;slati;verb;1. os.: šaljem - niedokonany;Šaljem paket.;Wysyłam paczkę.;NO;;HR_2001_2500 verb
+2071;odbierać (paczkę);preuzeti;verb;1. os.: preuzmem;Preuzmi paket u pošti.;Odbierz paczkę na poczcie.;NO;;HR_2001_2500 verb
+2072;odbierać (impf);preuzimati;verb;1. os.: preuzimam;Preuzimamo pošiljke.;Odbieramy przesyłki.;NO;;HR_2001_2500 verb
+2073;odbierać (telefon);javljati se;verb;1. os.: javljam se;Ne javlja se na telefon.;Nie odbiera telefonu.;NO;;HR_2001_2500 verb
+2074;przyjmować;prihvaćati;verb;1. os.: prihvaćam;Prihvaćam kritiku.;Przyjmuję krytykę.;NO;;HR_2001_2500 verb
+2075;odrzucać;odbijati;verb;1. os.: odbijam;Odbija ponudu.;Odrzuca ofertę.;NO;;HR_2001_2500 verb
+2076;zwracać (rzecz);vraćati;verb;1. os.: vraćam;Vraćam knjigu.;Zwracam książkę.;NO;;HR_2001_2500 verb
+2077;zamawiać (impf);naručivati;verb;1. os.: naručujem;Često naručujem hranu.;Często zamawiam jedzenie.;NO;;HR_2001_2500 verb food
+2078;płacić (impf);plaćati;verb;1. os.: plaćam;Plaćam karticom.;Płacę kartą.;NO;;HR_2001_2500 verb shopping
+2079;znajdować;pronalaziti;verb;1. os.: pronalazim;Pronalazi rješenja brzo.;Znajduje rozwiązania szybko.;NO;;HR_2001_2500 verb work
+2080;znaleźć (perf);pronaći;verb;1. os.: pronađem;Pronašli smo hotel.;Znaleźliśmy hotel.;NO;;HR_2001_2500 verb travel
+2081;spotykać;sretati;verb;1. os.: srećem;Često te srećem.;Często cię spotykam.;NO;;HR_2001_2500 verb people
+2082;pojawiać się;pojavljivati se;verb;1. os.: pojavljujem se;Pojavljuje se na svakoj zabavi.;Pojawia się na każdej imprezie.;NO;;HR_2001_2500 verb
+2083;znikać;nestajati;verb;1. os.: nestajem;Novac nestaje brzo.;Pieniądze znikają szybko.;NO;;HR_2001_2500 verb
+2084;odkrywać;otkrivati;verb;1. os.: otkrivam;Otkrivam nova mjesta.;Odkrywam nowe miejsca.;NO;;HR_2001_2500 verb travel
+2085;odkryć;otkriti;verb;1. os.: otkrijem;Otkrili su lijek.;Odkryli lek.;NO;;HR_2001_2500 verb
+2086;ukrywać;skrivati;verb;1. os.: skrivam;Skrivam iznenađenje.;Ukrywam niespodziankę.;NO;;HR_2001_2500 verb
+2087;ukryć;sakriti;verb;1. os.: sakrijem;Sakrio je ključ.;Ukrył klucz.;NO;;HR_2001_2500 verb
+2088;chronić;štititi;verb;1. os.: štitim;Štitimo prirodu.;Chronimy przyrodę.;NO;;HR_2001_2500 verb
+2089;atakować;napadati;verb;1. os.: napadam;Ne napadaj me riječima.;Nie atakuj mnie słowami.;NO;;HR_2001_2500 verb
+2090;walczyć;boriti se;verb;1. os.: borim se - za koga/što;Borim se za pravdu.;Walczę o sprawiedliwość.;NO;;HR_2001_2500 verb
+2091;przegrać;izgubiti utakmicu;phrase;izgubiti + akuzativ;Izgubili su utakmicu.;Przegrali mecz.;NO;;HR_2001_2500 verb
+2092;osiąga zwycięstwo;pobjeda;noun;rodzaj żeński;Pobjeda je zaslužena.;Zwycięstwo jest zasłużone.;NO;;HR_2001_2500 noun
+2093;porażka;poraz;noun;rodzaj męski;Poraz nas je razočarao.;Porażka nas rozczarowała.;NO;;HR_2001_2500 noun
+2094;walka;borba;noun;rodzaj żeński;Borba je bila teška.;Walka była trudna.;NO;;HR_2001_2500 noun
+2095;zachować (perf);sačuvati;verb;1. os.: sačuvam;Sačuvao sam datoteku.;Zachowałem plik.;NO;;HR_2001_2500 verb
+2096;niszczyć;uništavati;verb;1. os.: uništavam;Rat uništava sve.;Wojna niszczy wszystko.;NO;;HR_2001_2500 verb
+2097;psuć się;kvariti se;verb;1. os.: kvarim se;Auto se često kvari.;Samochód często się psuje.;NO;;HR_2001_2500 verb
+2098;naprawiać;popravljati;verb;1. os.: popravljam;Popravljam bicikl.;Naprawiam rower.;NO;;HR_2001_2500 verb
+2099;budować;izgraditi;verb;1. os.: izgradim - dokonany;Izgradili su novu školu.;Zbudowali nową szkołę.;NO;;HR_2001_2500 verb
+2100;niszczyć (burzyć);rušiti;verb;1. os.: rušim;Ruše staru zgradu.;Burzą stary budynek.;NO;;HR_2001_2500 verb
+2101;spaść (perf);pasti;verb;1. os.: padnem;Pao je s bicikla.;Spadł z roweru.;NO;;HR_2001_2500 verb
+2102;wzrosnąć;porasti;verb;1. os.: porastem;Cijena je porasla.;Cena wzrosła.;NO;;HR_2001_2500 verb
+2103;marzyć;maštati;verb;1. os.: maštam - o čemu;Maštam o odmoru.;Marzę o urlopie.;NO;;HR_2001_2500 verb
+2104;wybaczać;opraštati;verb;1. os.: opraštam;Opraštam mu.;Wybaczam mu.;NO;;HR_2001_2500 verb people
+2105;przepraszać (impf);ispričavati se;verb;1. os.: ispričavam se;Ispričavam se zbog kašnjenia.;Przepraszam za spóźnienie.;NO;;HR_2001_2500 verb conversation
+2106;dziękować;zahvaljivati;verb;1. os.: zahvaljujem;Zahvaljujem svima.;Dziękuję wszystkim.;NO;;HR_2001_2500 verb conversation
+2107;odwiedzać;posjećivati;verb;1. os.: posjećujem;Posjećujem baku svaki tjedan.;Odwiedzam babcię co tydzień.;NO;;HR_2001_2500 verb people
+2108;zapraszać;pozivati;verb;1. os.: pozivam;Pozivam vas na večeru.;Zapraszam was na kolację.;NO;;HR_2001_2500 verb food
+2109;zadzwonić;nazvati;verb;1. os.: nazovem;Nazovi me kasnije.;Zadzwoń do mnie później.;NO;;HR_2001_2500 verb
+2110;podać (informację);navesti;verb;1. os.: navedem;Navedi razlog.;Podaj powód.;NO;;HR_2001_2500 verb
+2111;wymieniać (nazwiska);nabrajati;verb;1. os.: nabrajam;Nabraja imena.;Wymienia imiona.;NO;;HR_2001_2500 verb
+2112;opisywać;opisivati;verb;1. os.: opisujem;Opisuje događaj.;Opisuje wydarzenie.;NO;;HR_2001_2500 verb
+2113;opisać;opisati;verb;1. os.: opišem;Opiši mi kuću.;Opisz mi dom.;NO;;HR_2001_2500 verb
+2114;odzwierciedlać;odražavati;verb;1. os.: odražavam;Cijena odražava kvalitetu.;Cena odzwierciedla jakość.;NO;;HR_2001_2500 verb
+2115;spędzać (czas);provoditi;verb;1. os.: provodim - vrijeme;Provodim vrijeme s obitelji.;Spędzam czas z rodziną.;NO;;HR_2001_2500 verb people
+2116;spędzić (czas);provesti;verb;1. os.: provedem;Proveli smo dan na plaži.;Spędziliśmy dzień na plaży.;NO;;HR_2001_2500 verb travel
+2117;żyć długo;živjeti dugo;phrase;;Djed živi dugo i sretno.;Dziadek żyje długo i szczęśliwie.;NO;;HR_2001_2500 phrase people
+2118;umierać;umirati;verb;1. os.: umirem;Umire od dosade.;Umiera z nudów.;NO;;HR_2001_2500 verb
+2119;umrzeć;umrijeti;verb;1. os.: umrem - dokonany;Umro je u snu.;Umarł we śnie.;NO;;HR_2001_2500 verb
+2120;rodzić;rađati;verb;1. os.: rađam;Rađa dijete u bolnici.;Rodzi dziecko w szpitalu.;NO;;HR_2001_2500 verb
+2121;żyć razem;živjeti zajedno;phrase;;Živimo zajedno pet godina.;Mieszkamy razem pięć lat.;NO;;HR_2001_2500 phrase people
+2122;pogodzić się;pomiriti se;verb;1. os.: pomirim se;Pomirili su se brzo.;Pogodzili się szybko.;NO;;HR_2001_2500 verb people
+2123;pochwała;pohvala;noun;rodzaj żeński;Pohvala je dobrodošla.;Pochwała jest mile widziana.;NO;;HR_2001_2500 noun
+2124;krytyka;kritika;noun;rodzaj żeński;Kritika je konstruktivna.;Krytyka jest konstruktywna.;NO;;HR_2001_2500 noun
+2125;osądzać;suditi;verb;1. os.: sudim;Ne sudi ljude po izgledu.;Nie sądź ludzi po wyglądzie.;NO;;HR_2001_2500 verb people
+2126;porównywać (impf);uspoređivati;verb;1. os.: uspoređujem;Uspoređujem cijene.;Porównuję ceny.;NO;;HR_2001_2500 verb shopping
+2127;oceniać;ocjenjivati;verb;1. os.: ocjenjujem;Ocjenjujem rad.;Oceniam pracę.;NO;;HR_2001_2500 verb work
+2128;szacować;procjenjivati;verb;1. os.: procjenjujem;Procjenjujemo štetu.;Szacujemy szkody.;NO;;HR_2001_2500 verb work
+2129;oszacować;procijeniti;verb;1. os.: procijenim;Procijenio sam vrijednost.;Oszacowałem wartość.;NO;;HR_2001_2500 verb work
+2130;liczyć;brojati;verb;1. os.: brojim - też: računati;Brojim novac.;Liczę pieniądze.;NO;;HR_2001_2500 verb
+2131;obliczać;izračunavati;verb;1. os.: izračunavam;Izračunavam trošak.;Obliczam koszt.;NO;;HR_2001_2500 verb work
+2132;obliczyć;izračunati;verb;1. os.: izračunam;Izračunaj koliko treba.;Oblicz ile trzeba.;NO;;HR_2001_2500 verb
+2133;ważyć (mierzyć wagę);vagati;verb;1. os.: važem - też: težiti;Važe voće u trgovini.;Ważą owoce w sklepie.;NO;;HR_2001_2500 verb shopping
+2134;dodawać;dodavati;verb;1. os.: dodajem;Dodajem šećer u kavu.;Dodaję cukier do kawy.;NO;;HR_2001_2500 verb food
+2135;zmniejszać (odjąć);oduzeti;verb;1. os.: oduzmem;Oduzmi dva od pet.;Odejmij dwa od pięciu.;NO;;HR_2001_2500 verb
+2136;odbijać (od siebie);odbijati se;verb;1. os.: odbijam se;Zvuk se odbija od zida.;Dźwięk odbija się od ściany.;NO;;HR_2001_2500 verb
+2137;prowadzić auto (impf);voziti auto;phrase;voziti - vozim;Vozim auto svaki dan.;Prowadzę samochód codziennie.;NO;;HR_2001_2500 phrase transportation
+2138;jeździć na rowerze;voziti bicikl;phrase;;Vozim bicikl vikendom.;Jeżdżę na rowerze w weekendy.;NO;;HR_2001_2500 phrase
+2139;chodzić pieszo;hodati pješice;phrase;;Hodamo pješice do posla.;Chodzimy pieszo do pracy.;NO;;HR_2001_2500 phrase transportation
+2140;biec (dokoń.);otrčati;verb;1. os.: otrčim;Otrčao je po kruh.;Pobiegł po chleb.;NO;;HR_2001_2500 verb
+2141;wskakiwać;skakati;verb;1. os.: skačem;Skače u vodu.;Skacze do wody.;NO;;HR_2001_2500 verb
+2142;skoczyć;skočiti;verb;1. os.: skočim;Skoči preko potoka.;Przeskocz przez strumień.;NO;;HR_2001_2500 verb
+2143;lecieć;letjeti;verb;1. os.: letim;Ptica leti visoko.;Ptak leci wysoko.;NO;;HR_2001_2500 verb
+2144;nurkować;roniti;verb;1. os.: ronim;Roni s bocom.;Nurkuje z butlą.;NO;;HR_2001_2500 verb travel
+2145;jeździć konno;jahati;verb;1. os.: jašem;Jašem konja.;Jeżdżę konno.;NO;;HR_2001_2500 verb
+2146;jeździć na nartach;skijati se;verb;1. os.: skijam se;Skijamo se u Sloveniji.;Jeździmy na nartach w Słowenii.;NO;;HR_2001_2500 verb
+2147;kręcić;okretati;verb;1. os.: okrećem;Okrećem volan.;Kręcę kierownicą.;NO;;HR_2001_2500 verb transportation
+2148;obracać się;okretati se;verb;1. os.: okrećem se;Okreće se prema meni.;Obraca się do mnie.;NO;;HR_2001_2500 verb
+2149;kierować (samochodem);upravljati;verb;1. os.: upravljam - + instrumental;Upravljam autom.;Kieruję samochodem.;NO;;HR_2001_2500 verb transportation
+2150;łapać;hvatati;verb;1. os.: hvatam;Hvatam vlak u sedam.;Łapię pociąg o siódmej.;NO;;HR_2001_2500 verb transportation
+2151;rzucać;bacati;verb;1. os.: bacam;Ne bacaj smeće na pod.;Nie rzucaj śmieci na podłogę.;NO;;HR_2001_2500 verb
+2152;podnosić (ciężar);dizati;verb;1. os.: dižem;Dižem torbu.;Podnoszę torbę.;NO;;HR_2001_2500 verb
+2153;łamać;lomiti;verb;1. os.: lomim;Lomi grančice.;Łamie gałązki.;NO;;HR_2001_2500 verb
+2154;prostować;ispravljati;verb;1. os.: ispravljam;Ispravljam pogreške.;Poprawiam błędy.;NO;;HR_2001_2500 verb
+2155;wyginać;savijati;verb;1. os.: savijam;Savija žicu.;Wygina drut.;NO;;HR_2001_2500 verb
+2156;wygląda;izgleda;verb;3. os.: izgleda - często bezosobowo;Izgleda umorno.;Wygląda na zmęczonego.;NO;;HR_2001_2500 verb
+2157;wyglądać (jak);izgledati;verb;1. os.: izgledam;Izgledaš dobro.;Wyglądasz dobrze.;NO;;HR_2001_2500 verb
+2158;pojawiać (przedmiot);pokazivati;verb;1. os.: pokazujem;Pokazujem ti fotografiju.;Pokazuję ci zdjęcie.;NO;;HR_2001_2500 verb
+2159;dotykać;dotaknuti;verb;1. os.: dotaknem;Nemoj dotaknuti.;Nie dotykaj.;NO;;HR_2001_2500 verb
+2160;liczyć na;računati na;phrase;+ akuzativ;Računam na tebe.;Liczę na ciebie.;NO;;HR_2001_2500 phrase
+2161;chwalić się;hvaliti se;verb;1. os.: hvalim se;Hvali se svojim uspjehom.;Chwali się swoim sukcesem.;NO;;HR_2001_2500 verb
+2162;zajmować (miejsce);zauzimati;verb;1. os.: zauzimam;Zauzima cijeli stol.;Zajmuje cały stół.;NO;;HR_2001_2500 verb
+2163;zająć się (zajęciem);baviti se;verb;1. os.: bavim se + instr.;Bavim se sportom.;Zajmuję się sportem.;NO;;HR_2001_2500 verb
+2164;omawiać;prodiskutirati;verb;1. os.: prodiskutiram;Prodiskutirat ćemo detalje.;Omówimy szczegóły.;NO;;HR_2001_2500 verb work
+2165;wspominać (przypomnieć);podsjećati;verb;1. os.: podsjećam;Podsjećam te na sastanak.;Przypominam ci o spotkaniu.;NO;;HR_2001_2500 verb work
+2166;doświadczać;doživljavati;verb;1. os.: doživljavam;Doživljavam stres.;Doświadczam stresu.;NO;;HR_2001_2500 verb
+2167;doświadczyć;doživjeti;verb;1. os.: doživim;Doživjeli su avanturu.;Przeżyli przygodę.;NO;;HR_2001_2500 verb travel
+2168;przeżyć (zdarzenie);preživjeti;verb;1. os.: preživim;Preživio je nesreću.;Przeżył wypadek.;NO;;HR_2001_2500 verb
+2169;doświadczenie (przeżycie);doživljaj;noun;rodzaj męski - mn. doživljaji;Bio je to poseban doživljaj.;To było wyjątkowe przeżycie.;NO;;HR_2001_2500 noun
+2170;wykonywać;izvoditi;verb;1. os.: izvodim;Izvodim vježbe.;Wykonuję ćwiczenia.;NO;;HR_2001_2500 verb
+2171;wykonać;izvesti;verb;1. os.: izvedem;Izveo je posao.;Wykonał pracę.;NO;;HR_2001_2500 verb work
+2172;spełniać (obietnicę);ispunjavati;verb;1. os.: ispunjavam;Ispunjava obećanja.;Spełnia obietnice.;NO;;HR_2001_2500 verb
+2173;wypełniać (formularz);popunjavati;verb;1. os.: popunjavam;Popunjavam obrazac.;Wypełniam formularz.;NO;;HR_2001_2500 verb work
+2174;należyć (być winnym);dugovati;verb;1. os.: dugujem;Dugujem ti pet eura.;Jestem ci winien pięć euro.;NO;;HR_2001_2500 verb shopping
+2175;kraść;krasti;verb;1. os.: kradem;Netko krade s police.;Ktoś kradnie z półki.;NO;;HR_2001_2500 verb
+2176;mówić prawdę;govoriti istinu;phrase;;Govori istinu uvijek.;Mów zawsze prawdę.;NO;;HR_2001_2500 phrase conversation
+2177;dowodzić;dokazivati;verb;1. os.: dokazujem;Dokazuje da je nedužan.;Dowodzi że jest niewinny.;NO;;HR_2001_2500 verb
+2178;udowodnić;dokazati;verb;1. os.: dokažem;Dokazao je teoriju.;Udowodnił teorię.;NO;;HR_2001_2500 verb
+2179;zgadywać;pogađati;verb;1. os.: pogađam;Pogađam odgovor.;Zgaduję odpowiedź.;NO;;HR_2001_2500 verb
+2180;zgadnąć;pogoditi;verb;1. os.: pogodim;Pogodio je broj.;Zgadł numer.;NO;;HR_2001_2500 verb
+2181;porazić (uderzyć);pogoditi;verb;1. os.: pogodim - też: trafić;Grom je pogodio drvo.;Piorun uderzył w drzewo.;NO;;HR_2001_2500 verb
+2182;nauczyć się;naučiti;verb;1. os.: naučim - dokonany;Naučila je pjesmu.;Nauczyła się piosenki.;NO;;HR_2001_2500 verb
+2183;czuć;osjećati;verb;1. os.: osjećam;Osjećam bol.;Czuję ból.;NO;;HR_2001_2500 verb
+2184;odczuwać;doživljavati;verb;patrz doživljavati - osjećati emocionalno;Doživljavam sve intenzivno.;Odczuwam wszystko intensywnie.;NO;;HR_2001_2500 verb
+2185;przyzwyczaić się;priviknuti se;verb;1. os.: priviknem se;Privikli smo se brzo.;Przyzwyczailiśmy się szybko.;NO;;HR_2001_2500 verb
+2186;odzwyczaić się;odviknuti se;verb;1. os.: odviknem se;Odviknuo se od cigareta.;Odzwyczaił się od papierosów.;NO;;HR_2001_2500 verb
+2187;próbować (impf);probavati;verb;1. os.: probavam;Probavam nova jela.;Próbuję nowych potraw.;NO;;HR_2001_2500 verb food
+2188;kłaść (impf);stavljati;verb;1. os.: stavljam;Stavljam torbu na stol.;Kładę torbę na stole.;NO;;HR_2001_2500 verb home
+2189;usypiać (kogoś);uspavati;verb;1. os.: uspavam;Uspavljujem dijete.;Usypiam dziecko.;NO;;HR_2001_2500 verb
+2190;budzić (kogoś);buditi;verb;1. os.: budim;Budim djecu za školu.;Budzę dzieci do szkoły.;NO;;HR_2001_2500 verb people
+2191;obudzić się;probuditi se;verb;1. os.: probudim se;Probudio sam se rano.;Obudziłem się wcześnie.;NO;;HR_2001_2500 verb
+2192;podobać się (mniej mocno);sviđati se;verb;1. os.: sviđam se - komu;Sviđa mi se pjesma.;Podoba mi się piosenka.;NO;;HR_2001_2500 verb
+2193;nie znosić;mrziti;verb;1. os.: mrzim - też: nienawidzić;Mrzim gužve.;Nie znoszę tłumów.;NO;;HR_2001_2500 verb
+2194;woleć (formalne);preferirati;verb;1. os.: preferiram;Preferiram planinu od mora.;Preferuję góry od morza.;NO;;HR_2001_2500 verb
+2195;zwyciężać;pobjeđivati;verb;1. os.: pobjeđujem;Pobjeđujemo u prvenstvu.;Zwyciężamy w mistrzostwach.;NO;;HR_2001_2500 verb
+2196;podać (potrawę);poslužiti;verb;1. os.: poslužim;Poslužit ću ručak.;Podam obiad.;NO;;HR_2001_2500 verb food
+2197;usługiwać (obsługiwać);posluživati;verb;1. os.: poslužujem;Posluživanje traje deset minuta.;Obsługa trwa dziesięć minut.;NO;;HR_2001_2500 verb
+2198;obsługiwać (klienta);uslužiti;verb;1. os.: uslužim;Konobar nas usluži.;Kelner nas obsługuje.;NO;;HR_2001_2500 verb food work
+2199;zamawiać jedzenie;naručiti jelo;phrase;;Naruči mi pizzu.;Zamów mi pizzę.;NO;;HR_2001_2500 phrase food
+2200;wybierać;birati;verb;patrz birati - może brać;Biramo predsjednika.;Wybieramy prezydenta.;NO;;HR_2001_2500 verb
+2201;głosować;glasati;verb;1. os.: glasam - za koga;Glasat ćemo za kandidata.;Będziemy głosować na kandydata.;NO;;HR_2001_2500 verb
+2202;wygrać (wybory);pobijediti na izborima;phrase;;Pobijedili su na izborima.;Wygrali wybory.;NO;;HR_2001_2500 phrase
+2203;rządzić;vladati;verb;1. os.: vladam;Vladaju već desetljećima.;Rządzą już dziesięcioleciami.;NO;;HR_2001_2500 verb
+2204;grozić;prijetiti;verb;1. os.: prijetim - komu;Ne prijeti mi.;Nie groź mi.;NO;;HR_2001_2500 verb
+2205;bać się (perf);uplašiti se;verb;1. os.: uplašim se;Uplašio sam se buke.;Przestraszyłem się hałasu.;NO;;HR_2001_2500 verb
+2206;straszyć;plašiti;verb;1. os.: plašim;Ne plaši djecu.;Nie strasz dzieci.;NO;;HR_2001_2500 verb
+2207;kochać się;voljeti se;verb;1. os.: volimo se;Volimo se već godinama.;Kochamy się już od lat.;NO;;HR_2001_2500 verb people
+2208;żenić się;ženiti se;verb;1. os.: ženim se - męski;Ženim se u lipnju.;Żenię się w czerwcu.;NO;;HR_2001_2500 verb people
+2209;wychodzić za mąż;udavati se;verb;1. os.: udajem se - żeński;Udaje se u srpnju.;Wychodzi za mąż w lipcu.;NO;;HR_2001_2500 verb people
+2210;wziąć ślub;vjenčati se;verb;1. os.: vjenčam se;Vjenčali su se prošlog ljeta.;Wzięli ślub zeszłego lata.;NO;;HR_2001_2500 verb people
+2211;rozwodzić się;razvoditi se;verb;1. os.: razvodim se;Razvodi se od muža.;Rozwodzi się z mężem.;NO;;HR_2001_2500 verb people
+2212;rozwód;razvod;noun;rodzaj męski;Razvod nije bio lak.;Rozwód nie był łatwy.;NO;;HR_2001_2500 noun people
+2213;ślub;vjenčanje;noun;rodzaj nijaki;Vjenčanje je bilo maleno.;Ślub był mały.;NO;;HR_2001_2500 noun people
+2214;narzeczony;zaručnik;noun;rodzaj męski;Moj zaručnik dolazi večeras.;Mój narzeczony przyjeżdża wieczorem.;NO;;HR_2001_2500 noun people
+2215;narzeczona;zaručnica;noun;rodzaj żeński;Njegova zaručnica je liječnica.;Jego narzeczona jest lekarką.;NO;;HR_2001_2500 noun people
+2216;bliźniak;blizanac;noun;rodzaj męski - mn. blizanci;Imamo blizance.;Mamy bliźniaków.;NO;;HR_2001_2500 noun people
+2217;tata (potocznie);tata;noun;rodzaj męski - potocznie;Tata dolazi kasnije.;Tata przyjedzie później.;NO;;HR_2001_2500 noun people
+2218;mama (potocznie);mama;noun;rodzaj żeński - potocznie;Mama kuha ručak.;Mama gotuje obiad.;NO;;HR_2001_2500 noun people
+2219;rodzice;roditelji;noun;liczba mnoga - mn. roditelji;Roditelji su na moru.;Rodzice są nad morzem.;NO;;HR_2001_2500 noun people
+2220;wnuk;unuk;noun;rodzaj męski - mn. unuci;Unuk ide u prvi razred.;Wnuk idzie do pierwszej klasy.;NO;;HR_2001_2500 noun people
+2221;wnuczka;unuka;noun;rodzaj żeński;Unuka svira klavir.;Wnuczka gra na fortepianie.;NO;;HR_2001_2500 noun people
+2222;siostrzeniec;nećak;noun;rodzaj męski - też bratanek;Nećak ima pet godina.;Siostrzeniec ma pięć lat.;NO;;HR_2001_2500 noun people
+2223;siostrzenica;nećakinja;noun;rodzaj żeński;Nećakinja živi u Rijeci.;Siostrzenica mieszka w Rijece.;NO;;HR_2001_2500 noun people
+2224;kuzyn;bratić;noun;rodzaj męski - mn. bratići;Bratić dolazi na svadbu.;Kuzyn przyjeżdża na wesele.;NO;;HR_2001_2500 noun people
+2225;kuzynka;sestrična;noun;rodzaj żeński;Sestrična se udaje.;Kuzynka wychodzi za mąż.;NO;;HR_2001_2500 noun people
+2226;teść;svekar;noun;rodzaj męski - ojciec męża;Svekar mi je drag.;Teść jest mi drogi.;NO;;HR_2001_2500 noun people
+2227;teściowa;svekrva;noun;rodzaj żeński - matka męża;Svekrva kuha najbolje.;Teściowa gotuje najlepiej.;NO;;HR_2001_2500 noun people
+2228;teść (ojciec żony);tast;noun;rodzaj męski - ojciec żony;Tast je iz Zagreba.;Teść jest z Zagrzebia.;NO;;HR_2001_2500 noun people
+2229;teściowa (matka żony);punica;noun;rodzaj żeński - matka żony;Punica čuva unuke.;Teściowa opiekuje się wnukami.;NO;;HR_2001_2500 noun people
+2230;zięć;zet;noun;rodzaj męski;Zet nam pomaže oko kuće.;Zięć pomaga nam przy domu.;NO;;HR_2001_2500 noun people
+2231;synowa;snaha;noun;rodzaj żeński;Snaha je liječnica.;Synowa jest lekarką.;NO;;HR_2001_2500 noun people
+2232;szwagier;šogor;noun;rodzaj męski;Šogor mi pomaže.;Szwagier mi pomaga.;NO;;HR_2001_2500 noun people
+2233;szwagierka;šogorica;noun;rodzaj żeński;Šogorica čeka bebu.;Szwagierka czeka dziecka.;NO;;HR_2001_2500 noun people
+2234;narodowość;narodnost;noun;rodzaj żeński;Koje si narodnosti?;Jakiej jesteś narodowości?;NO;;HR_2001_2500 noun people
+2235;obywatel;građanin;noun;rodzaj męski - mn. građani;Građani plaćaju porez.;Obywatele płacą podatek.;NO;;HR_2001_2500 noun people
+2236;skomplikowany;kompliciran;adjective;ž. komplicirana;Situacija je komplicirana.;Sytuacja jest skomplikowana.;NO;;HR_2001_2500 adjective
+2237;łatwy;lak;adjective;ž. laka - też: lagan;Ispit je bio lak.;Egzamin był łatwy.;NO;;HR_2001_2500 adjective
+2238;niemożliwy;nemoguć;adjective;ž. nemoguća;To je nemoguće.;To jest niemożliwe.;NO;;HR_2001_2500 adjective
+2239;niepotrzebny;nepotreban;adjective;ž. nepotrebna;Ovo je nepotrebno.;To jest niepotrzebne.;NO;;HR_2001_2500 adjective
+2240;normalny;normalan;adjective;ž. normalna;To je normalno stanje.;To normalny stan.;NO;;HR_2001_2500 adjective
+2241;nienormalny;nenormalan;adjective;ž. nenormalna;Situacija je nenormalna.;Sytuacja jest nienormalna.;NO;;HR_2001_2500 adjective
+2242;fałszywy;lažan;adjective;ž. lažna;Ovo je lažna vijest.;To fałszywa wiadomość.;NO;;HR_2001_2500 adjective media
+2243;kwadratowy;kvadratni;adjective;ž. kvadratna;Kutija je kvadratna.;Pudełko jest kwadratowe.;NO;;HR_2001_2500 adjective
+2244;stromy;strm;adjective;ž. strma;Cesta je strma.;Droga jest stroma.;NO;;HR_2001_2500 adjective transportation
+2245;miękki;mekan;adjective;ž. mekana;Kruh je mekan.;Chleb jest miękki.;NO;;HR_2001_2500 adjective food
+2246;twardy;tvrd;adjective;ž. tvrda;Krevet je tvrd.;Łóżko jest twarde.;NO;;HR_2001_2500 adjective home
+2247;cienki;tanak;adjective;ž. tanka;Papir je tanak.;Papier jest cienki.;NO;;HR_2001_2500 adjective
+2248;ostry (nóż);oštar;adjective;ž. oštra;Nož je oštar.;Nóż jest ostry.;NO;;HR_2001_2500 adjective home
+2249;tępy;tup;adjective;ž. tupa;Olovka je tupa.;Ołówek jest tępy.;NO;;HR_2001_2500 adjective
+2250;gorzki;gorak;adjective;ž. gorka;Kava je gorka.;Kawa jest gorzka.;NO;;HR_2001_2500 adjective food
+2251;stary (nieświeży);ustajao;adjective;ž. ustajala;Kruh je ustajao.;Chleb jest czerstwy.;NO;;HR_2001_2500 adjective food
+2252;niespokojny;nemiran;adjective;ž. nemirna;Dijete je nemirno.;Dziecko jest niespokojne.;NO;;HR_2001_2500 adjective people
+2253;głośny;bučan;adjective;ž. bučna;Restoran je bučan.;Restauracja jest głośna.;NO;;HR_2001_2500 adjective food
+2254;biedny (nieszczęsny);jadan;adjective;ž. jadna;Jadan dječak plače.;Biedny chłopiec płacze.;NO;;HR_2001_2500 adjective people
+2255;wściekły;bijesan;adjective;ž. bijesna;Bijesan je na sve.;Wściekły jest na wszystkich.;NO;;HR_2001_2500 adjective emotions
+2256;wypoczęty;odmoran;adjective;ž. odmorna;Odmoran sam nakon spavanja.;Wypoczęty jestem po śnie.;NO;;HR_2001_2500 adjective
+2257;syty (najedzony);sit;adjective;ž. sita;Sit sam ne mogu više.;Najedzony jestem nie mogę więcej.;NO;;HR_2001_2500 adjective food
+2258;spragniony;žedan;adjective;ž. žedna;Žedan sam vode.;Spragniony jestem wody.;NO;;HR_2001_2500 adjective
+2259;trzeźwy;trijezan;adjective;ž. trijezna;Trijezan je za volanom.;Trzeźwy jest za kierownicą.;NO;;HR_2001_2500 adjective transportation
+2260;ciekawy;znatiželjan;adjective;ž. znatiželjna;Djeca su znatiželjna.;Dzieci są ciekawe.;NO;;HR_2001_2500 adjective people
+2261;zabawny;zabavan;adjective;ž. zabavna;Film je zabavan.;Film jest zabawny.;NO;;HR_2001_2500 adjective media
+2262;piękny;prekrasan;adjective;ž. prekrasna - też: divan;Zalazak je prekrasan.;Zachód jest przepiękny.;NO;;HR_2001_2500 adjective
+2263;żywy (ożywiony);živ;adjective;ž. živa;Grad je živ noću.;Miasto jest żywe nocą.;NO;;HR_2001_2500 adjective
+2264;martwy;mrtav;adjective;ž. mrtva;Baterija je mrtva.;Bateria jest martwa.;NO;;HR_2001_2500 adjective
+2265;głuchy;gluh;adjective;ž. gluha;Gluh je od buke.;Głuchy jest od hałasu.;NO;;HR_2001_2500 adjective
+2266;ślepy;slijep;adjective;ž. slijepa;Slijep na jedno oko.;Ślepy na jedno oko.;NO;;HR_2001_2500 adjective
+2267;niemy;nijem;adjective;ž. nijema;Nijem od šoka.;Niemy od szoku.;NO;;HR_2001_2500 adjective
+2268;niepełnosprawny;osoba s invaliditetom;phrase;często parafraza;Rampa je za osobe s invaliditetom.;Rampa jest dla osób niepełnosprawnych.;NO;;HR_2001_2500 phrase people
+2269;pełny (nasycony);sit;adjective;patrz sit - też najedzony;Sit sam bio na proslavi.;Najedzony byłem na uroczystości.;NO;;HR_2001_2500 adjective food
+2270;samotny;usamljen;adjective;ž. usamljena;Usamljen sam večeras.;Samotny jestem dziś wieczorem.;NO;;HR_2001_2500 adjective emotions
+2271;najgorszy;najgori;adjective;superlativ od loš;Najgori dan u godini.;Najgorszy dzień w roku.;NO;;HR_2001_2500 adjective
+2272;najważniejszy;najvažniji;adjective;superlativ od važan;Najvažnija stvar je zdravlje.;Najważniejsza rzecz to zdrowie.;NO;;HR_2001_2500 adjective
+2273;średni;srednji;adjective;ž. srednja;Srednja plaća raste.;Średnia płaca rośnie.;NO;;HR_2001_2500 adjective work
+2274;podstawowy;osnovni;adjective;ž. osnovna;Osnovna škola je obavezna.;Szkoła podstawowa jest obowiązkowa.;NO;;HR_2001_2500 adjective
+2275;niezbędny;neophodan;adjective;ž. neophodna;Voda je neophodna.;Woda jest niezbędna.;NO;;HR_2001_2500 adjective
+2276;boczny;bočni;adjective;ž. bočna;Bočna ulica je pusta.;Boczna ulica jest pusta.;NO;;HR_2001_2500 adjective travel
+2277;prywatny;privatan;adjective;ž. privatna;Privatan smještaj je jeftin.;Prywatne zakwaterowanie jest tańsze.;NO;;HR_2001_2500 adjective travel
+2278;publiczny;javan;adjective;ž. javna;Javna cesta.;Publiczna droga.;NO;;HR_2001_2500 adjective transportation
+2279;osobisty;osoban;adjective;ž. osobna;Osobna iskaznica je važna.;Dowód osobisty jest ważny.;NO;;HR_2001_2500 adjective
+2280;narodowy;nacionalni;adjective;ž. nacionalna;Nacionalni park Plitvice.;Park narodowy Plitvice.;NO;;HR_2001_2500 adjective travel
+2281;międzynarodowy;međunarodni;adjective;ž. međunarodna;Međunarodni aerodrom.;Międzynarodowe lotnisko.;NO;;HR_2001_2500 adjective travel
+2282;lokalny;lokalni;adjective;ž. lokalna;Lokalni običaj je zanimljiv.;Lokalny zwyczaj jest interesujący.;NO;;HR_2001_2500 adjective
+2283;globalny;globalni;adjective;ž. globalna;Globalno zatopljenje raste.;Globalne ocieplenie rośnie.;NO;;HR_2001_2500 adjective
+2284;codzienny;svakodnevni;adjective;ž. svakodnevna;Svakodnevni život može biti dosadan.;Codzienne życie może być nudne.;NO;;HR_2001_2500 adjective
+2285;tygodniowy;tjedni;adjective;ž. tjedna;Tjedni sastanak je u ponedjeljak.;Tygodniowe spotkanie jest w poniedziałek.;NO;;HR_2001_2500 adjective work
+2286;miesięczny;mjesečni;adjective;ž. mjesečna;Mjesečna karta je jeftinija.;Miesięczny bilet jest tańszy.;NO;;HR_2001_2500 adjective transportation
+2287;roczny;godišnji;adjective;ž. godišnja;Godišnji odmor traje tri tjedna.;Roczny urlop trwa trzy tygodnie.;NO;;HR_2001_2500 adjective work
+2288;niegotowy;nespreman;adjective;ž. nespremna;Nespremni smo za putovanje.;Niegotowi jesteśmy do podróży.;NO;;HR_2001_2500 adjective travel
+2289;dawny;bivši;adjective;ž. bivša - też: były;Bivši predsjednik.;Były prezydent.;NO;;HR_2001_2500 adjective
+2290;obecny;sadašnji;adjective;ž. sadašnja;Sadašnja situacija je bolja.;Obecna sytuacja jest lepsza.;NO;;HR_2001_2500 adjective
+2291;przyszły;budući;adjective;ž. buduća;Budući plan je ambiciozan.;Przyszły plan jest ambitny.;NO;;HR_2001_2500 adjective work
+2292;przeszły (miniony);prošli;adjective;ž. prošla;Prošli tjedan sam bio bolestan.;W zeszłym tygodniu byłem chory.;NO;;HR_2001_2500 adjective time
+2293;wczesny;ran;adjective;ž. rana;Ran dolazak je važan.;Wczesne przybycie jest ważne.;NO;;HR_2001_2500 adjective
+2294;późny;kasan;adjective;ž. kasna;Kasan sat je za spavanje.;Późna godzina jest do spania.;NO;;HR_2001_2500 adjective time
+2295;dobrze;dobro;adverb;;Dobro sam se osjećao.;Dobrze się czułem.;NO;;HR_2001_2500 adverb
+2296;źle;loše;adverb;;Loše spavam.;Źle śpię.;NO;;HR_2001_2500 adverb
+2297;lepiej;bolje;adverb;komparativ od dobro;Danas se osjećam bolje.;Dzisiaj czuję się lepiej.;NO;;HR_2001_2500 adverb
+2298;późno;kasno;adverb;;Kasno spavam.;Późno śpię.;NO;;HR_2001_2500 adverb time
+2299;codziennie;svaki dan;phrase;też: svakodnevno;Svaki dan trčim.;Codziennie biegam.;NO;;HR_2001_2500 phrase
+2300;wszędzie;posvuda;adverb;też: svugdje;Posvuda ima cvijeća.;Wszędzie są kwiaty.;NO;;HR_2001_2500 adverb
+2301;nigdzie;nigdje;adverb;;Nigdje ne mogu naći.;Nigdzie nie mogę znaleźć.;NO;;HR_2001_2500 adverb
+2302;gdzieś;negdje;adverb;;Ostavio sam ključ negdje.;Zostawiłem klucz gdzieś.;NO;;HR_2001_2500 adverb
+2303;żaden;nijedan;pronoun;też przymiotnik;Nijedan nije došao.;Żaden nie przyszedł.;NO;;HR_2001_2500 pronoun
+2304;jaki;kakav;pronoun;ž. kakva;Kakav dan?;Jaki dzień?;NO;;HR_2001_2500 pronoun
+2305;tyle;toliko;pronoun;też przysłówek;Toliko sam umoran.;Tak bardzo jestem zmęczony.;NO;;HR_2001_2500 pronoun
+2306;bardzo;jako;adverb;też: vrlo;Jako mi je drago.;Bardzo miło mi.;NO;;HR_2001_2500 adverb
+2307;dosyć;dosta;adverb;też: dovoljno;Dosta smo se namučili.;Dosyć się natrudziliśmy.;NO;;HR_2001_2500 adverb
+2308;za mało;premalo;adverb;;Premalo spavaš.;Za mało śpisz.;NO;;HR_2001_2500 adverb
+2309;prawie;skoro;adverb;też: gotovo;Skoro je ponoć.;Prawie jest północ.;NO;;HR_2001_2500 adverb time
+2310;prosto (wprost);izravno;adverb;też: direktno;Reci izravno.;Powiedz wprost.;NO;;HR_2001_2500 adverb conversation
+2311;pośrednio;posredno;adverb;;Posredno je uključen.;Pośrednio jest zaangażowany.;NO;;HR_2001_2500 adverb
+2312;osobiście;osobno;adverb;;Osobno ću provjeriti.;Osobiście sprawdzę.;NO;;HR_2001_2500 adverb
+2313;wzajemnie;međusobno;adverb;;Međusobno se pomažemo.;Wzajemnie się pomagamy.;NO;;HR_2001_2500 adverb
+2314;na zewnątrz;izvana;adverb;;Izvana je hladno.;Na zewnątrz jest zimno.;NO;;HR_2001_2500 adverb
+2315;wewnątrz;iznutra;adverb;;Iznutra je toplo.;Wewnątrz jest ciepło.;NO;;HR_2001_2500 adverb home
+2316;na środku;na sredini;phrase;;Auto stoji na sredini ceste.;Samochód stoi na środku drogi.;NO;;HR_2001_2500 phrase transportation
+2317;na krawędzi;na rubu;phrase;;Na rubu stola.;Na krawędzi stołu.;NO;;HR_2001_2500 phrase
+2318;wokół;okolo;adverb;też: przyimek + gen.;Okolo kuće je vrt.;Wokół domu jest ogród.;NO;;HR_2001_2500 adverb home
+2319;wcześniej;prije;preposition;+ genitiv;Prije podneva idem u banku.;Przed południem idę do banku.;NO;;HR_2001_2500 preposition time
+2320;po chwili;nakon nekog vremena;phrase;;Nakon nekog vremena je došao.;Po chwili przyszedł.;NO;;HR_2001_2500 phrase time
+2321;nagle;iznenada;adverb;też: naglo;Iznenada je nestala struja.;Nagle zniknął prąd.;NO;;HR_2001_2500 adverb home
+2322;niespodziewanie;neočekivano;adverb;;Neočekivano se pojavio.;Niespodziewanie się pojawił.;NO;;HR_2001_2500 adverb
+2323;łatwo (bez trudu);bez muke;phrase;;Bez muke sam našao.;Bez trudu znalazłem.;NO;;HR_2001_2500 phrase
+2324;z trudem;s mukom;phrase;;S mukom sam ustao.;Z trudem wstałem.;NO;;HR_2001_2500 phrase
+2325;chętnie;rado;adverb;;Rado ću pomoći.;Chętnie pomogę.;NO;;HR_2001_2500 adverb
+2326;niechętnie;nerado;adverb;;Nerado se druži s njima.;Niechętnie się z nimi spotyka.;NO;;HR_2001_2500 adverb people
+2327;spokojnie;mirno;adverb;;Mirno spavaj.;Spokojnie śpij.;NO;;HR_2001_2500 adverb
+2328;nerwowo;nervozno;adverb;;Nervozno hoda po sobi.;Nerwowo chodzi po pokoju.;NO;;HR_2001_2500 adverb home
+2329;grzecznie;pristojno;adverb;;Pristojno odgovaraj.;Grzecznie odpowiadaj.;NO;;HR_2001_2500 adverb conversation
+2330;niegrzecznie;nepristojno;adverb;;Nepristojno mi je rekao.;Niegrzecznie mi powiedział.;NO;;HR_2001_2500 adverb
+2331;ostrożnie;pažljivo;adverb;też: uważnie;Pažljivo prelazi cestu.;Ostrożnie przechodź drogę.;NO;;HR_2001_2500 adverb transportation
+2332;nieostrożnie;nepažljivo;adverb;;Nepažljivo vozi.;Nieostrożnie prowadzi.;NO;;HR_2001_2500 adverb transportation
+2333;głupio;glupo;adverb;;Glupo sam se ponašao.;Głupio się zachowałem.;NO;;HR_2001_2500 adverb
+2334;mądrze;pametno;adverb;;Pametno odluči.;Mądrze zdecyduj.;NO;;HR_2001_2500 adverb
+2335;dokoła;uokolo;adverb;;Uokolo su brda.;Dookoła są góry.;NO;;HR_2001_2500 adverb
+2336;podobno;navodno;adverb;;Navodno se sele.;Podobno się przeprowadzają.;NO;;HR_2001_2500 adverb
+2337;widocznie;očigledno;adverb;też: očito;Očigledno je zaboravio.;Widocznie zapomniał.;NO;;HR_2001_2500 adverb
+2338;możliwie;po mogućnosti;phrase;;Po mogućnosti dođi ranije.;Możliwie przyjdź wcześniej.;NO;;HR_2001_2500 phrase
+2339;bezpłatnie;besplatno;adverb;;Ulaz je besplatan.;Wejście jest bezpłatne.;NO;;HR_2001_2500 adverb travel
+2340;odpłatnie;uz naplatu;phrase;;Parkiralište je uz naplatu.;Parking jest płatny.;NO;;HR_2001_2500 phrase transportation
+2341;chyba (może);valjda;adverb;;Valjda će doći.;Chyba przyjdzie.;NO;;HR_2001_2500 adverb
+2342;pomimo;unatoč;preposition;+ dativ;Unatoč kiši smo šetali.;Pomimo deszczu spacerowaliśmy.;NO;;HR_2001_2500 preposition
+2343;wśród;među;preposition;+ instrumental;Među prijateljima je najbolji.;Wśród przyjaciół jest najlepszy.;NO;;HR_2001_2500 preposition people
+2344;wzdłuż;duž;preposition;+ genitiv;Duž ceste su hoteli.;Wzdłuż drogi są hotele.;NO;;HR_2001_2500 preposition travel
+2345;jeśli (gdyby);kad bi;phrase;kondycjonał;Kad bih imao vremena došao bih.;Gdybym miał czas przyszedłbym.;NO;;HR_2001_2500 phrase
+2346;jak tylko;čim;conjunction;;Čim stigneš javi se.;Jak tylko dotrzesz daj znać.;NO;;HR_2001_2500 conjunction
+2347;zanim;prije nego što;phrase;;Prije nego što odeš zovi me.;Zanim wyjdziesz zadzwoń do mnie.;NO;;HR_2001_2500 phrase
+2348;po tym jak;nakon što;phrase;;Nakon što je otišao je ostalo tiho.;Po tym jak wyszedł zrobiło się cicho.;NO;;HR_2001_2500 phrase
+2349;dlatego że;zato što;phrase;;Zato što volim more.;Dlatego że kocham morze.;NO;;HR_2001_2500 phrase emotions
+2350;żeby (cel);kako bi;phrase;+ kondycjonał;Vježbam kako bih bio zdrav.;Ćwiczę żeby być zdrowym.;NO;;HR_2001_2500 phrase
+2351;na wypadek gdyby;u slučaju da;phrase;;Ponesi kišobran u slučaju da pada.;Weź parasol na wypadek gdyby padało.;NO;;HR_2001_2500 phrase
+2352;czyż nie;zar ne;phrase;pytanie retoryczne;Lijepo je zar ne?;Ładnie jest prawda?;NO;;HR_2001_2500 phrase conversation
+2353;a więc;dakle;particle;;Dakle idemo.;A więc idziemy.;NO;;HR_2001_2500 particle
+2354;jedynie;jedino;adverb;też: samo;Jedino ti razumiješ.;Jedynie ty rozumiesz.;NO;;HR_2001_2500 adverb people
+2355;głównie;uglavnom;adverb;;Uglavnom radim od doma.;Głównie pracuję z domu.;NO;;HR_2001_2500 adverb work
+2356;wyłącznie;isključivo;adverb;;Isključivo za članove.;Wyłącznie dla członków.;NO;;HR_2001_2500 adverb
+2357;temat;tema;noun;rodzaj żeński;Tema je zanimljiva.;Temat jest interesujący.;NO;;HR_2001_2500 noun
+2358;zamiar;namjera;noun;rodzaj żeński;Nemam takvu namjeru.;Nie mam takiego zamiaru.;NO;;HR_2001_2500 noun
+2359;pech;peh;noun;rodzaj męski;Peh je bio velik.;Pech był duży.;NO;;HR_2001_2500 noun
+2360;błąd;pogreška;noun;rodzaj żeński;Napravio sam pogrešku.;Zrobiłem błąd.;NO;;HR_2001_2500 noun
+2361;odwaga;hrabrost;noun;rodzaj żeński;Hrabrost je vrlina.;Odwaga to cnota.;NO;;HR_2001_2500 noun
+2362;nerwy;živci;noun;liczba mnoga - mn. živci;Živci su mi na kraju.;Nerwy mam na krawędzi.;NO;;HR_2001_2500 noun emotions
+2363;smutek;tuga;noun;rodzaj żeński;Tuga prolazi s vremenom.;Smutek mija z czasem.;NO;;HR_2001_2500 noun emotions
+2364;złość;bijes;noun;rodzaj męski - też: gniew;Bijes je nezdrav.;Złość jest niezdrowa.;NO;;HR_2001_2500 noun emotions
+2365;wstyd;sram;noun;rodzaj męski;Sram me je.;Wstyd mi.;NO;;HR_2001_2500 noun emotions
+2366;duma;ponos;noun;rodzaj męski;Ponos ne dopušta.;Duma nie pozwala.;NO;;HR_2001_2500 noun emotions
+2367;zazdrość;ljubomora;noun;rodzaj żeński;Ljubomora ruši veze.;Zazdrość niszczy związki.;NO;;HR_2001_2500 noun emotions
+2368;ciekawość;radoznalost;noun;rodzaj żeński;Radoznalost je čovjekova vrlina.;Ciekawość to zaleta człowieka.;NO;;HR_2001_2500 noun
+2369;dusza;duša;noun;rodzaj żeński;Duša mi je teška.;Dusza mi ciężka.;NO;;HR_2001_2500 noun
+2370;umysł;um;noun;rodzaj męski - też: pamet;Um je najveće bogatstvo.;Umysł to największe bogactwo.;NO;;HR_2001_2500 noun
+2371;rozum;razum;noun;rodzaj męski;Razum kaže ne.;Rozum mówi nie.;NO;;HR_2001_2500 noun
+2372;głupota;glupost;noun;rodzaj żeński;Ne pričaj gluposti.;Nie mów głupot.;NO;;HR_2001_2500 noun conversation
+2373;mądrość;mudrost;noun;rodzaj żeński;Mudrost dolazi s godinama.;Mądrość przychodzi z latami.;NO;;HR_2001_2500 noun
+2374;pamięć;pamćenje;noun;rodzaj nijaki;Pamćenje me izdaje.;Pamięć mnie zawodzi.;NO;;HR_2001_2500 noun
+2375;wyobraźnia;mašta;noun;rodzaj żeński;Djeca imaju bujnu maštu.;Dzieci mają bujną wyobraźnię.;NO;;HR_2001_2500 noun people
+2376;osobowość;osobnost;noun;rodzaj żeński;Ima jaku osobnost.;Ma silną osobowość.;NO;;HR_2001_2500 noun people
+2377;natura (charakter);priroda;noun;rodzaj żeński - też: przyroda;Takva mu je priroda.;Taka jego natura.;NO;;HR_2001_2500 noun
+2378;religia;religija;noun;rodzaj żeński;Religija je slobodna.;Religia jest wolna.;NO;;HR_2001_2500 noun
+2379;Bóg;Bog;noun;rodzaj męski;Neka ti Bog pomogne.;Niech Ci Bóg pomoże.;NO;;HR_2001_2500 noun
+2380;modlitwa;molitva;noun;rodzaj żeński;Molitva pomaže.;Modlitwa pomaga.;NO;;HR_2001_2500 noun
+2381;grzech;grijeh;noun;rodzaj męski;Grijeh ne oprašta se lako.;Grzech nie wybacza się łatwo.;NO;;HR_2001_2500 noun
+2382;anioł;anđeo;noun;rodzaj męski - mn. anđeli;Anđeo čuvar bdi nad nama.;Anioł stróż czuwa nad nami.;NO;;HR_2001_2500 noun
+2383;diabeł;vrag;noun;rodzaj męski - też: k vragu!;Idi k vragu.;Idź do diabła.;NO;;HR_2001_2500 noun
+2384;niebo (rajska sfera);raj;noun;rodzaj męski;Raj na zemlji.;Raj na ziemi.;NO;;HR_2001_2500 noun
+2385;piekło;pakao;noun;rodzaj męski;Pakao je bio ovaj dan.;Piekło było tego dnia.;NO;;HR_2001_2500 noun
+2386;czoło;čelo;noun;rodzaj nijaki;Čelo mu je vruće.;Czoło mu gorące.;NO;;HR_2001_2500 noun
+2387;ucho;uho;noun;rodzaj nijaki - mn. uši;Šapće mi na uho.;Szepcze mi do ucha.;NO;;HR_2001_2500 noun
+2388;nos;nos;noun;rodzaj męski - mn. nosovi;Nos mi curi.;Nos mi cieknie.;NO;;HR_2001_2500 noun
+2389;szyja;vrat;noun;rodzaj męski - też: kark;Vrat me boli.;Szyja mnie boli.;NO;;HR_2001_2500 noun
+2390;ramię;rame;noun;rodzaj nijaki - mn. ramena;Rame me boli.;Ramię mnie boli.;NO;;HR_2001_2500 noun
+2391;łokieć;lakat;noun;rodzaj męski - gen. lakta;Udario sam u lakat.;Uderzyłem w łokieć.;NO;;HR_2001_2500 noun
+2392;nadgarstek;zapešće;noun;rodzaj nijaki;Zapešće mi je natečeno.;Nadgarstek mi opuchnięty.;NO;;HR_2001_2500 noun
+2393;dłoń;dlan;noun;rodzaj męski;Dlan mi je vlažan.;Dłoń mam wilgotną.;NO;;HR_2001_2500 noun
+2394;kciuk;palac;noun;rodzaj męski - gen. palca;Palac gore.;Kciuk w górę.;NO;;HR_2001_2500 noun
+2395;paznokieć;nokat;noun;rodzaj męski - mn. nokti;Nokti moraju biti čisti.;Paznokcie muszą być czyste.;NO;;HR_2001_2500 noun
+2396;stopa;stopalo;noun;rodzaj nijaki;Stopalo me boli.;Stopa mnie boli.;NO;;HR_2001_2500 noun
+2397;pięta;peta;noun;rodzaj żeński;Peta me žulja.;Pięta mnie ociera.;NO;;HR_2001_2500 noun
+2398;kręgosłup;kičma;noun;rodzaj żeński - też: kralježnica;Kičma je stožer tijela.;Kręgosłup to podpora ciała.;NO;;HR_2001_2500 noun
+2399;płuca;pluća;noun;liczba mnoga - rodzaj nijaki;Pluća pune svježi zrak.;Płuca napełnia świeże powietrze.;NO;;HR_2001_2500 noun
+2400;żołądek;želudac;noun;rodzaj męski - gen. želuca;Boli me želudac.;Boli mnie żołądek.;NO;;HR_2001_2500 noun
+2401;wątroba;jetra;noun;rodzaj żeński - często w mn.;Alkohol šteti jetri.;Alkohol szkodzi wątrobie.;NO;;HR_2001_2500 noun
+2402;nerki;bubrezi;noun;liczba mnoga - mn. bubrezi;Bubrezi filtriraju krv.;Nerki filtrują krew.;NO;;HR_2001_2500 noun
+2403;mózg;mozak;noun;rodzaj męski - gen. mozga;Mozak radi cijelo vrijeme.;Mózg pracuje cały czas.;NO;;HR_2001_2500 noun
+2404;kość;kost;noun;rodzaj żeński - mn. kosti;Kost je slomljena.;Kość jest złamana.;NO;;HR_2001_2500 noun
+2405;pot;znoj;noun;rodzaj męski;Znoj se cijedi.;Pot się leje.;NO;;HR_2001_2500 noun
+2406;łza;suza;noun;rodzaj żeński;Suze radosnice.;Łzy radości.;NO;;HR_2001_2500 noun emotions
+2407;szum;šum;noun;rodzaj męski;Šum mora je opuštajući.;Szum morza jest kojący.;NO;;HR_2001_2500 noun
+2408;muzyka;muzika;noun;rodzaj żeński - też: glazba;Muzika je moj život.;Muzyka to moje życie.;NO;;HR_2001_2500 noun media
+2409;melodia;melodija;noun;rodzaj żeński;Melodija je poznata.;Melodia jest znajoma.;NO;;HR_2001_2500 noun media
+2410;instrument;instrument;noun;rodzaj męski;Sviram instrument.;Gram na instrumencie.;NO;;HR_2001_2500 noun media
+2411;gitara;gitara;noun;rodzaj żeński;Gitara zvuči lijepo.;Gitara brzmi ładnie.;NO;;HR_2001_2500 noun media
+2412;fortepian;klavir;noun;rodzaj męski;Sviram klavir od malena.;Gram na fortepianie od małego.;NO;;HR_2001_2500 noun media
+2413;skrzypce;violina;noun;rodzaj żeński;Violina je stara.;Skrzypce są stare.;NO;;HR_2001_2500 noun media
+2414;bęben;bubanj;noun;rodzaj męski - mn. bubnjevi;Bubanj daje ritam.;Bęben daje rytm.;NO;;HR_2001_2500 noun media
+2415;śpiew;pjevanje;noun;rodzaj nijaki;Pjevanje me smiruje.;Śpiew mnie uspokaja.;NO;;HR_2001_2500 noun media
+2416;grać (na instrumencie);svirati;verb;1. os.: sviram;Sviram gitaru.;Gram na gitarze.;NO;;HR_2001_2500 verb media
+2417;grać (rolę);glumiti;verb;1. os.: glumim;Glumi u novom filmu.;Gra w nowym filmie.;NO;;HR_2001_2500 verb media
+2418;występować;nastupati;verb;1. os.: nastupam;Nastupam večeras.;Występuję dziś wieczorem.;NO;;HR_2001_2500 verb
+2419;występ;nastup;noun;rodzaj męski;Nastup je bio odličan.;Występ był świetny.;NO;;HR_2001_2500 noun media
+2420;publiczność;publika;noun;rodzaj żeński;Publika je bila zadovoljna.;Publiczność była zadowolona.;NO;;HR_2001_2500 noun media
+2421;widz;gledatelj;noun;rodzaj męski - mn. gledatelji;Gledatelji plješću.;Widzowie klaszczą.;NO;;HR_2001_2500 noun media
+2422;słuchacz;slušatelj;noun;rodzaj męski;Slušatelji su lojalni.;Słuchacze są lojalni.;NO;;HR_2001_2500 noun media
+2423;autor;autor;noun;rodzaj męski;Autor je poznat.;Autor jest znany.;NO;;HR_2001_2500 noun media
+2424;poeta;pjesnik;noun;rodzaj męski;Pjesnik piše o ljubavi.;Poeta pisze o miłości.;NO;;HR_2001_2500 noun media
+2425;artysta;umjetnik;noun;rodzaj męski;Umjetnik izlaže radove.;Artysta wystawia prace.;NO;;HR_2001_2500 noun media
+2426;dzieło;djelo;noun;rodzaj nijaki;Djelo je remek-djelo.;Dzieło jest arcydziełem.;NO;;HR_2001_2500 noun media
+2427;malarstwo;slikarstvo;noun;rodzaj nijaki;Slikarstvo je moja strast.;Malarstwo to moja pasja.;NO;;HR_2001_2500 noun media
+2428;rzeźba;skulptura;noun;rodzaj żeński - też: kip;Skulptura je od bronce.;Rzeźba jest z brązu.;NO;;HR_2001_2500 noun media
+2429;scena;pozornica;noun;rodzaj żeński;Pozornica je osvijetljena.;Scena jest oświetlona.;NO;;HR_2001_2500 noun media
+2430;impreza (party);tulum;noun;rodzaj męski - potocznie: parti;Tulum je bio ludi.;Impreza była szalona.;NO;;HR_2001_2500 noun
+2431;dyskoteka;disco;noun;rodzaj męski;Idemo u disco.;Idziemy na dyskotekę.;NO;;HR_2001_2500 noun
+2432;klub (nocny);klub;noun;rodzaj męski;Klub radi do jutra.;Klub działa do rana.;NO;;HR_2001_2500 noun
+2433;bar;bar;noun;rodzaj męski;Bar je pun.;Bar jest pełny.;NO;;HR_2001_2500 noun food
+2434;pub;pab;noun;rodzaj męski - z angielskiego;Pab je uz obalu.;Pub jest przy brzegu.;NO;;HR_2001_2500 noun food
+2435;kawiarnia;kafić;noun;rodzaj męski - mn. kafići;Idemo u kafić na kavu.;Idziemy do kawiarni na kawę.;NO;;HR_2001_2500 noun food
+2436;piekarnia;pekarnica;noun;rodzaj żeński - też: pekara;Pekarnica radi od pet.;Piekarnia otwarta od piątej.;NO;;HR_2001_2500 noun food shopping
+2437;cukiernia;slastičarnica;noun;rodzaj żeński;Slastičarnica je puna djece.;Cukiernia jest pełna dzieci.;NO;;HR_2001_2500 noun food shopping
+2438;lodziarnia;slastičarnica;noun;patrz slastičarnica - też lody;Slastičarnica ima nove okuse.;Lodziarnia ma nowe smaki.;NO;;HR_2001_2500 noun food shopping
+2439;jagnięcina;janjetina;noun;rodzaj żeński;Janjetina se peče za blagdane.;Jagnięcina piecze się na święta.;NO;;HR_2001_2500 noun food
+2440;jajka (mnoga);jaja;noun;liczba mnoga - jednina: jaje;Jaja se peku na maslacu.;Jaja smażą się na maśle.;NO;;HR_2001_2500 noun food
+2441;olej;ulje;noun;rodzaj nijaki;Ulje je maslinovo.;Olej jest z oliwek.;NO;;HR_2001_2500 noun food
+2442;ocet;ocat;noun;rodzaj męski - gen. octa;Ocat je od jabuke.;Ocet jest z jabłek.;NO;;HR_2001_2500 noun food
+2443;musztarda;senf;noun;rodzaj męski;Senf uz kobasicu.;Musztarda do kiełbasy.;NO;;HR_2001_2500 noun food
+2444;ketchup;kečap;noun;rodzaj męski;Kečap za pomfrit.;Ketchup do frytek.;NO;;HR_2001_2500 noun food
+2445;majonez;majoneza;noun;rodzaj żeński;Majoneza je bijela.;Majonez jest biały.;NO;;HR_2001_2500 noun food
+2446;sos;umak;noun;rodzaj męski - gen. umaka;Umak je ljut.;Sos jest pikantny.;NO;;HR_2001_2500 noun food
+2447;przyprawa;začin;noun;rodzaj męski;Začin daje okus.;Przyprawa daje smak.;NO;;HR_2001_2500 noun food
+2448;pieprz;papar;noun;rodzaj męski - gen. papra;Papar je crni.;Pieprz jest czarny.;NO;;HR_2001_2500 noun food
+2449;bazylia;bosiljak;noun;rodzaj męski;Bosiljak uz rajčicu.;Bazylia z pomidorem.;NO;;HR_2001_2500 noun food
+2450;pietruszka;peršin;noun;rodzaj męski;Peršin je svjež.;Pietruszka jest świeża.;NO;;HR_2001_2500 noun food
+2451;koper;kopar;noun;rodzaj męski;Kopar uz krastavac.;Koper do ogórka.;NO;;HR_2001_2500 noun food
+2452;mąka;brašno;noun;rodzaj nijaki;Brašno je pšenično.;Mąka jest pszenna.;NO;;HR_2001_2500 noun food
+2453;drożdże;kvasac;noun;rodzaj męski - gen. kvasca;Kvasac diže tijesto.;Drożdże wyrastają ciasto.;NO;;HR_2001_2500 noun food
+2454;ciasto (masa);tijesto;noun;rodzaj nijaki;Tijesto se odmara.;Ciasto odpoczywa.;NO;;HR_2001_2500 noun food
+2455;dżem;pekmez;noun;rodzaj męski - też marmelada;Pekmez je od šljive.;Dżem jest ze śliwek.;NO;;HR_2001_2500 noun food
+2456;cukierek;bombon;noun;rodzaj męski;Bombon je za djecu.;Cukierek jest dla dzieci.;NO;;HR_2001_2500 noun food
+2457;tort;torta;noun;rodzaj żeński;Torta je za rođendan.;Tort jest na urodziny.;NO;;HR_2001_2500 noun food
+2458;pączek;krafna;noun;rodzaj żeński;Krafna je puna džemа.;Pączek jest pełen dżemu.;NO;;HR_2001_2500 noun food
+2459;pizza;pizza;noun;rodzaj żeński;Pizza s tunom.;Pizza z tuńczykiem.;NO;;HR_2001_2500 noun food
+2460;spaghetti;špageti;noun;liczba mnoga;Špageti bolonjez.;Spaghetti bolognese.;NO;;HR_2001_2500 noun food
+2461;szpinak;špinat;noun;rodzaj męski;Špinat je zdrav.;Szpinak jest zdrowy.;NO;;HR_2001_2500 noun food
+2462;groch;grašak;noun;rodzaj męski - gen. graška;Grašak je slatki.;Groch jest słodki.;NO;;HR_2001_2500 noun food
+2463;kukurydza;kukuruz;noun;rodzaj męski;Kukuruz je žut.;Kukurydza jest żółta.;NO;;HR_2001_2500 noun food
+2464;wiśnia;višnja;noun;rodzaj żeński;Višnja je kisela.;Wiśnia jest kwaśna.;NO;;HR_2001_2500 noun food
+2465;czereśnia;trešnja;noun;rodzaj żeński;Trešnja je slatka.;Czereśnia jest słodka.;NO;;HR_2001_2500 noun food
+2466;brzoskwinia;breskva;noun;rodzaj żeński;Breskva je sočna.;Brzoskwinia jest soczysta.;NO;;HR_2001_2500 noun food
+2467;morela;marelica;noun;rodzaj żeński;Marelica je zrela.;Morela jest dojrzała.;NO;;HR_2001_2500 noun food
+2468;grejpfrut;grejp;noun;rodzaj męski;Grejp je gorak.;Grejpfrut jest gorzki.;NO;;HR_2001_2500 noun food
+2469;melon;dinja;noun;rodzaj żeński;Dinja je slatka.;Melon jest słodki.;NO;;HR_2001_2500 noun food
+2470;malina;malina;noun;rodzaj żeński;Malina je sitna.;Malina jest drobna.;NO;;HR_2001_2500 noun food
+2471;jeżyna;kupina;noun;rodzaj żeński;Kupina raste u šumi.;Jeżyna rośnie w lesie.;NO;;HR_2001_2500 noun food
+2472;granat;nar;noun;rodzaj męski;Nar ima sitna zrna.;Granat ma drobne ziarna.;NO;;HR_2001_2500 noun food
+2473;migdał;badem;noun;rodzaj męski;Badem je zdrav.;Migdał jest zdrowy.;NO;;HR_2001_2500 noun food
+2474;wino białe;bijelo vino;phrase;;Bijelo vino uz ribu.;Białe wino do ryby.;NO;;HR_2001_2500 phrase food
+2475;wino czerwone;crno vino;phrase;patrz crno vino - też: czarne wino;Crno vino uz meso.;Czerwone wino do mięsa.;YES;crno vino dosł. czarne wino;HR_2001_2500 phrase food
+2476;wino musujące;pjenušac;noun;rodzaj męski - gen. pjenušca;Pjenušac za Novu godinu.;Wino musujące na Nowy Rok.;NO;;HR_2001_2500 noun food
+2477;szampan;šampanjac;noun;rodzaj męski - gen. šampanjca;Šampanjac za proslavu.;Szampan na uroczystość.;NO;;HR_2001_2500 noun food
+2478;whisky;viski;noun;rodzaj męski;Viski je skup.;Whisky jest droga.;NO;;HR_2001_2500 noun food
+2479;woda gazowana;gazirana voda;phrase;;Gazirana voda je hladna.;Woda gazowana jest zimna.;NO;;HR_2001_2500 phrase food
+2480;woda niegazowana;negazirana voda;phrase;;Negazirana voda bez leda.;Woda niegazowana bez lodu.;NO;;HR_2001_2500 phrase food
+2481;lód;led;noun;rodzaj męski - mn. ledovi;Led u čaši.;Lód w szklance.;NO;;HR_2001_2500 noun food
+2482;sok pomarańczowy;sok od naranče;phrase;;Sok od naranče je svjež.;Sok pomarańczowy jest świeży.;NO;;HR_2001_2500 phrase food
+2483;espresso;espresso;noun;rodzaj męski;Espresso ujutro.;Espresso rano.;NO;;HR_2001_2500 noun food
+2484;cappuccino;kapučino;noun;rodzaj męski;Kapučino s mlijekom.;Cappuccino z mlekiem.;NO;;HR_2001_2500 noun food
+2485;kotleta;odrezak;noun;rodzaj męski - gen. odreska;Odrezak je debeo.;Kotlet jest gruby.;NO;;HR_2001_2500 noun food
+2486;stek;odrezak;noun;patrz odrezak;Odrezak na roštilju.;Stek na grillu.;NO;;HR_2001_2500 noun food
+2487;grillowany;na roštilju;phrase;;Riba na roštilju je najbolja.;Ryba na grillu jest najlepsza.;NO;;HR_2001_2500 phrase food
+2488;grill;roštilj;noun;rodzaj męski;Roštilj miriše po dvorištu.;Grill pachnie po podwórku.;NO;;HR_2001_2500 noun food
+2489;piec (rzeczownik);peć;noun;rodzaj żeński;Peć greje sobu.;Piec ogrzewa pokój.;NO;;HR_2001_2500 noun home
+2490;porcja;porcija;noun;rodzaj żeński;Porcija je velika.;Porcja jest duża.;NO;;HR_2001_2500 noun food
+2491;posiłek;obrok;noun;rodzaj męski;Obrok je za pola sata.;Posiłek za pół godziny.;NO;;HR_2001_2500 noun food
+2492;czajnik;čajnik;noun;rodzaj męski;Čajnik na štednjaku.;Czajnik na kuchence.;NO;;HR_2001_2500 noun home food
+2493;kieliszek;čaša za vino;phrase;też: čašica;Čaša za vino je manja.;Kieliszek do wina jest mniejszy.;NO;;HR_2001_2500 phrase food
+2494;słoik;staklenka;noun;rodzaj żeński;Staklenka meda.;Słoik miodu.;NO;;HR_2001_2500 noun food
+2495;puszka;limenka;noun;rodzaj żeński;Limenka piva.;Puszka piwa.;NO;;HR_2001_2500 noun food
+2496;otwieracz;otvarač;noun;rodzaj męski;Otvarač za konzerve.;Otwieracz do konserw.;NO;;HR_2001_2500 noun food
+2497;korkociąg;vadičep;noun;rodzaj męski;Vadičep za vino.;Korkociąg do wina.;NO;;HR_2001_2500 noun food
+2498;szufelka;lopatica;noun;rodzaj żeński;Lopatica za smeće.;Szufelka na śmieci.;NO;;HR_2001_2500 noun home
+2499;szczotka;četka;noun;rodzaj żeński;Četka za pod.;Szczotka do podłogi.;NO;;HR_2001_2500 noun home
+2500;miotła;metla;noun;rodzaj żeński;Metla u kutu.;Miotła w kącie.;NO;;HR_2001_2500 noun home
+2501;wiadro;kanta;noun;rodzaj żeński - też: kubeł na śmieci;Kanta je puna vode.;Wiadro jest pełne wody.;NO;;HR_2501_3000 noun home
+2502;pralka;perilica rublja;phrase;patrz perilica - też: zmywarka;Perilica rublja radi.;Pralka pracuje.;NO;;HR_2501_3000 phrase home
+2503;suszarka do włosów;sušilo za kosu;phrase;;Sušilo za kosu je pokvareno.;Suszarka do włosów jest zepsuta.;NO;;HR_2501_3000 phrase home
+2504;żelazko;glačalo;noun;rodzaj nijaki;Glačalo je uključeno.;Żelazko jest włączone.;NO;;HR_2501_3000 noun home
+2505;prasować;glačati;verb;1. os.: glačam;Glačam košulju.;Prasuję koszulę.;NO;;HR_2501_3000 verb home
+2506;szyć;šivati;verb;1. os.: šijem;Šije haljinu.;Szyje sukienkę.;NO;;HR_2501_3000 verb home
+2507;robić na drutach;plesti;verb;1. os.: pletem;Baka plete šal.;Babcia robi szalik na drutach.;NO;;HR_2501_3000 verb people
+2508;igła;igla;noun;rodzaj żeński;Igla je oštra.;Igła jest ostra.;NO;;HR_2501_3000 noun home
+2509;nić;konac;noun;rodzaj męski - gen. konca - też: kres;Konac je crveni.;Nić jest czerwona.;NO;;HR_2501_3000 noun home
+2510;sznurek;špaga;noun;rodzaj żeński - też: uzica;Špaga je duga.;Sznurek jest długi.;NO;;HR_2501_3000 noun home
+2511;zamek błyskawiczny;patentni zatvarač;phrase;patentni - błyskawiczny;Patentni zatvarač je zapeo.;Zamek błyskawiczny się zaciął.;NO;;HR_2501_3000 phrase home
+2512;kieszeń;džep;noun;rodzaj męski - mn. džepovi;Ključ je u džepu.;Klucz jest w kieszeni.;NO;;HR_2501_3000 noun home
+2513;rękaw;rukav;noun;rodzaj męski - mn. rukavi;Rukav je predugačak.;Rękaw jest za długi.;NO;;HR_2501_3000 noun home
+2514;kołnierz;ovratnik;noun;rodzaj męski;Ovratnik je bijeli.;Kołnierz jest biały.;NO;;HR_2501_3000 noun home
+2515;pasek (do spodni);remen;noun;rodzaj męski - mn. remeni;Remen je od kože.;Pasek jest ze skóry.;NO;;HR_2501_3000 noun home
+2516;szalik;šal;noun;rodzaj męski;Šal je od vune.;Szalik jest z wełny.;NO;;HR_2501_3000 noun home
+2517;czapka;kapa;noun;rodzaj żeński;Kapa je zimska.;Czapka jest zimowa.;NO;;HR_2501_3000 noun home
+2518;rękawiczka;rukavica;noun;rodzaj żeński - często w mn.;Rukavice su tople.;Rękawiczki są ciepłe.;NO;;HR_2501_3000 noun home
+2519;skarpetka;čarapa;noun;rodzaj żeński - często w mn.;Čarape su čiste.;Skarpetki są czyste.;NO;;HR_2501_3000 noun home
+2520;podkoszulek;majica;noun;rodzaj żeński - też T-shirt;Majica je pamučna.;Podkoszulek jest bawełniany.;NO;;HR_2501_3000 noun home
+2521;sweter;džemper;noun;rodzaj męski;Džemper je vunen.;Sweter jest wełniany.;NO;;HR_2501_3000 noun home
+2522;spódnica;suknja;noun;rodzaj żeński;Suknja je duga.;Spódnica jest długa.;NO;;HR_2501_3000 noun home
+2523;dżinsy;traperice;noun;liczba mnoga;Traperice su plave.;Dżinsy są niebieskie.;NO;;HR_2501_3000 noun home
+2524;szorty;kratke hlače;phrase;;Kratke hlače za ljeto.;Szorty na lato.;NO;;HR_2501_3000 phrase home
+2525;strój kąpielowy (męski);kupaće gaće;phrase;;Kupaće gaće su plave.;Strój kąpielowy jest niebieski.;NO;;HR_2501_3000 phrase travel
+2526;buty (obuwie);cipele;noun;liczba mnoga;Cipele su nove.;Buty są nowe.;NO;;HR_2501_3000 noun home
+2527;sandały;sandale;noun;liczba mnoga;Sandale za plažu.;Sandały na plażę.;NO;;HR_2501_3000 noun travel
+2528;kapcie;papuče;noun;liczba mnoga;Papuče su tople.;Kapcie są ciepłe.;NO;;HR_2501_3000 noun home
+2529;buty sportowe;tenisice;noun;liczba mnoga;Tenisice su bijele.;Buty sportowe są białe.;NO;;HR_2501_3000 noun home
+2530;kozaki;čizme;noun;liczba mnoga - też: buty wysokie;Čizme su zimske.;Kozaki są zimowe.;NO;;HR_2501_3000 noun home
+2531;pierścionek;prsten;noun;rodzaj męski;Prsten je od zlata.;Pierścionek jest ze złota.;NO;;HR_2501_3000 noun
+2532;naszyjnik;ogrlica;noun;rodzaj żeński;Ogrlica je srebrna.;Naszyjnik jest srebrny.;NO;;HR_2501_3000 noun
+2533;bransoletka;narukvica;noun;rodzaj żeński;Narukvica je dar.;Bransoletka jest prezentem.;NO;;HR_2501_3000 noun
+2534;kolczyk;naušnica;noun;rodzaj żeński - często w mn.;Naušnice su nove.;Kolczyki są nowe.;NO;;HR_2501_3000 noun
+2535;zegarek;ručni sat;phrase;też: sat na ruci;Ručni sat je precizan.;Zegarek jest dokładny.;NO;;HR_2501_3000 phrase
+2536;okulary słoneczne;sunčane naočale;phrase;;Sunčane naočale su moderne.;Okulary słoneczne są modne.;NO;;HR_2501_3000 phrase travel
+2537;lustro;ogledalo;noun;rodzaj nijaki - też: zrcalo;Ogledalo je razbijeno.;Lustro jest rozbite.;NO;;HR_2501_3000 noun home
+2538;grzebień;češalj;noun;rodzaj męski - gen. češlja;Češalj mi treba.;Grzebień mi potrzebny.;NO;;HR_2501_3000 noun home
+2539;szczotka do włosów;četka za kosu;phrase;;Četka za kosu je nova.;Szczotka do włosów jest nowa.;NO;;HR_2501_3000 phrase home
+2540;szampon;šampon;noun;rodzaj męski;Šampon za suhu kosu.;Szampon do suchych włosów.;NO;;HR_2501_3000 noun home
+2541;pasta do zębów;pasta za zube;phrase;;Pasta za zube je s mentom.;Pasta do zębów jest miętowa.;NO;;HR_2501_3000 phrase home
+2542;szczoteczka do zębów;četkica za zube;phrase;patrz zubna četkica;Četkica za zube je nova.;Szczoteczka do zębów jest nowa.;NO;;HR_2501_3000 phrase home
+2543;chusteczka higieniczna;maramica;noun;rodzaj żeński;Maramica je papirnata.;Chusteczka jest papierowa.;NO;;HR_2501_3000 noun
+2544;dezodorant;dezodorans;noun;rodzaj męski;Dezodorans za oznojene dane.;Dezodorant na spocone dni.;NO;;HR_2501_3000 noun
+2545;perfumy;parfem;noun;rodzaj męski - mn. parfemi;Parfem miriše lijepo.;Perfumy pachną ładnie.;NO;;HR_2501_3000 noun
+2546;krem;krema;noun;rodzaj żeński;Krema za lice.;Krem do twarzy.;NO;;HR_2501_3000 noun
+2547;szminka;ruž;noun;rodzaj męski - też: róż;Ruž za usne.;Szminka do ust.;NO;;HR_2501_3000 noun
+2548;makijaż;šminka;noun;rodzaj żeński;Šminka je diskretna.;Makijaż jest dyskretny.;NO;;HR_2501_3000 noun
+2549;fryzjer;frizer;noun;rodzaj męski;Frizer je moj prijatelj.;Fryzjer to mój przyjaciel.;NO;;HR_2501_3000 noun people
+2550;fryzjerka;frizerka;noun;rodzaj żeński;Frizerka mi šiša kosu.;Fryzjerka mnie strzyże.;NO;;HR_2501_3000 noun people
+2551;strzyc się;šišati se;verb;1. os.: šišam se;Šišam se svaki mjesec.;Strzygę się co miesiąc.;NO;;HR_2501_3000 verb
+2552;farbować włosy;bojati kosu;phrase;;Bojam kosu u smeđu.;Farbuję włosy na brązowo.;NO;;HR_2501_3000 phrase
+2553;fryzura;frizura;noun;rodzaj żeński;Frizura je moderna.;Fryzura jest modna.;NO;;HR_2501_3000 noun
+2554;brązowy;smeđ;adjective;ž. smeđa;Smeđa kosa.;Brązowe włosy.;NO;;HR_2501_3000 adjective
+2555;różowy;ružičast;adjective;ž. ružičasta;Ružičasta haljina.;Różowa sukienka.;NO;;HR_2501_3000 adjective home
+2556;fioletowy;ljubičast;adjective;ž. ljubičasta;Ljubičasti cvijet.;Fioletowy kwiat.;NO;;HR_2501_3000 adjective
+2557;pomarańczowy;narančast;adjective;ž. narančasta;Narančasti zalazak.;Pomarańczowy zachód słońca.;NO;;HR_2501_3000 adjective
+2558;złoty;zlatan;adjective;ž. zlatna;Zlatan prsten.;Złoty pierścionek.;NO;;HR_2501_3000 adjective
+2559;srebrny;srebrn;adjective;ž. srebrna;Srebrna medalja.;Srebrny medal.;NO;;HR_2501_3000 adjective
+2560;ciemnoniebieski;tamnoplav;adjective;ž. tamnoplava;Tamnoplavo more.;Ciemnoniebieskie morze.;NO;;HR_2501_3000 adjective travel
+2561;jasnoniebieski;svijetloplav;adjective;ž. svijetloplava;Svijetloplavo nebo.;Jasnoniebieskie niebo.;NO;;HR_2501_3000 adjective
+2562;trzynaście;trinaest;numeral;;Trinaest je nesretni broj.;Trzynaście to pechowy numer.;NO;;HR_2501_3000 numeral
+2563;czternaście;četrnaest;numeral;;Četrnaest sati je popodne.;Czternasta to popołudnie.;NO;;HR_2501_3000 numeral time
+2564;szesnaście;šesnaest;numeral;;Šesnaest godina za vozačku.;Szesnaście lat na prawo jazdy.;NO;;HR_2501_3000 numeral
+2565;siedemnaście;sedamnaest;numeral;;Sedamnaest učenika u razredu.;Siedemnastu uczniów w klasie.;NO;;HR_2501_3000 numeral
+2566;osiemnaście;osamnaest;numeral;;Osamnaest je punoljetnost.;Osiemnaście to pełnoletność.;NO;;HR_2501_3000 numeral
+2567;dziewiętnaście;devetnaest;numeral;;Devetnaest minuta hoda.;Dziewiętnaście minut chodu.;NO;;HR_2501_3000 numeral time
+2568;czterdzieści;četrdeset;numeral;;Četrdeset godina radim.;Czterdzieści lat pracuję.;NO;;HR_2501_3000 numeral work
+2569;sześćdziesiąt;šezdeset;numeral;;Šezdeset kilometara na sat.;Sześćdziesiąt kilometrów na godzinę.;NO;;HR_2501_3000 numeral transportation
+2570;siedemdziesiąt;sedamdeset;numeral;;Sedamdeset godina života.;Siedemdziesiąt lat życia.;NO;;HR_2501_3000 numeral
+2571;osiemdziesiąt;osamdeset;numeral;;Osamdeset posto točno.;Osiemdziesiąt procent dokładnie.;NO;;HR_2501_3000 numeral
+2572;dziewięćdziesiąt;devedeset;numeral;;Devedeset kilograma.;Dziewięćdziesiąt kilogramów.;NO;;HR_2501_3000 numeral
+2573;milion;milijun;numeral;rodzaj męski;Milijun ljudi je bilo tamo.;Milion ludzi tam było.;NO;;HR_2501_3000 numeral
+2574;miliard;milijarda;numeral;rodzaj żeński;Milijardu eura.;Miliard euro.;NO;;HR_2501_3000 numeral
+2575;procent (nazwa);postotak;noun;rodzaj męski - gen. postotka;Postotak je visok.;Procent jest wysoki.;NO;;HR_2501_3000 noun
+2576;trzecia część;trećina;noun;rodzaj żeński;Trećina učenika.;Jedna trzecia uczniów.;NO;;HR_2501_3000 noun
+2577;czwarta część;četvrtina;noun;rodzaj żeński;Četvrtina pizze.;Ćwierć pizzy.;NO;;HR_2501_3000 noun food
+2578;para (dwa);par;noun;rodzaj męski - też: para osób;Par sati.;Kilka godzin.;NO;;HR_2501_3000 noun time
+2579;tuzin;desetak;noun;rodzaj męski - dziesięć;Desetak ljudi.;Kilkanaście osób.;NO;;HR_2501_3000 noun people
+2580;kasa (miejsce);blagajna;noun;rodzaj żeński;Blagajna radi do osam.;Kasa czynna do ósmej.;NO;;HR_2501_3000 noun shopping
+2581;emerytura;mirovina;noun;rodzaj żeński - też: penzija;Mirovina je mala.;Emerytura jest mała.;NO;;HR_2501_3000 noun work
+2582;renta;invalidska mirovina;phrase;;Invalidska mirovina traje doživotno.;Renta trwa dożywotnio.;NO;;HR_2501_3000 phrase work
+2583;bankomat;bankomat;noun;rodzaj męski;Bankomat je pokvaren.;Bankomat jest zepsuty.;NO;;HR_2501_3000 noun
+2584;przelew;doznaka;noun;rodzaj żeński - też: uplata;Doznaka je stigla.;Przelew dotarł.;NO;;HR_2501_3000 noun work
+2585;pożyczka;zajam;noun;rodzaj męski - gen. zajma;Zajam se otplaćuje.;Pożyczka się spłaca.;NO;;HR_2501_3000 noun work
+2586;kredyt hipoteczny;stambeni kredit;phrase;;Stambeni kredit je dug.;Kredyt hipoteczny jest długi.;NO;;HR_2501_3000 phrase
+2587;odsetki;kamata;noun;rodzaj żeński;Kamata je niska.;Odsetki są niskie.;NO;;HR_2501_3000 noun work
+2588;wydatek;izdatak;noun;rodzaj męski - gen. izdatka;Izdatak je nužan.;Wydatek jest konieczny.;NO;;HR_2501_3000 noun work
+2589;budżet;proračun;noun;rodzaj męski;Proračun je ograničen.;Budżet jest ograniczony.;NO;;HR_2501_3000 noun work
+2590;inwestycja;ulaganje;noun;rodzaj nijaki;Ulaganje se isplati.;Inwestycja się opłaca.;NO;;HR_2501_3000 noun work
+2591;akcje (giełdowe);dionice;noun;liczba mnoga;Dionice su porasle.;Akcje wzrosły.;NO;;HR_2501_3000 noun work
+2592;giełda;burza;noun;rodzaj żeński;Burza pada.;Giełda spada.;NO;;HR_2501_3000 noun work
+2593;euro;euro;noun;rodzaj męski - nieodmienne;Sto eura mjesečno.;Sto euro miesięcznie.;NO;;HR_2501_3000 noun shopping
+2594;dolar;dolar;noun;rodzaj męski;Dolar je jak.;Dolar jest silny.;NO;;HR_2501_3000 noun
+2595;funt;funta;noun;rodzaj żeński;Funta je britanska.;Funt jest brytyjski.;NO;;HR_2501_3000 noun
+2596;kurs walut;tečaj;noun;rodzaj męski - też: kurs językowy;Tečaj eura raste.;Kurs euro rośnie.;NO;;HR_2501_3000 noun
+2597;kurs (językowy);tečaj jezika;phrase;patrz tečaj;Idem na tečaj hrvatskog.;Idę na kurs chorwackiego.;NO;;HR_2501_3000 phrase
+2598;certyfikat;certifikat;noun;rodzaj męski;Certifikat vrijedi pet godina.;Certyfikat obowiązuje pięć lat.;NO;;HR_2501_3000 noun work
+2599;wyższa uczelnia;visoko učilište;phrase;;Visoko učilište je slavno.;Uczelnia jest sławna.;NO;;HR_2501_3000 phrase
+2600;liceum;gimnazija;noun;rodzaj żeński;Gimnazija traje četiri godine.;Liceum trwa cztery lata.;NO;;HR_2501_3000 noun
+2601;szkoła podstawowa;osnovna škola;phrase;;Osnovna škola do osmog razreda.;Szkoła podstawowa do ósmej klasy.;NO;;HR_2501_3000 phrase
+2602;szkoła średnia;srednja škola;phrase;;Srednja škola je četiri godine.;Szkoła średnia trwa cztery lata.;NO;;HR_2501_3000 phrase
+2603;uczeń;učenik;noun;rodzaj męski - mn. učenici;Učenik piše zadaću.;Uczeń pisze zadanie.;NO;;HR_2501_3000 noun people
+2604;uczennica;učenica;noun;rodzaj żeński;Učenica čita knjigu.;Uczennica czyta książkę.;NO;;HR_2501_3000 noun people
+2605;nauczycielka;učiteljica;noun;rodzaj żeński;Učiteljica objašnjava.;Nauczycielka wyjaśnia.;NO;;HR_2501_3000 noun people
+2606;profesor;profesor;noun;rodzaj męski;Profesor je strog.;Profesor jest surowy.;NO;;HR_2501_3000 noun people work
+2607;wykład;predavanje;noun;rodzaj nijaki;Predavanje traje sat i pol.;Wykład trwa półtorej godziny.;NO;;HR_2501_3000 noun work
+2608;ćwiczenia (zajęcia);vježbe;noun;liczba mnoga;Vježbe iz matematike.;Ćwiczenia z matematyki.;NO;;HR_2501_3000 noun work
+2609;praca dyplomowa;diplomski rad;phrase;;Diplomski rad je pri kraju.;Praca dyplomowa jest bliska końca.;NO;;HR_2501_3000 phrase work
+2610;matematyka;matematika;noun;rodzaj żeński;Matematika je moj strah.;Matematyka to mój strach.;NO;;HR_2501_3000 noun
+2611;fizyka;fizika;noun;rodzaj żeński;Fizika je logična.;Fizyka jest logiczna.;NO;;HR_2501_3000 noun
+2612;chemia;kemija;noun;rodzaj żeński;Kemija se uči u srednjoj.;Chemii uczy się w szkole średniej.;NO;;HR_2501_3000 noun
+2613;biologia;biologija;noun;rodzaj żeński;Biologija je o životu.;Biologia jest o życiu.;NO;;HR_2501_3000 noun
+2614;geografia;geografija;noun;rodzaj żeński;Geografija je zanimljiva.;Geografia jest interesująca.;NO;;HR_2501_3000 noun
+2615;angielski;engleski;adjective;też jako rzeczownik: język;Engleski jezik je globalni.;Angielski jest językiem globalnym.;NO;;HR_2501_3000 adjective
+2616;niemiecki;njemački;adjective;też jako język;Govorim njemački.;Mówię po niemiecku.;NO;;HR_2501_3000 adjective
+2617;włoski;talijanski;adjective;też jako język;Talijanski jezik.;Język włoski.;NO;;HR_2501_3000 adjective
+2618;francuski;francuski;adjective;też jako język;Francuska kuhinja.;Francuska kuchnia.;NO;;HR_2501_3000 adjective food
+2619;hiszpański;španjolski;adjective;też jako język;Španjolski jezik.;Język hiszpański.;NO;;HR_2501_3000 adjective
+2620;rosyjski;ruski;adjective;też jako język;Ruski jezik je težak.;Rosyjski jest trudny.;NO;;HR_2501_3000 adjective
+2621;polski (język);poljski jezik;phrase;patrz poljski;Poljski jezik je sličan hrvatskom.;Polski jest podobny do chorwackiego.;NO;;HR_2501_3000 phrase
+2622;stolica;glavni grad;phrase;;Glavni grad Hrvatske je Zagreb.;Stolicą Chorwacji jest Zagrzeb.;NO;;HR_2501_3000 phrase
+2623;region;regija;noun;rodzaj żeński;Regija je vinorodna.;Region jest winiarski.;NO;;HR_2501_3000 noun travel
+2624;prowincja;provincija;noun;rodzaj żeński;Živi u provinciji.;Mieszka na prowincji.;NO;;HR_2501_3000 noun
+2625;wsi (mieszkaniec);seljak;noun;rodzaj męski;Seljak radi na polju.;Wieśniak pracuje w polu.;NO;;HR_2501_3000 noun people
+2626;przedmieście;predgrađe;noun;rodzaj nijaki;Predgrađe je mirno.;Przedmieście jest spokojne.;NO;;HR_2501_3000 noun
+2627;dom (rodzina);dom;noun;rodzaj męski;Dom je gdje je srce.;Dom jest tam gdzie serce.;NO;;HR_2501_3000 noun people
+2628;ognisko domowe;domaće ognjište;phrase;;Domaće ognjište je toplo.;Ognisko domowe jest ciepłe.;NO;;HR_2501_3000 phrase people
+2629;wiek (rok życia);dob;noun;rodzaj żeński;U mojoj dobi je normalno.;W moim wieku to normalne.;NO;;HR_2501_3000 noun people
+2630;dziecko (niemowlę);beba;noun;rodzaj żeński;Beba spava.;Niemowlę śpi.;NO;;HR_2501_3000 noun people
+2631;niemowlę;dojenče;noun;rodzaj nijaki;Dojenče plače.;Niemowlę płacze.;NO;;HR_2501_3000 noun people
+2632;maluch (dziecko);malčan;noun;rodzaj męski - też: mališan;Malčan trči po dvorištu.;Maluch biega po podwórku.;NO;;HR_2501_3000 noun people
+2633;młodzież;mladež;noun;rodzaj żeński - też: mladi;Mladež je budućnost.;Młodzież to przyszłość.;NO;;HR_2501_3000 noun people
+2634;starszy pan;stariji gospodin;phrase;;Stariji gospodin sjedi na klupi.;Starszy pan siedzi na ławce.;NO;;HR_2501_3000 phrase people
+2635;starsza pani;starija gospođa;phrase;;Starija gospođa šeta psa.;Starsza pani wyprowadza psa.;NO;;HR_2501_3000 phrase people
+2636;podłoga (drewniana);parket;noun;rodzaj męski;Parket je od hrasta.;Podłoga jest z dębu.;NO;;HR_2501_3000 noun home
+2637;dywan;tepih;noun;rodzaj męski;Tepih je perzijski.;Dywan jest perski.;NO;;HR_2501_3000 noun home
+2638;zasłona;zavjesa;noun;rodzaj żeński;Zavjesa je debela.;Zasłona jest gruba.;NO;;HR_2501_3000 noun home
+2639;prześcieradło;plahta;noun;rodzaj żeński;Plahta je čista.;Prześcieradło jest czyste.;NO;;HR_2501_3000 noun home
+2640;kołdra;poplun;noun;rodzaj męski;Poplun je topao.;Kołdra jest ciepła.;NO;;HR_2501_3000 noun home
+2641;fotel;fotelja;noun;rodzaj żeński;Fotelja je udobna.;Fotel jest wygodny.;NO;;HR_2501_3000 noun home
+2642;telewizor;televizor;noun;rodzaj męski;Televizor je novi.;Telewizor jest nowy.;NO;;HR_2501_3000 noun home media
+2643;radio;radio;noun;rodzaj męski - nieodmienne;Radio svira glazbu.;Radio gra muzykę.;NO;;HR_2501_3000 noun home media
+2644;mikrofon;mikrofon;noun;rodzaj męski;Mikrofon ne radi.;Mikrofon nie działa.;NO;;HR_2501_3000 noun media
+2645;mysz komputerowa;miš;noun;rodzaj męski - też: mysz zwierzę;Miš ne reagira.;Mysz nie reaguje.;NO;;HR_2501_3000 noun media
+2646;monitor;monitor;noun;rodzaj męski;Monitor je velik.;Monitor jest duży.;NO;;HR_2501_3000 noun media
+2647;laptop;laptop;noun;rodzaj męski;Laptop se puni.;Laptop się ładuje.;NO;;HR_2501_3000 noun media
+2648;tablet;tablet;noun;rodzaj męski;Tablet za djecu.;Tablet dla dzieci.;NO;;HR_2501_3000 noun media
+2649;smartfon;pametni telefon;phrase;też: mobitel;Pametni telefon je novi.;Smartfon jest nowy.;NO;;HR_2501_3000 phrase media
+2650;kabel USB;USB kabel;phrase;;USB kabel je pokvaren.;Kabel USB jest zepsuty.;NO;;HR_2501_3000 phrase media
+2651;wtyczka;utikač;noun;rodzaj męski;Utikač je u struji.;Wtyczka jest w prądzie.;NO;;HR_2501_3000 noun home
+2652;wyłącznik;prekidač;noun;rodzaj męski;Prekidač je na zidu.;Wyłącznik jest na ścianie.;NO;;HR_2501_3000 noun home
+2653;rura;cijev;noun;rodzaj żeński - mn. cijevi;Cijev je pukla.;Rura pękła.;NO;;HR_2501_3000 noun home
+2654;umywalka;umivaonik;noun;rodzaj męski;Umivaonik je pun.;Umywalka jest pełna.;NO;;HR_2501_3000 noun home
+2655;toaleta (miejsce);WC;noun;rodzaj męski - też: zahod;WC je na drugom katu.;Toaleta jest na drugim piętrze.;NO;;HR_2501_3000 noun home
+2656;deska klozetowa;WC daska;phrase;;WC daska je bijela.;Deska klozetowa jest biała.;NO;;HR_2501_3000 phrase home
+2657;strych;tavan;noun;rodzaj męski;Tavan je pun stvari.;Strych jest pełny rzeczy.;NO;;HR_2501_3000 noun home
+2658;schody;stepenice;noun;liczba mnoga - też: stube;Stepenice su strme.;Schody są strome.;NO;;HR_2501_3000 noun home
+2659;winda;dizalo;noun;rodzaj nijaki - też: lift;Dizalo je pokvareno.;Winda jest zepsuta.;NO;;HR_2501_3000 noun home
+2660;furtka;kapija;noun;rodzaj żeński;Kapija je otvorena.;Furtka jest otwarta.;NO;;HR_2501_3000 noun home
+2661;płot;ograda;noun;rodzaj żeński;Ograda je od drveta.;Płot jest z drewna.;NO;;HR_2501_3000 noun home
+2662;podwórko;dvorište;noun;rodzaj nijaki;Dvorište je maleno.;Podwórko jest małe.;NO;;HR_2501_3000 noun home
+2663;burza;oluja;noun;rodzaj żeński;Oluja se približava.;Burza się zbliża.;NO;;HR_2501_3000 noun
+2664;piorun;grom;noun;rodzaj męski - mn. gromovi;Grom je udario u drvo.;Piorun uderzył w drzewo.;NO;;HR_2501_3000 noun
+2665;błyskawica;munja;noun;rodzaj żeński;Munja obasjala nebo.;Błyskawica rozświetliła niebo.;NO;;HR_2501_3000 noun
+2666;tęcza;duga;noun;rodzaj żeński;Duga se pojavila.;Tęcza się pojawiła.;NO;;HR_2501_3000 noun
+2667;rosa;rosa;noun;rodzaj żeński;Rosa je na travi.;Rosa jest na trawie.;NO;;HR_2501_3000 noun
+2668;szron;inje;noun;rodzaj nijaki;Inje na prozoru.;Szron na oknie.;NO;;HR_2501_3000 noun
+2669;lód (na ulicy);poledica;noun;rodzaj żeński;Poledica na cesti.;Gołoledź na drodze.;NO;;HR_2501_3000 noun transportation
+2670;śnieżyca;mećava;noun;rodzaj żeński;Mećava zatvorila prometnice.;Śnieżyca zamknęła drogi.;NO;;HR_2501_3000 noun transportation
+2671;deszczyk;kišica;noun;rodzaj żeński - zdrobniale;Kišica pada polako.;Deszczyk pada powoli.;NO;;HR_2501_3000 noun
+2672;słońce (grzeje);sunce grije;phrase;;Sunce grije jako.;Słońce grzeje mocno.;NO;;HR_2501_3000 phrase
+2673;gwiazda;zvijezda;noun;rodzaj żeński;Zvijezda pada s neba.;Gwiazda spada z nieba.;NO;;HR_2501_3000 noun
+2674;planeta;planet;noun;rodzaj męski - mn. planeti;Planet Zemlja.;Planeta Ziemia.;NO;;HR_2501_3000 noun
+2675;wszechświat;svemir;noun;rodzaj męski;Svemir je beskrajan.;Wszechświat jest bezkresny.;NO;;HR_2501_3000 noun
+2676;świat;svijet;noun;rodzaj męski;Svijet je malen.;Świat jest mały.;NO;;HR_2501_3000 noun
+2677;środowisko;okoliš;noun;rodzaj męski;Okoliš treba čuvati.;Środowisko trzeba chronić.;NO;;HR_2501_3000 noun
+2678;ekologia;ekologija;noun;rodzaj żeński;Ekologija je važna.;Ekologia jest ważna.;NO;;HR_2501_3000 noun
+2679;zanieczyszczenie;zagađenje;noun;rodzaj nijaki;Zagađenje raste.;Zanieczyszczenie rośnie.;NO;;HR_2501_3000 noun
+2680;recykling;recikliranje;noun;rodzaj nijaki;Recikliranje pomaže planetu.;Recykling pomaga planecie.;NO;;HR_2501_3000 noun
+2681;krzak;grm;noun;rodzaj męski - mn. grmovi;Grm ruže cvate.;Krzak róży kwitnie.;NO;;HR_2501_3000 noun
+2682;trawa;trava;noun;rodzaj żeński;Trava je zelena.;Trawa jest zielona.;NO;;HR_2501_3000 noun
+2683;liść;list;noun;rodzaj męski - mn. listovi;List je pao.;Liść spadł.;NO;;HR_2501_3000 noun
+2684;gałąź;grana;noun;rodzaj żeński;Grana je puknula.;Gałąź pękła.;NO;;HR_2501_3000 noun
+2685;korzeń;korijen;noun;rodzaj męski - mn. korijeni;Korijen je dubok.;Korzeń jest głęboki.;NO;;HR_2501_3000 noun
+2686;pień;deblo;noun;rodzaj nijaki;Deblo je široko.;Pień jest szeroki.;NO;;HR_2501_3000 noun
+2687;kora;kora;noun;rodzaj żeński - też: skórka chleba;Kora je gruba.;Kora jest gruba.;NO;;HR_2501_3000 noun
+2688;nasienie;sjeme;noun;rodzaj nijaki;Sjeme klija.;Nasienie kiełkuje.;NO;;HR_2501_3000 noun
+2689;róża;ruža;noun;rodzaj żeński;Ruža je crvena.;Róża jest czerwona.;NO;;HR_2501_3000 noun
+2690;tulipan;tulipan;noun;rodzaj męski;Tulipan cvate u proljeće.;Tulipan kwitnie na wiosnę.;NO;;HR_2501_3000 noun
+2691;słonecznik;suncokret;noun;rodzaj męski;Suncokret slijedi sunce.;Słonecznik podąża za słońcem.;NO;;HR_2501_3000 noun
+2692;łąka;livada;noun;rodzaj żeński;Livada je puna cvijeća.;Łąka jest pełna kwiatów.;NO;;HR_2501_3000 noun
+2693;pole;njiva;noun;rodzaj żeński - też: polje;Njiva je preorana.;Pole jest zorane.;NO;;HR_2501_3000 noun
+2694;półwysep;poluotok;noun;rodzaj męski;Poluotok Istra je zeleni.;Półwysep Istria jest zielony.;NO;;HR_2501_3000 noun travel
+2695;zatoka;zaljev;noun;rodzaj męski;Zaljev je miran.;Zatoka jest spokojna.;NO;;HR_2501_3000 noun travel
+2696;klif;litica;noun;rodzaj żeński;Litica je opasna.;Klif jest niebezpieczny.;NO;;HR_2501_3000 noun travel
+2697;jaskinia;špilja;noun;rodzaj żeński;Špilja je duboka.;Jaskinia jest głęboka.;NO;;HR_2501_3000 noun travel
+2698;strumień;potok;noun;rodzaj męski - mn. potoci;Potok teče kroz šumu.;Strumień płynie przez las.;NO;;HR_2501_3000 noun travel
+2699;wodospad;slap;noun;rodzaj męski - mn. slapovi;Slap Plitvice je slavan.;Wodospad Plitvice jest sławny.;NO;;HR_2501_3000 noun travel
+2700;dolina;dolina;noun;rodzaj żeński;Dolina je zelena.;Dolina jest zielona.;NO;;HR_2501_3000 noun travel
+2701;wzgórze;brdo;noun;rodzaj nijaki;Brdo je nisko.;Wzgórze jest niskie.;NO;;HR_2501_3000 noun travel
+2702;góra (wysoka);planina;noun;rodzaj żeński;Planina je snježna.;Góra jest ośnieżona.;NO;;HR_2501_3000 noun travel
+2703;lodowiec;ledenjak;noun;rodzaj męski;Ledenjak se topi.;Lodowiec się topi.;NO;;HR_2501_3000 noun
+2704;pustynia;pustinja;noun;rodzaj żeński;Pustinja je vruća.;Pustynia jest gorąca.;NO;;HR_2501_3000 noun
+2705;ocean;ocean;noun;rodzaj męski;Ocean je dubok.;Ocean jest głęboki.;NO;;HR_2501_3000 noun travel
+2706;muszelka;školjka;noun;rodzaj żeński;Školjka na plaži.;Muszelka na plaży.;NO;;HR_2501_3000 noun travel
+2707;kraj (region kraju);pokrajina;noun;rodzaj żeński;Pokrajina je bogata.;Kraj jest bogaty.;NO;;HR_2501_3000 noun
+2708;region (obszar);područje;noun;rodzaj nijaki;Područje je zaštićeno.;Obszar jest chroniony.;NO;;HR_2501_3000 noun
+2709;flaga;zastava;noun;rodzaj żeński;Zastava se vije.;Flaga powiewa.;NO;;HR_2501_3000 noun
+2710;herb;grb;noun;rodzaj męski - gen. grba;Grb je star.;Herb jest stary.;NO;;HR_2501_3000 noun
+2711;hymn;himna;noun;rodzaj żeński;Himna se pjeva.;Hymn się śpiewa.;NO;;HR_2501_3000 noun media
+2712;prezydent;predsjednik;noun;rodzaj męski - też: przewodniczący;Predsjednik države.;Prezydent państwa.;NO;;HR_2501_3000 noun
+2713;premier;premijer;noun;rodzaj męski;Premijer je oporba.;Premier jest opozycją.;NO;;HR_2501_3000 noun
+2714;minister;ministar;noun;rodzaj męski;Ministar zdravlja.;Minister zdrowia.;NO;;HR_2501_3000 noun
+2715;parlament;sabor;noun;rodzaj męski - hrvatski sabor;Sabor zasjeda u utorak.;Parlament obraduje we wtorek.;NO;;HR_2501_3000 noun
+2716;partia (polityczna);stranka;noun;rodzaj żeński;Stranka je nova.;Partia jest nowa.;NO;;HR_2501_3000 noun
+2717;wojsko;vojska;noun;rodzaj żeński;Vojska brani zemlju.;Wojsko broni kraju.;NO;;HR_2501_3000 noun
+2718;żołnierz;vojnik;noun;rodzaj męski - mn. vojnici;Vojnik čuva stražu.;Żołnierz pełni wartę.;NO;;HR_2501_3000 noun people
+2719;policjant;policajac;noun;rodzaj męski - gen. policajca;Policajac je zaustavio auto.;Policjant zatrzymał samochód.;NO;;HR_2501_3000 noun people transportation
+2720;strażak;vatrogasac;noun;rodzaj męski - gen. vatrogasca;Vatrogasac je hrabar.;Strażak jest odważny.;NO;;HR_2501_3000 noun people
+2721;pielęgniarka;medicinska sestra;phrase;też: bolničarka;Medicinska sestra pomaže pacijentu.;Pielęgniarka pomaga pacjentowi.;NO;;HR_2501_3000 phrase people
+2722;chirurg;kirurg;noun;rodzaj męski;Kirurg izvodi operaciju.;Chirurg wykonuje operację.;NO;;HR_2501_3000 noun people
+2723;farmaceuta;farmaceut;noun;rodzaj męski;Farmaceut savjetuje.;Farmaceuta doradza.;NO;;HR_2501_3000 noun people
+2724;prawnik;pravnik;noun;rodzaj męski;Pravnik piše ugovor.;Prawnik pisze umowę.;NO;;HR_2501_3000 noun people
+2725;sędzia (sąd);sudac;noun;rodzaj męski - gen. suca;Sudac donosi presudu.;Sędzia wydaje wyrok.;NO;;HR_2501_3000 noun people
+2726;ksiądz;svećenik;noun;rodzaj męski;Svećenik služi misu.;Ksiądz odprawia mszę.;NO;;HR_2501_3000 noun people
+2727;sportowiec;sportaš;noun;rodzaj męski;Sportaš trenira svaki dan.;Sportowiec trenuje codziennie.;NO;;HR_2501_3000 noun people
+2728;piłkarz;nogometaš;noun;rodzaj męski;Nogometaš je zabio gol.;Piłkarz strzelił gola.;NO;;HR_2501_3000 noun people
+2729;fotograf;fotograf;noun;rodzaj męski;Fotograf slika svadbu.;Fotograf robi zdjęcia na ślubie.;NO;;HR_2501_3000 noun people
+2730;architekt;arhitekt;noun;rodzaj męski;Arhitekt projektira zgradu.;Architekt projektuje budynek.;NO;;HR_2501_3000 noun people
+2731;sekretarka;tajnica;noun;rodzaj żeński;Tajnica planira raspored.;Sekretarka planuje kalendarz.;NO;;HR_2501_3000 noun people work
+2732;księgowy;računovođa;noun;rodzaj męski - też ž.;Računovođa vodi knjige.;Księgowy prowadzi księgi.;NO;;HR_2501_3000 noun people work
+2733;programista;programer;noun;rodzaj męski;Programer piše kod.;Programista pisze kod.;NO;;HR_2501_3000 noun people work
+2734;tłumacz;prevoditelj;noun;rodzaj męski;Prevoditelj prevodi tekst.;Tłumacz tłumaczy tekst.;NO;;HR_2501_3000 noun people work
+2735;fryzjerka salon;frizerski salon;phrase;;Frizerski salon je zatvoren.;Salon fryzjerski jest zamknięty.;NO;;HR_2501_3000 phrase
+2736;mechanik samochodowy;automehaničar;noun;rodzaj męski;Automehaničar popravlja motor.;Mechanik samochodowy naprawia silnik.;NO;;HR_2501_3000 noun people transportation
+2737;murarz;zidar;noun;rodzaj męski;Zidar gradi zid.;Murarz buduje ścianę.;NO;;HR_2501_3000 noun people
+2738;stolarz;stolar;noun;rodzaj męski;Stolar radi ormar.;Stolarz robi szafę.;NO;;HR_2501_3000 noun people home
+2739;malarz (ścian);soboslikar;noun;rodzaj męski;Soboslikar boji stan.;Malarz maluje mieszkanie.;NO;;HR_2501_3000 noun people home
+2740;rybak;ribar;noun;rodzaj męski;Ribar lovi ribu.;Rybak łowi ryby.;NO;;HR_2501_3000 noun people
+2741;piekarz;pekar;noun;rodzaj męski;Pekar peče kruh.;Piekarz piecze chleb.;NO;;HR_2501_3000 noun people food
+2742;rzeźnik;mesar;noun;rodzaj męski;Mesar reže meso.;Rzeźnik kroi mięso.;NO;;HR_2501_3000 noun people food
+2743;sklep mięsny;mesnica;noun;rodzaj żeński;Mesnica je otvorena.;Sklep mięsny jest otwarty.;NO;;HR_2501_3000 noun food shopping
+2744;centrum handlowe;trgovački centar;phrase;;Trgovački centar je pun ljudi.;Centrum handlowe jest pełne ludzi.;NO;;HR_2501_3000 phrase shopping
+2745;supermarket;supermarket;noun;rodzaj męski;Supermarket radi non stop.;Supermarket działa non stop.;NO;;HR_2501_3000 noun shopping
+2746;księgarnia;knjižara;noun;rodzaj żeński;Knjižara je puna novih naslova.;Księgarnia jest pełna nowych tytułów.;NO;;HR_2501_3000 noun shopping
+2747;kwiaciarnia;cvjećarnica;noun;rodzaj żeński;Cvjećarnica prodaje ruže.;Kwiaciarnia sprzedaje róże.;NO;;HR_2501_3000 noun shopping
+2748;kiosk;kiosk;noun;rodzaj męski;Kiosk s novinama.;Kiosk z gazetami.;NO;;HR_2501_3000 noun shopping media
+2749;sklep spożywczy;prehrambena trgovina;phrase;też: samoposluga;Prehrambena trgovina radi ujutro.;Sklep spożywczy działa rano.;NO;;HR_2501_3000 phrase shopping
+2750;lodówka;frižider;noun;patrz frižider - też: hladnjak;Frižider hladi hranu.;Lodówka chłodzi jedzenie.;NO;;HR_2501_3000 noun home
+2751;zamrażarka;zamrzivač;noun;rodzaj męski;Zamrzivač je pun.;Zamrażarka jest pełna.;NO;;HR_2501_3000 noun home
+2752;kuchenka gazowa;plinski štednjak;phrase;;Plinski štednjak je siguran.;Kuchenka gazowa jest bezpieczna.;NO;;HR_2501_3000 phrase home
+2753;mikrofalówka;mikrovalna;noun;rodzaj żeński - też: mikrovalka;Mikrovalna grije obrok.;Mikrofalówka grzeje posiłek.;NO;;HR_2501_3000 noun home
+2754;czajnik elektryczny;kuhalo za vodu;phrase;;Kuhalo za vodu je brzo.;Czajnik elektryczny jest szybki.;NO;;HR_2501_3000 phrase home food
+2755;ekspres do kawy;aparat za kavu;phrase;;Aparat za kavu je novi.;Ekspres do kawy jest nowy.;NO;;HR_2501_3000 phrase home food
+2756;kanapka;sendvič;noun;rodzaj męski;Sendvič sa šunkom.;Kanapka z szynką.;NO;;HR_2501_3000 noun food
+2757;bulion;juha od kokoši;phrase;też: temeljac;Juha od kokoši je zdrava.;Bulion jest zdrowy.;NO;;HR_2501_3000 phrase food
+2758;omlet;omlet;noun;rodzaj męski;Omlet sa sirom.;Omlet z serem.;NO;;HR_2501_3000 noun food
+2759;jajecznica;kajgana;noun;rodzaj żeński;Kajgana s pršutom.;Jajecznica z szynką.;NO;;HR_2501_3000 noun food
+2760;naleśnik;palačinka;noun;rodzaj żeński;Palačinka s pekmezom.;Naleśnik z dżemem.;NO;;HR_2501_3000 noun food
+2761;bułka;peciwo;noun;rodzaj nijaki - też: kifla;Peciwo za doručak.;Bułka na śniadanie.;NO;;HR_2501_3000 noun food
+2762;chleb pełnoziarnisty;integralni kruh;phrase;;Integralni kruh je zdraviji.;Chleb pełnoziarnisty jest zdrowszy.;NO;;HR_2501_3000 phrase food
+2763;tost;tost;noun;rodzaj męski;Tost s maslacem.;Tost z masłem.;NO;;HR_2501_3000 noun food
+2764;śmietana;vrhnje;noun;rodzaj nijaki;Vrhnje uz kolač.;Śmietana do ciasta.;NO;;HR_2501_3000 noun food
+2765;twaróg;svježi sir;phrase;;Svježi sir sa začinima.;Twaróg z ziołami.;NO;;HR_2501_3000 phrase food
+2766;pierogi (typ);okruglice;noun;liczba mnoga;Okruglice sa šljivama.;Pierogi ze śliwkami.;NO;;HR_2501_3000 noun food
+2767;gulasz;gulaš;noun;rodzaj męski;Gulaš je začinjen.;Gulasz jest przyprawiony.;NO;;HR_2501_3000 noun food
+2768;danie mięsne;mesno jelo;phrase;;Mesno jelo za ručak.;Danie mięsne na obiad.;NO;;HR_2501_3000 phrase food
+2769;wegański;veganski;adjective;ž. veganska;Veganski proizvodi.;Wegańskie produkty.;NO;;HR_2501_3000 adjective food
+2770;bezmięsny;bez mesa;phrase;;Jelo bez mesa.;Danie bezmięsne.;NO;;HR_2501_3000 phrase food
+2771;bezlaktozowy;bez laktoze;phrase;;Mlijeko bez laktoze.;Mleko bezlaktozowe.;NO;;HR_2501_3000 phrase food
+2772;organiczny;organski;adjective;ž. organska - też: eko;Organska hrana je zdrava.;Organiczna żywność jest zdrowa.;NO;;HR_2501_3000 adjective food
+2773;dieta wegetariańska;vegetarijanska prehrana;phrase;;Vegetarijanska prehrana je zdrava.;Dieta wegetariańska jest zdrowa.;NO;;HR_2501_3000 phrase food
+2774;kalorie;kalorije;noun;liczba mnoga;Kalorije brojim.;Kalorie liczę.;NO;;HR_2501_3000 noun food
+2775;białka;bjelančevine;noun;liczba mnoga;Bjelančevine za mišiće.;Białka dla mięśni.;NO;;HR_2501_3000 noun food
+2776;węglowodany;ugljikohidrati;noun;liczba mnoga;Ugljikohidrati daju energiju.;Węglowodany dają energię.;NO;;HR_2501_3000 noun food
+2777;tłuszcze;masti;noun;liczba mnoga;Masti su nužne.;Tłuszcze są niezbędne.;NO;;HR_2501_3000 noun food
+2778;witamina;vitamin;noun;rodzaj męski - mn. vitamini;Vitamin C je važan.;Witamina C jest ważna.;NO;;HR_2501_3000 noun food
+2779;minerał;mineral;noun;rodzaj męski;Mineral cink.;Minerał cynk.;NO;;HR_2501_3000 noun
+2780;wapń;kalcij;noun;rodzaj męski;Kalcij za kosti.;Wapń dla kości.;NO;;HR_2501_3000 noun food
+2781;antybiotyk;antibiotik;noun;rodzaj męski;Antibiotik za tri dana.;Antybiotyk na trzy dni.;NO;;HR_2501_3000 noun
+2782;szczepionka;cjepivo;noun;rodzaj nijaki;Cjepivo je preporučeno.;Szczepionka jest zalecana.;NO;;HR_2501_3000 noun
+2783;operacja (chirurgiczna);operacija;noun;rodzaj żeński;Operacija je uspješna.;Operacja jest udana.;NO;;HR_2501_3000 noun
+2784;zabieg;zahvat;noun;rodzaj męski;Zahvat je kratak.;Zabieg jest krótki.;NO;;HR_2501_3000 noun
+2785;pacjent;pacijent;noun;rodzaj męski;Pacijent čeka rezultate.;Pacjent czeka na wyniki.;NO;;HR_2501_3000 noun people
+2786;lekarz rodzinny;liječnik obiteljske medicine;phrase;patrz obiteljski liječnik;Liječnik obiteljske medicine me poznaje.;Lekarz rodzinny mnie zna.;NO;;HR_2501_3000 phrase people
+2787;klinika;klinika;noun;rodzaj żeński;Klinika je moderna.;Klinika jest nowoczesna.;NO;;HR_2501_3000 noun
+2788;szpital psychiatryczny;psihijatrijska bolnica;phrase;;Psihijatrijska bolnica pomaže.;Szpital psychiatryczny pomaga.;NO;;HR_2501_3000 phrase
+2789;wypadek (medyczny);medicinski slučaj;phrase;;Medicinski slučaj je hitan.;Wypadek medyczny jest pilny.;NO;;HR_2501_3000 phrase
+2790;ambulans;hitna pomoć;phrase;patrz hitna;Hitna pomoć je stigla.;Ambulans przyjechał.;NO;;HR_2501_3000 phrase transportation
+2791;szpital ogólny;opća bolnica;phrase;;Opća bolnica prima pacijente.;Szpital ogólny przyjmuje pacjentów.;NO;;HR_2501_3000 phrase
+2792;temperatura ciała;tjelesna temperatura;phrase;;Tjelesna temperatura je normalna.;Temperatura ciała jest w normie.;NO;;HR_2501_3000 phrase
+2793;puls;puls;noun;rodzaj męski;Puls je brz.;Puls jest szybki.;NO;;HR_2501_3000 noun
+2794;ciśnienie krwi;krvni tlak;phrase;też: tlak;Krvni tlak je visok.;Ciśnienie krwi jest wysokie.;NO;;HR_2501_3000 phrase
+2795;objaw;simptom;noun;rodzaj męski;Simptom je slabost.;Objawem jest osłabienie.;NO;;HR_2501_3000 noun
+2796;diagnoza;dijagnoza;noun;rodzaj żeński;Dijagnoza je jasna.;Diagnoza jest jasna.;NO;;HR_2501_3000 noun
+2797;alergia (na coś);alergija na;phrase;patrz alergija;Alergija na orahe.;Alergia na orzechy.;NO;;HR_2501_3000 phrase food
+2798;ból głowy;glavobolja;noun;rodzaj żeński;Glavobolja me boli.;Ból głowy mnie męczy.;NO;;HR_2501_3000 noun
+2799;ból zęba;zubobolja;noun;rodzaj żeński;Zubobolja je gadna.;Ból zęba jest okropny.;NO;;HR_2501_3000 noun
+2800;ból brzucha;bol u trbuhu;phrase;;Bol u trbuhu je oštra.;Ból brzucha jest ostry.;NO;;HR_2501_3000 phrase
+2801;ranić;raniti;verb;1. os.: ranim;Ranio se u nogu.;Zranił się w nogę.;NO;;HR_2501_3000 verb
+2802;rana;rana;noun;rodzaj żeński;Rana krvari.;Rana krwawi.;NO;;HR_2501_3000 noun
+2803;blizna;ožiljak;noun;rodzaj męski - gen. ožiljka;Ožiljak od operacije.;Blizna po operacji.;NO;;HR_2501_3000 noun
+2804;siniak;modrica;noun;rodzaj żeński;Modrica na koljenu.;Siniak na kolanie.;NO;;HR_2501_3000 noun
+2805;skaleczenie;posjekotina;noun;rodzaj żeński;Posjekotina na prstu.;Skaleczenie na palcu.;NO;;HR_2501_3000 noun
+2806;spuchlina;oteklina;noun;rodzaj żeński;Oteklina na nozi.;Spuchlina na nodze.;NO;;HR_2501_3000 noun
+2807;infekcja;infekcija;noun;rodzaj żeński;Infekcija se širi.;Infekcja się szerzy.;NO;;HR_2501_3000 noun
+2808;wirus;virus;noun;rodzaj męski;Virus je zarazan.;Wirus jest zaraźliwy.;NO;;HR_2501_3000 noun
+2809;bakteria;bakterija;noun;rodzaj żeński;Bakterija u želucu.;Bakteria w żołądku.;NO;;HR_2501_3000 noun
+2810;grzybica;gljivična infekcija;phrase;;Gljivična infekcija se liječi.;Grzybica się leczy.;NO;;HR_2501_3000 phrase
+2811;test (medyczny);test;noun;rodzaj męski - też: sprawdzian;Test krvi je negativan.;Test krwi jest negatywny.;NO;;HR_2501_3000 noun
+2812;wynik badania;rezultat pretrage;phrase;;Rezultat pretrage je stigao.;Wynik badania nadszedł.;NO;;HR_2501_3000 phrase
+2813;rentgen;rendgen;noun;rodzaj męski;Rendgen ruke.;Rentgen ręki.;NO;;HR_2501_3000 noun
+2814;tomografia;tomografija;noun;rodzaj żeński;Tomografija glave.;Tomografia głowy.;NO;;HR_2501_3000 noun
+2815;USG;ultrazvuk;noun;rodzaj męski;Ultrazvuk trbuha.;USG brzucha.;NO;;HR_2501_3000 noun
+2816;depresja;depresija;noun;rodzaj żeński;Depresija se liječi.;Depresja się leczy.;NO;;HR_2501_3000 noun
+2817;lęk;tjeskoba;noun;rodzaj żeński;Tjeskoba me hvata.;Lęk mnie ogarnia.;NO;;HR_2501_3000 noun emotions
+2818;bezsenność;nesanica;noun;rodzaj żeński;Nesanica me muči.;Bezsenność mnie męczy.;NO;;HR_2501_3000 noun
+2819;senność;pospanost;noun;rodzaj żeński;Pospanost popodne.;Senność po południu.;NO;;HR_2501_3000 noun
+2820;energia (siła);energija;noun;rodzaj żeński;Energija mi je pala.;Energia mi spadła.;NO;;HR_2501_3000 noun
+2821;joga;joga;noun;rodzaj żeński;Joga umiruje.;Joga uspokaja.;NO;;HR_2501_3000 noun
+2822;medytacja;meditacija;noun;rodzaj żeński;Meditacija ujutro.;Medytacja rano.;NO;;HR_2501_3000 noun
+2823;masaż;masaža;noun;rodzaj żeński;Masaža leđa.;Masaż pleców.;NO;;HR_2501_3000 noun
+2824;sauna;sauna;noun;rodzaj żeński;Sauna nakon plivanja.;Sauna po pływaniu.;NO;;HR_2501_3000 noun travel
+2825;basen;bazen;noun;rodzaj męski;Bazen je zatvoren.;Basen jest zamknięty.;NO;;HR_2501_3000 noun travel
+2826;jazda rowerem;vožnja bicikla;phrase;;Vožnja bicikla je zabavna.;Jazda rowerem jest zabawna.;NO;;HR_2501_3000 phrase
+2827;wędrówka;planinarenje;noun;rodzaj nijaki;Planinarenje po Velebitu.;Wędrówka po Welebicie.;NO;;HR_2501_3000 noun travel
+2828;kemping;kampiranje;noun;rodzaj nijaki;Kampiranje na moru.;Kemping nad morzem.;NO;;HR_2501_3000 noun travel
+2829;namiot;šator;noun;rodzaj męski;Šator je vodootporan.;Namiot jest wodoodporny.;NO;;HR_2501_3000 noun travel
+2830;śpiwór;vreća za spavanje;phrase;;Vreća za spavanje je topla.;Śpiwór jest ciepły.;NO;;HR_2501_3000 phrase travel
+2831;latarka;baterijska svjetiljka;phrase;też: baterija;Baterijska svjetiljka svijetli.;Latarka świeci.;NO;;HR_2501_3000 phrase
+2832;zapałki;šibice;noun;liczba mnoga - też: žigice;Šibice u kutiji.;Zapałki w pudełku.;NO;;HR_2501_3000 noun home
+2833;zapalniczka;upaljač;noun;rodzaj męski;Upaljač ne radi.;Zapalniczka nie działa.;NO;;HR_2501_3000 noun home
+2834;świeca;svijeća;noun;rodzaj żeński;Svijeća gori.;Świeca się pali.;NO;;HR_2501_3000 noun home
+2835;popielniczka;pepeljara;noun;rodzaj żeński;Pepeljara je puna.;Popielniczka jest pełna.;NO;;HR_2501_3000 noun home
+2836;cygaro;cigara;noun;rodzaj żeński;Cigara je skupa.;Cygaro jest drogie.;NO;;HR_2501_3000 noun
+2837;alkoholik;alkoholičar;noun;rodzaj męski;Alkoholičar treba pomoć.;Alkoholik potrzebuje pomocy.;NO;;HR_2501_3000 noun people
+2838;narkotyk;droga;noun;rodzaj żeński - też: lek na receptę;Droga uništava život.;Narkotyk niszczy życie.;NO;;HR_2501_3000 noun
+2839;uzależnienie;ovisnost;noun;rodzaj żeński;Ovisnost je bolest.;Uzależnienie jest chorobą.;NO;;HR_2501_3000 noun
+2840;pomoc społeczna;socijalna pomoć;phrase;;Socijalna pomoć postoji.;Pomoc społeczna istnieje.;NO;;HR_2501_3000 phrase
+2841;organizacja;organizacija;noun;rodzaj żeński;Organizacija je humanitarna.;Organizacja jest humanitarna.;NO;;HR_2501_3000 noun
+2842;fundacja;zaklada;noun;rodzaj żeński;Zaklada pomaže djeci.;Fundacja pomaga dzieciom.;NO;;HR_2501_3000 noun
+2843;wolontariusz;volonter;noun;rodzaj męski;Volonter pomaže besplatno.;Wolontariusz pomaga bezpłatnie.;NO;;HR_2501_3000 noun people
+2844;darowizna;donacija;noun;rodzaj żeński;Donacija pomaže projektu.;Darowizna pomaga projektowi.;NO;;HR_2501_3000 noun
+2845;wsparcie (finansowe);potpora;noun;rodzaj żeński;Potpora obitelji.;Wsparcie dla rodziny.;NO;;HR_2501_3000 noun
+2846;projekt (badawczy);istraživanje;noun;rodzaj nijaki;Istraživanje traje godinu.;Badanie trwa rok.;NO;;HR_2501_3000 noun work
+2847;informacja o osobie;osobni podaci;phrase;;Osobni podaci se čuvaju.;Dane osobowe się chronią.;NO;;HR_2501_3000 phrase work
+2848;wykres;grafikon;noun;rodzaj męski;Grafikon prikazuje rast.;Wykres pokazuje wzrost.;NO;;HR_2501_3000 noun work
+2849;tabela;tablica;noun;rodzaj żeński;Tablica s podacima.;Tabela z danymi.;NO;;HR_2501_3000 noun work
+2850;lista;lista;noun;rodzaj żeński - patrz popis;Lista imena.;Lista nazwisk.;NO;;HR_2501_3000 noun
+2851;statystyka;statistika;noun;rodzaj żeński;Statistika pokazuje trend.;Statystyka pokazuje trend.;NO;;HR_2501_3000 noun
+2852;raport;izvješće;noun;rodzaj nijaki - też izvještaj;Izvješće je gotovo.;Raport jest gotowy.;NO;;HR_2501_3000 noun work
+2853;analiza;analiza;noun;rodzaj żeński;Analiza rezultata.;Analiza wyników.;NO;;HR_2501_3000 noun work
+2854;wniosek (rezultat);zaključak;noun;rodzaj męski - gen. zaključka;Zaključak je jasan.;Wniosek jest jasny.;NO;;HR_2501_3000 noun work
+2855;dokumentacja;dokumentacija;noun;rodzaj żeński;Dokumentacija je uredna.;Dokumentacja jest uporządkowana.;NO;;HR_2501_3000 noun work
+2856;archiwum;arhiv;noun;rodzaj męski;Arhiv čuva dokumente.;Archiwum przechowuje dokumenty.;NO;;HR_2501_3000 noun
+2857;zaświadczenie;uvjerenje;noun;rodzaj nijaki - też: potwrdenie;Uvjerenje o statusu.;Zaświadczenie o statusie.;NO;;HR_2501_3000 noun
+2858;wypis (ze szpitala);otpusno pismo;phrase;;Otpusno pismo iz bolnice.;Wypis ze szpitala.;NO;;HR_2501_3000 phrase
+2859;wizyta lekarska;pregled kod liječnika;phrase;też: liječnički pregled;Pregled kod liječnika je danas.;Wizyta u lekarza jest dzisiaj.;NO;;HR_2501_3000 phrase
+2860;umówienie się;dogovaranje;noun;rodzaj nijaki;Dogovaranje termina.;Umówienie terminu.;NO;;HR_2501_3000 noun
+2861;przełożenie (terminu);odgoda;noun;rodzaj żeński;Odgoda sastanka.;Przełożenie spotkania.;NO;;HR_2501_3000 noun work
+2862;odsuwać w czasie;odgoditi;verb;1. os.: odgodim;Odgoditi sastanak.;Przełożyć spotkanie.;NO;;HR_2501_3000 verb work
+2863;odwoływać (regularnie);otkazivati;verb;1. os.: otkazujem;Otkazuju stalno.;Odwołują ciągle.;NO;;HR_2501_3000 verb
+2864;podejmować decyzję;donositi odluku;phrase;;Donosim odluku danas.;Podejmuję decyzję dzisiaj.;NO;;HR_2501_3000 phrase
+2865;nie zgadzać się;ne slagati se;phrase;;Ne slažem se s tobom.;Nie zgadzam się z tobą.;NO;;HR_2501_3000 phrase
+2866;wątpliwość;dvojba;noun;rodzaj żeński;Dvojba je opravdana.;Wątpliwość jest uzasadniona.;NO;;HR_2501_3000 noun
+2867;konieczność;nužnost;noun;rodzaj żeński;Nužnost je jasna.;Konieczność jest oczywista.;NO;;HR_2501_3000 noun
+2868;dostępny;dostupan;adjective;ž. dostupna;Dostupan sam popodne.;Dostępny jestem po południu.;NO;;HR_2501_3000 adjective
+2869;niedostępny;nedostupan;adjective;ž. nedostupna;Nedostupan je do sutra.;Niedostępny jest do jutra.;NO;;HR_2501_3000 adjective
+2870;otwarty (dostęp);pristupačan;adjective;ž. pristupačna;Cijena je pristupačna.;Cena jest przystępna.;NO;;HR_2501_3000 adjective shopping
+2871;dopuszczalny;dopustiv;adjective;ž. dopustiva;Dopustivo ponašanje.;Dopuszczalne zachowanie.;NO;;HR_2501_3000 adjective
+2872;niedopuszczalny;nedopustiv;adjective;ž. nedopustiva;Nedopustivo ponašanje.;Niedopuszczalne zachowanie.;NO;;HR_2501_3000 adjective
+2873;niewystarczający;nedovoljan;adjective;ž. nedovoljna;Nedovoljan broj ljudi.;Niewystarczająca liczba osób.;NO;;HR_2501_3000 adjective people
+2874;wątpliwy;sumnjiv;adjective;ž. sumnjiva;Sumnjiv čovjek.;Podejrzany człowiek.;NO;;HR_2501_3000 adjective people
+2875;podejrzany;osumnjičen;adjective;ž. osumnjičena;Osumnjičen je za krađu.;Podejrzany o kradzież.;NO;;HR_2501_3000 adjective
+2876;zaufany;povjerljiv;adjective;ž. povjerljiva;Povjerljiv izvor.;Zaufane źródło.;NO;;HR_2501_3000 adjective
+2877;dyskretny;diskretan;adjective;ž. diskretna;Diskretan razgovor.;Dyskretna rozmowa.;NO;;HR_2501_3000 adjective conversation
+2878;kotek;mače;noun;rodzaj nijaki - zdrobniale;Mače je slatko.;Kotek jest słodki.;NO;;HR_2501_3000 noun
+2879;szczeniak;štene;noun;rodzaj nijaki;Štene je maleno.;Szczeniak jest mały.;NO;;HR_2501_3000 noun
+2880;chomik;hrčak;noun;rodzaj męski - gen. hrčka;Hrčak trči u kotaču.;Chomik biega w kołowrotku.;NO;;HR_2501_3000 noun
+2881;królik;kunić;noun;rodzaj męski - też: zec zając;Kunić skače po vrtu.;Królik skacze po ogrodzie.;NO;;HR_2501_3000 noun
+2882;papuga;papiga;noun;rodzaj żeński;Papiga govori.;Papuga mówi.;NO;;HR_2501_3000 noun
+2883;kanarek;kanarinac;noun;rodzaj męski - gen. kanarinca;Kanarinac pjeva.;Kanarek śpiewa.;NO;;HR_2501_3000 noun
+2884;ryba akwariowa;akvarijska riba;phrase;;Akvarijska riba je zlatna.;Ryba akwariowa jest złota.;NO;;HR_2501_3000 phrase
+2885;żółw;kornjača;noun;rodzaj żeński;Kornjača je spora.;Żółw jest powolny.;NO;;HR_2501_3000 noun
+2886;lis;lisica;noun;rodzaj żeński;Lisica lukava.;Lis chytry.;NO;;HR_2501_3000 noun
+2887;wilk;vuk;noun;rodzaj męski - mn. vukovi;Vuk zavija u šumi.;Wilk wyje w lesie.;NO;;HR_2501_3000 noun
+2888;niedźwiedź;medvjed;noun;rodzaj męski;Medvjed spava zimu.;Niedźwiedź śpi zimą.;NO;;HR_2501_3000 noun
+2889;jeleń;jelen;noun;rodzaj męski;Jelen ima velike rogove.;Jeleń ma duże rogi.;NO;;HR_2501_3000 noun
+2890;sarna;srna;noun;rodzaj żeński;Srna prelazi cestu.;Sarna przechodzi przez drogę.;NO;;HR_2501_3000 noun transportation
+2891;dzik;divlja svinja;phrase;;Divlja svinja u šumi.;Dzik w lesie.;NO;;HR_2501_3000 phrase
+2892;wiewiórka;vjeverica;noun;rodzaj żeński;Vjeverica skače s grane.;Wiewiórka skacze z gałęzi.;NO;;HR_2501_3000 noun
+2893;szczur;štakor;noun;rodzaj męski;Štakor u kanti.;Szczur w wiadrze.;NO;;HR_2501_3000 noun
+2894;żaba;žaba;noun;rodzaj żeński;Žaba krekeće.;Żaba rechocze.;NO;;HR_2501_3000 noun
+2895;ślimak;puž;noun;rodzaj męski - mn. puževi;Puž na travi.;Ślimak na trawie.;NO;;HR_2501_3000 noun
+2896;pająk;pauk;noun;rodzaj męski;Pauk plete mrežu.;Pająk snuje sieć.;NO;;HR_2501_3000 noun
+2897;mrówka;mrav;noun;rodzaj męski;Mrav nosi teret.;Mrówka niesie ciężar.;NO;;HR_2501_3000 noun
+2898;osa;osa;noun;rodzaj żeński;Osa ubada.;Osa użądla.;NO;;HR_2501_3000 noun
+2899;motyl;leptir;noun;rodzaj męski;Leptir leti oko cvijeta.;Motyl lata wokół kwiatu.;NO;;HR_2501_3000 noun
+2900;robak;crv;noun;rodzaj męski;Crv u jabuci.;Robak w jabłku.;NO;;HR_2501_3000 noun food
+2901;kura;kokoš;noun;rodzaj żeński;Kokoš nosi jaja.;Kura znosi jajka.;NO;;HR_2501_3000 noun
+2902;kaczka;patka;noun;rodzaj żeński;Patka pliva u jezeru.;Kaczka pływa w jeziorze.;NO;;HR_2501_3000 noun
+2903;gęś;guska;noun;rodzaj żeński;Guska čuva dvorište.;Gęś strzeże podwórka.;NO;;HR_2501_3000 noun
+2904;indyk;puran;noun;rodzaj męski - gen. purana;Puran za Božić.;Indyk na Boże Narodzenie.;NO;;HR_2501_3000 noun food
+2905;kogut;pijetao;noun;rodzaj męski - gen. pijetla;Pijetao kukuriče u zoru.;Kogut pieje o świcie.;NO;;HR_2501_3000 noun
+2906;świnia;svinja;noun;rodzaj żeński;Svinja u obor.;Świnia w chlewie.;NO;;HR_2501_3000 noun
+2907;byk;bik;noun;rodzaj męski - mn. bikovi;Bik je opasan.;Byk jest niebezpieczny.;NO;;HR_2501_3000 noun
+2908;koza;koza;noun;rodzaj żeński;Koza daje mlijeko.;Koza daje mleko.;NO;;HR_2501_3000 noun food
+2909;osioł;magarac;noun;rodzaj męski - gen. magarca;Magarac na otoku.;Osioł na wyspie.;NO;;HR_2501_3000 noun
+2910;pastwisko;pašnjak;noun;rodzaj męski - gen. pašnjaka;Pašnjak je zeleni.;Pastwisko jest zielone.;NO;;HR_2501_3000 noun
+2911;stajnia;štala;noun;rodzaj żeński;Štala je za konje.;Stajnia jest dla koni.;NO;;HR_2501_3000 noun
+2912;chlew;svinjac;noun;rodzaj męski;Svinjac je iza kuće.;Chlew jest za domem.;NO;;HR_2501_3000 noun
+2913;farma;farma;noun;rodzaj żeński;Farma pilića.;Ferma kurcząt.;NO;;HR_2501_3000 noun food
+2914;traktor;traktor;noun;rodzaj męski;Traktor ore polje.;Traktor orze pole.;NO;;HR_2501_3000 noun
+2915;kombajn;kombajn;noun;rodzaj męski;Kombajn žanje pšenicu.;Kombajn żnie pszenicę.;NO;;HR_2501_3000 noun
+2916;zbiory (żniwa);žetva;noun;rodzaj żeński;Žetva pšenice.;Żniwa pszenicy.;NO;;HR_2501_3000 noun
+2917;siać;sijati;verb;1. os.: sijem;Sije žito.;Sieje zboże.;NO;;HR_2501_3000 verb
+2918;kosić;kositi;verb;1. os.: kosim - trawę;Kosi travu vikendom.;Kosi trawę w weekendy.;NO;;HR_2501_3000 verb home
+2919;podlewać;zalijevati;verb;1. os.: zalijevam;Zalijevam cvijeće.;Podlewam kwiaty.;NO;;HR_2501_3000 verb home
+2920;zbierać (plony);ubirati;verb;1. os.: ubirem;Ubire grožđe.;Zbiera winogrona.;NO;;HR_2501_3000 verb food
+2921;zebrać (perf);skupiti;verb;1. os.: skupim;Skupili smo dovoljno.;Zebraliśmy wystarczająco.;NO;;HR_2501_3000 verb
+2922;materiał (budowlany);građevinski materijal;phrase;;Građevinski materijal je skup.;Materiał budowlany jest drogi.;NO;;HR_2501_3000 phrase
+2923;cegła;cigla;noun;rodzaj żeński;Cigla je crvena.;Cegła jest czerwona.;NO;;HR_2501_3000 noun
+2924;beton;beton;noun;rodzaj męski;Beton se suši.;Beton wysycha.;NO;;HR_2501_3000 noun
+2925;cement;cement;noun;rodzaj męski;Cement je za temelje.;Cement na fundamenty.;NO;;HR_2501_3000 noun
+2926;stal;čelik;noun;rodzaj męski;Čelik je jak.;Stal jest mocna.;NO;;HR_2501_3000 noun
+2927;miedź;bakar;noun;rodzaj męski - gen. bakra;Bakar provodi struju.;Miedź przewodzi prąd.;NO;;HR_2501_3000 noun
+2928;aluminium;aluminij;noun;rodzaj męski;Aluminij je lagan.;Aluminium jest lekkie.;NO;;HR_2501_3000 noun
+2929;karton (materiał);karton;noun;rodzaj męski;Karton je od papira.;Karton jest z papieru.;NO;;HR_2501_3000 noun
+2930;wełna;vuna;noun;rodzaj żeński;Vuna je topla.;Wełna jest ciepła.;NO;;HR_2501_3000 noun
+2931;bawełna;pamuk;noun;rodzaj męski;Pamuk je prirodan.;Bawełna jest naturalna.;NO;;HR_2501_3000 noun
+2932;jedwab;svila;noun;rodzaj żeński;Svila je glatka.;Jedwab jest gładki.;NO;;HR_2501_3000 noun
+2933;len;lan;noun;rodzaj męski;Lan raste u polju.;Len rośnie w polu.;NO;;HR_2501_3000 noun
+2934;młotek;čekić;noun;rodzaj męski;Čekić za čavle.;Młotek do gwoździ.;NO;;HR_2501_3000 noun home
+2935;śrubokręt;odvijač;noun;rodzaj męski;Odvijač je mali.;Śrubokręt jest mały.;NO;;HR_2501_3000 noun home
+2936;śruba;vijak;noun;rodzaj męski - gen. vijka;Vijak je izgubljen.;Śruba się zgubiła.;NO;;HR_2501_3000 noun home
+2937;piła;pila;noun;rodzaj żeński;Pila reže drvo.;Piła tnie drzewo.;NO;;HR_2501_3000 noun home
+2938;wiertarka;bušilica;noun;rodzaj żeński;Bušilica je bučna.;Wiertarka jest głośna.;NO;;HR_2501_3000 noun home
+2939;drabina;ljestve;noun;liczba mnoga - też: skele;Ljestve za tavan.;Drabina na strych.;NO;;HR_2501_3000 noun home
+2940;klej;ljepilo;noun;rodzaj nijaki;Ljepilo za drvo.;Klej do drewna.;NO;;HR_2501_3000 noun home
+2941;taśma klejąca;samoljepljiva traka;phrase;;Samoljepljiva traka je jaka.;Taśma klejąca jest mocna.;NO;;HR_2501_3000 phrase home
+2942;produkcja;proizvodnja;noun;rodzaj żeński;Proizvodnja raste.;Produkcja rośnie.;NO;;HR_2501_3000 noun work
+2943;jakość produktu;kvaliteta proizvoda;phrase;patrz kvaliteta;Kvaliteta proizvoda je visoka.;Jakość produktu jest wysoka.;NO;;HR_2501_3000 phrase shopping
+2944;cena hurtowa;veleprodajna cijena;phrase;;Veleprodajna cijena je niža.;Cena hurtowa jest niższa.;NO;;HR_2501_3000 phrase shopping
+2945;cena detaliczna;maloprodajna cijena;phrase;;Maloprodajna cijena raste.;Cena detaliczna rośnie.;NO;;HR_2501_3000 phrase shopping
+2946;hurtownia;veleprodaja;noun;rodzaj żeński;Veleprodaja radi za tvrtke.;Hurtownia obsługuje firmy.;NO;;HR_2501_3000 noun work
+2947;magazyn (rzeczy);skladište;noun;rodzaj nijaki;Skladište je puno.;Magazyn jest pełny.;NO;;HR_2501_3000 noun work
+2948;transport;transport;noun;rodzaj męski - też: prijevoz;Transport robe.;Transport towarów.;NO;;HR_2501_3000 noun transportation work
+2949;spedycja;špedicija;noun;rodzaj żeński;Špedicija dostavlja pakete.;Spedycja dostarcza paczki.;NO;;HR_2501_3000 noun work
+2950;kurier;kurir;noun;rodzaj męski;Kurir dolazi popodne.;Kurier przychodzi po południu.;NO;;HR_2501_3000 noun people work
+2951;doręczenie;isporuka;noun;rodzaj żeński;Isporuka je danas.;Doręczenie jest dzisiaj.;NO;;HR_2501_3000 noun
+2952;konstytucja;ustav;noun;rodzaj męski;Ustav je temelj.;Konstytucja jest fundamentem.;NO;;HR_2501_3000 noun
+2953;wyrok;presuda;noun;rodzaj żeński;Presuda je pravomoćna.;Wyrok jest prawomocny.;NO;;HR_2501_3000 noun
+2954;więzienie;zatvor;noun;rodzaj męski;Zatvor je za teške zločine.;Więzienie jest za ciężkie przestępstwa.;NO;;HR_2501_3000 noun
+2955;przestępstwo;zločin;noun;rodzaj męski;Zločin je kažnjiv.;Przestępstwo jest karalne.;NO;;HR_2501_3000 noun
+2956;wykroczenie;prekršaj;noun;rodzaj męski;Prekršaj je manji od zločina.;Wykroczenie jest mniejsze od przestępstwa.;NO;;HR_2501_3000 noun
+2957;złodziej;lopov;noun;rodzaj męski;Lopov je uhvaćen.;Złodziej jest złapany.;NO;;HR_2501_3000 noun people
+2958;oszust;prevarant;noun;rodzaj męski;Prevarant obmanjuje ljude.;Oszust oszukuje ludzi.;NO;;HR_2501_3000 noun people
+2959;oszustwo;prijevara;noun;rodzaj żeński;Prijevara na internetu.;Oszustwo w internecie.;NO;;HR_2501_3000 noun
+2960;monitoring;video nadzor;phrase;;Video nadzor je aktivan.;Monitoring jest aktywny.;NO;;HR_2501_3000 phrase
+2961;kamera monitoringu;sigurnosna kamera;phrase;;Sigurnosna kamera snima.;Kamera monitoringu nagrywa.;NO;;HR_2501_3000 phrase
+2962;kluczowanie (do dostępu);pristupna šifra;phrase;też: lozinka;Pristupna šifra je nova.;Hasło dostępu jest nowe.;NO;;HR_2501_3000 phrase media
+2963;kod PIN;PIN kod;phrase;;PIN kod za karticu.;Kod PIN do karty.;NO;;HR_2501_3000 phrase
+2964;identyfikacja;identifikacija;noun;rodzaj żeński;Identifikacija je potrebna.;Identyfikacja jest potrzebna.;NO;;HR_2501_3000 noun
+2965;wiza turystyczna;turistička viza;phrase;;Turistička viza vrijedi mjesec.;Wiza turystyczna obowiązuje miesiąc.;NO;;HR_2501_3000 phrase travel
+2966;wiza studencka;studentska viza;phrase;;Studentska viza za četiri godine.;Wiza studencka na cztery lata.;NO;;HR_2501_3000 phrase
+2967;pozwolenie na pracę;radna dozvola;phrase;;Radna dozvola je izdana.;Pozwolenie na pracę wydane.;NO;;HR_2501_3000 phrase work
+2968;obywatelstwo;državljanstvo;noun;rodzaj nijaki;Državljanstvo se dobiva.;Obywatelstwo się uzyskuje.;NO;;HR_2501_3000 noun
+2969;imigrant;imigrant;noun;rodzaj męski;Imigrant traži posao.;Imigrant szuka pracy.;NO;;HR_2501_3000 noun people work
+2970;uchodźca;izbjeglica;noun;rodzaj męski/żeński;Izbjeglica traži zaštitu.;Uchodźca szuka ochrony.;NO;;HR_2501_3000 noun people
+2971;ambasada;veleposlanstvo;noun;rodzaj nijaki;Veleposlanstvo je zatvoreno.;Ambasada jest zamknięta.;NO;;HR_2501_3000 noun
+2972;konsulat;konzulat;noun;rodzaj męski;Konzulat izdaje dokumente.;Konsulat wydaje dokumenty.;NO;;HR_2501_3000 noun
+2973;stała siedziba;prebivalište;noun;rodzaj nijaki;Prebivalište je u Zagrebu.;Miejsce zamieszkania w Zagrzebiu.;NO;;HR_2501_3000 noun
+2974;adres zameldowania;adresa prebivališta;phrase;;Adresa prebivališta se mijenja.;Adres zamieszkania się zmienia.;NO;;HR_2501_3000 phrase
+2975;meldunek;prijava boravišta;phrase;;Prijava boravišta u policiji.;Meldunek na policji.;NO;;HR_2501_3000 phrase
+2976;wypełniać wniosek;podnijeti zahtjev;phrase;;Podnesi zahtjev do petka.;Złóż wniosek do piątku.;NO;;HR_2501_3000 phrase
+2977;administracja;administracija;noun;rodzaj żeński;Administracija je spora.;Administracja jest wolna.;NO;;HR_2501_3000 noun
+2978;urzędnik;službenik;noun;rodzaj męski;Službenik pomaže s papirologijom.;Urzędnik pomaga z dokumentami.;NO;;HR_2501_3000 noun people work
+2979;papierologia;papirologija;noun;rodzaj żeński;Papirologija je zamorna.;Papierologia jest męcząca.;NO;;HR_2501_3000 noun work
+2980;biurokracja;birokracija;noun;rodzaj żeński;Birokracija usporava.;Biurokracja spowalnia.;NO;;HR_2501_3000 noun
+2981;klient (usługa);korisnik;noun;rodzaj męski;Korisnik je zadovoljan.;Klient jest zadowolony.;NO;;HR_2501_3000 noun people work
+2982;konto (użytkownika);korisnički račun;phrase;;Korisnički račun je aktivan.;Konto użytkownika jest aktywne.;NO;;HR_2501_3000 phrase media
+2983;profil (społeczny);profil;noun;rodzaj męski;Profil na Facebooku.;Profil na Facebooku.;NO;;HR_2501_3000 noun media
+2984;post (wpis);objava;noun;patrz objaviti - też: objava;Objava na Instagramu.;Post na Instagramie.;NO;;HR_2501_3000 noun media
+2985;lajk;lajk;noun;rodzaj męski;Lajk na fotografiji.;Lajk pod zdjęciem.;NO;;HR_2501_3000 noun media
+2986;udostępnianie;dijeljenje;noun;rodzaj nijaki;Dijeljenje sadržaja.;Udostępnianie treści.;NO;;HR_2501_3000 noun media
+2987;obserwujący;pratitelj;noun;rodzaj męski - mn. pratitelji;Pratitelji na Instagramu.;Obserwujący na Instagramie.;NO;;HR_2501_3000 noun media
+2988;influencer;influencer;noun;rodzaj męski;Influencer ima puno pratitelja.;Influencer ma wielu obserwujących.;NO;;HR_2501_3000 noun media
+2989;blog;blog;noun;rodzaj męski;Blog o putovanjima.;Blog podróżniczy.;NO;;HR_2501_3000 noun media travel
+2990;vlog (blog wideo);vlog;noun;rodzaj męski;Vlog na YouTubeu.;Vlog na YouTubie.;NO;;HR_2501_3000 noun media
+2991;podcast;podcast;noun;rodzaj męski;Podcast slušam u autu.;Podcastów słucham w samochodzie.;NO;;HR_2501_3000 noun media
+2992;transmisja na żywo;prijenos uživo;phrase;;Prijenos uživo utakmice.;Transmisja na żywo meczu.;NO;;HR_2501_3000 phrase media
+2993;streaming;streaming;noun;rodzaj męski;Streaming filmova.;Streaming filmów.;NO;;HR_2501_3000 noun media
+2994;e-mail (list);e-mail;noun;rodzaj męski - patrz mail;E-mail je stigao.;E-mail dotarł.;NO;;HR_2501_3000 noun work
+2995;spam;spam;noun;rodzaj męski;Spam u sandučiću.;Spam w skrzynce.;NO;;HR_2501_3000 noun media
+2996;wiadomość SMS;SMS poruka;phrase;;SMS poruka od banke.;SMS z banku.;NO;;HR_2501_3000 phrase
+2997;WhatsApp;WhatsApp;noun;rodzaj męski - marka;WhatsApp poruke.;Wiadomości WhatsApp.;NO;;HR_2501_3000 noun media
+2998;emotka;emoji;noun;rodzaj męski;Emoji na kraju poruke.;Emotka na końcu wiadomości.;NO;;HR_2501_3000 noun media
+2999;wideorozmowa;video poziv;phrase;;Video poziv preko Zooma.;Wideorozmowa przez Zoom.;NO;;HR_2501_3000 phrase media
+3000;rozmowa telefoniczna;telefonski poziv;phrase;patrz telefonski razgovor;Telefonski poziv iz banke.;Rozmowa telefoniczna z banku.;NO;;HR_2501_3000 phrase

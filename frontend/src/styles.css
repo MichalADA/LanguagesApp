@@ -708,6 +708,46 @@ p { margin: 0; text-wrap: pretty; }
   text-align: center;
 }
 
+/* ---------- Fiszki ---------- */
+
+.flashcard-rate {
+  padding: 10px 16px;
+  font-weight: 600;
+}
+.flashcard-rate-again {
+  border-color: rgba(212, 99, 111, 0.5);
+  color: var(--accent-text);
+}
+.flashcard-rate-again:hover {
+  border-color: var(--accent-hover);
+  background: rgba(140, 29, 44, 0.14);
+}
+.flashcard-rate-hard {
+  border-color: rgba(197, 162, 83, 0.35);
+  color: var(--gold-light);
+}
+.flashcard-rate-hard:hover {
+  border-color: var(--gold-line);
+  background: var(--gold-soft);
+}
+.flashcard-rate-easy {
+  border-color: rgba(120, 175, 130, 0.4);
+  color: #a8d4b2;
+}
+.flashcard-rate-easy:hover {
+  border-color: rgba(120, 175, 130, 0.65);
+  background: rgba(120, 175, 130, 0.1);
+}
+
+.game-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-height: 300px;
+  justify-content: center;
+}
+
 .odmiana-summary {
   grid-template-columns: repeat(5, 1fr);
   width: 100%;
