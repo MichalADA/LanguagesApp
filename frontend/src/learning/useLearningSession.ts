@@ -17,7 +17,7 @@ type SessionPromise = Promise<string | null>;
  * Guest mode remains entirely local. Requests are serialised so a quick
  * answer cannot overtake session creation or completion.
  */
-export function useLearningSession() {
+export function useLearningSession({ trackVocabulary = true }: { trackVocabulary?: boolean } = {}) {
   const { status, apiRequest } = useAuth();
   const { course } = useCourse();
   const activeSession = useRef<SessionPromise | null>(null);
@@ -69,7 +69,7 @@ export function useLearningSession() {
     // Seed the flashcards' firstSeenAt so a word encountered in a game
     // shows up as "already met" the next time the user opens Fiszki.
     // Fire-and-forget: the game's outcome does not depend on this call.
-    if (status === "authenticated" && answer.wordRef && !seenRefs.current.has(answer.wordRef)) {
+    if (trackVocabulary && status === "authenticated" && answer.wordRef && !seenRefs.current.has(answer.wordRef)) {
       seenRefs.current.add(answer.wordRef);
       void markFlashcardSeen(apiRequest, { course: course.id, wordRef: answer.wordRef }).catch(
         () => {
@@ -77,7 +77,7 @@ export function useLearningSession() {
         },
       );
     }
-  }, [apiRequest, enqueue, status, course.id]);
+  }, [apiRequest, enqueue, status, course.id, trackVocabulary]);
 
   useEffect(
     () => () => {

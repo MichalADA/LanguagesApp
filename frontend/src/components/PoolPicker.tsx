@@ -3,6 +3,7 @@ import { useCourse } from "@/courses/CourseProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useT } from "@/i18n";
 import { LEARNING_LEVELS, levelForLegacyBlock } from "@/config/learningLevels";
+import type { LearningLevelId } from "@/config/learningLevels";
 
 function sameSource(a: PoolSource, b: PoolSource): boolean {
   if (a.kind !== b.kind) return false;
@@ -16,10 +17,11 @@ interface Props {
   onChange: (next: PoolSelection) => void;
   poolSize: number;
   maxTopics?: number;
+  sentenceCounts?: Record<LearningLevelId, number>;
 }
 
 /** Wybór puli słów. Wspólny dla wszystkich gier, sterowany danymi kursu. */
-export function PoolPicker({ value, onChange, poolSize, maxTopics = 14 }: Props) {
+export function PoolPicker({ value, onChange, poolSize, maxTopics = 14, sentenceCounts }: Props) {
   const t = useT();
   const { course } = useCourse();
   const { topics, entries } = useVocabulary();
@@ -41,7 +43,7 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14 }: Props)
   return (
     <div className="stack" style={{ gap: 22 }}>
       <div className="stack" style={{ gap: 10 }}>
-        <span className="eyebrow">{t("pool.step1")}</span>
+        <span className="eyebrow">{t(sentenceCounts ? "sentences.chooseLevel" : "pool.step1")}</span>
         <div className="grid grid-3">
           {LEARNING_LEVELS.map((level) => (
             <button
@@ -53,12 +55,12 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14 }: Props)
             >
               <span style={{ fontSize: 20, fontWeight: 700 }}>{level.id}</span>
               <span style={{ fontSize: 15, fontWeight: 600 }}>{t(level.nameKey)}</span>
-              <span className="tile-note">{t("learningLevels.wordCount", { n: level.wordCount })}</span>
+              <span className="tile-note">{sentenceCounts ? t("sentences.count", { n: sentenceCounts[level.id] }) : t("learningLevels.wordCount", { n: level.wordCount })}</span>
             </button>
           ))}
         </div>
 
-        <span className="eyebrow" style={{ marginTop: 8 }}>{t("pool.reviews")}</span>
+        {!sentenceCounts && <><span className="eyebrow" style={{ marginTop: 8 }}>{t("pool.reviews")}</span>
         <div className="grid grid-2">
           {special.map((s) => (
             <button
@@ -72,10 +74,10 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14 }: Props)
               <span className="tile-note">{s.note}</span>
             </button>
           ))}
-        </div>
+        </div></>}
       </div>
 
-      <div className="stack" style={{ gap: 10 }}>
+      {!sentenceCounts && <div className="stack" style={{ gap: 10 }}>
         <span className="eyebrow">{t("pool.step2")}</span>
         <div className="row" style={{ gap: 8 }}>
           <button
@@ -96,10 +98,10 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14 }: Props)
             </button>
           ))}
         </div>
-      </div>
+      </div>}
 
       <span className="stat-note">
-        {poolSize > 0 ? t("pool.size", { n: poolSize }) : t("pool.empty")}
+        {sentenceCounts ? t("sentences.exactLevel") : poolSize > 0 ? t("pool.size", { n: poolSize }) : t("pool.empty")}
       </span>
     </div>
   );

@@ -4,6 +4,8 @@ import { TrasaGame } from "./trasa/TrasaGame";
 import { OdmianaGame } from "./odmiana/OdmianaGame";
 import { QuickGame } from "@/quick-games/QuickGame";
 import { QUICK_GAME_IDS } from "@/quick-games/helpers";
+import { SentenceGameSession } from "@/sentences/SentenceGameSession";
+import { SENTENCE_MODES } from "@/sentences/types";
 
 export const GAME_CATEGORIES = ["main", "quick", "grammar", "sentences", "listening", "radio"] as const;
 export interface GameModule {
@@ -34,7 +36,11 @@ export const GAMES: GameModule[] = [
     id: mode, category: "quick", nameKey: `gameNames.${mode}`, taglineKey: `quickDescriptions.${mode}`, descriptionKey: `quickDescriptions.${mode}`, status: "active",
     component: () => createElement(QuickGame, { mode }),
   })),
-  ...["translate-sentence", "order-sentence", "fill-gap", "correct-sentence", "transform-sentence"].map((id) => planned(id, "sentences")),
+  ...SENTENCE_MODES.map((mode): GameModule => ({
+    id: `sentence-${mode}`, category: "sentences", status: "active",
+    nameKey: `sentences.names.${mode}`, taglineKey: `sentences.descriptions.${mode}`, descriptionKey: `sentences.descriptions.${mode}`,
+    component: () => createElement(SentenceGameSession, { mode }),
+  })),
   planned("listening", "listening"),
   { ...planned("radio", "radio"), status: "active", href: "/radio" },
   planned("false-friends", "quick"),

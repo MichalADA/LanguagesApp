@@ -262,6 +262,10 @@ p { margin: 0; text-wrap: pretty; }
 
 .grid { display: grid; gap: 14px; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
+.sentence-actions { flex-wrap: wrap; gap: 10px; }
+.sentence-prompt { font-size: clamp(22px, 4vw, 32px); overflow-wrap: anywhere; }
+.sentence-built { min-height: 70px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; font-size: 22px; overflow-wrap: anywhere; }
+.sentence-session input { width: 100%; min-width: 0; }
 .radio-page { display: flex; flex-direction: column; gap: 24px; }
 .radio-player { border-color: var(--accent); min-width: 0; }
 .radio-player audio { width: 100%; color-scheme: dark; }

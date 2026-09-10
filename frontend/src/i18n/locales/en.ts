@@ -1,6 +1,29 @@
 import type { Dictionary } from "../types";
 
 export const en: Dictionary = {
+  sentences: {
+    names: { translation: "Sentence translation", builder: "Sentence builder", gap: "Fill the gap", correction: "Correct the sentence", transform: "Transformations" },
+    descriptions: { translation: "Translate the whole sentence into Croatian.", builder: "Build a Croatian sentence from shuffled words.", gap: "Type the missing word or phrase.", correction: "Find the mistake and type the corrected sentence.", transform: "Transform the sentence as instructed." },
+    chooseLevel: "Choose a sentence level", count: "{n} sentences", exactLevel: "Only sentences from the selected level are included.",
+    sessionLength: "Session: {n} questions without repeats.", notEnough: "Not enough sentences for a full session at this level.",
+    courseOnly: "Sentence games are currently available for the Polish → Croatian course.",
+    loading: "Loading sentences…", loadError: "Could not load sentences.", retry: "Try again", start: "Start",
+    check: "Check", next: "Next", undo: "Undo", clear: "Clear", hint: "Hint", correctAnswer: "Correct answer",
+    result: "Result", correct: "Correct", wrong: "Incorrect", accuracy: "Accuracy", again: "Play again", games: "Game list",
+    changeLevel: "Change level", progress: "Completed: {n} / {total}", yourAnswer: "Your answer in Croatian", selectWords: "Click the words to build a sentence.",
+    good: "Correct!", incorrect: "Incorrect answer",
+    instructions: { negation: "Make the sentence negative.", main_negation: "Negate the main clause. Keep the subordinate clause unchanged.", tense_future: "Change the sentence to the future tense. Adjust the subordinate clause if necessary.", tense_past: "Change the sentence to the past tense. Keep the subject's person and gender." },
+    explanations: {
+      case: "Use the locative after the preposition of location and match the adjective ending.",
+      agreement: "Match the verb's person and number to the subject.",
+      object: "The object of this verb takes the accusative case.",
+      gender: "Match the adjective's gender, number and case to the noun.",
+      genitive: "This construction requires the genitive, not the nominative or accusative.",
+      dative: "The recipient of the action takes the dative here.",
+      instrumental: "This construction requires the instrumental. Match the adjective too, if present.",
+      relative: "Match the relative pronoun's gender to the noun and its case to its role in the subordinate clause.",
+    },
+  },
   radio: {
     title: "Croatian radio", description: "Listen to Croatian radio and get used to natural speech.",
     listen: "Listen", listenTo: "Listen to {name}", all: "All", music: "Music", talk: "Talk / News",
@@ -209,7 +232,7 @@ export const en: Dictionary = {
     },
     "sentences": {
       "name": "Sentences",
-      "description": "Learn in context — new modes are planned."
+      "description": "Practise language in context."
     },
     "listening": {
       "name": "Listening",
