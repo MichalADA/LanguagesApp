@@ -36,7 +36,7 @@ export const GAMES: GameModule[] = [
   })),
   ...["translate-sentence", "order-sentence", "fill-gap", "correct-sentence", "transform-sentence"].map((id) => planned(id, "sentences")),
   planned("listening", "listening"),
-  planned("radio", "radio"),
+  { ...planned("radio", "radio"), status: "active", href: "/radio" },
   planned("false-friends", "quick"),
 ];
 export function findGame(id: string | undefined): GameModule | undefined {

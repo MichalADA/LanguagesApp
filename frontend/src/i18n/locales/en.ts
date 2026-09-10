@@ -1,6 +1,15 @@
 import type { Dictionary } from "../types";
 
 export const en: Dictionary = {
+  radio: {
+    title: "Croatian radio", description: "Listen to Croatian radio and get used to natural speech.",
+    listen: "Listen", listenTo: "Listen to {name}", all: "All", music: "Music", talk: "Talk / News",
+    search: "Search stations", nowPlaying: "Now listening", player: "Radio player", choose: "Choose a station",
+    play: "Play", pause: "Pause", stop: "Stop", connecting: "Connecting to the station…",
+    streamError: "Could not play the station", loadError: "Could not load stations. Please try again.",
+    loading: "Loading stations…", retry: "Try again", empty: "No stations match your filters.",
+    count: "Stations: {n}", filters: "Station filters", unknownFormat: "Format unavailable", source: "Stations provided by:",
+  },
   app: {
     name: "Lexodromia",
     tagline: "Learn languages by playing",

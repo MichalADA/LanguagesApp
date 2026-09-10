@@ -10,6 +10,7 @@ export function GamesPage() {
   const category = GAME_CATEGORIES.find((id) => id === categoryId && id !== "main");
 
   if (categoryId && !category) return <Navigate to="/gry" replace />;
+  if (category === "radio") return <Navigate to="/radio" replace />;
 
   if (!category) {
     const mainGames = GAMES.filter((game) => game.category === "main");
@@ -29,11 +30,12 @@ export function GamesPage() {
             </Link>
           ))}
           {GAME_CATEGORIES.filter((id) => id !== "main").map((id) => (
-            <Link key={id} to={`/gry/kategoria/${id}`} className="panel panel-pad game-card mode-card">
+            <Link key={id} to={id === "radio" ? "/radio" : `/gry/kategoria/${id}`} className="panel panel-pad game-card mode-card">
               <h2>{t(`gameCategories.${id}.name`)}</h2>
               <p className="muted">{t(`gameCategories.${id}.description`)}</p>
               <span className="mode-card-action">{t("games.openMode")} →</span>
               {!GAMES.some((game) => game.category === id && game.status === "active") && <span className="badge">{t("common.soon")}</span>}
+              {id === "radio" && <span className="badge on">{t("common.active")}</span>}
             </Link>
           ))}
         </div>

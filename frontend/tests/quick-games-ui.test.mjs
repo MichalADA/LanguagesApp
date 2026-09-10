@@ -42,6 +42,8 @@ test('learning hub hides individual quick games until their category is opened',
   assert.equal(links().length, 7);
   assert.ok(links().includes('/fiszki'));
   assert.ok(links().includes('/gry/kategoria/quick'));
+  assert.ok(links().includes('/radio'));
+  assert.equal(registry.GAMES.find(game => game.id === 'radio').status, 'active');
   assert.ok(!links().includes('/gry/pairs'));
   assert.ok(!links().includes('/gry/bura'));
   params = {categoryId:'quick'};
@@ -50,6 +52,9 @@ test('learning hub hides individual quick games until their category is opened',
   assert.ok(links().includes('/gry/bura'));
   assert.ok(links().includes('/gry'));
   assert.ok(!links().includes('/fiszki'));
+  params = {categoryId:'radio'};
+  act(() => view.update(React.createElement(GamesPage)));
+  assert.equal(view.root.findByType('redirect').props.to, '/radio');
   params = {categoryId:'invalid'};
   act(() => view.update(React.createElement(GamesPage)));
   assert.equal(view.root.findByType('redirect').props.to, '/gry');

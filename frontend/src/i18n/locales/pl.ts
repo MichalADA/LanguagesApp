@@ -1,6 +1,15 @@
 import type { Dictionary } from "../types";
 
 export const pl: Dictionary = {
+  radio: {
+    title: "Radio chorwackie", description: "Słuchaj chorwackiego radia i osłuchuj się z naturalnym językiem.",
+    listen: "Słuchaj", listenTo: "Słuchaj: {name}", all: "Wszystkie", music: "Muzyka", talk: "Talk / News",
+    search: "Szukaj stacji", nowPlaying: "Teraz słuchasz", player: "Odtwarzacz radia", choose: "Wybierz stację",
+    play: "Odtwórz", pause: "Pauza", stop: "Zatrzymaj", connecting: "Łączenie ze stacją…",
+    streamError: "Nie udało się odtworzyć stacji", loadError: "Nie udało się pobrać stacji. Spróbuj ponownie.",
+    loading: "Pobieranie stacji…", retry: "Spróbuj ponownie", empty: "Brak stacji pasujących do filtrów.",
+    count: "Stacje: {n}", filters: "Filtry stacji", unknownFormat: "Brak danych o formacie", source: "Źródło stacji:",
+  },
   app: {
     name: "Lexodromia",
     tagline: "Nauka języków przez granie",
