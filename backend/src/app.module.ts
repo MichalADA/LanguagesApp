@@ -10,6 +10,7 @@ import { LanguagesModule } from './languages/languages.module';
 import { CoursesModule } from './courses/courses.module';
 import { ProgressModule } from './progress/progress.module';
 import { LearningModule } from './learning/learning.module';
+import { FlashcardsModule } from './flashcards/flashcards.module';
 import { StatisticsModule } from './statistics/statistics.module';
 import { HealthModule } from './health/health.module';
 import { validateEnvironment } from './config/environment';
@@ -27,6 +28,7 @@ import { validateEnvironment } from './config/environment';
     CoursesModule,
     ProgressModule,
     LearningModule,
+    FlashcardsModule,
     StatisticsModule,
     HealthModule,
   ],

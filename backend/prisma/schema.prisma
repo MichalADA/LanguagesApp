@@ -17,31 +17,33 @@ datasource db {
 }
 
 model User {
-  id           String   @id @default(cuid())
-  email        String   @unique
+  id           String    @id @default(cuid())
+  email        String    @unique
   passwordHash String
   displayName  String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
   lastLoginAt  DateTime?
 
-  refreshTokens    RefreshToken[]
-  courseProgress   UserCourseProgress[]
-  learningSessions LearningSession[]
-  learningAnswers  LearningAnswer[]
+  refreshTokens     RefreshToken[]
+  courseProgress    UserCourseProgress[]
+  learningSessions  LearningSession[]
+  learningAnswers   LearningAnswer[]
+  wordProgress      UserWordProgress[]
+  flashcardSessions FlashcardSession[]
 
   @@index([email])
 }
 
 model RefreshToken {
-  id        String   @id @default(cuid())
+  id        String    @id @default(cuid())
   userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   // Refresh tokens are stored HASHED (bcrypt of the raw token). The raw token
   // exists only in the response to the client and never rests on the server.
   tokenHash String
   expiresAt DateTime
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
   revokedAt DateTime?
 
   @@index([userId])
@@ -67,8 +69,10 @@ model Course {
   sourceLanguage Language @relation("CourseSource", fields: [sourceLanguageId], references: [id])
   targetLanguage Language @relation("CourseTarget", fields: [targetLanguageId], references: [id])
 
-  progress UserCourseProgress[]
-  sessions LearningSession[]
+  progress          UserCourseProgress[]
+  sessions          LearningSession[]
+  wordProgress      UserWordProgress[]
+  flashcardSessions FlashcardSession[]
 
   @@unique([sourceLanguageId, targetLanguageId])
   @@index([sourceLanguageId])
@@ -128,4 +132,80 @@ model LearningAnswer {
 
   @@index([sessionId])
   @@index([userId])
+}
+
+/// Per-user SRS progress for a single vocabulary entry.
+/// wordRef is the same neutral string used in LearningAnswer (e.g. "pl-hr:123")
+/// — the CSV row lives in the frontend, this table only tracks review state.
+model UserWordProgress {
+  id              String     @id @default(cuid())
+  userId          String
+  courseId        String
+  wordRef         String
+  status          WordStatus @default(NEW)
+  repetitions     Int        @default(0)
+  correctAnswers  Int        @default(0)
+  wrongAnswers    Int        @default(0)
+  /// SM-2 ease factor. Starts at 2.5, floored at 1.3.
+  easeFactor      Float      @default(2.5)
+  /// Days until the next scheduled review. 0 for freshly seen cards.
+  intervalDays    Int        @default(0)
+  nextReviewAt    DateTime   @default(now())
+  lastReviewedAt  DateTime?
+  firstSeenAt     DateTime   @default(now())
+  masteredAt      DateTime?
+  /// Rolling score raised on misses. Reaching threshold flips status to DIFFICULT.
+  difficultyScore Int        @default(0)
+  /// User-visible manual flag ("mark as difficult").
+  markedDifficult Boolean    @default(false)
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, courseId, wordRef])
+  @@index([userId, courseId, nextReviewAt])
+  @@index([userId, courseId, status])
+}
+
+enum WordStatus {
+  NEW
+  LEARNING
+  REVIEW
+  MASTERED
+  DIFFICULT
+}
+
+/// A flashcards study session (separate from LearningSession so the two
+/// modules can evolve independently and their stats stay uncorrelated).
+model FlashcardSession {
+  id             String             @id @default(cuid())
+  userId         String
+  courseId       String
+  mode           FlashcardMode
+  direction      FlashcardDirection @default(MIXED)
+  startedAt      DateTime           @default(now())
+  finishedAt     DateTime?
+  totalAnswers   Int                @default(0)
+  correctAnswers Int                @default(0)
+  wrongAnswers   Int                @default(0)
+  newWords       Int                @default(0)
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([userId, courseId])
+}
+
+enum FlashcardMode {
+  NEW
+  REVIEW
+  MIXED
+  DIFFICULT
+}
+
+enum FlashcardDirection {
+  SOURCE_TO_TARGET
+  TARGET_TO_SOURCE
+  MIXED
 }

@@ -1,23 +1,50 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useCourse } from "@/courses/CourseProvider";
+import { useAuth } from "@/auth/useAuth";
 import { masteryOf, summarize } from "@/progress/service";
 import { StatCard, ProgressBar } from "@/components/StatCard";
 import { GAMES, findGame } from "@/games/registry";
 import { describePool } from "@/utils/pool";
 import { currentStreak, formatRelative } from "@/utils/date";
 import { useI18n } from "@/i18n";
+import { fetchSummary as fetchFlashcardsSummary } from "@/flashcards/flashcardsApi";
+import type { FlashcardsSummary } from "@/flashcards/types";
 
 export function Dashboard() {
   const { t, locale } = useI18n();
   const { course } = useCourse();
   const { entries, loading } = useVocabulary();
   const { state, current, courseId } = useProgress();
+  const { status, apiRequest } = useAuth();
+  const [flashcards, setFlashcards] = useState<FlashcardsSummary | null>(null);
+
+  useEffect(() => {
+    if (status !== "authenticated") {
+      setFlashcards(null);
+      return;
+    }
+    let alive = true;
+    void fetchFlashcardsSummary(apiRequest, course.id)
+      .then((res) => {
+        if (alive) setFlashcards(res);
+      })
+      .catch(() => {
+        if (alive) setFlashcards(null);
+      });
+    return () => {
+      alive = false;
+    };
+  }, [status, apiRequest, course.id]);
 
   const summary = summarize(state, courseId);
   const streak = currentStreak(current.activeDays);
   const bura = current.games.bura;
+  const reviewCount = flashcards?.reviewDue ?? summary.review;
+  const masteredCount = flashcards?.mastered ?? summary.learned;
+  const difficultCount = flashcards?.difficult ?? summary.difficult;
 
   const lastBlockId =
     current.lastActivity?.pool.source.kind === "block"
@@ -69,11 +96,11 @@ export function Dashboard() {
 
       <section className="grid grid-3">
         <StatCard
-          value={summary.learned}
+          value={masteredCount}
           label={t("dashboard.learned")}
           note={t("dashboard.learnedNote", { total: entries.length || "…" })}
         />
-        <StatCard value={summary.review} label={t("dashboard.review")} note={t("dashboard.reviewNote")} />
+        <StatCard value={reviewCount} label={t("dashboard.review")} note={t("dashboard.reviewNote")} />
         <StatCard
           tone="gold"
           value={bura?.bestScore ?? 0}
@@ -92,7 +119,7 @@ export function Dashboard() {
           note={t("dashboard.accuracyNote", { n: current.totalAttempts })}
         />
         <StatCard
-          value={summary.difficult}
+          value={difficultCount}
           label={t("dashboard.difficult")}
           note={t("dashboard.difficultNote")}
         />

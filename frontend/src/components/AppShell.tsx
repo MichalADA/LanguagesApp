@@ -18,7 +18,7 @@ const NAV: NavItem[] = [
   { to: "/", key: "nav.dashboard", glyph: "◆", end: true },
   { to: "/gry", key: "nav.games", glyph: "▶" },
   { to: "/powtorki", key: "nav.review", glyph: "↻" },
-  { to: "/fiszki", key: "nav.flashcards", glyph: "❑", soon: true },
+  { to: "/fiszki", key: "nav.flashcards", glyph: "❑" },
   { to: "/statystyki", key: "nav.stats", glyph: "▤" },
   { to: "/postep", key: "nav.progress", glyph: "▰" },
   { to: "/jezyki", key: "nav.courses", glyph: "⚑" },

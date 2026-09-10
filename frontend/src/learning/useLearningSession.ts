@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useRef } from "react";
 
 import { useAuth } from "@/auth/useAuth";
+import { useCourse } from "@/courses/CourseProvider";
+import { markSeen as markFlashcardSeen } from "@/flashcards/flashcardsApi";
 import {
   finishLearningSession,
   recordLearningAnswer,
@@ -17,8 +19,12 @@ type SessionPromise = Promise<string | null>;
  */
 export function useLearningSession() {
   const { status, apiRequest } = useAuth();
+  const { course } = useCourse();
   const activeSession = useRef<SessionPromise | null>(null);
   const queue = useRef<Promise<void>>(Promise.resolve());
+  // Words we've already reported to the flashcards "seen" endpoint this
+  // session. Prevents a burst of duplicate POSTs on repeat encounters.
+  const seenRefs = useRef<Set<string>>(new Set());
 
   const enqueue = useCallback(
     (session: SessionPromise, action: (sessionId: string) => Promise<void>) => {
@@ -59,7 +65,19 @@ export function useLearningSession() {
     const session = activeSession.current;
     if (!session) return;
     void enqueue(session, (sessionId) => recordLearningAnswer(apiRequest, sessionId, answer));
-  }, [apiRequest, enqueue]);
+
+    // Seed the flashcards' firstSeenAt so a word encountered in a game
+    // shows up as "already met" the next time the user opens Fiszki.
+    // Fire-and-forget: the game's outcome does not depend on this call.
+    if (status === "authenticated" && answer.wordRef && !seenRefs.current.has(answer.wordRef)) {
+      seenRefs.current.add(answer.wordRef);
+      void markFlashcardSeen(apiRequest, { course: course.id, wordRef: answer.wordRef }).catch(
+        () => {
+          seenRefs.current.delete(answer.wordRef);
+        },
+      );
+    }
+  }, [apiRequest, enqueue, status, course.id]);
 
   useEffect(
     () => () => {
