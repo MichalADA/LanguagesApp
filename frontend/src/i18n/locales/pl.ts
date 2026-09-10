@@ -149,6 +149,9 @@ export const pl: Dictionary = {
     },
   },
   games: {
+    chooseMode: "Wybierz tryb nauki. Wejdź w kategorię, aby zobaczyć dostępne gry.",
+    openMode: "Otwórz",
+    backToModes: "← Tryby nauki",
     eyebrow: "gry",
     title: "Tryby nauki",
     subtitle:

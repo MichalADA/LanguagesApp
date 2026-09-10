@@ -94,7 +94,7 @@ export function QuickGame({ mode }: { mode: QuickGameId }) {
     {mode === "swipe" ? <><p>{t("quick.difficult")}: {counts.difficult}</p><p className="stat-note">{t("quick.selfAssessment")}</p></> : <p>{t("quick.accuracy")}: {accuracy}%</p>}
     {matching && <><p>{t("quick.moves")}: {attempts}</p><p>{t("quick.time", { n: elapsed })}</p></>}
     {syncError && <p role="alert">{t("quick.syncError")}</p>}
-    <div className="row"><button className="btn" onClick={start}>{t("game.again")}</button><button className="btn-ghost" onClick={() => setPhase("menu")}>{t("game.changePool")}</button><Link to="/gry" className="btn-ghost">{t("games.backToList")}</Link></div>
+    <div className="row"><button className="btn" onClick={start}>{t("game.again")}</button><button className="btn-ghost" onClick={() => setPhase("menu")}>{t("game.changePool")}</button><Link to="/gry/kategoria/quick" className="btn-ghost">{t("games.backToList")}</Link></div>
   </section>;
 
   return <section className="panel panel-pad stack">

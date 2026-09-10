@@ -149,6 +149,9 @@ export const en: Dictionary = {
     },
   },
   games: {
+    chooseMode: "Choose a learning mode. Open a category to see its games.",
+    openMode: "Open",
+    backToModes: "← Learning modes",
     eyebrow: "games",
     title: "Practice modes",
     subtitle:

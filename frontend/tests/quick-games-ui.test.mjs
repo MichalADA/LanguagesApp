@@ -15,6 +15,46 @@ async function compile(path, mocks = {}) {
   return exports;
 }
 const helpers = await compile('../src/quick-games/helpers.ts');
+
+test('learning hub hides individual quick games until their category is opened', async () => {
+  const stub = () => null;
+  const registry = await compile('../src/games/registry.ts', {
+    './bura/BuraGame': { BuraGame: stub },
+    './trasa/TrasaGame': { TrasaGame: stub },
+    './odmiana/OdmianaGame': { OdmianaGame: stub },
+    '@/quick-games/QuickGame': { QuickGame: stub },
+    '@/quick-games/helpers': helpers,
+  });
+  let params = {};
+  const { GamesPage } = await compile('../src/pages/GamesPage.tsx', {
+    'react-router-dom': {
+      Link: ({to, children}) => React.createElement('a', {href:to}, children),
+      Navigate: ({to}) => React.createElement('redirect', {to}),
+      useParams: () => params,
+    },
+    '@/games/registry': registry,
+    '@/progress/ProgressProvider': { useProgress: () => ({current:{games:{}}}) },
+    '@/i18n': { useT: () => (key) => key },
+  });
+  let view;
+  act(() => { view = Renderer.create(React.createElement(GamesPage)); });
+  const links = () => view.root.findAllByType('a').map(node => node.props.href);
+  assert.equal(links().length, 7);
+  assert.ok(links().includes('/fiszki'));
+  assert.ok(links().includes('/gry/kategoria/quick'));
+  assert.ok(!links().includes('/gry/pairs'));
+  assert.ok(!links().includes('/gry/bura'));
+  params = {categoryId:'quick'};
+  act(() => view.update(React.createElement(GamesPage)));
+  assert.ok(links().includes('/gry/pairs'));
+  assert.ok(links().includes('/gry/bura'));
+  assert.ok(links().includes('/gry'));
+  assert.ok(!links().includes('/fiszki'));
+  params = {categoryId:'invalid'};
+  act(() => view.update(React.createElement(GamesPage)));
+  assert.equal(view.root.findByType('redirect').props.to, '/gry');
+  act(() => view.unmount());
+});
 const fixture = [['dom','kuća','home'], ['chleb','kruh','food'], ['mleko','mlijeko','food'], ['jabłko','jabuka','food']].map(([sourceText,targetText,topic], i) => ({ id: `pl-hr:${i+1}`, rank:i+1, sourceText, targetText, tags:[topic], block:'one', partOfSpeech:'noun' }));
 
 async function harness(pool = fixture) {

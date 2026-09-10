@@ -46,6 +46,7 @@ export default function App() {
         <Route element={<ShellLayout />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/gry" element={<GamesPage />} />
+          <Route path="/gry/kategoria/:categoryId" element={<GamesPage />} />
           <Route path="/gry/:gameId" element={<PlayPage />} />
           <Route path="/powtorki" element={<ReviewPage />} />
           <Route path="/fiszki" element={<FiszkiPage />} />
