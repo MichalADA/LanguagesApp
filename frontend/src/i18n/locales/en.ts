@@ -161,6 +161,100 @@ export const en: Dictionary = {
     notFound: "No such game",
     backToList: "← Game list",
   },
+  "gameNames": {
+    "bura": "Bura",
+    "trasa": "Journey",
+    "odmiana": "Conjugation",
+    "flashcards": "Flashcards",
+    "multiple-choice": "Four answers",
+    "pairs": "Pairs",
+    "swipe": "Swipe",
+    "true-false": "True / False",
+    "match-columns": "Match pairs",
+    "odd-one-out": "Odd one out",
+    "scrambled-word": "Scrambled letters",
+    "translate-sentence": "Translate sentences",
+    "order-sentence": "Order sentences",
+    "fill-gap": "Fill the gap",
+    "correct-sentence": "Correct sentences",
+    "transform-sentence": "Transformations",
+    "listening": "Listening",
+    "radio": "Croatian radio",
+    "false-friends": "False friends"
+  },
+  "gameCategories": {
+    "main": {
+      "name": "Main modes",
+      "description": "Longer learning modes and regular review."
+    },
+    "quick": {
+      "name": "Quick games",
+      "description": "Short practice without long sessions."
+    },
+    "grammar": {
+      "name": "Grammar",
+      "description": "Practise conjugation and language structures."
+    },
+    "sentences": {
+      "name": "Sentences",
+      "description": "Learn in context — new modes are planned."
+    },
+    "listening": {
+      "name": "Listening",
+      "description": "A home for recordings and listening practice."
+    },
+    "radio": {
+      "name": "Radio",
+      "description": "Get used to natural spoken language."
+    }
+  },
+  "quickDescriptions": {
+    "multiple-choice": "Choose the correct translation from four answers.",
+    "pairs": "Reveal cards and find Polish–Croatian pairs.",
+    "swipe": "Quickly assess whether you know a word.",
+    "true-false": "Decide whether the displayed translation is correct.",
+    "match-columns": "Match Polish words with their Croatian equivalents.",
+    "odd-one-out": "Find the word that does not belong.",
+    "scrambled-word": "Build a Croatian word from shuffled letters."
+  },
+  "plannedGames": {
+    "translate-sentence": "Translate sentences — coming soon.",
+    "order-sentence": "Order sentences — coming soon.",
+    "fill-gap": "Fill the gap — coming soon.",
+    "correct-sentence": "Correct sentences — coming soon.",
+    "transform-sentence": "Transformations — coming soon.",
+    "listening": "Listening — coming soon.",
+    "radio": "Listen to Croatian radio and get used to natural speech.",
+    "false-friends": "False friends — coming soon."
+  },
+  "quick": {
+    "result": "Result",
+    "known": "I know it",
+    "unknown": "I don't know it",
+    "difficult": "Difficult",
+    "correct": "Correct",
+    "wrong": "Incorrect",
+    "accuracy": "Accuracy",
+    "moves": "Moves",
+    "time": "Time: {n} s",
+    "progress": "Completed: {n} / {total}",
+    "yes": "Yes",
+    "no": "No",
+    "undo": "Undo",
+    "clear": "Clear",
+    "category": "Shared topic of the other words: {topic}",
+    "hiddenCard": "Hidden card {n}",
+    "memoryHint": "Reveal two cards and find their matching translations.",
+    "matchHint": "Choose a word in one column, then its translation in the other.",
+    "swipeHint": "Swipe left: unknown. Right: known. You can also use the buttons.",
+    "oddPrompt": "Which word does not belong?",
+    "oddHint": "Questions need at least two topics. Remove the topic filter if the pool is empty. Ambiguous tag sets are skipped.",
+    "empty": "Not enough suitable words for this game. Change the level or remove the topic filter.",
+    "loadError": "Could not load vocabulary. Reload the page and try again.",
+    "syncError": "The flag was saved locally but could not be synced to your account.",
+    "selfAssessment": "This is self-assessment — it does not increase word mastery or account accuracy."
+  },
+  quickTopics: {"food":"food","home":"home","work":"work","people":"people","travel":"travel","transportation":"transportation","media":"media","nature":"nature","animals":"animals","body":"body","health":"health","clothes":"clothes","weather":"weather","sport":"sport","school":"school","family":"family","technology":"technology","shopping":"shopping"},
   pool: {
     step1: "1 — choose a level",
     block: "Block {n} · {range}",

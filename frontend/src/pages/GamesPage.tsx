@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GAMES } from "@/games/registry";
+import { GAMES, GAME_CATEGORIES } from "@/games/registry";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useT } from "@/i18n";
 
@@ -15,14 +15,17 @@ export function GamesPage() {
         <p className="lede">{t("games.subtitle")}</p>
       </header>
 
-      <div className="grid grid-2">
-        {GAMES.map((g) => {
+      {GAME_CATEGORIES.map((category) => <section key={category} className="stack" aria-labelledby={`category-${category}`}>
+        <h2 id={`category-${category}`}>{t(`gameCategories.${category}.name`)}</h2>
+        <p className="stat-note">{t(`gameCategories.${category}.description`)}</p>
+      <div className="grid grid-3">
+        {GAMES.filter((game) => game.category === category).map((g) => {
           const rec = current.games[g.id];
           const active = g.status === "active";
           return (
             <article key={g.id} className={active ? "panel panel-pad game-card" : "panel panel-pad game-card soon"}>
               <div className="row" style={{ justifyContent: "space-between", gap: 8 }}>
-                <h2 style={{ fontSize: 20 }}>{g.name}</h2>
+                <h3 style={{ fontSize: 20 }}>{t(g.nameKey)}</h3>
                 <span className={active ? "badge on" : "badge"}>
                   {active ? t("common.active") : t("common.soon")}
                 </span>
@@ -32,7 +35,7 @@ export function GamesPage() {
               </p>
               {active ? (
                 <div className="row" style={{ justifyContent: "space-between", marginTop: 6 }}>
-                  <Link to={`/gry/${g.id}`} className="btn">
+                  <Link to={g.href ?? `/gry/${g.id}`} className="btn">
                     {t("games.play")}
                   </Link>
                   <span className="mono dim" style={{ fontSize: 12 }}>
@@ -43,13 +46,14 @@ export function GamesPage() {
                 </div>
               ) : (
                 <span className="mono dim" style={{ fontSize: 12, marginTop: 6 }}>
-                  {t("games.prepared")}
+                  {t("common.soon")}
                 </span>
               )}
             </article>
           );
         })}
       </div>
+      </section>)}
     </div>
   );
 }

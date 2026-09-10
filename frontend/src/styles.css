@@ -369,6 +369,22 @@ p { margin: 0; text-wrap: pretty; }
 .tile.on { border-color: var(--accent-hover); background: rgba(140, 29, 44, 0.14); }
 .tile-note { font-size: 13px; color: var(--muted); }
 
+/* Quick games reuse the app's cards and controls. */
+.game-card { display: flex; flex-direction: column; min-width: 0; }
+.quick-question { gap: 20px; }
+.quick-prompt { font-size: clamp(22px, 5vw, 36px); overflow-wrap: anywhere; }
+.quick-swipe { padding: 40px 18px; border: 1px solid var(--line); border-radius: 12px; text-align: center; touch-action: pan-y; user-select: none; }
+.quick-swipe h2 { font-size: clamp(24px, 6vw, 40px); overflow-wrap: anywhere; }
+.quick-memory { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.quick-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.quick-tile { min-height: 84px; justify-content: center; align-items: center; overflow-wrap: anywhere; min-width: 0; }
+.quick-tile.matched { border-color: var(--gold-line); opacity: 0.5; }
+.quick-question button:disabled { opacity: 0.5; cursor: default; }
+@media (max-width: 560px) {
+  .quick-memory { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .quick-tile { padding: 10px 6px; font-size: 13px; }
+}
+
 .bar { height: 5px; background: #241b1d; border-radius: 3px; overflow: hidden; }
 .bar > span { display: block; height: 100%; background: var(--accent); }
 /* Opanowanie — jedyne miejsce, gdzie postęp jest złoty. */

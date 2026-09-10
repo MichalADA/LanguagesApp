@@ -161,6 +161,100 @@ export const pl: Dictionary = {
     notFound: "Nie ma takiej gry",
     backToList: "← Lista gier",
   },
+  "gameNames": {
+    "bura": "Bura",
+    "trasa": "Trasa",
+    "odmiana": "Odmiana",
+    "flashcards": "Fiszki",
+    "multiple-choice": "Cztery odpowiedzi",
+    "pairs": "Pary",
+    "swipe": "Swipe",
+    "true-false": "Tak / Nie",
+    "match-columns": "Połącz pary",
+    "odd-one-out": "Co nie pasuje?",
+    "scrambled-word": "Rozsypane litery",
+    "translate-sentence": "Tłumaczenie zdań",
+    "order-sentence": "Układanie zdań",
+    "fill-gap": "Uzupełnij lukę",
+    "correct-sentence": "Popraw zdanie",
+    "transform-sentence": "Transformacje",
+    "listening": "Listening",
+    "radio": "Radio chorwackie",
+    "false-friends": "Fałszywi przyjaciele"
+  },
+  "gameCategories": {
+    "main": {
+      "name": "Tryby główne",
+      "description": "Większe tryby nauki i regularne powtórki."
+    },
+    "quick": {
+      "name": "Szybkie gry",
+      "description": "Krótka nauka bez długich sesji."
+    },
+    "grammar": {
+      "name": "Gramatyka",
+      "description": "Ćwicz odmianę i struktury językowe."
+    },
+    "sentences": {
+      "name": "Zdania",
+      "description": "Ćwicz język w kontekście — nowe tryby w przygotowaniu."
+    },
+    "listening": {
+      "name": "Słuchanie",
+      "description": "Miejsce na nagrania i ćwiczenia ze słuchu."
+    },
+    "radio": {
+      "name": "Radio",
+      "description": "Osłuchuj się z naturalnym językiem."
+    }
+  },
+  "quickDescriptions": {
+    "multiple-choice": "Wybierz poprawne tłumaczenie spośród czterech odpowiedzi.",
+    "pairs": "Odkrywaj kafelki i znajdź polskie oraz chorwackie odpowiedniki.",
+    "swipe": "Szybko oceń, czy znasz dane słowo.",
+    "true-false": "Zdecyduj, czy pokazane tłumaczenie jest poprawne.",
+    "match-columns": "Połącz słowa polskie z ich chorwackimi odpowiednikami.",
+    "odd-one-out": "Znajdź słowo, które nie pasuje do pozostałych.",
+    "scrambled-word": "Ułóż chorwackie słowo z rozsypanych liter."
+  },
+  "plannedGames": {
+    "translate-sentence": "Tłumaczenie zdań — w przygotowaniu.",
+    "order-sentence": "Układanie zdań — w przygotowaniu.",
+    "fill-gap": "Uzupełnij lukę — w przygotowaniu.",
+    "correct-sentence": "Popraw zdanie — w przygotowaniu.",
+    "transform-sentence": "Transformacje — w przygotowaniu.",
+    "listening": "Listening — w przygotowaniu.",
+    "radio": "Słuchaj chorwackiego radia i osłuchuj się z naturalnym językiem.",
+    "false-friends": "Fałszywi przyjaciele — w przygotowaniu."
+  },
+  "quick": {
+    "result": "Wynik",
+    "known": "Znam",
+    "unknown": "Nie znam",
+    "difficult": "Trudne",
+    "correct": "Poprawne",
+    "wrong": "Błędne",
+    "accuracy": "Skuteczność",
+    "moves": "Ruchy",
+    "time": "Czas: {n} s",
+    "progress": "Ukończone: {n} / {total}",
+    "yes": "Tak",
+    "no": "Nie",
+    "undo": "Cofnij",
+    "clear": "Wyczyść",
+    "category": "Wspólna kategoria pozostałych słów: {topic}",
+    "hiddenCard": "Zakryta karta {n}",
+    "memoryHint": "Odkryj dwie karty i znajdź odpowiedniki.",
+    "matchHint": "Wybierz słowo z jednej kolumny, a potem jego odpowiednik z drugiej.",
+    "swipeHint": "Przesuń w lewo: nie znam. W prawo: znam. Możesz też użyć przycisków.",
+    "oddPrompt": "Które słowo nie pasuje?",
+    "oddHint": "Pytania wymagają co najmniej dwóch tematów. W razie pustej puli usuń filtr tematu. Zestawy bez jednoznacznych tagów są pomijane.",
+    "empty": "Za mało odpowiednich słów do tej gry. Zmień poziom lub usuń filtr tematu.",
+    "loadError": "Nie udało się wczytać słów. Odśwież stronę i spróbuj ponownie.",
+    "syncError": "Oznaczenie zapisano lokalnie, ale nie udało się wysłać go na konto.",
+    "selfAssessment": "To samoocena — nie zwiększa opanowania słów ani skuteczności na koncie."
+  },
+  quickTopics: {"food":"jedzenie","home":"dom","work":"praca","people":"ludzie","travel":"podróże","transportation":"transport","media":"media","nature":"przyroda","animals":"zwierzęta","body":"ciało","health":"zdrowie","clothes":"ubrania","weather":"pogoda","sport":"sport","school":"szkoła","family":"rodzina","technology":"technologia","shopping":"zakupy"},
   pool: {
     step1: "1 — wybierz poziom",
     block: "Blok {n} · {range}",

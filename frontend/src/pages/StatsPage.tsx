@@ -161,7 +161,7 @@ export function StatsPage() {
             const rec = current.games[g.id];
             return (
               <div key={g.id} className="list-row">
-                <span>{g.name}</span>
+                <span>{t(g.nameKey)}</span>
                 <span className="mono dim" style={{ fontSize: 13 }}>
                   {rec
                     ? t("games.record", { score: rec.bestScore, rounds: rec.rounds })

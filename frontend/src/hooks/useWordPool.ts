@@ -5,7 +5,7 @@ import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useProgress } from "@/progress/ProgressProvider";
 import { isDifficult, isLearned, needsReview, statFor } from "@/progress/service";
 import { useCourse } from "@/courses/CourseProvider";
-import { entriesForLevel } from "@/config/learningLevels";
+import { entriesForLevel, levelForLegacyBlock } from "@/config/learningLevels";
 
 /**
  * Wspólne dla wszystkich gier: zamienia wybór użytkownika na listę słów.
@@ -26,7 +26,7 @@ export function useWordPool(selection: PoolSelection): VocabularyEntry[] {
         break;
       }
       case "block":
-        pool = pool.filter((e) => e.block === source.block);
+        pool = entriesForLevel(pool, levelForLegacyBlock(source.block, course.blocks), course.blocks);
         break;
       case "learned":
         pool = pool.filter((e) => isLearned(statFor(state, courseId, e)));

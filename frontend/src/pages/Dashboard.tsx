@@ -88,7 +88,7 @@ export function Dashboard() {
           <h2>
             {lastGame && current.lastActivity
               ? t("dashboard.continueWith", {
-                  game: lastGame.name,
+                  game: t(lastGame.nameKey),
                   pool: describePool(current.lastActivity.pool, course, t),
                 })
               : t("dashboard.continueNone")}
@@ -160,7 +160,7 @@ export function Dashboard() {
           {GAMES.slice(0, 3).map((g) => (
             <div key={g.id} className="panel panel-pad stack game-mini">
               <div className="row" style={{ justifyContent: "space-between", gap: 8 }}>
-                <h3>{g.name}</h3>
+                <h3>{t(g.nameKey)}</h3>
                 <span className={g.status === "active" ? "badge on" : "badge"}>
                   {g.status === "active" ? t("common.active") : t("common.soon")}
                 </span>
