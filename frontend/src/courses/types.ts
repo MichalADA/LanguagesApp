@@ -35,6 +35,8 @@ export interface DatasetConfig {
     rank: string;
     source: string;
     target: string;
+    /** Opcjonalna kolumna: tablica JSON poprawnych wariantów. */
+    acceptedAnswers?: string;
     partOfSpeech: string;
     grammar: string;
     exampleTarget: string;

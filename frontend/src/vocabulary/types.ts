@@ -9,6 +9,8 @@ export interface VocabularyEntry {
   rank: number;
   sourceText: string;
   targetText: string;
+  /** Jawne warianty odpowiedzi; pusta lista wyłącza odczytywanie opisów gramatycznych. */
+  acceptedAnswers?: string[];
   partOfSpeech: string;
   grammar: string;
   exampleTarget: string;

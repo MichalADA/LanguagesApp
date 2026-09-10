@@ -1,0 +1,434 @@
+﻿Rank;Field;Before;After
+23;Polish;odpowiadać;odpowiedzieć
+26;Croatian;ljubiti;voljeti
+26;Grammar;1. os. sing.: ljubim - zwykle: voljeti;"niedokonany; 1. os.: volim; voljeti może znaczyć kochać lub lubić"
+26;ExampleCroatian;Ona ljubi svoju djecu.;Ona voli svoju djecu.
+26;FalseFriend;YES;NO
+26;FalseFriendNote;ljubiti znaczy też całować - w mowie potocznej najczęściej całować;
+31;Polish;płacić;zapłacić
+35;Croatian;ustati;ustajati
+35;Grammar;1. os. sing.: ustanem;"niedokonany; 1. os.: ustajem"
+36;Polish;otwierać;otworzyć
+37;Polish;zamykać;zamknąć
+45;Polish;zapominać;zapomnieć
+46;Polish;pomagać;pomóc
+48;Croatian;početi;počinjati
+48;Grammar;1. os. sing.: počnem;"niedokonany; 1. os.: počinjem"
+49;Polish;kończyć;skończyć
+163;Polish;rano;poranek
+163;Grammar;rodzaj nijaki - jutrom rano;rodzaj nijaki
+163;ExamplePolish;Rano jest zawsze spokojnie.;Poranek jest zawsze spokojny.
+163;FalseFriendNote;jutro znaczy rano - jutro to sutra;"Chorwackie jutro oznacza poranek; polskie jutro to po chorwacku sutra."
+185;Croatian;pozno;kasno
+185;Grammar;częściej: kasno;przysłówek
+185;ExampleCroatian;Vratili smo se kasno.;Već je kasno.
+185;ExamplePolish;Wróciliśmy późno.;Jest już późno.
+193;Polish;za (zbyt);za dużo
+194;Grammar;potocznie: i ja;"przysłówek; także"
+266;Grammar;rodzaj żeński - częściej: brdo wzgórze;"rodzaj żeński; góra; brdo oznacza wzgórze"
+330;Polish;czekać na coś (z niecierpliwością);cieszyć się na coś
+330;ExamplePolish;Nie mogę się doczekać lata.;Cieszę się na lato.
+335;Polish;dziać się;wydarzyć się
+335;Grammar;1. os. sing.: dogodi se - povratni;"dokonany; 3. os.: dogodi se"
+346;Polish;wyjeżdżać;wyjechać
+347;Croatian;stići;stizati
+347;Grammar;1. os. sing.: stignem - znaczy też zdążyć;"niedokonany; 1. os.: stižem"
+354;Polish;wyjaśniać;wyjaśnić
+355;Polish;wybierać;wybrać
+356;Polish;decydować;zdecydować
+358;Polish;kończyć się;przestać
+358;ExamplePolish;Deszcz przestał.;Przestało padać.
+359;Polish;otrzymywać wiadomość;otrzymać
+360;Polish;wysyłać;wysłać
+362;Polish;kłaść;położyć
+403;Croatian;izvinite;oprostite
+403;Grammar;standard hrvatski częściej: oprostite;grzecznościowo do jednej osoby lub do wielu osób
+403;ExampleCroatian;Oprostite gdje je kolodvor?;Oprostite, gdje je kolodvor?
+403;ExamplePolish;Przepraszam gdzie jest dworzec?;Przepraszam, gdzie jest dworzec?
+420;Polish;mówić powoli;mówić wolniej
+439;Croatian;apoteka;ljekarna
+439;Grammar;standard hrvatski częściej: ljekarna;rodzaj żeński
+439;ExampleCroatian;Ljekarna je otvorena non stop.;Gdje je najbliža ljekarna?
+439;ExamplePolish;Apteka jest otwarta non stop.;Gdzie jest najbliższa apteka?
+478;Polish;święta;dni wolne (świąteczne)
+479;Polish;wakacje;urlop wypoczynkowy
+479;ExamplePolish;Jestem na wakacjach do piętnastego.;Jestem na urlopie do piętnastego.
+504;Polish;zamawiać;zamówić
+504;ExamplePolish;Zamówiła rybę i salatę.;Zamówiła rybę i sałatę.
+510;Polish;pożyczać (komuś);pożyczyć (komuś)
+511;Polish;kończyć studia;ukończyć studia
+518;Grammar;rodzaj żeński - też: čas lekcja szkolna;"rodzaj żeński; lekcja, część materiału do nauki"
+520;Polish;kurs;kurs (np. językowy)
+520;Croatian;kurs;tečaj
+520;Grammar;rodzaj męski - też: tečaj;rodzaj męski
+520;ExampleCroatian;Idem na tečaj hrvatskog.;Pohađam tečaj hrvatskog jezika.
+520;ExamplePolish;Chodzę na kurs chorwackiego.;Uczęszczam na kurs języka chorwackiego.
+535;Polish;ślub;wesele
+535;ExamplePolish;Ślub był w sierpniu.;Wesele było w sierpniu.
+542;Polish;sklep spożywczy;sklep samoobsługowy
+542;Grammar;częściej: dućan lub supermarket;rodzaj żeński
+542;ExampleCroatian;Skoknut ću do dućana.;Idem u samoposlugu.
+542;ExamplePolish;Skoczę do sklepu.;Idę do sklepu samoobsługowego.
+554;Croatian;svidjeti se;sviđati se
+554;Grammar;1. os.: svidi mi se - komu: dat.;"niedokonany; 1. os.: sviđam se"
+559;Croatian;potvrda;račun
+559;Grammar;częściej: račun;"rodzaj męski; w sklepie: paragon, dowód zakupu"
+559;ExampleCroatian;Zadrži račun za garanciju.;Molim vas račun.
+559;ExamplePolish;Zachowaj paragon na gwarancję.;Poproszę paragon.
+596;Croatian;dvostruki krevet;bračni krevet
+596;Grammar;też: francuski ležaj;rodzaj męski
+596;ExampleCroatian;Soba ima dvostruki krevet.;Soba ima bračni krevet.
+604;Polish;smakować;mieć dobry smak (o jedzeniu)
+604;Croatian;imati dobar ukus;imati dobar okus
+604;Grammar;częściej: biti dobro;okus: smak jedzenia
+604;ExampleCroatian;Ovo je stvarno dobro.;Ova juha ima dobar okus.
+604;ExamplePolish;To naprawdę dobrze smakuje.;Ta zupa ma dobry smak.
+605;Polish;smak;smak (jedzenia)
+605;Croatian;ukus;okus
+605;Grammar;rodzaj męski - znaczy też gust;rodzaj męski
+605;ExampleCroatian;Ukus je previše sladak.;Ovaj umak ima sladak okus.
+605;ExamplePolish;Smak jest za słodki.;Ten sos ma słodki smak.
+642;Polish;ubierać się;ubrać się
+642;ExampleCroatian;Obuci se toplije.;Odjeni se toplije.
+645;Polish;naprawiać;naprawić
+646;Polish;psuć się;zepsuć się
+648;Polish;włączać;włączyć
+649;Polish;wyłączać;wyłączyć
+652;Polish;zapraszać;zaprosić
+653;Polish;odwiedzać;odwiedzić
+654;Polish;pozdrawiać;pozdrowić
+661;Croatian;zahvaliti na;zahvaljivati na
+661;Grammar;na + lokativ;"niedokonany; 1. os.: zahvaljujem na"
+679;Polish;obiecywać;obiecać
+680;Croatian;složiti se;slagati se
+680;Grammar;1. os.: složim se - s kim: instr.;"niedokonany; 1. os.: slažem se"
+684;Croatian;prema meni;po mom mišljenju
+684;Grammar;częściej: mislim da;wyrażanie opinii
+684;ExampleCroatian;Mislim da nije tako.;Po mom mišljenju, nije tako.
+687;Polish;zauważać;zauważyć
+689;Polish;przypominać komuś;przypomnieć komuś
+695;Polish;umawiać się;umówić się
+696;Polish;odwoływać;odwołać
+697;Polish;przesuwać (termin);przesunąć (termin)
+698;Polish;potwierdzać;potwierdzić
+699;Polish;odmawiać;odrzucić (ofertę)
+700;Croatian;predložiti;predlagati
+700;Grammar;1. os.: predložim;"niedokonany; 1. os.: predlažem"
+706;Polish;spóźnienie w pracy;spóźnienie do pracy
+706;Croatian;kašnjenje s rokom;kašnjenje na posao
+706;ExampleCroatian;Imamo kašnjenje s rokom.;Ispričao se zbog kašnjenja na posao.
+706;ExamplePolish;Mamy opóźnienie z terminem.;Przeprosił za spóźnienie do pracy.
+716;Polish;podpisywać;podpisać
+717;Polish;wypełniać (formularz);wypełnić (formularz)
+721;Croatian;dopustiti;dopuštati
+721;Grammar;1. os.: dopustim;"niedokonany; 1. os.: dopuštam"
+722;Polish;zabraniać;zabronić
+725;Polish;udawać się (powodzić);udać się (powieść się)
+735;Polish;wygrywać;wygrać
+736;Polish;przegrywać;przegrać
+751;Polish;wspominać (mówić o);wspomnieć (o czymś)
+752;Polish;powtarzać;powtórzyć
+785;Polish;samotny;sam (bez towarzystwa)
+785;Grammar;ž. sama - też: usamljen;"rodzaj żeński: sama; nie oznacza automatycznie poczucia samotności"
+785;ExampleCroatian;Osjeća se usamljeno u novom gradu.;Danas sam sam kod kuće.
+785;ExamplePolish;Czuje się samotnie w nowym mieście.;Dzisiaj jestem sam w domu.
+804;Polish;zwiększać;zwiększyć
+805;Polish;zmniejszać;zmniejszyć
+818;Polish;zapisywać;zapisać
+819;Polish;drukować;wydrukować
+819;Grammar;częściej: printati - 1. os.: printam;"dokonany; 1. os.: ispišem"
+819;ExampleCroatian;Moram isprintati ugovor.;Moram ispisati ugovor.
+826;Polish;pobierać (plik);pobrać (plik)
+827;Polish;łączyć się;połączyć się
+832;Polish;odbierać telefon;odebrać telefon
+832;Croatian;odgovoriti na poziv;javiti se na telefon
+832;Grammar;potocznie: javiti se;"dokonany; 1. os.: javim se"
+832;ExampleCroatian;Javi se telefon zvoni.;Javi se na telefon, zvoni.
+832;ExamplePolish;Odbierz telefon dzwoni.;Odbierz telefon, dzwoni.
+836;Polish;przepraszać kogoś;przeprosić kogoś
+836;Croatian;izviniti se;ispričati se
+836;Grammar;standard: izvinuti se lub oprostiti - potocznie izvinite;"dokonany; 1. os.: ispričam se; komu: celownik"
+836;ExampleCroatian;Trebao bi mu se izviniti.;Trebao bi mu se ispričati.
+837;Polish;wybaczać;wybaczyć
+889;Croatian;previše malo;premalo
+889;Grammar;częściej: premalo;przysłówek
+920;Croatian;povreda;ozljeda
+920;Grammar;standard hrvatski: ozljeda;rodzaj żeński
+920;ExampleCroatian;Ozljeda ga je izbacila iz igre.;Ozljeda koljena je ozbiljna.
+920;ExamplePolish;Kontuzja wyrzuciła go z gry.;Kontuzja kolana jest poważna.
+936;Polish;rozwiązywać;rozwiązać
+937;Polish;sprawdzać;sprawdzić
+939;Polish;porównywać;porównać
+944;Polish;wracać do domu;wrócić do domu
+945;Croatian;izaći iz kuće;izlaziti iz kuće
+945;Grammar;;"niedokonany; 1. os.: izlazim iz kuće"
+973;Polish;płatny;opłacony
+973;Grammar;też: naplaćuje se;rodzaj żeński: plaćena
+973;ExampleCroatian;Ulaz se naplaćuje.;Račun je plaćen.
+973;ExamplePolish;Wstęp jest płatny.;Rachunek jest opłacony.
+984;Polish;zatrudniać;zatrudnić
+985;Polish;zwalniać (z pracy);zwolnić (z pracy)
+987;Polish;kierownik;dyrektor
+987;ExamplePolish;Kierownik zatwierdził plan.;Dyrektor zatwierdził plan.
+1020;Polish;moment (właśnie teraz);w tej chwili
+1032;Croatian;trenutno;odmah
+1032;Grammar;częściej: odmah;przysłówek
+1040;Croatian;započeti;započinjati
+1040;Grammar;1. os.: započnem;"niedokonany; 1. os.: započinjem"
+1041;Polish;pojawiać się;pojawić się
+1042;Polish;znikać;zniknąć
+1057;Polish;zwyciężać w grze;wygrać (partię)
+1076;Polish;wynajmować (brać);wynająć (od kogoś)
+1080;Polish;przeprowadzać się;przeprowadzić się
+1112;Polish;salata;sałata
+1112;ExamplePolish;Zamów zieloną salatę.;Zamów zieloną sałatę.
+1115;Polish;wołowina;wołowina z młodego bydła
+1115;ExamplePolish;Wołowina długo się gotuje.;Wołowina z młodego bydła długo się gotuje.
+1117;Polish;szynka;szynka dojrzewająca
+1117;ExamplePolish;Szynka i ser na przystawkę.;Szynka dojrzewająca i ser na przystawkę.
+1120;Polish;małże;omułki (mule)
+1120;ExamplePolish;Małże na buzarę są znakomite.;Omułki w sosie buzara są znakomite.
+1139;Polish;rzucać (nawyk);przestać (coś robić)
+1189;Polish;spacerować z psem;wyprowadzić psa
+1202;Polish;zostawiać wiadomość;zostawić wiadomość
+1204;Polish;łączyć (telefonicznie);połączyć (telefonicznie)
+1217;Polish;dodawać;dodać
+1218;Polish;odejmować;odjąć (od ceny)
+1245;Polish;tankować;zatankować
+1250;Polish;skręcać;skręcić
+1258;Polish;wsiadać;wsiąść
+1259;Croatian;izaći;izlaziti
+1259;Grammar;1. os.: izađem;"niedokonany; 1. os.: izlazim"
+1261;Polish;walizka podręczna;bagaż podręczny
+1264;Polish;granica przejście;przejście graniczne
+1270;Polish;odpoczywać psychicznie;oderwać się (od obowiązków)
+1270;ExampleCroatian;Vikendom se potpuno isključim.;Za vikend sam se potpuno isključio.
+1270;ExamplePolish;W weekendy całkowicie się wyłączam.;W weekend całkowicie oderwałem się od obowiązków.
+1274;Polish;wcześniejszy;wcześniej
+1275;Polish;późniejszy;później
+1277;Croatian;pripremiti;pripremati
+1277;Grammar;1. os.: pripremim;"niedokonany; 1. os.: pripremam"
+1280;Polish;wysyłać zaproszenie;wysłać zaproszenie
+1292;Croatian;podržati;podržavati
+1292;Grammar;1. os.: podržim;"niedokonany; 1. os.: podržavam"
+1294;Polish;chwalić;pochwalić
+1298;Polish;zwracać (towar);zwrócić (towar)
+1299;Polish;wymieniać;wymienić
+1309;Croatian;preporučiti;preporučivati
+1309;Grammar;1. os.: preporučim;"niedokonany; 1. os.: preporučujem"
+1341;Polish;zgadzać się (przystawać);zgodzić się (przystać)
+1345;Croatian;promocija;napredovanje
+1345;Grammar;częściej: napredovanje;"rodzaj nijaki; awans zawodowy"
+1345;ExampleCroatian;Napredovanje mu je zasluženo.;Čestitam ti na napredovanju!
+1345;ExamplePolish;Awans mu się należał.;Gratuluję ci awansu!
+1350;Polish;etat;stanowisko pracy
+1350;ExamplePolish;Etat jest stały.;To stanowisko pracy jest stałe.
+1399;Polish;poprawiać (błąd);poprawić (błąd)
+1400;Croatian;pogriješiti;griješiti
+1400;Grammar;1. os.: pogriješim;"niedokonany; 1. os.: griješim"
+1400;ExampleCroatian;Možda se ja griješim.;Možda ja griješim.
+1404;Polish;spotykać (kogoś);spotkać (kogoś)
+1405;Polish;poznawać (kogoś);poznać (kogoś)
+1406;Polish;przedstawiać (kogoś);przedstawić (kogoś)
+1433;Polish;ostrzegać;ostrzec
+1433;ExamplePolish;Ostrzegałem cię przed tym.;Ostrzegłem cię przed tym.
+1439;Polish;korzystać z okazji;skorzystać z okazji
+1447;Polish;poddawać się;zrezygnować
+1448;Croatian;nastaviti;nastavljati
+1448;Grammar;1. os.: nastavim;"niedokonany; 1. os.: nastavljam"
+1449;Croatian;prekinuti;prekidati
+1449;Grammar;1. os.: prekinem;"niedokonany; 1. os.: prekidam"
+1457;Polish;zapominać czegoś;zapomnieć czegoś
+1458;Polish;gubić;zgubić
+1461;Polish;kraść;ukraść
+1462;Polish;zgłaszać;zgłosić
+1474;Polish;emigrować;wyemigrować
+1475;Polish;wracać do kraju;wrócić do kraju
+1493;Polish;kolejka górska (wyciąg);kolej linowo-terenowa
+1510;Polish;kierunkowskaz;drogowskaz
+1538;Polish;porządkować;posprzątać
+1561;Polish;wysportowany;w dobrej formie (fizycznej)
+1561;Croatian;sportski;u dobroj formi
+1561;PartOfSpeech;adjective;phrase
+1561;Grammar;częściej: u dobroj formi;wyrażenie przyimkowe
+1598;Polish;publikować;opublikować
+1614;Polish;wieś (okolica);okolica
+1622;Polish;zapraszać do domu;zaprosić w gości
+1624;Polish;częstować;poczęstować
+1627;Polish;przyjmować (zaproszenie);przyjąć (zaproszenie)
+1628;Polish;odrzucać;odrzucić
+1654;Polish;drożeć;podrożeć
+1655;Polish;taniejać;stanieć
+1655;ExampleCroatian;Karte pojeftine u rujnu.;Karte su pojeftinile u rujnu.
+1655;ExamplePolish;Bilety tanieją we wrześniu.;Bilety staniały we wrześniu.
+1672;Polish;żegnać się;pożegnać się
+1673;Polish;odprowadzać;odprowadzić
+1715;Polish;płacić karę;zapłacić karę
+1716;Polish;prawnik;adwokat
+1716;ExamplePolish;Potrzebuję rady prawnika.;Potrzebuję rady adwokata.
+1723;Croatian;priznati;priznavati
+1723;Grammar;1. os.: priznam;"niedokonany; 1. os.: priznajem"
+1725;Polish;oskarżać;oskarżyć
+1730;Polish;przekonywać;przekonać
+1738;Polish;wychodzić (udawać się);wyjść (udać się)
+1739;Polish;próbować (usiłować);spróbować (podjąć próbę)
+1740;Polish;osiągać;osiągnąć
+1745;Polish;wygasać;wygasnąć (o terminie)
+1746;Polish;przedłużać;przedłużyć
+1753;Polish;poprawiać się;poprawić się
+1757;Polish;urządzać (wnętrze);urządzić (wnętrze)
+1773;Croatian;izgovoriti;izgovarati
+1773;Grammar;1. os.: izgovorim;"niedokonany; 1. os.: izgovaram"
+1787;Polish;stawać się;stać się
+1789;Polish;pozostawać takim samym;pozostać takim samym
+1815;Polish;usuwać;usunąć
+1816;Polish;zapisywać (plik);zapisać (plik)
+1819;Polish;zacinać się;zaciąć się
+1820;Polish;naciskać;nacisnąć
+1837;Polish;czuć (odczuwać);poczuć
+1851;Polish;półtora;półtorej godziny
+1884;Polish;zamykać na klucz;zamknąć na klucz
+1885;Polish;otwierać kluczem;otworzyć kluczem
+1895;Polish;rzucać;rzucić
+1896;Polish;łapać;złapać
+1899;Polish;podnosić;podnieść
+1902;Polish;łamać;złamać
+1910;Croatian;isplatiti;isplaćivati
+1910;Grammar;1. os.: isplatim;"niedokonany; 1. os.: isplaćujem"
+1913;Polish;okazywać (dokument);okazać (dokument)
+1921;Polish;prosić o przysługę;poprosić o przysługę
+1921;ExamplePolish;Mogę cię prosić o przysługę?;Czy mogę cię poprosić o przysługę?
+1923;Polish;robić (czynić);zrobić (uczynić)
+1924;Polish;dokonać wyboru;podjąć decyzję
+1949;Polish;wpisywać;wpisać
+1953;Polish;dzwonić do drzwi;zadzwonić do drzwi
+1954;Polish;otwierać drzwi;otworzyć drzwi
+1955;Polish;wpuszczać;wpuścić
+1956;Croatian;iseliti se;iseljavati se
+1956;Grammar;1. os.: iselim se;"niedokonany; 1. os.: iseljavam se"
+1969;Polish;zatrzymywać się;zatrzymać się
+1984;Polish;zadowalać;zadowolić
+2003;Polish;powstawać;powstać
+2046;Polish;zmieniać;zmienić
+2071;Polish;odbierać (paczkę);odebrać (paczkę)
+2092;Polish;osiąga zwycięstwo;zwycięstwo
+2099;Polish;budować;zbudować
+2135;Polish;zmniejszać (odjąć);odjąć
+2140;Polish;biec (dokoń.);pobiec
+2141;Polish;wskakiwać;skakać
+2158;Polish;pojawiać (przedmiot);pokazywać
+2159;Polish;dotykać;dotknąć
+2163;Polish;zająć się (zajęciem);zajmować się (czymś)
+2164;Polish;omawiać;omówić
+2165;Polish;wspominać (przypomnieć);przypominać komuś
+2174;Polish;należyć (być winnym);być komuś winnym (pieniądze)
+2181;Polish;porazić (uderzyć);trafić (w cel)
+2181;Grammar;1. os.: pogodim - też: trafić;"dokonany; 1. os.: pogodim"
+2189;Croatian;uspavati;uspavljivati
+2189;Grammar;1. os.: uspavam;"niedokonany; 1. os.: uspavljujem"
+2192;Polish;podobać się (mniej mocno);podobać się (np. piosenka)
+2192;Grammar;1. os.: sviđam se - komu;"niedokonany; sviđa mi se: podoba mi się; komu: celownik"
+2193;Polish;nie znosić;nienawidzić
+2193;Grammar;1. os.: mrzim - też: nienawidzić;"niedokonany; 1. os.: mrzim"
+2198;Croatian;uslužiti;usluživati
+2198;Grammar;1. os.: uslužim;"niedokonany; 1. os.: uslužujem"
+2198;ExampleCroatian;Konobar nas usluži.;Konobar nas uslužuje.
+2199;Polish;zamawiać jedzenie;zamówić jedzenie
+2205;Polish;bać się (perf);przestraszyć się
+2226;Polish;teść;teść (ojciec męża)
+2227;Polish;teściowa;teściowa (matka męża)
+2260;Polish;ciekawy;ciekawy świata
+2260;ExamplePolish;Dzieci są ciekawe.;Dzieci są ciekawe świata.
+2268;Polish;niepełnosprawny;osoba z niepełnosprawnością
+2268;ExamplePolish;Rampa jest dla osób niepełnosprawnych.;Podjazd jest dla osób z niepełnosprawnościami.
+2289;Polish;dawny;były (dawny)
+2289;Grammar;ž. bivša - też: były;rodzaj żeński: bivša
+2314;Polish;na zewnątrz;z zewnątrz
+2314;ExampleCroatian;Izvana je hladno.;Kuća je izvana bijela.
+2314;ExamplePolish;Na zewnątrz jest zimno.;Dom jest biały z zewnątrz.
+2315;Polish;wewnątrz;od wewnątrz
+2315;ExampleCroatian;Iznutra je toplo.;Vrata su zaključana iznutra.
+2315;ExamplePolish;Wewnątrz jest ciepło.;Drzwi są zamknięte na klucz od wewnątrz.
+2318;Grammar;też: przyimek + gen.;"przysłówek lub przyimek; jako przyimek łączy się z dopełniaczem"
+2331;Grammar;też: uważnie;"przysłówek; uważnie, ostrożnie"
+2364;Grammar;rodzaj męski - też: gniew;"rodzaj męski; gniew, złość"
+2377;Grammar;rodzaj żeński - też: przyroda;"rodzaj żeński; natura, charakter"
+2383;Grammar;rodzaj męski - też: k vragu!;rodzaj męski
+2384;Polish;niebo (rajska sfera);raj
+2389;Grammar;rodzaj męski - też: kark;"rodzaj męski; szyja"
+2398;Croatian;kičma;kralježnica
+2398;Grammar;rodzaj żeński - też: kralježnica;rodzaj żeński
+2398;ExampleCroatian;Kičma je stožer tijela.;Kralježnica podupire tijelo.
+2398;ExamplePolish;Kręgosłup to podpora ciała.;Kręgosłup podtrzymuje ciało.
+2408;Croatian;muzika;glazba
+2408;Grammar;rodzaj żeński - też: glazba;rodzaj żeński
+2408;ExampleCroatian;Muzika je moj život.;Volim slušati glazbu.
+2408;ExamplePolish;Muzyka to moje życie.;Lubię słuchać muzyki.
+2438;Polish;lodziarnia;cukiernia
+2438;ExamplePolish;Lodziarnia ma nowe smaki.;Cukiernia ma nowe smaki.
+2455;Polish;dżem;powidła
+2455;ExamplePolish;Dżem jest ze śliwek.;Powidła są ze śliwek.
+2475;Grammar;patrz crno vino - też: czarne wino;"wyrażenie rzeczownikowe; dosłownie: czarne wino"
+2485;Polish;kotleta;stek (plaster mięsa)
+2485;ExamplePolish;Kotlet jest gruby.;Stek jest gruby.
+2501;Grammar;rodzaj żeński - też: kubeł na śmieci;"rodzaj żeński; wiadro"
+2502;Grammar;patrz perilica - też: zmywarka;"wyrażenie rzeczownikowe; pralka; zmywarka: perilica posuđa"
+2509;Grammar;rodzaj męski - gen. konca - też: kres;"rodzaj męski; dopełniacz: konca; nić"
+2530;Grammar;liczba mnoga - też: buty wysokie;"liczba mnoga; wysokie buty"
+2547;Grammar;rodzaj męski - też: róż;"rodzaj męski; szminka"
+2578;Grammar;rodzaj męski - też: para osób;"rodzaj męski; dwie sztuki"
+2579;Polish;tuzin;około dziesięciu
+2579;Grammar;rodzaj męski - dziesięć;"przybliżona liczba; nie oznacza tuzina"
+2579;ExamplePolish;Kilkanaście osób.;Około dziesięciu osób.
+2586;Polish;kredyt hipoteczny;kredyt mieszkaniowy
+2586;ExampleCroatian;Stambeni kredit je dug.;Stambeni kredit je dugoročan.
+2586;ExamplePolish;Kredyt hipoteczny jest długi.;Kredyt mieszkaniowy jest długoterminowy.
+2596;Grammar;rodzaj męski - też: kurs językowy;"rodzaj męski; w tym kontekście: kurs wymiany walut"
+2625;Polish;wsi (mieszkaniec);chłop (rolnik)
+2625;ExamplePolish;Wieśniak pracuje w polu.;Rolnik pracuje w polu.
+2632;Croatian;malčan;mališan
+2632;Grammar;rodzaj męski - też: mališan;rodzaj męski
+2632;ExampleCroatian;Malčan trči po dvorištu.;Mališan trči po dvorištu.
+2645;Grammar;rodzaj męski - też: mysz zwierzę;"rodzaj męski; również mysz jako zwierzę"
+2660;Polish;furtka;brama
+2660;ExamplePolish;Furtka jest otwarta.;Brama jest otwarta.
+2672;Polish;słońce (grzeje);słońce grzeje
+2687;Grammar;rodzaj żeński - też: skórka chleba;"rodzaj żeński; kora drzewa; inne znaczenie: skórka"
+2712;Grammar;rodzaj męski - też: przewodniczący;"rodzaj męski; również przewodniczący"
+2735;Polish;fryzjerka salon;salon fryzjerski
+2757;Croatian;juha od kokoši;temeljac
+2757;Grammar;też: temeljac;"rodzaj męski; bulion jako baza potraw"
+2757;ExampleCroatian;Juha od kokoši je zdrava.;Dodaj temeljac u rižoto.
+2757;ExamplePolish;Bulion jest zdrowy.;Dodaj bulion do risotta.
+2761;Croatian;peciwo;pecivo
+2761;Grammar;rodzaj nijaki - też: kifla;"rodzaj nijaki; drobne pieczywo"
+2761;ExampleCroatian;Peciwo za doručak.;Jedem pecivo za doručak.
+2761;ExamplePolish;Bułka na śniadanie.;Jem bułkę na śniadanie.
+2766;Polish;pierogi (typ);knedle
+2766;ExamplePolish;Pierogi ze śliwkami.;Knedle ze śliwkami.
+2789;Polish;wypadek (medyczny);przypadek medyczny
+2789;ExampleCroatian;Medicinski slučaj je hitan.;Ovo je složen medicinski slučaj.
+2789;ExamplePolish;Wypadek medyczny jest pilny.;To skomplikowany przypadek medyczny.
+2790;Polish;ambulans;pogotowie ratunkowe
+2790;ExamplePolish;Ambulans przyjechał.;Pogotowie ratunkowe przyjechało.
+2801;Polish;ranić;zranić
+2811;Grammar;rodzaj męski - też: sprawdzian;"rodzaj męski; test, badanie"
+2838;Grammar;rodzaj żeński - też: lek na receptę;"rodzaj żeński; narkotyk; lek: lijek"
+2846;Polish;projekt (badawczy);badanie (naukowe)
+2847;Polish;informacja o osobie;dane osobowe
+2847;ExamplePolish;Dane osobowe się chronią.;Dane osobowe są chronione.
+2857;Grammar;rodzaj nijaki - też: potwrdenie;"rodzaj nijaki; zaświadczenie"
+2862;Polish;odsuwać w czasie;przełożyć (na później)
+2870;Polish;otwarty (dostęp);przystępny (cenowo)
+2876;Polish;zaufany;poufny
+2876;ExampleCroatian;Povjerljiv izvor.;Ovaj dokument je povjerljiv.
+2876;ExamplePolish;Zaufane źródło.;Ten dokument jest poufny.
+2881;Grammar;rodzaj męski - też: zec zając;"rodzaj męski; królik; zając: zec"
+2939;Grammar;liczba mnoga - też: skele;"liczba mnoga; drabina; rusztowanie: skele"
+2962;Polish;kluczowanie (do dostępu);kod dostępu
+2962;Grammar;też: lozinka;wyrażenie rzeczownikowe
+2973;Polish;stała siedziba;miejsce stałego zamieszkania
+2973;ExamplePolish;Miejsce zamieszkania w Zagrzebiu.;Miejsce stałego zamieszkania znajduje się w Zagrzebiu.
+2976;Polish;wypełniać wniosek;złożyć wniosek
+2981;Polish;klient (usługa);użytkownik (usługi)
+2981;ExamplePolish;Klient jest zadowolony.;Użytkownik jest zadowolony.

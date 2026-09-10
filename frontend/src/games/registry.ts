@@ -1,85 +1,44 @@
-import type { ComponentType } from "react";
+import { createElement, type ComponentType } from "react";
 import { BuraGame } from "./bura/BuraGame";
 import { TrasaGame } from "./trasa/TrasaGame";
 import { OdmianaGame } from "./odmiana/OdmianaGame";
+import { QuickGame } from "@/quick-games/QuickGame";
+import { QUICK_GAME_IDS } from "@/quick-games/helpers";
 
+export const GAME_CATEGORIES = ["main", "quick", "grammar", "sentences", "listening", "radio"] as const;
 export interface GameModule {
   id: string;
-  /** Nazwa własna gry — świadomie nie tłumaczona. */
-  name: string;
-  /** Klucze i18n opisów. */
+  nameKey: string;
   taglineKey: string;
   descriptionKey: string;
+  category: (typeof GAME_CATEGORIES)[number];
   status: "active" | "soon";
   component?: ComponentType;
-  /** Czy gra wymaga, żeby kurs miał zdefiniowaną trasę. */
+  href?: string;
   requiresRoute?: boolean;
 }
+const existing = (id: string, category: GameModule["category"], component: ComponentType): GameModule => ({
+  id, category, component, nameKey: `gameNames.${id}`, taglineKey: `gameList.${id}.tagline`, descriptionKey: `gameList.${id}.description`, status: "active",
+});
+const planned = (id: string, category: GameModule["category"]): GameModule => ({
+  id, category, nameKey: `gameNames.${id}`, taglineKey: `plannedGames.${id}`, descriptionKey: `plannedGames.${id}`, status: "soon",
+});
 
-/**
- * ⬇ NOWĄ GRĘ DODAJESZ TUTAJ.
- * 1. `src/games/<id>/<Nazwa>Game.tsx` — komponent bez propsów.
- * 2. Pulę słów bierz z `useWordPool`, walidację z `checkAnswer`,
- *    zapis z `useProgress().recordRound`.
- * 3. Dopisz wpis poniżej ze statusem "active".
- * Routing, kafelek i rekordy w statystykach pojawią się same.
- */
+/** Single registry drives category cards and the existing /gry/:gameId router. */
 export const GAMES: GameModule[] = [
-  {
-    id: "bura",
-    name: "Bura",
-    taglineKey: "gameList.bura.tagline",
-    descriptionKey: "gameList.bura.description",
-    status: "active",
-    component: BuraGame,
-  },
-  {
-    id: "trasa",
-    name: "Trasa",
-    taglineKey: "gameList.trasa.tagline",
-    descriptionKey: "gameList.trasa.description",
-    status: "active",
-    component: TrasaGame,
-    requiresRoute: true,
-  },
-  {
-    id: "odmiana",
-    name: "Odmiana",
-    taglineKey: "gameList.odmiana.tagline",
-    descriptionKey: "gameList.odmiana.description",
-    status: "active",
-    component: OdmianaGame,
-  },
-  {
-    id: "flashcards",
-    name: "Fiszki",
-    taglineKey: "gameList.flashcards.tagline",
-    descriptionKey: "gameList.flashcards.description",
-    status: "soon",
-  },
-  {
-    id: "multiple-choice",
-    name: "Cztery odpowiedzi",
-    taglineKey: "gameList.choice.tagline",
-    descriptionKey: "gameList.choice.description",
-    status: "soon",
-  },
-  {
-    id: "listening",
-    name: "Listening",
-    taglineKey: "gameList.listening.tagline",
-    descriptionKey: "gameList.listening.description",
-    status: "soon",
-  },
-  {
-    id: "false-friends",
-    name: "False Friends",
-    taglineKey: "gameList.falseFriends.tagline",
-    descriptionKey: "gameList.falseFriends.description",
-    status: "soon",
-  },
+  existing("bura", "quick", BuraGame),
+  { ...existing("trasa", "main", TrasaGame), requiresRoute: true },
+  existing("odmiana", "grammar", OdmianaGame),
+  { id: "flashcards", category: "main", nameKey: "gameNames.flashcards", taglineKey: "gameList.flashcards.tagline", descriptionKey: "gameList.flashcards.description", status: "active", href: "/fiszki" },
+  ...QUICK_GAME_IDS.map((mode): GameModule => ({
+    id: mode, category: "quick", nameKey: `gameNames.${mode}`, taglineKey: `quickDescriptions.${mode}`, descriptionKey: `quickDescriptions.${mode}`, status: "active",
+    component: () => createElement(QuickGame, { mode }),
+  })),
+  ...["translate-sentence", "order-sentence", "fill-gap", "correct-sentence", "transform-sentence"].map((id) => planned(id, "sentences")),
+  planned("listening", "listening"),
+  { ...planned("radio", "radio"), status: "active", href: "/radio" },
+  planned("false-friends", "quick"),
 ];
-
 export function findGame(id: string | undefined): GameModule | undefined {
-  return GAMES.find((g) => g.id === id);
+  return GAMES.find((game) => game.id === id);
 }

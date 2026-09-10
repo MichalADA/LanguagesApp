@@ -2,9 +2,11 @@ import type { PoolSelection, PoolSource } from "@/progress/types";
 import { useCourse } from "@/courses/CourseProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useT } from "@/i18n";
+import { LEARNING_LEVELS, levelForLegacyBlock } from "@/config/learningLevels";
 
 function sameSource(a: PoolSource, b: PoolSource): boolean {
   if (a.kind !== b.kind) return false;
+  if (a.kind === "level" && b.kind === "level") return a.level === b.level;
   if (a.kind === "block" && b.kind === "block") return a.block === b.block;
   return true;
 }
@@ -22,35 +24,42 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14 }: Props)
   const { course } = useCourse();
   const { topics, entries } = useVocabulary();
 
+  const selectedLevel =
+    value.source.kind === "level"
+      ? value.source.level
+      : value.source.kind === "block"
+        ? levelForLegacyBlock(value.source.block, course.blocks)
+        : null;
+
   const special: { source: PoolSource; label: string; note: string }[] = [
-    { source: { kind: "all" }, label: t("pool.all", { n: entries.length }), note: t("pool.allNote") },
     { source: { kind: "difficult" }, label: t("pool.difficult"), note: t("pool.difficultNote") },
     { source: { kind: "mistakes" }, label: t("pool.mistakes"), note: t("pool.mistakesNote") },
     { source: { kind: "learned" }, label: t("pool.learned"), note: t("pool.learnedNote") },
+    { source: { kind: "all" }, label: t("pool.allWords"), note: t("pool.allNote", { n: entries.length }) },
   ];
 
   return (
     <div className="stack" style={{ gap: 22 }}>
       <div className="stack" style={{ gap: 10 }}>
         <span className="eyebrow">{t("pool.step1")}</span>
-        <div className="grid grid-2">
-          {course.blocks.map((b, i) => (
+        <div className="grid grid-3">
+          {LEARNING_LEVELS.map((level) => (
             <button
-              key={b.id}
+              key={level.id}
               type="button"
-              className={
-                value.source.kind === "block" && value.source.block === b.id ? "tile on" : "tile"
-              }
+              className={selectedLevel === level.id ? "tile on" : "tile"}
               style={{ minHeight: 94 }}
-              onClick={() => onChange({ ...value, source: { kind: "block", block: b.id } })}
+              onClick={() => onChange({ ...value, source: { kind: "level", level: level.id } })}
             >
-              <span style={{ fontSize: 17, fontWeight: 600 }}>Blok {i + 1}</span>
-              <span className="tile-note">Słowa {b.range}</span>
+              <span style={{ fontSize: 20, fontWeight: 700 }}>{level.id}</span>
+              <span style={{ fontSize: 15, fontWeight: 600 }}>{t(level.nameKey)}</span>
+              <span className="tile-note">{t("learningLevels.wordCount", { n: level.wordCount })}</span>
             </button>
           ))}
         </div>
 
-        <div className="grid grid-2" style={{ marginTop: 8 }}>
+        <span className="eyebrow" style={{ marginTop: 8 }}>{t("pool.reviews")}</span>
+        <div className="grid grid-2">
           {special.map((s) => (
             <button
               key={s.label}

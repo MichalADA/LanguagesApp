@@ -33,6 +33,7 @@ export const COURSE_PL_HR: Course = {
       rank: "Rank",
       source: "Polish",
       target: "Croatian",
+      acceptedAnswers: "AcceptedAnswers",
       partOfSpeech: "PartOfSpeech",
       grammar: "Grammar",
       exampleTarget: "ExampleCroatian",

@@ -6,6 +6,7 @@ import { isLearned, needsReview, statFor, summarize } from "@/progress/service";
 import { ProgressBar } from "@/components/StatCard";
 import { currentStreak, todayKey } from "@/utils/date";
 import { useT } from "@/i18n";
+import { entriesForLevel, LEARNING_LEVELS } from "@/config/learningLevels";
 
 function ActivityGrid({ days }: { days: readonly string[] }) {
   const set = new Set(days);
@@ -33,15 +34,14 @@ export function ProgressPage() {
   const { state, current, courseId } = useProgress();
   const summary = summarize(state, courseId);
 
-  const perBlock = useMemo(
+  const perLevel = useMemo(
     () =>
-      course.blocks.map((b, i) => {
-        const inBlock = entries.filter((e) => e.block === b.id);
-        const stats = inBlock.map((e) => statFor(state, courseId, e));
+      LEARNING_LEVELS.map((level) => {
+        const inLevel = entriesForLevel(entries, level.id, course.blocks);
+        const stats = inLevel.map((entry) => statFor(state, courseId, entry));
         return {
-          ...b,
-          index: i,
-          total: inBlock.length,
+          ...level,
+          total: inLevel.length,
           learned: stats.filter(isLearned).length,
           review: stats.filter(needsReview).length,
           untouched: stats.filter((s) => s.attempts === 0).length,
@@ -71,22 +71,22 @@ export function ProgressPage() {
       </section>
 
       <section className="stack" style={{ gap: 12 }}>
-        <span className="eyebrow">{t("progress.blocks")}</span>
+        <span className="eyebrow">{t("progress.levels")}</span>
         <div className="grid grid-2">
-          {perBlock.map((b) => (
-            <div key={b.id} className="panel panel-pad stack" style={{ gap: 10 }}>
+          {perLevel.map((level) => (
+            <div key={level.id} className="panel panel-pad stack" style={{ gap: 10 }}>
               <div className="row" style={{ justifyContent: "space-between" }}>
-                <h3>{t("pool.block", { n: b.index + 1, range: b.range })}</h3>
+                <h3>{level.id} · {t(level.nameKey)}</h3>
                 <span className="mono dim" style={{ fontSize: 13 }}>
-                  {b.total ? Math.round((b.learned / b.total) * 100) : 0}%
+                  {level.total ? Math.round((level.learned / level.total) * 100) : 0}%
                 </span>
               </div>
-              <ProgressBar percent={b.total ? (b.learned / b.total) * 100 : 0} />
+              <ProgressBar percent={level.total ? (level.learned / level.total) * 100 : 0} />
               <span className="stat-note">
-                {t("progress.blockNote", {
-                  learned: b.learned,
-                  review: b.review,
-                  untouched: b.untouched,
+                {t("progress.levelNote", {
+                  learned: level.learned,
+                  review: level.review,
+                  untouched: level.untouched,
                 })}
               </span>
             </div>
