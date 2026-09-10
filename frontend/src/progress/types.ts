@@ -1,4 +1,5 @@
 import type { UiLocale } from "@/i18n/types";
+import type { LearningLevelId } from "@/config/learningLevels";
 
 /**
  * Postęp pojedynczego słowa w obrębie jednego kursu.
@@ -59,6 +60,8 @@ export interface PoolSelection {
 
 export type PoolSource =
   | { kind: "all" }
+  | { kind: "level"; level: LearningLevelId }
+  /** Zachowane dla kompatybilności ze starszym postępem zapisanym w localStorage. */
   | { kind: "block"; block: string }
   | { kind: "learned" }
   | { kind: "difficult" }

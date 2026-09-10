@@ -10,6 +10,7 @@ import { useT } from "@/i18n";
 import { useAuth } from "@/auth/useAuth";
 import { fetchUserStatistics } from "@/statistics/statisticsApi";
 import type { UserStatistics } from "@/statistics/statisticsApi";
+import { entriesForLevel, LEARNING_LEVELS } from "@/config/learningLevels";
 
 export function StatsPage() {
   const t = useT();
@@ -117,16 +118,16 @@ export function StatsPage() {
       </section>
 
       <section className="stack" style={{ gap: 12 }}>
-        <span className="eyebrow">{t("stats.blocks")}</span>
+        <span className="eyebrow">{t("stats.levels")}</span>
         <div className="stack" style={{ gap: 16 }}>
-          {course.blocks.map((b, i) => {
-            const inBlock = entries.filter((e) => e.block === b.id);
-            const pct = masteryOf(state, courseId, inBlock);
+          {LEARNING_LEVELS.map((level) => {
+            const inLevel = entriesForLevel(entries, level.id, course.blocks);
+            const pct = masteryOf(state, courseId, inLevel);
             return (
-              <div key={b.id} className="stack" style={{ gap: 7 }}>
+              <div key={level.id} className="stack" style={{ gap: 7 }}>
                 <div className="row" style={{ justifyContent: "space-between" }}>
                   <span style={{ fontSize: 15, fontWeight: 500 }}>
-                    {t("pool.block", { n: i + 1, range: b.range })}
+                    {level.id} · {t(level.nameKey)}
                   </span>
                   <span className="mono dim" style={{ fontSize: 13 }}>
                     {pct}%

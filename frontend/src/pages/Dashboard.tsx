@@ -12,6 +12,12 @@ import { currentStreak, formatRelative } from "@/utils/date";
 import { useI18n } from "@/i18n";
 import { fetchSummary as fetchFlashcardsSummary } from "@/flashcards/flashcardsApi";
 import type { FlashcardsSummary } from "@/flashcards/types";
+import {
+  entriesForLevel,
+  findLearningLevel,
+  LEARNING_LEVELS,
+  levelForLegacyBlock,
+} from "@/config/learningLevels";
 
 export function Dashboard() {
   const { t, locale } = useI18n();
@@ -46,14 +52,16 @@ export function Dashboard() {
   const masteredCount = flashcards?.mastered ?? summary.learned;
   const difficultCount = flashcards?.difficult ?? summary.difficult;
 
-  const lastBlockId =
-    current.lastActivity?.pool.source.kind === "block"
-      ? current.lastActivity.pool.source.block
-      : course.blocks[0]?.id;
-  const blockEntries = entries.filter((e) => e.block === lastBlockId);
-  const blockMastery = masteryOf(state, courseId, blockEntries);
-  const block = course.blocks.find((b) => b.id === lastBlockId);
-  const blockIndex = course.blocks.findIndex((b) => b.id === lastBlockId);
+  const lastSource = current.lastActivity?.pool.source;
+  const lastLevelId =
+    lastSource?.kind === "level"
+      ? lastSource.level
+      : lastSource?.kind === "block"
+        ? levelForLegacyBlock(lastSource.block, course.blocks)
+        : LEARNING_LEVELS[0].id;
+  const lastLevel = findLearningLevel(lastLevelId) ?? LEARNING_LEVELS[0];
+  const levelEntries = entriesForLevel(entries, lastLevelId, course.blocks);
+  const levelMastery = masteryOf(state, courseId, levelEntries);
 
   const lastGame = findGame(current.lastActivity?.gameId);
   const lastSeen = current.lastActivity?.at ?? 0;
@@ -128,12 +136,12 @@ export function Dashboard() {
       <section className="panel panel-pad stack" style={{ gap: 14 }}>
         <div className="row" style={{ justifyContent: "space-between" }}>
           <div className="stack" style={{ gap: 4 }}>
-            <span className="eyebrow">{t("dashboard.lastBlock")}</span>
-            <h2>{t("pool.block", { n: blockIndex + 1, range: block?.range ?? "" })}</h2>
+            <span className="eyebrow">{t("dashboard.lastLevel")}</span>
+            <h2>{lastLevel.id} · {t(lastLevel.nameKey)}</h2>
           </div>
-          <span className="mono muted">{t("dashboard.mastery", { n: blockMastery })}</span>
+          <span className="mono muted">{t("dashboard.mastery", { n: levelMastery })}</span>
         </div>
-        <ProgressBar percent={blockMastery} />
+        <ProgressBar percent={levelMastery} />
         <span className="stat-note">
           {current.lastActivity
             ? t("dashboard.lastPool", { pool: describePool(current.lastActivity.pool, course, t) })
