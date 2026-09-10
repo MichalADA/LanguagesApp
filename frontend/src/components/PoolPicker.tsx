@@ -41,19 +41,22 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14 }: Props)
               className={
                 value.source.kind === "block" && value.source.block === b.id ? "tile on" : "tile"
               }
+              style={{ minHeight: 94 }}
               onClick={() => onChange({ ...value, source: { kind: "block", block: b.id } })}
             >
-              <span style={{ fontSize: 17, fontWeight: 600 }}>
-                {t("pool.block", { n: i + 1, range: b.range })}
-              </span>
-              <span className="tile-note">{b.id}</span>
+              <span style={{ fontSize: 17, fontWeight: 600 }}>Blok {i + 1}</span>
+              <span className="tile-note">Słowa {b.range}</span>
             </button>
           ))}
+        </div>
+
+        <div className="grid grid-2" style={{ marginTop: 8 }}>
           {special.map((s) => (
             <button
               key={s.label}
               type="button"
               className={sameSource(value.source, s.source) ? "tile on" : "tile"}
+              style={{ minHeight: 94 }}
               onClick={() => onChange({ ...value, source: s.source })}
             >
               <span style={{ fontSize: 17, fontWeight: 600 }}>{s.label}</span>
