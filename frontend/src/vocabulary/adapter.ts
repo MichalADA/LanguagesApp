@@ -19,6 +19,7 @@ export function parseDataset(course: Course, text: string): VocabularyEntry[] {
     rank: idx(col.rank),
     source: idx(col.source),
     target: idx(col.target),
+    acceptedAnswers: idx(col.acceptedAnswers),
     partOfSpeech: idx(col.partOfSpeech),
     grammar: idx(col.grammar),
     exampleTarget: idx(col.exampleTarget),
@@ -48,6 +49,14 @@ export function parseDataset(course: Course, text: string): VocabularyEntry[] {
     const tags = at(cols, map.tags).split(/\s+/).filter(Boolean);
     const rank = Number(at(cols, map.rank)) || i;
     const audioUrl = at(cols, map.audioUrl);
+    let acceptedAnswers: string[] | undefined;
+    if (map.acceptedAnswers >= 0) {
+      const value: unknown = JSON.parse(at(cols, map.acceptedAnswers) || "[]");
+      if (!Array.isArray(value) || value.some((answer) => typeof answer !== "string" || !answer.trim())) {
+        throw new Error(`Nieprawidłowe warianty odpowiedzi: ${course.id}:${rank}`);
+      }
+      acceptedAnswers = value.map((answer: string) => answer.trim());
+    }
 
     out.push({
       id: `${course.id}:${rank}`,
@@ -55,6 +64,7 @@ export function parseDataset(course: Course, text: string): VocabularyEntry[] {
       rank,
       sourceText,
       targetText,
+      acceptedAnswers,
       partOfSpeech: at(cols, map.partOfSpeech),
       grammar: at(cols, map.grammar),
       exampleTarget: at(cols, map.exampleTarget),

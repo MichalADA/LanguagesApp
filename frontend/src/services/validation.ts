@@ -56,13 +56,15 @@ export function foldDiacritics(value: string, rules: ValidationRules): string {
 }
 
 /**
- * Warianty akceptowane obok formy podstawowej. Pole `grammar` bywa opisowe,
- * więc bierzemy tylko warianty oznaczone jako równoprawne. Formy opisane jako
- * „nie X" to warianty spoza standardu i celowo NIE są akceptowane.
+ * Jawna lista wariantów ma pierwszeństwo, również gdy jest pusta.
+ * Odczyt z gramatyki zostaje tylko dla starszych datasetów bez tej kolumny.
  */
 export function acceptedAnswers(entry: VocabularyEntry): string[] {
+  if (entry.acceptedAnswers !== undefined) {
+    return [...new Set([entry.targetText, ...entry.acceptedAnswers].map((answer) => answer.trim()).filter(Boolean))];
+  }
   const out = [entry.targetText];
-  const m = entry.grammar.match(/(?:też|częściej|potocznie|krócej):\s*([^-–;]+)/i);
+  const m = entry.grammar.match(/(?:też|częściej|potocznie|krócej|zwykle):\s*([^-–;]+)/i);
   if (m) out.push(m[1].trim());
   return out.filter(Boolean);
 }

@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "check:data": "node --test tests/vocabulary.test.mjs",
+    "prebuild": "npm run check:data",
     "test": "node --test tests/*.test.mjs",
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
