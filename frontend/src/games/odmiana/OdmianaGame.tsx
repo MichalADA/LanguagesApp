@@ -11,6 +11,7 @@ import { useProgress } from "@/progress/ProgressProvider";
 import { DEFAULT_POOL } from "@/hooks/useWordPool";
 import { AnswerInput } from "@/components/AnswerInput";
 import { SpecialCharacters } from "@/components/SpecialCharacters";
+import { useQuizKeyboard } from "@/hooks/useQuizKeyboard";
 import { useT } from "@/i18n";
 import { useLearningSession } from "@/learning/useLearningSession";
 import {
@@ -239,17 +240,10 @@ export function OdmianaGame() {
     if (phase === "play") saved.current = false;
   }, [phase]);
 
-  useEffect(() => {
-    if (phase !== "play" || !outcome) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        advance();
-      }
-    };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [phase, outcome, advance]);
+  useQuizKeyboard({
+    enabled: phase === "play" && Boolean(outcome),
+    onSubmit: advance,
+  });
 
   const hardest = useMemo(() => {
     const count = new Map<string, number>();

@@ -9,6 +9,7 @@ import { useProgress } from "@/progress/ProgressProvider";
 import { useCourse } from "@/courses/CourseProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useWordPool, DEFAULT_POOL } from "@/hooks/useWordPool";
+import { useQuizKeyboard } from "@/hooks/useQuizKeyboard";
 import { PoolPicker } from "@/components/PoolPicker";
 import { AnswerInput } from "@/components/AnswerInput";
 import { useI18n } from "@/i18n";
@@ -145,17 +146,10 @@ export function BuraGame() {
     arm();
   }, [pool, selection, rememberActivity, startLearning, course.id, settings.roundLength, settings.lives, arm]);
 
-  useEffect(() => {
-    if (phase !== "playing" || !verdict) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        next();
-      }
-    };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [phase, verdict, next]);
+  useQuizKeyboard({
+    enabled: phase === "playing" && Boolean(verdict),
+    onSubmit: next,
+  });
 
   const mistakes = useMemo(
     () => answered.filter((a) => a.verdict === "miss").map((a) => a.entry),

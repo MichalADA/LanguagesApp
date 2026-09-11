@@ -5,6 +5,7 @@ import { ProgressBar } from "@/components/StatCard";
 import { useCourse } from "@/courses/CourseProvider";
 import { useT } from "@/i18n";
 import { useLearningSession } from "@/learning/useLearningSession";
+import { useQuizKeyboard } from "@/hooks/useQuizKeyboard";
 import { LEARNING_LEVELS, type LearningLevelId } from "@/config/learningLevels";
 import type { PoolSelection } from "@/progress/types";
 import { loadSentences } from "./loader";
@@ -79,6 +80,10 @@ function Session({ mode }: { mode: SentenceMode }) {
   // Reset the input guard after React commits the next question, so double clicks
   // cannot submit/advance the old question twice.
   useEffect(() => { if (phase === "playing" && guard.current === "advancing") guard.current = "answer"; }, [index, phase]);
+  useQuizKeyboard({
+    enabled: phase === "playing" && feedback !== null,
+    onSubmit: next,
+  });
 
   if (loading) return <p role="status">{t("sentences.loading")}</p>;
   if (error) return <section className="panel panel-pad stack"><p role="alert">{t("sentences.loadError")}</p><button className="btn" onClick={() => setRetry(value => value + 1)}>{t("sentences.retry")}</button></section>;

@@ -8,6 +8,7 @@ import { useCourse } from "@/courses/CourseProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useWordPool, DEFAULT_POOL } from "@/hooks/useWordPool";
+import { useQuizKeyboard } from "@/hooks/useQuizKeyboard";
 import { PoolPicker } from "@/components/PoolPicker";
 import { AnswerInput } from "@/components/AnswerInput";
 import { RouteMap } from "@/components/maps/RouteMap";
@@ -158,18 +159,11 @@ export function TrasaGame() {
     return total ? Math.round((journey.correct / total) * 100) : 0;
   }, [journey]);
 
-  // Enter przechodzi do następnego słowa, tak samo jak w Burze.
-  useEffect(() => {
-    if (phase !== "playing" || !verdict) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        drawNext(pool);
-      }
-    };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [phase, verdict, drawNext, pool]);
+  // Enter/Spacja przechodzi do następnego słowa, tak samo jak w Burze.
+  useQuizKeyboard({
+    enabled: phase === "playing" && Boolean(verdict),
+    onSubmit: () => drawNext(pool),
+  });
 
   if (loading) return <span className="loading">{t("common.loading")}</span>;
   if (!route) return <div className="panel empty">{t("games.notReady")}</div>;

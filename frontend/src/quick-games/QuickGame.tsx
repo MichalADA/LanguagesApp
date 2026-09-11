@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { PoolPicker } from "@/components/PoolPicker";
 import { ProgressBar } from "@/components/StatCard";
 import { useWordPool } from "@/hooks/useWordPool";
+import { useQuizKeyboard } from "@/hooks/useQuizKeyboard";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useCourse } from "@/courses/CourseProvider";
@@ -131,6 +132,23 @@ function QuestionCard({ mode, question, answer, next }: { mode: QuickGameId; que
   };
   const rate = (rating: Rating) => judge(rating === "known", rating, rating);
   const composed = picked.map((id) => letters.find((item) => item.id === id)!.letter).join("");
+  const answerHandlers = useMemo<Array<(() => void) | null>>(() => {
+    if (feedback !== null) return [];
+    if (mode === "multiple-choice" || mode === "odd-one-out") {
+      return (question.options ?? []).slice(0, 4).map((word) => () => judge(word.id === question.word.id, word.targetText));
+    }
+    if (mode === "true-false") {
+      return [true, false].map((value) => () => judge(value === question.correct, String(value)));
+    }
+    if (mode === "swipe") {
+      return (["unknown", "known", "difficult"] as const).map((rating) => () => rate(rating));
+    }
+    return [];
+  }, [feedback, mode, question]);
+  useQuizKeyboard({
+    answers: answerHandlers,
+    onSubmit: feedback !== null ? advance : undefined,
+  });
   return <div className="stack quick-question">
     {mode === "swipe" ? <div className="quick-swipe" onPointerDown={(event) => { pointer.current = { x: event.clientX, y: event.clientY }; }} onPointerCancel={() => { pointer.current = null; }} onPointerUp={(event) => {
       const start = pointer.current; pointer.current = null;
