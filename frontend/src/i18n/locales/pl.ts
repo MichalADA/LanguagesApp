@@ -47,6 +47,8 @@ export const pl: Dictionary = {
     contentUnavailableTitle: "Treść lekcji jeszcze niedostępna",
     contentUnavailableReason: "Źródło nie pozwala pobrać treści z tego kontenera. Otwórz oryginał, aby wyświetlić lekcję.",
     contentNotImportedYet: "Treść tej lekcji nie została jeszcze zaimportowana. Uruchom import treści lub otwórz oryginał.",
+    contentImportFailed: "Import treści zakończył się błędem. Spróbuj ponownie z TAKO_LAKO_CONTENT_FORCE=1 lub otwórz oryginał.",
+    diagnosis: "Diagnostyka",
     exercisePlaceholder: "Ćwiczenie dostępne w oryginalnym materiale",
     attributionTitle: "Źródło i licencja",
     audio: {

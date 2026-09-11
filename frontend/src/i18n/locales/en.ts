@@ -47,6 +47,8 @@ export const en: Dictionary = {
     contentUnavailableTitle: "Lesson content is not yet available",
     contentUnavailableReason: "The source refuses fetches from this container. Open the original to read the lesson.",
     contentNotImportedYet: "This lesson's content has not been imported yet. Run the content importer or open the original.",
+    contentImportFailed: "Content import failed. Retry with TAKO_LAKO_CONTENT_FORCE=1 or open the original.",
+    diagnosis: "Diagnosis",
     exercisePlaceholder: "Exercise available in the original material",
     attributionTitle: "Source and license",
     audio: {

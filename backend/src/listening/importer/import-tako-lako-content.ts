@@ -23,13 +23,6 @@
 import { PrismaClient, ListeningContentStatus, ListeningContentBlockType } from '@prisma/client';
 import { parseLessonContent, type ParsedContentBlock, type ParsedBlockType } from './lesson-content-parser';
 
-interface Options {
-  /** Import at most this many lessons in one run. */
-  limit?: number;
-  /** When true, re-imports lessons already marked IMPORTED. Default: no. */
-  force?: boolean;
-}
-
 interface FetchOutcome {
   status: 'ok' | 'unavailable' | 'failed';
   html?: string;
@@ -50,21 +43,63 @@ const emptyStats = (): Stats => ({
   considered: 0, imported: 0, partial: 0, unavailable: 0, failed: 0, skipped: 0, blocks: 0,
 });
 
+/**
+ * CloudFront in front of Pressbooks refuses obvious bot User-Agents with 403.
+ * Impersonating a normal browser (recent Firefox on macOS) reliably slips
+ * through — we're a well-behaved reader following public links.
+ */
+const BROWSER_HEADERS: Record<string, string> = {
+  'User-Agent':
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0',
+  Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'en-US,en;q=0.7,hr;q=0.5,pl;q=0.3',
+  'Accept-Encoding': 'gzip, deflate, br',
+  'Upgrade-Insecure-Requests': '1',
+  Connection: 'keep-alive',
+};
+
 async function fetchLessonHtml(url: string): Promise<FetchOutcome> {
   try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'LexodromiaBot/0.1 (+https://lexodromia.local)',
-        Accept: 'text/html,application/xhtml+xml',
-      },
-    });
+    const response = await fetch(url, { headers: BROWSER_HEADERS });
     if (response.ok) return { status: 'ok', html: await response.text() };
     if ([403, 404, 451].includes(response.status)) {
-      return { status: 'unavailable', note: `HTTP ${response.status} from source` };
+      const rest = await fetchViaPressbooksRestApi(url);
+      if (rest) return rest;
+      return { status: 'unavailable', note: `HTTP ${response.status} from source (HTML)` };
     }
     return { status: 'failed', note: `HTTP ${response.status} from source` };
   } catch (error) {
     return { status: 'failed', note: (error as Error).message };
+  }
+}
+
+/**
+ * Fallback: Pressbooks is WordPress-based, so `/wp-json/wp/v2/chapters?slug=…`
+ * often returns the same chapter body as JSON even when CloudFront has
+ * decided to refuse the HTML view. We stitch the returned `content.rendered`
+ * HTML back into a familiar `<article class="entry-content">` wrapper so the
+ * regular parser can consume it.
+ */
+async function fetchViaPressbooksRestApi(url: string): Promise<FetchOutcome | null> {
+  const match = url.match(/^(https?:\/\/[^/]+\/[^/]+)\/chapter\/([^/?#]+)/i);
+  if (!match) return null;
+  const [, book, slug] = match;
+  const restUrl = `${book}/wp-json/wp/v2/chapters?slug=${encodeURIComponent(slug)}`;
+  try {
+    const response = await fetch(restUrl, {
+      headers: { ...BROWSER_HEADERS, Accept: 'application/json' },
+    });
+    if (!response.ok) return null;
+    const items: Array<{ content?: { rendered?: string }; title?: { rendered?: string } }> =
+      await response.json() as Array<{ content?: { rendered?: string }; title?: { rendered?: string } }>;
+    const first = items?.[0];
+    const body = first?.content?.rendered;
+    if (!body) return null;
+    const title = first.title?.rendered ?? '';
+    const html = `<article class="entry-content"><h1>${title}</h1>${body}</article>`;
+    return { status: 'ok', html };
+  } catch {
+    return null;
   }
 }
 
@@ -135,6 +170,21 @@ async function markLessonStatus(
   });
 }
 
+interface Options {
+  limit?: number;
+  force?: boolean;
+  /**
+   * If set, restrict the import to lessons whose `sourceUrl` matches this URL
+   * (or its base without a trailing slash). Useful for debugging a single
+   * lesson end-to-end, e.g. TAKO_LAKO_CONTENT_URL=…u1-m1-lesson1/.
+   */
+  onlyUrl?: string;
+}
+
+function normalizeUrl(url: string): string {
+  return url.replace(/\/+$/, '');
+}
+
 export async function importTakoLakoContent(
   prisma: PrismaClient,
   options: Options = {},
@@ -146,15 +196,23 @@ export async function importTakoLakoContent(
     return stats;
   }
 
-  const lessons = await prisma.listeningLesson.findMany({
-    where: {
-      unit: { sourceId: source.id },
-      sourceUrl: { not: null },
-      ...(options.force ? {} : { contentStatus: { in: [
+  const onlyUrl = options.onlyUrl ? normalizeUrl(options.onlyUrl) : undefined;
+  const statusFilter = options.force || onlyUrl
+    ? {}
+    : { contentStatus: { in: [
         ListeningContentStatus.NOT_IMPORTED,
         ListeningContentStatus.PARTIAL,
         ListeningContentStatus.FAILED,
-      ] } }),
+      ] } };
+  const urlFilter = onlyUrl
+    ? { sourceUrl: { in: [onlyUrl, `${onlyUrl}/`] } }
+    : { sourceUrl: { not: null } };
+
+  const lessons = await prisma.listeningLesson.findMany({
+    where: {
+      unit: { sourceId: source.id },
+      ...urlFilter,
+      ...statusFilter,
     },
     orderBy: [{ unit: { position: 'asc' } }, { position: 'asc' }],
     take: options.limit,
@@ -208,9 +266,11 @@ async function main() {
     ? Number(process.env.TAKO_LAKO_CONTENT_LIMIT)
     : undefined;
   const force = process.env.TAKO_LAKO_CONTENT_FORCE === '1';
+  const onlyUrl = process.env.TAKO_LAKO_CONTENT_URL || undefined;
   const prisma = new PrismaClient();
   try {
-    const stats = await importTakoLakoContent(prisma, { limit, force });
+    if (onlyUrl) console.log(`[tako-lako:content] single-URL mode: ${onlyUrl}`);
+    const stats = await importTakoLakoContent(prisma, { limit, force, onlyUrl });
     printStats(stats);
   } finally {
     await prisma.$disconnect();

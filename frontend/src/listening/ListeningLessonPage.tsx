@@ -84,9 +84,15 @@ export function ListeningLessonPage() {
           <p className="muted">
             {lesson.contentStatus === "UNAVAILABLE"
               ? t("listening.contentUnavailableReason")
-              : t("listening.contentNotImportedYet")}
+              : lesson.contentStatus === "FAILED"
+                ? t("listening.contentImportFailed")
+                : t("listening.contentNotImportedYet")}
           </p>
-          {lesson.contentNote && <p className="dim" style={{ fontSize: 12 }}>{lesson.contentNote}</p>}
+          {lesson.contentNote && (
+            <p className="dim" style={{ fontSize: 12 }}>
+              {t("listening.diagnosis")}: <code>{lesson.contentNote}</code>
+            </p>
+          )}
           {lesson.sourceUrl && (
             <a className="btn" href={lesson.sourceUrl} target="_blank" rel="noopener noreferrer">
               {t("listening.openOriginal")} →

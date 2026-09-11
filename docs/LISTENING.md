@@ -157,6 +157,25 @@ Statusy lekcji:
 - `TAKO_LAKO_CONTENT_LIMIT` — maksymalna liczba lekcji na jeden run.
 - `TAKO_LAKO_CONTENT_FORCE=1` — ponownie importuje treść nawet dla
   lekcji, które są już `IMPORTED`.
+- `TAKO_LAKO_CONTENT_URL=<url>` — pojedyncza lekcja (do debugu).
+  Wybiera tylko rekord ze `sourceUrl` pasującym do podanego URL
+  (z opcjonalnym trailing slash), ignoruje filtr statusu.
+
+### Fallback: Pressbooks WP REST API
+
+Pressbooks zwykle stoi za CloudFrontem, który odrzuca prostych
+botów HTTP z 403. Importer używa realistycznych nagłówków
+przeglądarki (Firefox UA + Accept-Language), a przy 403/404/451
+robi fallback na WordPress REST API tego samego book'a:
+
+```
+/chapter/<slug>/    →    /wp-json/wp/v2/chapters?slug=<slug>
+```
+
+`content.rendered` z REST zawija w `<article class="entry-content">`
+i przepuszcza przez ten sam parser bloków. Jeśli obie ścieżki
+zwrócą 403, lekcja dostaje `contentStatus = UNAVAILABLE` z uwagą,
+która ścieżka padła — widoczną w UI w polu „Diagnostyka".
 
 ### Frontend
 
