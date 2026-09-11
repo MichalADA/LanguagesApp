@@ -3,58 +3,83 @@ const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 /**
- * Starter Tako Lako content. Two demo lessons per level — enough for the
- * Listening UI to show real data on a fresh install. The full catalog is
- * populated by `npm run import:tako-lako`, which upserts on top of this seed
- * so nothing is duplicated when the scraper runs later.
+ * Starter Tako Lako content. Two demo lessons per level with full content
+ * blocks — enough for the Listening UI to render the target UX (headings,
+ * paragraphs, transcripts, attribution) on a fresh install without running
+ * the content scraper. The importer upserts on top of this seed by
+ * lesson.sourceUrl, so nothing is duplicated when it eventually runs.
  */
 const TAKO_LAKO_SEED = {
   slug: 'tako-lako',
   name: 'Tako Lako',
   description: 'Kurs chorwackiego z dialogami, nagraniami i transkrypcjami.',
-  sourceUrl: 'https://takolako.com',
-  license: 'External — see takolako.com',
-  attribution: 'Tako Lako (takolako.com)',
+  sourceUrl: 'https://www.takolako.org',
+  license: 'CC BY-SA',
+  attribution: 'Tako Lako (takolako.org · UTexas Pressbooks)',
   type: 'TAKO_LAKO',
   units: [
     {
       level: 'Beginner',
-      position: 1,
-      title: 'Prvi susret',
+      position: 101,
+      unitNumber: 1,
+      moduleNumber: 1,
+      title: 'Unit 1 · Module 1',
       lessons: [
         {
           position: 1,
-          title: 'Pozdravi',
-          sourceUrl: 'https://takolako.com/lessons/pozdravi',
+          lessonNumber: 1,
+          title: 'Module 1 – Lesson 1: Dobar dan!',
+          sourceUrl: 'https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1/',
           audioUrl: null,
           videoUrl: null,
-          transcript:
-            'Mario: Bok! Kako si?\nLaura: Dobro sam, hvala. A ti?\nMario: I ja sam dobro.',
+          transcript: null,
+          contentStatus: 'IMPORTED',
+          blocks: [
+            { type: 'HEADING', text: 'NAŠI STUDENTI', metadata: { level: 2 } },
+            { type: 'PARAGRAPH', text: 'Poznaj naszych bohaterów: Anę i Marka. Uczą się chorwackiego razem z Tobą.' },
+            { type: 'TRANSCRIPT', text: 'Ana: Dobar dan!\nMarko: Dobar dan, kako si?\nAna: Dobro sam, hvala. A ti?\nMarko: I ja sam dobro.', metadata: { speakers: true } },
+            { type: 'PARAGRAPH', text: '“Dobar dan” to formalne powitanie używane przez większą część dnia.' },
+            { type: 'NOTE', text: 'Zapamiętaj: „Dobar dan” to formalne powitanie, „Bok” — nieformalne.' },
+          ],
         },
         {
           position: 2,
-          title: 'Predstavljanje',
-          sourceUrl: 'https://takolako.com/lessons/predstavljanje',
+          lessonNumber: 2,
+          title: 'Module 1 – Lesson 2: Predstavljanje',
+          sourceUrl: 'https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson2/',
           audioUrl: null,
           videoUrl: null,
-          transcript:
-            'Mario: Kako se zoveš?\nLaura: Zovem se Laura. A ti?\nMario: Ja sam Mario.',
+          transcript: null,
+          contentStatus: 'IMPORTED',
+          blocks: [
+            { type: 'HEADING', text: 'Predstavljanje', metadata: { level: 2 } },
+            { type: 'PARAGRAPH', text: 'Nauczmy się przedstawiać po chorwacku.' },
+            { type: 'TRANSCRIPT', text: 'Mario: Kako se zoveš?\nLaura: Zovem se Laura. A ti?\nMario: Ja sam Mario.', metadata: { speakers: true } },
+          ],
         },
       ],
     },
     {
-      level: 'Intermediate',
-      position: 1,
-      title: 'Slobodno vrijeme',
+      level: 'Beginner',
+      position: 201,
+      unitNumber: 2,
+      moduleNumber: 1,
+      title: 'Unit 2 · Module 1',
       lessons: [
         {
           position: 1,
-          title: 'Hobiji',
-          sourceUrl: 'https://takolako.com/lessons/hobiji',
+          lessonNumber: 1,
+          title: 'Module 1 – Lesson 1: Slobodno vrijeme',
+          sourceUrl: 'https://utexas.pressbooks.pub/takolako/chapter/u2-m1-lesson1/',
           audioUrl: null,
           videoUrl: null,
-          transcript:
-            'Mario: Što radiš u slobodno vrijeme?\nLaura: Često plivam i igram tenis.\nMario: Zapravo i ja volim tenis.',
+          transcript: null,
+          contentStatus: 'IMPORTED',
+          blocks: [
+            { type: 'HEADING', text: 'Slobodno vrijeme', metadata: { level: 2 } },
+            { type: 'PARAGRAPH', text: 'Rozmowa o wolnym czasie i hobby.' },
+            { type: 'TRANSCRIPT', text: 'Mario: Što radiš u slobodno vrijeme?\nLaura: Često plivam i igram tenis.\nMario: Zapravo i ja volim tenis.', metadata: { speakers: true } },
+          ],
         },
       ],
     },
@@ -90,7 +115,7 @@ async function seedListening() {
     const dbUnit = existing
       ? await prisma.listeningUnit.update({
           where: { id: existing.id },
-          data: { title: unit.title },
+          data: { title: unit.title, unitNumber: unit.unitNumber, moduleNumber: unit.moduleNumber },
         })
       : await prisma.listeningUnit.create({
           data: {
@@ -98,30 +123,54 @@ async function seedListening() {
             title: unit.title,
             level: unit.level,
             position: unit.position,
+            unitNumber: unit.unitNumber,
+            moduleNumber: unit.moduleNumber,
           },
         });
 
     for (const lesson of unit.lessons) {
-      await prisma.listeningLesson.upsert({
+      const savedLesson = await prisma.listeningLesson.upsert({
         where: { sourceUrl: lesson.sourceUrl },
         update: {
           unitId: dbUnit.id,
           title: lesson.title,
           position: lesson.position,
+          lessonNumber: lesson.lessonNumber,
           audioUrl: lesson.audioUrl,
           videoUrl: lesson.videoUrl,
           transcript: lesson.transcript,
+          contentStatus: lesson.contentStatus,
+          contentImportedAt: new Date(),
         },
         create: {
           unitId: dbUnit.id,
           title: lesson.title,
           position: lesson.position,
+          lessonNumber: lesson.lessonNumber,
           sourceUrl: lesson.sourceUrl,
           audioUrl: lesson.audioUrl,
           videoUrl: lesson.videoUrl,
           transcript: lesson.transcript,
+          contentStatus: lesson.contentStatus,
+          contentImportedAt: new Date(),
         },
       });
+      // Replace this lesson's blocks with the seeded ones so the seed stays
+      // authoritative — a later real import will overwrite them by the same
+      // mechanism.
+      await prisma.listeningContentBlock.deleteMany({ where: { lessonId: savedLesson.id } });
+      if (lesson.blocks?.length) {
+        await prisma.listeningContentBlock.createMany({
+          data: lesson.blocks.map((block, index) => ({
+            lessonId: savedLesson.id,
+            type: block.type,
+            position: index + 1,
+            text: block.text ?? null,
+            url: block.url ?? null,
+            metadataJson: block.metadata ? JSON.stringify(block.metadata) : null,
+          })),
+        });
+      }
     }
   }
 }
@@ -161,7 +210,7 @@ async function main() {
 
   await seedListening();
 
-  console.log('Seed complete: 3 languages, 1 course (pl-hr), 1 listening source (tako-lako).');
+  console.log('Seed complete: 3 languages, 1 course (pl-hr), tako-lako source + demo lesson blocks.');
 }
 
 main()

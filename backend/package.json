@@ -18,7 +18,8 @@
     "prisma:migrate:dev": "prisma migrate dev",
     "prisma:seed": "node prisma/seed.js",
     "db:reset": "prisma migrate reset --force",
-    "import:tako-lako": "node dist/listening/importer/import-tako-lako.js"
+    "import:tako-lako": "node dist/listening/importer/import-tako-lako.js",
+    "import:tako-lako:content": "node dist/listening/importer/import-tako-lako-content.js"
   },
   "prisma": {
     "seed": "node prisma/seed.js"

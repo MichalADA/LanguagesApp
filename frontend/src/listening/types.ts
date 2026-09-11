@@ -1,5 +1,32 @@
 export type ListeningSourceType = "TAKO_LAKO" | "USER_UPLOAD" | "PODCAST" | "VIDEO" | "YOUTUBE";
 
+export type ListeningContentStatus =
+  | "NOT_IMPORTED"
+  | "IMPORTED"
+  | "PARTIAL"
+  | "FAILED"
+  | "UNAVAILABLE";
+
+export type ListeningContentBlockType =
+  | "HEADING"
+  | "PARAGRAPH"
+  | "IMAGE"
+  | "AUDIO"
+  | "VIDEO"
+  | "TRANSCRIPT"
+  | "EXERCISE"
+  | "NOTE";
+
+export interface ListeningContentBlock {
+  id: string;
+  lessonId: string;
+  type: ListeningContentBlockType;
+  position: number;
+  text: string | null;
+  url: string | null;
+  metadataJson: string | null;
+}
+
 export interface ListeningSource {
   id: string;
   slug: string;
@@ -50,5 +77,9 @@ export interface ListeningLesson {
   grammarUrl: string | null;
   vocabularyUrl: string | null;
   pronunciationUrl: string | null;
+  contentStatus: ListeningContentStatus;
+  contentImportedAt: string | null;
+  contentNote: string | null;
   unit: ListeningUnit & { source: ListeningSource };
+  blocks: ListeningContentBlock[];
 }

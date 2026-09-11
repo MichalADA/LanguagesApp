@@ -50,17 +50,10 @@ const CHAPTER_RE =
 /** Overview chapters carry the whole Unit — never a lesson. Ignored. */
 const OVERVIEW_RE = /pressbooks\.pub\/takolako\/chapter\/u(\d+)-overview\/?/i;
 
-const decodeEntities = (input: string): string =>
-  input
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>');
+import { decodeHtmlEntities } from '../../common/html/entities';
 
 const stripHtml = (fragment: string): string =>
-  decodeEntities(fragment.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')).trim();
+  decodeHtmlEntities(fragment.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')).trim();
 
 /** Extracts each <a href="…">TEXT</a> together with its text content. */
 function extractAnchors(html: string): { href: string; text: string }[] {

@@ -38,9 +38,8 @@ export class ListeningService {
     const lesson = await this.prisma.listeningLesson.findUnique({
       where: { id },
       include: {
-        unit: {
-          include: { source: true },
-        },
+        unit: { include: { source: true } },
+        blocks: { orderBy: { position: 'asc' } },
       },
     });
     if (!lesson) throw new NotFoundException('Listening lesson not found');

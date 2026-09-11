@@ -113,7 +113,68 @@ są ucinane, a różne kotwice do tej samej strony są deduplikowane —
 jeden Pressbooksowy chapter to jeden URL.
 
 Importer **nie pobiera** treści Pressbooks (403 CloudFront z kontenera).
-Transkrypcje, audio i teksty gramatyki to osobny etap.
+Transkrypcje, audio i teksty gramatyki są ładowane osobnym importerem
+treści — patrz niżej.
+
+## Importer treści lekcji
+
+Osobny skrypt (`npm run import:tako-lako:content`) chodzi po
+`ListeningLesson.sourceUrl` z bazy, próbuje pobrać każdą stronę
+i zamienia HTML lekcji w semantyczne `ListeningContentBlock`-i.
+
+Pipeline:
+
+1. znajdź `ListeningLesson.sourceUrl` z bazy (z pominięciem tych, które
+   są już `IMPORTED` — chyba że `TAKO_LAKO_CONTENT_FORCE=1`),
+2. `fetch(url)` — na 403/404/451 lekcja dostaje `contentStatus =
+   UNAVAILABLE`, na inny błąd `FAILED`, przy sukcesie idziemy dalej,
+3. `parseLessonContent(html)` w `src/listening/importer/
+   lesson-content-parser.ts` zwraca listę bloków. Parser:
+   - lokalizuje główną treść (`.entry-content` → `article` → `main`),
+   - iteruje po elementach i emituje `HEADING`, `PARAGRAPH`, `IMAGE`,
+     `AUDIO`, `VIDEO`, `TRANSCRIPT`, `EXERCISE`, `NOTE`,
+   - pomija nav/header/footer/aside/script/style oraz klasy
+     `wp-block-navigation`, `menu-`, `sidebar`, `screen-reader`, …,
+   - klasyfikuje `<iframe>` na `VIDEO` (YouTube/Vimeo) lub `EXERCISE`
+     (H5P, Quizlet…),
+4. w jednej transakcji importer wywala stare bloki dla lekcji
+   i zapisuje nowe (`deleteMany` + `createMany`), ustawia
+   `contentStatus = IMPORTED` (albo `PARTIAL` gdy brak paragrafów
+   i transkrypcji), `contentImportedAt = now()`.
+
+Statusy lekcji:
+
+| Status         | Znaczenie                                                    |
+| -------------- | ------------------------------------------------------------ |
+| `NOT_IMPORTED` | Katalog załadowany, treści jeszcze nie próbowaliśmy.         |
+| `IMPORTED`     | Treść lekcji zaimportowana i renderowana lokalnie w UI.      |
+| `PARTIAL`      | Pobraliśmy stronę, ale wyszły tylko media / heading — brak paragrafów. |
+| `FAILED`       | Błąd sieci lub inny HTTP; można ponowić.                     |
+| `UNAVAILABLE`  | Źródło odmawia dostępu (403/404/451). Kolejne runy pomijają. |
+
+### Konfiguracja treści
+
+- `TAKO_LAKO_CONTENT_LIMIT` — maksymalna liczba lekcji na jeden run.
+- `TAKO_LAKO_CONTENT_FORCE=1` — ponownie importuje treść nawet dla
+  lekcji, które są już `IMPORTED`.
+
+### Frontend
+
+Widok lekcji renderuje bloki lokalnie (`ContentBlocks.tsx`):
+
+- `HEADING` → `<h2/h3/h4>` w typografii Lexodromii,
+- `PARAGRAPH` → tekst z line-heightem 1.6,
+- `IMAGE` → responsywny `<img>` z alt-tekstem,
+- `AUDIO` / `VIDEO` → HTML5 player albo iframe YouTube/Vimeo,
+- `TRANSCRIPT` → osobna karta z rozpoznaniem rozmówców,
+- `EXERCISE` → placeholder „Ćwiczenie dostępne w oryginalnym materiale”
+  z linkiem do źródła (H5P nie osadzamy w tej iteracji),
+- `NOTE` → cytat z paskiem akcentu.
+
+Sekcja **Vocabulary coverage** analizuje teraz połączone
+`PARAGRAPH + TRANSCRIPT + HEADING + NOTE` z bloków (a nie surowy
+HTML źródła). Attribution + licencja + link „Otwórz oryginał” są
+stałą sekcją na dole lekcji.
 
 ### Startowy seed
 

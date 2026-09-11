@@ -304,25 +304,73 @@ model ListeningUnit {
 }
 
 model ListeningLesson {
-  id               String   @id @default(cuid())
-  unitId           String
-  title            String
-  position         Int      @default(0)
+  id                String                  @id @default(cuid())
+  unitId            String
+  title             String
+  position          Int                     @default(0)
   /// Numer Lesson w obrębie Module (np. 1 dla lesson1). Opcjonalny.
-  lessonNumber     Int?
-  sourceUrl        String?  @unique
-  transcript       String?
-  audioUrl         String?
-  videoUrl         String?
-  grammarUrl       String?
-  vocabularyUrl    String?
-  pronunciationUrl String?
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  lessonNumber      Int?
+  sourceUrl         String?                 @unique
+  transcript        String?
+  audioUrl          String?
+  videoUrl          String?
+  grammarUrl        String?
+  vocabularyUrl     String?
+  pronunciationUrl  String?
+  /// Status importu treści lekcji z zewnętrznego źródła.
+  contentStatus     ListeningContentStatus  @default(NOT_IMPORTED)
+  contentImportedAt DateTime?
+  /// Wolne pole na powód FAILED/UNAVAILABLE (np. HTTP status, brak transkryptu).
+  contentNote       String?
+  createdAt         DateTime                @default(now())
+  updatedAt         DateTime                @updatedAt
 
-  unit ListeningUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  unit   ListeningUnit           @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  blocks ListeningContentBlock[]
 
   @@index([unitId])
+  @@index([contentStatus])
+}
+
+enum ListeningContentStatus {
+  NOT_IMPORTED
+  IMPORTED
+  PARTIAL
+  FAILED
+  UNAVAILABLE
+}
+
+/// A single semantic piece of a lesson: heading, paragraph, image, audio,
+/// video, transcript, exercise placeholder or side note. Ordered by
+/// `position` inside the parent lesson. `text` carries the block's plain
+/// text (may be null for pure media), `url` its media source, and
+/// `metadataJson` any block-specific extras (heading level, image alt,
+/// speakers flag, iframe origin) as a JSON string.
+model ListeningContentBlock {
+  id           String                    @id @default(cuid())
+  lessonId     String
+  type         ListeningContentBlockType
+  position     Int
+  text         String?
+  url          String?
+  metadataJson String?
+  createdAt    DateTime                  @default(now())
+  updatedAt    DateTime                  @updatedAt
+
+  lesson ListeningLesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([lessonId, position])
+}
+
+enum ListeningContentBlockType {
+  HEADING
+  PARAGRAPH
+  IMAGE
+  AUDIO
+  VIDEO
+  TRANSCRIPT
+  EXERCISE
+  NOTE
 }
 
 model ReviewAttempt {

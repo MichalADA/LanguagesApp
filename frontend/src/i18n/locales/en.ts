@@ -42,6 +42,13 @@ export const en: Dictionary = {
     grammar: "Grammar",
     vocabulary: "Vocabulary",
     pronunciation: "Pronunciation",
+    videoExtra: "Video",
+    content: "Lesson content",
+    contentUnavailableTitle: "Lesson content is not yet available",
+    contentUnavailableReason: "The source refuses fetches from this container. Open the original to read the lesson.",
+    contentNotImportedYet: "This lesson's content has not been imported yet. Run the content importer or open the original.",
+    exercisePlaceholder: "Exercise available in the original material",
+    attributionTitle: "Source and license",
     placeholders: {
       custom: { title: "Own material", description: "Upload your own recordings with transcripts." },
       podcasts: { title: "Podcasts", description: "Episodes tuned to your level and interests." },
