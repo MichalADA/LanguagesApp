@@ -33,6 +33,7 @@ async function setup(fetcher, status = 'authenticated', locale = 'pl') {
     '@/flashcards/flashcardsApi': {fetchProgress:fetcher},
     '@/flashcards/preferences': {readPreferences: () => ({direction:'MIXED',strictDiacritics:true}),writePreferences: p => writes.push(p)},
     '@/config/learningLevels': levels,
+    '@/reviews/ReviewSummary': {ReviewSummary: () => null},
   });
   let view;
   await act(async () => {view=Renderer.create(React.createElement(Dashboard));});

@@ -46,16 +46,16 @@ export function statFor(
 }
 
 export function isLearned(w: WordProgress): boolean {
-  return w.currentStreak >= LEARNED_THRESHOLD;
+  return w.reviewStatus ? w.reviewStatus === "MASTERED" : w.currentStreak >= LEARNED_THRESHOLD;
 }
 
 export function isDifficult(w: WordProgress): boolean {
-  return w.markedDifficult || w.incorrectAnswers >= DIFFICULT_THRESHOLD;
+  return w.markedDifficult || (w.reviewStatus ? w.difficulty > 0 : w.incorrectAnswers >= DIFFICULT_THRESHOLD);
 }
 
 /** Do powtórki: ostatnia próba była nieudana. */
 export function needsReview(w: WordProgress): boolean {
-  return w.attempts > 0 && w.currentStreak === 0;
+  return w.reviewStatus ? (w.nextReview ?? Infinity) <= Date.now() : w.attempts > 0 && w.currentStreak === 0;
 }
 
 const scored = (v: Verdict) => v === "hit" || v === "near";
@@ -64,8 +64,8 @@ const scored = (v: Verdict) => v === "hit" || v === "near";
  * Aktualizacja postępu po rundzie dowolnej gry. To jedyne wejście do zapisu —
  * Bura, Trasa i przyszłe Fiszki wołają dokładnie to samo.
  *
- * ⬇ SRS PODŁĄCZASZ TUTAJ: po policzeniu `next` wystarczy dopisać
- * `next.nextReview`, `next.interval` i `next.stability` na podstawie verdictu.
+ * Local guest statistics and game scores only. Authenticated material state
+ * is supplied by the backend FSRS snapshot in ProgressProvider.
  */
 export function applyRound(state: ProgressState, result: RoundResult): ProgressState {
   const cp = { ...courseProgress(state, result.courseId) };

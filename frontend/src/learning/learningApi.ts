@@ -1,6 +1,12 @@
 import type { AuthenticatedRequest } from "@/auth/AuthContext";
 
 export interface LearningAnswerInput {
+  eventId?: string;
+  gameType?: string;
+  direction?: 'SOURCE_TO_TARGET' | 'TARGET_TO_SOURCE';
+  usedHint?: boolean;
+  responseTimeMs?: number;
+  attemptsBeforeCorrect?: number;
   wordRef: string;
   answer: string;
   correct: boolean;

@@ -23,7 +23,7 @@ export function QuickGame({ mode }: { mode: QuickGameId }) {
   const { course } = useCourse();
   const { status, apiRequest } = useAuth();
   const progress = useProgress();
-  const learning = useLearningSession();
+  const learning = useLearningSession({ gameType: mode });
   const { loading, error } = useVocabulary();
   const [selection, setSelection] = useState<PoolSelection>({ source: { kind: "level", level: "A1" }, topic: null });
   const pool = useWordPool(selection);

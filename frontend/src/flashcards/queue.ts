@@ -32,9 +32,9 @@ export function buildQueue(
   for (const p of progressByRef.values()) {
     const entry = byId.get(p.wordRef);
     if (!entry) continue;
-    const due = p.status !== "NEW" && (!p.nextReviewAt || new Date(p.nextReviewAt).getTime() <= now);
+    const due = (!p.nextReviewAt || new Date(p.nextReviewAt).getTime() <= now);
     if (due) dueItems.push({ entry, progress: p, isNew: false });
-    if (p.status === "DIFFICULT" || p.markedDifficult) {
+    if (p.status === "DIFFICULT" || p.difficultyScore > 0 || p.markedDifficult) {
       difficultItems.push({ entry, progress: p, isNew: false });
     }
   }

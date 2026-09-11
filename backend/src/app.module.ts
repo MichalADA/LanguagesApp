@@ -1,3 +1,4 @@
+import { ReviewsModule } from './reviews/reviews.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_GUARD } from '@nestjs/core';
@@ -31,6 +32,7 @@ import { validateEnvironment } from './config/environment';
     FlashcardsModule,
     StatisticsModule,
     HealthModule,
+    ReviewsModule,
   ],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })

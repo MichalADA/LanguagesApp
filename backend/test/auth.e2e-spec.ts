@@ -186,7 +186,7 @@ describe('Auth + data isolation (e2e)', () => {
       .expect(403);
   });
 
-  it('counts only completed sessions and marks an item learned after three correct answers', async () => {
+  it('counts completed sessions without granting mastery for immediate repeated answers', async () => {
     const login = await aliceAgent
       .post('/auth/login')
       .send({ email: alice.email, password: alice.password })
@@ -221,7 +221,7 @@ describe('Auth + data isolation (e2e)', () => {
       .set('Authorization', `Bearer ${token}`)
       .expect(200);
     expect(after.body.totalSessions).toBe(2);
-    expect(after.body.wordsLearned).toBe(1);
+    expect(after.body.wordsLearned).toBe(0);
   });
 
   it('logs out by revoking and clearing the refresh cookie', async () => {

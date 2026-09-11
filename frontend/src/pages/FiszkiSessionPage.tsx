@@ -1,3 +1,4 @@
+import { createEventId } from "@/utils/eventId";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useAuth } from "@/auth/useAuth";
@@ -11,14 +12,20 @@ import { readPreferences } from "@/flashcards/preferences";
 import type { FlashcardPreferences } from "@/flashcards/preferences";
 import { buildQueue, type QueueItem } from "@/flashcards/queue";
 import { segmentDiff } from "@/flashcards/diff";
-import { fetchProgress, startSession, finishSession, submitAnswer } from "@/flashcards/flashcardsApi";
+import {
+  fetchProgress,
+  startSession,
+  finishSession,
+  submitAnswer,
+} from "@/flashcards/flashcardsApi";
 import type {
   FlashcardDirection,
   FlashcardProgress,
   FlashcardRating,
 } from "@/flashcards/types";
 
-type Phase = "loading" | "empty" | "answering" | "reviewing" | "finished" | "error";
+type Phase =
+  "loading" | "empty" | "answering" | "reviewing" | "finished" | "error";
 type DirectionOne = "SOURCE_TO_TARGET" | "TARGET_TO_SOURCE";
 
 interface CardState {
@@ -27,19 +34,13 @@ interface CardState {
 }
 
 interface Feedback {
+  eventId: string;
   correct: boolean;
   near: boolean;
   typed: string;
   expected: string;
   card: CardState;
 }
-
-const RATINGS: { id: FlashcardRating; labelKey: string; shortcut: string }[] = [
-  { id: "AGAIN", labelKey: "flashcards.rate.again", shortcut: "1" },
-  { id: "HARD", labelKey: "flashcards.rate.hard", shortcut: "2" },
-  { id: "GOOD", labelKey: "flashcards.rate.good", shortcut: "3" },
-  { id: "EASY", labelKey: "flashcards.rate.easy", shortcut: "4" },
-];
 
 export function FiszkiSessionPage() {
   const t = useT();
@@ -61,6 +62,12 @@ export function FiszkiSessionPage() {
   const [requeueCount, setRequeueCount] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const finishedRef = useRef(false);
+  const saving = useRef(false);
+  const pendingAnswer = useRef<Parameters<typeof submitAnswer>[1] | null>(null);
+  useEffect(() => {
+    saving.current = false;
+  }, [feedback]);
+  const failures = useRef(new Map<string, number>());
 
   useEffect(() => {
     if (status !== "authenticated") return;
@@ -78,7 +85,12 @@ export function FiszkiSessionPage() {
           progressRows.map((row) => [row.wordRef, row]),
         );
 
-        const items = buildQueue(entries, progressByRef, prefs.mode, prefs.sessionSize);
+        const items = buildQueue(
+          entries,
+          progressByRef,
+          prefs.mode,
+          prefs.sessionSize,
+        );
         if (items.length === 0) {
           setPhase("empty");
           return;
@@ -123,7 +135,9 @@ export function FiszkiSessionPage() {
 
   const currentCard = queue[index];
   const total = queue.length;
-  const percent = total ? Math.round(((index + (feedback ? 1 : 0)) / total) * 100) : 0;
+  const percent = total
+    ? Math.round(((index + (feedback ? 1 : 0)) / total) * 100)
+    : 0;
 
   const promptText = useMemo(() => {
     if (!currentCard) return "";
@@ -156,11 +170,13 @@ export function FiszkiSessionPage() {
       correct = check.verdict === "hit";
       near = check.verdict === "near";
     } else {
-      const canon = (s: string) => s.normalize("NFC").trim().toLocaleLowerCase().replace(/\s+/g, " ");
+      const canon = (s: string) =>
+        s.normalize("NFC").trim().toLocaleLowerCase().replace(/\s+/g, " ");
       correct = canon(typed) === canon(entry.sourceText);
     }
 
     setFeedback({
+      eventId: createEventId(),
       correct,
       near,
       typed,
@@ -177,31 +193,55 @@ export function FiszkiSessionPage() {
 
   const applyRating = useCallback(
     async (rating: FlashcardRating) => {
-      if (!feedback) return;
+      if (!feedback || saving.current) return;
+      saving.current = true;
       const card = feedback.card;
       const wasCorrect = feedback.correct;
 
-      const answerPayload = {
-        course: course.id,
-        wordRef: card.item.entry.id,
-        direction: card.direction,
-        answer: feedback.typed,
-        correct: rating !== "AGAIN" && wasCorrect,
-        rating,
-        sessionId: sessionId ?? undefined,
-      } as const;
+      const answerPayload =
+        pendingAnswer.current ??
+        ({
+          eventId: feedback.eventId,
+          attemptsBeforeCorrect: failures.current.get(card.item.entry.id) ?? 0,
+          course: course.id,
+          wordRef: card.item.entry.id,
+          direction: card.direction,
+          answer: feedback.typed,
+          correct: rating !== "AGAIN" && wasCorrect,
+          rating,
+          sessionId: sessionId ?? undefined,
+        } as const);
 
-      // Optimistic advance — even if the server rejects, the local session
-      // still counts (users hate a ratings button that seems to freeze).
-      void submitAnswer(apiRequest, answerPayload).catch(() => undefined);
+      pendingAnswer.current = answerPayload;
+      try {
+        await submitAnswer(apiRequest, answerPayload);
+        window.dispatchEvent(new Event("review-updated"));
+        setError(null);
+        pendingAnswer.current = null;
+      } catch {
+        saving.current = false;
+        setError(t("reviews.saveError"));
+        return;
+      }
+      if (!answerPayload.correct)
+        failures.current.set(
+          card.item.entry.id,
+          (failures.current.get(card.item.entry.id) ?? 0) + 1,
+        );
 
-      if (rating === "AGAIN") {
+      const requeue =
+        !answerPayload.correct &&
+        queue.length - index - 1 >= 3 &&
+        (failures.current.get(card.item.entry.id) ?? 0) <= 2;
+      if (requeue) {
         // Requeue the card near the end of the session so the user retries it
         // once fresher cards drift through.
         setQueue((prev) => {
           const rest = prev.slice(0, index).concat(prev.slice(index + 1));
           const insertAt = Math.min(rest.length, index + 3);
-          const next = rest.slice(0, insertAt).concat(card, rest.slice(insertAt));
+          const next = rest
+            .slice(0, insertAt)
+            .concat(card, rest.slice(insertAt));
           return next;
         });
         setRequeueCount((n) => n + 1);
@@ -212,7 +252,7 @@ export function FiszkiSessionPage() {
       setFeedback(null);
       setTyped("");
 
-      if (rating !== "AGAIN" && index + 1 >= queue.length) {
+      if (!requeue && index + 1 >= queue.length) {
         setPhase("finished");
         if (sessionId && !finishedRef.current) {
           finishedRef.current = true;
@@ -226,16 +266,16 @@ export function FiszkiSessionPage() {
         setPhase("answering");
       }
     },
-    [apiRequest, course.id, feedback, index, queue.length, sessionId],
+    [apiRequest, course.id, feedback, index, queue.length, sessionId, t],
   );
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (phase !== "reviewing" || !feedback) return;
-      if (e.key === "1") void applyRating("AGAIN");
-      if (e.key === "2") void applyRating("HARD");
-      if (e.key === "3" || e.key === "Enter") void applyRating("GOOD");
-      if (e.key === "4") void applyRating("EASY");
+      if (e.key === "Enter") {
+        e.preventDefault();
+        void applyRating("GOOD");
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -257,8 +297,12 @@ export function FiszkiSessionPage() {
     return (
       <div className="page">
         <section className="panel panel-pad stack" style={{ gap: 10 }}>
-          <p className="form-message error" role="alert">{error}</p>
-          <Link to="/fiszki" className="btn-ghost">{t("common.back")}</Link>
+          <p className="form-message error" role="alert">
+            {error}
+          </p>
+          <Link to="/fiszki" className="btn-ghost">
+            {t("common.back")}
+          </Link>
         </section>
       </div>
     );
@@ -271,7 +315,11 @@ export function FiszkiSessionPage() {
           <span className="eyebrow">{t("flashcards.eyebrow")}</span>
           <h2>{t("flashcards.session.emptyTitle")}</h2>
           <p className="muted">{t("flashcards.session.emptyBody")}</p>
-          <Link to="/fiszki" className="btn" style={{ alignSelf: "flex-start" }}>
+          <Link
+            to="/fiszki"
+            className="btn"
+            style={{ alignSelf: "flex-start" }}
+          >
             {t("common.back")}
           </Link>
         </section>
@@ -280,9 +328,10 @@ export function FiszkiSessionPage() {
   }
 
   if (phase === "finished") {
-    const accuracy = correctCount + wrongCount > 0
-      ? Math.round((correctCount / (correctCount + wrongCount)) * 100)
-      : 0;
+    const accuracy =
+      correctCount + wrongCount > 0
+        ? Math.round((correctCount / (correctCount + wrongCount)) * 100)
+        : 0;
     return (
       <div className="page">
         <section className="panel panel-pad result-card">
@@ -298,7 +347,11 @@ export function FiszkiSessionPage() {
             })}
           </p>
           <div className="row" style={{ gap: 10, marginTop: 10 }}>
-            <button type="button" className="btn" onClick={() => navigate("/fiszki")}>
+            <button
+              type="button"
+              className="btn"
+              onClick={() => navigate("/fiszki")}
+            >
               {t("flashcards.session.backToDashboard")}
             </button>
             <button
@@ -325,10 +378,15 @@ export function FiszkiSessionPage() {
             {t("common.back")}
           </Link>
         </div>
-        <div className="bar"><span style={{ width: `${percent}%` }} /></div>
+        <div className="bar">
+          <span style={{ width: `${percent}%` }} />
+        </div>
       </header>
 
-      <section className="panel panel-pad game-stage" style={{ minHeight: 300 }}>
+      <section
+        className="panel panel-pad game-stage"
+        style={{ minHeight: 300 }}
+      >
         <span className="eyebrow" style={{ alignSelf: "center" }}>
           {isTargetSide ? t("flashcards.card.plHr") : t("flashcards.card.hrPl")}
         </span>
@@ -350,14 +408,22 @@ export function FiszkiSessionPage() {
           </>
         )}
 
+        {error && phase === "reviewing" && <p role="alert">{error}</p>}
         {phase === "reviewing" && feedback && (
-          <FeedbackBlock feedback={feedback} onRate={(r) => void applyRating(r)} t={t} />
+          <FeedbackBlock
+            feedback={feedback}
+            onRate={(r) => void applyRating(r)}
+            t={t}
+          />
         )}
       </section>
 
       <div className="hud" style={{ padding: "0 4px" }}>
         <span>
-          {t("flashcards.session.hudScore", { correct: correctCount, wrong: wrongCount })}
+          {t("flashcards.session.hudScore", {
+            correct: correctCount,
+            wrong: wrongCount,
+          })}
         </span>
         <span className="mono dim">
           {t("flashcards.session.hudRequeues", { n: requeueCount })}
@@ -377,7 +443,9 @@ function FeedbackBlock({
   t: (key: string, params?: Record<string, string | number>) => string;
 }) {
   const entry = feedback.card.item.entry;
-  const diff = feedback.correct ? [] : segmentDiff(feedback.typed, feedback.expected);
+  const diff = feedback.correct
+    ? []
+    : segmentDiff(feedback.typed, feedback.expected);
   const banner = feedback.correct
     ? t("flashcards.feedback.correct")
     : feedback.near
@@ -385,16 +453,24 @@ function FeedbackBlock({
       : t("flashcards.feedback.wrong");
 
   return (
-    <div className="stack" style={{ gap: 14, width: "100%", alignItems: "center" }}>
+    <div
+      className="stack"
+      style={{ gap: 14, width: "100%", alignItems: "center" }}
+    >
       <span
         className="eyebrow"
-        style={{ color: feedback.correct ? "var(--gold-light)" : "var(--accent-text)" }}
+        style={{
+          color: feedback.correct ? "var(--gold-light)" : "var(--accent-text)",
+        }}
       >
         {banner}
       </span>
 
       {!feedback.correct && (
-        <div className="answer-compare stack" style={{ gap: 6, alignItems: "center" }}>
+        <div
+          className="answer-compare stack"
+          style={{ gap: 6, alignItems: "center" }}
+        >
           <div className="dim mono" style={{ fontSize: 13 }}>
             {t("flashcards.feedback.yourAnswer")}
           </div>
@@ -409,7 +485,11 @@ function FeedbackBlock({
               ? diff.map((seg, i) => (
                   <span
                     key={i}
-                    style={{ color: seg.match ? "var(--gold-light)" : "var(--accent-text)" }}
+                    style={{
+                      color: seg.match
+                        ? "var(--gold-light)"
+                        : "var(--accent-text)",
+                    }}
                   >
                     {seg.text}
                   </span>
@@ -419,41 +499,41 @@ function FeedbackBlock({
         </div>
       )}
 
-      {feedback.correct && (
-        <div className="answer">{feedback.expected}</div>
-      )}
+      {feedback.correct && <div className="answer">{feedback.expected}</div>}
 
       <WordDetails entry={entry} />
 
-      <div className="row" style={{ gap: 8, justifyContent: "center", flexWrap: "wrap" }}>
-        {RATINGS.map((r) => (
-          <button
-            key={r.id}
-            type="button"
-            className={ratingClass(r.id)}
-            onClick={() => onRate(r.id)}
-            title={t(`${r.labelKey}Hint`)}
-          >
-            <span className="mono" style={{ opacity: 0.6, marginRight: 6 }}>{r.shortcut}</span>
-            {t(r.labelKey)}
-          </button>
-        ))}
+      <div
+        className="row"
+        style={{ gap: 8, justifyContent: "center", flexWrap: "wrap" }}
+      >
+        <button type="button" className="btn" onClick={() => onRate("GOOD")}>
+          {t("reviews.next")}
+        </button>
       </div>
     </div>
   );
 }
 
 function WordDetails({ entry }: { entry: VocabularyEntry }) {
-  const grammar = [entry.partOfSpeech, entry.grammar].filter(Boolean).join(" · ");
+  const grammar = [entry.partOfSpeech, entry.grammar]
+    .filter(Boolean)
+    .join(" · ");
   return (
     <div className="stack" style={{ gap: 8, width: "100%", maxWidth: 520 }}>
       {grammar && (
-        <span className="dim" style={{ fontSize: 13, textAlign: "center" }}>{grammar}</span>
+        <span className="dim" style={{ fontSize: 13, textAlign: "center" }}>
+          {grammar}
+        </span>
       )}
       {(entry.exampleTarget || entry.exampleSource) && (
         <div className="example">
-          {entry.exampleTarget && <div className="example-hr">{entry.exampleTarget}</div>}
-          {entry.exampleSource && <div className="example-pl">{entry.exampleSource}</div>}
+          {entry.exampleTarget && (
+            <div className="example-hr">{entry.exampleTarget}</div>
+          )}
+          {entry.exampleSource && (
+            <div className="example-pl">{entry.exampleSource}</div>
+          )}
         </div>
       )}
       {entry.falseFriend && entry.falseFriendNote && (
@@ -461,13 +541,6 @@ function WordDetails({ entry }: { entry: VocabularyEntry }) {
       )}
     </div>
   );
-}
-
-function ratingClass(id: FlashcardRating): string {
-  if (id === "AGAIN") return "chip flashcard-rate flashcard-rate-again";
-  if (id === "HARD") return "chip flashcard-rate flashcard-rate-hard";
-  if (id === "EASY") return "chip flashcard-rate flashcard-rate-easy";
-  return "chip on flashcard-rate flashcard-rate-good";
 }
 
 function resolveDirection(pref: FlashcardDirection): DirectionOne {

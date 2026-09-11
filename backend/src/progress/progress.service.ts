@@ -1,8 +1,9 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
-import { Prisma } from '@prisma/client';
-import { PrismaService } from '../prisma/prisma.service';
+import { masteredStateWhere } from "../reviews/fsrs-scheduler";
+import { activityStreak } from "../reviews/activity";
+import { Injectable, NotFoundException } from "@nestjs/common";
+import { Prisma } from "@prisma/client";
+import { PrismaService } from "../prisma/prisma.service";
 
-const MASTERED_ANSWER_COUNT = 3;
 type DatabaseClient = PrismaService | Prisma.TransactionClient;
 
 @Injectable()
@@ -19,23 +20,28 @@ export class ProgressService {
       include: {
         course: { include: { sourceLanguage: true, targetLanguage: true } },
       },
-      orderBy: { lastActivityAt: 'desc' },
+      orderBy: { lastActivityAt: "desc" },
     });
-    return rows.map((row) => ({
-      courseId: row.courseId,
-      courseSlug: row.course.slug,
-      courseName: row.course.name,
-      sourceLanguage: row.course.sourceLanguage,
-      targetLanguage: row.course.targetLanguage,
-      startedAt: row.startedAt,
-      lastActivityAt: row.lastActivityAt,
-      totalAnswers: row.totalAnswers,
-      correctAnswers: row.correctAnswers,
-      wrongAnswers: row.wrongAnswers,
-      wordsLearned: row.wordsLearned,
-      currentStreak: row.currentStreak,
-      longestStreak: row.longestStreak,
-    }));
+    return Promise.all(
+      rows.map(async (row) => ({
+        courseId: row.courseId,
+        courseSlug: row.course.slug,
+        courseName: row.course.name,
+        sourceLanguage: row.course.sourceLanguage,
+        targetLanguage: row.course.targetLanguage,
+        startedAt: row.startedAt,
+        lastActivityAt: row.lastActivityAt,
+        totalAnswers: row.totalAnswers,
+        correctAnswers: row.correctAnswers,
+        wrongAnswers: row.wrongAnswers,
+        wordsLearned: await this.countMasteredItems(
+          this.prisma,
+          userId,
+          row.courseId,
+        ),
+        ...(await activityStreak(this.prisma, userId, row.courseId)),
+      })),
+    );
   }
 
   async getForCourse(userId: string, courseId: string) {
@@ -45,8 +51,16 @@ export class ProgressService {
         course: { include: { sourceLanguage: true, targetLanguage: true } },
       },
     });
-    if (!row) throw new NotFoundException('No progress for this course yet');
-    return row;
+    if (!row) throw new NotFoundException("No progress for this course yet");
+    return {
+      ...row,
+      wordsLearned: await this.countMasteredItems(
+        this.prisma,
+        userId,
+        courseId,
+      ),
+      ...(await activityStreak(this.prisma, userId, courseId)),
+    };
   }
 
   /**
@@ -65,14 +79,9 @@ export class ProgressService {
     db: DatabaseClient = this.prisma,
   ) {
     const { userId, courseId, correct, wrong } = input;
-    const existing = await db.userCourseProgress.findUnique({
-      where: { userId_courseId: { userId, courseId } },
-    });
     const total = correct + wrong;
-    const newStreak = input.streakOnSuccess
-      ? (existing?.currentStreak ?? 0) + 1
-      : 0;
-    const longest = Math.max(existing?.longestStreak ?? 0, newStreak);
+    const { currentStreak: newStreak, longestStreak: longest } =
+      await activityStreak(db, userId, courseId);
     const wordsLearned = await this.countMasteredItems(db, userId, courseId);
 
     return db.userCourseProgress.upsert({
@@ -94,7 +103,7 @@ export class ProgressService {
         wrongAnswers: wrong,
         wordsLearned,
         currentStreak: newStreak,
-        longestStreak: newStreak,
+        longestStreak: longest,
       },
     });
   }
@@ -104,16 +113,8 @@ export class ProgressService {
     userId: string,
     courseId: string,
   ): Promise<number> {
-    const items = await db.learningAnswer.groupBy({
-      by: ['wordRef'],
-      where: {
-        userId,
-        correct: true,
-        session: { courseId, finishedAt: { not: null } },
-      },
-      _count: { wordRef: true },
-      having: { wordRef: { _count: { gte: MASTERED_ANSWER_COUNT } } },
+    return db.reviewState.count({
+      where: { userId, courseId, itemType: "WORD", ...masteredStateWhere },
     });
-    return items.length;
   }
 }

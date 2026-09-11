@@ -1,357 +1,159 @@
+import { activityStreak } from "../reviews/activity";
 import {
   ConflictException,
   ForbiddenException,
   Injectable,
   NotFoundException,
-} from '@nestjs/common';
-import { Prisma, WordStatus } from '@prisma/client';
-
-import { PrismaService } from '../prisma/prisma.service';
-import {
-  DIFFICULTY_THRESHOLD,
-  MASTERY_INTERVAL_DAYS,
-  MASTERY_MIN_REPETITIONS,
-  scheduleNext,
-  type FlashcardRating,
-} from './srs';
+} from "@nestjs/common";
+import { randomUUID } from "node:crypto";
+import { PrismaService } from "../prisma/prisma.service";
+import { ReviewsService } from "../reviews/reviews.service";
+import { ProgressService } from "../progress/progress.service";
+import { reviewStatus } from "../reviews/fsrs-scheduler";
 import type {
   SeenWordDto,
   StartFlashcardSessionDto,
   SubmitAnswerDto,
   ToggleDifficultDto,
-} from './dto/answer.dto';
+} from "./dto/answer.dto";
 
-const NEW_WORDS_PER_DAY_DEFAULT = 20;
-
-export interface FlashcardsSummary {
-  courseId: string;
-  totalKnown: number;
-  newToday: number;
-  reviewDue: number;
-  mastered: number;
-  learning: number;
-  difficult: number;
-  seenTotal: number;
-  currentStreak: number;
-  longestStreak: number;
-  attempts: number;
-  correct: number;
-  wrong: number;
-  accuracy: number;
-}
-
-export interface CardPayload {
-  wordRef: string;
-  status: WordStatus;
-  repetitions: number;
-  correctAnswers: number;
-  wrongAnswers: number;
-  intervalDays: number;
-  easeFactor: number;
-  nextReviewAt: string | null;
-  lastReviewedAt: string | null;
-  firstSeenAt: string;
-  masteredAt: string | null;
-  difficultyScore: number;
-  markedDifficult: boolean;
-  isDue: boolean;
-  isNew: boolean;
-}
-
+/** Compatibility facade: all live scheduling and word state now come from ReviewsService. */
 @Injectable()
 export class FlashcardsService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly reviews: ReviewsService,
+    private readonly progress: ProgressService,
+  ) {}
 
-  async summary(userId: string, courseKey: string): Promise<FlashcardsSummary> {
-    const course = await this.resolveCourse(courseKey);
-    const now = new Date();
-
-    const rows = await this.prisma.userWordProgress.findMany({
-      where: { userId, courseId: course.id },
-      select: {
-        status: true,
-        correctAnswers: true,
-        wrongAnswers: true,
-        nextReviewAt: true,
-        firstSeenAt: true,
-        markedDifficult: true,
-      },
+  async summary(userId: string, courseKey: string) {
+    const course = await this.reviews.course(courseKey);
+    const rows = await this.prisma.reviewState.findMany({
+      where: { userId, courseId: course.id, itemType: "WORD" },
     });
-
-    const startOfToday = startOfDay(now);
-
-    let totalKnown = 0;
-    let seenTotal = 0;
-    let mastered = 0;
-    let learning = 0;
-    let review = 0;
-    let difficult = 0;
-    let newToday = 0;
-    let reviewDue = 0;
-    let attempts = 0;
-    let correct = 0;
-    let wrong = 0;
-
-    for (const row of rows) {
-      totalKnown += 1;
-      seenTotal += 1;
-      attempts += row.correctAnswers + row.wrongAnswers;
-      correct += row.correctAnswers;
-      wrong += row.wrongAnswers;
-      if (row.firstSeenAt >= startOfToday) newToday += 1;
-      switch (row.status) {
-        case 'MASTERED':
-          mastered += 1;
-          break;
-        case 'LEARNING':
-          learning += 1;
-          break;
-        case 'REVIEW':
-          review += 1;
-          break;
-        case 'DIFFICULT':
-          difficult += 1;
-          break;
-        default:
-          break;
-      }
-      if (row.markedDifficult && row.status !== 'DIFFICULT') difficult += 1;
-      if (row.status !== 'NEW' && row.nextReviewAt <= now) reviewDue += 1;
-    }
-
-    const courseProgress = await this.prisma.userCourseProgress.findUnique({
-      where: { userId_courseId: { userId, courseId: course.id } },
-      select: { currentStreak: true, longestStreak: true },
-    });
-
-    const accuracy = attempts > 0 ? Math.round((correct / attempts) * 10_000) / 100 : 0;
-
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
+    const correct = rows.reduce((n, r) => n + r.correctAnswers, 0),
+      wrong = rows.reduce((n, r) => n + r.wrongAnswers, 0);
     return {
       courseId: course.id,
-      totalKnown,
-      newToday,
-      reviewDue,
-      mastered,
-      // Everything the user is actively drilling but has not mastered yet.
-      learning: learning + review,
-      difficult,
-      seenTotal,
-      currentStreak: courseProgress?.currentStreak ?? 0,
-      longestStreak: courseProgress?.longestStreak ?? 0,
-      attempts,
+      totalKnown: rows.length,
+      seenTotal: rows.length,
+      newToday: rows.filter((r) => r.createdAt >= today).length,
+      reviewDue: rows.filter((r) => r.due <= new Date()).length,
+      mastered: rows.filter((r) => reviewStatus(r) === "MASTERED").length,
+      learning: rows.filter((r) =>
+        ["LEARNING", "REVIEW"].includes(reviewStatus(r)),
+      ).length,
+      difficult: rows.filter((r) => r.markedDifficult || r.lapses > 0).length,
+      ...(await activityStreak(this.prisma, userId, course.id)),
+      attempts: correct + wrong,
       correct,
       wrong,
-      accuracy,
+      accuracy:
+        correct + wrong ? Math.round((correct / (correct + wrong)) * 100) : 0,
     };
   }
-
-  /**
-   * The frontend owns the CSV — the backend cannot enumerate words on its own.
-   * This endpoint returns:
-   *   • all wordRefs whose review is due,
-   *   • all wordRefs marked as DIFFICULT / DIFFICULT-flagged,
-   *   • plus every row the user has ever seen, so the client can filter its
-   *     CSV to compute "which ranks are still NEW".
-   */
-  async listProgress(userId: string, courseKey: string): Promise<CardPayload[]> {
-    const course = await this.resolveCourse(courseKey);
-    const rows = await this.prisma.userWordProgress.findMany({
-      where: { userId, courseId: course.id },
-      orderBy: { nextReviewAt: 'asc' },
+  async listProgress(userId: string, courseKey: string) {
+    const course = await this.reviews.course(courseKey);
+    const rows = await this.prisma.reviewState.findMany({
+      where: { userId, courseId: course.id, itemType: "WORD" },
+      orderBy: { due: "asc" },
     });
-    return rows.map((row) => this.toCard(row));
+    return rows.map((row) => this.reviews.card(row));
   }
-
-  async reviewQueue(
-    userId: string,
-    courseKey: string,
-    limit: number,
-  ): Promise<CardPayload[]> {
-    const course = await this.resolveCourse(courseKey);
-    const rows = await this.prisma.userWordProgress.findMany({
-      where: {
-        userId,
-        courseId: course.id,
-        nextReviewAt: { lte: new Date() },
-        status: { in: ['LEARNING', 'REVIEW', 'DIFFICULT', 'MASTERED'] },
-      },
-      orderBy: [{ nextReviewAt: 'asc' }, { difficultyScore: 'desc' }],
-      take: clampLimit(limit),
-    });
-    return rows.map((row) => this.toCard(row));
+  async reviewQueue(userId: string, courseKey: string, limit: number) {
+    return (
+      await this.reviews.due(userId, {
+        course: courseKey,
+        itemType: "WORD",
+        limit: Number.isFinite(limit) ? limit : 20,
+      })
+    ).map((row) => this.reviews.card(row));
   }
-
-  async difficultQueue(
-    userId: string,
-    courseKey: string,
-    limit: number,
-  ): Promise<CardPayload[]> {
-    const course = await this.resolveCourse(courseKey);
-    const rows = await this.prisma.userWordProgress.findMany({
-      where: {
-        userId,
-        courseId: course.id,
-        OR: [{ status: 'DIFFICULT' }, { markedDifficult: true }],
-      },
-      orderBy: [{ difficultyScore: 'desc' }, { nextReviewAt: 'asc' }],
-      take: clampLimit(limit),
-    });
-    return rows.map((row) => this.toCard(row));
-  }
-
-  /** Marks a word as seen (games call this) — does NOT count as a rep. */
-  async markSeen(userId: string, dto: SeenWordDto): Promise<CardPayload> {
-    const course = await this.resolveCourse(dto.course);
-    const row = await this.prisma.userWordProgress.upsert({
-      where: {
-        userId_courseId_wordRef: {
-          userId,
-          courseId: course.id,
-          wordRef: dto.wordRef,
-        },
-      },
-      update: {}, // present already → keep firstSeenAt as-is
-      create: {
-        userId,
-        courseId: course.id,
-        wordRef: dto.wordRef,
-        status: 'NEW',
-      },
-    });
-    return this.toCard(row);
-  }
-
-  async toggleDifficult(userId: string, dto: ToggleDifficultDto): Promise<CardPayload> {
-    const course = await this.resolveCourse(dto.course);
-    const row = await this.prisma.userWordProgress.upsert({
-      where: {
-        userId_courseId_wordRef: {
-          userId,
-          courseId: course.id,
-          wordRef: dto.wordRef,
-        },
-      },
-      update: {
-        markedDifficult: dto.markedDifficult,
-        status: dto.markedDifficult ? 'DIFFICULT' : undefined,
-      },
-      create: {
-        userId,
-        courseId: course.id,
-        wordRef: dto.wordRef,
-        status: dto.markedDifficult ? 'DIFFICULT' : 'NEW',
-        markedDifficult: dto.markedDifficult,
-      },
-    });
-    return this.toCard(row);
-  }
-
-  async submitAnswer(
-    userId: string,
-    dto: SubmitAnswerDto,
-  ): Promise<{ card: CardPayload; sessionId: string | null }> {
-    const course = await this.resolveCourse(dto.course);
-    const rating = dto.rating as FlashcardRating;
-
-    return this.prisma.$transaction(async (tx) => {
-      const existing = await tx.userWordProgress.findUnique({
+  async difficultQueue(userId: string, courseKey: string, limit: number) {
+    const course = await this.reviews.course(courseKey);
+    return (
+      await this.prisma.reviewState.findMany({
         where: {
-          userId_courseId_wordRef: {
-            userId,
-            courseId: course.id,
-            wordRef: dto.wordRef,
-          },
-        },
-      });
-
-      const previous = existing
-        ? {
-            repetitions: existing.repetitions,
-            easeFactor: existing.easeFactor,
-            intervalDays: existing.intervalDays,
-          }
-        : { repetitions: 0, easeFactor: 2.5, intervalDays: 0 };
-
-      const update = scheduleNext(previous, rating);
-      const now = new Date();
-      const nextReviewAt = new Date(now.getTime() + update.nextDelayMs);
-
-      const correctIncrement = update.correct ? 1 : 0;
-      const wrongIncrement = update.correct ? 0 : 1;
-
-      // difficultyScore mirrors misses; a couple of consecutive AGAINs raises
-      // it enough to flip status to DIFFICULT even before the SRS ease drops.
-      const nextDifficulty = update.correct
-        ? Math.max(0, (existing?.difficultyScore ?? 0) - 1)
-        : (existing?.difficultyScore ?? 0) + 2;
-
-      const flagsDifficult =
-        existing?.markedDifficult === true || nextDifficulty >= DIFFICULTY_THRESHOLD;
-      const nextStatus = deriveStatus({
-        previousStatus: existing?.status ?? 'NEW',
-        repetitions: update.repetitions,
-        intervalDays: update.intervalDays,
-        correct: update.correct,
-        flagsDifficult,
-      });
-
-      const masteredAt =
-        nextStatus === 'MASTERED' ? existing?.masteredAt ?? now : null;
-
-      const card = await tx.userWordProgress.upsert({
-        where: {
-          userId_courseId_wordRef: {
-            userId,
-            courseId: course.id,
-            wordRef: dto.wordRef,
-          },
-        },
-        update: {
-          status: nextStatus,
-          repetitions: update.repetitions,
-          easeFactor: update.easeFactor,
-          intervalDays: update.intervalDays,
-          nextReviewAt,
-          lastReviewedAt: now,
-          correctAnswers: { increment: correctIncrement },
-          wrongAnswers: { increment: wrongIncrement },
-          difficultyScore: nextDifficulty,
-          masteredAt,
-        },
-        create: {
           userId,
           courseId: course.id,
-          wordRef: dto.wordRef,
-          status: nextStatus,
-          repetitions: update.repetitions,
-          easeFactor: update.easeFactor,
-          intervalDays: update.intervalDays,
-          nextReviewAt,
-          lastReviewedAt: now,
-          firstSeenAt: now,
-          correctAnswers: correctIncrement,
-          wrongAnswers: wrongIncrement,
-          difficultyScore: nextDifficulty,
-          masteredAt,
+          itemType: "WORD",
+          OR: [{ markedDifficult: true }, { lapses: { gt: 0 } }],
         },
-      });
-
-      if (dto.sessionId) {
-        await this.recordSessionAnswer(
-          tx,
-          userId,
-          dto.sessionId,
-          update.correct,
-          !existing,
-        );
-      }
-
-      return { card: this.toCard(card), sessionId: dto.sessionId ?? null };
-    });
+        orderBy: [{ lapses: "desc" }, { due: "asc" }],
+        take: Math.max(1, Math.min(Number.isFinite(limit) ? limit : 20, 100)),
+      })
+    ).map((row) => this.reviews.card(row));
   }
-
+  async markSeen(userId: string, dto: SeenWordDto) {
+    const course = await this.reviews.course(dto.course);
+    return this.reviews.card(
+      await this.reviews.seen(userId, course.id, "WORD", dto.wordRef),
+    );
+  }
+  async toggleDifficult(userId: string, dto: ToggleDifficultDto) {
+    const course = await this.reviews.course(dto.course);
+    const row = await this.reviews.seen(userId, course.id, "WORD", dto.wordRef);
+    return this.reviews.card(
+      await this.prisma.reviewState.update({
+        where: { id: row.id },
+        data: { markedDifficult: dto.markedDifficult },
+      }),
+    );
+  }
+  async submitAnswer(userId: string, dto: SubmitAnswerDto) {
+    const course = await this.reviews.course(dto.course);
+    return this.prisma.$transaction(
+      async (tx) => {
+        await this.reviews.lock(tx, userId);
+        const prior = dto.eventId
+          ? await tx.reviewAttempt.findUnique({
+              where: { userId_eventId: { userId, eventId: dto.eventId } },
+            })
+          : null;
+        if (dto.sessionId) {
+          const session = await tx.flashcardSession.findUnique({
+            where: { id: dto.sessionId },
+          });
+          if (!session) throw new NotFoundException("Session not found");
+          if (session.userId !== userId || session.courseId !== course.id)
+            throw new ForbiddenException();
+          if (session.finishedAt && !prior)
+            throw new ConflictException("Session is already finished");
+        }
+        const result = await this.reviews.record(tx, userId, course.id, {
+          itemType: "WORD",
+          itemId: dto.wordRef,
+          eventId: dto.eventId ?? randomUUID(),
+          gameType: "flashcards",
+          direction: dto.direction,
+          answer: dto.answer,
+          correct: dto.correct,
+          usedHint: dto.usedHint ?? false,
+          responseTimeMs: dto.responseTimeMs,
+          attemptsBeforeCorrect: dto.attemptsBeforeCorrect,
+        });
+        if (dto.sessionId && !result.duplicate)
+          await tx.flashcardSession.update({
+            where: { id: dto.sessionId },
+            data: {
+              totalAnswers: { increment: 1 },
+              correctAnswers: { increment: dto.correct ? 1 : 0 },
+              wrongAnswers: { increment: dto.correct ? 0 : 1 },
+              newWords: { increment: result.review.reps === 1 ? 1 : 0 },
+            },
+          });
+        return {
+          card: this.reviews.card(result.review),
+          sessionId: dto.sessionId ?? null,
+        };
+      },
+      { maxWait: 15000, timeout: 20000 },
+    );
+  }
   async startSession(userId: string, dto: StartFlashcardSessionDto) {
-    const course = await this.resolveCourse(dto.course);
+    const course = await this.reviews.course(dto.course);
     return this.prisma.flashcardSession.create({
       data: {
         userId,
@@ -361,183 +163,30 @@ export class FlashcardsService {
       },
     });
   }
-
   async finishSession(userId: string, sessionId: string) {
     return this.prisma.$transaction(async (tx) => {
-      const session = await tx.flashcardSession.findUnique({ where: { id: sessionId } });
-      if (!session) throw new NotFoundException('Session not found');
+      await this.reviews.lock(tx, userId);
+      const session = await tx.flashcardSession.findUnique({
+        where: { id: sessionId },
+      });
+      if (!session) throw new NotFoundException("Session not found");
       if (session.userId !== userId) throw new ForbiddenException();
       if (session.finishedAt) return session;
-
-      const updated = await tx.flashcardSession.updateMany({
-        where: { id: sessionId, userId, finishedAt: null },
+      const finished = await tx.flashcardSession.update({
+        where: { id: sessionId },
         data: { finishedAt: new Date() },
       });
-      if (updated.count !== 1) {
-        return tx.flashcardSession.findUniqueOrThrow({ where: { id: sessionId } });
-      }
-
-      const fresh = await tx.flashcardSession.findUniqueOrThrow({ where: { id: sessionId } });
-
-      // Roll the finished session into UserCourseProgress so the dashboard
-      // aggregates (activeDays, streak, totalAnswers) reflect flashcard work
-      // just like game rounds do.
-      const streakOnSuccess = fresh.correctAnswers > 0 && fresh.wrongAnswers === 0;
-      await this.rollupToCourseProgress(tx, {
-        userId,
-        courseId: session.courseId,
-        correct: fresh.correctAnswers,
-        wrong: fresh.wrongAnswers,
-        streakOnSuccess,
-      });
-      return fresh;
+      if (session.totalAnswers)
+        await this.progress.recordSessionRollup(
+          {
+            userId,
+            courseId: session.courseId,
+            correct: session.correctAnswers,
+            wrong: session.wrongAnswers,
+          },
+          tx,
+        );
+      return finished;
     });
   }
-
-  /** Aggregate rollup — kept local to avoid a circular ProgressModule import. */
-  private async rollupToCourseProgress(
-    tx: Prisma.TransactionClient,
-    input: {
-      userId: string;
-      courseId: string;
-      correct: number;
-      wrong: number;
-      streakOnSuccess: boolean;
-    },
-  ) {
-    const { userId, courseId, correct, wrong, streakOnSuccess } = input;
-    const total = correct + wrong;
-    if (total === 0) return;
-
-    const existing = await tx.userCourseProgress.findUnique({
-      where: { userId_courseId: { userId, courseId } },
-    });
-    const newStreak = streakOnSuccess ? (existing?.currentStreak ?? 0) + 1 : 0;
-    const longest = Math.max(existing?.longestStreak ?? 0, newStreak);
-
-    // wordsLearned = distinct wordRefs the user has mastered on this course.
-    const masteredCount = await tx.userWordProgress.count({
-      where: { userId, courseId, status: 'MASTERED' },
-    });
-
-    await tx.userCourseProgress.upsert({
-      where: { userId_courseId: { userId, courseId } },
-      update: {
-        lastActivityAt: new Date(),
-        totalAnswers: { increment: total },
-        correctAnswers: { increment: correct },
-        wrongAnswers: { increment: wrong },
-        wordsLearned: masteredCount,
-        currentStreak: newStreak,
-        longestStreak: longest,
-      },
-      create: {
-        userId,
-        courseId,
-        totalAnswers: total,
-        correctAnswers: correct,
-        wrongAnswers: wrong,
-        wordsLearned: masteredCount,
-        currentStreak: newStreak,
-        longestStreak: newStreak,
-      },
-    });
-  }
-
-  private async recordSessionAnswer(
-    tx: Prisma.TransactionClient,
-    userId: string,
-    sessionId: string,
-    correct: boolean,
-    isNewWord: boolean,
-  ): Promise<void> {
-    const session = await tx.flashcardSession.findUnique({ where: { id: sessionId } });
-    if (!session) return;
-    if (session.userId !== userId) throw new ForbiddenException();
-    if (session.finishedAt) throw new ConflictException('Session is already finished');
-    await tx.flashcardSession.updateMany({
-      where: { id: sessionId, userId, finishedAt: null },
-      data: {
-        totalAnswers: { increment: 1 },
-        correctAnswers: { increment: correct ? 1 : 0 },
-        wrongAnswers: { increment: correct ? 0 : 1 },
-        newWords: { increment: isNewWord ? 1 : 0 },
-      },
-    });
-  }
-
-  private async resolveCourse(key: string) {
-    const course =
-      (await this.prisma.course.findUnique({ where: { slug: key } })) ??
-      (await this.prisma.course.findUnique({ where: { id: key } }));
-    if (!course) throw new NotFoundException('Course not found');
-    return course;
-  }
-
-  private toCard(row: {
-    wordRef: string;
-    status: WordStatus;
-    repetitions: number;
-    correctAnswers: number;
-    wrongAnswers: number;
-    intervalDays: number;
-    easeFactor: number;
-    nextReviewAt: Date;
-    lastReviewedAt: Date | null;
-    firstSeenAt: Date;
-    masteredAt: Date | null;
-    difficultyScore: number;
-    markedDifficult: boolean;
-  }): CardPayload {
-    const now = new Date();
-    return {
-      wordRef: row.wordRef,
-      status: row.status,
-      repetitions: row.repetitions,
-      correctAnswers: row.correctAnswers,
-      wrongAnswers: row.wrongAnswers,
-      intervalDays: row.intervalDays,
-      easeFactor: row.easeFactor,
-      nextReviewAt: row.nextReviewAt.toISOString(),
-      lastReviewedAt: row.lastReviewedAt?.toISOString() ?? null,
-      firstSeenAt: row.firstSeenAt.toISOString(),
-      masteredAt: row.masteredAt?.toISOString() ?? null,
-      difficultyScore: row.difficultyScore,
-      markedDifficult: row.markedDifficult,
-      isDue: row.status !== 'NEW' && row.nextReviewAt <= now,
-      isNew: row.status === 'NEW' && row.repetitions === 0,
-    };
-  }
-}
-
-function clampLimit(limit: number): number {
-  if (!Number.isFinite(limit) || limit <= 0) return NEW_WORDS_PER_DAY_DEFAULT;
-  return Math.min(200, Math.max(1, Math.floor(limit)));
-}
-
-function startOfDay(d: Date): Date {
-  const copy = new Date(d);
-  copy.setHours(0, 0, 0, 0);
-  return copy;
-}
-
-function deriveStatus(input: {
-  previousStatus: WordStatus;
-  repetitions: number;
-  intervalDays: number;
-  correct: boolean;
-  flagsDifficult: boolean;
-}): WordStatus {
-  if (input.flagsDifficult && !input.correct) return 'DIFFICULT';
-  if (
-    input.repetitions >= MASTERY_MIN_REPETITIONS &&
-    input.intervalDays >= MASTERY_INTERVAL_DAYS &&
-    input.correct
-  ) {
-    return 'MASTERED';
-  }
-  if (!input.correct) return 'LEARNING';
-  if (input.previousStatus === 'MASTERED') return 'MASTERED';
-  if (input.repetitions <= 1) return 'LEARNING';
-  return 'REVIEW';
 }

@@ -1,9 +1,30 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
+import { useT } from "@/i18n";
+import { fetchAllProgress } from "@/reviews/api";
+import { toggleDifficult } from "@/flashcards/flashcardsApi";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import type { ReactNode } from "react";
 import { useCourse } from "@/courses/CourseProvider";
 import { useAuth } from "@/auth/useAuth";
-import { emptyProgress, LocalProgressRepository, progressStorageKey } from "./repository";
-import { applyGrammarRound, applyRound, courseProgress, setJourney, statFor } from "./service";
+import {
+  emptyProgress,
+  LocalProgressRepository,
+  progressStorageKey,
+} from "./repository";
+import {
+  applyGrammarRound,
+  applyRound,
+  courseProgress,
+  setJourney,
+  statFor,
+} from "./service";
 import type { GrammarRoundResult, RoundResult } from "./service";
 import type {
   CourseProgress,
@@ -21,6 +42,7 @@ interface ProgressApi {
   courseId: string;
   storageKey: string | null;
   ready: boolean;
+  syncError?: boolean;
   statOf: (entry: VocabularyEntry) => ReturnType<typeof statFor>;
   recordRound: (result: Omit<RoundResult, "courseId">) => void;
   /** Zapis rundy gry gramatycznej — postęp per forma (czasownik + osoba). */
@@ -36,19 +58,59 @@ const Ctx = createContext<ProgressApi | null>(null);
 
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const { course } = useCourse();
-  const { status, user } = useAuth();
+  const t = useT();
+  const { status, user, apiRequest } = useAuth();
   const [state, setState] = useState<ProgressState>(emptyProgress);
   const [ready, setReady] = useState(false);
   const dirty = useRef(false);
+  const [server, setServer] = useState<{
+    key: string;
+    items: Awaited<ReturnType<typeof fetchAllProgress>>;
+  } | null>(null);
+  const [syncError, setSyncError] = useState(false);
+  const accountKey = `${user?.id}:${course.id}`;
+  useEffect(() => {
+    if (status !== "authenticated") return;
+    let alive = true,
+      timer: ReturnType<typeof setTimeout>;
+    let requestNumber = 0;
+    const refresh = async () => {
+      const number = ++requestNumber;
+      try {
+        const items = await fetchAllProgress(apiRequest, course.id);
+        if (alive && number === requestNumber) {
+          setServer({ key: accountKey, items });
+          setSyncError(false);
+        }
+      } catch {
+        if (alive && number === requestNumber) setSyncError(true);
+      }
+    };
+    const update = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => void refresh(), 500);
+    };
+    void refresh();
+    window.addEventListener("review-updated", update);
+    return () => {
+      alive = false;
+      clearTimeout(timer);
+      window.removeEventListener("review-updated", update);
+    };
+  }, [status, accountKey, apiRequest, course.id]);
 
-  const owner = status === "authenticated" && user
-    ? `user.${user.id}`
-    : status === "guest"
-      ? "guest"
-      : null;
+  const owner =
+    status === "authenticated" && user
+      ? `user.${user.id}`
+      : status === "guest"
+        ? "guest"
+        : null;
   const storageKey = owner ? progressStorageKey(owner) : null;
   const repository = useMemo(
-    () => storageKey ? new LocalProgressRepository(storageKey, owner === "guest") : null,
+    () =>
+      storageKey
+        ? new LocalProgressRepository(storageKey, owner === "guest")
+        : null,
     [storageKey, owner],
   );
 
@@ -81,25 +143,76 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   const courseId = course.id;
 
+  const displayState = useMemo(() => {
+    if (status !== "authenticated") return state;
+    const cp = {
+      ...courseProgress(state, courseId),
+      words: {},
+      forms: {},
+    } as CourseProgress;
+    for (const row of server?.key === accountKey ? server.items : []) {
+      const value = {
+        attempts: row.correctAnswers + row.wrongAnswers,
+        correctAnswers: row.correctAnswers,
+        incorrectAnswers: row.wrongAnswers,
+        lastSeen: Date.parse(row.lastReviewedAt ?? row.firstSeenAt),
+        lastCorrect: 0,
+        currentStreak: 0,
+        difficulty: row.difficultyScore,
+        markedDifficult: row.markedDifficult,
+        reviewStatus:
+          row.status === "DIFFICULT" ? ("LEARNING" as const) : row.status,
+        nextReview: row.nextReviewAt ? Date.parse(row.nextReviewAt) : 0,
+      };
+      if (row.itemType === "WORD") cp.words[row.wordRef] = value;
+      if (row.itemType === "VERB") {
+        const parts = row.wordRef.split(":");
+        const person = parts.pop()!;
+        cp.forms[row.wordRef] = {
+          ...value,
+          verbId: parts.join(":"),
+          person,
+          label: row.wordRef,
+        };
+      }
+    }
+    return { ...state, courses: { ...state.courses, [courseId]: cp } };
+  }, [state, status, server, accountKey, courseId]);
+
   const api = useMemo<ProgressApi>(
     () => ({
-      state,
+      state: displayState,
       courseId,
       storageKey,
-      current: courseProgress(state, courseId),
-      ready,
-      statOf: (entry) => statFor(state, courseId, entry),
-      recordRound: (result) => mutate((s) => applyRound(s, { ...result, courseId })),
+      current: courseProgress(displayState, courseId),
+      ready:
+        ready && (status !== "authenticated" || server?.key === accountKey),
+      syncError,
+      statOf: (entry) => statFor(displayState, courseId, entry),
+      recordRound: (result) =>
+        mutate((s) => applyRound(s, { ...result, courseId })),
       recordGrammarRound: (result) =>
         mutate((s) => applyGrammarRound(s, { ...result, courseId })),
-      saveJourney: (routeId, journey) => mutate((s) => setJourney(s, courseId, routeId, journey)),
+      saveJourney: (routeId, journey) =>
+        mutate((s) => setJourney(s, courseId, routeId, journey)),
       rememberActivity: (gameId, pool) =>
         mutate((s) => {
           const cp = { ...courseProgress(s, courseId) };
           cp.lastActivity = { gameId, pool, at: Date.now() };
           return { ...s, courses: { ...s.courses, [courseId]: cp } };
         }),
-      toggleFlag: (entry) =>
+      toggleFlag: (entry) => {
+        if (status === "authenticated") {
+          void toggleDifficult(apiRequest, {
+            course: courseId,
+            wordRef: entry.id,
+            markedDifficult: !statFor(displayState, courseId, entry)
+              .markedDifficult,
+          })
+            .then(() => window.dispatchEvent(new Event("review-updated")))
+            .catch(() => setSyncError(true));
+          return;
+        }
         mutate((s) => {
           const cp = { ...courseProgress(s, courseId) };
           const prev = statFor(s, courseId, entry);
@@ -108,18 +221,48 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
             [entry.id]: { ...prev, markedDifficult: !prev.markedDifficult },
           };
           return { ...s, courses: { ...s.courses, [courseId]: cp } };
-        }),
-      updateSettings: (patch) => mutate((s) => ({ ...s, settings: { ...s.settings, ...patch } })),
+        });
+      },
+      updateSettings: (patch) =>
+        mutate((s) => ({ ...s, settings: { ...s.settings, ...patch } })),
       reset: () => {
         dirty.current = true;
         if (repository) void repository.clear();
         setState(emptyProgress());
       },
     }),
-    [state, ready, mutate, courseId, storageKey, repository],
+    [
+      state,
+      displayState,
+      ready,
+      mutate,
+      courseId,
+      storageKey,
+      repository,
+      status,
+      server,
+      accountKey,
+      syncError,
+      apiRequest,
+    ],
   );
 
-  return <Ctx.Provider value={api}>{children}</Ctx.Provider>;
+  return (
+    <Ctx.Provider value={api}>
+      {status === "authenticated" && syncError && (
+        <div className="panel panel-pad" role="alert">
+          <p>{t("reviews.error")}</p>
+          <button
+            className="btn-ghost"
+            onClick={() => window.dispatchEvent(new Event("review-updated"))}
+          >
+            {t("reviews.retry")}
+          </button>
+        </div>
+      )}
+      {children}
+    </Ctx.Provider>
+  );
 }
 
 export function useProgress(): ProgressApi {

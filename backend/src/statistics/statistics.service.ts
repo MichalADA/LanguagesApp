@@ -1,5 +1,7 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
+import { masteredStateWhere } from "../reviews/fsrs-scheduler";
+import { activityStreak } from "../reviews/activity";
+import { Injectable, NotFoundException } from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
 
 export interface StatisticsResponse {
   courseId: string | null;
@@ -17,42 +19,55 @@ export interface StatisticsResponse {
 export class StatisticsService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async forUser(userId: string, courseFilter?: string): Promise<StatisticsResponse> {
-    const courseId = courseFilter ? await this.resolveCourseId(courseFilter) : undefined;
+  async forUser(
+    userId: string,
+    courseFilter?: string,
+  ): Promise<StatisticsResponse> {
+    const courseId = courseFilter
+      ? await this.resolveCourseId(courseFilter)
+      : undefined;
 
     const sessionWhere = {
       userId,
       finishedAt: { not: null },
       ...(courseId ? { courseId } : {}),
     };
-    const totalSessions = await this.prisma.learningSession.count({ where: sessionWhere });
+    const aggregate = {
+      where: sessionWhere,
+      _count: true,
+      _sum: { totalAnswers: true, correctAnswers: true, wrongAnswers: true },
+    } as const;
+    const [games, cards] = await Promise.all([
+      this.prisma.learningSession.aggregate(aggregate),
+      this.prisma.flashcardSession.aggregate(aggregate),
+    ]);
+    const totalSessions = games._count + cards._count;
+    const totals = {
+      totalAnswers:
+        (games._sum.totalAnswers ?? 0) + (cards._sum.totalAnswers ?? 0),
+      correctAnswers:
+        (games._sum.correctAnswers ?? 0) + (cards._sum.correctAnswers ?? 0),
+      wrongAnswers:
+        (games._sum.wrongAnswers ?? 0) + (cards._sum.wrongAnswers ?? 0),
+      wordsLearned: 0,
+      currentStreak: 0,
+      longestStreak: 0,
+    };
 
-    const progressWhere = { userId, ...(courseId ? { courseId } : {}) };
-    const progressRows = await this.prisma.userCourseProgress.findMany({ where: progressWhere });
-
-    const totals = progressRows.reduce(
-      (acc, row) => {
-        acc.totalAnswers += row.totalAnswers;
-        acc.correctAnswers += row.correctAnswers;
-        acc.wrongAnswers += row.wrongAnswers;
-        acc.wordsLearned += row.wordsLearned;
-        acc.currentStreak = Math.max(acc.currentStreak, row.currentStreak);
-        acc.longestStreak = Math.max(acc.longestStreak, row.longestStreak);
-        return acc;
+    totals.wordsLearned = await this.prisma.reviewState.count({
+      where: {
+        userId,
+        ...(courseId ? { courseId } : {}),
+        itemType: "WORD",
+        ...masteredStateWhere,
       },
-      {
-        totalAnswers: 0,
-        correctAnswers: 0,
-        wrongAnswers: 0,
-        wordsLearned: 0,
-        currentStreak: 0,
-        longestStreak: 0,
-      },
-    );
-
-    const accuracy = totals.totalAnswers > 0
-      ? Math.round((totals.correctAnswers / totals.totalAnswers) * 10_000) / 100
-      : 0;
+    });
+    Object.assign(totals, await activityStreak(this.prisma, userId, courseId));
+    const accuracy =
+      totals.totalAnswers > 0
+        ? Math.round((totals.correctAnswers / totals.totalAnswers) * 10_000) /
+          100
+        : 0;
 
     return {
       courseId: courseId ?? null,
@@ -68,10 +83,12 @@ export class StatisticsService {
   }
 
   private async resolveCourseId(key: string): Promise<string> {
-    const bySlug = await this.prisma.course.findUnique({ where: { slug: key } });
+    const bySlug = await this.prisma.course.findUnique({
+      where: { slug: key },
+    });
     if (bySlug) return bySlug.id;
     const byId = await this.prisma.course.findUnique({ where: { id: key } });
-    if (!byId) throw new NotFoundException('Course not found');
+    if (!byId) throw new NotFoundException("Course not found");
     return byId.id;
   }
 }

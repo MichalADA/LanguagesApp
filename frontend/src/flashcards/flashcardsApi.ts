@@ -60,6 +60,10 @@ export function toggleDifficult(
 }
 
 export interface SubmitAnswerInput {
+  eventId?: string;
+  usedHint?: boolean;
+  responseTimeMs?: number;
+  attemptsBeforeCorrect?: number;
   course: string;
   wordRef: string;
   direction: Exclude<FlashcardDirection, "MIXED">;

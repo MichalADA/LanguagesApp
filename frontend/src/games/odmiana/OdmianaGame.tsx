@@ -61,7 +61,7 @@ export function OdmianaGame() {
     start: startLearning,
     record: recordLearning,
     finish: finishLearning,
-  } = useLearningSession();
+  } = useLearningSession({ gameType: "odmiana" });
   const settings = state.settings;
 
   const [phase, setPhase] = useState<Phase>("menu");
