@@ -41,7 +41,7 @@ export const GAMES: GameModule[] = [
     nameKey: `sentences.names.${mode}`, taglineKey: `sentences.descriptions.${mode}`, descriptionKey: `sentences.descriptions.${mode}`,
     component: () => createElement(SentenceGameSession, { mode }),
   })),
-  planned("listening", "listening"),
+  { ...planned("listening", "listening"), status: "active", href: "/listening" },
   { ...planned("radio", "radio"), status: "active", href: "/radio" },
   planned("false-friends", "quick"),
 ];

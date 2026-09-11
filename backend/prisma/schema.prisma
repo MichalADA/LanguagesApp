@@ -254,6 +254,68 @@ model ReviewState {
   @@index([userId, courseId, itemType, due])
 }
 
+/// A published catalog of listening material (Tako Lako, a podcast, a user upload…).
+/// Nothing in this module writes to User* tables — it only stores content and its
+/// metadata, so onboarding new sources is orthogonal to FSRS and progress state.
+model ListeningSource {
+  id          String              @id @default(cuid())
+  slug        String              @unique
+  name        String
+  description String?
+  sourceUrl   String?
+  license     String?
+  attribution String?
+  type        ListeningSourceType @default(TAKO_LAKO)
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+
+  units ListeningUnit[]
+
+  @@index([type])
+}
+
+enum ListeningSourceType {
+  TAKO_LAKO
+  USER_UPLOAD
+  PODCAST
+  VIDEO
+  YOUTUBE
+}
+
+model ListeningUnit {
+  id        String   @id @default(cuid())
+  sourceId  String
+  title     String
+  level     String?
+  position  Int      @default(0)
+  sourceUrl String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  source  ListeningSource   @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  lessons ListeningLesson[]
+
+  @@unique([sourceId, level, position])
+  @@index([sourceId])
+}
+
+model ListeningLesson {
+  id         String   @id @default(cuid())
+  unitId     String
+  title      String
+  position   Int      @default(0)
+  sourceUrl  String?  @unique
+  transcript String?
+  audioUrl   String?
+  videoUrl   String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  unit ListeningUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+
+  @@index([unitId])
+}
+
 model ReviewAttempt {
   id                    String         @id @default(cuid())
   eventId               String

@@ -15,6 +15,9 @@ import { LoginPage } from "@/pages/LoginPage";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { useAuth } from "@/auth/useAuth";
 import { RadioPage } from "@/radio/RadioPage";
+import { ListeningHubPage } from "@/listening/ListeningHubPage";
+import { ListeningSourcePage } from "@/listening/ListeningSourcePage";
+import { ListeningLessonPage } from "@/listening/ListeningLessonPage";
 
 function ShellLayout() {
   return (
@@ -48,6 +51,9 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/gry" element={<GamesPage />} />
           <Route path="/radio" element={<RadioPage />} />
+          <Route path="/listening" element={<ListeningHubPage />} />
+          <Route path="/listening/:slug" element={<ListeningSourcePage />} />
+          <Route path="/listening/:slug/lessons/:lessonId" element={<ListeningLessonPage />} />
           <Route path="/gry/kategoria/:categoryId" element={<GamesPage />} />
           <Route path="/gry/:gameId" element={<PlayPage />} />
           <Route path="/powtorki" element={<ReviewSession />} />

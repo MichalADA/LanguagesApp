@@ -11,6 +11,7 @@ export function GamesPage() {
 
   if (categoryId && !category) return <Navigate to="/gry" replace />;
   if (category === "radio") return <Navigate to="/radio" replace />;
+  if (category === "listening") return <Navigate to="/listening" replace />;
 
   if (!category) {
     const mainGames = GAMES.filter((game) => game.category === "main");
@@ -29,15 +30,19 @@ export function GamesPage() {
               <span className="mode-card-action">{t("games.openMode")} →</span>
             </Link>
           ))}
-          {GAME_CATEGORIES.filter((id) => id !== "main").map((id) => (
-            <Link key={id} to={id === "radio" ? "/radio" : `/gry/kategoria/${id}`} className="panel panel-pad game-card mode-card">
-              <h2>{t(`gameCategories.${id}.name`)}</h2>
-              <p className="muted">{t(`gameCategories.${id}.description`)}</p>
-              <span className="mode-card-action">{t("games.openMode")} →</span>
-              {!GAMES.some((game) => game.category === id && game.status === "active") && <span className="badge">{t("common.soon")}</span>}
-              {id === "radio" && <span className="badge on">{t("common.active")}</span>}
-            </Link>
-          ))}
+          {GAME_CATEGORIES.filter((id) => id !== "main").map((id) => {
+            const href = id === "radio" ? "/radio" : id === "listening" ? "/listening" : `/gry/kategoria/${id}`;
+            const active = id === "radio" || id === "listening" || GAMES.some((game) => game.category === id && game.status === "active");
+            return (
+              <Link key={id} to={href} className="panel panel-pad game-card mode-card">
+                <h2>{t(`gameCategories.${id}.name`)}</h2>
+                <p className="muted">{t(`gameCategories.${id}.description`)}</p>
+                <span className="mode-card-action">{t("games.openMode")} →</span>
+                {!active && <span className="badge">{t("common.soon")}</span>}
+                {(id === "radio" || id === "listening") && <span className="badge on">{t("common.active")}</span>}
+              </Link>
+            );
+          })}
         </div>
       </div>
     );
