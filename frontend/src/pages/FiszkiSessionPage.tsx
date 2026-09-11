@@ -6,6 +6,7 @@ import { useCourse } from "@/courses/CourseProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import type { VocabularyEntry } from "@/vocabulary/types";
 import { AnswerInput } from "@/components/AnswerInput";
+import { useQuizKeyboard } from "@/hooks/useQuizKeyboard";
 import { checkAnswer } from "@/services/validation";
 import { useT } from "@/i18n";
 import { readPreferences } from "@/flashcards/preferences";
@@ -269,17 +270,10 @@ export function FiszkiSessionPage() {
     [apiRequest, course.id, feedback, index, queue.length, sessionId, t],
   );
 
-  useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if (phase !== "reviewing" || !feedback) return;
-      if (e.key === "Enter") {
-        e.preventDefault();
-        void applyRating("GOOD");
-      }
-    };
-    window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
-  }, [phase, feedback, applyRating]);
+  useQuizKeyboard({
+    enabled: phase === "reviewing" && Boolean(feedback),
+    onSubmit: () => void applyRating("GOOD"),
+  });
 
   if (status !== "authenticated") {
     return <Navigate to="/fiszki" replace />;

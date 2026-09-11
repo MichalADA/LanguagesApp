@@ -3,9 +3,10 @@ import {
   startLearningSession,
   finishLearningSession,
 } from "@/learning/learningApi";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "@/auth/useAuth";
+import { useQuizKeyboard } from "@/hooks/useQuizKeyboard";
 import { useCourse } from "@/courses/CourseProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useGrammar } from "@/grammar/GrammarProvider";
@@ -186,6 +187,17 @@ function Session() {
       void closeSession();
     } else setIndex((n) => n + 1);
   }
+  const optionHandlers = useMemo<Array<(() => void) | null>>(() => {
+    if (phase !== "play" || !task?.options || feedback !== null || saving || error) return [];
+    return task.options.slice(0, 4).map((option) => () => {
+      setAnswer(option);
+      void submit(option);
+    });
+  }, [phase, task, feedback, saving, error]);
+  useQuizKeyboard({
+    answers: optionHandlers,
+    onSubmit: phase === "play" && feedback !== null ? next : undefined,
+  });
   if (status !== "authenticated")
     return (
       <div className="page">
