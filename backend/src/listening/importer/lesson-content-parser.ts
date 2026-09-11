@@ -23,7 +23,14 @@ export type ParsedBlockType =
 
 export interface ParsedContentBlock {
   type: ParsedBlockType;
+  /** Legacy display text; new blocks prefer `sourceText`. */
   text: string | null;
+  /** Original-language content from the source. Vocabulary coverage uses only this. */
+  sourceText: string | null;
+  /** Optional translation surfaced next to `sourceText` in the UI. */
+  translatedText: string | null;
+  /** Dialogue speaker label (for TRANSCRIPT blocks). */
+  speaker: string | null;
   url: string | null;
   metadata: Record<string, string | number | boolean> | null;
 }
@@ -167,8 +174,21 @@ export function extractMainRegion(html: string): string {
   return html; // last resort — we still filter noise per element
 }
 
+/**
+ * Block-level tags whose boundaries always deserve whitespace between them —
+ * we insert a newline so downstream tokenisation never glues adjacent
+ * headings/paragraphs into one word.
+ */
+const BLOCK_BOUNDARY_TAGS = /<\/?(p|div|section|article|main|header|footer|aside|h[1-6]|li|ul|ol|blockquote|figure|figcaption|tr|td|th|table|br|hr|pre)[^>]*>/gi;
+
 function textOf(inner: string): string {
-  return decodeHtmlEntities(inner.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')).trim();
+  return decodeHtmlEntities(
+    inner
+      .replace(BLOCK_BOUNDARY_TAGS, '\n')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/[ \t]+/g, ' ')
+      .replace(/\s*\n\s*/g, '\n')
+  ).trim();
 }
 
 /** Reads consecutive tokens until the matching close tag; returns inner tokens. */
@@ -212,12 +232,61 @@ function decodeAttribute(value: string | undefined): string {
   return decodeHtmlEntities((value ?? '').trim());
 }
 
-function pushBlock(
-  blocks: ParsedContentBlock[],
-  block: Omit<ParsedContentBlock, 'metadata'> & { metadata?: Record<string, string | number | boolean> | null },
-): void {
-  const meta = block.metadata ?? null;
-  blocks.push({ type: block.type, text: block.text, url: block.url, metadata: meta });
+interface BlockDraft {
+  type: ParsedBlockType;
+  text: string | null;
+  url: string | null;
+  sourceText?: string | null;
+  translatedText?: string | null;
+  speaker?: string | null;
+  metadata?: Record<string, string | number | boolean> | null;
+}
+
+function pushBlock(blocks: ParsedContentBlock[], block: BlockDraft): void {
+  blocks.push({
+    type: block.type,
+    text: block.text,
+    sourceText: block.sourceText ?? null,
+    translatedText: block.translatedText ?? null,
+    speaker: block.speaker ?? null,
+    url: block.url,
+    metadata: block.metadata ?? null,
+  });
+}
+
+const AUDIO_EXT_RE = /\.(mp3|m4a|ogg|wav)(\?|$)/i;
+
+/**
+ * Scans an inner-tokens region for `<a href="…mp3">` / .m4a / .ogg / .wav
+ * fallbacks — Pressbooks sometimes emits a plain download link next to
+ * (or instead of) an actual `<audio>` element.
+ */
+function findAudioAnchorUrl(tokens: Token[]): string | null {
+  for (const token of tokens) {
+    if (token.tag !== 'a' || token.kind !== 'open') continue;
+    const href = decodeAttribute(token.attrs?.href);
+    if (href && AUDIO_EXT_RE.test(href)) return href;
+  }
+  return null;
+}
+
+/** Scans anchor children for the link text (the visible label). */
+function findAudioAnchorLabel(tokens: Token[]): string {
+  const chunks: string[] = [];
+  let inside = 0;
+  for (const token of tokens) {
+    if (token.tag === 'a' && token.kind === 'open') {
+      const href = decodeAttribute(token.attrs?.href);
+      if (href && AUDIO_EXT_RE.test(href)) inside++;
+      continue;
+    }
+    if (token.tag === 'a' && token.kind === 'close' && inside > 0) {
+      inside--;
+      continue;
+    }
+    if (inside > 0 && token.kind === 'text' && token.text) chunks.push(token.text);
+  }
+  return textOf(chunks.join(' '));
 }
 
 /** Turns a lesson HTML string into an ordered list of content blocks. */
@@ -248,7 +317,15 @@ export function parseLessonContent(html: string): ParsedContentBlock[] {
     if (token.kind === 'open' && token.tag && HEADING_TAGS.has(token.tag)) {
       const { inner, end } = innerTokens(tokens, i, token.tag);
       const text = textOf(innerHtml(inner));
-      if (text) pushBlock(blocks, { type: 'HEADING', text, url: null, metadata: { level: Number(token.tag[1]) } });
+      if (text) {
+        pushBlock(blocks, {
+          type: 'HEADING',
+          text,
+          sourceText: text,
+          url: null,
+          metadata: { level: Number(token.tag[1]) },
+        });
+      }
       i = end;
       continue;
     }
@@ -256,7 +333,12 @@ export function parseLessonContent(html: string): ParsedContentBlock[] {
     if (token.kind === 'open' && token.tag === 'p') {
       const { inner, end } = innerTokens(tokens, i, 'p');
       const text = textOf(innerHtml(inner));
-      if (text) pushBlock(blocks, { type: 'PARAGRAPH', text, url: null, metadata: null });
+      if (text) pushBlock(blocks, { type: 'PARAGRAPH', text, sourceText: text, url: null });
+      const audioHref = findAudioAnchorUrl(inner);
+      if (audioHref) {
+        const label = findAudioAnchorLabel(inner) || null;
+        pushBlock(blocks, { type: 'AUDIO', text: label, url: audioHref });
+      }
       i = end;
       continue;
     }
@@ -264,7 +346,7 @@ export function parseLessonContent(html: string): ParsedContentBlock[] {
     if (token.kind === 'open' && token.tag === 'blockquote') {
       const { inner, end } = innerTokens(tokens, i, 'blockquote');
       const text = textOf(innerHtml(inner));
-      if (text) pushBlock(blocks, { type: 'NOTE', text, url: null, metadata: null });
+      if (text) pushBlock(blocks, { type: 'NOTE', text, sourceText: text, url: null });
       i = end;
       continue;
     }
@@ -287,6 +369,7 @@ export function parseLessonContent(html: string): ParsedContentBlock[] {
         pushBlock(blocks, {
           type: 'TRANSCRIPT',
           text,
+          sourceText: text,
           url: null,
           metadata: { speakers: transcriptLooksReal(text) },
         });
@@ -298,12 +381,8 @@ export function parseLessonContent(html: string): ParsedContentBlock[] {
     if (token.tag === 'img' && (token.kind === 'void' || token.kind === 'open')) {
       const src = decodeAttribute(token.attrs?.src);
       if (src) {
-        pushBlock(blocks, {
-          type: 'IMAGE',
-          text: decodeAttribute(token.attrs?.alt) || null,
-          url: src,
-          metadata: null,
-        });
+        const alt = decodeAttribute(token.attrs?.alt) || null;
+        pushBlock(blocks, { type: 'IMAGE', text: alt, sourceText: alt, url: src });
       }
       if (token.kind === 'open' && token.tag) {
         const { end } = innerTokens(tokens, i, token.tag);
@@ -314,7 +393,7 @@ export function parseLessonContent(html: string): ParsedContentBlock[] {
 
     if (token.kind === 'open' && token.tag === 'audio') {
       const { inner, end } = innerTokens(tokens, i, 'audio');
-      let src = decodeAttribute(token.attrs?.src);
+      let src: string | null = decodeAttribute(token.attrs?.src) || null;
       if (!src) {
         for (const child of inner) {
           if (child.tag === 'source' && child.attrs?.src) {
@@ -323,8 +402,27 @@ export function parseLessonContent(html: string): ParsedContentBlock[] {
           }
         }
       }
-      if (src) pushBlock(blocks, { type: 'AUDIO', text: null, url: src, metadata: null });
+      if (!src) src = findAudioAnchorUrl(inner);
+      if (src) pushBlock(blocks, { type: 'AUDIO', text: null, url: src });
       i = end;
+      continue;
+    }
+
+    // Stand-alone <a href="…mp3"> outside of an <audio> element — Pressbooks
+    // frequently uses a plain download link as the actual playback source.
+    if (
+      (token.kind === 'open' || token.kind === 'void')
+      && token.tag === 'a'
+      && AUDIO_EXT_RE.test(decodeAttribute(token.attrs?.href))
+    ) {
+      const href = decodeAttribute(token.attrs?.href);
+      let label: string | null = null;
+      if (token.kind === 'open' && token.tag) {
+        const { inner, end } = innerTokens(tokens, i, token.tag);
+        label = textOf(innerHtml(inner)) || null;
+        i = end;
+      }
+      pushBlock(blocks, { type: 'AUDIO', text: label, url: href });
       continue;
     }
 
@@ -348,12 +446,8 @@ export function parseLessonContent(html: string): ParsedContentBlock[] {
       const src = decodeAttribute(token.attrs?.src);
       if (src) {
         const { type, extra } = classifyIframe(src);
-        pushBlock(blocks, {
-          type,
-          text: decodeAttribute(token.attrs?.title) || null,
-          url: src,
-          metadata: extra,
-        });
+        const title = decodeAttribute(token.attrs?.title) || null;
+        pushBlock(blocks, { type, text: title, sourceText: title, url: src, metadata: extra });
       }
       if (token.kind === 'open' && token.tag) {
         const { end } = innerTokens(tokens, i, token.tag);

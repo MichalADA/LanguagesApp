@@ -49,6 +49,11 @@ export const pl: Dictionary = {
     contentNotImportedYet: "Treść tej lekcji nie została jeszcze zaimportowana. Uruchom import treści lub otwórz oryginał.",
     exercisePlaceholder: "Ćwiczenie dostępne w oryginalnym materiale",
     attributionTitle: "Źródło i licencja",
+    audio: {
+      error: "Nie udało się odtworzyć nagrania.",
+      openSource: "Otwórz nagranie w źródle",
+      unsupported: "Twoja przeglądarka nie obsługuje audio.",
+    },
     placeholders: {
       custom: { title: "Własne materiały", description: "Wgraj własne nagrania z transkrypcją." },
       podcasts: { title: "Podcasty", description: "Odcinki dopasowane do poziomu i tematów." },

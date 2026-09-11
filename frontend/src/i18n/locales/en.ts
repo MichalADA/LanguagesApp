@@ -49,6 +49,11 @@ export const en: Dictionary = {
     contentNotImportedYet: "This lesson's content has not been imported yet. Run the content importer or open the original.",
     exercisePlaceholder: "Exercise available in the original material",
     attributionTitle: "Source and license",
+    audio: {
+      error: "Could not play the audio.",
+      openSource: "Open the audio at the source",
+      unsupported: "Your browser does not support audio.",
+    },
     placeholders: {
       custom: { title: "Own material", description: "Upload your own recordings with transcripts." },
       podcasts: { title: "Podcasts", description: "Episodes tuned to your level and interests." },

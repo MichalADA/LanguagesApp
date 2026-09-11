@@ -23,6 +23,9 @@ export interface ListeningContentBlock {
   type: ListeningContentBlockType;
   position: number;
   text: string | null;
+  sourceText: string | null;
+  translatedText: string | null;
+  speaker: string | null;
   url: string | null;
   metadataJson: string | null;
 }

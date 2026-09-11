@@ -67,17 +67,19 @@ describe('parseLessonContent', () => {
     expect(blocks.find((b) => b.text?.includes('Meet Ana'))?.text).toBe('Meet Ana – Marko.');
   });
 
-  it('records heading level in metadata', () => {
+  it('records heading level in metadata and populates sourceText', () => {
     const heading = blocks[0];
     expect(heading.type).toBe('HEADING');
     expect(heading.text).toBe('NAŠI STUDENTI');
+    expect(heading.sourceText).toBe('NAŠI STUDENTI');
     expect(heading.metadata).toEqual({ level: 2 });
   });
 
-  it('carries image url and alt text', () => {
+  it('carries image url and alt text as sourceText', () => {
     const image = blocks.find((b) => b.type === 'IMAGE')!;
     expect(image.url).toBe('/pressbooks-media/lesson1.png');
     expect(image.text).toBe('Ana i Marko');
+    expect(image.sourceText).toBe('Ana i Marko');
   });
 
   it('carries audio and video urls', () => {
@@ -85,9 +87,10 @@ describe('parseLessonContent', () => {
     expect(blocks.find((b) => b.type === 'VIDEO')?.url).toBe('https://www.youtube.com/embed/abc');
   });
 
-  it('classifies transcripts and detects speaker lines', () => {
+  it('classifies transcripts, detects speakers, populates sourceText', () => {
     const transcript = blocks.find((b) => b.type === 'TRANSCRIPT')!;
     expect(transcript.text).toBe('Ana: Dobar dan!\nMarko: Dobar dan!');
+    expect(transcript.sourceText).toBe('Ana: Dobar dan!\nMarko: Dobar dan!');
     expect(transcript.metadata).toEqual({ speakers: true });
   });
 
@@ -113,6 +116,57 @@ describe('parseLessonContent', () => {
   });
 });
 
+describe('parseLessonContent — text-extraction robustness', () => {
+  it('does NOT glue adjacent block elements into one word', () => {
+    const html = `
+      <article class="entry-content">
+        <h2>Naši studenti</h2><p>Poznaj naszych bohaterów.</p>
+      </article>
+    `;
+    const blocks = parseLessonContent(html);
+    expect(blocks[0].text).toBe('Naši studenti');
+    expect(blocks[1].text).toBe('Poznaj naszych bohaterów.');
+    for (const block of blocks) {
+      expect(block.text).not.toMatch(/[Nn]ašistudenti/);
+      expect(block.text).not.toMatch(/studentiPoznaj/);
+    }
+  });
+
+  it('preserves inline word boundaries inside nested spans', () => {
+    const html = `<article class="entry-content"><p><span>Dobar</span><span>dan</span></p></article>`;
+    const block = parseLessonContent(html)[0];
+    expect(block.text).toMatch(/Dobar\s+dan/);
+  });
+});
+
+describe('parseLessonContent — audio extraction', () => {
+  it('picks up an <a href="…mp3"> playback fallback next to <audio>', () => {
+    const html = `<article class="entry-content"><audio><a href="https://example.com/lesson1.mp3">play</a></audio></article>`;
+    const audio = parseLessonContent(html).find((b) => b.type === 'AUDIO');
+    expect(audio?.url).toBe('https://example.com/lesson1.mp3');
+  });
+
+  it('emits an AUDIO block for a stand-alone .mp3 link outside <audio>', () => {
+    const html = `<article class="entry-content"><p>Listen: <a href="/media/dobar-dan.mp3">Dobar dan</a></p></article>`;
+    const audio = parseLessonContent(html).find((b) => b.type === 'AUDIO');
+    expect(audio?.url).toBe('/media/dobar-dan.mp3');
+    expect(audio?.text).toBe('Dobar dan');
+  });
+
+  it('accepts .m4a, .ogg, .wav', () => {
+    for (const ext of ['m4a', 'ogg', 'wav']) {
+      const html = `<article class="entry-content"><p><a href="/audio.${ext}">t</a></p></article>`;
+      const audio = parseLessonContent(html).find((b) => b.type === 'AUDIO');
+      expect(audio?.url).toBe(`/audio.${ext}`);
+    }
+  });
+
+  it('does not misclassify a .html link as audio', () => {
+    const html = `<article class="entry-content"><p><a href="/lesson.html">x</a></p></article>`;
+    expect(parseLessonContent(html).find((b) => b.type === 'AUDIO')).toBeUndefined();
+  });
+});
+
 describe('parseLessonContent — edge cases', () => {
   it('skips paragraphs that only wrap navigation-class regions', () => {
     const html = `
@@ -122,9 +176,8 @@ describe('parseLessonContent — edge cases', () => {
       </article>
     `;
     const blocks = parseLessonContent(html);
-    expect(blocks).toEqual([
-      { type: 'PARAGRAPH', text: 'Real body text.', url: null, metadata: null },
-    ]);
+    expect(blocks).toHaveLength(1);
+    expect(blocks[0]).toMatchObject({ type: 'PARAGRAPH', text: 'Real body text.', sourceText: 'Real body text.' });
   });
 
   it('returns an empty list when the article is empty', () => {

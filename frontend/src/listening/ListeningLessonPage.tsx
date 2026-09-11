@@ -55,12 +55,28 @@ export function ListeningLessonPage() {
           {source.name} · {lesson.unit.level ?? ""} · {lesson.unit.title}
         </span>
         <h1>{lesson.title}</h1>
-        <Link className="mono dim" to={`/listening/${source.slug}`}>{t("listening.backToSource")}</Link>
+        <div className="row" style={{ gap: 12, flexWrap: "wrap", alignItems: "center" }}>
+          <Link className="mono dim" to={`/listening/${source.slug}`}>{t("listening.backToSource")}</Link>
+          {lesson.sourceUrl && (
+            <a
+              className="btn"
+              href={lesson.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("listening.openOriginal")} ↗
+            </a>
+          )}
+        </div>
       </header>
 
       {contentAvailable ? (
         <section className="panel panel-pad stack" aria-label={t("listening.content")}>
-          <ContentBlocks blocks={lesson.blocks} exerciseLabel={t("listening.exercisePlaceholder")} />
+          <ContentBlocks
+            blocks={lesson.blocks}
+            exerciseLabel={t("listening.exercisePlaceholder")}
+            sourceFallbackUrl={lesson.sourceUrl}
+          />
         </section>
       ) : (
         <section className="panel panel-pad stack">
@@ -72,7 +88,7 @@ export function ListeningLessonPage() {
           </p>
           {lesson.contentNote && <p className="dim" style={{ fontSize: 12 }}>{lesson.contentNote}</p>}
           {lesson.sourceUrl && (
-            <a className="btn" href={lesson.sourceUrl} target="_blank" rel="noreferrer">
+            <a className="btn" href={lesson.sourceUrl} target="_blank" rel="noopener noreferrer">
               {t("listening.openOriginal")} →
             </a>
           )}
@@ -101,7 +117,7 @@ export function ListeningLessonPage() {
           {analysis.missing.length > 0 && (
             <div className="stack">
               <h3 style={{ fontSize: 16 }}>{t("listening.coverage.missingHeader")}</h3>
-              <div className="radio-tags">
+              <div className="row" style={{ flexWrap: "wrap", gap: 6 }}>
                 {analysis.missing.map((word) => <span className="badge" key={word}>{word}</span>)}
               </div>
               <p className="dim" style={{ fontSize: 12 }}>{t("listening.coverage.missingHint")}</p>
@@ -114,10 +130,10 @@ export function ListeningLessonPage() {
         <section className="panel panel-pad stack" style={{ marginTop: 16 }}>
           <h2>{t("listening.related")}</h2>
           <ul className="stack" style={{ listStyle: "none", padding: 0 }}>
-            {lesson.grammarUrl && <li><a href={lesson.grammarUrl} target="_blank" rel="noreferrer">{t("listening.grammar")} →</a></li>}
-            {lesson.vocabularyUrl && <li><a href={lesson.vocabularyUrl} target="_blank" rel="noreferrer">{t("listening.vocabulary")} →</a></li>}
-            {lesson.pronunciationUrl && <li><a href={lesson.pronunciationUrl} target="_blank" rel="noreferrer">{t("listening.pronunciation")} →</a></li>}
-            {lesson.videoUrl && <li><a href={lesson.videoUrl} target="_blank" rel="noreferrer">{t("listening.videoExtra")} →</a></li>}
+            {lesson.grammarUrl && <li><a href={lesson.grammarUrl} target="_blank" rel="noopener noreferrer">{t("listening.grammar")} →</a></li>}
+            {lesson.vocabularyUrl && <li><a href={lesson.vocabularyUrl} target="_blank" rel="noopener noreferrer">{t("listening.vocabulary")} →</a></li>}
+            {lesson.pronunciationUrl && <li><a href={lesson.pronunciationUrl} target="_blank" rel="noopener noreferrer">{t("listening.pronunciation")} →</a></li>}
+            {lesson.videoUrl && <li><a href={lesson.videoUrl} target="_blank" rel="noopener noreferrer">{t("listening.videoExtra")} →</a></li>}
           </ul>
         </section>
       )}
@@ -127,7 +143,7 @@ export function ListeningLessonPage() {
         {source.attribution && <p style={{ margin: 0 }}>{t("listening.attribution")}: {source.attribution}</p>}
         {source.license && <p style={{ margin: 0 }}>{t("listening.license")}: {source.license}</p>}
         {lesson.sourceUrl && (
-          <a href={lesson.sourceUrl} target="_blank" rel="noreferrer">
+          <a href={lesson.sourceUrl} target="_blank" rel="noopener noreferrer">
             {t("listening.openOriginal")} →
           </a>
         )}

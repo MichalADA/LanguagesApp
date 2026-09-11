@@ -347,15 +347,24 @@ enum ListeningContentStatus {
 /// `metadataJson` any block-specific extras (heading level, image alt,
 /// speakers flag, iframe origin) as a JSON string.
 model ListeningContentBlock {
-  id           String                    @id @default(cuid())
-  lessonId     String
-  type         ListeningContentBlockType
-  position     Int
-  text         String?
-  url          String?
-  metadataJson String?
-  createdAt    DateTime                  @default(now())
-  updatedAt    DateTime                  @updatedAt
+  id             String                    @id @default(cuid())
+  lessonId       String
+  type           ListeningContentBlockType
+  position       Int
+  /// Legacy plain text (backward-compat and for pure-media blocks it stays null).
+  /// New content lives in sourceText / translatedText below.
+  text           String?
+  /// Original-language content from Tako Lako (Croatian). This is the ONLY field
+  /// vocabulary coverage analyses — never `text` and never `translatedText`.
+  sourceText     String?
+  /// Polish gloss/translation shown next to `sourceText` in the UI.
+  translatedText String?
+  /// Dialogue speaker label (e.g. "Ana"). Only meaningful for TRANSCRIPT blocks.
+  speaker        String?
+  url            String?
+  metadataJson   String?
+  createdAt      DateTime                  @default(now())
+  updatedAt      DateTime                  @updatedAt
 
   lesson ListeningLesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
 

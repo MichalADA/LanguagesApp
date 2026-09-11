@@ -171,10 +171,65 @@ Widok lekcji renderuje bloki lokalnie (`ContentBlocks.tsx`):
   z linkiem do źródła (H5P nie osadzamy w tej iteracji),
 - `NOTE` → cytat z paskiem akcentu.
 
-Sekcja **Vocabulary coverage** analizuje teraz połączone
-`PARAGRAPH + TRANSCRIPT + HEADING + NOTE` z bloków (a nie surowy
-HTML źródła). Attribution + licencja + link „Otwórz oryginał” są
-stałą sekcją na dole lekcji.
+Sekcja **Vocabulary coverage** analizuje **wyłącznie oryginalny
+język źródła** (chorwacki) — czyli pola `sourceText` bloków +
+tekst `TRANSCRIPT` jako legacy fallback. Polskie tłumaczenia
+(`translatedText`), placeholdery UI, teksty licencji i cokolwiek
+generowanego przez Lexodromię NIE wchodzą do analizy — brakujące
+słowa są więc wyłącznie chorwackie. Attribution + licencja + link
+„Otwórz oryginał” są stałą sekcją na dole lekcji, ale przycisk
+„Otwórz oryginał ↗” pojawia się także w nagłówku lekcji obok
+tytułu, żeby był w zasięgu wzroku.
+
+## Model bloku treści
+
+```
+ListeningContentBlock {
+  type       : HEADING | PARAGRAPH | IMAGE | AUDIO | VIDEO
+             | TRANSCRIPT | EXERCISE | NOTE
+  position   : Int
+  sourceText : String?  ← analizowane przez coverage
+  translatedText : String?  ← wyświetlane pod sourceText, muted
+  speaker    : String?  ← opcjonalny label dla dialogu
+  text       : String?  ← legacy display fallback
+  url        : String?  ← src dla IMAGE / AUDIO / VIDEO / EXERCISE
+  metadataJson : JSON   ← level dla HEADING, speakers dla TRANSCRIPT itd.
+}
+```
+
+## Audio
+
+Parser wyciąga URL nagrania z:
+
+- `<audio src=”…”>`,
+- pierwszego `<source src=”…”>` w środku `<audio>`,
+- `<a href=”…mp3|m4a|ogg|wav”>` **wewnątrz** `<audio>` (Pressbooks
+  często używa takiego fallback linku jako właściwego źródła),
+- samodzielnego `<a href=”…mp3”>` bezpośrednio w treści lekcji.
+
+W UI każdy blok `AUDIO` dostaje własny `<audio controls
+preload=”metadata”>` renderowany w Lexodromii. Nie kopiujemy plików —
+`src` prowadzi do oryginalnego URL. Kliknięcie Play nie przekierowuje
+na źródło.
+
+Jeżeli odtworzenie się nie powiedzie (403 / CORS / nieistniejący
+URL), `onError` przełącza blok w tryb fallback z komunikatem
+„Nie udało się odtworzyć nagrania” i linkiem „Otwórz nagranie
+w źródle ↗”. Reszta lekcji renderuje się dalej.
+
+## Reimport tej samej lekcji
+
+Domyślnie `import:tako-lako:content` pomija lekcje ze
+`contentStatus = IMPORTED`. Żeby wymusić ponowne przetworzenie:
+
+```
+TAKO_LAKO_CONTENT_FORCE=1 npm run import:tako-lako:content
+```
+
+Przy sukcesie stary zestaw bloków jest wywalany w jednej transakcji
+(`deleteMany` po `lessonId`), a na jego miejsce wstawiany nowy —
+żadne resetowanie bazy ani kasowanie rekordów lekcji nie jest
+potrzebne.
 
 ### Startowy seed
 
