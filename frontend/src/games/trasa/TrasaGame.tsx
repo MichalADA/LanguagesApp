@@ -37,7 +37,7 @@ export function TrasaGame() {
     start: startLearning,
     record: recordLearning,
     finish: finishLearning,
-  } = useLearningSession();
+  } = useLearningSession({ gameType: "trasa" });
 
   const route: CourseRoute | undefined = course.routes[0];
 

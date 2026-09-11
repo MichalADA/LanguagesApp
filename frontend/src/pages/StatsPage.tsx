@@ -1,3 +1,4 @@
+import { ReviewSummary } from "@/reviews/ReviewSummary";
 import { useEffect, useMemo, useState } from "react";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useProgress } from "@/progress/ProgressProvider";
@@ -72,6 +73,7 @@ export function StatsPage() {
           <p className="lede">{t("stats.accountData")}</p>
         </header>
 
+        <ReviewSummary details />
         {!accountStatistics && !statisticsError && (
           <section className="panel panel-pad">
             <span className="loading">{t("stats.loadingAccount")}</span>

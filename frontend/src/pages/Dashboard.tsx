@@ -1,3 +1,4 @@
+import { ReviewSummary } from "@/reviews/ReviewSummary";
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
@@ -76,13 +77,14 @@ export function Dashboard() {
       {last?.status === "active" && <Link className="btn-ghost dashboard-last" to={last.href ?? `/gry/${last.id}`}><span className="eyebrow">{t("home.lastMode")}</span><strong>{t(last.nameKey)} →</strong></Link>}
     </header>
 
+    <ReviewSummary />
     <section className="stack" aria-labelledby="training-title">
       <h2 id="training-title">{t("home.training")}</h2>
       <div className="grid grid-3 dashboard-training">
         <article className="panel panel-pad stack dashboard-training-card dashboard-primary">
           <span className="dashboard-icon" aria-hidden="true">↻</span><h3>{t("home.reviewTitle")}</h3>
           <p className="muted">{available ? t(due ? "home.reviewCount" : "home.noReviews", { n: due }) : t("home.reviewDescription")}</p>
-          {available && due === 0 ? <Link className="btn-ghost" to={account ? "/fiszki" : "/powtorki"}>{t("home.openReviews")}</Link> : <Link className="btn" to={account ? "/fiszki/sesja" : "/powtorki"} onClick={() => flashcardStart("REVIEW")}>{t("home.reviewAction")}</Link>}
+          {available && due === 0 ? <Link className="btn-ghost" to={account ? "/fiszki" : "/powtorki"}>{t("home.openReviews")}</Link> : <Link className="btn" to="/powtorki" onClick={() => flashcardStart("REVIEW")}>{t("home.reviewAction")}</Link>}
         </article>
         <article className="panel panel-pad stack dashboard-training-card">
           <span className="dashboard-icon" aria-hidden="true">＋</span><h3>{t("home.newTitle")}</h3>

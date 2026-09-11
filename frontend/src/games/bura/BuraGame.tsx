@@ -33,7 +33,7 @@ export function BuraGame() {
     start: startLearning,
     record: recordLearning,
     finish: finishLearning,
-  } = useLearningSession();
+  } = useLearningSession({ gameType: "bura" });
   const settings = state.settings;
 
   const [selection, setSelection] = useState<PoolSelection>(
@@ -77,6 +77,8 @@ export function BuraGame() {
         wordRef: target.id,
         answer: input ?? "",
         correct: v !== "miss",
+        usedHint: Boolean(hintText),
+        responseTimeMs: Math.max(0, Math.min(86400000, Date.now() - deadline.current + limitMs)),
       });
       if (v === "miss") {
         setStreak(0);
@@ -88,7 +90,7 @@ export function BuraGame() {
         setBestStreak((b) => Math.max(b, nextStreak));
       }
     },
-    [queue, idx, verdict, course, settings.lenientDiacritics, streak, recordLearning],
+    [queue, idx, verdict, course, settings.lenientDiacritics, streak, recordLearning, hintText, limitMs],
   );
 
   useEffect(() => {

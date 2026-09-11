@@ -25,6 +25,8 @@ model User {
   updatedAt    DateTime  @updatedAt
   lastLoginAt  DateTime?
 
+  reviewStates      ReviewState[]
+  reviewAttempts    ReviewAttempt[]
   refreshTokens     RefreshToken[]
   courseProgress    UserCourseProgress[]
   learningSessions  LearningSession[]
@@ -69,6 +71,8 @@ model Course {
   sourceLanguage Language @relation("CourseSource", fields: [sourceLanguageId], references: [id])
   targetLanguage Language @relation("CourseTarget", fields: [targetLanguageId], references: [id])
 
+  reviewStates      ReviewState[]
+  reviewAttempts    ReviewAttempt[]
   progress          UserCourseProgress[]
   sessions          LearningSession[]
   wordProgress      UserWordProgress[]
@@ -208,4 +212,79 @@ enum FlashcardDirection {
   SOURCE_TO_TARGET
   TARGET_TO_SOURCE
   MIXED
+}
+
+enum ReviewItemType {
+  WORD
+  SENTENCE
+  VERB
+  GRAMMAR
+  PHRASE
+}
+
+model ReviewState {
+  id              String          @id @default(cuid())
+  userId          String
+  courseId        String
+  itemType        ReviewItemType
+  itemId          String
+  state           Int             @default(0)
+  stability       Float           @default(0)
+  difficulty      Float           @default(0)
+  due             DateTime        @default(now())
+  lastReview      DateTime?
+  scheduledDays   Int             @default(0)
+  elapsedDays     Int             @default(0)
+  learningSteps   Int             @default(0)
+  reps            Int             @default(0)
+  lapses          Int             @default(0)
+  correctAnswers  Int             @default(0)
+  wrongAnswers    Int             @default(0)
+  markedDifficult Boolean         @default(false)
+  migrated        Boolean         @default(false)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  user            User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course          Course          @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  attempts        ReviewAttempt[]
+
+  @@unique([userId, itemType, itemId])
+  @@index([userId, due])
+  @@index([userId, courseId, id])
+  @@index([userId, courseId, itemType, due])
+}
+
+model ReviewAttempt {
+  id                    String         @id @default(cuid())
+  eventId               String
+  userId                String
+  courseId              String
+  reviewStateId         String
+  itemType              ReviewItemType
+  itemId                String
+  timestamp             DateTime       @default(now())
+  gameType              String
+  direction             String?
+  correct               Boolean
+  rating                Int
+  responseTimeMs        Int?
+  usedHint              Boolean        @default(false)
+  attemptsBeforeCorrect Int            @default(0)
+  answer                String
+  previousDue           DateTime
+  nextDue               DateTime
+  previousStability     Float
+  newStability          Float
+  previousDifficulty    Float
+  newDifficulty         Float
+  schedulerVersion      String
+  user                  User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course                Course         @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  reviewState           ReviewState    @relation(fields: [reviewStateId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventId])
+  @@index([userId, timestamp])
+  @@index([userId, courseId, timestamp])
+  @@index([userId, itemType, itemId, timestamp])
+  @@index([reviewStateId])
 }

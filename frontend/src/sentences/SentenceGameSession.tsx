@@ -22,7 +22,7 @@ export function SentenceGameSession({ mode }: { mode: SentenceMode }) {
 
 function Session({ mode }: { mode: SentenceMode }) {
   const t = useT();
-  const learning = useLearningSession({ trackVocabulary: false });
+  const learning = useLearningSession({ trackVocabulary: false, gameType: `sentence-${mode}` });
   const [rows, setRows] = useState<Sentence[]>([]);
   const [loading, setLoading] = useState(true), [error, setError] = useState(false), [retry, setRetry] = useState(0);
   const [selection, setSelection] = useState<PoolSelection>({ source: { kind: "level", level: "A1" }, topic: null });
@@ -32,6 +32,7 @@ function Session({ mode }: { mode: SentenceMode }) {
   const [answer, setAnswer] = useState(""), [feedback, setFeedback] = useState<boolean | null>(null);
   const [answers, setAnswers] = useState<SentenceAnswer[]>([]);
   const [tokens, setTokens] = useState<SentenceToken[]>([]), [chosen, setChosen] = useState<string[]>([]);
+  const usedHint = useRef(false), questionStarted = useRef(0);
   const [hint, setHint] = useState(false);
   const guard = useRef<"answer" | "feedback" | "advancing" | "finished">("finished");
   const current = queue[index];
@@ -48,6 +49,7 @@ function Session({ mode }: { mode: SentenceMode }) {
   }, [retry]);
 
   function prepare(sentence: Sentence) {
+    usedHint.current = false; questionStarted.current = Date.now();
     setAnswer(""); setFeedback(null); setHint(false); setChosen([]); setTokens(shuffledTokens(sentence.croatian));
   }
   function start() {
@@ -63,7 +65,7 @@ function Session({ mode }: { mode: SentenceMode }) {
     guard.current = "feedback";
     const hit = checkSentenceAnswer(current, mode, value);
     setFeedback(hit); setAnswers(previous => [...previous, { sentenceId: current.id, answer: value, correct: hit }]);
-    learning.record({ wordRef: `sentence:${mode}:${current.id}`, answer: value, correct: hit });
+    learning.record({ wordRef: `sentence:${mode}:${current.id}`, answer: value, correct: hit, usedHint: usedHint.current, responseTimeMs: Math.min(86400000, Date.now() - questionStarted.current) });
   }
   function next() {
     if (guard.current !== "feedback") return;
@@ -99,7 +101,7 @@ function Session({ mode }: { mode: SentenceMode }) {
       {mode === "gap" ? current.gapText : mode === "correction" ? current.incorrectSentence : mode === "transform" ? current.croatian : current.polish}
     </h2>
     {mode === "transform" && <p>{t(current.transformInstruction)}</p>}
-    {mode === "gap" && <><button className="btn-ghost" aria-expanded={hint} onClick={() => setHint(value => !value)}>{t("sentences.hint")}</button>{hint && <p lang="pl">{current.polish}</p>}</>}
+    {mode === "gap" && <><button className="btn-ghost" aria-expanded={hint} onClick={() => { usedHint.current = true; setHint(value => !value); }}>{t("sentences.hint")}</button>{hint && <p lang="pl">{current.polish}</p>}</>}
     <form className="stack" onSubmit={event => { event.preventDefault(); submit(); }}>
       {mode === "builder" ? <>
         <p className="sentence-built" lang="hr" aria-live="polite">{built || t("sentences.selectWords")}</p>

@@ -1,8 +1,8 @@
+import { createEventId } from "@/utils/eventId";
 import { useCallback, useEffect, useRef } from "react";
 
 import { useAuth } from "@/auth/useAuth";
-import { useCourse } from "@/courses/CourseProvider";
-import { markSeen as markFlashcardSeen } from "@/flashcards/flashcardsApi";
+
 import {
   finishLearningSession,
   recordLearningAnswer,
@@ -17,21 +17,24 @@ type SessionPromise = Promise<string | null>;
  * Guest mode remains entirely local. Requests are serialised so a quick
  * answer cannot overtake session creation or completion.
  */
-export function useLearningSession({ trackVocabulary = true }: { trackVocabulary?: boolean } = {}) {
+export function useLearningSession({
+  gameType = "legacy-game",
+}: { gameType?: string; trackVocabulary?: boolean } = {}) {
   const { status, apiRequest } = useAuth();
-  const { course } = useCourse();
+
+  const failures = useRef(new Map<string, number>());
   const activeSession = useRef<SessionPromise | null>(null);
   const queue = useRef<Promise<void>>(Promise.resolve());
-  // Words we've already reported to the flashcards "seen" endpoint this
-  // session. Prevents a burst of duplicate POSTs on repeat encounters.
-  const seenRefs = useRef<Set<string>>(new Set());
 
   const enqueue = useCallback(
     (session: SessionPromise, action: (sessionId: string) => Promise<void>) => {
       queue.current = queue.current
         .then(async () => {
           const sessionId = await session;
-          if (sessionId) await action(sessionId);
+          if (sessionId) {
+            await action(sessionId);
+            window.dispatchEvent(new Event("review-updated"));
+          }
         })
         .catch(reportSyncFailure);
       return queue.current;
@@ -43,41 +46,56 @@ export function useLearningSession({ trackVocabulary = true }: { trackVocabulary
     const session = activeSession.current;
     activeSession.current = null;
     if (!session) return Promise.resolve();
-    return enqueue(session, (sessionId) => finishLearningSession(apiRequest, sessionId));
+    return enqueue(session, (sessionId) =>
+      finishLearningSession(apiRequest, sessionId),
+    );
   }, [apiRequest, enqueue]);
 
-  const start = useCallback((courseId: string): void => {
-    if (status !== "authenticated") {
-      activeSession.current = null;
-      return;
-    }
+  const start = useCallback(
+    (courseId: string): void => {
+      if (status !== "authenticated") {
+        activeSession.current = null;
+        return;
+      }
 
-    if (activeSession.current) void finish();
-    activeSession.current = startLearningSession(apiRequest, courseId)
-      .then((session) => session.id)
-      .catch((error: unknown) => {
-        reportSyncFailure(error);
-        return null;
-      });
-  }, [status, apiRequest, finish]);
+      if (activeSession.current) void finish();
+      failures.current.clear();
+      activeSession.current = startLearningSession(apiRequest, courseId)
+        .then((session) => session.id)
+        .catch((error: unknown) => {
+          reportSyncFailure(error);
+          return null;
+        });
+    },
+    [status, apiRequest, finish],
+  );
 
-  const record = useCallback((answer: LearningAnswerInput): void => {
-    const session = activeSession.current;
-    if (!session) return;
-    void enqueue(session, (sessionId) => recordLearningAnswer(apiRequest, sessionId, answer));
-
-    // Seed the flashcards' firstSeenAt so a word encountered in a game
-    // shows up as "already met" the next time the user opens Fiszki.
-    // Fire-and-forget: the game's outcome does not depend on this call.
-    if (trackVocabulary && status === "authenticated" && answer.wordRef && !seenRefs.current.has(answer.wordRef)) {
-      seenRefs.current.add(answer.wordRef);
-      void markFlashcardSeen(apiRequest, { course: course.id, wordRef: answer.wordRef }).catch(
-        () => {
-          seenRefs.current.delete(answer.wordRef);
-        },
+  const record = useCallback(
+    (answer: LearningAnswerInput): void => {
+      const session = activeSession.current;
+      if (!session) return;
+      const eventId = answer.eventId ?? createEventId();
+      const attemptsBeforeCorrect =
+        answer.attemptsBeforeCorrect ??
+        failures.current.get(answer.wordRef) ??
+        0;
+      if (!answer.correct)
+        failures.current.set(
+          answer.wordRef,
+          Math.min(1000, attemptsBeforeCorrect + 1),
+        );
+      void enqueue(session, (sessionId) =>
+        recordLearningAnswer(apiRequest, sessionId, {
+          ...answer,
+          eventId,
+          attemptsBeforeCorrect,
+          gameType,
+          direction: answer.direction ?? "SOURCE_TO_TARGET",
+        }),
       );
-    }
-  }, [apiRequest, enqueue, status, course.id, trackVocabulary]);
+    },
+    [apiRequest, enqueue, gameType],
+  );
 
   useEffect(
     () => () => {

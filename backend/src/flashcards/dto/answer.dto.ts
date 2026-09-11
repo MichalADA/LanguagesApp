@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import {
-  IsBoolean,
+  IsBoolean, IsInt, Min, Max,
   IsEnum,
   IsIn,
   IsOptional,
@@ -17,6 +17,11 @@ const RATINGS: RatingLiteral[] = ['AGAIN', 'HARD', 'GOOD', 'EASY'];
 const DIRECTIONS: DirectionLiteral[] = ['SOURCE_TO_TARGET', 'TARGET_TO_SOURCE'];
 
 export class SubmitAnswerDto {
+  @IsOptional() @IsString() @MinLength(1) @MaxLength(100) eventId?: string;
+  @IsOptional() @IsBoolean() usedHint?: boolean;
+  @IsOptional() @IsInt() @Min(0) @Max(86400000) responseTimeMs?: number;
+  @IsOptional() @IsInt() @Min(0) @Max(1000) attemptsBeforeCorrect?: number;
+
   @ApiProperty({ description: 'Course id or slug (e.g. "pl-hr").' })
   @IsString()
   @MinLength(1)

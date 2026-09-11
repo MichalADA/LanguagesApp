@@ -7,6 +7,7 @@ import type { LearningLevelId } from "@/config/learningLevels";
  * Fiszki i Listening.
  */
 export interface WordProgress {
+  reviewStatus?: "NEW" | "LEARNING" | "REVIEW" | "MASTERED";
   attempts: number;
   correctAnswers: number;
   incorrectAnswers: number;

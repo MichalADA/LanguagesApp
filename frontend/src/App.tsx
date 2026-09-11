@@ -4,7 +4,7 @@ import { Dashboard } from "@/pages/Dashboard";
 import { GamesPage } from "@/pages/GamesPage";
 import { PlayPage } from "@/pages/PlayPage";
 import { StatsPage } from "@/pages/StatsPage";
-import { ReviewPage } from "@/pages/ReviewPage";
+import { ReviewSession } from "@/reviews/ReviewSession";
 import { FiszkiPage } from "@/pages/FiszkiPage";
 import { FiszkiSessionPage } from "@/pages/FiszkiSessionPage";
 import { ProgressPage } from "@/pages/ProgressPage";
@@ -50,7 +50,7 @@ export default function App() {
           <Route path="/radio" element={<RadioPage />} />
           <Route path="/gry/kategoria/:categoryId" element={<GamesPage />} />
           <Route path="/gry/:gameId" element={<PlayPage />} />
-          <Route path="/powtorki" element={<ReviewPage />} />
+          <Route path="/powtorki" element={<ReviewSession />} />
           <Route path="/fiszki" element={<FiszkiPage />} />
           <Route path="/fiszki/sesja" element={<FiszkiSessionPage />} />
           <Route path="/statystyki" element={<StatsPage />} />
