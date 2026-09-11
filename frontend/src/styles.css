@@ -841,3 +841,30 @@ p { margin: 0; text-wrap: pretty; }
   .person-tag { font-size: 13px; letter-spacing: 0.14em; }
   .settings-row input[type="range"] { width: 100%; }
 }
+
+/* Dashboard: actions first, followed by one consistent vocabulary summary. */
+.dashboard-heading, .dashboard-section-head { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.dashboard-last { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.dashboard-training-card { min-width: 0; gap: 14px; }
+.dashboard-training-card h3 { font-size: 23px; }
+.dashboard-training-card p { flex: 1; line-height: 1.6; }
+.dashboard-training-card .btn, .dashboard-training-card .btn-ghost { text-align: center; }
+.dashboard-primary { border-color: var(--accent, #8c192d); background: linear-gradient(140deg, #341c20, #201819); }
+.dashboard-icon { font-size: 26px; color: #c7a955; }
+.dashboard-progress { height: 12px; border-radius: 20px; background: #393031; overflow: hidden; display: flex; }
+.dashboard-mastered { background: #c7a955; }
+.dashboard-learning { background: #a84353; }
+.dashboard-legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; }
+.dashboard-legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; background-color: #393031; }
+.dashboard-legend i.dashboard-mastered { background-color: #c7a955; }
+.dashboard-legend i.dashboard-learning { background-color: #a84353; }
+.dashboard-totals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin: 4px 0 0; padding-top: 20px; border-top: 1px solid #393031; }
+.dashboard-totals dt { font-size: 13px; color: var(--muted, #b9aaa4); }
+.dashboard-totals dd { font-size: 28px; font-weight: 700; margin: 5px 0 0; }
+.dashboard-shortcuts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+.dashboard-shortcut { display: flex; align-items: center; gap: 12px; padding: 20px; text-decoration: none; }
+.dashboard-shortcut > span:first-child { color: #c7a955; }
+.dashboard-shortcut > span:last-child { margin-left: auto; }
+.dashboard-shortcut:hover { border-color: #a84353; }
+@media (max-width: 900px) { .dashboard-training { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .dashboard-heading { align-items: stretch; } .dashboard-last { width: 100%; } .dashboard-totals { gap: 12px; } .dashboard-shortcuts { grid-template-columns: 1fr; } }

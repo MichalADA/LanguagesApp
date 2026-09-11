@@ -1,182 +1,122 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useCourse } from "@/courses/CourseProvider";
 import { useAuth } from "@/auth/useAuth";
-import { masteryOf, summarize } from "@/progress/service";
-import { StatCard, ProgressBar } from "@/components/StatCard";
-import { GAMES, findGame } from "@/games/registry";
-import { describePool } from "@/utils/pool";
-import { currentStreak, formatRelative } from "@/utils/date";
+import { isLearned, needsReview, statFor } from "@/progress/service";
+import { findGame } from "@/games/registry";
 import { useI18n } from "@/i18n";
-import { fetchSummary as fetchFlashcardsSummary } from "@/flashcards/flashcardsApi";
-import type { FlashcardsSummary } from "@/flashcards/types";
-import {
-  entriesForLevel,
-  findLearningLevel,
-  LEARNING_LEVELS,
-  levelForLegacyBlock,
-} from "@/config/learningLevels";
+import { fetchProgress } from "@/flashcards/flashcardsApi";
+import { readPreferences, writePreferences } from "@/flashcards/preferences";
+import type { FlashcardProgress, FlashcardMode } from "@/flashcards/types";
+import { entriesForLevel, LEARNING_LEVELS, type LearningLevelId } from "@/config/learningLevels";
 
 export function Dashboard() {
   const { t, locale } = useI18n();
   const { course } = useCourse();
-  const { entries, loading } = useVocabulary();
-  const { state, current, courseId } = useProgress();
-  const { status, apiRequest } = useAuth();
-  const [flashcards, setFlashcards] = useState<FlashcardsSummary | null>(null);
+  const { entries, loading: vocabularyLoading, error: vocabularyError } = useVocabulary();
+  const { state, current, courseId, ready } = useProgress();
+  const { status, apiRequest, user } = useAuth();
+  const [remote, setRemote] = useState<{ key: string; rows: FlashcardProgress[] } | null>(null);
+  const [failedKey, setFailedKey] = useState<string | null>(null);
+  const [retry, setRetry] = useState(0);
+  const [level, setLevel] = useState<LearningLevelId>("A1");
+  const account = status === "authenticated";
+  const key = `${user?.id}:${course.id}`;
 
   useEffect(() => {
-    if (status !== "authenticated") {
-      setFlashcards(null);
-      return;
-    }
+    if (!account) return;
     let alive = true;
-    void fetchFlashcardsSummary(apiRequest, course.id)
-      .then((res) => {
-        if (alive) setFlashcards(res);
-      })
-      .catch(() => {
-        if (alive) setFlashcards(null);
-      });
-    return () => {
-      alive = false;
-    };
-  }, [status, apiRequest, course.id]);
+    setFailedKey(null);
+    fetchProgress(apiRequest, course.id).then(rows => {
+      if (alive) setRemote({ key, rows });
+    }).catch(() => { if (alive) setFailedKey(key); });
+    return () => { alive = false; };
+  }, [account, apiRequest, course.id, key, retry]);
 
-  const summary = summarize(state, courseId);
-  const streak = currentStreak(current.activeDays);
-  const bura = current.games.bura;
-  const reviewCount = flashcards?.reviewDue ?? summary.review;
-  const masteredCount = flashcards?.mastered ?? summary.learned;
-  const difficultCount = flashcards?.difficult ?? summary.difficult;
+  const loading = vocabularyLoading || !ready || (account && remote?.key !== key && failedKey !== key);
+  const error = Boolean(vocabularyError) || (account && failedKey === key);
+  const available = !loading && !error;
+  const progress = useMemo(() => {
+    const byId = new Map(remote?.key === key ? remote.rows.map(row => [row.wordRef, row]) : []);
+    return new Map(entries.map(entry => {
+      const local = statFor(state, courseId, entry);
+      const card = byId.get(entry.id);
+      return [entry.id, account
+        ? { seen: Boolean(card), mastered: card?.status === "MASTERED", due: Boolean(card?.isDue) }
+        : { seen: local.attempts > 0, mastered: isLearned(local), due: needsReview(local) }];
+    }));
+  }, [remote, key, entries, state, courseId, account]);
+  const all = [...progress.values()];
+  const seen = all.filter(row => row.seen).length;
+  const mastered = all.filter(row => row.mastered).length;
+  const due = all.filter(row => row.due).length;
+  const pool = entriesForLevel(entries, level, course.blocks);
+  const levelRows = pool.map(entry => progress.get(entry.id)!);
+  const levelMastered = levelRows.filter(row => row.mastered).length;
+  const learning = levelRows.filter(row => row.seen && !row.mastered).length;
+  const untouched = pool.length - levelMastered - learning;
+  const percent = pool.length ? Math.round(levelMastered / pool.length * 100) : 0;
+  const last = findGame(current.lastActivity?.gameId);
+  const flashcardStart = (mode: FlashcardMode) => {
+    writePreferences({ ...readPreferences(), mode, sessionSize: 10 });
+  };
+  const shortcuts = [
+    { key: "flashcards", href: "/fiszki", symbol: "▤" },
+    { key: "quick", href: "/gry/kategoria/quick", symbol: "ϟ" },
+    ...(course.id === "pl-hr" ? [{ key: "sentences", href: "/gry/kategoria/sentences", symbol: "Aa" }] : []),
+    { key: "grammar", href: "/gry/kategoria/grammar", symbol: "↔" },
+    ...(course.id === "pl-hr" ? [{ key: "radio", href: "/radio", symbol: "♫" }] : []),
+  ];
 
-  const lastSource = current.lastActivity?.pool.source;
-  const lastLevelId =
-    lastSource?.kind === "level"
-      ? lastSource.level
-      : lastSource?.kind === "block"
-        ? levelForLegacyBlock(lastSource.block, course.blocks)
-        : LEARNING_LEVELS[0].id;
-  const lastLevel = findLearningLevel(lastLevelId) ?? LEARNING_LEVELS[0];
-  const levelEntries = entriesForLevel(entries, lastLevelId, course.blocks);
-  const levelMastery = masteryOf(state, courseId, levelEntries);
+  return <div className="page dashboard-page">
+    <header className="page-head dashboard-heading">
+      <div><span className="eyebrow">{course.name[locale]}</span><h1>{t("home.title")}</h1><p className="lede">{t("home.subtitle")}</p></div>
+      {last?.status === "active" && <Link className="btn-ghost dashboard-last" to={last.href ?? `/gry/${last.id}`}><span className="eyebrow">{t("home.lastMode")}</span><strong>{t(last.nameKey)} →</strong></Link>}
+    </header>
 
-  const lastGame = findGame(current.lastActivity?.gameId);
-  const lastSeen = current.lastActivity?.at ?? 0;
+    <section className="stack" aria-labelledby="training-title">
+      <h2 id="training-title">{t("home.training")}</h2>
+      <div className="grid grid-3 dashboard-training">
+        <article className="panel panel-pad stack dashboard-training-card dashboard-primary">
+          <span className="dashboard-icon" aria-hidden="true">↻</span><h3>{t("home.reviewTitle")}</h3>
+          <p className="muted">{available ? t(due ? "home.reviewCount" : "home.noReviews", { n: due }) : t("home.reviewDescription")}</p>
+          {available && due === 0 ? <Link className="btn-ghost" to={account ? "/fiszki" : "/powtorki"}>{t("home.openReviews")}</Link> : <Link className="btn" to={account ? "/fiszki/sesja" : "/powtorki"} onClick={() => flashcardStart("REVIEW")}>{t("home.reviewAction")}</Link>}
+        </article>
+        <article className="panel panel-pad stack dashboard-training-card">
+          <span className="dashboard-icon" aria-hidden="true">＋</span><h3>{t("home.newTitle")}</h3>
+          <p className="muted">{t(account ? "home.newDescription" : "home.guestNewDescription")}</p>
+          <Link className="btn-ghost" to={account ? "/fiszki/sesja" : "/gry/bura"} onClick={() => flashcardStart("NEW")}>{t("home.newAction")}</Link>
+        </article>
+        <article className="panel panel-pad stack dashboard-training-card">
+          <span className="dashboard-icon" aria-hidden="true">Aa</span><h3>{t(course.id === "pl-hr" ? "home.sentenceTitle" : "home.gamesTitle")}</h3>
+          <p className="muted">{t(course.id === "pl-hr" ? "home.sentenceDescription" : "home.gamesDescription")}</p>
+          <Link className="btn-ghost" to={course.id === "pl-hr" ? "/gry/sentence-builder" : "/gry"}>{t("home.sentenceAction")}</Link>
+        </article>
+      </div>
+    </section>
 
-  return (
-    <div className="page">
-      <header className="page-head">
-        <span className="eyebrow">{t("dashboard.eyebrow")}</span>
-        <h1>{t("dashboard.title")}</h1>
-        <p className="lede">
-          {loading
-            ? t("dashboard.subtitleLoading")
-            : t("dashboard.subtitle", {
-                total: entries.length,
-                seen: summary.seen,
-                learned: summary.learned,
-              })}
-        </p>
-      </header>
-
-      <section className="panel panel-pad continue-card">
-        <div className="stack" style={{ gap: 6, minWidth: 0 }}>
-          <span className="eyebrow">{t("dashboard.continueTitle")}</span>
-          <h2>
-            {lastGame && current.lastActivity
-              ? t("dashboard.continueWith", {
-                  game: t(lastGame.nameKey),
-                  pool: describePool(current.lastActivity.pool, course, t),
-                })
-              : t("dashboard.continueNone")}
-          </h2>
-          <span className="stat-note">
-            {course.flag} {course.name[locale]} · {t("dashboard.lastSeen")}: {formatRelative(lastSeen)}
-          </span>
+    <section className="panel panel-pad stack" aria-labelledby="progress-title" aria-busy={loading}>
+      <div className="dashboard-section-head"><div><span className="eyebrow">{t("home.progressEyebrow")}</span><h2 id="progress-title">{t("home.progressTitle")}</h2></div>
+        <div className="row" role="group" aria-label={t("home.chooseLevel")}>{LEARNING_LEVELS.map(item => <button className={level === item.id ? "chip on" : "chip"} aria-pressed={level === item.id} key={item.id} onClick={() => setLevel(item.id)}>{item.id}</button>)}</div>
+      </div>
+      {loading && <p role="status">{t("home.loading")}</p>}
+      {error && <div role="alert"><p>{t("home.error")}</p>{!vocabularyError && <button className="btn-ghost" onClick={() => setRetry(n => n + 1)}>{t("home.retry")}</button>}</div>}
+      {available && <>
+        <div className="dashboard-section-head"><p><strong>{level}</strong> · {t(LEARNING_LEVELS.find(item => item.id === level)!.nameKey)}</p><span className="mono">{t("home.masteryCount", { n: levelMastered, total: pool.length })}</span></div>
+        <div className="dashboard-progress" role="img" aria-label={t("home.progressLabel", { mastered: levelMastered, learning, untouched })}>
+          <span className="dashboard-mastered" style={{ width: `${pool.length ? levelMastered / pool.length * 100 : 0}%` }} /><span className="dashboard-learning" style={{ width: `${pool.length ? learning / pool.length * 100 : 0}%` }} />
         </div>
-        <Link to={lastGame ? `/gry/${lastGame.id}` : "/gry/bura"} className="btn">
-          {lastGame ? t("common.continue") : t("common.start")}
-        </Link>
-      </section>
+        <div className="dashboard-legend"><span><i className="dashboard-mastered" />{t("home.mastered")}: <strong>{levelMastered}</strong></span><span><i className="dashboard-learning" />{t("home.learning")}: <strong>{learning}</strong></span><span><i />{t("home.untouched")}: <strong>{untouched}</strong></span></div>
+        <p className="stat-note">{t("home.materialNote", { n: percent })}</p>
+        <dl className="dashboard-totals">{[{ label: "seen", value: seen }, { label: "mastered", value: mastered }, { label: account ? "due" : "mistakes", value: due }].map(item => <div key={item.label}><dt>{t(`home.${item.label}`)}</dt><dd>{item.value}</dd></div>)}</dl>
+        <p className="stat-note">{t(account ? "home.accountSource" : "home.guestSource")}</p>
+      </>}
+    </section>
 
-      <section className="grid grid-3">
-        <StatCard
-          value={masteredCount}
-          label={t("dashboard.learned")}
-          note={t("dashboard.learnedNote", { total: entries.length || "…" })}
-        />
-        <StatCard value={reviewCount} label={t("dashboard.review")} note={t("dashboard.reviewNote")} />
-        <StatCard
-          tone="gold"
-          value={bura?.bestScore ?? 0}
-          label={t("dashboard.bestScore")}
-          note={t("dashboard.rounds", { n: bura?.rounds ?? 0 })}
-        />
-        <StatCard
-          tone="gold"
-          value={streak}
-          label={t("dashboard.streak")}
-          note={streak ? t("dashboard.streakOn") : t("dashboard.streakOff")}
-        />
-        <StatCard
-          value={`${summary.accuracy}%`}
-          label={t("dashboard.accuracy")}
-          note={t("dashboard.accuracyNote", { n: current.totalAttempts })}
-        />
-        <StatCard
-          value={difficultCount}
-          label={t("dashboard.difficult")}
-          note={t("dashboard.difficultNote")}
-        />
-      </section>
-
-      <section className="panel panel-pad stack" style={{ gap: 14 }}>
-        <div className="row" style={{ justifyContent: "space-between" }}>
-          <div className="stack" style={{ gap: 4 }}>
-            <span className="eyebrow">{t("dashboard.lastLevel")}</span>
-            <h2>{lastLevel.id} · {t(lastLevel.nameKey)}</h2>
-          </div>
-          <span className="mono muted">{t("dashboard.mastery", { n: levelMastery })}</span>
-        </div>
-        <ProgressBar percent={levelMastery} />
-        <span className="stat-note">
-          {current.lastActivity
-            ? t("dashboard.lastPool", { pool: describePool(current.lastActivity.pool, course, t) })
-            : t("dashboard.noPool")}
-        </span>
-      </section>
-
-      <section className="stack" style={{ gap: 12 }}>
-        <div className="row" style={{ justifyContent: "space-between" }}>
-          <span className="eyebrow">{t("nav.games")}</span>
-          <Link to="/gry" className="mono" style={{ fontSize: 13 }}>
-            {t("common.all").toLocaleLowerCase()} →
-          </Link>
-        </div>
-        <div className="grid grid-3">
-          {GAMES.slice(0, 3).map((g) => (
-            <div key={g.id} className="panel panel-pad stack game-mini">
-              <div className="row" style={{ justifyContent: "space-between", gap: 8 }}>
-                <h3>{t(g.nameKey)}</h3>
-                <span className={g.status === "active" ? "badge on" : "badge"}>
-                  {g.status === "active" ? t("common.active") : t("common.soon")}
-                </span>
-              </div>
-              <p className="muted" style={{ fontSize: 14, lineHeight: 1.5 }}>
-                {t(g.taglineKey)}
-              </p>
-              {g.status === "active" && (
-                <Link to={`/gry/${g.id}`} className="mono" style={{ fontSize: 13, marginTop: 4 }}>
-                  {t("games.play").toLocaleLowerCase()} →
-                </Link>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
-  );
+    <section className="stack" aria-labelledby="explore-title"><div className="dashboard-section-head"><h2 id="explore-title">{t("home.explore")}</h2><Link className="mono" to="/gry">{t("home.allGames")} →</Link></div>
+      <div className="dashboard-shortcuts">{shortcuts.map(item => <Link className="panel dashboard-shortcut" key={item.key} to={item.href}><span aria-hidden="true">{item.symbol}</span><strong>{t(`home.shortcuts.${item.key}`)}</strong><span aria-hidden="true">→</span></Link>)}</div>
+    </section>
+  </div>;
 }
