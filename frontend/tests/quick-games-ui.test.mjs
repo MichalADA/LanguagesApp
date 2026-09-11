@@ -24,6 +24,8 @@ test('learning hub hides individual quick games until their category is opened',
     './odmiana/OdmianaGame': { OdmianaGame: stub },
     '@/quick-games/QuickGame': { QuickGame: stub },
     '@/quick-games/helpers': helpers,
+    '@/sentences/SentenceGameSession': { SentenceGameSession: stub },
+    '@/sentences/types': { SENTENCE_MODES: ['translation', 'builder', 'gap', 'correction', 'transform'] },
   });
   let params = {};
   const { GamesPage } = await compile('../src/pages/GamesPage.tsx', {

@@ -1,6 +1,29 @@
 import type { Dictionary } from "../types";
 
 export const pl: Dictionary = {
+  sentences: {
+    names: { translation: "Tłumaczenie zdań", builder: "Układanie zdań", gap: "Uzupełnij lukę", correction: "Popraw zdanie", transform: "Transformacje" },
+    descriptions: { translation: "Przetłumacz całe zdanie na chorwacki.", builder: "Ułóż chorwackie zdanie z rozsypanych słów.", gap: "Wpisz brakujące słowo lub wyrażenie.", correction: "Znajdź błąd i wpisz poprawne zdanie.", transform: "Przekształć zdanie zgodnie z poleceniem." },
+    chooseLevel: "Wybierz poziom zdań", count: "{n} zdań", exactLevel: "Ćwiczysz tylko zdania z wybranego poziomu.",
+    sessionLength: "Sesja: {n} pytań bez powtórzeń.", notEnough: "Za mało zdań do pełnej sesji na tym poziomie.",
+    courseOnly: "Gry zdaniowe są obecnie dostępne dla kursu polski → chorwacki.",
+    loading: "Wczytywanie zdań…", loadError: "Nie udało się wczytać zdań.", retry: "Spróbuj ponownie", start: "Rozpocznij",
+    check: "Sprawdź", next: "Dalej", undo: "Cofnij", clear: "Wyczyść", hint: "Podpowiedź", correctAnswer: "Poprawna odpowiedź",
+    result: "Wynik", correct: "Poprawne", wrong: "Błędne", accuracy: "Skuteczność", again: "Zagraj ponownie", games: "Lista gier",
+    changeLevel: "Zmień poziom", progress: "Ukończone: {n} / {total}", yourAnswer: "Twoja odpowiedź po chorwacku", selectWords: "Klikaj słowa, aby ułożyć zdanie.",
+    good: "Dobrze!", incorrect: "Niepoprawna odpowiedź",
+    instructions: { negation: "Zmień zdanie na przeczące.", main_negation: "Zaprzecz zdaniu głównemu. Zachowaj zdanie podrzędne.", tense_future: "Zmień zdanie na czas przyszły. Dopasuj zdanie podrzędne, jeśli to konieczne.", tense_past: "Zmień zdanie na czas przeszły. Zachowaj osobę i rodzaj podmiotu." },
+    explanations: {
+      case: "Po przyimku określającym miejsce użyj miejscownika i dopasuj końcówkę przymiotnika.",
+      agreement: "Dopasuj osobę i liczbę czasownika do podmiotu.",
+      object: "Dopełnienie tego czasownika wymaga biernika.",
+      gender: "Dopasuj rodzaj, liczbę i przypadek przymiotnika do rzeczownika.",
+      genitive: "W tej konstrukcji potrzebny jest dopełniacz, a nie mianownik lub biernik.",
+      dative: "Odbiorcę czynności wyrażamy tutaj celownikiem.",
+      instrumental: "Ta konstrukcja wymaga narzędnika. Dopasuj również przymiotnik, jeśli występuje.",
+      relative: "Zaimek względny musi pasować rodzajem do rzeczownika i przypadkiem do swojej roli w zdaniu podrzędnym.",
+    },
+  },
   radio: {
     title: "Radio chorwackie", description: "Słuchaj chorwackiego radia i osłuchuj się z naturalnym językiem.",
     listen: "Słuchaj", listenTo: "Słuchaj: {name}", all: "Wszystkie", music: "Muzyka", talk: "Talk / News",
@@ -209,7 +232,7 @@ export const pl: Dictionary = {
     },
     "sentences": {
       "name": "Zdania",
-      "description": "Ćwicz język w kontekście — nowe tryby w przygotowaniu."
+      "description": "Ćwicz język w kontekście."
     },
     "listening": {
       "name": "Słuchanie",
