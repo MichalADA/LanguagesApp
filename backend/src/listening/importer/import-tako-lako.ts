@@ -15,7 +15,7 @@ import {
   extractLessonLinks,
   parseLesson,
   type ParsedLesson,
-} from '../src/listening/importer/tako-lako-parser';
+} from './tako-lako-parser';
 
 const BASE_URL = process.env.TAKO_LAKO_BASE_URL ?? 'https://takolako.com';
 const INDEX_URL = process.env.TAKO_LAKO_INDEX_URL ?? `${BASE_URL}/lessons`;

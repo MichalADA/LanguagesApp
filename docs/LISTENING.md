@@ -74,9 +74,11 @@ transcriptAnalysisService → vocabulary coverage`.
 
 ## Importer Tako Lako
 
-- `backend/scripts/import-tako-lako.ts` — samodzielny skrypt, uruchamiany
-  ręcznie przez `npm run import:tako-lako`. **Nie uruchamia się przy
-  starcie backendu.**
+- `backend/src/listening/importer/import-tako-lako.ts` — samodzielny
+  skrypt kompilowany razem z resztą backendu przez `nest build`, uruchamiany
+  ręcznie przez `npm run import:tako-lako` (odpala `node
+  dist/listening/importer/import-tako-lako.js` — bez `ts-node`, bez
+  devDependencies w runtime). **Nie uruchamia się przy starcie backendu.**
 - Idempotencja:
   - `ListeningSource` upsertowany po `slug`.
   - `ListeningUnit` upsertowany po `(sourceId, level, position)`.
@@ -84,9 +86,9 @@ transcriptAnalysisService → vocabulary coverage`.
 - Jeżeli sieć jest niedostępna (dev container, CI bez egress), skrypt
   wypisuje warning i wychodzi z kodem 0 — startowy seed pozostaje
   nietknięty.
-- Parsowanie HTML jest wydzielone do `backend/src/listening/importer/
-  tako-lako-parser.ts` (pure functions bez IO), żeby dało się je
-  jednostkowo testować bez sieci ani Prismy.
+- Parsowanie HTML jest wydzielone do `backend/src/listening/importer/tako-lako-parser.ts`
+  (pure functions bez IO), żeby dało się je jednostkowo testować bez
+  sieci ani Prismy.
 
 ### Konfiguracja
 
