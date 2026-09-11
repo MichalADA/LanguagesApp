@@ -38,6 +38,10 @@ export const pl: Dictionary = {
     attribution: "Źródło",
     license: "Licencja",
     openOriginal: "Otwórz oryginał",
+    related: "Powiązane materiały",
+    grammar: "Gramatyka",
+    vocabulary: "Słownictwo",
+    pronunciation: "Wymowa",
     placeholders: {
       custom: { title: "Własne materiały", description: "Wgraj własne nagrania z transkrypcją." },
       podcasts: { title: "Podcasty", description: "Odcinki dopasowane do poziomu i tematów." },

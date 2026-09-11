@@ -38,6 +38,10 @@ export const en: Dictionary = {
     attribution: "Source",
     license: "License",
     openOriginal: "Open original",
+    related: "Related material",
+    grammar: "Grammar",
+    vocabulary: "Vocabulary",
+    pronunciation: "Pronunciation",
     placeholders: {
       custom: { title: "Own material", description: "Upload your own recordings with transcripts." },
       podcasts: { title: "Podcasts", description: "Episodes tuned to your level and interests." },

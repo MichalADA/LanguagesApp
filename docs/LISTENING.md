@@ -92,8 +92,28 @@ transcriptAnalysisService → vocabulary coverage`.
 
 ### Konfiguracja
 
-- `TAKO_LAKO_BASE_URL` (domyślnie `https://takolako.com`)
-- `TAKO_LAKO_INDEX_URL` (domyślnie `${BASE}/lessons`)
+- `TAKO_LAKO_BASE_URL` (domyślnie `https://www.takolako.org`)
+- `TAKO_LAKO_INDEX_URL` (domyślnie `${BASE}/beginner/content-overview/`)
+
+### Skąd biorą się dane
+
+Katalog beginner mieszka na `takolako.org`, a same lekcje na
+`utexas.pressbooks.pub/takolako/chapter/uN-mM-lessonL[-type]/`.
+Importer pobiera **tylko** stronę content-overview i wyciąga z niej
+Pressbooksowe URL-e:
+
+- `.../uN-mM-lessonL/` — główna lekcja (`sourceUrl` / `lessonUrl`),
+- `.../uN-mM-lessonL-grammar/` → `grammarUrl`,
+- `.../uN-mM-lessonL-vocabulary/` → `vocabularyUrl`,
+- `.../uN-mM-lessonL-pronunciation/` → `pronunciationUrl`,
+- `.../uN-mM-lessonL-video/` → `videoUrl`.
+
+`/uN-overview/` jest ignorowane (nie jest lekcją). Fragmenty `#anchor`
+są ucinane, a różne kotwice do tej samej strony są deduplikowane —
+jeden Pressbooksowy chapter to jeden URL.
+
+Importer **nie pobiera** treści Pressbooks (403 CloudFront z kontenera).
+Transkrypcje, audio i teksty gramatyki to osobny etap.
 
 ### Startowy seed
 

@@ -1,120 +1,153 @@
 import {
-  extractLessonLinks,
-  extractLevel,
-  extractUnit,
-  extractTitle,
-  extractAudio,
-  extractVideo,
-  extractTranscript,
-  parseLesson,
+  extractPressbooksLinks,
+  groupLessons,
+  parseCatalog,
 } from './tako-lako-parser';
 
-const BASE = 'https://takolako.com';
-const INDEX = `${BASE}/lessons`;
+const SAMPLE = `
+  <a href="https://utexas.pressbooks.pub/takolako/">Home</a>
+  <a href="https://utexas.pressbooks.pub/navrh-jezika/">Design</a>
 
-describe('extractLessonLinks', () => {
-  it('picks lesson anchors and resolves relative URLs', () => {
-    const html = `
-      <a href="/lessons/pozdravi">Pozdravi</a>
-      <a href="https://takolako.com/lessons/predstavljanje">Predstavljanje</a>
-      <a href="/about">About</a>
-      <a href="/lessons">Index itself</a>
-    `;
-    const links = extractLessonLinks(html, BASE, INDEX);
-    expect(links).toEqual([
-      'https://takolako.com/lessons/pozdravi',
-      'https://takolako.com/lessons/predstavljanje',
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-overview/">Unit 1 overview</a>
+
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1/">Introducing yourself</a>
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-grammar/#pronoun">Grammar · pronouns</a>
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-grammar/#biti">Grammar · biti</a>
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-vocabulary/">Vocabulary</a>
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-pronunciation/">Pronunciation</a>
+
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson2/">Greetings</a>
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson2-grammar/#call">Grammar</a>
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson2-vocabulary/#countries">Vocab · countries</a>
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson2-vocabulary#names">Vocab · names</a>
+
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u6-m1-lesson2-video/">Video</a>
+
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u2-m2-lesson2-grammar-2/#verbs">Grammar (revised)</a>
+
+  <a href="https://utexas.pressbooks.pub/takolako/chapter/u10-m3-lesson2-vocabulary/">Vocab</a>
+
+  <a href="/somewhere/else/">Off-site</a>
+`;
+
+describe('extractPressbooksLinks', () => {
+  it('parses unit, module, lesson and type for a plain lesson URL', () => {
+    const [link] = extractPressbooksLinks(
+      '<a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1/">x</a>',
+    );
+    expect(link).toMatchObject({ unit: 1, module: 1, lesson: 1, type: 'main' });
+  });
+
+  it('classifies grammar/vocabulary/pronunciation/video', () => {
+    const links = extractPressbooksLinks(SAMPLE);
+    const types = new Set(links.map((l) => l.type));
+    expect(types.has('main')).toBe(true);
+    expect(types.has('grammar')).toBe(true);
+    expect(types.has('vocabulary')).toBe(true);
+    expect(types.has('pronunciation')).toBe(true);
+    expect(types.has('video')).toBe(true);
+  });
+
+  it('handles two-digit units', () => {
+    const [link] = extractPressbooksLinks(
+      '<a href="https://utexas.pressbooks.pub/takolako/chapter/u10-m3-lesson2-vocabulary/">x</a>',
+    );
+    expect(link).toMatchObject({ unit: 10, module: 3, lesson: 2, type: 'vocabulary' });
+  });
+
+  it('accepts the suffixed "-grammar-2" variant', () => {
+    const [link] = extractPressbooksLinks(
+      '<a href="https://utexas.pressbooks.pub/takolako/chapter/u2-m2-lesson2-grammar-2/#verbs">x</a>',
+    );
+    expect(link).toMatchObject({ unit: 2, module: 2, lesson: 2, type: 'grammar' });
+  });
+
+  it('ignores /uN-overview/ chapters', () => {
+    const links = extractPressbooksLinks(
+      '<a href="https://utexas.pressbooks.pub/takolako/chapter/u1-overview/">x</a>' +
+        '<a href="https://utexas.pressbooks.pub/takolako/chapter/u2-overview/">y</a>',
+    );
+    expect(links).toEqual([]);
+  });
+
+  it('drops fragments and deduplicates by base URL (two #anchors, one page)', () => {
+    const links = extractPressbooksLinks(
+      '<a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-grammar/#pronoun">a</a>' +
+        '<a href="https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-grammar/#biti">b</a>',
+    );
+    expect(links).toHaveLength(1);
+    expect(links[0].url).toBe(
+      'https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-grammar/',
+    );
+  });
+
+  it('skips off-site and non-chapter anchors', () => {
+    const links = extractPressbooksLinks(
+      '<a href="https://utexas.pressbooks.pub/takolako/">home</a>' +
+        '<a href="/somewhere/else/">off</a>',
+    );
+    expect(links).toEqual([]);
+  });
+});
+
+describe('groupLessons', () => {
+  it('collapses grammar / vocabulary / pronunciation into the same lesson record', () => {
+    const grouped = parseCatalog(SAMPLE);
+    const u1m1l1 = grouped.find((g) => g.key === 'u1-m1-lesson1');
+    expect(u1m1l1).toBeDefined();
+    expect(u1m1l1?.lessonUrl).toBe(
+      'https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1/',
+    );
+    expect(u1m1l1?.grammarUrl).toBe(
+      'https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-grammar/',
+    );
+    expect(u1m1l1?.vocabularyUrl).toBe(
+      'https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-vocabulary/',
+    );
+    expect(u1m1l1?.pronunciationUrl).toBe(
+      'https://utexas.pressbooks.pub/takolako/chapter/u1-m1-lesson1-pronunciation/',
+    );
+    expect(u1m1l1?.videoUrl).toBeNull();
+  });
+
+  it('assigns videoUrl only when a -video chapter is present', () => {
+    const grouped = parseCatalog(SAMPLE);
+    const u6m1l2 = grouped.find((g) => g.key === 'u6-m1-lesson2');
+    expect(u6m1l2?.videoUrl).toBe(
+      'https://utexas.pressbooks.pub/takolako/chapter/u6-m1-lesson2-video/',
+    );
+    // No main lesson URL was linked for u6-m1-lesson2 in the sample — it should stay null.
+    expect(u6m1l2?.lessonUrl).toBeNull();
+  });
+
+  it('uses anchor text as title when available, falls back otherwise', () => {
+    const grouped = parseCatalog(SAMPLE);
+    expect(grouped.find((g) => g.key === 'u1-m1-lesson1')?.title).toBe('Introducing yourself');
+    // u6-m1-lesson2 has no main link → falls back to "Unit N · Module M · Lesson L".
+    expect(grouped.find((g) => g.key === 'u6-m1-lesson2')?.title).toBe(
+      'Unit 6 · Module 1 · Lesson 2',
+    );
+  });
+
+  it('sorts by (unit, module, lesson)', () => {
+    const grouped = parseCatalog(SAMPLE);
+    const keys = grouped.map((g) => g.key);
+    expect(keys).toEqual([
+      'u1-m1-lesson1',
+      'u1-m1-lesson2',
+      'u2-m2-lesson2',
+      'u6-m1-lesson2',
+      'u10-m3-lesson2',
     ]);
   });
 
-  it('deduplicates', () => {
-    const html = `<a href="/lessons/x"></a><a href="/lessons/x"></a>`;
-    expect(extractLessonLinks(html, BASE, INDEX)).toHaveLength(1);
-  });
-});
-
-describe('extractLevel / extractUnit / extractTitle', () => {
-  it('reads data attributes', () => {
-    const html = `<article data-level="Intermediate" data-unit="Slobodno vrijeme" data-unit-position="3">
-      <h1>Hobiji</h1></article>`;
-    expect(extractLevel(html)).toBe('Intermediate');
-    expect(extractUnit(html)).toEqual({ title: 'Slobodno vrijeme', position: 3 });
-    expect(extractTitle(html)).toBe('Hobiji');
+  it('produces at most one record per (unit, module, lesson)', () => {
+    const grouped = parseCatalog(SAMPLE);
+    const keys = grouped.map((g) => g.key);
+    expect(new Set(keys).size).toBe(keys.length);
   });
 
-  it('falls back to metadata and Unit N in title', () => {
-    const html = `<meta name="level" content="Beginner"><meta name="unit" content="Unit 2 — Predstavljanje"><title>Zovem se…</title>`;
-    expect(extractLevel(html)).toBe('Beginner');
-    expect(extractUnit(html)).toEqual({ title: 'Unit 2 — Predstavljanje', position: 2 });
-    expect(extractTitle(html)).toBe('Zovem se…');
-  });
-
-  it('gives sensible defaults when nothing matches', () => {
-    expect(extractLevel('<p>nothing</p>')).toBe('Beginner');
-    expect(extractUnit('<p>nothing</p>')).toEqual({ title: 'Unit 1', position: 1 });
-    expect(extractTitle('<p>nothing</p>')).toBe('Untitled');
-  });
-});
-
-describe('extractAudio / extractVideo', () => {
-  it('reads <audio src> and resolves relative URLs', () => {
-    expect(extractAudio('<audio src="/media/a.mp3"></audio>', BASE)).toBe('https://takolako.com/media/a.mp3');
-  });
-
-  it('reads <source> mp3 fallback', () => {
-    expect(extractAudio('<audio><source src="https://cdn/a.mp3"></audio>', BASE)).toBe('https://cdn/a.mp3');
-  });
-
-  it('reads <iframe youtube>', () => {
-    const html = '<iframe src="https://www.youtube.com/embed/abc"></iframe>';
-    expect(extractVideo(html, BASE)).toBe('https://www.youtube.com/embed/abc');
-  });
-
-  it('null when nothing matches', () => {
-    expect(extractAudio('<p>nothing</p>', BASE)).toBeNull();
-    expect(extractVideo('<p>nothing</p>', BASE)).toBeNull();
-  });
-});
-
-describe('extractTranscript', () => {
-  it('extracts speaker-separated lines from a transcript div', () => {
-    const html = `<div class="transcript">
-      <p>Mario: Bok!</p>
-      <p>Laura: Bok, kako si?</p>
-    </div>`;
-    expect(extractTranscript(html)).toBe('Mario: Bok!\nLaura: Bok, kako si?');
-  });
-
-  it('falls back to <pre>', () => {
-    const html = `<pre>Zdravo</pre>`;
-    expect(extractTranscript(html)).toBe('Zdravo');
-  });
-
-  it('returns null when there is no transcript', () => {
-    expect(extractTranscript('<p>nothing</p>')).toBeNull();
-  });
-});
-
-describe('parseLesson (integration)', () => {
-  it('assembles all fields from a rich page', () => {
-    const html = `
-      <html><head><meta name="level" content="Intermediate"><meta name="unit" content="Unit 3 — Hobiji"></head>
-      <body>
-        <h1>Slobodno vrijeme</h1>
-        <audio src="/media/hobiji.mp3"></audio>
-        <div class="transcript">
-          <p>Mario: Što radiš u slobodno vrijeme?</p>
-          <p>Laura: Često plivam.</p>
-        </div>
-      </body></html>`;
-    expect(parseLesson(html, BASE)).toEqual({
-      title: 'Slobodno vrijeme',
-      level: 'Intermediate',
-      unitTitle: 'Unit 3 — Hobiji',
-      unitPosition: 3,
-      audioUrl: 'https://takolako.com/media/hobiji.mp3',
-      videoUrl: null,
-      transcript: 'Mario: Što radiš u slobodno vrijeme?\nLaura: Često plivam.',
-    });
+  it('re-running the parser on the same HTML yields identical records', () => {
+    expect(parseCatalog(SAMPLE)).toEqual(parseCatalog(SAMPLE));
   });
 });

@@ -283,14 +283,18 @@ enum ListeningSourceType {
 }
 
 model ListeningUnit {
-  id        String   @id @default(cuid())
-  sourceId  String
-  title     String
-  level     String?
-  position  Int      @default(0)
-  sourceUrl String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id           String   @id @default(cuid())
+  sourceId     String
+  title        String
+  level        String?
+  position     Int      @default(0)
+  sourceUrl    String?
+  /// Numer Unit z katalogu źródła (np. 1 dla u1). Opcjonalny — starsze sourcy nie mają.
+  unitNumber   Int?
+  /// Numer Module w obrębie Unit (np. 1 dla m1). Opcjonalny.
+  moduleNumber Int?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 
   source  ListeningSource   @relation(fields: [sourceId], references: [id], onDelete: Cascade)
   lessons ListeningLesson[]
@@ -300,16 +304,21 @@ model ListeningUnit {
 }
 
 model ListeningLesson {
-  id         String   @id @default(cuid())
-  unitId     String
-  title      String
-  position   Int      @default(0)
-  sourceUrl  String?  @unique
-  transcript String?
-  audioUrl   String?
-  videoUrl   String?
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  id               String   @id @default(cuid())
+  unitId           String
+  title            String
+  position         Int      @default(0)
+  /// Numer Lesson w obrębie Module (np. 1 dla lesson1). Opcjonalny.
+  lessonNumber     Int?
+  sourceUrl        String?  @unique
+  transcript       String?
+  audioUrl         String?
+  videoUrl         String?
+  grammarUrl       String?
+  vocabularyUrl    String?
+  pronunciationUrl String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 
   unit ListeningUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
 

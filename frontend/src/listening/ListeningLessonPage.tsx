@@ -138,6 +138,35 @@ export function ListeningLessonPage() {
         </section>
       )}
 
+      {(lesson.grammarUrl || lesson.vocabularyUrl || lesson.pronunciationUrl) && (
+        <section className="panel panel-pad stack" style={{ marginTop: 16 }}>
+          <h2>{t("listening.related")}</h2>
+          <ul className="stack" style={{ listStyle: "none", padding: 0 }}>
+            {lesson.grammarUrl && (
+              <li>
+                <a href={lesson.grammarUrl} target="_blank" rel="noreferrer">
+                  {t("listening.grammar")} →
+                </a>
+              </li>
+            )}
+            {lesson.vocabularyUrl && (
+              <li>
+                <a href={lesson.vocabularyUrl} target="_blank" rel="noreferrer">
+                  {t("listening.vocabulary")} →
+                </a>
+              </li>
+            )}
+            {lesson.pronunciationUrl && (
+              <li>
+                <a href={lesson.pronunciationUrl} target="_blank" rel="noreferrer">
+                  {t("listening.pronunciation")} →
+                </a>
+              </li>
+            )}
+          </ul>
+        </section>
+      )}
+
       <p className="stat-note">
         {source.attribution && <>{t("listening.attribution")}: {source.attribution} · </>}
         {source.license && <>{t("listening.license")}: {source.license} · </>}

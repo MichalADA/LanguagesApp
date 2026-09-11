@@ -2,24 +2,63 @@
 /**
  * Tako Lako importer.
  *
- * Idempotent by design: units are upserted on (sourceId, level, position),
- * lessons on the lesson's own sourceUrl. Running the script twice on the same
- * catalog is a no-op. Ran via `npm run import:tako-lako` and NEVER at server
- * startup.
+ * The catalog lives on takolako.org (a WordPress site that indexes the actual
+ * lesson chapters hosted on utexas.pressbooks.pub/takolako). We fetch the
+ * content-overview page, extract every Pressbooks chapter link, group them
+ * by (unit, module, lesson) into one record per lesson, then upsert.
  *
- * If the network is blocked, the importer prints a warning and exits 0
- * without touching the database, so the seed content stays intact.
+ * Idempotent: `ListeningSource` upserted on slug, `ListeningUnit` upserted on
+ * (sourceId, level, position), `ListeningLesson` upserted on `sourceUrl`
+ * (the main lesson chapter URL). Re-running the script is a no-op modulo
+ * fresh URLs.
+ *
+ * Explicitly does NOT fetch Pressbooks chapters here — they return 403 from
+ * the container's egress. Transcripts, audio and lesson bodies are a later
+ * step; this pass only imports the catalog metadata.
+ *
+ * Ran via `npm run import:tako-lako` and never at server startup.
  */
 import { PrismaClient } from '@prisma/client';
 import {
-  extractLessonLinks,
-  parseLesson,
-  type ParsedLesson,
+  parseCatalog,
+  type GroupedLesson,
 } from './tako-lako-parser';
 
-const BASE_URL = process.env.TAKO_LAKO_BASE_URL ?? 'https://takolako.com';
-const INDEX_URL = process.env.TAKO_LAKO_INDEX_URL ?? `${BASE_URL}/lessons`;
+const BASE_URL = process.env.TAKO_LAKO_BASE_URL ?? 'https://www.takolako.org';
+const INDEX_URL =
+  process.env.TAKO_LAKO_INDEX_URL ?? `${BASE_URL}/beginner/content-overview/`;
 const SOURCE_SLUG = 'tako-lako';
+const CATALOG_LEVEL = 'Beginner';
+
+interface ImportStats {
+  fetched: boolean;
+  lessons: number;
+  units: number;
+  modules: number;
+  lessonUrls: number;
+  grammarUrls: number;
+  vocabularyUrls: number;
+  pronunciationUrls: number;
+  videoUrls: number;
+  created: number;
+  updated: number;
+  skipped: number;
+}
+
+const emptyStats = (): ImportStats => ({
+  fetched: false,
+  lessons: 0,
+  units: 0,
+  modules: 0,
+  lessonUrls: 0,
+  grammarUrls: 0,
+  vocabularyUrls: 0,
+  pronunciationUrls: 0,
+  videoUrls: 0,
+  created: 0,
+  updated: 0,
+  skipped: 0,
+});
 
 async function fetchText(url: string): Promise<string | null> {
   try {
@@ -40,94 +79,158 @@ async function fetchText(url: string): Promise<string | null> {
 async function ensureSource(prisma: PrismaClient) {
   return prisma.listeningSource.upsert({
     where: { slug: SOURCE_SLUG },
-    update: {},
+    update: {
+      sourceUrl: BASE_URL,
+    },
     create: {
       slug: SOURCE_SLUG,
       name: 'Tako Lako',
       description: 'Kurs chorwackiego z dialogami, nagraniami i transkrypcjami.',
       sourceUrl: BASE_URL,
-      license: 'External — see takolako.com',
-      attribution: 'Tako Lako (takolako.com)',
+      license: 'External — see takolako.org and utexas.pressbooks.pub/takolako',
+      attribution: 'Tako Lako (takolako.org · UTexas Pressbooks)',
       type: 'TAKO_LAKO',
     },
   });
 }
 
-async function saveLesson(
+/**
+ * A stable, deterministic position for a Module inside `Beginner`:
+ * `unit * 100 + module` keeps the natural sort order (u1m1 < u1m2 < u2m1)
+ * without colliding across units.
+ */
+const modulePosition = (unit: number, module: number): number => unit * 100 + module;
+
+async function upsertUnit(
   prisma: PrismaClient,
   sourceId: string,
-  url: string,
-  order: number,
-  parsed: ParsedLesson,
+  unit: number,
+  module: number,
 ) {
-  const unit = await prisma.listeningUnit.findFirst({
-    where: { sourceId, level: parsed.level, position: parsed.unitPosition },
+  const position = modulePosition(unit, module);
+  const existing = await prisma.listeningUnit.findFirst({
+    where: { sourceId, level: CATALOG_LEVEL, position },
   });
-  const dbUnit = unit
-    ? await prisma.listeningUnit.update({
-        where: { id: unit.id },
-        data: { title: parsed.unitTitle },
-      })
-    : await prisma.listeningUnit.create({
-        data: {
-          sourceId,
-          title: parsed.unitTitle,
-          level: parsed.level,
-          position: parsed.unitPosition,
-        },
-      });
-
-  await prisma.listeningLesson.upsert({
-    where: { sourceUrl: url },
-    update: {
-      unitId: dbUnit.id,
-      title: parsed.title,
-      position: order,
-      audioUrl: parsed.audioUrl,
-      videoUrl: parsed.videoUrl,
-      transcript: parsed.transcript,
-    },
-    create: {
-      unitId: dbUnit.id,
-      title: parsed.title,
-      position: order,
-      sourceUrl: url,
-      audioUrl: parsed.audioUrl,
-      videoUrl: parsed.videoUrl,
-      transcript: parsed.transcript,
+  const title = `Unit ${unit} · Module ${module}`;
+  if (existing) {
+    return prisma.listeningUnit.update({
+      where: { id: existing.id },
+      data: { title, unitNumber: unit, moduleNumber: module },
+    });
+  }
+  return prisma.listeningUnit.create({
+    data: {
+      sourceId,
+      title,
+      level: CATALOG_LEVEL,
+      position,
+      unitNumber: unit,
+      moduleNumber: module,
     },
   });
 }
 
-export async function importTakoLako(prisma: PrismaClient): Promise<{ scraped: number; saved: number }> {
-  const indexHtml = await fetchText(INDEX_URL);
-  if (!indexHtml) {
-    console.warn('[tako-lako] index page unreachable; nothing imported.');
-    return { scraped: 0, saved: 0 };
+async function upsertLesson(
+  prisma: PrismaClient,
+  unitId: string,
+  lesson: GroupedLesson,
+): Promise<'created' | 'updated' | 'skipped'> {
+  // Every lesson needs a stable primary key for the upsert. Prefer the main
+  // Pressbooks URL; if only sibling URLs exist, synthesize a stable deep-link
+  // from the (unit, module, lesson) triple so the row is still identifiable.
+  const primaryUrl =
+    lesson.lessonUrl
+      ?? `https://utexas.pressbooks.pub/takolako/chapter/${lesson.key}/`;
+
+  const data = {
+    unitId,
+    title: lesson.title ?? `Unit ${lesson.unit} · Module ${lesson.module} · Lesson ${lesson.lesson}`,
+    position: lesson.lesson,
+    lessonNumber: lesson.lesson,
+    grammarUrl: lesson.grammarUrl,
+    vocabularyUrl: lesson.vocabularyUrl,
+    pronunciationUrl: lesson.pronunciationUrl,
+    videoUrl: lesson.videoUrl,
+  };
+
+  const existing = await prisma.listeningLesson.findUnique({ where: { sourceUrl: primaryUrl } });
+  if (existing) {
+    const unchanged =
+      existing.unitId === data.unitId
+      && existing.title === data.title
+      && existing.position === data.position
+      && existing.lessonNumber === data.lessonNumber
+      && existing.grammarUrl === data.grammarUrl
+      && existing.vocabularyUrl === data.vocabularyUrl
+      && existing.pronunciationUrl === data.pronunciationUrl
+      && existing.videoUrl === data.videoUrl;
+    if (unchanged) return 'skipped';
+    await prisma.listeningLesson.update({ where: { id: existing.id }, data });
+    return 'updated';
   }
-  const links = extractLessonLinks(indexHtml, BASE_URL, INDEX_URL);
-  if (links.length === 0) {
-    console.warn('[tako-lako] no lesson links found on the index; site layout may have changed.');
-    return { scraped: 0, saved: 0 };
+  await prisma.listeningLesson.create({ data: { ...data, sourceUrl: primaryUrl } });
+  return 'created';
+}
+
+export async function importTakoLako(prisma: PrismaClient): Promise<ImportStats> {
+  const stats = emptyStats();
+  const html = await fetchText(INDEX_URL);
+  if (!html) {
+    console.warn(`[tako-lako] index page unreachable (${INDEX_URL}); nothing imported.`);
+    return stats;
   }
+  stats.fetched = true;
+
+  const grouped = parseCatalog(html);
+  stats.lessons = grouped.length;
+  stats.units = new Set(grouped.map((g) => g.unit)).size;
+  stats.modules = new Set(grouped.map((g) => `u${g.unit}-m${g.module}`)).size;
+  for (const lesson of grouped) {
+    if (lesson.lessonUrl) stats.lessonUrls++;
+    if (lesson.grammarUrl) stats.grammarUrls++;
+    if (lesson.vocabularyUrl) stats.vocabularyUrls++;
+    if (lesson.pronunciationUrl) stats.pronunciationUrls++;
+    if (lesson.videoUrl) stats.videoUrls++;
+  }
+
+  if (grouped.length === 0) {
+    console.warn('[tako-lako] no Pressbooks lesson links found on the overview page.');
+    return stats;
+  }
+
   const source = await ensureSource(prisma);
-  let saved = 0;
-  for (let i = 0; i < links.length; i++) {
-    const url = links[i];
-    const html = await fetchText(url);
-    if (!html) continue;
-    const parsed = parseLesson(html, BASE_URL);
-    await saveLesson(prisma, source.id, url, i + 1, parsed);
-    saved++;
+  for (const lesson of grouped) {
+    const unit = await upsertUnit(prisma, source.id, lesson.unit, lesson.module);
+    const outcome = await upsertLesson(prisma, unit.id, lesson);
+    stats[outcome]++;
   }
-  return { scraped: links.length, saved };
+  return stats;
+}
+
+function printStats(stats: ImportStats) {
+  const rows: [string, number | string][] = [
+    ['index fetched', stats.fetched ? 'yes' : 'no'],
+    ['unique lessons detected', stats.lessons],
+    ['units seen', stats.units],
+    ['modules seen', stats.modules],
+    ['lessonUrl', stats.lessonUrls],
+    ['grammarUrl', stats.grammarUrls],
+    ['vocabularyUrl', stats.vocabularyUrls],
+    ['pronunciationUrl', stats.pronunciationUrls],
+    ['videoUrl', stats.videoUrls],
+    ['records created', stats.created],
+    ['records updated', stats.updated],
+    ['records skipped (unchanged)', stats.skipped],
+  ];
+  console.log('[tako-lako] import report');
+  for (const [label, value] of rows) console.log(`  ${label.padEnd(28)} ${value}`);
 }
 
 async function main() {
   const prisma = new PrismaClient();
   try {
-    const result = await importTakoLako(prisma);
-    console.log(`[tako-lako] scraped ${result.scraped} lesson URLs, saved ${result.saved} lessons.`);
+    const stats = await importTakoLako(prisma);
+    printStats(stats);
   } finally {
     await prisma.$disconnect();
   }

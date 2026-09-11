@@ -27,6 +27,8 @@ export interface ListeningUnit {
   level: string | null;
   position: number;
   sourceUrl: string | null;
+  unitNumber: number | null;
+  moduleNumber: number | null;
   lessons: ListeningLessonSummary[];
 }
 
@@ -40,9 +42,13 @@ export interface ListeningLesson {
   unitId: string;
   title: string;
   position: number;
+  lessonNumber: number | null;
   sourceUrl: string | null;
   transcript: string | null;
   audioUrl: string | null;
   videoUrl: string | null;
+  grammarUrl: string | null;
+  vocabularyUrl: string | null;
+  pronunciationUrl: string | null;
   unit: ListeningUnit & { source: ListeningSource };
 }
