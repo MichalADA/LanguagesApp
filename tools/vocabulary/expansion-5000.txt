@@ -1,0 +1,609 @@
+# phrase|conversation podstawy
+zovem se|nazywam się|Zovem se Marko.|Nazywam się Marko.
+moje ime je|mam na imię|Moje ime je Ana.|Mam na imię Ana.
+kako se prezivaš|jak masz na nazwisko
+prezivam se|mam na nazwisko|Prezivam se Kovač.|Mam na nazwisko Kovač.
+na ti|na ty|Možemo li biti na ti?|Czy możemy być na ty?
+na vi|na pan, pani|S njim sam na vi.|Zwracam się do niego per pan.
+na čemu smo|na czym stoimy
+kako si|jak się masz
+dobro sam|dobrze się czuję
+a ti|a ty
+ništa novo|nic nowego
+ne mogu se požaliti|nie mogę narzekać
+nije loše|nie jest źle
+moglo bi biti bolje|mogłoby być lepiej
+kako je prošao dan|jak minął dzień
+što radiš ovih dana|co ostatnio porabiasz
+čime se baviš|czym się zajmujesz
+gdje radiš|gdzie pracujesz
+gdje živiš|gdzie mieszkasz
+koliko imaš godina|ile masz lat
+iz Poljske sam|jestem z Polski
+živim u Poljskoj|mieszkam w Polsce
+prvi put sam ovdje|jestem tu pierwszy raz
+ovdje sam na odmoru|jestem tutaj na wakacjach
+ovdje sam poslovno|jestem tutaj służbowo
+putujem sam|podróżuję sam
+putujem s obitelji|podróżuję z rodziną
+dolazim iz|pochodzę z|Dolazim iz Krakova.|Pochodzę z Krakowa.
+rođen sam u|urodziłem się w|Rođen sam u Zagrebu.|Urodziłem się w Zagrzebiu.
+živim sam|mieszkam sam
+živim s roditeljima|mieszkam z rodzicami
+imam brata|mam brata
+jedinac sam|jestem jedynakiem
+u braku sam|jestem w związku małżeńskim
+nisam u braku|nie jestem w związku małżeńskim
+imam djecu|mam dzieci
+nemam djece|nie mam dzieci
+radim na daljinu|pracuję zdalnie
+radim za sebe|pracuję na własny rachunek
+trenutačno ne radim|obecnie nie pracuję
+učim hrvatski|uczę się chorwackiego
+govorim malo hrvatski|mówię trochę po chorwacku
+ne govorim hrvatski|nie mówię po chorwacku
+govorite li engleski|czy mówi pan/pani po angielsku
+možemo li govoriti poljski|czy możemy rozmawiać po polsku
+možete li ponoviti|czy może pan/pani powtórzyć
+molim vas, sporije|proszę wolniej
+nisam dobro čuo|nie dosłyszałem
+nisam dobro razumio|nie zrozumiałem dobrze
+kako se to kaže na hrvatskom|jak to się mówi po chorwacku
+kako se to piše|jak to się pisze
+možete li to napisati|czy może pan/pani to napisać
+možete li mi objasniti|czy może mi pan/pani wyjaśnić
+ne znam tu riječ|nie znam tego słowa
+što si rekao|co powiedziałeś
+jesam li dobro izgovorio|czy dobrze wymówiłem
+ispravi me ako pogriješim|popraw mnie, jeśli się pomylę
+pokušat ću na hrvatskom|spróbuję po chorwacku
+još uvijek učim|nadal się uczę
+zaboravio sam riječ|zapomniałem słowa
+razumijem više nego što govorim|rozumiem więcej, niż mówię
+kako se izgovara tvoje ime|jak wymawia się twoje imię
+možeš li mi dati primjer|czy możesz podać mi przykład
+sad mi je jasno|teraz rozumiem
+ne znam kako to objasniti|nie wiem, jak to wyjaśnić
+htio sam reći|chciałem powiedzieć|Htio sam reći nešto drugo.|Chciałem powiedzieć coś innego.
+mislim na|mam na myśli|Mislim na ovu knjigu.|Mam na myśli tę książkę.
+ne mislim tako|nie uważam tak
+razumiješ li me|czy mnie rozumiesz
+čuješ li me|czy mnie słyszysz
+vidiš li me|czy mnie widzisz
+oprosti što smetam|przepraszam, że przeszkadzam
+imate li trenutak|czy ma pan/pani chwilę
+mogu li nešto pitati|czy mogę o coś zapytać
+mogu li proći|czy mogę przejść
+izvolite|proszę, oto dla pana/pani|Izvolite vaš račun.|Proszę, oto pański rachunek.
+izvoli|proszę, weź|Izvoli, ovo je za tebe.|Proszę, to dla ciebie.
+samo trenutak|chwileczkę
+pričekajte malo|proszę chwilę zaczekać
+hvala lijepa|bardzo dziękuję
+hvala na pomoći|dziękuję za pomoc
+hvala na pozivu|dziękuję za zaproszenie
+hvala na svemu|dziękuję za wszystko
+hvala unaprijed|z góry dziękuję
+puno ti hvala|wielkie dzięki
+od srca hvala|dziękuję z całego serca
+ne treba|nie trzeba
+u redu je|wszystko w porządku
+oprostite na smetnji|przepraszam za przeszkadzanie
+nisam htio|nie chciałem
+nisam namjerno|nie zrobiłem tego celowo
+moja greška|mój błąd
+moja krivnja|moja wina
+nemoj se ljutiti|nie gniewaj się
+ne brini|nie martw się
+ništa se nije dogodilo|nic się nie stało
+sve je u redu|wszystko jest w porządku
+nema veze|nie szkodzi
+zaboravimo to|zapomnijmy o tym
+drago mi je što smo se upoznali|miło mi, że się poznaliśmy
+čuvaj se|uważaj na siebie
+čujemo se|będziemy w kontakcie
+vidimo se sutra|do zobaczenia jutro
+vidimo se uskoro|do zobaczenia wkrótce
+pozdravi obitelj|pozdrowienia dla rodziny
+pozdrav svima|pozdrawiam wszystkich
+ugodan vikend|miłego weekendu
+lijepo se provedi|baw się dobrze
+lijepo spavaj|śpij dobrze
+sretan rođendan|wszystkiego najlepszego z okazji urodzin
+sretan Božić|wesołych świąt Bożego Narodzenia
+sretan Uskrs|wesołych świąt Wielkanocy
+sretna Nova godina|szczęśliwego Nowego Roku
+čestitam od srca|gratuluję z całego serca
+želim ti sve najbolje|życzę ci wszystkiego najlepszego
+brz oporavak|szybkiego powrotu do zdrowia
+primi moju sućut|przyjmij moje kondolencje
+baš mi je žao|bardzo mi przykro
+svaka čast|pełen szacunek
+bravo za tebe|brawo dla ciebie
+ponosan sam na tebe|jestem z ciebie dumny
+sretno na ispitu|powodzenia na egzaminie
+držim ti palčeve|trzymam za ciebie kciuki
+uživaj|ciesz się chwilą
+iznenadio si me|zaskoczyłeś mnie
+stvarno mi je drago|naprawdę się cieszę
+kakvo iznenađenje|co za niespodzianka
+nisam to očekivao|nie spodziewałem się tego
+jedva čekam|nie mogę się doczekać
+veselim se susretu|cieszę się na spotkanie
+imaš li vremena|czy masz czas
+jesi li slobodan večeras|czy jesteś wolny dziś wieczorem
+hoćemo li na kavu|może pójdziemy na kawę
+želiš li nam se pridružiti|czy chcesz do nas dołączyć
+mogu li povesti prijatelja|czy mogę zabrać kolegę
+što kažeš na subotu|co powiesz na sobotę
+gdje ćemo se naći|gdzie się spotkamy
+u koliko sati|o której godzinie
+meni odgovara|mnie pasuje
+meni ne odgovara|mnie nie pasuje
+dogovoreno|umowa stoi
+može i ranije|może być też wcześniej
+radije neki drugi dan|wolałbym innego dnia
+javim ti na vrijeme|dam ci znać na czas
+kasnim deset minuta|spóźnię się dziesięć minut
+na putu sam|jestem w drodze
+već sam stigao|już dotarłem
+čekam te ispred|czekam na ciebie przed|Čekam te ispred hotela.|Czekam na ciebie przed hotelem.
+stižem uskoro|zaraz będę
+nemoj me čekati|nie czekaj na mnie
+moram otkazati|muszę odwołać
+nešto mi je iskrsnulo|coś mi wypadło
+možemo li pomaknuti sastanak|czy możemy przesunąć spotkanie
+hvala što si došao|dziękuję, że przyszedłeś
+uđi slobodno|wejdź śmiało
+osjećaj se kao kod kuće|czuj się jak u siebie
+mogu li ti nešto ponuditi|czy mogę ci coś zaproponować
+želiš li nešto popiti|czy chcesz się czegoś napić
+posluži se|poczęstuj się
+sjedi gdje želiš|usiądź, gdzie chcesz
+izuj cipele|zdejmij buty
+ne moraš se izuvati|nie musisz zdejmować butów
+ovo je za tebe|to dla ciebie
+nisi trebao|nie trzeba było
+hvala na gostoprimstvu|dziękuję za gościnę
+bilo je odlično|było świetnie
+moram polako krenuti|muszę już powoli ruszać
+otpratit ću te|odprowadzę cię
+javi kad stigneš|daj znać, kiedy dotrzesz
+kako ti se sviđa|jak ci się podoba
+sviđa mi se|podoba mi się
+ne sviđa mi se|nie podoba mi się
+baš je lijepo|jest naprawdę ładnie
+nije moj stil|to nie mój styl
+što preporučuješ|co polecasz
+preporučujem ti|polecam ci|Preporučujem ti ovu knjigu.|Polecam ci tę książkę.
+ti odluči|ty zdecyduj
+kako god želiš|jakkolwiek zechcesz
+slažem se s tobom|zgadzam się z tobą
+ne slažem se s tobom|nie zgadzam się z tobą
+imaš pravo|masz rację
+nemaš pravo|nie masz racji
+možda si u pravu|może masz rację
+nisam siguran|nie jestem pewien
+koliko ja znam|o ile wiem
+koliko se sjećam|o ile pamiętam
+ako se ne varam|jeśli się nie mylę
+pošteno govoreći|uczciwie mówiąc
+iskreno rečeno|szczerze mówiąc
+s jedne strane|z jednej strony
+s druge strane|z drugiej strony
+u svakom slučaju|w każdym razie
+bez obzira na to|niezależnie od tego
+što se mene tiče|jeśli o mnie chodzi
+ima smisla|to ma sens
+nema smisla|to nie ma sensu
+to je istina|to prawda
+nije istina|to nieprawda
+nemam pojma|nie mam pojęcia
+teško je reći|trudno powiedzieć
+ovisi o situaciji|to zależy od sytuacji
+zvuči dobro|brzmi dobrze
+zvuči zanimljivo|brzmi interesująco
+zvuči čudno|brzmi dziwnie
+to me zanima|to mnie interesuje
+ne zanima me|nie interesuje mnie to
+što misliš o tome|co o tym myślisz
+zašto tako misliš|dlaczego tak uważasz
+imaš li neki prijedlog|czy masz jakąś propozycję
+imaš li bolju ideju|czy masz lepszy pomysł
+ne bih se složio|nie zgodziłbym się
+razumijem što želiš reći|rozumiem, co chcesz powiedzieć
+u tome je problem|w tym tkwi problem
+nije u tome stvar|nie o to chodzi
+upravo o tome govorim|właśnie o tym mówię
+vratimo se na temu|wróćmy do tematu
+promijenimo temu|zmieńmy temat
+ne želim o tome razgovarati|nie chcę o tym rozmawiać
+ostavimo to za kasnije|zostawmy to na później
+imaš li što dodati|czy masz coś do dodania
+to je sve|to wszystko
+za sada toliko|na razie tyle
+mogu li ti pomoći|czy mogę ci pomóc
+treba mi pomoć|potrzebuję pomocy
+možeš li mi pomoći|czy możesz mi pomóc
+ne mogu sam|nie dam rady sam
+snaći ću se|poradzę sobie
+pusti mene|pozwól mnie to zrobić
+prepusti to meni|zostaw to mnie
+pokaži mi kako|pokaż mi jak
+možeš li mi učiniti uslugu|czy możesz wyświadczyć mi przysługę
+imaš li nešto protiv|czy masz coś przeciwko
+smeta li ti|czy ci przeszkadza
+ne smeta mi|nie przeszkadza mi
+nemam ništa protiv|nie mam nic przeciwko
+smijem li sjesti|czy mogę usiąść
+smijem li otvoriti prozor|czy mogę otworzyć okno
+mogu li posuditi olovku|czy mogę pożyczyć długopis
+vratit ću ti sutra|oddam ci jutro
+samo polako|spokojnie, bez pośpiechu
+nema žurbe|nie ma pośpiechu
+pazi na sebe|dbaj o siebie
+pazi gdje hodaš|uważaj, gdzie idziesz
+pazi na stepenice|uważaj na schody
+makni se malo|przesuń się trochę
+napravi mjesta|zrób miejsce
+ostavi me na miru|zostaw mnie w spokoju
+pusti me da završim|pozwól mi skończyć
+nemoj me prekidati|nie przerywaj mi
+slušaj me do kraja|wysłuchaj mnie do końca
+nije hitno|to nie jest pilne
+to može pričekati|to może poczekać
+učini to odmah|zrób to od razu
+nemoj zaboraviti|nie zapomnij
+podsjeti me kasnije|przypomnij mi później
+ne mogu obećati|nie mogę obiecać
+dajem ti riječ|daję ci słowo
+možeš računati na mene|możesz na mnie liczyć
+vjeruj mi|uwierz mi
+ne vjerujem ti|nie wierzę ci
+šalim se|żartuję
+ne šalim se|nie żartuję
+nemoj to shvatiti ozbiljno|nie bierz tego na poważnie
+nije smiješno|to nie jest śmieszne
+nasamario si me|nabrałeś mnie
+baš si me nasmijao|ale mnie rozśmieszyłeś
+što se dogodilo|co się stało
+što nije u redu|co jest nie tak
+jesi li dobro|czy wszystko z tobą w porządku
+kako se osjećaš|jak się czujesz
+nisam najbolje|nie czuję się najlepiej
+umoran sam|jestem zmęczony
+gladan sam|jestem głodny
+žedan sam|chce mi się pić
+hladno mi je|jest mi zimno
+vruće mi je|jest mi gorąco
+spava mi se|chce mi się spać
+žuri mi se|spieszę się
+dosadno mi je|nudzę się
+strah me je|boję się
+sram me je|wstydzę się
+brinem se za tebe|martwię się o ciebie
+nedostaješ mi|tęsknię za tobą
+mislim na tebe|myślę o tobie
+trebam malo mira|potrzebuję trochę spokoju
+želim biti sam|chcę być sam
+ne da mi se|nie chce mi się
+nemam volje|nie mam ochoty
+nemam snage|nie mam siły
+sve mi ide na živce|wszystko działa mi na nerwy
+ljut sam na sebe|jestem zły na siebie
+laknulo mi je|ulżyło mi
+bolje mi je|czuję się lepiej
+to me veseli|to mnie cieszy
+to me rastužuje|to mnie smuci
+to me iznenađuje|to mnie zaskakuje
+ne mogu vjerovati|nie mogę uwierzyć
+ne mogu to podnijeti|nie mogę tego znieść
+previše mi je|to dla mnie za dużo
+moram se odmoriti|muszę odpocząć
+trebam predah|potrzebuję wytchnienia
+sve će biti dobro|wszystko będzie dobrze
+proći će|to minie
+nije kraj svijeta|to nie koniec świata
+razgovarajmo o tome|porozmawiajmy o tym
+tu sam za tebe|jestem tu dla ciebie
+hvala što me slušaš|dziękuję, że mnie słuchasz
+što ima za ručak|co jest na obiad
+jesi li već jeo|czy już jadłeś
+idem na posao|idę do pracy
+vraćam se kući|wracam do domu
+idem spavati|idę spać
+moram rano ustati|muszę wcześnie wstać
+ostao sam kod kuće|zostałem w domu
+imam slobodan dan|mam dzień wolny
+nemam danas vremena|nie mam dzisiaj czasu
+što planiraš za vikend|co planujesz na weekend
+ništa nisam planirao|niczego nie planowałem
+vidjet ću još|jeszcze zobaczę
+idemo zajedno|chodźmy razem
+možemo pješice|możemy pójść pieszo
+hoćeš li sa mnom|czy pójdziesz ze mną
+čekaj me ovdje|zaczekaj na mnie tutaj
+odmah se vraćam|zaraz wracam
+neću dugo|nie zajmie mi to długo
+# phrase|travel podstawy
+oprostite, gdje je stanica|przepraszam, gdzie jest przystanek
+kako mogu doći do centra|jak mogę dotrzeć do centrum
+je li daleko odavde|czy to daleko stąd
+koliko treba pješice|ile czasu zajmuje dojście pieszo
+idete u krivom smjeru|idzie pan/pani w złym kierunku
+skrenite lijevo|proszę skręcić w lewo
+skrenite desno|proszę skręcić w prawo
+idite ravno|proszę iść prosto
+prijeđite cestu|proszę przejść przez jezdnię
+na sljedećem raskrižju|na następnym skrzyżowaniu
+na drugoj strani ulice|po drugiej stronie ulicy
+na kraju ulice|na końcu ulicy
+odmah iza ugla|zaraz za rogiem
+ne možete promašiti|nie sposób nie trafić
+možete li pokazati na karti|czy może pan/pani pokazać na mapie
+mislim da sam se izgubio|chyba się zgubiłem
+tražim ovu adresu|szukam tego adresu
+je li ovo pravi put|czy to właściwa droga
+možete li me odvesti do hotela|czy może mnie pan/pani zawieźć do hotelu
+koliko košta vožnja|ile kosztuje przejazd
+molim vas, stanite ovdje|proszę zatrzymać się tutaj
+vozi li ovaj autobus do centra|czy ten autobus jedzie do centrum
+gdje se kupuju karte|gdzie kupuje się bilety
+jednu kartu, molim|poproszę jeden bilet
+povratnu kartu, molim|poproszę bilet powrotny
+moram li presjedati|czy muszę się przesiadać
+gdje trebam izaći|gdzie mam wysiąść
+koja je sljedeća stanica|jaki jest następny przystanek
+je li ovo mjesto slobodno|czy to miejsce jest wolne
+ovo je moje mjesto|to moje miejsce
+koliko kasni vlak|ile spóźnia się pociąg
+s kojeg perona polazi|z którego peronu odjeżdża
+propustio sam autobus|uciekł mi autobus
+kad polazi zadnji autobus|kiedy odjeżdża ostatni autobus
+vrijedi li ova karta|czy ten bilet jest ważny
+moram li poništiti kartu|czy muszę skasować bilet
+mogu li platiti kod vozača|czy mogę zapłacić u kierowcy
+imate li sitno|czy ma pan/pani drobne
+nemam sitnog novca|nie mam drobnych
+želim unajmiti auto|chcę wynająć samochód
+je li osiguranje uključeno|czy ubezpieczenie jest wliczone
+mogu li vratiti auto drugdje|czy mogę zwrócić samochód w innym miejscu
+pun spremnik, molim|poproszę pełny bak
+gdje je najbliža benzinska postaja|gdzie jest najbliższa stacja benzynowa
+smijem li ovdje parkirati|czy mogę tutaj zaparkować
+koliko košta sat parkiranja|ile kosztuje godzina parkowania
+auto mi se pokvario|zepsuł mi się samochód
+ne mogu upaliti auto|nie mogę uruchomić samochodu
+pukla mi je guma|pękła mi opona
+trebam vučnu službu|potrzebuję pomocy drogowej
+nestalo mi je goriva|skończyło mi się paliwo
+ima li ozlijeđenih|czy są ranni
+zovite policiju|proszę zadzwonić na policję
+izgubio sam putovnicu|zgubiłem paszport
+netko mi je ukrao torbu|ktoś ukradł mi torbę
+želim prijaviti krađu|chcę zgłosić kradzież
+gdje je izlaz za ukrcaj|gdzie jest bramka do wejścia na pokład
+kada počinje ukrcaj|kiedy zaczyna się wejście na pokład
+imam samo ručnu prtljagu|mam tylko bagaż podręczny
+moja prtljaga nije stigla|mój bagaż nie dotarł
+moj je let otkazan|mój lot został odwołany
+mogu li promijeniti kartu|czy mogę zmienić bilet
+želim mjesto do prozora|chcę miejsce przy oknie
+želim mjesto do prolaza|chcę miejsce przy przejściu
+koliko traje let|ile trwa lot
+moram uhvatiti vezu|muszę zdążyć na połączenie
+ništa za prijaviti|nic do oclenia
+imam nešto za prijaviti|mam coś do oclenia
+samo prolazim|tylko przejeżdżam
+koliko dugo ostajete|jak długo pan/pani zostaje
+ostajem tjedan dana|zostaję na tydzień
+imam povratnu kartu|mam bilet powrotny
+# phrase|travel home podstawy
+imam rezervaciju|mam rezerwację
+rezervacija je na moje ime|rezerwacja jest na moje nazwisko
+imate li slobodnih soba|czy mają państwo wolne pokoje
+za dvije osobe|dla dwóch osób
+za jednu noć|na jedną noc
+je li doručak uključen|czy śniadanie jest wliczone
+koliko košta noćenje|ile kosztuje nocleg
+mogu li vidjeti sobu|czy mogę zobaczyć pokój
+ima li soba balkon|czy pokój ma balkon
+ima li u sobi kupaonica|czy w pokoju jest łazienka
+u koliko je doručak|o której jest śniadanie
+do kada se moram odjaviti|do kiedy muszę się wymeldować
+mogu li ostaviti prtljagu|czy mogę zostawić bagaż
+koja je lozinka za Wi-Fi|jakie jest hasło do Wi-Fi
+ne radi klima|nie działa klimatyzacja
+nema tople vode|nie ma ciepłej wody
+soba nije očišćena|pokój nie został posprzątany
+mogu li dobiti drugi ručnik|czy mogę dostać drugi ręcznik
+molim dodatnu deku|poproszę dodatkowy koc
+previše je bučno|jest zbyt głośno
+mogu li promijeniti sobu|czy mogę zmienić pokój
+ključ ne radi|klucz nie działa
+ostao sam vani bez ključa|zostałem na zewnątrz bez klucza
+želim produljiti boravak|chcę przedłużyć pobyt
+mogu li se kasnije odjaviti|czy mogę wymeldować się później
+molim račun na tvrtku|poproszę fakturę na firmę
+možete li pozvati taksi|czy może pan/pani zamówić taksówkę
+hvala na ugodnom boravku|dziękuję za miły pobyt
+tražim stan za najam|szukam mieszkania do wynajęcia
+kolika je mjesečna najamnina|ile wynosi miesięczny czynsz najmu
+jesu li režije uključene|czy opłaty są wliczone
+koliki je polog|ile wynosi kaucja
+je li stan namješten|czy mieszkanie jest umeblowane
+jesu li kućni ljubimci dopušteni|czy zwierzęta domowe są dozwolone
+kada se mogu useliti|kiedy mogę się wprowadzić
+koliko traje ugovor|jak długo obowiązuje umowa
+ima li perilicu rublja|czy jest pralka
+kakvo je grijanje|jakie jest ogrzewanie
+# phrase|food podstawy
+stol za dvoje, molim|poproszę stolik dla dwojga
+imamo rezerviran stol|mamy zarezerwowany stolik
+možemo li sjesti vani|czy możemy usiąść na zewnątrz
+mogu li dobiti jelovnik|czy mogę dostać menu
+što preporučujete|co pan/pani poleca
+koje je jelo dana|jakie jest danie dnia
+još nismo odlučili|jeszcze nie zdecydowaliśmy
+trebamo još malo vremena|potrzebujemy jeszcze trochę czasu
+spremni smo naručiti|jesteśmy gotowi zamówić
+za mene isto|dla mnie to samo
+bez luka, molim|poproszę bez cebuli
+umak sa strane|sos osobno
+je li ovo ljuto|czy to jest ostre
+sadrži li ovo orašaste plodove|czy to zawiera orzechy
+alergičan sam na kikiriki|mam alergię na orzeszki ziemne
+ne jedem meso|nie jem mięsa
+imate li vegetarijansko jelo|czy mają państwo danie wegetariańskie
+mogu li dobiti manju porciju|czy mogę dostać mniejszą porcję
+vodu iz slavine, molim|poproszę wodę z kranu
+bez leda, molim|poproszę bez lodu
+još jednu kavu, molim|poproszę jeszcze jedną kawę
+kavu za van|kawę na wynos
+za ovdje ili za van|na miejscu czy na wynos
+možete li ovo zapakirati|czy może pan/pani to zapakować
+ovo nisam naručio|tego nie zamawiałem
+nedostaje nam jedno jelo|brakuje nam jednego dania
+jelo je hladno|danie jest zimne
+meso nije dovoljno pečeno|mięso jest niedopieczone
+bilo je ukusno|było smaczne
+račun, molim|poproszę rachunek
+možemo li platiti odvojeno|czy możemy zapłacić osobno
+plaćamo zajedno|płacimy razem
+je li napojnica uključena|czy napiwek jest wliczony
+zadržite ostatak|reszty nie trzeba
+mislim da je račun pogrešan|chyba rachunek jest błędny
+možete li donijeti žlicu|czy może pan/pani przynieść łyżkę
+mogu li dobiti još kruha|czy mogę dostać jeszcze chleba
+što ćete popiti|czego się pan/pani napije
+što ćete jesti|co będzie pan/pani jeść
+# phrase|shopping podstawy
+samo gledam|tylko się rozglądam
+tražim poklon|szukam prezentu
+imate li ovo u drugoj boji|czy mają państwo to w innym kolorze
+imate li veći broj|czy mają państwo większy rozmiar
+imate li manji broj|czy mają państwo mniejszy rozmiar
+gdje je kabina za presvlačenje|gdzie jest przymierzalnia
+mogu li ovo isprobati|czy mogę to przymierzyć
+ovo mi je premalo|to jest na mnie za małe
+ovo mi je preveliko|to jest na mnie za duże
+dobro mi stoji|dobrze na mnie leży
+uzet ću ovo|wezmę to
+koliko stoji|ile kosztuje
+je li ovo na sniženju|czy to jest przecenione
+imate li nešto jeftinije|czy mają państwo coś tańszego
+mogu li platiti karticom|czy mogę zapłacić kartą
+primamo samo gotovinu|przyjmujemy tylko gotówkę
+plaćanje je odbijeno|płatność została odrzucona
+želite li vrećicu|czy chce pan/pani torbę
+imam svoju torbu|mam własną torbę
+trebam račun|potrzebuję paragonu
+mogu li ovo vratiti|czy mogę to zwrócić
+želim zamijeniti proizvod|chcę wymienić produkt
+ovo je oštećeno|to jest uszkodzone
+ne radi kako treba|nie działa jak należy
+imam jamstvo|mam gwarancję
+nemam više račun|nie mam już paragonu
+kada će opet biti dostupno|kiedy znów będzie dostępne
+možete li mi to naručiti|czy może mi pan/pani to zamówić
+koliko traje dostava|ile trwa dostawa
+mogu li preuzeti osobno|czy mogę odebrać osobiście
+je li cijena po kilogramu|czy cena jest za kilogram
+pola kilograma, molim|poproszę pół kilograma
+narežite na tanke kriške|proszę pokroić w cienkie plasterki
+samo toliko|tylko tyle
+još nešto|coś jeszcze
+ne, hvala|nie, dziękuję
+izvolite račun|proszę, oto paragon
+povrat samo uz račun|zwrot tylko z paragonem
+# phrase|health podstawy
+trebam liječnika|potrzebuję lekarza
+pozovite hitnu pomoć|wezwijcie pogotowie
+ne mogu disati|nie mogę oddychać
+boli me glava|boli mnie głowa
+boli me grlo|boli mnie gardło
+boli me zub|boli mnie ząb
+boli me trbuh|boli mnie brzuch
+imam temperaturu|mam gorączkę
+vrti mi se u glavi|kręci mi się w głowie
+muka mi je|jest mi niedobrze
+imam proljev|mam biegunkę
+imam zatvor|mam zaparcie
+ne mogu spavati|nie mogę spać
+kašljem već nekoliko dana|kaszlę już od kilku dni
+boli me kad gutam|boli mnie przy przełykaniu
+ovdje me boli|tutaj mnie boli
+bol je sve jača|ból jest coraz silniejszy
+pao sam|upadłem
+porezao sam se|skaleczyłem się
+uganuo sam gležanj|skręciłem kostkę
+ubola me osa|użądliła mnie osa
+imam alergiju|mam alergię
+uzimam ove lijekove|przyjmuję te leki
+imam zdravstveno osiguranje|mam ubezpieczenie zdrowotne
+želim se naručiti na pregled|chcę umówić się na badanie
+imam zakazan pregled|mam umówione badanie
+koliko dugo to traje|jak długo to trwa
+jeste li već imali takve tegobe|czy miał pan/pani wcześniej takie dolegliwości
+udahnite duboko|proszę wziąć głęboki wdech
+zadržite dah|proszę wstrzymać oddech
+otvorite usta|proszę otworzyć usta
+možete se odjenuti|może się pan/pani ubrać
+koliko puta dnevno|ile razy dziennie
+prije ili poslije jela|przed czy po jedzeniu
+koliko dana trebam uzimati lijek|przez ile dni mam przyjmować lek
+treba li mi recept|czy potrzebuję recepty
+mogu li ovo uzimati s drugim lijekovima|czy mogę to przyjmować z innymi lekami
+kada će biti nalazi|kiedy będą wyniki
+kada trebam doći na kontrolu|kiedy mam przyjść na kontrolę
+možete li mi dati potvrdu|czy może mi pan/pani dać zaświadczenie
+# phrase|work podstawy
+radim od kuće|pracuję z domu
+počinjem raditi u devet|zaczynam pracę o dziewiątej
+završavam u pet|kończę o piątej
+imam sastanak|mam spotkanie
+na pauzi sam|jestem na przerwie
+danas sam na godišnjem|jestem dziś na urlopie
+nisam u uredu|nie ma mnie w biurze
+možete li mi poslati e-mail|czy może mi pan/pani wysłać e-mail
+poslat ću ti poruku|wyślę ci wiadomość
+poslao sam u privitku|wysłałem w załączniku
+nisam dobio poruku|nie dostałem wiadomości
+možeš li provjeriti|czy możesz sprawdzić
+javim ti kad završim|dam ci znać, kiedy skończę
+trebam više vremena|potrzebuję więcej czasu
+koji je rok|jaki jest termin
+što je prioritet|co jest priorytetem
+tko je za to zadužen|kto za to odpowiada
+možemo li podijeliti posao|czy możemy podzielić pracę
+završio sam svoj dio|skończyłem swoją część
+ostalo je još malo|zostało jeszcze trochę
+imamo mali problem|mamy mały problem
+radim na tome|pracuję nad tym
+još nije gotovo|jeszcze nie jest gotowe
+riješit ćemo to|rozwiążemy to
+molim potvrdu primitka|proszę o potwierdzenie otrzymania
+hvala na brzom odgovoru|dziękuję za szybką odpowiedź
+javite mi ako imate pitanja|proszę dać znać, jeśli ma pan/pani pytania
+stojim vam na raspolaganju|pozostaję do państwa dyspozycji
+srdačan pozdrav|serdeczne pozdrowienia
+s poštovanjem|z poważaniem
+veza se prekinula|połączenie zostało przerwane
+ne čujem vas dobro|słabo pana/panią słyszę
+isključen ti je mikrofon|masz wyłączony mikrofon
+možeš li podijeliti ekran|czy możesz udostępnić ekran
+kasni mi zvuk|mam opóźniony dźwięk
+nestala je struja|zabrakło prądu
+nemam pristup|nie mam dostępu
+zaboravio sam lozinku|zapomniałem hasła
+ne mogu se prijaviti|nie mogę się zalogować
+račun mi je zaključan|moje konto jest zablokowane
+ponovno pokreni računalo|uruchom ponownie komputer
+spremi promjene|zapisz zmiany
+ne zatvaraj prozor|nie zamykaj okna
+pritisni ovu tipku|naciśnij ten klawisz
+pošalji mi poveznicu|wyślij mi link
+mogu li te nazvati|czy mogę do ciebie zadzwonić
+nazvat ću te kasnije|zadzwonię do ciebie później
+trenutačno ne mogu razgovarati|teraz nie mogę rozmawiać
+ostavite poruku nakon signala|proszę zostawić wiadomość po sygnale
+pogrešan broj|pomyłka, zły numer
