@@ -31,4 +31,6 @@ export interface VocabularyEntry {
   reviewedAt?: number;
 }
 
+export const VOCABULARY_SUPPLEMENT_TAG = "uzupełnienie";
+
 export type ContentStatus = "generated" | "reviewed" | "verified";

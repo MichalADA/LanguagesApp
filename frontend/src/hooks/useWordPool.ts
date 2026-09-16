@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import type { PoolSelection } from "@/progress/types";
-import type { VocabularyEntry } from "@/vocabulary/types";
+import { VOCABULARY_SUPPLEMENT_TAG, type VocabularyEntry } from "@/vocabulary/types";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useProgress } from "@/progress/ProgressProvider";
 import { isDifficult, isLearned, needsReview, statFor } from "@/progress/service";
@@ -27,6 +27,9 @@ export function useWordPool(selection: PoolSelection): VocabularyEntry[] {
       }
       case "block":
         pool = entriesForLevel(pool, levelForLegacyBlock(source.block, course.blocks), course.blocks);
+        break;
+      case "supplement":
+        pool = pool.filter((e) => e.tags.includes(VOCABULARY_SUPPLEMENT_TAG));
         break;
       case "learned":
         pool = pool.filter((e) => isLearned(statFor(state, courseId, e)));

@@ -376,6 +376,8 @@ export const pl: Dictionary = {
   },
   quickTopics: {"food":"jedzenie","home":"dom","work":"praca","people":"ludzie","travel":"podróże","transportation":"transport","media":"media","nature":"przyroda","animals":"zwierzęta","body":"ciało","health":"zdrowie","clothes":"ubrania","weather":"pogoda","sport":"sport","school":"szkoła","family":"rodzina","technology":"technologia","shopping":"zakupy"},
   pool: {
+    supplement: "Uzupełnienie podstaw",
+    supplementNote: "{n} nowych słów i zwrotów · codzienne sytuacje",
     step1: "1 — wybierz poziom",
     block: "Blok {n} · {range}",
     reviews: "Powtórki",

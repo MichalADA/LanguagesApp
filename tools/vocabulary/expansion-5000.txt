@@ -5,10 +5,10 @@ kako se prezivaš|jak masz na nazwisko|Kako se prezivaš?|Jak masz na nazwisko?
 prezivam se|mam na nazwisko|Prezivam se Kovač.|Mam na nazwisko Kovač.
 na ti|na ty|Možemo li biti na ti?|Czy możemy być na ty?
 na vi|na pan, pani|S njim sam na vi.|Zwracam się do niego per pan.
-na čemu smo|na czym stoimy|Na čemu smo?|Na czym stoimy?
+na čemu smo|na czym stoimy|Na čemu smo.|Na czym stoimy.
 kako si|jak się masz|Kako si?|Jak się masz?
 dobro sam|dobrze się czuję|Dobro sam.|Dobrze się czuję.
-a ti|a ty|A ti.|A ty.
+a ti|a ty|A ti?|A ty?
 ništa novo|nic nowego|Ništa novo.|Nic nowego.
 ne mogu se požaliti|nie mogę narzekać|Ne mogu se požaliti.|Nie mogę narzekać.
 nije loše|nie jest źle|Nije loše.|Nie jest źle.
@@ -42,8 +42,8 @@ trenutačno ne radim|obecnie nie pracuję|Trenutačno ne radim.|Obecnie nie prac
 učim hrvatski|uczę się chorwackiego|Učim hrvatski.|Uczę się chorwackiego.
 govorim malo hrvatski|mówię trochę po chorwacku|Govorim malo hrvatski.|Mówię trochę po chorwacku.
 ne govorim hrvatski|nie mówię po chorwacku|Ne govorim hrvatski.|Nie mówię po chorwacku.
-govorite li engleski|czy mówi pan/pani po angielsku|Govorite li engleski.|Czy mówi pan/pani po angielsku.
-možemo li govoriti poljski|czy możemy rozmawiać po polsku|Možemo li govoriti poljski.|Czy możemy rozmawiać po polsku.
+govorite li engleski|czy mówi pan/pani po angielsku|Govorite li engleski?|Czy mówi pan/pani po angielsku?
+možemo li govoriti poljski|czy możemy rozmawiać po polsku|Možemo li govoriti poljski?|Czy możemy rozmawiać po polsku?
 možete li ponoviti|czy może pan/pani powtórzyć|Možete li ponoviti?|Czy może pan/pani powtórzyć?
 molim vas, sporije|proszę wolniej|Molim vas, sporije.|Proszę wolniej.
 nisam dobro čuo|nie dosłyszałem|Nisam dobro čuo.|Nie dosłyszałem.
@@ -54,7 +54,7 @@ možete li to napisati|czy może pan/pani to napisać|Možete li to napisati?|Cz
 možete li mi objasniti|czy może mi pan/pani wyjaśnić|Možete li mi objasniti?|Czy może mi pan/pani wyjaśnić?
 ne znam tu riječ|nie znam tego słowa|Ne znam tu riječ.|Nie znam tego słowa.
 što si rekao|co powiedziałeś|Što si rekao?|Co powiedziałeś?
-jesam li dobro izgovorio|czy dobrze wymówiłem|Jesam li dobro izgovorio.|Czy dobrze wymówiłem.
+jesam li dobro izgovorio|czy dobrze wymówiłem|Jesam li dobro izgovorio?|Czy dobrze wymówiłem?
 ispravi me ako pogriješim|popraw mnie, jeśli się pomylę|Ispravi me ako pogriješim.|Popraw mnie, jeśli się pomylę.
 pokušat ću na hrvatskom|spróbuję po chorwacku|Pokušat ću na hrvatskom.|Spróbuję po chorwacku.
 još uvijek učim|nadal się uczę|Još uvijek učim.|Nadal się uczę.
@@ -67,9 +67,9 @@ ne znam kako to objasniti|nie wiem, jak to wyjaśnić|Ne znam kako to objasniti.
 htio sam reći|chciałem powiedzieć|Htio sam reći nešto drugo.|Chciałem powiedzieć coś innego.
 mislim na|mam na myśli|Mislim na ovu knjigu.|Mam na myśli tę książkę.
 ne mislim tako|nie uważam tak|Ne mislim tako.|Nie uważam tak.
-razumiješ li me|czy mnie rozumiesz|Razumiješ li me.|Czy mnie rozumiesz.
-čuješ li me|czy mnie słyszysz|Čuješ li me.|Czy mnie słyszysz.
-vidiš li me|czy mnie widzisz|Vidiš li me.|Czy mnie widzisz.
+razumiješ li me|czy mnie rozumiesz|Razumiješ li me?|Czy mnie rozumiesz?
+čuješ li me|czy mnie słyszysz|Čuješ li me?|Czy mnie słyszysz?
+vidiš li me|czy mnie widzisz|Vidiš li me?|Czy mnie widzisz?
 oprosti što smetam|przepraszam, że przeszkadzam|Oprosti što smetam.|Przepraszam, że przeszkadzam.
 imate li trenutak|czy ma pan/pani chwilę|Imate li trenutak?|Czy ma pan/pani chwilę?
 mogu li nešto pitati|czy mogę o coś zapytać|Mogu li nešto pitati?|Czy mogę o coś zapytać?
@@ -131,12 +131,12 @@ jedva čekam|nie mogę się doczekać|Jedva čekam.|Nie mogę się doczekać.
 veselim se susretu|cieszę się na spotkanie|Veselim se susretu.|Cieszę się na spotkanie.
 imaš li vremena|czy masz czas|Imaš li vremena?|Czy masz czas?
 jesi li slobodan večeras|czy jesteś wolny dziś wieczorem|Jesi li slobodan večeras?|Czy jesteś wolny dziś wieczorem?
-hoćemo li na kavu|może pójdziemy na kawę|Hoćemo li na kavu.|Może pójdziemy na kawę.
+hoćemo li na kavu|może pójdziemy na kawę|Hoćemo li na kavu?|Może pójdziemy na kawę?
 želiš li nam se pridružiti|czy chcesz do nas dołączyć|Želiš li nam se pridružiti?|Czy chcesz do nas dołączyć?
 mogu li povesti prijatelja|czy mogę zabrać kolegę|Mogu li povesti prijatelja?|Czy mogę zabrać kolegę?
 što kažeš na subotu|co powiesz na sobotę|Što kažeš na subotu?|Co powiesz na sobotę?
 gdje ćemo se naći|gdzie się spotkamy|Gdje ćemo se naći?|Gdzie się spotkamy?
-u koliko sati|o której godzinie|U koliko sati.|O której godzinie.
+u koliko sati|o której godzinie|U koliko sati?|O której godzinie?
 meni odgovara|mnie pasuje|Meni odgovara.|Mnie pasuje.
 meni ne odgovara|mnie nie pasuje|Meni ne odgovara.|Mnie nie pasuje.
 dogovoreno|umowa stoi|Dogovoreno.|Umowa stoi.
@@ -149,9 +149,9 @@ već sam stigao|już dotarłem|Već sam stigao.|Już dotarłem.
 čekam te ispred|czekam na ciebie przed|Čekam te ispred hotela.|Czekam na ciebie przed hotelem.
 stižem uskoro|zaraz będę|Stižem uskoro.|Zaraz będę.
 nemoj me čekati|nie czekaj na mnie|Nemoj me čekati.|Nie czekaj na mnie.
-moram otkazati|muszę odwołać|Moram otkazati.|Muszę odwołać.
+moram otkazati|muszę odwołać|Moram otkazati rezervaciju.|Muszę odwołać rezerwację.
 nešto mi je iskrsnulo|coś mi wypadło|Nešto mi je iskrsnulo.|Coś mi wypadło.
-možemo li pomaknuti sastanak|czy możemy przesunąć spotkanie|Možemo li pomaknuti sastanak.|Czy możemy przesunąć spotkanie.
+možemo li pomaknuti sastanak|czy możemy przesunąć spotkanie|Možemo li pomaknuti sastanak?|Czy możemy przesunąć spotkanie?
 hvala što si došao|dziękuję, że przyszedłeś|Hvala što si došao.|Dziękuję, że przyszedłeś.
 uđi slobodno|wejdź śmiało|Uđi slobodno.|Wejdź śmiało.
 osjećaj se kao kod kuće|czuj się jak u siebie|Osjećaj se kao kod kuće.|Czuj się jak u siebie.
@@ -176,23 +176,23 @@ nije moj stil|to nie mój styl|Nije moj stil.|To nie mój styl.
 što preporučuješ|co polecasz|Što preporučuješ?|Co polecasz?
 preporučujem ti|polecam ci|Preporučujem ti ovu knjigu.|Polecam ci tę książkę.
 ti odluči|ty zdecyduj|Ti odluči.|Ty zdecyduj.
-kako god želiš|jakkolwiek zechcesz|Kako god želiš?|Jakkolwiek zechcesz?
+kako god želiš|jakkolwiek zechcesz|Kako god želiš.|Jakkolwiek zechcesz.
 slažem se s tobom|zgadzam się z tobą|Slažem se s tobom.|Zgadzam się z tobą.
 ne slažem se s tobom|nie zgadzam się z tobą|Ne slažem se s tobom.|Nie zgadzam się z tobą.
 imaš pravo|masz rację|Imaš pravo.|Masz rację.
 nemaš pravo|nie masz racji|Nemaš pravo.|Nie masz racji.
 možda si u pravu|może masz rację|Možda si u pravu.|Może masz rację.
 nisam siguran|nie jestem pewien|Nisam siguran.|Nie jestem pewien.
-koliko ja znam|o ile wiem|Koliko ja znam?|O ile wiem?
-koliko se sjećam|o ile pamiętam|Koliko se sjećam?|O ile pamiętam?
-ako se ne varam|jeśli się nie mylę|Ako se ne varam.|Jeśli się nie mylę.
-pošteno govoreći|uczciwie mówiąc|Pošteno govoreći.|Uczciwie mówiąc.
-iskreno rečeno|szczerze mówiąc|Iskreno rečeno.|Szczerze mówiąc.
-s jedne strane|z jednej strony|S jedne strane.|Z jednej strony.
-s druge strane|z drugiej strony|S druge strane.|Z drugiej strony.
-u svakom slučaju|w każdym razie|U svakom slučaju.|W każdym razie.
-bez obzira na to|niezależnie od tego|Bez obzira na to.|Niezależnie od tego.
-što se mene tiče|jeśli o mnie chodzi|Što se mene tiče?|Jeśli o mnie chodzi?
+koliko ja znam|o ile wiem|Koliko ja znam, trgovina je otvorena.|O ile wiem, sklep jest otwarty.
+koliko se sjećam|o ile pamiętam|Koliko se sjećam, dolazi sutra.|O ile pamiętam, przyjeżdża jutro.
+ako se ne varam|jeśli się nie mylę|Ako se ne varam, ovo je tvoja torba.|Jeśli się nie mylę, to twoja torba.
+pošteno govoreći|uczciwie mówiąc|Pošteno govoreći, nisam zadovoljan.|Uczciwie mówiąc, nie jestem zadowolony.
+iskreno rečeno|szczerze mówiąc|Iskreno rečeno, ne znam.|Szczerze mówiąc, nie wiem.
+s jedne strane|z jednej strony|S jedne strane, želim ostati.|Z jednej strony chcę zostać.
+s druge strane|z drugiej strony|S druge strane, moram raditi.|Z drugiej strony muszę pracować.
+u svakom slučaju|w każdym razie|U svakom slučaju, hvala ti.|W każdym razie dziękuję ci.
+bez obzira na to|niezależnie od tego|Bez obzira na to, doći ću.|Niezależnie od tego przyjdę.
+što se mene tiče|jeśli o mnie chodzi|Što se mene tiče, možemo krenuti.|Jeśli o mnie chodzi, możemy ruszać.
 ima smisla|to ma sens|Ima smisla.|To ma sens.
 nema smisla|to nie ma sensu|Nema smisla.|To nie ma sensu.
 to je istina|to prawda|To je istina.|To prawda.
@@ -226,17 +226,17 @@ treba mi pomoć|potrzebuję pomocy|Treba mi pomoć.|Potrzebuję pomocy.
 možeš li mi pomoći|czy możesz mi pomóc|Možeš li mi pomoći?|Czy możesz mi pomóc?
 ne mogu sam|nie dam rady sam|Ne mogu sam.|Nie dam rady sam.
 snaći ću se|poradzę sobie|Snaći ću se.|Poradzę sobie.
-pusti mene|pozwól mnie to zrobić|Pusti mene.|Pozwól mnie to zrobić.
+pusti mene|pozwól mi to zrobić|Pusti mene da pokušam.|Pozwól mi spróbować.
 prepusti to meni|zostaw to mnie|Prepusti to meni.|Zostaw to mnie.
-pokaži mi kako|pokaż mi jak|Pokaži mi kako.|Pokaż mi jak.
+pokaži mi kako|pokaż mi jak|Pokaži mi kako se to radi.|Pokaż mi, jak to się robi.
 možeš li mi učiniti uslugu|czy możesz wyświadczyć mi przysługę|Možeš li mi učiniti uslugu?|Czy możesz wyświadczyć mi przysługę?
 imaš li nešto protiv|czy masz coś przeciwko|Imaš li nešto protiv?|Czy masz coś przeciwko?
-smeta li ti|czy ci przeszkadza|Smeta li ti.|Czy ci przeszkadza.
+smeta li ti|czy ci przeszkadza|Smeta li ti buka?|Czy przeszkadza ci hałas?
 ne smeta mi|nie przeszkadza mi|Ne smeta mi.|Nie przeszkadza mi.
 nemam ništa protiv|nie mam nic przeciwko|Nemam ništa protiv.|Nie mam nic przeciwko.
 smijem li sjesti|czy mogę usiąść|Smijem li sjesti?|Czy mogę usiąść?
 smijem li otvoriti prozor|czy mogę otworzyć okno|Smijem li otvoriti prozor?|Czy mogę otworzyć okno?
-mogu li posuditi olovku|czy mogę pożyczyć długopis|Mogu li posuditi olovku?|Czy mogę pożyczyć długopis?
+mogu li posuditi olovku|czy mogę pożyczyć ołówek|Mogu li posuditi olovku?|Czy mogę pożyczyć ołówek?
 vratit ću ti sutra|oddam ci jutro|Vratit ću ti sutra.|Oddam ci jutro.
 samo polako|spokojnie, bez pośpiechu|Samo polako.|Spokojnie, bez pośpiechu.
 nema žurbe|nie ma pośpiechu|Nema žurbe.|Nie ma pośpiechu.
@@ -325,7 +325,7 @@ hoćeš li sa mnom|czy pójdziesz ze mną|Hoćeš li sa mnom?|Czy pójdziesz ze 
 odmah se vraćam|zaraz wracam|Odmah se vraćam.|Zaraz wracam.
 neću dugo|nie zajmie mi to długo|Neću dugo.|Nie zajmie mi to długo.
 # phrase|travel podstawy
-oprostite, gdje je stanica|przepraszam, gdzie jest przystanek|Oprostite, gdje je stanica.|Przepraszam, gdzie jest przystanek.
+oprostite, gdje je stanica|przepraszam, gdzie jest przystanek|Oprostite, gdje je stanica?|Przepraszam, gdzie jest przystanek?
 kako mogu doći do centra|jak mogę dotrzeć do centrum|Kako mogu doći do centra?|Jak mogę dotrzeć do centrum?
 je li daleko odavde|czy to daleko stąd|Je li daleko odavde?|Czy to daleko stąd?
 koliko treba pješice|ile czasu zajmuje dojście pieszo|Koliko treba pješice?|Ile czasu zajmuje dojście pieszo?
@@ -334,10 +334,10 @@ skrenite lijevo|proszę skręcić w lewo|Skrenite lijevo.|Proszę skręcić w le
 skrenite desno|proszę skręcić w prawo|Skrenite desno.|Proszę skręcić w prawo.
 idite ravno|proszę iść prosto|Idite ravno.|Proszę iść prosto.
 prijeđite cestu|proszę przejść przez jezdnię|Prijeđite cestu.|Proszę przejść przez jezdnię.
-na sljedećem raskrižju|na następnym skrzyżowaniu|Na sljedećem raskrižju.|Na następnym skrzyżowaniu.
-na drugoj strani ulice|po drugiej stronie ulicy|Na drugoj strani ulice.|Po drugiej stronie ulicy.
-na kraju ulice|na końcu ulicy|Na kraju ulice.|Na końcu ulicy.
-odmah iza ugla|zaraz za rogiem|Odmah iza ugla.|Zaraz za rogiem.
+na sljedećem raskrižju|na następnym skrzyżowaniu|Skrenite na sljedećem raskrižju.|Proszę skręcić na następnym skrzyżowaniu.
+na drugoj strani ulice|po drugiej stronie ulicy|Banka je na drugoj strani ulice.|Bank jest po drugiej stronie ulicy.
+na kraju ulice|na końcu ulicy|Hotel je na kraju ulice.|Hotel jest na końcu ulicy.
+odmah iza ugla|zaraz za rogiem|Ljekarna je odmah iza ugla.|Apteka jest zaraz za rogiem.
 ne možete promašiti|nie sposób nie trafić|Ne možete promašiti.|Nie sposób nie trafić.
 možete li pokazati na karti|czy może pan/pani pokazać na mapie|Možete li pokazati na karti?|Czy może pan/pani pokazać na mapie?
 mislim da sam se izgubio|chyba się zgubiłem|Mislim da sam se izgubio.|Chyba się zgubiłem.
@@ -346,21 +346,21 @@ je li ovo pravi put|czy to właściwa droga|Je li ovo pravi put?|Czy to właści
 možete li me odvesti do hotela|czy może mnie pan/pani zawieźć do hotelu|Možete li me odvesti do hotela?|Czy może mnie pan/pani zawieźć do hotelu?
 koliko košta vožnja|ile kosztuje przejazd|Koliko košta vožnja?|Ile kosztuje przejazd?
 molim vas, stanite ovdje|proszę zatrzymać się tutaj|Molim vas, stanite ovdje.|Proszę zatrzymać się tutaj.
-vozi li ovaj autobus do centra|czy ten autobus jedzie do centrum|Vozi li ovaj autobus do centra.|Czy ten autobus jedzie do centrum.
+vozi li ovaj autobus do centra|czy ten autobus jedzie do centrum|Vozi li ovaj autobus do centra?|Czy ten autobus jedzie do centrum?
 gdje se kupuju karte|gdzie kupuje się bilety|Gdje se kupuju karte?|Gdzie kupuje się bilety?
 jednu kartu, molim|poproszę jeden bilet|Jednu kartu, molim.|Poproszę jeden bilet.
 povratnu kartu, molim|poproszę bilet powrotny|Povratnu kartu, molim.|Poproszę bilet powrotny.
-moram li presjedati|czy muszę się przesiadać|Moram li presjedati.|Czy muszę się przesiadać.
+moram li presjedati|czy muszę się przesiadać|Moram li presjedati?|Czy muszę się przesiadać?
 gdje trebam izaći|gdzie mam wysiąść|Gdje trebam izaći?|Gdzie mam wysiąść?
 koja je sljedeća stanica|jaki jest następny przystanek|Koja je sljedeća stanica?|Jaki jest następny przystanek?
 je li ovo mjesto slobodno|czy to miejsce jest wolne|Je li ovo mjesto slobodno?|Czy to miejsce jest wolne?
 ovo je moje mjesto|to moje miejsce|Ovo je moje mjesto.|To moje miejsce.
 koliko kasni vlak|ile spóźnia się pociąg|Koliko kasni vlak?|Ile spóźnia się pociąg?
-s kojeg perona polazi|z którego peronu odjeżdża|S kojeg perona polazi.|Z którego peronu odjeżdża.
+s kojeg perona polazi|z którego peronu odjeżdża|S kojeg perona polazi?|Z którego peronu odjeżdża?
 propustio sam autobus|uciekł mi autobus|Propustio sam autobus.|Uciekł mi autobus.
 kad polazi zadnji autobus|kiedy odjeżdża ostatni autobus|Kad polazi zadnji autobus?|Kiedy odjeżdża ostatni autobus?
-vrijedi li ova karta|czy ten bilet jest ważny|Vrijedi li ova karta.|Czy ten bilet jest ważny.
-moram li poništiti kartu|czy muszę skasować bilet|Moram li poništiti kartu.|Czy muszę skasować bilet.
+vrijedi li ova karta|czy ten bilet jest ważny|Vrijedi li ova karta?|Czy ten bilet jest ważny?
+moram li poništiti kartu|czy muszę skasować bilet|Moram li poništiti kartu?|Czy muszę skasować bilet?
 mogu li platiti kod vozača|czy mogę zapłacić u kierowcy|Mogu li platiti kod vozača?|Czy mogę zapłacić u kierowcy?
 imate li sitno|czy ma pan/pani drobne|Imate li sitno?|Czy ma pan/pani drobne?
 nemam sitnog novca|nie mam drobnych|Nemam sitnog novca.|Nie mam drobnych.
@@ -401,15 +401,15 @@ imam povratnu kartu|mam bilet powrotny|Imam povratnu kartu.|Mam bilet powrotny.
 imam rezervaciju|mam rezerwację|Imam rezervaciju.|Mam rezerwację.
 rezervacija je na moje ime|rezerwacja jest na moje nazwisko|Rezervacija je na moje ime.|Rezerwacja jest na moje nazwisko.
 imate li slobodnih soba|czy mają państwo wolne pokoje|Imate li slobodnih soba?|Czy mają państwo wolne pokoje?
-za dvije osobe|dla dwóch osób|Za dvije osobe.|Dla dwóch osób.
-za jednu noć|na jedną noc|Za jednu noć.|Na jedną noc.
+za dvije osobe|dla dwóch osób|Trebam sobu za dvije osobe.|Potrzebuję pokoju dla dwóch osób.
+za jednu noć|na jedną noc|Imam rezervaciju za jednu noć.|Mam rezerwację na jedną noc.
 je li doručak uključen|czy śniadanie jest wliczone|Je li doručak uključen?|Czy śniadanie jest wliczone?
 koliko košta noćenje|ile kosztuje nocleg|Koliko košta noćenje?|Ile kosztuje nocleg?
 mogu li vidjeti sobu|czy mogę zobaczyć pokój|Mogu li vidjeti sobu?|Czy mogę zobaczyć pokój?
 ima li soba balkon|czy pokój ma balkon|Ima li soba balkon?|Czy pokój ma balkon?
 ima li u sobi kupaonica|czy w pokoju jest łazienka|Ima li u sobi kupaonica?|Czy w pokoju jest łazienka?
-u koliko je doručak|o której jest śniadanie|U koliko je doručak.|O której jest śniadanie.
-do kada se moram odjaviti|do kiedy muszę się wymeldować|Do kada se moram odjaviti.|Do kiedy muszę się wymeldować.
+u koliko je doručak|o której jest śniadanie|U koliko je doručak?|O której jest śniadanie?
+do kada se moram odjaviti|do kiedy muszę się wymeldować|Do kada se moram odjaviti?|Do kiedy muszę się wymeldować?
 mogu li ostaviti prtljagu|czy mogę zostawić bagaż|Mogu li ostaviti prtljagu?|Czy mogę zostawić bagaż?
 koja je lozinka za Wi-Fi|jakie jest hasło do Wi-Fi|Koja je lozinka za Wi-Fi?|Jakie jest hasło do Wi-Fi?
 ne radi klima|nie działa klimatyzacja|Ne radi klima.|Nie działa klimatyzacja.
@@ -427,19 +427,19 @@ molim račun na tvrtku|poproszę fakturę na firmę|Molim račun na tvrtku.|Popr
 možete li pozvati taksi|czy może pan/pani zamówić taksówkę|Možete li pozvati taksi?|Czy może pan/pani zamówić taksówkę?
 hvala na ugodnom boravku|dziękuję za miły pobyt|Hvala na ugodnom boravku.|Dziękuję za miły pobyt.
 tražim stan za najam|szukam mieszkania do wynajęcia|Tražim stan za najam.|Szukam mieszkania do wynajęcia.
-kolika je mjesečna najamnina|ile wynosi miesięczny czynsz najmu|Kolika je mjesečna najamnina.|Ile wynosi miesięczny czynsz najmu.
-jesu li režije uključene|czy opłaty są wliczone|Jesu li režije uključene.|Czy opłaty są wliczone.
-koliki je polog|ile wynosi kaucja|Koliki je polog.|Ile wynosi kaucja.
+kolika je mjesečna najamnina|ile wynosi miesięczny czynsz najmu|Kolika je mjesečna najamnina?|Ile wynosi miesięczny czynsz najmu?
+jesu li režije uključene|czy opłaty są wliczone|Jesu li režije uključene?|Czy opłaty są wliczone?
+koliki je polog|ile wynosi kaucja|Koliki je polog?|Ile wynosi kaucja?
 je li stan namješten|czy mieszkanie jest umeblowane|Je li stan namješten?|Czy mieszkanie jest umeblowane?
-jesu li kućni ljubimci dopušteni|czy zwierzęta domowe są dozwolone|Jesu li kućni ljubimci dopušteni.|Czy zwierzęta domowe są dozwolone.
+jesu li kućni ljubimci dopušteni|czy zwierzęta domowe są dozwolone|Jesu li kućni ljubimci dopušteni?|Czy zwierzęta domowe są dozwolone?
 kada se mogu useliti|kiedy mogę się wprowadzić|Kada se mogu useliti?|Kiedy mogę się wprowadzić?
 koliko traje ugovor|jak długo obowiązuje umowa|Koliko traje ugovor?|Jak długo obowiązuje umowa?
 ima li perilicu rublja|czy jest pralka|Ima li perilicu rublja?|Czy jest pralka?
-kakvo je grijanje|jakie jest ogrzewanie|Kakvo je grijanje.|Jakie jest ogrzewanie.
+kakvo je grijanje|jakie jest ogrzewanie|Kakvo je grijanje?|Jakie jest ogrzewanie?
 # phrase|food podstawy
 stol za dvoje, molim|poproszę stolik dla dwojga|Stol za dvoje, molim.|Poproszę stolik dla dwojga.
 imamo rezerviran stol|mamy zarezerwowany stolik|Imamo rezerviran stol.|Mamy zarezerwowany stolik.
-možemo li sjesti vani|czy możemy usiąść na zewnątrz|Možemo li sjesti vani.|Czy możemy usiąść na zewnątrz.
+možemo li sjesti vani|czy możemy usiąść na zewnątrz|Možemo li sjesti vani?|Czy możemy usiąść na zewnątrz?
 mogu li dobiti jelovnik|czy mogę dostać menu|Mogu li dobiti jelovnik?|Czy mogę dostać menu?
 što preporučujete|co pan/pani poleca|Što preporučujete?|Co pan/pani poleca?
 koje je jelo dana|jakie jest danie dnia|Koje je jelo dana?|Jakie jest danie dnia?
@@ -448,9 +448,9 @@ trebamo još malo vremena|potrzebujemy jeszcze trochę czasu|Trebamo još malo v
 spremni smo naručiti|jesteśmy gotowi zamówić|Spremni smo naručiti.|Jesteśmy gotowi zamówić.
 za mene isto|dla mnie to samo|Za mene isto.|Dla mnie to samo.
 bez luka, molim|poproszę bez cebuli|Bez luka, molim.|Poproszę bez cebuli.
-umak sa strane|sos osobno|Umak sa strane.|Sos osobno.
+umak sa strane|sos osobno|Molim umak sa strane.|Poproszę sos osobno.
 je li ovo ljuto|czy to jest ostre|Je li ovo ljuto?|Czy to jest ostre?
-sadrži li ovo orašaste plodove|czy to zawiera orzechy|Sadrži li ovo orašaste plodove.|Czy to zawiera orzechy.
+sadrži li ovo orašaste plodove|czy to zawiera orzechy|Sadrži li ovo orašaste plodove?|Czy to zawiera orzechy?
 alergičan sam na kikiriki|mam alergię na orzeszki ziemne|Alergičan sam na kikiriki.|Mam alergię na orzeszki ziemne.
 ne jedem meso|nie jem mięsa|Ne jedem meso.|Nie jem mięsa.
 imate li vegetarijansko jelo|czy mają państwo danie wegetariańskie|Imate li vegetarijansko jelo?|Czy mają państwo danie wegetariańskie?
@@ -458,8 +458,8 @@ mogu li dobiti manju porciju|czy mogę dostać mniejszą porcję|Mogu li dobiti 
 vodu iz slavine, molim|poproszę wodę z kranu|Vodu iz slavine, molim.|Poproszę wodę z kranu.
 bez leda, molim|poproszę bez lodu|Bez leda, molim.|Poproszę bez lodu.
 još jednu kavu, molim|poproszę jeszcze jedną kawę|Još jednu kavu, molim.|Poproszę jeszcze jedną kawę.
-kavu za van|kawę na wynos|Kavu za van.|Kawę na wynos.
-za ovdje ili za van|na miejscu czy na wynos|Za ovdje ili za van.|Na miejscu czy na wynos.
+kavu za van|kawę na wynos|Molim kavu za van.|Poproszę kawę na wynos.
+za ovdje ili za van|na miejscu czy na wynos|Za ovdje ili za van?|Na miejscu czy na wynos?
 možete li ovo zapakirati|czy może pan/pani to zapakować|Možete li ovo zapakirati?|Czy może pan/pani to zapakować?
 ovo nisam naručio|tego nie zamawiałem|Ovo nisam naručio.|Tego nie zamawiałem.
 nedostaje nam jedno jelo|brakuje nam jednego dania|Nedostaje nam jedno jelo.|Brakuje nam jednego dania.
@@ -467,14 +467,14 @@ jelo je hladno|danie jest zimne|Jelo je hladno.|Danie jest zimne.
 meso nije dovoljno pečeno|mięso jest niedopieczone|Meso nije dovoljno pečeno.|Mięso jest niedopieczone.
 bilo je ukusno|było smaczne|Bilo je ukusno.|Było smaczne.
 račun, molim|poproszę rachunek|Račun, molim.|Poproszę rachunek.
-možemo li platiti odvojeno|czy możemy zapłacić osobno|Možemo li platiti odvojeno.|Czy możemy zapłacić osobno.
+možemo li platiti odvojeno|czy możemy zapłacić osobno|Možemo li platiti odvojeno?|Czy możemy zapłacić osobno?
 plaćamo zajedno|płacimy razem|Plaćamo zajedno.|Płacimy razem.
 je li napojnica uključena|czy napiwek jest wliczony|Je li napojnica uključena?|Czy napiwek jest wliczony?
 zadržite ostatak|reszty nie trzeba|Zadržite ostatak.|Reszty nie trzeba.
 mislim da je račun pogrešan|chyba rachunek jest błędny|Mislim da je račun pogrešan.|Chyba rachunek jest błędny.
 možete li donijeti žlicu|czy może pan/pani przynieść łyżkę|Možete li donijeti žlicu?|Czy może pan/pani przynieść łyżkę?
 mogu li dobiti još kruha|czy mogę dostać jeszcze chleba|Mogu li dobiti još kruha?|Czy mogę dostać jeszcze chleba?
-što ćete popiti|czego się pan/pani napije|Što ćete popiti?|Czego się pan/pani napije?
+što ćete popiti|czego się pan/pani napije|Što ćete popiti.|Czego się pan/pani napije.
 što ćete jesti|co będzie pan/pani jeść|Što ćete jesti?|Co będzie pan/pani jeść?
 # phrase|shopping podstawy
 samo gledam|tylko się rozglądam|Samo gledam.|Tylko się rozglądam.
@@ -511,12 +511,12 @@ je li cijena po kilogramu|czy cena jest za kilogram|Je li cijena po kilogramu?|C
 pola kilograma, molim|poproszę pół kilograma|Pola kilograma, molim.|Poproszę pół kilograma.
 narežite na tanke kriške|proszę pokroić w cienkie plasterki|Narežite na tanke kriške.|Proszę pokroić w cienkie plasterki.
 samo toliko|tylko tyle|Samo toliko.|Tylko tyle.
-još nešto|coś jeszcze|Još nešto.|Coś jeszcze.
+još nešto|coś jeszcze|Želite li još nešto?|Czy chce pan coś jeszcze?
 ne, hvala|nie, dziękuję|Ne, hvala.|Nie, dziękuję.
 izvolite račun|proszę, oto paragon|Izvolite račun.|Proszę, oto paragon.
 povrat samo uz račun|zwrot tylko z paragonem|Povrat samo uz račun.|Zwrot tylko z paragonem.
 # phrase|health podstawy
-trebam liječnika|potrzebuję lekarza|Trebam liječnika?|Potrzebuję lekarza?
+trebam liječnika|potrzebuję lekarza|Trebam liječnika.|Potrzebuję lekarza.
 pozovite hitnu pomoć|wezwijcie pogotowie|Pozovite hitnu pomoć.|Wezwijcie pogotowie.
 ne mogu disati|nie mogę oddychać|Ne mogu disati.|Nie mogę oddychać.
 boli me glava|boli mnie głowa|Boli me glava.|Boli mnie głowa.
@@ -549,9 +549,9 @@ zadržite dah|proszę wstrzymać oddech|Zadržite dah.|Proszę wstrzymać oddech
 otvorite usta|proszę otworzyć usta|Otvorite usta.|Proszę otworzyć usta.
 možete se odjenuti|może się pan/pani ubrać|Možete se odjenuti.|Może się pan/pani ubrać.
 koliko puta dnevno|ile razy dziennie|Koliko puta dnevno?|Ile razy dziennie?
-prije ili poslije jela|przed czy po jedzeniu|Prije ili poslije jela.|Przed czy po jedzeniu.
+prije ili poslije jela|przed czy po jedzeniu|Prije ili poslije jela?|Przed czy po jedzeniu?
 koliko dana trebam uzimati lijek|przez ile dni mam przyjmować lek|Koliko dana trebam uzimati lijek?|Przez ile dni mam przyjmować lek?
-treba li mi recept|czy potrzebuję recepty|Treba li mi recept.|Czy potrzebuję recepty.
+treba li mi recept|czy potrzebuję recepty|Treba li mi recept?|Czy potrzebuję recepty?
 mogu li ovo uzimati s drugim lijekovima|czy mogę to przyjmować z innymi lekami|Mogu li ovo uzimati s drugim lijekovima?|Czy mogę to przyjmować z innymi lekami?
 kada će biti nalazi|kiedy będą wyniki|Kada će biti nalazi?|Kiedy będą wyniki?
 kada trebam doći na kontrolu|kiedy mam przyjść na kontrolę|Kada trebam doći na kontrolu?|Kiedy mam przyjść na kontrolę?
@@ -574,7 +574,7 @@ trebam više vremena|potrzebuję więcej czasu|Trebam više vremena.|Potrzebuję
 koji je rok|jaki jest termin|Koji je rok?|Jaki jest termin?
 što je prioritet|co jest priorytetem|Što je prioritet?|Co jest priorytetem?
 tko je za to zadužen|kto za to odpowiada|Tko je za to zadužen?|Kto za to odpowiada?
-možemo li podijeliti posao|czy możemy podzielić pracę|Možemo li podijeliti posao.|Czy możemy podzielić pracę.
+možemo li podijeliti posao|czy możemy podzielić pracę|Možemo li podijeliti posao?|Czy możemy podzielić pracę?
 završio sam svoj dio|skończyłem swoją część|Završio sam svoj dio.|Skończyłem swoją część.
 ostalo je još malo|zostało jeszcze trochę|Ostalo je još malo.|Zostało jeszcze trochę.
 imamo mali problem|mamy mały problem|Imamo mali problem.|Mamy mały problem.
@@ -747,7 +747,7 @@ varivo|gęsta potrawa warzywna jednogarnkowa|To je varivo.|To jest gęsta potraw
 paprikaš|gulasz z papryką|To je paprikaš.|To jest gulasz z papryką.
 pečenje|pieczeń|To je pečenje.|To jest pieczeń.
 pohano meso|mięso panierowane|To je pohano meso.|To jest mięso panierowane.
-pire krumpir|purée ziemniaczane|To je pire krumpir.|To jest purée ziemniaczane.
+pire-krumpir|purée ziemniaczane|To je pire-krumpir.|To jest purée ziemniaczane.
 pečeni krumpir|pieczone ziemniaki|To je pečeni krumpir.|To są pieczone ziemniaki.
 krumpirići|frytki|To su krumpirići.|To są frytki.
 jogurt za piće|jogurt pitny|To je jogurt za piće.|To jest jogurt pitny.
@@ -1940,7 +1940,7 @@ osim ako|chyba że|Doći ću osim ako budem bolestan.|Przyjdę, chyba że będę
 zar|czyżby|Zar je već ponoć?|Czyżby była już północ?
 baš|właśnie, naprawdę|Baš mi je drago.|Naprawdę się cieszę.
 čak|nawet|Čak i on to zna.|Nawet on to wie.
-jedva|ledwo|Jedva čekam.|Nie mogę się doczekać.
+jedva|ledwo|Jedva stojim na nogama.|Ledwo stoję na nogach.
 # phrase|podstawy daily
 kako se ovo izgovara|jak się to wymawia|Kako se ovo izgovara?|Jak się to wymawia?
 možete li to zapisati|czy może pan to zapisać|Možete li to zapisati?|Czy może pan to zapisać?
@@ -1999,9 +1999,9 @@ ostavi, ja ću|zostaw, ja to zrobię|Ostavi, ja ću.|Zostaw, ja to zrobię.
 lijepo smo se proveli|dobrze się bawiliśmy|Lijepo smo se proveli.|Dobrze się bawiliśmy.
 moramo to ponoviti|musimy to powtórzyć|Moramo to ponoviti.|Musimy to powtórzyć.
 pozdravi svoje|pozdrowienia dla twoich bliskich|Pozdravi svoje.|Pozdrów swoich bliskich.
-sretan put kući|szczęśliwej drogi do domu|Sretan put kući!|Szczęśliwej drogi do domu!
+sretan put kući|szczęśliwej drogi do domu|Sretan put kući.|Szczęśliwej drogi do domu.
 čujemo se ovih dana|usłyszymy się w najbliższych dniach|Čujemo se ovih dana.|Usłyszymy się w najbliższych dniach.
-ne daj se|trzymaj się, nie poddawaj się|Ne daj se!|Nie poddawaj się!
+ne daj se|trzymaj się, nie poddawaj się|Ne daj se.|Nie poddawaj się.
 bit će bolje|będzie lepiej|Bit će bolje.|Będzie lepiej.
 nisi sam|nie jesteś sam|Nisi sam.|Nie jesteś sam.
 puno mi to znači|to wiele dla mnie znaczy|Puno mi to znači.|To wiele dla mnie znaczy.

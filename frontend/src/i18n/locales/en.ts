@@ -376,6 +376,8 @@ export const en: Dictionary = {
   },
   quickTopics: {"food":"food","home":"home","work":"work","people":"people","travel":"travel","transportation":"transportation","media":"media","nature":"nature","animals":"animals","body":"body","health":"health","clothes":"clothes","weather":"weather","sport":"sport","school":"school","family":"family","technology":"technology","shopping":"shopping"},
   pool: {
+    supplement: "Everyday essentials supplement",
+    supplementNote: "{n} new words and phrases · everyday situations",
     step1: "1 — choose a level",
     block: "Block {n} · {range}",
     reviews: "Reviews",

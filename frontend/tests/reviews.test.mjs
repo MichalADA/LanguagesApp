@@ -137,6 +137,8 @@ async function setup({
     return interpolate(value, p);
   };
   const { ReviewSession } = await compile("../src/reviews/ReviewSession.tsx", {
+    // These tests exercise clicks; keyboard listeners require a browser DOM.
+    '@/hooks/useQuizKeyboard': { useQuizKeyboard: () => {} },
     "@/utils/eventId": { createEventId: () => `event-${submitted.length}` },
     "@/learning/learningApi": {
       startLearningSession: async () => ({ id: "session" }),

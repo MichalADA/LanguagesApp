@@ -67,6 +67,8 @@ const fixture = [['dom','kuća','home'], ['chleb','kruh','food'], ['mleko','mlij
 async function harness(pool = fixture) {
   const calls = { rounds: [], answers: [], starts: 0, finishes: 0, flags: 0 };
   const { QuickGame } = await compile('../src/quick-games/QuickGame.tsx', {
+    // These tests exercise clicks; keyboard listeners require a browser DOM.
+    '@/hooks/useQuizKeyboard': { useQuizKeyboard: () => {} },
     './helpers': helpers,
     'react-router-dom': { Link: ({children}) => React.createElement('a', null, children) },
     '@/components/PoolPicker': { PoolPicker: () => React.createElement('div', null, 'picker') },

@@ -3,6 +3,7 @@ import { useCourse } from "@/courses/CourseProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useT } from "@/i18n";
 import { LEARNING_LEVELS, levelForLegacyBlock } from "@/config/learningLevels";
+import { VOCABULARY_SUPPLEMENT_TAG } from "@/vocabulary/types";
 import type { LearningLevelId } from "@/config/learningLevels";
 
 function sameSource(a: PoolSource, b: PoolSource): boolean {
@@ -25,6 +26,8 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14, sentence
   const t = useT();
   const { course } = useCourse();
   const { topics, entries } = useVocabulary();
+
+  const supplementSize = entries.filter((entry) => entry.tags.includes(VOCABULARY_SUPPLEMENT_TAG)).length;
 
   const selectedLevel =
     value.source.kind === "level"
@@ -60,6 +63,17 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14, sentence
           ))}
         </div>
 
+        {!sentenceCounts && supplementSize > 0 && (
+          <button
+            type="button"
+            className={value.source.kind === "supplement" ? "tile on" : "tile"}
+            onClick={() => onChange({ ...value, source: { kind: "supplement" } })}
+          >
+            <span style={{ fontSize: 17, fontWeight: 600 }}>{t("pool.supplement")}</span>
+            <span className="tile-note">{t("pool.supplementNote", { n: supplementSize })}</span>
+          </button>
+        )}
+
         {!sentenceCounts && <><span className="eyebrow" style={{ marginTop: 8 }}>{t("pool.reviews")}</span>
         <div className="grid grid-2">
           {special.map((s) => (
@@ -87,7 +101,7 @@ export function PoolPicker({ value, onChange, poolSize, maxTopics = 14, sentence
           >
             {t("pool.noFilter")}
           </button>
-          {topics.slice(0, maxTopics).map((topic) => (
+          {topics.filter((topic) => topic !== VOCABULARY_SUPPLEMENT_TAG).slice(0, maxTopics).map((topic) => (
             <button
               key={topic}
               type="button"

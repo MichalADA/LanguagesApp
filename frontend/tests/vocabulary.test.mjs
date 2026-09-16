@@ -79,3 +79,40 @@ test('diacritics and case handling apply equally to explicit answer variants', (
   assert.equal(checkAnswer(course, entry, ' ĆAO ').verdict, 'hit');
   assert.equal(checkAnswer(course, entry, 'cao').verdict, 'near');
 });
+
+test('5000 cards preserve the original 3000 bytes and append unique, registered targets', async () => {
+  const { createHash } = await import('node:crypto');
+  assert.equal(words.length, 5000);
+  const prefix = text.split(/(?<=\n)/).slice(0, 3001).join('');
+  assert.equal(createHash('sha256').update(prefix).digest('hex'), '548cb75792a50c2ee5b8550c4e4ae43fbf946a2ebec4e0d1489fbb9430b6d21e');
+  const normalized = value => value.normalize('NFC').toLowerCase().replace(/[^\p{L}\p{N}_\s]/gu, '').trim().replace(/\s+/g, ' ');
+  const seen = new Set(words.slice(0, 3000).map(entry => normalized(entry.targetText)));
+  const blocks = new Set(course.blocks.map(block => block.id));
+  const additions = words.slice(3000);
+  assert.equal(words.filter(entry => entry.tags.includes('uzupełnienie')).length, 2000);
+  for (const entry of additions) {
+    const target = normalized(entry.targetText);
+    assert.ok(!seen.has(target), `duplicate new target: ${entry.targetText}`);
+    seen.add(target);
+    assert.ok(blocks.has(entry.block));
+    assert.ok(entry.tags.includes('uzupełnienie'));
+    for (const value of [entry.targetText, entry.sourceText, entry.exampleTarget, entry.exampleSource]) {
+      assert.equal(value, value.normalize('NFC'));
+      assert.ok(!/[\p{Cf}\uFFFD]/u.test(value), `invalid invisible character: ${entry.id}`);
+    }
+  }
+});
+
+test('introductions teach usable phrases and accept explicit variants and punctuation', () => {
+  const intro = words.find(entry => entry.targetText === 'zovem se');
+  assert.equal(intro.rank, 3001);
+  assert.equal(intro.sourceText, 'nazywam się');
+  assert.equal(intro.exampleTarget, 'Zovem se Marko.');
+  for (const value of ['zovem se', 'ja se zovem', 'Zovem se.', 'Ja se zovem.']) {
+    assert.equal(checkAnswer(course, intro, value).verdict, 'hit', value);
+  }
+  assert.equal(checkAnswer(course, intro, 'nazywam się').verdict, 'miss');
+  assert.equal(checkAnswer(course, intro, 'zvati se').verdict, 'miss');
+  const myName = words.find(entry => entry.targetText === 'moje ime je');
+  assert.equal(checkAnswer(course, myName, 'ime mi je').verdict, 'hit');
+});
