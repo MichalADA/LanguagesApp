@@ -348,6 +348,21 @@ export const en: Dictionary = {
     "false-friends": "False friends — coming soon."
   },
   "listening": {
+    "chooseLevelEyebrow": "listening level",
+    "chooseLevel": "Choose a level",
+    "chooseLevelDescription": "Each level has its own dialogues, vocabulary and difficulty.",
+    "openLevel": "Open listening",
+    "backToLevels": "← Choose level",
+    "levels": {
+      "A1": {
+        "name": "Basic dialogues",
+        "description": "Short everyday conversations with simple questions."
+      },
+      "A2": {
+        "name": "Longer situations",
+        "description": "More detail, longer utterances and harder questions."
+      }
+    },
     "loading": "Loading dialogues…",
     "loadError": "The dialogues could not be loaded.",
     "choose": "Dialogue",

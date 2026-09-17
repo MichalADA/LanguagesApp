@@ -3,6 +3,7 @@ dist
 *.log
 __pycache__/
 *.pyc
+*.tmp.mp3
 .DS_Store
 .env
 .env.local

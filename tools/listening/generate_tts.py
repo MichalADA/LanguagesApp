@@ -22,7 +22,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dialogue", help="Generate only one dialogue id")
     parser.add_argument("--force", action="store_true", help="Replace existing MP3 files")
     parser.add_argument("--rate", default="-8%", help="edge-tts speaking rate, e.g. -8%% or +0%%")
-    return parser.parse_args()
+    parser.add_argument("--jobs", type=int, default=3, help="Concurrent TTS requests, 1-5")
+    args = parser.parse_args()
+    if not 1 <= args.jobs <= 5:
+        parser.error("--jobs must be between 1 and 5")
+    return args
 
 
 def output_path(public_dir: Path, audio_path: str) -> Path:
@@ -44,7 +48,8 @@ async def generate(args: argparse.Namespace) -> None:
         if not dialogues:
             raise SystemExit(f"Unknown dialogue id: {args.dialogue}")
 
-    generated = skipped = 0
+    pending = []
+    skipped = 0
     for dialogue in dialogues:
         for line in dialogue["lines"]:
             voice = voices.get(line["speaker"])
@@ -54,17 +59,24 @@ async def generate(args: argparse.Namespace) -> None:
             if target.exists() and not args.force:
                 skipped += 1
                 continue
+            pending.append((line["textHr"], voice, target))
+
+    semaphore = asyncio.Semaphore(args.jobs)
+
+    async def generate_one(text: str, voice: str, target: Path) -> None:
+        async with semaphore:
             target.parent.mkdir(parents=True, exist_ok=True)
             temporary = target.with_suffix(".tmp.mp3")
             try:
-                await edge_tts.Communicate(line["textHr"], voice, rate=args.rate).save(temporary)
+                await edge_tts.Communicate(text, voice, rate=args.rate).save(temporary)
                 temporary.replace(target)
             finally:
                 temporary.unlink(missing_ok=True)
-            generated += 1
             print(f"generated {target.relative_to(args.public_dir)}")
 
-    print(f"Done: {generated} generated, {skipped} already present")
+    await asyncio.gather(*(generate_one(*item) for item in pending))
+
+    print(f"Done: {len(pending)} generated, {skipped} already present")
 
 
 if __name__ == "__main__":

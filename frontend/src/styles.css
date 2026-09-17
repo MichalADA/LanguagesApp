@@ -282,6 +282,41 @@ p { margin: 0; text-wrap: pretty; }
 .radio-tags { display: flex; gap: 6px; flex-wrap: wrap; }
 .radio-tags .badge { white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
 .listening-session { gap: 18px; }
+.listening-levels { gap: 20px; }
+.listening-level-grid { align-items: stretch; }
+.listening-level-card {
+  appearance: none;
+  color: var(--text);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 16px;
+  align-items: center;
+  min-height: 170px;
+}
+.listening-level-card:hover, .listening-level-card:focus-visible {
+  background: var(--panel-hover);
+  border-color: var(--accent-line);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);
+}
+.listening-level-card .mode-card-action { grid-column: 2; }
+.listening-level-mark {
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-line);
+  color: var(--accent-text);
+  font-size: 25px;
+  font-weight: 800;
+}
+.listening-level-card strong { font-size: 20px; }
+.listening-level-card .muted { line-height: 1.5; }
+.listening-back { width: fit-content; }
 .listening-toolbar { border-color: var(--accent); }
 .listening-heading, .listening-section-head { justify-content: space-between; align-items: flex-start; }
 .listening-title { flex: 1 1 260px; }

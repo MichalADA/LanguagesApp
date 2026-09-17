@@ -298,7 +298,7 @@ export const pl: Dictionary = {
     "fill-gap": "Uzupełnij lukę",
     "correct-sentence": "Popraw zdanie",
     "transform-sentence": "Transformacje",
-    "listening": "Listening",
+    "listening": "Słuchanie",
     "radio": "Radio chorwackie",
     "false-friends": "Fałszywi przyjaciele"
   },
@@ -348,6 +348,21 @@ export const pl: Dictionary = {
     "false-friends": "Fałszywi przyjaciele — w przygotowaniu."
   },
   "listening": {
+    "chooseLevelEyebrow": "poziom słuchania",
+    "chooseLevel": "Wybierz poziom",
+    "chooseLevelDescription": "Każdy poziom ma własne dialogi, słownictwo i stopień trudności.",
+    "openLevel": "Otwórz słuchanki",
+    "backToLevels": "← Wybór poziomu",
+    "levels": {
+      "A1": {
+        "name": "Podstawowe dialogi",
+        "description": "Krótkie rozmowy z codziennych sytuacji i proste pytania."
+      },
+      "A2": {
+        "name": "Dłuższe sytuacje",
+        "description": "Więcej szczegółów, dłuższe wypowiedzi i trudniejsze pytania."
+      }
+    },
     "loading": "Wczytuję dialogi…",
     "loadError": "Nie udało się wczytać dialogów.",
     "choose": "Dialog",

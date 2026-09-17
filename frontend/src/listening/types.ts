@@ -1,4 +1,5 @@
 export type ListeningSpeaker = "ana" | "marko";
+export type ListeningLevel = "A1" | "A2" | "B1";
 
 export interface ListeningLine {
   speaker: ListeningSpeaker;
@@ -14,7 +15,7 @@ export interface ListeningOption {
 
 export interface ListeningDialogue {
   id: string;
-  level: "A1" | "A2" | "B1";
+  level: ListeningLevel;
   titlePl: string;
   titleEn: string;
   topic: string;

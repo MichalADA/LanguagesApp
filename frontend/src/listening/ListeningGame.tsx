@@ -1,16 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useI18n, useT } from "@/i18n";
-import { loadListeningManifest } from "./loader";
-import type { ListeningDialogue } from "./types";
+import { AVAILABLE_LISTENING_LEVELS, loadListeningManifest } from "./loader";
+import type { ListeningDialogue, ListeningLevel } from "./types";
 
 const SPEEDS = [0.75, 1, 1.25] as const;
 
 export function ListeningGame() {
   const t = useT();
   const { locale } = useI18n();
+  const [selectedLevel, setSelectedLevel] = useState<ListeningLevel | null>(null);
   const [dialogues, setDialogues] = useState<ListeningDialogue[]>([]);
   const [selectedId, setSelectedId] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [loadError, setLoadError] = useState(false);
   const [lineIndex, setLineIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
@@ -23,10 +24,11 @@ export function ListeningGame() {
   const run = useRef(0);
 
   useEffect(() => {
+    if (!selectedLevel) return;
     const controller = new AbortController();
     setLoading(true);
     setLoadError(false);
-    loadListeningManifest(controller.signal).then(manifest => {
+    loadListeningManifest(selectedLevel, controller.signal).then(manifest => {
       if (controller.signal.aborted) return;
       setDialogues(manifest.dialogues);
       setSelectedId(manifest.dialogues[0]?.id ?? "");
@@ -36,7 +38,7 @@ export function ListeningGame() {
       if (!controller.signal.aborted) setLoading(false);
     });
     return () => controller.abort();
-  }, []);
+  }, [selectedLevel]);
 
   const dialogue = useMemo(
     () => dialogues.find(item => item.id === selectedId) ?? dialogues[0],
@@ -62,6 +64,25 @@ export function ListeningGame() {
     setShowTranscript(false);
     setAnswer("");
     setChecked(false);
+  }
+
+  function leaveLevel() {
+    stop();
+    setSelectedLevel(null);
+    setDialogues([]);
+    setSelectedId("");
+    setLoadError(false);
+    setLineIndex(0);
+    setShowTranscript(false);
+    setAnswer("");
+    setChecked(false);
+    setLoading(false);
+  }
+
+  function openLevel(level: ListeningLevel) {
+    setLoading(true);
+    setLoadError(false);
+    setSelectedLevel(level);
   }
 
   function playLine(index: number, sequence = false, sequenceId = ++run.current) {
@@ -90,9 +111,29 @@ export function ListeningGame() {
     });
   }
 
-  if (loading) return <p role="status">{t("listening.loading")}</p>;
+  if (!selectedLevel) {
+    return <section className="listening-levels stack">
+      <div className="stack">
+        <span className="eyebrow">{t("listening.chooseLevelEyebrow")}</span>
+        <h2>{t("listening.chooseLevel")}</h2>
+        <p className="muted">{t("listening.chooseLevelDescription")}</p>
+      </div>
+      <div className="grid grid-2 listening-level-grid">
+        {AVAILABLE_LISTENING_LEVELS.map(level => <button key={level} className="panel panel-pad listening-level-card" onClick={() => openLevel(level)}>
+          <span className="listening-level-mark">{level}</span>
+          <span className="stack">
+            <strong>{t(`listening.levels.${level}.name`)}</strong>
+            <span className="muted">{t(`listening.levels.${level}.description`)}</span>
+          </span>
+          <span className="mode-card-action">{t("listening.openLevel")} →</span>
+        </button>)}
+      </div>
+    </section>;
+  }
+
+  if (loading) return <div className="stack"><button className="btn-ghost listening-back" onClick={leaveLevel}>{t("listening.backToLevels")}</button><p role="status">{t("listening.loading")}</p></div>;
   if (loadError || !dialogue) {
-    return <div className="panel panel-pad"><p role="alert">{t("listening.loadError")}</p></div>;
+    return <div className="stack"><button className="btn-ghost listening-back" onClick={leaveLevel}>{t("listening.backToLevels")}</button><div className="panel panel-pad"><p role="alert">{t("listening.loadError")}</p></div></div>;
   }
   const correct = answer === dialogue.question.correctOptionId;
 
@@ -101,6 +142,8 @@ export function ListeningGame() {
       setPlaying(false);
       setAudioError(true);
     }} />
+
+    <div><button className="btn-ghost listening-back" onClick={leaveLevel}>{t("listening.backToLevels")}</button></div>
 
     <section className="panel panel-pad listening-toolbar stack">
       <div className="row listening-heading">
