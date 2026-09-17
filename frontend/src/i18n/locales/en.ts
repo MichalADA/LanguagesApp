@@ -347,6 +347,41 @@ export const en: Dictionary = {
     "radio": "Listen to Croatian radio and get used to natural speech.",
     "false-friends": "False friends — coming soon."
   },
+  "listening": {
+    "chooseLevelEyebrow": "listening level",
+    "chooseLevel": "Choose a level",
+    "chooseLevelDescription": "Each level has its own dialogues, vocabulary and difficulty.",
+    "openLevel": "Open listening",
+    "backToLevels": "← Choose level",
+    "levels": {
+      "A1": {
+        "name": "Basic dialogues",
+        "description": "Short everyday conversations with simple questions."
+      },
+      "A2": {
+        "name": "Longer situations",
+        "description": "More detail, longer utterances and harder questions."
+      }
+    },
+    "loading": "Loading dialogues…",
+    "loadError": "The dialogues could not be loaded.",
+    "choose": "Dialogue",
+    "playAll": "Play all",
+    "stop": "Stop",
+    "speed": "Speed",
+    "line": "line {n} / {total}",
+    "audioError": "The recording could not be played. Generate the TTS files using the instructions in tools/listening.",
+    "transcript": "Transcript",
+    "show": "Show text",
+    "hide": "Hide text",
+    "listenFirst": "Listen without text first. You can reveal the transcript at any time.",
+    "playLine": "Play line {n}",
+    "question": "Check comprehension",
+    "check": "Check",
+    "correct": "Correct!",
+    "wrong": "Not this time — listen once more.",
+    "pilotNote": "Pilot TTS dialogues. The wording and pronunciation still need review by a native Croatian speaker."
+  },
   "quick": {
     "result": "Result",
     "known": "I know it",

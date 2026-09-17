@@ -26,6 +26,7 @@ test('learning hub hides individual quick games until their category is opened',
     '@/quick-games/helpers': helpers,
     '@/sentences/SentenceGameSession': { SentenceGameSession: stub },
     '@/sentences/types': { SENTENCE_MODES: ['translation', 'builder', 'gap', 'correction', 'transform'] },
+    '@/listening/ListeningGame': { ListeningGame: stub },
   });
   let params = {};
   const { GamesPage } = await compile('../src/pages/GamesPage.tsx', {
