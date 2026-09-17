@@ -8,7 +8,7 @@ test("Croatian listening pilot has valid and unique dialogue entries", async () 
   const data = JSON.parse(await readFile(path, "utf8"));
   assert.equal(data.version, 1);
   assert.equal(data.language, "hr");
-  assert.ok(data.dialogues.length >= 5);
+  assert.ok(data.dialogues.length >= 15);
   assert.equal(new Set(data.dialogues.map(item => item.id)).size, data.dialogues.length);
 
   for (const dialogue of data.dialogues) {

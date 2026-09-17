@@ -127,6 +127,248 @@
         ],
         "correctOptionId": "bread"
       }
+    },
+    {
+      "id": "a1-restoran",
+      "level": "A1",
+      "titlePl": "W restauracji",
+      "titleEn": "At a restaurant",
+      "topic": "jedzenie i picie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Dobra večer. Imate li rezervaciju?", "textPl": "Dobry wieczór. Czy ma pani rezerwację?", "audioPath": "/audio/listening/hr-a1/a1-restoran/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Da, stol za dvije osobe na ime Ana.", "textPl": "Tak, stolik dla dwóch osób na nazwisko Ana.", "audioPath": "/audio/listening/hr-a1/a1-restoran/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Izvolite, vaš stol je ovdje.", "textPl": "Proszę, pani stolik jest tutaj.", "audioPath": "/audio/listening/hr-a1/a1-restoran/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Hvala. Možemo li dobiti jelovnik?", "textPl": "Dziękuję. Czy możemy dostać menu?", "audioPath": "/audio/listening/hr-a1/a1-restoran/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Naravno. Odmah ga donosim.", "textPl": "Oczywiście. Zaraz je przyniosę.", "audioPath": "/audio/listening/hr-a1/a1-restoran/05-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Dla ilu osób jest rezerwacja?",
+        "options": [
+          { "id": "two", "textPl": "Dla dwóch" },
+          { "id": "three", "textPl": "Dla trzech" },
+          { "id": "four", "textPl": "Dla czterech" }
+        ],
+        "correctOptionId": "two"
+      }
+    },
+    {
+      "id": "a1-hotel",
+      "level": "A1",
+      "titlePl": "W hotelu",
+      "titleEn": "At a hotel",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Dobar dan. Imam rezervaciju na ime Ana Kowalska.", "textPl": "Dzień dobry. Mam rezerwację na nazwisko Ana Kowalska.", "audioPath": "/audio/listening/hr-a1/a1-hotel/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Dobro došli. Mogu li vidjeti vašu putovnicu?", "textPl": "Witamy. Czy mogę zobaczyć pani paszport?", "audioPath": "/audio/listening/hr-a1/a1-hotel/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Naravno, izvolite.", "textPl": "Oczywiście, proszę.", "audioPath": "/audio/listening/hr-a1/a1-hotel/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Hvala. Vaša soba je na drugom katu.", "textPl": "Dziękuję. Pani pokój jest na drugim piętrze.", "audioPath": "/audio/listening/hr-a1/a1-hotel/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "Gdje je dizalo?", "textPl": "Gdzie jest winda?", "audioPath": "/audio/listening/hr-a1/a1-hotel/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Ravno pa lijevo.", "textPl": "Prosto, a potem w lewo.", "audioPath": "/audio/listening/hr-a1/a1-hotel/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Na którym piętrze jest pokój Any?",
+        "options": [
+          { "id": "second", "textPl": "Na drugim" },
+          { "id": "first", "textPl": "Na pierwszym" },
+          { "id": "third", "textPl": "Na trzecim" }
+        ],
+        "correctOptionId": "second"
+      }
+    },
+    {
+      "id": "a1-kolodvor",
+      "level": "A1",
+      "titlePl": "Na dworcu kolejowym",
+      "titleEn": "At a railway station",
+      "topic": "transport",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Dobar dan. Jednu kartu za Split, molim.", "textPl": "Dzień dobry. Poproszę jeden bilet do Splitu.", "audioPath": "/audio/listening/hr-a1/a1-kolodvor/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "U jednom smjeru ili povratnu?", "textPl": "W jedną stronę czy powrotny?", "audioPath": "/audio/listening/hr-a1/a1-kolodvor/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Povratnu, molim. Kada polazi vlak?", "textPl": "Powrotny, proszę. Kiedy odjeżdża pociąg?", "audioPath": "/audio/listening/hr-a1/a1-kolodvor/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "U deset sati i petnaest minuta, s trećeg perona.", "textPl": "O dziesiątej piętnaście, z trzeciego peronu.", "audioPath": "/audio/listening/hr-a1/a1-kolodvor/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Hvala.", "textPl": "Dziękuję.", "audioPath": "/audio/listening/hr-a1/a1-kolodvor/05-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Z którego peronu odjeżdża pociąg?",
+        "options": [
+          { "id": "third", "textPl": "Z trzeciego" },
+          { "id": "first", "textPl": "Z pierwszego" },
+          { "id": "fifth", "textPl": "Z piątego" }
+        ],
+        "correctOptionId": "third"
+      }
+    },
+    {
+      "id": "a1-put",
+      "level": "A1",
+      "titlePl": "Pytanie o drogę",
+      "titleEn": "Asking for directions",
+      "topic": "miasto",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Oprostite, gdje je najbliža ljekarna?", "textPl": "Przepraszam, gdzie jest najbliższa apteka?", "audioPath": "/audio/listening/hr-a1/a1-put/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Idite ravno do semafora, zatim skrenite desno.", "textPl": "Proszę iść prosto do świateł, a następnie skręcić w prawo.", "audioPath": "/audio/listening/hr-a1/a1-put/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Je li daleko?", "textPl": "Czy to daleko?", "audioPath": "/audio/listening/hr-a1/a1-put/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Ne, pet minuta pješice.", "textPl": "Nie, pięć minut pieszo.", "audioPath": "/audio/listening/hr-a1/a1-put/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "Hvala vam.", "textPl": "Dziękuję panu.", "audioPath": "/audio/listening/hr-a1/a1-put/05-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Gdzie trzeba skręcić przy światłach?",
+        "options": [
+          { "id": "right", "textPl": "W prawo" },
+          { "id": "left", "textPl": "W lewo" },
+          { "id": "straight", "textPl": "Iść dalej prosto" }
+        ],
+        "correctOptionId": "right"
+      }
+    },
+    {
+      "id": "a1-trznica",
+      "level": "A1",
+      "titlePl": "Na targu",
+      "titleEn": "At a market",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Dobar dan. Koliko koštaju jabuke?", "textPl": "Dzień dobry. Ile kosztują jabłka?", "audioPath": "/audio/listening/hr-a1/a1-trznica/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Dva eura po kilogramu.", "textPl": "Dwa euro za kilogram.", "audioPath": "/audio/listening/hr-a1/a1-trznica/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Molim kilogram jabuka i pola kilograma naranči.", "textPl": "Poproszę kilogram jabłek i pół kilograma pomarańczy.", "audioPath": "/audio/listening/hr-a1/a1-trznica/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Izvolite. Još nešto?", "textPl": "Proszę. Coś jeszcze?", "audioPath": "/audio/listening/hr-a1/a1-trznica/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Ne, hvala.", "textPl": "Nie, dziękuję.", "audioPath": "/audio/listening/hr-a1/a1-trznica/05-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Ile jabłek kupuje Marko?",
+        "options": [
+          { "id": "one", "textPl": "Jeden kilogram" },
+          { "id": "half", "textPl": "Pół kilograma" },
+          { "id": "two", "textPl": "Dwa kilogramy" }
+        ],
+        "correctOptionId": "one"
+      }
+    },
+    {
+      "id": "a1-ljekarna",
+      "level": "A1",
+      "titlePl": "W aptece",
+      "titleEn": "At a pharmacy",
+      "topic": "zdrowie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Dobar dan. Boli me glava.", "textPl": "Dzień dobry. Boli mnie głowa.", "audioPath": "/audio/listening/hr-a1/a1-ljekarna/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Imate li temperaturu?", "textPl": "Czy ma pani gorączkę?", "audioPath": "/audio/listening/hr-a1/a1-ljekarna/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Ne, samo me boli glava.", "textPl": "Nie, tylko boli mnie głowa.", "audioPath": "/audio/listening/hr-a1/a1-ljekarna/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "U redu. Ovaj lijek može pomoći.", "textPl": "W porządku. Ten lek może pomóc.", "audioPath": "/audio/listening/hr-a1/a1-ljekarna/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "Hvala. Koliko košta?", "textPl": "Dziękuję. Ile kosztuje?", "audioPath": "/audio/listening/hr-a1/a1-ljekarna/05-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Co boli Anę?",
+        "options": [
+          { "id": "head", "textPl": "Głowa" },
+          { "id": "stomach", "textPl": "Brzuch" },
+          { "id": "throat", "textPl": "Gardło" }
+        ],
+        "correctOptionId": "head"
+      }
+    },
+    {
+      "id": "a1-bazen",
+      "level": "A1",
+      "titlePl": "Na basenie",
+      "titleEn": "At a swimming pool",
+      "topic": "sport",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Dobar dan. Jednu ulaznicu za bazen, molim.", "textPl": "Dzień dobry. Poproszę jeden bilet na basen.", "audioPath": "/audio/listening/hr-a1/a1-bazen/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Želite li ulaznicu za jedan ili dva sata?", "textPl": "Czy chce pan bilet na jedną czy dwie godziny?", "audioPath": "/audio/listening/hr-a1/a1-bazen/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Za dva sata. Koliko košta?", "textPl": "Na dwie godziny. Ile kosztuje?", "audioPath": "/audio/listening/hr-a1/a1-bazen/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Šest eura.", "textPl": "Sześć euro.", "audioPath": "/audio/listening/hr-a1/a1-bazen/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Do kada je bazen otvoren?", "textPl": "Do której basen jest otwarty?", "audioPath": "/audio/listening/hr-a1/a1-bazen/05-marko.mp3" },
+        { "speaker": "ana", "textHr": "Do devet navečer.", "textPl": "Do dziewiątej wieczorem.", "audioPath": "/audio/listening/hr-a1/a1-bazen/06-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Na jak długo Marko kupuje bilet?",
+        "options": [
+          { "id": "two", "textPl": "Na dwie godziny" },
+          { "id": "one", "textPl": "Na jedną godzinę" },
+          { "id": "day", "textPl": "Na cały dzień" }
+        ],
+        "correctOptionId": "two"
+      }
+    },
+    {
+      "id": "a1-telefon",
+      "level": "A1",
+      "titlePl": "Rozmowa telefoniczna",
+      "titleEn": "A phone call",
+      "topic": "czas wolny",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Bok, Marko! Imaš li vremena u subotu?", "textPl": "Cześć, Marko! Masz czas w sobotę?", "audioPath": "/audio/listening/hr-a1/a1-telefon/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Bok! Imam. Zašto?", "textPl": "Cześć! Mam. Dlaczego pytasz?", "audioPath": "/audio/listening/hr-a1/a1-telefon/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Hoćeš li ići na kavu?", "textPl": "Chcesz pójść na kawę?", "audioPath": "/audio/listening/hr-a1/a1-telefon/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Može. U koliko sati?", "textPl": "Jasne. O której godzinie?", "audioPath": "/audio/listening/hr-a1/a1-telefon/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "U pet, ispred kina.", "textPl": "O piątej, przed kinem.", "audioPath": "/audio/listening/hr-a1/a1-telefon/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Dogovoreno.", "textPl": "Umowa stoi.", "audioPath": "/audio/listening/hr-a1/a1-telefon/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "O której spotykają się Ana i Marko?",
+        "options": [
+          { "id": "five", "textPl": "O piątej" },
+          { "id": "four", "textPl": "O czwartej" },
+          { "id": "six", "textPl": "O szóstej" }
+        ],
+        "correctOptionId": "five"
+      }
+    },
+    {
+      "id": "a1-vrijeme",
+      "level": "A1",
+      "titlePl": "Rozmowa o pogodzie",
+      "titleEn": "Talking about the weather",
+      "topic": "pogoda",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Kakvo je vrijeme danas?", "textPl": "Jaka jest dziś pogoda?", "audioPath": "/audio/listening/hr-a1/a1-vrijeme/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Oblačno je i pada kiša.", "textPl": "Jest pochmurno i pada deszcz.", "audioPath": "/audio/listening/hr-a1/a1-vrijeme/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Onda ću uzeti kišobran.", "textPl": "W takim razie wezmę parasol.", "audioPath": "/audio/listening/hr-a1/a1-vrijeme/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Dobra ideja. Poslijepodne će biti hladnije.", "textPl": "Dobry pomysł. Po południu będzie chłodniej.", "audioPath": "/audio/listening/hr-a1/a1-vrijeme/04-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Co zabierze Marko?",
+        "options": [
+          { "id": "umbrella", "textPl": "Parasol" },
+          { "id": "sunglasses", "textPl": "Okulary przeciwsłoneczne" },
+          { "id": "hat", "textPl": "Czapkę" }
+        ],
+        "correctOptionId": "umbrella"
+      }
+    },
+    {
+      "id": "a1-stan",
+      "level": "A1",
+      "titlePl": "Nowe mieszkanie",
+      "titleEn": "A new flat",
+      "topic": "dom",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Ovo je moja nova soba.", "textPl": "To jest mój nowy pokój.", "audioPath": "/audio/listening/hr-a1/a1-stan/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Lijepa je! Gdje je kuhinja?", "textPl": "Jest ładny! Gdzie jest kuchnia?", "audioPath": "/audio/listening/hr-a1/a1-stan/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Kuhinja je pored dnevnog boravka.", "textPl": "Kuchnia jest obok salonu.", "audioPath": "/audio/listening/hr-a1/a1-stan/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Imaš li balkon?", "textPl": "Masz balkon?", "audioPath": "/audio/listening/hr-a1/a1-stan/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "Da, balkon je mali, ali sunčan.", "textPl": "Tak, balkon jest mały, ale słoneczny.", "audioPath": "/audio/listening/hr-a1/a1-stan/05-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Gdzie znajduje się kuchnia?",
+        "options": [
+          { "id": "living-room", "textPl": "Obok salonu" },
+          { "id": "bedroom", "textPl": "Obok sypialni" },
+          { "id": "balcony", "textPl": "Przy balkonie" }
+        ],
+        "correctOptionId": "living-room"
+      }
     }
   ]
 }
