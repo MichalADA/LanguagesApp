@@ -347,6 +347,26 @@ export const pl: Dictionary = {
     "radio": "Słuchaj chorwackiego radia i osłuchuj się z naturalnym językiem.",
     "false-friends": "Fałszywi przyjaciele — w przygotowaniu."
   },
+  "listening": {
+    "loading": "Wczytuję dialogi…",
+    "loadError": "Nie udało się wczytać dialogów.",
+    "choose": "Dialog",
+    "playAll": "Odtwórz całość",
+    "stop": "Zatrzymaj",
+    "speed": "Prędkość",
+    "line": "kwestia {n} / {total}",
+    "audioError": "Nie udało się odtworzyć nagrania. Wygeneruj pliki TTS zgodnie z instrukcją w tools/listening.",
+    "transcript": "Transkrypcja",
+    "show": "Pokaż tekst",
+    "hide": "Ukryj tekst",
+    "listenFirst": "Najpierw posłuchaj bez tekstu. Transkrypcję możesz odsłonić w dowolnym momencie.",
+    "playLine": "Odtwórz kwestię {n}",
+    "question": "Sprawdź zrozumienie",
+    "check": "Sprawdź",
+    "correct": "Dobrze!",
+    "wrong": "Nie tym razem — posłuchaj jeszcze raz.",
+    "pilotNote": "Pilotażowe dialogi TTS. Teksty i wymowa wymagają jeszcze oceny osoby mówiącej po chorwacku jako językiem ojczystym."
+  },
   "quick": {
     "result": "Wynik",
     "known": "Znam",

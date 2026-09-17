@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "language": "hr",
+  "sourceLanguage": "pl",
+  "generatedWith": {
+    "provider": "Microsoft Edge online voices via edge-tts",
+    "voices": {
+      "ana": "hr-HR-GabrijelaNeural",
+      "marko": "hr-HR-SreckoNeural"
+    }
+  },
+  "dialogues": [
+    {
+      "id": "a1-upoznavanje",
+      "level": "A1",
+      "titlePl": "Pierwsze spotkanie",
+      "titleEn": "First meeting",
+      "topic": "przedstawianie się",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Bok! Ja sam Ana. Kako se ti zoveš?", "textPl": "Cześć! Jestem Ana. Jak masz na imię?", "audioPath": "/audio/listening/hr-a1/a1-upoznavanje/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Zovem se Marko. Drago mi je.", "textPl": "Mam na imię Marko. Miło mi.", "audioPath": "/audio/listening/hr-a1/a1-upoznavanje/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "I meni. Odakle si?", "textPl": "Mnie również. Skąd jesteś?", "audioPath": "/audio/listening/hr-a1/a1-upoznavanje/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Iz Poljske sam, ali živim u Zagrebu.", "textPl": "Jestem z Polski, ale mieszkam w Zagrzebiu.", "audioPath": "/audio/listening/hr-a1/a1-upoznavanje/04-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Gdzie mieszka Marko?",
+        "options": [
+          { "id": "zagreb", "textPl": "W Zagrzebiu" },
+          { "id": "split", "textPl": "W Splicie" },
+          { "id": "poland", "textPl": "W Polsce" }
+        ],
+        "correctOptionId": "zagreb"
+      }
+    },
+    {
+      "id": "a1-kafic",
+      "level": "A1",
+      "titlePl": "W kawiarni",
+      "titleEn": "At a café",
+      "topic": "jedzenie i picie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Dobar dan. Izvolite.", "textPl": "Dzień dobry. Słucham.", "audioPath": "/audio/listening/hr-a1/a1-kafic/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Jednu kavu s mlijekom, molim.", "textPl": "Poproszę jedną kawę z mlekiem.", "audioPath": "/audio/listening/hr-a1/a1-kafic/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Želite li šećer?", "textPl": "Czy chce pani cukier?", "audioPath": "/audio/listening/hr-a1/a1-kafic/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Ne, hvala. To je sve.", "textPl": "Nie, dziękuję. To wszystko.", "audioPath": "/audio/listening/hr-a1/a1-kafic/04-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Co zamawia Ana?",
+        "options": [
+          { "id": "coffee-milk", "textPl": "Kawę z mlekiem" },
+          { "id": "tea", "textPl": "Herbatę" },
+          { "id": "water", "textPl": "Wodę" }
+        ],
+        "correctOptionId": "coffee-milk"
+      }
+    },
+    {
+      "id": "a1-pekarnica",
+      "level": "A1",
+      "titlePl": "W piekarni",
+      "titleEn": "At a bakery",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Dobro jutro. Molim jedan burek sa sirom i dvije kifle.", "textPl": "Dzień dobry. Poproszę jeden burek z serem i dwie bułki.", "audioPath": "/audio/listening/hr-a1/a1-pekarnica/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Želite li još nešto?", "textPl": "Czy chce pani coś jeszcze?", "audioPath": "/audio/listening/hr-a1/a1-pekarnica/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Ne, hvala. Koliko to košta?", "textPl": "Nie, dziękuję. Ile to kosztuje?", "audioPath": "/audio/listening/hr-a1/a1-pekarnica/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Tri eura i osamdeset centi.", "textPl": "Trzy euro i osiemdziesiąt centów.", "audioPath": "/audio/listening/hr-a1/a1-pekarnica/04-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Ile płaci Ana?",
+        "options": [
+          { "id": "3-80", "textPl": "3,80 euro" },
+          { "id": "2-80", "textPl": "2,80 euro" },
+          { "id": "4-30", "textPl": "4,30 euro" }
+        ],
+        "correctOptionId": "3-80"
+      }
+    },
+    {
+      "id": "a1-autobus",
+      "level": "A1",
+      "titlePl": "W autobusie",
+      "titleEn": "On a bus",
+      "topic": "transport",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Oprostite, ide li ovaj autobus do centra?", "textPl": "Przepraszam, czy ten autobus jedzie do centrum?", "audioPath": "/audio/listening/hr-a1/a1-autobus/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Da, ide.", "textPl": "Tak, jedzie.", "audioPath": "/audio/listening/hr-a1/a1-autobus/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Gdje trebam izaći?", "textPl": "Gdzie powinnam wysiąść?", "audioPath": "/audio/listening/hr-a1/a1-autobus/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Izađite na Trgu bana Jelačića.", "textPl": "Proszę wysiąść na placu bana Jelačicia.", "audioPath": "/audio/listening/hr-a1/a1-autobus/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "Hvala vam.", "textPl": "Dziękuję panu.", "audioPath": "/audio/listening/hr-a1/a1-autobus/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Nema na čemu.", "textPl": "Nie ma za co.", "audioPath": "/audio/listening/hr-a1/a1-autobus/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Gdzie Ana ma wysiąść?",
+        "options": [
+          { "id": "square", "textPl": "Na placu bana Jelačicia" },
+          { "id": "station", "textPl": "Na dworcu kolejowym" },
+          { "id": "airport", "textPl": "Na lotnisku" }
+        ],
+        "correctOptionId": "square"
+      }
+    },
+    {
+      "id": "a1-trgovina",
+      "level": "A1",
+      "titlePl": "W sklepie",
+      "titleEn": "At a shop",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Oprostite, gdje je mlijeko?", "textPl": "Przepraszam, gdzie jest mleko?", "audioPath": "/audio/listening/hr-a1/a1-trgovina/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Tamo, pored kruha.", "textPl": "Tam, obok chleba.", "audioPath": "/audio/listening/hr-a1/a1-trgovina/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "A gdje su jaja?", "textPl": "A gdzie są jajka?", "audioPath": "/audio/listening/hr-a1/a1-trgovina/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Jaja su u hladnjaku, s desne strane.", "textPl": "Jajka są w lodówce, po prawej stronie.", "audioPath": "/audio/listening/hr-a1/a1-trgovina/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Hvala na pomoći.", "textPl": "Dziękuję za pomoc.", "audioPath": "/audio/listening/hr-a1/a1-trgovina/05-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Gdzie jest mleko?",
+        "options": [
+          { "id": "bread", "textPl": "Obok chleba" },
+          { "id": "fridge", "textPl": "W lodówce" },
+          { "id": "cash", "textPl": "Przy kasie" }
+        ],
+        "correctOptionId": "bread"
+      }
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import { QuickGame } from "@/quick-games/QuickGame";
 import { QUICK_GAME_IDS } from "@/quick-games/helpers";
 import { SentenceGameSession } from "@/sentences/SentenceGameSession";
 import { SENTENCE_MODES } from "@/sentences/types";
+import { ListeningGame } from "@/listening/ListeningGame";
 
 export const GAME_CATEGORIES = ["main", "quick", "grammar", "sentences", "listening", "radio"] as const;
 export interface GameModule {
@@ -41,7 +42,7 @@ export const GAMES: GameModule[] = [
     nameKey: `sentences.names.${mode}`, taglineKey: `sentences.descriptions.${mode}`, descriptionKey: `sentences.descriptions.${mode}`,
     component: () => createElement(SentenceGameSession, { mode }),
   })),
-  planned("listening", "listening"),
+  existing("listening", "listening", ListeningGame),
   { ...planned("radio", "radio"), status: "active", href: "/radio" },
   planned("false-friends", "quick"),
 ];
