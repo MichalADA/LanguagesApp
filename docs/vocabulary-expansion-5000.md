@@ -38,8 +38,12 @@ Nie usunięto historycznych powtórzeń istniejącej talii, aby zachować postę
 - „Wszystkie słowa” oraz fiszki korzystają z 5000 rekordów.
 - Gry korzystające z wyboru puli mają „Uzupełnienie podstaw” — 2000 nowych kart.
   Filtr tematyczny zawęża tę pulę bez powrotu do starej talii.
-- A1, A2 i B1 nadal obejmują odpowiednio 500, 1000 i 3000 kart.
-  Nowych kart nie przypisano automatycznie do B2.
+- A1, A2 i B1 obejmują odpowiednio 1000, 2000 i 5000 kart. Cztery nowe
+  bloki techniczne dołączyły do poziomów CEFR zgodnie z zawartością:
+  blok 7 (podstawowe zwroty, wszystkie z tagiem `podstawy`) do A1,
+  blok 8 (codzienne rzeczowniki: jedzenie, dom, zdrowie, ubrania) do A2,
+  bloki 9 i 10 (tematy specjalistyczne oraz mieszane czasowniki/przymiotniki)
+  do B1. Cała talia (5000 kart) jest dzięki temu osiągalna z poziomu B1.
 - Cztery nowe bloki techniczne liczą po 500 kart.
 
 ## Pochodzenie i jakość treści

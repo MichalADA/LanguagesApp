@@ -15,12 +15,14 @@ const { COURSE_PL_HR: course } = await load('../src/courses/registry.ts');
 const { parseDataset } = await load('../src/vocabulary/adapter.ts');
 const words = parseDataset(course, await readFile(new URL('../public/data/chorwacki_2000_PL-HR.csv', import.meta.url), 'utf8'));
 
-test('levels are cumulative and have exactly 500 / 1000 / 3000 words', () => {
+test('levels are cumulative and match the configured word counts', () => {
   assert.deepEqual(LEARNING_LEVELS.map(level => level.id), ['A1', 'A2', 'B1']);
+  const seen = new Set();
   for (const level of LEARNING_LEVELS) {
     const pool = entriesForLevel(words, level.id, course.blocks);
     assert.equal(pool.length, level.wordCount);
-    assert.equal(Math.max(...pool.map(word => word.rank)), level.wordCount);
+    for (const id of seen) assert.ok(pool.some(word => word.id === id), `${level.id} must include ${id}`);
+    for (const word of pool) seen.add(word.id);
   }
   assert.equal(levelForLegacyBlock(course.blocks[1].id, course.blocks), 'A2');
 });

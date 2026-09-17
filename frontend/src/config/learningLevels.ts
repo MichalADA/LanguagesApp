@@ -7,21 +7,21 @@
 export const LEARNING_LEVELS = [
   {
     id: "A1",
-    blocks: [1],
+    blocks: [1, 7],
     nameKey: "learningLevels.A1.name",
-    wordCount: 500,
-  },
-  {
-    id: "A2",
-    blocks: [1, 2],
-    nameKey: "learningLevels.A2.name",
     wordCount: 1_000,
   },
   {
+    id: "A2",
+    blocks: [1, 2, 7, 8],
+    nameKey: "learningLevels.A2.name",
+    wordCount: 2_000,
+  },
+  {
     id: "B1",
-    blocks: [1, 2, 3, 4, 5, 6],
+    blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     nameKey: "learningLevels.B1.name",
-    wordCount: 3_000,
+    wordCount: 5_000,
   },
 ] as const;
 

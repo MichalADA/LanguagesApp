@@ -45,10 +45,9 @@ test('new pool and topic intersect; all and existing CEFR pools keep their own r
   assert.ok(food.length > 0 && food.length < supplement.length);
   assert.ok(food.every(entry => entry.rank > 3000 && entry.tags.includes('food')));
   assert.equal(pool({ kind: 'supplement' }, 'nonexistent').length, 0);
-  for (const [level, count] of [['A1', 500], ['A2', 1000], ['B1', 3000]]) {
+  for (const [level, count] of [['A1', 1000], ['A2', 2000], ['B1', 5000]]) {
     const selected = pool({ kind: 'level', level });
     assert.equal(selected.length, count);
-    assert.ok(selected.every(entry => entry.rank <= count));
   }
 });
 
