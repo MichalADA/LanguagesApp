@@ -1,0 +1,2031 @@
+# phrase|conversation podstawy
+zovem se|nazywam się|Zovem se Marko.|Nazywam się Marko.
+moje ime je|mam na imię|Moje ime je Ana.|Mam na imię Ana.
+kako se prezivaš|jak masz na nazwisko|Kako se prezivaš?|Jak masz na nazwisko?
+prezivam se|mam na nazwisko|Prezivam se Kovač.|Mam na nazwisko Kovač.
+na ti|na ty|Možemo li biti na ti?|Czy możemy być na ty?
+na vi|na pan, pani|S njim sam na vi.|Zwracam się do niego per pan.
+na čemu smo|na czym stoimy|Na čemu smo.|Na czym stoimy.
+kako si|jak się masz|Kako si?|Jak się masz?
+dobro sam|dobrze się czuję|Dobro sam.|Dobrze się czuję.
+a ti|a ty|A ti?|A ty?
+ništa novo|nic nowego|Ništa novo.|Nic nowego.
+ne mogu se požaliti|nie mogę narzekać|Ne mogu se požaliti.|Nie mogę narzekać.
+nije loše|nie jest źle|Nije loše.|Nie jest źle.
+moglo bi biti bolje|mogłoby być lepiej|Moglo bi biti bolje.|Mogłoby być lepiej.
+kako je prošao dan|jak minął dzień|Kako je prošao dan?|Jak minął dzień?
+što radiš ovih dana|co ostatnio porabiasz|Što radiš ovih dana?|Co ostatnio porabiasz?
+čime se baviš|czym się zajmujesz|Čime se baviš?|Czym się zajmujesz?
+gdje radiš|gdzie pracujesz|Gdje radiš?|Gdzie pracujesz?
+gdje živiš|gdzie mieszkasz|Gdje živiš?|Gdzie mieszkasz?
+koliko imaš godina|ile masz lat|Koliko imaš godina?|Ile masz lat?
+iz Poljske sam|jestem z Polski|Iz Poljske sam.|Jestem z Polski.
+živim u Poljskoj|mieszkam w Polsce|Živim u Poljskoj.|Mieszkam w Polsce.
+prvi put sam ovdje|jestem tu pierwszy raz|Prvi put sam ovdje.|Jestem tu pierwszy raz.
+ovdje sam na odmoru|jestem tutaj na wakacjach|Ovdje sam na odmoru.|Jestem tutaj na wakacjach.
+ovdje sam poslovno|jestem tutaj służbowo|Ovdje sam poslovno.|Jestem tutaj służbowo.
+putujem sam|podróżuję sam|Putujem sam.|Podróżuję sam.
+putujem s obitelji|podróżuję z rodziną|Putujem s obitelji.|Podróżuję z rodziną.
+dolazim iz|pochodzę z|Dolazim iz Krakova.|Pochodzę z Krakowa.
+rođen sam u|urodziłem się w|Rođen sam u Zagrebu.|Urodziłem się w Zagrzebiu.
+živim sam|mieszkam sam|Živim sam.|Mieszkam sam.
+živim s roditeljima|mieszkam z rodzicami|Živim s roditeljima.|Mieszkam z rodzicami.
+imam brata|mam brata|Imam brata.|Mam brata.
+jedinac sam|jestem jedynakiem|Jedinac sam.|Jestem jedynakiem.
+u braku sam|jestem w związku małżeńskim|U braku sam.|Jestem w związku małżeńskim.
+nisam u braku|nie jestem w związku małżeńskim|Nisam u braku.|Nie jestem w związku małżeńskim.
+imam djecu|mam dzieci|Imam djecu.|Mam dzieci.
+nemam djece|nie mam dzieci|Nemam djece.|Nie mam dzieci.
+radim na daljinu|pracuję zdalnie|Radim na daljinu.|Pracuję zdalnie.
+radim za sebe|pracuję na własny rachunek|Radim za sebe.|Pracuję na własny rachunek.
+trenutačno ne radim|obecnie nie pracuję|Trenutačno ne radim.|Obecnie nie pracuję.
+učim hrvatski|uczę się chorwackiego|Učim hrvatski.|Uczę się chorwackiego.
+govorim malo hrvatski|mówię trochę po chorwacku|Govorim malo hrvatski.|Mówię trochę po chorwacku.
+ne govorim hrvatski|nie mówię po chorwacku|Ne govorim hrvatski.|Nie mówię po chorwacku.
+govorite li engleski|czy mówi pan/pani po angielsku|Govorite li engleski?|Czy mówi pan/pani po angielsku?
+možemo li govoriti poljski|czy możemy rozmawiać po polsku|Možemo li govoriti poljski?|Czy możemy rozmawiać po polsku?
+možete li ponoviti|czy może pan/pani powtórzyć|Možete li ponoviti?|Czy może pan/pani powtórzyć?
+molim vas, sporije|proszę wolniej|Molim vas, sporije.|Proszę wolniej.
+nisam dobro čuo|nie dosłyszałem|Nisam dobro čuo.|Nie dosłyszałem.
+nisam dobro razumio|nie zrozumiałem dobrze|Nisam dobro razumio.|Nie zrozumiałem dobrze.
+kako se to kaže na hrvatskom|jak to się mówi po chorwacku|Kako se to kaže na hrvatskom?|Jak to się mówi po chorwacku?
+kako se to piše|jak to się pisze|Kako se to piše?|Jak to się pisze?
+možete li to napisati|czy może pan/pani to napisać|Možete li to napisati?|Czy może pan/pani to napisać?
+možete li mi objasniti|czy może mi pan/pani wyjaśnić|Možete li mi objasniti?|Czy może mi pan/pani wyjaśnić?
+ne znam tu riječ|nie znam tego słowa|Ne znam tu riječ.|Nie znam tego słowa.
+što si rekao|co powiedziałeś|Što si rekao?|Co powiedziałeś?
+jesam li dobro izgovorio|czy dobrze wymówiłem|Jesam li dobro izgovorio?|Czy dobrze wymówiłem?
+ispravi me ako pogriješim|popraw mnie, jeśli się pomylę|Ispravi me ako pogriješim.|Popraw mnie, jeśli się pomylę.
+pokušat ću na hrvatskom|spróbuję po chorwacku|Pokušat ću na hrvatskom.|Spróbuję po chorwacku.
+još uvijek učim|nadal się uczę|Još uvijek učim.|Nadal się uczę.
+zaboravio sam riječ|zapomniałem słowa|Zaboravio sam riječ.|Zapomniałem słowa.
+razumijem više nego što govorim|rozumiem więcej, niż mówię|Razumijem više nego što govorim.|Rozumiem więcej, niż mówię.
+kako se izgovara tvoje ime|jak wymawia się twoje imię|Kako se izgovara tvoje ime?|Jak wymawia się twoje imię?
+možeš li mi dati primjer|czy możesz podać mi przykład|Možeš li mi dati primjer?|Czy możesz podać mi przykład?
+sad mi je jasno|teraz rozumiem|Sad mi je jasno.|Teraz rozumiem.
+ne znam kako to objasniti|nie wiem, jak to wyjaśnić|Ne znam kako to objasniti.|Nie wiem, jak to wyjaśnić.
+htio sam reći|chciałem powiedzieć|Htio sam reći nešto drugo.|Chciałem powiedzieć coś innego.
+mislim na|mam na myśli|Mislim na ovu knjigu.|Mam na myśli tę książkę.
+ne mislim tako|nie uważam tak|Ne mislim tako.|Nie uważam tak.
+razumiješ li me|czy mnie rozumiesz|Razumiješ li me?|Czy mnie rozumiesz?
+čuješ li me|czy mnie słyszysz|Čuješ li me?|Czy mnie słyszysz?
+vidiš li me|czy mnie widzisz|Vidiš li me?|Czy mnie widzisz?
+oprosti što smetam|przepraszam, że przeszkadzam|Oprosti što smetam.|Przepraszam, że przeszkadzam.
+imate li trenutak|czy ma pan/pani chwilę|Imate li trenutak?|Czy ma pan/pani chwilę?
+mogu li nešto pitati|czy mogę o coś zapytać|Mogu li nešto pitati?|Czy mogę o coś zapytać?
+mogu li proći|czy mogę przejść|Mogu li proći?|Czy mogę przejść?
+izvolite|proszę, oto dla pana/pani|Izvolite vaš račun.|Proszę, oto pański rachunek.
+izvoli|proszę, weź|Izvoli, ovo je za tebe.|Proszę, to dla ciebie.
+samo trenutak|chwileczkę|Samo trenutak.|Chwileczkę.
+pričekajte malo|proszę chwilę zaczekać|Pričekajte malo.|Proszę chwilę zaczekać.
+hvala lijepa|bardzo dziękuję|Hvala lijepa.|Bardzo dziękuję.
+hvala na pomoći|dziękuję za pomoc|Hvala na pomoći.|Dziękuję za pomoc.
+hvala na pozivu|dziękuję za zaproszenie|Hvala na pozivu.|Dziękuję za zaproszenie.
+hvala na svemu|dziękuję za wszystko|Hvala na svemu.|Dziękuję za wszystko.
+hvala unaprijed|z góry dziękuję|Hvala unaprijed.|Z góry dziękuję.
+puno ti hvala|wielkie dzięki|Puno ti hvala.|Wielkie dzięki.
+od srca hvala|dziękuję z całego serca|Od srca hvala.|Dziękuję z całego serca.
+ne treba|nie trzeba|Ne treba.|Nie trzeba.
+u redu je|wszystko w porządku|U redu je.|Wszystko w porządku.
+oprostite na smetnji|przepraszam za przeszkadzanie|Oprostite na smetnji.|Przepraszam za przeszkadzanie.
+nisam htio|nie chciałem|Nisam htio.|Nie chciałem.
+nisam namjerno|nie zrobiłem tego celowo|Nisam namjerno.|Nie zrobiłem tego celowo.
+moja greška|mój błąd|Moja greška.|Mój błąd.
+moja krivnja|moja wina|Moja krivnja.|Moja wina.
+nemoj se ljutiti|nie gniewaj się|Nemoj se ljutiti.|Nie gniewaj się.
+ne brini|nie martw się|Ne brini.|Nie martw się.
+ništa se nije dogodilo|nic się nie stało|Ništa se nije dogodilo.|Nic się nie stało.
+sve je u redu|wszystko jest w porządku|Sve je u redu.|Wszystko jest w porządku.
+nema veze|nie szkodzi|Nema veze.|Nie szkodzi.
+zaboravimo to|zapomnijmy o tym|Zaboravimo to.|Zapomnijmy o tym.
+drago mi je što smo se upoznali|miło mi, że się poznaliśmy|Drago mi je što smo se upoznali.|Miło mi, że się poznaliśmy.
+čuvaj se|uważaj na siebie|Čuvaj se.|Uważaj na siebie.
+čujemo se|będziemy w kontakcie|Čujemo se.|Będziemy w kontakcie.
+vidimo se sutra|do zobaczenia jutro|Vidimo se sutra.|Do zobaczenia jutro.
+vidimo se uskoro|do zobaczenia wkrótce|Vidimo se uskoro.|Do zobaczenia wkrótce.
+pozdravi obitelj|pozdrowienia dla rodziny|Pozdravi obitelj.|Pozdrowienia dla rodziny.
+pozdrav svima|pozdrawiam wszystkich|Pozdrav svima.|Pozdrawiam wszystkich.
+ugodan vikend|miłego weekendu|Ugodan vikend.|Miłego weekendu.
+lijepo se provedi|baw się dobrze|Lijepo se provedi.|Baw się dobrze.
+lijepo spavaj|śpij dobrze|Lijepo spavaj.|Śpij dobrze.
+sretan rođendan|wszystkiego najlepszego z okazji urodzin|Sretan rođendan.|Wszystkiego najlepszego z okazji urodzin.
+sretan Božić|wesołych świąt Bożego Narodzenia|Sretan Božić.|Wesołych świąt Bożego Narodzenia.
+sretan Uskrs|wesołych świąt Wielkanocy|Sretan Uskrs.|Wesołych świąt Wielkanocy.
+sretna Nova godina|szczęśliwego Nowego Roku|Sretna Nova godina.|Szczęśliwego Nowego Roku.
+čestitam od srca|gratuluję z całego serca|Čestitam od srca.|Gratuluję z całego serca.
+želim ti sve najbolje|życzę ci wszystkiego najlepszego|Želim ti sve najbolje.|Życzę ci wszystkiego najlepszego.
+brz oporavak|szybkiego powrotu do zdrowia|Brz oporavak.|Szybkiego powrotu do zdrowia.
+primi moju sućut|przyjmij moje kondolencje|Primi moju sućut.|Przyjmij moje kondolencje.
+baš mi je žao|bardzo mi przykro|Baš mi je žao.|Bardzo mi przykro.
+svaka čast|pełen szacunek|Svaka čast.|Pełen szacunek.
+bravo za tebe|brawo dla ciebie|Bravo za tebe.|Brawo dla ciebie.
+ponosan sam na tebe|jestem z ciebie dumny|Ponosan sam na tebe.|Jestem z ciebie dumny.
+sretno na ispitu|powodzenia na egzaminie|Sretno na ispitu.|Powodzenia na egzaminie.
+držim ti palčeve|trzymam za ciebie kciuki|Držim ti palčeve.|Trzymam za ciebie kciuki.
+uživaj|ciesz się chwilą|Uživaj.|Ciesz się chwilą.
+iznenadio si me|zaskoczyłeś mnie|Iznenadio si me.|Zaskoczyłeś mnie.
+stvarno mi je drago|naprawdę się cieszę|Stvarno mi je drago.|Naprawdę się cieszę.
+kakvo iznenađenje|co za niespodzianka|Kakvo iznenađenje.|Co za niespodzianka.
+nisam to očekivao|nie spodziewałem się tego|Nisam to očekivao.|Nie spodziewałem się tego.
+jedva čekam|nie mogę się doczekać|Jedva čekam.|Nie mogę się doczekać.
+veselim se susretu|cieszę się na spotkanie|Veselim se susretu.|Cieszę się na spotkanie.
+imaš li vremena|czy masz czas|Imaš li vremena?|Czy masz czas?
+jesi li slobodan večeras|czy jesteś wolny dziś wieczorem|Jesi li slobodan večeras?|Czy jesteś wolny dziś wieczorem?
+hoćemo li na kavu|może pójdziemy na kawę|Hoćemo li na kavu?|Może pójdziemy na kawę?
+želiš li nam se pridružiti|czy chcesz do nas dołączyć|Želiš li nam se pridružiti?|Czy chcesz do nas dołączyć?
+mogu li povesti prijatelja|czy mogę zabrać kolegę|Mogu li povesti prijatelja?|Czy mogę zabrać kolegę?
+što kažeš na subotu|co powiesz na sobotę|Što kažeš na subotu?|Co powiesz na sobotę?
+gdje ćemo se naći|gdzie się spotkamy|Gdje ćemo se naći?|Gdzie się spotkamy?
+u koliko sati|o której godzinie|U koliko sati?|O której godzinie?
+meni odgovara|mnie pasuje|Meni odgovara.|Mnie pasuje.
+meni ne odgovara|mnie nie pasuje|Meni ne odgovara.|Mnie nie pasuje.
+dogovoreno|umowa stoi|Dogovoreno.|Umowa stoi.
+može i ranije|może być też wcześniej|Može i ranije.|Może być też wcześniej.
+radije neki drugi dan|wolałbym innego dnia|Radije neki drugi dan.|Wolałbym innego dnia.
+javim ti na vrijeme|dam ci znać na czas|Javim ti na vrijeme.|Dam ci znać na czas.
+kasnim deset minuta|spóźnię się dziesięć minut|Kasnim deset minuta.|Spóźnię się dziesięć minut.
+na putu sam|jestem w drodze|Na putu sam.|Jestem w drodze.
+već sam stigao|już dotarłem|Već sam stigao.|Już dotarłem.
+čekam te ispred|czekam na ciebie przed|Čekam te ispred hotela.|Czekam na ciebie przed hotelem.
+stižem uskoro|zaraz będę|Stižem uskoro.|Zaraz będę.
+nemoj me čekati|nie czekaj na mnie|Nemoj me čekati.|Nie czekaj na mnie.
+moram otkazati|muszę odwołać|Moram otkazati rezervaciju.|Muszę odwołać rezerwację.
+nešto mi je iskrsnulo|coś mi wypadło|Nešto mi je iskrsnulo.|Coś mi wypadło.
+možemo li pomaknuti sastanak|czy możemy przesunąć spotkanie|Možemo li pomaknuti sastanak?|Czy możemy przesunąć spotkanie?
+hvala što si došao|dziękuję, że przyszedłeś|Hvala što si došao.|Dziękuję, że przyszedłeś.
+uđi slobodno|wejdź śmiało|Uđi slobodno.|Wejdź śmiało.
+osjećaj se kao kod kuće|czuj się jak u siebie|Osjećaj se kao kod kuće.|Czuj się jak u siebie.
+mogu li ti nešto ponuditi|czy mogę ci coś zaproponować|Mogu li ti nešto ponuditi?|Czy mogę ci coś zaproponować?
+želiš li nešto popiti|czy chcesz się czegoś napić|Želiš li nešto popiti?|Czy chcesz się czegoś napić?
+posluži se|poczęstuj się|Posluži se.|Poczęstuj się.
+sjedi gdje želiš|usiądź, gdzie chcesz|Sjedi gdje želiš.|Usiądź, gdzie chcesz.
+izuj cipele|zdejmij buty|Izuj cipele.|Zdejmij buty.
+ne moraš se izuvati|nie musisz zdejmować butów|Ne moraš se izuvati.|Nie musisz zdejmować butów.
+ovo je za tebe|to dla ciebie|Ovo je za tebe.|To dla ciebie.
+nisi trebao|nie trzeba było|Nisi trebao.|Nie trzeba było.
+hvala na gostoprimstvu|dziękuję za gościnę|Hvala na gostoprimstvu.|Dziękuję za gościnę.
+bilo je odlično|było świetnie|Bilo je odlično.|Było świetnie.
+moram polako krenuti|muszę już powoli ruszać|Moram polako krenuti.|Muszę już powoli ruszać.
+otpratit ću te|odprowadzę cię|Otpratit ću te.|Odprowadzę cię.
+javi kad stigneš|daj znać, kiedy dotrzesz|Javi kad stigneš.|Daj znać, kiedy dotrzesz.
+kako ti se sviđa|jak ci się podoba|Kako ti se sviđa?|Jak ci się podoba?
+sviđa mi se|podoba mi się|Sviđa mi se.|Podoba mi się.
+ne sviđa mi se|nie podoba mi się|Ne sviđa mi se.|Nie podoba mi się.
+baš je lijepo|jest naprawdę ładnie|Baš je lijepo.|Jest naprawdę ładnie.
+nije moj stil|to nie mój styl|Nije moj stil.|To nie mój styl.
+što preporučuješ|co polecasz|Što preporučuješ?|Co polecasz?
+preporučujem ti|polecam ci|Preporučujem ti ovu knjigu.|Polecam ci tę książkę.
+ti odluči|ty zdecyduj|Ti odluči.|Ty zdecyduj.
+kako god želiš|jakkolwiek zechcesz|Kako god želiš.|Jakkolwiek zechcesz.
+slažem se s tobom|zgadzam się z tobą|Slažem se s tobom.|Zgadzam się z tobą.
+ne slažem se s tobom|nie zgadzam się z tobą|Ne slažem se s tobom.|Nie zgadzam się z tobą.
+imaš pravo|masz rację|Imaš pravo.|Masz rację.
+nemaš pravo|nie masz racji|Nemaš pravo.|Nie masz racji.
+možda si u pravu|może masz rację|Možda si u pravu.|Może masz rację.
+nisam siguran|nie jestem pewien|Nisam siguran.|Nie jestem pewien.
+koliko ja znam|o ile wiem|Koliko ja znam, trgovina je otvorena.|O ile wiem, sklep jest otwarty.
+koliko se sjećam|o ile pamiętam|Koliko se sjećam, dolazi sutra.|O ile pamiętam, przyjeżdża jutro.
+ako se ne varam|jeśli się nie mylę|Ako se ne varam, ovo je tvoja torba.|Jeśli się nie mylę, to twoja torba.
+pošteno govoreći|uczciwie mówiąc|Pošteno govoreći, nisam zadovoljan.|Uczciwie mówiąc, nie jestem zadowolony.
+iskreno rečeno|szczerze mówiąc|Iskreno rečeno, ne znam.|Szczerze mówiąc, nie wiem.
+s jedne strane|z jednej strony|S jedne strane, želim ostati.|Z jednej strony chcę zostać.
+s druge strane|z drugiej strony|S druge strane, moram raditi.|Z drugiej strony muszę pracować.
+u svakom slučaju|w każdym razie|U svakom slučaju, hvala ti.|W każdym razie dziękuję ci.
+bez obzira na to|niezależnie od tego|Bez obzira na to, doći ću.|Niezależnie od tego przyjdę.
+što se mene tiče|jeśli o mnie chodzi|Što se mene tiče, možemo krenuti.|Jeśli o mnie chodzi, możemy ruszać.
+ima smisla|to ma sens|Ima smisla.|To ma sens.
+nema smisla|to nie ma sensu|Nema smisla.|To nie ma sensu.
+to je istina|to prawda|To je istina.|To prawda.
+nije istina|to nieprawda|Nije istina.|To nieprawda.
+nemam pojma|nie mam pojęcia|Nemam pojma.|Nie mam pojęcia.
+teško je reći|trudno powiedzieć|Teško je reći.|Trudno powiedzieć.
+ovisi o situaciji|to zależy od sytuacji|Ovisi o situaciji.|To zależy od sytuacji.
+zvuči dobro|brzmi dobrze|Zvuči dobro.|Brzmi dobrze.
+zvuči zanimljivo|brzmi interesująco|Zvuči zanimljivo.|Brzmi interesująco.
+zvuči čudno|brzmi dziwnie|Zvuči čudno.|Brzmi dziwnie.
+to me zanima|to mnie interesuje|To me zanima.|To mnie interesuje.
+ne zanima me|nie interesuje mnie to|Ne zanima me.|Nie interesuje mnie to.
+što misliš o tome|co o tym myślisz|Što misliš o tome?|Co o tym myślisz?
+zašto tako misliš|dlaczego tak uważasz|Zašto tako misliš?|Dlaczego tak uważasz?
+imaš li neki prijedlog|czy masz jakąś propozycję|Imaš li neki prijedlog?|Czy masz jakąś propozycję?
+imaš li bolju ideju|czy masz lepszy pomysł|Imaš li bolju ideju?|Czy masz lepszy pomysł?
+ne bih se složio|nie zgodziłbym się|Ne bih se složio.|Nie zgodziłbym się.
+razumijem što želiš reći|rozumiem, co chcesz powiedzieć|Razumijem što želiš reći.|Rozumiem, co chcesz powiedzieć.
+u tome je problem|w tym tkwi problem|U tome je problem.|W tym tkwi problem.
+nije u tome stvar|nie o to chodzi|Nije u tome stvar.|Nie o to chodzi.
+upravo o tome govorim|właśnie o tym mówię|Upravo o tome govorim.|Właśnie o tym mówię.
+vratimo se na temu|wróćmy do tematu|Vratimo se na temu.|Wróćmy do tematu.
+promijenimo temu|zmieńmy temat|Promijenimo temu.|Zmieńmy temat.
+ne želim o tome razgovarati|nie chcę o tym rozmawiać|Ne želim o tome razgovarati.|Nie chcę o tym rozmawiać.
+ostavimo to za kasnije|zostawmy to na później|Ostavimo to za kasnije.|Zostawmy to na później.
+imaš li što dodati|czy masz coś do dodania|Imaš li što dodati?|Czy masz coś do dodania?
+to je sve|to wszystko|To je sve.|To wszystko.
+za sada toliko|na razie tyle|Za sada toliko.|Na razie tyle.
+mogu li ti pomoći|czy mogę ci pomóc|Mogu li ti pomoći?|Czy mogę ci pomóc?
+treba mi pomoć|potrzebuję pomocy|Treba mi pomoć.|Potrzebuję pomocy.
+možeš li mi pomoći|czy możesz mi pomóc|Možeš li mi pomoći?|Czy możesz mi pomóc?
+ne mogu sam|nie dam rady sam|Ne mogu sam.|Nie dam rady sam.
+snaći ću se|poradzę sobie|Snaći ću se.|Poradzę sobie.
+pusti mene|pozwól mi to zrobić|Pusti mene da pokušam.|Pozwól mi spróbować.
+prepusti to meni|zostaw to mnie|Prepusti to meni.|Zostaw to mnie.
+pokaži mi kako|pokaż mi jak|Pokaži mi kako se to radi.|Pokaż mi, jak to się robi.
+možeš li mi učiniti uslugu|czy możesz wyświadczyć mi przysługę|Možeš li mi učiniti uslugu?|Czy możesz wyświadczyć mi przysługę?
+imaš li nešto protiv|czy masz coś przeciwko|Imaš li nešto protiv?|Czy masz coś przeciwko?
+smeta li ti|czy ci przeszkadza|Smeta li ti buka?|Czy przeszkadza ci hałas?
+ne smeta mi|nie przeszkadza mi|Ne smeta mi.|Nie przeszkadza mi.
+nemam ništa protiv|nie mam nic przeciwko|Nemam ništa protiv.|Nie mam nic przeciwko.
+smijem li sjesti|czy mogę usiąść|Smijem li sjesti?|Czy mogę usiąść?
+smijem li otvoriti prozor|czy mogę otworzyć okno|Smijem li otvoriti prozor?|Czy mogę otworzyć okno?
+mogu li posuditi olovku|czy mogę pożyczyć ołówek|Mogu li posuditi olovku?|Czy mogę pożyczyć ołówek?
+vratit ću ti sutra|oddam ci jutro|Vratit ću ti sutra.|Oddam ci jutro.
+samo polako|spokojnie, bez pośpiechu|Samo polako.|Spokojnie, bez pośpiechu.
+nema žurbe|nie ma pośpiechu|Nema žurbe.|Nie ma pośpiechu.
+pazi na sebe|dbaj o siebie|Pazi na sebe.|Dbaj o siebie.
+pazi gdje hodaš|uważaj, gdzie idziesz|Pazi gdje hodaš.|Uważaj, gdzie idziesz.
+pazi na stepenice|uważaj na schody|Pazi na stepenice.|Uważaj na schody.
+makni se malo|przesuń się trochę|Makni se malo.|Przesuń się trochę.
+napravi mjesta|zrób miejsce|Napravi mjesta.|Zrób miejsce.
+ostavi me na miru|zostaw mnie w spokoju|Ostavi me na miru.|Zostaw mnie w spokoju.
+pusti me da završim|pozwól mi skończyć|Pusti me da završim.|Pozwól mi skończyć.
+nemoj me prekidati|nie przerywaj mi|Nemoj me prekidati.|Nie przerywaj mi.
+slušaj me do kraja|wysłuchaj mnie do końca|Slušaj me do kraja.|Wysłuchaj mnie do końca.
+nije hitno|to nie jest pilne|Nije hitno.|To nie jest pilne.
+to može pričekati|to może poczekać|To može pričekati.|To może poczekać.
+učini to odmah|zrób to od razu|Učini to odmah.|Zrób to od razu.
+nemoj zaboraviti|nie zapomnij|Nemoj zaboraviti.|Nie zapomnij.
+podsjeti me kasnije|przypomnij mi później|Podsjeti me kasnije.|Przypomnij mi później.
+ne mogu obećati|nie mogę obiecać|Ne mogu obećati.|Nie mogę obiecać.
+dajem ti riječ|daję ci słowo|Dajem ti riječ.|Daję ci słowo.
+možeš računati na mene|możesz na mnie liczyć|Možeš računati na mene.|Możesz na mnie liczyć.
+vjeruj mi|uwierz mi|Vjeruj mi.|Uwierz mi.
+ne vjerujem ti|nie wierzę ci|Ne vjerujem ti.|Nie wierzę ci.
+šalim se|żartuję|Šalim se.|Żartuję.
+ne šalim se|nie żartuję|Ne šalim se.|Nie żartuję.
+nemoj to shvatiti ozbiljno|nie bierz tego na poważnie|Nemoj to shvatiti ozbiljno.|Nie bierz tego na poważnie.
+nije smiješno|to nie jest śmieszne|Nije smiješno.|To nie jest śmieszne.
+nasamario si me|nabrałeś mnie|Nasamario si me.|Nabrałeś mnie.
+baš si me nasmijao|ale mnie rozśmieszyłeś|Baš si me nasmijao.|Ale mnie rozśmieszyłeś.
+što se dogodilo|co się stało|Što se dogodilo?|Co się stało?
+što nije u redu|co jest nie tak|Što nije u redu?|Co jest nie tak?
+jesi li dobro|czy wszystko z tobą w porządku|Jesi li dobro?|Czy wszystko z tobą w porządku?
+kako se osjećaš|jak się czujesz|Kako se osjećaš?|Jak się czujesz?
+nisam najbolje|nie czuję się najlepiej|Nisam najbolje.|Nie czuję się najlepiej.
+umoran sam|jestem zmęczony|Umoran sam.|Jestem zmęczony.
+gladan sam|jestem głodny|Gladan sam.|Jestem głodny.
+žedan sam|chce mi się pić|Žedan sam.|Chce mi się pić.
+hladno mi je|jest mi zimno|Hladno mi je.|Jest mi zimno.
+vruće mi je|jest mi gorąco|Vruće mi je.|Jest mi gorąco.
+spava mi se|chce mi się spać|Spava mi se.|Chce mi się spać.
+žuri mi se|spieszę się|Žuri mi se.|Spieszę się.
+dosadno mi je|nudzę się|Dosadno mi je.|Nudzę się.
+strah me je|boję się|Strah me je.|Boję się.
+sram me je|wstydzę się|Sram me je.|Wstydzę się.
+brinem se za tebe|martwię się o ciebie|Brinem se za tebe.|Martwię się o ciebie.
+nedostaješ mi|tęsknię za tobą|Nedostaješ mi.|Tęsknię za tobą.
+mislim na tebe|myślę o tobie|Mislim na tebe.|Myślę o tobie.
+trebam malo mira|potrzebuję trochę spokoju|Trebam malo mira.|Potrzebuję trochę spokoju.
+želim biti sam|chcę być sam|Želim biti sam.|Chcę być sam.
+ne da mi se|nie chce mi się|Ne da mi se.|Nie chce mi się.
+nemam volje|nie mam ochoty|Nemam volje.|Nie mam ochoty.
+nemam snage|nie mam siły|Nemam snage.|Nie mam siły.
+sve mi ide na živce|wszystko działa mi na nerwy|Sve mi ide na živce.|Wszystko działa mi na nerwy.
+ljut sam na sebe|jestem zły na siebie|Ljut sam na sebe.|Jestem zły na siebie.
+laknulo mi je|ulżyło mi|Laknulo mi je.|Ulżyło mi.
+bolje mi je|czuję się lepiej|Bolje mi je.|Czuję się lepiej.
+to me veseli|to mnie cieszy|To me veseli.|To mnie cieszy.
+to me rastužuje|to mnie smuci|To me rastužuje.|To mnie smuci.
+to me iznenađuje|to mnie zaskakuje|To me iznenađuje.|To mnie zaskakuje.
+ne mogu vjerovati|nie mogę uwierzyć|Ne mogu vjerovati.|Nie mogę uwierzyć.
+ne mogu to podnijeti|nie mogę tego znieść|Ne mogu to podnijeti.|Nie mogę tego znieść.
+previše mi je|to dla mnie za dużo|Previše mi je.|To dla mnie za dużo.
+moram se odmoriti|muszę odpocząć|Moram se odmoriti.|Muszę odpocząć.
+trebam predah|potrzebuję wytchnienia|Trebam predah.|Potrzebuję wytchnienia.
+sve će biti dobro|wszystko będzie dobrze|Sve će biti dobro.|Wszystko będzie dobrze.
+proći će|to minie|Proći će.|To minie.
+nije kraj svijeta|to nie koniec świata|Nije kraj svijeta.|To nie koniec świata.
+razgovarajmo o tome|porozmawiajmy o tym|Razgovarajmo o tome.|Porozmawiajmy o tym.
+tu sam za tebe|jestem tu dla ciebie|Tu sam za tebe.|Jestem tu dla ciebie.
+hvala što me slušaš|dziękuję, że mnie słuchasz|Hvala što me slušaš.|Dziękuję, że mnie słuchasz.
+što ima za ručak|co jest na obiad|Što ima za ručak?|Co jest na obiad?
+jesi li već jeo|czy już jadłeś|Jesi li već jeo?|Czy już jadłeś?
+idem na posao|idę do pracy|Idem na posao.|Idę do pracy.
+vraćam se kući|wracam do domu|Vraćam se kući.|Wracam do domu.
+idem spavati|idę spać|Idem spavati.|Idę spać.
+moram rano ustati|muszę wcześnie wstać|Moram rano ustati.|Muszę wcześnie wstać.
+ostao sam kod kuće|zostałem w domu|Ostao sam kod kuće.|Zostałem w domu.
+imam slobodan dan|mam dzień wolny|Imam slobodan dan.|Mam dzień wolny.
+nemam danas vremena|nie mam dzisiaj czasu|Nemam danas vremena.|Nie mam dzisiaj czasu.
+što planiraš za vikend|co planujesz na weekend|Što planiraš za vikend?|Co planujesz na weekend?
+ništa nisam planirao|niczego nie planowałem|Ništa nisam planirao.|Niczego nie planowałem.
+vidjet ću još|jeszcze zobaczę|Vidjet ću još.|Jeszcze zobaczę.
+idemo zajedno|chodźmy razem|Idemo zajedno.|Chodźmy razem.
+možemo pješice|możemy pójść pieszo|Možemo pješice.|Możemy pójść pieszo.
+hoćeš li sa mnom|czy pójdziesz ze mną|Hoćeš li sa mnom?|Czy pójdziesz ze mną?
+čekaj me ovdje|zaczekaj na mnie tutaj|Čekaj me ovdje.|Zaczekaj na mnie tutaj.
+odmah se vraćam|zaraz wracam|Odmah se vraćam.|Zaraz wracam.
+neću dugo|nie zajmie mi to długo|Neću dugo.|Nie zajmie mi to długo.
+# phrase|travel podstawy
+oprostite, gdje je stanica|przepraszam, gdzie jest przystanek|Oprostite, gdje je stanica?|Przepraszam, gdzie jest przystanek?
+kako mogu doći do centra|jak mogę dotrzeć do centrum|Kako mogu doći do centra?|Jak mogę dotrzeć do centrum?
+je li daleko odavde|czy to daleko stąd|Je li daleko odavde?|Czy to daleko stąd?
+koliko treba pješice|ile czasu zajmuje dojście pieszo|Koliko treba pješice?|Ile czasu zajmuje dojście pieszo?
+idete u krivom smjeru|idzie pan/pani w złym kierunku|Idete u krivom smjeru.|Idzie pan/pani w złym kierunku.
+skrenite lijevo|proszę skręcić w lewo|Skrenite lijevo.|Proszę skręcić w lewo.
+skrenite desno|proszę skręcić w prawo|Skrenite desno.|Proszę skręcić w prawo.
+idite ravno|proszę iść prosto|Idite ravno.|Proszę iść prosto.
+prijeđite cestu|proszę przejść przez jezdnię|Prijeđite cestu.|Proszę przejść przez jezdnię.
+na sljedećem raskrižju|na następnym skrzyżowaniu|Skrenite na sljedećem raskrižju.|Proszę skręcić na następnym skrzyżowaniu.
+na drugoj strani ulice|po drugiej stronie ulicy|Banka je na drugoj strani ulice.|Bank jest po drugiej stronie ulicy.
+na kraju ulice|na końcu ulicy|Hotel je na kraju ulice.|Hotel jest na końcu ulicy.
+odmah iza ugla|zaraz za rogiem|Ljekarna je odmah iza ugla.|Apteka jest zaraz za rogiem.
+ne možete promašiti|nie sposób nie trafić|Ne možete promašiti.|Nie sposób nie trafić.
+možete li pokazati na karti|czy może pan/pani pokazać na mapie|Možete li pokazati na karti?|Czy może pan/pani pokazać na mapie?
+mislim da sam se izgubio|chyba się zgubiłem|Mislim da sam se izgubio.|Chyba się zgubiłem.
+tražim ovu adresu|szukam tego adresu|Tražim ovu adresu.|Szukam tego adresu.
+je li ovo pravi put|czy to właściwa droga|Je li ovo pravi put?|Czy to właściwa droga?
+možete li me odvesti do hotela|czy może mnie pan/pani zawieźć do hotelu|Možete li me odvesti do hotela?|Czy może mnie pan/pani zawieźć do hotelu?
+koliko košta vožnja|ile kosztuje przejazd|Koliko košta vožnja?|Ile kosztuje przejazd?
+molim vas, stanite ovdje|proszę zatrzymać się tutaj|Molim vas, stanite ovdje.|Proszę zatrzymać się tutaj.
+vozi li ovaj autobus do centra|czy ten autobus jedzie do centrum|Vozi li ovaj autobus do centra?|Czy ten autobus jedzie do centrum?
+gdje se kupuju karte|gdzie kupuje się bilety|Gdje se kupuju karte?|Gdzie kupuje się bilety?
+jednu kartu, molim|poproszę jeden bilet|Jednu kartu, molim.|Poproszę jeden bilet.
+povratnu kartu, molim|poproszę bilet powrotny|Povratnu kartu, molim.|Poproszę bilet powrotny.
+moram li presjedati|czy muszę się przesiadać|Moram li presjedati?|Czy muszę się przesiadać?
+gdje trebam izaći|gdzie mam wysiąść|Gdje trebam izaći?|Gdzie mam wysiąść?
+koja je sljedeća stanica|jaki jest następny przystanek|Koja je sljedeća stanica?|Jaki jest następny przystanek?
+je li ovo mjesto slobodno|czy to miejsce jest wolne|Je li ovo mjesto slobodno?|Czy to miejsce jest wolne?
+ovo je moje mjesto|to moje miejsce|Ovo je moje mjesto.|To moje miejsce.
+koliko kasni vlak|ile spóźnia się pociąg|Koliko kasni vlak?|Ile spóźnia się pociąg?
+s kojeg perona polazi|z którego peronu odjeżdża|S kojeg perona polazi?|Z którego peronu odjeżdża?
+propustio sam autobus|uciekł mi autobus|Propustio sam autobus.|Uciekł mi autobus.
+kad polazi zadnji autobus|kiedy odjeżdża ostatni autobus|Kad polazi zadnji autobus?|Kiedy odjeżdża ostatni autobus?
+vrijedi li ova karta|czy ten bilet jest ważny|Vrijedi li ova karta?|Czy ten bilet jest ważny?
+moram li poništiti kartu|czy muszę skasować bilet|Moram li poništiti kartu?|Czy muszę skasować bilet?
+mogu li platiti kod vozača|czy mogę zapłacić u kierowcy|Mogu li platiti kod vozača?|Czy mogę zapłacić u kierowcy?
+imate li sitno|czy ma pan/pani drobne|Imate li sitno?|Czy ma pan/pani drobne?
+nemam sitnog novca|nie mam drobnych|Nemam sitnog novca.|Nie mam drobnych.
+želim unajmiti auto|chcę wynająć samochód|Želim unajmiti auto.|Chcę wynająć samochód.
+je li osiguranje uključeno|czy ubezpieczenie jest wliczone|Je li osiguranje uključeno?|Czy ubezpieczenie jest wliczone?
+mogu li vratiti auto drugdje|czy mogę zwrócić samochód w innym miejscu|Mogu li vratiti auto drugdje?|Czy mogę zwrócić samochód w innym miejscu?
+pun spremnik, molim|poproszę pełny bak|Pun spremnik, molim.|Poproszę pełny bak.
+gdje je najbliža benzinska postaja|gdzie jest najbliższa stacja benzynowa|Gdje je najbliža benzinska postaja?|Gdzie jest najbliższa stacja benzynowa?
+smijem li ovdje parkirati|czy mogę tutaj zaparkować|Smijem li ovdje parkirati?|Czy mogę tutaj zaparkować?
+koliko košta sat parkiranja|ile kosztuje godzina parkowania|Koliko košta sat parkiranja?|Ile kosztuje godzina parkowania?
+auto mi se pokvario|zepsuł mi się samochód|Auto mi se pokvario.|Zepsuł mi się samochód.
+ne mogu upaliti auto|nie mogę uruchomić samochodu|Ne mogu upaliti auto.|Nie mogę uruchomić samochodu.
+pukla mi je guma|pękła mi opona|Pukla mi je guma.|Pękła mi opona.
+trebam vučnu službu|potrzebuję pomocy drogowej|Trebam vučnu službu.|Potrzebuję pomocy drogowej.
+nestalo mi je goriva|skończyło mi się paliwo|Nestalo mi je goriva.|Skończyło mi się paliwo.
+ima li ozlijeđenih|czy są ranni|Ima li ozlijeđenih?|Czy są ranni?
+zovite policiju|proszę zadzwonić na policję|Zovite policiju.|Proszę zadzwonić na policję.
+izgubio sam putovnicu|zgubiłem paszport|Izgubio sam putovnicu.|Zgubiłem paszport.
+netko mi je ukrao torbu|ktoś ukradł mi torbę|Netko mi je ukrao torbu.|Ktoś ukradł mi torbę.
+želim prijaviti krađu|chcę zgłosić kradzież|Želim prijaviti krađu.|Chcę zgłosić kradzież.
+gdje je izlaz za ukrcaj|gdzie jest bramka do wejścia na pokład|Gdje je izlaz za ukrcaj?|Gdzie jest bramka do wejścia na pokład?
+kada počinje ukrcaj|kiedy zaczyna się wejście na pokład|Kada počinje ukrcaj?|Kiedy zaczyna się wejście na pokład?
+imam samo ručnu prtljagu|mam tylko bagaż podręczny|Imam samo ručnu prtljagu.|Mam tylko bagaż podręczny.
+moja prtljaga nije stigla|mój bagaż nie dotarł|Moja prtljaga nije stigla.|Mój bagaż nie dotarł.
+moj je let otkazan|mój lot został odwołany|Moj je let otkazan.|Mój lot został odwołany.
+mogu li promijeniti kartu|czy mogę zmienić bilet|Mogu li promijeniti kartu?|Czy mogę zmienić bilet?
+želim mjesto do prozora|chcę miejsce przy oknie|Želim mjesto do prozora.|Chcę miejsce przy oknie.
+želim mjesto do prolaza|chcę miejsce przy przejściu|Želim mjesto do prolaza.|Chcę miejsce przy przejściu.
+koliko traje let|ile trwa lot|Koliko traje let?|Ile trwa lot?
+moram uhvatiti vezu|muszę zdążyć na połączenie|Moram uhvatiti vezu.|Muszę zdążyć na połączenie.
+ništa za prijaviti|nic do oclenia|Ništa za prijaviti.|Nic do oclenia.
+imam nešto za prijaviti|mam coś do oclenia|Imam nešto za prijaviti.|Mam coś do oclenia.
+samo prolazim|tylko przejeżdżam|Samo prolazim.|Tylko przejeżdżam.
+koliko dugo ostajete|jak długo pan/pani zostaje|Koliko dugo ostajete?|Jak długo pan/pani zostaje?
+ostajem tjedan dana|zostaję na tydzień|Ostajem tjedan dana.|Zostaję na tydzień.
+imam povratnu kartu|mam bilet powrotny|Imam povratnu kartu.|Mam bilet powrotny.
+# phrase|travel home podstawy
+imam rezervaciju|mam rezerwację|Imam rezervaciju.|Mam rezerwację.
+rezervacija je na moje ime|rezerwacja jest na moje nazwisko|Rezervacija je na moje ime.|Rezerwacja jest na moje nazwisko.
+imate li slobodnih soba|czy mają państwo wolne pokoje|Imate li slobodnih soba?|Czy mają państwo wolne pokoje?
+za dvije osobe|dla dwóch osób|Trebam sobu za dvije osobe.|Potrzebuję pokoju dla dwóch osób.
+za jednu noć|na jedną noc|Imam rezervaciju za jednu noć.|Mam rezerwację na jedną noc.
+je li doručak uključen|czy śniadanie jest wliczone|Je li doručak uključen?|Czy śniadanie jest wliczone?
+koliko košta noćenje|ile kosztuje nocleg|Koliko košta noćenje?|Ile kosztuje nocleg?
+mogu li vidjeti sobu|czy mogę zobaczyć pokój|Mogu li vidjeti sobu?|Czy mogę zobaczyć pokój?
+ima li soba balkon|czy pokój ma balkon|Ima li soba balkon?|Czy pokój ma balkon?
+ima li u sobi kupaonica|czy w pokoju jest łazienka|Ima li u sobi kupaonica?|Czy w pokoju jest łazienka?
+u koliko je doručak|o której jest śniadanie|U koliko je doručak?|O której jest śniadanie?
+do kada se moram odjaviti|do kiedy muszę się wymeldować|Do kada se moram odjaviti?|Do kiedy muszę się wymeldować?
+mogu li ostaviti prtljagu|czy mogę zostawić bagaż|Mogu li ostaviti prtljagu?|Czy mogę zostawić bagaż?
+koja je lozinka za Wi-Fi|jakie jest hasło do Wi-Fi|Koja je lozinka za Wi-Fi?|Jakie jest hasło do Wi-Fi?
+ne radi klima|nie działa klimatyzacja|Ne radi klima.|Nie działa klimatyzacja.
+nema tople vode|nie ma ciepłej wody|Nema tople vode.|Nie ma ciepłej wody.
+soba nije očišćena|pokój nie został posprzątany|Soba nije očišćena.|Pokój nie został posprzątany.
+mogu li dobiti drugi ručnik|czy mogę dostać drugi ręcznik|Mogu li dobiti drugi ručnik?|Czy mogę dostać drugi ręcznik?
+molim dodatnu deku|poproszę dodatkowy koc|Molim dodatnu deku.|Poproszę dodatkowy koc.
+previše je bučno|jest zbyt głośno|Previše je bučno.|Jest zbyt głośno.
+mogu li promijeniti sobu|czy mogę zmienić pokój|Mogu li promijeniti sobu?|Czy mogę zmienić pokój?
+ključ ne radi|klucz nie działa|Ključ ne radi.|Klucz nie działa.
+ostao sam vani bez ključa|zostałem na zewnątrz bez klucza|Ostao sam vani bez ključa.|Zostałem na zewnątrz bez klucza.
+želim produljiti boravak|chcę przedłużyć pobyt|Želim produljiti boravak.|Chcę przedłużyć pobyt.
+mogu li se kasnije odjaviti|czy mogę wymeldować się później|Mogu li se kasnije odjaviti?|Czy mogę wymeldować się później?
+molim račun na tvrtku|poproszę fakturę na firmę|Molim račun na tvrtku.|Poproszę fakturę na firmę.
+možete li pozvati taksi|czy może pan/pani zamówić taksówkę|Možete li pozvati taksi?|Czy może pan/pani zamówić taksówkę?
+hvala na ugodnom boravku|dziękuję za miły pobyt|Hvala na ugodnom boravku.|Dziękuję za miły pobyt.
+tražim stan za najam|szukam mieszkania do wynajęcia|Tražim stan za najam.|Szukam mieszkania do wynajęcia.
+kolika je mjesečna najamnina|ile wynosi miesięczny czynsz najmu|Kolika je mjesečna najamnina?|Ile wynosi miesięczny czynsz najmu?
+jesu li režije uključene|czy opłaty są wliczone|Jesu li režije uključene?|Czy opłaty są wliczone?
+koliki je polog|ile wynosi kaucja|Koliki je polog?|Ile wynosi kaucja?
+je li stan namješten|czy mieszkanie jest umeblowane|Je li stan namješten?|Czy mieszkanie jest umeblowane?
+jesu li kućni ljubimci dopušteni|czy zwierzęta domowe są dozwolone|Jesu li kućni ljubimci dopušteni?|Czy zwierzęta domowe są dozwolone?
+kada se mogu useliti|kiedy mogę się wprowadzić|Kada se mogu useliti?|Kiedy mogę się wprowadzić?
+koliko traje ugovor|jak długo obowiązuje umowa|Koliko traje ugovor?|Jak długo obowiązuje umowa?
+ima li perilicu rublja|czy jest pralka|Ima li perilicu rublja?|Czy jest pralka?
+kakvo je grijanje|jakie jest ogrzewanie|Kakvo je grijanje?|Jakie jest ogrzewanie?
+# phrase|food podstawy
+stol za dvoje, molim|poproszę stolik dla dwojga|Stol za dvoje, molim.|Poproszę stolik dla dwojga.
+imamo rezerviran stol|mamy zarezerwowany stolik|Imamo rezerviran stol.|Mamy zarezerwowany stolik.
+možemo li sjesti vani|czy możemy usiąść na zewnątrz|Možemo li sjesti vani?|Czy możemy usiąść na zewnątrz?
+mogu li dobiti jelovnik|czy mogę dostać menu|Mogu li dobiti jelovnik?|Czy mogę dostać menu?
+što preporučujete|co pan/pani poleca|Što preporučujete?|Co pan/pani poleca?
+koje je jelo dana|jakie jest danie dnia|Koje je jelo dana?|Jakie jest danie dnia?
+još nismo odlučili|jeszcze nie zdecydowaliśmy|Još nismo odlučili.|Jeszcze nie zdecydowaliśmy.
+trebamo još malo vremena|potrzebujemy jeszcze trochę czasu|Trebamo još malo vremena.|Potrzebujemy jeszcze trochę czasu.
+spremni smo naručiti|jesteśmy gotowi zamówić|Spremni smo naručiti.|Jesteśmy gotowi zamówić.
+za mene isto|dla mnie to samo|Za mene isto.|Dla mnie to samo.
+bez luka, molim|poproszę bez cebuli|Bez luka, molim.|Poproszę bez cebuli.
+umak sa strane|sos osobno|Molim umak sa strane.|Poproszę sos osobno.
+je li ovo ljuto|czy to jest ostre|Je li ovo ljuto?|Czy to jest ostre?
+sadrži li ovo orašaste plodove|czy to zawiera orzechy|Sadrži li ovo orašaste plodove?|Czy to zawiera orzechy?
+alergičan sam na kikiriki|mam alergię na orzeszki ziemne|Alergičan sam na kikiriki.|Mam alergię na orzeszki ziemne.
+ne jedem meso|nie jem mięsa|Ne jedem meso.|Nie jem mięsa.
+imate li vegetarijansko jelo|czy mają państwo danie wegetariańskie|Imate li vegetarijansko jelo?|Czy mają państwo danie wegetariańskie?
+mogu li dobiti manju porciju|czy mogę dostać mniejszą porcję|Mogu li dobiti manju porciju?|Czy mogę dostać mniejszą porcję?
+vodu iz slavine, molim|poproszę wodę z kranu|Vodu iz slavine, molim.|Poproszę wodę z kranu.
+bez leda, molim|poproszę bez lodu|Bez leda, molim.|Poproszę bez lodu.
+još jednu kavu, molim|poproszę jeszcze jedną kawę|Još jednu kavu, molim.|Poproszę jeszcze jedną kawę.
+kavu za van|kawę na wynos|Molim kavu za van.|Poproszę kawę na wynos.
+za ovdje ili za van|na miejscu czy na wynos|Za ovdje ili za van?|Na miejscu czy na wynos?
+možete li ovo zapakirati|czy może pan/pani to zapakować|Možete li ovo zapakirati?|Czy może pan/pani to zapakować?
+ovo nisam naručio|tego nie zamawiałem|Ovo nisam naručio.|Tego nie zamawiałem.
+nedostaje nam jedno jelo|brakuje nam jednego dania|Nedostaje nam jedno jelo.|Brakuje nam jednego dania.
+jelo je hladno|danie jest zimne|Jelo je hladno.|Danie jest zimne.
+meso nije dovoljno pečeno|mięso jest niedopieczone|Meso nije dovoljno pečeno.|Mięso jest niedopieczone.
+bilo je ukusno|było smaczne|Bilo je ukusno.|Było smaczne.
+račun, molim|poproszę rachunek|Račun, molim.|Poproszę rachunek.
+možemo li platiti odvojeno|czy możemy zapłacić osobno|Možemo li platiti odvojeno?|Czy możemy zapłacić osobno?
+plaćamo zajedno|płacimy razem|Plaćamo zajedno.|Płacimy razem.
+je li napojnica uključena|czy napiwek jest wliczony|Je li napojnica uključena?|Czy napiwek jest wliczony?
+zadržite ostatak|reszty nie trzeba|Zadržite ostatak.|Reszty nie trzeba.
+mislim da je račun pogrešan|chyba rachunek jest błędny|Mislim da je račun pogrešan.|Chyba rachunek jest błędny.
+možete li donijeti žlicu|czy może pan/pani przynieść łyżkę|Možete li donijeti žlicu?|Czy może pan/pani przynieść łyżkę?
+mogu li dobiti još kruha|czy mogę dostać jeszcze chleba|Mogu li dobiti još kruha?|Czy mogę dostać jeszcze chleba?
+što ćete popiti|czego się pan/pani napije|Što ćete popiti.|Czego się pan/pani napije.
+što ćete jesti|co będzie pan/pani jeść|Što ćete jesti?|Co będzie pan/pani jeść?
+# phrase|shopping podstawy
+samo gledam|tylko się rozglądam|Samo gledam.|Tylko się rozglądam.
+tražim poklon|szukam prezentu|Tražim poklon.|Szukam prezentu.
+imate li ovo u drugoj boji|czy mają państwo to w innym kolorze|Imate li ovo u drugoj boji?|Czy mają państwo to w innym kolorze?
+imate li veći broj|czy mają państwo większy rozmiar|Imate li veći broj?|Czy mają państwo większy rozmiar?
+imate li manji broj|czy mają państwo mniejszy rozmiar|Imate li manji broj?|Czy mają państwo mniejszy rozmiar?
+gdje je kabina za presvlačenje|gdzie jest przymierzalnia|Gdje je kabina za presvlačenje?|Gdzie jest przymierzalnia?
+mogu li ovo isprobati|czy mogę to przymierzyć|Mogu li ovo isprobati?|Czy mogę to przymierzyć?
+ovo mi je premalo|to jest na mnie za małe|Ovo mi je premalo.|To jest na mnie za małe.
+ovo mi je preveliko|to jest na mnie za duże|Ovo mi je preveliko.|To jest na mnie za duże.
+dobro mi stoji|dobrze na mnie leży|Dobro mi stoji.|Dobrze na mnie leży.
+uzet ću ovo|wezmę to|Uzet ću ovo.|Wezmę to.
+koliko stoji|ile kosztuje|Koliko stoji?|Ile kosztuje?
+je li ovo na sniženju|czy to jest przecenione|Je li ovo na sniženju?|Czy to jest przecenione?
+imate li nešto jeftinije|czy mają państwo coś tańszego|Imate li nešto jeftinije?|Czy mają państwo coś tańszego?
+mogu li platiti karticom|czy mogę zapłacić kartą|Mogu li platiti karticom?|Czy mogę zapłacić kartą?
+primamo samo gotovinu|przyjmujemy tylko gotówkę|Primamo samo gotovinu.|Przyjmujemy tylko gotówkę.
+plaćanje je odbijeno|płatność została odrzucona|Plaćanje je odbijeno.|Płatność została odrzucona.
+želite li vrećicu|czy chce pan/pani torbę|Želite li vrećicu?|Czy chce pan/pani torbę?
+imam svoju torbu|mam własną torbę|Imam svoju torbu.|Mam własną torbę.
+trebam račun|potrzebuję paragonu|Trebam račun.|Potrzebuję paragonu.
+mogu li ovo vratiti|czy mogę to zwrócić|Mogu li ovo vratiti?|Czy mogę to zwrócić?
+želim zamijeniti proizvod|chcę wymienić produkt|Želim zamijeniti proizvod.|Chcę wymienić produkt.
+ovo je oštećeno|to jest uszkodzone|Ovo je oštećeno.|To jest uszkodzone.
+ne radi kako treba|nie działa jak należy|Ne radi kako treba.|Nie działa jak należy.
+imam jamstvo|mam gwarancję|Imam jamstvo.|Mam gwarancję.
+nemam više račun|nie mam już paragonu|Nemam više račun.|Nie mam już paragonu.
+kada će opet biti dostupno|kiedy znów będzie dostępne|Kada će opet biti dostupno?|Kiedy znów będzie dostępne?
+možete li mi to naručiti|czy może mi pan/pani to zamówić|Možete li mi to naručiti?|Czy może mi pan/pani to zamówić?
+koliko traje dostava|ile trwa dostawa|Koliko traje dostava?|Ile trwa dostawa?
+mogu li preuzeti osobno|czy mogę odebrać osobiście|Mogu li preuzeti osobno?|Czy mogę odebrać osobiście?
+je li cijena po kilogramu|czy cena jest za kilogram|Je li cijena po kilogramu?|Czy cena jest za kilogram?
+pola kilograma, molim|poproszę pół kilograma|Pola kilograma, molim.|Poproszę pół kilograma.
+narežite na tanke kriške|proszę pokroić w cienkie plasterki|Narežite na tanke kriške.|Proszę pokroić w cienkie plasterki.
+samo toliko|tylko tyle|Samo toliko.|Tylko tyle.
+još nešto|coś jeszcze|Želite li još nešto?|Czy chce pan coś jeszcze?
+ne, hvala|nie, dziękuję|Ne, hvala.|Nie, dziękuję.
+izvolite račun|proszę, oto paragon|Izvolite račun.|Proszę, oto paragon.
+povrat samo uz račun|zwrot tylko z paragonem|Povrat samo uz račun.|Zwrot tylko z paragonem.
+# phrase|health podstawy
+trebam liječnika|potrzebuję lekarza|Trebam liječnika.|Potrzebuję lekarza.
+pozovite hitnu pomoć|wezwijcie pogotowie|Pozovite hitnu pomoć.|Wezwijcie pogotowie.
+ne mogu disati|nie mogę oddychać|Ne mogu disati.|Nie mogę oddychać.
+boli me glava|boli mnie głowa|Boli me glava.|Boli mnie głowa.
+boli me grlo|boli mnie gardło|Boli me grlo.|Boli mnie gardło.
+boli me zub|boli mnie ząb|Boli me zub.|Boli mnie ząb.
+boli me trbuh|boli mnie brzuch|Boli me trbuh.|Boli mnie brzuch.
+imam temperaturu|mam gorączkę|Imam temperaturu.|Mam gorączkę.
+vrti mi se u glavi|kręci mi się w głowie|Vrti mi se u glavi.|Kręci mi się w głowie.
+muka mi je|jest mi niedobrze|Muka mi je.|Jest mi niedobrze.
+imam proljev|mam biegunkę|Imam proljev.|Mam biegunkę.
+imam zatvor|mam zaparcie|Imam zatvor.|Mam zaparcie.
+ne mogu spavati|nie mogę spać|Ne mogu spavati.|Nie mogę spać.
+kašljem već nekoliko dana|kaszlę już od kilku dni|Kašljem već nekoliko dana.|Kaszlę już od kilku dni.
+boli me kad gutam|boli mnie przy przełykaniu|Boli me kad gutam.|Boli mnie przy przełykaniu.
+ovdje me boli|tutaj mnie boli|Ovdje me boli.|Tutaj mnie boli.
+bol je sve jača|ból jest coraz silniejszy|Bol je sve jača.|Ból jest coraz silniejszy.
+pao sam|upadłem|Pao sam.|Upadłem.
+porezao sam se|skaleczyłem się|Porezao sam se.|Skaleczyłem się.
+uganuo sam gležanj|skręciłem kostkę|Uganuo sam gležanj.|Skręciłem kostkę.
+ubola me osa|użądliła mnie osa|Ubola me osa.|Użądliła mnie osa.
+imam alergiju|mam alergię|Imam alergiju.|Mam alergię.
+uzimam ove lijekove|przyjmuję te leki|Uzimam ove lijekove.|Przyjmuję te leki.
+imam zdravstveno osiguranje|mam ubezpieczenie zdrowotne|Imam zdravstveno osiguranje.|Mam ubezpieczenie zdrowotne.
+želim se naručiti na pregled|chcę umówić się na badanie|Želim se naručiti na pregled.|Chcę umówić się na badanie.
+imam zakazan pregled|mam umówione badanie|Imam zakazan pregled.|Mam umówione badanie.
+koliko dugo to traje|jak długo to trwa|Koliko dugo to traje?|Jak długo to trwa?
+jeste li već imali takve tegobe|czy miał pan/pani wcześniej takie dolegliwości|Jeste li već imali takve tegobe?|Czy miał pan/pani wcześniej takie dolegliwości?
+udahnite duboko|proszę wziąć głęboki wdech|Udahnite duboko.|Proszę wziąć głęboki wdech.
+zadržite dah|proszę wstrzymać oddech|Zadržite dah.|Proszę wstrzymać oddech.
+otvorite usta|proszę otworzyć usta|Otvorite usta.|Proszę otworzyć usta.
+možete se odjenuti|może się pan/pani ubrać|Možete se odjenuti.|Może się pan/pani ubrać.
+koliko puta dnevno|ile razy dziennie|Koliko puta dnevno?|Ile razy dziennie?
+prije ili poslije jela|przed czy po jedzeniu|Prije ili poslije jela?|Przed czy po jedzeniu?
+koliko dana trebam uzimati lijek|przez ile dni mam przyjmować lek|Koliko dana trebam uzimati lijek?|Przez ile dni mam przyjmować lek?
+treba li mi recept|czy potrzebuję recepty|Treba li mi recept?|Czy potrzebuję recepty?
+mogu li ovo uzimati s drugim lijekovima|czy mogę to przyjmować z innymi lekami|Mogu li ovo uzimati s drugim lijekovima?|Czy mogę to przyjmować z innymi lekami?
+kada će biti nalazi|kiedy będą wyniki|Kada će biti nalazi?|Kiedy będą wyniki?
+kada trebam doći na kontrolu|kiedy mam przyjść na kontrolę|Kada trebam doći na kontrolu?|Kiedy mam przyjść na kontrolę?
+možete li mi dati potvrdu|czy może mi pan/pani dać zaświadczenie|Možete li mi dati potvrdu?|Czy może mi pan/pani dać zaświadczenie?
+# phrase|work podstawy
+radim od kuće|pracuję z domu|Radim od kuće.|Pracuję z domu.
+počinjem raditi u devet|zaczynam pracę o dziewiątej|Počinjem raditi u devet.|Zaczynam pracę o dziewiątej.
+završavam u pet|kończę o piątej|Završavam u pet.|Kończę o piątej.
+imam sastanak|mam spotkanie|Imam sastanak.|Mam spotkanie.
+na pauzi sam|jestem na przerwie|Na pauzi sam.|Jestem na przerwie.
+danas sam na godišnjem|jestem dziś na urlopie|Danas sam na godišnjem.|Jestem dziś na urlopie.
+nisam u uredu|nie ma mnie w biurze|Nisam u uredu.|Nie ma mnie w biurze.
+možete li mi poslati e-mail|czy może mi pan/pani wysłać e-mail|Možete li mi poslati e-mail?|Czy może mi pan/pani wysłać e-mail?
+poslat ću ti poruku|wyślę ci wiadomość|Poslat ću ti poruku.|Wyślę ci wiadomość.
+poslao sam u privitku|wysłałem w załączniku|Poslao sam u privitku.|Wysłałem w załączniku.
+nisam dobio poruku|nie dostałem wiadomości|Nisam dobio poruku.|Nie dostałem wiadomości.
+možeš li provjeriti|czy możesz sprawdzić|Možeš li provjeriti?|Czy możesz sprawdzić?
+javim ti kad završim|dam ci znać, kiedy skończę|Javim ti kad završim.|Dam ci znać, kiedy skończę.
+trebam više vremena|potrzebuję więcej czasu|Trebam više vremena.|Potrzebuję więcej czasu.
+koji je rok|jaki jest termin|Koji je rok?|Jaki jest termin?
+što je prioritet|co jest priorytetem|Što je prioritet?|Co jest priorytetem?
+tko je za to zadužen|kto za to odpowiada|Tko je za to zadužen?|Kto za to odpowiada?
+možemo li podijeliti posao|czy możemy podzielić pracę|Možemo li podijeliti posao?|Czy możemy podzielić pracę?
+završio sam svoj dio|skończyłem swoją część|Završio sam svoj dio.|Skończyłem swoją część.
+ostalo je još malo|zostało jeszcze trochę|Ostalo je još malo.|Zostało jeszcze trochę.
+imamo mali problem|mamy mały problem|Imamo mali problem.|Mamy mały problem.
+radim na tome|pracuję nad tym|Radim na tome.|Pracuję nad tym.
+još nije gotovo|jeszcze nie jest gotowe|Još nije gotovo.|Jeszcze nie jest gotowe.
+riješit ćemo to|rozwiążemy to|Riješit ćemo to.|Rozwiążemy to.
+molim potvrdu primitka|proszę o potwierdzenie otrzymania|Molim potvrdu primitka.|Proszę o potwierdzenie otrzymania.
+hvala na brzom odgovoru|dziękuję za szybką odpowiedź|Hvala na brzom odgovoru.|Dziękuję za szybką odpowiedź.
+javite mi ako imate pitanja|proszę dać znać, jeśli ma pan/pani pytania|Javite mi ako imate pitanja.|Proszę dać znać, jeśli ma pan/pani pytania.
+stojim vam na raspolaganju|pozostaję do państwa dyspozycji|Stojim vam na raspolaganju.|Pozostaję do państwa dyspozycji.
+srdačan pozdrav|serdeczne pozdrowienia|Srdačan pozdrav.|Serdeczne pozdrowienia.
+s poštovanjem|z poważaniem|S poštovanjem.|Z poważaniem.
+veza se prekinula|połączenie zostało przerwane|Veza se prekinula.|Połączenie zostało przerwane.
+ne čujem vas dobro|słabo pana/panią słyszę|Ne čujem vas dobro.|Słabo pana/panią słyszę.
+isključen ti je mikrofon|masz wyłączony mikrofon|Isključen ti je mikrofon.|Masz wyłączony mikrofon.
+možeš li podijeliti ekran|czy możesz udostępnić ekran|Možeš li podijeliti ekran?|Czy możesz udostępnić ekran?
+kasni mi zvuk|mam opóźniony dźwięk|Kasni mi zvuk.|Mam opóźniony dźwięk.
+nestala je struja|zabrakło prądu|Nestala je struja.|Zabrakło prądu.
+nemam pristup|nie mam dostępu|Nemam pristup.|Nie mam dostępu.
+zaboravio sam lozinku|zapomniałem hasła|Zaboravio sam lozinku.|Zapomniałem hasła.
+ne mogu se prijaviti|nie mogę się zalogować|Ne mogu se prijaviti.|Nie mogę się zalogować.
+račun mi je zaključan|moje konto jest zablokowane|Račun mi je zaključan.|Moje konto jest zablokowane.
+ponovno pokreni računalo|uruchom ponownie komputer|Ponovno pokreni računalo.|Uruchom ponownie komputer.
+spremi promjene|zapisz zmiany|Spremi promjene.|Zapisz zmiany.
+ne zatvaraj prozor|nie zamykaj okna|Ne zatvaraj prozor.|Nie zamykaj okna.
+pritisni ovu tipku|naciśnij ten klawisz|Pritisni ovu tipku.|Naciśnij ten klawisz.
+pošalji mi poveznicu|wyślij mi link|Pošalji mi poveznicu.|Wyślij mi link.
+mogu li te nazvati|czy mogę do ciebie zadzwonić|Mogu li te nazvati?|Czy mogę do ciebie zadzwonić?
+nazvat ću te kasnije|zadzwonię do ciebie później|Nazvat ću te kasnije.|Zadzwonię do ciebie później.
+trenutačno ne mogu razgovarati|teraz nie mogę rozmawiać|Trenutačno ne mogu razgovarati.|Teraz nie mogę rozmawiać.
+ostavite poruku nakon signala|proszę zostawić wiadomość po sygnale|Ostavite poruku nakon signala.|Proszę zostawić wiadomość po sygnale.
+pogrešan broj|pomyłka, zły numer|Pogrešan broj.|Pomyłka, zły numer.
+# noun|home
+dnevni boravak|salon|To je dnevni boravak.|To jest salon.
+predsoblje|przedpokój|To je predsoblje.|To jest przedpokój.
+blagovaonica|jadalnia|To je blagovaonica.|To jest jadalnia.
+radna soba|gabinet domowy|To je radna soba.|To jest gabinet domowy.
+spremište|schowek|To je spremište.|To jest schowek.
+ostava|spiżarnia|To je ostava.|To jest spiżarnia.
+praonica|pralnia|To je praonica.|To jest pralnia.
+kotlovnica|kotłownia|To je kotlovnica.|To jest kotłownia.
+lođa|loggia|To je lođa.|To jest loggia.
+balkonska vrata|drzwi balkonowe|To su balkonska vrata.|To są drzwi balkonowe.
+prozorska daska|parapet|To je prozorska daska.|To jest parapet.
+roleta|roleta|To je roleta.|To jest roleta.
+žaluzina|żaluzja|To je žaluzina.|To jest żaluzja.
+komarnik|moskitiera|To je komarnik.|To jest moskitiera.
+kvaka|klamka|To je kvaka.|To jest klamka.
+šarka|zawias|To je šarka.|To jest zawias.
+prag|próg|To je prag.|To jest próg.
+otirač|wycieraczka do butów|To je otirač.|To jest wycieraczka do butów.
+zvono na vratima|dzwonek do drzwi|To je zvono na vratima.|To jest dzwonek do drzwi.
+portafon|domofon|To je portafon.|To jest domofon.
+poštanski sandučić|skrzynka pocztowa|To je poštanski sandučić.|To jest skrzynka pocztowa.
+nadstrešnica|zadaszenie|To je nadstrešnica.|To jest zadaszenie.
+oluk|rynna|To je oluk.|To jest rynna.
+dimnjak|komin|To je dimnjak.|To jest komin.
+crijep|dachówka|To je crijep.|To jest dachówka.
+fasada|elewacja|To je fasada.|To jest elewacja.
+toplinska izolacija|izolacja termiczna|To je toplinska izolacija.|To jest izolacja termiczna.
+bojler|bojler|To je bojler.|To jest bojler.
+radijator|grzejnik|To je radijator.|To jest grzejnik.
+termostat|termostat|To je termostat.|To jest termostat.
+ventilator|wentylator|To je ventilator.|To jest wentylator.
+produžni kabel|przedłużacz|To je produžni kabel.|To jest przedłużacz.
+razdjelnik|rozgałęźnik|To je razdjelnik.|To jest rozgałęźnik.
+abažur|abażur|To je abažur.|To jest abażur.
+luster|żyrandol|To je luster.|To jest żyrandol.
+noćni ormarić|szafka nocna|To je noćni ormarić.|To jest szafka nocna.
+komoda|komoda|To je komoda.|To jest komoda.
+vješalica|wieszak|To je vješalica.|To jest wieszak.
+naslonjač|fotel|To je naslonjač.|To jest fotel.
+trosjed|kanapa trzyosobowa|To je trosjed.|To jest kanapa trzyosobowa.
+madrac|materac|To je madrac.|To jest materac.
+jastučnica|poszewka na poduszkę|To je jastučnica.|To jest poszewka na poduszkę.
+navlaka|pokrowiec|To je navlaka.|To jest pokrowiec.
+posteljina|pościel|To je posteljina.|To jest pościel.
+pokrivač|okrycie do przykrywania się|To je pokrivač.|To jest okrycie do przykrywania się.
+prekrivač|narzuta|To je prekrivač.|To jest narzuta.
+stolnjak|obrus|To je stolnjak.|To jest obrus.
+prostirka|mata|To je prostirka.|To jest mata.
+podmetač|podkładka|To je podmetač.|To jest podkładka.
+okvir|rama|To je okvir.|To jest rama.
+vaza|wazon|To je vaza.|To jest wazon.
+tegla|doniczka|To je tegla.|To jest doniczka.
+posuda za cvijeće|pojemnik na kwiaty|To je posuda za cvijeće.|To jest pojemnik na kwiaty.
+štipaljka|klamerka|To je štipaljka.|To jest klamerka.
+uže za rublje|sznur na pranie|To je uže za rublje.|To jest sznur na pranie.
+stalak za sušenje|suszarka stojąca na pranie|To je stalak za sušenje.|To jest suszarka stojąca na pranie.
+košara za rublje|kosz na pranie|To je košara za rublje.|To jest kosz na pranie.
+prašak za pranje|proszek do prania|To je prašak za pranje.|To jest proszek do prania.
+omekšivač|płyn do płukania tkanin|To je omekšivač.|To jest płyn do płukania tkanin.
+sredstvo za čišćenje|środek czyszczący|To je sredstvo za čišćenje.|To jest środek czyszczący.
+spužva|gąbka|To je spužva.|To jest gąbka.
+četka za ribanje|szczotka do szorowania|To je četka za ribanje.|To jest szczotka do szorowania.
+lopatica za smeće|szufelka|To je lopatica za smeće.|To jest szufelka.
+vreća za smeće|worek na śmieci|To je vreća za smeće.|To jest worek na śmieci.
+kanta za recikliranje|pojemnik do segregacji odpadów|To je kanta za recikliranje.|To jest pojemnik do segregacji odpadów.
+vodokotlić|spłuczka|To je vodokotlić.|To jest spłuczka.
+odvod|odpływ|To je odvod.|To jest odpływ.
+čep|korek, zatyczka|To je čep.|To jest korek.
+sifon|syfon|To je sifon.|To jest syfon.
+tuš-kabina|kabina prysznicowa|To je tuš-kabina.|To jest kabina prysznicowa.
+kupaonski ormarić|szafka łazienkowa|To je kupaonski ormarić.|To jest szafka łazienkowa.
+# noun|food
+zdjela|miska|To je zdjela.|To jest miska.
+zdjelica|miseczka|To je zdjelica.|To jest miseczka.
+pladanj|taca|To je pladanj.|To jest taca.
+plitica|półmisek|To je plitica.|To jest półmisek.
+poklopac|pokrywka|To je poklopac.|To jest pokrywka.
+cjedilo|durszlak|To je cjedilo.|To jest durszlak.
+sito|sito|To je sito.|To jest sito.
+ribež|tarka|To je ribež.|To jest tarka.
+gulilica|obieraczka|To je gulilica.|To jest obieraczka.
+kuhača|łyżka do gotowania|To je kuhača.|To jest łyżka do gotowania.
+zaimača|chochla|To je zaimača.|To jest chochla.
+pjenjača|trzepaczka kuchenna|To je pjenjača.|To jest trzepaczka kuchenna.
+valjak za tijesto|wałek do ciasta|To je valjak za tijesto.|To jest wałek do ciasta.
+daska za rezanje|deska do krojenia|To je daska za rezanje.|To jest deska do krojenia.
+lim za pečenje|blacha do pieczenia|To je lim za pečenje.|To jest blacha do pieczenia.
+papir za pečenje|papier do pieczenia|To je papir za pečenje.|To jest papier do pieczenia.
+aluminijska folija|folia aluminiowa|To je aluminijska folija.|To jest folia aluminiowa.
+prozirna folija|folia spożywcza|To je prozirna folija.|To jest folia spożywcza.
+mjerna posuda|miarka kuchenna|To je mjerna posuda.|To jest miarka kuchenna.
+kuhinjska vaga|waga kuchenna|To je kuhinjska vaga.|To jest waga kuchenna.
+toster|toster|To je toster.|To jest toster.
+sjeckalica|rozdrabniacz|To je sjeckalica.|To jest rozdrabniacz.
+blender|blender|To je blender.|To jest blender.
+sokovnik|sokowirówka|To je sokovnik.|To jest sokowirówka.
+aparat za sendviče|opiekacz do kanapek|To je aparat za sendviče.|To jest opiekacz do kanapek.
+kuhinjska napa|okap kuchenny|To je kuhinjska napa.|To jest okap kuchenny.
+sudoper|zlew kuchenny|To je sudoper.|To jest zlew kuchenny.
+deterdžent za posuđe|płyn do mycia naczyń|To je deterdžent za posuđe.|To jest płyn do mycia naczyń.
+kuhinjska krpa|ścierka kuchenna|To je kuhinjska krpa.|To jest ścierka kuchenna.
+pregača|fartuch|To je pregača.|To jest fartuch.
+kuhinjska rukavica|rękawica kuchenna|To je kuhinjska rukavica.|To jest rękawica kuchenna.
+prstohvat|szczypta|To je prstohvat.|To jest szczypta.
+gutljaj|łyk|To je gutljaj.|To jest łyk.
+zalogaj|kęs|To je zalogaj.|To jest kęs.
+kriška|kromka, plaster|To je kriška.|To jest kromka.
+feta|plaster sera lub wędliny|To je feta.|To jest plaster sera lub wędliny.
+mrvica|okruszek|To je mrvica.|To jest okruszek.
+korica|skórka chleba|To je korica.|To jest skórka chleba.
+sredina kruha|miąższ chleba|To je sredina kruha.|To jest miąższ chleba.
+koštica|pestka|To je koštica.|To jest pestka.
+sjemenka|nasionko|To je sjemenka.|To jest nasionko.
+ljuska|łupina, skorupka|To je ljuska.|To jest łupina.
+žumanjak|żółtko|To je žumanjak.|To jest żółtko.
+bjelanjak|białko jajka|To je bjelanjak.|To jest białko jajka.
+teletina|cielęcina|To je teletina.|To jest cielęcina.
+puretina|mięso z indyka|To je puretina.|To jest mięso z indyka.
+pačetina|mięso z kaczki|To je pačetina.|To jest mięso z kaczki.
+mljeveno meso|mięso mielone|To je mljeveno meso.|To jest mięso mielone.
+pileća prsa|pierś z kurczaka|To su pileća prsa.|To jest pierś z kurczaka.
+batak|udko drobiowe|To je batak.|To jest udko drobiowe.
+zabatak|górna część udka drobiowego|To je zabatak.|To jest górna część udka drobiowego.
+krilce|skrzydełko drobiowe|To je krilce.|To jest skrzydełko drobiowe.
+rebarca|żeberka|To su rebarca.|To są żeberka.
+slanina|boczek|To je slanina.|To jest boczek.
+šunka|szynka|To je šunka.|To jest szynka.
+salama|salami|To je salama.|To jest salami.
+hrenovka|parówka|To je hrenovka.|To jest parówka.
+pašteta|pasztet do smarowania|To je pašteta.|To jest pasztet do smarowania.
+ćevap|wałeczek mielonego mięsa z grilla|To je ćevap.|To jest wałeczek mielonego mięsa z grilla.
+pljeskavica|bałkański kotlet z mięsa mielonego|To je pljeskavica.|To jest bałkański kotlet z mięsa mielonego.
+ražnjić|szaszłyk|To je ražnjić.|To jest szaszłyk.
+sarma|gołąbek w kiszonej kapuście|To je sarma.|To jest gołąbek w kiszonej kapuście.
+punjena paprika|papryka faszerowana|To je punjena paprika.|To jest papryka faszerowana.
+varivo|gęsta potrawa warzywna jednogarnkowa|To je varivo.|To jest gęsta potrawa warzywna jednogarnkowa.
+paprikaš|gulasz z papryką|To je paprikaš.|To jest gulasz z papryką.
+pečenje|pieczeń|To je pečenje.|To jest pieczeń.
+pohano meso|mięso panierowane|To je pohano meso.|To jest mięso panierowane.
+pire-krumpir|purée ziemniaczane|To je pire-krumpir.|To jest purée ziemniaczane.
+pečeni krumpir|pieczone ziemniaki|To je pečeni krumpir.|To są pieczone ziemniaki.
+krumpirići|frytki|To su krumpirići.|To są frytki.
+jogurt za piće|jogurt pitny|To je jogurt za piće.|To jest jogurt pitny.
+kiselo vrhnje|kwaśna śmietana|To je kiselo vrhnje.|To jest kwaśna śmietana.
+slatko vrhnje|słodka śmietanka|To je slatko vrhnje.|To jest słodka śmietanka.
+vrhnje za kuhanje|śmietanka do gotowania|To je vrhnje za kuhanje.|To jest śmietanka do gotowania.
+šlag|bita śmietana|To je šlag.|To jest bita śmietana.
+sirutka|serwatka|To je sirutka.|To jest serwatka.
+kefir|kefir|To je kefir.|To jest kefir.
+namaz|pasta do smarowania|To je namaz.|To jest pasta do smarowania.
+krem sir|serek kremowy|To je krem sir.|To jest serek kremowy.
+topljeni sir|ser topiony|To je topljeni sir.|To jest ser topiony.
+kozji sir|ser kozi|To je kozji sir.|To jest ser kozi.
+ovčji sir|ser owczy|To je ovčji sir.|To jest ser owczy.
+zobene pahuljice|płatki owsiane|To su zobene pahuljice.|To są płatki owsiane.
+zobena kaša|owsianka|To je zobena kaša.|To jest owsianka.
+krupica|kasza manna|To je krupica.|To jest kasza manna.
+heljda|gryka|To je heljda.|To jest gryka.
+proso|proso|To je proso.|To jest proso.
+ječam|jęczmień|To je ječam.|To jest jęczmień.
+zob|owies|To je zob.|To jest owies.
+raž|żyto|To je raž.|To jest żyto.
+pšenica|pszenica|To je pšenica.|To jest pszenica.
+palenta|polenta, gęsta kasza kukurydziana|To je palenta.|To jest polenta.
+kuskus|kuskus|To je kuskus.|To jest kuskus.
+leća|soczewica|To je leća.|To jest soczewica.
+slanutak|ciecierzyca|To je slanutak.|To jest ciecierzyca.
+mahune|fasolka szparagowa|To su mahune.|To jest fasolka szparagowa.
+soja|soja|To je soja.|To jest soja.
+cikla|burak ćwikłowy|To je cikla.|To jest burak ćwikłowy.
+repa|rzepa|To je repa.|To jest rzepa.
+celer|seler|To je celer.|To jest seler.
+poriluk|por|To je poriluk.|To jest por.
+rotkvica|rzodkiewka|To je rotkvica.|To jest rzodkiewka.
+patlidžan|bakłażan|To je patlidžan.|To jest bakłażan.
+tikvica|cukinia|To je tikvica.|To jest cukinia.
+bundeva|dynia|To je bundeva.|To jest dynia.
+cvjetača|kalafior|To je cvjetača.|To jest kalafior.
+brokula|brokuł|To je brokula.|To jest brokuł.
+kelj|kapusta włoska|To je kelj.|To jest kapusta włoska.
+prokulica|brukselka|To je prokulica.|To jest brukselka.
+blitva|boćwina|To je blitva.|To jest boćwina.
+rukola|rukola|To je rukola.|To jest rukola.
+šparoga|szparag|To je šparoga.|To jest szparag.
+artičoka|karczoch|To je artičoka.|To jest karczoch.
+feferon|ostra papryczka|To je feferon.|To jest ostra papryczka.
+đumbir|imbir|To je đumbir.|To jest imbir.
+hren|chrzan|To je hren.|To jest chrzan.
+češnjevi češnjaka|ząbki czosnku|To su češnjevi češnjaka.|To są ząbki czosnku.
+mladi luk|dymka|To je mladi luk.|To jest dymka.
+šampinjon|pieczarka|To je šampinjon.|To jest pieczarka.
+vrganj|borowik|To je vrganj.|To jest borowik.
+lisičarka|kurka, grzyb|To je lisičarka.|To jest kurka.
+brusnica|żurawina|To je brusnica.|To jest żurawina.
+ribiz|porzeczka|To je ribiz.|To jest porzeczka.
+ogrozd|agrest|To je ogrozd.|To jest agrest.
+dunja|pigwa|To je dunja.|To jest pigwa.
+datulja|daktyl|To je datulja.|To jest daktyl.
+nektarina|nektarynka|To je nektarina.|To jest nektarynka.
+mandarina|mandarynka|To je mandarina.|To jest mandarynka.
+kivi|kiwi|To je kivi.|To jest kiwi.
+ananas|ananas|To je ananas.|To jest ananas.
+avokado|awokado|To je avokado.|To jest awokado.
+mango|mango|To je mango.|To jest mango.
+limeta|limonka|To je limeta.|To jest limonka.
+lješnjak|orzech laskowy|To je lješnjak.|To jest orzech laskowy.
+pistacija|pistacja|To je pistacija.|To jest pistacja.
+indijski oraščić|orzech nerkowca|To je indijski oraščić.|To jest orzech nerkowca.
+kikiriki|orzeszki ziemne|To je kikiriki.|To są orzeszki ziemne.
+kesten|kasztan jadalny|To je kesten.|To jest kasztan jadalny.
+grožđica|rodzynka|To je grožđica.|To jest rodzynka.
+sušeno voće|suszone owoce|To je sušeno voće.|To są suszone owoce.
+bučine sjemenke|pestki dyni|To su bučine sjemenke.|To są pestki dyni.
+lanene sjemenke|siemię lniane|To su lanene sjemenke.|To jest siemię lniane.
+sezam|sezam|To je sezam.|To jest sezam.
+mak|mak|To je mak.|To jest mak.
+cimet|cynamon|To je cimet.|To jest cynamon.
+vanilija|wanilia|To je vanilija.|To jest wanilia.
+klinčić|goździk, przyprawa|To je klinčić.|To jest goździk.
+muškatni oraščić|gałka muszkatołowa|To je muškatni oraščić.|To jest gałka muszkatołowa.
+kurkuma|kurkuma|To je kurkuma.|To jest kurkuma.
+ružmarin|rozmaryn|To je ružmarin.|To jest rozmaryn.
+timijan|tymianek|To je timijan.|To jest tymianek.
+origano|oregano|To je origano.|To jest oregano.
+metvica|mięta|To je metvica.|To jest mięta.
+kadulja|szałwia|To je kadulja.|To jest szałwia.
+lovorov list|liść laurowy|To je lovorov list.|To jest liść laurowy.
+vlasac|szczypiorek|To je vlasac.|To jest szczypiorek.
+korijandar|kolendra|To je korijandar.|To jest kolendra.
+kim|kminek|To je kim.|To jest kminek.
+maslac od kikirikija|masło z orzeszków ziemnych|To je maslac od kikirikija.|To jest masło z orzeszków ziemnych.
+javorov sirup|syrop klonowy|To je javorov sirup.|To jest syrop klonowy.
+zaslađivač|słodzik|To je zaslađivač.|To jest słodzik.
+prašak za pecivo|proszek do pieczenia|To je prašak za pecivo.|To jest proszek do pieczenia.
+soda bikarbona|soda oczyszczona|To je soda bikarbona.|To jest soda oczyszczona.
+škrob|skrobia|To je škrob.|To jest skrobia.
+prezle|bułka tarta|To su prezle.|To jest bułka tarta.
+čokolada za kuhanje|czekolada do wypieków|To je čokolada za kuhanje.|To jest czekolada do wypieków.
+kakao|kakao|To je kakao.|To jest kakao.
+# noun|clothes
+potkošulja|podkoszulek|To je potkošulja.|To jest podkoszulek.
+gaćice|majtki damskie lub dziecięce|To su gaćice.|To są majtki damskie lub dziecięce.
+gaće|majtki|To su gaće.|To są majtki.
+bokserice|bokserki|To su bokserice.|To są bokserki.
+grudnjak|biustonosz|To je grudnjak.|To jest biustonosz.
+pidžama|piżama|To je pidžama.|To jest piżama.
+spavaćica|koszula nocna|To je spavaćica.|To jest koszula nocna.
+kućni ogrtač|szlafrok|To je kućni ogrtač.|To jest szlafrok.
+trenirka|dres|To je trenirka.|To jest dres.
+sportska majica|koszulka sportowa|To je sportska majica.|To jest koszulka sportowa.
+majica s kapuljačom|bluza z kapturem|To je majica s kapuljačom.|To jest bluza z kapturem.
+kapuljača|kaptur|To je kapuljača.|To jest kaptur.
+prsluk|kamizelka|To je prsluk.|To jest kamizelka.
+kaput|płaszcz|To je kaput.|To jest płaszcz.
+baloner|trencz|To je baloner.|To jest trencz.
+kabanica|peleryna przeciwdeszczowa|To je kabanica.|To jest peleryna przeciwdeszczowa.
+bunda|futro jako ubranie|To je bunda.|To jest futro jako ubranie.
+sako|marynarka|To je sako.|To jest marynarka.
+odijelo|garnitur|To je odijelo.|To jest garnitur.
+kostim|przebranie|To je kostim.|To jest przebranie.
+bluza|bluzka|To je bluza.|To jest bluzka.
+tunika|tunika|To je tunika.|To jest tunika.
+tajice|legginsy|To su tajice.|To są legginsy.
+najlonke|rajstopy|To su najlonke.|To są rajstopy.
+dokoljenke|podkolanówki|To su dokoljenke.|To są podkolanówki.
+kupaće hlače|szorty kąpielowe|To su kupaće hlače.|To są szorty kąpielowe.
+bikini|bikini|To je bikini.|To jest bikini.
+šilterica|czapka z daszkiem|To je šilterica.|To jest czapka z daszkiem.
+beretka|beret|To je beretka.|To jest beret.
+kravata|krawat|To je kravata.|To jest krawat.
+leptir-mašna|muszka do koszuli|To je leptir-mašna.|To jest muszka do koszuli.
+broš|broszka|To je broš.|To jest broszka.
+privjesak|brelok|To je privjesak.|To jest brelok.
+kopča|klamra, zapinka|To je kopča.|To jest klamra.
+vezica|sznurówka|To je vezica.|To jest sznurówka.
+đon|podeszwa|To je đon.|To jest podeszwa.
+uložak za cipelu|wkładka do buta|To je uložak za cipelu.|To jest wkładka do buta.
+potpetica|obcas|To je potpetica.|To jest obcas.
+štikla|szpilka, but na obcasie|To je štikla.|To jest szpilka.
+balerinka|balerina, płaski but|To je balerinka.|To jest balerina.
+gumene čizme|kalosze|To su gumene čizme.|To są kalosze.
+cipele za planinarenje|buty trekkingowe|To su cipele za planinarenje.|To są buty trekkingowe.
+japanke|japonki|To su japanke.|To są japonki.
+šav|szew|To je šav.|To jest szew.
+porub|obręb ubrania|To je porub.|To jest obręb ubrania.
+podstava|podszewka|To je podstava.|To jest podszewka.
+tkanina|tkanina|To je tkanina.|To jest tkanina.
+pletivo|dzianina|To je pletivo.|To jest dzianina.
+traper|dżins jako materiał|To je traper.|To jest dżins jako materiał.
+umjetna koža|sztuczna skóra|To je umjetna koža.|To jest sztuczna skóra.
+poliester|poliester|To je poliester.|To jest poliester.
+viskoza|wiskoza|To je viskoza.|To jest wiskoza.
+elastan|elastan|To je elastan.|To jest elastan.
+uzorak|wzór, deseń|To je uzorak.|To jest wzór.
+pruga|pasek we wzorze|To je pruga.|To jest pasek we wzorze.
+točkica|kropka|To je točkica.|To jest kropka.
+mrlja|plama|To je mrlja.|To jest plama.
+nabor|fałda|To je nabor.|To jest fałda.
+kroj|krój|To je kroj.|To jest krój.
+opseg struka|obwód pasa|To je opseg struka.|To jest obwód pasa.
+krojač|krawiec|To je krojač.|To jest krawiec.
+krojačica|krawcowa|To je krojačica.|To jest krawcowa.
+kemijska čistionica|pralnia chemiczna|To je kemijska čistionica.|To jest pralnia chemiczna.
+# noun|body health
+obrva|brew|To je obrva.|To jest brew.
+trepavica|rzęsa|To je trepavica.|To jest rzęsa.
+kapak|powieka|To je kapak.|To jest powieka.
+zjenica|źrenica|To je zjenica.|To jest źrenica.
+obraz|policzek|To je obraz.|To jest policzek.
+usna|warga|To je usna.|To jest warga.
+čeljust|szczęka|To je čeljust.|To jest szczęka.
+brkovi|wąsy|To su brkovi.|To są wąsy.
+sljepoočnica|skroń|To je sljepoočnica.|To jest skroń.
+tjeme|czubek głowy|To je tjeme.|To jest czubek głowy.
+potiljak|tył głowy|To je potiljak.|To jest tył głowy.
+dlaka|włos na ciele, sierść|To je dlaka.|To jest włos na ciele.
+vlasište|skóra głowy|To je vlasište.|To jest skóra głowy.
+nepce|podniebienie|To je nepce.|To jest podniebienie.
+slina|ślina|To je slina.|To jest ślina.
+kutnjak|ząb trzonowy|To je kutnjak.|To jest ząb trzonowy.
+umnjak|ząb mądrości|To je umnjak.|To jest ząb mądrości.
+ključna kost|obojczyk|To je ključna kost.|To jest obojczyk.
+prsni koš|klatka piersiowa|To je prsni koš.|To jest klatka piersiowa.
+rebro|żebro|To je rebro.|To jest żebro.
+ramena lopatica|łopatka jako kość|To je ramena lopatica.|To jest łopatka jako kość.
+pazuh|pacha|To je pazuh.|To jest pacha.
+podlaktica|przedramię|To je podlaktica.|To jest przedramię.
+nadlaktica|ramię od barku do łokcia|To je nadlaktica.|To jest ramię od barku do łokcia.
+kažiprst|palec wskazujący|To je kažiprst.|To jest palec wskazujący.
+srednji prst|palec środkowy|To je srednji prst.|To jest palec środkowy.
+prstenjak|palec serdeczny|To je prstenjak.|To jest palec serdeczny.
+mali prst|mały palec|To je mali prst.|To jest mały palec.
+zglob|staw|To je zglob.|To jest staw.
+šaka|dłoń, ręka od nadgarstka do palców|To je šaka.|To jest dłoń.
+trup|tułów|To je trup.|To jest tułów.
+pupak|pępek|To je pupak.|To jest pępek.
+struk|talia|To je struk.|To jest talia.
+kuk|biodro|To je kuk.|To jest biodro.
+prepona|pachwina|To je prepona.|To jest pachwina.
+stražnjica|pośladki|To je stražnjica.|To są pośladki.
+bedro|udo|To je bedro.|To jest udo.
+natkoljenica|udo jako część nogi nad kolanem|To je natkoljenica.|To jest udo jako część nogi nad kolanem.
+potkoljenica|podudzie|To je potkoljenica.|To jest podudzie.
+list noge|łydka|To je list noge.|To jest łydka.
+gležanj|kostka, staw skokowy|To je gležanj.|To jest kostka.
+taban|podeszwa stopy|To je taban.|To jest podeszwa stopy.
+nožni prst|palec u nogi|To je nožni prst.|To jest palec u nogi.
+tetiva|ścięgno|To je tetiva.|To jest ścięgno.
+ligament|więzadło|To je ligament.|To jest więzadło.
+hrskavica|chrząstka|To je hrskavica.|To jest chrząstka.
+vena|żyła|To je vena.|To jest żyła.
+arterija|tętnica|To je arterija.|To jest tętnica.
+živac|nerw|To je živac.|To jest nerw.
+koštana srž|szpik kostny|To je koštana srž.|To jest szpik kostny.
+jednjak|przełyk|To je jednjak.|To jest przełyk.
+dušnik|tchawica|To je dušnik.|To jest tchawica.
+dijafragma|przepona|To je dijafragma.|To jest przepona.
+crijevo|jelito|To je crijevo.|To jest jelito.
+gušterača|trzustka|To je gušterača.|To jest trzustka.
+slezena|śledziona|To je slezena.|To jest śledziona.
+žučni mjehur|pęcherzyk żółciowy|To je žučni mjehur.|To jest pęcherzyk żółciowy.
+mokraćni mjehur|pęcherz moczowy|To je mokraćni mjehur.|To jest pęcherz moczowy.
+štitnjača|tarczyca|To je štitnjača.|To jest tarczyca.
+spol|płeć|To je spol.|To jest płeć.
+menstruacija|miesiączka|To je menstruacija.|To jest miesiączka.
+uložak|podpaska|To je uložak.|To jest podpaska.
+tampon|tampon|To je tampon.|To jest tampon.
+kondom|prezerwatywa|To je kondom.|To jest prezerwatywa.
+kontracepcija|antykoncepcja|To je kontracepcija.|To jest antykoncepcja.
+porod|poród|To je porod.|To jest poród.
+dojenje|karmienie piersią|To je dojenje.|To jest karmienie piersią.
+pelena|pielucha|To je pelena.|To jest pielucha.
+duda|smoczek|To je duda.|To jest smoczek.
+bočica|buteleczka|To je bočica.|To jest buteleczka.
+dječja kolica|wózek dziecięcy|To su dječja kolica.|To jest wózek dziecięcy.
+kolijevka|kołyska|To je kolijevka.|To jest kołyska.
+krevetić|łóżeczko|To je krevetić.|To jest łóżeczko.
+zvečka|grzechotka|To je zvečka.|To jest grzechotka.
+osip|wysypka|To je osip.|To jest wysypka.
+svrbež|świąd|To je svrbež.|To jest świąd.
+prištić|pryszcz|To je prištić.|To jest pryszcz.
+akne|trądzik|To su akne.|To jest trądzik.
+bora|zmarszczka|To je bora.|To jest zmarszczka.
+pjega|pieg|To je pjega.|To jest pieg.
+madež|pieprzyk, znamię skórne|To je madež.|To jest pieprzyk.
+bradavica|brodawka skórna|To je bradavica.|To jest brodawka skórna.
+žulj|pęcherz od otarcia|To je žulj.|To jest pęcherz od otarcia.
+ogrebotina|zadrapanie|To je ogrebotina.|To jest zadrapanie.
+prijelom|złamanie|To je prijelom.|To jest złamanie.
+uganuće|skręcenie stawu|To je uganuće.|To jest skręcenie stawu.
+istegnuće|naciągnięcie mięśnia lub ścięgna|To je istegnuće.|To jest naciągnięcie mięśnia lub ścięgna.
+upala|stan zapalny|To je upala.|To jest stan zapalny.
+gnoj|ropa w ranie|To je gnoj.|To jest ropa w ranie.
+krasta|strup|To je krasta.|To jest strup.
+krvarenje|krwawienie|To je krvarenje.|To jest krwawienie.
+nesvjestica|omdlenie|To je nesvjestica.|To jest omdlenie.
+vrtoglavica|zawroty głowy|To je vrtoglavica.|To są zawroty głowy.
+mučnina|nudności|To je mučnina.|To są nudności.
+povraćanje|wymioty|To je povraćanje.|To są wymioty.
+proljev|biegunka|To je proljev.|To jest biegunka.
+žgaravica|zgaga|To je žgaravica.|To jest zgaga.
+nadutost|wzdęcia|To je nadutost.|To są wzdęcia.
+štucanje|czkawka|To je štucanje.|To jest czkawka.
+kihanje|kichanie|To je kihanje.|To jest kichanie.
+curenje nosa|katar|To je curenje nosa.|To jest katar.
+začepljen nos|zatkany nos|To je začepljen nos.|To jest zatkany nos.
+groznica|stan gorączkowy z dreszczami|To je groznica.|To jest stan gorączkowy z dreszczami.
+zimica|dreszcze|To je zimica.|To są dreszcze.
+upala grla|zapalenie gardła|To je upala grla.|To jest zapalenie gardła.
+upala pluća|zapalenie płuc|To je upala pluća.|To jest zapalenie płuc.
+upala uha|zapalenie ucha|To je upala uha.|To jest zapalenie ucha.
+upala sinusa|zapalenie zatok|To je upala sinusa.|To jest zapalenie zatok.
+upala mišića|bolesność mięśni po wysiłku|To je upala mišića.|To jest bolesność mięśni po wysiłku.
+karijes|próchnica|To je karijes.|To jest próchnica.
+plomba|plomba zębowa|To je plomba.|To jest plomba zębowa.
+proteza|proteza|To je proteza.|To jest proteza.
+aparatić za zube|aparat ortodontyczny|To je aparatić za zube.|To jest aparat ortodontyczny.
+kontaktne leće|soczewki kontaktowe|To su kontaktne leće.|To są soczewki kontaktowe.
+slušni aparat|aparat słuchowy|To je slušni aparat.|To jest aparat słuchowy.
+štaka|kula do chodzenia|To je štaka.|To jest kula do chodzenia.
+invalidska kolica|wózek inwalidzki|To su invalidska kolica.|To jest wózek inwalidzki.
+gaza|gaza opatrunkowa|To je gaza.|To jest gaza opatrunkowa.
+oblog|okład|To je oblog.|To jest okład.
+gips|gips|To je gips.|To jest gips.
+udlaga|szyna ortopedyczna|To je udlaga.|To jest szyna ortopedyczna.
+mast|maść|To je mast.|To jest maść.
+kapi za oči|krople do oczu|To su kapi za oči.|To są krople do oczu.
+kapi za nos|krople do nosa|To su kapi za nos.|To są krople do nosa.
+sirup protiv kašlja|syrop na kaszel|To je sirup protiv kašlja.|To jest syrop na kaszel.
+šumeća tableta|tabletka musująca|To je šumeća tableta.|To jest tabletka musująca.
+čepić|czopek|To je čepić.|To jest czopek.
+injekcija|zastrzyk|To je injekcija.|To jest zastrzyk.
+šprica|strzykawka|To je šprica.|To jest strzykawka.
+infuzija|kroplówka|To je infuzija.|To jest kroplówka.
+toplomjer|termometr medyczny|To je toplomjer.|To jest termometr medyczny.
+tlakomjer|ciśnieniomierz|To je tlakomjer.|To jest ciśnieniomierz.
+čekaonica|poczekalnia|To je čekaonica.|To jest poczekalnia.
+ordinacija|gabinet lekarski|To je ordinacija.|To jest gabinet lekarski.
+dom zdravlja|przychodnia zdrowia|To je dom zdravlja.|To jest przychodnia zdrowia.
+hitni prijam|szpitalny oddział ratunkowy|To je hitni prijam.|To jest szpitalny oddział ratunkowy.
+liječenje|leczenie|To je liječenje.|To jest leczenie.
+oporavak|powrót do zdrowia|To je oporavak.|To jest powrót do zdrowia.
+rehabilitacija|rehabilitacja|To je rehabilitacija.|To jest rehabilitacja.
+fizioterapeut|fizjoterapeuta|To je fizioterapeut.|To jest fizjoterapeuta.
+dermatolog|dermatolog|To je dermatolog.|To jest dermatolog.
+oftalmolog|okulista|To je oftalmolog.|To jest okulista.
+ginekolog|ginekolog|To je ginekolog.|To jest ginekolog.
+pedijatar|pediatra|To je pedijatar.|To jest pediatra.
+psiholog|psycholog|To je psiholog.|To jest psycholog.
+psihoterapeut|psychoterapeuta|To je psihoterapeut.|To jest psychoterapeuta.
+psihijatar|psychiatra|To je psihijatar.|To jest psychiatra.
+# noun|transportation
+tramvaj|tramwaj|To je tramvaj.|To jest tramwaj.
+trolejbus|trolejbus|To je trolejbus.|To jest trolejbus.
+minibus|minibus|To je minibus.|To jest minibus.
+kombi|samochód dostawczy, van|To je kombi.|To jest samochód dostawczy.
+kamion|ciężarówka|To je kamion.|To jest ciężarówka.
+šleper|ciągnik siodłowy z naczepą|To je šleper.|To jest ciągnik siodłowy z naczepą.
+prikolica|przyczepa|To je prikolica.|To jest przyczepa.
+kamper|kamper|To je kamper.|To jest kamper.
+motocikl|motocykl|To je motocikl.|To jest motocykl.
+skuter|skuter|To je skuter.|To jest skuter.
+romobil|hulajnoga|To je romobil.|To jest hulajnoga.
+električni romobil|hulajnoga elektryczna|To je električni romobil.|To jest hulajnoga elektryczna.
+roleri|rolki|To su roleri.|To są rolki.
+klizaljke|łyżwy|To su klizaljke.|To są łyżwy.
+sanjke|sanki|To su sanjke.|To są sanki.
+brodica|mała łódź|To je brodica.|To jest mała łódź.
+gliser|motorówka|To je gliser.|To jest motorówka.
+jedrilica|żaglówka|To je jedrilica.|To jest żaglówka.
+jahta|jacht|To je jahta.|To jest jacht.
+katamaran|katamaran|To je katamaran.|To jest katamaran.
+kanu|kanu|To je kanu.|To jest kanu.
+kajak|kajak|To je kajak.|To jest kajak.
+podmornica|łódź podwodna|To je podmornica.|To jest łódź podwodna.
+helikopter|helikopter|To je helikopter.|To jest helikopter.
+žičara|kolejka linowa|To je žičara.|To jest kolejka linowa.
+gondola|gondola kolejki linowej|To je gondola.|To jest gondola kolejki linowej.
+lokomotiva|lokomotywa|To je lokomotiva.|To jest lokomotywa.
+vagon|wagon|To je vagon.|To jest wagon.
+kupe|przedział kolejowy|To je kupe.|To jest przedział kolejowy.
+tračnica|szyna|To je tračnica.|To jest szyna.
+željeznička pruga|linia kolejowa|To je željeznička pruga.|To jest linia kolejowa.
+željeznički prijelaz|przejazd kolejowy|To je željeznički prijelaz.|To jest przejazd kolejowy.
+vozni red|rozkład jazdy|To je vozni red.|To jest rozkład jazdy.
+polazni peron|peron odjazdu|To je polazni peron.|To jest peron odjazdu.
+odredište|cel podróży|To je odredište.|To jest cel podróży.
+polazište|punkt wyjazdu|To je polazište.|To jest punkt wyjazdu.
+izravna linija|bezpośrednie połączenie|To je izravna linija.|To jest bezpośrednie połączenie.
+karta u jednom smjeru|bilet w jedną stronę|To je karta u jednom smjeru.|To jest bilet w jedną stronę.
+dnevna karta|bilet dobowy|To je dnevna karta.|To jest bilet dobowy.
+mjesečna karta|bilet miesięczny|To je mjesečna karta.|To jest bilet miesięczny.
+pokaz|bilet okresowy, potocznie|To je pokaz.|To jest bilet okresowy.
+kontrolor|kontroler biletów|To je kontrolor.|To jest kontroler biletów.
+poništivač karata|kasownik biletów|To je poništivač karata.|To jest kasownik biletów.
+stajalište|przystanek|To je stajalište.|To jest przystanek.
+nogostup|chodnik dla pieszych|To je nogostup.|To jest chodnik dla pieszych.
+pločnik|brukowany chodnik|To je pločnik.|To jest brukowany chodnik.
+ležeći policajac|próg zwalniający|To je ležeći policajac.|To jest próg zwalniający.
+pothodnik|przejście podziemne|To je pothodnik.|To jest przejście podziemne.
+nathodnik|kładka nad drogą|To je nathodnik.|To jest kładka nad drogą.
+obilaznica|obwodnica|To je obilaznica.|To jest obwodnica.
+naplatna kućica|bramka poboru opłat|To je naplatna kućica.|To jest bramka poboru opłat.
+vinjeta|winieta drogowa|To je vinjeta.|To jest winieta drogowa.
+odmorište|miejsce odpoczynku przy drodze|To je odmorište.|To jest miejsce odpoczynku przy drodze.
+zaustavna traka|pas awaryjny|To je zaustavna traka.|To jest pas awaryjny.
+biciklistička staza|droga rowerowa|To je biciklistička staza.|To jest droga rowerowa.
+jednosmjerna ulica|ulica jednokierunkowa|To je jednosmjerna ulica.|To jest ulica jednokierunkowa.
+slijepa ulica|ślepa uliczka|To je slijepa ulica.|To jest ślepa uliczka.
+ograničenje brzine|ograniczenie prędkości|To je ograničenje brzine.|To jest ograniczenie prędkości.
+prometna dozvola|dowód rejestracyjny|To je prometna dozvola.|To jest dowód rejestracyjny.
+registarska pločica|tablica rejestracyjna|To je registarska pločica.|To jest tablica rejestracyjna.
+tehnički pregled|przegląd techniczny|To je tehnički pregled.|To jest przegląd techniczny.
+osobni automobil|samochód osobowy|To je osobni automobil.|To jest samochód osobowy.
+prtljažnik|bagażnik|To je prtljažnik.|To jest bagażnik.
+poklopac motora|maska silnika|To je poklopac motora.|To jest maska silnika.
+vjetrobransko staklo|przednia szyba samochodu|To je vjetrobransko staklo.|To jest przednia szyba samochodu.
+brisač|wycieraczka samochodowa|To je brisač.|To jest wycieraczka samochodowa.
+retrovizor|lusterko wsteczne|To je retrovizor.|To jest lusterko wsteczne.
+pokazivač smjera|kierunkowskaz|To je pokazivač smjera.|To jest kierunkowskaz.
+svjetlo za maglu|światło przeciwmgielne|To je svjetlo za maglu.|To jest światło przeciwmgielne.
+ručna kočnica|hamulec ręczny|To je ručna kočnica.|To jest hamulec ręczny.
+kvačilo|sprzęgło|To je kvačilo.|To jest sprzęgło.
+mjenjač|skrzynia biegów|To je mjenjač.|To jest skrzynia biegów.
+volan|kierownica samochodu|To je volan.|To jest kierownica samochodu.
+papučica|pedał samochodowy|To je papučica.|To jest pedał samochodowy.
+ispuh|układ wydechowy|To je ispuh.|To jest układ wydechowy.
+akumulator|akumulator|To je akumulator.|To jest akumulator.
+spremnik goriva|zbiornik paliwa|To je spremnik goriva.|To jest zbiornik paliwa.
+rezervni kotač|koło zapasowe|To je rezervni kotač.|To jest koło zapasowe.
+dizalica za auto|lewarek samochodowy|To je dizalica za auto.|To jest lewarek samochodowy.
+vučna služba|pomoc drogowa z holowaniem|To je vučna služba.|To jest pomoc drogowa z holowaniem.
+vulkanizer|wulkanizator|To je vulkanizer.|To jest wulkanizator.
+sigurnosni pojas|pas bezpieczeństwa|To je sigurnosni pojas.|To jest pas bezpieczeństwa.
+zračni jastuk|poduszka powietrzna|To je zračni jastuk.|To jest poduszka powietrzna.
+autosjedalica|fotelik samochodowy|To je autosjedalica.|To jest fotelik samochodowy.
+# noun|school
+učionica|sala lekcyjna|To je učionica.|To jest sala lekcyjna.
+zbornica|pokój nauczycielski|To je zbornica.|To jest pokój nauczycielski.
+školska klupa|ławka szkolna|To je školska klupa.|To jest ławka szkolna.
+ploča|tablica|To je ploča.|To jest tablica.
+kreda|kreda|To je kreda.|To jest kreda.
+flomaster|flamaster|To je flomaster.|To jest flamaster.
+kemijska olovka|długopis|To je kemijska olovka.|To jest długopis.
+gumica|gumka do ścierania|To je gumica.|To jest gumka do ścierania.
+šiljilo|temperówka|To je šiljilo.|To jest temperówka.
+pernica|piórnik|To je pernica.|To jest piórnik.
+ravnalo|linijka|To je ravnalo.|To jest linijka.
+šestar|cyrkiel|To je šestar.|To jest cyrkiel.
+kutomjer|kątomierz|To je kutomjer.|To jest kątomierz.
+škare|nożyczki|To su škare.|To są nożyczki.
+spajalica|spinacz biurowy|To je spajalica.|To jest spinacz biurowy.
+klamerica|zszywacz|To je klamerica.|To jest zszywacz.
+spojnica|zszywka|To je spojnica.|To jest zszywka.
+bušilica za papir|dziurkacz biurowy|To je bušilica za papir.|To jest dziurkacz biurowy.
+registrator|segregator|To je registrator.|To jest segregator.
+fascikl|teczka na dokumenty|To je fascikl.|To jest teczka na dokumenty.
+omotnica|koperta|To je omotnica.|To jest koperta.
+bilježnica na crte|zeszyt w linie|To je bilježnica na crte.|To jest zeszyt w linie.
+bilježnica na kvadratiće|zeszyt w kratkę|To je bilježnica na kvadratiće.|To jest zeszyt w kratkę.
+radna bilježnica|zeszyt ćwiczeń|To je radna bilježnica.|To jest zeszyt ćwiczeń.
+udžbenik|podręcznik|To je udžbenik.|To jest podręcznik.
+čitanka|podręcznik do czytania|To je čitanka.|To jest podręcznik do czytania.
+lektira|lektura szkolna|To je lektira.|To jest lektura szkolna.
+domaća zadaća|praca domowa|To je domaća zadaća.|To jest praca domowa.
+razrednik|wychowawca klasy|To je razrednik.|To jest wychowawca klasy.
+ravnatelj|dyrektor szkoły lub instytucji|To je ravnatelj.|To jest dyrektor szkoły lub instytucji.
+predmet|przedmiot szkolny|To je predmet.|To jest przedmiot szkolny.
+raspored sati|plan lekcji|To je raspored sati.|To jest plan lekcji.
+školski sat|godzina lekcyjna|To je školski sat.|To jest godzina lekcyjna.
+veliki odmor|długa przerwa szkolna|To je veliki odmor.|To jest długa przerwa szkolna.
+školska godina|rok szkolny|To je školska godina.|To jest rok szkolny.
+polugodište|półrocze szkolne|To je polugodište.|To jest półrocze szkolne.
+svjedodžba|świadectwo szkolne|To je svjedodžba.|To jest świadectwo szkolne.
+odlikaš|bardzo dobry uczeń|To je odlikaš.|To jest bardzo dobry uczeń.
+izostanak|nieobecność|To je izostanak.|To jest nieobecność.
+ispričnica|usprawiedliwienie nieobecności|To je ispričnica.|To jest usprawiedliwienie nieobecności.
+roditeljski sastanak|wywiadówka|To je roditeljski sastanak.|To jest wywiadówka.
+matura|matura|To je matura.|To jest matura.
+prijamni ispit|egzamin wstępny|To je prijamni ispit.|To jest egzamin wstępny.
+upis|rekrutacja do szkoły|To je upis.|To jest rekrutacja do szkoły.
+školarina|czesne|To je školarina.|To jest czesne.
+stipendija|stypendium|To je stipendija.|To jest stypendium.
+fakultet|wydział uczelni|To je fakultet.|To jest wydział uczelni.
+studij|kierunek studiów|To je studij.|To jest kierunek studiów.
+prijediplomski studij|studia pierwszego stopnia|To je prijediplomski studij.|To są studia pierwszego stopnia.
+diplomski studij|studia drugiego stopnia|To je diplomski studij.|To są studia drugiego stopnia.
+doktorat|doktorat|To je doktorat.|To jest doktorat.
+seminar|seminarium|To je seminar.|To jest seminarium.
+seminarski rad|praca seminaryjna|To je seminarski rad.|To jest praca seminaryjna.
+kolokvij|kolokwium|To je kolokvij.|To jest kolokwium.
+usmeni ispit|egzamin ustny|To je usmeni ispit.|To jest egzamin ustny.
+pismeni ispit|egzamin pisemny|To je pismeni ispit.|To jest egzamin pisemny.
+ispitni rok|sesja egzaminacyjna|To je ispitni rok.|To jest sesja egzaminacyjna.
+mentor|promotor, mentor|To je mentor.|To jest promotor.
+brucoš|student pierwszego roku|To je brucoš.|To jest student pierwszego roku.
+cimer|współlokator|To je cimer.|To jest współlokator.
+studentski dom|akademik|To je studentski dom.|To jest akademik.
+menza|stołówka|To je menza.|To jest stołówka.
+# noun|language
+imenica|rzeczownik|To je imenica.|To jest rzeczownik.
+glagol|czasownik|To je glagol.|To jest czasownik.
+pridjev|przymiotnik|To je pridjev.|To jest przymiotnik.
+prilog|przysłówek|To je prilog.|To jest przysłówek.
+zamjenica|zaimek|To je zamjenica.|To jest zaimek.
+veznik|spójnik|To je veznik.|To jest spójnik.
+čestica|partykuła gramatyczna|To je čestica.|To jest partykuła gramatyczna.
+uzvik|wykrzyknik jako część mowy|To je uzvik.|To jest wykrzyknik jako część mowy.
+jednina|liczba pojedyncza|To je jednina.|To jest liczba pojedyncza.
+množina|liczba mnoga|To je množina.|To jest liczba mnoga.
+muški rod|rodzaj męski|To je muški rod.|To jest rodzaj męski.
+ženski rod|rodzaj żeński|To je ženski rod.|To jest rodzaj żeński.
+srednji rod|rodzaj nijaki|To je srednji rod.|To jest rodzaj nijaki.
+padež|przypadek gramatyczny|To je padež.|To jest przypadek gramatyczny.
+nominativ|mianownik|To je nominativ.|To jest mianownik.
+genitiv|dopełniacz|To je genitiv.|To jest dopełniacz.
+dativ|celownik|To je dativ.|To jest celownik.
+akuzativ|biernik|To je akuzativ.|To jest biernik.
+vokativ|wołacz|To je vokativ.|To jest wołacz.
+lokativ|miejscownik|To je lokativ.|To jest miejscownik.
+instrumental|narzędnik|To je instrumental.|To jest narzędnik.
+infinitiv|bezokolicznik|To je infinitiv.|To jest bezokolicznik.
+prezent|czas teraźniejszy|To je prezent.|To jest czas teraźniejszy.
+perfekt|czas przeszły złożony|To je perfekt.|To jest czas przeszły złożony.
+futur|czas przyszły|To je futur.|To jest czas przyszły.
+imperativ|tryb rozkazujący|To je imperativ.|To jest tryb rozkazujący.
+kondicional|tryb warunkowy|To je kondicional.|To jest tryb warunkowy.
+glagolski vid|aspekt czasownika|To je glagolski vid.|To jest aspekt czasownika.
+svršeni glagol|czasownik dokonany|To je svršeni glagol.|To jest czasownik dokonany.
+nesvršeni glagol|czasownik niedokonany|To je nesvršeni glagol.|To jest czasownik niedokonany.
+povratni glagol|czasownik zwrotny|To je povratni glagol.|To jest czasownik zwrotny.
+subjekt|podmiot|To je subjekt.|To jest podmiot.
+predikat|orzeczenie|To je predikat.|To jest orzeczenie.
+objekt|dopełnienie|To je objekt.|To jest dopełnienie.
+nastavak|końcówka wyrazu|To je nastavak.|To jest końcówka wyrazu.
+prefiks|przedrostek|To je prefiks.|To jest przedrostek.
+sufiks|przyrostek|To je sufiks.|To jest przyrostek.
+slog|sylaba|To je slog.|To jest sylaba.
+samoglasnik|samogłoska|To je samoglasnik.|To jest samogłoska.
+suglasnik|spółgłoska|To je suglasnik.|To jest spółgłoska.
+naglasak|akcent wyrazowy|To je naglasak.|To jest akcent wyrazowy.
+intonacija|intonacja|To je intonacija.|To jest intonacja.
+upitnik|znak zapytania|To je upitnik.|To jest znak zapytania.
+uskličnik|wykrzyknik jako znak|To je uskličnik.|To jest wykrzyknik jako znak.
+zarez|przecinek|To je zarez.|To jest przecinek.
+točka|kropka jako znak|To je točka.|To jest kropka jako znak.
+dvotočka|dwukropek|To je dvotočka.|To jest dwukropek.
+navodnici|cudzysłów|To su navodnici.|To jest cudzysłów.
+zagrada|nawias|To je zagrada.|To jest nawias.
+crtica|myślnik lub kreska|To je crtica.|To jest myślnik lub kreska.
+spojnica između riječi|łącznik między wyrazami|To je spojnica između riječi.|To jest łącznik między wyrazami.
+kratica|skrót|To je kratica.|To jest skrót.
+sinonim|synonim|To je sinonim.|To jest synonim.
+antonim|antonim|To je antonim.|To jest antonim.
+dijalekt|dialekt|To je dijalekt.|To jest dialekt.
+materinski jezik|język ojczysty|To je materinski jezik.|To jest język ojczysty.
+književni jezik|język literacki, standardowy|To je književni jezik.|To jest język literacki.
+# noun|technology
+zaslon|ekran, wyświetlacz|To je zaslon.|To jest ekran.
+dodirni zaslon|ekran dotykowy|To je dodirni zaslon.|To jest ekran dotykowy.
+prečac|skrót do pliku lub funkcji|To je prečac.|To jest skrót do pliku lub funkcji.
+radna površina|pulpit komputera|To je radna površina.|To jest pulpit komputera.
+mapa|folder komputerowy|To je mapa.|To jest folder komputerowy.
+podmapa|podfolder|To je podmapa.|To jest podfolder.
+poveznica|link|To je poveznica.|To jest link.
+preglednik|przeglądarka|To je preglednik.|To jest przeglądarka.
+tražilica|wyszukiwarka|To je tražilica.|To jest wyszukiwarka.
+kartica preglednika|karta przeglądarki|To je kartica preglednika.|To jest karta przeglądarki.
+oznaka|etykieta, oznaczenie|To je oznaka.|To jest etykieta.
+knjižna oznaka|zakładka do książki|To je knjižna oznaka.|To jest zakładka do książki.
+zabilješka|notatka|To je zabilješka.|To jest notatka.
+bilješka|zapisana uwaga|To je bilješka.|To jest zapisana uwaga.
+obavijest|powiadomienie|To je obavijest.|To jest powiadomienie.
+postavka|ustawienie|To je postavka.|To jest ustawienie.
+preuzimanje|pobieranie|To je preuzimanje.|To jest pobieranie.
+prijenos podataka|przesyłanie danych|To je prijenos podataka.|To jest przesyłanie danych.
+pohrana|przechowywanie danych|To je pohrana.|To jest przechowywanie danych.
+memorija|pamięć urządzenia|To je memorija.|To jest pamięć urządzenia.
+procesor|procesor|To je procesor.|To jest procesor.
+tvrdi disk|dysk twardy|To je tvrdi disk.|To jest dysk twardy.
+matična ploča|płyta główna|To je matična ploča.|To jest płyta główna.
+grafička kartica|karta graficzna|To je grafička kartica.|To jest karta graficzna.
+napajanje|zasilanie|To je napajanje.|To jest zasilanie.
+usmjerivač|router|To je usmjerivač.|To jest router.
+modem|modem|To je modem.|To jest modem.
+poslužitelj|serwer|To je poslužitelj.|To jest serwer.
+operativni sustav|system operacyjny|To je operativni sustav.|To jest system operacyjny.
+programska podrška|oprogramowanie|To je programska podrška.|To jest oprogramowanie.
+korisničko ime|nazwa użytkownika|To je korisničko ime.|To jest nazwa użytkownika.
+prijava|logowanie, zgłoszenie|To je prijava.|To jest logowanie.
+odjava|wylogowanie|To je odjava.|To jest wylogowanie.
+pretplata|subskrypcja|To je pretplata.|To jest subskrypcja.
+obnova pretplate|odnowienie subskrypcji|To je obnova pretplate.|To jest odnowienie subskrypcji.
+probno razdoblje|okres próbny|To je probno razdoblje.|To jest okres próbny.
+licencija|licencja|To je licencija.|To jest licencja.
+autorsko pravo|prawo autorskie|To je autorsko pravo.|To jest prawo autorskie.
+privatnost|prywatność|To je privatnost.|To jest prywatność.
+privola|zgoda na przetwarzanie danych|To je privola.|To jest zgoda na przetwarzanie danych.
+neželjena pošta|niechciana poczta|To je neželjena pošta.|To jest niechciana poczta.
+snimka zaslona|zrzut ekranu|To je snimka zaslona.|To jest zrzut ekranu.
+videozapis|nagranie wideo|To je videozapis.|To jest nagranie wideo.
+zvučni zapis|nagranie dźwiękowe|To je zvučni zapis.|To jest nagranie dźwiękowe.
+titlovi|napisy do filmu|To su titlovi.|To są napisy do filmu.
+slušalica|słuchawka telefoniczna|To je slušalica.|To jest słuchawka telefoniczna.
+broj pozivatelja|numer dzwoniącego|To je broj pozivatelja.|To jest numer dzwoniącego.
+propušteni poziv|nieodebrane połączenie|To je propušteni poziv.|To jest nieodebrane połączenie.
+govorna pošta|poczta głosowa|To je govorna pošta.|To jest poczta głosowa.
+pozivni broj|numer kierunkowy|To je pozivni broj.|To jest numer kierunkowy.
+bežična mreža|sieć bezprzewodowa|To je bežična mreža.|To jest sieć bezprzewodowa.
+mobilni podaci|dane komórkowe|To su mobilni podaci.|To są dane komórkowe.
+način rada u zrakoplovu|tryb samolotowy|To je način rada u zrakoplovu.|To jest tryb samolotowy.
+svjetlina|jasność ekranu|To je svjetlina.|To jest jasność ekranu.
+glasnoća|głośność|To je glasnoća.|To jest głośność.
+razlučivost|rozdzielczość|To je razlučivost.|To jest rozdzielczość.
+# noun|sport
+plivač|pływak|To je plivač.|To jest pływak.
+plivačica|pływaczka|To je plivačica.|To jest pływaczka.
+plivanje|pływanie|To je plivanje.|To jest pływanie.
+kraul|kraul|To je kraul.|To jest kraul.
+prsno plivanje|pływanie żabką|To je prsno plivanje.|To jest pływanie żabką.
+leđno plivanje|pływanie na plecach|To je leđno plivanje.|To jest pływanie na plecach.
+leptir stil|styl motylkowy|To je leptir stil.|To jest styl motylkowy.
+plivačke naočale|okularki pływackie|To su plivačke naočale.|To są okularki pływackie.
+kapa za plivanje|czepek pływacki|To je kapa za plivanje.|To jest czepek pływacki.
+štipaljka za nos|zacisk na nos|To je štipaljka za nos.|To jest zacisk na nos.
+čepići za uši|zatyczki do uszu|To su čepići za uši.|To są zatyczki do uszu.
+plivačka staza|tor pływacki|To je plivačka staza.|To jest tor pływacki.
+okret|obrót, nawrót|To je okret.|To jest obrót.
+zamah|zamach|To je zamah.|To jest zamach.
+zaveslaj|ruch wiosłem lub ręką w pływaniu|To je zaveslaj.|To jest ruch wiosłem lub ręką w pływaniu.
+ronjenje|nurkowanie|To je ronjenje.|To jest nurkowanie.
+peraja|płetwa|To je peraja.|To jest płetwa.
+maska za ronjenje|maska do nurkowania|To je maska za ronjenje.|To jest maska do nurkowania.
+disalica|rurka do nurkowania|To je disalica.|To jest rurka do nurkowania.
+spasilac|ratownik|To je spasilac.|To jest ratownik.
+svlačionica|szatnia sportowa|To je svlačionica.|To jest szatnia sportowa.
+ormarić|szafka|To je ormarić.|To jest szafka.
+lokot|kłódka|To je lokot.|To jest kłódka.
+članarina|składka członkowska|To je članarina.|To jest składka członkowska.
+članska iskaznica|karta członkowska|To je članska iskaznica.|To jest karta członkowska.
+uteg|ciężarek|To je uteg.|To jest ciężarek.
+bučica|hantel|To je bučica.|To jest hantel.
+šipka|sztanga, drążek|To je šipka.|To jest sztanga.
+klupa za vježbanje|ławka treningowa|To je klupa za vježbanje.|To jest ławka treningowa.
+sprava|przyrząd do ćwiczeń|To je sprava.|To jest przyrząd do ćwiczeń.
+traka za trčanje|bieżnia elektryczna|To je traka za trčanje.|To jest bieżnia elektryczna.
+sobni bicikl|rower stacjonarny|To je sobni bicikl.|To jest rower stacjonarny.
+elastična traka|guma do ćwiczeń|To je elastična traka.|To jest guma do ćwiczeń.
+čučanj|przysiad|To je čučanj.|To jest przysiad.
+sklek|pompka jako ćwiczenie|To je sklek.|To jest pompka jako ćwiczenie.
+zgib|podciągnięcie na drążku|To je zgib.|To jest podciągnięcie na drążku.
+iskorak|wykrok|To je iskorak.|To jest wykrok.
+trbušnjak|brzuszek jako ćwiczenie|To je trbušnjak.|To jest brzuszek jako ćwiczenie.
+istezanje|rozciąganie|To je istezanje.|To jest rozciąganie.
+zagrijavanje|rozgrzewka|To je zagrijavanje.|To jest rozgrzewka.
+opterećenje|obciążenie|To je opterećenje.|To jest obciążenie.
+ponavljanje vježbe|powtórzenie ćwiczenia|To je ponavljanje vježbe.|To jest powtórzenie ćwiczenia.
+serija vježbi|seria ćwiczeń|To je serija vježbi.|To jest seria ćwiczeń.
+izdržljivost|wytrzymałość|To je izdržljivost.|To jest wytrzymałość.
+ravnoteža|równowaga|To je ravnoteža.|To jest równowaga.
+gibljivost|gibkość|To je gibljivost.|To jest gibkość.
+oporavak nakon treninga|regeneracja po treningu|To je oporavak nakon treninga.|To jest regeneracja po treningu.
+trkač|biegacz|To je trkač.|To jest biegacz.
+maraton|maraton|To je maraton.|To jest maraton.
+polumaraton|półmaraton|To je polumaraton.|To jest półmaraton.
+triatlon|triathlon|To je triatlon.|To jest triathlon.
+utrka|wyścig, bieg sportowy|To je utrka.|To jest wyścig.
+start|start|To je start.|To jest start.
+ciljna crta|linia mety|To je ciljna crta.|To jest linia mety.
+startni broj|numer startowy|To je startni broj.|To jest numer startowy.
+osobni rekord|rekord życiowy|To je osobni rekord.|To jest rekord życiowy.
+krug|okrążenie|To je krug.|To jest okrążenie.
+tempo|tempo|To je tempo.|To jest tempo.
+interval|interwał|To je interval.|To jest interwał.
+uzbrdica|podejście, podjazd|To je uzbrdica.|To jest podejście.
+nizbrdica|zejście, zjazd|To je nizbrdica.|To jest zejście.
+trening|trening|To je trening.|To jest trening.
+suigrač|kolega z drużyny|To je suigrač.|To jest kolega z drużyny.
+protivnik|przeciwnik|To je protivnik.|To jest przeciwnik.
+navijač|kibic|To je navijač.|To jest kibic.
+tribina|trybuna|To je tribina.|To jest trybuna.
+igralište|boisko|To je igralište.|To jest boisko.
+sportska dvorana|hala sportowa|To je sportska dvorana.|To jest hala sportowa.
+koš|kosz do koszykówki|To je koš.|To jest kosz do koszykówki.
+gol|bramka|To je gol.|To jest bramka.
+vratar|bramkarz|To je vratar.|To jest bramkarz.
+lopta|piłka|To je lopta.|To jest piłka.
+reket|rakieta do gry|To je reket.|To jest rakieta do gry.
+rekvizit|rekwizyt, sprzęt pomocniczy|To je rekvizit.|To jest rekwizyt.
+odbojka|siatkówka|To je odbojka.|To jest siatkówka.
+košarka|koszykówka|To je košarka.|To jest koszykówka.
+rukomet|piłka ręczna|To je rukomet.|To jest piłka ręczna.
+stolni tenis|tenis stołowy|To je stolni tenis.|To jest tenis stołowy.
+badminton|badminton|To je badminton.|To jest badminton.
+šah|szachy|To je šah.|To są szachy.
+društvena igra|gra planszowa lub towarzyska|To je društvena igra.|To jest gra planszowa lub towarzyska.
+kockica|kostka do gry|To je kockica.|To jest kostka do gry.
+figura|figurka, figura w grze|To je figura.|To jest figurka.
+pijun|pionek szachowy|To je pijun.|To jest pionek szachowy.
+špil karata|talia kart|To je špil karata.|To jest talia kart.
+potez|ruch w grze|To je potez.|To jest ruch w grze.
+pravilo igre|zasada gry|To je pravilo igre.|To jest zasada gry.
+izjednačenje|remis, wyrównanie wyniku|To je izjednačenje.|To jest remis.
+produžetak|dogrywka|To je produžetak.|To jest dogrywka.
+# noun|animals
+kukac|owad|To je kukac.|To jest owad.
+bumbar|trzmiel|To je bumbar.|To jest trzmiel.
+stršljen|szerszeń|To je stršljen.|To jest szerszeń.
+krpelj|kleszcz|To je krpelj.|To jest kleszcz.
+buha|pchła|To je buha.|To jest pchła.
+uš|wesz|To je uš.|To jest wesz.
+stjenica|pluskwa|To je stjenica.|To jest pluskwa.
+žohar|karaluch|To je žohar.|To jest karaluch.
+moljac|mól|To je moljac.|To jest mól.
+bubamara|biedronka|To je bubamara.|To jest biedronka.
+skakavac|konik polny|To je skakavac.|To jest konik polny.
+vilin konjic|ważka|To je vilin konjic.|To jest ważka.
+puž golać|ślimak nagi|To je puž golać.|To jest ślimak nagi.
+jež|jeż|To je jež.|To jest jeż.
+krtica|kret|To je krtica.|To jest kret.
+šišmiš|nietoperz|To je šišmiš.|To jest nietoperz.
+vidra|wydra|To je vidra.|To jest wydra.
+dabar|bóbr|To je dabar.|To jest bóbr.
+jazavac|borsuk|To je jazavac.|To jest borsuk.
+kuna|kuna, zwierzę|To je kuna.|To jest kuna.
+ris|ryś|To je ris.|To jest ryś.
+zmaj|smok|To je zmaj.|To jest smok.
+sova|sowa|To je sova.|To jest sowa.
+orao|orzeł|To je orao.|To jest orzeł.
+sokol|sokół|To je sokol.|To jest sokół.
+jastreb|jastrząb|To je jastreb.|To jest jastrząb.
+vrabac|wróbel|To je vrabac.|To jest wróbel.
+golub|gołąb|To je golub.|To jest gołąb.
+galeb|mewa|To je galeb.|To jest mewa.
+lastavica|jaskółka|To je lastavica.|To jest jaskółka.
+roda|bocian|To je roda.|To jest bocian.
+labud|łabędź|To je labud.|To jest łabędź.
+vrana|wrona|To je vrana.|To jest wrona.
+gavran|kruk|To je gavran.|To jest kruk.
+svraka|sroka|To je svraka.|To jest sroka.
+djetlić|dzięcioł|To je djetlić.|To jest dzięcioł.
+kos|kos, ptak|To je kos.|To jest kos.
+pingvin|pingwin|To je pingvin.|To jest pingwin.
+noj|struś|To je noj.|To jest struś.
+paun|paw|To je paun.|To jest paw.
+gušter|jaszczurka|To je gušter.|To jest jaszczurka.
+krokodil|krokodyl|To je krokodil.|To jest krokodyl.
+dupin|delfin|To je dupin.|To jest delfin.
+kit|wieloryb|To je kit.|To jest wieloryb.
+morski pas|rekin|To je morski pas.|To jest rekin.
+orka|orka|To je orka.|To jest orka.
+tuljan|foka|To je tuljan.|To jest foka.
+meduza|meduza|To je meduza.|To jest meduza.
+hobotnica|ośmiornica|To je hobotnica.|To jest ośmiornica.
+lignja|kałamarnica|To je lignja.|To jest kałamarnica.
+sipa|mątwa|To je sipa.|To jest mątwa.
+rak|rak, skorupiak|To je rak.|To jest rak.
+škamp|langustynka|To je škamp.|To jest langustynka.
+kozica|krewetka|To je kozica.|To jest krewetka.
+jastog|homar|To je jastog.|To jest homar.
+dagnja|omułek|To je dagnja.|To jest omułek.
+kamenica|ostryga|To je kamenica.|To jest ostryga.
+morski jež|jeżowiec|To je morski jež.|To jest jeżowiec.
+morska zvijezda|rozgwiazda|To je morska zvijezda.|To jest rozgwiazda.
+srdela|sardynka|To je srdela.|To jest sardynka.
+inćun|sardela|To je inćun.|To jest sardela.
+tuna|tuńczyk|To je tuna.|To jest tuńczyk.
+losos|łosoś|To je losos.|To jest łosoś.
+pastrva|pstrąg|To je pastrva.|To jest pstrąg.
+šaran|karp|To je šaran.|To jest karp.
+som|sum|To je som.|To jest sum.
+štuka|szczupak|To je štuka.|To jest szczupak.
+oslić|morszczuk|To je oslić.|To jest morszczuk.
+bakalar|dorsz|To je bakalar.|To jest dorsz.
+orada|dorada|To je orada.|To jest dorada.
+brancin|labraks, okoń morski|To je brancin.|To jest labraks.
+skuša|makrela|To je skuša.|To jest makrela.
+# verb|home
+oprati|umyć, wyprać|Moram oprati ruke.|Muszę umyć ręce.
+umiti se|umyć twarz|Želim se umiti.|Chcę umyć twarz.
+umivati se|myć twarz|Umivam se svako jutro.|Myję twarz każdego ranka.
+otuširati se|wziąć prysznic|Idem se otuširati.|Idę wziąć prysznic.
+tuširati se|brać prysznic|Volim se tuširati navečer.|Lubię brać prysznic wieczorem.
+okupati se|wykąpać się|Želim se okupati.|Chcę się wykąpać.
+osušiti|wysuszyć|Moram osušiti kosu.|Muszę wysuszyć włosy.
+sušiti|suszyć|Ovdje sušimo rublje.|Tutaj suszymy pranie.
+obrisati se|wytrzeć się|Obriši se ručnikom.|Wytrzyj się ręcznikiem.
+obrijati se|ogolić się|Moram se obrijati.|Muszę się ogolić.
+brijati se|golić się|Brijem se svaki dan.|Golę się codziennie.
+počešljati se|uczesać się|Moram se počešljati.|Muszę się uczesać.
+češljati se|czesać się|Češljam se pred ogledalom.|Czeszę się przed lustrem.
+našminkati se|umalować się|Želi se našminkati.|Chce się umalować.
+šminkati se|malować się|Šminka se u kupaonici.|Maluje się w łazience.
+skinuti šminku|zmyć makijaż|Moram skinuti šminku.|Muszę zmyć makijaż.
+namazati|posmarować|Namaži ruke kremom.|Posmaruj ręce kremem.
+mazati|smarować|Mažem kruh maslacem.|Smaruję chleb masłem.
+isprati|wypłukać|Isperi čašu vodom.|Wypłucz szklankę wodą.
+ispirati|płukać|Ispirem kosu.|Płuczę włosy.
+obući|założyć ubranie|Obuci toplu jaknu.|Załóż ciepłą kurtkę.
+oblačiti|ubierać kogoś|Oblačim dijete.|Ubieram dziecko.
+oblačiti se|ubierać się|Brzo se oblačim.|Szybko się ubieram.
+svući se|rozebrać się|Moram se svući.|Muszę się rozebrać.
+svlačiti se|rozbierać się|Dijete se samo svlači.|Dziecko samo się rozbiera.
+obuti|włożyć buty|Obuj cipele.|Włóż buty.
+obuvati|wkładać buty|Obuvam čizme.|Wkładam kozaki.
+izuti|zdjąć buty|Izuj cipele.|Zdejmij buty.
+izuvati|zdejmować buty|Izuvam mokre cipele.|Zdejmuję mokre buty.
+presvući se|przebrać się|Moram se presvući.|Muszę się przebrać.
+presvlačiti se|przebierać się|Presvlačim se nakon posla.|Przebieram się po pracy.
+zakopčati|zapiąć|Zakopčaj jaknu.|Zapnij kurtkę.
+zakopčavati|zapinać|Zakopčavam gumbe.|Zapinam guziki.
+otkopčati|rozpiąć|Otkopčaj kaput.|Rozepnij płaszcz.
+otkopčavati|rozpinać|Otkopčavam košulju.|Rozpinam koszulę.
+zavezati|zawiązać|Zaveži vezice.|Zawiąż sznurówki.
+odvezati|rozwiązać węzeł|Ne mogu odvezati čvor.|Nie mogę rozwiązać węzła.
+objesiti|powiesić|Objesi kaput ovdje.|Powieś płaszcz tutaj.
+vješati|wieszać|Vješam rublje.|Wieszam pranie.
+složiti|ułożyć, złożyć|Složi odjeću.|Złóż ubrania.
+slagati odjeću|układać ubrania|Volim slagati odjeću.|Lubię układać ubrania.
+pomesti|zamieść|Treba pomesti pod.|Trzeba zamieść podłogę.
+mesti|zamiatać|Metem kuhinju.|Zamiatam kuchnię.
+obrisati prašinu|zetrzeć kurz|Moram obrisati prašinu.|Muszę zetrzeć kurz.
+oprati pod|umyć podłogę|Treba oprati pod.|Trzeba umyć podłogę.
+usisati|odkurzyć|Moram usisati tepih.|Muszę odkurzyć dywan.
+pospremati|sprzątać|Pospremam sobu.|Sprzątam pokój.
+raspremiti|uprzątnąć|Raspremi stol nakon jela.|Uprzątnij stół po jedzeniu.
+raspremati|uprzątać|Raspremamo stol.|Uprzątamy stół.
+provjetriti|przewietrzyć|Treba provjetriti sobu.|Trzeba przewietrzyć pokój.
+provjetravati|wietrzyć|Svaki dan provjetravam stan.|Codziennie wietrzę mieszkanie.
+ribati|szorować|Moram ribati kadu.|Muszę szorować wannę.
+istrljati|wytrzeć przez pocieranie|Istrljaj se ručnikom.|Wytrzyj się ręcznikiem.
+trljati|pocierać|Nemoj trljati oči.|Nie pocieraj oczu.
+polirati|polerować|Poliram srebro.|Poleruję srebro.
+iznijeti smeće|wynieść śmieci|Moram iznijeti smeće.|Muszę wynieść śmieci.
+razvrstati|posegregować|Razvrstaj otpad.|Posegreguj odpady.
+razvrstavati|segregować|Razvrstavamo otpad.|Segregujemy odpady.
+zaliti|podlać|Zalij cvijeće.|Podlej kwiaty.
+presaditi|przesadzić roślinę|Treba presaditi biljku.|Trzeba przesadzić roślinę.
+isključivati|wyłączać|Uvijek isključujem računalo.|Zawsze wyłączam komputer.
+uključivati|włączać|Uključujem svjetlo.|Włączam światło.
+upaliti|zapalić, uruchomić|Upali svjetlo.|Zapal światło.
+paliti|zapalać|Palim svijeću.|Zapalam świecę.
+ugasiti|zgasić|Ugasi svjetlo.|Zgaś światło.
+gasiti|gasić|Gasim svijeće.|Gaszę świece.
+pokrenuti|uruchomić|Pokreni program.|Uruchom program.
+pokretati|uruchamiać|Pokrećem računalo.|Uruchamiam komputer.
+napuniti|napełnić, naładować|Napunite bocu vodom.|Napełnijcie butelkę wodą.
+isprazniti|opróżnić|Isprazni koš.|Opróżnij kosz.
+prazniti|opróżniać|Praznim perilicu.|Opróżniam pralkę.
+odčepiti|odetkać|Treba odčepiti odvod.|Trzeba odetkać odpływ.
+začepiti|zatkać|Nemoj začepiti odvod.|Nie zatkaj odpływu.
+curiti|przeciekać|Cijev curi.|Rura przecieka.
+procuriti|zacząć przeciekać|Krov je procurio.|Dach zaczął przeciekać.
+kapnuti|skapnąć|Voda je kapnula na pod.|Woda skapnęła na podłogę.
+proliti|rozlać|Pazi da ne proliješ vodu.|Uważaj, żeby nie rozlać wody.
+prolijevati|rozlewać|Dijete prolijeva sok.|Dziecko rozlewa sok.
+prosuti|rozsypać|Nemoj prosuti brašno.|Nie rozsyp mąki.
+prosipati|rozsypywać|Netko prosipa šećer.|Ktoś rozsypuje cukier.
+zalijepiti|przykleić|Zalijepi marku.|Przyklej znaczek.
+lijepiti|kleić|Lijepim papir.|Kleję papier.
+odlijepiti|odkleić|Odlijepi naljepnicu.|Odklej naklejkę.
+pričvrstiti|przymocować|Treba pričvrstiti policu.|Trzeba przymocować półkę.
+zategnuti|dokręcić, napiąć|Zategni vijak.|Dokręć śrubę.
+otpustiti vijak|poluzować śrubę|Treba otpustiti vijak.|Trzeba poluzować śrubę.
+odvrnuti|odkręcić|Odvrni poklopac.|Odkręć pokrywkę.
+zavrnuti|zakręcić|Zavrni slavinu.|Zakręć kran.
+izbušiti|wywiercić|Treba izbušiti rupu.|Trzeba wywiercić otwór.
+zabiti|wbić|Zabij čavao.|Wbij gwóźdź.
+izvaditi|wyjąć|Izvadi ključ.|Wyjmij klucz.
+vaditi|wyjmować|Vadim knjige iz torbe.|Wyjmuję książki z torby.
+umetnuti|włożyć, wsunąć|Umetni karticu.|Włóż kartę.
+umetati|wkładać, wsuwać|Umećem papir u pisač.|Wkładam papier do drukarki.
+# verb|food
+skuhati|ugotować|Želim skuhati juhu.|Chcę ugotować zupę.
+ispeći|upiec|Moram ispeći kruh.|Muszę upiec chleb.
+ispržiti|usmażyć|Treba ispržiti ribu.|Trzeba usmażyć rybę.
+pirjati|dusić potrawę|Pirjaj luk na ulju.|Duś cebulę na oleju.
+prokuhati|przegotować|Treba prokuhati vodu.|Trzeba przegotować wodę.
+zakuhati|doprowadzić do wrzenia|Zakuhaj vodu.|Doprowadź wodę do wrzenia.
+kuhati na pari|gotować na parze|Volim kuhati na pari.|Lubię gotować na parze.
+podgrijati|podgrzać|Podgrij juhu.|Podgrzej zupę.
+podgrijavati|podgrzewać|Podgrijavam ručak.|Podgrzewam obiad.
+ohladiti|schłodzić|Treba ohladiti piće.|Trzeba schłodzić napój.
+hladiti|chłodzić|Hladim čaj.|Chłodzę herbatę.
+zamrznuti|zamrozić|Možemo zamrznuti juhu.|Możemy zamrozić zupę.
+zamrzavati|zamrażać|Zamrzavam povrće.|Zamrażam warzywa.
+odmrznuti|rozmrozić|Treba odmrznuti meso.|Trzeba rozmrozić mięso.
+odmrzavati|rozmrażać|Odmrzavam ribu.|Rozmrażam rybę.
+guliti|obierać|Gulim krumpir.|Obieram ziemniaki.
+oguliti|obrać|Oguli jabuku.|Obierz jabłko.
+narezati|pokroić|Nareži kruh.|Pokrój chleb.
+naribati|zetrzeć na tarce|Naribaj sir.|Zetrzyj ser.
+ribati sir|trzeć ser|Moram ribati sir.|Muszę trzeć ser.
+sjeckati|siekać|Sjeckam luk.|Siekam cebulę.
+nasjeckati|posiekać|Nasjeckaj peršin.|Posiekaj pietruszkę.
+promiješati|zamieszać|Promiješaj juhu.|Zamieszaj zupę.
+umijesiti|zagnieść ciasto|Treba umijesiti tijesto.|Trzeba zagnieść ciasto.
+mijesiti|zagniatać ciasto|Mijesim tijesto.|Zagniatam ciasto.
+razvaljati|rozwałkować|Razvaljaj tijesto.|Rozwałkuj ciasto.
+razvaljavati|wałkować|Razvaljavam tijesto.|Wałkuję ciasto.
+umutiti|roztrzepać|Umuti jaja.|Roztrzep jajka.
+mutiti|trzepać, mieszać|Mutim jaja vilicom.|Trzepię jajka widelcem.
+istući|ubić|Istuci bjelanjke.|Ubij białka.
+posoliti|posolić|Posoli juhu.|Posól zupę.
+soliti|solić|Nemoj previše soliti.|Nie sól za dużo.
+popapriti|popieprzyć|Popapri meso.|Popieprz mięso.
+začiniti|doprawić|Začini salatu.|Dopraw sałatkę.
+začinjavati|doprawiać|Začinjavam juhu.|Doprawiam zupę.
+zasladiti|posłodzić|Želim zasladiti čaj.|Chcę posłodzić herbatę.
+cijediti|wyciskać sok|Cijedim naranče.|Wyciskam pomarańcze.
+iscijediti|wycisnąć|Iscijedi limun.|Wyciśnij cytrynę.
+ocijediti|odcedzić|Ocijedi tjesteninu.|Odcedź makaron.
+procijediti|przecedzić|Procijedi juhu.|Przecedź zupę.
+preliti|polać|Prelij kolač čokoladom.|Polej ciasto czekoladą.
+uliti|wlać|Ulij mlijeko u lonac.|Wlej mleko do garnka.
+naliti|nalać|Nalij vodu u čašu.|Nalej wodę do szklanki.
+točiti|nalewać napój|Točim vino.|Nalewam wino.
+natočiti|nalać napój|Natoči sok.|Nalej soku.
+doliti|dolać|Dolij malo vode.|Dolej trochę wody.
+posuti|posypać|Pospi kolač šećerom.|Posyp ciasto cukrem.
+premazati|posmarować powierzchnię|Premaži kruh maslacem.|Posmaruj chleb masłem.
+puniti paprike|faszerować paprykę|Danas ćemo puniti paprike.|Dzisiaj będziemy faszerować paprykę.
+marinirati|marynować|Mariniramo meso.|Marynujemy mięso.
+pohati|panierować i smażyć|Volim pohati tikvice.|Lubię panierować i smażyć cukinię.
+karamelizirati|karmelizować|Karameliziraj šećer.|Skarmelizuj cukier.
+kušati jelo|spróbować potrawy|Želim kušati ovo jelo.|Chcę spróbować tej potrawy.
+prepeći|przypiec za mocno|Nemoj prepeći meso.|Nie przypiecz mięsa za mocno.
+zagorjeti|przypalić się|Ručak je zagorio.|Obiad się przypalił.
+kipjeti|wrzeć|Voda kipi.|Woda wrze.
+prekipjeti|wykipieć|Mlijeko je prekipjelo.|Mleko wykipiało.
+žvakati|żuć|Polako žvači.|Żuj powoli.
+gutati|połykać|Teško gutam.|Mam trudności z połykaniem.
+progutati|połknąć|Progutaj tabletu.|Połknij tabletkę.
+zagristi|ugryźć|Zagrizi jabuku.|Ugryź jabłko.
+gristi|gryźć|Pas voli gristi igračke.|Pies lubi gryźć zabawki.
+polizati|polizać|Pas mi je polizao ruku.|Pies polizał mi rękę.
+lizati|lizać|Dijete liže sladoled.|Dziecko liże lody.
+hrskati|chrupać|Volim hrskati mrkvu.|Lubię chrupać marchewkę.
+najesti se|najeść się|Želim se dobro najesti.|Chcę się dobrze najeść.
+napiti se vode|napić się wody|Moram se napiti vode.|Muszę się napić wody.
+ogladnjeti|zgłodnieć|Brzo ću ogladnjeti.|Szybko zgłodnieję.
+ožednjeti|poczuć pragnienie|Ožednio sam od trčanja.|Zachciało mi się pić od biegania.
+# verb|conversation
+zvati se|nazywać się|Kako se zoveš?|Jak się nazywasz?
+predstaviti se|przedstawić się|Želim se predstaviti.|Chcę się przedstawić.
+predstavljati se|przedstawiać się|Predstavljamo se novim kolegama.|Przedstawiamy się nowym kolegom.
+upoznati se|poznać się|Želim se upoznati s tobom.|Chcę cię poznać.
+pozdravljati|pozdrawiać|Pozdravljam susjede.|Pozdrawiam sąsiadów.
+pozdraviti se|przywitać się, pożegnać się|Moramo se pozdraviti prije odlaska.|Musimy się pożegnać przed wyjazdem.
+pozdravljati se|witać się, żegnać się|Pozdravljamo se na ulici.|Witamy się na ulicy.
+rukovati se|podawać sobie ręce|Rukujemo se pri susretu.|Podajemy sobie ręce przy spotkaniu.
+mahnuti|machnąć|Mahni baki.|Pomachaj babci.
+mahati|machać|Djeca mašu s prozora.|Dzieci machają z okna.
+zagrliti|przytulić|Želim te zagrliti.|Chcę cię przytulić.
+grliti|przytulać|Majka grli dijete.|Matka przytula dziecko.
+poljubiti|pocałować|Smijem li te poljubiti?|Czy mogę cię pocałować?
+ljubiti|całować|Ljubi dijete u čelo.|Całuje dziecko w czoło.
+nasmiješiti se|uśmiechnąć się|Nasmiješila se susjedu.|Uśmiechnęła się do sąsiada.
+smiješiti se|uśmiechać się|Beba se smiješi.|Niemowlę się uśmiecha.
+nasmijati se|roześmiać się|Svi su se nasmijali.|Wszyscy się roześmiali.
+rasplakati se|rozpłakać się|Dijete se rasplakalo.|Dziecko się rozpłakało.
+naljutiti se|rozgniewać się|Nemoj se naljutiti.|Nie gniewaj się.
+smiriti se|uspokoić się|Pokušaj se smiriti.|Spróbuj się uspokoić.
+smirivati se|uspokajać się|Dijete se polako smiruje.|Dziecko powoli się uspokaja.
+utješiti|pocieszyć|Želim te utješiti.|Chcę cię pocieszyć.
+tješiti|pocieszać|Tješim prijatelja.|Pocieszam przyjaciela.
+ohrabriti|dodać otuchy|Pokušaj ga ohrabriti.|Spróbuj dodać mu otuchy.
+ohrabrivati|dodawać otuchy|Učitelj ohrabruje učenike.|Nauczyciel dodaje uczniom otuchy.
+razveseliti|ucieszyć kogoś|Želim razveseliti mamu.|Chcę ucieszyć mamę.
+iznenaditi|zaskoczyć|Želim te iznenaditi.|Chcę cię zaskoczyć.
+iznenađivati|zaskakiwać|Uvijek me iznenađuješ.|Zawsze mnie zaskakujesz.
+zadirkivati|droczyć się|Nemoj zadirkivati brata.|Nie drocz się z bratem.
+zezati|żartować z kogoś|Samo te zezam.|Tylko sobie z ciebie żartuję.
+gnjaviti|zawracać głowę|Ne želim te gnjaviti.|Nie chcę ci zawracać głowy.
+dosađivati|naprzykrzać się|Nemoj dosađivati gostima.|Nie naprzykrzaj się gościom.
+smetati|przeszkadzać|Oprosti ako smetam.|Przepraszam, jeśli przeszkadzam.
+ometati|zakłócać|Nemoj ometati nastavu.|Nie zakłócaj lekcji.
+prekinuti|przerwać|Nemoj me prekinuti.|Nie przerywaj mi.
+doviknuti|zawołać do kogoś|Doviknuo mi je s balkona.|Zawołał do mnie z balkonu.
+šaptati|szeptać|Zašto šapćeš?|Dlaczego szepczesz?
+prošaptati|wyszeptać|Prošaptala je moje ime.|Wyszeptała moje imię.
+šapnuti|szepnąć|Šapni mi odgovor.|Szepnij mi odpowiedź.
+mumljati|mamrotać|Nemoj mumljati.|Nie mamrocz.
+mrmljati|mruczeć pod nosem|Nešto mrmlja sebi u bradu.|Mruczy coś pod nosem.
+uzdahnuti|westchnąć|Duboko je uzdahnula.|Głęboko westchnęła.
+uzdisati|wzdychać|Zašto uzdišeš?|Dlaczego wzdychasz?
+kimnuti|skinąć głową|Kimnuo je u znak pozdrava.|Skinął głową na powitanie.
+klimati glavom|kiwać głową|Sluša i klima glavom.|Słucha i kiwa głową.
+odmahnuti glavom|pokręcić głową przecząco|Odmahnula je glavom.|Pokręciła przecząco głową.
+slegnuti ramenima|wzruszyć ramionami|Samo je slegnuo ramenima.|Tylko wzruszył ramionami.
+obećavati|obiecywać|Nemoj obećavati previše.|Nie obiecuj za dużo.
+zamoliti|poprosić|Mogu li te nešto zamoliti?|Czy mogę cię o coś poprosić?
+upitati|zapytać|Želim te nešto upitati.|Chcę cię o coś zapytać.
+odgovarati na pitanje|odpowiadać na pytanie|Učenik odgovara na pitanje.|Uczeń odpowiada na pytanie.
+prepričati|opowiedzieć własnymi słowami|Prepričaj mi film.|Opowiedz mi film własnymi słowami.
+prepričavati|opowiadać własnymi słowami|Prepričavam sadržaj knjige.|Opowiadam własnymi słowami treść książki.
+popričati|porozmawiać chwilę|Možemo li popričati?|Czy możemy chwilę porozmawiać?
+porazgovarati|porozmawiać|Želim porazgovarati s tobom.|Chcę z tobą porozmawiać.
+razgovarati telefonom|rozmawiać przez telefon|Ne mogu sada razgovarati telefonom.|Nie mogę teraz rozmawiać przez telefon.
+raspitati se|zasięgnąć informacji|Moram se raspitati o tečaju.|Muszę zasięgnąć informacji o kursie.
+raspitivati se|dopytywać się|Raspitujem se o poslu.|Dopytuję się o pracę.
+raspraviti|przedyskutować|Moramo raspraviti taj problem.|Musimy przedyskutować ten problem.
+objašnjavati|wyjaśniać|Učitelj objašnjava pravilo.|Nauczyciel wyjaśnia regułę.
+priznati|przyznać|Moram priznati pogrešku.|Muszę przyznać się do błędu.
+uvjeravati|przekonywać|Nemoj me uvjeravati.|Nie przekonuj mnie.
+nagovoriti|namówić|Pokušaj ga nagovoriti.|Spróbuj go namówić.
+nagovarati|namawiać|Nagovaram ga na putovanje.|Namawiam go na podróż.
+odgovoriti od|odwieść od|Želim ga odgovoriti od te ideje.|Chcę go odwieść od tego pomysłu.
+povjeriti se|zwierzyć się|Možeš mi se povjeriti.|Możesz mi się zwierzyć.
+povjeravati se|zwierzać się|Često se povjeravam sestri.|Często zwierzam się siostrze.
+otkriti tajnu|zdradzić tajemnicę|Nemoj otkriti tajnu.|Nie zdradź tajemnicy.
+sažeti|streścić|Možeš li sažeti tekst?|Czy możesz streścić tekst?
+sažimati|streszczać|Sažimam glavne ideje.|Streszczam główne myśli.
+# verb|daily
+promašiti|chybić, nie trafić|Promašio sam cilj.|Nie trafiłem w cel.
+iznajmiti|wynająć komuś|Želim iznajmiti svoj stan.|Chcę wynająć komuś swoje mieszkanie.
+useliti se|wprowadzić się|Uselili smo se u novi stan.|Wprowadziliśmy się do nowego mieszkania.
+drijemati|drzemać|Djed drijema u naslonjaču.|Dziadek drzemie w fotelu.
+zadrijemati|zdrzemnąć się|Želim malo zadrijemati.|Chcę się trochę zdrzemnąć.
+zijevati|ziewać|Zijevam jer sam umoran.|Ziewam, bo jestem zmęczony.
+treptati|mrugać|Često trepćeš.|Często mrugasz.
+# adjective|daily
+mlak|letni, niezbyt ciepły|Čaj je mlak.|Herbata jest letnia.
+vreo|wrzący, bardzo gorący|Čaj je vreo.|Herbata jest bardzo gorąca.
+leden|lodowaty|Vjetar je leden.|Wiatr jest lodowaty.
+užegao|zjełczały|Maslac je užegao.|Masło jest zjełczałe.
+sirov|surowy|Krumpir je još sirov.|Ziemniak jest jeszcze surowy.
+kuhan|gotowany|Krumpir je kuhan.|Ziemniak jest ugotowany.
+pečen|pieczony|Kruh je pečen.|Chleb jest upieczony.
+pržen|smażony|Krumpir je pržen.|Ziemniak jest smażony.
+pohan|panierowany i smażony|Sir je pohan.|Ser jest panierowany i smażony.
+neslan|niesłony|Kruh je neslan.|Chleb jest niesłony.
+preslan|zbyt słony|Umak je preslan.|Sos jest zbyt słony.
+presladak|zbyt słodki|Sok je presladak.|Sok jest zbyt słodki.
+hrskav|chrupiący|Kruh je hrskav.|Chleb jest chrupiący.
+sočan|soczysty|Plod je sočan.|Owoc jest soczysty.
+zreo|dojrzały|Paradajz je zreo.|Pomidor jest dojrzały.
+nezreo|niedojrzały|Plod je nezreo.|Owoc jest niedojrzały.
+truo|zgniły|Krumpir je truo.|Ziemniak jest zgniły.
+jestiv|jadalny|Ovaj cvijet je jestiv.|Ten kwiat jest jadalny.
+nejestiv|niejadalny|Ovaj plod je nejestiv.|Ten owoc jest niejadalny.
+otrovan|trujący|Bršljan je otrovan.|Bluszcz jest trujący.
+bezalkoholan|bezalkoholowy|Koktel je bezalkoholan.|Koktajl jest bezalkoholowy.
+gaziran|gazowany|Sok je gaziran.|Napój jest gazowany.
+negaziran|niegazowany|Ovaj napitak je negaziran.|Ten napój jest niegazowany.
+punomasan|pełnotłusty|Sir je punomasan.|Ser jest pełnotłusty.
+obrani|odtłuszczony|Kupujem obrano mlijeko.|Kupuję odtłuszczone mleko.
+masan|tłusty|Umak je masan.|Sos jest tłusty.
+nemasni|chudy, niskotłuszczowy|Kupujem nemasni sir.|Kupuję chudy ser.
+beskvasni|przaśny, bez drożdży|Jedemo beskvasni kruh.|Jemy chleb bez drożdży.
+cjelovit|pełny, całościowy|Treba nam cjelovit plan.|Potrzebujemy całościowego planu.
+integralni|pełnoziarnisty|Kupujem integralni kruh.|Kupuję chleb pełnoziarnisty.
+# adjective|home
+prašnjav|zakurzony|Stol je prašnjav.|Stół jest zakurzony.
+blatnjav|zabłocony|Put je blatnjav.|Droga jest zabłocona.
+sklizak|śliski|Pod je sklizak.|Podłoga jest śliska.
+ljepljiv|lepki|Stol je ljepljiv.|Stół jest lepki.
+mirišljav|pachnący|Sapun je mirišljav.|Mydło jest pachnące.
+smrdljiv|śmierdzący|Otpad je smrdljiv.|Odpad jest śmierdzący.
+zagušljiv|duszny|Zrak je zagušljiv.|Powietrze jest duszne.
+prozračan|przewiewny|Stan je prozračan.|Mieszkanie jest przewiewne.
+osunčan|nasłoneczniony|Balkon je osunčan.|Balkon jest nasłoneczniony.
+sjenovit|zacieniony|Vrt je sjenovit.|Ogród jest zacieniony.
+skučen|mały i ciasny|Prostor je skučen.|Przestrzeń jest mała i ciasna.
+neuredan|nieporządny|Stol je neuredan.|Na stole jest nieporządek.
+namješten|umeblowany|Stan je namješten.|Mieszkanie jest umeblowane.
+nenamješten|nieumeblowany|Stan je nenamješten.|Mieszkanie jest nieumeblowane.
+iznajmljen|wynajęty|Stan je već iznajmljen.|Mieszkanie jest już wynajęte.
+ispravan|sprawny, poprawny|Uređaj je ispravan.|Urządzenie jest sprawne.
+neispravan|niesprawny, niepoprawny|Uređaj je neispravan.|Urządzenie jest niesprawne.
+napuknut|pęknięty|Tanjur je napuknut.|Talerz jest pęknięty.
+razbijen|rozbity|Prozor je razbijen.|Okno jest rozbite.
+očuvan|zachowany w dobrym stanie|Namještaj je očuvan.|Meble są w dobrym stanie.
+istrošen|zużyty|Tepih je istrošen.|Dywan jest zużyty.
+zahrđao|zardzewiały|Ključ je zahrđao.|Klucz jest zardzewiały.
+čvrst|solidny, mocny|Stol je čvrst.|Stół jest solidny.
+klimav|chwiejny|Stol je klimav.|Stół jest chwiejny.
+savitljiv|giętki|Materijal je savitljiv.|Materiał jest giętki.
+krut|sztywny|Materijal je krut.|Materiał jest sztywny.
+proziran|przezroczysty|Papir je proziran.|Papier jest przezroczysty.
+neproziran|nieprzezroczysty|Materijal je neproziran.|Materiał jest nieprzezroczysty.
+vodootporan|wodoodporny|Sat je vodootporan.|Zegarek jest wodoodporny.
+vatrootporan|ognioodporny|Materijal je vatrootporan.|Materiał jest ognioodporny.
+zapaljiv|łatwopalny|Benzin je zapaljiv.|Benzyna jest łatwopalna.
+periv|nadający się do prania|Tepih je periv.|Dywan nadaje się do prania.
+prenosiv|przenośny|Zvučnik je prenosiv.|Głośnik jest przenośny.
+sklopiv|składany|Stol je sklopiv.|Stół jest składany.
+podesiv|regulowany|Naslon je podesiv.|Oparcie jest regulowane.
+punjiv|nadający się do ładowania|Ovaj uređaj je punjiv.|To urządzenie można ładować.
+bežičan|bezprzewodowy|Miš je bežičan.|Mysz jest bezprzewodowa.
+gladak|gładki|Papir je gladak.|Papier jest gładki.
+hrapav|szorstki|Zid je hrapav.|Ściana jest szorstka.
+elastičan|elastyczny|Materijal je elastičan.|Materiał jest elastyczny.
+# adjective|personality
+pričljiv|rozmowny|Susjed je pričljiv.|Sąsiad jest rozmowny.
+šutljiv|milczący, małomówny|Danas je šutljiv.|Dziś jest małomówny.
+nepristojan|nieuprzejmy|Njegov odgovor je nepristojan.|Jego odpowiedź jest nieuprzejma.
+uljudan|grzeczny, uprzejmy|Konobar je uljudan.|Kelner jest uprzejmy.
+srdačan|serdeczny|Domaćin je srdačan.|Gospodarz jest serdeczny.
+velikodušan|wielkoduszny, hojny|Susjed je velikodušan.|Sąsiad jest hojny.
+škrt|skąpy|On nije škrt.|On nie jest skąpy.
+sebičan|samolubny|Nemoj biti sebičan.|Nie bądź samolubny.
+nesebičan|bezinteresowny|To je nesebičan čin.|To jest bezinteresowny czyn.
+obziran|taktowny, liczący się z innymi|Budi obziran prema drugima.|Licz się z innymi.
+bezobziran|bezwzględny, nieliczący się z innymi|Vozač je bezobziran.|Kierowca nie liczy się z innymi.
+popustljiv|ustępliwy|Otac je popustljiv.|Ojciec jest ustępliwy.
+uporan|wytrwały|Učenik je uporan.|Uczeń jest wytrwały.
+marljiv|pracowity|Student je marljiv.|Student jest pracowity.
+nepouzdan|niegodny zaufania, zawodny|Ovaj izvor je nepouzdan.|To źródło jest niewiarygodne.
+neodgovoran|nieodpowiedzialny|To je neodgovoran postupak.|To nieodpowiedzialne postępowanie.
+samostalan|samodzielny|Sin je samostalan.|Syn jest samodzielny.
+ovisan|zależny, uzależniony|Ovisan je o pomoći drugih.|Jest zależny od pomocy innych.
+neovisan|niezależny|Želi biti neovisan.|Chce być niezależny.
+uobražen|zarozumiały|Nemoj biti uobražen.|Nie bądź zarozumiały.
+ljubomoran|zazdrosny|Ljubomoran je na brata.|Jest zazdrosny o brata.
+zavidan|zawistny|Nemoj biti zavidan.|Nie bądź zawistny.
+osjetljiv|wrażliwy|Osjetljiv je na buku.|Jest wrażliwy na hałas.
+neosjetljiv|niewrażliwy|Ne budi neosjetljiv.|Nie bądź niewrażliwy.
+osjećajan|uczuciowy|On je osjećajan čovjek.|On jest uczuciowym człowiekiem.
+suosjećajan|współczujący|Liječnik je suosjećajan.|Lekarz jest współczujący.
+razdražljiv|drażliwy|Danas sam razdražljiv.|Dziś jestem drażliwy.
+smiren|opanowany|Ostani smiren.|Zachowaj spokój.
+zabrinut|zmartwiony|Zabrinut sam za tebe.|Martwię się o ciebie.
+bezbrižan|beztroski|To je bio bezbrižan dan.|To był beztroski dzień.
+oprezan|ostrożny|Budi oprezan na cesti.|Bądź ostrożny na drodze.
+neoprezan|nieostrożny|Vozač je bio neoprezan.|Kierowca był nieostrożny.
+rastresen|roztargniony|Danas sam rastresen.|Dziś jestem roztargniony.
+zbunjen|zdezorientowany|Malo sam zbunjen.|Jestem trochę zdezorientowany.
+plašljiv|bojaźliwy|Pas je plašljiv.|Pies jest bojaźliwy.
+vedar|pogodny|Djed je uvijek vedar.|Dziadek jest zawsze pogodny.
+mrgodan|ponury|Susjed je mrgodan.|Sąsiad jest ponury.
+razigran|rozbrykany|Pas je razigran.|Pies jest rozbrykany.
+zaigran|skory do zabawy|Mačić je zaigran.|Kotek jest skory do zabawy.
+oduševljen|zachwycony|Oduševljen sam gradom.|Jestem zachwycony miastem.
+# adjective|clothes
+prugast|w paski|Šal je prugast.|Szalik jest w paski.
+točkast|w kropki|Uzorak je točkast.|Wzór jest w kropki.
+kariran|w kratkę|Kaput je kariran.|Płaszcz jest w kratkę.
+jednobojan|jednokolorowy|Šal je jednobojan.|Szalik jest jednokolorowy.
+šaren|kolorowy, pstrokaty|Tepih je šaren.|Dywan jest kolorowy.
+blijed|blady|Danas si blijed.|Dziś jesteś blady.
+jarkocrven|jaskrawoczerwony|Kaput je jarkocrven.|Płaszcz jest jaskrawoczerwony.
+tirkizan|turkusowy|Prsten je tirkizan.|Pierścionek jest turkusowy.
+bež|beżowy|Ovo je bež kaput.|To jest beżowy płaszcz.
+bordo|bordowy|Ovo je bordo šal.|To jest bordowy szalik.
+pamučan|bawełniany|Ručnik je pamučan.|Ręcznik jest bawełniany.
+vunen|wełniany|Šal je vunen.|Szalik jest wełniany.
+svilen|jedwabny|Šal je svilen.|Szalik jest jedwabny.
+lanen|lniany|Stolnjak je lanen.|Obrus jest lniany.
+kožnat|skórzany|Remen je kožnat.|Pasek jest skórzany.
+umjetan|sztuczny|Ovaj cvijet je umjetan.|Ten kwiat jest sztuczny.
+prirodan|naturalny|Materijal je prirodan.|Materiał jest naturalny.
+prevelik|za duży|Kaput je prevelik.|Płaszcz jest za duży.
+premalen|za mały|Kofer je premalen.|Walizka jest za mała.
+izgužvan|pognieciony|Papir je izgužvan.|Papier jest pognieciony.
+ispeglan|wyprasowany|Stolnjak je ispeglan.|Obrus jest wyprasowany.
+poderan|podarty|Rukav je poderan.|Rękaw jest podarty.
+# adverb|daily
+upravo|właśnie|Upravo dolazim.|Właśnie przychodzę.
+maloprije|przed chwilą|Bio je ovdje maloprije.|Był tu przed chwilą.
+upravo sada|właśnie teraz|Upravo sada nemam vremena.|Właśnie teraz nie mam czasu.
+zasad|na razie|Zasad je sve dobro.|Na razie wszystko jest dobrze.
+dosad|dotychczas|Dosad nije bilo problema.|Dotychczas nie było problemów.
+otad|od tamtej pory|Otad živim ovdje.|Od tamtej pory tutaj mieszkam.
+odsad|odtąd|Odsad ću paziti.|Odtąd będę uważać.
+naknadno|później, dodatkowo|Poslat ću podatke naknadno.|Wyślę dane później.
+unaprijed|z góry, zawczasu|Hvala unaprijed.|Z góry dziękuję.
+unatrag|do tyłu, wstecz|Idi korak unatrag.|Zrób krok do tyłu.
+iznova|od nowa|Počnimo iznova.|Zacznijmy od nowa.
+nanovo|na nowo|Sve moramo nanovo.|Wszystko musimy zrobić na nowo.
+zauvijek|na zawsze|Ostat ću ovdje zauvijek.|Zostanę tu na zawsze.
+povremeno|od czasu do czasu|Povremeno trčim.|Od czasu do czasu biegam.
+tjedno|tygodniowo|Radim četrdeset sati tjedno.|Pracuję czterdzieści godzin tygodniowo.
+mjesečno|miesięcznie|Plaćam mjesečno.|Płacę miesięcznie.
+godišnje|rocznie|Putujem dvaput godišnje.|Podróżuję dwa razy w roku.
+dvaput|dwa razy|Nazvao sam dvaput.|Zadzwoniłem dwa razy.
+triput|trzy razy|Ponovi triput.|Powtórz trzy razy.
+višekratno|wielokrotnie|To se može koristiti višekratno.|Można tego używać wielokrotnie.
+neprestano|nieustannie|Kiša neprestano pada.|Deszcz pada nieustannie.
+neprekidno|bez przerwy|Radi neprekidno.|Pracuje bez przerwy.
+ostatak dana|przez resztę dnia|Ostatak dana sam slobodan.|Przez resztę dnia jestem wolny.
+otprilike|mniej więcej|Traje otprilike sat vremena.|Trwa mniej więcej godzinę.
+netočno|niepoprawnie|To je netočno napisano.|To jest napisane niepoprawnie.
+naizgled|na pozór|Naizgled je sve u redu.|Na pozór wszystko jest w porządku.
+uistinu|naprawdę|To je uistinu lijepo.|To jest naprawdę piękne.
+zaista|rzeczywiście|Zaista mi je žao.|Rzeczywiście jest mi przykro.
+posve|całkiem|Posve sam zaboravio.|Całkiem zapomniałem.
+osobito|szczególnie|Osobito volim more.|Szczególnie lubię morze.
+pogotovo|zwłaszcza|Volim voće, pogotovo jabuke.|Lubię owoce, zwłaszcza jabłka.
+ponajprije|przede wszystkim|Ponajprije trebamo odmor.|Przede wszystkim potrzebujemy odpoczynku.
+usput|po drodze, przy okazji|Kupit ću kruh usput.|Kupię chleb po drodze.
+zasebno|osobno|To se plaća zasebno.|Za to płaci się osobno.
+naizmjence|na zmianę|Vozimo naizmjence.|Prowadzimy na zmianę.
+naopako|na odwrót|Majica je naopako.|Koszulka jest na odwrót.
+van|na zewnątrz|Idem van.|Wychodzę na zewnątrz.
+odande|stamtąd|Dolazim odande.|Przychodzę stamtąd.
+ovamo|tutaj, w tę stronę|Dođi ovamo.|Podejdź tutaj.
+kamo|dokąd|Kamo ideš?|Dokąd idziesz?
+kuda|którędy, dokąd|Kuda vodi ovaj put?|Dokąd prowadzi ta droga?
+odakle|skąd|Odakle dolaziš?|Skąd przychodzisz?
+dokle|dokąd, do kiedy|Dokle ostaješ?|Do kiedy zostajesz?
+# pronoun|podstawy
+njegov|jego|To je njegov pas.|To jego pies.
+njezin|jej|Ovo je njezin kaput.|To jej płaszcz.
+vaš|wasz, pana, pani|Je li ovo vaš stol?|Czy to państwa stół?
+njihov|ich|To je njihov automobil.|To ich samochód.
+taj|ten wskazany|Taj čovjek je moj susjed.|Ten człowiek jest moim sąsiadem.
+ovakav|taki jak ten|Želim ovakav kaput.|Chcę taki płaszcz.
+onakav|taki jak tamten|Želim onakav bicikl.|Chcę taki rower jak tamten.
+čiji|czyj|Čiji je ovo pas?|Czyj to pies?
+svačiji|każdego, należący do każdego|Poštujem svačiji trud.|Szanuję wysiłek każdego.
+ničiji|niczyj|Ovaj pas nije ničiji.|Ten pies nie należy do nikogo.
+nečiji|czyjś|Ovo je nečiji novčanik.|To jest czyjś portfel.
+išta|cokolwiek|Imaš li išta za jelo?|Czy masz cokolwiek do jedzenia?
+išta drugo|cokolwiek innego|Želiš li išta drugo?|Czy chcesz cokolwiek innego?
+svašta|różne rzeczy, wszystko możliwe|Na tržnici ima svašta.|Na targu są najróżniejsze rzeczy.
+itko|ktokolwiek|Ima li itko ovdje?|Czy jest tu ktokolwiek?
+# preposition|podstawy
+pokraj|obok|Sjedim pokraj prozora.|Siedzę obok okna.
+uoči|w przeddzień, tuż przed|Stigli smo uoči blagdana.|Przyjechaliśmy w przeddzień święta.
+povodom|z okazji|Čestitam ti povodom rođendana.|Składam ci życzenia z okazji urodzin.
+posred|pośrodku|Stol stoji posred sobe.|Stół stoi pośrodku pokoju.
+nadomak|w pobliżu, niemal przy|More je nadomak kuće.|Morze jest tuż przy domu.
+# conjunction|podstawy
+premda|chociaż|Idem premda sam umoran.|Idę, chociaż jestem zmęczony.
+ukoliko|jeśli|Nazovi ukoliko trebaš pomoć.|Zadzwoń, jeśli potrzebujesz pomocy.
+štoviše|co więcej|To je korisno, štoviše nužno.|To jest przydatne, co więcej — konieczne.
+osim ako|chyba że|Doći ću osim ako budem bolestan.|Przyjdę, chyba że będę chory.
+# particle|podstawy
+zar|czyżby|Zar je već ponoć?|Czyżby była już północ?
+baš|właśnie, naprawdę|Baš mi je drago.|Naprawdę się cieszę.
+čak|nawet|Čak i on to zna.|Nawet on to wie.
+jedva|ledwo|Jedva stojim na nogama.|Ledwo stoję na nogach.
+# phrase|podstawy daily
+kako se ovo izgovara|jak się to wymawia|Kako se ovo izgovara?|Jak się to wymawia?
+možete li to zapisati|czy może pan to zapisać|Možete li to zapisati?|Czy może pan to zapisać?
+kako se kaže na hrvatskom|jak się mówi po chorwacku|Kako se kaže na hrvatskom?|Jak się mówi po chorwacku?
+nije mi jasno|nie jest to dla mnie jasne|Nije mi jasno.|Nie jest to dla mnie jasne.
+razumijem samo malo|rozumiem tylko trochę|Razumijem samo malo.|Rozumiem tylko trochę.
+tek učim hrvatski|dopiero uczę się chorwackiego|Tek učim hrvatski.|Dopiero uczę się chorwackiego.
+pogriješio sam|pomyliłem się|Pogriješio sam.|Pomyliłem się.
+ispravite me|proszę mnie poprawić|Ispravite me ako griješim.|Proszę mnie poprawić, jeśli się mylę.
+što ta riječ znači|co znaczy to słowo|Što ta riječ znači?|Co znaczy to słowo?
+to nisam znao|tego nie wiedziałem|To nisam znao.|Tego nie wiedziałem.
+hvala na objašnjenju|dziękuję za wyjaśnienie|Hvala na objašnjenju.|Dziękuję za wyjaśnienie.
+još jednom, molim|jeszcze raz, proszę|Još jednom, molim.|Jeszcze raz, proszę.
+možete li mi pokazati|czy może pan mi pokazać|Možete li mi pokazati?|Czy może pan mi pokazać?
+može i tako|tak też może być|Može i tako.|Tak też może być.
+meni je svejedno|mnie jest wszystko jedno|Meni je svejedno.|Mnie jest wszystko jedno.
+što ti preporučuješ|co polecasz|Što ti preporučuješ?|Co polecasz?
+to mi odgovara|to mi pasuje|To mi odgovara.|To mi pasuje.
+ne odgovara mi taj termin|nie pasuje mi ten termin|Ne odgovara mi taj termin.|Nie pasuje mi ten termin.
+javi kad budeš mogao|odezwij się, kiedy będziesz mógł|Javi kad budeš mogao.|Odezwij się, kiedy będziesz mógł.
+ne žuri se|nie spiesz się|Ne žuri se.|Nie spiesz się.
+imamo dovoljno vremena|mamy wystarczająco dużo czasu|Imamo dovoljno vremena.|Mamy wystarczająco dużo czasu.
+ponestaje nam vremena|kończy nam się czas|Ponestaje nam vremena.|Kończy nam się czas.
+nastavit ćemo poslije|będziemy kontynuować później|Nastavit ćemo poslije.|Będziemy kontynuować później.
+ostavimo to za sutra|zostawmy to na jutro|Ostavimo to za sutra.|Zostawmy to na jutro.
+sjeti me se|pamiętaj o mnie|Sjeti me se.|Pamiętaj o mnie.
+podsjeti me sutra|przypomnij mi jutro|Podsjeti me sutra.|Przypomnij mi jutro.
+reci mi na vrijeme|powiedz mi w porę|Reci mi na vrijeme.|Powiedz mi w porę.
+zaboravio sam ponijeti|zapomniałem zabrać|Zaboravio sam ponijeti kišobran.|Zapomniałem zabrać parasol.
+ostavio sam to kod kuće|zostawiłem to w domu|Ostavio sam to kod kuće.|Zostawiłem to w domu.
+jesi li siguran|czy jesteś pewien|Jesi li siguran?|Czy jesteś pewien?
+ne sjećam se točno|nie pamiętam dokładnie|Ne sjećam se točno.|Nie pamiętam dokładnie.
+sada se sjećam|teraz pamiętam|Sada se sjećam.|Teraz pamiętam.
+provjerit ću|sprawdzę|Provjerit ću.|Sprawdzę.
+samo da uzmem torbu|tylko wezmę torbę|Samo da uzmem torbu.|Tylko wezmę torbę.
+pričekaj me vani|poczekaj na mnie na zewnątrz|Pričekaj me vani.|Poczekaj na mnie na zewnątrz.
+naći ćemo se ispred|spotkamy się przed|Naći ćemo se ispred hotela.|Spotkamy się przed hotelem.
+još sam na putu|jeszcze jestem w drodze|Još sam na putu.|Jeszcze jestem w drodze.
+stigao sam na vrijeme|dotarłem na czas|Stigao sam na vrijeme.|Dotarłem na czas.
+žao mi je zbog kašnjenja|przepraszam za spóźnienie|Žao mi je zbog kašnjenja.|Przepraszam za spóźnienie.
+krenimo polako|ruszajmy powoli|Krenimo polako.|Ruszajmy powoli.
+idemo pješice|idziemy pieszo|Idemo pješice.|Idziemy pieszo.
+nije daleko odavde|to niedaleko stąd|Nije daleko odavde.|To niedaleko stąd.
+malo sam se izgubio|trochę się zgubiłem|Malo sam se izgubio.|Trochę się zgubiłem.
+vratimo se istim putem|wróćmy tą samą drogą|Vratimo se istim putem.|Wróćmy tą samą drogą.
+možeš li me otpratiti|czy możesz mnie odprowadzić|Možeš li me otpratiti?|Czy możesz mnie odprowadzić?
+nazovi kad stigneš kući|zadzwoń, kiedy dotrzesz do domu|Nazovi kad stigneš kući.|Zadzwoń, kiedy dotrzesz do domu.
+ugodno mi je ovdje|dobrze mi tutaj|Ugodno mi je ovdje.|Dobrze mi tutaj.
+raskomoti se|rozgość się|Raskomoti se.|Rozgość się.
+ima još ako želiš|jest jeszcze, jeśli chcesz|Ima još ako želiš.|Jest jeszcze, jeśli chcesz.
+uzeo bih još malo|wziąłbym jeszcze trochę|Uzeo bih još malo.|Wziąłbym jeszcze trochę.
+za mene je dovoljno|dla mnie wystarczy|Za mene je dovoljno.|Dla mnie wystarczy.
+ne moraš se truditi|nie musisz się trudzić|Ne moraš se truditi.|Nie musisz się trudzić.
+mogu li ti pomoći oko toga|czy mogę ci przy tym pomóc|Mogu li ti pomoći oko toga?|Czy mogę ci przy tym pomóc?
+ostavi, ja ću|zostaw, ja to zrobię|Ostavi, ja ću.|Zostaw, ja to zrobię.
+lijepo smo se proveli|dobrze się bawiliśmy|Lijepo smo se proveli.|Dobrze się bawiliśmy.
+moramo to ponoviti|musimy to powtórzyć|Moramo to ponoviti.|Musimy to powtórzyć.
+pozdravi svoje|pozdrowienia dla twoich bliskich|Pozdravi svoje.|Pozdrów swoich bliskich.
+sretan put kući|szczęśliwej drogi do domu|Sretan put kući.|Szczęśliwej drogi do domu.
+čujemo se ovih dana|usłyszymy się w najbliższych dniach|Čujemo se ovih dana.|Usłyszymy się w najbliższych dniach.
+ne daj se|trzymaj się, nie poddawaj się|Ne daj se.|Nie poddawaj się.
+bit će bolje|będzie lepiej|Bit će bolje.|Będzie lepiej.
+nisi sam|nie jesteś sam|Nisi sam.|Nie jesteś sam.
+puno mi to znači|to wiele dla mnie znaczy|Puno mi to znači.|To wiele dla mnie znaczy.
+ne želim smetati|nie chcę przeszkadzać|Ne želim smetati.|Nie chcę przeszkadzać.
+nazvat ću kasnije|zadzwonię później|Nazvat ću kasnije.|Zadzwonię później.
+imaš li trenutak|czy masz chwilę|Imaš li trenutak?|Czy masz chwilę?
+u čemu je problem|w czym problem|U čemu je problem?|W czym problem?
+pokušajmo još jednom|spróbujmy jeszcze raz|Pokušajmo još jednom.|Spróbujmy jeszcze raz.
+ne znam kako dalje|nie wiem, co dalej|Ne znam kako dalje.|Nie wiem, co dalej.
+naći ćemo rješenje|znajdziemy rozwiązanie|Naći ćemo rješenje.|Znajdziemy rozwiązanie.
+sve ćemo dogovoriti|wszystko ustalimy|Sve ćemo dogovoriti.|Wszystko ustalimy.
+jedno po jedno|po kolei|Rješavamo jedno po jedno.|Rozwiązujemy po kolei.
+korak po korak|krok po kroku|Idemo korak po korak.|Idziemy krok po kroku.
+sad je na tebi red|teraz twoja kolej|Sad je na tebi red.|Teraz twoja kolej.
+pustimo ga da govori|pozwólmy mu mówić|Pustimo ga da govori.|Pozwólmy mu mówić.
+nisam tako mislio|nie to miałem na myśli|Nisam tako mislio.|Nie to miałem na myśli.
+pogrešno si me razumio|źle mnie zrozumiałeś|Pogrešno si me razumio.|Źle mnie zrozumiałeś.
+ispričavam se zbog toga|przepraszam za to|Ispričavam se zbog toga.|Przepraszam za to.
+nema razloga za brigu|nie ma powodu do zmartwień|Nema razloga za brigu.|Nie ma powodu do zmartwień.
+važno je pokušati|ważne, żeby spróbować|Važno je pokušati.|Ważne, żeby spróbować.
+to se svakome dogodi|to się każdemu zdarza|To se svakome dogodi.|To się każdemu zdarza.
+ubuduće ću paziti|na przyszłość będę uważać|Ubuduće ću paziti.|Na przyszłość będę uważać.
+je li sve spremno|czy wszystko jest gotowe|Je li sve spremno?|Czy wszystko jest gotowe?
+jučer navečer|wczoraj wieczorem|Stigao sam jučer navečer.|Przyjechałem wczoraj wieczorem.
+prekosutra ujutro|pojutrze rano|Vidimo se prekosutra ujutro.|Widzimy się pojutrze rano.
+prošli mjesec|w zeszłym miesiącu|Bio sam tamo prošli mjesec.|Byłem tam w zeszłym miesiącu.
+svaki drugi dan|co drugi dzień|Treniram svaki drugi dan.|Trenuję co drugi dzień.

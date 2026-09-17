@@ -76,6 +76,8 @@ test('loader rejects missing columns, duplicate IDs and incomplete game fields',
 async function mount(mode, selectedLevel, fetcher=async()=>rows) {
   const calls={start:0,record:[],finish:0};
   const {SentenceGameSession}=await compile('../src/sentences/SentenceGameSession.tsx',{
+    // These tests exercise clicks; keyboard listeners require a browser DOM.
+    '@/hooks/useQuizKeyboard': { useQuizKeyboard: () => {} },
     'react-router-dom':{Link:({to,children})=>React.createElement('a',{href:to},children)},
     '@/components/PoolPicker':{PoolPicker:({value,onChange,sentenceCounts})=>React.createElement('select',{'aria-label':'level',value:value.source.level,onChange:event=>onChange({...value,source:{kind:'level',level:event.target.value}})},Object.keys(sentenceCounts).map(level=>React.createElement('option',{key:level,value:level},level)))},
     '@/components/StatCard':{ProgressBar:({percent})=>React.createElement('progress',{value:percent,max:100})},

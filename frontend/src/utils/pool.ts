@@ -15,6 +15,9 @@ export function describePool(pool: PoolSelection, course: Course, t: Translator)
       base = levelForLegacyBlock(source.block, course.blocks);
       break;
     }
+    case "supplement":
+      base = t("pool.supplement");
+      break;
     case "learned":
       base = t("pool.learned");
       break;

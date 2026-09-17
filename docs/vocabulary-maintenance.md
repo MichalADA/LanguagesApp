@@ -1,7 +1,7 @@
 # Utrzymanie talii
 
 Źródłem danych pozostaje `frontend/public/data/chorwacki_2000_PL-HR.csv`.
-Nazwa historyczna; plik zawiera 3000 kart. Nie zmieniać Rank istniejących kart:
+Nazwa historyczna; plik zawiera 5000 kart. Nie zmieniać Rank istniejących kart:
 aplikacja wiąże z nimi postępy. Nie usuwać powtarzających się słów automatycznie,
 bo mogą przedstawiać różne znaczenia. Nowe karty dopisywać z kolejnymi numerami.
 
