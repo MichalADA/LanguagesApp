@@ -78,7 +78,7 @@ export function CoursesPage() {
       <section className="stack" style={{ gap: 12 }}>
         <span className="eyebrow">{t("course.planned")}</span>
         <div className="list">
-          {PLANNED_COURSES.map((c) => (
+          {PLANNED_COURSES.filter((c) => locale !== "pl" || c.id !== "en-pl").map((c) => (
             <div key={c.id} className="list-row">
               <span className="row" style={{ gap: 10 }}>
                 <span aria-hidden="true">{c.flag}</span>

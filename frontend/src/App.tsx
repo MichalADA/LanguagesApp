@@ -15,6 +15,8 @@ import { LoginPage } from "@/pages/LoginPage";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { useAuth } from "@/auth/useAuth";
 import { RadioPage } from "@/radio/RadioPage";
+import { LanguageStartPage } from "@/pages/LanguageStartPage";
+import { useCourse } from "@/courses/CourseProvider";
 
 function ShellLayout() {
   return (
@@ -22,6 +24,16 @@ function ShellLayout() {
       <Outlet />
     </AppShell>
   );
+}
+
+function HomeRoute() {
+  const { hasChosenCourse } = useCourse();
+  return hasChosenCourse ? <Dashboard /> : <Navigate to="/start" replace />;
+}
+
+function StartRoute() {
+  const { hasChosenCourse } = useCourse();
+  return hasChosenCourse ? <Navigate to="/" replace /> : <LanguageStartPage />;
 }
 
 export default function App() {
@@ -44,8 +56,9 @@ export default function App() {
       />
 
       <Route element={<ProtectedRoute />}>
+        <Route path="/start" element={<StartRoute />} />
         <Route element={<ShellLayout />}>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<HomeRoute />} />
           <Route path="/gry" element={<GamesPage />} />
           <Route path="/radio" element={<RadioPage />} />
           <Route path="/gry/kategoria/:categoryId" element={<GamesPage />} />
