@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zapytać o cenę i poprosić o produkt.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Koliko ovo košta? — Ile to kosztuje?",
-          "Košta deset eura. — Kosztuje dziesięć euro.",
-          "Imate li ovo u drugoj veličini? — Czy mają Państwo to w innym rozmiarze?"
+          {
+            "target": "Koliko ovo košta?",
+            "source": "Ile to kosztuje?"
+          },
+          {
+            "target": "Košta deset eura.",
+            "source": "Kosztuje dziesięć euro."
+          },
+          {
+            "target": "Imate li ovo u drugoj veličini?",
+            "source": "Czy mają Państwo to w innym rozmiarze?"
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "mieć",
           "kupić"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -170,7 +180,8 @@ export const LESSON: GeneratedLesson = {
           "tražiti",
           "kupiti"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -207,7 +218,8 @@ export const LESSON: GeneratedLesson = {
           "mieć",
           "rozmiar"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -280,7 +292,8 @@ export const LESSON: GeneratedLesson = {
           "Ile to kosztuje?",
           "Kosztuje dziesięć euro."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -435,10 +448,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Koliko ovo košta? — Ile to kosztuje?",
-          "Košta deset eura. — Kosztuje dziesięć euro.",
-          "Imate li ovo u drugoj veličini? — Czy mają Państwo to w innym rozmiarze?",
-          "Tražim vodu. — Szukam wody."
+          {
+            "target": "Koliko ovo košta?",
+            "source": "Ile to kosztuje?"
+          },
+          {
+            "target": "Košta deset eura.",
+            "source": "Kosztuje dziesięć euro."
+          },
+          {
+            "target": "Imate li ovo u drugoj veličini?",
+            "source": "Czy mają Państwo to w innym rozmiarze?"
+          },
+          {
+            "target": "Tražim vodu.",
+            "source": "Szukam wody."
+          }
         ]
       }
     ]

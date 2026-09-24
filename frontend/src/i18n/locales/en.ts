@@ -165,6 +165,11 @@ export const en: Dictionary = {
     "statsNote": "Attempts recorded since FSRS was introduced.",
     "error": "Could not load the summary."
 },
+  audio: {
+    listen: "Listen",
+    listenTo: "Listen: {text}",
+    unavailable: "Recording unavailable",
+  },
   curriculum: {
     "title": "Your course",
     "subtitle": "Learn step by step and build the language from the ground up.",

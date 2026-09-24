@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć opowiedzieć prostymi zdaniami o codziennych czynnościach.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Ustajem u sedam. — Wstaję o siódmej.",
-          "Ujutro doručkujem. — Rano jem śniadanie.",
-          "Radim do četiri. — Pracuję do czwartej."
+          {
+            "target": "Ustajem u sedam.",
+            "source": "Wstaję o siódmej."
+          },
+          {
+            "target": "Ujutro doručkujem.",
+            "source": "Rano jem śniadanie."
+          },
+          {
+            "target": "Radim do četiri.",
+            "source": "Pracuję do czwartej."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "wstać",
           "pracować"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -166,7 +176,8 @@ export const LESSON: GeneratedLesson = {
           "raditi",
           "ustati"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "wieczorem",
           "spać"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -249,7 +261,8 @@ export const LESSON: GeneratedLesson = {
           "Rano jem śniadanie.",
           "Śpię osiem godzin."
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -374,10 +387,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Ustajem u sedam. — Wstaję o siódmej.",
-          "Ujutro doručkujem. — Rano jem śniadanie.",
-          "Radim do četiri. — Pracuję do czwartej.",
-          "Poslijepodne se odmaram. — Po południu odpoczywam."
+          {
+            "target": "Ustajem u sedam.",
+            "source": "Wstaję o siódmej."
+          },
+          {
+            "target": "Ujutro doručkujem.",
+            "source": "Rano jem śniadanie."
+          },
+          {
+            "target": "Radim do četiri.",
+            "source": "Pracuję do czwartej."
+          },
+          {
+            "target": "Poslijepodne se odmaram.",
+            "source": "Po południu odpoczywam."
+          }
         ]
       }
     ]

@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć przeprowadzić krótką rozmowę o sobie, dniu i planach.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Kako se zoveš i odakle si? — Jak masz na imię i skąd jesteś?",
-          "Gdje živiš i što radiš? — Gdzie mieszkasz i co robisz?",
-          "Što voliš raditi u slobodno vrijeme? — Co lubisz robić w wolnym czasie?"
+          {
+            "target": "Kako se zoveš i odakle si?",
+            "source": "Jak masz na imię i skąd jesteś?"
+          },
+          {
+            "target": "Gdje živiš i što radiš?",
+            "source": "Gdzie mieszkasz i co robisz?"
+          },
+          {
+            "target": "Što voliš raditi u slobodno vrijeme?",
+            "source": "Co lubisz robić w wolnym czasie?"
+          }
         ]
       },
       {
@@ -190,7 +199,8 @@ export const LESSON: GeneratedLesson = {
           "Co lubisz robić w wolnym czasie?",
           "Gdzie mieszkasz i co robisz?"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "dialog",
@@ -353,11 +363,26 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Kako se zoveš i odakle si? — Jak masz na imię i skąd jesteś?",
-          "Gdje živiš i što radiš? — Gdzie mieszkasz i co robisz?",
-          "Što voliš raditi u slobodno vrijeme? — Co lubisz robić w wolnym czasie?",
-          "Što si radio jučer? — Co robiłeś wczoraj?",
-          "Što ćeš raditi sutra? — Co będziesz robić jutro?"
+          {
+            "target": "Kako se zoveš i odakle si?",
+            "source": "Jak masz na imię i skąd jesteś?"
+          },
+          {
+            "target": "Gdje živiš i što radiš?",
+            "source": "Gdzie mieszkasz i co robisz?"
+          },
+          {
+            "target": "Što voliš raditi u slobodno vrijeme?",
+            "source": "Co lubisz robić w wolnym czasie?"
+          },
+          {
+            "target": "Što si radio jučer?",
+            "source": "Co robiłeś wczoraj?"
+          },
+          {
+            "target": "Što ćeš raditi sutra?",
+            "source": "Co będziesz robić jutro?"
+          }
         ]
       }
     ]

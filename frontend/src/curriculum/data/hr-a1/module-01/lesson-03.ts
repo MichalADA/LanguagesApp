@@ -12,56 +12,64 @@ export const LESSON: GeneratedLesson = {
         "source": "imię",
         "lemma": "ime",
         "partOfSpeech": "noun",
-        "recordId": "A1-0038"
+        "recordId": "A1-0038",
+        "audioSrc": "/audio/hr/a1/module-01/ime.mp3"
       },
       {
         "target": "zvati se",
         "source": "nazywać się",
         "lemma": "zvati se",
         "partOfSpeech": "verb",
-        "recordId": "A1-0039"
+        "recordId": "A1-0039",
+        "audioSrc": "/audio/hr/a1/module-01/zvati-se.mp3"
       },
       {
         "target": "ja",
         "source": "ja",
         "lemma": "ja",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0040"
+        "recordId": "A1-0040",
+        "audioSrc": "/audio/hr/a1/module-01/ja.mp3"
       },
       {
         "target": "ti",
         "source": "ty",
         "lemma": "ti",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0041"
+        "recordId": "A1-0041",
+        "audioSrc": "/audio/hr/a1/module-01/ti.mp3"
       },
       {
         "target": "on",
         "source": "on",
         "lemma": "on",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0042"
+        "recordId": "A1-0042",
+        "audioSrc": "/audio/hr/a1/module-01/on.mp3"
       },
       {
         "target": "ona",
         "source": "ona",
         "lemma": "ona",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0043"
+        "recordId": "A1-0043",
+        "audioSrc": "/audio/hr/a1/module-01/ona.mp3"
       },
       {
         "target": "tko",
         "source": "kto",
         "lemma": "tko",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0044"
+        "recordId": "A1-0044",
+        "audioSrc": "/audio/hr/a1/module-01/tko.mp3"
       },
       {
         "target": "drago mi je",
         "source": "miło mi",
         "lemma": "drago mi je",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0045"
+        "recordId": "A1-0045",
+        "audioSrc": "/audio/hr/a1/module-01/drago-mi-je.mp3"
       }
     ],
     "steps": [
@@ -73,9 +81,21 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć przedstawić się i zapytać o imię.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Kako se zoveš? — Jak masz na imię?",
-          "Zovem se Michał. — Mam na imię Michał.",
-          "A kako se ti zoveš? — A jak ty masz na imię?"
+          {
+            "target": "Kako se zoveš?",
+            "source": "Jak masz na imię?",
+            "audioSrc": "/audio/hr/a1/module-01/kako-se-zoves.mp3"
+          },
+          {
+            "target": "Zovem se Michał.",
+            "source": "Mam na imię Michał.",
+            "audioSrc": "/audio/hr/a1/module-01/zovem-se-michal.mp3"
+          },
+          {
+            "target": "A kako se ti zoveš?",
+            "source": "A jak ty masz na imię?",
+            "audioSrc": "/audio/hr/a1/module-01/a-kako-se-ti-zoves.mp3"
+          }
         ]
       },
       {
@@ -84,7 +104,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "ime",
         "source": "imię",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-01/ime.mp3"
       },
       {
         "id": "word-2",
@@ -92,7 +113,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "zvati se",
         "source": "nazywać się",
-        "partOfSpeech": "czasownik"
+        "partOfSpeech": "czasownik",
+        "audioSrc": "/audio/hr/a1/module-01/zvati-se.mp3"
       },
       {
         "id": "word-3",
@@ -100,7 +122,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "ja",
         "source": "ja",
-        "partOfSpeech": "zaimek"
+        "partOfSpeech": "zaimek",
+        "audioSrc": "/audio/hr/a1/module-01/ja.mp3"
       },
       {
         "id": "check-1",
@@ -113,7 +136,9 @@ export const LESSON: GeneratedLesson = {
           "miło mi",
           "nazywać się"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/ime.mp3"
       },
       {
         "id": "word-4",
@@ -124,8 +149,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zaimek",
         "example": {
           "target": "A kako se ti zoveš?",
-          "source": "A jak ty masz na imię?"
-        }
+          "source": "A jak ty masz na imię?",
+          "audioSrc": "/audio/hr/a1/module-01/a-kako-se-ti-zoves.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/ti.mp3"
       },
       {
         "id": "word-5",
@@ -136,8 +163,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zaimek",
         "example": {
           "target": "Ona se zove Ana.",
-          "source": "Ona ma na imię Ana."
-        }
+          "source": "Ona ma na imię Ana.",
+          "audioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/on.mp3"
       },
       {
         "id": "word-6",
@@ -148,8 +177,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zaimek",
         "example": {
           "target": "Ona se zove Ana.",
-          "source": "Ona ma na imię Ana."
-        }
+          "source": "Ona ma na imię Ana.",
+          "audioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/ona.mp3"
       },
       {
         "id": "check-2",
@@ -162,7 +193,9 @@ export const LESSON: GeneratedLesson = {
           "on",
           "ona"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-01/on.mp3"
       },
       {
         "id": "word-7",
@@ -173,8 +206,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zaimek",
         "example": {
           "target": "Tko je to?",
-          "source": "Kto to jest?"
-        }
+          "source": "Kto to jest?",
+          "audioSrc": "/audio/hr/a1/module-01/tko-je-to.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/tko.mp3"
       },
       {
         "id": "word-8",
@@ -185,8 +220,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Drago mi je.",
-          "source": "Miło mi."
-        }
+          "source": "Miło mi.",
+          "audioSrc": "/audio/hr/a1/module-01/drago-mi-je.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/drago-mi-je.mp3"
       },
       {
         "id": "check-3",
@@ -199,7 +236,9 @@ export const LESSON: GeneratedLesson = {
           "on",
           "miło mi"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/drago-mi-je.mp3"
       },
       {
         "id": "structure",
@@ -210,15 +249,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Kako se zoveš?",
-            "source": "Jak masz na imię?"
+            "source": "Jak masz na imię?",
+            "audioSrc": "/audio/hr/a1/module-01/kako-se-zoves.mp3"
           },
           {
             "target": "Zovem se Michał.",
-            "source": "Mam na imię Michał."
+            "source": "Mam na imię Michał.",
+            "audioSrc": "/audio/hr/a1/module-01/zovem-se-michal.mp3"
           },
           {
             "target": "Ona se zove Ana.",
-            "source": "Ona ma na imię Ana."
+            "source": "Ona ma na imię Ana.",
+            "audioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
           }
         ]
       },
@@ -232,7 +274,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "zove"
         ],
-        "translation": "Ona ma na imię Ana."
+        "translation": "Ona ma na imię Ana.",
+        "answerAudioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
       },
       {
         "id": "comprehend",
@@ -245,7 +288,9 @@ export const LESSON: GeneratedLesson = {
           "Jak masz na imię?",
           "Mam na imię Michał."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/tko-je-to.mp3"
       },
       {
         "id": "translate-1",
@@ -256,7 +301,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Kako se zoveš?",
           "Kako se ti zoveš?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/kako-se-zoves.mp3"
       },
       {
         "id": "order",
@@ -273,7 +319,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "A kako se ti zoveš?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/a-kako-se-ti-zoves.mp3"
       },
       {
         "id": "translate-2",
@@ -283,7 +330,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Miło mi.",
         "accepted": [
           "Drago mi je."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/drago-mi-je.mp3"
       },
       {
         "id": "listening",
@@ -340,7 +388,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Bok! Zovem se Marko.",
-              "translation": "Cześć! Mam na imię Marko."
+              "translation": "Cześć! Mam na imię Marko.",
+              "audioSrc": "/audio/hr/a1/module-01/bok-zovem-se-marko-m.mp3"
             }
           },
           {
@@ -348,7 +397,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "A kako se ti zoveš?",
-              "translation": "A jak ty masz na imię?"
+              "translation": "A jak ty masz na imię?",
+              "audioSrc": "/audio/hr/a1/module-01/a-kako-se-ti-zoves-m.mp3"
             }
           },
           {
@@ -358,14 +408,16 @@ export const LESSON: GeneratedLesson = {
               "Zovem se Michał."
             ],
             "pattern": "^(bok )?(ja )?zovem se \\p{L}+( \\p{L}+)?$",
-            "suggestion": "Zovem se Michał."
+            "suggestion": "Zovem se Michał.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/zovem-se-michal.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Drago mi je.",
-              "translation": "Miło mi."
+              "translation": "Miło mi.",
+              "audioSrc": "/audio/hr/a1/module-01/drago-mi-je-m.mp3"
             }
           },
           {
@@ -376,7 +428,8 @@ export const LESSON: GeneratedLesson = {
               "Drago mi je."
             ],
             "pattern": "^(i meni|drago mi je|i meni je drago)$",
-            "suggestion": "I meni."
+            "suggestion": "I meni.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/i-meni.mp3"
           }
         ]
       },
@@ -398,7 +451,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Bok! Zovem se Michał. Drago mi je."
+        "sample": "Bok! Zovem se Michał. Drago mi je.",
+        "sampleAudioSrc": "/audio/hr/a1/module-01/bok-zovem-se-michal-drago-mi-je.mp3"
       },
       {
         "id": "summary",
@@ -406,10 +460,26 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Kako se zoveš? — Jak masz na imię?",
-          "Zovem se Michał. — Mam na imię Michał.",
-          "A kako se ti zoveš? — A jak ty masz na imię?",
-          "Ona se zove Ana. — Ona ma na imię Ana."
+          {
+            "target": "Kako se zoveš?",
+            "source": "Jak masz na imię?",
+            "audioSrc": "/audio/hr/a1/module-01/kako-se-zoves.mp3"
+          },
+          {
+            "target": "Zovem se Michał.",
+            "source": "Mam na imię Michał.",
+            "audioSrc": "/audio/hr/a1/module-01/zovem-se-michal.mp3"
+          },
+          {
+            "target": "A kako se ti zoveš?",
+            "source": "A jak ty masz na imię?",
+            "audioSrc": "/audio/hr/a1/module-01/a-kako-se-ti-zoves.mp3"
+          },
+          {
+            "target": "Ona se zove Ana.",
+            "source": "Ona ma na imię Ana.",
+            "audioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
+          }
         ]
       }
     ]

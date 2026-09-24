@@ -1,0 +1,12 @@
+{
+  "$comment": "Konfiguracja nagrań kursu HR A1. Dodanie modułu = dopisanie numeru do 'modules' i uruchomienie: npm run curriculum:a1 → python tools/listening/generate_tts.py --course-manifest frontend/curriculum/hr-a1/audio-manifest.json → npm run curriculum:a1. Provider i głosy są te same, co w pilocie słuchania (tools/listening): darmowy edge-tts, bez konta i bez rozliczeń.",
+  "provider": "edge-tts",
+  "voices": {
+    "female": "hr-HR-GabrijelaNeural",
+    "male": "hr-HR-SreckoNeural"
+  },
+  "rate": "-8%",
+  "pathPrefix": "/audio/hr/a1",
+  "maleSpeakers": ["Marko", "Konobar", "Recepcionar", "Prolaznik", "Ivan"],
+  "modules": [1]
+}

@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zapytać o położenie prostego miejsca.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Gdje je centar? — Gdzie jest centrum?",
-          "Centar je tamo. — Centrum jest tam.",
-          "Banka je ovdje. — Bank jest tutaj."
+          {
+            "target": "Gdje je centar?",
+            "source": "Gdzie jest centrum?"
+          },
+          {
+            "target": "Centar je tamo.",
+            "source": "Centrum jest tam."
+          },
+          {
+            "target": "Banka je ovdje.",
+            "source": "Bank jest tutaj."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "daleko",
           "blisko"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -170,7 +180,8 @@ export const LESSON: GeneratedLesson = {
           "centar",
           "ovdje"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "centrum",
           "adres"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -249,7 +261,8 @@ export const LESSON: GeneratedLesson = {
           "Gdzie jest centrum?",
           "Centrum jest tam."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -364,10 +377,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Gdje je centar? — Gdzie jest centrum?",
-          "Centar je tamo. — Centrum jest tam.",
-          "Banka je ovdje. — Bank jest tutaj.",
-          "Živim blizu centra. — Mieszkam blisko centrum."
+          {
+            "target": "Gdje je centar?",
+            "source": "Gdzie jest centrum?"
+          },
+          {
+            "target": "Centar je tamo.",
+            "source": "Centrum jest tam."
+          },
+          {
+            "target": "Banka je ovdje.",
+            "source": "Bank jest tutaj."
+          },
+          {
+            "target": "Živim blizu centra.",
+            "source": "Mieszkam blisko centrum."
+          }
         ]
       }
     ]

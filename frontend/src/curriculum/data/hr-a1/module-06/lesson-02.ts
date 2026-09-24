@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, jaki sport uprawiasz i jak często.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Volim plivati. — Lubię pływać.",
-          "Trčim tri puta tjedno. — Biegam trzy razy w tygodniu.",
-          "Vozim bicikl vikendom. — Jeżdżę na rowerze w weekendy."
+          {
+            "target": "Volim plivati.",
+            "source": "Lubię pływać."
+          },
+          {
+            "target": "Trčim tri puta tjedno.",
+            "source": "Biegam trzy razy w tygodniu."
+          },
+          {
+            "target": "Vozim bicikl vikendom.",
+            "source": "Jeżdżę na rowerze w weekendy."
+          }
         ]
       },
       {
@@ -117,7 +126,8 @@ export const LESSON: GeneratedLesson = {
           "często",
           "pływać"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -162,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "nogomet",
           "sport"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -195,7 +206,8 @@ export const LESSON: GeneratedLesson = {
           "jeździć na rowerze",
           "nigdy"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -241,7 +253,8 @@ export const LESSON: GeneratedLesson = {
           "Lubię pływać.",
           "Biegam trzy razy w tygodniu."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -420,10 +433,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Volim plivati. — Lubię pływać.",
-          "Trčim tri puta tjedno. — Biegam trzy razy w tygodniu.",
-          "Vozim bicikl vikendom. — Jeżdżę na rowerze w weekendy.",
-          "Idem u teretanu. — Chodzę na siłownię."
+          {
+            "target": "Volim plivati.",
+            "source": "Lubię pływać."
+          },
+          {
+            "target": "Trčim tri puta tjedno.",
+            "source": "Biegam trzy razy w tygodniu."
+          },
+          {
+            "target": "Vozim bicikl vikendom.",
+            "source": "Jeżdżę na rowerze w weekendy."
+          },
+          {
+            "target": "Idem u teretanu.",
+            "source": "Chodzę na siłownię."
+          }
         ]
       }
     ]

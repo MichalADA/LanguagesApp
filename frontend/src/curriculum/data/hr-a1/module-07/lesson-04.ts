@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, co robisz na plaży i w morzu.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Idem na plažu. — Idę na plażę.",
-          "Ja sam na plaži. — Jestem na plaży.",
-          "Plivam u moru. — Pływam w morzu."
+          {
+            "target": "Idem na plažu.",
+            "source": "Idę na plażę."
+          },
+          {
+            "target": "Ja sam na plaži.",
+            "source": "Jestem na plaży."
+          },
+          {
+            "target": "Plivam u moru.",
+            "source": "Pływam w morzu."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "morze",
           "ręcznik"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -166,7 +176,8 @@ export const LESSON: GeneratedLesson = {
           "more",
           "ručnik"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "kąpać się",
           "słońce"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -279,7 +291,8 @@ export const LESSON: GeneratedLesson = {
           "Łódź płynie na wyspę.",
           "Jestem na plaży."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -371,10 +384,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Idem na plažu. — Idę na plażę.",
-          "Ja sam na plaži. — Jestem na plaży.",
-          "Plivam u moru. — Pływam w morzu.",
-          "Idem u more. — Wchodzę do morza."
+          {
+            "target": "Idem na plažu.",
+            "source": "Idę na plażę."
+          },
+          {
+            "target": "Ja sam na plaži.",
+            "source": "Jestem na plaży."
+          },
+          {
+            "target": "Plivam u moru.",
+            "source": "Pływam w morzu."
+          },
+          {
+            "target": "Idem u more.",
+            "source": "Wchodzę do morza."
+          }
         ]
       }
     ]

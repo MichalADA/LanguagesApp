@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć nazwać najbliższych członków rodziny.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Ovo je moja obitelj. — To jest moja rodzina.",
-          "Ovo je moja sestra. — To jest moja siostra.",
-          "Moj brat živi u Zagrebu. — Mój brat mieszka w Zagrzebiu."
+          {
+            "target": "Ovo je moja obitelj.",
+            "source": "To jest moja rodzina."
+          },
+          {
+            "target": "Ovo je moja sestra.",
+            "source": "To jest moja siostra."
+          },
+          {
+            "target": "Moj brat živi u Zagrebu.",
+            "source": "Mój brat mieszka w Zagrzebiu."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "siostra",
           "brat"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -170,7 +180,8 @@ export const LESSON: GeneratedLesson = {
           "brat",
           "moj"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "mój",
           "dziadek"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -276,7 +288,8 @@ export const LESSON: GeneratedLesson = {
           "To jest moja rodzina.",
           "To jest moja siostra."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "dialog",
@@ -353,10 +366,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Ovo je moja obitelj. — To jest moja rodzina.",
-          "Ovo je moja sestra. — To jest moja siostra.",
-          "Moj brat živi u Zagrebu. — Mój brat mieszka w Zagrzebiu.",
-          "Moja majka radi. — Moja matka pracuje."
+          {
+            "target": "Ovo je moja obitelj.",
+            "source": "To jest moja rodzina."
+          },
+          {
+            "target": "Ovo je moja sestra.",
+            "source": "To jest moja siostra."
+          },
+          {
+            "target": "Moj brat živi u Zagrebu.",
+            "source": "Mój brat mieszka w Zagrzebiu."
+          },
+          {
+            "target": "Moja majka radi.",
+            "source": "Moja matka pracuje."
+          }
         ]
       }
     ]

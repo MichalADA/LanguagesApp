@@ -165,6 +165,11 @@ export const pl: Dictionary = {
     "statsNote": "Wyniki prób zapisanych od uruchomienia FSRS.",
     "error": "Nie udało się pobrać podsumowania."
 },
+  audio: {
+    listen: "Odsłuchaj",
+    listenTo: "Odsłuchaj: {text}",
+    unavailable: "Nagranie niedostępne",
+  },
   curriculum: {
     "title": "Twój kurs",
     "subtitle": "Ucz się krok po kroku i buduj język od podstaw.",

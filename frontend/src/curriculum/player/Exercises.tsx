@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Icon } from "@/components/Icon";
 import { AnswerInput } from "@/components/AnswerInput";
 import { SpecialCharacters } from "@/components/SpecialCharacters";
+import { AudioButton, SpokenText } from "@/components/AudioButton";
 import { useCourse } from "@/courses/CourseProvider";
 import { useT } from "@/i18n";
 import type { Verdict } from "@/services/validation";
@@ -37,7 +38,10 @@ export function ExerciseMultipleChoice({ step, onNext }: { step: ChoiceStep; onN
     <>
       <div className="step">
         <span className="step-instruction">{step.instruction}</span>
-        <p className="step-prompt target">{step.prompt}</p>
+        <p className="step-prompt target">
+          {step.prompt}
+          <AudioButton src={step.promptAudioSrc} text={step.prompt} />
+        </p>
         <div className="choice-list" role="group" aria-label={step.instruction}>
           {step.options.map((option, index) => {
             const state = !answered ? "" : index === step.correctIndex ? "correct" : index === picked ? "wrong" : "muted";
@@ -61,7 +65,7 @@ export function ExerciseMultipleChoice({ step, onNext }: { step: ChoiceStep; onN
         label={t("curriculum.player.next")}
         disabled={!answered}
         onAction={() => onNext(correct)}
-        feedback={answered ? <Feedback verdict={correct ? "hit" : "miss"} answer={step.options[step.correctIndex]} explanation={step.explanation} /> : null}
+        feedback={answered ? <Feedback verdict={correct ? "hit" : "miss"} answer={step.options[step.correctIndex]} explanation={step.explanation} audioSrc={step.answerAudioSrc} /> : null}
       />
     </>
   );
@@ -110,7 +114,7 @@ export function ExerciseTranslation({ step, onNext }: { step: TranslateStep; onN
         label={t(verdict ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!verdict && !value.trim()}
         onAction={verdict ? () => onNext(verdict !== "miss") : check}
-        feedback={verdict ? <Feedback verdict={verdict} answer={verdict === "miss" ? step.accepted[0] : expected} /> : null}
+        feedback={verdict ? <Feedback verdict={verdict} answer={verdict === "miss" ? step.accepted[0] : expected} audioSrc={step.answerAudioSrc} audioText={step.accepted[0]} /> : null}
       />
     </>
   );
@@ -171,7 +175,7 @@ export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done 
         label={t(verdict ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!verdict && !value.trim()}
         onAction={verdict ? () => onNext(verdict !== "miss") : check}
-        feedback={verdict ? <Feedback verdict={verdict} answer={sentence(verdict === "near" && expected ? expected : step.accepted[0])} /> : null}
+        feedback={verdict ? <Feedback verdict={verdict} answer={sentence(verdict === "near" && expected ? expected : step.accepted[0])} audioSrc={step.answerAudioSrc} audioText={sentence(step.accepted[0])} /> : null}
       />
     </>
   );
@@ -218,7 +222,7 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
                 <li key={index} className="dialog-line">
                   <span className="dialog-speaker">{item.line.speaker}</span>
                   <span className="dialog-bubble">
-                    <span className="target">{item.line.text}</span>
+                    <SpokenText text={item.line.text} src={item.line.audioSrc} />
                     <span className="dialog-translation">{item.line.translation}</span>
                   </span>
                 </li>
@@ -231,7 +235,11 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
                 <span className="dialog-speaker">{t("curriculum.player.you")}</span>
                 <span className="dialog-bubble">
                   <span className="target">{answer.text}</span>
-                  {answer.verdict === "miss" && <span className="dialog-translation">→ {item.suggestion}</span>}
+                  {answer.verdict === "miss" && (
+                    <span className="dialog-translation">
+                      → <SpokenText text={item.suggestion} src={item.suggestionAudioSrc} className="" />
+                    </span>
+                  )}
                 </span>
               </li>
             );
@@ -256,7 +264,17 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
         label={t(done || pending ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!done && !pending && !value.trim()}
         onAction={done ? () => onNext({ correct: answers.filter((answer) => answer.verdict !== "miss").length, total: answers.length }) : pending ? commit : check}
-        feedback={pending && turn ? <Feedback verdict={pending} answer={pending === "miss" ? turn.suggestion : pendingCheck?.expected} /> : null}
+        feedback={
+          pending && turn ? (
+            <Feedback
+              verdict={pending}
+              answer={pending === "miss" ? turn.suggestion : pendingCheck?.expected}
+              // Nagranie wzorcowej odpowiedzi tylko wtedy, gdy to ją widzi uczeń.
+              audioSrc={pending === "miss" || pendingCheck?.expected === turn.suggestion ? turn.suggestionAudioSrc : undefined}
+              audioText={turn.suggestion}
+            />
+          ) : null
+        }
       />
     </>
   );
@@ -318,7 +336,7 @@ export function ExerciseFreeResponse({ step, onNext }: { step: FreeResponseStep;
             )}
             <div className="free-sample">
               <span className="eyebrow">{t("curriculum.player.freeSample")}</span>
-              <span className="target">{step.sample}</span>
+              <SpokenText text={step.sample} src={step.sampleAudioSrc} />
             </div>
           </div>
         )}
@@ -396,7 +414,7 @@ export function ExerciseWordOrder({ step, onNext }: { step: OrderStep; onNext: D
         label={t(result ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!result && !complete}
         onAction={result ? () => onNext(result.verdict !== "miss") : check}
-        feedback={result ? <Feedback verdict={result.verdict} answer={result.verdict === "miss" ? step.accepted[0] : result.expected} /> : null}
+        feedback={result ? <Feedback verdict={result.verdict} answer={result.verdict === "miss" ? step.accepted[0] : result.expected} audioSrc={step.answerAudioSrc} audioText={step.accepted[0]} /> : null}
       />
     </>
   );
@@ -483,7 +501,7 @@ export function ExerciseReading({ step, onNext }: { step: ReadingStep; onNext: D
         <p>
           {step.text.map((line, i) => (
             <span key={i} className="reading-line">
-              <span className="target">{line.target}</span>
+              <SpokenText text={line.target} src={line.audioSrc} />
               {translate && line.source && <span className="dialog-translation"> {line.source}</span>}{" "}
             </span>
           ))}
@@ -525,7 +543,7 @@ export function ExerciseListening({ step, onNext }: { step: ListeningStep; onNex
               <li key={i} className={`dialog-line${i % 2 ? " right" : ""}${playing === i ? " speaking" : ""}`}>
                 <span className="dialog-speaker">{line.speaker}</span>
                 <span className="dialog-bubble">
-                  <span className="target">{line.text}</span>
+                  <SpokenText text={line.text} src={line.audio ?? line.audioSrc} />
                 </span>
               </li>
             ))}

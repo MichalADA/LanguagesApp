@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, co robisz dla przyjemności.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "U slobodno vrijeme čitam. — W wolnym czasie czytam.",
-          "Volim gledati filmove. — Lubię oglądać filmy.",
-          "Slušam glazbu svaki dan. — Słucham muzyki codziennie."
+          {
+            "target": "U slobodno vrijeme čitam.",
+            "source": "W wolnym czasie czytam."
+          },
+          {
+            "target": "Volim gledati filmove.",
+            "source": "Lubię oglądać filmy."
+          },
+          {
+            "target": "Slušam glazbu svaki dan.",
+            "source": "Słucham muzyki codziennie."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "grać",
           "oglądać"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -174,7 +184,8 @@ export const LESSON: GeneratedLesson = {
           "igrati",
           "glazba"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -211,7 +222,8 @@ export const LESSON: GeneratedLesson = {
           "grać",
           "spacerować"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -285,7 +297,8 @@ export const LESSON: GeneratedLesson = {
           "Lubię oglądać filmy.",
           "Czasami gram w gry."
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -376,10 +389,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "U slobodno vrijeme čitam. — W wolnym czasie czytam.",
-          "Volim gledati filmove. — Lubię oglądać filmy.",
-          "Slušam glazbu svaki dan. — Słucham muzyki codziennie.",
-          "Ponekad igram igre. — Czasami gram w gry."
+          {
+            "target": "U slobodno vrijeme čitam.",
+            "source": "W wolnym czasie czytam."
+          },
+          {
+            "target": "Volim gledati filmove.",
+            "source": "Lubię oglądać filmy."
+          },
+          {
+            "target": "Slušam glazbu svaki dan.",
+            "source": "Słucham muzyki codziennie."
+          },
+          {
+            "target": "Ponekad igram igre.",
+            "source": "Czasami gram w gry."
+          }
         ]
       }
     ]

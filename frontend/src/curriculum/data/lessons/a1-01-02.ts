@@ -25,7 +25,11 @@ export const LESSON_A1_01_02: LessonContent = {
       type: "intro",
       title: "Skąd jesteś?",
       body: "Po tej lekcji będziesz potrafić powiedzieć, skąd jesteś i gdzie mieszkasz — i zapytać o to rozmówcę.",
-      goals: ["Odakle si? — zapytać, skąd ktoś jest", "Iz Poljske sam. — powiedzieć, skąd jesteś", "Živim u Poljskoj. — powiedzieć, gdzie mieszkasz"],
+      goals: [
+        { target: "Odakle si?", source: "zapytać, skąd ktoś jest" },
+        { target: "Iz Poljske sam.", source: "powiedzieć, skąd jesteś" },
+        { target: "Živim u Poljskoj.", source: "powiedzieć, gdzie mieszkasz" },
+      ],
     },
     {
       id: "listen",
@@ -59,6 +63,7 @@ export const LESSON_A1_01_02: LessonContent = {
       options: ["Gdzie mieszkasz?", "Skąd jesteś?", "Ile masz lat?"],
       correctIndex: 1,
       explanation: "Odakle = skąd, si = jesteś.",
+      targetText: "prompt",
     },
     {
       id: "word-zemlja",
@@ -83,6 +88,7 @@ export const LESSON_A1_01_02: LessonContent = {
       options: ["zemlja", "grad", "Poljska"],
       correctIndex: 1,
       explanation: "Zagreb je grad — Zagrzeb to miasto.",
+      targetText: "options",
     },
     {
       id: "word-zivjeti",
@@ -151,6 +157,7 @@ export const LESSON_A1_01_02: LessonContent = {
       options: ["Živim u Poljskoj.", "Iz Poljske sam.", "Imam 26 godina."],
       correctIndex: 1,
       explanation: "Pytanie brzmi „skąd?”, więc odpowiadamy z iz. Živim u Poljskoj mówi, gdzie mieszkasz.",
+      targetText: "both",
     },
     {
       id: "gap-iz",
@@ -224,7 +231,12 @@ export const LESSON_A1_01_02: LessonContent = {
       stage: "summary",
       type: "summary",
       title: "Lekcja ukończona",
-      recap: ["Odakle si? — Skąd jesteś?", "Iz Poljske sam. — Jestem z Polski.", "Gdje živiš? — Gdzie mieszkasz?", "Živim u Poljskoj. — Mieszkam w Polsce."],
+      recap: [
+        { target: "Odakle si?", source: "Skąd jesteś?" },
+        { target: "Iz Poljske sam.", source: "Jestem z Polski." },
+        { target: "Gdje živiš?", source: "Gdzie mieszkasz?" },
+        { target: "Živim u Poljskoj.", source: "Mieszkam w Polsce." },
+      ],
     },
   ],
 };

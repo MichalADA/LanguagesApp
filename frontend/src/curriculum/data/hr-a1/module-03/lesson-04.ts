@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, co robisz dziś, jutro i w wybrany dzień.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Danas je četvrtak. — Dziś jest czwartek.",
-          "Sutra je petak. — Jutro jest piątek.",
-          "U ponedjeljak radim. — W poniedziałek pracuję."
+          {
+            "target": "Danas je četvrtak.",
+            "source": "Dziś jest czwartek."
+          },
+          {
+            "target": "Sutra je petak.",
+            "source": "Jutro jest piątek."
+          },
+          {
+            "target": "U ponedjeljak radim.",
+            "source": "W poniedziałek pracuję."
+          }
         ]
       },
       {
@@ -117,7 +126,8 @@ export const LESSON: GeneratedLesson = {
           "czwartek",
           "środa"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -166,7 +176,8 @@ export const LESSON: GeneratedLesson = {
           "ponedjeljak",
           "sutra"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "niedziela",
           "sobota"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -276,7 +288,8 @@ export const LESSON: GeneratedLesson = {
           "Jutro jest piątek.",
           "W niedzielę odpoczywam."
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -365,10 +378,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Danas je četvrtak. — Dziś jest czwartek.",
-          "Sutra je petak. — Jutro jest piątek.",
-          "U ponedjeljak radim. — W poniedziałek pracuję.",
-          "U subotu idem u grad. — W sobotę idę do miasta."
+          {
+            "target": "Danas je četvrtak.",
+            "source": "Dziś jest czwartek."
+          },
+          {
+            "target": "Sutra je petak.",
+            "source": "Jutro jest piątek."
+          },
+          {
+            "target": "U ponedjeljak radim.",
+            "source": "W poniedziałek pracuję."
+          },
+          {
+            "target": "U subotu idem u grad.",
+            "source": "W sobotę idę do miasta."
+          }
         ]
       }
     ]

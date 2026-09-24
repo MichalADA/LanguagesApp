@@ -22,3 +22,14 @@ src/curriculum/data/hr-a1/        ← wygenerowane TypeScript (commitowane, nie 
   generator dołącza do niej słownictwo i materiał z CSV.
 - **Audio:** ćwiczenia słuchania używają nagranych dialogów z `public/data/listening/hr-a1-dialogues.json`.
 - **Build aplikacji nie potrzebuje CSV** — czyta tylko wygenerowane pliki.
+
+## Audio
+
+- `audio.json` — provider (edge-tts, jak w pilocie słuchania), głosy hr-HR, tempo, moduły z nagraniami.
+- `audio-manifest.json` — generowany: każdy unikalny chorwacki tekst z lekcji wybranych modułów → stała ścieżka
+  `/audio/hr/a1/module-XX/<slug>.mp3` (słowa, przykłady, dialogi, pytania, poprawne odpowiedzi, zwroty z celów
+  i podsumowań, przykładowe wypowiedzi). Które miejsca w treści dostają audio, opisuje `scripts/lib/course-audio.mjs`.
+- Nagrania syntezuje `tools/listening/generate_tts.py --course-manifest …` (szczegóły: tools/listening/README.md).
+- Generator kursu dopisuje `audioSrc` do danych lekcji **tylko dla istniejących plików** — brak nagrania oznacza
+  brak przycisku, nigdy 404. W UI jest jeden komponent: `src/components/AudioButton.tsx` (+ wspólny kanał
+  `src/audio/player.ts`, który zatrzymuje poprzednie nagranie).

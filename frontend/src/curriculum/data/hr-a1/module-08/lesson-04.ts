@@ -90,7 +90,8 @@ export const LESSON: GeneratedLesson = {
           "czwartek",
           "mieć"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "recall-2",
@@ -103,7 +104,8 @@ export const LESSON: GeneratedLesson = {
           "kawa",
           "była"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "recall-3",
@@ -116,7 +118,8 @@ export const LESSON: GeneratedLesson = {
           "apteka",
           "sklep"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "recall-4",
@@ -129,7 +132,8 @@ export const LESSON: GeneratedLesson = {
           "restauracja",
           "oczywiście"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "recall-5",
@@ -142,7 +146,8 @@ export const LESSON: GeneratedLesson = {
           "pociąg",
           "gdzie"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -455,10 +460,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Mogu napisati kratku poruku. — Potrafię napisać krótką wiadomość.",
-          "Mogu naručiti hranu. — Potrafię zamówić jedzenie.",
-          "Mogu pitati za put. — Potrafię zapytać o drogę.",
-          "Mogu govoriti o sebi. — Potrafię mówić o sobie."
+          {
+            "target": "Mogu napisati kratku poruku.",
+            "source": "Potrafię napisać krótką wiadomość."
+          },
+          {
+            "target": "Mogu naručiti hranu.",
+            "source": "Potrafię zamówić jedzenie."
+          },
+          {
+            "target": "Mogu pitati za put.",
+            "source": "Potrafię zapytać o drogę."
+          },
+          {
+            "target": "Mogu govoriti o sebi.",
+            "source": "Potrafię mówić o sobie."
+          }
         ]
       }
     ]

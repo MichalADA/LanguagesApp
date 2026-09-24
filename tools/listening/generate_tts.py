@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Generate Croatian listening clips from Lexodromia's reviewed dialogue manifest."""
+"""Generate Croatian audio for Lexodromia from a manifest (listening dialogues or course lessons).
+
+Two manifest formats share one provider (edge-tts, hr-HR neural voices, no account or billing):
+  * listening dialogues: frontend/public/data/listening/hr-*-dialogues.json (default)
+  * course audio:        frontend/curriculum/hr-a1/audio-manifest.json (--course-manifest),
+    written by `npm run curriculum:a1` from the lesson content of the modules listed in audio.json.
+Existing files are never regenerated unless --force is given.
+"""
 
 from __future__ import annotations
 
@@ -8,7 +15,6 @@ import asyncio
 import json
 from pathlib import Path
 
-import edge_tts
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_MANIFEST = ROOT / "frontend/public/data/listening/hr-a1-dialogues.json"
@@ -23,14 +29,24 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--force", action="store_true", help="Replace existing MP3 files")
     parser.add_argument("--rate", default="-8%", help="edge-tts speaking rate, e.g. -8%% or +0%%")
     parser.add_argument("--jobs", type=int, default=3, help="Concurrent TTS requests, 1-5")
+    parser.add_argument(
+        "--course-manifest",
+        type=Path,
+        help="Course audio manifest (frontend/curriculum/hr-a1/audio-manifest.json) instead of a dialogue manifest",
+    )
+    parser.add_argument("--dry-run", action="store_true", help="Only report what would be generated; no TTS requests")
     args = parser.parse_args()
     if not 1 <= args.jobs <= 5:
         parser.error("--jobs must be between 1 and 5")
     return args
 
 
+ALLOWED_PREFIXES = ("/audio/listening/", "/audio/hr/")
+SUPPORTED_PROVIDER = "edge-tts"
+
+
 def output_path(public_dir: Path, audio_path: str) -> Path:
-    if not audio_path.startswith("/audio/listening/") or not audio_path.endswith(".mp3"):
+    if not audio_path.startswith(ALLOWED_PREFIXES) or not audio_path.endswith(".mp3"):
         raise ValueError(f"Unsafe or unsupported audioPath: {audio_path!r}")
     candidate = (public_dir / audio_path.lstrip("/")).resolve()
     public_root = public_dir.resolve()
@@ -39,7 +55,67 @@ def output_path(public_dir: Path, audio_path: str) -> Path:
     return candidate
 
 
+def course_jobs(args: argparse.Namespace) -> tuple[list[tuple[str, str, Path]], int, int, str]:
+    """(pending, found, existing, rate) for a course audio manifest."""
+    payload = json.loads(args.course_manifest.read_text(encoding="utf-8"))
+    provider = payload.get("provider")
+    if provider != SUPPORTED_PROVIDER:
+        # Świadomie nie przełączamy się na inny (potencjalnie płatny) dostawca.
+        raise SystemExit(f"Unsupported provider {provider!r}; this script only uses {SUPPORTED_PROVIDER}.")
+    pending = []
+    existing = 0
+    for item in payload["items"]:
+        target = output_path(args.public_dir, item["audioPath"])
+        if target.exists() and not args.force:
+            existing += 1
+            continue
+        pending.append((item["text"], item["voice"], target))
+    return pending, len(payload["items"]), existing, payload.get("rate", args.rate)
+
+
+async def synthesize(args: argparse.Namespace, pending: list[tuple[str, str, Path]], rate: str) -> list[str]:
+    """Generate pending clips; returns error messages (other clips keep going)."""
+    import edge_tts  # dopiero tutaj: --dry-run działa bez instalowania pakietu
+
+    semaphore = asyncio.Semaphore(args.jobs)
+    errors: list[str] = []
+
+    async def generate_one(text: str, voice: str, target: Path) -> None:
+        async with semaphore:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            temporary = target.with_suffix(".tmp.mp3")
+            try:
+                await edge_tts.Communicate(text, voice, rate=rate).save(temporary)
+                temporary.replace(target)
+                print(f"generated {target.relative_to(args.public_dir)}")
+            except Exception as error:  # noqa: BLE001 — report every failure, keep the rest
+                errors.append(f"{target.relative_to(args.public_dir)}: {type(error).__name__}: {error}")
+            finally:
+                temporary.unlink(missing_ok=True)
+
+    await asyncio.gather(*(generate_one(*item) for item in pending))
+    return errors
+
+
+async def generate_course(args: argparse.Namespace) -> None:
+    pending, found, existing, rate = course_jobs(args)
+    characters = sum(len(text) for text, _, _ in pending)
+    print(f"Provider: {SUPPORTED_PROVIDER} (no account, no billing) · rate {rate}")
+    print(f"Found {found} texts · {existing} recordings exist · {len(pending)} to generate ({characters} characters)")
+    if args.dry_run or not pending:
+        return
+    errors = await synthesize(args, pending, rate)
+    print(f"Done: found {found}, existing {existing}, new {len(pending) - len(errors)}, errors {len(errors)}")
+    for message in errors:
+        print(f"  error: {message}")
+    if errors:
+        raise SystemExit(1)
+
+
 async def generate(args: argparse.Namespace) -> None:
+    if args.course_manifest:
+        await generate_course(args)
+        return
     payload = json.loads(args.manifest.read_text(encoding="utf-8"))
     voices = payload["generatedWith"]["voices"]
     dialogues = payload["dialogues"]
@@ -60,6 +136,8 @@ async def generate(args: argparse.Namespace) -> None:
                 skipped += 1
                 continue
             pending.append((line["textHr"], voice, target))
+
+    import edge_tts
 
     semaphore = asyncio.Semaphore(args.jobs)
 

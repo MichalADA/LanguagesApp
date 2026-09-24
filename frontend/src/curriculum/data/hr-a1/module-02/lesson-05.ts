@@ -90,7 +90,8 @@ export const LESSON: GeneratedLesson = {
           "ojciec",
           "przyjaciel"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "recall-2",
@@ -103,7 +104,8 @@ export const LESSON: GeneratedLesson = {
           "wysoki",
           "lekarz"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "recall-3",
@@ -116,7 +118,8 @@ export const LESSON: GeneratedLesson = {
           "babcia",
           "telefon"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -348,10 +351,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Imam malu obitelj. — Mam małą rodzinę.",
-          "Moja sestra je simpatična. — Moja siostra jest sympatyczna.",
-          "Moj prijatelj radi u banci. — Mój przyjaciel pracuje w banku.",
-          "Poznajem Anu. — Znam Anę."
+          {
+            "target": "Imam malu obitelj.",
+            "source": "Mam małą rodzinę."
+          },
+          {
+            "target": "Moja sestra je simpatična.",
+            "source": "Moja siostra jest sympatyczna."
+          },
+          {
+            "target": "Moj prijatelj radi u banci.",
+            "source": "Mój przyjaciel pracuje w banku."
+          },
+          {
+            "target": "Poznajem Anu.",
+            "source": "Znam Anę."
+          }
         ],
         "canDo": [
           "nazwać najbliższych członków rodziny",

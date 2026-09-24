@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, dokąd i czym podróżujesz.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Volim putovati. — Lubię podróżować.",
-          "Putujem avionom. — Podróżuję samolotem.",
-          "Idem vlakom u Zagreb. — Jadę pociągiem do Zagrzebia."
+          {
+            "target": "Volim putovati.",
+            "source": "Lubię podróżować."
+          },
+          {
+            "target": "Putujem avionom.",
+            "source": "Podróżuję samolotem."
+          },
+          {
+            "target": "Idem vlakom u Zagreb.",
+            "source": "Jadę pociągiem do Zagrzebia."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "samolot",
           "samochód"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -170,7 +180,8 @@ export const LESSON: GeneratedLesson = {
           "auto",
           "more"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -207,7 +218,8 @@ export const LESSON: GeneratedLesson = {
           "wyspa",
           "morze"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -253,7 +265,8 @@ export const LESSON: GeneratedLesson = {
           "Podróż jest długa.",
           "Podróżuję samolotem."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -371,10 +384,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Volim putovati. — Lubię podróżować.",
-          "Putujem avionom. — Podróżuję samolotem.",
-          "Idem vlakom u Zagreb. — Jadę pociągiem do Zagrzebia.",
-          "Idemo autom na more. — Jedziemy samochodem nad morze."
+          {
+            "target": "Volim putovati.",
+            "source": "Lubię podróżować."
+          },
+          {
+            "target": "Putujem avionom.",
+            "source": "Podróżuję samolotem."
+          },
+          {
+            "target": "Idem vlakom u Zagreb.",
+            "source": "Jadę pociągiem do Zagrzebia."
+          },
+          {
+            "target": "Idemo autom na more.",
+            "source": "Jedziemy samochodem nad morze."
+          }
         ]
       }
     ]

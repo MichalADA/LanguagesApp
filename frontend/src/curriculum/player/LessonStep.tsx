@@ -1,31 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@/components/Icon";
+import { AudioButton, BilingualLine, SpokenText } from "@/components/AudioButton";
 import { useT } from "@/i18n";
 import type { IntroStep, ListenStep, LessonContent, StructureStep, SummaryStep, VocabListStep, WordStep } from "../types";
-import { useSpeech } from "../speech";
 import { StepFooter } from "./StepFooter";
 
 /* Kroki „treściowe” — wprowadzają nową rzecz. Ćwiczenia są w Exercises.tsx. */
-
-/** Odsłuch słowa lub zdania: TTS z głosem chorwackim, w przeciwnym razie nieaktywny placeholder. */
-export function AudioButton({ text, label, small }: { text?: string; label?: string; small?: boolean }) {
-  const t = useT();
-  const { available, speak } = useSpeech();
-  const enabled = available && Boolean(text);
-  return (
-    <button
-      type="button"
-      className={small ? "audio-btn small" : "audio-btn"}
-      disabled={!enabled}
-      onClick={() => text && speak(text)}
-      title={enabled ? t("curriculum.player.audio") : t("curriculum.player.audioSoon")}
-      aria-label={label ?? t("curriculum.player.audio")}
-    >
-      <Icon name="volume" size={small ? 15 : 18} />
-    </button>
-  );
-}
 
 export function IntroView({ step, onNext }: { step: IntroStep; onNext: () => void }) {
   const t = useT();
@@ -36,8 +17,10 @@ export function IntroView({ step, onNext }: { step: IntroStep; onNext: () => voi
         <div className="step-goals">
           <span className="eyebrow">{step.goalsTitle ?? t("curriculum.player.goals")}</span>
           <ul>
-            {step.goals.map((goal) => (
-              <li key={goal}>{goal}</li>
+            {step.goals.map((goal, index) => (
+              <li key={index}>
+                <BilingualLine item={goal} />
+              </li>
             ))}
           </ul>
         </div>
@@ -64,7 +47,7 @@ export function ListenView({ step, onNext }: { step: ListenStep; onNext: () => v
             <li key={index} className={index % 2 ? "dialog-line right" : "dialog-line"}>
               <span className="dialog-speaker">{line.speaker}</span>
               <span className="dialog-bubble">
-                <span className="target">{line.text}</span>
+                <SpokenText text={line.text} src={line.audioSrc} />
                 {translate && <span className="dialog-translation">{line.translation}</span>}
               </span>
             </li>
@@ -85,17 +68,14 @@ export function WordView({ step, onNext }: { step: WordStep; onNext: () => void 
         <div className="word-card">
           <div className="word-main">
             <span className="word-target">{step.target}</span>
-            <AudioButton text={step.target} />
+            <AudioButton src={step.audioSrc} text={step.target} />
           </div>
           <span className="word-source">{step.source}</span>
           {step.partOfSpeech && <span className="meta">{step.partOfSpeech}</span>}
           {step.example && (
             <div className="word-example">
               <span className="eyebrow">{t("curriculum.player.example")}</span>
-              <span className="example-line">
-                <span className="target">{step.example.target}</span>
-                <AudioButton text={step.example.target} small />
-              </span>
+              <SpokenText text={step.example.target} src={step.example.audioSrc} />
               <span className="muted">{step.example.source}</span>
             </div>
           )}
@@ -106,7 +86,7 @@ export function WordView({ step, onNext }: { step: WordStep; onNext: () => void 
             <ul>
               {step.related.map((item) => (
                 <li key={item.target}>
-                  <span className="target">{item.target}</span>
+                  <SpokenText text={item.target} src={item.audioSrc} />
                   <span className="muted">{item.source}</span>
                 </li>
               ))}
@@ -131,7 +111,7 @@ export function StructureView({ step, onNext }: { step: StructureStep; onNext: (
           <ul className="structure-examples">
             {step.examples.map((example) => (
               <li key={example.target}>
-                <span className="target">{example.target}</span>
+                <SpokenText text={example.target} src={example.audioSrc} />
                 <span className="muted">{example.source}</span>
               </li>
             ))}
@@ -174,7 +154,7 @@ export function VocabListView({ step, onNext }: { step: VocabListStep; onNext: (
         <ul className="vocab-list">
           {step.items.map((item, index) => (
             <li key={`${item.target}-${index}`}>
-              <span className="target">{item.target}</span>
+              <SpokenText text={item.target} src={item.audioSrc} />
               <span className="muted">{item.source}</span>
               {item.partOfSpeech && <span className="meta">{item.partOfSpeech}</span>}
             </li>
@@ -226,8 +206,10 @@ export function SummaryView({
         <section>
           <span className="eyebrow">{t("curriculum.player.recap")}</span>
           <ul className="summary-recap">
-            {step.recap.map((item) => (
-              <li key={item}>{item}</li>
+            {step.recap.map((item, index) => (
+              <li key={index}>
+                <BilingualLine item={item} />
+              </li>
             ))}
           </ul>
         </section>
@@ -236,7 +218,7 @@ export function SummaryView({
           <ul className="summary-words">
             {content.vocabulary.map((word, index) => (
               <li key={`${word.target}-${index}`}>
-                <span className="target">{word.target}</span>
+                <SpokenText text={word.target} src={word.audioSrc} />
                 <span className="muted">{word.source}</span>
               </li>
             ))}

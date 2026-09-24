@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć opisać osobę kilkoma prostymi przymiotnikami.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Marko je visok. — Marko jest wysoki.",
-          "Ana je visoka. — Ana jest wysoka.",
-          "Moj brat je mlad. — Mój brat jest młody."
+          {
+            "target": "Marko je visok.",
+            "source": "Marko jest wysoki."
+          },
+          {
+            "target": "Ana je visoka.",
+            "source": "Ana jest wysoka."
+          },
+          {
+            "target": "Moj brat je mlad.",
+            "source": "Mój brat jest młody."
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "stary",
           "młody"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -162,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "nizak",
           "mlad"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -199,7 +210,8 @@ export const LESSON: GeneratedLesson = {
           "zmęczony",
           "dobry"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -274,7 +286,8 @@ export const LESSON: GeneratedLesson = {
           "Ana jest wysoka.",
           "Moja babcia jest bardzo dobra."
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "dialog",
@@ -368,10 +381,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Marko je visok. — Marko jest wysoki.",
-          "Ana je visoka. — Ana jest wysoka.",
-          "Moj brat je mlad. — Mój brat jest młody.",
-          "Moja baka je vrlo dobra. — Moja babcia jest bardzo dobra."
+          {
+            "target": "Marko je visok.",
+            "source": "Marko jest wysoki."
+          },
+          {
+            "target": "Ana je visoka.",
+            "source": "Ana jest wysoka."
+          },
+          {
+            "target": "Moj brat je mlad.",
+            "source": "Mój brat jest młody."
+          },
+          {
+            "target": "Moja baka je vrlo dobra.",
+            "source": "Moja babcia jest bardzo dobra."
+          }
         ]
       }
     ]

@@ -12,56 +12,64 @@ export const LESSON: GeneratedLesson = {
         "source": "cześć",
         "lemma": "bok",
         "partOfSpeech": "interjection",
-        "recordId": "A1-0002"
+        "recordId": "A1-0002",
+        "audioSrc": "/audio/hr/a1/module-01/bok.mp3"
       },
       {
         "target": "dobar dan",
         "source": "dzień dobry",
         "lemma": "dobar dan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0003"
+        "recordId": "A1-0003",
+        "audioSrc": "/audio/hr/a1/module-01/dobar-dan.mp3"
       },
       {
         "target": "doviđenja",
         "source": "do widzenia",
         "lemma": "doviđenja",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0004"
+        "recordId": "A1-0004",
+        "audioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
       },
       {
         "target": "kako",
         "source": "jak",
         "lemma": "kako",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0005"
+        "recordId": "A1-0005",
+        "audioSrc": "/audio/hr/a1/module-01/kako.mp3"
       },
       {
         "target": "dobro",
         "source": "dobrze",
         "lemma": "dobro",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0006"
+        "recordId": "A1-0006",
+        "audioSrc": "/audio/hr/a1/module-01/dobro.mp3"
       },
       {
         "target": "odlično",
         "source": "świetnie",
         "lemma": "odlično",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0007"
+        "recordId": "A1-0007",
+        "audioSrc": "/audio/hr/a1/module-01/odlicno.mp3"
       },
       {
         "target": "loše",
         "source": "źle",
         "lemma": "loše",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0008"
+        "recordId": "A1-0008",
+        "audioSrc": "/audio/hr/a1/module-01/lose.mp3"
       },
       {
         "target": "hvala",
         "source": "dziękuję",
         "lemma": "hvala",
         "partOfSpeech": "interjection",
-        "recordId": "A1-0009"
+        "recordId": "A1-0009",
+        "audioSrc": "/audio/hr/a1/module-01/hvala.mp3"
       }
     ],
     "steps": [
@@ -73,9 +81,21 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć przywitać się, pożegnać i zapytać o samopoczucie.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Bok! Kako si? — Cześć! Jak się masz?",
-          "Dobro sam, hvala. — Mam się dobrze, dziękuję.",
-          "Odlično sam. — Mam się świetnie."
+          {
+            "target": "Bok! Kako si?",
+            "source": "Cześć! Jak się masz?",
+            "audioSrc": "/audio/hr/a1/module-01/bok-kako-si.mp3"
+          },
+          {
+            "target": "Dobro sam, hvala.",
+            "source": "Mam się dobrze, dziękuję.",
+            "audioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
+          },
+          {
+            "target": "Odlično sam.",
+            "source": "Mam się świetnie.",
+            "audioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
+          }
         ]
       },
       {
@@ -87,8 +107,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "wykrzyknik",
         "example": {
           "target": "Bok! Kako si?",
-          "source": "Cześć! Jak się masz?"
-        }
+          "source": "Cześć! Jak się masz?",
+          "audioSrc": "/audio/hr/a1/module-01/bok-kako-si.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/bok.mp3"
       },
       {
         "id": "word-2",
@@ -99,8 +121,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Dobar dan!",
-          "source": "Dzień dobry!"
-        }
+          "source": "Dzień dobry!",
+          "audioSrc": "/audio/hr/a1/module-01/dobar-dan.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/dobar-dan.mp3"
       },
       {
         "id": "word-3",
@@ -111,8 +135,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Doviđenja!",
-          "source": "Do widzenia!"
-        }
+          "source": "Do widzenia!",
+          "audioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
       },
       {
         "id": "check-1",
@@ -125,7 +151,9 @@ export const LESSON: GeneratedLesson = {
           "dzień dobry",
           "źle"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/dobar-dan.mp3"
       },
       {
         "id": "word-4",
@@ -136,8 +164,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Bok! Kako si?",
-          "source": "Cześć! Jak się masz?"
-        }
+          "source": "Cześć! Jak się masz?",
+          "audioSrc": "/audio/hr/a1/module-01/bok-kako-si.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/kako.mp3"
       },
       {
         "id": "word-5",
@@ -148,8 +178,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Dobro sam, hvala.",
-          "source": "Mam się dobrze, dziękuję."
-        }
+          "source": "Mam się dobrze, dziękuję.",
+          "audioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/dobro.mp3"
       },
       {
         "id": "word-6",
@@ -160,8 +192,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Odlično sam.",
-          "source": "Mam się świetnie."
-        }
+          "source": "Mam się świetnie.",
+          "audioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/odlicno.mp3"
       },
       {
         "id": "check-2",
@@ -174,7 +208,9 @@ export const LESSON: GeneratedLesson = {
           "loše",
           "odlično"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-01/odlicno.mp3"
       },
       {
         "id": "word-7",
@@ -182,7 +218,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "loše",
         "source": "źle",
-        "partOfSpeech": "przysłówek"
+        "partOfSpeech": "przysłówek",
+        "audioSrc": "/audio/hr/a1/module-01/lose.mp3"
       },
       {
         "id": "word-8",
@@ -193,8 +230,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "wykrzyknik",
         "example": {
           "target": "Dobro sam, hvala.",
-          "source": "Mam się dobrze, dziękuję."
-        }
+          "source": "Mam się dobrze, dziękuję.",
+          "audioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/hvala.mp3"
       },
       {
         "id": "check-3",
@@ -207,7 +246,9 @@ export const LESSON: GeneratedLesson = {
           "dzień dobry",
           "świetnie"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/hvala.mp3"
       },
       {
         "id": "structure",
@@ -218,15 +259,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Dobro sam, hvala.",
-            "source": "Mam się dobrze, dziękuję."
+            "source": "Mam się dobrze, dziękuję.",
+            "audioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
           },
           {
             "target": "Odlično sam.",
-            "source": "Mam się świetnie."
+            "source": "Mam się świetnie.",
+            "audioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
           },
           {
             "target": "Nisam baš dobro.",
-            "source": "Nie mam się zbyt dobrze."
+            "source": "Nie mam się zbyt dobrze.",
+            "audioSrc": "/audio/hr/a1/module-01/nisam-bas-dobro.mp3"
           }
         ]
       },
@@ -240,7 +284,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "sam"
         ],
-        "translation": "Mam się dobrze, dziękuję."
+        "translation": "Mam się dobrze, dziękuję.",
+        "answerAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
       },
       {
         "id": "comprehend",
@@ -253,7 +298,9 @@ export const LESSON: GeneratedLesson = {
           "Nie mam się zbyt dobrze.",
           "Mam się dobrze, dziękuję."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/nisam-bas-dobro.mp3"
       },
       {
         "id": "translate-1",
@@ -264,7 +311,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Odlično sam.",
           "Ja sam odlično."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
       },
       {
         "id": "order",
@@ -279,7 +327,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Dobro sam, hvala."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
       },
       {
         "id": "dialog",
@@ -292,7 +341,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Bok! Kako si?",
-              "translation": "Cześć! Jak się masz?"
+              "translation": "Cześć! Jak się masz?",
+              "audioSrc": "/audio/hr/a1/module-01/bok-kako-si.mp3"
             }
           },
           {
@@ -304,14 +354,16 @@ export const LESSON: GeneratedLesson = {
               "Nisam baš dobro."
             ],
             "pattern": "^((dobro|odlično|loše) sam|nisam( baš)? dobro)( hvala)?$",
-            "suggestion": "Dobro sam, hvala."
+            "suggestion": "Dobro sam, hvala.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Doviđenja!",
-              "translation": "Do widzenia!"
+              "translation": "Do widzenia!",
+              "audioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
             }
           },
           {
@@ -322,7 +374,8 @@ export const LESSON: GeneratedLesson = {
               "Bok!"
             ],
             "pattern": "^(doviđenja|bok)$",
-            "suggestion": "Doviđenja!"
+            "suggestion": "Doviđenja!",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
           }
         ]
       },
@@ -352,7 +405,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Bok! Dobro sam, hvala."
+        "sample": "Bok! Dobro sam, hvala.",
+        "sampleAudioSrc": "/audio/hr/a1/module-01/bok-dobro-sam-hvala.mp3"
       },
       {
         "id": "summary",
@@ -360,10 +414,26 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Bok! Kako si? — Cześć! Jak się masz?",
-          "Dobro sam, hvala. — Mam się dobrze, dziękuję.",
-          "Odlično sam. — Mam się świetnie.",
-          "Nisam baš dobro. — Nie mam się zbyt dobrze."
+          {
+            "target": "Bok! Kako si?",
+            "source": "Cześć! Jak się masz?",
+            "audioSrc": "/audio/hr/a1/module-01/bok-kako-si.mp3"
+          },
+          {
+            "target": "Dobro sam, hvala.",
+            "source": "Mam się dobrze, dziękuję.",
+            "audioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
+          },
+          {
+            "target": "Odlično sam.",
+            "source": "Mam się świetnie.",
+            "audioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
+          },
+          {
+            "target": "Nisam baš dobro.",
+            "source": "Nie mam się zbyt dobrze.",
+            "audioSrc": "/audio/hr/a1/module-01/nisam-bas-dobro.mp3"
+          }
         ]
       }
     ]

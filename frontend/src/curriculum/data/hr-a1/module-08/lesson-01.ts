@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć 2–3 proste rzeczy o wczoraj.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Jučer sam radio. — Wczoraj pracowałem.",
-          "Jučer sam radila. — Wczoraj pracowałam.",
-          "Bio sam kod kuće. — Byłem w domu."
+          {
+            "target": "Jučer sam radio.",
+            "source": "Wczoraj pracowałem."
+          },
+          {
+            "target": "Jučer sam radila.",
+            "source": "Wczoraj pracowałam."
+          },
+          {
+            "target": "Bio sam kod kuće.",
+            "source": "Byłem w domu."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "pracował / robił",
           "była"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -174,7 +184,8 @@ export const LESSON: GeneratedLesson = {
           "radila",
           "bila"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -207,7 +218,8 @@ export const LESSON: GeneratedLesson = {
           "była",
           "szła / jechała"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -294,7 +306,8 @@ export const LESSON: GeneratedLesson = {
           "Jučer si radila."
         ],
         "correctIndex": 1,
-        "explanation": "Kobieta mówi radila; sam = ja, si = ty."
+        "explanation": "Kobieta mówi radila; sam = ja, si = ty.",
+        "targetText": "options"
       },
       {
         "id": "choice-2",
@@ -308,7 +321,8 @@ export const LESSON: GeneratedLesson = {
           "Bio sam kod kuće."
         ],
         "correctIndex": 2,
-        "explanation": "Mężczyzna: bio; o sobie: sam."
+        "explanation": "Mężczyzna: bio; o sobie: sam.",
+        "targetText": "options"
       },
       {
         "id": "comprehend",
@@ -321,7 +335,8 @@ export const LESSON: GeneratedLesson = {
           "Wczoraj pracowałem.",
           "Wczoraj pracowałam."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -411,10 +426,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Jučer sam radio. — Wczoraj pracowałem.",
-          "Jučer sam radila. — Wczoraj pracowałam.",
-          "Bio sam kod kuće. — Byłem w domu.",
-          "Bila sam kod kuće. — Byłam w domu."
+          {
+            "target": "Jučer sam radio.",
+            "source": "Wczoraj pracowałem."
+          },
+          {
+            "target": "Jučer sam radila.",
+            "source": "Wczoraj pracowałam."
+          },
+          {
+            "target": "Bio sam kod kuće.",
+            "source": "Byłem w domu."
+          },
+          {
+            "target": "Bila sam kod kuće.",
+            "source": "Byłam w domu."
+          }
         ]
       }
     ]

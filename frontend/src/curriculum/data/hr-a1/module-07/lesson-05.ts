@@ -90,7 +90,8 @@ export const LESSON: GeneratedLesson = {
           "podróżować",
           "autobus"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "recall-2",
@@ -103,7 +104,8 @@ export const LESSON: GeneratedLesson = {
           "podróżować",
           "morze"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "recall-3",
@@ -116,7 +118,8 @@ export const LESSON: GeneratedLesson = {
           "pokój",
           "recepcja"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -350,10 +353,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Gdje je moj kofer? — Gdzie jest moja walizka?",
-          "Imam rezervaciju za hotel. — Mam rezerwację hotelu.",
-          "Kada stiže autobus? — Kiedy przyjeżdża autobus?",
-          "Krećemo u osam. — Wyruszamy o ósmej."
+          {
+            "target": "Gdje je moj kofer?",
+            "source": "Gdzie jest moja walizka?"
+          },
+          {
+            "target": "Imam rezervaciju za hotel.",
+            "source": "Mam rezerwację hotelu."
+          },
+          {
+            "target": "Kada stiže autobus?",
+            "source": "Kiedy przyjeżdża autobus?"
+          },
+          {
+            "target": "Krećemo u osam.",
+            "source": "Wyruszamy o ósmej."
+          }
         ],
         "canDo": [
           "powiedzieć, dokąd i czym podróżujesz",

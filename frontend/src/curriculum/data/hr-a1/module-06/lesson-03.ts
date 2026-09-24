@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zrozumieć i opisać podstawową pogodę.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Danas je sunčano. — Dziś jest słonecznie.",
-          "Danas je hladno. — Dziś jest zimno.",
-          "Pada kiša. — Pada deszcz."
+          {
+            "target": "Danas je sunčano.",
+            "source": "Dziś jest słonecznie."
+          },
+          {
+            "target": "Danas je hladno.",
+            "source": "Dziś jest zimno."
+          },
+          {
+            "target": "Pada kiša.",
+            "source": "Pada deszcz."
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "słonecznie",
           "deszcz"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -170,7 +180,8 @@ export const LESSON: GeneratedLesson = {
           "snijeg",
           "kiša"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "wiatr",
           "pochmurno"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -276,7 +288,8 @@ export const LESSON: GeneratedLesson = {
           "Jutro będzie ciepło.",
           "Dziś jest zimno."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -363,10 +376,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Danas je sunčano. — Dziś jest słonecznie.",
-          "Danas je hladno. — Dziś jest zimno.",
-          "Pada kiša. — Pada deszcz.",
-          "Puše vjetar. — Wieje wiatr."
+          {
+            "target": "Danas je sunčano.",
+            "source": "Dziś jest słonecznie."
+          },
+          {
+            "target": "Danas je hladno.",
+            "source": "Dziś jest zimno."
+          },
+          {
+            "target": "Pada kiša.",
+            "source": "Pada deszcz."
+          },
+          {
+            "target": "Puše vjetar.",
+            "source": "Wieje wiatr."
+          }
         ]
       }
     ]

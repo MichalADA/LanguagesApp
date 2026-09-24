@@ -90,7 +90,8 @@ export const LESSON: GeneratedLesson = {
           "tam",
           "wejście"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "recall-2",
@@ -103,7 +104,8 @@ export const LESSON: GeneratedLesson = {
           "w prawo",
           "dworzec"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "recall-3",
@@ -116,7 +118,8 @@ export const LESSON: GeneratedLesson = {
           "mieć",
           "apteka"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -329,10 +332,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Oprostite, gdje je banka? — Przepraszam, gdzie jest bank?",
-          "Idite ravno pa lijevo. — Proszę iść prosto, potem w lewo.",
-          "Trgovina je blizu parka. — Sklep jest blisko parku.",
-          "Idem u centar. — Idę do centrum."
+          {
+            "target": "Oprostite, gdje je banka?",
+            "source": "Przepraszam, gdzie jest bank?"
+          },
+          {
+            "target": "Idite ravno pa lijevo.",
+            "source": "Proszę iść prosto, potem w lewo."
+          },
+          {
+            "target": "Trgovina je blizu parka.",
+            "source": "Sklep jest blisko parku."
+          },
+          {
+            "target": "Idem u centar.",
+            "source": "Idę do centrum."
+          }
         ],
         "canDo": [
           "zapytać o położenie prostego miejsca",

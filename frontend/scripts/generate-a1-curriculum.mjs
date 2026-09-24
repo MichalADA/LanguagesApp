@@ -17,6 +17,8 @@ import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createRequire } from "node:module";
+import { attachAudio, buildManifest } from "./lib/course-audio.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE_DIR = join(ROOT, "curriculum/hr-a1");
@@ -26,6 +28,10 @@ const DRY = process.argv.includes("--dry");
 const DIDACTICS_PATH = join(SOURCE_DIR, "didactics.json");
 const LISTENING_PATH = join(ROOT, "public/data/listening/hr-a1-dialogues.json");
 const OUT_DIR = join(ROOT, "src/curriculum/data/hr-a1");
+const AUDIO_CONFIG_PATH = join(SOURCE_DIR, "audio.json");
+const AUDIO_MANIFEST_PATH = join(SOURCE_DIR, "audio-manifest.json");
+const PUBLIC_DIR = join(ROOT, "public");
+const DEMO_LESSON_PATH = join(ROOT, "src/curriculum/data/lessons/a1-01-02.ts");
 const CHECK = process.argv.includes("--check");
 
 /* ------------------------------------------------------------------ */
@@ -241,13 +247,13 @@ function wordStep(id, record, sentences) {
 }
 
 /** Wybór jednej z opcji; poprawna pozycja rotuje deterministycznie. */
-function choiceStep(id, stage, instruction, prompt, correct, distractors, rotate, explanation) {
+function choiceStep(id, stage, instruction, prompt, correct, distractors, rotate, explanation, targetText = "prompt") {
   const pool = unique(distractors.filter((d) => fold(d) !== fold(correct))).slice(0, 2);
   if (pool.length < 2) fail(`${id}: za mało dystraktorów dla „${prompt}”`);
   const options = [...pool];
   const at = rotate % 3;
   options.splice(at, 0, correct);
-  return { id, stage, type: "choice", instruction, prompt, options, correctIndex: at, ...(explanation ? { explanation } : {}) };
+  return { id, stage, type: "choice", instruction, prompt, options, correctIndex: at, ...(explanation ? { explanation } : {}), targetText };
 }
 
 function pickDistractors(list, exclude, rand, n = 2) {
@@ -389,7 +395,7 @@ function buildRegular(bucket) {
     id: "intro", stage: "intro", type: "intro", title: lesson.lesson_title_pl,
     body: `Po tej lekcji będziesz umieć ${lowerFirst(stripDot(lesson.communicative_goal))}.`,
     goalsTitle: "Powiesz między innymi",
-    goals: all.slice(0, 3).map((s) => `${s.hr} — ${s.pl}`),
+    goals: all.slice(0, 3).map(bi),
   });
 
   if (kindOf(n) === "conversation") {
@@ -404,7 +410,7 @@ function buildRegular(bucket) {
       group.forEach((word) => steps.push(wordStep(`word-${word.sequence}`, word, sentences)));
       const asked = group[(n + g) % group.length];
       if (g === 1) {
-        steps.push(choiceStep(`check-${g + 1}`, "words", "Jak powiesz to po chorwacku?", asked.pl_text, asked.hr_text, pickDistractors(hr, asked.hr_text, rand), n + g));
+        steps.push(choiceStep(`check-${g + 1}`, "words", "Jak powiesz to po chorwacku?", asked.pl_text, asked.hr_text, pickDistractors(hr, asked.hr_text, rand), n + g, undefined, "options"));
       } else {
         steps.push(choiceStep(`check-${g + 1}`, "words", "Co znaczy to słowo?", asked.hr_text, asked.pl_text, pickDistractors(pl, asked.pl_text, rand), n + g));
       }
@@ -422,7 +428,7 @@ function buildRegular(bucket) {
   const comprehend = d.comprehend ? comprehendStep("comprehend", "practice", sentenceOf(id, d.comprehend), all.filter((s) => s.hr !== sentenceOf(id, d.comprehend).hr), n) : null;
   const translations = (d.translate ?? []).map((t, i) => translateStep(`translate-${i + 1}`, "practice", sentenceOf(id, t.sentence), t.accept));
   const order = d.order ? orderStep("order", "practice", sentenceOf(id, d.order), rand) : null;
-  const extraChoices = (d.choices ?? []).map((c, i) => ({ id: `choice-${i + 1}`, stage: "practice", type: "choice", instruction: c.instruction, prompt: c.prompt, options: c.options, correctIndex: c.correct, ...(c.explanation ? { explanation: c.explanation } : {}) }));
+  const extraChoices = (d.choices ?? []).map((c, i) => ({ id: `choice-${i + 1}`, stage: "practice", type: "choice", instruction: c.instruction, prompt: c.prompt, options: c.options, correctIndex: c.correct, ...(c.explanation ? { explanation: c.explanation } : {}), targetText: "options" }));
   const [t1, ...rest] = translations;
   if (n % 2) practice.push(comprehend, ...extraChoices, t1, order, ...rest);
   else practice.push(t1, order, ...extraChoices, comprehend, ...rest);
@@ -436,7 +442,7 @@ function buildRegular(bucket) {
   if (d.free) steps.push(freeStep("free", d.free));
 
   const recapCount = kindOf(n) === "conversation" ? 5 : 4;
-  steps.push(summaryStep(all.slice(0, recapCount).map((s) => `${s.hr} — ${s.pl}`)));
+  steps.push(summaryStep(all.slice(0, recapCount).map(bi)));
   return steps;
 }
 
@@ -506,7 +512,7 @@ function buildReview(bucket) {
   if (d.canDo) steps.push(freeStep("can-do", d.canDo));
 
   const all = sentences.map((r) => sentenceOf(id, r.sequence));
-  steps.push(summaryStep(all.slice(0, 4).map((s) => `${s.hr} — ${s.pl}`), { canDo: goals.map(lowerFirst) }));
+  steps.push(summaryStep(all.slice(0, 4).map(bi), { canDo: goals.map(lowerFirst) }));
   return steps;
 }
 
@@ -558,7 +564,7 @@ function buildSpiral(bucket) {
   steps.push(dialogStep(id, d.dialog), freeStep("can-do", d.canDo));
 
   const own = sentences.map((r) => sentenceOf(id, r.sequence));
-  steps.push(summaryStep(own.slice(2).map((x) => `${x.hr} — ${x.pl}`)));
+  steps.push(summaryStep(own.slice(2).map(bi)));
   return steps;
 }
 
@@ -653,29 +659,51 @@ const json = (value) => JSON.stringify(value, null, 2);
 const files = new Map();
 const outline = [];
 
-for (const bucket of ordered) {
+/** Ręcznie napisana lekcja demo (TypeScript) → obiekt, żeby dołączyć do niej materiał i audio z CSV. */
+function loadDemoLesson() {
+  const ts = createRequire(import.meta.url)("typescript");
+  const { outputText } = ts.transpileModule(readFileSync(DEMO_LESSON_PATH, "utf8"), { compilerOptions: { module: ts.ModuleKind.CommonJS } });
+  const exports = {};
+  new Function("exports", "require", outputText)(exports, () => ({}));
+  return structuredClone(exports.LESSON_A1_01_02);
+}
+
+// 1. Treść wszystkich lekcji.
+const built = ordered.map((bucket) => {
   const n = lessonNo(bucket);
   const kind = kindOf(n);
   const moduleNo = Number(bucket.lesson.module_no);
   const order = n - (moduleNo - 1) * 5;
   const appId = `a1-${pad(moduleNo)}-${pad(order)}`;
-  const fileName = `module-${pad(moduleNo)}/lesson-${pad(order)}.ts`;
   const vocabulary = bucket.vocabulary.map(vocabItem);
-  const material = materialOf(bucket);
   const isOverride = Boolean(didactics.overrides?.[bucket.lesson.lesson_id]);
+  // Lekcja demo zostaje w swoim pliku jako źródło; generator dołącza słownictwo z CSV.
+  const content = isOverride
+    ? { ...loadDemoLesson(), vocabulary }
+    : (() => {
+        const steps = kind === "test" ? buildTest(bucket) : kind === "spiral" ? buildSpiral(bucket) : kind === "review" ? buildReview(bucket) : buildRegular(bucket);
+        return { lessonId: appId, ...(kind === "test" ? { mode: "test" } : {}), vocabulary, steps };
+      })();
+  return { bucket, n, kind, moduleNo, order, appId, isOverride, content, material: materialOf(bucket), fileName: `module-${pad(moduleNo)}/lesson-${pad(order)}.ts` };
+});
 
-  let steps;
-  let body;
-  if (isOverride) {
-    // Ręcznie napisana lekcja demo zostaje; dołączamy do niej słownictwo i materiał z CSV.
-    body = `import type { GeneratedLesson } from "../../../types";\nimport { LESSON_A1_01_02 } from "../../lessons/a1-01-02";\n\nexport const LESSON: GeneratedLesson = {\n  content: { ...LESSON_A1_01_02, vocabulary: ${json(vocabulary).replace(/\n/g, "\n  ")} },\n  material: ${json(material).replace(/\n/g, "\n  ")},\n};\n`;
-    steps = null;
-  } else {
-    steps = kind === "test" ? buildTest(bucket) : kind === "spiral" ? buildSpiral(bucket) : kind === "review" ? buildReview(bucket) : buildRegular(bucket);
-    const content = { lessonId: appId, ...(kind === "test" ? { mode: "test" } : {}), vocabulary, steps };
-    body = `import type { GeneratedLesson } from "../../../types";\n\nexport const LESSON: GeneratedLesson = {\n  content: ${json(content).replace(/\n/g, "\n  ")},\n  material: ${json(material).replace(/\n/g, "\n  ")},\n};\n`;
-  }
-  files.set(fileName, HEADER(`${appId} · ${bucket.lesson.lesson_title_pl}`) + body);
+// 2. Audio: manifest nagrań dla modułów z curriculum/hr-a1/audio.json + audioSrc tam, gdzie plik już istnieje.
+const audioConfig = JSON.parse(readFileSync(AUDIO_CONFIG_PATH, "utf8"));
+const previousManifest = existsSync(AUDIO_MANIFEST_PATH) ? JSON.parse(readFileSync(AUDIO_MANIFEST_PATH, "utf8")) : null;
+const lessonsByModule = new Map(audioConfig.modules.map((m) => [m, built.filter((b) => b.moduleNo === m)]));
+const audioManifest = buildManifest(audioConfig, previousManifest, lessonsByModule);
+const audioStats = { attached: 0, missing: 0 };
+for (const lesson of built) {
+  if (!audioConfig.modules.includes(lesson.moduleNo)) continue;
+  const result = attachAudio(lesson.content, audioConfig, audioManifest, PUBLIC_DIR);
+  audioStats.attached += result.attached;
+  audioStats.missing += result.missing;
+}
+
+// 3. Emisja.
+for (const { bucket, kind, moduleNo, order, appId, isOverride, content, material, fileName } of built) {
+  const body = `import type { GeneratedLesson } from "../../../types";\n\nexport const LESSON: GeneratedLesson = {\n  content: ${json(content).replace(/\n/g, "\n  ")},\n  material: ${json(material).replace(/\n/g, "\n  ")},\n};\n`;
+  files.set(fileName, HEADER(`${appId} · ${bucket.lesson.lesson_title_pl}${isOverride ? " (treść: src/curriculum/data/lessons/a1-01-02.ts)" : ""}`) + body);
 
   outline.push({
     moduleNo,
@@ -686,7 +714,7 @@ for (const bucket of ordered) {
       order,
       title: bucket.lesson.lesson_title_pl,
       shortDescription: bucket.lesson.communicative_goal,
-      estimatedMinutes: steps ? estimateMinutes(steps) : 12,
+      estimatedMinutes: isOverride ? 12 : estimateMinutes(content.steps),
       status: "not_started",
       hasContent: true,
       kind,
@@ -738,6 +766,15 @@ function listExisting(dir, base = dir) {
   );
 }
 
+const manifestText = `${json(audioManifest)}\n`;
+const audioReport = () => {
+  const present = audioManifest.items.filter((item) => existsSync(join(PUBLIC_DIR, item.audioPath))).length;
+  console.log(
+    `Audio (moduły ${audioManifest.modules.join(", ")}): ${audioManifest.items.length} unikalnych tekstów, ${audioManifest.characters} znaków; ` +
+      `nagrania: ${present} istnieje, ${audioManifest.items.length - present} brakuje; audioSrc w lekcjach: ${audioStats.attached} (${audioStats.missing} czeka na pliki).`,
+  );
+};
+
 if (DRY) {
   console.log(`OK (dry): ${files.size} plików, ${records.length} rekordów CSV.`);
 } else if (CHECK) {
@@ -747,11 +784,13 @@ if (DRY) {
     if (!existsSync(path) || readFileSync(path, "utf8") !== content) stale.push(name);
   }
   const extraFiles = listExisting(OUT_DIR).filter((f) => !files.has(f));
+  if (!existsSync(AUDIO_MANIFEST_PATH) || readFileSync(AUDIO_MANIFEST_PATH, "utf8") !== manifestText) stale.push(relative(ROOT, AUDIO_MANIFEST_PATH));
   if (stale.length || extraFiles.length) {
     console.error(`Wygenerowane pliki są nieaktualne. Uruchom: npm run curriculum:a1\n${[...stale, ...extraFiles.map((f) => `${f} (zbędny)`)].map((f) => `- ${f}`).join("\n")}`);
     process.exit(1);
   }
   console.log(`OK: ${files.size} plików aktualnych (40 lekcji, ${records.length} rekordów CSV).`);
+  audioReport();
 } else {
   rmSync(OUT_DIR, { recursive: true, force: true });
   for (const [name, content] of files) {
@@ -759,6 +798,8 @@ if (DRY) {
     mkdirSync(dirname(path), { recursive: true });
     writeFileSync(path, content);
   }
+  writeFileSync(AUDIO_MANIFEST_PATH, manifestText);
   console.log(`Wygenerowano ${files.size} plików w ${relative(ROOT, OUT_DIR)} (40 lekcji, ${records.length} rekordów CSV, poprawek: ${appliedCorrections.length}).`);
+  audioReport();
 }
 if (warnings.length) console.warn(`Ostrzeżenia (${warnings.length}):\n- ${warnings.join("\n- ")}`);

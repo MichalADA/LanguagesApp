@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zrozumieć i podać bardzo proste kierunki.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Idite ravno. — Proszę iść prosto.",
-          "Skrenite lijevo. — Proszę skręcić w lewo.",
-          "Skrenite desno na semaforu. — Proszę skręcić w prawo na światłach."
+          {
+            "target": "Idite ravno.",
+            "source": "Proszę iść prosto."
+          },
+          {
+            "target": "Skrenite lijevo.",
+            "source": "Proszę skręcić w lewo."
+          },
+          {
+            "target": "Skrenite desno na semaforu.",
+            "source": "Proszę skręcić w prawo na światłach."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "skrzyżowanie",
           "w prawo"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -174,7 +184,8 @@ export const LESSON: GeneratedLesson = {
           "ravno",
           "lijevo"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -207,7 +218,8 @@ export const LESSON: GeneratedLesson = {
           "wejście",
           "przejść"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -253,7 +265,8 @@ export const LESSON: GeneratedLesson = {
           "Proszę skręcić w lewo.",
           "Proszę przejść przez ulicę."
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -420,10 +433,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Idite ravno. — Proszę iść prosto.",
-          "Skrenite lijevo. — Proszę skręcić w lewo.",
-          "Skrenite desno na semaforu. — Proszę skręcić w prawo na światłach.",
-          "Prijeđite ulicu. — Proszę przejść przez ulicę."
+          {
+            "target": "Idite ravno.",
+            "source": "Proszę iść prosto."
+          },
+          {
+            "target": "Skrenite lijevo.",
+            "source": "Proszę skręcić w lewo."
+          },
+          {
+            "target": "Skrenite desno na semaforu.",
+            "source": "Proszę skręcić w prawo na światłach."
+          },
+          {
+            "target": "Prijeđite ulicu.",
+            "source": "Proszę przejść przez ulicę."
+          }
         ]
       }
     ]

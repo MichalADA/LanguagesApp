@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, co lubisz i czego nie lubisz.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Volim kavu. — Lubię kawę.",
-          "Ne volim juhu. — Nie lubię zupy.",
-          "Volim jesti ribu. — Lubię jeść rybę."
+          {
+            "target": "Volim kavu.",
+            "source": "Lubię kawę."
+          },
+          {
+            "target": "Ne volim juhu.",
+            "source": "Nie lubię zupy."
+          },
+          {
+            "target": "Volim jesti ribu.",
+            "source": "Lubię jeść rybę."
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "smaczny",
           "pić"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -158,7 +168,8 @@ export const LESSON: GeneratedLesson = {
           "slan",
           "voljeti"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -195,7 +206,8 @@ export const LESSON: GeneratedLesson = {
           "spragniony",
           "smaczny"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -242,7 +254,8 @@ export const LESSON: GeneratedLesson = {
           "Nie lubię zupy.",
           "Jestem spragniona."
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -359,10 +372,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Volim kavu. — Lubię kawę.",
-          "Ne volim juhu. — Nie lubię zupy.",
-          "Volim jesti ribu. — Lubię jeść rybę.",
-          "On voli piti čaj. — On lubi pić herbatę."
+          {
+            "target": "Volim kavu.",
+            "source": "Lubię kawę."
+          },
+          {
+            "target": "Ne volim juhu.",
+            "source": "Nie lubię zupy."
+          },
+          {
+            "target": "Volim jesti ribu.",
+            "source": "Lubię jeść rybę."
+          },
+          {
+            "target": "On voli piti čaj.",
+            "source": "On lubi pić herbatę."
+          }
         ]
       }
     ]

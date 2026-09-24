@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zamówić posiłek i poprosić o rachunek.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Imate li jelovnik? — Czy mają Państwo menu?",
-          "Htio bih naručiti ribu. — Chciałbym zamówić rybę.",
-          "Htjela bih salatu. — Chciałabym sałatkę."
+          {
+            "target": "Imate li jelovnik?",
+            "source": "Czy mają Państwo menu?"
+          },
+          {
+            "target": "Htio bih naručiti ribu.",
+            "source": "Chciałbym zamówić rybę."
+          },
+          {
+            "target": "Htjela bih salatu.",
+            "source": "Chciałabym sałatkę."
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "menu",
           "sałatka"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -166,7 +176,8 @@ export const LESSON: GeneratedLesson = {
           "restoran",
           "riža"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -199,7 +210,8 @@ export const LESSON: GeneratedLesson = {
           "sałatka",
           "restauracja"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -245,7 +257,8 @@ export const LESSON: GeneratedLesson = {
           "Czy to jest ostre?",
           "Chciałbym zamówić rybę."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -433,10 +446,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Imate li jelovnik? — Czy mają Państwo menu?",
-          "Htio bih naručiti ribu. — Chciałbym zamówić rybę.",
-          "Htjela bih salatu. — Chciałabym sałatkę.",
-          "Za mene juhu, molim. — Dla mnie zupa, proszę."
+          {
+            "target": "Imate li jelovnik?",
+            "source": "Czy mają Państwo menu?"
+          },
+          {
+            "target": "Htio bih naručiti ribu.",
+            "source": "Chciałbym zamówić rybę."
+          },
+          {
+            "target": "Htjela bih salatu.",
+            "source": "Chciałabym sałatkę."
+          },
+          {
+            "target": "Za mene juhu, molim.",
+            "source": "Dla mnie zupa, proszę."
+          }
         ]
       }
     ]

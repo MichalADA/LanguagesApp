@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zameldować się i podać podstawowe dane rezerwacji.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Imam rezervaciju. — Mam rezerwację.",
-          "Rezervacija je na ime Michał. — Rezerwacja jest na nazwisko / imię Michał.",
-          "Gdje je recepcija? — Gdzie jest recepcja?"
+          {
+            "target": "Imam rezervaciju.",
+            "source": "Mam rezerwację."
+          },
+          {
+            "target": "Rezervacija je na ime Michał.",
+            "source": "Rezerwacja jest na nazwisko / imię Michał."
+          },
+          {
+            "target": "Gdje je recepcija?",
+            "source": "Gdzie jest recepcja?"
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "recepcja",
           "noc"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -166,7 +176,8 @@ export const LESSON: GeneratedLesson = {
           "putovnica",
           "soba"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "paszport",
           "śniadanie"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -249,7 +261,8 @@ export const LESSON: GeneratedLesson = {
           "Mam rezerwację.",
           "Rezerwacja jest na nazwisko / imię Michał."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -440,10 +453,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Imam rezervaciju. — Mam rezerwację.",
-          "Rezervacija je na ime Michał. — Rezerwacja jest na nazwisko / imię Michał.",
-          "Gdje je recepcija? — Gdzie jest recepcja?",
-          "Trebam sobu za dvije noći. — Potrzebuję pokoju na dwie noce."
+          {
+            "target": "Imam rezervaciju.",
+            "source": "Mam rezerwację."
+          },
+          {
+            "target": "Rezervacija je na ime Michał.",
+            "source": "Rezerwacja jest na nazwisko / imię Michał."
+          },
+          {
+            "target": "Gdje je recepcija?",
+            "source": "Gdzie jest recepcja?"
+          },
+          {
+            "target": "Trebam sobu za dvije noći.",
+            "source": "Potrzebuję pokoju na dwie noce."
+          }
         ]
       }
     ]

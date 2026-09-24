@@ -90,7 +90,8 @@ export const LESSON: GeneratedLesson = {
           "pochmurno",
           "sport"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "recall-2",
@@ -103,7 +104,8 @@ export const LESSON: GeneratedLesson = {
           "pływać",
           "pogoda / czas"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "recall-3",
@@ -116,7 +118,8 @@ export const LESSON: GeneratedLesson = {
           "deszcz",
           "ciepło"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -331,10 +334,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Vikendom se odmaram. — W weekend odpoczywam.",
-          "Rado idem na bazen. — Chętnie chodzę na basen.",
-          "Često sam s prijateljima. — Często jestem z przyjaciółmi.",
-          "Volim sport i glazbu. — Lubię sport i muzykę."
+          {
+            "target": "Vikendom se odmaram.",
+            "source": "W weekend odpoczywam."
+          },
+          {
+            "target": "Rado idem na bazen.",
+            "source": "Chętnie chodzę na basen."
+          },
+          {
+            "target": "Često sam s prijateljima.",
+            "source": "Często jestem z przyjaciółmi."
+          },
+          {
+            "target": "Volim sport i glazbu.",
+            "source": "Lubię sport i muzykę."
+          }
         ],
         "canDo": [
           "powiedzieć, co robisz dla przyjemności",
