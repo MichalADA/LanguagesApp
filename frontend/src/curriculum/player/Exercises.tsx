@@ -1,15 +1,20 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import { Icon } from "@/components/Icon";
 import { AnswerInput } from "@/components/AnswerInput";
 import { SpecialCharacters } from "@/components/SpecialCharacters";
 import { useCourse } from "@/courses/CourseProvider";
 import { useT } from "@/i18n";
 import type { Verdict } from "@/services/validation";
-import { checkLessonAnswer, reviewFreeResponse, type FreeResponseReview } from "../answers";
-import type { ChoiceStep, DialogStep, FreeResponseStep, GapStep, TranslateStep } from "../types";
+import { checkLessonAnswerDetailed, reviewFreeResponse, type FreeResponseReview, type LessonAnswerCheck } from "../answers";
+import { useAudioSequence } from "../speech";
+import type { ChoiceStep, ComprehensionQuestion, DialogStep, FreeResponseStep, GapStep, ListeningStep, OrderStep, ReadingStep, TranslateStep } from "../types";
 import { Feedback, StepFooter } from "./StepFooter";
 
+/** Wynik kroku: jedno pytanie (true/false) albo kilka pytań w jednym kroku. */
+export type StepScore = { correct: number; total: number };
+
 /** Każde ćwiczenie zgłasza wynik raz, przy przejściu dalej. */
-type Done = (correct: boolean) => void;
+type Done = (result: boolean | StepScore) => void;
 
 const LETTERS = ["a", "b", "c", "d", "e"];
 
@@ -66,17 +71,17 @@ export function ExerciseMultipleChoice({ step, onNext }: { step: ChoiceStep; onN
 function useChecked(accepted: readonly string[], pattern?: string) {
   const { course } = useCourse();
   const [value, setValue] = useState("");
-  const [verdict, setVerdict] = useState<Verdict | null>(null);
+  const [result, setResult] = useState<LessonAnswerCheck | null>(null);
   const check = () => {
-    if (!value.trim() || verdict) return;
-    setVerdict(checkLessonAnswer(value, accepted, course.validation, pattern));
+    if (!value.trim() || result) return;
+    setResult(checkLessonAnswerDetailed(value, accepted, course.validation, pattern));
   };
-  return { value, setValue, verdict, check, characters: course.specialCharacters };
+  return { value, setValue, verdict: result?.verdict ?? null, expected: result?.expected ?? null, check, characters: course.specialCharacters };
 }
 
 export function ExerciseTranslation({ step, onNext }: { step: TranslateStep; onNext: Done }) {
   const t = useT();
-  const { value, setValue, verdict, check, characters } = useChecked(step.accepted);
+  const { value, setValue, verdict, expected, check, characters } = useChecked(step.accepted);
   const [hint, setHint] = useState(false);
   return (
     <>
@@ -105,7 +110,7 @@ export function ExerciseTranslation({ step, onNext }: { step: TranslateStep; onN
         label={t(verdict ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!verdict && !value.trim()}
         onAction={verdict ? () => onNext(verdict !== "miss") : check}
-        feedback={verdict ? <Feedback verdict={verdict} answer={step.accepted[0]} /> : null}
+        feedback={verdict ? <Feedback verdict={verdict} answer={verdict === "miss" ? step.accepted[0] : expected} /> : null}
       />
     </>
   );
@@ -113,7 +118,10 @@ export function ExerciseTranslation({ step, onNext }: { step: TranslateStep; onN
 
 export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done }) {
   const t = useT();
-  const { value, setValue, verdict, check, characters } = useChecked(step.accepted);
+  const { value, setValue, verdict, expected, check, characters } = useChecked(step.accepted);
+  // Interpunkcja zaraz po luce („Dobro ___, hvala.”) przykleja się do pola, bez odstępu.
+  const [, punct = "", rest = ""] = step.after.match(/^([.,!?;:]*)\s*(.*)$/) ?? [];
+  const sentence = (word: string) => [step.before, `${word}${punct}`, rest].filter(Boolean).join(" ");
   const ref = useRef<HTMLInputElement>(null);
   useEffect(() => {
     const id = window.setTimeout(() => ref.current?.focus(), 30);
@@ -131,7 +139,8 @@ export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done 
       <div className="step">
         <span className="step-instruction">{step.instruction}</span>
         <p className="gap-sentence target">
-          <span>{step.before}</span>
+          {step.before && <span>{step.before}</span>}
+          <span className="gap-slot">
           <input
             ref={ref}
             className={`gap-input ${verdict ?? ""}`}
@@ -150,7 +159,9 @@ export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done 
               }
             }}
           />
-          <span>{step.after}</span>
+            {punct}
+          </span>
+          {rest && <span>{rest}</span>}
         </p>
         <p className="muted gap-translation">{step.translation}</p>
         <SpecialCharacters characters={characters} onInsert={insert} />
@@ -160,7 +171,7 @@ export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done 
         label={t(verdict ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!verdict && !value.trim()}
         onAction={verdict ? () => onNext(verdict !== "miss") : check}
-        feedback={verdict ? <Feedback verdict={verdict} answer={`${step.before} ${step.accepted[0]} ${step.after}`} /> : null}
+        feedback={verdict ? <Feedback verdict={verdict} answer={sentence(verdict === "near" && expected ? expected : step.accepted[0])} /> : null}
       />
     </>
   );
@@ -174,7 +185,8 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
   const { course } = useCourse();
   const [answers, setAnswers] = useState<{ text: string; verdict: Verdict }[]>([]);
   const [value, setValue] = useState("");
-  const [pending, setPending] = useState<Verdict | null>(null);
+  const [pendingCheck, setPendingCheck] = useState<LessonAnswerCheck | null>(null);
+  const pending = pendingCheck?.verdict ?? null;
 
   // Widoczne tury: wszystko do bieżącej odpowiedzi włącznie.
   const replyIndexes = step.turns.map((turn, index) => (turn.kind === "reply" ? index : -1)).filter((i) => i >= 0);
@@ -185,13 +197,13 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
 
   const check = () => {
     if (!turn || !value.trim() || pending) return;
-    setPending(checkLessonAnswer(value, turn.accepted, course.validation, turn.pattern));
+    setPendingCheck(checkLessonAnswerDetailed(value, turn.accepted, course.validation, turn.pattern));
   };
   const commit = () => {
     if (!pending) return;
     setAnswers((prev) => [...prev, { text: value.trim(), verdict: pending }]);
     setValue("");
-    setPending(null);
+    setPendingCheck(null);
   };
 
   let replyCounter = 0;
@@ -243,8 +255,8 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
       <StepFooter
         label={t(done || pending ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!done && !pending && !value.trim()}
-        onAction={done ? () => onNext(answers.every((answer) => answer.verdict !== "miss")) : pending ? commit : check}
-        feedback={pending && turn ? <Feedback verdict={pending} answer={turn.suggestion} /> : null}
+        onAction={done ? () => onNext({ correct: answers.filter((answer) => answer.verdict !== "miss").length, total: answers.length }) : pending ? commit : check}
+        feedback={pending && turn ? <Feedback verdict={pending} answer={pending === "miss" ? turn.suggestion : pendingCheck?.expected} /> : null}
       />
     </>
   );
@@ -325,5 +337,201 @@ export function ExerciseFreeResponse({ step, onNext }: { step: FreeResponseStep;
         }
       />
     </>
+  );
+}
+
+/** Ułóż zdanie z rozsypanych słów — klik dodaje słowo, klik w ułożone je cofa. */
+export function ExerciseWordOrder({ step, onNext }: { step: OrderStep; onNext: Done }) {
+  const t = useT();
+  const { course } = useCourse();
+  const [picked, setPicked] = useState<number[]>([]);
+  const [result, setResult] = useState<LessonAnswerCheck | null>(null);
+  const built = picked.map((index) => step.tokens[index]).join(" ");
+  const complete = picked.length === step.tokens.length;
+
+  const check = () => {
+    if (!complete || result) return;
+    setResult(checkLessonAnswerDetailed(built, step.accepted, course.validation));
+  };
+
+  return (
+    <>
+      <div className="step">
+        <span className="step-instruction">{step.instruction}</span>
+        <p className="step-prompt">{step.translation}</p>
+        <div className={`order-built ${result?.verdict ?? ""}`} aria-live="polite">
+          {picked.length === 0 && <span className="order-placeholder">{t("curriculum.player.orderHint")}</span>}
+          {picked.map((index, position) => (
+            <button
+              key={`${index}-${position}`}
+              type="button"
+              className="order-token placed"
+              disabled={Boolean(result)}
+              onClick={() => setPicked((prev) => prev.filter((_, i) => i !== position))}
+            >
+              {step.tokens[index]}
+            </button>
+          ))}
+        </div>
+        <div className="order-bank" role="group" aria-label={step.instruction}>
+          {step.tokens.map((token, index) => (
+            <button
+              key={`${token}-${index}`}
+              type="button"
+              className="order-token"
+              disabled={picked.includes(index) || Boolean(result)}
+              onClick={() => setPicked((prev) => [...prev, index])}
+            >
+              {token}
+            </button>
+          ))}
+        </div>
+        {!result && picked.length > 0 && (
+          <button type="button" className="linklike order-clear" onClick={() => setPicked([])}>
+            {t("curriculum.player.clear")}
+          </button>
+        )}
+      </div>
+      <StepFooter
+        label={t(result ? "curriculum.player.next" : "curriculum.player.check")}
+        disabled={!result && !complete}
+        onAction={result ? () => onNext(result.verdict !== "miss") : check}
+        feedback={result ? <Feedback verdict={result.verdict} answer={result.verdict === "miss" ? step.accepted[0] : result.expected} /> : null}
+      />
+    </>
+  );
+}
+
+/** Pytania na rozumienie zadawane po kolei pod tekstem lub nagraniem. */
+function QuestionSequence({
+  questions,
+  onDone,
+  children,
+}: {
+  questions: ComprehensionQuestion[];
+  onDone: (score: StepScore) => void;
+  children: ReactNode;
+}) {
+  const t = useT();
+  const [index, setIndex] = useState(0);
+  const [picked, setPicked] = useState<number | null>(null);
+  const [correct, setCorrect] = useState(0);
+  const question = questions[index];
+  const answered = picked !== null;
+  const last = index === questions.length - 1;
+
+  const pick = (option: number) => {
+    if (answered) return;
+    setPicked(option);
+    if (option === question.correctIndex) setCorrect((n) => n + 1);
+  };
+  const next = () => {
+    if (last) {
+      onDone({ correct, total: questions.length });
+      return;
+    }
+    setIndex((i) => i + 1);
+    setPicked(null);
+  };
+
+  return (
+    <>
+      <div className="step">
+        {children}
+        <div className="question-block">
+          <span className="step-instruction">{t("curriculum.player.question", { n: index + 1, total: questions.length })}</span>
+          <p className="question-prompt">{question.prompt}</p>
+          <div className="choice-list" role="group" aria-label={question.prompt}>
+            {question.options.map((option, i) => {
+              const state = !answered ? "" : i === question.correctIndex ? "correct" : i === picked ? "wrong" : "muted";
+              return (
+                <button key={option} type="button" className={`choice ${state}`} onClick={() => pick(i)} aria-disabled={answered} aria-pressed={picked === i}>
+                  <span className="choice-key">{LETTERS[i]}</span>
+                  <span>{option}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      <StepFooter
+        label={t("curriculum.player.next")}
+        disabled={!answered}
+        onAction={next}
+        feedback={answered ? <Feedback verdict={picked === question.correctIndex ? "hit" : "miss"} answer={question.options[question.correctIndex]} /> : null}
+      />
+    </>
+  );
+}
+
+export function ExerciseReading({ step, onNext }: { step: ReadingStep; onNext: Done }) {
+  const t = useT();
+  const [translate, setTranslate] = useState(false);
+  const hasTranslation = step.text.some((line) => line.source);
+  return (
+    <QuestionSequence questions={step.questions} onDone={onNext}>
+      <span className="step-instruction">{step.instruction}</span>
+      <article className="reading-text">
+        <div className="step-head">
+          <h2 className="reading-title">{step.title}</h2>
+          {hasTranslation && (
+            <button type="button" className="linklike" onClick={() => setTranslate((v) => !v)} aria-pressed={translate}>
+              {t(translate ? "curriculum.player.hideTranslation" : "curriculum.player.showTranslation")}
+            </button>
+          )}
+        </div>
+        <p>
+          {step.text.map((line, i) => (
+            <span key={i} className="reading-line">
+              <span className="target">{line.target}</span>
+              {translate && line.source && <span className="dialog-translation"> {line.source}</span>}{" "}
+            </span>
+          ))}
+        </p>
+      </article>
+    </QuestionSequence>
+  );
+}
+
+/** Słuchanie: nagrania z pilota słuchania; gdy audio zawiedzie, pokazujemy transkrypcję. */
+export function ExerciseListening({ step, onNext }: { step: ListeningStep; onNext: Done }) {
+  const t = useT();
+  const sources = step.lines.map((line) => line.audio).filter((src): src is string => Boolean(src));
+  const { play, stop, playing, failed, available } = useAudioSequence(sources.length === step.lines.length ? sources : []);
+  const [transcript, setTranscript] = useState(!available);
+  const showTranscript = transcript || failed;
+  return (
+    <QuestionSequence questions={step.questions} onDone={onNext}>
+      <span className="step-instruction">{step.instruction}</span>
+      <div className="listening-box">
+        <div className="listening-head">
+          <h2 className="reading-title">{step.title}</h2>
+          {available && (
+            <button type="button" className="btn-ghost listening-play" onClick={playing === null ? play : stop}>
+              <Icon name="volume" size={16} />
+              {t(playing === null ? "curriculum.player.play" : "curriculum.player.stop")}
+            </button>
+          )}
+        </div>
+        {(failed || !available) && <p className="meta">{t("curriculum.player.audioUnavailable")}</p>}
+        {!failed && available && (
+          <button type="button" className="linklike" onClick={() => setTranscript((v) => !v)} aria-pressed={transcript}>
+            {t(transcript ? "curriculum.player.hideTranscript" : "curriculum.player.showTranscript")}
+          </button>
+        )}
+        {showTranscript && (
+          <ol className="dialog-lines compact">
+            {step.lines.map((line, i) => (
+              <li key={i} className={`dialog-line${i % 2 ? " right" : ""}${playing === i ? " speaking" : ""}`}>
+                <span className="dialog-speaker">{line.speaker}</span>
+                <span className="dialog-bubble">
+                  <span className="target">{line.text}</span>
+                </span>
+              </li>
+            ))}
+          </ol>
+        )}
+      </div>
+    </QuestionSequence>
   );
 }

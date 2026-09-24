@@ -1,12 +1,14 @@
-import type { CourseOutline, LessonContent } from "./types";
+import type { CourseOutline, GeneratedLesson, LessonContent, LessonMaterial } from "./types";
 import { PL_HR_OUTLINE } from "./data/a1";
+import { HR_A1_LESSONS } from "./data/hr-a1/lessons";
 
 /**
  * Warstwa dostępu do danych kursu. DZIŚ: mock w pamięci.
  *
  * Podłączenie backendu = podmiana ciał tych funkcji, np.:
- *   fetchCourseOutline → GET /curriculum/:courseId            (CourseOutline)
- *   fetchLessonContent → GET /curriculum/lessons/:lessonId     (LessonContent)
+ *   fetchCourseOutline  → GET /curriculum/:courseId                  (CourseOutline)
+ *   fetchLessonContent  → GET /curriculum/lessons/:lessonId           (LessonContent)
+ *   fetchLessonMaterial → GET /curriculum/lessons/:lessonId/material  (LessonMaterial z CSV)
  *   fetchCompletedLessons / saveLessonCompletion → GET/POST /curriculum/progress
  * Funkcje są już asynchroniczne, więc komponenty mają stany ładowania
  * i błędu i nie wymagają zmian. Dla zalogowanych można przekazać
@@ -17,8 +19,9 @@ const OUTLINES: Record<string, CourseOutline> = {
   "pl-hr": PL_HR_OUTLINE,
 };
 
-const LESSON_LOADERS: Record<string, () => Promise<LessonContent>> = {
-  "a1-01-02": () => import("./data/lessons/a1-01-02").then((m) => m.LESSON_A1_01_02),
+/** Każda lekcja to osobny chunk — ładujemy tylko tę, którą użytkownik otwiera. */
+const LESSON_LOADERS: Record<string, () => Promise<GeneratedLesson>> = {
+  ...HR_A1_LESSONS,
 };
 
 export async function fetchCourseOutline(courseId: string): Promise<CourseOutline | null> {
@@ -27,7 +30,13 @@ export async function fetchCourseOutline(courseId: string): Promise<CourseOutlin
 
 export async function fetchLessonContent(lessonId: string): Promise<LessonContent | null> {
   const load = LESSON_LOADERS[lessonId];
-  return load ? load() : null;
+  return load ? (await load()).content : null;
+}
+
+/** Pełny materiał z CSV (słowa, zdania, blueprinty, źródła) — nie jest potrzebny playerowi. */
+export async function fetchLessonMaterial(lessonId: string): Promise<LessonMaterial | null> {
+  const load = LESSON_LOADERS[lessonId];
+  return load ? (await load()).material : null;
 }
 
 /* ---------- Postęp: lokalnie, per profil i kurs ---------- */

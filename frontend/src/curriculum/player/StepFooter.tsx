@@ -52,16 +52,37 @@ export function StepFooter({
   );
 }
 
-export function Feedback({ verdict, answer, explanation }: { verdict: Verdict; answer?: string; explanation?: string }) {
+export function Feedback({
+  verdict,
+  answer,
+  explanation,
+}: {
+  verdict: Verdict;
+  /** Przy „hit” pomijane; przy „near” — poprawna pisownia; przy „miss” — poprawna odpowiedź. */
+  answer?: string | null;
+  explanation?: string;
+}) {
   const t = useT();
+  const title = verdict === "hit" ? "correct" : verdict === "near" ? "near" : "wrong";
   return (
     <div className={`feedback ${verdict}`}>
       <span className="feedback-icon" aria-hidden="true">
         <Icon name={verdict === "miss" ? "close" : "check"} size={16} />
       </span>
       <div>
-        <strong>{t(`curriculum.player.${verdict === "hit" ? "correct" : verdict === "near" ? "near" : "wrong"}`)}</strong>
-        {verdict !== "hit" && answer && (
+        <strong>{t(`curriculum.player.${title}`)}</strong>
+        {verdict === "near" && (
+          <p>
+            {answer ? (
+              <>
+                {t("curriculum.player.spelling")} <span className="target">{answer}</span>
+              </>
+            ) : (
+              t("curriculum.player.spellingGeneric")
+            )}
+          </p>
+        )}
+        {verdict === "miss" && answer && (
           <p>
             {t("curriculum.player.answer")} <span className="target">{answer}</span>
           </p>

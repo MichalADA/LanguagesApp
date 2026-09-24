@@ -25,8 +25,23 @@ export interface CourseLesson {
   shortDescription: string;
   estimatedMinutes: number;
   status: StoredLessonStatus;
-  /** Czy lekcja ma już pełną treść (w demo: tylko jedna). */
+  /** Czy lekcja ma już pełną treść. */
   hasContent?: boolean;
+  /** Rodzaj lekcji: zwykła, powtórka modułu, rozmowa integrująca, test poziomu. */
+  kind?: LessonKind;
+  /** Metadane źródła (CSV) — nie są pokazywane w playerze. */
+  source?: LessonSourceMeta;
+}
+
+export type LessonKind = "lesson" | "review" | "conversation" | "spiral" | "test";
+
+export interface LessonSourceMeta {
+  /** lesson_id z CSV, np. "a1-02". */
+  lessonId: string;
+  grammarFocus: string;
+  communicativeGoal: string;
+  /** source_url — metadane researchowe (audyt treści), nie do UI. */
+  sources: string[];
 }
 
 export interface CourseModule {
@@ -67,9 +82,24 @@ export interface DialogLine {
   translation: string;
 }
 
+/** Sekcje testu poziomu — liczone osobno w wyniku. */
+export type TestSection = "vocabulary" | "reading" | "listening" | "grammar" | "translation" | "production";
+
+export const TEST_SECTIONS: TestSection[] = ["vocabulary", "reading", "listening", "grammar", "translation", "production"];
+
+/** Zdanie w dwóch językach — wspólny kształt przykładów i poleceń. */
+export interface Bilingual {
+  target: string;
+  source: string;
+}
+
 interface StepBase {
   id: string;
   stage: LessonStage;
+  /** Tylko w trybie testu: sekcja, do której liczy się wynik kroku. */
+  section?: TestSection;
+  /** Polecenie po chorwacku (z CSV), pokazywane nad instrukcją. */
+  instructionTarget?: Bilingual;
 }
 
 export interface IntroStep extends StepBase {
@@ -77,6 +107,8 @@ export interface IntroStep extends StepBase {
   title: string;
   body: string;
   goals: string[];
+  /** Nagłówek listy celów; domyślnie „Po tej lekcji”. */
+  goalsTitle?: string;
 }
 
 /** Krótki dialog do przeczytania / wysłuchania — kontekst przed nauką. */
@@ -92,7 +124,7 @@ export interface WordStep extends StepBase {
   target: string;
   source: string;
   partOfSpeech?: string;
-  example: { target: string; source: string };
+  example?: { target: string; source: string };
   /** Powiązane słowa pokazywane pod kartą. */
   related?: { target: string; source: string }[];
   note?: string;
@@ -103,7 +135,9 @@ export interface StructureStep extends StepBase {
   title: string;
   explanation: string;
   /** Pary „forma podstawowa → forma w konstrukcji”. */
-  table: { label: string; rows: { base: string; form: string; meaning: string }[] }[];
+  table?: { label: string; rows: { base: string; form: string; meaning: string }[] }[];
+  /** Przykładowe zdania z lekcji ilustrujące wzorzec. */
+  examples?: Bilingual[];
   note?: string;
 }
 
@@ -158,6 +192,51 @@ export interface SummaryStep extends StepBase {
   type: "summary";
   title: string;
   recap: string[];
+  /** „Po tym module potrafisz” — w powtórkach modułów. */
+  canDo?: string[];
+  /** Zdanie zamykające test (z CSV). */
+  closing?: Bilingual;
+}
+
+/** Ułóż zdanie z rozsypanych słów. */
+export interface OrderStep extends StepBase {
+  type: "order";
+  instruction: string;
+  translation: string;
+  tokens: string[];
+  accepted: string[];
+}
+
+export interface ComprehensionQuestion {
+  prompt: string;
+  options: string[];
+  correctIndex: number;
+}
+
+/** Krótki tekst + pytania na rozumienie. */
+export interface ReadingStep extends StepBase {
+  type: "reading";
+  instruction: string;
+  title: string;
+  text: Bilingual[];
+  questions: ComprehensionQuestion[];
+}
+
+/** Dialog do odsłuchania (nagranie lub TTS) + pytania. */
+export interface ListeningStep extends StepBase {
+  type: "listening";
+  instruction: string;
+  title: string;
+  lines: (DialogLine & { audio?: string })[];
+  questions: ComprehensionQuestion[];
+}
+
+/** Zwarta lista słów — np. słownictwo pomocnicze w powtórce. */
+export interface VocabListStep extends StepBase {
+  type: "vocabList";
+  title: string;
+  note?: string;
+  items: (Bilingual & { partOfSpeech?: string })[];
 }
 
 export type LessonStep =
@@ -170,11 +249,59 @@ export type LessonStep =
   | GapStep
   | DialogStep
   | FreeResponseStep
-  | SummaryStep;
+  | SummaryStep
+  | OrderStep
+  | ReadingStep
+  | ListeningStep
+  | VocabListStep;
+
+/** Słowo z lekcji — materiał do przyszłych powtórek (FSRS). */
+export interface LessonVocabularyItem {
+  target: string;
+  source: string;
+  lemma?: string;
+  partOfSpeech?: string;
+  /** record_id z CSV. */
+  recordId?: string;
+}
 
 export interface LessonContent {
   lessonId: string;
+  /** Zwykła lekcja albo test poziomu (osobny wynik per sekcja). */
+  mode?: "lesson" | "test";
   /** Słowa, które lekcja wprowadza — trafiają na ekran podsumowania. */
-  vocabulary: { target: string; source: string }[];
+  vocabulary: LessonVocabularyItem[];
   steps: LessonStep[];
+}
+
+/** Rekord CSV zachowany 1:1 (poza source_url, który jest na poziomie lekcji). */
+export interface CurriculumRecord {
+  recordId: string;
+  type: "lesson" | "vocabulary" | "sentence" | "exercise_blueprint";
+  sequence: number;
+  hr: string;
+  pl: string;
+  lemma: string;
+  partOfSpeech: string;
+  exerciseType: string;
+  acceptedAnswers: string[];
+  notes: string;
+  tags: string[];
+  /** Tylko gdy różni się od źródeł lekcji. */
+  sources?: string[];
+}
+
+/** Pełny materiał lekcji z CSV — do audytu, FSRS i przyszłego panelu admina. */
+export interface LessonMaterial {
+  sourceLessonId: string;
+  grammarFocus: string;
+  communicativeGoal: string;
+  sources: string[];
+  records: CurriculumRecord[];
+}
+
+/** Lekcja wygenerowana z CSV: treść dla playera + pełny materiał źródłowy. */
+export interface GeneratedLesson {
+  content: LessonContent;
+  material: LessonMaterial;
 }

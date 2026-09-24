@@ -1,8 +1,8 @@
 import { canonical, foldDiacritics, type Verdict } from "@/services/validation";
 import type { ValidationRules } from "@/courses/types";
 
-/** Końcowa interpunkcja nie zmienia sensu odpowiedzi w ćwiczeniach kursu. */
-const stripPunctuation = (value: string) => value.replace(/[.!?,;:]+$/g, "").replace(/\s+([.!?,;:])/g, "$1");
+/** Interpunkcja nie zmienia sensu odpowiedzi w ćwiczeniach kursu (Račun, molim = Račun molim). */
+const stripPunctuation = (value: string) => value.replace(/[.!?,;:„”"«»…]+/g, " ").replace(/\s+/g, " ").trim();
 
 /**
  * Sprawdza odpowiedź w ćwiczeniu kursu. Korzysta z reguł walidacji aktywnego
@@ -17,19 +17,45 @@ export function checkLessonAnswer(
   rules: ValidationRules,
   pattern?: string,
 ): Verdict {
-  if (!input.trim()) return "miss";
+  return checkLessonAnswerDetailed(input, accepted, rules, pattern).verdict;
+}
+
+export interface LessonAnswerCheck {
+  verdict: Verdict;
+  /**
+   * Wariant, do którego pasuje odpowiedź (przy „near” — poprawna pisownia tego,
+   * co wpisał użytkownik). Null, gdy odpowiedź przeszła tylko przez wzorzec.
+   */
+  expected: string | null;
+}
+
+/**
+ * Jak checkLessonAnswer, ale zwraca też wariant do pokazania w informacji zwrotnej.
+ * Błędna gramatyka nie przechodzi: porównujemy całe zdanie z listą wariantów
+ * albo ze wzorcem — ignorujemy tylko wielkość liter, interpunkcję i (jako „near”) diakrytykę.
+ */
+export function checkLessonAnswerDetailed(
+  input: string,
+  accepted: readonly string[],
+  rules: ValidationRules,
+  pattern?: string,
+): LessonAnswerCheck {
+  if (!input.trim()) return { verdict: "miss", expected: accepted[0] ?? null };
   const canon = (value: string) => stripPunctuation(canonical(value, rules));
   const fold = (value: string) => foldDiacritics(canon(value), rules);
   const answer = canon(input);
   const regex = pattern ? new RegExp(pattern, "u") : null;
 
-  if (accepted.some((item) => canon(item) === answer) || regex?.test(answer)) return "hit";
+  const exact = accepted.find((item) => canon(item) === answer);
+  if (exact) return { verdict: "hit", expected: exact };
+  if (regex?.test(answer)) return { verdict: "hit", expected: null };
   if (rules.diacriticsMatter) {
     const folded = fold(input);
-    if (accepted.some((item) => fold(item) === folded)) return "near";
-    if (regex && new RegExp(foldDiacritics(pattern!, rules), "u").test(folded)) return "near";
+    const near = accepted.find((item) => fold(item) === folded);
+    if (near) return { verdict: "near", expected: near };
+    if (regex && new RegExp(foldDiacritics(pattern!, rules), "u").test(folded)) return { verdict: "near", expected: null };
   }
-  return "miss";
+  return { verdict: "miss", expected: accepted[0] ?? null };
 }
 
 export interface FreeResponseReview {

@@ -9,6 +9,9 @@ import { LessonPlayer } from "@/curriculum/player/LessonPlayer";
 import { LessonProgress } from "@/curriculum/player/LessonProgress";
 import { nextLessonId } from "@/curriculum/progress";
 import { fetchLessonContent } from "@/curriculum/repository";
+import { queueLessonVocabulary } from "@/curriculum/srs";
+import { useAuth } from "@/auth/useAuth";
+import { useCourse } from "@/courses/CourseProvider";
 import type { LessonContent } from "@/curriculum/types";
 
 /** /lekcja/:lessonId — pełnoekranowy tryb skupienia, bez sidebaru. */
@@ -32,7 +35,14 @@ export function LessonPage() {
   const view = level ? levelView(level.id) : null;
   const moduleView = view?.modules.find((item) => item.lessons.some((row) => row.lesson.id === lessonId));
   const row = moduleView?.lessons.find((item) => item.lesson.id === lessonId);
-  const onComplete = useCallback(() => completeLesson(lessonId), [completeLesson, lessonId]);
+  const { user } = useAuth();
+  const { course } = useCourse();
+  const vocabulary = content?.id === lessonId ? content.data?.vocabulary : undefined;
+  // Ukończenie = dojście do podsumowania. Słowa trafiają do kolejki przyszłych powtórek (srs.ts).
+  const onComplete = useCallback(() => {
+    completeLesson(lessonId);
+    if (vocabulary) queueLessonVocabulary(user?.id ?? "guest", course.id, lessonId, vocabulary);
+  }, [completeLesson, lessonId, vocabulary, user?.id, course.id]);
 
   if (status !== "ready" || !content || content.id !== lessonId) {
     return (
@@ -73,7 +83,7 @@ export function LessonPage() {
   if (row.status === "locked") {
     return (
       <div className="lesson-shell">
-        <LessonProgress {...header} percent={0} stage={null} />
+        <LessonProgress {...header} percent={0} />
         <main className="lesson-stage lesson-message">
           <span className="lesson-message-icon"><Icon name="lock" size={22} /></span>
           <h2>{t("curriculum.player.locked")}</h2>
@@ -90,7 +100,7 @@ export function LessonPage() {
     const done = row.status === "completed";
     return (
       <div className="lesson-shell">
-        <LessonProgress {...header} percent={done ? 100 : 0} stage={null} />
+        <LessonProgress {...header} percent={done ? 100 : 0} />
         <main className="lesson-stage lesson-message">
           <span className="eyebrow">{t("curriculum.player.pendingTitle")}</span>
           <h2 className="display lesson-message-title">{row.lesson.title}</h2>

@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import { Icon } from "@/components/Icon";
 import { useT } from "@/i18n";
-import { LESSON_STAGES, type LessonStage } from "../types";
+
+export interface ProgressStage {
+  id: string;
+  label: string;
+}
 
 interface Props {
   position: string;
@@ -10,14 +14,16 @@ interface Props {
   closeTo: string;
   /** 0–100 */
   percent: number;
-  /** Bieżący etap; null, gdy lekcja nie ma treści. */
-  stage: LessonStage | null;
+  /** Etapy lekcji albo sekcje testu; puste, gdy lekcja nie ma treści. */
+  stages?: ProgressStage[];
+  /** Id bieżącego etapu (null — żaden, np. ekran wstępu testu). */
+  current?: string | null;
 }
 
 /** Nagłówek playera: gdzie jestem w kursie, ile lekcji za mną, na jakim etapie. */
-export function LessonProgress({ position, title, meta, closeTo, percent, stage }: Props) {
+export function LessonProgress({ position, title, meta, closeTo, percent, stages = [], current = null }: Props) {
   const t = useT();
-  const stageIndex = stage ? LESSON_STAGES.indexOf(stage) : -1;
+  const stageIndex = stages.findIndex((stage) => stage.id === current);
   return (
     <header className="lesson-top">
       <div className="lesson-top-row">
@@ -30,34 +36,28 @@ export function LessonProgress({ position, title, meta, closeTo, percent, stage 
           <span className="lesson-meta">{meta}</span>
         </div>
       </div>
-      <div
-        className="lesson-bar"
-        role="progressbar"
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-valuenow={Math.round(percent)}
-        aria-label={title}
-      >
+      <div className="lesson-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(percent)} aria-label={title}>
         <span style={{ width: `${percent}%` }} />
       </div>
-      {stage && (
+      {stages.length > 0 && (
         <>
-          <ol className="lesson-stages" aria-label={t("curriculum.player.stageOf", { n: stageIndex + 1, total: LESSON_STAGES.length })}>
-            {LESSON_STAGES.map((item, index) => (
+          <ol className="lesson-stages" aria-label={stageIndex >= 0 ? t("curriculum.player.stageOf", { n: stageIndex + 1, total: stages.length }) : title}>
+            {stages.map((stage, index) => (
               <li
-                key={item}
-                className={index < stageIndex ? "done" : index === stageIndex ? "on" : ""}
+                key={stage.id}
+                className={stageIndex >= 0 && index < stageIndex ? "done" : index === stageIndex ? "on" : ""}
                 aria-current={index === stageIndex ? "step" : undefined}
               >
                 <span className="lesson-stage-n">{index + 1}</span>
-                {t(`curriculum.player.stages.${item}`)}
+                {stage.label}
               </li>
             ))}
           </ol>
-          <p className="lesson-stage-compact">
-            {t("curriculum.player.stageOf", { n: stageIndex + 1, total: LESSON_STAGES.length })} ·{" "}
-            <strong>{t(`curriculum.player.stages.${stage}`)}</strong>
-          </p>
+          {stageIndex >= 0 && (
+            <p className="lesson-stage-compact">
+              {t("curriculum.player.stageOf", { n: stageIndex + 1, total: stages.length })} · <strong>{stages[stageIndex].label}</strong>
+            </p>
+          )}
         </>
       )}
     </header>
