@@ -118,6 +118,13 @@ export const en: Dictionary = {
     select: "Select",
     selected: "Selected",
     learningFrom: "Learning {target} from {source}",
+    startEyebrow: "Your language journey",
+    welcome: "Welcome to Lexodromia!",
+    chooseIntro: "Choose the language you want to learn.",
+    ready: "Ready to learn",
+    progress: "Course progress",
+    continueLearning: "Continue learning",
+    nextCourses: "Lexodromia is growing",
   },
   reviews: {
     "finishError": "Your answers are saved, but the session could not be closed. Retry saving the summary.",

@@ -105,6 +105,9 @@ export const COURSE_PL_HR: Course = {
  */
 export const PLANNED_COURSES: Pick<Course, "id" | "name" | "flag" | "nativeName">[] = [
   { id: "en-pl", name: { pl: "Polski dla anglojęzycznych", en: "Polish" }, flag: "🇵🇱", nativeName: "Polski" },
+  { id: "pl-el", name: { pl: "Grecki", en: "Greek" }, flag: "🇬🇷", nativeName: "Ελληνικά" },
+  { id: "pl-sk", name: { pl: "Słowacki", en: "Slovak" }, flag: "🇸🇰", nativeName: "Slovenčina" },
+  { id: "pl-bg", name: { pl: "Bułgarski", en: "Bulgarian" }, flag: "🇧🇬", nativeName: "Български" },
   { id: "pl-sr", name: { pl: "Serbski", en: "Serbian" }, flag: "🇷🇸", nativeName: "Српски / Srpski" },
   { id: "pl-cs", name: { pl: "Czeski", en: "Czech" }, flag: "🇨🇿", nativeName: "Čeština" },
 ];

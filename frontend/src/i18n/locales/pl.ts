@@ -118,6 +118,13 @@ export const pl: Dictionary = {
     select: "Wybierz",
     selected: "Wybrany",
     learningFrom: "Uczysz się z {source} na {target}",
+    startEyebrow: "Twoja droga językowa",
+    welcome: "Witaj w Lexodromii!",
+    chooseIntro: "Wybierz język, którego chcesz się uczyć.",
+    ready: "Gotowy do nauki",
+    progress: "Postęp kursu",
+    continueLearning: "Kontynuuj naukę",
+    nextCourses: "Rozwijamy Lexodromię",
   },
   reviews: {
     "finishError": "Odpowiedzi są zapisane, ale nie udało się zamknąć sesji. Ponów zapis podsumowania.",
