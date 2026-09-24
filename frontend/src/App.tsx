@@ -17,6 +17,9 @@ import { useAuth } from "@/auth/useAuth";
 import { RadioPage } from "@/radio/RadioPage";
 import { LanguageStartPage } from "@/pages/LanguageStartPage";
 import { useCourse } from "@/courses/CourseProvider";
+import { CoursePage } from "@/pages/CoursePage";
+import { ModulePage } from "@/pages/ModulePage";
+import { LessonPage } from "@/pages/LessonPage";
 
 function ShellLayout() {
   return (
@@ -57,8 +60,12 @@ export default function App() {
 
       <Route element={<ProtectedRoute />}>
         <Route path="/start" element={<StartRoute />} />
+        {/* Lekcja ma własny układ skupienia — bez sidebaru i topbaru. */}
+        <Route path="/lekcja/:lessonId" element={<LessonPage />} />
         <Route element={<ShellLayout />}>
           <Route path="/" element={<HomeRoute />} />
+          <Route path="/kurs" element={<CoursePage />} />
+          <Route path="/kurs/:levelId/modul/:moduleOrder" element={<ModulePage />} />
           <Route path="/gry" element={<GamesPage />} />
           <Route path="/radio" element={<RadioPage />} />
           <Route path="/gry/kategoria/:categoryId" element={<GamesPage />} />

@@ -15,6 +15,8 @@ import { entriesForLevel, LEARNING_LEVELS, type LearningLevelId } from "@/config
 import { currentStreak, todayKey } from "@/utils/date";
 import { Icon, type IconName } from "@/components/Icon";
 import { ProgressRing } from "@/components/StatCard";
+import { useCurriculum } from "@/curriculum/CurriculumProvider";
+import { ContinueCourse } from "@/curriculum/components/ContinueCourse";
 
 interface PlanStep {
   key: string;
@@ -39,6 +41,9 @@ export function Dashboard() {
   const [reviewsFailedKey, setReviewsFailedKey] = useState<string | null>(null);
   const [retry, setRetry] = useState(0);
   const [level, setLevel] = useState<LearningLevelId>("A1");
+  const curriculum = useCurriculum();
+  // Kurs to główna ścieżka — pokazujemy go nad treningiem, gdy dla języka istnieje.
+  const courseView = curriculum.status === "ready" ? curriculum.levelView("A1") : null;
   const account = status === "authenticated";
   const key = `${user?.id}:${course.id}`;
 
@@ -155,6 +160,7 @@ export function Dashboard() {
 
   return <div className="page page-wide dashboard">
     <div className="dashboard-main">
+      {courseView && <ContinueCourse view={courseView} />}
       <section className="today" aria-labelledby="today-title">
         <header className="today-head">
           <span className="eyebrow">{today} · {course.name[locale]}</span>

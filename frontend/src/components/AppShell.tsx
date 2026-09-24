@@ -15,10 +15,11 @@ interface NavItem {
   soon?: boolean;
 }
 
-/** Nauka na górze, wgląd w postęp niżej, konfiguracja przypięta do dołu. */
+/** Nauka na górze (kurs jako główna ścieżka, potem trening), wgląd w postęp niżej, konfiguracja przypięta do dołu. */
 const NAV_GROUPS: NavItem[][] = [
   [
     { to: "/", key: "nav.dashboard", icon: "home", end: true },
+    { to: "/kurs", key: "nav.course", icon: "route" },
     { to: "/powtorki", key: "nav.review", icon: "repeat" },
     { to: "/fiszki", key: "nav.flashcards", icon: "cards" },
     { to: "/gry", key: "nav.games", icon: "play" },

@@ -36,6 +36,8 @@ async function setup(fetcher, status = 'authenticated', locale = 'pl', reviewSta
     '@/reviews/api': {fetchReviewStats: reviewStats},
     '@/utils/date': {currentStreak: () => 0, todayKey: d => d.toISOString().slice(0,10)},
     '@/components/Icon': {Icon: () => null},
+    '@/curriculum/CurriculumProvider': {useCurriculum: () => ({status:'unavailable',levelView: () => null})},
+    '@/curriculum/components/ContinueCourse': {ContinueCourse: () => null},
     '@/components/StatCard': {ProgressRing: ({label,children}) => React.createElement('div',{role:'img','aria-label':label},children)},
   });
   let view;
