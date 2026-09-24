@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć przywitać się, pożegnać i zapytać o samopoczucie.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Bok! Kako si? — Cześć! Jak się masz?",
-          "Dobro sam, hvala. — Mam się dobrze, dziękuję.",
-          "Odlično sam. — Mam się świetnie."
+          {
+            "target": "Bok! Kako si?",
+            "source": "Cześć! Jak się masz?"
+          },
+          {
+            "target": "Dobro sam, hvala.",
+            "source": "Mam się dobrze, dziękuję."
+          },
+          {
+            "target": "Odlično sam.",
+            "source": "Mam się świetnie."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "dzień dobry",
           "źle"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -174,7 +184,8 @@ export const LESSON: GeneratedLesson = {
           "loše",
           "odlično"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -207,7 +218,8 @@ export const LESSON: GeneratedLesson = {
           "dzień dobry",
           "świetnie"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -253,7 +265,8 @@ export const LESSON: GeneratedLesson = {
           "Nie mam się zbyt dobrze.",
           "Mam się dobrze, dziękuję."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -360,10 +373,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Bok! Kako si? — Cześć! Jak się masz?",
-          "Dobro sam, hvala. — Mam się dobrze, dziękuję.",
-          "Odlično sam. — Mam się świetnie.",
-          "Nisam baš dobro. — Nie mam się zbyt dobrze."
+          {
+            "target": "Bok! Kako si?",
+            "source": "Cześć! Jak się masz?"
+          },
+          {
+            "target": "Dobro sam, hvala.",
+            "source": "Mam się dobrze, dziękuję."
+          },
+          {
+            "target": "Odlično sam.",
+            "source": "Mam się świetnie."
+          },
+          {
+            "target": "Nisam baš dobro.",
+            "source": "Nie mam się zbyt dobrze."
+          }
         ]
       }
     ]

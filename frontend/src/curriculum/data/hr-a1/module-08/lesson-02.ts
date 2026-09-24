@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć 2–3 proste rzeczy o jutrze.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Sutra ću raditi. — Jutro będę pracować.",
-          "Sutra ću učiti hrvatski. — Jutro będę uczyć się chorwackiego.",
-          "Kasnije ću se odmoriti. — Później odpocznę."
+          {
+            "target": "Sutra ću raditi.",
+            "source": "Jutro będę pracować."
+          },
+          {
+            "target": "Sutra ću učiti hrvatski.",
+            "source": "Jutro będę uczyć się chorwackiego."
+          },
+          {
+            "target": "Kasnije ću se odmoriti.",
+            "source": "Później odpocznę."
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "będę / partykuła futurum 1 os.",
           "iść / jechać"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -170,7 +180,8 @@ export const LESSON: GeneratedLesson = {
           "ići",
           "učiti"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "uczyć się",
           "odpocząć"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -254,7 +266,8 @@ export const LESSON: GeneratedLesson = {
           "Czy pójdziesz / pojedziesz ze mną?",
           "Jutro będę uczyć się chorwackiego."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "choice-1",
@@ -268,7 +281,8 @@ export const LESSON: GeneratedLesson = {
           "Sutra učim hrvatski."
         ],
         "correctIndex": 1,
-        "explanation": "Przyszłość: ću + bezokolicznik (učiti)."
+        "explanation": "Przyszłość: ću + bezokolicznik (učiti).",
+        "targetText": "options"
       },
       {
         "id": "translate-1",
@@ -387,10 +401,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Sutra ću raditi. — Jutro będę pracować.",
-          "Sutra ću učiti hrvatski. — Jutro będę uczyć się chorwackiego.",
-          "Kasnije ću se odmoriti. — Później odpocznę.",
-          "Hoćeš li ići sa mnom? — Czy pójdziesz / pojedziesz ze mną?"
+          {
+            "target": "Sutra ću raditi.",
+            "source": "Jutro będę pracować."
+          },
+          {
+            "target": "Sutra ću učiti hrvatski.",
+            "source": "Jutro będę uczyć się chorwackiego."
+          },
+          {
+            "target": "Kasnije ću se odmoriti.",
+            "source": "Później odpocznę."
+          },
+          {
+            "target": "Hoćeš li ići sa mnom?",
+            "source": "Czy pójdziesz / pojedziesz ze mną?"
+          }
         ]
       }
     ]

@@ -1,0 +1,992 @@
+{
+  "provider": "edge-tts",
+  "rate": "-8%",
+  "voices": {
+    "female": "hr-HR-GabrijelaNeural",
+    "male": "hr-HR-SreckoNeural"
+  },
+  "modules": [
+    1
+  ],
+  "characters": 1140,
+  "items": [
+    {
+      "text": "A kako se ti zoveš?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a1/module-01/a-kako-se-ti-zoves-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "A kako se ti zoveš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/a-kako-se-ti-zoves.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Dobro sam, hvala.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-dobro-sam-hvala.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Iz Poljske sam. A ti?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-iz-poljske-sam-a-ti.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Ja sam Ana. Odakle si?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-ja-sam-ana-odakle-si.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Kako si?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-kako-si.mp3",
+      "kinds": [
+        "dialog",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Odakle si?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-odakle-si.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Zovem se Ana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-zovem-se-ana.mp3",
+      "kinds": [
+        "dialog",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Zovem se Marko.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-zovem-se-marko-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Zovem se Michał. Drago mi je.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-zovem-se-michal-drago-mi-je.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Bok! Zovem se Michał.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok-zovem-se-michal.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "bok",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/bok.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "deset",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/deset.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "dobar dan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/dobar-dan.mp3",
+      "kinds": [
+        "example",
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Dobro sam, hvala.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "dobro",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/dobro.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "doviđenja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/dovidjenja.mp3",
+      "kinds": [
+        "answer",
+        "dialog",
+        "example",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Drago mi je.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a1/module-01/drago-mi-je-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "drago mi je",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/drago-mi-je.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "dva",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/dva.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "dvadeset",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/dvadeset.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Gdje živiš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/gdje-zivis.mp3",
+      "kinds": [
+        "answer",
+        "dialog",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "gdje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/gdje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "godina",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/godina.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "grad",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/grad.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Hrvatska je lijepa zemlja.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/hrvatska-je-lijepa-zemlja.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Hrvatska",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/hrvatska.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "hvala",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/hvala.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "I meni.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/i-meni.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Imam dvadeset šest godina. Ona ima trideset godina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina-ona-ima-trideset-godina.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Imam dvadeset šest godina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Imam jedan telefon.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/imam-jedan-telefon.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "ime",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ime.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Iz Poljske sam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/iz-poljske-sam.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "iz",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/iz.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Ja imam dvadeset pet godina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ja-imam-dvadeset-pet-godina.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Ja imam trideset godina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ja-imam-trideset-godina.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Ja sam iz Hrvatske. Živim u Zagrebu. Gdje živiš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ja-sam-iz-hrvatske-zivim-u-zagrebu-gdje-zivis.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Ja sam iz Hrvatske.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ja-sam-iz-hrvatske.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Ja sam iz Poljske. Živim u Varšavi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ja-sam-iz-poljske-zivim-u-varsavi.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "ja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ja.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "jedan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/jedan.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "još jednom",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/jos-jednom.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Kako se zoveš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/kako-se-zoves.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "kako",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/kako.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Koliko imaš godina?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/koliko-imas-godina.mp3",
+      "kinds": [
+        "answer",
+        "dialog",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Koliko je to?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/koliko-je-to.mp3",
+      "kinds": [
+        "question"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "koliko",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/koliko.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Lijepo! Ja živim u Zagrebu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/lijepo-ja-zivim-u-zagrebu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "loše",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/lose.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "molim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/molim.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Možeš li ponoviti, molim?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/mozes-li-ponoviti-molim.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Nisam baš dobro.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/nisam-bas-dobro.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "question"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "nula",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/nula.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Odakle si?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/odakle-si.mp3",
+      "kinds": [
+        "dialog",
+        "example",
+        "phrase",
+        "question"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "odakle",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/odakle.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "odgovoriti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/odgovoriti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Odlično sam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/odlicno-sam.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "odlično",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/odlicno.mp3",
+      "kinds": [
+        "answer",
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "on",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/on.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Ona ima trideset godina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ona-ima-trideset-godina.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Ona se zove Ana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "ona",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ona.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "pitati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/pitati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "polako",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/polako.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Poljska",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/poljska.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "ponoviti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ponoviti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "razgovor",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/razgovor.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "razumjeti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/razumjeti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "sto",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/sto.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Super! A gdje živiš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/super-a-gdje-zivis.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "ti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/ti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Tko je to?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/tko-je-to.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "tko",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/tko.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "u",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/u.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "zemlja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zemlja.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Živim u Krakovu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zivim-u-krakovu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Živim u Poljskoj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "živim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zivim.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "živiš",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zivis.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "živjeti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zivjeti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Zovem se Michał. Iz Poljske sam. Živim u Krakovu. Imam dvadeset šest godina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zovem-se-michal-iz-poljske-sam-zivim-u-krakovu-imam-dvadeset.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "Zovem se Michał.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zovem-se-michal.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "zvati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zvati-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    }
+  ]
+}

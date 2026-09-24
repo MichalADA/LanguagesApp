@@ -1,5 +1,6 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import { Icon } from "@/components/Icon";
+import { AudioButton } from "@/components/AudioButton";
 import { useT } from "@/i18n";
 import type { Verdict } from "@/services/validation";
 
@@ -56,11 +57,17 @@ export function Feedback({
   verdict,
   answer,
   explanation,
+  audioSrc,
+  audioText,
 }: {
   verdict: Verdict;
   /** Przy „hit” pomijane; przy „near” — poprawna pisownia; przy „miss” — poprawna odpowiedź. */
   answer?: string | null;
   explanation?: string;
+  /** Nagranie poprawnej chorwackiej odpowiedzi — odsłuch po rozwiązaniu ćwiczenia. */
+  audioSrc?: string;
+  /** Tekst nagrania (do aria-label), gdy różni się od `answer`. */
+  audioText?: string;
 }) {
   const t = useT();
   const title = verdict === "hit" ? "correct" : verdict === "near" ? "near" : "wrong";
@@ -70,12 +77,16 @@ export function Feedback({
         <Icon name={verdict === "miss" ? "close" : "check"} size={16} />
       </span>
       <div>
-        <strong>{t(`curriculum.player.${title}`)}</strong>
+        <strong className="feedback-title">
+          {t(`curriculum.player.${title}`)}
+          {verdict === "hit" && <AudioButton src={audioSrc} text={audioText ?? answer ?? undefined} size="sm" />}
+        </strong>
         {verdict === "near" && (
           <p>
             {answer ? (
               <>
                 {t("curriculum.player.spelling")} <span className="target">{answer}</span>
+                <AudioButton src={audioSrc} text={audioText ?? answer} size="sm" />
               </>
             ) : (
               t("curriculum.player.spellingGeneric")
@@ -85,6 +96,7 @@ export function Feedback({
         {verdict === "miss" && answer && (
           <p>
             {t("curriculum.player.answer")} <span className="target">{answer}</span>
+            <AudioButton src={audioSrc} text={audioText ?? answer} size="sm" />
           </p>
         )}
         {explanation && <p className="feedback-explanation">{explanation}</p>}

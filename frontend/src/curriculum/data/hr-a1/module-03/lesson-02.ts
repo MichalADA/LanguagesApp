@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, gdzie pracujesz i czego się uczysz.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Radim od kuće. — Pracuję z domu.",
-          "Radim u uredu. — Pracuję w biurze.",
-          "Učim hrvatski svaki dan. — Uczę się chorwackiego codziennie."
+          {
+            "target": "Radim od kuće.",
+            "source": "Pracuję z domu."
+          },
+          {
+            "target": "Radim u uredu.",
+            "source": "Pracuję w biurze."
+          },
+          {
+            "target": "Učim hrvatski svaki dan.",
+            "source": "Uczę się chorwackiego codziennie."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "komputer",
           "szkoła"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -162,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "fakultet",
           "učiti"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -199,7 +210,8 @@ export const LESSON: GeneratedLesson = {
           "studiować",
           "komputer"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -272,7 +284,8 @@ export const LESSON: GeneratedLesson = {
           "Pracuję z domu.",
           "Pracuję w biurze."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "dialog",
@@ -354,10 +367,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Radim od kuće. — Pracuję z domu.",
-          "Radim u uredu. — Pracuję w biurze.",
-          "Učim hrvatski svaki dan. — Uczę się chorwackiego codziennie.",
-          "Studiram u Zagrebu. — Studiuję w Zagrzebiu."
+          {
+            "target": "Radim od kuće.",
+            "source": "Pracuję z domu."
+          },
+          {
+            "target": "Radim u uredu.",
+            "source": "Pracuję w biurze."
+          },
+          {
+            "target": "Učim hrvatski svaki dan.",
+            "source": "Uczę się chorwackiego codziennie."
+          },
+          {
+            "target": "Studiram u Zagrebu.",
+            "source": "Studiuję w Zagrzebiu."
+          }
         ]
       }
     ]

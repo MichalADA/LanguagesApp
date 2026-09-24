@@ -90,7 +90,8 @@ export const LESSON: GeneratedLesson = {
           "miasto",
           "świetnie"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "recall-2",
@@ -103,7 +104,8 @@ export const LESSON: GeneratedLesson = {
           "dziękuję",
           "miło mi"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "recall-3",
@@ -116,7 +118,8 @@ export const LESSON: GeneratedLesson = {
           "ty",
           "ja"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -367,10 +370,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Bok! Zovem se Ana. — Cześć! Mam na imię Ana.",
-          "Odakle si? — Skąd jesteś?",
-          "Iz Poljske sam. — Jestem z Polski.",
-          "Gdje živiš? — Gdzie mieszkasz?"
+          {
+            "target": "Bok! Zovem se Ana.",
+            "source": "Cześć! Mam na imię Ana."
+          },
+          {
+            "target": "Odakle si?",
+            "source": "Skąd jesteś?"
+          },
+          {
+            "target": "Iz Poljske sam.",
+            "source": "Jestem z Polski."
+          },
+          {
+            "target": "Gdje živiš?",
+            "source": "Gdzie mieszkasz?"
+          }
         ],
         "canDo": [
           "przywitać się, pożegnać i zapytać o samopoczucie",

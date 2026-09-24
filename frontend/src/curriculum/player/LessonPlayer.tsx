@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useT } from "@/i18n";
+import { SpokenText } from "@/components/AudioButton";
 import { LESSON_STAGES, TEST_SECTIONS, type LessonContent, type LessonStep, type TestSection } from "../types";
 import { coursePaths } from "../components/format";
 import {
@@ -99,7 +100,7 @@ export function LessonPlayer({ content, header, nextHref, moduleHref, onComplete
       <main className="lesson-stage" key={step.id}>
         {step.instructionTarget && (
           <p className="instruction-target">
-            <span className="target">{step.instructionTarget.target}</span>
+            <SpokenText text={step.instructionTarget.target} src={step.instructionTarget.audioSrc} />
             <span className="muted">{step.instructionTarget.source}</span>
           </p>
         )}

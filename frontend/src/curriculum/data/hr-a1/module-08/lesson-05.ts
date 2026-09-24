@@ -143,6 +143,7 @@ export const LESSON: GeneratedLesson = {
           "muzyka"
         ],
         "correctIndex": 0,
+        "targetText": "prompt",
         "section": "vocabulary"
       },
       {
@@ -157,6 +158,7 @@ export const LESSON: GeneratedLesson = {
           "lotnisko"
         ],
         "correctIndex": 1,
+        "targetText": "prompt",
         "section": "vocabulary"
       },
       {
@@ -171,6 +173,7 @@ export const LESSON: GeneratedLesson = {
           "kawa"
         ],
         "correctIndex": 2,
+        "targetText": "prompt",
         "section": "vocabulary"
       },
       {
@@ -185,6 +188,7 @@ export const LESSON: GeneratedLesson = {
           "spokojny"
         ],
         "correctIndex": 0,
+        "targetText": "prompt",
         "section": "vocabulary"
       },
       {
@@ -199,6 +203,7 @@ export const LESSON: GeneratedLesson = {
           "klucz"
         ],
         "correctIndex": 1,
+        "targetText": "prompt",
         "section": "vocabulary"
       },
       {
@@ -213,6 +218,7 @@ export const LESSON: GeneratedLesson = {
           "deszcz"
         ],
         "correctIndex": 2,
+        "targetText": "prompt",
         "section": "vocabulary"
       },
       {

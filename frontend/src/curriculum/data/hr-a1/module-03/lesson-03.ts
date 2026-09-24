@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zapytać o godzinę i podać godzinę.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Koliko je sati? — Która jest godzina?",
-          "Tri su sata. — Jest trzecia.",
-          "Sastanak je u četiri. — Spotkanie jest o czwartej."
+          {
+            "target": "Koliko je sati?",
+            "source": "Która jest godzina?"
+          },
+          {
+            "target": "Tri su sata.",
+            "source": "Jest trzecia."
+          },
+          {
+            "target": "Sastanak je u četiri.",
+            "source": "Spotkanie jest o czwartej."
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "minuta",
           "dokładnie"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -158,7 +168,8 @@ export const LESSON: GeneratedLesson = {
           "kada",
           "navečer"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -187,7 +198,8 @@ export const LESSON: GeneratedLesson = {
           "wieczorem",
           "po południu"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -234,7 +246,8 @@ export const LESSON: GeneratedLesson = {
           "Pracuję od dziesiątej do szóstej.",
           "Jest trzecia."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -345,10 +358,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Koliko je sati? — Która jest godzina?",
-          "Tri su sata. — Jest trzecia.",
-          "Sastanak je u četiri. — Spotkanie jest o czwartej.",
-          "Radim od deset do šest. — Pracuję od dziesiątej do szóstej."
+          {
+            "target": "Koliko je sati?",
+            "source": "Która jest godzina?"
+          },
+          {
+            "target": "Tri su sata.",
+            "source": "Jest trzecia."
+          },
+          {
+            "target": "Sastanak je u četiri.",
+            "source": "Spotkanie jest o czwartej."
+          },
+          {
+            "target": "Radim od deset do šest.",
+            "source": "Pracuję od dziesiątej do szóstej."
+          }
         ]
       }
     ]

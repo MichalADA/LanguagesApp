@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć przedstawić się i zapytać o imię.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Kako se zoveš? — Jak masz na imię?",
-          "Zovem se Michał. — Mam na imię Michał.",
-          "A kako se ti zoveš? — A jak ty masz na imię?"
+          {
+            "target": "Kako se zoveš?",
+            "source": "Jak masz na imię?"
+          },
+          {
+            "target": "Zovem se Michał.",
+            "source": "Mam na imię Michał."
+          },
+          {
+            "target": "A kako se ti zoveš?",
+            "source": "A jak ty masz na imię?"
+          }
         ]
       },
       {
@@ -113,7 +122,8 @@ export const LESSON: GeneratedLesson = {
           "miło mi",
           "nazywać się"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -162,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "on",
           "ona"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -199,7 +210,8 @@ export const LESSON: GeneratedLesson = {
           "on",
           "miło mi"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -245,7 +257,8 @@ export const LESSON: GeneratedLesson = {
           "Jak masz na imię?",
           "Mam na imię Michał."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -406,10 +419,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Kako se zoveš? — Jak masz na imię?",
-          "Zovem se Michał. — Mam na imię Michał.",
-          "A kako se ti zoveš? — A jak ty masz na imię?",
-          "Ona se zove Ana. — Ona ma na imię Ana."
+          {
+            "target": "Kako se zoveš?",
+            "source": "Jak masz na imię?"
+          },
+          {
+            "target": "Zovem se Michał.",
+            "source": "Mam na imię Michał."
+          },
+          {
+            "target": "A kako se ti zoveš?",
+            "source": "A jak ty masz na imię?"
+          },
+          {
+            "target": "Ona se zove Ana.",
+            "source": "Ona ma na imię Ana."
+          }
         ]
       }
     ]

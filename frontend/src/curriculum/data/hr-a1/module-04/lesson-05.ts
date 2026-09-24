@@ -90,7 +90,8 @@ export const LESSON: GeneratedLesson = {
           "słony",
           "ser"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "recall-2",
@@ -103,7 +104,8 @@ export const LESSON: GeneratedLesson = {
           "menu",
           "jeść"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "recall-3",
@@ -116,7 +118,8 @@ export const LESSON: GeneratedLesson = {
           "proszę",
           "ryż"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -353,10 +356,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Imamo rezervaciju za dvoje. — Mamy rezerwację dla dwóch osób.",
-          "Hrana je vrlo ukusna. — Jedzenie jest bardzo smaczne.",
-          "Želite li još nešto? — Czy chcecie jeszcze coś?",
-          "Ne, hvala, dovoljno je. — Nie, dziękuję, wystarczy."
+          {
+            "target": "Imamo rezervaciju za dvoje.",
+            "source": "Mamy rezerwację dla dwóch osób."
+          },
+          {
+            "target": "Hrana je vrlo ukusna.",
+            "source": "Jedzenie jest bardzo smaczne."
+          },
+          {
+            "target": "Želite li još nešto?",
+            "source": "Czy chcecie jeszcze coś?"
+          },
+          {
+            "target": "Ne, hvala, dovoljno je.",
+            "source": "Nie, dziękuję, wystarczy."
+          }
         ],
         "canDo": [
           "nazwać podstawowe jedzenie i napoje",

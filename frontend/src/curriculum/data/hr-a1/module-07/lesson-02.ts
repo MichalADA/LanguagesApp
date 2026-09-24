@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zapytać o peron, bramkę i godzinę odjazdu.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Gdje je peron tri? — Gdzie jest peron trzeci?",
-          "Vlak za Split polazi u sedam. — Pociąg do Splitu odjeżdża o siódmej.",
-          "Gdje je izlaz pet? — Gdzie jest bramka numer pięć?"
+          {
+            "target": "Gdje je peron tri?",
+            "source": "Gdzie jest peron trzeci?"
+          },
+          {
+            "target": "Vlak za Split polazi u sedam.",
+            "source": "Pociąg do Splitu odjeżdża o siódmej."
+          },
+          {
+            "target": "Gdje je izlaz pet?",
+            "source": "Gdzie jest bramka numer pięć?"
+          }
         ]
       },
       {
@@ -117,7 +126,8 @@ export const LESSON: GeneratedLesson = {
           "spóźniać się",
           "peron"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -166,7 +176,8 @@ export const LESSON: GeneratedLesson = {
           "kasniti",
           "aerodrom"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -199,7 +210,8 @@ export const LESSON: GeneratedLesson = {
           "przyjazd / przylot",
           "lotnisko"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -271,7 +283,8 @@ export const LESSON: GeneratedLesson = {
           "Gdzie jest bramka numer pięć?",
           "Pociąg do Splitu odjeżdża o siódmej."
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -418,10 +431,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Gdje je peron tri? — Gdzie jest peron trzeci?",
-          "Vlak za Split polazi u sedam. — Pociąg do Splitu odjeżdża o siódmej.",
-          "Gdje je izlaz pet? — Gdzie jest bramka numer pięć?",
-          "Avion kasni. — Samolot jest opóźniony."
+          {
+            "target": "Gdje je peron tri?",
+            "source": "Gdzie jest peron trzeci?"
+          },
+          {
+            "target": "Vlak za Split polazi u sedam.",
+            "source": "Pociąg do Splitu odjeżdża o siódmej."
+          },
+          {
+            "target": "Gdje je izlaz pet?",
+            "source": "Gdzie jest bramka numer pięć?"
+          },
+          {
+            "target": "Avion kasni.",
+            "source": "Samolot jest opóźniony."
+          }
         ]
       }
     ]

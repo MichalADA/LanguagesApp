@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć nazwać podstawowe miejsca w mieście i powiedzieć, dokąd idziesz.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Idem u trgovinu. — Idę do sklepu.",
-          "Idem u banku. — Idę do banku.",
-          "Idem na poštu. — Idę na pocztę."
+          {
+            "target": "Idem u trgovinu.",
+            "source": "Idę do sklepu."
+          },
+          {
+            "target": "Idem u banku.",
+            "source": "Idę do banku."
+          },
+          {
+            "target": "Idem na poštu.",
+            "source": "Idę na pocztę."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "bank",
           "poczta"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -174,7 +184,8 @@ export const LESSON: GeneratedLesson = {
           "pošta",
           "park"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -207,7 +218,8 @@ export const LESSON: GeneratedLesson = {
           "sklep",
           "poczta"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -280,7 +292,8 @@ export const LESSON: GeneratedLesson = {
           "Park jest w centrum.",
           "Idę do banku."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -370,10 +383,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Idem u trgovinu. — Idę do sklepu.",
-          "Idem u banku. — Idę do banku.",
-          "Idem na poštu. — Idę na pocztę.",
-          "Park je u centru. — Park jest w centrum."
+          {
+            "target": "Idem u trgovinu.",
+            "source": "Idę do sklepu."
+          },
+          {
+            "target": "Idem u banku.",
+            "source": "Idę do banku."
+          },
+          {
+            "target": "Idem na poštu.",
+            "source": "Idę na pocztę."
+          },
+          {
+            "target": "Park je u centru.",
+            "source": "Park jest w centrum."
+          }
         ]
       }
     ]

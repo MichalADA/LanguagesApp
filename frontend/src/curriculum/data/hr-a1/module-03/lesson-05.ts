@@ -90,7 +90,8 @@ export const LESSON: GeneratedLesson = {
           "uczelnia / wydział",
           "poniedziałek"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "recall-2",
@@ -103,7 +104,8 @@ export const LESSON: GeneratedLesson = {
           "biuro",
           "wstać"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "recall-3",
@@ -116,7 +118,8 @@ export const LESSON: GeneratedLesson = {
           "jeść obiad",
           "wieczorem"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -353,10 +356,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Svaki dan učim hrvatski. — Codziennie uczę się chorwackiego.",
-          "Obično radim od deset. — Zwykle pracuję od dziesiątej.",
-          "Ponekad idem u teretanu. — Czasami chodzę na siłownię.",
-          "U subotu sam slobodan. — W sobotę jestem wolny."
+          {
+            "target": "Svaki dan učim hrvatski.",
+            "source": "Codziennie uczę się chorwackiego."
+          },
+          {
+            "target": "Obično radim od deset.",
+            "source": "Zwykle pracuję od dziesiątej."
+          },
+          {
+            "target": "Ponekad idem u teretanu.",
+            "source": "Czasami chodzę na siłownię."
+          },
+          {
+            "target": "U subotu sam slobodan.",
+            "source": "W sobotę jestem wolny."
+          }
         ],
         "canDo": [
           "opowiedzieć prostymi zdaniami o codziennych czynnościach",

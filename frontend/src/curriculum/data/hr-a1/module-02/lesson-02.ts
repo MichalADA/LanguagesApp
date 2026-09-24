@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, kim ktoś jest i czym się zajmuje.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Ovo je moj prijatelj Marko. — To jest mój przyjaciel Marko.",
-          "Ana je liječnica. — Ana jest lekarką.",
-          "Ivan radi u školi. — Ivan pracuje w szkole."
+          {
+            "target": "Ovo je moj prijatelj Marko.",
+            "source": "To jest mój przyjaciel Marko."
+          },
+          {
+            "target": "Ana je liječnica.",
+            "source": "Ana jest lekarką."
+          },
+          {
+            "target": "Ivan radi u školi.",
+            "source": "Ivan pracuje w szkole."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "przyjaciółka",
           "koleżanka"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -170,7 +180,8 @@ export const LESSON: GeneratedLesson = {
           "kolega",
           "liječnik"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "lekarz",
           "przyjaciel"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -249,7 +261,8 @@ export const LESSON: GeneratedLesson = {
           "Moja koleżanka pracuje z domu.",
           "Ana jest lekarką."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -354,10 +367,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Ovo je moj prijatelj Marko. — To jest mój przyjaciel Marko.",
-          "Ana je liječnica. — Ana jest lekarką.",
-          "Ivan radi u školi. — Ivan pracuje w szkole.",
-          "Moja kolegica radi od kuće. — Moja koleżanka pracuje z domu."
+          {
+            "target": "Ovo je moj prijatelj Marko.",
+            "source": "To jest mój przyjaciel Marko."
+          },
+          {
+            "target": "Ana je liječnica.",
+            "source": "Ana jest lekarką."
+          },
+          {
+            "target": "Ivan radi u školi.",
+            "source": "Ivan pracuje w szkole."
+          },
+          {
+            "target": "Moja kolegica radi od kuće.",
+            "source": "Moja koleżanka pracuje z domu."
+          }
         ]
       }
     ]

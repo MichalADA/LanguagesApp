@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zaproponować spotkanie i zaakceptować/odrzucić.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Hoćemo li na kavu? — Idziemy na kawę?",
-          "Može, kada? — Może być, kiedy?",
-          "Može u šest. — Może być o szóstej."
+          {
+            "target": "Hoćemo li na kavu?",
+            "source": "Idziemy na kawę?"
+          },
+          {
+            "target": "Može, kada?",
+            "source": "Może być, kiedy?"
+          },
+          {
+            "target": "Može u šest.",
+            "source": "Może być o szóstej."
+          }
         ]
       },
       {
@@ -117,7 +126,8 @@ export const LESSON: GeneratedLesson = {
           "kawa",
           "dziś wieczorem"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -166,7 +176,8 @@ export const LESSON: GeneratedLesson = {
           "ne mogu",
           "večeras"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -203,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "do zobaczenia",
           "o szóstej"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -249,7 +261,8 @@ export const LESSON: GeneratedLesson = {
           "Może być, kiedy?",
           "Może jutro?"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -380,10 +393,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Hoćemo li na kavu? — Idziemy na kawę?",
-          "Može, kada? — Może być, kiedy?",
-          "Može u šest. — Może być o szóstej.",
-          "Danas ne mogu. — Dziś nie mogę."
+          {
+            "target": "Hoćemo li na kavu?",
+            "source": "Idziemy na kawę?"
+          },
+          {
+            "target": "Može, kada?",
+            "source": "Może być, kiedy?"
+          },
+          {
+            "target": "Može u šest.",
+            "source": "Może być o szóstej."
+          },
+          {
+            "target": "Danas ne mogu.",
+            "source": "Dziś nie mogę."
+          }
         ]
       }
     ]

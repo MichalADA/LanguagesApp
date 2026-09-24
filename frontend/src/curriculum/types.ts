@@ -76,7 +76,16 @@ export type LessonStage = "intro" | "words" | "structure" | "practice" | "dialog
 
 export const LESSON_STAGES: LessonStage[] = ["intro", "words", "structure", "practice", "dialog", "summary"];
 
-export interface DialogLine {
+/**
+ * Nagranie przypięte do chorwackiego tekstu. Ścieżki wpisuje generator
+ * (scripts/generate-a1-curriculum.mjs) tylko wtedy, gdy plik istnieje w public/,
+ * więc komponenty nigdy nie trafiają na 404 i nie składają ścieżek same.
+ */
+export interface Audible {
+  audioSrc?: string;
+}
+
+export interface DialogLine extends Audible {
   speaker: string;
   text: string;
   translation: string;
@@ -88,7 +97,7 @@ export type TestSection = "vocabulary" | "reading" | "listening" | "grammar" | "
 export const TEST_SECTIONS: TestSection[] = ["vocabulary", "reading", "listening", "grammar", "translation", "production"];
 
 /** Zdanie w dwóch językach — wspólny kształt przykładów i poleceń. */
-export interface Bilingual {
+export interface Bilingual extends Audible {
   target: string;
   source: string;
 }
@@ -106,7 +115,8 @@ export interface IntroStep extends StepBase {
   type: "intro";
   title: string;
   body: string;
-  goals: string[];
+  /** Tekst albo para chorwacki–polski (z nagraniem). */
+  goals: (string | Bilingual)[];
   /** Nagłówek listy celów; domyślnie „Po tej lekcji”. */
   goalsTitle?: string;
 }
@@ -119,14 +129,14 @@ export interface ListenStep extends StepBase {
   note?: string;
 }
 
-export interface WordStep extends StepBase {
+export interface WordStep extends StepBase, Audible {
   type: "word";
   target: string;
   source: string;
   partOfSpeech?: string;
-  example?: { target: string; source: string };
+  example?: Bilingual;
   /** Powiązane słowa pokazywane pod kartą. */
-  related?: { target: string; source: string }[];
+  related?: Bilingual[];
   note?: string;
 }
 
@@ -148,6 +158,12 @@ export interface ChoiceStep extends StepBase {
   options: string[];
   correctIndex: number;
   explanation?: string;
+  /** Po której stronie jest chorwacki: pytanie, opcje czy oba. */
+  targetText?: "prompt" | "options" | "both";
+  /** Nagranie pytania (gdy jest chorwackie i bez luki). */
+  promptAudioSrc?: string;
+  /** Nagranie poprawnej chorwackiej odpowiedzi — po rozwiązaniu. */
+  answerAudioSrc?: string;
 }
 
 export interface TranslateStep extends StepBase {
@@ -156,6 +172,7 @@ export interface TranslateStep extends StepBase {
   prompt: string;
   accepted: string[];
   hint?: string;
+  answerAudioSrc?: string;
 }
 
 export interface GapStep extends StepBase {
@@ -166,6 +183,8 @@ export interface GapStep extends StepBase {
   accepted: string[];
   translation: string;
   hint?: string;
+  /** Nagranie całego zdania z uzupełnioną luką. */
+  answerAudioSrc?: string;
 }
 
 export interface DialogStep extends StepBase {
@@ -174,7 +193,7 @@ export interface DialogStep extends StepBase {
   /** Tury rozmowy — `reply` oznacza, że użytkownik odpowiada. */
   turns: (
     | { kind: "line"; line: DialogLine }
-    | { kind: "reply"; prompt: string; accepted: string[]; pattern?: string; suggestion: string }
+    | { kind: "reply"; prompt: string; accepted: string[]; pattern?: string; suggestion: string; suggestionAudioSrc?: string }
   )[];
 }
 
@@ -186,12 +205,13 @@ export interface FreeResponseStep extends StepBase {
   keywords: { any: string[]; label: string }[];
   minSentences: number;
   sample: string;
+  sampleAudioSrc?: string;
 }
 
 export interface SummaryStep extends StepBase {
   type: "summary";
   title: string;
-  recap: string[];
+  recap: (string | Bilingual)[];
   /** „Po tym module potrafisz” — w powtórkach modułów. */
   canDo?: string[];
   /** Zdanie zamykające test (z CSV). */
@@ -205,6 +225,7 @@ export interface OrderStep extends StepBase {
   translation: string;
   tokens: string[];
   accepted: string[];
+  answerAudioSrc?: string;
 }
 
 export interface ComprehensionQuestion {
@@ -256,7 +277,7 @@ export type LessonStep =
   | VocabListStep;
 
 /** Słowo z lekcji — materiał do przyszłych powtórek (FSRS). */
-export interface LessonVocabularyItem {
+export interface LessonVocabularyItem extends Audible {
   target: string;
   source: string;
   lemma?: string;

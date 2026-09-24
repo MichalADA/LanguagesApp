@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć zamówić prosty napój lub przekąskę.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Molim jednu kavu. — Poproszę jedną kawę.",
-          "Htio bih čaj. — Chciałbym herbatę.",
-          "Htjela bih sok. — Chciałabym sok."
+          {
+            "target": "Molim jednu kavu.",
+            "source": "Poproszę jedną kawę."
+          },
+          {
+            "target": "Htio bih čaj.",
+            "source": "Chciałbym herbatę."
+          },
+          {
+            "target": "Htjela bih sok.",
+            "source": "Chciałabym sok."
+          }
         ]
       },
       {
@@ -117,7 +126,8 @@ export const LESSON: GeneratedLesson = {
           "kelner",
           "rachunek"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -162,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "sok",
           "pivo"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -199,7 +210,8 @@ export const LESSON: GeneratedLesson = {
           "proszę",
           "cukier"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -272,7 +284,8 @@ export const LESSON: GeneratedLesson = {
           "Poproszę jedną kawę.",
           "Chciałbym herbatę."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -418,10 +431,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Molim jednu kavu. — Poproszę jedną kawę.",
-          "Htio bih čaj. — Chciałbym herbatę.",
-          "Htjela bih sok. — Chciałabym sok.",
-          "Bez šećera, molim. — Bez cukru, proszę."
+          {
+            "target": "Molim jednu kavu.",
+            "source": "Poproszę jedną kawę."
+          },
+          {
+            "target": "Htio bih čaj.",
+            "source": "Chciałbym herbatę."
+          },
+          {
+            "target": "Htjela bih sok.",
+            "source": "Chciałabym sok."
+          },
+          {
+            "target": "Bez šećera, molim.",
+            "source": "Bez cukru, proszę."
+          }
         ]
       }
     ]

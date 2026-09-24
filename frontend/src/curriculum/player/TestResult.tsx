@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Icon } from "@/components/Icon";
+import { SpokenText } from "@/components/AudioButton";
 import { useT } from "@/i18n";
 import { TEST_SECTIONS, type SummaryStep, type TestSection } from "../types";
 import type { StepScore } from "./Exercises";
@@ -33,7 +34,7 @@ export function TestResult({
       </span>
       {step.closing && (
         <p className="test-closing">
-          <span className="target">{step.closing.target}</span> <span className="muted">— {step.closing.source}</span>
+          <SpokenText text={step.closing.target} src={step.closing.audioSrc} /> <span className="muted">— {step.closing.source}</span>
         </p>
       )}
       <h2 className="summary-title">{step.title}</h2>

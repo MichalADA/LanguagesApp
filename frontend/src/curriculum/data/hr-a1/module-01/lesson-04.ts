@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć podać wiek i rozumieć podstawowe liczby.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Koliko imaš godina? — Ile masz lat?",
-          "Imam dvadeset šest godina. — Mam dwadzieścia sześć lat.",
-          "Ona ima trideset godina. — Ona ma trzydzieści lat."
+          {
+            "target": "Koliko imaš godina?",
+            "source": "Ile masz lat?"
+          },
+          {
+            "target": "Imam dvadeset šest godina.",
+            "source": "Mam dwadzieścia sześć lat."
+          },
+          {
+            "target": "Ona ima trideset godina.",
+            "source": "Ona ma trzydzieści lat."
+          }
         ]
       },
       {
@@ -121,7 +130,8 @@ export const LESSON: GeneratedLesson = {
           "jeden",
           "rok"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -162,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "godina",
           "sto"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -199,7 +210,8 @@ export const LESSON: GeneratedLesson = {
           "ile",
           "dwadzieścia"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -272,7 +284,8 @@ export const LESSON: GeneratedLesson = {
           "Ile to jest?",
           "Mam dwadzieścia sześć lat."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "dialog",
@@ -339,10 +352,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Koliko imaš godina? — Ile masz lat?",
-          "Imam dvadeset šest godina. — Mam dwadzieścia sześć lat.",
-          "Ona ima trideset godina. — Ona ma trzydzieści lat.",
-          "Imam jedan telefon. — Mam jeden telefon."
+          {
+            "target": "Koliko imaš godina?",
+            "source": "Ile masz lat?"
+          },
+          {
+            "target": "Imam dvadeset šest godina.",
+            "source": "Mam dwadzieścia sześć lat."
+          },
+          {
+            "target": "Ona ima trideset godina.",
+            "source": "Ona ma trzydzieści lat."
+          },
+          {
+            "target": "Imam jedan telefon.",
+            "source": "Mam jeden telefon."
+          }
         ]
       }
     ]

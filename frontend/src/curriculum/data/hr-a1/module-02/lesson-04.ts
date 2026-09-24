@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć powiedzieć, co posiadasz i czego nie masz.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Imam auto. — Mam samochód.",
-          "Nemam bicikl. — Nie mam roweru.",
-          "Imam novu knjigu. — Mam nową książkę."
+          {
+            "target": "Imam auto.",
+            "source": "Mam samochód."
+          },
+          {
+            "target": "Nemam bicikl.",
+            "source": "Nie mam roweru."
+          },
+          {
+            "target": "Imam novu knjigu.",
+            "source": "Mam nową książkę."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "pies",
           "kot"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -174,7 +184,8 @@ export const LESSON: GeneratedLesson = {
           "telefon",
           "imati"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -207,7 +218,8 @@ export const LESSON: GeneratedLesson = {
           "nie mieć",
           "kot"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -254,7 +266,8 @@ export const LESSON: GeneratedLesson = {
           "Mam samochód.",
           "Nie mam roweru."
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "translate-1",
@@ -370,10 +383,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Imam auto. — Mam samochód.",
-          "Nemam bicikl. — Nie mam roweru.",
-          "Imam novu knjigu. — Mam nową książkę.",
-          "Ona ima psa. — Ona ma psa."
+          {
+            "target": "Imam auto.",
+            "source": "Mam samochód."
+          },
+          {
+            "target": "Nemam bicikl.",
+            "source": "Nie mam roweru."
+          },
+          {
+            "target": "Imam novu knjigu.",
+            "source": "Mam nową książkę."
+          },
+          {
+            "target": "Ona ima psa.",
+            "source": "Ona ma psa."
+          }
         ]
       }
     ]

@@ -73,9 +73,18 @@ export const LESSON: GeneratedLesson = {
         "body": "Po tej lekcji będziesz umieć nazwać podstawowe jedzenie i napoje.",
         "goalsTitle": "Powiesz między innymi",
         "goals": [
-          "Pijem vodu. — Piję wodę.",
-          "Pijem kavu bez šećera. — Piję kawę bez cukru.",
-          "Jedem kruh i sir. — Jem chleb i ser."
+          {
+            "target": "Pijem vodu.",
+            "source": "Piję wodę."
+          },
+          {
+            "target": "Pijem kavu bez šećera.",
+            "source": "Piję kawę bez cukru."
+          },
+          {
+            "target": "Jedem kruh i sir.",
+            "source": "Jem chleb i ser."
+          }
         ]
       },
       {
@@ -125,7 +134,8 @@ export const LESSON: GeneratedLesson = {
           "kawa",
           "woda"
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "word-4",
@@ -174,7 +184,8 @@ export const LESSON: GeneratedLesson = {
           "čaj",
           "riba"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "targetText": "options"
       },
       {
         "id": "word-7",
@@ -211,7 +222,8 @@ export const LESSON: GeneratedLesson = {
           "ser",
           "herbata"
         ],
-        "correctIndex": 0
+        "correctIndex": 0,
+        "targetText": "prompt"
       },
       {
         "id": "structure",
@@ -284,7 +296,8 @@ export const LESSON: GeneratedLesson = {
           "Dziś nie jem mięsa.",
           "Piję kawę bez cukru."
         ],
-        "correctIndex": 1
+        "correctIndex": 1,
+        "targetText": "prompt"
       },
       {
         "id": "translate-2",
@@ -373,10 +386,22 @@ export const LESSON: GeneratedLesson = {
         "type": "summary",
         "title": "Lekcja ukończona",
         "recap": [
-          "Pijem vodu. — Piję wodę.",
-          "Pijem kavu bez šećera. — Piję kawę bez cukru.",
-          "Jedem kruh i sir. — Jem chleb i ser.",
-          "Volim ribu i povrće. — Lubię rybę i warzywa."
+          {
+            "target": "Pijem vodu.",
+            "source": "Piję wodę."
+          },
+          {
+            "target": "Pijem kavu bez šećera.",
+            "source": "Piję kawę bez cukru."
+          },
+          {
+            "target": "Jedem kruh i sir.",
+            "source": "Jem chleb i ser."
+          },
+          {
+            "target": "Volim ribu i povrće.",
+            "source": "Lubię rybę i warzywa."
+          }
         ]
       }
     ]
