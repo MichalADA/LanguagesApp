@@ -69,7 +69,7 @@ export function ProfilePage() {
       </section>
       {profileError && <p className="form-message error" role="alert">{profileError}</p>}
 
-      <section className="grid grid-3">
+      <section className="stat-grid">
         <div className="panel stat">
           <span className="stat-value">{course.flag}</span>
           <span className="stat-label">{t("course.active")}</span>

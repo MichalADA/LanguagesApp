@@ -13,11 +13,9 @@ export function Topbar() {
         <span className="course-flag" aria-hidden="true">
           {course.flag}
         </span>
-        <span className="course-pill-text">
-          <span className="course-pill-name">{course.name[locale]}</span>
-          <span className="course-pill-pair">
-            {course.sourceLanguage.toUpperCase()} → {course.targetLanguage.toUpperCase()}
-          </span>
+        <span className="course-pill-name">{course.name[locale]}</span>
+        <span className="course-pill-pair">
+          {course.sourceLanguage.toUpperCase()} → {course.targetLanguage.toUpperCase()}
         </span>
       </Link>
 

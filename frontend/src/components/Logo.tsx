@@ -6,11 +6,12 @@ interface LogoProps {
 
 /**
  * Monogram Lexodromia: litera L zbudowana z trasy — dwa punkty połączone
- * załamaną linią. Czysta geometria, żadnych ilustracji.
+ * załamaną linią. Pełne burgundowe pole daje znakowi wagę; złoty punkt
+ * końcowy to ten sam język, co „opanowane" w całej aplikacji.
  */
 export function Logo({ size = 26, markOnly = false }: LogoProps) {
   return (
-    <span style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
+    <span className="logo" style={{ gap: Math.round(size * 0.38) }}>
       <svg
         width={size}
         height={size}
@@ -19,38 +20,19 @@ export function Logo({ size = 26, markOnly = false }: LogoProps) {
         aria-hidden="true"
         style={{ flexShrink: 0 }}
       >
-        <rect width="32" height="32" rx="8" fill="var(--accent-soft)" />
-        {/* Włosowa rama — jedyny ornament w znaku. */}
-        <rect
-          x="3.25"
-          y="3.25"
-          width="25.5"
-          height="25.5"
-          rx="5.75"
-          fill="none"
-          stroke="var(--gold-line)"
-          strokeWidth="1"
-        />
+        <rect width="32" height="32" rx="8.5" fill="var(--burgundy-primary)" />
         <path
-          d="M11 8 V21 H23"
-          stroke="var(--accent-text)"
-          strokeWidth="2.4"
+          d="M11 8.5 V21 H22.5"
+          stroke="var(--text-primary)"
+          strokeWidth="2.6"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        <circle cx="11" cy="8" r="2.6" fill="var(--accent-text)" />
-        {/* Koniec trasy na złoto — ten sam język co „opanowane". */}
-        <circle cx="23" cy="21" r="2.6" fill="var(--gold)" />
+        <circle cx="11" cy="8.5" r="2.7" fill="var(--text-primary)" />
+        <circle cx="22.5" cy="21" r="2.7" fill="var(--gold-accent)" />
       </svg>
       {!markOnly && (
-        <span
-          style={{
-            fontSize: size * 0.72,
-            fontWeight: 800,
-            letterSpacing: "-0.035em",
-            lineHeight: 1,
-          }}
-        >
+        <span className="logo-word" style={{ fontSize: Math.round(size * 0.66) }}>
           Lexodromia
         </span>
       )}

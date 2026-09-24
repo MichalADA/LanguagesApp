@@ -90,7 +90,7 @@ export function StatsPage() {
         )}
 
         {accountStatistics && (
-          <section className="grid grid-3">
+          <section className="stat-grid">
             <StatCard value={accountStatistics.totalAnswers} label={t("stats.attempts")} />
             <StatCard value={accountStatistics.correctAnswers} label={t("stats.correct")} />
             <StatCard value={`${accountStatistics.accuracy}%`} label={t("dashboard.accuracy")} />
@@ -110,7 +110,7 @@ export function StatsPage() {
         <h1>{t("stats.title")}</h1>
       </header>
 
-      <section className="grid grid-3">
+      <section className="stat-grid">
         <StatCard value={current.totalAttempts} label={t("stats.attempts")} />
         <StatCard value={current.totalCorrect} label={t("stats.correct")} />
         <StatCard value={`${summary.accuracy}%`} label={t("dashboard.accuracy")} />

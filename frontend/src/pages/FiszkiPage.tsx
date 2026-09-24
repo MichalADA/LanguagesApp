@@ -100,7 +100,7 @@ export function FiszkiPage() {
 
       {status === "authenticated" && (
         <>
-          <section className="grid grid-3">
+          <section className="stat-grid">
             <StatCard value={newToday} label={t("flashcards.stat.newToday")} note={t("flashcards.stat.newTodayNote")} />
             <StatCard value={reviewDisplay} label={t("flashcards.stat.review")} note={t("flashcards.stat.reviewNote")} />
             <StatCard tone="gold" value={masteredDisplay} label={t("flashcards.stat.mastered")} note={t("flashcards.stat.masteredNote")} />
