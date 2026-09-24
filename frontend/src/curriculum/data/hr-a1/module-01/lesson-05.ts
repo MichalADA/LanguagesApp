@@ -12,56 +12,64 @@ export const LESSON: GeneratedLesson = {
         "source": "powtórzyć",
         "lemma": "ponoviti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0074"
+        "recordId": "A1-0074",
+        "audioSrc": "/audio/hr/a1/module-01/ponoviti.mp3"
       },
       {
         "target": "razumjeti",
         "source": "rozumieć",
         "lemma": "razumjeti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0075"
+        "recordId": "A1-0075",
+        "audioSrc": "/audio/hr/a1/module-01/razumjeti.mp3"
       },
       {
         "target": "pitati",
         "source": "pytać",
         "lemma": "pitati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0076"
+        "recordId": "A1-0076",
+        "audioSrc": "/audio/hr/a1/module-01/pitati.mp3"
       },
       {
         "target": "odgovoriti",
         "source": "odpowiedzieć",
         "lemma": "odgovoriti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0077"
+        "recordId": "A1-0077",
+        "audioSrc": "/audio/hr/a1/module-01/odgovoriti.mp3"
       },
       {
         "target": "razgovor",
         "source": "rozmowa",
         "lemma": "razgovor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0078"
+        "recordId": "A1-0078",
+        "audioSrc": "/audio/hr/a1/module-01/razgovor.mp3"
       },
       {
         "target": "još jednom",
         "source": "jeszcze raz",
         "lemma": "još jednom",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0079"
+        "recordId": "A1-0079",
+        "audioSrc": "/audio/hr/a1/module-01/jos-jednom.mp3"
       },
       {
         "target": "polako",
         "source": "powoli",
         "lemma": "polako",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0080"
+        "recordId": "A1-0080",
+        "audioSrc": "/audio/hr/a1/module-01/polako.mp3"
       },
       {
         "target": "molim",
         "source": "proszę",
         "lemma": "molim",
         "partOfSpeech": "interjection",
-        "recordId": "A1-0081"
+        "recordId": "A1-0081",
+        "audioSrc": "/audio/hr/a1/module-01/molim.mp3"
       }
     ],
     "steps": [
@@ -91,7 +99,8 @@ export const LESSON: GeneratedLesson = {
           "świetnie"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/odlicno.mp3"
       },
       {
         "id": "recall-2",
@@ -105,7 +114,8 @@ export const LESSON: GeneratedLesson = {
           "miło mi"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/odakle.mp3"
       },
       {
         "id": "recall-3",
@@ -119,7 +129,8 @@ export const LESSON: GeneratedLesson = {
           "ja"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/ti.mp3"
       },
       {
         "id": "vocab",
@@ -131,42 +142,50 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "ponoviti",
             "source": "powtórzyć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-01/ponoviti.mp3"
           },
           {
             "target": "razumjeti",
             "source": "rozumieć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-01/razumjeti.mp3"
           },
           {
             "target": "pitati",
             "source": "pytać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-01/pitati.mp3"
           },
           {
             "target": "odgovoriti",
             "source": "odpowiedzieć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-01/odgovoriti.mp3"
           },
           {
             "target": "razgovor",
             "source": "rozmowa",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-01/razgovor.mp3"
           },
           {
             "target": "još jednom",
             "source": "jeszcze raz",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-01/jos-jednom.mp3"
           },
           {
             "target": "polako",
             "source": "powoli",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-01/polako.mp3"
           },
           {
             "target": "molim",
             "source": "proszę",
-            "partOfSpeech": "wykrzyknik"
+            "partOfSpeech": "wykrzyknik",
+            "audioSrc": "/audio/hr/a1/module-01/molim.mp3"
           }
         ]
       },
@@ -180,7 +199,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Imam"
         ],
-        "translation": "Mam dwadzieścia sześć lat."
+        "translation": "Mam dwadzieścia sześć lat.",
+        "answerAudioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
       },
       {
         "id": "order",
@@ -195,7 +215,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Nisam baš dobro."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/nisam-bas-dobro.mp3"
       },
       {
         "id": "translate-1",
@@ -206,7 +227,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Odlično sam.",
           "Ja sam odlično."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
       },
       {
         "id": "translate-2",
@@ -216,7 +238,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Mieszkam w Polsce.",
         "accepted": [
           "Živim u Poljskoj."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
       },
       {
         "id": "translate-3",
@@ -227,7 +250,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Koliko imaš godina?",
           "Koliko ti imaš godina?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
       },
       {
         "id": "dialog",
@@ -240,7 +264,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Bok! Zovem se Ana.",
-              "translation": "Cześć! Mam na imię Ana."
+              "translation": "Cześć! Mam na imię Ana.",
+              "audioSrc": "/audio/hr/a1/module-01/bok-zovem-se-ana.mp3"
             }
           },
           {
@@ -250,14 +275,16 @@ export const LESSON: GeneratedLesson = {
               "Bok! Zovem se Michał."
             ],
             "pattern": "^(bok )?(ja )?zovem se \\p{L}+( \\p{L}+)?$",
-            "suggestion": "Bok! Zovem se Michał."
+            "suggestion": "Bok! Zovem se Michał.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/bok-zovem-se-michal.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Odakle si?",
-              "translation": "Skąd jesteś?"
+              "translation": "Skąd jesteś?",
+              "audioSrc": "/audio/hr/a1/module-01/odakle-si.mp3"
             }
           },
           {
@@ -268,14 +295,16 @@ export const LESSON: GeneratedLesson = {
               "Ja sam iz Poljske."
             ],
             "pattern": "^(ja sam )?iz \\p{L}+( sam)?$",
-            "suggestion": "Iz Poljske sam."
+            "suggestion": "Iz Poljske sam.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Gdje živiš?",
-              "translation": "Gdzie mieszkasz?"
+              "translation": "Gdzie mieszkasz?",
+              "audioSrc": "/audio/hr/a1/module-01/gdje-zivis.mp3"
             }
           },
           {
@@ -285,14 +314,16 @@ export const LESSON: GeneratedLesson = {
               "Živim u Poljskoj."
             ],
             "pattern": "^(ja )?živim u \\p{L}+$",
-            "suggestion": "Živim u Poljskoj."
+            "suggestion": "Živim u Poljskoj.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Koliko imaš godina?",
-              "translation": "Ile masz lat?"
+              "translation": "Ile masz lat?",
+              "audioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
             }
           },
           {
@@ -302,14 +333,16 @@ export const LESSON: GeneratedLesson = {
               "Imam dvadeset šest godina."
             ],
             "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$",
-            "suggestion": "Imam dvadeset šest godina."
+            "suggestion": "Imam dvadeset šest godina.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Ja imam dvadeset pet godina.",
-              "translation": "Ja mam dwadzieścia pięć lat."
+              "translation": "Ja mam dwadzieścia pięć lat.",
+              "audioSrc": "/audio/hr/a1/module-01/ja-imam-dvadeset-pet-godina.mp3"
             }
           },
           {
@@ -320,7 +353,8 @@ export const LESSON: GeneratedLesson = {
               "Možeš li ponoviti?"
             ],
             "pattern": "^(možeš li )?(to )?ponoviti( molim)?$|^još jednom( molim)?$",
-            "suggestion": "Možeš li ponoviti, molim?"
+            "suggestion": "Možeš li ponoviti, molim?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/mozes-li-ponoviti-molim.mp3"
           }
         ]
       },
@@ -362,7 +396,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Zovem se Michał. Iz Poljske sam. Živim u Krakovu. Imam dvadeset šest godina."
+        "sample": "Zovem se Michał. Iz Poljske sam. Živim u Krakovu. Imam dvadeset šest godina.",
+        "sampleAudioSrc": "/audio/hr/a1/module-01/zovem-se-michal-iz-poljske-sam-zivim-u-krakovu-imam-dvadeset.mp3"
       },
       {
         "id": "summary",
@@ -372,19 +407,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Bok! Zovem se Ana.",
-            "source": "Cześć! Mam na imię Ana."
+            "source": "Cześć! Mam na imię Ana.",
+            "audioSrc": "/audio/hr/a1/module-01/bok-zovem-se-ana.mp3"
           },
           {
             "target": "Odakle si?",
-            "source": "Skąd jesteś?"
+            "source": "Skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-01/odakle-si.mp3"
           },
           {
             "target": "Iz Poljske sam.",
-            "source": "Jestem z Polski."
+            "source": "Jestem z Polski.",
+            "audioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
           },
           {
             "target": "Gdje živiš?",
-            "source": "Gdzie mieszkasz?"
+            "source": "Gdzie mieszkasz?",
+            "audioSrc": "/audio/hr/a1/module-01/gdje-zivis.mp3"
           }
         ],
         "canDo": [

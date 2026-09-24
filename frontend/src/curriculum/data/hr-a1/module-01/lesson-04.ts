@@ -12,56 +12,64 @@ export const LESSON: GeneratedLesson = {
         "source": "zero",
         "lemma": "nula",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0056"
+        "recordId": "A1-0056",
+        "audioSrc": "/audio/hr/a1/module-01/nula.mp3"
       },
       {
         "target": "jedan",
         "source": "jeden",
         "lemma": "jedan",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0057"
+        "recordId": "A1-0057",
+        "audioSrc": "/audio/hr/a1/module-01/jedan.mp3"
       },
       {
         "target": "dva",
         "source": "dwa",
         "lemma": "dva",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0058"
+        "recordId": "A1-0058",
+        "audioSrc": "/audio/hr/a1/module-01/dva.mp3"
       },
       {
         "target": "deset",
         "source": "dziesięć",
         "lemma": "deset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0059"
+        "recordId": "A1-0059",
+        "audioSrc": "/audio/hr/a1/module-01/deset.mp3"
       },
       {
         "target": "dvadeset",
         "source": "dwadzieścia",
         "lemma": "dvadeset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0060"
+        "recordId": "A1-0060",
+        "audioSrc": "/audio/hr/a1/module-01/dvadeset.mp3"
       },
       {
         "target": "sto",
         "source": "sto",
         "lemma": "sto",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0061"
+        "recordId": "A1-0061",
+        "audioSrc": "/audio/hr/a1/module-01/sto.mp3"
       },
       {
         "target": "godina",
         "source": "rok",
         "lemma": "godina",
         "partOfSpeech": "noun",
-        "recordId": "A1-0062"
+        "recordId": "A1-0062",
+        "audioSrc": "/audio/hr/a1/module-01/godina.mp3"
       },
       {
         "target": "koliko",
         "source": "ile",
         "lemma": "koliko",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0063"
+        "recordId": "A1-0063",
+        "audioSrc": "/audio/hr/a1/module-01/koliko.mp3"
       }
     ],
     "steps": [
@@ -75,15 +83,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Koliko imaš godina?",
-            "source": "Ile masz lat?"
+            "source": "Ile masz lat?",
+            "audioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
           },
           {
             "target": "Imam dvadeset šest godina.",
-            "source": "Mam dwadzieścia sześć lat."
+            "source": "Mam dwadzieścia sześć lat.",
+            "audioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
           },
           {
             "target": "Ona ima trideset godina.",
-            "source": "Ona ma trzydzieści lat."
+            "source": "Ona ma trzydzieści lat.",
+            "audioSrc": "/audio/hr/a1/module-01/ona-ima-trideset-godina.mp3"
           }
         ]
       },
@@ -93,7 +104,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "nula",
         "source": "zero",
-        "partOfSpeech": "liczebnik"
+        "partOfSpeech": "liczebnik",
+        "audioSrc": "/audio/hr/a1/module-01/nula.mp3"
       },
       {
         "id": "word-2",
@@ -104,8 +116,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Imam jedan telefon.",
-          "source": "Mam jeden telefon."
-        }
+          "source": "Mam jeden telefon.",
+          "audioSrc": "/audio/hr/a1/module-01/imam-jedan-telefon.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/jedan.mp3"
       },
       {
         "id": "word-3",
@@ -116,8 +130,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Imam dvadeset šest godina.",
-          "source": "Mam dwadzieścia sześć lat."
-        }
+          "source": "Mam dwadzieścia sześć lat.",
+          "audioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/dva.mp3"
       },
       {
         "id": "check-1",
@@ -131,7 +147,8 @@ export const LESSON: GeneratedLesson = {
           "rok"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/jedan.mp3"
       },
       {
         "id": "word-4",
@@ -139,7 +156,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "deset",
         "source": "dziesięć",
-        "partOfSpeech": "liczebnik"
+        "partOfSpeech": "liczebnik",
+        "audioSrc": "/audio/hr/a1/module-01/deset.mp3"
       },
       {
         "id": "word-5",
@@ -150,8 +168,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Imam dvadeset šest godina.",
-          "source": "Mam dwadzieścia sześć lat."
-        }
+          "source": "Mam dwadzieścia sześć lat.",
+          "audioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/dvadeset.mp3"
       },
       {
         "id": "word-6",
@@ -159,7 +179,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "sto",
         "source": "sto",
-        "partOfSpeech": "liczebnik"
+        "partOfSpeech": "liczebnik",
+        "audioSrc": "/audio/hr/a1/module-01/sto.mp3"
       },
       {
         "id": "check-2",
@@ -173,7 +194,8 @@ export const LESSON: GeneratedLesson = {
           "sto"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-01/sto.mp3"
       },
       {
         "id": "word-7",
@@ -184,8 +206,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Koliko imaš godina?",
-          "source": "Ile masz lat?"
-        }
+          "source": "Ile masz lat?",
+          "audioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/godina.mp3"
       },
       {
         "id": "word-8",
@@ -196,8 +220,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Koliko imaš godina?",
-          "source": "Ile masz lat?"
-        }
+          "source": "Ile masz lat?",
+          "audioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-01/koliko.mp3"
       },
       {
         "id": "check-3",
@@ -211,7 +237,8 @@ export const LESSON: GeneratedLesson = {
           "dwadzieścia"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/godina.mp3"
       },
       {
         "id": "structure",
@@ -222,15 +249,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Koliko imaš godina?",
-            "source": "Ile masz lat?"
+            "source": "Ile masz lat?",
+            "audioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
           },
           {
             "target": "Imam dvadeset šest godina.",
-            "source": "Mam dwadzieścia sześć lat."
+            "source": "Mam dwadzieścia sześć lat.",
+            "audioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
           },
           {
             "target": "Ona ima trideset godina.",
-            "source": "Ona ma trzydzieści lat."
+            "source": "Ona ma trzydzieści lat.",
+            "audioSrc": "/audio/hr/a1/module-01/ona-ima-trideset-godina.mp3"
           }
         ]
       },
@@ -244,7 +274,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Imam"
         ],
-        "translation": "Mam dwadzieścia sześć lat."
+        "translation": "Mam dwadzieścia sześć lat.",
+        "answerAudioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
       },
       {
         "id": "translate-1",
@@ -255,7 +286,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Koliko imaš godina?",
           "Koliko ti imaš godina?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
       },
       {
         "id": "order",
@@ -271,7 +303,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Ona ima trideset godina."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/ona-ima-trideset-godina.mp3"
       },
       {
         "id": "comprehend",
@@ -285,7 +318,8 @@ export const LESSON: GeneratedLesson = {
           "Mam dwadzieścia sześć lat."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/koliko-je-to.mp3"
       },
       {
         "id": "dialog",
@@ -298,7 +332,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Koliko imaš godina?",
-              "translation": "Ile masz lat?"
+              "translation": "Ile masz lat?",
+              "audioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
             }
           },
           {
@@ -308,14 +343,16 @@ export const LESSON: GeneratedLesson = {
               "Imam dvadeset šest godina."
             ],
             "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$",
-            "suggestion": "Imam dvadeset šest godina."
+            "suggestion": "Imam dvadeset šest godina.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Ja imam trideset godina.",
-              "translation": "Ja mam trzydzieści lat."
+              "translation": "Ja mam trzydzieści lat.",
+              "audioSrc": "/audio/hr/a1/module-01/ja-imam-trideset-godina.mp3"
             }
           }
         ]
@@ -344,7 +381,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Imam dvadeset šest godina. Ona ima trideset godina."
+        "sample": "Imam dvadeset šest godina. Ona ima trideset godina.",
+        "sampleAudioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina-ona-ima-trideset-godina.mp3"
       },
       {
         "id": "summary",
@@ -354,19 +392,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Koliko imaš godina?",
-            "source": "Ile masz lat?"
+            "source": "Ile masz lat?",
+            "audioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
           },
           {
             "target": "Imam dvadeset šest godina.",
-            "source": "Mam dwadzieścia sześć lat."
+            "source": "Mam dwadzieścia sześć lat.",
+            "audioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
           },
           {
             "target": "Ona ima trideset godina.",
-            "source": "Ona ma trzydzieści lat."
+            "source": "Ona ma trzydzieści lat.",
+            "audioSrc": "/audio/hr/a1/module-01/ona-ima-trideset-godina.mp3"
           },
           {
             "target": "Imam jedan telefon.",
-            "source": "Mam jeden telefon."
+            "source": "Mam jeden telefon.",
+            "audioSrc": "/audio/hr/a1/module-01/imam-jedan-telefon.mp3"
           }
         ]
       }

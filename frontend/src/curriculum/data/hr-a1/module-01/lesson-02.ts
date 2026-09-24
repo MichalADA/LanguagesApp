@@ -12,56 +12,64 @@ export const LESSON: GeneratedLesson = {
         "source": "skąd",
         "lemma": "odakle",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0020"
+        "recordId": "A1-0020",
+        "audioSrc": "/audio/hr/a1/module-01/odakle.mp3"
       },
       {
         "target": "gdje",
         "source": "gdzie",
         "lemma": "gdje",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0021"
+        "recordId": "A1-0021",
+        "audioSrc": "/audio/hr/a1/module-01/gdje.mp3"
       },
       {
         "target": "živjeti",
         "source": "mieszkać / żyć",
         "lemma": "živjeti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0022"
+        "recordId": "A1-0022",
+        "audioSrc": "/audio/hr/a1/module-01/zivjeti.mp3"
       },
       {
         "target": "Poljska",
         "source": "Polska",
         "lemma": "Poljska",
         "partOfSpeech": "proper_noun",
-        "recordId": "A1-0023"
+        "recordId": "A1-0023",
+        "audioSrc": "/audio/hr/a1/module-01/poljska.mp3"
       },
       {
         "target": "Hrvatska",
         "source": "Chorwacja",
         "lemma": "Hrvatska",
         "partOfSpeech": "proper_noun",
-        "recordId": "A1-0024"
+        "recordId": "A1-0024",
+        "audioSrc": "/audio/hr/a1/module-01/hrvatska.mp3"
       },
       {
         "target": "grad",
         "source": "miasto",
         "lemma": "grad",
         "partOfSpeech": "noun",
-        "recordId": "A1-0025"
+        "recordId": "A1-0025",
+        "audioSrc": "/audio/hr/a1/module-01/grad.mp3"
       },
       {
         "target": "iz",
         "source": "z / ze",
         "lemma": "iz",
         "partOfSpeech": "preposition",
-        "recordId": "A1-0026"
+        "recordId": "A1-0026",
+        "audioSrc": "/audio/hr/a1/module-01/iz.mp3"
       },
       {
         "target": "u",
         "source": "w / do",
         "lemma": "u",
         "partOfSpeech": "preposition",
-        "recordId": "A1-0027"
+        "recordId": "A1-0027",
+        "audioSrc": "/audio/hr/a1/module-01/u.mp3"
       }
     ],
     "steps": [
@@ -74,15 +82,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Odakle si?",
-            "source": "zapytać, skąd ktoś jest"
+            "source": "zapytać, skąd ktoś jest",
+            "audioSrc": "/audio/hr/a1/module-01/odakle-si.mp3"
           },
           {
             "target": "Iz Poljske sam.",
-            "source": "powiedzieć, skąd jesteś"
+            "source": "powiedzieć, skąd jesteś",
+            "audioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
           },
           {
             "target": "Živim u Poljskoj.",
-            "source": "powiedzieć, gdzie mieszkasz"
+            "source": "powiedzieć, gdzie mieszkasz",
+            "audioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
           }
         ]
       },
@@ -95,22 +106,26 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Bok! Ja sam Ana. Odakle si?",
-            "translation": "Cześć! Jestem Ana. Skąd jesteś?"
+            "translation": "Cześć! Jestem Ana. Skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-01/bok-ja-sam-ana-odakle-si.mp3"
           },
           {
             "speaker": "Marek",
             "text": "Bok! Iz Poljske sam. A ti?",
-            "translation": "Cześć! Jestem z Polski. A ty?"
+            "translation": "Cześć! Jestem z Polski. A ty?",
+            "audioSrc": "/audio/hr/a1/module-01/bok-iz-poljske-sam-a-ti.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ja sam iz Hrvatske. Živim u Zagrebu. Gdje živiš?",
-            "translation": "Jestem z Chorwacji. Mieszkam w Zagrzebiu. Gdzie mieszkasz?"
+            "translation": "Jestem z Chorwacji. Mieszkam w Zagrzebiu. Gdzie mieszkasz?",
+            "audioSrc": "/audio/hr/a1/module-01/ja-sam-iz-hrvatske-zivim-u-zagrebu-gdje-zivis.mp3"
           },
           {
             "speaker": "Marek",
             "text": "Živim u Krakovu.",
-            "translation": "Mieszkam w Krakowie."
+            "translation": "Mieszkam w Krakowie.",
+            "audioSrc": "/audio/hr/a1/module-01/zivim-u-krakovu.mp3"
           }
         ],
         "note": "Nie musisz jeszcze wszystkiego rozumieć. Za kilka minut sam poprowadzisz tę rozmowę."
@@ -124,9 +139,11 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zaimek pytający",
         "example": {
           "target": "Odakle si?",
-          "source": "Skąd jesteś?"
+          "source": "Skąd jesteś?",
+          "audioSrc": "/audio/hr/a1/module-01/odakle-si.mp3"
         },
-        "note": "Si to „jesteś” — krótka forma czasownika biti."
+        "note": "Si to „jesteś” — krótka forma czasownika biti.",
+        "audioSrc": "/audio/hr/a1/module-01/odakle.mp3"
       },
       {
         "id": "check-odakle",
@@ -141,7 +158,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "explanation": "Odakle = skąd, si = jesteś.",
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/odakle-si.mp3"
       },
       {
         "id": "word-zemlja",
@@ -152,22 +170,27 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik, ż.",
         "example": {
           "target": "Hrvatska je lijepa zemlja.",
-          "source": "Chorwacja to piękny kraj."
+          "source": "Chorwacja to piękny kraj.",
+          "audioSrc": "/audio/hr/a1/module-01/hrvatska-je-lijepa-zemlja.mp3"
         },
         "related": [
           {
             "target": "Poljska",
-            "source": "Polska"
+            "source": "Polska",
+            "audioSrc": "/audio/hr/a1/module-01/poljska.mp3"
           },
           {
             "target": "Hrvatska",
-            "source": "Chorwacja"
+            "source": "Chorwacja",
+            "audioSrc": "/audio/hr/a1/module-01/hrvatska.mp3"
           },
           {
             "target": "grad",
-            "source": "miasto"
+            "source": "miasto",
+            "audioSrc": "/audio/hr/a1/module-01/grad.mp3"
           }
-        ]
+        ],
+        "audioSrc": "/audio/hr/a1/module-01/zemlja.mp3"
       },
       {
         "id": "check-grad",
@@ -182,7 +205,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "explanation": "Zagreb je grad — Zagrzeb to miasto.",
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-01/grad.mp3"
       },
       {
         "id": "word-zivjeti",
@@ -193,22 +217,27 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Živim u Poljskoj.",
-          "source": "Mieszkam w Polsce."
+          "source": "Mieszkam w Polsce.",
+          "audioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
         },
         "related": [
           {
             "target": "živim",
-            "source": "mieszkam"
+            "source": "mieszkam",
+            "audioSrc": "/audio/hr/a1/module-01/zivim.mp3"
           },
           {
             "target": "živiš",
-            "source": "mieszkasz"
+            "source": "mieszkasz",
+            "audioSrc": "/audio/hr/a1/module-01/zivis.mp3"
           },
           {
             "target": "gdje",
-            "source": "gdzie"
+            "source": "gdzie",
+            "audioSrc": "/audio/hr/a1/module-01/gdje.mp3"
           }
-        ]
+        ],
+        "audioSrc": "/audio/hr/a1/module-01/zivjeti.mp3"
       },
       {
         "id": "translate-gdje",
@@ -221,7 +250,8 @@ export const LESSON: GeneratedLesson = {
           "Gdje živiš",
           "Gdje ti živiš?"
         ],
-        "hint": "gdje + živiš"
+        "hint": "gdje + živiš",
+        "answerAudioSrc": "/audio/hr/a1/module-01/gdje-zivis.mp3"
       },
       {
         "id": "structure",
@@ -274,7 +304,8 @@ export const LESSON: GeneratedLesson = {
           "u"
         ],
         "translation": "Mieszkam w Polsce.",
-        "hint": "Gdzie? → u"
+        "hint": "Gdzie? → u",
+        "answerAudioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
       },
       {
         "id": "choice-odakle",
@@ -289,7 +320,9 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "explanation": "Pytanie brzmi „skąd?”, więc odpowiadamy z iz. Živim u Poljskoj mówi, gdzie mieszkasz.",
-        "targetText": "both"
+        "targetText": "both",
+        "promptAudioSrc": "/audio/hr/a1/module-01/odakle-si.mp3",
+        "answerAudioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
       },
       {
         "id": "gap-iz",
@@ -302,7 +335,8 @@ export const LESSON: GeneratedLesson = {
           "iz"
         ],
         "translation": "Jestem z Chorwacji.",
-        "hint": "Skąd? → iz"
+        "hint": "Skąd? → iz",
+        "answerAudioSrc": "/audio/hr/a1/module-01/ja-sam-iz-hrvatske.mp3"
       },
       {
         "id": "translate-zivim",
@@ -314,7 +348,8 @@ export const LESSON: GeneratedLesson = {
           "Živim u Poljskoj.",
           "Ja živim u Poljskoj."
         ],
-        "hint": "živim + u + Poljskoj"
+        "hint": "živim + u + Poljskoj",
+        "answerAudioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
       },
       {
         "id": "translate-iz",
@@ -326,7 +361,8 @@ export const LESSON: GeneratedLesson = {
           "Iz Poljske sam.",
           "Ja sam iz Poljske."
         ],
-        "hint": "iz Poljske + sam"
+        "hint": "iz Poljske + sam",
+        "answerAudioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
       },
       {
         "id": "dialog",
@@ -339,7 +375,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Bok! Odakle si?",
-              "translation": "Cześć! Skąd jesteś?"
+              "translation": "Cześć! Skąd jesteś?",
+              "audioSrc": "/audio/hr/a1/module-01/bok-odakle-si.mp3"
             }
           },
           {
@@ -351,14 +388,16 @@ export const LESSON: GeneratedLesson = {
               "Iz Poljske."
             ],
             "pattern": "^(ja sam )?iz [a-zčćđšž]+( sam)?[.!]?$",
-            "suggestion": "Iz Poljske sam."
+            "suggestion": "Iz Poljske sam.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Super! A gdje živiš?",
-              "translation": "Super! A gdzie mieszkasz?"
+              "translation": "Super! A gdzie mieszkasz?",
+              "audioSrc": "/audio/hr/a1/module-01/super-a-gdje-zivis.mp3"
             }
           },
           {
@@ -369,14 +408,16 @@ export const LESSON: GeneratedLesson = {
               "Ja živim u Poljskoj."
             ],
             "pattern": "^(ja )?živim u [a-zčćđšž]+[.!]?$",
-            "suggestion": "Živim u Poljskoj."
+            "suggestion": "Živim u Poljskoj.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Lijepo! Ja živim u Zagrebu.",
-              "translation": "Fajnie! Ja mieszkam w Zagrzebiu."
+              "translation": "Fajnie! Ja mieszkam w Zagrzebiu.",
+              "audioSrc": "/audio/hr/a1/module-01/lijepo-ja-zivim-u-zagrebu.mp3"
             }
           }
         ]
@@ -406,7 +447,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Ja sam iz Poljske. Živim u Varšavi."
+        "sample": "Ja sam iz Poljske. Živim u Varšavi.",
+        "sampleAudioSrc": "/audio/hr/a1/module-01/ja-sam-iz-poljske-zivim-u-varsavi.mp3"
       },
       {
         "id": "summary",
@@ -416,19 +458,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Odakle si?",
-            "source": "Skąd jesteś?"
+            "source": "Skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-01/odakle-si.mp3"
           },
           {
             "target": "Iz Poljske sam.",
-            "source": "Jestem z Polski."
+            "source": "Jestem z Polski.",
+            "audioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
           },
           {
             "target": "Gdje živiš?",
-            "source": "Gdzie mieszkasz?"
+            "source": "Gdzie mieszkasz?",
+            "audioSrc": "/audio/hr/a1/module-01/gdje-zivis.mp3"
           },
           {
             "target": "Živim u Poljskoj.",
-            "source": "Mieszkam w Polsce."
+            "source": "Mieszkam w Polsce.",
+            "audioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
           }
         ]
       }
