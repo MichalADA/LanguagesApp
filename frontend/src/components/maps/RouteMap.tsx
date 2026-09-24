@@ -27,8 +27,8 @@ export function RouteMap({ route, stopIndex, legProgress, labels }: Props) {
       <svg viewBox="0 0 320 200" className="routemap-svg" role="img" aria-label={route.name.pl}>
         <defs>
           <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="rgba(140,29,44,0.14)" />
-            <stop offset="100%" stopColor="rgba(140,29,44,0.02)" />
+            <stop offset="0%" stopColor="rgba(158,37,66,0.12)" />
+            <stop offset="100%" stopColor="rgba(158,37,66,0.02)" />
           </linearGradient>
         </defs>
 

@@ -33,7 +33,7 @@ export function ReviewSummary({ details = false }: { details?: boolean }) {
   const stats = data?.key === key ? data.stats : null;
   return (
     <section className="panel panel-pad stack">
-      <div className="dashboard-section-head">
+      <div className="section-head">
         <div>
           <span className="eyebrow">{t("reviews.due")}</span>
           <h2>{error === key ? "—" : (stats?.due ?? "…")}</h2>

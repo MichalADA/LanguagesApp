@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/auth/useAuth";
 import { initialsOf } from "@/auth/types";
 import { useT } from "@/i18n";
+import { Icon } from "./Icon";
 
 export function UserMenu() {
   const t = useT();
@@ -51,7 +52,7 @@ export function UserMenu() {
           </span>
         </span>
         <span className="usermenu-caret" aria-hidden="true">
-          ▾
+          <Icon name="arrowRight" size={14} />
         </span>
       </button>
 

@@ -8,6 +8,7 @@ import { VocabularyProvider } from "@/vocabulary/VocabularyProvider";
 import { GrammarProvider } from "@/grammar/GrammarProvider";
 import { ProgressProvider } from "@/progress/ProgressProvider";
 import { AuthProvider } from "@/auth/AuthContext";
+import { CurriculumProvider } from "@/curriculum/CurriculumProvider";
 import "./styles.css";
 
 /**
@@ -22,7 +23,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <VocabularyProvider>
               <GrammarProvider>
                 <ProgressProvider>
-                  <App />
+                  <CurriculumProvider>
+                    <App />
+                  </CurriculumProvider>
                 </ProgressProvider>
               </GrammarProvider>
             </VocabularyProvider>

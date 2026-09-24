@@ -104,13 +104,13 @@ export function SettingsPage() {
         <div className="list">
           <div className="list-row">
             <span className="muted">{t("settings.deck")}</span>
-            <span className="mono dim" style={{ fontSize: 13 }}>
+            <span className="code dim">
               {entries.length} · {datasetUrl}
             </span>
           </div>
           <div className="list-row">
             <span className="muted">{t("settings.progressKey")}</span>
-            <span className="mono dim" style={{ fontSize: 13 }}>
+            <span className="code dim">
               localStorage · {storageKey ?? "—"}
             </span>
           </div>
