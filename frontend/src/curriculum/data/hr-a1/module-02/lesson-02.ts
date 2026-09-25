@@ -588,7 +588,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Ovo je moj prijatelj Marko."
             ],
-            "pattern": "^(ovo je |to je )?moj prijatelj( marko)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(ovo je |to je )?moj prijatelj( marko)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Ovo je moj prijatelj Marko.",
             "suggestionAudioSrc": "/audio/hr/a1/module-02/ovo-je-moj-prijatelj-marko.mp3"
           },
@@ -608,7 +608,7 @@ export const LESSON: GeneratedLesson = {
               "On je učitelj.",
               "Marko je učitelj."
             ],
-            "pattern": "^(on|marko) je (učitelj|nastavnik)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(on|marko) je (učitelj|nastavnik))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "On je učitelj.",
             "suggestionAudioSrc": "/audio/hr/a1/module-02/on-je-ucitelj.mp3"
           }

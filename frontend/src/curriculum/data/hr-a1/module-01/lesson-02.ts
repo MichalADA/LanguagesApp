@@ -387,7 +387,7 @@ export const LESSON: GeneratedLesson = {
               "Ja sam iz Poljske.",
               "Iz Poljske."
             ],
-            "pattern": "^(ja sam )?iz [a-zčćđšž]+( sam)?[.!]?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(ja sam )?iz \\p{L}+( sam)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Iz Poljske sam.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
           },
@@ -407,7 +407,7 @@ export const LESSON: GeneratedLesson = {
               "Živim u Poljskoj.",
               "Ja živim u Poljskoj."
             ],
-            "pattern": "^(ja )?živim u [a-zčćđšž]+[.!]?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:((ja )?živim )?u \\p{L}+( u \\p{L}+)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Živim u Poljskoj.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
           },

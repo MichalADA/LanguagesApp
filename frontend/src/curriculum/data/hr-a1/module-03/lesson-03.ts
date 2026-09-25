@@ -611,7 +611,7 @@ export const LESSON: GeneratedLesson = {
               "Tri su sata.",
               "Sada su tri sata."
             ],
-            "pattern": "^(sada )?(tri su sata|su tri sata)( sada)?$|^tri sata$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(sada )?(tri su sata|su tri sata)( sada)?|tri sata)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Tri su sata.",
             "suggestionAudioSrc": "/audio/hr/a1/module-03/tri-su-sata.mp3"
           },
@@ -631,7 +631,7 @@ export const LESSON: GeneratedLesson = {
               "Sastanak je u četiri.",
               "U četiri."
             ],
-            "pattern": "^(sastanak je )?u četiri( sata)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(sastanak je )?u četiri( sata)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Sastanak je u četiri.",
             "suggestionAudioSrc": "/audio/hr/a1/module-03/sastanak-je-u-cetiri.mp3"
           }

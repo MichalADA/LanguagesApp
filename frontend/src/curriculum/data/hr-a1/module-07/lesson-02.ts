@@ -639,7 +639,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Jednu kartu za Split, molim."
             ],
-            "pattern": "^(molim )?(jednu )?kartu za split( molim)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|blagajnica) )*(?:(molim )?(jednu )?kartu za split( molim)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|blagajnica))*$",
             "suggestion": "Jednu kartu za Split, molim.",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/jednu-kartu-za-split-molim.mp3"
           },
@@ -659,7 +659,7 @@ export const LESSON: GeneratedLesson = {
               "Kada je polazak?",
               "Kada polazi vlak?"
             ],
-            "pattern": "^kada (je polazak|polazi( vlak| autobus)?)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|blagajnica) )*(?:kada (je polazak|polazi( vlak| autobus)?))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|blagajnica))*$",
             "suggestion": "Kada je polazak?",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/kada-je-polazak.mp3"
           },

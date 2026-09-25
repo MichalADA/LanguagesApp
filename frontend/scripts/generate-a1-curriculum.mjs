@@ -383,6 +383,37 @@ function structureStep(lessonId, spec) {
   };
 }
 
+/**
+ * Grzecznościowa rama repliki: w rozmowie naturalnie dodajemy powitanie, „hvala”, imię rozmówcy
+ * albo „a ti?” — to nie zmienia treści odpowiedzi, więc nie może jej unieważnić
+ * („Bok, dobro sam, hvala, a ti?” = „Dobro sam.”). Wielkość liter i interpunkcję usuwa już checker.
+ */
+const canonReply = (x) => x.toLocaleLowerCase("hr").replace(/[.,!?;:„”"…«»]/g, " ").replace(/\s+/g, " ").trim();
+function framePattern(core, partner) {
+  const name = partner ? `|${canonReply(partner)}` : "";
+  const lead = `(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?${name}) )*`;
+  const trail = `(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?${name}))*`;
+  // rdzeń bez własnych kotwic: ^a$|^b$ → a|b
+  const bare = core.replace(/(^|\|)\^/g, "$1").replace(/\$(?=\||$)/g, "");
+  return `^${lead}(?:${bare})${trail}$`;
+}
+const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/** Replika: lista wariantów → rama (wzorzec z didactics albo alternatywa wariantów) → sprawdzenie. */
+function replyTurn(lessonId, prompt, accepted, pattern, partner, { open = false, source = pattern } = {}) {
+  const core = pattern ?? accepted.map((a) => `^${escapeRegex(canonReply(a))}$`).join("|");
+  const framed = framePattern(core, partner);
+  let regex = null;
+  try { regex = new RegExp(framed, "u"); } catch (e) { fail(`${lessonId}: błędny pattern ${source}: ${e.message}`); }
+  if (regex) {
+    // Wzorzec ma przepuszczać sugerowaną odpowiedź — inaczej to błąd w danych.
+    if (!regex.test(canonReply(accepted[0]))) fail(`${lessonId}: sugerowana odpowiedź „${accepted[0]}” nie pasuje do ramy ${source}`);
+    // Replika otwarta: odpowiedź w grzecznościowej ramie („Bok, … hvala”) też musi przejść.
+    if (open && !regex.test(canonReply(`Bok, ${accepted[0]} hvala`))) fail(`${lessonId}: otwarta replika „${prompt}” odrzuca „Bok, ${accepted[0]} hvala”`);
+  }
+  return { kind: "reply", prompt, accepted, pattern: framed, suggestion: accepted[0] };
+}
+
 function dialogStep(lessonId, spec) {
   const turns = spec.turns.map((turn) => {
     if (turn.line !== undefined) {
@@ -396,19 +427,14 @@ function dialogStep(lessonId, spec) {
     const self = listed.some(isSelf);
     const accepted = self ? unique([...listed, ...listed.map((a) => swapGender(a, GENDER))]) : listed;
     if (!accepted.length) fail(`${lessonId}: odpowiedź w dialogu bez wariantów`);
+    // Replika otwarta (polecenie dopuszcza wiele treści) musi mieć ramę zdania, nie jedną odpowiedź.
+    if (reply.open && !reply.pattern) fail(`${lessonId}: otwarta replika „${reply.prompt}” bez wzorca`);
     let pattern = reply.pattern;
     if (pattern) {
       // Rama zdania: {slot} → formy słownictwa całego kursu (hr-morphology), rodzaj → (?:m|ż) przy replikach o sobie.
-      let regex = null;
-      try {
-        pattern = expandSlots(self ? genderizePattern(pattern, GENDER) : pattern, LEXICON);
-        regex = new RegExp(pattern, "u");
-      } catch (e) { fail(`${lessonId}: błędny pattern ${reply.pattern}: ${e.message}`); }
-      // Wzorzec ma przepuszczać sugerowaną odpowiedź — inaczej to błąd w danych.
-      const canon = (x) => x.toLocaleLowerCase("hr").replace(/[.,!?;:„”"]/g, " ").replace(/\s+/g, " ").trim();
-      if (regex && !regex.test(canon(accepted[0]))) fail(`${lessonId}: sugerowana odpowiedź „${accepted[0]}” nie pasuje do ramy ${reply.pattern}`);
+      try { pattern = expandSlots(self ? genderizePattern(pattern, GENDER) : pattern, LEXICON); } catch (e) { fail(`${lessonId}: błędny pattern ${reply.pattern}: ${e.message}`); }
     }
-    return { kind: "reply", prompt: reply.prompt, accepted, ...(pattern ? { pattern } : {}), suggestion: accepted[0] };
+    return replyTurn(lessonId, reply.prompt, accepted, pattern, spec.partner, { open: reply.open, source: reply.pattern });
   });
   return { id: "dialog", stage: "dialog", type: "dialog", title: spec.title, turns };
 }
@@ -903,7 +929,14 @@ function loadDemoLesson() {
   const { outputText } = ts.transpileModule(readFileSync(DEMO_LESSON_PATH, "utf8"), { compilerOptions: { module: ts.ModuleKind.CommonJS } });
   const exports = {};
   new Function("exports", "require", outputText)(exports, () => ({}));
-  return structuredClone(exports.LESSON_A1_01_02);
+  const lesson = structuredClone(exports.LESSON_A1_01_02);
+  // Repliki lekcji demo (skąd jesteś, gdzie mieszkasz) są otwarte — dostają tę samą ramę co reszta A1.
+  for (const step of lesson.steps) {
+    if (step.type !== "dialog") continue;
+    const partner = step.turns.find((t) => t.kind === "line")?.line.speaker;
+    step.turns = step.turns.map((t) => (t.kind === "reply" ? replyTurn(lesson.lessonId, t.prompt, t.accepted, t.pattern, partner, { open: true }) : t));
+  }
+  return lesson;
 }
 
 // 1. Treść wszystkich lekcji.

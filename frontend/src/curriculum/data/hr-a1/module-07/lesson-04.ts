@@ -581,7 +581,7 @@ export const LESSON: GeneratedLesson = {
               "Ja sam na plaži.",
               "Na plaži sam."
             ],
-            "pattern": "^(ja sam na plaži|na plaži sam|ja sam u moru|u moru sam|na plaži)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(ja sam na plaži|na plaži sam|ja sam u moru|u moru sam|na plaži))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Ja sam na plaži.",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/ja-sam-na-plazi.mp3"
           },
@@ -602,7 +602,7 @@ export const LESSON: GeneratedLesson = {
               "Ja plivam u moru.",
               "Kupam se."
             ],
-            "pattern": "^(ja )?(plivam|kupam se|se kupam)( u moru)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(ja )?(plivam|kupam se|se kupam)( u moru)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Plivam u moru.",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/plivam-u-moru.mp3"
           }

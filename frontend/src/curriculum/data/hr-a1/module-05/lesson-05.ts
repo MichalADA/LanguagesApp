@@ -367,7 +367,7 @@ export const LESSON: GeneratedLesson = {
               "Oprostite, gdje je banka?",
               "Gdje je banka?"
             ],
-            "pattern": "^(oprostite )?gdje je banka( molim vas)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|prolaznik) )*(?:(oprostite )?gdje je banka( molim vas)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|prolaznik))*$",
             "suggestion": "Oprostite, gdje je banka?",
             "suggestionAudioSrc": "/audio/hr/a1/module-05/oprostite-gdje-je-banka.mp3"
           },
@@ -387,7 +387,7 @@ export const LESSON: GeneratedLesson = {
               "Je li daleko?",
               "Je li to daleko?"
             ],
-            "pattern": "^je li (to )?daleko$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|prolaznik) )*(?:je li (to )?daleko)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|prolaznik))*$",
             "suggestion": "Je li daleko?",
             "suggestionAudioSrc": "/audio/hr/a1/module-05/je-li-daleko.mp3"
           },
@@ -407,7 +407,7 @@ export const LESSON: GeneratedLesson = {
               "Hvala!",
               "Hvala vam!"
             ],
-            "pattern": "^hvala( vam| lijepa| na pomoći)?( doviđenja)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|prolaznik) )*(?:hvala( vam| lijepa| na pomoći)?( doviđenja)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|prolaznik))*$",
             "suggestion": "Hvala!",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/hvala.mp3"
           }

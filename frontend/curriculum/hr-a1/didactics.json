@@ -152,7 +152,8 @@
                 3,
                 4
               ],
-              "pattern": "^((ja sam )?(dobro|odlično|loše) sam|ja sam (dobro|odlično|loše)|nisam( baš)? dobro|(dobro|odlično)( hvala)?)( hvala)?( a ti)?$"
+              "open": true,
+              "pattern": "^((vrlo |jako )?(dobro|odlično|super|loše|ok) sam|ja sam (vrlo |jako )?(dobro|odlično|super|loše)|(vrlo |jako )?(dobro|odlično|super|ok)|nisam( baš)?( tako)? dobro|(ja sam |sam )?{adj.self}( sam)?)$"
             }
           },
           {
@@ -165,7 +166,8 @@
                 6,
                 "Bok!"
               ],
-              "pattern": "^(doviđenja|bok|vidimo se)( ana)?$"
+              "open": true,
+              "pattern": "^((dobro|može) )?(doviđenja|bok|vidimo se( sutra)?)( (doviđenja|bok|vidimo se( sutra)?))*$"
             }
           }
         ]
@@ -241,7 +243,8 @@
               "accept": [
                 2
               ],
-              "pattern": "^(bok )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$"
+              "open": true,
+              "pattern": "^(drago mi je )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$"
             }
           },
           {
@@ -254,7 +257,8 @@
                 "I meni.",
                 5
               ],
-              "pattern": "^(i meni|drago mi je|i meni je drago)$"
+              "open": true,
+              "pattern": "^(i meni( je drago| isto)?|drago mi je( isto| također)?|također)$"
             }
           }
         ]
@@ -313,7 +317,8 @@
               "accept": [
                 2
               ],
-              "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$"
+              "open": true,
+              "pattern": "^((ja )?imam )?(\\d+ godin[aue]|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(dva|dvije|tri|četiri) godine|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*jednu godinu|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) godina)$"
             }
           },
           {
@@ -359,7 +364,8 @@
               "accept": [
                 "Bok! Zovem se Michał."
               ],
-              "pattern": "^(bok )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$"
+              "open": true,
+              "pattern": "^(drago mi je )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$"
             }
           },
           {
@@ -372,6 +378,7 @@
                 3,
                 "Ja sam iz Poljske."
               ],
+              "open": true,
               "pattern": "^(ja sam )?iz \\p{L}+( sam)?$"
             }
           },
@@ -384,7 +391,8 @@
               "accept": [
                 "Živim u Poljskoj."
               ],
-              "pattern": "^(ja )?živim u \\p{L}+$"
+              "open": true,
+              "pattern": "^((ja )?živim )?u \\p{L}+( u \\p{L}+)?$"
             }
           },
           {
@@ -397,7 +405,8 @@
               "accept": [
                 5
               ],
-              "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$"
+              "open": true,
+              "pattern": "^((ja )?imam )?(\\d+ godin[aue]|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(dva|dvije|tri|četiri) godine|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*jednu godinu|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) godina)$"
             }
           },
           {
@@ -412,7 +421,8 @@
                 6,
                 "Možeš li ponoviti?"
               ],
-              "pattern": "^(možeš li )?(to )?ponoviti( molim)?$|^(još jednom|polako)( molim)?$"
+              "open": true,
+              "pattern": "^((možeš|možete) li )?(to )?ponoviti( molim)?$|^(još jednom|polako|molim)( molim| još jednom)?$|^(ja )?ne razumijem$"
             }
           }
         ]
@@ -953,7 +963,8 @@
               "accept": [
                 2
               ],
-              "pattern": "^(moja sestra|ona) je (vrlo )?{adj.f}$"
+              "open": true,
+              "pattern": "^((moja sestra|ona) je (vrlo |jako )?{adj.f}|(vrlo |jako )?{adj.f} je)$"
             }
           },
           {
@@ -966,7 +977,8 @@
               "accept": [
                 3
               ],
-              "pattern": "^(moj prijatelj|on) radi ((u|na) {loc}|od kuće|kod kuće)$"
+              "open": true,
+              "pattern": "^(((moj prijatelj|on) )?radi )?((u|na) {loc}|od kuće|kod kuće)$"
             }
           },
           {
@@ -1063,7 +1075,8 @@
               "accept": [
                 1
               ],
-              "pattern": "^(ja )?(ujutro )?ustajem (ujutro )?u (pola )?\\p{L}+( sati)?( ujutro)?$"
+              "open": true,
+              "pattern": "^((ja )?((obično|ujutro) )?ustajem ((ujutro|obično) )?)?u (pola )?\\p{L}+( sati)?( ujutro)?$"
             }
           },
           {
@@ -1079,7 +1092,8 @@
                 "Navečer spavam.",
                 "Navečer radim."
               ],
-              "pattern": "^(navečer )?(ja )?{pres1}( \\p{L}+){0,3}( navečer)?$"
+              "open": true,
+              "pattern": "^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?((navečer|obično|često|ponekad|uvijek|rijetko) )*((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( (navečer|obično|često|ponekad|uvijek|rijetko))*$"
             }
           }
         ]
@@ -1189,7 +1203,8 @@
                 2,
                 1
               ],
-              "pattern": "^(ja )?radim ((u|na) {loc}|od kuće|kod kuće)$"
+              "open": true,
+              "pattern": "^((ja )?radim )?((u|na) {loc}|od kuće|kod kuće)$|^(ja )?(ne radim|studiram)( \\p{L}+){0,2}$"
             }
           },
           {
@@ -1421,7 +1436,8 @@
               "accept": [
                 1
               ],
-              "pattern": "^(danas je )?(ponedjeljak|utorak|srijeda|četvrtak|petak|subota|nedjelja)( danas)?$"
+              "open": true,
+              "pattern": "^(danas je )?(ponedjeljak|utorak|srijeda|četvrtak|petak|subota|nedjelja)( je)?( danas)?$"
             }
           },
           {
@@ -1434,7 +1450,8 @@
               "accept": [
                 4
               ],
-              "pattern": "^(u subotu )?(ja )?{pres1}( \\p{L}+){0,3}( u subotu)?$"
+              "open": true,
+              "pattern": "^(u subotu )?(ja )?(((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}|(ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3}))( u subotu)?$"
             }
           }
         ]
@@ -1529,7 +1546,8 @@
                 2,
                 "Radim od deset."
               ],
-              "pattern": "^(obično )?(ja )?radim (od \\p{L}+( do \\p{L}+)?|u \\p{L}+)( sati)?$"
+              "open": true,
+              "pattern": "^((obično )?(ja )?(obično )?radim )?(od \\p{L}+( do \\p{L}+)?|u \\p{L}+)( sati)?$"
             }
           },
           {
@@ -1560,7 +1578,8 @@
                 "Navečer čitam.",
                 "Navečer učim hrvatski."
               ],
-              "pattern": "^(navečer )?(često |obično |ponekad )?(ja )?(često |obično |ponekad )?{pres1}( \\p{L}+){0,3}( navečer)?$"
+              "open": true,
+              "pattern": "^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?((navečer|obično|često|ponekad|uvijek|rijetko) )*((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( (navečer|obično|često|ponekad|uvijek|rijetko))*$"
             }
           }
         ]
@@ -1648,7 +1667,8 @@
                 "Pijem kavu.",
                 "Pijem čaj."
               ],
-              "pattern": "^(ja )?pijem {acc}( (i|s|sa|bez) \\p{L}+){0,3}$"
+              "open": true,
+              "pattern": "^((ja )?(ne )?pijem )?(jednu |jedan |jedno )?{acc}( (i|s|sa|bez) \\p{L}+){0,3}$"
             }
           },
           {
@@ -1661,7 +1681,8 @@
               "accept": [
                 3
               ],
-              "pattern": "^(ja )?jedem {acc}( (i|s|sa|bez) \\p{L}+){0,3}$"
+              "open": true,
+              "pattern": "^((ja )?(ne )?jedem )?(jednu |jedan |jedno )?{acc}( (i|s|sa|bez) \\p{L}+){0,3}$"
             }
           }
         ]
@@ -1766,7 +1787,8 @@
                 "Da, volim kavu.",
                 "Ne volim kavu."
               ],
-              "pattern": "^(da |ne )?(ja )?(ne )?volim( kavu)?$"
+              "open": true,
+              "pattern": "^(da|ne)$|^((da|ne) )?(ja )?((jako|baš) )?(ne )?volim( kavu)?$"
             }
           },
           {
@@ -1780,7 +1802,8 @@
                 2,
                 "Volim juhu."
               ],
-              "pattern": "^(da |ne )?(ja )?(ne )?volim( juhu)?$"
+              "open": true,
+              "pattern": "^(da|ne)$|^((da|ne) )?(ja )?((jako|baš) )?(ne )?volim( juhu)?$"
             }
           }
         ]
@@ -1886,7 +1909,8 @@
                 "Htio bih kavu.",
                 "Htjela bih kavu."
               ],
-              "pattern": "^(dobar dan )?((molim|htio bih|mogu li dobiti)( jednu| jedan| jedno)? {acc}( \\p{L}+){0,3}|(jednu |jedan |jedno )?{acc}( \\p{L}+){0,3} molim)( molim)?$"
+              "open": true,
+              "pattern": "^((molim|htio bih|mogu li dobiti|za mene)( jednu| jedan| jedno)? {acc}( \\p{L}+){0,3}|(jednu |jedan |jedno )?{acc}( \\p{L}+){0,3})$"
             }
           },
           {
@@ -1900,7 +1924,8 @@
                 4,
                 "Ne, hvala."
               ],
-              "pattern": "^((ne|da)( hvala| molim)?|bez šećera)( bez šećera)?( molim| hvala)?$"
+              "open": true,
+              "pattern": "^(ne|da|bez šećera|sa šećerom|s šećerom)( bez šećera)?$"
             }
           },
           {
@@ -2026,7 +2051,8 @@
                 "Vodu, molim.",
                 "Molim vodu."
               ],
-              "pattern": "^((molim )?{acc}( molim)?|htio bih {acc}|za mene {acc}( molim)?|mogu li dobiti {acc})$"
+              "open": true,
+              "pattern": "^((molim|htio bih|htjela bih|za mene|mogu li dobiti) )?(jednu |jedan |jedno )?{acc}$"
             }
           },
           {
@@ -2139,7 +2165,8 @@
                 "Htio bih naručiti ribu.",
                 "Molim juhu."
               ],
-              "pattern": "^((htio bih (naručiti )?|molim |za mene |mogu li dobiti )?(jednu |jedan |jedno )?{acc}( (i|s|sa|bez) \\p{L}+){0,3})( molim)?$"
+              "open": true,
+              "pattern": "^((htio bih (naručiti )?|molim |za mene |mogu li dobiti )?(jednu |jedan |jedno )?{acc}( (i|s|sa|bez) \\p{L}+){0,3})$"
             }
           },
           {
@@ -2365,7 +2392,8 @@
                 2,
                 3
               ],
-              "pattern": "^(ja )?idem (u|na) {acc}( \\p{L}+){0,2}$"
+              "open": true,
+              "pattern": "^((ja )?idem )?((u|na) {acc}( \\p{L}+){0,2}|kući)$"
             }
           },
           {
@@ -2811,7 +2839,8 @@
                 1,
                 "U slobodno vrijeme slušam glazbu."
               ],
-              "pattern": "^(u slobodno vrijeme )?(ja )?({pres1}|volim {inf})( \\p{L}+){0,3}( u slobodno vrijeme)?$"
+              "open": true,
+              "pattern": "^(u slobodno vrijeme )?(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( u slobodno vrijeme)?$"
             }
           },
           {
@@ -2934,7 +2963,8 @@
                 "Da, volim sport.",
                 1
               ],
-              "pattern": "^(da |ne )?(ja )?(ne )?volim ({inf}|{acc})( i ({inf}|{acc}))?$"
+              "open": true,
+              "pattern": "^((da|ne) )?(ali )?(ja )?((jako|baš) )?(ne )?volim ({inf}|{acc})( i ({inf}|{acc}))?$"
             }
           },
           {
@@ -2949,7 +2979,8 @@
                 "Ponekad trčim.",
                 "Nikad ne trčim."
               ],
-              "pattern": "^(da |ne )?(ja )?((često|ponekad|rijetko|obično) trčim( \\p{L}+){0,3}|nikad ne trčim|trčim( \\p{L}+){1,3})$"
+              "open": true,
+              "pattern": "^(da |ne )?(ja )?((često|ponekad|rijetko|obično) trčim( \\p{L}+){0,3}|nikad ne trčim|ne trčim|trčim( \\p{L}+){1,3})$|^(da|ne)( (često|ponekad|rijetko|svaki dan))?$"
             }
           }
         ]
@@ -3057,7 +3088,8 @@
                 2,
                 3
               ],
-              "pattern": "^((danas )?(je )?{pred}( i {pred})?( je)?( danas)?|(danas )?pada (kiša|snijeg)( danas)?|(danas )?puše vjetar)$"
+              "open": true,
+              "pattern": "^((danas )?(je )?{pred}( i {pred})?( je)?( danas)?|{pred} je i {pred}|(danas )?pada (kiša|snijeg)( danas)?|(danas )?(kiša|snijeg) pada( danas)?|(danas )?puše vjetar)$"
             }
           },
           {
@@ -3164,7 +3196,8 @@
               "accept": [
                 2
               ],
-              "pattern": "^(može|dogovoreno|rado)( kada| u koliko sati)$"
+              "open": true,
+              "pattern": "^(da )?(može|dogovoreno|rado|naravno) (kada|kad|u koliko sati)$"
             }
           },
           {
@@ -3192,7 +3225,8 @@
                 6,
                 "Vidimo se!"
               ],
-              "pattern": "^(vidimo se|bok|doviđenja)( sutra)?$"
+              "open": true,
+              "pattern": "^((dobro|može) )?(doviđenja|bok|vidimo se( sutra)?)( (doviđenja|bok|vidimo se( sutra)?))*$"
             }
           }
         ]
@@ -3277,7 +3311,8 @@
                 4,
                 "Volim čitati."
               ],
-              "pattern": "^(ja )?volim ({inf}|{acc})( i ({inf}|{acc}))?$"
+              "open": true,
+              "pattern": "^(ja )?((jako|baš) )?(ne )?volim ({inf}|{acc})( i ({inf}|{acc}))?$|^(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}$"
             }
           },
           {
@@ -3291,7 +3326,8 @@
                 1,
                 "Vikendom idem na bazen."
               ],
-              "pattern": "^(vikendom )?(ja )?{pres1}( \\p{L}+){0,3}( vikendom)?$"
+              "open": true,
+              "pattern": "^(vikendom )?(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( vikendom)?$"
             }
           },
           {
@@ -3306,7 +3342,8 @@
                 "Može!",
                 "Ne mogu."
               ],
-              "pattern": "^(može|rado|ne mogu)( rado| u \\p{L}+)?$"
+              "open": true,
+              "pattern": "^(da )?(može|rado|naravno|dogovoreno|(nažalost )?ne mogu)( rado)?( (u \\p{L}+|sutra|večeras|danas|vikendom)( u \\p{L}+)?)?$"
             }
           }
         ]
@@ -3385,7 +3422,8 @@
                 "Putujem u Zagreb.",
                 "Idem na more."
               ],
-              "pattern": "^(putujem|idem|idemo)( {ins})? (u|na) \\p{L}+( {ins})?$"
+              "open": true,
+              "pattern": "^((putujem|idem|idemo)( {ins})? )?(u|na) \\p{L}+( {ins})?$"
             }
           },
           {
@@ -3399,6 +3437,7 @@
                 2,
                 "Putujem vlakom."
               ],
+              "open": true,
               "pattern": "^(ja )?(putujem |idem )?{ins}$"
             }
           }
@@ -4016,7 +4055,8 @@
                 4,
                 5
               ],
-              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam {pp.self}( \\p{L}+){0,4}|{pp.self} sam( \\p{L}+){0,4})$"
+              "open": true,
+              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam (se )?{pp.self}( \\p{L}+){0,4}|{pp.self} sam( se)?( \\p{L}+){0,4})$"
             }
           },
           {
@@ -4146,7 +4186,8 @@
                 1,
                 2
               ],
-              "pattern": "^((sutra|kasnije|ja)( ja)? ću {inf}( \\p{L}+){0,3}|{inft} ću( \\p{L}+){0,3})$"
+              "open": true,
+              "pattern": "^((sutra|kasnije|ja)( ja)? (ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})|(ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})( sutra)?|sutra (ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}|(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3} sutra)$"
             }
           },
           {
@@ -4160,7 +4201,8 @@
                 "Može!",
                 "Ne mogu."
               ],
-              "pattern": "^(da )?(hoću|može|ne mogu|naravno)( rado)?$"
+              "open": true,
+              "pattern": "^(da )?(hoću|može|rado|naravno|dogovoreno|(nažalost )?ne mogu)( rado)?( (u \\p{L}+|sutra|večeras|danas|vikendom)( u \\p{L}+)?)?$"
             }
           }
         ]
@@ -4252,7 +4294,8 @@
                 "Zovem se Michał i iz Poljske sam.",
                 "Zovem se Michał. Iz Poljske sam."
               ],
-              "pattern": "^((ja )?zovem se|ja sam) \\p{L}+ (i )?((ja )?sam iz \\p{L}+|iz \\p{L}+ sam)$"
+              "open": true,
+              "pattern": "^((ja )?zovem se|ja sam) \\p{L}+ (i )?((ja )?sam iz \\p{L}+|iz \\p{L}+ sam|iz \\p{L}+)$"
             }
           },
           {
@@ -4264,6 +4307,7 @@
               "accept": [
                 "Živim u Krakovu i radim u uredu."
               ],
+              "open": true,
               "pattern": "^(ja )?živim u \\p{L}+ (i )?(ja )?(radim|studiram|učim)( (u|na) {loc}| od kuće| kod kuće| hrvatski)?$"
             }
           },
@@ -4276,7 +4320,8 @@
               "accept": [
                 "Volim čitati i plivati."
               ],
-              "pattern": "^(u slobodno vrijeme )?(ja )?volim ({inf}|{acc})( i ({inf}|{acc}))?$"
+              "open": true,
+              "pattern": "^(u slobodno vrijeme )?((ja )?((jako|baš) )?(ne )?volim ({inf}|{acc})( i ({inf}|{acc}))?|(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3})$"
             }
           },
           {
@@ -4289,7 +4334,8 @@
                 "Jučer sam radio.",
                 "Jučer sam radila."
               ],
-              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam {pp.self}( \\p{L}+){0,4}|{pp.self} sam( \\p{L}+){0,4})$"
+              "open": true,
+              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam (se )?{pp.self}( \\p{L}+){0,4}|{pp.self} sam( se)?( \\p{L}+){0,4})$"
             }
           },
           {
@@ -4301,7 +4347,8 @@
               "accept": [
                 "Sutra ću učiti hrvatski."
               ],
-              "pattern": "^((sutra|kasnije|ja)( ja)? ću {inf}( \\p{L}+){0,3}|{inft} ću( \\p{L}+){0,3})$"
+              "open": true,
+              "pattern": "^((sutra|kasnije|ja)( ja)? (ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})|(ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})( sutra)?|sutra (ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}|(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3} sutra)$"
             }
           },
           {
@@ -4315,7 +4362,8 @@
                 "I meni!",
                 "Drago mi je."
               ],
-              "pattern": "^(i meni( je drago)?|drago mi je)$"
+              "open": true,
+              "pattern": "^(i meni( je drago| isto)?|drago mi je( isto| također)?|također)$"
             }
           }
         ]
@@ -4407,7 +4455,8 @@
               "accept": [
                 "Dobro sam, hvala."
               ],
-              "pattern": "^((ja sam )?(dobro|odlično|loše) sam|ja sam (dobro|odlično|loše)|nisam( baš)? dobro|(dobro|odlično)( hvala)?)( hvala)?( a ti)?$"
+              "open": true,
+              "pattern": "^((vrlo |jako )?(dobro|odlično|super|loše|ok) sam|ja sam (vrlo |jako )?(dobro|odlično|super|loše)|(vrlo |jako )?(dobro|odlično|super|ok)|nisam( baš)?( tako)? dobro|(ja sam |sam )?{adj.self}( sam)?)$"
             }
           },
           {
@@ -4421,7 +4470,8 @@
                 "Jučer sam radio.",
                 "Jučer sam radila."
               ],
-              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam {pp.self}( \\p{L}+){0,4}|{pp.self} sam( \\p{L}+){0,4})$"
+              "open": true,
+              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam (se )?{pp.self}( \\p{L}+){0,4}|{pp.self} sam( se)?( \\p{L}+){0,4})$"
             }
           },
           {
@@ -4434,7 +4484,8 @@
               "accept": [
                 "U subotu ću ići na more."
               ],
-              "pattern": "^u subotu (ću|ćemo) {inf}( \\p{L}+){0,3}$"
+              "open": true,
+              "pattern": "^(u subotu )?(ja )?((ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})|((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3})( u subotu)?$"
             }
           },
           {
@@ -4448,7 +4499,8 @@
                 "Može, u šest.",
                 "Može sutra."
               ],
-              "pattern": "^(može|rado|ne mogu)( u \\p{L}+| sutra| večeras| danas)?$"
+              "open": true,
+              "pattern": "^(da )?(može|rado|naravno|dogovoreno)( rado)?( (u \\p{L}+|sutra|večeras|danas|vikendom)( u \\p{L}+)?)?$"
             }
           }
         ]

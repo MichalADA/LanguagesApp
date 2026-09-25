@@ -592,7 +592,7 @@ export const LESSON: GeneratedLesson = {
               "Ne volim kavu.",
               "Ja ne volim kavu."
             ],
-            "pattern": "^(da |ne )?(ja )?(ne )?volim( kavu)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(da|ne)|((da|ne) )?(ja )?((jako|baš) )?(ne )?volim( kavu)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Volim kavu.",
             "suggestionAudioSrc": "/audio/hr/a1/module-04/volim-kavu.mp3"
           },
@@ -614,7 +614,7 @@ export const LESSON: GeneratedLesson = {
               "Volim juhu.",
               "Ja volim juhu."
             ],
-            "pattern": "^(da |ne )?(ja )?(ne )?volim( juhu)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(da|ne)|((da|ne) )?(ja )?((jako|baš) )?(ne )?volim( juhu)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Ne volim juhu.",
             "suggestionAudioSrc": "/audio/hr/a1/module-04/ne-volim-juhu.mp3"
           }

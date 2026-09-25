@@ -369,7 +369,7 @@ export const LESSON: GeneratedLesson = {
               "Imam rezervaciju.",
               "Ja imam rezervaciju."
             ],
-            "pattern": "^(dobar dan )?imam rezervaciju( za hotel)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|recepcionar) )*(?:(dobar dan )?imam rezervaciju( za hotel)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|recepcionar))*$",
             "suggestion": "Imam rezervaciju za hotel.",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/imam-rezervaciju-za-hotel.mp3"
           },
@@ -390,7 +390,7 @@ export const LESSON: GeneratedLesson = {
               "Putujem autobusom.",
               "Ja putujem autobusom."
             ],
-            "pattern": "^(ja )?(putujem |idem )?(?:prijateljicom|informacijom|ponavljanjem|ponedjeljkom|prijateljima|razglednicom|rezervacijom|aktivnostom|inozemstvom|konobaricom|prijateljem|roditeljima|studenticom|suncobranom|televizijom|tjesteninom|učiteljicom|aerodromom|fakultetom|gramatikom|inženjerom|jelovnikom|kašnjenjem|kazalištom|kilogramom|kišobranom|knjižnicom|kolodvorom|kupaonicom|liječnicom|liječnikom|napojnicom|novčanikom|prodavačem|putovanjem|putovnicom|raskrižjem|razgovorom|recepcijom|restoranom|roditeljem|sladoledom|autobusom|blagajnom|četvrtkom|čokoladom|gotovinom|hrvatskom|kolegicom|koncertom|konobarom|krumpirom|ležaljkom|limunadom|ljekarnom|naočalama|nedjeljom|nogometom|odgovorom|piletinom|pomfritom|predjelom|prognozom|proljećem|prtljagom|računalom|rečenicom|sastankom|semaforom|slušanjem|studentom|suvenirom|telefonom|teretanom|trajektom|tramvajem|trgovinom|učiteljem|utakmicom|veličinom|zadatakom|balkonom|biciklom|bolnicom|čitanjem|desertom|djetetom|dolaskom|doručkom|jogurtom|karticom|košarkom|laptopom|lekcijom|lozinkom|maslacem|mjesecem|mlijekom|obitelji|odbojkom|pijeskom|pisanjem|pitanjem|planinom|polaskom|poljskom|prijavom|prilogom|putnikom|ručnikom|ruksakom|snijegom|srijedom|stanicom|stupnjem|susjedom|taksijem|tanjurom|tržnicom|turistom|učenikom|ukrcajem|vikendom|vrećicom|vremenom|adresom|avionom|bazenom|centrom|cijenom|glazbom|godinom|govorom|hobijem|hotelom|igricom|izlazom|izletom|jabukom|jezikom|kafićem|ključem|knjigom|koferom|kolačem|kolegom|komadom|minutom|mjestom|muzejem|odjavom|odmorom|pekarom|peronom|porukom|povrćem|računom|salatom|šalicom|šećerom|serijom|sestrom|sportom|subotom|tečajem|tenisom|tjednom|tvrtkom|utorkom|večerom|vilicom|vjetrom|zabavom|zadaćom|zemljom|zgradom|bankom|bratom|brodom|brojem|centom|crkvom|djecom|djedom|filmom|gradom|hranom|jeseni|kartom|klimom|kruhom|liftom|ljetom|mačkom|maglom|majkom|mostom|novcem|obalom|olujom|osobom|otokom|parkom|petkom|planom|plažom|podnom|pomoći|ponoći|posaom|poštom|riječi|ručkom|školom|stanom|stolom|suncem|šunkom|testom|torbom|ulazom|ulicom|uredom|vlakom|žlicom|autom|bakom|bocom|čajem|čašom|danom|eurom|jajem|jelom|jogom|juhom|katom|kavom|kćeri|kinom|kišom|kućom|ledom|letom|mamom|mesom|morem|mužem|nožem|pićem|pivom|polom|putom|ribom|rižom|satom|sinom|sirom|sobom|sokom|tatom|trgom|valom|vinom|voćem|vodom|vrtom|ženom|zimom|imom|noći|ocem|psom)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|recepcionar) )*(?:(ja )?(putujem |idem )?(?:prijateljicom|informacijom|ponavljanjem|ponedjeljkom|prijateljima|razglednicom|rezervacijom|aktivnostom|inozemstvom|konobaricom|prijateljem|roditeljima|studenticom|suncobranom|televizijom|tjesteninom|učiteljicom|aerodromom|fakultetom|gramatikom|inženjerom|jelovnikom|kašnjenjem|kazalištom|kilogramom|kišobranom|knjižnicom|kolodvorom|kupaonicom|liječnicom|liječnikom|napojnicom|novčanikom|prodavačem|putovanjem|putovnicom|raskrižjem|razgovorom|recepcijom|restoranom|roditeljem|sladoledom|autobusom|blagajnom|četvrtkom|čokoladom|gotovinom|hrvatskom|kolegicom|koncertom|konobarom|krumpirom|ležaljkom|limunadom|ljekarnom|naočalama|nedjeljom|nogometom|odgovorom|piletinom|pomfritom|predjelom|prognozom|proljećem|prtljagom|računalom|rečenicom|sastankom|semaforom|slušanjem|studentom|suvenirom|telefonom|teretanom|trajektom|tramvajem|trgovinom|učiteljem|utakmicom|veličinom|zadatakom|balkonom|biciklom|bolnicom|čitanjem|desertom|djetetom|dolaskom|doručkom|jogurtom|karticom|košarkom|laptopom|lekcijom|lozinkom|maslacem|mjesecem|mlijekom|obitelji|odbojkom|pijeskom|pisanjem|pitanjem|planinom|polaskom|poljskom|prijavom|prilogom|putnikom|ručnikom|ruksakom|snijegom|srijedom|stanicom|stupnjem|susjedom|taksijem|tanjurom|tržnicom|turistom|učenikom|ukrcajem|vikendom|vrećicom|vremenom|adresom|avionom|bazenom|centrom|cijenom|glazbom|godinom|govorom|hobijem|hotelom|igricom|izlazom|izletom|jabukom|jezikom|kafićem|ključem|knjigom|koferom|kolačem|kolegom|komadom|minutom|mjestom|muzejem|odjavom|odmorom|pekarom|peronom|porukom|povrćem|računom|salatom|šalicom|šećerom|serijom|sestrom|sportom|subotom|tečajem|tenisom|tjednom|tvrtkom|utorkom|večerom|vilicom|vjetrom|zabavom|zadaćom|zemljom|zgradom|bankom|bratom|brodom|brojem|centom|crkvom|djecom|djedom|filmom|gradom|hranom|jeseni|kartom|klimom|kruhom|liftom|ljetom|mačkom|maglom|majkom|mostom|novcem|obalom|olujom|osobom|otokom|parkom|petkom|planom|plažom|podnom|pomoći|ponoći|posaom|poštom|riječi|ručkom|školom|stanom|stolom|suncem|šunkom|testom|torbom|ulazom|ulicom|uredom|vlakom|žlicom|autom|bakom|bocom|čajem|čašom|danom|eurom|jajem|jelom|jogom|juhom|katom|kavom|kćeri|kinom|kišom|kućom|ledom|letom|mamom|mesom|morem|mužem|nožem|pićem|pivom|polom|putom|ribom|rižom|satom|sinom|sirom|sobom|sokom|tatom|trgom|valom|vinom|voćem|vodom|vrtom|ženom|zimom|imom|noći|ocem|psom))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|recepcionar))*$",
             "suggestion": "Autobusom.",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/autobusom.mp3"
           },
@@ -409,7 +409,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Kada stiže autobus?"
             ],
-            "pattern": "^kada (stiže|dolazi)( autobus)?$|^kada je dolazak$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|recepcionar) )*(?:kada (stiže|dolazi)( autobus)?|kada je dolazak)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|recepcionar))*$",
             "suggestion": "Kada stiže autobus?",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/kada-stize-autobus.mp3"
           },
@@ -428,7 +428,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Hvala, doviđenja!"
             ],
-            "pattern": "^hvala( vam| lijepa)?( doviđenja)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|recepcionar) )*(?:hvala( vam| lijepa)?( doviđenja)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|recepcionar))*$",
             "suggestion": "Hvala, doviđenja!",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/hvala-dovidjenja.mp3"
           }

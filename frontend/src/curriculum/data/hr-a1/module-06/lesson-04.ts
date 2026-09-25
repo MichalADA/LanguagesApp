@@ -576,7 +576,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Može, kada?"
             ],
-            "pattern": "^(može|dogovoreno|rado)( kada| u koliko sati)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(da )?(može|dogovoreno|rado|naravno) (kada|kad|u koliko sati))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Može, kada?",
             "suggestionAudioSrc": "/audio/hr/a1/module-06/moze-kada.mp3"
           },
@@ -596,7 +596,7 @@ export const LESSON: GeneratedLesson = {
               "Danas ne mogu. Može sutra?",
               "Večeras ne mogu. Može sutra?"
             ],
-            "pattern": "^(nažalost )?(danas|večeras) ne mogu (može sutra|sutra može)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(nažalost )?(danas|večeras) ne mogu (može sutra|sutra može))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Danas ne mogu. Može sutra?",
             "suggestionAudioSrc": "/audio/hr/a1/module-06/danas-ne-mogu-moze-sutra.mp3"
           },
@@ -616,7 +616,7 @@ export const LESSON: GeneratedLesson = {
               "Vidimo se sutra!",
               "Vidimo se!"
             ],
-            "pattern": "^(vidimo se|bok|doviđenja)( sutra)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:((dobro|može) )?(doviđenja|bok|vidimo se( sutra)?)( (doviđenja|bok|vidimo se( sutra)?))*)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Vidimo se sutra!",
             "suggestionAudioSrc": "/audio/hr/a1/module-06/vidimo-se-sutra.mp3"
           }

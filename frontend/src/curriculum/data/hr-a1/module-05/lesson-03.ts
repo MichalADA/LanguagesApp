@@ -631,7 +631,7 @@ export const LESSON: GeneratedLesson = {
               "Idite ravno pa desno.",
               "Idite ravno pa skrenite desno."
             ],
-            "pattern": "^idite ravno (pa|i|zatim) (skrenite )?desno$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:idite ravno (pa|i|zatim) (skrenite )?desno)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Idite ravno pa desno.",
             "suggestionAudioSrc": "/audio/hr/a1/module-05/idite-ravno-pa-desno.mp3"
           },
@@ -651,7 +651,7 @@ export const LESSON: GeneratedLesson = {
               "Ne, blizu je.",
               "Nije daleko."
             ],
-            "pattern": "^(ne )?(blizu je|nije daleko|to je blizu)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(ne )?(blizu je|nije daleko|to je blizu))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Ne, blizu je.",
             "suggestionAudioSrc": "/audio/hr/a1/module-05/ne-blizu-je.mp3"
           }

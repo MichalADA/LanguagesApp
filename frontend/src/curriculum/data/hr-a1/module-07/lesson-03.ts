@@ -655,7 +655,7 @@ export const LESSON: GeneratedLesson = {
               "Dobar dan, imam rezervaciju.",
               "Ja dobar dan, imam rezervaciju."
             ],
-            "pattern": "^(dobar dan )?imam rezervaciju( na ime \\p{L}+)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|recepcionar) )*(?:(dobar dan )?imam rezervaciju( na ime \\p{L}+)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|recepcionar))*$",
             "suggestion": "Imam rezervaciju.",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/imam-rezervaciju.mp3"
           },
@@ -675,7 +675,7 @@ export const LESSON: GeneratedLesson = {
               "Rezervacija je na ime Michał.",
               "Na ime Michał."
             ],
-            "pattern": "^(rezervacija je )?na ime \\p{L}+( \\p{L}+)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|recepcionar) )*(?:(rezervacija je )?na ime \\p{L}+( \\p{L}+)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|recepcionar))*$",
             "suggestion": "Rezervacija je na ime Michał.",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/rezervacija-je-na-ime-michal.mp3"
           },
@@ -695,7 +695,7 @@ export const LESSON: GeneratedLesson = {
               "Ovo je moja putovnica.",
               "Izvolite."
             ],
-            "pattern": "^(izvolite|ovo je moja putovnica|izvolite ovo je moja putovnica)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|recepcionar) )*(?:(izvolite|ovo je moja putovnica|izvolite ovo je moja putovnica))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|recepcionar))*$",
             "suggestion": "Ovo je moja putovnica.",
             "suggestionAudioSrc": "/audio/hr/a1/module-07/ovo-je-moja-putovnica.mp3"
           }

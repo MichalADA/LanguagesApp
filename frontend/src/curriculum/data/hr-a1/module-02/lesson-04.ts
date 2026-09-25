@@ -605,7 +605,7 @@ export const LESSON: GeneratedLesson = {
               "Imam telefon.",
               "Ja imam telefon."
             ],
-            "pattern": "^(da )?(ja )?imam( telefon)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(da )?(ja )?imam( telefon)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Da, imam telefon.",
             "suggestionAudioSrc": "/audio/hr/a1/module-02/da-imam-telefon.mp3"
           },
@@ -625,7 +625,7 @@ export const LESSON: GeneratedLesson = {
               "Nemam psa, ali imam mačku.",
               "Ja nemam psa, ali imam mačku."
             ],
-            "pattern": "^(ne )?(nemam psa (ali )?imam mačku|imam mačku (ali )?nemam psa)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(ne )?(nemam psa (ali )?imam mačku|imam mačku (ali )?nemam psa))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Nemam psa, ali imam mačku.",
             "suggestionAudioSrc": "/audio/hr/a1/module-02/nemam-psa-ali-imam-macku.mp3"
           }

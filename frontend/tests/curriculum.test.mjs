@@ -454,3 +454,56 @@ test('powtórki, Wielka powtórka i test nie kopiują zadań z wcześniejszych l
   assert.ok([...spiralWords].length >= 5);
   assert.ok(generated.get('a1-08-04').content.steps.filter((s) => s.id.startsWith('recall-')).every((s) => s.type === 'translate'));
 });
+
+/* ------------------------------------------------------------------ */
+/* Otwarte repliki w dialogach A1                                      */
+/* ------------------------------------------------------------------ */
+
+const { OPEN_REPLIES } = await import(join(ROOT, 'tests/fixtures/open-replies.mjs'));
+const allReplies = [...generated.entries()].flatMap(([id, g]) => g.content.steps.filter((s) => s.type === 'dialog')
+  .flatMap((s) => s.turns.filter((t) => t.kind === 'reply')).map((turn, n) => ({ id, n, turn })));
+
+test('otwarte repliki: „Bok dobro sam” na „Kako si?” to HIT', () => {
+  assert.equal(verdictOfReply('a1-01-01', 0, 'Bok dobro sam'), 'hit');
+  for (const answer of ['Dobro sam.', 'Dobro sam, hvala.', 'Bok, dobro sam.', 'Bok, dobro sam, hvala.', 'Super sam.', 'Odlično sam.']) {
+    // interpunkcja i wielkość liter nie wpływają na wynik
+    for (const variant of [answer, answer.toLocaleUpperCase('hr'), answer.toLocaleLowerCase('hr').replace(/[.,!?]/g, ''), `${answer.replace(/[.]$/, '')}!!!`]) {
+      assert.equal(verdictOfReply('a1-01-01', 0, variant), 'hit', `„${variant}”`);
+      assert.equal(verdictOfReply('a1-08-04', 0, variant), 'hit', `a1-08-04 „${variant}”`);
+    }
+  }
+  for (const wrong of ['Sam dobro.', 'Dobro si.', 'Zovem se Ana.']) assert.equal(verdictOfReply('a1-01-01', 0, wrong), 'miss', `„${wrong}”`);
+});
+
+test('otwarte repliki: naturalne odpowiedzi ze słownictwa kursu przechodzą, błędne nie', () => {
+  for (const f of OPEN_REPLIES) {
+    const t = reply(f.lesson, f.reply);
+    assert.ok(t, `${f.lesson}#${f.reply}: brak repliki`);
+    for (const answer of f.hit) assert.equal(verdictOfReply(f.lesson, f.reply, answer), 'hit', `${f.lesson}#${f.reply} [${t.prompt}] „${answer}”`);
+    for (const answer of f.miss ?? []) assert.equal(verdictOfReply(f.lesson, f.reply, answer), 'miss', `${f.lesson}#${f.reply} [${t.prompt}] przepuszcza „${answer}”`);
+  }
+});
+
+test('otwarte repliki: lista w teście = repliki oznaczone „open” w didactics (+ lekcja demo)', () => {
+  const didactics = JSON.parse(readFileSync(join(ROOT, 'curriculum/hr-a1/didactics.json'), 'utf8'));
+  const flagged = ['a1-01-02#0', 'a1-01-02#1'];
+  for (const [key, lesson] of Object.entries(didactics.lessons)) {
+    const n = Number(key.slice(3));
+    const appId = `a1-${String(Math.ceil(n / 5)).padStart(2, '0')}-${String(((n - 1) % 5) + 1).padStart(2, '0')}`;
+    (lesson.dialog?.turns ?? []).filter((t) => t.reply).forEach((t, i) => { if (t.reply.open) flagged.push(`${appId}#${i}`); });
+  }
+  assert.deepEqual(OPEN_REPLIES.map((f) => `${f.lesson}#${f.reply}`).sort(), flagged.sort());
+});
+
+test('wszystkie repliki: interpunkcja, wielkość liter i grzecznościowa rama nie zmieniają wyniku', () => {
+  assert.ok(allReplies.length >= 100);
+  const open = new Set(OPEN_REPLIES.map((f) => `${f.lesson}#${f.reply}`));
+  for (const { id, n, turn } of allReplies) {
+    assert.ok(turn.pattern, `${id}#${n}: replika bez wzorca`);
+    const s = turn.suggestion;
+    const bare = s.toLocaleLowerCase('hr').replace(/[.,!?]/g, '');
+    const variants = [s, bare, s.toLocaleUpperCase('hr'), `${bare}!`, `${s} Hvala.`];
+    if (open.has(`${id}#${n}`)) variants.push(`Bok, ${s}`, `Bok ${bare} hvala`, `${bare}, a ti?`);
+    for (const v of variants) assert.equal(checkLessonAnswer(v, turn.accepted, rules, turn.pattern), 'hit', `${id}#${n} [${turn.prompt}] „${v}”`);
+  }
+});

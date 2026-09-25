@@ -595,7 +595,7 @@ export const LESSON: GeneratedLesson = {
               "Centar je tamo.",
               "Tamo je centar."
             ],
-            "pattern": "^(centar je tamo|tamo je( centar)?|tamo)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(centar je tamo|tamo je( centar)?|tamo))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Centar je tamo.",
             "suggestionAudioSrc": "/audio/hr/a1/module-05/centar-je-tamo.mp3"
           },
@@ -615,7 +615,7 @@ export const LESSON: GeneratedLesson = {
               "Ne, blizu je.",
               "Nije daleko."
             ],
-            "pattern": "^(ne )?(blizu je|nije daleko|centar je blizu|to je blizu)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|marko) )*(?:(ne )?(blizu je|nije daleko|centar je blizu|to je blizu))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|marko))*$",
             "suggestion": "Ne, blizu je.",
             "suggestionAudioSrc": "/audio/hr/a1/module-05/ne-blizu-je.mp3"
           }

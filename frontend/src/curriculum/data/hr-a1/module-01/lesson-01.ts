@@ -353,7 +353,7 @@ export const LESSON: GeneratedLesson = {
               "Odlično sam.",
               "Nisam baš dobro."
             ],
-            "pattern": "^((ja sam )?(dobro|odlično|loše) sam|ja sam (dobro|odlično|loše)|nisam( baš)? dobro|(dobro|odlično)( hvala)?)( hvala)?( a ti)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:((vrlo |jako )?(dobro|odlično|super|loše|ok) sam|ja sam (vrlo |jako )?(dobro|odlično|super|loše)|(vrlo |jako )?(dobro|odlično|super|ok)|nisam( baš)?( tako)? dobro|(ja sam |sam )?(?:vegetarijanska|vegetarijanski|simpatičan|simpatična|zanimljiva|zanimljiv|engleska|engleski|hrvatska|hrvatski|omiljena|sljedeća|sljedeći|slobodan|slobodna|dosadan|dosadna|omiljen|pametan|pametna|poljska|poljski|starija|stariji|zabavan|zabavna|zauzeta|gladan|gladna|hladan|hladna|kisela|lijepa|malena|sladak|slatka|sretan|sretna|ukusan|ukusna|umoran|umorna|velika|vesela|visoka|zauzet|zdrava|zgodan|zgodna|dobar|dobra|draga|gorak|gorka|kiseo|lijep|ljuta|malen|miran|mirna|mlada|mlađa|mlađi|niska|nizak|slana|stara|tužan|tužna|velik|veseo|visok|vruća|zdrav|žedan|žedna|drag|ljut|mala|mali|mlad|nova|slan|star|vruć|živa|nov|živ)( sam)?))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Dobro sam, hvala.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
           },
@@ -373,7 +373,7 @@ export const LESSON: GeneratedLesson = {
               "Doviđenja!",
               "Bok!"
             ],
-            "pattern": "^(doviđenja|bok|vidimo se)( ana)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:((dobro|može) )?(doviđenja|bok|vidimo se( sutra)?)( (doviđenja|bok|vidimo se( sutra)?))*)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Doviđenja!",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
           }

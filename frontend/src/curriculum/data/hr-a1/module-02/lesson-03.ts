@@ -591,7 +591,7 @@ export const LESSON: GeneratedLesson = {
               "Moj brat je visok i mlad.",
               "On je visok i mlad."
             ],
-            "pattern": "^(moj brat|on) je (vrlo )?(visok i (vrlo )?mlad|mlad i (vrlo )?visok)$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(moj brat|on) je (vrlo )?(visok i (vrlo )?mlad|mlad i (vrlo )?visok))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Moj brat je visok i mlad.",
             "suggestionAudioSrc": "/audio/hr/a1/module-02/moj-brat-je-visok-i-mlad.mp3"
           },
@@ -611,7 +611,7 @@ export const LESSON: GeneratedLesson = {
               "Moja sestra je sretna.",
               "Ona je sretna."
             ],
-            "pattern": "^(moja sestra|ona) je (vrlo )?sretna$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(moja sestra|ona) je (vrlo )?sretna)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Moja sestra je sretna.",
             "suggestionAudioSrc": "/audio/hr/a1/module-02/moja-sestra-je-sretna.mp3"
           }

@@ -276,7 +276,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Bok! Zovem se Michał."
             ],
-            "pattern": "^(bok )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(drago mi je )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Bok! Zovem se Michał.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/bok-zovem-se-michal.mp3"
           },
@@ -296,7 +296,7 @@ export const LESSON: GeneratedLesson = {
               "Iz Poljske sam.",
               "Ja sam iz Poljske."
             ],
-            "pattern": "^(ja sam )?iz \\p{L}+( sam)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(ja sam )?iz \\p{L}+( sam)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Iz Poljske sam.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/iz-poljske-sam.mp3"
           },
@@ -316,7 +316,7 @@ export const LESSON: GeneratedLesson = {
               "Živim u Poljskoj.",
               "Ja živim u Poljskoj."
             ],
-            "pattern": "^(ja )?živim u \\p{L}+$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:((ja )?živim )?u \\p{L}+( u \\p{L}+)?)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Živim u Poljskoj.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
           },
@@ -336,7 +336,7 @@ export const LESSON: GeneratedLesson = {
               "Imam dvadeset šest godina.",
               "Ja imam dvadeset šest godina."
             ],
-            "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:((ja )?imam )?(\\d+ godin[aue]|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(dva|dvije|tri|četiri) godine|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*jednu godinu|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) godina))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Imam dvadeset šest godina.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
           },
@@ -357,7 +357,7 @@ export const LESSON: GeneratedLesson = {
               "Možeš li ponoviti, molim?",
               "Možeš li ponoviti?"
             ],
-            "pattern": "^(možeš li )?(to )?ponoviti( molim)?$|^(još jednom|polako)( molim)?$",
+            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:((možeš|možete) li )?(to )?ponoviti( molim)?|(još jednom|polako|molim)( molim| još jednom)?|(ja )?ne razumijem)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Još jednom, molim.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/jos-jednom-molim.mp3"
           }

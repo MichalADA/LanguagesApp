@@ -150,7 +150,8 @@ function verbForms(verb) {
   const trunc = inf.endsWith("ti") ? [inf.slice(0, -1)] : [];
   return {
     inf: withSe(inf, refl),
-    inft: trunc.flatMap((x) => withSe(x, refl)),
+    // „Radit ću”, „Ići ću”, „Odmarat ću se” — klityka „se” stoi po „ću”, więc forma bez niej.
+    inft: inf.endsWith("ći") ? [inf] : trunc,
     pres1: firsts.flatMap((x) => withSe(x, refl)),
     pres: pres.flatMap((x) => withSe(x, refl)),
     ppSelf: pp.slice(0, 2).flatMap((x) => withSe(x, refl)),
