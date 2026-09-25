@@ -89,28 +89,58 @@ test('każda lekcja ma treść i pełny materiał z CSV (bez URL-i w treści pla
     assert.equal(content.lessonId, lesson.id);
     assert.ok(content.steps.length >= 8, `${lesson.id}: za mało kroków`);
     assert.equal(material.records.filter((r) => r.type === 'lesson').length, 1);
-    assert.equal(material.records.filter((r) => r.type === 'vocabulary').length, 8, lesson.id);
-    assert.equal(material.records.filter((r) => r.type === 'sentence').length, 6, lesson.id);
+    // Rdzeń: 8 słów i 6 zdań na lekcję; moduły 02–08 mają dodatkowo słownictwo uzupełniające i zdania przykładowe.
+    const words = material.records.filter((r) => r.type === 'vocabulary');
+    const sentences = material.records.filter((r) => r.type === 'sentence');
+    assert.equal(words.filter((r) => r.tags.includes('active')).length, 8, lesson.id);
+    assert.equal(sentences.filter((r) => !r.tags.includes('example')).length, 6, lesson.id);
+    assert.ok(words.every((r) => r.tags.includes('active') || r.tags.includes('supplement')), lesson.id);
+    if (lesson.moduleId === 'a1-01') assert.equal(words.length, 8, `${lesson.id}: moduł 01 bez zmian`);
     assert.equal(material.records.filter((r) => r.type === 'exercise_blueprint').length, 3, lesson.id);
     assert.ok(material.sources.length > 0);
     assert.ok(!JSON.stringify(content).includes('http'), `${lesson.id}: URL w treści`);
   }
   const total = [...generated.values()].reduce((sum, g) => sum + g.material.records.length, 0);
-  assert.equal(total, 720);
+  assert.ok(total >= 720, `${total} rekordów`);
 });
 
 test('każda zwykła lekcja ma słownictwo i zdania, a słowa są podzielone na małe grupy z ćwiczeniem', () => {
   for (const lesson of lessons.filter((l) => l.kind === 'lesson')) {
     const { content } = generated.get(lesson.id);
-    assert.equal(content.vocabulary.length, 8, lesson.id);
+    assert.ok(content.vocabulary.length >= 8 && content.vocabulary.length <= 25, `${lesson.id}: ${content.vocabulary.length} słów`);
     if (lesson.id === 'a1-01-02') continue; // ręczna lekcja demo
     const types = content.steps.map((s) => s.type);
+    // Osobne karty tylko dla rdzenia; słowa uzupełniające są jedną listą z nagraniami.
     assert.equal(types.filter((x) => x === 'word').length, 8, lesson.id);
+    const extra = content.vocabulary.length - 8;
+    if (extra) {
+      const list = content.steps.find((s) => s.id === 'more-words');
+      assert.equal(list?.items.length, extra, `${lesson.id}: lista słów uzupełniających`);
+      assert.ok(content.steps.some((s) => s.id === 'check-more'), `${lesson.id}: brak ćwiczenia do słów uzupełniających`);
+    }
     // Nigdy więcej niż 3 nowe słowa pod rząd bez ćwiczenia.
     let run = 0;
     for (const type of types) { run = type === 'word' ? run + 1 : 0; assert.ok(run <= 3, `${lesson.id}: ${run} słów pod rząd`); }
     for (const type of ['structure', 'gap', 'translate', 'order', 'dialog', 'free', 'summary']) assert.ok(types.includes(type), `${lesson.id}: brak ${type}`);
     assert.ok(types.indexOf('choice') < types.indexOf('structure'), `${lesson.id}: ćwiczenie ma być przed gramatyką`);
+  }
+});
+
+test('moduły 02–08: dialog wzorcowy przed rozmową i nagrania w manifeście dla całej treści', () => {
+  const manifest = JSON.parse(readFileSync(join(ROOT, 'curriculum/hr-a1/audio-manifest.json'), 'utf8'));
+  assert.deepEqual(manifest.modules, [1, 2, 3, 4, 5, 6, 7, 8]);
+  // Manifest łączy warianty różniące się tylko wielkością liter i interpunkcją („Hvala!” / „hvala”).
+  const key = (t) => t.toLocaleLowerCase('hr').replace(/[.,!?;:„”"«»…]/g, '').replace(/\s+/g, ' ').trim();
+  const known = new Set(manifest.items.map((i) => key(i.text)));
+  const spoken = { has: (t) => known.has(key(t)) };
+  for (const lesson of lessons.filter((l) => l.kind === 'lesson' && l.moduleId !== 'a1-01')) {
+    const steps = generated.get(lesson.id).content.steps;
+    const model = steps.find((s) => s.id === 'model');
+    assert.ok(model && model.type === 'listen' && model.lines.length >= 4, `${lesson.id}: brak dialogu wzorcowego`);
+    assert.ok(steps.indexOf(model) < steps.findIndex((s) => s.type === 'dialog'), `${lesson.id}: dialog wzorcowy po rozmowie`);
+    for (const line of model.lines) assert.ok(spoken.has(line.text), `${lesson.id}: brak nagrania „${line.text}”`);
+    for (const item of steps.find((s) => s.id === 'more-words').items) assert.ok(spoken.has(item.target), `${lesson.id}: brak nagrania „${item.target}”`);
+    for (const example of steps.find((s) => s.id === 'examples').examples) assert.ok(spoken.has(example.target), `${lesson.id}: brak nagrania „${example.target}”`);
   }
 });
 

@@ -5,6 +5,7 @@
  *   node scripts/generate-a1-curriculum.mjs          # generuje src/curriculum/data/hr-a1/**
  *   node scripts/generate-a1-curriculum.mjs --check  # tylko sprawdza, czy wygenerowane pliki są aktualne
  *   node scripts/generate-a1-curriculum.mjs --dry --csv inny.csv  # sama walidacja innego pliku (testy)
+ *   node scripts/generate-a1-curriculum.mjs --check --audio-strict  # + błąd, gdy brakuje któregoś nagrania z manifestu
  *
  * Wejście (poza src/, więc build aplikacji ich nie potrzebuje):
  *   curriculum/hr-a1/lexodromia_hr_A1_curriculum.csv — źródło prawdy treści,
@@ -33,6 +34,7 @@ const AUDIO_MANIFEST_PATH = join(SOURCE_DIR, "audio-manifest.json");
 const PUBLIC_DIR = join(ROOT, "public");
 const DEMO_LESSON_PATH = join(ROOT, "src/curriculum/data/lessons/a1-01-02.ts");
 const CHECK = process.argv.includes("--check");
+const AUDIO_STRICT = process.argv.includes("--audio-strict");
 
 /* ------------------------------------------------------------------ */
 /* Błędy i ostrzeżenia                                                  */
@@ -110,8 +112,20 @@ function seeded(seed) {
 const POS_PL = {
   noun: "rzeczownik", verb: "czasownik", adjective: "przymiotnik", adverb: "przysłówek", pronoun: "zaimek",
   numeral: "liczebnik", interjection: "wykrzyknik", phrase: "zwrot", preposition: "przyimek",
-  proper_noun: "nazwa własna", verb_form: "forma czasownika", auxiliary: "forma pomocnicza",
+  proper_noun: "nazwa własna", verb_form: "forma czasownika", auxiliary: "forma pomocnicza", conjunction: "spójnik",
 };
+
+/**
+ * Słownictwo lekcji ma dwie warstwy (kolumna tags w CSV):
+ *   vocab|active     — rdzeń: osobne karty słów i ćwiczenia (8 na lekcję),
+ *   vocab|supplement — uzupełnienie: jedna lista „Więcej przydatnych słów” z nagraniami + fiszki.
+ * Dzięki temu lekcja może mieć 15–25 słów bez 20 kart pod rząd.
+ */
+const isSupplement = (r) => r.tags.split("|").map((t) => t.trim()).includes("supplement");
+const coreOf = (bucket) => bucket.vocabulary.filter((r) => !isSupplement(r));
+const supplementOf = (bucket) => bucket.vocabulary.filter(isSupplement);
+/** Zdania przykładowe z rozszerzenia (tag „example”) — pokazywane razem z nagraniami, nie ćwiczone. */
+const isExampleSentence = (r) => r.tags.split("|").map((t) => t.trim()).includes("example");
 
 /* ------------------------------------------------------------------ */
 /* Wczytanie i walidacja                                                */
@@ -182,6 +196,20 @@ for (const bucket of ordered) {
     fail(`${bucket.lesson.lesson_id}: zwykła lekcja bez słownictwa lub zdań`);
   }
   if (!didactics.lessons?.[bucket.lesson.lesson_id]) fail(`${bucket.lesson.lesson_id}: brak wpisu w didactics.json`);
+  const words = bucket.vocabulary.map((r) => fold(r.hr_text));
+  for (const word of new Set(words)) if (words.indexOf(word) !== words.lastIndexOf(word)) fail(`${bucket.lesson.lesson_id}: słowo „${word}” występuje dwa razy`);
+  const model = didactics.lessons?.[bucket.lesson.lesson_id]?.model;
+  if (model && (!model.title || !model.lines?.length || model.lines.some((l) => !l.speaker || !l.hr || !l.pl))) {
+    fail(`${bucket.lesson.lesson_id}: dialog wzorcowy (model) wymaga title i linii { speaker, hr, pl }`);
+  }
+}
+// Słowo uzupełniające, które jest już w rdzeniu innej lekcji, to zwykle pomyłka (recykling robią zdania, nie listy).
+const coreWords = new Map(ordered.flatMap((b) => coreOf(b).map((r) => [fold(r.hr_text), b.lesson.lesson_id])));
+for (const bucket of ordered) {
+  for (const r of supplementOf(bucket)) {
+    const owner = coreWords.get(fold(r.hr_text));
+    if (owner) warn(`${bucket.lesson.lesson_id}: słowo uzupełniające „${r.hr_text}” jest już w rdzeniu ${owner}`);
+  }
 }
 
 if (errors.length) {
@@ -378,17 +406,53 @@ const vocabListStep = (id, stage, title, vocabulary, note) => ({
   items: vocabulary.map((r) => ({ target: r.hr_text, source: r.pl_text, partOfSpeech: POS_PL[r.part_of_speech] ?? r.part_of_speech })),
 });
 
+/** Słowa uzupełniające: jedna lista z nagraniami + jedno rozpoznanie (osobny „los”, żeby nie przesuwać reszty lekcji). */
+function supplementSteps(bucket) {
+  const extra = supplementOf(bucket);
+  if (!extra.length) return [];
+  const n = lessonNo(bucket);
+  const rand = seeded(n * 6151);
+  const asked = extra[n % extra.length];
+  return [
+    vocabListStep("more-words", "words", "Więcej przydatnych słów", extra, "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji."),
+    choiceStep("check-more", "words", "Co znaczy to słowo?", asked.hr_text, asked.pl_text, pickDistractors(extra.map((v) => v.pl_text), asked.pl_text, rand), n),
+  ];
+}
+
+/** Zdania przykładowe z nowymi słowami — do odsłuchania, bez oceniania. */
+function examplesStep(bucket) {
+  const examples = bucket.sentences.filter(isExampleSentence);
+  if (!examples.length) return [];
+  return [{
+    id: "examples", stage: "words", type: "structure",
+    title: "Nowe słowa w zdaniach",
+    explanation: "Posłuchaj, jak nowe słowa brzmią w krótkich, codziennych zdaniach.",
+    examples: examples.map((r) => ({ target: r.hr_text, source: r.pl_text })),
+  }];
+}
+
+/** Dialog wzorcowy (didactics → model): najpierw słuchasz rozmowy, potem prowadzisz własną. */
+function modelStep(lessonId) {
+  const model = didactics.lessons[lessonId]?.model;
+  if (!model) return [];
+  return [{
+    id: "model", stage: "dialog", type: "listen", title: model.title,
+    lines: model.lines.map((l) => ({ speaker: l.speaker, text: l.hr, translation: l.pl })),
+  }];
+}
+
 const summaryStep = (recap, extraFields = {}) => ({ id: "summary", stage: "summary", type: "summary", title: "Lekcja ukończona", recap, ...extraFields });
 
 /* ---------- Zwykła lekcja ---------- */
 
 function buildRegular(bucket) {
-  const { lesson, vocabulary, sentences } = bucket;
+  const { lesson, sentences } = bucket;
+  const vocabulary = coreOf(bucket);
   const id = lesson.lesson_id;
   const n = lessonNo(bucket);
   const d = didactics.lessons[id];
   const rand = seeded(n * 7919);
-  const all = sentences.map((r) => sentenceOf(id, r.sequence));
+  const all = sentences.filter((r) => !isExampleSentence(r)).map((r) => sentenceOf(id, r.sequence));
   const steps = [];
 
   steps.push({
@@ -399,7 +463,7 @@ function buildRegular(bucket) {
   });
 
   if (kindOf(n) === "conversation") {
-    steps.push(vocabListStep("words", "words", "Słowa, które przydadzą się w rozmowie", vocabulary));
+    steps.push(vocabListStep("words", "words", "Słowa, które przydadzą się w rozmowie", bucket.vocabulary));
   } else {
     // Nowa rzecz → mikroćwiczenie: grupy 3 + 3 + 2 słowa.
     const groups = [vocabulary.slice(0, 3), vocabulary.slice(3, 6), vocabulary.slice(6)];
@@ -415,7 +479,9 @@ function buildRegular(bucket) {
         steps.push(choiceStep(`check-${g + 1}`, "words", "Co znaczy to słowo?", asked.hr_text, asked.pl_text, pickDistractors(pl, asked.pl_text, rand), n + g));
       }
     });
+    steps.push(...supplementSteps(bucket));
   }
+  steps.push(...examplesStep(bucket));
 
   if (d.grammar) steps.push(structureStep(id, d.grammar));
   if (d.gap) {
@@ -438,6 +504,7 @@ function buildRegular(bucket) {
     const step = listeningStep("listening", "dialog", d.listening);
     if (step) steps.push(step);
   }
+  steps.push(...modelStep(id));
   if (d.dialog) steps.push(dialogStep(id, d.dialog));
   if (d.free) steps.push(freeStep("free", d.free));
 
@@ -479,13 +546,15 @@ function buildReview(bucket) {
   });
 
   // 1. Krótkie rozpoznanie: po jednym słowie z trzech lekcji.
-  const prevVocab = prev.flatMap((p) => p.vocabulary);
+  const prevVocab = prev.flatMap(coreOf);
   prev.slice(0, 3).forEach((p, i) => {
-    const word = p.vocabulary[(n + i * 3) % p.vocabulary.length];
+    const core = coreOf(p);
+    const word = core[(n + i * 3) % core.length];
     const others = prevVocab.map((v) => v.pl_text);
     steps.push(choiceStep(`recall-${i + 1}`, "words", "Co znaczy to słowo?", word.hr_text, word.pl_text, pickDistractors(others, word.pl_text, rand), n + i));
   });
   steps.push(vocabListStep("vocab", "words", "Przydatne słowa na koniec modułu", vocabulary, "Nie musisz ich jeszcze znać na pamięć — pojawią się w rozmowie."));
+  steps.push(...examplesStep(bucket));
 
   // 2. Luka i uporządkowanie zdania z wcześniejszych lekcji.
   const gapSource = [...prev].reverse().find((p) => didactics.lessons[p.lesson.lesson_id]?.gap);
@@ -508,10 +577,11 @@ function buildReview(bucket) {
   });
 
   // 4. Dialog i zadanie komunikacyjne.
+  steps.push(...modelStep(id));
   if (d.dialog) steps.push(dialogStep(id, d.dialog));
   if (d.canDo) steps.push(freeStep("can-do", d.canDo));
 
-  const all = sentences.map((r) => sentenceOf(id, r.sequence));
+  const all = sentences.filter((r) => !isExampleSentence(r)).map((r) => sentenceOf(id, r.sequence));
   steps.push(summaryStep(all.slice(0, 4).map(bi), { canDo: goals.map(lowerFirst) }));
   return steps;
 }
@@ -524,7 +594,7 @@ function buildSpiral(bucket) {
   const d = didactics.lessons[id];
   const rand = seeded(39 * 15485863);
   const s = d.spiral;
-  const allVocab = ordered.filter((b) => lessonNo(b) < 39).flatMap((b) => b.vocabulary);
+  const allVocab = ordered.filter((b) => lessonNo(b) < 39).flatMap(coreOf);
   const steps = [];
 
   steps.push({
@@ -576,7 +646,7 @@ function buildTest(bucket) {
   const t = didactics.lessons[id].test;
   const rand = seeded(40 * 32452843);
   const own = (seq) => bi(sentenceOf(id, seq));
-  const allVocab = ordered.filter((b) => lessonNo(b) < 40).flatMap((b) => b.vocabulary);
+  const allVocab = ordered.filter((b) => lessonNo(b) < 40).flatMap(coreOf);
   const steps = [];
 
   steps.push({
@@ -626,7 +696,7 @@ function buildTest(bucket) {
 /* Emisja                                                               */
 /* ------------------------------------------------------------------ */
 
-const MINUTES = { intro: 0.6, word: 0.45, vocabList: 1, structure: 1.2, choice: 0.4, translate: 0.8, gap: 0.5, order: 0.7, listening: 2, reading: 2.5, free: 2.5, summary: 0.4 };
+const MINUTES = { intro: 0.6, word: 0.45, vocabList: 1, listen: 1.2, structure: 1.2, choice: 0.4, translate: 0.8, gap: 0.5, order: 0.7, listening: 2, reading: 2.5, free: 2.5, summary: 0.4 };
 function estimateMinutes(steps) {
   const total = steps.reduce((sum, step) => sum + (step.type === "dialog" ? 1 + step.turns.length * 0.35 : MINUTES[step.type] ?? 0.5), 0);
   return Math.max(8, Math.round(total));
@@ -693,11 +763,13 @@ const previousManifest = existsSync(AUDIO_MANIFEST_PATH) ? JSON.parse(readFileSy
 const lessonsByModule = new Map(audioConfig.modules.map((m) => [m, built.filter((b) => b.moduleNo === m)]));
 const audioManifest = buildManifest(audioConfig, previousManifest, lessonsByModule);
 const audioStats = { attached: 0, missing: 0 };
+const lessonsMissingAudio = [];
 for (const lesson of built) {
   if (!audioConfig.modules.includes(lesson.moduleNo)) continue;
   const result = attachAudio(lesson.content, audioConfig, audioManifest, PUBLIC_DIR);
   audioStats.attached += result.attached;
   audioStats.missing += result.missing;
+  if (result.missing) lessonsMissingAudio.push(`${lesson.appId} (${result.missing})`);
 }
 
 // 3. Emisja.
@@ -768,11 +840,24 @@ function listExisting(dir, base = dir) {
 
 const manifestText = `${json(audioManifest)}\n`;
 const audioReport = () => {
-  const present = audioManifest.items.filter((item) => existsSync(join(PUBLIC_DIR, item.audioPath))).length;
+  const exists = (item) => existsSync(join(PUBLIC_DIR, item.audioPath));
+  const present = audioManifest.items.filter(exists).length;
   console.log(
     `Audio (moduły ${audioManifest.modules.join(", ")}): ${audioManifest.items.length} unikalnych tekstów, ${audioManifest.characters} znaków; ` +
       `nagrania: ${present} istnieje, ${audioManifest.items.length - present} brakuje; audioSrc w lekcjach: ${audioStats.attached} (${audioStats.missing} czeka na pliki).`,
   );
+  // Pokrycie per moduł: nagranie liczy się w module, w którym plik leży (teksty z wcześniejszych modułów są współdzielone).
+  for (const m of audioManifest.modules) {
+    const dir = `${audioConfig.pathPrefix}/module-${pad(m)}/`;
+    const own = audioManifest.items.filter((item) => item.audioPath.startsWith(dir));
+    const used = audioManifest.items.filter((item) => item.modules.includes(m));
+    console.log(`  moduł ${pad(m)}: ${own.length} plików w module (${own.filter(exists).length} istnieje), używa ${used.length} nagrań łącznie z współdzielonymi`);
+  }
+  if (lessonsMissingAudio.length) console.log(`  lekcje z brakującymi nagraniami: ${lessonsMissingAudio.join(", ")}`);
+  if (AUDIO_STRICT && present !== audioManifest.items.length) {
+    console.error(`Brakuje ${audioManifest.items.length - present} nagrań. Uruchom: python tools/listening/generate_tts.py --course-manifest frontend/curriculum/hr-a1/audio-manifest.json, potem npm run curriculum:a1`);
+    process.exitCode = 1;
+  }
 };
 
 if (DRY) {

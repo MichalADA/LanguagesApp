@@ -12,7 +12,8 @@
     "preview": "vite preview --port 8080",
     "typecheck": "tsc --noEmit",
     "curriculum:a1": "node scripts/generate-a1-curriculum.mjs",
-    "curriculum:a1:check": "node scripts/generate-a1-curriculum.mjs --check"
+    "curriculum:a1:check": "node scripts/generate-a1-curriculum.mjs --check",
+    "curriculum:a1:audio-check": "node scripts/generate-a1-curriculum.mjs --check --audio-strict"
   },
   "dependencies": {
     "react": "^18.3.1",

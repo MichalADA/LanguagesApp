@@ -526,6 +526,41 @@
           }
         ],
         "sample": "Ovo je moja obitelj. Imam jednu sestru."
+      },
+      "model": {
+        "title": "Rodzina Any",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Tko je ovo?",
+            "pl": "Kto to jest?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ovo je moja obitelj. Ovo su moji roditelji.",
+            "pl": "To moja rodzina. To są moi rodzice."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A tko je ovo?",
+            "pl": "A kto to jest?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "To je moj mlađi brat. Zove se Ivan.",
+            "pl": "To mój młodszy brat. Ma na imię Ivan."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imaš li sestru?",
+            "pl": "Masz siostrę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, imam stariju sestru. Ona živi u Zagrebu.",
+            "pl": "Tak, mam starszą siostrę. Ona mieszka w Zagrzebiu."
+          }
+        ]
       }
     },
     "a1-07": {
@@ -603,6 +638,41 @@
           }
         ],
         "sample": "Ovo je moja prijateljica Ana. Ana je liječnica."
+      },
+      "model": {
+        "title": "Nowa znajoma",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Bok, Ivane! Tko je ovo?",
+            "pl": "Cześć, Ivan! Kto to jest?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Ovo je moja kolegica Petra.",
+            "pl": "To jest moja koleżanka Petra."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Drago mi je, Petra. Što radiš?",
+            "pl": "Miło mi, Petro. Czym się zajmujesz?"
+          },
+          {
+            "speaker": "Petra",
+            "hr": "Ja sam liječnica. Radim u bolnici.",
+            "pl": "Jestem lekarką. Pracuję w szpitalu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A ti, Ivane?",
+            "pl": "A ty, Ivan?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Ja sam inženjer. Radim u jednoj tvrtki u centru.",
+            "pl": "Jestem inżynierem. Pracuję w pewnej firmie w centrum."
+          }
+        ]
       }
     },
     "a1-08": {
@@ -702,6 +772,36 @@
           }
         ],
         "sample": "Moj brat je visok. Danas sam umoran."
+      },
+      "model": {
+        "title": "Jaka jest nowa koleżanka?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Kakva je tvoja nova kolegica?",
+            "pl": "Jaka jest twoja nowa koleżanka?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Vrlo je simpatična i vesela.",
+            "pl": "Jest bardzo sympatyczna i wesoła."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Je li mlada?",
+            "pl": "Czy jest młoda?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, mlada je i visoka. A tvoj novi kolega?",
+            "pl": "Tak, jest młoda i wysoka. A twój nowy kolega?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "On je drag, ali danas je umoran.",
+            "pl": "Jest miły, ale dziś jest zmęczony."
+          }
+        ]
       }
     },
     "a1-09": {
@@ -789,6 +889,36 @@
           }
         ],
         "sample": "Imam auto i psa. Nemam bicikl."
+      },
+      "model": {
+        "title": "Dom czy mieszkanie?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, imaš li auto?",
+            "pl": "Marko, masz samochód?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Nemam auto, ali imam bicikl.",
+            "pl": "Nie mam samochodu, ale mam rower."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A imaš li kuću ili stan?",
+            "pl": "A masz dom czy mieszkanie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imam mali stan u centru. A ti?",
+            "pl": "Mam małe mieszkanie w centrum. A ty?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja imam kuću i vrt. I imam psa!",
+            "pl": "Ja mam dom i ogród. I mam psa!"
+          }
+        ]
       }
     },
     "a1-10": {
@@ -978,6 +1108,41 @@
           }
         ],
         "sample": "Ujutro doručkujem. Navečer učim hrvatski."
+      },
+      "model": {
+        "title": "Dzień Marka",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Kada ustaješ ujutro?",
+            "pl": "O której wstajesz rano?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ustajem u šest i prvo se tuširam.",
+            "pl": "Wstaję o szóstej i najpierw biorę prysznic."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Rano! Kada ideš na posao?",
+            "pl": "Wcześnie! Kiedy idziesz do pracy?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U sedam. Idem kući u četiri.",
+            "pl": "O siódmej. Do domu idę o czwartej."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A što radiš navečer?",
+            "pl": "A co robisz wieczorem?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Kuham, večeram i rano idem spavati.",
+            "pl": "Gotuję, jem kolację i wcześnie idę spać."
+          }
+        ]
       }
     },
     "a1-12": {
@@ -1063,6 +1228,36 @@
           }
         ],
         "sample": "Radim u uredu. Učim hrvatski svaki dan."
+      },
+      "model": {
+        "title": "Uczysz się czy pracujesz?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Govoriš li hrvatski?",
+            "pl": "Mówisz po chorwacku?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Malo. Učim hrvatski na tečaju.",
+            "pl": "Trochę. Uczę się chorwackiego na kursie."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A što radiš? Studiraš li?",
+            "pl": "A co robisz? Studiujesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne, radim u uredu. A ti?",
+            "pl": "Nie, pracuję w biurze. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja studiram na fakultetu u Zagrebu.",
+            "pl": "Ja studiuję na uczelni w Zagrzebiu."
+          }
+        ]
       }
     },
     "a1-13": {
@@ -1142,6 +1337,41 @@
           }
         ],
         "sample": "Radim od deset do šest. Sastanak je u četiri."
+      },
+      "model": {
+        "title": "Spóźnię się!",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Oprosti, koliko je sati?",
+            "pl": "Przepraszam, która godzina?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Sada je pola devet.",
+            "pl": "Teraz jest wpół do dziewiątej."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Joj, kasnim! Sastanak je u devet.",
+            "pl": "Ojej, spóźnię się! Spotkanie jest o dziewiątej."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Gdje je sastanak?",
+            "pl": "Gdzie jest spotkanie?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "U uredu, blizu centra.",
+            "pl": "W biurze, blisko centrum."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Imaš još pola sata.",
+            "pl": "Masz jeszcze pół godziny."
+          }
+        ]
       }
     },
     "a1-14": {
@@ -1226,6 +1456,41 @@
           }
         ],
         "sample": "U ponedjeljak radim. U subotu idem u grad."
+      },
+      "model": {
+        "title": "Masz czas w piątek?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Koji je danas dan?",
+            "pl": "Jaki jest dziś dzień?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Danas je srijeda.",
+            "pl": "Dziś jest środa."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imaš li vremena u petak?",
+            "pl": "Masz czas w piątek?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "U petak radim cijeli dan. Ali u subotu sam slobodna.",
+            "pl": "W piątek pracuję cały dzień. Ale w sobotę jestem wolna."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! Idemo u kino u subotu?",
+            "pl": "Super! Idziemy do kina w sobotę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Može!",
+            "pl": "Pasuje!"
+          }
+        ]
       }
     },
     "a1-15": {
@@ -1413,6 +1678,36 @@
           }
         ],
         "sample": "Pijem kavu bez šećera. Jedem kruh i sir."
+      },
+      "model": {
+        "title": "Co jesz na śniadanie?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Što jedeš za doručak?",
+            "pl": "Co jesz na śniadanie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Obično jedem jaja i kruh. A ti?",
+            "pl": "Zwykle jem jajka i chleb. A ty?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja jedem jogurt i voće.",
+            "pl": "Ja jem jogurt i owoce."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Piješ li kavu?",
+            "pl": "Pijesz kawę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, kavu s mlijekom.",
+            "pl": "Tak, kawę z mlekiem."
+          }
+        ]
       }
     },
     "a1-17": {
@@ -1502,6 +1797,36 @@
           }
         ],
         "sample": "Volim kavu i ribu. Ne volim juhu."
+      },
+      "model": {
+        "title": "Słodkie czy ostre?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Što najviše voliš jesti?",
+            "pl": "Co najbardziej lubisz jeść?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Najviše volim ribu. A ti?",
+            "pl": "Najbardziej lubię rybę. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja volim slatko. Volim kolače i čokoladu.",
+            "pl": "Ja lubię słodkie. Lubię ciasta i czekoladę."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A voliš li ljutu hranu?",
+            "pl": "A lubisz ostre jedzenie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ne, ne volim.",
+            "pl": "Nie, nie lubię."
+          }
+        ]
       }
     },
     "a1-18": {
@@ -1600,6 +1925,41 @@
           }
         ],
         "sample": "Molim jednu kavu bez šećera. Htio bih i sok."
+      },
+      "model": {
+        "title": "Kawa z mlekiem",
+        "lines": [
+          {
+            "speaker": "Konobar",
+            "hr": "Dobar dan! Izvolite.",
+            "pl": "Dzień dobry! Słucham."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Jednu bijelu kavu, molim.",
+            "pl": "Dzień dobry. Jedną kawę z mlekiem, poproszę."
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Veliku ili malu?",
+            "pl": "Dużą czy małą?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Malu, molim. I čašu vode.",
+            "pl": "Małą, poproszę. I szklankę wody."
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Izvolite.",
+            "pl": "Proszę."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala lijepa!",
+            "pl": "Dziękuję bardzo!"
+          }
+        ]
       }
     },
     "a1-19": {
@@ -1702,6 +2062,41 @@
           }
         ],
         "sample": "Htio bih naručiti juhu i ribu. Račun, molim."
+      },
+      "model": {
+        "title": "Co Pan poleca?",
+        "lines": [
+          {
+            "speaker": "Konobar",
+            "hr": "Dobra večer! Izvolite jelovnik.",
+            "pl": "Dobry wieczór! Proszę, oto menu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala. Što nam preporučujete?",
+            "pl": "Dziękuję. Co nam Pan poleca?"
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Riba je danas vrlo dobra.",
+            "pl": "Ryba jest dziś bardzo dobra."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobro, za glavno jelo ribu s rižom.",
+            "pl": "Dobrze, na danie główne rybę z ryżem."
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "A za predjelo?",
+            "pl": "A na przystawkę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Juhu, molim.",
+            "pl": "Zupę, poproszę."
+          }
+        ]
       }
     },
     "a1-20": {
@@ -1883,6 +2278,36 @@
           }
         ],
         "sample": "Živim blizu centra. Banka je tamo."
+      },
+      "model": {
+        "title": "Gdzie jest bank?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Oprostite, gdje je banka?",
+            "pl": "Przepraszam, gdzie jest bank?"
+          },
+          {
+            "speaker": "Prolaznik",
+            "hr": "Nije daleko. Tamo je, iza one zgrade.",
+            "pl": "Niedaleko. Jest tam, za tamtym budynkiem."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Je li na trgu?",
+            "pl": "Czy jest na placu?"
+          },
+          {
+            "speaker": "Prolaznik",
+            "hr": "Da, na uglu, pored kafića.",
+            "pl": "Tak, na rogu, obok kawiarni."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala lijepa!",
+            "pl": "Dziękuję bardzo!"
+          }
+        ]
       }
     },
     "a1-22": {
@@ -1969,6 +2394,36 @@
           }
         ],
         "sample": "Danas idem u banku. Sutra idem na poštu."
+      },
+      "model": {
+        "title": "Spotkanie na ulicy",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Bok, Ana! Kamo ideš?",
+            "pl": "Cześć, Ana! Dokąd idziesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Idem u pekaru po kruh. A ti?",
+            "pl": "Idę do piekarni po chleb. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja idem u knjižnicu.",
+            "pl": "Ja idę do biblioteki."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Gdje je knjižnica?",
+            "pl": "Gdzie jest biblioteka?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U centru, blizu muzeja.",
+            "pl": "W centrum, blisko muzeum."
+          }
+        ]
       }
     },
     "a1-23": {
@@ -2055,6 +2510,36 @@
           }
         ],
         "sample": "Idite ravno. Skrenite desno na semaforu."
+      },
+      "model": {
+        "title": "Jak dojść na dworzec?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Oprostite, kako mogu doći do kolodvora?",
+            "pl": "Przepraszam, jak mogę dojść do dworca?"
+          },
+          {
+            "speaker": "Prolaznik",
+            "hr": "Idite ravno do semafora, pa skrenite lijevo.",
+            "pl": "Proszę iść prosto do świateł, a potem skręcić w lewo."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Je li daleko?",
+            "pl": "Czy to daleko?"
+          },
+          {
+            "speaker": "Prolaznik",
+            "hr": "Ne, deset minuta pješice.",
+            "pl": "Nie, dziesięć minut pieszo."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala lijepa!",
+            "pl": "Dziękuję bardzo!"
+          }
+        ]
       }
     },
     "a1-24": {
@@ -2152,6 +2637,41 @@
           }
         ],
         "sample": "Tražim vodu. Koliko ovo košta?"
+      },
+      "model": {
+        "title": "Na targu",
+        "lines": [
+          {
+            "speaker": "Prodavačica",
+            "hr": "Dobar dan! Izvolite?",
+            "pl": "Dzień dobry! Słucham?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Kilogram jabuka i jednu bocu vode, molim.",
+            "pl": "Kilogram jabłek i jedną butelkę wody, poproszę."
+          },
+          {
+            "speaker": "Prodavačica",
+            "hr": "Još nešto?",
+            "pl": "Coś jeszcze?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ne, hvala. To je sve. Koliko košta?",
+            "pl": "Nie, dziękuję. To wszystko. Ile kosztuje?"
+          },
+          {
+            "speaker": "Prodavačica",
+            "hr": "Četiri eura i pedeset centi.",
+            "pl": "Cztery euro i pięćdziesiąt centów."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Mogu li platiti karticom?",
+            "pl": "Czy mogę zapłacić kartą?"
+          }
+        ]
       }
     },
     "a1-25": {
@@ -2320,6 +2840,41 @@
           }
         ],
         "sample": "U slobodno vrijeme čitam. Volim gledati filmove."
+      },
+      "model": {
+        "title": "Koncert w parku",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Što radiš u slobodno vrijeme?",
+            "pl": "Co robisz w wolnym czasie?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Čitam i slušam glazbu. Ponekad crtam.",
+            "pl": "Czytam i słucham muzyki. Czasami rysuję."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Voliš li koncerte?",
+            "pl": "Lubisz koncerty?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, volim koncerte!",
+            "pl": "Tak, lubię koncerty!"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U petak je koncert u parku. Ideš?",
+            "pl": "W piątek jest koncert w parku. Idziesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Idem!",
+            "pl": "Idę!"
+          }
+        ]
       }
     },
     "a1-27": {
@@ -2413,6 +2968,36 @@
           }
         ],
         "sample": "Ponekad igram nogomet. Nikad ne trčim ujutro."
+      },
+      "model": {
+        "title": "Uprawiasz sport?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Ivane, baviš li se sportom?",
+            "pl": "Ivan, uprawiasz sport?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Da, igram košarku i često trčim.",
+            "pl": "Tak, gram w koszykówkę i często biegam."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Koliko puta tjedno?",
+            "pl": "Ile razy w tygodniu?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Trčim tri puta tjedno. A ti?",
+            "pl": "Biegam trzy razy w tygodniu. A ty?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja idem na jogu i ponekad plivam.",
+            "pl": "Ja chodzę na jogę i czasami pływam."
+          }
+        ]
       }
     },
     "a1-28": {
@@ -2496,6 +3081,36 @@
           }
         ],
         "sample": "Danas je hladno. Pada kiša."
+      },
+      "model": {
+        "title": "Plaża czy deszcz?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Kakvo je vrijeme danas?",
+            "pl": "Jaka jest dziś pogoda?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Sunčano je i toplo. Vani je dvadeset pet stupnjeva.",
+            "pl": "Słonecznie i ciepło. Na zewnątrz jest dwadzieścia pięć stopni."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! A sutra?",
+            "pl": "Super! A jutro?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Prema prognozi, sutra će padati kiša.",
+            "pl": "Według prognozy jutro będzie padać deszcz."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Onda danas idemo na plažu!",
+            "pl": "To dziś idziemy na plażę!"
+          }
+        ]
       }
     },
     "a1-29": {
@@ -2590,6 +3205,46 @@
           }
         ],
         "sample": "Hoćemo li na kavu? Može sutra u šest."
+      },
+      "model": {
+        "title": "Drink na placu",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Bok, Marko! Hoćemo li sutra na piće?",
+            "pl": "Cześć, Marko! Idziemy jutro na drinka?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Može! U koliko sati?",
+            "pl": "Może być! O której?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "U osam?",
+            "pl": "O ósmej?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U osam ne mogu. Možda u devet?",
+            "pl": "O ósmej nie mogę. Może o dziewiątej?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobro. Gdje se nalazimo?",
+            "pl": "Dobrze. Gdzie się spotykamy?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ispred kafića na trgu. Dogovoreno?",
+            "pl": "Przed kawiarnią na placu. Umówione?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dogovoreno! Vidimo se sutra.",
+            "pl": "Umówione! Do zobaczenia jutro."
+          }
+        ]
       }
     },
     "a1-30": {
@@ -2759,6 +3414,36 @@
           }
         ],
         "sample": "Volim putovati. Idem vlakom u Zagreb."
+      },
+      "model": {
+        "title": "Wakacje na wyspie",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Kamo putuješ ljeti?",
+            "pl": "Dokąd jedziesz latem?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Idem u Hrvatsku, na obalu.",
+            "pl": "Jadę do Chorwacji, na wybrzeże."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Kako putuješ? Avionom?",
+            "pl": "Jak jedziesz? Samolotem?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne, autom do Splita, a onda trajektom na otok.",
+            "pl": "Nie, samochodem do Splitu, a potem promem na wyspę."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super putovanje!",
+            "pl": "Super podróż!"
+          }
+        ]
       }
     },
     "a1-32": {
@@ -2849,6 +3534,41 @@
           }
         ],
         "sample": "Imam kartu za Zadar. Vlak polazi u sedam."
+      },
+      "model": {
+        "title": "Bilet do Splitu",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Jednu kartu za Split, molim.",
+            "pl": "Dzień dobry. Jeden bilet do Splitu, poproszę."
+          },
+          {
+            "speaker": "Blagajnica",
+            "hr": "U jednom smjeru ili povratnu?",
+            "pl": "W jedną stronę czy powrotny?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Povratnu, molim. Kada je polazak?",
+            "pl": "Powrotny, poproszę. Kiedy jest odjazd?"
+          },
+          {
+            "speaker": "Blagajnica",
+            "hr": "Autobus polazi u deset, s perona dva.",
+            "pl": "Autobus odjeżdża o dziesiątej, z peronu drugiego."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Moram li presjedati?",
+            "pl": "Czy muszę się przesiadać?"
+          },
+          {
+            "speaker": "Blagajnica",
+            "hr": "Ne, autobus ide izravno.",
+            "pl": "Nie, autobus jedzie bezpośrednio."
+          }
+        ]
       }
     },
     "a1-33": {
@@ -2947,6 +3667,41 @@
           }
         ],
         "sample": "Imam rezervaciju na ime Michał. Trebam sobu za dvije noći."
+      },
+      "model": {
+        "title": "Ana w recepcji",
+        "lines": [
+          {
+            "speaker": "Recepcionar",
+            "hr": "Dobar dan, dobro došli!",
+            "pl": "Dzień dobry, witamy!"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Imam rezervaciju na ime Ana Kovač.",
+            "pl": "Dzień dobry. Mam rezerwację na nazwisko Ana Kovač."
+          },
+          {
+            "speaker": "Recepcionar",
+            "hr": "Da, dvokrevetna soba za dvije noći. Vašu putovnicu, molim.",
+            "pl": "Tak, pokój dwuosobowy na dwie noce. Poproszę paszport."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Izvolite. Je li doručak uključen?",
+            "pl": "Proszę. Czy śniadanie jest wliczone?"
+          },
+          {
+            "speaker": "Recepcionar",
+            "hr": "Da, od sedam do deset. Soba je na trećem katu.",
+            "pl": "Tak, od siódmej do dziesiątej. Pokój jest na trzecim piętrze."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala!",
+            "pl": "Dziękuję!"
+          }
+        ]
       }
     },
     "a1-34": {
@@ -3038,6 +3793,36 @@
           }
         ],
         "sample": "Idem na plažu. Plivam u moru."
+      },
+      "model": {
+        "title": "Zimne morze?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ideš li u more?",
+            "pl": "Wchodzisz do morza?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne još. More je hladno!",
+            "pl": "Jeszcze nie. Morze jest zimne!"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Nije, toplo je! Dođi!",
+            "pl": "Nie jest, jest ciepłe! Chodź!"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobro, ali prvo trebam kremu za sunčanje.",
+            "pl": "Dobrze, ale najpierw potrzebuję kremu do opalania."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Evo, izvoli.",
+            "pl": "Proszę, masz."
+          }
+        ]
       }
     },
     "a1-35": {
@@ -3251,6 +4036,36 @@
           }
         ],
         "sample": "Jučer sam radila. Navečer sam bila kod kuće."
+      },
+      "model": {
+        "title": "Dzień Any w mieście",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Bok, Ana! Što si radila jučer?",
+            "pl": "Cześć, Ana! Co robiłaś wczoraj?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Jučer sam bila u gradu. Kupila sam novu knjigu.",
+            "pl": "Wczoraj byłam w mieście. Kupiłam nową książkę."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A sinoć?",
+            "pl": "A wczoraj wieczorem?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Sinoć sam gledala film kod kuće. A ti?",
+            "pl": "Wczoraj wieczorem oglądałam film w domu. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja sam radio cijeli dan.",
+            "pl": "Ja pracowałem cały dzień."
+          }
+        ]
       }
     },
     "a1-37": {
@@ -3355,6 +4170,36 @@
           }
         ],
         "sample": "Sutra ću raditi. Navečer ću gledati film."
+      },
+      "model": {
+        "title": "Plany na weekend",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Što ćeš raditi za vikend?",
+            "pl": "Co będziesz robić w weekend?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U subotu ću igrati nogomet, a u nedjelju ću se odmoriti.",
+            "pl": "W sobotę będę grać w piłkę, a w niedzielę odpocznę."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Mi ćemo ići na izlet na otok.",
+            "pl": "My pojedziemy na wycieczkę na wyspę."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! Nadam se da će biti sunčano.",
+            "pl": "Super! Mam nadzieję, że będzie słonecznie."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Sigurno hoće!",
+            "pl": "Na pewno będzie!"
+          }
+        ]
       }
     },
     "a1-38": {
