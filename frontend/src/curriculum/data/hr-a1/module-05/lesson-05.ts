@@ -12,28 +12,32 @@ export const LESSON: GeneratedLesson = {
         "source": "mapa / bilet",
         "lemma": "karta",
         "partOfSpeech": "noun",
-        "recordId": "A1-0434"
+        "recordId": "A1-0434",
+        "audioSrc": "/audio/hr/a1/module-05/karta.mp3"
       },
       {
         "target": "put",
         "source": "droga",
         "lemma": "put",
         "partOfSpeech": "noun",
-        "recordId": "A1-0435"
+        "recordId": "A1-0435",
+        "audioSrc": "/audio/hr/a1/module-05/put.mp3"
       },
       {
         "target": "mjesto",
         "source": "miejsce",
         "lemma": "mjesto",
         "partOfSpeech": "noun",
-        "recordId": "A1-0436"
+        "recordId": "A1-0436",
+        "audioSrc": "/audio/hr/a1/module-05/mjesto.mp3"
       },
       {
         "target": "pomoć",
         "source": "pomoc",
         "lemma": "pomoć",
         "partOfSpeech": "noun",
-        "recordId": "A1-0437"
+        "recordId": "A1-0437",
+        "audioSrc": "/audio/hr/a1/module-05/pomoc.mp3"
       },
       {
         "target": "pitati",
@@ -48,56 +52,64 @@ export const LESSON: GeneratedLesson = {
         "source": "pokazać",
         "lemma": "pokazati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0439"
+        "recordId": "A1-0439",
+        "audioSrc": "/audio/hr/a1/module-05/pokazati.mp3"
       },
       {
         "target": "pronaći",
         "source": "znaleźć",
         "lemma": "pronaći",
         "partOfSpeech": "verb",
-        "recordId": "A1-0440"
+        "recordId": "A1-0440",
+        "audioSrc": "/audio/hr/a1/module-05/pronaci.mp3"
       },
       {
         "target": "izgubiti se",
         "source": "zgubić się",
         "lemma": "izgubiti se",
         "partOfSpeech": "verb",
-        "recordId": "A1-0441"
+        "recordId": "A1-0441",
+        "audioSrc": "/audio/hr/a1/module-05/izgubiti-se.mp3"
       },
       {
         "target": "plan grada",
         "source": "plan miasta",
         "lemma": "plan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0969"
+        "recordId": "A1-0969",
+        "audioSrc": "/audio/hr/a1/module-05/plan-grada.mp3"
       },
       {
         "target": "Ne znam.",
         "source": "Nie wiem.",
         "lemma": "znati",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0970"
+        "recordId": "A1-0970",
+        "audioSrc": "/audio/hr/a1/module-05/ne-znam.mp3"
       },
       {
         "target": "Hvala na pomoći!",
         "source": "Dziękuję za pomoc!",
         "lemma": "pomoć",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0971"
+        "recordId": "A1-0971",
+        "audioSrc": "/audio/hr/a1/module-05/hvala-na-pomoci.mp3"
       },
       {
         "target": "Nema problema.",
         "source": "Nie ma problemu.",
         "lemma": "problem",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0972"
+        "recordId": "A1-0972",
+        "audioSrc": "/audio/hr/a1/module-05/nema-problema.mp3"
       },
       {
         "target": "molim vas",
         "source": "proszę (Pana / Panią)",
         "lemma": "moliti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0973"
+        "recordId": "A1-0973",
+        "audioSrc": "/audio/hr/a1/module-05/molim-vas.mp3"
       }
     ],
     "steps": [
@@ -123,7 +135,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "blisko",
         "accepted": [
           "blizu"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/blizu.mp3"
       },
       {
         "id": "recall-2",
@@ -133,7 +146,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "apteka",
         "accepted": [
           "ljekarna"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/ljekarna.mp3"
       },
       {
         "id": "recall-3",
@@ -143,7 +157,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "przejść",
         "accepted": [
           "prijeći"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/prijeci.mp3"
       },
       {
         "id": "recall-4",
@@ -157,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "skrzyżowanie"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/kupiti.mp3"
       },
       {
         "id": "vocab",
@@ -169,22 +185,26 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "karta",
             "source": "mapa / bilet",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/karta.mp3"
           },
           {
             "target": "put",
             "source": "droga",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/put.mp3"
           },
           {
             "target": "mjesto",
             "source": "miejsce",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/mjesto.mp3"
           },
           {
             "target": "pomoć",
             "source": "pomoc",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/pomoc.mp3"
           },
           {
             "target": "pitati",
@@ -195,42 +215,50 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "pokazati",
             "source": "pokazać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-05/pokazati.mp3"
           },
           {
             "target": "pronaći",
             "source": "znaleźć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-05/pronaci.mp3"
           },
           {
             "target": "izgubiti se",
             "source": "zgubić się",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-05/izgubiti-se.mp3"
           },
           {
             "target": "plan grada",
             "source": "plan miasta",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/plan-grada.mp3"
           },
           {
             "target": "Ne znam.",
             "source": "Nie wiem.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/ne-znam.mp3"
           },
           {
             "target": "Hvala na pomoći!",
             "source": "Dziękuję za pomoc!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/hvala-na-pomoci.mp3"
           },
           {
             "target": "Nema problema.",
             "source": "Nie ma problemu.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/nema-problema.mp3"
           },
           {
             "target": "molim vas",
             "source": "proszę (Pana / Panią)",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/molim-vas.mp3"
           }
         ]
       },
@@ -243,11 +271,13 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Oprostite, ne znam gdje je to.",
-            "source": "Przepraszam, nie wiem, gdzie to jest."
+            "source": "Przepraszam, nie wiem, gdzie to jest.",
+            "audioSrc": "/audio/hr/a1/module-05/oprostite-ne-znam-gdje-je-to.mp3"
           },
           {
             "target": "Hvala na pomoći!",
-            "source": "Dziękuję za pomoc!"
+            "source": "Dziękuję za pomoc!",
+            "audioSrc": "/audio/hr/a1/module-05/hvala-na-pomoci.mp3"
           }
         ]
       },
@@ -261,7 +291,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Imate"
         ],
-        "translation": "Czy mają Państwo to w innym rozmiarze?"
+        "translation": "Czy mają Państwo to w innym rozmiarze?",
+        "answerAudioSrc": "/audio/hr/a1/module-05/imate-li-ovo-u-drugoj-velicini.mp3"
       },
       {
         "id": "order",
@@ -277,7 +308,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Trg je ispred zgrade."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/trg-je-ispred-zgrade.mp3"
       },
       {
         "id": "translate-1",
@@ -287,7 +319,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "To jest daleko.",
         "accepted": [
           "To je daleko."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/to-je-daleko.mp3"
       },
       {
         "id": "translate-2",
@@ -297,7 +330,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Park jest w centrum.",
         "accepted": [
           "Park je u centru."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/park-je-u-centru.mp3"
       },
       {
         "id": "translate-3",
@@ -308,7 +342,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Tražim vodu.",
           "Ja tražim vodu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/trazim-vodu.mp3"
       },
       {
         "id": "dialog",
@@ -321,7 +356,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Prolaznik",
               "text": "Dobar dan. Mogu li vam pomoći?",
-              "translation": "Dzień dobry. Czy mogę pomóc?"
+              "translation": "Dzień dobry. Czy mogę pomóc?",
+              "audioSrc": "/audio/hr/a1/module-05/dobar-dan-mogu-li-vam-pomoci-m.mp3"
             }
           },
           {
@@ -332,14 +368,16 @@ export const LESSON: GeneratedLesson = {
               "Gdje je banka?"
             ],
             "pattern": "^(oprostite )?gdje je banka( molim vas)?$",
-            "suggestion": "Oprostite, gdje je banka?"
+            "suggestion": "Oprostite, gdje je banka?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/oprostite-gdje-je-banka.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Prolaznik",
               "text": "Idite ravno pa lijevo.",
-              "translation": "Proszę iść prosto, potem w lewo."
+              "translation": "Proszę iść prosto, potem w lewo.",
+              "audioSrc": "/audio/hr/a1/module-05/idite-ravno-pa-lijevo-m.mp3"
             }
           },
           {
@@ -350,14 +388,16 @@ export const LESSON: GeneratedLesson = {
               "Je li to daleko?"
             ],
             "pattern": "^je li (to )?daleko$",
-            "suggestion": "Je li daleko?"
+            "suggestion": "Je li daleko?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/je-li-daleko.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Prolaznik",
               "text": "Ne, blizu je. Banka je blizu parka.",
-              "translation": "Nie, to blisko. Bank jest blisko parku."
+              "translation": "Nie, to blisko. Bank jest blisko parku.",
+              "audioSrc": "/audio/hr/a1/module-05/ne-blizu-je-banka-je-blizu-parka-m.mp3"
             }
           },
           {
@@ -408,7 +448,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Danas idem u centar. Banka je blizu parka. Idite ravno pa lijevo."
+        "sample": "Danas idem u centar. Banka je blizu parka. Idite ravno pa lijevo.",
+        "sampleAudioSrc": "/audio/hr/a1/module-05/danas-idem-u-centar-banka-je-blizu-parka-idite-ravno-pa-lije.mp3"
       },
       {
         "id": "summary",
@@ -418,19 +459,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Oprostite, gdje je banka?",
-            "source": "Przepraszam, gdzie jest bank?"
+            "source": "Przepraszam, gdzie jest bank?",
+            "audioSrc": "/audio/hr/a1/module-05/oprostite-gdje-je-banka.mp3"
           },
           {
             "target": "Idite ravno pa lijevo.",
-            "source": "Proszę iść prosto, potem w lewo."
+            "source": "Proszę iść prosto, potem w lewo.",
+            "audioSrc": "/audio/hr/a1/module-05/idite-ravno-pa-lijevo.mp3"
           },
           {
             "target": "Trgovina je blizu parka.",
-            "source": "Sklep jest blisko parku."
+            "source": "Sklep jest blisko parku.",
+            "audioSrc": "/audio/hr/a1/module-05/trgovina-je-blizu-parka.mp3"
           },
           {
             "target": "Idem u centar.",
-            "source": "Idę do centrum."
+            "source": "Idę do centrum.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-u-centar.mp3"
           }
         ],
         "canDo": [

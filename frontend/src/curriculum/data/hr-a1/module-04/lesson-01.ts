@@ -12,140 +12,160 @@ export const LESSON: GeneratedLesson = {
         "source": "woda",
         "lemma": "voda",
         "partOfSpeech": "noun",
-        "recordId": "A1-0272"
+        "recordId": "A1-0272",
+        "audioSrc": "/audio/hr/a1/module-04/voda.mp3"
       },
       {
         "target": "kava",
         "source": "kawa",
         "lemma": "kava",
         "partOfSpeech": "noun",
-        "recordId": "A1-0273"
+        "recordId": "A1-0273",
+        "audioSrc": "/audio/hr/a1/module-04/kava.mp3"
       },
       {
         "target": "čaj",
         "source": "herbata",
         "lemma": "čaj",
         "partOfSpeech": "noun",
-        "recordId": "A1-0274"
+        "recordId": "A1-0274",
+        "audioSrc": "/audio/hr/a1/module-04/caj.mp3"
       },
       {
         "target": "kruh",
         "source": "chleb",
         "lemma": "kruh",
         "partOfSpeech": "noun",
-        "recordId": "A1-0275"
+        "recordId": "A1-0275",
+        "audioSrc": "/audio/hr/a1/module-04/kruh.mp3"
       },
       {
         "target": "sir",
         "source": "ser",
         "lemma": "sir",
         "partOfSpeech": "noun",
-        "recordId": "A1-0276"
+        "recordId": "A1-0276",
+        "audioSrc": "/audio/hr/a1/module-04/sir.mp3"
       },
       {
         "target": "riba",
         "source": "ryba",
         "lemma": "riba",
         "partOfSpeech": "noun",
-        "recordId": "A1-0277"
+        "recordId": "A1-0277",
+        "audioSrc": "/audio/hr/a1/module-04/riba.mp3"
       },
       {
         "target": "meso",
         "source": "mięso",
         "lemma": "meso",
         "partOfSpeech": "noun",
-        "recordId": "A1-0278"
+        "recordId": "A1-0278",
+        "audioSrc": "/audio/hr/a1/module-04/meso.mp3"
       },
       {
         "target": "povrće",
         "source": "warzywa",
         "lemma": "povrće",
         "partOfSpeech": "noun",
-        "recordId": "A1-0279"
+        "recordId": "A1-0279",
+        "audioSrc": "/audio/hr/a1/module-04/povrce.mp3"
       },
       {
         "target": "mlijeko",
         "source": "mleko",
         "lemma": "mlijeko",
         "partOfSpeech": "noun",
-        "recordId": "A1-0852"
+        "recordId": "A1-0852",
+        "audioSrc": "/audio/hr/a1/module-04/mlijeko.mp3"
       },
       {
         "target": "jaje",
         "source": "jajko",
         "lemma": "jaje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0853"
+        "recordId": "A1-0853",
+        "audioSrc": "/audio/hr/a1/module-04/jaje.mp3"
       },
       {
         "target": "voće",
         "source": "owoce",
         "lemma": "voće",
         "partOfSpeech": "noun",
-        "recordId": "A1-0854"
+        "recordId": "A1-0854",
+        "audioSrc": "/audio/hr/a1/module-04/voce.mp3"
       },
       {
         "target": "jabuka",
         "source": "jabłko",
         "lemma": "jabuka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0855"
+        "recordId": "A1-0855",
+        "audioSrc": "/audio/hr/a1/module-04/jabuka.mp3"
       },
       {
         "target": "piletina",
         "source": "kurczak (mięso)",
         "lemma": "piletina",
         "partOfSpeech": "noun",
-        "recordId": "A1-0856"
+        "recordId": "A1-0856",
+        "audioSrc": "/audio/hr/a1/module-04/piletina.mp3"
       },
       {
         "target": "krumpir",
         "source": "ziemniaki",
         "lemma": "krumpir",
         "partOfSpeech": "noun",
-        "recordId": "A1-0857"
+        "recordId": "A1-0857",
+        "audioSrc": "/audio/hr/a1/module-04/krumpir.mp3"
       },
       {
         "target": "tjestenina",
         "source": "makaron",
         "lemma": "tjestenina",
         "partOfSpeech": "noun",
-        "recordId": "A1-0858"
+        "recordId": "A1-0858",
+        "audioSrc": "/audio/hr/a1/module-04/tjestenina.mp3"
       },
       {
         "target": "maslac",
         "source": "masło",
         "lemma": "maslac",
         "partOfSpeech": "noun",
-        "recordId": "A1-0859"
+        "recordId": "A1-0859",
+        "audioSrc": "/audio/hr/a1/module-04/maslac.mp3"
       },
       {
         "target": "jogurt",
         "source": "jogurt",
         "lemma": "jogurt",
         "partOfSpeech": "noun",
-        "recordId": "A1-0860"
+        "recordId": "A1-0860",
+        "audioSrc": "/audio/hr/a1/module-04/jogurt.mp3"
       },
       {
         "target": "šunka",
         "source": "szynka",
         "lemma": "šunka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0861"
+        "recordId": "A1-0861",
+        "audioSrc": "/audio/hr/a1/module-04/sunka.mp3"
       },
       {
         "target": "ručak",
         "source": "obiad",
         "lemma": "ručak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0862"
+        "recordId": "A1-0862",
+        "audioSrc": "/audio/hr/a1/module-04/rucak.mp3"
       },
       {
         "target": "večera",
         "source": "kolacja",
         "lemma": "večera",
         "partOfSpeech": "noun",
-        "recordId": "A1-0863"
+        "recordId": "A1-0863",
+        "audioSrc": "/audio/hr/a1/module-04/vecera.mp3"
       }
     ],
     "steps": [
@@ -159,15 +179,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Pijem vodu.",
-            "source": "Piję wodę."
+            "source": "Piję wodę.",
+            "audioSrc": "/audio/hr/a1/module-04/pijem-vodu.mp3"
           },
           {
             "target": "Pijem kavu bez šećera.",
-            "source": "Piję kawę bez cukru."
+            "source": "Piję kawę bez cukru.",
+            "audioSrc": "/audio/hr/a1/module-04/pijem-kavu-bez-secera.mp3"
           },
           {
             "target": "Jedem kruh i sir.",
-            "source": "Jem chleb i ser."
+            "source": "Jem chleb i ser.",
+            "audioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
           }
         ]
       },
@@ -180,8 +203,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Pijem vodu.",
-          "source": "Piję wodę."
-        }
+          "source": "Piję wodę.",
+          "audioSrc": "/audio/hr/a1/module-04/pijem-vodu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/voda.mp3"
       },
       {
         "id": "word-2",
@@ -192,8 +217,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Pijem kavu bez šećera.",
-          "source": "Piję kawę bez cukru."
-        }
+          "source": "Piję kawę bez cukru.",
+          "audioSrc": "/audio/hr/a1/module-04/pijem-kavu-bez-secera.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/kava.mp3"
       },
       {
         "id": "word-3",
@@ -204,8 +231,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Želim čaj.",
-          "source": "Chcę herbatę."
-        }
+          "source": "Chcę herbatę.",
+          "audioSrc": "/audio/hr/a1/module-04/zelim-caj.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/caj.mp3"
       },
       {
         "id": "check-1",
@@ -219,7 +248,8 @@ export const LESSON: GeneratedLesson = {
           "woda"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/kava.mp3"
       },
       {
         "id": "word-4",
@@ -230,8 +260,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Jedem kruh i sir.",
-          "source": "Jem chleb i ser."
-        }
+          "source": "Jem chleb i ser.",
+          "audioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/kruh.mp3"
       },
       {
         "id": "word-5",
@@ -242,8 +274,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Jedem kruh i sir.",
-          "source": "Jem chleb i ser."
-        }
+          "source": "Jem chleb i ser.",
+          "audioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/sir.mp3"
       },
       {
         "id": "word-6",
@@ -254,8 +288,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Volim ribu i povrće.",
-          "source": "Lubię rybę i warzywa."
-        }
+          "source": "Lubię rybę i warzywa.",
+          "audioSrc": "/audio/hr/a1/module-04/volim-ribu-i-povrce.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/riba.mp3"
       },
       {
         "id": "check-2",
@@ -269,7 +305,8 @@ export const LESSON: GeneratedLesson = {
           "riba"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-04/riba.mp3"
       },
       {
         "id": "word-7",
@@ -280,8 +317,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Danas ne jedem meso.",
-          "source": "Dziś nie jem mięsa."
-        }
+          "source": "Dziś nie jem mięsa.",
+          "audioSrc": "/audio/hr/a1/module-04/danas-ne-jedem-meso.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/meso.mp3"
       },
       {
         "id": "word-8",
@@ -292,8 +331,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Volim ribu i povrće.",
-          "source": "Lubię rybę i warzywa."
-        }
+          "source": "Lubię rybę i warzywa.",
+          "audioSrc": "/audio/hr/a1/module-04/volim-ribu-i-povrce.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/povrce.mp3"
       },
       {
         "id": "check-3",
@@ -307,7 +348,8 @@ export const LESSON: GeneratedLesson = {
           "herbata"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/meso.mp3"
       },
       {
         "id": "more-words",
@@ -319,62 +361,74 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "mlijeko",
             "source": "mleko",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/mlijeko.mp3"
           },
           {
             "target": "jaje",
             "source": "jajko",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/jaje.mp3"
           },
           {
             "target": "voće",
             "source": "owoce",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/voce.mp3"
           },
           {
             "target": "jabuka",
             "source": "jabłko",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/jabuka.mp3"
           },
           {
             "target": "piletina",
             "source": "kurczak (mięso)",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/piletina.mp3"
           },
           {
             "target": "krumpir",
             "source": "ziemniaki",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/krumpir.mp3"
           },
           {
             "target": "tjestenina",
             "source": "makaron",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/tjestenina.mp3"
           },
           {
             "target": "maslac",
             "source": "masło",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/maslac.mp3"
           },
           {
             "target": "jogurt",
             "source": "jogurt",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/jogurt.mp3"
           },
           {
             "target": "šunka",
             "source": "szynka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/sunka.mp3"
           },
           {
             "target": "ručak",
             "source": "obiad",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/rucak.mp3"
           },
           {
             "target": "večera",
             "source": "kolacja",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/vecera.mp3"
           }
         ]
       },
@@ -390,7 +444,8 @@ export const LESSON: GeneratedLesson = {
           "jabłko"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/piletina.mp3"
       },
       {
         "id": "examples",
@@ -401,19 +456,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Za doručak jedem kruh s maslacem.",
-            "source": "Na śniadanie jem chleb z masłem."
+            "source": "Na śniadanie jem chleb z masłem.",
+            "audioSrc": "/audio/hr/a1/module-04/za-dorucak-jedem-kruh-s-maslacem.mp3"
           },
           {
             "target": "Pijem kavu s mlijekom.",
-            "source": "Piję kawę z mlekiem."
+            "source": "Piję kawę z mlekiem.",
+            "audioSrc": "/audio/hr/a1/module-04/pijem-kavu-s-mlijekom.mp3"
           },
           {
             "target": "Za ručak jedem piletinu i krumpir.",
-            "source": "Na obiad jem kurczaka i ziemniaki."
+            "source": "Na obiad jem kurczaka i ziemniaki.",
+            "audioSrc": "/audio/hr/a1/module-04/za-rucak-jedem-piletinu-i-krumpir.mp3"
           },
           {
             "target": "Navečer jedem voće i jogurt.",
-            "source": "Wieczorem jem owoce i jogurt."
+            "source": "Wieczorem jem owoce i jogurt.",
+            "audioSrc": "/audio/hr/a1/module-04/navecer-jedem-voce-i-jogurt.mp3"
           }
         ]
       },
@@ -426,15 +485,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Pijem vodu.",
-            "source": "Piję wodę."
+            "source": "Piję wodę.",
+            "audioSrc": "/audio/hr/a1/module-04/pijem-vodu.mp3"
           },
           {
             "target": "Jedem kruh i sir.",
-            "source": "Jem chleb i ser."
+            "source": "Jem chleb i ser.",
+            "audioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
           },
           {
             "target": "Volim ribu i povrće.",
-            "source": "Lubię rybę i warzywa."
+            "source": "Lubię rybę i warzywa.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-ribu-i-povrce.mp3"
           }
         ]
       },
@@ -448,7 +510,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "vodu"
         ],
-        "translation": "Piję wodę."
+        "translation": "Piję wodę.",
+        "answerAudioSrc": "/audio/hr/a1/module-04/pijem-vodu.mp3"
       },
       {
         "id": "translate-1",
@@ -459,7 +522,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Pijem kavu bez šećera.",
           "Ja pijem kavu bez šećera."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/pijem-kavu-bez-secera.mp3"
       },
       {
         "id": "order",
@@ -476,7 +540,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Jedem kruh i sir.",
           "Ja jedem kruh i sir."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
       },
       {
         "id": "comprehend",
@@ -490,7 +555,8 @@ export const LESSON: GeneratedLesson = {
           "Piję kawę bez cukru."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/danas-ne-jedem-meso.mp3"
       },
       {
         "id": "translate-2",
@@ -501,7 +567,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Želim čaj.",
           "Ja želim čaj."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/zelim-caj.mp3"
       },
       {
         "id": "model",
@@ -512,27 +579,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Što jedeš za doručak?",
-            "translation": "Co jesz na śniadanie?"
+            "translation": "Co jesz na śniadanie?",
+            "audioSrc": "/audio/hr/a1/module-04/sto-jedes-za-dorucak.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Obično jedem jaja i kruh. A ti?",
-            "translation": "Zwykle jem jajka i chleb. A ty?"
+            "translation": "Zwykle jem jajka i chleb. A ty?",
+            "audioSrc": "/audio/hr/a1/module-04/obicno-jedem-jaja-i-kruh-a-ti-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ja jedem jogurt i voće.",
-            "translation": "Ja jem jogurt i owoce."
+            "translation": "Ja jem jogurt i owoce.",
+            "audioSrc": "/audio/hr/a1/module-04/ja-jedem-jogurt-i-voce.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Piješ li kavu?",
-            "translation": "Pijesz kawę?"
+            "translation": "Pijesz kawę?",
+            "audioSrc": "/audio/hr/a1/module-04/pijes-li-kavu-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Da, kavu s mlijekom.",
-            "translation": "Tak, kawę z mlekiem."
+            "translation": "Tak, kawę z mlekiem.",
+            "audioSrc": "/audio/hr/a1/module-04/da-kavu-s-mlijekom.mp3"
           }
         ]
       },
@@ -547,7 +619,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Što piješ?",
-              "translation": "Co pijesz?"
+              "translation": "Co pijesz?",
+              "audioSrc": "/audio/hr/a1/module-04/sto-pijes.mp3"
             }
           },
           {
@@ -562,14 +635,16 @@ export const LESSON: GeneratedLesson = {
               "Ja pijem čaj."
             ],
             "pattern": "^(ja )?pijem (?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt)( (i|s|sa|bez) \\p{L}+){0,3}$",
-            "suggestion": "Pijem vodu."
+            "suggestion": "Pijem vodu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/pijem-vodu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "A što jedeš?",
-              "translation": "A co jesz?"
+              "translation": "A co jesz?",
+              "audioSrc": "/audio/hr/a1/module-04/a-sto-jedes.mp3"
             }
           },
           {
@@ -580,7 +655,8 @@ export const LESSON: GeneratedLesson = {
               "Ja jedem kruh i sir."
             ],
             "pattern": "^(ja )?jedem (?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt)( (i|s|sa|bez) \\p{L}+){0,3}$",
-            "suggestion": "Jedem kruh i sir."
+            "suggestion": "Jedem kruh i sir.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
           }
         ]
       },
@@ -608,7 +684,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Pijem kavu bez šećera. Jedem kruh i sir."
+        "sample": "Pijem kavu bez šećera. Jedem kruh i sir.",
+        "sampleAudioSrc": "/audio/hr/a1/module-04/pijem-kavu-bez-secera-jedem-kruh-i-sir.mp3"
       },
       {
         "id": "summary",
@@ -618,19 +695,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Pijem vodu.",
-            "source": "Piję wodę."
+            "source": "Piję wodę.",
+            "audioSrc": "/audio/hr/a1/module-04/pijem-vodu.mp3"
           },
           {
             "target": "Pijem kavu bez šećera.",
-            "source": "Piję kawę bez cukru."
+            "source": "Piję kawę bez cukru.",
+            "audioSrc": "/audio/hr/a1/module-04/pijem-kavu-bez-secera.mp3"
           },
           {
             "target": "Jedem kruh i sir.",
-            "source": "Jem chleb i ser."
+            "source": "Jem chleb i ser.",
+            "audioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
           },
           {
             "target": "Volim ribu i povrće.",
-            "source": "Lubię rybę i warzywa."
+            "source": "Lubię rybę i warzywa.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-ribu-i-povrce.mp3"
           }
         ]
       }

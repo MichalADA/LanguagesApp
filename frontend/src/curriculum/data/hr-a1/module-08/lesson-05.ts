@@ -13,56 +13,64 @@ export const LESSON: GeneratedLesson = {
         "source": "test",
         "lemma": "test",
         "partOfSpeech": "noun",
-        "recordId": "A1-0704"
+        "recordId": "A1-0704",
+        "audioSrc": "/audio/hr/a1/module-08/test.mp3"
       },
       {
         "target": "zadatak",
         "source": "zadanie",
         "lemma": "zadatak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0705"
+        "recordId": "A1-0705",
+        "audioSrc": "/audio/hr/a1/module-08/zadatak.mp3"
       },
       {
         "target": "točno",
         "source": "poprawnie",
         "lemma": "točno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0706"
+        "recordId": "A1-0706",
+        "audioSrc": "/audio/hr/a1/module-03/tocno.mp3"
       },
       {
         "target": "netočno",
         "source": "niepoprawnie",
         "lemma": "netočno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0707"
+        "recordId": "A1-0707",
+        "audioSrc": "/audio/hr/a1/module-08/netocno.mp3"
       },
       {
         "target": "odabrati",
         "source": "wybrać",
         "lemma": "odabrati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0708"
+        "recordId": "A1-0708",
+        "audioSrc": "/audio/hr/a1/module-08/odabrati.mp3"
       },
       {
         "target": "napisati",
         "source": "napisać",
         "lemma": "napisati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0709"
+        "recordId": "A1-0709",
+        "audioSrc": "/audio/hr/a1/module-08/napisati.mp3"
       },
       {
         "target": "poslušati",
         "source": "posłuchać",
         "lemma": "poslušati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0710"
+        "recordId": "A1-0710",
+        "audioSrc": "/audio/hr/a1/module-08/poslusati.mp3"
       },
       {
         "target": "završiti",
         "source": "zakończyć",
         "lemma": "završiti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0711"
+        "recordId": "A1-0711",
+        "audioSrc": "/audio/hr/a1/module-08/zavrsiti.mp3"
       }
     ],
     "steps": [
@@ -92,42 +100,50 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "test",
             "source": "test",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/test.mp3"
           },
           {
             "target": "zadatak",
             "source": "zadanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/zadatak.mp3"
           },
           {
             "target": "točno",
             "source": "poprawnie",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/tocno.mp3"
           },
           {
             "target": "netočno",
             "source": "niepoprawnie",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/netocno.mp3"
           },
           {
             "target": "odabrati",
             "source": "wybrać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-08/odabrati.mp3"
           },
           {
             "target": "napisati",
             "source": "napisać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-08/napisati.mp3"
           },
           {
             "target": "poslušati",
             "source": "posłuchać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-08/poslusati.mp3"
           },
           {
             "target": "završiti",
             "source": "zakończyć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-08/zavrsiti.mp3"
           }
         ]
       },
@@ -160,7 +176,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
-        "section": "vocabulary"
+        "section": "vocabulary",
+        "promptAudioSrc": "/audio/hr/a1/module-02/baka.mp3"
       },
       {
         "id": "vocab-3",
@@ -175,7 +192,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
-        "section": "vocabulary"
+        "section": "vocabulary",
+        "promptAudioSrc": "/audio/hr/a1/module-03/odmarati-se.mp3"
       },
       {
         "id": "vocab-4",
@@ -190,7 +208,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
-        "section": "vocabulary"
+        "section": "vocabulary",
+        "promptAudioSrc": "/audio/hr/a1/module-04/caj.mp3"
       },
       {
         "id": "vocab-5",
@@ -205,7 +224,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
-        "section": "vocabulary"
+        "section": "vocabulary",
+        "promptAudioSrc": "/audio/hr/a1/module-05/trg.mp3"
       },
       {
         "id": "vocab-6",
@@ -220,7 +240,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
-        "section": "vocabulary"
+        "section": "vocabulary",
+        "promptAudioSrc": "/audio/hr/a1/module-02/auto.mp3"
       },
       {
         "id": "reading",
@@ -229,34 +250,41 @@ export const LESSON: GeneratedLesson = {
         "type": "reading",
         "instructionTarget": {
           "target": "Pročitaj i odaberi točan odgovor.",
-          "source": "Przeczytaj i wybierz poprawną odpowiedź."
+          "source": "Przeczytaj i wybierz poprawną odpowiedź.",
+          "audioSrc": "/audio/hr/a1/module-08/procitaj-i-odaberi-tocan-odgovor.mp3"
         },
         "instruction": "Przeczytaj tekst i odpowiedz na pytania.",
         "title": "Marta",
         "text": [
           {
             "target": "Zovem se Marta i iz Poljske sam.",
-            "source": ""
+            "source": "",
+            "audioSrc": "/audio/hr/a1/module-08/zovem-se-marta-i-iz-poljske-sam.mp3"
           },
           {
             "target": "Živim u Krakovu i radim u uredu.",
-            "source": ""
+            "source": "",
+            "audioSrc": "/audio/hr/a1/module-08/zivim-u-krakovu-i-radim-u-uredu.mp3"
           },
           {
             "target": "Svaki dan učim hrvatski.",
-            "source": ""
+            "source": "",
+            "audioSrc": "/audio/hr/a1/module-03/svaki-dan-ucim-hrvatski.mp3"
           },
           {
             "target": "Volim plivati i čitati.",
-            "source": ""
+            "source": "",
+            "audioSrc": "/audio/hr/a1/module-08/volim-plivati-i-citati.mp3"
           },
           {
             "target": "Jučer sam bila kod kuće.",
-            "source": ""
+            "source": "",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-bila-kod-kuce.mp3"
           },
           {
             "target": "U subotu ću ići na more.",
-            "source": ""
+            "source": "",
+            "audioSrc": "/audio/hr/a1/module-08/u-subotu-cu-ici-na-more.mp3"
           }
         ],
         "questions": [
@@ -296,7 +324,8 @@ export const LESSON: GeneratedLesson = {
         "instruction": "Posłuchaj dialogu i odpowiedz na pytanie.",
         "instructionTarget": {
           "target": "Poslušaj kratki dijalog.",
-          "source": "Posłuchaj krótkiego dialogu."
+          "source": "Posłuchaj krótkiego dialogu.",
+          "audioSrc": "/audio/hr/a1/module-08/poslusaj-kratki-dijalog.mp3"
         },
         "title": "Na dworcu kolejowym",
         "lines": [
@@ -367,8 +396,10 @@ export const LESSON: GeneratedLesson = {
         "section": "grammar",
         "instructionTarget": {
           "target": "Dopuni rečenicu.",
-          "source": "Uzupełnij zdanie."
-        }
+          "source": "Uzupełnij zdanie.",
+          "audioSrc": "/audio/hr/a1/module-08/dopuni-recenicu.mp3"
+        },
+        "answerAudioSrc": "/audio/hr/a1/module-08/bio-sam-kod-kuce.mp3"
       },
       {
         "id": "grammar-2",
@@ -384,8 +415,10 @@ export const LESSON: GeneratedLesson = {
         "section": "grammar",
         "instructionTarget": {
           "target": "Dopuni rečenicu.",
-          "source": "Uzupełnij zdanie."
-        }
+          "source": "Uzupełnij zdanie.",
+          "audioSrc": "/audio/hr/a1/module-08/dopuni-recenicu.mp3"
+        },
+        "answerAudioSrc": "/audio/hr/a1/module-08/kasnije-cu-se-odmoriti.mp3"
       },
       {
         "id": "grammar-3",
@@ -401,8 +434,10 @@ export const LESSON: GeneratedLesson = {
         "section": "grammar",
         "instructionTarget": {
           "target": "Dopuni rečenicu.",
-          "source": "Uzupełnij zdanie."
-        }
+          "source": "Uzupełnij zdanie.",
+          "audioSrc": "/audio/hr/a1/module-08/dopuni-recenicu.mp3"
+        },
+        "answerAudioSrc": "/audio/hr/a1/module-05/idem-u-banku.mp3"
       },
       {
         "id": "grammar-4",
@@ -418,8 +453,10 @@ export const LESSON: GeneratedLesson = {
         "section": "grammar",
         "instructionTarget": {
           "target": "Dopuni rečenicu.",
-          "source": "Uzupełnij zdanie."
-        }
+          "source": "Uzupełnij zdanie.",
+          "audioSrc": "/audio/hr/a1/module-08/dopuni-recenicu.mp3"
+        },
+        "answerAudioSrc": "/audio/hr/a1/module-04/pijem-kavu-s-mlijekom.mp3"
       },
       {
         "id": "translation-1",
@@ -433,8 +470,10 @@ export const LESSON: GeneratedLesson = {
         "section": "translation",
         "instructionTarget": {
           "target": "Prevedi na hrvatski.",
-          "source": "Przetłumacz na chorwacki."
-        }
+          "source": "Przetłumacz na chorwacki.",
+          "audioSrc": "/audio/hr/a1/module-08/prevedi-na-hrvatski.mp3"
+        },
+        "answerAudioSrc": "/audio/hr/a1/module-05/gdje-je-kolodvor.mp3"
       },
       {
         "id": "translation-2",
@@ -448,8 +487,10 @@ export const LESSON: GeneratedLesson = {
         "section": "translation",
         "instructionTarget": {
           "target": "Prevedi na hrvatski.",
-          "source": "Przetłumacz na chorwacki."
-        }
+          "source": "Przetłumacz na chorwacki.",
+          "audioSrc": "/audio/hr/a1/module-08/prevedi-na-hrvatski.mp3"
+        },
+        "answerAudioSrc": "/audio/hr/a1/module-04/sto-nam-preporucujete.mp3"
       },
       {
         "id": "translation-3",
@@ -463,8 +504,10 @@ export const LESSON: GeneratedLesson = {
         "section": "translation",
         "instructionTarget": {
           "target": "Prevedi na hrvatski.",
-          "source": "Przetłumacz na chorwacki."
-        }
+          "source": "Przetłumacz na chorwacki.",
+          "audioSrc": "/audio/hr/a1/module-08/prevedi-na-hrvatski.mp3"
+        },
+        "answerAudioSrc": "/audio/hr/a1/module-08/vidjela-sam-prijateljicu.mp3"
       },
       {
         "id": "production",
@@ -502,8 +545,10 @@ export const LESSON: GeneratedLesson = {
         "section": "production",
         "instructionTarget": {
           "target": "Napiši dvije rečenice o sebi.",
-          "source": "Napisz dwa zdania o sobie."
-        }
+          "source": "Napisz dwa zdania o sobie.",
+          "audioSrc": "/audio/hr/a1/module-08/napisi-dvije-recenice-o-sebi.mp3"
+        },
+        "sampleAudioSrc": "/audio/hr/a1/module-08/iz-poljske-sam-i-zivim-u-krakovu-volim-putovati-sutra-cu-uci.mp3"
       },
       {
         "id": "summary",
@@ -513,7 +558,8 @@ export const LESSON: GeneratedLesson = {
         "recap": [],
         "closing": {
           "target": "Test je završen.",
-          "source": "Test jest zakończony."
+          "source": "Test jest zakończony.",
+          "audioSrc": "/audio/hr/a1/module-08/test-je-zavrsen.mp3"
         }
       }
     ]

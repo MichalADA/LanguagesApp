@@ -12,21 +12,24 @@ export const LESSON: GeneratedLesson = {
         "source": "pytanie",
         "lemma": "pitanje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0668"
+        "recordId": "A1-0668",
+        "audioSrc": "/audio/hr/a1/module-08/pitanje.mp3"
       },
       {
         "target": "odgovor",
         "source": "odpowiedź",
         "lemma": "odgovor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0669"
+        "recordId": "A1-0669",
+        "audioSrc": "/audio/hr/a1/module-08/odgovor.mp3"
       },
       {
         "target": "pričati",
         "source": "rozmawiać / opowiadać",
         "lemma": "pričati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0670"
+        "recordId": "A1-0670",
+        "audioSrc": "/audio/hr/a1/module-08/pricati.mp3"
       },
       {
         "target": "razumjeti",
@@ -49,63 +52,72 @@ export const LESSON: GeneratedLesson = {
         "source": "wolniej",
         "lemma": "sporije",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0673"
+        "recordId": "A1-0673",
+        "audioSrc": "/audio/hr/a1/module-08/sporije.mp3"
       },
       {
         "target": "naravno",
         "source": "oczywiście",
         "lemma": "naravno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0674"
+        "recordId": "A1-0674",
+        "audioSrc": "/audio/hr/a1/module-08/naravno.mp3"
       },
       {
         "target": "stvarno",
         "source": "naprawdę",
         "lemma": "stvarno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0675"
+        "recordId": "A1-0675",
+        "audioSrc": "/audio/hr/a1/module-08/stvarno.mp3"
       },
       {
         "target": "Ne razumijem.",
         "source": "Nie rozumiem.",
         "lemma": "razumjeti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1126"
+        "recordId": "A1-1126",
+        "audioSrc": "/audio/hr/a1/module-08/ne-razumijem.mp3"
       },
       {
         "target": "Kako se kaže…?",
         "source": "Jak się mówi…?",
         "lemma": "reći",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1127"
+        "recordId": "A1-1127",
+        "audioSrc": "/audio/hr/a1/module-08/kako-se-kaze.mp3"
       },
       {
         "target": "Što znači…?",
         "source": "Co znaczy…?",
         "lemma": "značiti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1128"
+        "recordId": "A1-1128",
+        "audioSrc": "/audio/hr/a1/module-08/sto-znaci.mp3"
       },
       {
         "target": "Oprosti.",
         "source": "Przepraszam. (do znajomej osoby)",
         "lemma": "oprostiti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1129"
+        "recordId": "A1-1129",
+        "audioSrc": "/audio/hr/a1/module-08/oprosti.mp3"
       },
       {
         "target": "Zanimljivo!",
         "source": "Ciekawe!",
         "lemma": "zanimljiv",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1130"
+        "recordId": "A1-1130",
+        "audioSrc": "/audio/hr/a1/module-08/zanimljivo.mp3"
       },
       {
         "target": "Nema na čemu.",
         "source": "Nie ma za co.",
         "lemma": "ništa",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1131"
+        "recordId": "A1-1131",
+        "audioSrc": "/audio/hr/a1/module-08/nema-na-cemu.mp3"
       }
     ],
     "steps": [
@@ -119,15 +131,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Kako se zoveš i odakle si?",
-            "source": "Jak masz na imię i skąd jesteś?"
+            "source": "Jak masz na imię i skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
           },
           {
             "target": "Gdje živiš i što radiš?",
-            "source": "Gdzie mieszkasz i co robisz?"
+            "source": "Gdzie mieszkasz i co robisz?",
+            "audioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
           },
           {
             "target": "Što voliš raditi u slobodno vrijeme?",
-            "source": "Co lubisz robić w wolnym czasie?"
+            "source": "Co lubisz robić w wolnym czasie?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-volis-raditi-u-slobodno-vrijeme.mp3"
           }
         ]
       },
@@ -140,17 +155,20 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "pitanje",
             "source": "pytanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/pitanje.mp3"
           },
           {
             "target": "odgovor",
             "source": "odpowiedź",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/odgovor.mp3"
           },
           {
             "target": "pričati",
             "source": "rozmawiać / opowiadać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-08/pricati.mp3"
           },
           {
             "target": "razumjeti",
@@ -167,47 +185,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "sporije",
             "source": "wolniej",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/sporije.mp3"
           },
           {
             "target": "naravno",
             "source": "oczywiście",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/naravno.mp3"
           },
           {
             "target": "stvarno",
             "source": "naprawdę",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/stvarno.mp3"
           },
           {
             "target": "Ne razumijem.",
             "source": "Nie rozumiem.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/ne-razumijem.mp3"
           },
           {
             "target": "Kako se kaže…?",
             "source": "Jak się mówi…?",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/kako-se-kaze.mp3"
           },
           {
             "target": "Što znači…?",
             "source": "Co znaczy…?",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/sto-znaci.mp3"
           },
           {
             "target": "Oprosti.",
             "source": "Przepraszam. (do znajomej osoby)",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/oprosti.mp3"
           },
           {
             "target": "Zanimljivo!",
             "source": "Ciekawe!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/zanimljivo.mp3"
           },
           {
             "target": "Nema na čemu.",
             "source": "Nie ma za co.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/nema-na-cemu.mp3"
           }
         ]
       },
@@ -220,11 +247,13 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Što znači ova riječ?",
-            "source": "Co znaczy to słowo?"
+            "source": "Co znaczy to słowo?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-znaci-ova-rijec.mp3"
           },
           {
             "target": "Oprosti, ne razumijem.",
-            "source": "Przepraszam, nie rozumiem."
+            "source": "Przepraszam, nie rozumiem.",
+            "audioSrc": "/audio/hr/a1/module-08/oprosti-ne-razumijem.mp3"
           }
         ]
       },
@@ -237,19 +266,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Kako se zoveš i odakle si?",
-            "source": "Jak masz na imię i skąd jesteś?"
+            "source": "Jak masz na imię i skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
           },
           {
             "target": "Što si radio jučer?",
-            "source": "Co robiłeś wczoraj?"
+            "source": "Co robiłeś wczoraj?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-si-radio-jucer.mp3"
           },
           {
             "target": "Što ćeš raditi sutra?",
-            "source": "Co będziesz robić jutro?"
+            "source": "Co będziesz robić jutro?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-sutra.mp3"
           },
           {
             "target": "Možeš li govoriti malo sporije?",
-            "source": "Czy możesz mówić trochę wolniej?"
+            "source": "Czy możesz mówić trochę wolniej?",
+            "audioSrc": "/audio/hr/a1/module-08/mozes-li-govoriti-malo-sporije.mp3"
           }
         ]
       },
@@ -261,7 +294,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Czy możesz mówić trochę wolniej?",
         "accepted": [
           "Možeš li govoriti malo sporije?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/mozes-li-govoriti-malo-sporije.mp3"
       },
       {
         "id": "order",
@@ -279,7 +313,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Kako se zoveš i odakle si?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
       },
       {
         "id": "comprehend",
@@ -293,7 +328,8 @@ export const LESSON: GeneratedLesson = {
           "Gdzie mieszkasz i co robisz?"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
       },
       {
         "id": "dialog",
@@ -306,7 +342,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Kako se zoveš i odakle si?",
-              "translation": "Jak masz na imię i skąd jesteś?"
+              "translation": "Jak masz na imię i skąd jesteś?",
+              "audioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
             }
           },
           {
@@ -317,14 +354,16 @@ export const LESSON: GeneratedLesson = {
               "Zovem se Michał. Iz Poljske sam."
             ],
             "pattern": "^((ja )?zovem se|ja sam) \\p{L}+ (i )?((ja )?sam iz \\p{L}+|iz \\p{L}+ sam)$",
-            "suggestion": "Zovem se Michał i iz Poljske sam."
+            "suggestion": "Zovem se Michał i iz Poljske sam.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/zovem-se-michal-i-iz-poljske-sam.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Gdje živiš i što radiš?",
-              "translation": "Gdzie mieszkasz i co robisz?"
+              "translation": "Gdzie mieszkasz i co robisz?",
+              "audioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
             }
           },
           {
@@ -335,14 +374,16 @@ export const LESSON: GeneratedLesson = {
               "Ja živim u Krakovu i radim u uredu."
             ],
             "pattern": "^(ja )?živim u \\p{L}+ (i )?(ja )?(radim|studiram|učim)( (u|na) (?:prijateljici|prijateljima|informaciji|ponavljanju|ponedjeljku|razglednici|rezervaciji|roditeljima|aktivnostu|inozemstvu|konobarici|prijatelju|studentici|suncobranu|televiziji|tjestenini|učiteljici|aerodromu|fakultetu|gramatici|hrvatskoj|inženjeru|jelovniku|kašnjenju|kazalištu|kilogramu|kišobranu|knjižnici|kolodvoru|kupaonici|liječnici|liječniku|naočalama|napojnici|novčaniku|prodavaču|putovanju|putovnici|raskrižju|razgovoru|recepciji|restoranu|roditelju|sladoledu|autobusu|blagajni|četvrtku|čokoladi|gotovini|kolegici|koncertu|konobaru|krumpiru|ležaljci|limunadi|ljekarni|nedjelji|nogometu|obitelji|odgovoru|piletini|poljskoj|pomfritu|predjelu|prognozi|proljeću|prtljazi|računalu|rečenici|sastanku|semaforu|slušanju|studentu|suveniru|telefonu|teretani|trajektu|tramvaju|trgovini|učitelju|utakmici|veličini|zadataku|balkonu|biciklu|bolnici|čitanju|desertu|djetetu|dolasku|doručku|jogurtu|kartici|košarci|laptopu|lekciji|lozinci|maslacu|mjesecu|mlijeku|odbojci|pijesku|pisanju|pitanju|planini|polasku|prijavi|prilogu|putniku|ručniku|ruksaku|snijegu|srijedi|stanici|stupnju|susjedi|susjedu|taksiju|tanjuru|tržnici|turistu|učeniku|ukrcaju|vikendu|vrećici|vremenu|adresi|avionu|bazenu|centru|cijeni|glazbi|godini|govoru|hobiju|hotelu|igrici|izlazu|izletu|jabuci|jeseni|jeziku|kafiću|ključu|knjizi|koferu|kolaču|kolezi|komadu|minuti|mjestu|muzeju|odjavi|odmoru|pekari|peronu|pomoći|ponoći|poruci|povrću|računu|riječi|salati|šalici|šećeru|seriji|sestri|sportu|suboti|tečaju|tenisu|tjednu|tvrtci|utorku|večeri|večeru|vilici|vjetru|zabavi|zadaći|zemlji|zgradi|banci|bratu|brodu|broju|centu|crkvi|djeci|djedu|filmu|gradu|hrani|karti|kćeri|klimi|kruhu|liftu|ljetu|mačci|magli|majci|mostu|novcu|obali|oluji|osobi|otoku|parku|petku|planu|plaži|podnu|posau|pošti|ručku|školi|stanu|stolu|šunci|suncu|testu|torbi|ulazu|ulici|uredu|vlaku|žlici|autu|baci|boci|čaju|čaši|danu|euru|jaju|jelu|jozi|juhi|katu|kavi|kinu|kiši|kući|ledu|letu|mami|mesu|moru|mužu|noći|nožu|piću|pivu|poli|putu|ribi|riži|satu|sinu|siru|sobi|soku|tati|trgu|valu|vinu|voću|vodi|vrtu|ženi|zimi|imu|ocu|psu)| od kuće| kod kuće| hrvatski)?$",
-            "suggestion": "Živim u Krakovu i radim u uredu."
+            "suggestion": "Živim u Krakovu i radim u uredu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/zivim-u-krakovu-i-radim-u-uredu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što voliš raditi u slobodno vrijeme?",
-              "translation": "Co lubisz robić w wolnym czasie?"
+              "translation": "Co lubisz robić w wolnym czasie?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-volis-raditi-u-slobodno-vrijeme.mp3"
             }
           },
           {
@@ -353,14 +394,16 @@ export const LESSON: GeneratedLesson = {
               "Ja volim čitati i plivati."
             ],
             "pattern": "^(u slobodno vrijeme )?(ja )?volim ((?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)|(?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt))( i ((?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)|(?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt)))?$",
-            "suggestion": "Volim čitati i plivati."
+            "suggestion": "Volim čitati i plivati.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/volim-citati-i-plivati.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što si radio jučer?",
-              "translation": "Co robiłeś wczoraj?"
+              "translation": "Co robiłeś wczoraj?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-si-radio-jucer.mp3"
             }
           },
           {
@@ -371,14 +414,16 @@ export const LESSON: GeneratedLesson = {
               "Jučer sam radila."
             ],
             "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam (?:fotografirala|fotografirao|doručkovala|izgubila se|odmarala se|odmorila se|planinarila|preporučila|rezervirala|se izgubila|se odmarala|se odmorila|se tuširala|tuširala se|doručkovao|izgubio se|odgovorila|odmarao se|odmorio se|planinario|preporučio|presjedala|rezervirao|sastala se|se izgubio|se odmarao|se odmorio|se sastala|se sunčala|se tuširao|sunčala se|tuširao se|kupala se|nadala se|odgovorio|planirala|posjetila|poslušala|presjedao|razumjela|sastao se|se kupala|se nadala|se sastao|se sunčao|studirala|sunčao se|govorila|izlazila|kupao se|nadao se|napisala|naručila|našao se|našla se|odabrala|planirao|pokazala|ponovila|posjetio|poslušao|pronašao|pronašla|putovala|se kupao|se nadao|se našao|se našla|se zvala|skrenula|studirao|večerala|vježbala|završila|zvala se|gledala|govorio|izlazio|kasnila|koštala|krenula|napisao|naručio|odabrao|opisala|pjevala|platila|plesala|plivala|pokazao|ponovio|poznala|pričala|putovao|razumio|se zvao|skijala|skrenuo|slušala|spavala|tražila|trebala|večerao|vidjela|vježbao|voljela|završio|živjela|zvao se|čitala|crtala|gledao|htjela|igrala|kasnio|koštao|krenuo|kuhala|kupila|nemala|opisao|pitala|pjevao|platio|plesao|plivao|poznao|prešao|prešla|pričao|radila|ronila|ručala|šetala|skijao|slušao|spavao|stigao|stigla|tražio|trčala|trebao|ustala|vozila|čitao|crtao|igrao|imala|kuhao|kupio|nemao|pitao|radio|ronio|ručao|šetao|trčao|učila|ustao|vidio|volio|vozio|živio|znala|bila|bili|htio|imao|išao|išla|jela|pila|učio|znao|bio|jeo|pio)( \\p{L}+){0,4}|(?:fotografirala|fotografirao|doručkovala|izgubila se|odmarala se|odmorila se|planinarila|preporučila|rezervirala|se izgubila|se odmarala|se odmorila|se tuširala|tuširala se|doručkovao|izgubio se|odgovorila|odmarao se|odmorio se|planinario|preporučio|presjedala|rezervirao|sastala se|se izgubio|se odmarao|se odmorio|se sastala|se sunčala|se tuširao|sunčala se|tuširao se|kupala se|nadala se|odgovorio|planirala|posjetila|poslušala|presjedao|razumjela|sastao se|se kupala|se nadala|se sastao|se sunčao|studirala|sunčao se|govorila|izlazila|kupao se|nadao se|napisala|naručila|našao se|našla se|odabrala|planirao|pokazala|ponovila|posjetio|poslušao|pronašao|pronašla|putovala|se kupao|se nadao|se našao|se našla|se zvala|skrenula|studirao|večerala|vježbala|završila|zvala se|gledala|govorio|izlazio|kasnila|koštala|krenula|napisao|naručio|odabrao|opisala|pjevala|platila|plesala|plivala|pokazao|ponovio|poznala|pričala|putovao|razumio|se zvao|skijala|skrenuo|slušala|spavala|tražila|trebala|večerao|vidjela|vježbao|voljela|završio|živjela|zvao se|čitala|crtala|gledao|htjela|igrala|kasnio|koštao|krenuo|kuhala|kupila|nemala|opisao|pitala|pjevao|platio|plesao|plivao|poznao|prešao|prešla|pričao|radila|ronila|ručala|šetala|skijao|slušao|spavao|stigao|stigla|tražio|trčala|trebao|ustala|vozila|čitao|crtao|igrao|imala|kuhao|kupio|nemao|pitao|radio|ronio|ručao|šetao|trčao|učila|ustao|vidio|volio|vozio|živio|znala|bila|bili|htio|imao|išao|išla|jela|pila|učio|znao|bio|jeo|pio) sam( \\p{L}+){0,4})$",
-            "suggestion": "Jučer sam radio."
+            "suggestion": "Jučer sam radio.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što ćeš raditi sutra?",
-              "translation": "Co będziesz robić jutro?"
+              "translation": "Co będziesz robić jutro?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-sutra.mp3"
             }
           },
           {
@@ -388,14 +433,16 @@ export const LESSON: GeneratedLesson = {
               "Sutra ću učiti hrvatski."
             ],
             "pattern": "^((sutra|kasnije|ja)( ja)? ću (?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)( \\p{L}+){0,3}|(?:fotografirat|doručkovat|izgubit se|odmarat se|odmorit se|planinarit|preporučit|rezervirat|se izgubit|se odmarat|se odmorit|se tuširat|tuširat se|odgovorit|presjedat|sastat se|se sastat|se sunčat|sunčat se|kupat se|nadat se|planirat|posjetit|poslušat|razumjet|se kupat|se nadat|studirat|govorit|izlazit|napisat|naručit|odabrat|pokazat|ponovit|putovat|se zvat|skrenut|večerat|vježbat|završit|zvat se|gledat|kasnit|koštat|krenut|opisat|pjevat|platit|plesat|plivat|poznat|pričat|skijat|slušat|spavat|tražit|trebat|vidjet|voljet|živjet|čitat|crtat|htjet|igrat|kuhat|kupit|nemat|pitat|radit|ronit|ručat|šetat|trčat|ustat|vozit|imat|jest|učit|znat|pit) ću( \\p{L}+){0,3})$",
-            "suggestion": "Sutra ću učiti hrvatski."
+            "suggestion": "Sutra ću učiti hrvatski.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Super! Drago mi je.",
-              "translation": "Super! Miło mi."
+              "translation": "Super! Miło mi.",
+              "audioSrc": "/audio/hr/a1/module-08/super-drago-mi-je.mp3"
             }
           },
           {
@@ -451,7 +498,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 3,
-        "sample": "Zovem se Michał i iz Poljske sam. Živim u Krakovu. Volim plivati. Sutra ću učiti hrvatski."
+        "sample": "Zovem se Michał i iz Poljske sam. Živim u Krakovu. Volim plivati. Sutra ću učiti hrvatski.",
+        "sampleAudioSrc": "/audio/hr/a1/module-08/zovem-se-michal-i-iz-poljske-sam-zivim-u-krakovu-volim-pliva.mp3"
       },
       {
         "id": "summary",
@@ -461,23 +509,28 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Kako se zoveš i odakle si?",
-            "source": "Jak masz na imię i skąd jesteś?"
+            "source": "Jak masz na imię i skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
           },
           {
             "target": "Gdje živiš i što radiš?",
-            "source": "Gdzie mieszkasz i co robisz?"
+            "source": "Gdzie mieszkasz i co robisz?",
+            "audioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
           },
           {
             "target": "Što voliš raditi u slobodno vrijeme?",
-            "source": "Co lubisz robić w wolnym czasie?"
+            "source": "Co lubisz robić w wolnym czasie?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-volis-raditi-u-slobodno-vrijeme.mp3"
           },
           {
             "target": "Što si radio jučer?",
-            "source": "Co robiłeś wczoraj?"
+            "source": "Co robiłeś wczoraj?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-si-radio-jucer.mp3"
           },
           {
             "target": "Što ćeš raditi sutra?",
-            "source": "Co będziesz robić jutro?"
+            "source": "Co będziesz robić jutro?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-sutra.mp3"
           }
         ]
       }

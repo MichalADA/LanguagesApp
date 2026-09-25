@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "lotnisko",
         "lemma": "aerodrom",
         "partOfSpeech": "noun",
-        "recordId": "A1-0560"
+        "recordId": "A1-0560",
+        "audioSrc": "/audio/hr/a1/module-07/aerodrom.mp3"
       },
       {
         "target": "kolodvor",
         "source": "dworzec",
         "lemma": "kolodvor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0561"
+        "recordId": "A1-0561",
+        "audioSrc": "/audio/hr/a1/module-05/kolodvor.mp3"
       },
       {
         "target": "peron",
         "source": "peron",
         "lemma": "peron",
         "partOfSpeech": "noun",
-        "recordId": "A1-0562"
+        "recordId": "A1-0562",
+        "audioSrc": "/audio/hr/a1/module-07/peron.mp3"
       },
       {
         "target": "izlaz",
         "source": "wyjście / gate",
         "lemma": "izlaz",
         "partOfSpeech": "noun",
-        "recordId": "A1-0563"
+        "recordId": "A1-0563",
+        "audioSrc": "/audio/hr/a1/module-07/izlaz.mp3"
       },
       {
         "target": "karta",
         "source": "bilet",
         "lemma": "karta",
         "partOfSpeech": "noun",
-        "recordId": "A1-0564"
+        "recordId": "A1-0564",
+        "audioSrc": "/audio/hr/a1/module-05/karta.mp3"
       },
       {
         "target": "polazak",
         "source": "odjazd / odlot",
         "lemma": "polazak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0565"
+        "recordId": "A1-0565",
+        "audioSrc": "/audio/hr/a1/module-07/polazak.mp3"
       },
       {
         "target": "dolazak",
         "source": "przyjazd / przylot",
         "lemma": "dolazak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0566"
+        "recordId": "A1-0566",
+        "audioSrc": "/audio/hr/a1/module-07/dolazak.mp3"
       },
       {
         "target": "kasniti",
         "source": "spóźniać się",
         "lemma": "kasniti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0567"
+        "recordId": "A1-0567",
+        "audioSrc": "/audio/hr/a1/module-07/kasniti.mp3"
       },
       {
         "target": "povratna karta",
         "source": "bilet powrotny",
         "lemma": "karta",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1051"
+        "recordId": "A1-1051",
+        "audioSrc": "/audio/hr/a1/module-07/povratna-karta.mp3"
       },
       {
         "target": "u jednom smjeru",
         "source": "w jedną stronę",
         "lemma": "smjer",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1052"
+        "recordId": "A1-1052",
+        "audioSrc": "/audio/hr/a1/module-07/u-jednom-smjeru.mp3"
       },
       {
         "target": "vozni red",
         "source": "rozkład jazdy",
         "lemma": "red",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1053"
+        "recordId": "A1-1053",
+        "audioSrc": "/audio/hr/a1/module-07/vozni-red.mp3"
       },
       {
         "target": "autobusni kolodvor",
         "source": "dworzec autobusowy",
         "lemma": "kolodvor",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1054"
+        "recordId": "A1-1054",
+        "audioSrc": "/audio/hr/a1/module-07/autobusni-kolodvor.mp3"
       },
       {
         "target": "prtljaga",
         "source": "bagaż",
         "lemma": "prtljaga",
         "partOfSpeech": "noun",
-        "recordId": "A1-1055"
+        "recordId": "A1-1055",
+        "audioSrc": "/audio/hr/a1/module-07/prtljaga.mp3"
       },
       {
         "target": "let",
         "source": "lot",
         "lemma": "let",
         "partOfSpeech": "noun",
-        "recordId": "A1-1056"
+        "recordId": "A1-1056",
+        "audioSrc": "/audio/hr/a1/module-07/let.mp3"
       },
       {
         "target": "ukrcaj",
         "source": "wejście na pokład",
         "lemma": "ukrcaj",
         "partOfSpeech": "noun",
-        "recordId": "A1-1057"
+        "recordId": "A1-1057",
+        "audioSrc": "/audio/hr/a1/module-07/ukrcaj.mp3"
       },
       {
         "target": "kašnjenje",
         "source": "opóźnienie",
         "lemma": "kašnjenje",
         "partOfSpeech": "noun",
-        "recordId": "A1-1058"
+        "recordId": "A1-1058",
+        "audioSrc": "/audio/hr/a1/module-07/kasnjenje.mp3"
       },
       {
         "target": "putnik",
         "source": "pasażer",
         "lemma": "putnik",
         "partOfSpeech": "noun",
-        "recordId": "A1-1059"
+        "recordId": "A1-1059",
+        "audioSrc": "/audio/hr/a1/module-07/putnik.mp3"
       },
       {
         "target": "presjedati",
         "source": "przesiadać się",
         "lemma": "presjedati",
         "partOfSpeech": "verb",
-        "recordId": "A1-1060"
+        "recordId": "A1-1060",
+        "audioSrc": "/audio/hr/a1/module-07/presjedati.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Gdje je peron tri?",
-            "source": "Gdzie jest peron trzeci?"
+            "source": "Gdzie jest peron trzeci?",
+            "audioSrc": "/audio/hr/a1/module-07/gdje-je-peron-tri.mp3"
           },
           {
             "target": "Vlak za Split polazi u sedam.",
-            "source": "Pociąg do Splitu odjeżdża o siódmej."
+            "source": "Pociąg do Splitu odjeżdża o siódmej.",
+            "audioSrc": "/audio/hr/a1/module-07/vlak-za-split-polazi-u-sedam.mp3"
           },
           {
             "target": "Gdje je izlaz pet?",
-            "source": "Gdzie jest bramka numer pięć?"
+            "source": "Gdzie jest bramka numer pięć?",
+            "audioSrc": "/audio/hr/a1/module-07/gdje-je-izlaz-pet.mp3"
           }
         ]
       },
@@ -163,7 +184,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "aerodrom",
         "source": "lotnisko",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-07/aerodrom.mp3"
       },
       {
         "id": "word-2",
@@ -171,7 +193,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "kolodvor",
         "source": "dworzec",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-05/kolodvor.mp3"
       },
       {
         "id": "word-3",
@@ -182,8 +205,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Gdje je peron tri?",
-          "source": "Gdzie jest peron trzeci?"
-        }
+          "source": "Gdzie jest peron trzeci?",
+          "audioSrc": "/audio/hr/a1/module-07/gdje-je-peron-tri.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/peron.mp3"
       },
       {
         "id": "check-1",
@@ -197,7 +222,8 @@ export const LESSON: GeneratedLesson = {
           "peron"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/peron.mp3"
       },
       {
         "id": "word-4",
@@ -208,8 +234,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Gdje je izlaz pet?",
-          "source": "Gdzie jest bramka numer pięć?"
-        }
+          "source": "Gdzie jest bramka numer pięć?",
+          "audioSrc": "/audio/hr/a1/module-07/gdje-je-izlaz-pet.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/izlaz.mp3"
       },
       {
         "id": "word-5",
@@ -220,8 +248,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Imam kartu za Zadar.",
-          "source": "Mam bilet do Zadaru."
-        }
+          "source": "Mam bilet do Zadaru.",
+          "audioSrc": "/audio/hr/a1/module-07/imam-kartu-za-zadar.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/karta.mp3"
       },
       {
         "id": "word-6",
@@ -232,8 +262,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Kada je polazak?",
-          "source": "Kiedy jest odjazd / odlot?"
-        }
+          "source": "Kiedy jest odjazd / odlot?",
+          "audioSrc": "/audio/hr/a1/module-07/kada-je-polazak.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/polazak.mp3"
       },
       {
         "id": "check-2",
@@ -247,7 +279,8 @@ export const LESSON: GeneratedLesson = {
           "aerodrom"
         ],
         "correctIndex": 0,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-07/izlaz.mp3"
       },
       {
         "id": "word-7",
@@ -255,7 +288,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "dolazak",
         "source": "przyjazd / przylot",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-07/dolazak.mp3"
       },
       {
         "id": "word-8",
@@ -266,8 +300,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Avion kasni.",
-          "source": "Samolot jest opóźniony."
-        }
+          "source": "Samolot jest opóźniony.",
+          "audioSrc": "/audio/hr/a1/module-07/avion-kasni.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/kasniti.mp3"
       },
       {
         "id": "check-3",
@@ -281,7 +317,8 @@ export const LESSON: GeneratedLesson = {
           "lotnisko"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/dolazak.mp3"
       },
       {
         "id": "more-words",
@@ -293,52 +330,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "povratna karta",
             "source": "bilet powrotny",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/povratna-karta.mp3"
           },
           {
             "target": "u jednom smjeru",
             "source": "w jedną stronę",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/u-jednom-smjeru.mp3"
           },
           {
             "target": "vozni red",
             "source": "rozkład jazdy",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/vozni-red.mp3"
           },
           {
             "target": "autobusni kolodvor",
             "source": "dworzec autobusowy",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/autobusni-kolodvor.mp3"
           },
           {
             "target": "prtljaga",
             "source": "bagaż",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/prtljaga.mp3"
           },
           {
             "target": "let",
             "source": "lot",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/let.mp3"
           },
           {
             "target": "ukrcaj",
             "source": "wejście na pokład",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/ukrcaj.mp3"
           },
           {
             "target": "kašnjenje",
             "source": "opóźnienie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/kasnjenje.mp3"
           },
           {
             "target": "putnik",
             "source": "pasażer",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/putnik.mp3"
           },
           {
             "target": "presjedati",
             "source": "przesiadać się",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/presjedati.mp3"
           }
         ]
       },
@@ -354,7 +401,8 @@ export const LESSON: GeneratedLesson = {
           "rozkład jazdy"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/vozni-red.mp3"
       },
       {
         "id": "examples",
@@ -365,19 +413,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Jednu povratnu kartu za Split, molim.",
-            "source": "Jeden bilet powrotny do Splitu, poproszę."
+            "source": "Jeden bilet powrotny do Splitu, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-07/jednu-povratnu-kartu-za-split-molim.mp3"
           },
           {
             "target": "Let za Zagreb kasni sat vremena.",
-            "source": "Lot do Zagrzebia jest opóźniony o godzinę."
+            "source": "Lot do Zagrzebia jest opóźniony o godzinę.",
+            "audioSrc": "/audio/hr/a1/module-07/let-za-zagreb-kasni-sat-vremena.mp3"
           },
           {
             "target": "Moram li presjedati?",
-            "source": "Czy muszę się przesiadać?"
+            "source": "Czy muszę się przesiadać?",
+            "audioSrc": "/audio/hr/a1/module-07/moram-li-presjedati.mp3"
           },
           {
             "target": "Ukrcaj je na izlazu pet.",
-            "source": "Wejście na pokład jest przy bramce numer pięć."
+            "source": "Wejście na pokład jest przy bramce numer pięć.",
+            "audioSrc": "/audio/hr/a1/module-07/ukrcaj-je-na-izlazu-pet.mp3"
           }
         ]
       },
@@ -390,15 +442,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Vlak za Split polazi u sedam.",
-            "source": "Pociąg do Splitu odjeżdża o siódmej."
+            "source": "Pociąg do Splitu odjeżdża o siódmej.",
+            "audioSrc": "/audio/hr/a1/module-07/vlak-za-split-polazi-u-sedam.mp3"
           },
           {
             "target": "Imam kartu za Zadar.",
-            "source": "Mam bilet do Zadaru."
+            "source": "Mam bilet do Zadaru.",
+            "audioSrc": "/audio/hr/a1/module-07/imam-kartu-za-zadar.mp3"
           },
           {
             "target": "Kada je polazak?",
-            "source": "Kiedy jest odjazd / odlot?"
+            "source": "Kiedy jest odjazd / odlot?",
+            "audioSrc": "/audio/hr/a1/module-07/kada-je-polazak.mp3"
           }
         ]
       },
@@ -412,7 +467,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "za"
         ],
-        "translation": "Mam bilet do Zadaru."
+        "translation": "Mam bilet do Zadaru.",
+        "answerAudioSrc": "/audio/hr/a1/module-07/imam-kartu-za-zadar.mp3"
       },
       {
         "id": "translate-1",
@@ -423,7 +479,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Gdje je peron tri?",
           "Gdje je treći peron?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/gdje-je-peron-tri.mp3"
       },
       {
         "id": "order",
@@ -438,7 +495,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Kada je polazak?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/kada-je-polazak.mp3"
       },
       {
         "id": "comprehend",
@@ -452,7 +510,8 @@ export const LESSON: GeneratedLesson = {
           "Pociąg do Splitu odjeżdża o siódmej."
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/vlak-za-split-polazi-u-sedam.mp3"
       },
       {
         "id": "translate-2",
@@ -462,7 +521,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Samolot jest opóźniony.",
         "accepted": [
           "Avion kasni."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/avion-kasni.mp3"
       },
       {
         "id": "listening",
@@ -523,32 +583,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Dobar dan. Jednu kartu za Split, molim.",
-            "translation": "Dzień dobry. Jeden bilet do Splitu, poproszę."
+            "translation": "Dzień dobry. Jeden bilet do Splitu, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-07/dobar-dan-jednu-kartu-za-split-molim.mp3"
           },
           {
             "speaker": "Blagajnica",
             "text": "U jednom smjeru ili povratnu?",
-            "translation": "W jedną stronę czy powrotny?"
+            "translation": "W jedną stronę czy powrotny?",
+            "audioSrc": "/audio/hr/a1/module-07/u-jednom-smjeru-ili-povratnu.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Povratnu, molim. Kada je polazak?",
-            "translation": "Powrotny, poproszę. Kiedy jest odjazd?"
+            "translation": "Powrotny, poproszę. Kiedy jest odjazd?",
+            "audioSrc": "/audio/hr/a1/module-07/povratnu-molim-kada-je-polazak.mp3"
           },
           {
             "speaker": "Blagajnica",
             "text": "Autobus polazi u deset, s perona dva.",
-            "translation": "Autobus odjeżdża o dziesiątej, z peronu drugiego."
+            "translation": "Autobus odjeżdża o dziesiątej, z peronu drugiego.",
+            "audioSrc": "/audio/hr/a1/module-07/autobus-polazi-u-deset-s-perona-dva.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Moram li presjedati?",
-            "translation": "Czy muszę się przesiadać?"
+            "translation": "Czy muszę się przesiadać?",
+            "audioSrc": "/audio/hr/a1/module-07/moram-li-presjedati.mp3"
           },
           {
             "speaker": "Blagajnica",
             "text": "Ne, autobus ide izravno.",
-            "translation": "Nie, autobus jedzie bezpośrednio."
+            "translation": "Nie, autobus jedzie bezpośrednio.",
+            "audioSrc": "/audio/hr/a1/module-07/ne-autobus-ide-izravno.mp3"
           }
         ]
       },
@@ -563,7 +629,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Blagajnica",
               "text": "Izvolite.",
-              "translation": "Proszę, słucham."
+              "translation": "Proszę, słucham.",
+              "audioSrc": "/audio/hr/a1/module-04/izvolite.mp3"
             }
           },
           {
@@ -573,14 +640,16 @@ export const LESSON: GeneratedLesson = {
               "Jednu kartu za Split, molim."
             ],
             "pattern": "^(molim )?(jednu )?kartu za split( molim)?$",
-            "suggestion": "Jednu kartu za Split, molim."
+            "suggestion": "Jednu kartu za Split, molim.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/jednu-kartu-za-split-molim.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Blagajnica",
               "text": "Izvolite, deset eura.",
-              "translation": "Proszę, dziesięć euro."
+              "translation": "Proszę, dziesięć euro.",
+              "audioSrc": "/audio/hr/a1/module-07/izvolite-deset-eura.mp3"
             }
           },
           {
@@ -591,14 +660,16 @@ export const LESSON: GeneratedLesson = {
               "Kada polazi vlak?"
             ],
             "pattern": "^kada (je polazak|polazi( vlak| autobus)?)$",
-            "suggestion": "Kada je polazak?"
+            "suggestion": "Kada je polazak?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/kada-je-polazak.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Blagajnica",
               "text": "U sedam, s perona tri.",
-              "translation": "O siódmej, z peronu trzeciego."
+              "translation": "O siódmej, z peronu trzeciego.",
+              "audioSrc": "/audio/hr/a1/module-07/u-sedam-s-perona-tri.mp3"
             }
           }
         ]
@@ -630,7 +701,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Imam kartu za Zadar. Vlak polazi u sedam."
+        "sample": "Imam kartu za Zadar. Vlak polazi u sedam.",
+        "sampleAudioSrc": "/audio/hr/a1/module-07/imam-kartu-za-zadar-vlak-polazi-u-sedam.mp3"
       },
       {
         "id": "summary",
@@ -640,19 +712,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Gdje je peron tri?",
-            "source": "Gdzie jest peron trzeci?"
+            "source": "Gdzie jest peron trzeci?",
+            "audioSrc": "/audio/hr/a1/module-07/gdje-je-peron-tri.mp3"
           },
           {
             "target": "Vlak za Split polazi u sedam.",
-            "source": "Pociąg do Splitu odjeżdża o siódmej."
+            "source": "Pociąg do Splitu odjeżdża o siódmej.",
+            "audioSrc": "/audio/hr/a1/module-07/vlak-za-split-polazi-u-sedam.mp3"
           },
           {
             "target": "Gdje je izlaz pet?",
-            "source": "Gdzie jest bramka numer pięć?"
+            "source": "Gdzie jest bramka numer pięć?",
+            "audioSrc": "/audio/hr/a1/module-07/gdje-je-izlaz-pet.mp3"
           },
           {
             "target": "Avion kasni.",
-            "source": "Samolot jest opóźniony."
+            "source": "Samolot jest opóźniony.",
+            "audioSrc": "/audio/hr/a1/module-07/avion-kasni.mp3"
           }
         ]
       }

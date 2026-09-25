@@ -12,105 +12,120 @@ export const LESSON: GeneratedLesson = {
         "source": "podróżować",
         "lemma": "putovati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0542"
+        "recordId": "A1-0542",
+        "audioSrc": "/audio/hr/a1/module-07/putovati.mp3"
       },
       {
         "target": "avion",
         "source": "samolot",
         "lemma": "avion",
         "partOfSpeech": "noun",
-        "recordId": "A1-0543"
+        "recordId": "A1-0543",
+        "audioSrc": "/audio/hr/a1/module-07/avion.mp3"
       },
       {
         "target": "vlak",
         "source": "pociąg",
         "lemma": "vlak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0544"
+        "recordId": "A1-0544",
+        "audioSrc": "/audio/hr/a1/module-07/vlak.mp3"
       },
       {
         "target": "autobus",
         "source": "autobus",
         "lemma": "autobus",
         "partOfSpeech": "noun",
-        "recordId": "A1-0545"
+        "recordId": "A1-0545",
+        "audioSrc": "/audio/hr/a1/module-07/autobus.mp3"
       },
       {
         "target": "auto",
         "source": "samochód",
         "lemma": "auto",
         "partOfSpeech": "noun",
-        "recordId": "A1-0546"
+        "recordId": "A1-0546",
+        "audioSrc": "/audio/hr/a1/module-02/auto.mp3"
       },
       {
         "target": "more",
         "source": "morze",
         "lemma": "more",
         "partOfSpeech": "noun",
-        "recordId": "A1-0547"
+        "recordId": "A1-0547",
+        "audioSrc": "/audio/hr/a1/module-07/more.mp3"
       },
       {
         "target": "otok",
         "source": "wyspa",
         "lemma": "otok",
         "partOfSpeech": "noun",
-        "recordId": "A1-0548"
+        "recordId": "A1-0548",
+        "audioSrc": "/audio/hr/a1/module-07/otok.mp3"
       },
       {
         "target": "putovanje",
         "source": "podróż",
         "lemma": "putovanje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0549"
+        "recordId": "A1-0549",
+        "audioSrc": "/audio/hr/a1/module-07/putovanje.mp3"
       },
       {
         "target": "trajekt",
         "source": "prom",
         "lemma": "trajekt",
         "partOfSpeech": "noun",
-        "recordId": "A1-1037"
+        "recordId": "A1-1037",
+        "audioSrc": "/audio/hr/a1/module-07/trajekt.mp3"
       },
       {
         "target": "taksi",
         "source": "taksówka",
         "lemma": "taksi",
         "partOfSpeech": "noun",
-        "recordId": "A1-1038"
+        "recordId": "A1-1038",
+        "audioSrc": "/audio/hr/a1/module-07/taksi.mp3"
       },
       {
         "target": "tramvaj",
         "source": "tramwaj",
         "lemma": "tramvaj",
         "partOfSpeech": "noun",
-        "recordId": "A1-1039"
+        "recordId": "A1-1039",
+        "audioSrc": "/audio/hr/a1/module-07/tramvaj.mp3"
       },
       {
         "target": "posjetiti",
         "source": "odwiedzić",
         "lemma": "posjetiti",
         "partOfSpeech": "verb",
-        "recordId": "A1-1040"
+        "recordId": "A1-1040",
+        "audioSrc": "/audio/hr/a1/module-07/posjetiti.mp3"
       },
       {
         "target": "voziti",
         "source": "prowadzić (pojazd) / jechać",
         "lemma": "voziti",
         "partOfSpeech": "verb",
-        "recordId": "A1-1041"
+        "recordId": "A1-1041",
+        "audioSrc": "/audio/hr/a1/module-07/voziti.mp3"
       },
       {
         "target": "planina",
         "source": "góra",
         "lemma": "planina",
         "partOfSpeech": "noun",
-        "recordId": "A1-1042"
+        "recordId": "A1-1042",
+        "audioSrc": "/audio/hr/a1/module-07/planina.mp3"
       },
       {
         "target": "obala",
         "source": "wybrzeże",
         "lemma": "obala",
         "partOfSpeech": "noun",
-        "recordId": "A1-1043"
+        "recordId": "A1-1043",
+        "audioSrc": "/audio/hr/a1/module-07/obala.mp3"
       },
       {
         "target": "zemlja",
@@ -125,14 +140,16 @@ export const LESSON: GeneratedLesson = {
         "source": "zagranica",
         "lemma": "inozemstvo",
         "partOfSpeech": "noun",
-        "recordId": "A1-1045"
+        "recordId": "A1-1045",
+        "audioSrc": "/audio/hr/a1/module-07/inozemstvo.mp3"
       },
       {
         "target": "godišnji odmor",
         "source": "urlop",
         "lemma": "odmor",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1046"
+        "recordId": "A1-1046",
+        "audioSrc": "/audio/hr/a1/module-07/godisnji-odmor.mp3"
       }
     ],
     "steps": [
@@ -146,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Volim putovati.",
-            "source": "Lubię podróżować."
+            "source": "Lubię podróżować.",
+            "audioSrc": "/audio/hr/a1/module-07/volim-putovati.mp3"
           },
           {
             "target": "Putujem avionom.",
-            "source": "Podróżuję samolotem."
+            "source": "Podróżuję samolotem.",
+            "audioSrc": "/audio/hr/a1/module-07/putujem-avionom.mp3"
           },
           {
             "target": "Idem vlakom u Zagreb.",
-            "source": "Jadę pociągiem do Zagrzebia."
+            "source": "Jadę pociągiem do Zagrzebia.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-vlakom-u-zagreb.mp3"
           }
         ]
       },
@@ -167,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Volim putovati.",
-          "source": "Lubię podróżować."
-        }
+          "source": "Lubię podróżować.",
+          "audioSrc": "/audio/hr/a1/module-07/volim-putovati.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/putovati.mp3"
       },
       {
         "id": "word-2",
@@ -179,8 +201,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Putujem avionom.",
-          "source": "Podróżuję samolotem."
-        }
+          "source": "Podróżuję samolotem.",
+          "audioSrc": "/audio/hr/a1/module-07/putujem-avionom.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/avion.mp3"
       },
       {
         "id": "word-3",
@@ -191,8 +215,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idem vlakom u Zagreb.",
-          "source": "Jadę pociągiem do Zagrzebia."
-        }
+          "source": "Jadę pociągiem do Zagrzebia.",
+          "audioSrc": "/audio/hr/a1/module-07/idem-vlakom-u-zagreb.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/vlak.mp3"
       },
       {
         "id": "check-1",
@@ -206,7 +232,8 @@ export const LESSON: GeneratedLesson = {
           "samochód"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/avion.mp3"
       },
       {
         "id": "word-4",
@@ -214,7 +241,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "autobus",
         "source": "autobus",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-07/autobus.mp3"
       },
       {
         "id": "word-5",
@@ -225,8 +253,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idemo autom na more.",
-          "source": "Jedziemy samochodem nad morze."
-        }
+          "source": "Jedziemy samochodem nad morze.",
+          "audioSrc": "/audio/hr/a1/module-07/idemo-autom-na-more.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/auto.mp3"
       },
       {
         "id": "word-6",
@@ -237,8 +267,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idemo autom na more.",
-          "source": "Jedziemy samochodem nad morze."
-        }
+          "source": "Jedziemy samochodem nad morze.",
+          "audioSrc": "/audio/hr/a1/module-07/idemo-autom-na-more.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/more.mp3"
       },
       {
         "id": "check-2",
@@ -252,7 +284,8 @@ export const LESSON: GeneratedLesson = {
           "more"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-07/more.mp3"
       },
       {
         "id": "word-7",
@@ -263,8 +296,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Želim posjetiti otok.",
-          "source": "Chcę odwiedzić wyspę."
-        }
+          "source": "Chcę odwiedzić wyspę.",
+          "audioSrc": "/audio/hr/a1/module-07/zelim-posjetiti-otok.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/otok.mp3"
       },
       {
         "id": "word-8",
@@ -275,8 +310,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Putovanje je dugo.",
-          "source": "Podróż jest długa."
-        }
+          "source": "Podróż jest długa.",
+          "audioSrc": "/audio/hr/a1/module-07/putovanje-je-dugo.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/putovanje.mp3"
       },
       {
         "id": "check-3",
@@ -290,7 +327,8 @@ export const LESSON: GeneratedLesson = {
           "morze"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/putovanje.mp3"
       },
       {
         "id": "more-words",
@@ -302,37 +340,44 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "trajekt",
             "source": "prom",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/trajekt.mp3"
           },
           {
             "target": "taksi",
             "source": "taksówka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/taksi.mp3"
           },
           {
             "target": "tramvaj",
             "source": "tramwaj",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/tramvaj.mp3"
           },
           {
             "target": "posjetiti",
             "source": "odwiedzić",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/posjetiti.mp3"
           },
           {
             "target": "voziti",
             "source": "prowadzić (pojazd) / jechać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/voziti.mp3"
           },
           {
             "target": "planina",
             "source": "góra",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/planina.mp3"
           },
           {
             "target": "obala",
             "source": "wybrzeże",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/obala.mp3"
           },
           {
             "target": "zemlja",
@@ -343,12 +388,14 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "inozemstvo",
             "source": "zagranica",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/inozemstvo.mp3"
           },
           {
             "target": "godišnji odmor",
             "source": "urlop",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/godisnji-odmor.mp3"
           }
         ]
       },
@@ -364,7 +411,8 @@ export const LESSON: GeneratedLesson = {
           "odwiedzić"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/taksi.mp3"
       },
       {
         "id": "examples",
@@ -375,19 +423,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Idemo trajektom na otok.",
-            "source": "Płyniemy promem na wyspę."
+            "source": "Płyniemy promem na wyspę.",
+            "audioSrc": "/audio/hr/a1/module-07/idemo-trajektom-na-otok.mp3"
           },
           {
             "target": "U Zagrebu se vozim tramvajem.",
-            "source": "W Zagrzebiu jeżdżę tramwajem."
+            "source": "W Zagrzebiu jeżdżę tramwajem.",
+            "audioSrc": "/audio/hr/a1/module-07/u-zagrebu-se-vozim-tramvajem.mp3"
           },
           {
             "target": "Za godišnji odmor idemo na obalu.",
-            "source": "Na urlop jedziemy na wybrzeże."
+            "source": "Na urlop jedziemy na wybrzeże.",
+            "audioSrc": "/audio/hr/a1/module-07/za-godisnji-odmor-idemo-na-obalu.mp3"
           },
           {
             "target": "Volim putovati u inozemstvo.",
-            "source": "Lubię podróżować za granicę."
+            "source": "Lubię podróżować za granicę.",
+            "audioSrc": "/audio/hr/a1/module-07/volim-putovati-u-inozemstvo.mp3"
           }
         ]
       },
@@ -400,15 +452,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Putujem avionom.",
-            "source": "Podróżuję samolotem."
+            "source": "Podróżuję samolotem.",
+            "audioSrc": "/audio/hr/a1/module-07/putujem-avionom.mp3"
           },
           {
             "target": "Idem vlakom u Zagreb.",
-            "source": "Jadę pociągiem do Zagrzebia."
+            "source": "Jadę pociągiem do Zagrzebia.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-vlakom-u-zagreb.mp3"
           },
           {
             "target": "Idemo autom na more.",
-            "source": "Jedziemy samochodem nad morze."
+            "source": "Jedziemy samochodem nad morze.",
+            "audioSrc": "/audio/hr/a1/module-07/idemo-autom-na-more.mp3"
           }
         ]
       },
@@ -422,7 +477,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "avionom"
         ],
-        "translation": "Podróżuję samolotem."
+        "translation": "Podróżuję samolotem.",
+        "answerAudioSrc": "/audio/hr/a1/module-07/putujem-avionom.mp3"
       },
       {
         "id": "comprehend",
@@ -436,7 +492,8 @@ export const LESSON: GeneratedLesson = {
           "Podróżuję samolotem."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/putovanje-je-dugo.mp3"
       },
       {
         "id": "translate-1",
@@ -447,7 +504,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Volim putovati.",
           "Ja volim putovati."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/volim-putovati.mp3"
       },
       {
         "id": "order",
@@ -464,7 +522,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Idem vlakom u Zagreb.",
           "Ja idem vlakom u Zagreb."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/idem-vlakom-u-zagreb.mp3"
       },
       {
         "id": "translate-2",
@@ -474,7 +533,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Chcę odwiedzić wyspę.",
         "accepted": [
           "Želim posjetiti otok."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/zelim-posjetiti-otok.mp3"
       },
       {
         "id": "model",
@@ -485,27 +545,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Kamo putuješ ljeti?",
-            "translation": "Dokąd jedziesz latem?"
+            "translation": "Dokąd jedziesz latem?",
+            "audioSrc": "/audio/hr/a1/module-07/kamo-putujes-ljeti-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Idem u Hrvatsku, na obalu.",
-            "translation": "Jadę do Chorwacji, na wybrzeże."
+            "translation": "Jadę do Chorwacji, na wybrzeże.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-u-hrvatsku-na-obalu.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Kako putuješ? Avionom?",
-            "translation": "Jak jedziesz? Samolotem?"
+            "translation": "Jak jedziesz? Samolotem?",
+            "audioSrc": "/audio/hr/a1/module-07/kako-putujes-avionom-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ne, autom do Splita, a onda trajektom na otok.",
-            "translation": "Nie, samochodem do Splitu, a potem promem na wyspę."
+            "translation": "Nie, samochodem do Splitu, a potem promem na wyspę.",
+            "audioSrc": "/audio/hr/a1/module-07/ne-autom-do-splita-a-onda-trajektom-na-otok.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Super putovanje!",
-            "translation": "Super podróż!"
+            "translation": "Super podróż!",
+            "audioSrc": "/audio/hr/a1/module-07/super-putovanje-m.mp3"
           }
         ]
       },
@@ -520,7 +585,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Kamo putuješ?",
-              "translation": "Dokąd podróżujesz?"
+              "translation": "Dokąd podróżujesz?",
+              "audioSrc": "/audio/hr/a1/module-07/kamo-putujes.mp3"
             }
           },
           {
@@ -533,14 +599,16 @@ export const LESSON: GeneratedLesson = {
               "Ja idem na more."
             ],
             "pattern": "^(putujem|idem|idemo)( (?:prijateljicom|informacijom|ponavljanjem|ponedjeljkom|prijateljima|razglednicom|rezervacijom|aktivnostom|inozemstvom|konobaricom|prijateljem|roditeljima|studenticom|suncobranom|televizijom|tjesteninom|učiteljicom|aerodromom|fakultetom|gramatikom|inženjerom|jelovnikom|kašnjenjem|kazalištom|kilogramom|kišobranom|knjižnicom|kolodvorom|kupaonicom|liječnicom|liječnikom|napojnicom|novčanikom|prodavačem|putovanjem|putovnicom|raskrižjem|razgovorom|recepcijom|restoranom|roditeljem|sladoledom|autobusom|blagajnom|četvrtkom|čokoladom|gotovinom|hrvatskom|kolegicom|koncertom|konobarom|krumpirom|ležaljkom|limunadom|ljekarnom|naočalama|nedjeljom|nogometom|odgovorom|piletinom|pomfritom|predjelom|prognozom|proljećem|prtljagom|računalom|rečenicom|sastankom|semaforom|slušanjem|studentom|suvenirom|telefonom|teretanom|trajektom|tramvajem|trgovinom|učiteljem|utakmicom|veličinom|zadatakom|balkonom|biciklom|bolnicom|čitanjem|desertom|djetetom|dolaskom|doručkom|jogurtom|karticom|košarkom|laptopom|lekcijom|lozinkom|maslacem|mjesecem|mlijekom|obitelji|odbojkom|pijeskom|pisanjem|pitanjem|planinom|polaskom|poljskom|prijavom|prilogom|putnikom|ručnikom|ruksakom|snijegom|srijedom|stanicom|stupnjem|susjedom|taksijem|tanjurom|tržnicom|turistom|učenikom|ukrcajem|vikendom|vrećicom|vremenom|adresom|avionom|bazenom|centrom|cijenom|glazbom|godinom|govorom|hobijem|hotelom|igricom|izlazom|izletom|jabukom|jezikom|kafićem|ključem|knjigom|koferom|kolačem|kolegom|komadom|minutom|mjestom|muzejem|odjavom|odmorom|pekarom|peronom|porukom|povrćem|računom|salatom|šalicom|šećerom|serijom|sestrom|sportom|subotom|tečajem|tenisom|tjednom|tvrtkom|utorkom|večerom|vilicom|vjetrom|zabavom|zadaćom|zemljom|zgradom|bankom|bratom|brodom|brojem|centom|crkvom|djecom|djedom|filmom|gradom|hranom|jeseni|kartom|klimom|kruhom|liftom|ljetom|mačkom|maglom|majkom|mostom|novcem|obalom|olujom|osobom|otokom|parkom|petkom|planom|plažom|podnom|pomoći|ponoći|posaom|poštom|riječi|ručkom|školom|stanom|stolom|suncem|šunkom|testom|torbom|ulazom|ulicom|uredom|vlakom|žlicom|autom|bakom|bocom|čajem|čašom|danom|eurom|jajem|jelom|jogom|juhom|katom|kavom|kćeri|kinom|kišom|kućom|ledom|letom|mamom|mesom|morem|mužem|nožem|pićem|pivom|polom|putom|ribom|rižom|satom|sinom|sirom|sobom|sokom|tatom|trgom|valom|vinom|voćem|vodom|vrtom|ženom|zimom|imom|noći|ocem|psom))? (u|na) \\p{L}+( (?:prijateljicom|informacijom|ponavljanjem|ponedjeljkom|prijateljima|razglednicom|rezervacijom|aktivnostom|inozemstvom|konobaricom|prijateljem|roditeljima|studenticom|suncobranom|televizijom|tjesteninom|učiteljicom|aerodromom|fakultetom|gramatikom|inženjerom|jelovnikom|kašnjenjem|kazalištom|kilogramom|kišobranom|knjižnicom|kolodvorom|kupaonicom|liječnicom|liječnikom|napojnicom|novčanikom|prodavačem|putovanjem|putovnicom|raskrižjem|razgovorom|recepcijom|restoranom|roditeljem|sladoledom|autobusom|blagajnom|četvrtkom|čokoladom|gotovinom|hrvatskom|kolegicom|koncertom|konobarom|krumpirom|ležaljkom|limunadom|ljekarnom|naočalama|nedjeljom|nogometom|odgovorom|piletinom|pomfritom|predjelom|prognozom|proljećem|prtljagom|računalom|rečenicom|sastankom|semaforom|slušanjem|studentom|suvenirom|telefonom|teretanom|trajektom|tramvajem|trgovinom|učiteljem|utakmicom|veličinom|zadatakom|balkonom|biciklom|bolnicom|čitanjem|desertom|djetetom|dolaskom|doručkom|jogurtom|karticom|košarkom|laptopom|lekcijom|lozinkom|maslacem|mjesecem|mlijekom|obitelji|odbojkom|pijeskom|pisanjem|pitanjem|planinom|polaskom|poljskom|prijavom|prilogom|putnikom|ručnikom|ruksakom|snijegom|srijedom|stanicom|stupnjem|susjedom|taksijem|tanjurom|tržnicom|turistom|učenikom|ukrcajem|vikendom|vrećicom|vremenom|adresom|avionom|bazenom|centrom|cijenom|glazbom|godinom|govorom|hobijem|hotelom|igricom|izlazom|izletom|jabukom|jezikom|kafićem|ključem|knjigom|koferom|kolačem|kolegom|komadom|minutom|mjestom|muzejem|odjavom|odmorom|pekarom|peronom|porukom|povrćem|računom|salatom|šalicom|šećerom|serijom|sestrom|sportom|subotom|tečajem|tenisom|tjednom|tvrtkom|utorkom|večerom|vilicom|vjetrom|zabavom|zadaćom|zemljom|zgradom|bankom|bratom|brodom|brojem|centom|crkvom|djecom|djedom|filmom|gradom|hranom|jeseni|kartom|klimom|kruhom|liftom|ljetom|mačkom|maglom|majkom|mostom|novcem|obalom|olujom|osobom|otokom|parkom|petkom|planom|plažom|podnom|pomoći|ponoći|posaom|poštom|riječi|ručkom|školom|stanom|stolom|suncem|šunkom|testom|torbom|ulazom|ulicom|uredom|vlakom|žlicom|autom|bakom|bocom|čajem|čašom|danom|eurom|jajem|jelom|jogom|juhom|katom|kavom|kćeri|kinom|kišom|kućom|ledom|letom|mamom|mesom|morem|mužem|nožem|pićem|pivom|polom|putom|ribom|rižom|satom|sinom|sirom|sobom|sokom|tatom|trgom|valom|vinom|voćem|vodom|vrtom|ženom|zimom|imom|noći|ocem|psom))?$",
-            "suggestion": "Putujem u Zagreb."
+            "suggestion": "Putujem u Zagreb.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/putujem-u-zagreb.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Kako putuješ?",
-              "translation": "Czym podróżujesz?"
+              "translation": "Czym podróżujesz?",
+              "audioSrc": "/audio/hr/a1/module-07/kako-putujes.mp3"
             }
           },
           {
@@ -553,7 +621,8 @@ export const LESSON: GeneratedLesson = {
               "Ja putujem vlakom."
             ],
             "pattern": "^(ja )?(putujem |idem )?(?:prijateljicom|informacijom|ponavljanjem|ponedjeljkom|prijateljima|razglednicom|rezervacijom|aktivnostom|inozemstvom|konobaricom|prijateljem|roditeljima|studenticom|suncobranom|televizijom|tjesteninom|učiteljicom|aerodromom|fakultetom|gramatikom|inženjerom|jelovnikom|kašnjenjem|kazalištom|kilogramom|kišobranom|knjižnicom|kolodvorom|kupaonicom|liječnicom|liječnikom|napojnicom|novčanikom|prodavačem|putovanjem|putovnicom|raskrižjem|razgovorom|recepcijom|restoranom|roditeljem|sladoledom|autobusom|blagajnom|četvrtkom|čokoladom|gotovinom|hrvatskom|kolegicom|koncertom|konobarom|krumpirom|ležaljkom|limunadom|ljekarnom|naočalama|nedjeljom|nogometom|odgovorom|piletinom|pomfritom|predjelom|prognozom|proljećem|prtljagom|računalom|rečenicom|sastankom|semaforom|slušanjem|studentom|suvenirom|telefonom|teretanom|trajektom|tramvajem|trgovinom|učiteljem|utakmicom|veličinom|zadatakom|balkonom|biciklom|bolnicom|čitanjem|desertom|djetetom|dolaskom|doručkom|jogurtom|karticom|košarkom|laptopom|lekcijom|lozinkom|maslacem|mjesecem|mlijekom|obitelji|odbojkom|pijeskom|pisanjem|pitanjem|planinom|polaskom|poljskom|prijavom|prilogom|putnikom|ručnikom|ruksakom|snijegom|srijedom|stanicom|stupnjem|susjedom|taksijem|tanjurom|tržnicom|turistom|učenikom|ukrcajem|vikendom|vrećicom|vremenom|adresom|avionom|bazenom|centrom|cijenom|glazbom|godinom|govorom|hobijem|hotelom|igricom|izlazom|izletom|jabukom|jezikom|kafićem|ključem|knjigom|koferom|kolačem|kolegom|komadom|minutom|mjestom|muzejem|odjavom|odmorom|pekarom|peronom|porukom|povrćem|računom|salatom|šalicom|šećerom|serijom|sestrom|sportom|subotom|tečajem|tenisom|tjednom|tvrtkom|utorkom|večerom|vilicom|vjetrom|zabavom|zadaćom|zemljom|zgradom|bankom|bratom|brodom|brojem|centom|crkvom|djecom|djedom|filmom|gradom|hranom|jeseni|kartom|klimom|kruhom|liftom|ljetom|mačkom|maglom|majkom|mostom|novcem|obalom|olujom|osobom|otokom|parkom|petkom|planom|plažom|podnom|pomoći|ponoći|posaom|poštom|riječi|ručkom|školom|stanom|stolom|suncem|šunkom|testom|torbom|ulazom|ulicom|uredom|vlakom|žlicom|autom|bakom|bocom|čajem|čašom|danom|eurom|jajem|jelom|jogom|juhom|katom|kavom|kćeri|kinom|kišom|kućom|ledom|letom|mamom|mesom|morem|mužem|nožem|pićem|pivom|polom|putom|ribom|rižom|satom|sinom|sirom|sobom|sokom|tatom|trgom|valom|vinom|voćem|vodom|vrtom|ženom|zimom|imom|noći|ocem|psom)$",
-            "suggestion": "Putujem avionom."
+            "suggestion": "Putujem avionom.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/putujem-avionom.mp3"
           }
         ]
       },
@@ -585,7 +654,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Volim putovati. Idem vlakom u Zagreb."
+        "sample": "Volim putovati. Idem vlakom u Zagreb.",
+        "sampleAudioSrc": "/audio/hr/a1/module-07/volim-putovati-idem-vlakom-u-zagreb.mp3"
       },
       {
         "id": "summary",
@@ -595,19 +665,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Volim putovati.",
-            "source": "Lubię podróżować."
+            "source": "Lubię podróżować.",
+            "audioSrc": "/audio/hr/a1/module-07/volim-putovati.mp3"
           },
           {
             "target": "Putujem avionom.",
-            "source": "Podróżuję samolotem."
+            "source": "Podróżuję samolotem.",
+            "audioSrc": "/audio/hr/a1/module-07/putujem-avionom.mp3"
           },
           {
             "target": "Idem vlakom u Zagreb.",
-            "source": "Jadę pociągiem do Zagrzebia."
+            "source": "Jadę pociągiem do Zagrzebia.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-vlakom-u-zagreb.mp3"
           },
           {
             "target": "Idemo autom na more.",
-            "source": "Jedziemy samochodem nad morze."
+            "source": "Jedziemy samochodem nad morze.",
+            "audioSrc": "/audio/hr/a1/module-07/idemo-autom-na-more.mp3"
           }
         ]
       }

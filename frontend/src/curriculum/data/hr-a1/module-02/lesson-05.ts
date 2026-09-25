@@ -12,91 +12,104 @@ export const LESSON: GeneratedLesson = {
         "source": "osoba",
         "lemma": "osoba",
         "partOfSpeech": "noun",
-        "recordId": "A1-0164"
+        "recordId": "A1-0164",
+        "audioSrc": "/audio/hr/a1/module-02/osoba.mp3"
       },
       {
         "target": "zajedno",
         "source": "razem",
         "lemma": "zajedno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0165"
+        "recordId": "A1-0165",
+        "audioSrc": "/audio/hr/a1/module-02/zajedno.mp3"
       },
       {
         "target": "živ",
         "source": "żywy",
         "lemma": "živ",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0166"
+        "recordId": "A1-0166",
+        "audioSrc": "/audio/hr/a1/module-02/ziv.mp3"
       },
       {
         "target": "miran",
         "source": "spokojny",
         "lemma": "miran",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0167"
+        "recordId": "A1-0167",
+        "audioSrc": "/audio/hr/a1/module-02/miran.mp3"
       },
       {
         "target": "zanimljiv",
         "source": "interesujący",
         "lemma": "zanimljiv",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0168"
+        "recordId": "A1-0168",
+        "audioSrc": "/audio/hr/a1/module-02/zanimljiv.mp3"
       },
       {
         "target": "poznati",
         "source": "znać",
         "lemma": "poznati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0169"
+        "recordId": "A1-0169",
+        "audioSrc": "/audio/hr/a1/module-02/poznati.mp3"
       },
       {
         "target": "opisati",
         "source": "opisać",
         "lemma": "opisati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0170"
+        "recordId": "A1-0170",
+        "audioSrc": "/audio/hr/a1/module-02/opisati.mp3"
       },
       {
         "target": "obitelj",
         "source": "rodzina",
         "lemma": "obitelj",
         "partOfSpeech": "noun",
-        "recordId": "A1-0171"
+        "recordId": "A1-0171",
+        "audioSrc": "/audio/hr/a1/module-02/obitelj.mp3"
       },
       {
         "target": "ali",
         "source": "ale",
         "lemma": "ali",
         "partOfSpeech": "conjunction",
-        "recordId": "A1-0781"
+        "recordId": "A1-0781",
+        "audioSrc": "/audio/hr/a1/module-02/ali.mp3"
       },
       {
         "target": "ili",
         "source": "albo / czy",
         "lemma": "ili",
         "partOfSpeech": "conjunction",
-        "recordId": "A1-0782"
+        "recordId": "A1-0782",
+        "audioSrc": "/audio/hr/a1/module-02/ili.mp3"
       },
       {
         "target": "također",
         "source": "także / również",
         "lemma": "također",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0783"
+        "recordId": "A1-0783",
+        "audioSrc": "/audio/hr/a1/module-02/takodjer.mp3"
       },
       {
         "target": "uvijek",
         "source": "zawsze",
         "lemma": "uvijek",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0784"
+        "recordId": "A1-0784",
+        "audioSrc": "/audio/hr/a1/module-02/uvijek.mp3"
       },
       {
         "target": "i ja",
         "source": "ja też",
         "lemma": "ja",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0785"
+        "recordId": "A1-0785",
+        "audioSrc": "/audio/hr/a1/module-02/i-ja.mp3"
       }
     ],
     "steps": [
@@ -122,7 +135,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "matka",
         "accepted": [
           "majka"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/majka.mp3"
       },
       {
         "id": "recall-2",
@@ -132,7 +146,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "pracować",
         "accepted": [
           "raditi"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
         "id": "recall-3",
@@ -142,7 +157,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "dobry",
         "accepted": [
           "dobar"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/dobar.mp3"
       },
       {
         "id": "recall-4",
@@ -156,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "mój"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/knjiga.mp3"
       },
       {
         "id": "vocab",
@@ -168,67 +185,80 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "osoba",
             "source": "osoba",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/osoba.mp3"
           },
           {
             "target": "zajedno",
             "source": "razem",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-02/zajedno.mp3"
           },
           {
             "target": "živ",
             "source": "żywy",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/ziv.mp3"
           },
           {
             "target": "miran",
             "source": "spokojny",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/miran.mp3"
           },
           {
             "target": "zanimljiv",
             "source": "interesujący",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/zanimljiv.mp3"
           },
           {
             "target": "poznati",
             "source": "znać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-02/poznati.mp3"
           },
           {
             "target": "opisati",
             "source": "opisać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-02/opisati.mp3"
           },
           {
             "target": "obitelj",
             "source": "rodzina",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/obitelj.mp3"
           },
           {
             "target": "ali",
             "source": "ale",
-            "partOfSpeech": "spójnik"
+            "partOfSpeech": "spójnik",
+            "audioSrc": "/audio/hr/a1/module-02/ali.mp3"
           },
           {
             "target": "ili",
             "source": "albo / czy",
-            "partOfSpeech": "spójnik"
+            "partOfSpeech": "spójnik",
+            "audioSrc": "/audio/hr/a1/module-02/ili.mp3"
           },
           {
             "target": "također",
             "source": "także / również",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-02/takodjer.mp3"
           },
           {
             "target": "uvijek",
             "source": "zawsze",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-02/uvijek.mp3"
           },
           {
             "target": "i ja",
             "source": "ja też",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-02/i-ja.mp3"
           }
         ]
       },
@@ -241,11 +271,13 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Moj brat je miran, ali moja sestra nije.",
-            "source": "Mój brat jest spokojny, ale moja siostra nie."
+            "source": "Mój brat jest spokojny, ale moja siostra nie.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-brat-je-miran-ali-moja-sestra-nije.mp3"
           },
           {
             "target": "Imaš li psa ili mačku?",
-            "source": "Masz psa czy kota?"
+            "source": "Masz psa czy kota?",
+            "audioSrc": "/audio/hr/a1/module-02/imas-li-psa-ili-macku.mp3"
           }
         ]
       },
@@ -259,7 +291,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "ima"
         ],
-        "translation": "Ona ma psa."
+        "translation": "Ona ma psa.",
+        "answerAudioSrc": "/audio/hr/a1/module-02/ona-ima-psa.mp3"
       },
       {
         "id": "order",
@@ -276,7 +309,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Moj otac je kod kuće."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/moj-otac-je-kod-kuce.mp3"
       },
       {
         "id": "translate-1",
@@ -286,7 +320,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Moja matka pracuje.",
         "accepted": [
           "Moja majka radi."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/moja-majka-radi.mp3"
       },
       {
         "id": "translate-2",
@@ -296,7 +331,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Ana jest lekarką.",
         "accepted": [
           "Ana je liječnica."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/ana-je-lijecnica.mp3"
       },
       {
         "id": "translate-3",
@@ -307,7 +343,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "On nema mačku.",
           "On nema mačke."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/on-nema-macku.mp3"
       },
       {
         "id": "dialog",
@@ -320,7 +357,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Imaš li veliku obitelj?",
-              "translation": "Masz dużą rodzinę?"
+              "translation": "Masz dużą rodzinę?",
+              "audioSrc": "/audio/hr/a1/module-02/imas-li-veliku-obitelj.mp3"
             }
           },
           {
@@ -331,14 +369,16 @@ export const LESSON: GeneratedLesson = {
               "Ja imam malu obitelj."
             ],
             "pattern": "^(ne )?(ja )?imam malu obitelj$",
-            "suggestion": "Imam malu obitelj."
+            "suggestion": "Imam malu obitelj.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/imam-malu-obitelj.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Kakva je tvoja sestra?",
-              "translation": "Jaka jest twoja siostra?"
+              "translation": "Jaka jest twoja siostra?",
+              "audioSrc": "/audio/hr/a1/module-02/kakva-je-tvoja-sestra.mp3"
             }
           },
           {
@@ -348,14 +388,16 @@ export const LESSON: GeneratedLesson = {
               "Moja sestra je simpatična."
             ],
             "pattern": "^(moja sestra|ona) je (vrlo )?(?:vegetarijanska|simpatična|zanimljiva|engleska|hrvatska|omiljena|sljedeća|slobodna|dosadna|pametna|poljska|starija|zabavna|zauzeta|gladna|hladna|kisela|lijepa|malena|slatka|sretna|ukusna|umorna|velika|vesela|visoka|zdrava|zgodna|dobra|draga|gorka|ljuta|mirna|mlada|mlađa|niska|slana|stara|tužna|vruća|žedna|mala|nova|živa)$",
-            "suggestion": "Moja sestra je simpatična."
+            "suggestion": "Moja sestra je simpatična.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/moja-sestra-je-simpaticna.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što radi tvoj prijatelj?",
-              "translation": "Czym zajmuje się twój przyjaciel?"
+              "translation": "Czym zajmuje się twój przyjaciel?",
+              "audioSrc": "/audio/hr/a1/module-02/sto-radi-tvoj-prijatelj.mp3"
             }
           },
           {
@@ -365,14 +407,16 @@ export const LESSON: GeneratedLesson = {
               "Moj prijatelj radi u banci."
             ],
             "pattern": "^(moj prijatelj|on) radi ((u|na) (?:prijateljici|prijateljima|informaciji|ponavljanju|ponedjeljku|razglednici|rezervaciji|roditeljima|aktivnostu|inozemstvu|konobarici|prijatelju|studentici|suncobranu|televiziji|tjestenini|učiteljici|aerodromu|fakultetu|gramatici|hrvatskoj|inženjeru|jelovniku|kašnjenju|kazalištu|kilogramu|kišobranu|knjižnici|kolodvoru|kupaonici|liječnici|liječniku|naočalama|napojnici|novčaniku|prodavaču|putovanju|putovnici|raskrižju|razgovoru|recepciji|restoranu|roditelju|sladoledu|autobusu|blagajni|četvrtku|čokoladi|gotovini|kolegici|koncertu|konobaru|krumpiru|ležaljci|limunadi|ljekarni|nedjelji|nogometu|obitelji|odgovoru|piletini|poljskoj|pomfritu|predjelu|prognozi|proljeću|prtljazi|računalu|rečenici|sastanku|semaforu|slušanju|studentu|suveniru|telefonu|teretani|trajektu|tramvaju|trgovini|učitelju|utakmici|veličini|zadataku|balkonu|biciklu|bolnici|čitanju|desertu|djetetu|dolasku|doručku|jogurtu|kartici|košarci|laptopu|lekciji|lozinci|maslacu|mjesecu|mlijeku|odbojci|pijesku|pisanju|pitanju|planini|polasku|prijavi|prilogu|putniku|ručniku|ruksaku|snijegu|srijedi|stanici|stupnju|susjedi|susjedu|taksiju|tanjuru|tržnici|turistu|učeniku|ukrcaju|vikendu|vrećici|vremenu|adresi|avionu|bazenu|centru|cijeni|glazbi|godini|govoru|hobiju|hotelu|igrici|izlazu|izletu|jabuci|jeseni|jeziku|kafiću|ključu|knjizi|koferu|kolaču|kolezi|komadu|minuti|mjestu|muzeju|odjavi|odmoru|pekari|peronu|pomoći|ponoći|poruci|povrću|računu|riječi|salati|šalici|šećeru|seriji|sestri|sportu|suboti|tečaju|tenisu|tjednu|tvrtci|utorku|večeri|večeru|vilici|vjetru|zabavi|zadaći|zemlji|zgradi|banci|bratu|brodu|broju|centu|crkvi|djeci|djedu|filmu|gradu|hrani|karti|kćeri|klimi|kruhu|liftu|ljetu|mačci|magli|majci|mostu|novcu|obali|oluji|osobi|otoku|parku|petku|planu|plaži|podnu|posau|pošti|ručku|školi|stanu|stolu|šunci|suncu|testu|torbi|ulazu|ulici|uredu|vlaku|žlici|autu|baci|boci|čaju|čaši|danu|euru|jaju|jelu|jozi|juhi|katu|kavi|kinu|kiši|kući|ledu|letu|mami|mesu|moru|mužu|noći|nožu|piću|pivu|poli|putu|ribi|riži|satu|sinu|siru|sobi|soku|tati|trgu|valu|vinu|voću|vodi|vrtu|ženi|zimi|imu|ocu|psu)|od kuće|kod kuće)$",
-            "suggestion": "Moj prijatelj radi u banci."
+            "suggestion": "Moj prijatelj radi u banci.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/moj-prijatelj-radi-u-banci.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Poznaješ li Anu?",
-              "translation": "Znasz Anę?"
+              "translation": "Znasz Anę?",
+              "audioSrc": "/audio/hr/a1/module-02/poznajes-li-anu.mp3"
             }
           },
           {
@@ -385,7 +429,8 @@ export const LESSON: GeneratedLesson = {
               "Ja da, poznajem Anu."
             ],
             "pattern": "^(da )?poznajem anu$",
-            "suggestion": "Poznajem Anu."
+            "suggestion": "Poznajem Anu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/poznajem-anu.mp3"
           }
         ]
       },
@@ -423,7 +468,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Imam malu obitelj. Moja sestra je simpatična. Ona radi u banci i ima psa."
+        "sample": "Imam malu obitelj. Moja sestra je simpatična. Ona radi u banci i ima psa.",
+        "sampleAudioSrc": "/audio/hr/a1/module-02/imam-malu-obitelj-moja-sestra-je-simpaticna-ona-radi-u-banci.mp3"
       },
       {
         "id": "summary",
@@ -433,19 +479,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Imam malu obitelj.",
-            "source": "Mam małą rodzinę."
+            "source": "Mam małą rodzinę.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-malu-obitelj.mp3"
           },
           {
             "target": "Moja sestra je simpatična.",
-            "source": "Moja siostra jest sympatyczna."
+            "source": "Moja siostra jest sympatyczna.",
+            "audioSrc": "/audio/hr/a1/module-02/moja-sestra-je-simpaticna.mp3"
           },
           {
             "target": "Moj prijatelj radi u banci.",
-            "source": "Mój przyjaciel pracuje w banku."
+            "source": "Mój przyjaciel pracuje w banku.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-prijatelj-radi-u-banci.mp3"
           },
           {
             "target": "Poznajem Anu.",
-            "source": "Znam Anę."
+            "source": "Znam Anę.",
+            "audioSrc": "/audio/hr/a1/module-02/poznajem-anu.mp3"
           }
         ],
         "canDo": [

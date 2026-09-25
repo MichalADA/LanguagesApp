@@ -12,133 +12,152 @@ export const LESSON: GeneratedLesson = {
         "source": "wysoki",
         "lemma": "visok",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0128"
+        "recordId": "A1-0128",
+        "audioSrc": "/audio/hr/a1/module-02/visok.mp3"
       },
       {
         "target": "nizak",
         "source": "niski",
         "lemma": "nizak",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0129"
+        "recordId": "A1-0129",
+        "audioSrc": "/audio/hr/a1/module-02/nizak.mp3"
       },
       {
         "target": "mlad",
         "source": "młody",
         "lemma": "mlad",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0130"
+        "recordId": "A1-0130",
+        "audioSrc": "/audio/hr/a1/module-02/mlad.mp3"
       },
       {
         "target": "star",
         "source": "stary",
         "lemma": "star",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0131"
+        "recordId": "A1-0131",
+        "audioSrc": "/audio/hr/a1/module-02/star.mp3"
       },
       {
         "target": "dobar",
         "source": "dobry",
         "lemma": "dobar",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0132"
+        "recordId": "A1-0132",
+        "audioSrc": "/audio/hr/a1/module-02/dobar.mp3"
       },
       {
         "target": "simpatičan",
         "source": "sympatyczny",
         "lemma": "simpatičan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0133"
+        "recordId": "A1-0133",
+        "audioSrc": "/audio/hr/a1/module-02/simpatican.mp3"
       },
       {
         "target": "umoran",
         "source": "zmęczony",
         "lemma": "umoran",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0134"
+        "recordId": "A1-0134",
+        "audioSrc": "/audio/hr/a1/module-02/umoran.mp3"
       },
       {
         "target": "sretan",
         "source": "szczęśliwy",
         "lemma": "sretan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0135"
+        "recordId": "A1-0135",
+        "audioSrc": "/audio/hr/a1/module-02/sretan.mp3"
       },
       {
         "target": "lijep",
         "source": "ładny / piękny",
         "lemma": "lijep",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0752"
+        "recordId": "A1-0752",
+        "audioSrc": "/audio/hr/a1/module-02/lijep.mp3"
       },
       {
         "target": "zgodan",
         "source": "przystojny / atrakcyjny",
         "lemma": "zgodan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0753"
+        "recordId": "A1-0753",
+        "audioSrc": "/audio/hr/a1/module-02/zgodan.mp3"
       },
       {
         "target": "pametan",
         "source": "mądry",
         "lemma": "pametan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0754"
+        "recordId": "A1-0754",
+        "audioSrc": "/audio/hr/a1/module-02/pametan.mp3"
       },
       {
         "target": "drag",
         "source": "miły / drogi",
         "lemma": "drag",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0755"
+        "recordId": "A1-0755",
+        "audioSrc": "/audio/hr/a1/module-02/drag.mp3"
       },
       {
         "target": "veseo",
         "source": "wesoły",
         "lemma": "veseo",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0756"
+        "recordId": "A1-0756",
+        "audioSrc": "/audio/hr/a1/module-02/veseo.mp3"
       },
       {
         "target": "tužan",
         "source": "smutny",
         "lemma": "tužan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0757"
+        "recordId": "A1-0757",
+        "audioSrc": "/audio/hr/a1/module-02/tuzan.mp3"
       },
       {
         "target": "zauzet",
         "source": "zajęty",
         "lemma": "zauzet",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0758"
+        "recordId": "A1-0758",
+        "audioSrc": "/audio/hr/a1/module-02/zauzet.mp3"
       },
       {
         "target": "velik",
         "source": "duży",
         "lemma": "velik",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0759"
+        "recordId": "A1-0759",
+        "audioSrc": "/audio/hr/a1/module-02/velik.mp3"
       },
       {
         "target": "mali",
         "source": "mały",
         "lemma": "malen",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0760"
+        "recordId": "A1-0760",
+        "audioSrc": "/audio/hr/a1/module-02/mali.mp3"
       },
       {
         "target": "vrlo",
         "source": "bardzo",
         "lemma": "vrlo",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0761"
+        "recordId": "A1-0761",
+        "audioSrc": "/audio/hr/a1/module-02/vrlo.mp3"
       },
       {
         "target": "kakav",
         "source": "jaki",
         "lemma": "kakav",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0762"
+        "recordId": "A1-0762",
+        "audioSrc": "/audio/hr/a1/module-02/kakav.mp3"
       }
     ],
     "steps": [
@@ -152,15 +171,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Marko je visok.",
-            "source": "Marko jest wysoki."
+            "source": "Marko jest wysoki.",
+            "audioSrc": "/audio/hr/a1/module-02/marko-je-visok.mp3"
           },
           {
             "target": "Ana je visoka.",
-            "source": "Ana jest wysoka."
+            "source": "Ana jest wysoka.",
+            "audioSrc": "/audio/hr/a1/module-02/ana-je-visoka.mp3"
           },
           {
             "target": "Moj brat je mlad.",
-            "source": "Mój brat jest młody."
+            "source": "Mój brat jest młody.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-brat-je-mlad.mp3"
           }
         ]
       },
@@ -173,8 +195,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Marko je visok.",
-          "source": "Marko jest wysoki."
-        }
+          "source": "Marko jest wysoki.",
+          "audioSrc": "/audio/hr/a1/module-02/marko-je-visok.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/visok.mp3"
       },
       {
         "id": "word-2",
@@ -182,7 +206,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "nizak",
         "source": "niski",
-        "partOfSpeech": "przymiotnik"
+        "partOfSpeech": "przymiotnik",
+        "audioSrc": "/audio/hr/a1/module-02/nizak.mp3"
       },
       {
         "id": "word-3",
@@ -193,8 +218,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Moj brat je mlad.",
-          "source": "Mój brat jest młody."
-        }
+          "source": "Mój brat jest młody.",
+          "audioSrc": "/audio/hr/a1/module-02/moj-brat-je-mlad.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/mlad.mp3"
       },
       {
         "id": "check-1",
@@ -208,7 +235,8 @@ export const LESSON: GeneratedLesson = {
           "młody"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/mlad.mp3"
       },
       {
         "id": "word-4",
@@ -216,7 +244,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "star",
         "source": "stary",
-        "partOfSpeech": "przymiotnik"
+        "partOfSpeech": "przymiotnik",
+        "audioSrc": "/audio/hr/a1/module-02/star.mp3"
       },
       {
         "id": "word-5",
@@ -227,8 +256,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Moja baka je vrlo dobra.",
-          "source": "Moja babcia jest bardzo dobra."
-        }
+          "source": "Moja babcia jest bardzo dobra.",
+          "audioSrc": "/audio/hr/a1/module-02/moja-baka-je-vrlo-dobra.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/dobar.mp3"
       },
       {
         "id": "word-6",
@@ -236,7 +267,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "simpatičan",
         "source": "sympatyczny",
-        "partOfSpeech": "przymiotnik"
+        "partOfSpeech": "przymiotnik",
+        "audioSrc": "/audio/hr/a1/module-02/simpatican.mp3"
       },
       {
         "id": "check-2",
@@ -250,7 +282,8 @@ export const LESSON: GeneratedLesson = {
           "mlad"
         ],
         "correctIndex": 0,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-02/star.mp3"
       },
       {
         "id": "word-7",
@@ -261,8 +294,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Danas sam umoran.",
-          "source": "Dziś jestem zmęczony."
-        }
+          "source": "Dziś jestem zmęczony.",
+          "audioSrc": "/audio/hr/a1/module-02/danas-sam-umoran.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/umoran.mp3"
       },
       {
         "id": "word-8",
@@ -273,8 +308,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Ona je sretna.",
-          "source": "Ona jest szczęśliwa."
-        }
+          "source": "Ona jest szczęśliwa.",
+          "audioSrc": "/audio/hr/a1/module-02/ona-je-sretna.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/sretan.mp3"
       },
       {
         "id": "check-3",
@@ -288,7 +325,8 @@ export const LESSON: GeneratedLesson = {
           "dobry"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/umoran.mp3"
       },
       {
         "id": "more-words",
@@ -300,57 +338,68 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "lijep",
             "source": "ładny / piękny",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/lijep.mp3"
           },
           {
             "target": "zgodan",
             "source": "przystojny / atrakcyjny",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/zgodan.mp3"
           },
           {
             "target": "pametan",
             "source": "mądry",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/pametan.mp3"
           },
           {
             "target": "drag",
             "source": "miły / drogi",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/drag.mp3"
           },
           {
             "target": "veseo",
             "source": "wesoły",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/veseo.mp3"
           },
           {
             "target": "tužan",
             "source": "smutny",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/tuzan.mp3"
           },
           {
             "target": "zauzet",
             "source": "zajęty",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/zauzet.mp3"
           },
           {
             "target": "velik",
             "source": "duży",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/velik.mp3"
           },
           {
             "target": "mali",
             "source": "mały",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/mali.mp3"
           },
           {
             "target": "vrlo",
             "source": "bardzo",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-02/vrlo.mp3"
           },
           {
             "target": "kakav",
             "source": "jaki",
-            "partOfSpeech": "zaimek"
+            "partOfSpeech": "zaimek",
+            "audioSrc": "/audio/hr/a1/module-02/kakav.mp3"
           }
         ]
       },
@@ -366,7 +415,8 @@ export const LESSON: GeneratedLesson = {
           "mały"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/mali.mp3"
       },
       {
         "id": "examples",
@@ -377,19 +427,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Moja sestra je lijepa i pametna.",
-            "source": "Moja siostra jest ładna i mądra."
+            "source": "Moja siostra jest ładna i mądra.",
+            "audioSrc": "/audio/hr/a1/module-02/moja-sestra-je-lijepa-i-pametna.mp3"
           },
           {
             "target": "Kakav je tvoj otac?",
-            "source": "Jaki jest twój ojciec?"
+            "source": "Jaki jest twój ojciec?",
+            "audioSrc": "/audio/hr/a1/module-02/kakav-je-tvoj-otac.mp3"
           },
           {
             "target": "Danas sam vrlo zauzeta.",
-            "source": "Dziś jestem bardzo zajęta."
+            "source": "Dziś jestem bardzo zajęta.",
+            "audioSrc": "/audio/hr/a1/module-02/danas-sam-vrlo-zauzeta.mp3"
           },
           {
             "target": "Moj pas je velik, a moja mačka je mala.",
-            "source": "Mój pies jest duży, a mój kot jest mały."
+            "source": "Mój pies jest duży, a mój kot jest mały.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-pas-je-velik-a-moja-macka-je-mala.mp3"
           }
         ]
       },
@@ -402,15 +456,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Marko je visok.",
-            "source": "Marko jest wysoki."
+            "source": "Marko jest wysoki.",
+            "audioSrc": "/audio/hr/a1/module-02/marko-je-visok.mp3"
           },
           {
             "target": "Ana je visoka.",
-            "source": "Ana jest wysoka."
+            "source": "Ana jest wysoka.",
+            "audioSrc": "/audio/hr/a1/module-02/ana-je-visoka.mp3"
           },
           {
             "target": "Ona je sretna.",
-            "source": "Ona jest szczęśliwa."
+            "source": "Ona jest szczęśliwa.",
+            "audioSrc": "/audio/hr/a1/module-02/ona-je-sretna.mp3"
           }
         ],
         "note": "W sretan i umoran przy -a znika samogłoska a: sretna, umorna."
@@ -425,7 +482,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "visoka"
         ],
-        "translation": "Ana jest wysoka."
+        "translation": "Ana jest wysoka.",
+        "answerAudioSrc": "/audio/hr/a1/module-02/ana-je-visoka.mp3"
       },
       {
         "id": "translate-1",
@@ -438,7 +496,8 @@ export const LESSON: GeneratedLesson = {
           "Danas sam umorna.",
           "Umoran sam danas.",
           "Ja sam danas umoran."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/danas-sam-umoran.mp3"
       },
       {
         "id": "order",
@@ -454,7 +513,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Moj brat je mlad."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/moj-brat-je-mlad.mp3"
       },
       {
         "id": "comprehend",
@@ -468,7 +528,8 @@ export const LESSON: GeneratedLesson = {
           "Moja babcia jest bardzo dobra."
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/moja-baka-je-vrlo-dobra.mp3"
       },
       {
         "id": "model",
@@ -479,27 +540,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Kakva je tvoja nova kolegica?",
-            "translation": "Jaka jest twoja nowa koleżanka?"
+            "translation": "Jaka jest twoja nowa koleżanka?",
+            "audioSrc": "/audio/hr/a1/module-02/kakva-je-tvoja-nova-kolegica-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Vrlo je simpatična i vesela.",
-            "translation": "Jest bardzo sympatyczna i wesoła."
+            "translation": "Jest bardzo sympatyczna i wesoła.",
+            "audioSrc": "/audio/hr/a1/module-02/vrlo-je-simpaticna-i-vesela.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Je li mlada?",
-            "translation": "Czy jest młoda?"
+            "translation": "Czy jest młoda?",
+            "audioSrc": "/audio/hr/a1/module-02/je-li-mlada-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Da, mlada je i visoka. A tvoj novi kolega?",
-            "translation": "Tak, jest młoda i wysoka. A twój nowy kolega?"
+            "translation": "Tak, jest młoda i wysoka. A twój nowy kolega?",
+            "audioSrc": "/audio/hr/a1/module-02/da-mlada-je-i-visoka-a-tvoj-novi-kolega.mp3"
           },
           {
             "speaker": "Marko",
             "text": "On je drag, ali danas je umoran.",
-            "translation": "Jest miły, ale dziś jest zmęczony."
+            "translation": "Jest miły, ale dziś jest zmęczony.",
+            "audioSrc": "/audio/hr/a1/module-02/on-je-drag-ali-danas-je-umoran-m.mp3"
           }
         ]
       },
@@ -514,7 +580,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Kakav je tvoj brat?",
-              "translation": "Jaki jest twój brat?"
+              "translation": "Jaki jest twój brat?",
+              "audioSrc": "/audio/hr/a1/module-02/kakav-je-tvoj-brat.mp3"
             }
           },
           {
@@ -525,14 +592,16 @@ export const LESSON: GeneratedLesson = {
               "On je visok i mlad."
             ],
             "pattern": "^(moj brat|on) je (vrlo )?(visok i (vrlo )?mlad|mlad i (vrlo )?visok)$",
-            "suggestion": "Moj brat je visok i mlad."
+            "suggestion": "Moj brat je visok i mlad.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/moj-brat-je-visok-i-mlad.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "A kakva je tvoja sestra?",
-              "translation": "A jaka jest twoja siostra?"
+              "translation": "A jaka jest twoja siostra?",
+              "audioSrc": "/audio/hr/a1/module-02/a-kakva-je-tvoja-sestra.mp3"
             }
           },
           {
@@ -543,7 +612,8 @@ export const LESSON: GeneratedLesson = {
               "Ona je sretna."
             ],
             "pattern": "^(moja sestra|ona) je (vrlo )?sretna$",
-            "suggestion": "Moja sestra je sretna."
+            "suggestion": "Moja sestra je sretna.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/moja-sestra-je-sretna.mp3"
           }
         ]
       },
@@ -587,7 +657,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Moj brat je visok. Danas sam umoran."
+        "sample": "Moj brat je visok. Danas sam umoran.",
+        "sampleAudioSrc": "/audio/hr/a1/module-02/moj-brat-je-visok-danas-sam-umoran.mp3"
       },
       {
         "id": "summary",
@@ -597,19 +668,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Marko je visok.",
-            "source": "Marko jest wysoki."
+            "source": "Marko jest wysoki.",
+            "audioSrc": "/audio/hr/a1/module-02/marko-je-visok.mp3"
           },
           {
             "target": "Ana je visoka.",
-            "source": "Ana jest wysoka."
+            "source": "Ana jest wysoka.",
+            "audioSrc": "/audio/hr/a1/module-02/ana-je-visoka.mp3"
           },
           {
             "target": "Moj brat je mlad.",
-            "source": "Mój brat jest młody."
+            "source": "Mój brat jest młody.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-brat-je-mlad.mp3"
           },
           {
             "target": "Moja baka je vrlo dobra.",
-            "source": "Moja babcia jest bardzo dobra."
+            "source": "Moja babcia jest bardzo dobra.",
+            "audioSrc": "/audio/hr/a1/module-02/moja-baka-je-vrlo-dobra.mp3"
           }
         ]
       }

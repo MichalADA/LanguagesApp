@@ -12,119 +12,136 @@ export const LESSON: GeneratedLesson = {
         "source": "plaża",
         "lemma": "plaža",
         "partOfSpeech": "noun",
-        "recordId": "A1-0596"
+        "recordId": "A1-0596",
+        "audioSrc": "/audio/hr/a1/module-07/plaza.mp3"
       },
       {
         "target": "more",
         "source": "morze",
         "lemma": "more",
         "partOfSpeech": "noun",
-        "recordId": "A1-0597"
+        "recordId": "A1-0597",
+        "audioSrc": "/audio/hr/a1/module-07/more.mp3"
       },
       {
         "target": "sunce",
         "source": "słońce",
         "lemma": "sunce",
         "partOfSpeech": "noun",
-        "recordId": "A1-0598"
+        "recordId": "A1-0598",
+        "audioSrc": "/audio/hr/a1/module-07/sunce.mp3"
       },
       {
         "target": "plivati",
         "source": "pływać",
         "lemma": "plivati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0599"
+        "recordId": "A1-0599",
+        "audioSrc": "/audio/hr/a1/module-06/plivati.mp3"
       },
       {
         "target": "kupati se",
         "source": "kąpać się",
         "lemma": "kupati se",
         "partOfSpeech": "verb",
-        "recordId": "A1-0600"
+        "recordId": "A1-0600",
+        "audioSrc": "/audio/hr/a1/module-07/kupati-se.mp3"
       },
       {
         "target": "ručnik",
         "source": "ręcznik",
         "lemma": "ručnik",
         "partOfSpeech": "noun",
-        "recordId": "A1-0601"
+        "recordId": "A1-0601",
+        "audioSrc": "/audio/hr/a1/module-07/rucnik.mp3"
       },
       {
         "target": "brod",
         "source": "statek / łódź",
         "lemma": "brod",
         "partOfSpeech": "noun",
-        "recordId": "A1-0602"
+        "recordId": "A1-0602",
+        "audioSrc": "/audio/hr/a1/module-07/brod.mp3"
       },
       {
         "target": "otok",
         "source": "wyspa",
         "lemma": "otok",
         "partOfSpeech": "noun",
-        "recordId": "A1-0603"
+        "recordId": "A1-0603",
+        "audioSrc": "/audio/hr/a1/module-07/otok.mp3"
       },
       {
         "target": "pijesak",
         "source": "piasek",
         "lemma": "pijesak",
         "partOfSpeech": "noun",
-        "recordId": "A1-1079"
+        "recordId": "A1-1079",
+        "audioSrc": "/audio/hr/a1/module-07/pijesak.mp3"
       },
       {
         "target": "val",
         "source": "fala",
         "lemma": "val",
         "partOfSpeech": "noun",
-        "recordId": "A1-1080"
+        "recordId": "A1-1080",
+        "audioSrc": "/audio/hr/a1/module-07/val.mp3"
       },
       {
         "target": "suncobran",
         "source": "parasol plażowy",
         "lemma": "suncobran",
         "partOfSpeech": "noun",
-        "recordId": "A1-1081"
+        "recordId": "A1-1081",
+        "audioSrc": "/audio/hr/a1/module-07/suncobran.mp3"
       },
       {
         "target": "ležaljka",
         "source": "leżak",
         "lemma": "ležaljka",
         "partOfSpeech": "noun",
-        "recordId": "A1-1082"
+        "recordId": "A1-1082",
+        "audioSrc": "/audio/hr/a1/module-07/lezaljka.mp3"
       },
       {
         "target": "krema za sunčanje",
         "source": "krem do opalania",
         "lemma": "krema",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1083"
+        "recordId": "A1-1083",
+        "audioSrc": "/audio/hr/a1/module-07/krema-za-suncanje.mp3"
       },
       {
         "target": "kupaći kostim",
         "source": "strój kąpielowy",
         "lemma": "kostim",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1084"
+        "recordId": "A1-1084",
+        "audioSrc": "/audio/hr/a1/module-07/kupaci-kostim.mp3"
       },
       {
         "target": "sunčati se",
         "source": "opalać się",
         "lemma": "sunčati se",
         "partOfSpeech": "verb",
-        "recordId": "A1-1085"
+        "recordId": "A1-1085",
+        "audioSrc": "/audio/hr/a1/module-07/suncati-se.mp3"
       },
       {
         "target": "roniti",
         "source": "nurkować",
         "lemma": "roniti",
         "partOfSpeech": "verb",
-        "recordId": "A1-1086"
+        "recordId": "A1-1086",
+        "audioSrc": "/audio/hr/a1/module-07/roniti.mp3"
       },
       {
         "target": "hladan",
         "source": "zimny",
         "lemma": "hladan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-1087"
+        "recordId": "A1-1087",
+        "audioSrc": "/audio/hr/a1/module-07/hladan.mp3"
       }
     ],
     "steps": [
@@ -138,15 +155,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Idem na plažu.",
-            "source": "Idę na plażę."
+            "source": "Idę na plażę.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-na-plazu.mp3"
           },
           {
             "target": "Ja sam na plaži.",
-            "source": "Jestem na plaży."
+            "source": "Jestem na plaży.",
+            "audioSrc": "/audio/hr/a1/module-07/ja-sam-na-plazi.mp3"
           },
           {
             "target": "Plivam u moru.",
-            "source": "Pływam w morzu."
+            "source": "Pływam w morzu.",
+            "audioSrc": "/audio/hr/a1/module-07/plivam-u-moru.mp3"
           }
         ]
       },
@@ -159,8 +179,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idem na plažu.",
-          "source": "Idę na plażę."
-        }
+          "source": "Idę na plażę.",
+          "audioSrc": "/audio/hr/a1/module-07/idem-na-plazu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/plaza.mp3"
       },
       {
         "id": "word-2",
@@ -171,8 +193,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idem u more.",
-          "source": "Wchodzę do morza."
-        }
+          "source": "Wchodzę do morza.",
+          "audioSrc": "/audio/hr/a1/module-07/idem-u-more.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/more.mp3"
       },
       {
         "id": "word-3",
@@ -183,8 +207,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Sunce je jako.",
-          "source": "Słońce jest mocne."
-        }
+          "source": "Słońce jest mocne.",
+          "audioSrc": "/audio/hr/a1/module-07/sunce-je-jako.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/sunce.mp3"
       },
       {
         "id": "check-1",
@@ -198,7 +224,8 @@ export const LESSON: GeneratedLesson = {
           "ręcznik"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/more.mp3"
       },
       {
         "id": "word-4",
@@ -209,8 +236,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Plivam u moru.",
-          "source": "Pływam w morzu."
-        }
+          "source": "Pływam w morzu.",
+          "audioSrc": "/audio/hr/a1/module-07/plivam-u-moru.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/plivati.mp3"
       },
       {
         "id": "word-5",
@@ -218,7 +247,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "kupati se",
         "source": "kąpać się",
-        "partOfSpeech": "czasownik"
+        "partOfSpeech": "czasownik",
+        "audioSrc": "/audio/hr/a1/module-07/kupati-se.mp3"
       },
       {
         "id": "word-6",
@@ -226,7 +256,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "ručnik",
         "source": "ręcznik",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-07/rucnik.mp3"
       },
       {
         "id": "check-2",
@@ -240,7 +271,8 @@ export const LESSON: GeneratedLesson = {
           "ručnik"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-07/rucnik.mp3"
       },
       {
         "id": "word-7",
@@ -251,8 +283,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Brod ide na otok.",
-          "source": "Łódź płynie na wyspę."
-        }
+          "source": "Łódź płynie na wyspę.",
+          "audioSrc": "/audio/hr/a1/module-07/brod-ide-na-otok.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/brod.mp3"
       },
       {
         "id": "word-8",
@@ -263,8 +297,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Brod ide na otok.",
-          "source": "Łódź płynie na wyspę."
-        }
+          "source": "Łódź płynie na wyspę.",
+          "audioSrc": "/audio/hr/a1/module-07/brod-ide-na-otok.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/otok.mp3"
       },
       {
         "id": "check-3",
@@ -278,7 +314,8 @@ export const LESSON: GeneratedLesson = {
           "słońce"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/brod.mp3"
       },
       {
         "id": "more-words",
@@ -290,47 +327,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "pijesak",
             "source": "piasek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/pijesak.mp3"
           },
           {
             "target": "val",
             "source": "fala",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/val.mp3"
           },
           {
             "target": "suncobran",
             "source": "parasol plażowy",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/suncobran.mp3"
           },
           {
             "target": "ležaljka",
             "source": "leżak",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/lezaljka.mp3"
           },
           {
             "target": "krema za sunčanje",
             "source": "krem do opalania",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/krema-za-suncanje.mp3"
           },
           {
             "target": "kupaći kostim",
             "source": "strój kąpielowy",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/kupaci-kostim.mp3"
           },
           {
             "target": "sunčati se",
             "source": "opalać się",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/suncati-se.mp3"
           },
           {
             "target": "roniti",
             "source": "nurkować",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/roniti.mp3"
           },
           {
             "target": "hladan",
             "source": "zimny",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-07/hladan.mp3"
           }
         ]
       },
@@ -346,7 +392,8 @@ export const LESSON: GeneratedLesson = {
           "piasek"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/roniti.mp3"
       },
       {
         "id": "examples",
@@ -357,19 +404,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Sunčam se na plaži.",
-            "source": "Opalam się na plaży."
+            "source": "Opalam się na plaży.",
+            "audioSrc": "/audio/hr/a1/module-07/suncam-se-na-plazi.mp3"
           },
           {
             "target": "More je danas hladno.",
-            "source": "Morze jest dziś zimne."
+            "source": "Morze jest dziś zimne.",
+            "audioSrc": "/audio/hr/a1/module-07/more-je-danas-hladno.mp3"
           },
           {
             "target": "Trebam kremu za sunčanje.",
-            "source": "Potrzebuję kremu do opalania."
+            "source": "Potrzebuję kremu do opalania.",
+            "audioSrc": "/audio/hr/a1/module-07/trebam-kremu-za-suncanje.mp3"
           },
           {
             "target": "Djeca se igraju u pijesku.",
-            "source": "Dzieci bawią się w piasku."
+            "source": "Dzieci bawią się w piasku.",
+            "audioSrc": "/audio/hr/a1/module-07/djeca-se-igraju-u-pijesku.mp3"
           }
         ]
       },
@@ -382,19 +433,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Idem na plažu.",
-            "source": "Idę na plażę."
+            "source": "Idę na plażę.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-na-plazu.mp3"
           },
           {
             "target": "Ja sam na plaži.",
-            "source": "Jestem na plaży."
+            "source": "Jestem na plaży.",
+            "audioSrc": "/audio/hr/a1/module-07/ja-sam-na-plazi.mp3"
           },
           {
             "target": "Plivam u moru.",
-            "source": "Pływam w morzu."
+            "source": "Pływam w morzu.",
+            "audioSrc": "/audio/hr/a1/module-07/plivam-u-moru.mp3"
           },
           {
             "target": "Idem u more.",
-            "source": "Wchodzę do morza."
+            "source": "Wchodzę do morza.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-u-more.mp3"
           }
         ]
       },
@@ -408,7 +463,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "plaži"
         ],
-        "translation": "Jestem na plaży."
+        "translation": "Jestem na plaży.",
+        "answerAudioSrc": "/audio/hr/a1/module-07/ja-sam-na-plazi.mp3"
       },
       {
         "id": "translate-1",
@@ -419,7 +475,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Idem na plažu.",
           "Ja idem na plažu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/idem-na-plazu.mp3"
       },
       {
         "id": "order",
@@ -434,7 +491,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Sunce je jako."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/sunce-je-jako.mp3"
       },
       {
         "id": "comprehend",
@@ -448,7 +506,8 @@ export const LESSON: GeneratedLesson = {
           "Jestem na plaży."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/brod-ide-na-otok.mp3"
       },
       {
         "id": "translate-2",
@@ -459,7 +518,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Plivam u moru.",
           "Ja plivam u moru."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/plivam-u-moru.mp3"
       },
       {
         "id": "model",
@@ -470,27 +530,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Ideš li u more?",
-            "translation": "Wchodzisz do morza?"
+            "translation": "Wchodzisz do morza?",
+            "audioSrc": "/audio/hr/a1/module-07/ides-li-u-more-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ne još. More je hladno!",
-            "translation": "Jeszcze nie. Morze jest zimne!"
+            "translation": "Jeszcze nie. Morze jest zimne!",
+            "audioSrc": "/audio/hr/a1/module-07/ne-jos-more-je-hladno.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Nije, toplo je! Dođi!",
-            "translation": "Nie jest, jest ciepłe! Chodź!"
+            "translation": "Nie jest, jest ciepłe! Chodź!",
+            "audioSrc": "/audio/hr/a1/module-07/nije-toplo-je-dodji-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Dobro, ali prvo trebam kremu za sunčanje.",
-            "translation": "Dobrze, ale najpierw potrzebuję kremu do opalania."
+            "translation": "Dobrze, ale najpierw potrzebuję kremu do opalania.",
+            "audioSrc": "/audio/hr/a1/module-07/dobro-ali-prvo-trebam-kremu-za-suncanje.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Evo, izvoli.",
-            "translation": "Proszę, masz."
+            "translation": "Proszę, masz.",
+            "audioSrc": "/audio/hr/a1/module-07/evo-izvoli-m.mp3"
           }
         ]
       },
@@ -505,7 +570,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Gdje si?",
-              "translation": "Gdzie jesteś?"
+              "translation": "Gdzie jesteś?",
+              "audioSrc": "/audio/hr/a1/module-07/gdje-si.mp3"
             }
           },
           {
@@ -516,14 +582,16 @@ export const LESSON: GeneratedLesson = {
               "Na plaži sam."
             ],
             "pattern": "^(ja sam na plaži|na plaži sam|ja sam u moru|u moru sam|na plaži)$",
-            "suggestion": "Ja sam na plaži."
+            "suggestion": "Ja sam na plaži.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/ja-sam-na-plazi.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što radiš?",
-              "translation": "Co robisz?"
+              "translation": "Co robisz?",
+              "audioSrc": "/audio/hr/a1/module-02/sto-radis.mp3"
             }
           },
           {
@@ -535,7 +603,8 @@ export const LESSON: GeneratedLesson = {
               "Kupam se."
             ],
             "pattern": "^(ja )?(plivam|kupam se|se kupam)( u moru)?$",
-            "suggestion": "Plivam u moru."
+            "suggestion": "Plivam u moru.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/plivam-u-moru.mp3"
           }
         ]
       },
@@ -566,7 +635,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Idem na plažu. Plivam u moru."
+        "sample": "Idem na plažu. Plivam u moru.",
+        "sampleAudioSrc": "/audio/hr/a1/module-07/idem-na-plazu-plivam-u-moru.mp3"
       },
       {
         "id": "summary",
@@ -576,19 +646,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Idem na plažu.",
-            "source": "Idę na plażę."
+            "source": "Idę na plażę.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-na-plazu.mp3"
           },
           {
             "target": "Ja sam na plaži.",
-            "source": "Jestem na plaży."
+            "source": "Jestem na plaży.",
+            "audioSrc": "/audio/hr/a1/module-07/ja-sam-na-plazi.mp3"
           },
           {
             "target": "Plivam u moru.",
-            "source": "Pływam w morzu."
+            "source": "Pływam w morzu.",
+            "audioSrc": "/audio/hr/a1/module-07/plivam-u-moru.mp3"
           },
           {
             "target": "Idem u more.",
-            "source": "Wchodzę do morza."
+            "source": "Wchodzę do morza.",
+            "audioSrc": "/audio/hr/a1/module-07/idem-u-more.mp3"
           }
         ]
       }

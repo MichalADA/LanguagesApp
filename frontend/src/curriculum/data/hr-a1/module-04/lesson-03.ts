@@ -12,14 +12,16 @@ export const LESSON: GeneratedLesson = {
         "source": "kawiarnia / bar",
         "lemma": "kafić",
         "partOfSpeech": "noun",
-        "recordId": "A1-0308"
+        "recordId": "A1-0308",
+        "audioSrc": "/audio/hr/a1/module-04/kafic.mp3"
       },
       {
         "target": "konobar",
         "source": "kelner",
         "lemma": "konobar",
         "partOfSpeech": "noun",
-        "recordId": "A1-0309"
+        "recordId": "A1-0309",
+        "audioSrc": "/audio/hr/a1/module-04/konobar.mp3"
       },
       {
         "target": "molim",
@@ -42,91 +44,104 @@ export const LESSON: GeneratedLesson = {
         "source": "sok",
         "lemma": "sok",
         "partOfSpeech": "noun",
-        "recordId": "A1-0312"
+        "recordId": "A1-0312",
+        "audioSrc": "/audio/hr/a1/module-04/sok.mp3"
       },
       {
         "target": "pivo",
         "source": "piwo",
         "lemma": "pivo",
         "partOfSpeech": "noun",
-        "recordId": "A1-0313"
+        "recordId": "A1-0313",
+        "audioSrc": "/audio/hr/a1/module-04/pivo.mp3"
       },
       {
         "target": "šećer",
         "source": "cukier",
         "lemma": "šećer",
         "partOfSpeech": "noun",
-        "recordId": "A1-0314"
+        "recordId": "A1-0314",
+        "audioSrc": "/audio/hr/a1/module-04/secer.mp3"
       },
       {
         "target": "račun",
         "source": "rachunek",
         "lemma": "račun",
         "partOfSpeech": "noun",
-        "recordId": "A1-0315"
+        "recordId": "A1-0315",
+        "audioSrc": "/audio/hr/a1/module-04/racun.mp3"
       },
       {
         "target": "konobarica",
         "source": "kelnerka",
         "lemma": "konobarica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0882"
+        "recordId": "A1-0882",
+        "audioSrc": "/audio/hr/a1/module-04/konobarica.mp3"
       },
       {
         "target": "Izvolite.",
         "source": "Proszę. / Słucham.",
         "lemma": "izvoljeti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0883"
+        "recordId": "A1-0883",
+        "audioSrc": "/audio/hr/a1/module-04/izvolite.mp3"
       },
       {
         "target": "čaša",
         "source": "szklanka / kieliszek",
         "lemma": "čaša",
         "partOfSpeech": "noun",
-        "recordId": "A1-0884"
+        "recordId": "A1-0884",
+        "audioSrc": "/audio/hr/a1/module-04/casa.mp3"
       },
       {
         "target": "šalica",
         "source": "filiżanka",
         "lemma": "šalica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0885"
+        "recordId": "A1-0885",
+        "audioSrc": "/audio/hr/a1/module-04/salica.mp3"
       },
       {
         "target": "led",
         "source": "lód",
         "lemma": "led",
         "partOfSpeech": "noun",
-        "recordId": "A1-0886"
+        "recordId": "A1-0886",
+        "audioSrc": "/audio/hr/a1/module-04/led.mp3"
       },
       {
         "target": "limunada",
         "source": "lemoniada",
         "lemma": "limunada",
         "partOfSpeech": "noun",
-        "recordId": "A1-0887"
+        "recordId": "A1-0887",
+        "audioSrc": "/audio/hr/a1/module-04/limunada.mp3"
       },
       {
         "target": "vino",
         "source": "wino",
         "lemma": "vino",
         "partOfSpeech": "noun",
-        "recordId": "A1-0888"
+        "recordId": "A1-0888",
+        "audioSrc": "/audio/hr/a1/module-04/vino.mp3"
       },
       {
         "target": "bijela kava",
         "source": "kawa z mlekiem",
         "lemma": "kava",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0889"
+        "recordId": "A1-0889",
+        "audioSrc": "/audio/hr/a1/module-04/bijela-kava.mp3"
       },
       {
         "target": "Hvala lijepa!",
         "source": "Dziękuję bardzo!",
         "lemma": "hvala",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0890"
+        "recordId": "A1-0890",
+        "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
       }
     ],
     "steps": [
@@ -140,15 +155,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Molim jednu kavu.",
-            "source": "Poproszę jedną kawę."
+            "source": "Poproszę jedną kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
           },
           {
             "target": "Htio bih čaj.",
-            "source": "Chciałbym herbatę."
+            "source": "Chciałbym herbatę.",
+            "audioSrc": "/audio/hr/a1/module-04/htio-bih-caj.mp3"
           },
           {
             "target": "Htjela bih sok.",
-            "source": "Chciałabym sok."
+            "source": "Chciałabym sok.",
+            "audioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
           }
         ]
       },
@@ -158,7 +176,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "kafić",
         "source": "kawiarnia / bar",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-04/kafic.mp3"
       },
       {
         "id": "word-2",
@@ -166,7 +185,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "konobar",
         "source": "kelner",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-04/konobar.mp3"
       },
       {
         "id": "word-3",
@@ -177,7 +197,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "wykrzyknik",
         "example": {
           "target": "Molim jednu kavu.",
-          "source": "Poproszę jedną kawę."
+          "source": "Poproszę jedną kawę.",
+          "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-01/molim.mp3"
       },
@@ -193,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "rachunek"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/kafic.mp3"
       },
       {
         "id": "word-4",
@@ -204,7 +226,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Molim jednu kavu.",
-          "source": "Poproszę jedną kawę."
+          "source": "Poproszę jedną kawę.",
+          "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-01/jedan.mp3"
       },
@@ -217,8 +240,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Htjela bih sok.",
-          "source": "Chciałabym sok."
-        }
+          "source": "Chciałabym sok.",
+          "audioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/sok.mp3"
       },
       {
         "id": "word-6",
@@ -226,7 +251,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "pivo",
         "source": "piwo",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-04/pivo.mp3"
       },
       {
         "id": "check-2",
@@ -240,7 +266,8 @@ export const LESSON: GeneratedLesson = {
           "pivo"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-04/sok.mp3"
       },
       {
         "id": "word-7",
@@ -251,8 +278,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Bez šećera, molim.",
-          "source": "Bez cukru, proszę."
-        }
+          "source": "Bez cukru, proszę.",
+          "audioSrc": "/audio/hr/a1/module-04/bez-secera-molim.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/secer.mp3"
       },
       {
         "id": "word-8",
@@ -263,8 +292,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Račun, molim.",
-          "source": "Rachunek, proszę."
-        }
+          "source": "Rachunek, proszę.",
+          "audioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/racun.mp3"
       },
       {
         "id": "check-3",
@@ -278,7 +309,8 @@ export const LESSON: GeneratedLesson = {
           "cukier"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/secer.mp3"
       },
       {
         "id": "more-words",
@@ -290,47 +322,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "konobarica",
             "source": "kelnerka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/konobarica.mp3"
           },
           {
             "target": "Izvolite.",
             "source": "Proszę. / Słucham.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/izvolite.mp3"
           },
           {
             "target": "čaša",
             "source": "szklanka / kieliszek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/casa.mp3"
           },
           {
             "target": "šalica",
             "source": "filiżanka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/salica.mp3"
           },
           {
             "target": "led",
             "source": "lód",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/led.mp3"
           },
           {
             "target": "limunada",
             "source": "lemoniada",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/limunada.mp3"
           },
           {
             "target": "vino",
             "source": "wino",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/vino.mp3"
           },
           {
             "target": "bijela kava",
             "source": "kawa z mlekiem",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/bijela-kava.mp3"
           },
           {
             "target": "Hvala lijepa!",
             "source": "Dziękuję bardzo!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
           }
         ]
       },
@@ -346,7 +387,8 @@ export const LESSON: GeneratedLesson = {
           "Dziękuję bardzo!"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/konobarica.mp3"
       },
       {
         "id": "examples",
@@ -357,15 +399,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Jednu bijelu kavu, molim.",
-            "source": "Jedną kawę z mlekiem, poproszę."
+            "source": "Jedną kawę z mlekiem, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-04/jednu-bijelu-kavu-molim.mp3"
           },
           {
             "target": "Čašu vode, molim.",
-            "source": "Szklankę wody, poproszę."
+            "source": "Szklankę wody, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-04/casu-vode-molim.mp3"
           },
           {
             "target": "Htjela bih limunadu s ledom.",
-            "source": "Chciałabym lemoniadę z lodem."
+            "source": "Chciałabym lemoniadę z lodem.",
+            "audioSrc": "/audio/hr/a1/module-04/htjela-bih-limunadu-s-ledom.mp3"
           }
         ]
       },
@@ -378,15 +423,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Molim jednu kavu.",
-            "source": "Poproszę jedną kawę."
+            "source": "Poproszę jedną kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
           },
           {
             "target": "Htio bih čaj.",
-            "source": "Chciałbym herbatę."
+            "source": "Chciałbym herbatę.",
+            "audioSrc": "/audio/hr/a1/module-04/htio-bih-caj.mp3"
           },
           {
             "target": "Htjela bih sok.",
-            "source": "Chciałabym sok."
+            "source": "Chciałabym sok.",
+            "audioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
           }
         ],
         "note": "Jedan zmienia się razem z rzeczownikiem: jedna kava → Molim jednu kavu."
@@ -401,7 +449,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Htjela"
         ],
-        "translation": "Chciałabym sok."
+        "translation": "Chciałabym sok.",
+        "answerAudioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
       },
       {
         "id": "translate-1",
@@ -412,7 +461,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Račun, molim.",
           "Molim račun."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
       },
       {
         "id": "order",
@@ -427,7 +477,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Molim jednu kavu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
       },
       {
         "id": "comprehend",
@@ -441,7 +492,8 @@ export const LESSON: GeneratedLesson = {
           "Chciałbym herbatę."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/jos-jednu-vodu-molim.mp3"
       },
       {
         "id": "translate-2",
@@ -452,7 +504,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Bez šećera, molim.",
           "Molim bez šećera."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/bez-secera-molim.mp3"
       },
       {
         "id": "listening",
@@ -507,32 +560,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Konobar",
             "text": "Dobar dan! Izvolite.",
-            "translation": "Dzień dobry! Słucham."
+            "translation": "Dzień dobry! Słucham.",
+            "audioSrc": "/audio/hr/a1/module-04/dobar-dan-izvolite-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Dobar dan. Jednu bijelu kavu, molim.",
-            "translation": "Dzień dobry. Jedną kawę z mlekiem, poproszę."
+            "translation": "Dzień dobry. Jedną kawę z mlekiem, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-04/dobar-dan-jednu-bijelu-kavu-molim.mp3"
           },
           {
             "speaker": "Konobar",
             "text": "Veliku ili malu?",
-            "translation": "Dużą czy małą?"
+            "translation": "Dużą czy małą?",
+            "audioSrc": "/audio/hr/a1/module-04/veliku-ili-malu-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Malu, molim. I čašu vode.",
-            "translation": "Małą, poproszę. I szklankę wody."
+            "translation": "Małą, poproszę. I szklankę wody.",
+            "audioSrc": "/audio/hr/a1/module-04/malu-molim-i-casu-vode.mp3"
           },
           {
             "speaker": "Konobar",
             "text": "Izvolite.",
-            "translation": "Proszę."
+            "translation": "Proszę.",
+            "audioSrc": "/audio/hr/a1/module-04/izvolite-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Hvala lijepa!",
-            "translation": "Dziękuję bardzo!"
+            "translation": "Dziękuję bardzo!",
+            "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
           }
         ]
       },
@@ -547,7 +606,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Konobar",
               "text": "Dobar dan. Izvolite.",
-              "translation": "Dzień dobry. Słucham."
+              "translation": "Dzień dobry. Słucham.",
+              "audioSrc": "/audio/hr/a1/module-04/dobar-dan-izvolite-m.mp3"
             }
           },
           {
@@ -559,14 +619,16 @@ export const LESSON: GeneratedLesson = {
               "Htjela bih kavu."
             ],
             "pattern": "^((?:dobar|dobra) dan )?((molim|(?:htio|htjela) bih|mogu li dobiti)( jednu| jedan| jedno)? (?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt)( \\p{L}+){0,3}|(jednu |jedan |jedno )?(?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt)( \\p{L}+){0,3} molim)( molim)?$",
-            "suggestion": "Molim jednu kavu."
+            "suggestion": "Molim jednu kavu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Konobar",
               "text": "Želite li šećer?",
-              "translation": "Czy życzy Pan / Pani sobie cukier?"
+              "translation": "Czy życzy Pan / Pani sobie cukier?",
+              "audioSrc": "/audio/hr/a1/module-04/zelite-li-secer-m.mp3"
             }
           },
           {
@@ -577,14 +639,16 @@ export const LESSON: GeneratedLesson = {
               "Ne, hvala."
             ],
             "pattern": "^((ne|da)( hvala| molim)?|bez šećera)( bez šećera)?( molim| hvala)?$",
-            "suggestion": "Bez šećera, molim."
+            "suggestion": "Bez šećera, molim.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/bez-secera-molim.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Konobar",
               "text": "Izvolite.",
-              "translation": "Proszę."
+              "translation": "Proszę.",
+              "audioSrc": "/audio/hr/a1/module-04/izvolite-m.mp3"
             }
           },
           {
@@ -595,7 +659,8 @@ export const LESSON: GeneratedLesson = {
               "Molim račun."
             ],
             "pattern": "^(račun molim|molim račun|mogu li dobiti račun|možemo li dobiti račun)$",
-            "suggestion": "Račun, molim."
+            "suggestion": "Račun, molim.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
           }
         ]
       },
@@ -618,7 +683,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Molim jednu kavu bez šećera. Htio bih i sok."
+        "sample": "Molim jednu kavu bez šećera. Htio bih i sok.",
+        "sampleAudioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu-bez-secera-htio-bih-i-sok.mp3"
       },
       {
         "id": "summary",
@@ -628,19 +694,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Molim jednu kavu.",
-            "source": "Poproszę jedną kawę."
+            "source": "Poproszę jedną kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
           },
           {
             "target": "Htio bih čaj.",
-            "source": "Chciałbym herbatę."
+            "source": "Chciałbym herbatę.",
+            "audioSrc": "/audio/hr/a1/module-04/htio-bih-caj.mp3"
           },
           {
             "target": "Htjela bih sok.",
-            "source": "Chciałabym sok."
+            "source": "Chciałabym sok.",
+            "audioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
           },
           {
             "target": "Bez šećera, molim.",
-            "source": "Bez cukru, proszę."
+            "source": "Bez cukru, proszę.",
+            "audioSrc": "/audio/hr/a1/module-04/bez-secera-molim.mp3"
           }
         ]
       }

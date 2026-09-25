@@ -12,91 +12,104 @@ export const LESSON: GeneratedLesson = {
         "source": "walizka",
         "lemma": "kofer",
         "partOfSpeech": "noun",
-        "recordId": "A1-0614"
+        "recordId": "A1-0614",
+        "audioSrc": "/audio/hr/a1/module-07/kofer.mp3"
       },
       {
         "target": "putovnica",
         "source": "paszport",
         "lemma": "putovnica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0615"
+        "recordId": "A1-0615",
+        "audioSrc": "/audio/hr/a1/module-07/putovnica.mp3"
       },
       {
         "target": "rezervirati",
         "source": "rezerwować",
         "lemma": "rezervirati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0616"
+        "recordId": "A1-0616",
+        "audioSrc": "/audio/hr/a1/module-07/rezervirati.mp3"
       },
       {
         "target": "stići",
         "source": "dotrzeć / przyjechać",
         "lemma": "stići",
         "partOfSpeech": "verb",
-        "recordId": "A1-0617"
+        "recordId": "A1-0617",
+        "audioSrc": "/audio/hr/a1/module-07/stici.mp3"
       },
       {
         "target": "krenuti",
         "source": "wyruszyć",
         "lemma": "krenuti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0618"
+        "recordId": "A1-0618",
+        "audioSrc": "/audio/hr/a1/module-07/krenuti.mp3"
       },
       {
         "target": "odmor",
         "source": "urlop / odpoczynek",
         "lemma": "odmor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0619"
+        "recordId": "A1-0619",
+        "audioSrc": "/audio/hr/a1/module-06/odmor.mp3"
       },
       {
         "target": "turist",
         "source": "turysta",
         "lemma": "turist",
         "partOfSpeech": "noun",
-        "recordId": "A1-0620"
+        "recordId": "A1-0620",
+        "audioSrc": "/audio/hr/a1/module-07/turist.mp3"
       },
       {
         "target": "informacija",
         "source": "informacja",
         "lemma": "informacija",
         "partOfSpeech": "noun",
-        "recordId": "A1-0621"
+        "recordId": "A1-0621",
+        "audioSrc": "/audio/hr/a1/module-07/informacija.mp3"
       },
       {
         "target": "Sretan put!",
         "source": "Szczęśliwej podróży!",
         "lemma": "put",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1092"
+        "recordId": "A1-1092",
+        "audioSrc": "/audio/hr/a1/module-07/sretan-put.mp3"
       },
       {
         "target": "ruksak",
         "source": "plecak",
         "lemma": "ruksak",
         "partOfSpeech": "noun",
-        "recordId": "A1-1093"
+        "recordId": "A1-1093",
+        "audioSrc": "/audio/hr/a1/module-07/ruksak.mp3"
       },
       {
         "target": "turistički ured",
         "source": "biuro informacji turystycznej",
         "lemma": "ured",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1094"
+        "recordId": "A1-1094",
+        "audioSrc": "/audio/hr/a1/module-07/turisticki-ured.mp3"
       },
       {
         "target": "razglednica",
         "source": "pocztówka",
         "lemma": "razglednica",
         "partOfSpeech": "noun",
-        "recordId": "A1-1095"
+        "recordId": "A1-1095",
+        "audioSrc": "/audio/hr/a1/module-07/razglednica.mp3"
       },
       {
         "target": "suvenir",
         "source": "pamiątka",
         "lemma": "suvenir",
         "partOfSpeech": "noun",
-        "recordId": "A1-1096"
+        "recordId": "A1-1096",
+        "audioSrc": "/audio/hr/a1/module-07/suvenir.mp3"
       }
     ],
     "steps": [
@@ -122,7 +135,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "wyspa",
         "accepted": [
           "otok"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/otok.mp3"
       },
       {
         "id": "recall-2",
@@ -132,7 +146,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "dworzec",
         "accepted": [
           "kolodvor"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/kolodvor.mp3"
       },
       {
         "id": "recall-3",
@@ -142,7 +157,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "rezerwacja",
         "accepted": [
           "rezervacija"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/rezervacija.mp3"
       },
       {
         "id": "recall-4",
@@ -156,7 +172,8 @@ export const LESSON: GeneratedLesson = {
           "pływać"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/plivati.mp3"
       },
       {
         "id": "vocab",
@@ -168,67 +185,80 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "kofer",
             "source": "walizka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/kofer.mp3"
           },
           {
             "target": "putovnica",
             "source": "paszport",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/putovnica.mp3"
           },
           {
             "target": "rezervirati",
             "source": "rezerwować",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/rezervirati.mp3"
           },
           {
             "target": "stići",
             "source": "dotrzeć / przyjechać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/stici.mp3"
           },
           {
             "target": "krenuti",
             "source": "wyruszyć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/krenuti.mp3"
           },
           {
             "target": "odmor",
             "source": "urlop / odpoczynek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/odmor.mp3"
           },
           {
             "target": "turist",
             "source": "turysta",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/turist.mp3"
           },
           {
             "target": "informacija",
             "source": "informacja",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/informacija.mp3"
           },
           {
             "target": "Sretan put!",
             "source": "Szczęśliwej podróży!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/sretan-put.mp3"
           },
           {
             "target": "ruksak",
             "source": "plecak",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/ruksak.mp3"
           },
           {
             "target": "turistički ured",
             "source": "biuro informacji turystycznej",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/turisticki-ured.mp3"
           },
           {
             "target": "razglednica",
             "source": "pocztówka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/razglednica.mp3"
           },
           {
             "target": "suvenir",
             "source": "pamiątka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/suvenir.mp3"
           }
         ]
       },
@@ -241,11 +271,13 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Kupujem razglednicu i suvenir.",
-            "source": "Kupuję pocztówkę i pamiątkę."
+            "source": "Kupuję pocztówkę i pamiątkę.",
+            "audioSrc": "/audio/hr/a1/module-07/kupujem-razglednicu-i-suvenir.mp3"
           },
           {
             "target": "Sretan put!",
-            "source": "Szczęśliwej podróży!"
+            "source": "Szczęśliwej podróży!",
+            "audioSrc": "/audio/hr/a1/module-07/sretan-put.mp3"
           }
         ]
       },
@@ -259,7 +291,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "plaži"
         ],
-        "translation": "Opalam się na plaży."
+        "translation": "Opalam się na plaży.",
+        "answerAudioSrc": "/audio/hr/a1/module-07/suncam-se-na-plazi.mp3"
       },
       {
         "id": "order",
@@ -275,7 +308,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Idemo autom na more."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/idemo-autom-na-more.mp3"
       },
       {
         "id": "translate-1",
@@ -285,7 +319,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Podróż jest długa.",
         "accepted": [
           "Putovanje je dugo."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/putovanje-je-dugo.mp3"
       },
       {
         "id": "translate-2",
@@ -295,7 +330,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Pociąg do Splitu odjeżdża o siódmej.",
         "accepted": [
           "Vlak za Split polazi u sedam."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/vlak-za-split-polazi-u-sedam.mp3"
       },
       {
         "id": "translate-3",
@@ -306,7 +342,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Idem u more.",
           "Ja idem u more."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/idem-u-more.mp3"
       },
       {
         "id": "dialog",
@@ -319,7 +356,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Recepcionar",
               "text": "Dobar dan! Izvolite?",
-              "translation": "Dzień dobry! W czym mogę pomóc?"
+              "translation": "Dzień dobry! W czym mogę pomóc?",
+              "audioSrc": "/audio/hr/a1/module-04/dobar-dan-izvolite-m.mp3"
             }
           },
           {
@@ -332,14 +370,16 @@ export const LESSON: GeneratedLesson = {
               "Ja imam rezervaciju."
             ],
             "pattern": "^(dobar dan )?imam rezervaciju( za hotel)?$",
-            "suggestion": "Imam rezervaciju za hotel."
+            "suggestion": "Imam rezervaciju za hotel.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/imam-rezervaciju-za-hotel.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Recepcionar",
               "text": "Kako putujete dalje?",
-              "translation": "Czym podróżuje Pan / Pani dalej?"
+              "translation": "Czym podróżuje Pan / Pani dalej?",
+              "audioSrc": "/audio/hr/a1/module-07/kako-putujete-dalje-m.mp3"
             }
           },
           {
@@ -351,14 +391,16 @@ export const LESSON: GeneratedLesson = {
               "Ja putujem autobusom."
             ],
             "pattern": "^(ja )?(putujem |idem )?(?:prijateljicom|informacijom|ponavljanjem|ponedjeljkom|prijateljima|razglednicom|rezervacijom|aktivnostom|inozemstvom|konobaricom|prijateljem|roditeljima|studenticom|suncobranom|televizijom|tjesteninom|učiteljicom|aerodromom|fakultetom|gramatikom|inženjerom|jelovnikom|kašnjenjem|kazalištom|kilogramom|kišobranom|knjižnicom|kolodvorom|kupaonicom|liječnicom|liječnikom|napojnicom|novčanikom|prodavačem|putovanjem|putovnicom|raskrižjem|razgovorom|recepcijom|restoranom|roditeljem|sladoledom|autobusom|blagajnom|četvrtkom|čokoladom|gotovinom|hrvatskom|kolegicom|koncertom|konobarom|krumpirom|ležaljkom|limunadom|ljekarnom|naočalama|nedjeljom|nogometom|odgovorom|piletinom|pomfritom|predjelom|prognozom|proljećem|prtljagom|računalom|rečenicom|sastankom|semaforom|slušanjem|studentom|suvenirom|telefonom|teretanom|trajektom|tramvajem|trgovinom|učiteljem|utakmicom|veličinom|zadatakom|balkonom|biciklom|bolnicom|čitanjem|desertom|djetetom|dolaskom|doručkom|jogurtom|karticom|košarkom|laptopom|lekcijom|lozinkom|maslacem|mjesecem|mlijekom|obitelji|odbojkom|pijeskom|pisanjem|pitanjem|planinom|polaskom|poljskom|prijavom|prilogom|putnikom|ručnikom|ruksakom|snijegom|srijedom|stanicom|stupnjem|susjedom|taksijem|tanjurom|tržnicom|turistom|učenikom|ukrcajem|vikendom|vrećicom|vremenom|adresom|avionom|bazenom|centrom|cijenom|glazbom|godinom|govorom|hobijem|hotelom|igricom|izlazom|izletom|jabukom|jezikom|kafićem|ključem|knjigom|koferom|kolačem|kolegom|komadom|minutom|mjestom|muzejem|odjavom|odmorom|pekarom|peronom|porukom|povrćem|računom|salatom|šalicom|šećerom|serijom|sestrom|sportom|subotom|tečajem|tenisom|tjednom|tvrtkom|utorkom|večerom|vilicom|vjetrom|zabavom|zadaćom|zemljom|zgradom|bankom|bratom|brodom|brojem|centom|crkvom|djecom|djedom|filmom|gradom|hranom|jeseni|kartom|klimom|kruhom|liftom|ljetom|mačkom|maglom|majkom|mostom|novcem|obalom|olujom|osobom|otokom|parkom|petkom|planom|plažom|podnom|pomoći|ponoći|posaom|poštom|riječi|ručkom|školom|stanom|stolom|suncem|šunkom|testom|torbom|ulazom|ulicom|uredom|vlakom|žlicom|autom|bakom|bocom|čajem|čašom|danom|eurom|jajem|jelom|jogom|juhom|katom|kavom|kćeri|kinom|kišom|kućom|ledom|letom|mamom|mesom|morem|mužem|nožem|pićem|pivom|polom|putom|ribom|rižom|satom|sinom|sirom|sobom|sokom|tatom|trgom|valom|vinom|voćem|vodom|vrtom|ženom|zimom|imom|noći|ocem|psom)$",
-            "suggestion": "Autobusom."
+            "suggestion": "Autobusom.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/autobusom.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Recepcionar",
               "text": "Autobus polazi u osam.",
-              "translation": "Autobus odjeżdża o ósmej."
+              "translation": "Autobus odjeżdża o ósmej.",
+              "audioSrc": "/audio/hr/a1/module-07/autobus-polazi-u-osam-m.mp3"
             }
           },
           {
@@ -368,14 +410,16 @@ export const LESSON: GeneratedLesson = {
               "Kada stiže autobus?"
             ],
             "pattern": "^kada (stiže|dolazi)( autobus)?$|^kada je dolazak$",
-            "suggestion": "Kada stiže autobus?"
+            "suggestion": "Kada stiže autobus?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/kada-stize-autobus.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Recepcionar",
               "text": "U deset. Sretan put!",
-              "translation": "O dziesiątej. Szczęśliwej podróży!"
+              "translation": "O dziesiątej. Szczęśliwej podróży!",
+              "audioSrc": "/audio/hr/a1/module-07/u-deset-sretan-put-m.mp3"
             }
           },
           {
@@ -385,7 +429,8 @@ export const LESSON: GeneratedLesson = {
               "Hvala, doviđenja!"
             ],
             "pattern": "^hvala( vam| lijepa)?( doviđenja)?$",
-            "suggestion": "Hvala, doviđenja!"
+            "suggestion": "Hvala, doviđenja!",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/hvala-dovidjenja.mp3"
           }
         ]
       },
@@ -428,7 +473,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Idemo autom na more. Imam rezervaciju za hotel. Odmor traje sedam dana."
+        "sample": "Idemo autom na more. Imam rezervaciju za hotel. Odmor traje sedam dana.",
+        "sampleAudioSrc": "/audio/hr/a1/module-07/idemo-autom-na-more-imam-rezervaciju-za-hotel-odmor-traje-se.mp3"
       },
       {
         "id": "summary",
@@ -438,19 +484,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Gdje je moj kofer?",
-            "source": "Gdzie jest moja walizka?"
+            "source": "Gdzie jest moja walizka?",
+            "audioSrc": "/audio/hr/a1/module-07/gdje-je-moj-kofer.mp3"
           },
           {
             "target": "Imam rezervaciju za hotel.",
-            "source": "Mam rezerwację hotelu."
+            "source": "Mam rezerwację hotelu.",
+            "audioSrc": "/audio/hr/a1/module-07/imam-rezervaciju-za-hotel.mp3"
           },
           {
             "target": "Kada stiže autobus?",
-            "source": "Kiedy przyjeżdża autobus?"
+            "source": "Kiedy przyjeżdża autobus?",
+            "audioSrc": "/audio/hr/a1/module-07/kada-stize-autobus.mp3"
           },
           {
             "target": "Krećemo u osam.",
-            "source": "Wyruszamy o ósmej."
+            "source": "Wyruszamy o ósmej.",
+            "audioSrc": "/audio/hr/a1/module-07/krecemo-u-osam.mp3"
           }
         ],
         "canDo": [

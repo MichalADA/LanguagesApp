@@ -12,112 +12,128 @@ export const LESSON: GeneratedLesson = {
         "source": "spotkać się",
         "lemma": "sastati se",
         "partOfSpeech": "verb",
-        "recordId": "A1-0506"
+        "recordId": "A1-0506",
+        "audioSrc": "/audio/hr/a1/module-06/sastati-se.mp3"
       },
       {
         "target": "kava",
         "source": "kawa",
         "lemma": "kava",
         "partOfSpeech": "noun",
-        "recordId": "A1-0507"
+        "recordId": "A1-0507",
+        "audioSrc": "/audio/hr/a1/module-04/kava.mp3"
       },
       {
         "target": "večeras",
         "source": "dziś wieczorem",
         "lemma": "večeras",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0508"
+        "recordId": "A1-0508",
+        "audioSrc": "/audio/hr/a1/module-06/veceras.mp3"
       },
       {
         "target": "sutra",
         "source": "jutro",
         "lemma": "sutra",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0509"
+        "recordId": "A1-0509",
+        "audioSrc": "/audio/hr/a1/module-03/sutra.mp3"
       },
       {
         "target": "može",
         "source": "może być / OK",
         "lemma": "može",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0510"
+        "recordId": "A1-0510",
+        "audioSrc": "/audio/hr/a1/module-03/moze.mp3"
       },
       {
         "target": "ne mogu",
         "source": "nie mogę",
         "lemma": "ne mogu",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0511"
+        "recordId": "A1-0511",
+        "audioSrc": "/audio/hr/a1/module-06/ne-mogu.mp3"
       },
       {
         "target": "u šest",
         "source": "o szóstej",
         "lemma": "u šest",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0512"
+        "recordId": "A1-0512",
+        "audioSrc": "/audio/hr/a1/module-06/u-sest.mp3"
       },
       {
         "target": "vidimo se",
         "source": "do zobaczenia",
         "lemma": "vidimo se",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0513"
+        "recordId": "A1-0513",
+        "audioSrc": "/audio/hr/a1/module-06/vidimo-se.mp3"
       },
       {
         "target": "nažalost",
         "source": "niestety",
         "lemma": "nažalost",
         "partOfSpeech": "adverb",
-        "recordId": "A1-1018"
+        "recordId": "A1-1018",
+        "audioSrc": "/audio/hr/a1/module-06/nazalost.mp3"
       },
       {
         "target": "možda",
         "source": "może / być może",
         "lemma": "možda",
         "partOfSpeech": "adverb",
-        "recordId": "A1-1019"
+        "recordId": "A1-1019",
+        "audioSrc": "/audio/hr/a1/module-06/mozda.mp3"
       },
       {
         "target": "naći se",
         "source": "spotkać się (umówić)",
         "lemma": "naći se",
         "partOfSpeech": "verb",
-        "recordId": "A1-1020"
+        "recordId": "A1-1020",
+        "audioSrc": "/audio/hr/a1/module-06/naci-se.mp3"
       },
       {
         "target": "na piće",
         "source": "na drinka",
         "lemma": "piće",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1021"
+        "recordId": "A1-1021",
+        "audioSrc": "/audio/hr/a1/module-06/na-pice.mp3"
       },
       {
         "target": "U koliko sati?",
         "source": "O której godzinie?",
         "lemma": "sat",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1022"
+        "recordId": "A1-1022",
+        "audioSrc": "/audio/hr/a1/module-06/u-koliko-sati.mp3"
       },
       {
         "target": "Dogovoreno!",
         "source": "Umówione! / Zgoda!",
         "lemma": "dogovoriti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1023"
+        "recordId": "A1-1023",
+        "audioSrc": "/audio/hr/a1/module-06/dogovoreno.mp3"
       },
       {
         "target": "poruka",
         "source": "wiadomość",
         "lemma": "poruka",
         "partOfSpeech": "noun",
-        "recordId": "A1-1024"
+        "recordId": "A1-1024",
+        "audioSrc": "/audio/hr/a1/module-06/poruka.mp3"
       },
       {
         "target": "Javi se!",
         "source": "Odezwij się!",
         "lemma": "javiti se",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1025"
+        "recordId": "A1-1025",
+        "audioSrc": "/audio/hr/a1/module-06/javi-se.mp3"
       }
     ],
     "steps": [
@@ -131,15 +147,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Hoćemo li na kavu?",
-            "source": "Idziemy na kawę?"
+            "source": "Idziemy na kawę?",
+            "audioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
           },
           {
             "target": "Može, kada?",
-            "source": "Może być, kiedy?"
+            "source": "Może być, kiedy?",
+            "audioSrc": "/audio/hr/a1/module-06/moze-kada.mp3"
           },
           {
             "target": "Može u šest.",
-            "source": "Może być o szóstej."
+            "source": "Może być o szóstej.",
+            "audioSrc": "/audio/hr/a1/module-06/moze-u-sest.mp3"
           }
         ]
       },
@@ -149,7 +168,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "sastati se",
         "source": "spotkać się",
-        "partOfSpeech": "czasownik"
+        "partOfSpeech": "czasownik",
+        "audioSrc": "/audio/hr/a1/module-06/sastati-se.mp3"
       },
       {
         "id": "word-2",
@@ -160,8 +180,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Hoćemo li na kavu?",
-          "source": "Idziemy na kawę?"
-        }
+          "source": "Idziemy na kawę?",
+          "audioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/kava.mp3"
       },
       {
         "id": "word-3",
@@ -172,8 +194,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Nažalost, večeras ne mogu.",
-          "source": "Niestety, dziś wieczorem nie mogę."
-        }
+          "source": "Niestety, dziś wieczorem nie mogę.",
+          "audioSrc": "/audio/hr/a1/module-06/nazalost-veceras-ne-mogu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/veceras.mp3"
       },
       {
         "id": "check-1",
@@ -187,7 +211,8 @@ export const LESSON: GeneratedLesson = {
           "dziś wieczorem"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/veceras.mp3"
       },
       {
         "id": "word-4",
@@ -198,8 +223,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Može sutra?",
-          "source": "Może jutro?"
-        }
+          "source": "Może jutro?",
+          "audioSrc": "/audio/hr/a1/module-06/moze-sutra.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/sutra.mp3"
       },
       {
         "id": "word-5",
@@ -210,8 +237,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Može, kada?",
-          "source": "Może być, kiedy?"
-        }
+          "source": "Może być, kiedy?",
+          "audioSrc": "/audio/hr/a1/module-06/moze-kada.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/moze.mp3"
       },
       {
         "id": "word-6",
@@ -222,8 +251,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Danas ne mogu.",
-          "source": "Dziś nie mogę."
-        }
+          "source": "Dziś nie mogę.",
+          "audioSrc": "/audio/hr/a1/module-06/danas-ne-mogu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/ne-mogu.mp3"
       },
       {
         "id": "check-2",
@@ -237,7 +268,8 @@ export const LESSON: GeneratedLesson = {
           "večeras"
         ],
         "correctIndex": 0,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-03/sutra.mp3"
       },
       {
         "id": "word-7",
@@ -248,8 +280,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Može u šest.",
-          "source": "Może być o szóstej."
-        }
+          "source": "Może być o szóstej.",
+          "audioSrc": "/audio/hr/a1/module-06/moze-u-sest.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/u-sest.mp3"
       },
       {
         "id": "word-8",
@@ -260,8 +294,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Vidimo se sutra!",
-          "source": "Do zobaczenia jutro!"
-        }
+          "source": "Do zobaczenia jutro!",
+          "audioSrc": "/audio/hr/a1/module-06/vidimo-se-sutra.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/vidimo-se.mp3"
       },
       {
         "id": "check-3",
@@ -275,7 +311,8 @@ export const LESSON: GeneratedLesson = {
           "o szóstej"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/vidimo-se.mp3"
       },
       {
         "id": "more-words",
@@ -287,42 +324,50 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "nažalost",
             "source": "niestety",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-06/nazalost.mp3"
           },
           {
             "target": "možda",
             "source": "może / być może",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-06/mozda.mp3"
           },
           {
             "target": "naći se",
             "source": "spotkać się (umówić)",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/naci-se.mp3"
           },
           {
             "target": "na piće",
             "source": "na drinka",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-06/na-pice.mp3"
           },
           {
             "target": "U koliko sati?",
             "source": "O której godzinie?",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-06/u-koliko-sati.mp3"
           },
           {
             "target": "Dogovoreno!",
             "source": "Umówione! / Zgoda!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-06/dogovoreno.mp3"
           },
           {
             "target": "poruka",
             "source": "wiadomość",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/poruka.mp3"
           },
           {
             "target": "Javi se!",
             "source": "Odezwij się!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-06/javi-se.mp3"
           }
         ]
       },
@@ -338,7 +383,8 @@ export const LESSON: GeneratedLesson = {
           "Umówione! / Zgoda!"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/dogovoreno.mp3"
       },
       {
         "id": "examples",
@@ -349,19 +395,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Nažalost, večeras ne mogu.",
-            "source": "Niestety, dziś wieczorem nie mogę."
+            "source": "Niestety, dziś wieczorem nie mogę.",
+            "audioSrc": "/audio/hr/a1/module-06/nazalost-veceras-ne-mogu.mp3"
           },
           {
             "target": "Gdje se nalazimo?",
-            "source": "Gdzie się spotykamy?"
+            "source": "Gdzie się spotykamy?",
+            "audioSrc": "/audio/hr/a1/module-06/gdje-se-nalazimo.mp3"
           },
           {
             "target": "Nalazimo se ispred kina u sedam.",
-            "source": "Spotykamy się przed kinem o siódmej."
+            "source": "Spotykamy się przed kinem o siódmej.",
+            "audioSrc": "/audio/hr/a1/module-06/nalazimo-se-ispred-kina-u-sedam.mp3"
           },
           {
             "target": "Dogovoreno! Vidimo se.",
-            "source": "Umówione! Do zobaczenia."
+            "source": "Umówione! Do zobaczenia.",
+            "audioSrc": "/audio/hr/a1/module-06/dogovoreno-vidimo-se.mp3"
           }
         ]
       },
@@ -374,15 +424,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Hoćemo li na kavu?",
-            "source": "Idziemy na kawę?"
+            "source": "Idziemy na kawę?",
+            "audioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
           },
           {
             "target": "Može u šest.",
-            "source": "Może być o szóstej."
+            "source": "Może być o szóstej.",
+            "audioSrc": "/audio/hr/a1/module-06/moze-u-sest.mp3"
           },
           {
             "target": "Danas ne mogu.",
-            "source": "Dziś nie mogę."
+            "source": "Dziś nie mogę.",
+            "audioSrc": "/audio/hr/a1/module-06/danas-ne-mogu.mp3"
           }
         ]
       },
@@ -396,7 +449,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "mogu"
         ],
-        "translation": "Dziś nie mogę."
+        "translation": "Dziś nie mogę.",
+        "answerAudioSrc": "/audio/hr/a1/module-06/danas-ne-mogu.mp3"
       },
       {
         "id": "comprehend",
@@ -410,7 +464,8 @@ export const LESSON: GeneratedLesson = {
           "Może jutro?"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/moze-sutra.mp3"
       },
       {
         "id": "translate-1",
@@ -420,7 +475,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Idziemy na kawę?",
         "accepted": [
           "Hoćemo li na kavu?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
       },
       {
         "id": "order",
@@ -435,7 +491,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Može u šest."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/moze-u-sest.mp3"
       },
       {
         "id": "translate-2",
@@ -445,7 +502,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Do zobaczenia jutro!",
         "accepted": [
           "Vidimo se sutra!"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/vidimo-se-sutra.mp3"
       },
       {
         "id": "model",
@@ -456,37 +514,44 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Bok, Marko! Hoćemo li sutra na piće?",
-            "translation": "Cześć, Marko! Idziemy jutro na drinka?"
+            "translation": "Cześć, Marko! Idziemy jutro na drinka?",
+            "audioSrc": "/audio/hr/a1/module-06/bok-marko-hocemo-li-sutra-na-pice.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Može! U koliko sati?",
-            "translation": "Może być! O której?"
+            "translation": "Może być! O której?",
+            "audioSrc": "/audio/hr/a1/module-06/moze-u-koliko-sati-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "U osam?",
-            "translation": "O ósmej?"
+            "translation": "O ósmej?",
+            "audioSrc": "/audio/hr/a1/module-06/u-osam.mp3"
           },
           {
             "speaker": "Marko",
             "text": "U osam ne mogu. Možda u devet?",
-            "translation": "O ósmej nie mogę. Może o dziewiątej?"
+            "translation": "O ósmej nie mogę. Może o dziewiątej?",
+            "audioSrc": "/audio/hr/a1/module-06/u-osam-ne-mogu-mozda-u-devet-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Dobro. Gdje se nalazimo?",
-            "translation": "Dobrze. Gdzie się spotykamy?"
+            "translation": "Dobrze. Gdzie się spotykamy?",
+            "audioSrc": "/audio/hr/a1/module-06/dobro-gdje-se-nalazimo.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ispred kafića na trgu. Dogovoreno?",
-            "translation": "Przed kawiarnią na placu. Umówione?"
+            "translation": "Przed kawiarnią na placu. Umówione?",
+            "audioSrc": "/audio/hr/a1/module-06/ispred-kafica-na-trgu-dogovoreno-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Dogovoreno! Vidimo se sutra.",
-            "translation": "Umówione! Do zobaczenia jutro."
+            "translation": "Umówione! Do zobaczenia jutro.",
+            "audioSrc": "/audio/hr/a1/module-06/dogovoreno-vidimo-se-sutra.mp3"
           }
         ]
       },
@@ -501,7 +566,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Hoćemo li na kavu?",
-              "translation": "Idziemy na kawę?"
+              "translation": "Idziemy na kawę?",
+              "audioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu-m.mp3"
             }
           },
           {
@@ -511,14 +577,16 @@ export const LESSON: GeneratedLesson = {
               "Može, kada?"
             ],
             "pattern": "^(može|dogovoreno|rado)( kada| u koliko sati)$",
-            "suggestion": "Može, kada?"
+            "suggestion": "Može, kada?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/moze-kada.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Večeras u šest?",
-              "translation": "Dziś wieczorem o szóstej?"
+              "translation": "Dziś wieczorem o szóstej?",
+              "audioSrc": "/audio/hr/a1/module-06/veceras-u-sest-m.mp3"
             }
           },
           {
@@ -529,14 +597,16 @@ export const LESSON: GeneratedLesson = {
               "Večeras ne mogu. Može sutra?"
             ],
             "pattern": "^(nažalost )?(danas|večeras) ne mogu (može sutra|sutra može)$",
-            "suggestion": "Danas ne mogu. Može sutra?"
+            "suggestion": "Danas ne mogu. Može sutra?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/danas-ne-mogu-moze-sutra.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Može! Vidimo se sutra.",
-              "translation": "OK! Do zobaczenia jutro."
+              "translation": "OK! Do zobaczenia jutro.",
+              "audioSrc": "/audio/hr/a1/module-06/moze-vidimo-se-sutra-m.mp3"
             }
           },
           {
@@ -547,7 +617,8 @@ export const LESSON: GeneratedLesson = {
               "Vidimo se!"
             ],
             "pattern": "^(vidimo se|bok|doviđenja)( sutra)?$",
-            "suggestion": "Vidimo se sutra!"
+            "suggestion": "Vidimo se sutra!",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/vidimo-se-sutra.mp3"
           }
         ]
       },
@@ -577,7 +648,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Hoćemo li na kavu? Može sutra u šest."
+        "sample": "Hoćemo li na kavu? Može sutra u šest.",
+        "sampleAudioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu-moze-sutra-u-sest.mp3"
       },
       {
         "id": "summary",
@@ -587,19 +659,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Hoćemo li na kavu?",
-            "source": "Idziemy na kawę?"
+            "source": "Idziemy na kawę?",
+            "audioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
           },
           {
             "target": "Može, kada?",
-            "source": "Może być, kiedy?"
+            "source": "Może być, kiedy?",
+            "audioSrc": "/audio/hr/a1/module-06/moze-kada.mp3"
           },
           {
             "target": "Može u šest.",
-            "source": "Może być o szóstej."
+            "source": "Może być o szóstej.",
+            "audioSrc": "/audio/hr/a1/module-06/moze-u-sest.mp3"
           },
           {
             "target": "Danas ne mogu.",
-            "source": "Dziś nie mogę."
+            "source": "Dziś nie mogę.",
+            "audioSrc": "/audio/hr/a1/module-06/danas-ne-mogu.mp3"
           }
         ]
       }

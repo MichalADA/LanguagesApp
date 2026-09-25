@@ -12,140 +12,160 @@ export const LESSON: GeneratedLesson = {
         "source": "rodzina",
         "lemma": "obitelj",
         "partOfSpeech": "noun",
-        "recordId": "A1-0092"
+        "recordId": "A1-0092",
+        "audioSrc": "/audio/hr/a1/module-02/obitelj.mp3"
       },
       {
         "target": "majka",
         "source": "matka",
         "lemma": "majka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0093"
+        "recordId": "A1-0093",
+        "audioSrc": "/audio/hr/a1/module-02/majka.mp3"
       },
       {
         "target": "otac",
         "source": "ojciec",
         "lemma": "otac",
         "partOfSpeech": "noun",
-        "recordId": "A1-0094"
+        "recordId": "A1-0094",
+        "audioSrc": "/audio/hr/a1/module-02/otac.mp3"
       },
       {
         "target": "sestra",
         "source": "siostra",
         "lemma": "sestra",
         "partOfSpeech": "noun",
-        "recordId": "A1-0095"
+        "recordId": "A1-0095",
+        "audioSrc": "/audio/hr/a1/module-02/sestra.mp3"
       },
       {
         "target": "brat",
         "source": "brat",
         "lemma": "brat",
         "partOfSpeech": "noun",
-        "recordId": "A1-0096"
+        "recordId": "A1-0096",
+        "audioSrc": "/audio/hr/a1/module-02/brat.mp3"
       },
       {
         "target": "baka",
         "source": "babcia",
         "lemma": "baka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0097"
+        "recordId": "A1-0097",
+        "audioSrc": "/audio/hr/a1/module-02/baka.mp3"
       },
       {
         "target": "djed",
         "source": "dziadek",
         "lemma": "djed",
         "partOfSpeech": "noun",
-        "recordId": "A1-0098"
+        "recordId": "A1-0098",
+        "audioSrc": "/audio/hr/a1/module-02/djed.mp3"
       },
       {
         "target": "moj",
         "source": "mój",
         "lemma": "moj",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0099"
+        "recordId": "A1-0099",
+        "audioSrc": "/audio/hr/a1/module-02/moj.mp3"
       },
       {
         "target": "mama",
         "source": "mama",
         "lemma": "mama",
         "partOfSpeech": "noun",
-        "recordId": "A1-0721"
+        "recordId": "A1-0721",
+        "audioSrc": "/audio/hr/a1/module-02/mama.mp3"
       },
       {
         "target": "tata",
         "source": "tata",
         "lemma": "tata",
         "partOfSpeech": "noun",
-        "recordId": "A1-0722"
+        "recordId": "A1-0722",
+        "audioSrc": "/audio/hr/a1/module-02/tata.mp3"
       },
       {
         "target": "roditelji",
         "source": "rodzice",
         "lemma": "roditelj",
         "partOfSpeech": "noun",
-        "recordId": "A1-0723"
+        "recordId": "A1-0723",
+        "audioSrc": "/audio/hr/a1/module-02/roditelji.mp3"
       },
       {
         "target": "sin",
         "source": "syn",
         "lemma": "sin",
         "partOfSpeech": "noun",
-        "recordId": "A1-0724"
+        "recordId": "A1-0724",
+        "audioSrc": "/audio/hr/a1/module-02/sin.mp3"
       },
       {
         "target": "kći",
         "source": "córka",
         "lemma": "kći",
         "partOfSpeech": "noun",
-        "recordId": "A1-0725"
+        "recordId": "A1-0725",
+        "audioSrc": "/audio/hr/a1/module-02/kci.mp3"
       },
       {
         "target": "dijete",
         "source": "dziecko",
         "lemma": "dijete",
         "partOfSpeech": "noun",
-        "recordId": "A1-0726"
+        "recordId": "A1-0726",
+        "audioSrc": "/audio/hr/a1/module-02/dijete.mp3"
       },
       {
         "target": "djeca",
         "source": "dzieci",
         "lemma": "dijete",
         "partOfSpeech": "noun",
-        "recordId": "A1-0727"
+        "recordId": "A1-0727",
+        "audioSrc": "/audio/hr/a1/module-02/djeca.mp3"
       },
       {
         "target": "muž",
         "source": "mąż",
         "lemma": "muž",
         "partOfSpeech": "noun",
-        "recordId": "A1-0728"
+        "recordId": "A1-0728",
+        "audioSrc": "/audio/hr/a1/module-02/muz.mp3"
       },
       {
         "target": "žena",
         "source": "żona / kobieta",
         "lemma": "žena",
         "partOfSpeech": "noun",
-        "recordId": "A1-0729"
+        "recordId": "A1-0729",
+        "audioSrc": "/audio/hr/a1/module-02/zena.mp3"
       },
       {
         "target": "tvoj",
         "source": "twój",
         "lemma": "tvoj",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0730"
+        "recordId": "A1-0730",
+        "audioSrc": "/audio/hr/a1/module-02/tvoj.mp3"
       },
       {
         "target": "stariji",
         "source": "starszy",
         "lemma": "star",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0731"
+        "recordId": "A1-0731",
+        "audioSrc": "/audio/hr/a1/module-02/stariji.mp3"
       },
       {
         "target": "mlađi",
         "source": "młodszy",
         "lemma": "mlad",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0732"
+        "recordId": "A1-0732",
+        "audioSrc": "/audio/hr/a1/module-02/mladji.mp3"
       }
     ],
     "steps": [
@@ -159,15 +179,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Ovo je moja obitelj.",
-            "source": "To jest moja rodzina."
+            "source": "To jest moja rodzina.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-obitelj.mp3"
           },
           {
             "target": "Ovo je moja sestra.",
-            "source": "To jest moja siostra."
+            "source": "To jest moja siostra.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-sestra.mp3"
           },
           {
             "target": "Moj brat živi u Zagrebu.",
-            "source": "Mój brat mieszka w Zagrzebiu."
+            "source": "Mój brat mieszka w Zagrzebiu.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-brat-zivi-u-zagrebu.mp3"
           }
         ]
       },
@@ -180,8 +203,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ovo je moja obitelj.",
-          "source": "To jest moja rodzina."
-        }
+          "source": "To jest moja rodzina.",
+          "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-obitelj.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/obitelj.mp3"
       },
       {
         "id": "word-2",
@@ -192,8 +217,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Moja majka radi.",
-          "source": "Moja matka pracuje."
-        }
+          "source": "Moja matka pracuje.",
+          "audioSrc": "/audio/hr/a1/module-02/moja-majka-radi.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/majka.mp3"
       },
       {
         "id": "word-3",
@@ -204,8 +231,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Moj otac je kod kuće.",
-          "source": "Mój ojciec jest w domu."
-        }
+          "source": "Mój ojciec jest w domu.",
+          "audioSrc": "/audio/hr/a1/module-02/moj-otac-je-kod-kuce.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/otac.mp3"
       },
       {
         "id": "check-1",
@@ -219,7 +248,8 @@ export const LESSON: GeneratedLesson = {
           "brat"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/obitelj.mp3"
       },
       {
         "id": "word-4",
@@ -230,8 +260,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ovo je moja sestra.",
-          "source": "To jest moja siostra."
-        }
+          "source": "To jest moja siostra.",
+          "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-sestra.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/sestra.mp3"
       },
       {
         "id": "word-5",
@@ -242,8 +274,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Moj brat živi u Zagrebu.",
-          "source": "Mój brat mieszka w Zagrzebiu."
-        }
+          "source": "Mój brat mieszka w Zagrzebiu.",
+          "audioSrc": "/audio/hr/a1/module-02/moj-brat-zivi-u-zagrebu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/brat.mp3"
       },
       {
         "id": "word-6",
@@ -251,7 +285,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "baka",
         "source": "babcia",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-02/baka.mp3"
       },
       {
         "id": "check-2",
@@ -265,7 +300,8 @@ export const LESSON: GeneratedLesson = {
           "moj"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-02/brat.mp3"
       },
       {
         "id": "word-7",
@@ -273,7 +309,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "djed",
         "source": "dziadek",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-02/djed.mp3"
       },
       {
         "id": "word-8",
@@ -284,8 +321,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zaimek",
         "example": {
           "target": "Moj brat živi u Zagrebu.",
-          "source": "Mój brat mieszka w Zagrzebiu."
-        }
+          "source": "Mój brat mieszka w Zagrzebiu.",
+          "audioSrc": "/audio/hr/a1/module-02/moj-brat-zivi-u-zagrebu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/moj.mp3"
       },
       {
         "id": "check-3",
@@ -299,7 +338,8 @@ export const LESSON: GeneratedLesson = {
           "dziadek"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/djed.mp3"
       },
       {
         "id": "more-words",
@@ -311,62 +351,74 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "mama",
             "source": "mama",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/mama.mp3"
           },
           {
             "target": "tata",
             "source": "tata",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/tata.mp3"
           },
           {
             "target": "roditelji",
             "source": "rodzice",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/roditelji.mp3"
           },
           {
             "target": "sin",
             "source": "syn",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/sin.mp3"
           },
           {
             "target": "kći",
             "source": "córka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/kci.mp3"
           },
           {
             "target": "dijete",
             "source": "dziecko",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/dijete.mp3"
           },
           {
             "target": "djeca",
             "source": "dzieci",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/djeca.mp3"
           },
           {
             "target": "muž",
             "source": "mąż",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/muz.mp3"
           },
           {
             "target": "žena",
             "source": "żona / kobieta",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/zena.mp3"
           },
           {
             "target": "tvoj",
             "source": "twój",
-            "partOfSpeech": "zaimek"
+            "partOfSpeech": "zaimek",
+            "audioSrc": "/audio/hr/a1/module-02/tvoj.mp3"
           },
           {
             "target": "stariji",
             "source": "starszy",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/stariji.mp3"
           },
           {
             "target": "mlađi",
             "source": "młodszy",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/mladji.mp3"
           }
         ]
       },
@@ -382,7 +434,8 @@ export const LESSON: GeneratedLesson = {
           "tata"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/djeca.mp3"
       },
       {
         "id": "examples",
@@ -393,19 +446,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Ovo je moj tata, a ovo je moja mama.",
-            "source": "To jest mój tata, a to moja mama."
+            "source": "To jest mój tata, a to moja mama.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moj-tata-a-ovo-je-moja-mama.mp3"
           },
           {
             "target": "Imam starijeg brata i mlađu sestru.",
-            "source": "Mam starszego brata i młodszą siostrę."
+            "source": "Mam starszego brata i młodszą siostrę.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-starijeg-brata-i-mladju-sestru.mp3"
           },
           {
             "target": "Moji roditelji žive u Splitu.",
-            "source": "Moi rodzice mieszkają w Splicie."
+            "source": "Moi rodzice mieszkają w Splicie.",
+            "audioSrc": "/audio/hr/a1/module-02/moji-roditelji-zive-u-splitu.mp3"
           },
           {
             "target": "Imam sina i kćer.",
-            "source": "Mam syna i córkę."
+            "source": "Mam syna i córkę.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-sina-i-kcer.mp3"
           }
         ]
       },
@@ -418,15 +475,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Ovo je moja obitelj.",
-            "source": "To jest moja rodzina."
+            "source": "To jest moja rodzina.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-obitelj.mp3"
           },
           {
             "target": "Moj brat živi u Zagrebu.",
-            "source": "Mój brat mieszka w Zagrzebiu."
+            "source": "Mój brat mieszka w Zagrzebiu.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-brat-zivi-u-zagrebu.mp3"
           },
           {
             "target": "Moja majka radi.",
-            "source": "Moja matka pracuje."
+            "source": "Moja matka pracuje.",
+            "audioSrc": "/audio/hr/a1/module-02/moja-majka-radi.mp3"
           }
         ],
         "note": "Obitelj kończy się spółgłoską, ale jest rodzaju żeńskiego — dlatego moja obitelj."
@@ -441,7 +501,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "moja"
         ],
-        "translation": "To jest moja siostra."
+        "translation": "To jest moja siostra.",
+        "answerAudioSrc": "/audio/hr/a1/module-02/ovo-je-moja-sestra.mp3"
       },
       {
         "id": "translate-1",
@@ -451,7 +512,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Mój brat mieszka w Zagrzebiu.",
         "accepted": [
           "Moj brat živi u Zagrebu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/moj-brat-zivi-u-zagrebu.mp3"
       },
       {
         "id": "order",
@@ -467,7 +529,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Ovo je moja obitelj."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/ovo-je-moja-obitelj.mp3"
       },
       {
         "id": "comprehend",
@@ -481,7 +544,8 @@ export const LESSON: GeneratedLesson = {
           "To jest moja siostra."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/moj-otac-je-kod-kuce.mp3"
       },
       {
         "id": "model",
@@ -492,32 +556,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Tko je ovo?",
-            "translation": "Kto to jest?"
+            "translation": "Kto to jest?",
+            "audioSrc": "/audio/hr/a1/module-02/tko-je-ovo-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ovo je moja obitelj. Ovo su moji roditelji.",
-            "translation": "To moja rodzina. To są moi rodzice."
+            "translation": "To moja rodzina. To są moi rodzice.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-obitelj-ovo-su-moji-roditelji.mp3"
           },
           {
             "speaker": "Marko",
             "text": "A tko je ovo?",
-            "translation": "A kto to jest?"
+            "translation": "A kto to jest?",
+            "audioSrc": "/audio/hr/a1/module-02/a-tko-je-ovo-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "To je moj mlađi brat. Zove se Ivan.",
-            "translation": "To mój młodszy brat. Ma na imię Ivan."
+            "translation": "To mój młodszy brat. Ma na imię Ivan.",
+            "audioSrc": "/audio/hr/a1/module-02/to-je-moj-mladji-brat-zove-se-ivan.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Imaš li sestru?",
-            "translation": "Masz siostrę?"
+            "translation": "Masz siostrę?",
+            "audioSrc": "/audio/hr/a1/module-02/imas-li-sestru-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Da, imam stariju sestru. Ona živi u Zagrebu.",
-            "translation": "Tak, mam starszą siostrę. Ona mieszka w Zagrzebiu."
+            "translation": "Tak, mam starszą siostrę. Ona mieszka w Zagrzebiu.",
+            "audioSrc": "/audio/hr/a1/module-02/da-imam-stariju-sestru-ona-zivi-u-zagrebu.mp3"
           }
         ]
       },
@@ -532,7 +602,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Tko je to?",
-              "translation": "Kto to jest?"
+              "translation": "Kto to jest?",
+              "audioSrc": "/audio/hr/a1/module-02/tko-je-to-m.mp3"
             }
           },
           {
@@ -542,14 +613,16 @@ export const LESSON: GeneratedLesson = {
               "Ovo je moja sestra."
             ],
             "pattern": "^(ovo je |to je )?moja sestra( \\p{L}+)?$",
-            "suggestion": "Ovo je moja sestra."
+            "suggestion": "Ovo je moja sestra.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/ovo-je-moja-sestra.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "A tko je to?",
-              "translation": "A kto to jest?"
+              "translation": "A kto to jest?",
+              "audioSrc": "/audio/hr/a1/module-02/a-tko-je-to-m.mp3"
             }
           },
           {
@@ -559,7 +632,8 @@ export const LESSON: GeneratedLesson = {
               "Ovo je moj otac."
             ],
             "pattern": "^(ovo je |to je )?moj otac$",
-            "suggestion": "Ovo je moj otac."
+            "suggestion": "Ovo je moj otac.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/ovo-je-moj-otac.mp3"
           }
         ]
       },
@@ -588,7 +662,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Ovo je moja obitelj. Imam jednu sestru."
+        "sample": "Ovo je moja obitelj. Imam jednu sestru.",
+        "sampleAudioSrc": "/audio/hr/a1/module-02/ovo-je-moja-obitelj-imam-jednu-sestru.mp3"
       },
       {
         "id": "summary",
@@ -598,19 +673,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Ovo je moja obitelj.",
-            "source": "To jest moja rodzina."
+            "source": "To jest moja rodzina.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-obitelj.mp3"
           },
           {
             "target": "Ovo je moja sestra.",
-            "source": "To jest moja siostra."
+            "source": "To jest moja siostra.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-sestra.mp3"
           },
           {
             "target": "Moj brat živi u Zagrebu.",
-            "source": "Mój brat mieszka w Zagrzebiu."
+            "source": "Mój brat mieszka w Zagrzebiu.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-brat-zivi-u-zagrebu.mp3"
           },
           {
             "target": "Moja majka radi.",
-            "source": "Moja matka pracuje."
+            "source": "Moja matka pracuje.",
+            "audioSrc": "/audio/hr/a1/module-02/moja-majka-radi.mp3"
           }
         ]
       }

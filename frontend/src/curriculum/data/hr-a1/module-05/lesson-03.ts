@@ -12,119 +12,136 @@ export const LESSON: GeneratedLesson = {
         "source": "prosto",
         "lemma": "ravno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0398"
+        "recordId": "A1-0398",
+        "audioSrc": "/audio/hr/a1/module-05/ravno.mp3"
       },
       {
         "target": "lijevo",
         "source": "w lewo",
         "lemma": "lijevo",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0399"
+        "recordId": "A1-0399",
+        "audioSrc": "/audio/hr/a1/module-05/lijevo.mp3"
       },
       {
         "target": "desno",
         "source": "w prawo",
         "lemma": "desno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0400"
+        "recordId": "A1-0400",
+        "audioSrc": "/audio/hr/a1/module-05/desno.mp3"
       },
       {
         "target": "skrenuti",
         "source": "skręcić",
         "lemma": "skrenuti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0401"
+        "recordId": "A1-0401",
+        "audioSrc": "/audio/hr/a1/module-05/skrenuti.mp3"
       },
       {
         "target": "prijeći",
         "source": "przejść",
         "lemma": "prijeći",
         "partOfSpeech": "verb",
-        "recordId": "A1-0402"
+        "recordId": "A1-0402",
+        "audioSrc": "/audio/hr/a1/module-05/prijeci.mp3"
       },
       {
         "target": "semafor",
         "source": "sygnalizacja świetlna",
         "lemma": "semafor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0403"
+        "recordId": "A1-0403",
+        "audioSrc": "/audio/hr/a1/module-05/semafor.mp3"
       },
       {
         "target": "raskrižje",
         "source": "skrzyżowanie",
         "lemma": "raskrižje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0404"
+        "recordId": "A1-0404",
+        "audioSrc": "/audio/hr/a1/module-05/raskrizje.mp3"
       },
       {
         "target": "ulaz",
         "source": "wejście",
         "lemma": "ulaz",
         "partOfSpeech": "noun",
-        "recordId": "A1-0405"
+        "recordId": "A1-0405",
+        "audioSrc": "/audio/hr/a1/module-05/ulaz.mp3"
       },
       {
         "target": "Oprostite.",
         "source": "Przepraszam. (grzecznie, do obcej osoby)",
         "lemma": "oprostiti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0942"
+        "recordId": "A1-0942",
+        "audioSrc": "/audio/hr/a1/module-05/oprostite.mp3"
       },
       {
         "target": "prvi",
         "source": "pierwszy",
         "lemma": "prvi",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0943"
+        "recordId": "A1-0943",
+        "audioSrc": "/audio/hr/a1/module-05/prvi.mp3"
       },
       {
         "target": "drugi",
         "source": "drugi",
         "lemma": "drugi",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0944"
+        "recordId": "A1-0944",
+        "audioSrc": "/audio/hr/a1/module-05/drugi.mp3"
       },
       {
         "target": "treći",
         "source": "trzeci",
         "lemma": "treći",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0945"
+        "recordId": "A1-0945",
+        "audioSrc": "/audio/hr/a1/module-05/treci.mp3"
       },
       {
         "target": "pa",
         "source": "a potem",
         "lemma": "pa",
         "partOfSpeech": "conjunction",
-        "recordId": "A1-0946"
+        "recordId": "A1-0946",
+        "audioSrc": "/audio/hr/a1/module-05/pa.mp3"
       },
       {
         "target": "dalje",
         "source": "dalej",
         "lemma": "dalje",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0947"
+        "recordId": "A1-0947",
+        "audioSrc": "/audio/hr/a1/module-05/dalje.mp3"
       },
       {
         "target": "pješice",
         "source": "pieszo",
         "lemma": "pješice",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0948"
+        "recordId": "A1-0948",
+        "audioSrc": "/audio/hr/a1/module-05/pjesice.mp3"
       },
       {
         "target": "most",
         "source": "most",
         "lemma": "most",
         "partOfSpeech": "noun",
-        "recordId": "A1-0949"
+        "recordId": "A1-0949",
+        "audioSrc": "/audio/hr/a1/module-05/most.mp3"
       },
       {
         "target": "na kraju ulice",
         "source": "na końcu ulicy",
         "lemma": "kraj",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0950"
+        "recordId": "A1-0950",
+        "audioSrc": "/audio/hr/a1/module-05/na-kraju-ulice.mp3"
       }
     ],
     "steps": [
@@ -138,15 +155,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Idite ravno.",
-            "source": "Proszę iść prosto."
+            "source": "Proszę iść prosto.",
+            "audioSrc": "/audio/hr/a1/module-05/idite-ravno.mp3"
           },
           {
             "target": "Skrenite lijevo.",
-            "source": "Proszę skręcić w lewo."
+            "source": "Proszę skręcić w lewo.",
+            "audioSrc": "/audio/hr/a1/module-05/skrenite-lijevo.mp3"
           },
           {
             "target": "Skrenite desno na semaforu.",
-            "source": "Proszę skręcić w prawo na światłach."
+            "source": "Proszę skręcić w prawo na światłach.",
+            "audioSrc": "/audio/hr/a1/module-05/skrenite-desno-na-semaforu.mp3"
           }
         ]
       },
@@ -159,8 +179,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Idite ravno.",
-          "source": "Proszę iść prosto."
-        }
+          "source": "Proszę iść prosto.",
+          "audioSrc": "/audio/hr/a1/module-05/idite-ravno.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/ravno.mp3"
       },
       {
         "id": "word-2",
@@ -171,8 +193,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Skrenite lijevo.",
-          "source": "Proszę skręcić w lewo."
-        }
+          "source": "Proszę skręcić w lewo.",
+          "audioSrc": "/audio/hr/a1/module-05/skrenite-lijevo.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/lijevo.mp3"
       },
       {
         "id": "word-3",
@@ -183,8 +207,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Skrenite desno na semaforu.",
-          "source": "Proszę skręcić w prawo na światłach."
-        }
+          "source": "Proszę skręcić w prawo na światłach.",
+          "audioSrc": "/audio/hr/a1/module-05/skrenite-desno-na-semaforu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/desno.mp3"
       },
       {
         "id": "check-1",
@@ -198,7 +224,8 @@ export const LESSON: GeneratedLesson = {
           "w prawo"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/desno.mp3"
       },
       {
         "id": "word-4",
@@ -209,8 +236,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Skrenite lijevo.",
-          "source": "Proszę skręcić w lewo."
-        }
+          "source": "Proszę skręcić w lewo.",
+          "audioSrc": "/audio/hr/a1/module-05/skrenite-lijevo.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/skrenuti.mp3"
       },
       {
         "id": "word-5",
@@ -221,8 +250,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Prijeđite ulicu.",
-          "source": "Proszę przejść przez ulicę."
-        }
+          "source": "Proszę przejść przez ulicę.",
+          "audioSrc": "/audio/hr/a1/module-05/prijedjite-ulicu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/prijeci.mp3"
       },
       {
         "id": "word-6",
@@ -233,8 +264,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Skrenite desno na semaforu.",
-          "source": "Proszę skręcić w prawo na światłach."
-        }
+          "source": "Proszę skręcić w prawo na światłach.",
+          "audioSrc": "/audio/hr/a1/module-05/skrenite-desno-na-semaforu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/semafor.mp3"
       },
       {
         "id": "check-2",
@@ -248,7 +281,8 @@ export const LESSON: GeneratedLesson = {
           "lijevo"
         ],
         "correctIndex": 0,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-05/skrenuti.mp3"
       },
       {
         "id": "word-7",
@@ -256,7 +290,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "raskrižje",
         "source": "skrzyżowanie",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-05/raskrizje.mp3"
       },
       {
         "id": "word-8",
@@ -267,8 +302,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ulaz je lijevo.",
-          "source": "Wejście jest po lewej."
-        }
+          "source": "Wejście jest po lewej.",
+          "audioSrc": "/audio/hr/a1/module-05/ulaz-je-lijevo.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/ulaz.mp3"
       },
       {
         "id": "check-3",
@@ -282,7 +319,8 @@ export const LESSON: GeneratedLesson = {
           "przejść"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/ulaz.mp3"
       },
       {
         "id": "more-words",
@@ -294,47 +332,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "Oprostite.",
             "source": "Przepraszam. (grzecznie, do obcej osoby)",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/oprostite.mp3"
           },
           {
             "target": "prvi",
             "source": "pierwszy",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/prvi.mp3"
           },
           {
             "target": "drugi",
             "source": "drugi",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/drugi.mp3"
           },
           {
             "target": "treći",
             "source": "trzeci",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/treci.mp3"
           },
           {
             "target": "pa",
             "source": "a potem",
-            "partOfSpeech": "spójnik"
+            "partOfSpeech": "spójnik",
+            "audioSrc": "/audio/hr/a1/module-05/pa.mp3"
           },
           {
             "target": "dalje",
             "source": "dalej",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-05/dalje.mp3"
           },
           {
             "target": "pješice",
             "source": "pieszo",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-05/pjesice.mp3"
           },
           {
             "target": "most",
             "source": "most",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/most.mp3"
           },
           {
             "target": "na kraju ulice",
             "source": "na końcu ulicy",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/na-kraju-ulice.mp3"
           }
         ]
       },
@@ -350,7 +397,8 @@ export const LESSON: GeneratedLesson = {
           "dalej"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/dalje.mp3"
       },
       {
         "id": "examples",
@@ -361,19 +409,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Skrenite desno u drugu ulicu.",
-            "source": "Proszę skręcić w prawo w drugą ulicę."
+            "source": "Proszę skręcić w prawo w drugą ulicę.",
+            "audioSrc": "/audio/hr/a1/module-05/skrenite-desno-u-drugu-ulicu.mp3"
           },
           {
             "target": "Pošta je na kraju ulice.",
-            "source": "Poczta jest na końcu ulicy."
+            "source": "Poczta jest na końcu ulicy.",
+            "audioSrc": "/audio/hr/a1/module-05/posta-je-na-kraju-ulice.mp3"
           },
           {
             "target": "Idite ravno pa preko mosta.",
-            "source": "Proszę iść prosto, a potem przez most."
+            "source": "Proszę iść prosto, a potem przez most.",
+            "audioSrc": "/audio/hr/a1/module-05/idite-ravno-pa-preko-mosta.mp3"
           },
           {
             "target": "Deset minuta pješice.",
-            "source": "Dziesięć minut pieszo."
+            "source": "Dziesięć minut pieszo.",
+            "audioSrc": "/audio/hr/a1/module-05/deset-minuta-pjesice.mp3"
           }
         ]
       },
@@ -386,15 +438,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Idite ravno.",
-            "source": "Proszę iść prosto."
+            "source": "Proszę iść prosto.",
+            "audioSrc": "/audio/hr/a1/module-05/idite-ravno.mp3"
           },
           {
             "target": "Skrenite lijevo.",
-            "source": "Proszę skręcić w lewo."
+            "source": "Proszę skręcić w lewo.",
+            "audioSrc": "/audio/hr/a1/module-05/skrenite-lijevo.mp3"
           },
           {
             "target": "Skrenite desno na semaforu.",
-            "source": "Proszę skręcić w prawo na światłach."
+            "source": "Proszę skręcić w prawo na światłach.",
+            "audioSrc": "/audio/hr/a1/module-05/skrenite-desno-na-semaforu.mp3"
           }
         ]
       },
@@ -408,7 +463,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "lijevo"
         ],
-        "translation": "Proszę skręcić w lewo."
+        "translation": "Proszę skręcić w lewo.",
+        "answerAudioSrc": "/audio/hr/a1/module-05/skrenite-lijevo.mp3"
       },
       {
         "id": "comprehend",
@@ -422,7 +478,8 @@ export const LESSON: GeneratedLesson = {
           "Proszę przejść przez ulicę."
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/prijedjite-ulicu.mp3"
       },
       {
         "id": "translate-1",
@@ -432,7 +489,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Proszę iść prosto.",
         "accepted": [
           "Idite ravno."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/idite-ravno.mp3"
       },
       {
         "id": "order",
@@ -448,7 +506,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Skrenite desno na semaforu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/skrenite-desno-na-semaforu.mp3"
       },
       {
         "id": "translate-2",
@@ -459,7 +518,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Je li daleko?",
           "Je li to daleko?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/je-li-daleko.mp3"
       },
       {
         "id": "listening",
@@ -520,27 +580,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Oprostite, kako mogu doći do kolodvora?",
-            "translation": "Przepraszam, jak mogę dojść do dworca?"
+            "translation": "Przepraszam, jak mogę dojść do dworca?",
+            "audioSrc": "/audio/hr/a1/module-05/oprostite-kako-mogu-doci-do-kolodvora.mp3"
           },
           {
             "speaker": "Prolaznik",
             "text": "Idite ravno do semafora, pa skrenite lijevo.",
-            "translation": "Proszę iść prosto do świateł, a potem skręcić w lewo."
+            "translation": "Proszę iść prosto do świateł, a potem skręcić w lewo.",
+            "audioSrc": "/audio/hr/a1/module-05/idite-ravno-do-semafora-pa-skrenite-lijevo-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Je li daleko?",
-            "translation": "Czy to daleko?"
+            "translation": "Czy to daleko?",
+            "audioSrc": "/audio/hr/a1/module-05/je-li-daleko.mp3"
           },
           {
             "speaker": "Prolaznik",
             "text": "Ne, deset minuta pješice.",
-            "translation": "Nie, dziesięć minut pieszo."
+            "translation": "Nie, dziesięć minut pieszo.",
+            "audioSrc": "/audio/hr/a1/module-05/ne-deset-minuta-pjesice-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Hvala lijepa!",
-            "translation": "Dziękuję bardzo!"
+            "translation": "Dziękuję bardzo!",
+            "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
           }
         ]
       },
@@ -555,7 +620,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Oprostite, gdje je banka?",
-              "translation": "Przepraszam, gdzie jest bank?"
+              "translation": "Przepraszam, gdzie jest bank?",
+              "audioSrc": "/audio/hr/a1/module-05/oprostite-gdje-je-banka.mp3"
             }
           },
           {
@@ -566,14 +632,16 @@ export const LESSON: GeneratedLesson = {
               "Idite ravno pa skrenite desno."
             ],
             "pattern": "^idite ravno (pa|i|zatim) (skrenite )?desno$",
-            "suggestion": "Idite ravno pa desno."
+            "suggestion": "Idite ravno pa desno.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/idite-ravno-pa-desno.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Je li daleko?",
-              "translation": "Czy to daleko?"
+              "translation": "Czy to daleko?",
+              "audioSrc": "/audio/hr/a1/module-05/je-li-daleko.mp3"
             }
           },
           {
@@ -584,7 +652,8 @@ export const LESSON: GeneratedLesson = {
               "Nije daleko."
             ],
             "pattern": "^(ne )?(blizu je|nije daleko|to je blizu)$",
-            "suggestion": "Ne, blizu je."
+            "suggestion": "Ne, blizu je.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/ne-blizu-je.mp3"
           }
         ]
       },
@@ -614,7 +683,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Idite ravno. Skrenite desno na semaforu."
+        "sample": "Idite ravno. Skrenite desno na semaforu.",
+        "sampleAudioSrc": "/audio/hr/a1/module-05/idite-ravno-skrenite-desno-na-semaforu.mp3"
       },
       {
         "id": "summary",
@@ -624,19 +694,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Idite ravno.",
-            "source": "Proszę iść prosto."
+            "source": "Proszę iść prosto.",
+            "audioSrc": "/audio/hr/a1/module-05/idite-ravno.mp3"
           },
           {
             "target": "Skrenite lijevo.",
-            "source": "Proszę skręcić w lewo."
+            "source": "Proszę skręcić w lewo.",
+            "audioSrc": "/audio/hr/a1/module-05/skrenite-lijevo.mp3"
           },
           {
             "target": "Skrenite desno na semaforu.",
-            "source": "Proszę skręcić w prawo na światłach."
+            "source": "Proszę skręcić w prawo na światłach.",
+            "audioSrc": "/audio/hr/a1/module-05/skrenite-desno-na-semaforu.mp3"
           },
           {
             "target": "Prijeđite ulicu.",
-            "source": "Proszę przejść przez ulicę."
+            "source": "Proszę przejść przez ulicę.",
+            "audioSrc": "/audio/hr/a1/module-05/prijedjite-ulicu.mp3"
           }
         ]
       }

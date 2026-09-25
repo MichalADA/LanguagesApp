@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "wstać",
         "lemma": "ustati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0182"
+        "recordId": "A1-0182",
+        "audioSrc": "/audio/hr/a1/module-03/ustati.mp3"
       },
       {
         "target": "doručkovati",
         "source": "jeść śniadanie",
         "lemma": "doručkovati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0183"
+        "recordId": "A1-0183",
+        "audioSrc": "/audio/hr/a1/module-03/doruckovati.mp3"
       },
       {
         "target": "raditi",
         "source": "pracować",
         "lemma": "raditi",
         "partOfSpeech": "verb",
-        "recordId": "A1-0184"
+        "recordId": "A1-0184",
+        "audioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
         "target": "ručati",
         "source": "jeść obiad",
         "lemma": "ručati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0185"
+        "recordId": "A1-0185",
+        "audioSrc": "/audio/hr/a1/module-03/rucati.mp3"
       },
       {
         "target": "odmarati se",
         "source": "odpoczywać",
         "lemma": "odmarati se",
         "partOfSpeech": "verb",
-        "recordId": "A1-0186"
+        "recordId": "A1-0186",
+        "audioSrc": "/audio/hr/a1/module-03/odmarati-se.mp3"
       },
       {
         "target": "spavati",
         "source": "spać",
         "lemma": "spavati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0187"
+        "recordId": "A1-0187",
+        "audioSrc": "/audio/hr/a1/module-03/spavati.mp3"
       },
       {
         "target": "ujutro",
         "source": "rano",
         "lemma": "ujutro",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0188"
+        "recordId": "A1-0188",
+        "audioSrc": "/audio/hr/a1/module-03/ujutro.mp3"
       },
       {
         "target": "navečer",
         "source": "wieczorem",
         "lemma": "navečer",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0189"
+        "recordId": "A1-0189",
+        "audioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
         "target": "dan",
         "source": "dzień",
         "lemma": "dan",
         "partOfSpeech": "noun",
-        "recordId": "A1-0788"
+        "recordId": "A1-0788",
+        "audioSrc": "/audio/hr/a1/module-03/dan.mp3"
       },
       {
         "target": "večer",
         "source": "wieczór",
         "lemma": "večer",
         "partOfSpeech": "noun",
-        "recordId": "A1-0789"
+        "recordId": "A1-0789",
+        "audioSrc": "/audio/hr/a1/module-03/vecer.mp3"
       },
       {
         "target": "podne",
         "source": "południe",
         "lemma": "podne",
         "partOfSpeech": "noun",
-        "recordId": "A1-0790"
+        "recordId": "A1-0790",
+        "audioSrc": "/audio/hr/a1/module-03/podne.mp3"
       },
       {
         "target": "večerati",
         "source": "jeść kolację",
         "lemma": "večerati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0791"
+        "recordId": "A1-0791",
+        "audioSrc": "/audio/hr/a1/module-03/vecerati.mp3"
       },
       {
         "target": "kuhati",
         "source": "gotować",
         "lemma": "kuhati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0792"
+        "recordId": "A1-0792",
+        "audioSrc": "/audio/hr/a1/module-03/kuhati.mp3"
       },
       {
         "target": "tuširati se",
         "source": "brać prysznic",
         "lemma": "tuširati se",
         "partOfSpeech": "verb",
-        "recordId": "A1-0793"
+        "recordId": "A1-0793",
+        "audioSrc": "/audio/hr/a1/module-03/tusirati-se.mp3"
       },
       {
         "target": "prvo",
         "source": "najpierw",
         "lemma": "prvo",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0794"
+        "recordId": "A1-0794",
+        "audioSrc": "/audio/hr/a1/module-03/prvo.mp3"
       },
       {
         "target": "zatim",
         "source": "potem",
         "lemma": "zatim",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0795"
+        "recordId": "A1-0795",
+        "audioSrc": "/audio/hr/a1/module-03/zatim.mp3"
       },
       {
         "target": "kući",
         "source": "do domu",
         "lemma": "kuća",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0796"
+        "recordId": "A1-0796",
+        "audioSrc": "/audio/hr/a1/module-03/kuci.mp3"
       },
       {
         "target": "brzo",
         "source": "szybko",
         "lemma": "brzo",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0797"
+        "recordId": "A1-0797",
+        "audioSrc": "/audio/hr/a1/module-03/brzo.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Ustajem u sedam.",
-            "source": "Wstaję o siódmej."
+            "source": "Wstaję o siódmej.",
+            "audioSrc": "/audio/hr/a1/module-03/ustajem-u-sedam.mp3"
           },
           {
             "target": "Ujutro doručkujem.",
-            "source": "Rano jem śniadanie."
+            "source": "Rano jem śniadanie.",
+            "audioSrc": "/audio/hr/a1/module-03/ujutro-doruckujem.mp3"
           },
           {
             "target": "Radim do četiri.",
-            "source": "Pracuję do czwartej."
+            "source": "Pracuję do czwartej.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-do-cetiri.mp3"
           }
         ]
       },
@@ -166,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Ustajem u sedam.",
-          "source": "Wstaję o siódmej."
-        }
+          "source": "Wstaję o siódmej.",
+          "audioSrc": "/audio/hr/a1/module-03/ustajem-u-sedam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/ustati.mp3"
       },
       {
         "id": "word-2",
@@ -178,8 +201,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Ujutro doručkujem.",
-          "source": "Rano jem śniadanie."
-        }
+          "source": "Rano jem śniadanie.",
+          "audioSrc": "/audio/hr/a1/module-03/ujutro-doruckujem.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/doruckovati.mp3"
       },
       {
         "id": "word-3",
@@ -190,8 +215,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Radim do četiri.",
-          "source": "Pracuję do czwartej."
-        }
+          "source": "Pracuję do czwartej.",
+          "audioSrc": "/audio/hr/a1/module-03/radim-do-cetiri.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
         "id": "check-1",
@@ -205,7 +232,8 @@ export const LESSON: GeneratedLesson = {
           "pracować"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
         "id": "word-4",
@@ -216,8 +244,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "U podne ručam.",
-          "source": "W południe jem obiad."
-        }
+          "source": "W południe jem obiad.",
+          "audioSrc": "/audio/hr/a1/module-03/u-podne-rucam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/rucati.mp3"
       },
       {
         "id": "word-5",
@@ -228,8 +258,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Poslijepodne se odmaram.",
-          "source": "Po południu odpoczywam."
-        }
+          "source": "Po południu odpoczywam.",
+          "audioSrc": "/audio/hr/a1/module-03/poslijepodne-se-odmaram.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/odmarati-se.mp3"
       },
       {
         "id": "word-6",
@@ -240,8 +272,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Spavam osam sati.",
-          "source": "Śpię osiem godzin."
-        }
+          "source": "Śpię osiem godzin.",
+          "audioSrc": "/audio/hr/a1/module-03/spavam-osam-sati.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/spavati.mp3"
       },
       {
         "id": "check-2",
@@ -255,7 +289,8 @@ export const LESSON: GeneratedLesson = {
           "ustati"
         ],
         "correctIndex": 0,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-03/rucati.mp3"
       },
       {
         "id": "word-7",
@@ -266,8 +301,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Ujutro doručkujem.",
-          "source": "Rano jem śniadanie."
-        }
+          "source": "Rano jem śniadanie.",
+          "audioSrc": "/audio/hr/a1/module-03/ujutro-doruckujem.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/ujutro.mp3"
       },
       {
         "id": "word-8",
@@ -278,8 +315,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Navečer učim hrvatski.",
-          "source": "Wieczorem uczę się chorwackiego."
-        }
+          "source": "Wieczorem uczę się chorwackiego.",
+          "audioSrc": "/audio/hr/a1/module-03/navecer-ucim-hrvatski.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
         "id": "check-3",
@@ -293,7 +332,8 @@ export const LESSON: GeneratedLesson = {
           "spać"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
         "id": "more-words",
@@ -305,52 +345,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "dan",
             "source": "dzień",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/dan.mp3"
           },
           {
             "target": "večer",
             "source": "wieczór",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/vecer.mp3"
           },
           {
             "target": "podne",
             "source": "południe",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/podne.mp3"
           },
           {
             "target": "večerati",
             "source": "jeść kolację",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-03/vecerati.mp3"
           },
           {
             "target": "kuhati",
             "source": "gotować",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-03/kuhati.mp3"
           },
           {
             "target": "tuširati se",
             "source": "brać prysznic",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-03/tusirati-se.mp3"
           },
           {
             "target": "prvo",
             "source": "najpierw",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/prvo.mp3"
           },
           {
             "target": "zatim",
             "source": "potem",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/zatim.mp3"
           },
           {
             "target": "kući",
             "source": "do domu",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/kuci.mp3"
           },
           {
             "target": "brzo",
             "source": "szybko",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/brzo.mp3"
           }
         ]
       },
@@ -366,7 +416,8 @@ export const LESSON: GeneratedLesson = {
           "wieczór"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/vecer.mp3"
       },
       {
         "id": "examples",
@@ -377,19 +428,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Prvo se tuširam, zatim doručkujem.",
-            "source": "Najpierw biorę prysznic, potem jem śniadanie."
+            "source": "Najpierw biorę prysznic, potem jem śniadanie.",
+            "audioSrc": "/audio/hr/a1/module-03/prvo-se-tusiram-zatim-doruckujem.mp3"
           },
           {
             "target": "U podne ručam.",
-            "source": "W południe jem obiad."
+            "source": "W południe jem obiad.",
+            "audioSrc": "/audio/hr/a1/module-03/u-podne-rucam.mp3"
           },
           {
             "target": "Navečer kuham i večeram kod kuće.",
-            "source": "Wieczorem gotuję i jem kolację w domu."
+            "source": "Wieczorem gotuję i jem kolację w domu.",
+            "audioSrc": "/audio/hr/a1/module-03/navecer-kuham-i-veceram-kod-kuce.mp3"
           },
           {
             "target": "Idem kući u pet.",
-            "source": "Idę do domu o piątej."
+            "source": "Idę do domu o piątej.",
+            "audioSrc": "/audio/hr/a1/module-03/idem-kuci-u-pet.mp3"
           }
         ]
       },
@@ -402,15 +457,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Ustajem u sedam.",
-            "source": "Wstaję o siódmej."
+            "source": "Wstaję o siódmej.",
+            "audioSrc": "/audio/hr/a1/module-03/ustajem-u-sedam.mp3"
           },
           {
             "target": "Radim do četiri.",
-            "source": "Pracuję do czwartej."
+            "source": "Pracuję do czwartej.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-do-cetiri.mp3"
           },
           {
             "target": "Poslijepodne se odmaram.",
-            "source": "Po południu odpoczywam."
+            "source": "Po południu odpoczywam.",
+            "audioSrc": "/audio/hr/a1/module-03/poslijepodne-se-odmaram.mp3"
           }
         ]
       },
@@ -424,7 +482,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "učim"
         ],
-        "translation": "Wieczorem uczę się chorwackiego."
+        "translation": "Wieczorem uczę się chorwackiego.",
+        "answerAudioSrc": "/audio/hr/a1/module-03/navecer-ucim-hrvatski.mp3"
       },
       {
         "id": "comprehend",
@@ -438,7 +497,8 @@ export const LESSON: GeneratedLesson = {
           "Śpię osiem godzin."
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/spavam-osam-sati.mp3"
       },
       {
         "id": "translate-1",
@@ -450,7 +510,8 @@ export const LESSON: GeneratedLesson = {
           "Ujutro doručkujem.",
           "Ja ujutro doručkujem.",
           "Doručkujem ujutro."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/ujutro-doruckujem.mp3"
       },
       {
         "id": "order",
@@ -466,7 +527,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Poslijepodne se odmaram.",
           "Poslijepodne odmaram se."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/poslijepodne-se-odmaram.mp3"
       },
       {
         "id": "translate-2",
@@ -477,7 +539,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Radim do četiri.",
           "Ja radim do četiri."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/radim-do-cetiri.mp3"
       },
       {
         "id": "model",
@@ -488,32 +551,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Kada ustaješ ujutro?",
-            "translation": "O której wstajesz rano?"
+            "translation": "O której wstajesz rano?",
+            "audioSrc": "/audio/hr/a1/module-03/kada-ustajes-ujutro.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ustajem u šest i prvo se tuširam.",
-            "translation": "Wstaję o szóstej i najpierw biorę prysznic."
+            "translation": "Wstaję o szóstej i najpierw biorę prysznic.",
+            "audioSrc": "/audio/hr/a1/module-03/ustajem-u-sest-i-prvo-se-tusiram-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Rano! Kada ideš na posao?",
-            "translation": "Wcześnie! Kiedy idziesz do pracy?"
+            "translation": "Wcześnie! Kiedy idziesz do pracy?",
+            "audioSrc": "/audio/hr/a1/module-03/rano-kada-ides-na-posao.mp3"
           },
           {
             "speaker": "Marko",
             "text": "U sedam. Idem kući u četiri.",
-            "translation": "O siódmej. Do domu idę o czwartej."
+            "translation": "O siódmej. Do domu idę o czwartej.",
+            "audioSrc": "/audio/hr/a1/module-03/u-sedam-idem-kuci-u-cetiri-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "A što radiš navečer?",
-            "translation": "A co robisz wieczorem?"
+            "translation": "A co robisz wieczorem?",
+            "audioSrc": "/audio/hr/a1/module-03/a-sto-radis-navecer.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Kuham, večeram i rano idem spavati.",
-            "translation": "Gotuję, jem kolację i wcześnie idę spać."
+            "translation": "Gotuję, jem kolację i wcześnie idę spać.",
+            "audioSrc": "/audio/hr/a1/module-03/kuham-veceram-i-rano-idem-spavati-m.mp3"
           }
         ]
       },
@@ -528,7 +597,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Kada ustaješ?",
-              "translation": "Kiedy wstajesz?"
+              "translation": "Kiedy wstajesz?",
+              "audioSrc": "/audio/hr/a1/module-03/kada-ustajes-m.mp3"
             }
           },
           {
@@ -539,14 +609,16 @@ export const LESSON: GeneratedLesson = {
               "Ja ustajem u sedam."
             ],
             "pattern": "^(ja )?(ujutro )?ustajem (ujutro )?u (pola )?\\p{L}+( sati)?( ujutro)?$",
-            "suggestion": "Ustajem u sedam."
+            "suggestion": "Ustajem u sedam.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/ustajem-u-sedam.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Što radiš navečer?",
-              "translation": "Co robisz wieczorem?"
+              "translation": "Co robisz wieczorem?",
+              "audioSrc": "/audio/hr/a1/module-03/sto-radis-navecer-m.mp3"
             }
           },
           {
@@ -562,7 +634,8 @@ export const LESSON: GeneratedLesson = {
               "Ja navečer radim."
             ],
             "pattern": "^(navečer )?(ja )?(?:idem u kupovinu|fotografiram|imam vremena|preporučujem|vozim bicikl|sastanem se|se sastanem|doručkujem|izgubim se|odmaram se|odmorim se|planinarim|preporučim|rezerviram|se izgubim|se odmaram|se odmorim|se tuširam|tuširam se|odgovorim|presjedam|razumijem|se sunčam|sunčam se|kupam se|nadam se|nađem se|odaberem|planiram|posjetim|poslušam|poznajem|prijeđem|pronađem|se kupam|se nadam|se nađem|se zovem|studiram|zovem se|govorim|izlazim|napišem|naručim|pokažem|ponovim|putujem|skrenem|stignem|ustajem|ustanem|večeram|vježbam|završim|gledam|kasnim|koštam|krenem|opišem|pjevam|platim|plešem|plivam|poznam|pričam|skijam|slušam|spavam|stižem|tražim|trebam|čitam|crtam|igram|jedem|kuham|kupim|nemam|pijem|pitam|radim|ronim|ručam|šetam|trčim|vidim|volim|vozim|živim|hoću|idem|imam|učim|znam)( \\p{L}+){0,3}( navečer)?$",
-            "suggestion": "Navečer učim hrvatski."
+            "suggestion": "Navečer učim hrvatski.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/navecer-ucim-hrvatski.mp3"
           }
         ]
       },
@@ -598,7 +671,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Ujutro doručkujem. Navečer učim hrvatski."
+        "sample": "Ujutro doručkujem. Navečer učim hrvatski.",
+        "sampleAudioSrc": "/audio/hr/a1/module-03/ujutro-doruckujem-navecer-ucim-hrvatski.mp3"
       },
       {
         "id": "summary",
@@ -608,19 +682,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Ustajem u sedam.",
-            "source": "Wstaję o siódmej."
+            "source": "Wstaję o siódmej.",
+            "audioSrc": "/audio/hr/a1/module-03/ustajem-u-sedam.mp3"
           },
           {
             "target": "Ujutro doručkujem.",
-            "source": "Rano jem śniadanie."
+            "source": "Rano jem śniadanie.",
+            "audioSrc": "/audio/hr/a1/module-03/ujutro-doruckujem.mp3"
           },
           {
             "target": "Radim do četiri.",
-            "source": "Pracuję do czwartej."
+            "source": "Pracuję do czwartej.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-do-cetiri.mp3"
           },
           {
             "target": "Poslijepodne se odmaram.",
-            "source": "Po południu odpoczywam."
+            "source": "Po południu odpoczywam.",
+            "audioSrc": "/audio/hr/a1/module-03/poslijepodne-se-odmaram.mp3"
           }
         ]
       }

@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "sport",
         "lemma": "sport",
         "partOfSpeech": "noun",
-        "recordId": "A1-0470"
+        "recordId": "A1-0470",
+        "audioSrc": "/audio/hr/a1/module-06/sport.mp3"
       },
       {
         "target": "plivati",
         "source": "pływać",
         "lemma": "plivati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0471"
+        "recordId": "A1-0471",
+        "audioSrc": "/audio/hr/a1/module-06/plivati.mp3"
       },
       {
         "target": "trčati",
         "source": "biegać",
         "lemma": "trčati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0472"
+        "recordId": "A1-0472",
+        "audioSrc": "/audio/hr/a1/module-06/trcati.mp3"
       },
       {
         "target": "voziti bicikl",
         "source": "jeździć na rowerze",
         "lemma": "voziti bicikl",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0473"
+        "recordId": "A1-0473",
+        "audioSrc": "/audio/hr/a1/module-06/voziti-bicikl.mp3"
       },
       {
         "target": "nogomet",
         "source": "piłka nożna",
         "lemma": "nogomet",
         "partOfSpeech": "noun",
-        "recordId": "A1-0474"
+        "recordId": "A1-0474",
+        "audioSrc": "/audio/hr/a1/module-06/nogomet.mp3"
       },
       {
         "target": "teretana",
         "source": "siłownia",
         "lemma": "teretana",
         "partOfSpeech": "noun",
-        "recordId": "A1-0475"
+        "recordId": "A1-0475",
+        "audioSrc": "/audio/hr/a1/module-06/teretana.mp3"
       },
       {
         "target": "često",
         "source": "często",
         "lemma": "često",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0476"
+        "recordId": "A1-0476",
+        "audioSrc": "/audio/hr/a1/module-06/cesto.mp3"
       },
       {
         "target": "nikad",
         "source": "nigdy",
         "lemma": "nikad",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0477"
+        "recordId": "A1-0477",
+        "audioSrc": "/audio/hr/a1/module-06/nikad.mp3"
       },
       {
         "target": "košarka",
         "source": "koszykówka",
         "lemma": "košarka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0990"
+        "recordId": "A1-0990",
+        "audioSrc": "/audio/hr/a1/module-06/kosarka.mp3"
       },
       {
         "target": "tenis",
         "source": "tenis",
         "lemma": "tenis",
         "partOfSpeech": "noun",
-        "recordId": "A1-0991"
+        "recordId": "A1-0991",
+        "audioSrc": "/audio/hr/a1/module-06/tenis.mp3"
       },
       {
         "target": "odbojka",
         "source": "siatkówka",
         "lemma": "odbojka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0992"
+        "recordId": "A1-0992",
+        "audioSrc": "/audio/hr/a1/module-06/odbojka.mp3"
       },
       {
         "target": "joga",
         "source": "joga",
         "lemma": "joga",
         "partOfSpeech": "noun",
-        "recordId": "A1-0993"
+        "recordId": "A1-0993",
+        "audioSrc": "/audio/hr/a1/module-06/joga.mp3"
       },
       {
         "target": "vježbati",
         "source": "ćwiczyć",
         "lemma": "vježbati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0994"
+        "recordId": "A1-0994",
+        "audioSrc": "/audio/hr/a1/module-06/vjezbati.mp3"
       },
       {
         "target": "planinariti",
         "source": "chodzić po górach",
         "lemma": "planinariti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0995"
+        "recordId": "A1-0995",
+        "audioSrc": "/audio/hr/a1/module-06/planinariti.mp3"
       },
       {
         "target": "skijati",
         "source": "jeździć na nartach",
         "lemma": "skijati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0996"
+        "recordId": "A1-0996",
+        "audioSrc": "/audio/hr/a1/module-06/skijati.mp3"
       },
       {
         "target": "utakmica",
         "source": "mecz",
         "lemma": "utakmica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0997"
+        "recordId": "A1-0997",
+        "audioSrc": "/audio/hr/a1/module-06/utakmica.mp3"
       },
       {
         "target": "puta tjedno",
         "source": "razy w tygodniu",
         "lemma": "put",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0998"
+        "recordId": "A1-0998",
+        "audioSrc": "/audio/hr/a1/module-06/puta-tjedno.mp3"
       },
       {
         "target": "zdrav",
         "source": "zdrowy",
         "lemma": "zdrav",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0999"
+        "recordId": "A1-0999",
+        "audioSrc": "/audio/hr/a1/module-06/zdrav.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Volim plivati.",
-            "source": "Lubię pływać."
+            "source": "Lubię pływać.",
+            "audioSrc": "/audio/hr/a1/module-06/volim-plivati.mp3"
           },
           {
             "target": "Trčim tri puta tjedno.",
-            "source": "Biegam trzy razy w tygodniu."
+            "source": "Biegam trzy razy w tygodniu.",
+            "audioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno.mp3"
           },
           {
             "target": "Vozim bicikl vikendom.",
-            "source": "Jeżdżę na rowerze w weekendy."
+            "source": "Jeżdżę na rowerze w weekendy.",
+            "audioSrc": "/audio/hr/a1/module-06/vozim-bicikl-vikendom.mp3"
           }
         ]
       },
@@ -163,7 +184,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "sport",
         "source": "sport",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-06/sport.mp3"
       },
       {
         "id": "word-2",
@@ -174,8 +196,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Volim plivati.",
-          "source": "Lubię pływać."
-        }
+          "source": "Lubię pływać.",
+          "audioSrc": "/audio/hr/a1/module-06/volim-plivati.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/plivati.mp3"
       },
       {
         "id": "word-3",
@@ -186,8 +210,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Trčim tri puta tjedno.",
-          "source": "Biegam trzy razy w tygodniu."
-        }
+          "source": "Biegam trzy razy w tygodniu.",
+          "audioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/trcati.mp3"
       },
       {
         "id": "check-1",
@@ -201,7 +227,8 @@ export const LESSON: GeneratedLesson = {
           "pływać"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/sport.mp3"
       },
       {
         "id": "word-4",
@@ -212,8 +239,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Vozim bicikl vikendom.",
-          "source": "Jeżdżę na rowerze w weekendy."
-        }
+          "source": "Jeżdżę na rowerze w weekendy.",
+          "audioSrc": "/audio/hr/a1/module-06/vozim-bicikl-vikendom.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/voziti-bicikl.mp3"
       },
       {
         "id": "word-5",
@@ -224,8 +253,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ponekad igram nogomet.",
-          "source": "Czasami gram w piłkę nożną."
-        }
+          "source": "Czasami gram w piłkę nożną.",
+          "audioSrc": "/audio/hr/a1/module-06/ponekad-igram-nogomet.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/nogomet.mp3"
       },
       {
         "id": "word-6",
@@ -236,8 +267,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idem u teretanu.",
-          "source": "Chodzę na siłownię."
-        }
+          "source": "Chodzę na siłownię.",
+          "audioSrc": "/audio/hr/a1/module-06/idem-u-teretanu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/teretana.mp3"
       },
       {
         "id": "check-2",
@@ -251,7 +284,8 @@ export const LESSON: GeneratedLesson = {
           "sport"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-06/nogomet.mp3"
       },
       {
         "id": "word-7",
@@ -259,7 +293,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "često",
         "source": "często",
-        "partOfSpeech": "przysłówek"
+        "partOfSpeech": "przysłówek",
+        "audioSrc": "/audio/hr/a1/module-06/cesto.mp3"
       },
       {
         "id": "word-8",
@@ -270,8 +305,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Nikad ne trčim ujutro.",
-          "source": "Nigdy nie biegam rano."
-        }
+          "source": "Nigdy nie biegam rano.",
+          "audioSrc": "/audio/hr/a1/module-06/nikad-ne-trcim-ujutro.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/nikad.mp3"
       },
       {
         "id": "check-3",
@@ -285,7 +322,8 @@ export const LESSON: GeneratedLesson = {
           "nigdy"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/nikad.mp3"
       },
       {
         "id": "more-words",
@@ -297,52 +335,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "košarka",
             "source": "koszykówka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/kosarka.mp3"
           },
           {
             "target": "tenis",
             "source": "tenis",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/tenis.mp3"
           },
           {
             "target": "odbojka",
             "source": "siatkówka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/odbojka.mp3"
           },
           {
             "target": "joga",
             "source": "joga",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/joga.mp3"
           },
           {
             "target": "vježbati",
             "source": "ćwiczyć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/vjezbati.mp3"
           },
           {
             "target": "planinariti",
             "source": "chodzić po górach",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/planinariti.mp3"
           },
           {
             "target": "skijati",
             "source": "jeździć na nartach",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/skijati.mp3"
           },
           {
             "target": "utakmica",
             "source": "mecz",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/utakmica.mp3"
           },
           {
             "target": "puta tjedno",
             "source": "razy w tygodniu",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-06/puta-tjedno.mp3"
           },
           {
             "target": "zdrav",
             "source": "zdrowy",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-06/zdrav.mp3"
           }
         ]
       },
@@ -358,7 +406,8 @@ export const LESSON: GeneratedLesson = {
           "tenis"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/utakmica.mp3"
       },
       {
         "id": "examples",
@@ -369,19 +418,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Igram tenis dva puta tjedno.",
-            "source": "Gram w tenisa dwa razy w tygodniu."
+            "source": "Gram w tenisa dwa razy w tygodniu.",
+            "audioSrc": "/audio/hr/a1/module-06/igram-tenis-dva-puta-tjedno.mp3"
           },
           {
             "target": "Zimi skijam.",
-            "source": "Zimą jeżdżę na nartach."
+            "source": "Zimą jeżdżę na nartach.",
+            "audioSrc": "/audio/hr/a1/module-06/zimi-skijam.mp3"
           },
           {
             "target": "Vježbam svaki dan.",
-            "source": "Ćwiczę codziennie."
+            "source": "Ćwiczę codziennie.",
+            "audioSrc": "/audio/hr/a1/module-06/vjezbam-svaki-dan.mp3"
           },
           {
             "target": "Gledam utakmicu na televiziji.",
-            "source": "Oglądam mecz w telewizji."
+            "source": "Oglądam mecz w telewizji.",
+            "audioSrc": "/audio/hr/a1/module-06/gledam-utakmicu-na-televiziji.mp3"
           }
         ]
       },
@@ -394,15 +447,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Ponekad igram nogomet.",
-            "source": "Czasami gram w piłkę nożną."
+            "source": "Czasami gram w piłkę nożną.",
+            "audioSrc": "/audio/hr/a1/module-06/ponekad-igram-nogomet.mp3"
           },
           {
             "target": "Nikad ne trčim ujutro.",
-            "source": "Nigdy nie biegam rano."
+            "source": "Nigdy nie biegam rano.",
+            "audioSrc": "/audio/hr/a1/module-06/nikad-ne-trcim-ujutro.mp3"
           },
           {
             "target": "Trčim tri puta tjedno.",
-            "source": "Biegam trzy razy w tygodniu."
+            "source": "Biegam trzy razy w tygodniu.",
+            "audioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno.mp3"
           }
         ]
       },
@@ -416,7 +472,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "ne"
         ],
-        "translation": "Nigdy nie biegam rano."
+        "translation": "Nigdy nie biegam rano.",
+        "answerAudioSrc": "/audio/hr/a1/module-06/nikad-ne-trcim-ujutro.mp3"
       },
       {
         "id": "comprehend",
@@ -430,7 +487,8 @@ export const LESSON: GeneratedLesson = {
           "Biegam trzy razy w tygodniu."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/vozim-bicikl-vikendom.mp3"
       },
       {
         "id": "translate-1",
@@ -441,7 +499,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Volim plivati.",
           "Ja volim plivati."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/volim-plivati.mp3"
       },
       {
         "id": "order",
@@ -458,7 +517,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Trčim tri puta tjedno.",
           "Ja trčim tri puta tjedno."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno.mp3"
       },
       {
         "id": "translate-2",
@@ -469,7 +529,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Idem u teretanu.",
           "Ja idem u teretanu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/idem-u-teretanu.mp3"
       },
       {
         "id": "listening",
@@ -536,27 +597,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Ivane, baviš li se sportom?",
-            "translation": "Ivan, uprawiasz sport?"
+            "translation": "Ivan, uprawiasz sport?",
+            "audioSrc": "/audio/hr/a1/module-06/ivane-bavis-li-se-sportom.mp3"
           },
           {
             "speaker": "Ivan",
             "text": "Da, igram košarku i često trčim.",
-            "translation": "Tak, gram w koszykówkę i często biegam."
+            "translation": "Tak, gram w koszykówkę i często biegam.",
+            "audioSrc": "/audio/hr/a1/module-06/da-igram-kosarku-i-cesto-trcim-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Koliko puta tjedno?",
-            "translation": "Ile razy w tygodniu?"
+            "translation": "Ile razy w tygodniu?",
+            "audioSrc": "/audio/hr/a1/module-06/koliko-puta-tjedno.mp3"
           },
           {
             "speaker": "Ivan",
             "text": "Trčim tri puta tjedno. A ti?",
-            "translation": "Biegam trzy razy w tygodniu. A ty?"
+            "translation": "Biegam trzy razy w tygodniu. A ty?",
+            "audioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno-a-ti-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ja idem na jogu i ponekad plivam.",
-            "translation": "Ja chodzę na jogę i czasami pływam."
+            "translation": "Ja chodzę na jogę i czasami pływam.",
+            "audioSrc": "/audio/hr/a1/module-06/ja-idem-na-jogu-i-ponekad-plivam.mp3"
           }
         ]
       },
@@ -571,7 +637,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Voliš li sport?",
-              "translation": "Lubisz sport?"
+              "translation": "Lubisz sport?",
+              "audioSrc": "/audio/hr/a1/module-06/volis-li-sport-m.mp3"
             }
           },
           {
@@ -584,14 +651,16 @@ export const LESSON: GeneratedLesson = {
               "Ja volim plivati."
             ],
             "pattern": "^(da |ne )?(ja )?(ne )?volim ((?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)|(?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt))( i ((?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)|(?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt)))?$",
-            "suggestion": "Da, volim sport."
+            "suggestion": "Da, volim sport.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/da-volim-sport.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Trčiš li?",
-              "translation": "Biegasz?"
+              "translation": "Biegasz?",
+              "audioSrc": "/audio/hr/a1/module-06/trcis-li-m.mp3"
             }
           },
           {
@@ -606,7 +675,8 @@ export const LESSON: GeneratedLesson = {
               "Ja nikad ne trčim."
             ],
             "pattern": "^(da |ne )?(ja )?((često|ponekad|rijetko|obično) trčim( \\p{L}+){0,3}|nikad ne trčim|trčim( \\p{L}+){1,3})$",
-            "suggestion": "Trčim tri puta tjedno."
+            "suggestion": "Trčim tri puta tjedno.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno.mp3"
           }
         ]
       },
@@ -641,7 +711,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Ponekad igram nogomet. Nikad ne trčim ujutro."
+        "sample": "Ponekad igram nogomet. Nikad ne trčim ujutro.",
+        "sampleAudioSrc": "/audio/hr/a1/module-06/ponekad-igram-nogomet-nikad-ne-trcim-ujutro.mp3"
       },
       {
         "id": "summary",
@@ -651,19 +722,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Volim plivati.",
-            "source": "Lubię pływać."
+            "source": "Lubię pływać.",
+            "audioSrc": "/audio/hr/a1/module-06/volim-plivati.mp3"
           },
           {
             "target": "Trčim tri puta tjedno.",
-            "source": "Biegam trzy razy w tygodniu."
+            "source": "Biegam trzy razy w tygodniu.",
+            "audioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno.mp3"
           },
           {
             "target": "Vozim bicikl vikendom.",
-            "source": "Jeżdżę na rowerze w weekendy."
+            "source": "Jeżdżę na rowerze w weekendy.",
+            "audioSrc": "/audio/hr/a1/module-06/vozim-bicikl-vikendom.mp3"
           },
           {
             "target": "Idem u teretanu.",
-            "source": "Chodzę na siłownię."
+            "source": "Chodzę na siłownię.",
+            "audioSrc": "/audio/hr/a1/module-06/idem-u-teretanu.mp3"
           }
         ]
       }

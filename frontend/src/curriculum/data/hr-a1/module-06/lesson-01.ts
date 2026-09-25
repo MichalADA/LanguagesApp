@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "czas wolny",
         "lemma": "slobodno vrijeme",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0452"
+        "recordId": "A1-0452",
+        "audioSrc": "/audio/hr/a1/module-06/slobodno-vrijeme.mp3"
       },
       {
         "target": "čitati",
         "source": "czytać",
         "lemma": "čitati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0453"
+        "recordId": "A1-0453",
+        "audioSrc": "/audio/hr/a1/module-06/citati.mp3"
       },
       {
         "target": "gledati",
         "source": "oglądać",
         "lemma": "gledati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0454"
+        "recordId": "A1-0454",
+        "audioSrc": "/audio/hr/a1/module-06/gledati.mp3"
       },
       {
         "target": "slušati",
         "source": "słuchać",
         "lemma": "slušati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0455"
+        "recordId": "A1-0455",
+        "audioSrc": "/audio/hr/a1/module-06/slusati.mp3"
       },
       {
         "target": "glazba",
         "source": "muzyka",
         "lemma": "glazba",
         "partOfSpeech": "noun",
-        "recordId": "A1-0456"
+        "recordId": "A1-0456",
+        "audioSrc": "/audio/hr/a1/module-06/glazba.mp3"
       },
       {
         "target": "film",
         "source": "film",
         "lemma": "film",
         "partOfSpeech": "noun",
-        "recordId": "A1-0457"
+        "recordId": "A1-0457",
+        "audioSrc": "/audio/hr/a1/module-06/film.mp3"
       },
       {
         "target": "igrati",
         "source": "grać",
         "lemma": "igrati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0458"
+        "recordId": "A1-0458",
+        "audioSrc": "/audio/hr/a1/module-06/igrati.mp3"
       },
       {
         "target": "šetati",
         "source": "spacerować",
         "lemma": "šetati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0459"
+        "recordId": "A1-0459",
+        "audioSrc": "/audio/hr/a1/module-06/setati.mp3"
       },
       {
         "target": "serija",
         "source": "serial",
         "lemma": "serija",
         "partOfSpeech": "noun",
-        "recordId": "A1-0976"
+        "recordId": "A1-0976",
+        "audioSrc": "/audio/hr/a1/module-06/serija.mp3"
       },
       {
         "target": "televizija",
         "source": "telewizja",
         "lemma": "televizija",
         "partOfSpeech": "noun",
-        "recordId": "A1-0977"
+        "recordId": "A1-0977",
+        "audioSrc": "/audio/hr/a1/module-06/televizija.mp3"
       },
       {
         "target": "crtati",
         "source": "rysować",
         "lemma": "crtati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0978"
+        "recordId": "A1-0978",
+        "audioSrc": "/audio/hr/a1/module-06/crtati.mp3"
       },
       {
         "target": "pjevati",
         "source": "śpiewać",
         "lemma": "pjevati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0979"
+        "recordId": "A1-0979",
+        "audioSrc": "/audio/hr/a1/module-06/pjevati.mp3"
       },
       {
         "target": "plesati",
         "source": "tańczyć",
         "lemma": "plesati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0980"
+        "recordId": "A1-0980",
+        "audioSrc": "/audio/hr/a1/module-06/plesati.mp3"
       },
       {
         "target": "fotografirati",
         "source": "fotografować",
         "lemma": "fotografirati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0981"
+        "recordId": "A1-0981",
+        "audioSrc": "/audio/hr/a1/module-06/fotografirati.mp3"
       },
       {
         "target": "izlaziti",
         "source": "wychodzić (np. ze znajomymi)",
         "lemma": "izlaziti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0982"
+        "recordId": "A1-0982",
+        "audioSrc": "/audio/hr/a1/module-06/izlaziti.mp3"
       },
       {
         "target": "koncert",
         "source": "koncert",
         "lemma": "koncert",
         "partOfSpeech": "noun",
-        "recordId": "A1-0983"
+        "recordId": "A1-0983",
+        "audioSrc": "/audio/hr/a1/module-06/koncert.mp3"
       },
       {
         "target": "kazalište",
         "source": "teatr",
         "lemma": "kazalište",
         "partOfSpeech": "noun",
-        "recordId": "A1-0984"
+        "recordId": "A1-0984",
+        "audioSrc": "/audio/hr/a1/module-06/kazaliste.mp3"
       },
       {
         "target": "igrica",
         "source": "gra (komputerowa)",
         "lemma": "igrica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0985"
+        "recordId": "A1-0985",
+        "audioSrc": "/audio/hr/a1/module-06/igrica.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "U slobodno vrijeme čitam.",
-            "source": "W wolnym czasie czytam."
+            "source": "W wolnym czasie czytam.",
+            "audioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam.mp3"
           },
           {
             "target": "Volim gledati filmove.",
-            "source": "Lubię oglądać filmy."
+            "source": "Lubię oglądać filmy.",
+            "audioSrc": "/audio/hr/a1/module-06/volim-gledati-filmove.mp3"
           },
           {
             "target": "Slušam glazbu svaki dan.",
-            "source": "Słucham muzyki codziennie."
+            "source": "Słucham muzyki codziennie.",
+            "audioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
           }
         ]
       },
@@ -166,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "U slobodno vrijeme čitam.",
-          "source": "W wolnym czasie czytam."
-        }
+          "source": "W wolnym czasie czytam.",
+          "audioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/slobodno-vrijeme.mp3"
       },
       {
         "id": "word-2",
@@ -178,8 +201,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "U slobodno vrijeme čitam.",
-          "source": "W wolnym czasie czytam."
-        }
+          "source": "W wolnym czasie czytam.",
+          "audioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/citati.mp3"
       },
       {
         "id": "word-3",
@@ -190,8 +215,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Volim gledati filmove.",
-          "source": "Lubię oglądać filmy."
-        }
+          "source": "Lubię oglądać filmy.",
+          "audioSrc": "/audio/hr/a1/module-06/volim-gledati-filmove.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/gledati.mp3"
       },
       {
         "id": "check-1",
@@ -205,7 +232,8 @@ export const LESSON: GeneratedLesson = {
           "oglądać"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/gledati.mp3"
       },
       {
         "id": "word-4",
@@ -216,8 +244,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Slušam glazbu svaki dan.",
-          "source": "Słucham muzyki codziennie."
-        }
+          "source": "Słucham muzyki codziennie.",
+          "audioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/slusati.mp3"
       },
       {
         "id": "word-5",
@@ -228,8 +258,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Slušam glazbu svaki dan.",
-          "source": "Słucham muzyki codziennie."
-        }
+          "source": "Słucham muzyki codziennie.",
+          "audioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/glazba.mp3"
       },
       {
         "id": "word-6",
@@ -240,8 +272,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Volim gledati filmove.",
-          "source": "Lubię oglądać filmy."
-        }
+          "source": "Lubię oglądać filmy.",
+          "audioSrc": "/audio/hr/a1/module-06/volim-gledati-filmove.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/film.mp3"
       },
       {
         "id": "check-2",
@@ -255,7 +289,8 @@ export const LESSON: GeneratedLesson = {
           "glazba"
         ],
         "correctIndex": 0,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-06/slusati.mp3"
       },
       {
         "id": "word-7",
@@ -266,8 +301,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Ponekad igram igre.",
-          "source": "Czasami gram w gry."
-        }
+          "source": "Czasami gram w gry.",
+          "audioSrc": "/audio/hr/a1/module-06/ponekad-igram-igre.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/igrati.mp3"
       },
       {
         "id": "word-8",
@@ -278,8 +315,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Navečer šetam.",
-          "source": "Wieczorem spaceruję."
-        }
+          "source": "Wieczorem spaceruję.",
+          "audioSrc": "/audio/hr/a1/module-06/navecer-setam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/setati.mp3"
       },
       {
         "id": "check-3",
@@ -293,7 +332,8 @@ export const LESSON: GeneratedLesson = {
           "spacerować"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/igrati.mp3"
       },
       {
         "id": "more-words",
@@ -305,52 +345,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "serija",
             "source": "serial",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/serija.mp3"
           },
           {
             "target": "televizija",
             "source": "telewizja",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/televizija.mp3"
           },
           {
             "target": "crtati",
             "source": "rysować",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/crtati.mp3"
           },
           {
             "target": "pjevati",
             "source": "śpiewać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/pjevati.mp3"
           },
           {
             "target": "plesati",
             "source": "tańczyć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/plesati.mp3"
           },
           {
             "target": "fotografirati",
             "source": "fotografować",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/fotografirati.mp3"
           },
           {
             "target": "izlaziti",
             "source": "wychodzić (np. ze znajomymi)",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-06/izlaziti.mp3"
           },
           {
             "target": "koncert",
             "source": "koncert",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/koncert.mp3"
           },
           {
             "target": "kazalište",
             "source": "teatr",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/kazaliste.mp3"
           },
           {
             "target": "igrica",
             "source": "gra (komputerowa)",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/igrica.mp3"
           }
         ]
       },
@@ -366,7 +416,8 @@ export const LESSON: GeneratedLesson = {
           "wychodzić (np. ze znajomymi)"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/izlaziti.mp3"
       },
       {
         "id": "examples",
@@ -377,19 +428,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Navečer gledam seriju.",
-            "source": "Wieczorem oglądam serial."
+            "source": "Wieczorem oglądam serial.",
+            "audioSrc": "/audio/hr/a1/module-06/navecer-gledam-seriju.mp3"
           },
           {
             "target": "Volim pjevati i plesati.",
-            "source": "Lubię śpiewać i tańczyć."
+            "source": "Lubię śpiewać i tańczyć.",
+            "audioSrc": "/audio/hr/a1/module-06/volim-pjevati-i-plesati.mp3"
           },
           {
             "target": "Subotom izlazim s prijateljima.",
-            "source": "W soboty wychodzę z przyjaciółmi."
+            "source": "W soboty wychodzę z przyjaciółmi.",
+            "audioSrc": "/audio/hr/a1/module-06/subotom-izlazim-s-prijateljima.mp3"
           },
           {
             "target": "Idemo na koncert u petak.",
-            "source": "Idziemy na koncert w piątek."
+            "source": "Idziemy na koncert w piątek.",
+            "audioSrc": "/audio/hr/a1/module-06/idemo-na-koncert-u-petak.mp3"
           }
         ]
       },
@@ -402,15 +457,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Volim gledati filmove.",
-            "source": "Lubię oglądać filmy."
+            "source": "Lubię oglądać filmy.",
+            "audioSrc": "/audio/hr/a1/module-06/volim-gledati-filmove.mp3"
           },
           {
             "target": "U slobodno vrijeme čitam.",
-            "source": "W wolnym czasie czytam."
+            "source": "W wolnym czasie czytam.",
+            "audioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam.mp3"
           },
           {
             "target": "Slušam glazbu svaki dan.",
-            "source": "Słucham muzyki codziennie."
+            "source": "Słucham muzyki codziennie.",
+            "audioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
           }
         ]
       },
@@ -424,7 +482,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "gledati"
         ],
-        "translation": "Lubię oglądać filmy."
+        "translation": "Lubię oglądać filmy.",
+        "answerAudioSrc": "/audio/hr/a1/module-06/volim-gledati-filmove.mp3"
       },
       {
         "id": "translate-1",
@@ -436,7 +495,8 @@ export const LESSON: GeneratedLesson = {
           "Slušam glazbu svaki dan.",
           "Ja slušam glazbu svaki dan.",
           "Svaki dan slušam glazbu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
       },
       {
         "id": "order",
@@ -453,7 +513,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "U slobodno vrijeme čitam.",
           "Ja u slobodno vrijeme čitam."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam.mp3"
       },
       {
         "id": "comprehend",
@@ -467,7 +528,8 @@ export const LESSON: GeneratedLesson = {
           "Czasami gram w gry."
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/ponekad-igram-igre.mp3"
       },
       {
         "id": "translate-2",
@@ -477,7 +539,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Co robisz w wolnym czasie?",
         "accepted": [
           "Što radiš u slobodno vrijeme?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/sto-radis-u-slobodno-vrijeme.mp3"
       },
       {
         "id": "model",
@@ -488,32 +551,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Što radiš u slobodno vrijeme?",
-            "translation": "Co robisz w wolnym czasie?"
+            "translation": "Co robisz w wolnym czasie?",
+            "audioSrc": "/audio/hr/a1/module-06/sto-radis-u-slobodno-vrijeme-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Čitam i slušam glazbu. Ponekad crtam.",
-            "translation": "Czytam i słucham muzyki. Czasami rysuję."
+            "translation": "Czytam i słucham muzyki. Czasami rysuję.",
+            "audioSrc": "/audio/hr/a1/module-06/citam-i-slusam-glazbu-ponekad-crtam.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Voliš li koncerte?",
-            "translation": "Lubisz koncerty?"
+            "translation": "Lubisz koncerty?",
+            "audioSrc": "/audio/hr/a1/module-06/volis-li-koncerte-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Da, volim koncerte!",
-            "translation": "Tak, lubię koncerty!"
+            "translation": "Tak, lubię koncerty!",
+            "audioSrc": "/audio/hr/a1/module-06/da-volim-koncerte.mp3"
           },
           {
             "speaker": "Marko",
             "text": "U petak je koncert u parku. Ideš?",
-            "translation": "W piątek jest koncert w parku. Idziesz?"
+            "translation": "W piątek jest koncert w parku. Idziesz?",
+            "audioSrc": "/audio/hr/a1/module-06/u-petak-je-koncert-u-parku-ides-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Idem!",
-            "translation": "Idę!"
+            "translation": "Idę!",
+            "audioSrc": "/audio/hr/a1/module-06/idem.mp3"
           }
         ]
       },
@@ -528,7 +597,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Što radiš u slobodno vrijeme?",
-              "translation": "Co robisz w wolnym czasie?"
+              "translation": "Co robisz w wolnym czasie?",
+              "audioSrc": "/audio/hr/a1/module-06/sto-radis-u-slobodno-vrijeme.mp3"
             }
           },
           {
@@ -541,14 +611,16 @@ export const LESSON: GeneratedLesson = {
               "Ja u slobodno vrijeme slušam glazbu."
             ],
             "pattern": "^(u slobodno vrijeme )?(ja )?((?:idem u kupovinu|fotografiram|imam vremena|preporučujem|vozim bicikl|sastanem se|se sastanem|doručkujem|izgubim se|odmaram se|odmorim se|planinarim|preporučim|rezerviram|se izgubim|se odmaram|se odmorim|se tuširam|tuširam se|odgovorim|presjedam|razumijem|se sunčam|sunčam se|kupam se|nadam se|nađem se|odaberem|planiram|posjetim|poslušam|poznajem|prijeđem|pronađem|se kupam|se nadam|se nađem|se zovem|studiram|zovem se|govorim|izlazim|napišem|naručim|pokažem|ponovim|putujem|skrenem|stignem|ustajem|ustanem|večeram|vježbam|završim|gledam|kasnim|koštam|krenem|opišem|pjevam|platim|plešem|plivam|poznam|pričam|skijam|slušam|spavam|stižem|tražim|trebam|čitam|crtam|igram|jedem|kuham|kupim|nemam|pijem|pitam|radim|ronim|ručam|šetam|trčim|vidim|volim|vozim|živim|hoću|idem|imam|učim|znam)|volim (?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići))( \\p{L}+){0,3}( u slobodno vrijeme)?$",
-            "suggestion": "U slobodno vrijeme čitam."
+            "suggestion": "U slobodno vrijeme čitam.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "A što voliš gledati?",
-              "translation": "A co lubisz oglądać?"
+              "translation": "A co lubisz oglądać?",
+              "audioSrc": "/audio/hr/a1/module-06/a-sto-volis-gledati.mp3"
             }
           },
           {
@@ -559,7 +631,8 @@ export const LESSON: GeneratedLesson = {
               "Ja volim gledati filmove."
             ],
             "pattern": "^(da )?(ja )?(volim gledati|gledam) filmove$",
-            "suggestion": "Volim gledati filmove."
+            "suggestion": "Volim gledati filmove.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/volim-gledati-filmove.mp3"
           }
         ]
       },
@@ -591,7 +664,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "U slobodno vrijeme čitam. Volim gledati filmove."
+        "sample": "U slobodno vrijeme čitam. Volim gledati filmove.",
+        "sampleAudioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam-volim-gledati-filmove.mp3"
       },
       {
         "id": "summary",
@@ -601,19 +675,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "U slobodno vrijeme čitam.",
-            "source": "W wolnym czasie czytam."
+            "source": "W wolnym czasie czytam.",
+            "audioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam.mp3"
           },
           {
             "target": "Volim gledati filmove.",
-            "source": "Lubię oglądać filmy."
+            "source": "Lubię oglądać filmy.",
+            "audioSrc": "/audio/hr/a1/module-06/volim-gledati-filmove.mp3"
           },
           {
             "target": "Slušam glazbu svaki dan.",
-            "source": "Słucham muzyki codziennie."
+            "source": "Słucham muzyki codziennie.",
+            "audioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
           },
           {
             "target": "Ponekad igram igre.",
-            "source": "Czasami gram w gry."
+            "source": "Czasami gram w gry.",
+            "audioSrc": "/audio/hr/a1/module-06/ponekad-igram-igre.mp3"
           }
         ]
       }

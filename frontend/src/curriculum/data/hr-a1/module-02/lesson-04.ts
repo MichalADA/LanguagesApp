@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "mieć",
         "lemma": "imati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0146"
+        "recordId": "A1-0146",
+        "audioSrc": "/audio/hr/a1/module-02/imati.mp3"
       },
       {
         "target": "nemati",
         "source": "nie mieć",
         "lemma": "nemati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0147"
+        "recordId": "A1-0147",
+        "audioSrc": "/audio/hr/a1/module-02/nemati.mp3"
       },
       {
         "target": "auto",
         "source": "samochód",
         "lemma": "auto",
         "partOfSpeech": "noun",
-        "recordId": "A1-0148"
+        "recordId": "A1-0148",
+        "audioSrc": "/audio/hr/a1/module-02/auto.mp3"
       },
       {
         "target": "bicikl",
         "source": "rower",
         "lemma": "bicikl",
         "partOfSpeech": "noun",
-        "recordId": "A1-0149"
+        "recordId": "A1-0149",
+        "audioSrc": "/audio/hr/a1/module-02/bicikl.mp3"
       },
       {
         "target": "telefon",
         "source": "telefon",
         "lemma": "telefon",
         "partOfSpeech": "noun",
-        "recordId": "A1-0150"
+        "recordId": "A1-0150",
+        "audioSrc": "/audio/hr/a1/module-02/telefon.mp3"
       },
       {
         "target": "knjiga",
         "source": "książka",
         "lemma": "knjiga",
         "partOfSpeech": "noun",
-        "recordId": "A1-0151"
+        "recordId": "A1-0151",
+        "audioSrc": "/audio/hr/a1/module-02/knjiga.mp3"
       },
       {
         "target": "pas",
         "source": "pies",
         "lemma": "pas",
         "partOfSpeech": "noun",
-        "recordId": "A1-0152"
+        "recordId": "A1-0152",
+        "audioSrc": "/audio/hr/a1/module-02/pas.mp3"
       },
       {
         "target": "mačka",
         "source": "kot",
         "lemma": "mačka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0153"
+        "recordId": "A1-0153",
+        "audioSrc": "/audio/hr/a1/module-02/macka.mp3"
       },
       {
         "target": "kuća",
         "source": "dom",
         "lemma": "kuća",
         "partOfSpeech": "noun",
-        "recordId": "A1-0767"
+        "recordId": "A1-0767",
+        "audioSrc": "/audio/hr/a1/module-02/kuca.mp3"
       },
       {
         "target": "stan",
         "source": "mieszkanie",
         "lemma": "stan",
         "partOfSpeech": "noun",
-        "recordId": "A1-0768"
+        "recordId": "A1-0768",
+        "audioSrc": "/audio/hr/a1/module-02/stan.mp3"
       },
       {
         "target": "torba",
         "source": "torba",
         "lemma": "torba",
         "partOfSpeech": "noun",
-        "recordId": "A1-0769"
+        "recordId": "A1-0769",
+        "audioSrc": "/audio/hr/a1/module-02/torba.mp3"
       },
       {
         "target": "novčanik",
         "source": "portfel",
         "lemma": "novčanik",
         "partOfSpeech": "noun",
-        "recordId": "A1-0770"
+        "recordId": "A1-0770",
+        "audioSrc": "/audio/hr/a1/module-02/novcanik.mp3"
       },
       {
         "target": "novac",
         "source": "pieniądze",
         "lemma": "novac",
         "partOfSpeech": "noun",
-        "recordId": "A1-0771"
+        "recordId": "A1-0771",
+        "audioSrc": "/audio/hr/a1/module-02/novac.mp3"
       },
       {
         "target": "laptop",
         "source": "laptop",
         "lemma": "laptop",
         "partOfSpeech": "noun",
-        "recordId": "A1-0772"
+        "recordId": "A1-0772",
+        "audioSrc": "/audio/hr/a1/module-02/laptop.mp3"
       },
       {
         "target": "kišobran",
         "source": "parasol",
         "lemma": "kišobran",
         "partOfSpeech": "noun",
-        "recordId": "A1-0773"
+        "recordId": "A1-0773",
+        "audioSrc": "/audio/hr/a1/module-02/kisobran.mp3"
       },
       {
         "target": "naočale",
         "source": "okulary",
         "lemma": "naočale",
         "partOfSpeech": "noun",
-        "recordId": "A1-0774"
+        "recordId": "A1-0774",
+        "audioSrc": "/audio/hr/a1/module-02/naocale.mp3"
       },
       {
         "target": "vrt",
         "source": "ogród",
         "lemma": "vrt",
         "partOfSpeech": "noun",
-        "recordId": "A1-0775"
+        "recordId": "A1-0775",
+        "audioSrc": "/audio/hr/a1/module-02/vrt.mp3"
       },
       {
         "target": "nov",
         "source": "nowy",
         "lemma": "nov",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0776"
+        "recordId": "A1-0776",
+        "audioSrc": "/audio/hr/a1/module-02/nov.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Imam auto.",
-            "source": "Mam samochód."
+            "source": "Mam samochód.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
           },
           {
             "target": "Nemam bicikl.",
-            "source": "Nie mam roweru."
+            "source": "Nie mam roweru.",
+            "audioSrc": "/audio/hr/a1/module-02/nemam-bicikl.mp3"
           },
           {
             "target": "Imam novu knjigu.",
-            "source": "Mam nową książkę."
+            "source": "Mam nową książkę.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-novu-knjigu.mp3"
           }
         ]
       },
@@ -166,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Imam auto.",
-          "source": "Mam samochód."
-        }
+          "source": "Mam samochód.",
+          "audioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/imati.mp3"
       },
       {
         "id": "word-2",
@@ -178,8 +201,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Nemam bicikl.",
-          "source": "Nie mam roweru."
-        }
+          "source": "Nie mam roweru.",
+          "audioSrc": "/audio/hr/a1/module-02/nemam-bicikl.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/nemati.mp3"
       },
       {
         "id": "word-3",
@@ -190,8 +215,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Imam auto.",
-          "source": "Mam samochód."
-        }
+          "source": "Mam samochód.",
+          "audioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/auto.mp3"
       },
       {
         "id": "check-1",
@@ -205,7 +232,8 @@ export const LESSON: GeneratedLesson = {
           "kot"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/imati.mp3"
       },
       {
         "id": "word-4",
@@ -216,8 +244,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Nemam bicikl.",
-          "source": "Nie mam roweru."
-        }
+          "source": "Nie mam roweru.",
+          "audioSrc": "/audio/hr/a1/module-02/nemam-bicikl.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/bicikl.mp3"
       },
       {
         "id": "word-5",
@@ -228,8 +258,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Imaš li telefon?",
-          "source": "Czy masz telefon?"
-        }
+          "source": "Czy masz telefon?",
+          "audioSrc": "/audio/hr/a1/module-02/imas-li-telefon.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/telefon.mp3"
       },
       {
         "id": "word-6",
@@ -240,8 +272,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Imam novu knjigu.",
-          "source": "Mam nową książkę."
-        }
+          "source": "Mam nową książkę.",
+          "audioSrc": "/audio/hr/a1/module-02/imam-novu-knjigu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/knjiga.mp3"
       },
       {
         "id": "check-2",
@@ -255,7 +289,8 @@ export const LESSON: GeneratedLesson = {
           "imati"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-02/telefon.mp3"
       },
       {
         "id": "word-7",
@@ -266,8 +301,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ona ima psa.",
-          "source": "Ona ma psa."
-        }
+          "source": "Ona ma psa.",
+          "audioSrc": "/audio/hr/a1/module-02/ona-ima-psa.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/pas.mp3"
       },
       {
         "id": "word-8",
@@ -278,8 +315,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "On nema mačku.",
-          "source": "On nie ma kota."
-        }
+          "source": "On nie ma kota.",
+          "audioSrc": "/audio/hr/a1/module-02/on-nema-macku.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/macka.mp3"
       },
       {
         "id": "check-3",
@@ -293,7 +332,8 @@ export const LESSON: GeneratedLesson = {
           "kot"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/macka.mp3"
       },
       {
         "id": "more-words",
@@ -305,52 +345,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "kuća",
             "source": "dom",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/kuca.mp3"
           },
           {
             "target": "stan",
             "source": "mieszkanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/stan.mp3"
           },
           {
             "target": "torba",
             "source": "torba",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/torba.mp3"
           },
           {
             "target": "novčanik",
             "source": "portfel",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/novcanik.mp3"
           },
           {
             "target": "novac",
             "source": "pieniądze",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/novac.mp3"
           },
           {
             "target": "laptop",
             "source": "laptop",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/laptop.mp3"
           },
           {
             "target": "kišobran",
             "source": "parasol",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/kisobran.mp3"
           },
           {
             "target": "naočale",
             "source": "okulary",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/naocale.mp3"
           },
           {
             "target": "vrt",
             "source": "ogród",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/vrt.mp3"
           },
           {
             "target": "nov",
             "source": "nowy",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-02/nov.mp3"
           }
         ]
       },
@@ -366,7 +416,8 @@ export const LESSON: GeneratedLesson = {
           "mieszkanie"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/nov.mp3"
       },
       {
         "id": "examples",
@@ -377,19 +428,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Imam mali stan u centru.",
-            "source": "Mam małe mieszkanie w centrum."
+            "source": "Mam małe mieszkanie w centrum.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-mali-stan-u-centru.mp3"
           },
           {
             "target": "Moji roditelji imaju kuću i vrt.",
-            "source": "Moi rodzice mają dom i ogród."
+            "source": "Moi rodzice mają dom i ogród.",
+            "audioSrc": "/audio/hr/a1/module-02/moji-roditelji-imaju-kucu-i-vrt.mp3"
           },
           {
             "target": "Nemam novca.",
-            "source": "Nie mam pieniędzy."
+            "source": "Nie mam pieniędzy.",
+            "audioSrc": "/audio/hr/a1/module-02/nemam-novca.mp3"
           },
           {
             "target": "U torbi imam laptop i naočale.",
-            "source": "W torbie mam laptopa i okulary."
+            "source": "W torbie mam laptopa i okulary.",
+            "audioSrc": "/audio/hr/a1/module-02/u-torbi-imam-laptop-i-naocale.mp3"
           }
         ]
       },
@@ -402,15 +457,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Imam auto.",
-            "source": "Mam samochód."
+            "source": "Mam samochód.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
           },
           {
             "target": "Nemam bicikl.",
-            "source": "Nie mam roweru."
+            "source": "Nie mam roweru.",
+            "audioSrc": "/audio/hr/a1/module-02/nemam-bicikl.mp3"
           },
           {
             "target": "Imam novu knjigu.",
-            "source": "Mam nową książkę."
+            "source": "Mam nową książkę.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-novu-knjigu.mp3"
           }
         ],
         "note": "Pas → psa: Ona ima psa — jak po polsku „ma psa”."
@@ -425,7 +483,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "knjigu"
         ],
-        "translation": "Mam nową książkę."
+        "translation": "Mam nową książkę.",
+        "answerAudioSrc": "/audio/hr/a1/module-02/imam-novu-knjigu.mp3"
       },
       {
         "id": "comprehend",
@@ -439,7 +498,8 @@ export const LESSON: GeneratedLesson = {
           "Nie mam roweru."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/on-nema-macku.mp3"
       },
       {
         "id": "translate-1",
@@ -450,7 +510,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Imam auto.",
           "Ja imam auto."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
       },
       {
         "id": "order",
@@ -465,7 +526,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Imaš li telefon?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/imas-li-telefon.mp3"
       },
       {
         "id": "translate-2",
@@ -478,7 +540,8 @@ export const LESSON: GeneratedLesson = {
           "Nemam bicikla.",
           "Ja nemam bicikl.",
           "Ja nemam bicikla."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/nemam-bicikl.mp3"
       },
       {
         "id": "model",
@@ -489,27 +552,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Marko, imaš li auto?",
-            "translation": "Marko, masz samochód?"
+            "translation": "Marko, masz samochód?",
+            "audioSrc": "/audio/hr/a1/module-02/marko-imas-li-auto.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Nemam auto, ali imam bicikl.",
-            "translation": "Nie mam samochodu, ale mam rower."
+            "translation": "Nie mam samochodu, ale mam rower.",
+            "audioSrc": "/audio/hr/a1/module-02/nemam-auto-ali-imam-bicikl-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "A imaš li kuću ili stan?",
-            "translation": "A masz dom czy mieszkanie?"
+            "translation": "A masz dom czy mieszkanie?",
+            "audioSrc": "/audio/hr/a1/module-02/a-imas-li-kucu-ili-stan.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Imam mali stan u centru. A ti?",
-            "translation": "Mam małe mieszkanie w centrum. A ty?"
+            "translation": "Mam małe mieszkanie w centrum. A ty?",
+            "audioSrc": "/audio/hr/a1/module-02/imam-mali-stan-u-centru-a-ti-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ja imam kuću i vrt. I imam psa!",
-            "translation": "Ja mam dom i ogród. I mam psa!"
+            "translation": "Ja mam dom i ogród. I mam psa!",
+            "audioSrc": "/audio/hr/a1/module-02/ja-imam-kucu-i-vrt-i-imam-psa.mp3"
           }
         ]
       },
@@ -524,7 +592,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Imaš li telefon?",
-              "translation": "Czy masz telefon?"
+              "translation": "Czy masz telefon?",
+              "audioSrc": "/audio/hr/a1/module-02/imas-li-telefon-m.mp3"
             }
           },
           {
@@ -537,14 +606,16 @@ export const LESSON: GeneratedLesson = {
               "Ja imam telefon."
             ],
             "pattern": "^(da )?(ja )?imam( telefon)?$",
-            "suggestion": "Da, imam telefon."
+            "suggestion": "Da, imam telefon.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/da-imam-telefon.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Imaš li psa?",
-              "translation": "Masz psa?"
+              "translation": "Masz psa?",
+              "audioSrc": "/audio/hr/a1/module-02/imas-li-psa-m.mp3"
             }
           },
           {
@@ -555,7 +626,8 @@ export const LESSON: GeneratedLesson = {
               "Ja nemam psa, ali imam mačku."
             ],
             "pattern": "^(ne )?(nemam psa (ali )?imam mačku|imam mačku (ali )?nemam psa)$",
-            "suggestion": "Nemam psa, ali imam mačku."
+            "suggestion": "Nemam psa, ali imam mačku.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/nemam-psa-ali-imam-macku.mp3"
           }
         ]
       },
@@ -583,7 +655,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Imam auto i psa. Nemam bicikl."
+        "sample": "Imam auto i psa. Nemam bicikl.",
+        "sampleAudioSrc": "/audio/hr/a1/module-02/imam-auto-i-psa-nemam-bicikl.mp3"
       },
       {
         "id": "summary",
@@ -593,19 +666,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Imam auto.",
-            "source": "Mam samochód."
+            "source": "Mam samochód.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
           },
           {
             "target": "Nemam bicikl.",
-            "source": "Nie mam roweru."
+            "source": "Nie mam roweru.",
+            "audioSrc": "/audio/hr/a1/module-02/nemam-bicikl.mp3"
           },
           {
             "target": "Imam novu knjigu.",
-            "source": "Mam nową książkę."
+            "source": "Mam nową książkę.",
+            "audioSrc": "/audio/hr/a1/module-02/imam-novu-knjigu.mp3"
           },
           {
             "target": "Ona ima psa.",
-            "source": "Ona ma psa."
+            "source": "Ona ma psa.",
+            "audioSrc": "/audio/hr/a1/module-02/ona-ima-psa.mp3"
           }
         ]
       }

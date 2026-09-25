@@ -12,119 +12,136 @@ export const LESSON: GeneratedLesson = {
         "source": "jutro",
         "lemma": "sutra",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0650"
+        "recordId": "A1-0650",
+        "audioSrc": "/audio/hr/a1/module-03/sutra.mp3"
       },
       {
         "target": "ću",
         "source": "będę / partykuła futurum 1 os.",
         "lemma": "ću",
         "partOfSpeech": "auxiliary",
-        "recordId": "A1-0651"
+        "recordId": "A1-0651",
+        "audioSrc": "/audio/hr/a1/module-08/cu.mp3"
       },
       {
         "target": "ćeš",
         "source": "będziesz / partykuła futurum 2 os.",
         "lemma": "ćeš",
         "partOfSpeech": "auxiliary",
-        "recordId": "A1-0652"
+        "recordId": "A1-0652",
+        "audioSrc": "/audio/hr/a1/module-08/ces.mp3"
       },
       {
         "target": "raditi",
         "source": "pracować",
         "lemma": "raditi",
         "partOfSpeech": "verb",
-        "recordId": "A1-0653"
+        "recordId": "A1-0653",
+        "audioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
         "target": "ići",
         "source": "iść / jechać",
         "lemma": "ići",
         "partOfSpeech": "verb",
-        "recordId": "A1-0654"
+        "recordId": "A1-0654",
+        "audioSrc": "/audio/hr/a1/module-05/ici.mp3"
       },
       {
         "target": "učiti",
         "source": "uczyć się",
         "lemma": "učiti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0655"
+        "recordId": "A1-0655",
+        "audioSrc": "/audio/hr/a1/module-03/uciti.mp3"
       },
       {
         "target": "odmoriti se",
         "source": "odpocząć",
         "lemma": "odmoriti se",
         "partOfSpeech": "verb",
-        "recordId": "A1-0656"
+        "recordId": "A1-0656",
+        "audioSrc": "/audio/hr/a1/module-08/odmoriti-se.mp3"
       },
       {
         "target": "kasnije",
         "source": "później",
         "lemma": "kasnije",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0657"
+        "recordId": "A1-0657",
+        "audioSrc": "/audio/hr/a1/module-08/kasnije.mp3"
       },
       {
         "target": "će",
         "source": "będzie (partykuła futurum 3 os.)",
         "lemma": "htjeti",
         "partOfSpeech": "auxiliary",
-        "recordId": "A1-1113"
+        "recordId": "A1-1113",
+        "audioSrc": "/audio/hr/a1/module-08/ce.mp3"
       },
       {
         "target": "ćemo",
         "source": "będziemy (partykuła futurum)",
         "lemma": "htjeti",
         "partOfSpeech": "auxiliary",
-        "recordId": "A1-1114"
+        "recordId": "A1-1114",
+        "audioSrc": "/audio/hr/a1/module-08/cemo.mp3"
       },
       {
         "target": "ćete",
         "source": "będziecie (partykuła futurum)",
         "lemma": "htjeti",
         "partOfSpeech": "auxiliary",
-        "recordId": "A1-1115"
+        "recordId": "A1-1115",
+        "audioSrc": "/audio/hr/a1/module-08/cete.mp3"
       },
       {
         "target": "sljedeći tjedan",
         "source": "w przyszłym tygodniu",
         "lemma": "tjedan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1116"
+        "recordId": "A1-1116",
+        "audioSrc": "/audio/hr/a1/module-08/sljedeci-tjedan.mp3"
       },
       {
         "target": "za tjedan dana",
         "source": "za tydzień",
         "lemma": "tjedan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1117"
+        "recordId": "A1-1117",
+        "audioSrc": "/audio/hr/a1/module-08/za-tjedan-dana.mp3"
       },
       {
         "target": "uskoro",
         "source": "wkrótce",
         "lemma": "uskoro",
         "partOfSpeech": "adverb",
-        "recordId": "A1-1118"
+        "recordId": "A1-1118",
+        "audioSrc": "/audio/hr/a1/module-08/uskoro.mp3"
       },
       {
         "target": "planirati",
         "source": "planować",
         "lemma": "planirati",
         "partOfSpeech": "verb",
-        "recordId": "A1-1119"
+        "recordId": "A1-1119",
+        "audioSrc": "/audio/hr/a1/module-08/planirati.mp3"
       },
       {
         "target": "nadati se",
         "source": "mieć nadzieję",
         "lemma": "nadati se",
         "partOfSpeech": "verb",
-        "recordId": "A1-1120"
+        "recordId": "A1-1120",
+        "audioSrc": "/audio/hr/a1/module-08/nadati-se.mp3"
       },
       {
         "target": "sigurno",
         "source": "na pewno",
         "lemma": "siguran",
         "partOfSpeech": "adverb",
-        "recordId": "A1-1121"
+        "recordId": "A1-1121",
+        "audioSrc": "/audio/hr/a1/module-08/sigurno.mp3"
       }
     ],
     "steps": [
@@ -138,15 +155,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Sutra ću raditi.",
-            "source": "Jutro będę pracować."
+            "source": "Jutro będę pracować.",
+            "audioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
           },
           {
             "target": "Sutra ću učiti hrvatski.",
-            "source": "Jutro będę uczyć się chorwackiego."
+            "source": "Jutro będę uczyć się chorwackiego.",
+            "audioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
           },
           {
             "target": "Kasnije ću se odmoriti.",
-            "source": "Później odpocznę."
+            "source": "Później odpocznę.",
+            "audioSrc": "/audio/hr/a1/module-08/kasnije-cu-se-odmoriti.mp3"
           }
         ]
       },
@@ -159,8 +179,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Sutra ću raditi.",
-          "source": "Jutro będę pracować."
-        }
+          "source": "Jutro będę pracować.",
+          "audioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/sutra.mp3"
       },
       {
         "id": "word-2",
@@ -171,8 +193,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "forma pomocnicza",
         "example": {
           "target": "Sutra ću raditi.",
-          "source": "Jutro będę pracować."
-        }
+          "source": "Jutro będę pracować.",
+          "audioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/cu.mp3"
       },
       {
         "id": "word-3",
@@ -180,7 +204,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "ćeš",
         "source": "będziesz / partykuła futurum 2 os.",
-        "partOfSpeech": "forma pomocnicza"
+        "partOfSpeech": "forma pomocnicza",
+        "audioSrc": "/audio/hr/a1/module-08/ces.mp3"
       },
       {
         "id": "check-1",
@@ -194,7 +219,8 @@ export const LESSON: GeneratedLesson = {
           "iść / jechać"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/cu.mp3"
       },
       {
         "id": "word-4",
@@ -205,8 +231,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Sutra ću raditi.",
-          "source": "Jutro będę pracować."
-        }
+          "source": "Jutro będę pracować.",
+          "audioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
         "id": "word-5",
@@ -217,8 +245,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Hoćeš li ići sa mnom?",
-          "source": "Czy pójdziesz / pojedziesz ze mną?"
-        }
+          "source": "Czy pójdziesz / pojedziesz ze mną?",
+          "audioSrc": "/audio/hr/a1/module-08/hoces-li-ici-sa-mnom.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/ici.mp3"
       },
       {
         "id": "word-6",
@@ -229,8 +259,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Sutra ću učiti hrvatski.",
-          "source": "Jutro będę uczyć się chorwackiego."
-        }
+          "source": "Jutro będę uczyć się chorwackiego.",
+          "audioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/uciti.mp3"
       },
       {
         "id": "check-2",
@@ -244,7 +276,8 @@ export const LESSON: GeneratedLesson = {
           "učiti"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-03/uciti.mp3"
       },
       {
         "id": "word-7",
@@ -255,8 +288,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Kasnije ću se odmoriti.",
-          "source": "Później odpocznę."
-        }
+          "source": "Później odpocznę.",
+          "audioSrc": "/audio/hr/a1/module-08/kasnije-cu-se-odmoriti.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/odmoriti-se.mp3"
       },
       {
         "id": "word-8",
@@ -267,8 +302,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Kasnije ću se odmoriti.",
-          "source": "Później odpocznę."
-        }
+          "source": "Później odpocznę.",
+          "audioSrc": "/audio/hr/a1/module-08/kasnije-cu-se-odmoriti.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/kasnije.mp3"
       },
       {
         "id": "check-3",
@@ -282,7 +319,8 @@ export const LESSON: GeneratedLesson = {
           "odpocząć"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/kasnije.mp3"
       },
       {
         "id": "more-words",
@@ -294,47 +332,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "će",
             "source": "będzie (partykuła futurum 3 os.)",
-            "partOfSpeech": "forma pomocnicza"
+            "partOfSpeech": "forma pomocnicza",
+            "audioSrc": "/audio/hr/a1/module-08/ce.mp3"
           },
           {
             "target": "ćemo",
             "source": "będziemy (partykuła futurum)",
-            "partOfSpeech": "forma pomocnicza"
+            "partOfSpeech": "forma pomocnicza",
+            "audioSrc": "/audio/hr/a1/module-08/cemo.mp3"
           },
           {
             "target": "ćete",
             "source": "będziecie (partykuła futurum)",
-            "partOfSpeech": "forma pomocnicza"
+            "partOfSpeech": "forma pomocnicza",
+            "audioSrc": "/audio/hr/a1/module-08/cete.mp3"
           },
           {
             "target": "sljedeći tjedan",
             "source": "w przyszłym tygodniu",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/sljedeci-tjedan.mp3"
           },
           {
             "target": "za tjedan dana",
             "source": "za tydzień",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/za-tjedan-dana.mp3"
           },
           {
             "target": "uskoro",
             "source": "wkrótce",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/uskoro.mp3"
           },
           {
             "target": "planirati",
             "source": "planować",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-08/planirati.mp3"
           },
           {
             "target": "nadati se",
             "source": "mieć nadzieję",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-08/nadati-se.mp3"
           },
           {
             "target": "sigurno",
             "source": "na pewno",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/sigurno.mp3"
           }
         ]
       },
@@ -350,7 +397,8 @@ export const LESSON: GeneratedLesson = {
           "planować"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/cemo.mp3"
       },
       {
         "id": "examples",
@@ -361,19 +409,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Sljedeći tjedan ću putovati u Split.",
-            "source": "W przyszłym tygodniu pojadę do Splitu."
+            "source": "W przyszłym tygodniu pojadę do Splitu.",
+            "audioSrc": "/audio/hr/a1/module-08/sljedeci-tjedan-cu-putovati-u-split.mp3"
           },
           {
             "target": "Ana će sutra raditi od kuće.",
-            "source": "Ana jutro będzie pracować z domu."
+            "source": "Ana jutro będzie pracować z domu.",
+            "audioSrc": "/audio/hr/a1/module-08/ana-ce-sutra-raditi-od-kuce.mp3"
           },
           {
             "target": "Nadam se da će sutra biti sunčano.",
-            "source": "Mam nadzieję, że jutro będzie słonecznie."
+            "source": "Mam nadzieję, że jutro będzie słonecznie.",
+            "audioSrc": "/audio/hr/a1/module-08/nadam-se-da-ce-sutra-biti-suncano.mp3"
           },
           {
             "target": "Što ćete raditi za vikend?",
-            "source": "Co będziecie robić w weekend?"
+            "source": "Co będziecie robić w weekend?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-cete-raditi-za-vikend.mp3"
           }
         ]
       },
@@ -386,19 +438,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Sutra ću raditi.",
-            "source": "Jutro będę pracować."
+            "source": "Jutro będę pracować.",
+            "audioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
           },
           {
             "target": "Sutra ću učiti hrvatski.",
-            "source": "Jutro będę uczyć się chorwackiego."
+            "source": "Jutro będę uczyć się chorwackiego.",
+            "audioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
           },
           {
             "target": "Kasnije ću se odmoriti.",
-            "source": "Później odpocznę."
+            "source": "Później odpocznę.",
+            "audioSrc": "/audio/hr/a1/module-08/kasnije-cu-se-odmoriti.mp3"
           },
           {
             "target": "Hoćeš li ići sa mnom?",
-            "source": "Czy pójdziesz / pojedziesz ze mną?"
+            "source": "Czy pójdziesz / pojedziesz ze mną?",
+            "audioSrc": "/audio/hr/a1/module-08/hoces-li-ici-sa-mnom.mp3"
           }
         ],
         "note": "My: ćemo — U subotu ćemo ići na more."
@@ -413,7 +469,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "ću"
         ],
-        "translation": "Jutro będę uczyć się chorwackiego."
+        "translation": "Jutro będę uczyć się chorwackiego.",
+        "answerAudioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
       },
       {
         "id": "comprehend",
@@ -427,7 +484,8 @@ export const LESSON: GeneratedLesson = {
           "Jutro będę uczyć się chorwackiego."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/hoces-li-ici-sa-mnom.mp3"
       },
       {
         "id": "choice-1",
@@ -442,7 +500,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "explanation": "Przyszłość: ću + bezokolicznik (učiti).",
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
       },
       {
         "id": "translate-1",
@@ -453,7 +512,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Sutra ću raditi.",
           "Radit ću sutra."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
       },
       {
         "id": "order",
@@ -469,7 +529,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Kasnije ću se odmoriti."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/kasnije-cu-se-odmoriti.mp3"
       },
       {
         "id": "translate-2",
@@ -480,7 +541,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Navečer ću gledati film.",
           "Gledat ću film navečer."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/navecer-cu-gledati-film.mp3"
       },
       {
         "id": "model",
@@ -491,27 +553,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Što ćeš raditi za vikend?",
-            "translation": "Co będziesz robić w weekend?"
+            "translation": "Co będziesz robić w weekend?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-za-vikend.mp3"
           },
           {
             "speaker": "Marko",
             "text": "U subotu ću igrati nogomet, a u nedjelju ću se odmoriti.",
-            "translation": "W sobotę będę grać w piłkę, a w niedzielę odpocznę."
+            "translation": "W sobotę będę grać w piłkę, a w niedzielę odpocznę.",
+            "audioSrc": "/audio/hr/a1/module-08/u-subotu-cu-igrati-nogomet-a-u-nedjelju-cu-se-odmoriti-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Mi ćemo ići na izlet na otok.",
-            "translation": "My pojedziemy na wycieczkę na wyspę."
+            "translation": "My pojedziemy na wycieczkę na wyspę.",
+            "audioSrc": "/audio/hr/a1/module-08/mi-cemo-ici-na-izlet-na-otok.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Super! Nadam se da će biti sunčano.",
-            "translation": "Super! Mam nadzieję, że będzie słonecznie."
+            "translation": "Super! Mam nadzieję, że będzie słonecznie.",
+            "audioSrc": "/audio/hr/a1/module-08/super-nadam-se-da-ce-biti-suncano-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Sigurno hoće!",
-            "translation": "Na pewno będzie!"
+            "translation": "Na pewno będzie!",
+            "audioSrc": "/audio/hr/a1/module-08/sigurno-hoce.mp3"
           }
         ]
       },
@@ -526,7 +593,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Što ćeš raditi sutra?",
-              "translation": "Co będziesz robić jutro?"
+              "translation": "Co będziesz robić jutro?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-sutra-m.mp3"
             }
           },
           {
@@ -537,14 +605,16 @@ export const LESSON: GeneratedLesson = {
               "Sutra ću učiti hrvatski."
             ],
             "pattern": "^((sutra|kasnije|ja)( ja)? ću (?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)( \\p{L}+){0,3}|(?:fotografirat|doručkovat|izgubit se|odmarat se|odmorit se|planinarit|preporučit|rezervirat|se izgubit|se odmarat|se odmorit|se tuširat|tuširat se|odgovorit|presjedat|sastat se|se sastat|se sunčat|sunčat se|kupat se|nadat se|planirat|posjetit|poslušat|razumjet|se kupat|se nadat|studirat|govorit|izlazit|napisat|naručit|odabrat|pokazat|ponovit|putovat|se zvat|skrenut|večerat|vježbat|završit|zvat se|gledat|kasnit|koštat|krenut|opisat|pjevat|platit|plesat|plivat|poznat|pričat|skijat|slušat|spavat|tražit|trebat|vidjet|voljet|živjet|čitat|crtat|htjet|igrat|kuhat|kupit|nemat|pitat|radit|ronit|ručat|šetat|trčat|ustat|vozit|imat|jest|učit|znat|pit) ću( \\p{L}+){0,3})$",
-            "suggestion": "Sutra ću raditi."
+            "suggestion": "Sutra ću raditi.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Hoćeš li ići sa mnom?",
-              "translation": "Czy pójdziesz / pojedziesz ze mną?"
+              "translation": "Czy pójdziesz / pojedziesz ze mną?",
+              "audioSrc": "/audio/hr/a1/module-08/hoces-li-ici-sa-mnom-m.mp3"
             }
           },
           {
@@ -557,7 +627,8 @@ export const LESSON: GeneratedLesson = {
               "Ne mogu."
             ],
             "pattern": "^(da )?(hoću|može|ne mogu|naravno)( rado)?$",
-            "suggestion": "Hoću!"
+            "suggestion": "Hoću!",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/hocu.mp3"
           }
         ]
       },
@@ -587,7 +658,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Sutra ću raditi. Navečer ću gledati film."
+        "sample": "Sutra ću raditi. Navečer ću gledati film.",
+        "sampleAudioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi-navecer-cu-gledati-film.mp3"
       },
       {
         "id": "summary",
@@ -597,19 +669,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Sutra ću raditi.",
-            "source": "Jutro będę pracować."
+            "source": "Jutro będę pracować.",
+            "audioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
           },
           {
             "target": "Sutra ću učiti hrvatski.",
-            "source": "Jutro będę uczyć się chorwackiego."
+            "source": "Jutro będę uczyć się chorwackiego.",
+            "audioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
           },
           {
             "target": "Kasnije ću se odmoriti.",
-            "source": "Później odpocznę."
+            "source": "Później odpocznę.",
+            "audioSrc": "/audio/hr/a1/module-08/kasnije-cu-se-odmoriti.mp3"
           },
           {
             "target": "Hoćeš li ići sa mnom?",
-            "source": "Czy pójdziesz / pojedziesz ze mną?"
+            "source": "Czy pójdziesz / pojedziesz ze mną?",
+            "audioSrc": "/audio/hr/a1/module-08/hoces-li-ici-sa-mnom.mp3"
           }
         ]
       }
