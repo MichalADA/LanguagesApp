@@ -358,7 +358,8 @@ export const LESSON: GeneratedLesson = {
               "Možeš li ponoviti?"
             ],
             "pattern": "^(možeš li )?(to )?ponoviti( molim)?$|^(još jednom|polako)( molim)?$",
-            "suggestion": "Još jednom, molim."
+            "suggestion": "Još jednom, molim.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/jos-jednom-molim.mp3"
           }
         ]
       },
