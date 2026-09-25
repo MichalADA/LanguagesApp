@@ -64,6 +64,9 @@ export const pl: Dictionary = {
     courses: "Języki",
     settings: "Ustawienia",
     profile: "Profil",
+    more: "Więcej",
+    mobileLabel: "Nawigacja główna",
+    close: "Zamknij",
   },
   auth: {
     login: "Zaloguj się",

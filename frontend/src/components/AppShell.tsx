@@ -5,6 +5,7 @@ import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useAuth } from "@/auth/useAuth";
 import { Icon, type IconName } from "./Icon";
 import { Logo } from "./Logo";
+import { MobileNav } from "./MobileNav";
 import { Topbar } from "./Topbar";
 
 interface NavItem {
@@ -13,15 +14,17 @@ interface NavItem {
   icon: IconName;
   end?: boolean;
   soon?: boolean;
+  /** Na telefonie: dolna zakładka zamiast pozycji w arkuszu „Więcej”. */
+  tab?: boolean;
 }
 
 /** Nauka na górze (kurs jako główna ścieżka, potem trening), wgląd w postęp niżej, konfiguracja przypięta do dołu. */
 const NAV_GROUPS: NavItem[][] = [
   [
-    { to: "/", key: "nav.dashboard", icon: "home", end: true },
-    { to: "/kurs", key: "nav.course", icon: "route" },
-    { to: "/powtorki", key: "nav.review", icon: "repeat" },
-    { to: "/fiszki", key: "nav.flashcards", icon: "cards" },
+    { to: "/", key: "nav.dashboard", icon: "home", end: true, tab: true },
+    { to: "/kurs", key: "nav.course", icon: "route", tab: true },
+    { to: "/powtorki", key: "nav.review", icon: "repeat", tab: true },
+    { to: "/fiszki", key: "nav.flashcards", icon: "cards", tab: true },
     { to: "/gry", key: "nav.games", icon: "play" },
   ],
   [
@@ -32,6 +35,10 @@ const NAV_GROUPS: NavItem[][] = [
 ];
 
 const SETTINGS: NavItem = { to: "/ustawienia", key: "nav.settings", icon: "settings" };
+
+const MOBILE_ITEMS = [...NAV_GROUPS.flat(), SETTINGS].filter((item) => !item.soon);
+const MOBILE_TABS = MOBILE_ITEMS.filter((item) => item.tab);
+const MOBILE_MORE = MOBILE_ITEMS.filter((item) => !item.tab);
 
 export function AppShell({ children }: { children: ReactNode }) {
   const t = useT();
@@ -94,6 +101,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         <Topbar />
         <main className="main">{children}</main>
       </div>
+      <MobileNav tabs={MOBILE_TABS} more={MOBILE_MORE} />
     </div>
   );
 }
