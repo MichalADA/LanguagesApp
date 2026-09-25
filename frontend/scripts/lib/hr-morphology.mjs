@@ -87,7 +87,7 @@ function phraseAcc(phrase) {
 /* ---------------- Czasowniki ---------------- */
 
 const PRES_OVERRIDES = {
-  jesti: ["jedem"], piti: ["pijem"], ići: ["idem"], plesati: ["plešem"], trčati: ["trčim"], ustati: ["ustajem", "ustanem"],
+  jesti: ["jedem"], piti: ["pijem"], ići: ["idem"], plesati: ["plešem"], trčati: ["trčim"], ustati: ["ustajem", "ustanem"], ustajati: ["ustajem"],
   razumjeti: ["razumijem"], prijeći: ["prijeđem"], stići: ["stignem", "stižem"], pronaći: ["pronađem"], naći: ["nađem"],
   pokazati: ["pokažem"], opisati: ["opišem"], napisati: ["napišem"], sastati: ["sastanem"], zvati: ["zovem"],
   odabrati: ["odaberem"], poznati: ["poznajem", "poznam"], htjeti: ["hoću"], moći: ["mogu"], spavati: ["spavam"],
@@ -315,6 +315,9 @@ export const SLOTS = {
   inf: (lx) => lx.inf,
   inft: (lx) => lx.inft,
   pres1: (lx) => lx.pres1,
+  // bez klityki „se” — do ram, w których se stoi wcześniej („Navečer se obično odmaram”)
+  "pres1.bare": (lx) => lx.pres1.map((f) => f.replace(/^se | se$/g, "")),
+  nom: (lx) => lx.nom,
   "pp.self": (lx) => lx.ppSelf,
   "adj.f": (lx) => lx.adjF,
   "adj.m": (lx) => lx.adjM,

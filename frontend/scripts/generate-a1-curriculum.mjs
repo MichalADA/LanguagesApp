@@ -378,10 +378,17 @@ function structureStep(lessonId, spec) {
     id: "structure", stage: "structure", type: "structure",
     title: spec.title,
     explanation: spec.text,
+    ...(spec.table ? { table: spec.table } : {}),
     examples: (spec.examples ?? []).map((ref) => bi(resolveSentence(ref, lessonId))),
     ...(spec.tip ? { note: spec.tip } : {}),
   };
 }
+
+/** Dodatkowe pytania wyboru z didactics (targetText: gdzie jest chorwacki — domyślnie w opcjach). */
+const extraChoiceSteps = (d, stage = "practice") => (d.choices ?? []).map((c, i) => ({
+  id: `choice-${i + 1}`, stage, type: "choice", instruction: c.instruction, prompt: c.prompt, options: c.options, correctIndex: c.correct,
+  ...(c.explanation ? { explanation: c.explanation } : {}), targetText: c.targetText ?? "options",
+}));
 
 /**
  * Grzecznościowa rama repliki: w rozmowie naturalnie dodajemy powitanie, „hvala”, imię rozmówcy
@@ -536,8 +543,12 @@ function buildRegular(bucket) {
   if (kindOf(n) === "conversation") {
     steps.push(vocabListStep("words", "words", "Słowa, które przydadzą się w rozmowie", bucket.vocabulary));
   } else {
-    // Nowa rzecz → mikroćwiczenie: grupy 3 + 3 + 2 słowa.
-    const groups = [vocabulary.slice(0, 3), vocabulary.slice(3, 6), vocabulary.slice(6)];
+    // Nowa rzecz → mikroćwiczenie: grupy po 2–3 słowa (8 → 3 + 3 + 2, 10 → 3 + 3 + 2 + 2).
+    const count = Math.ceil(vocabulary.length / 3);
+    const groups = Array.from({ length: count }, (_, g) => {
+      const from = g * Math.floor(vocabulary.length / count) + Math.min(g, vocabulary.length % count);
+      return vocabulary.slice(from, from + Math.floor(vocabulary.length / count) + (g < vocabulary.length % count ? 1 : 0));
+    });
     const pl = vocabulary.map((v) => v.pl_text);
     const hr = vocabulary.map((v) => v.hr_text);
     groups.forEach((group, g) => {
@@ -565,7 +576,7 @@ function buildRegular(bucket) {
   const comprehend = d.comprehend ? comprehendStep("comprehend", "practice", sentenceOf(id, d.comprehend), all.filter((s) => s.hr !== sentenceOf(id, d.comprehend).hr), n) : null;
   const translations = (d.translate ?? []).map((t, i) => translateStep(`translate-${i + 1}`, "practice", sentenceOf(id, t.sentence), t.accept));
   const order = d.order ? orderStep("order", "practice", sentenceOf(id, d.order), rand) : null;
-  const extraChoices = (d.choices ?? []).map((c, i) => ({ id: `choice-${i + 1}`, stage: "practice", type: "choice", instruction: c.instruction, prompt: c.prompt, options: c.options, correctIndex: c.correct, ...(c.explanation ? { explanation: c.explanation } : {}), targetText: "options" }));
+  const extraChoices = extraChoiceSteps(d);
   const [t1, ...rest] = translations;
   if (n % 2) practice.push(comprehend, ...extraChoices, t1, order, ...rest);
   else practice.push(t1, order, ...extraChoices, comprehend, ...rest);
@@ -777,7 +788,12 @@ function buildReview(bucket) {
     if (sentence) steps.push({ ...translateStep(`translate-${i + 1}`, "practice", sentence), id: `translate-${i + 1}` });
   });
 
-  // 4. Dialog i zadanie komunikacyjne.
+  // 4. Zwroty tej powtórki (np. „Ne razumijem”): objaśnienie, wybór i tłumaczenie — przed rozmową, która ich wymaga.
+  if (d.grammar) steps.push(structureStep(id, d.grammar));
+  steps.push(...extraChoiceSteps(d));
+  (d.translate ?? []).forEach((t, i) => steps.push(translateStep(`phrase-${i + 1}`, "practice", sentenceOf(id, t.sentence), t.accept)));
+
+  // 5. Dialog i zadanie komunikacyjne.
   steps.push(...modelStep(id));
   if (d.dialog) steps.push(dialogStep(id, d.dialog));
   if (d.canDo) steps.push(freeStep("can-do", d.canDo));

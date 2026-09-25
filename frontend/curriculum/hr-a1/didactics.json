@@ -121,7 +121,8 @@
           2,
           3,
           4
-        ]
+        ],
+        "tip": "Kako si? mówisz do kolegi, Kako ste? — do osoby, której nie znasz albo której mówisz „Pan / Pani”. Rano witasz się Dobro jutro!, wieczorem Dobra večer!, a na dobranoc mówisz Laku noć!"
       },
       "gap": {
         "sentence": 2,
@@ -133,10 +134,16 @@
           "accept": [
             "Ja sam odlično."
           ]
+        },
+        {
+          "sentence": 8,
+          "accept": [
+            "Dobra večer, kako ste?"
+          ]
         }
       ],
       "comprehend": 4,
-      "order": 2,
+      "order": 7,
       "dialog": {
         "title": "Spotkanie z Aną",
         "partner": "Ana",
@@ -283,12 +290,110 @@
     "a1-04": {
       "grammar": {
         "title": "Koliko imaš godina?",
-        "text": "O wiek pytasz czasownikiem imati — „mieć”, zupełnie jak po polsku: Imam dvadeset šest godina — mam dwadzieścia sześć lat. Liczby składasz tak samo jak w polskim: dvadeset + šest = dvadeset šest.",
+        "text": "O wiek pytasz czasownikiem imati — „mieć”, zupełnie jak po polsku: Imam dvadeset šest godina — mam dwadzieścia sześć lat. Liczby 21–39 składasz jak w polskim: dvadeset + pet = dvadeset pet, trideset + četiri = trideset četiri (można też powiedzieć dvadeset i pet).",
         "examples": [
-          1,
           2,
-          3
-        ]
+          7,
+          9
+        ],
+        "table": [
+          {
+            "label": "Liczby 1–10",
+            "rows": [
+              {
+                "base": "1",
+                "form": "jedan",
+                "meaning": "jeden"
+              },
+              {
+                "base": "2",
+                "form": "dva",
+                "meaning": "dwa"
+              },
+              {
+                "base": "3",
+                "form": "tri",
+                "meaning": "trzy"
+              },
+              {
+                "base": "4",
+                "form": "četiri",
+                "meaning": "cztery"
+              },
+              {
+                "base": "5",
+                "form": "pet",
+                "meaning": "pięć"
+              },
+              {
+                "base": "6",
+                "form": "šest",
+                "meaning": "sześć"
+              },
+              {
+                "base": "7",
+                "form": "sedam",
+                "meaning": "siedem"
+              },
+              {
+                "base": "8",
+                "form": "osam",
+                "meaning": "osiem"
+              },
+              {
+                "base": "9",
+                "form": "devet",
+                "meaning": "dziewięć"
+              },
+              {
+                "base": "10",
+                "form": "deset",
+                "meaning": "dziesięć"
+              }
+            ]
+          },
+          {
+            "label": "Dziesiątki i składanie",
+            "rows": [
+              {
+                "base": "20",
+                "form": "dvadeset",
+                "meaning": "dwadzieścia"
+              },
+              {
+                "base": "25",
+                "form": "dvadeset pet",
+                "meaning": "dwadzieścia pięć"
+              },
+              {
+                "base": "30",
+                "form": "trideset",
+                "meaning": "trzydzieści"
+              },
+              {
+                "base": "34",
+                "form": "trideset četiri",
+                "meaning": "trzydzieści cztery"
+              }
+            ]
+          },
+          {
+            "label": "Ile lat? godina / godine",
+            "rows": [
+              {
+                "base": "2, 3, 4 (22, 34…)",
+                "form": "dvije / tri / četiri godine",
+                "meaning": "2–4 lata"
+              },
+              {
+                "base": "5–20 (25, 30…)",
+                "form": "pet / dvadeset godina",
+                "meaning": "5 i więcej lat"
+              }
+            ]
+          }
+        ],
+        "tip": "Jak po polsku „lata / lat”: po 2, 3, 4 mówisz godine, po 5 i więcej — godina. Godina jest rodzaju żeńskiego, więc „dwa lata” to dvije godine (nie dva)."
       },
       "gap": {
         "sentence": 2,
@@ -299,6 +404,19 @@
           "sentence": 1,
           "accept": [
             "Koliko ti imaš godina?"
+          ]
+        },
+        {
+          "sentence": 7,
+          "accept": [
+            "Ja imam trideset četiri godine.",
+            "Imam trideset i četiri godine."
+          ]
+        },
+        {
+          "sentence": 9,
+          "accept": [
+            "Ana ima dvadeset i dvije godine."
           ]
         }
       ],
@@ -324,6 +442,20 @@
           {
             "say": "Ja imam trideset godina.",
             "pl": "Ja mam trzydzieści lat."
+          },
+          {
+            "say": "A koliko godina ima Marko?",
+            "pl": "A ile lat ma Marko?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że Marko ma 25 lat.",
+              "accept": [
+                8,
+                "Marko ima dvadeset i pet godina."
+              ],
+              "pattern": "^((marko|on) ima )?dvadeset (i )?pet godina$"
+            }
           }
         ]
       },
@@ -348,7 +480,31 @@
           }
         ],
         "sample": "Imam dvadeset šest godina. Ona ima trideset godina."
-      }
+      },
+      "choices": [
+        {
+          "instruction": "Posłuchaj i wybierz liczbę.",
+          "prompt": "trideset sedam",
+          "options": [
+            "37",
+            "27",
+            "73"
+          ],
+          "correct": 0,
+          "targetText": "prompt"
+        },
+        {
+          "instruction": "Posłuchaj i wybierz liczbę.",
+          "prompt": "dvadeset četiri",
+          "options": [
+            "42",
+            "24",
+            "14"
+          ],
+          "correct": 1,
+          "targetText": "prompt"
+        }
+      ]
     },
     "a1-05": {
       "dialog": {
@@ -462,18 +618,74 @@
           }
         ],
         "sample": "Zovem se Michał. Iz Poljske sam. Živim u Krakovu. Imam dvadeset šest godina."
-      }
+      },
+      "grammar": {
+        "title": "Gdy czegoś nie rozumiesz",
+        "text": "Te zdania przydadzą się w każdej rozmowie. Ne razumijem — nie rozumiem. O powtórzenie poprosisz: Možeš li ponoviti? albo krótko Još jednom, molim. Gdy ktoś mówi za szybko: Polako, molim. Gdy brakuje ci słowa: Kako se to kaže na hrvatskom?",
+        "examples": [
+          7,
+          6,
+          8,
+          9
+        ],
+        "tip": "Možeš li…? to „czy możesz…?”. Do obcej osoby grzeczniej: Možete li ponoviti?"
+      },
+      "choices": [
+        {
+          "instruction": "Co powiesz?",
+          "prompt": "Ana mówi bardzo szybko. Poproś, żeby mówiła wolniej.",
+          "options": [
+            "Polako, molim.",
+            "Doviđenja!",
+            "Dobro sam, hvala."
+          ],
+          "correct": 0,
+          "explanation": "Polako — powoli."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 7
+        }
+      ]
     },
     "a1-06": {
       "grammar": {
-        "title": "Moj, moja, moje",
-        "text": "Moj zachowuje się jak polskie „mój” i zmienia się razem z rzeczownikiem: moj brat, moj otac — ale moja sestra, moja majka. Ovo je … znaczy „to jest …” i przydaje się, gdy kogoś przedstawiasz.",
+        "title": "Moj, moja, moje, moji",
+        "text": "Moj zachowuje się jak polskie „mój” i zmienia się razem z rzeczownikiem: moj brat, moja sestra, moje dijete, a w liczbie mnogiej moji roditelji. Ovo je … znaczy „to jest …” i przydaje się, gdy kogoś przedstawiasz.",
         "examples": [
           1,
           3,
           4
         ],
-        "tip": "Obitelj kończy się spółgłoską, ale jest rodzaju żeńskiego — dlatego moja obitelj."
+        "tip": "Obitelj kończy się spółgłoską, ale jest rodzaju żeńskiego — dlatego moja obitelj.",
+        "table": [
+          {
+            "label": "mój / moja / moje / moi",
+            "rows": [
+              {
+                "base": "on: brat, otac",
+                "form": "moj brat",
+                "meaning": "mój brat"
+              },
+              {
+                "base": "ona: sestra, majka",
+                "form": "moja sestra",
+                "meaning": "moja siostra"
+              },
+              {
+                "base": "ono: dijete",
+                "form": "moje dijete",
+                "meaning": "moje dziecko"
+              },
+              {
+                "base": "oni: roditelji",
+                "form": "moji roditelji",
+                "meaning": "moi rodzice"
+              }
+            ]
+          }
+        ]
       },
       "gap": {
         "sentence": 2,
@@ -580,7 +792,7 @@
     "a1-07": {
       "grammar": {
         "title": "Tko je to? Što radi?",
-        "text": "Zawód podajesz prościej niż po polsku — bez zmiany końcówki: Ana je liječnica — Ana jest lekarką. Kobieta ma zwykle żeńską formę: liječnik → liječnica, učitelj → učiteljica. Radi znaczy „pracuje”: Ivan radi u školi.",
+        "text": "Zawód podajesz prościej niż po polsku — bez zmiany końcówki: Ana je liječnica — Ana jest lekarką. Kobieta ma zwykle żeńską formę: liječnik → liječnica, učitelj → učiteljica. Radi znaczy „pracuje”: Ivan radi u školi. O sobie mówisz tak samo: Ja sam student — jestem studentem (nie „studentom”).",
         "examples": [
           2,
           3,
@@ -594,6 +806,14 @@
       "translate": [
         {
           "sentence": 6
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Student sam.",
+            "Ja sam studentica.",
+            "Studentica sam."
+          ]
         }
       ],
       "comprehend": 4,
@@ -626,6 +846,21 @@
                 "Marko je učitelj."
               ],
               "pattern": "^(on|marko) je (učitelj|nastavnik)$"
+            }
+          },
+          {
+            "say": "A što ti radiš?",
+            "pl": "A czym ty się zajmujesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czym się zajmujesz: zawód albo gdzie pracujesz.",
+              "accept": [
+                11,
+                "Student sam."
+              ],
+              "open": true,
+              "pattern": "^(ja sam (\\p{L}+ )?{nom}|{nom} sam|(ja )?radim ((u|na) {loc}|od kuće|kod kuće)|(ja )?(ne radim|studiram)( \\p{L}+){0,2})$"
             }
           }
         ]
@@ -821,7 +1056,7 @@
     "a1-09": {
       "grammar": {
         "title": "Imam / nemam",
-        "text": "Imati to „mieć”, a nemati — „nie mieć” (jedno słowo!). Rzeczowniki żeńskie po imam zmieniają -a na -u: knjiga → Imam knjigu, mačka → On nema mačku. Po nemati usłyszysz też formę jak w polskim „nie mam kota”: nema mačke — obie są poprawne.",
+        "text": "Imati to „mieć”, a nemati — „nie mieć” (jedno słowo!). Rzeczowniki żeńskie po imam zmieniają -a na -u: knjiga → Imam knjigu, mačka → On nema mačku. Po nemati usłyszysz też formę jak w polskim „nie mam kota”: nema mačke — obie są poprawne. Pytanie „czy…?” tworzysz słówkiem li zaraz po czasowniku: Imaš li telefon? — czy masz telefon? Odpowiadasz Da, imam albo Ne, nemam.",
         "examples": [
           1,
           2,
@@ -845,6 +1080,12 @@
           "accept": [
             "Ja nemam bicikl.",
             "Ja nemam bicikla."
+          ]
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Imaš li ti auto?"
           ]
         }
       ],
@@ -933,7 +1174,20 @@
             "pl": "Ja mam dom i ogród. I mam psa!"
           }
         ]
-      }
+      },
+      "choices": [
+        {
+          "instruction": "Jak zapytasz: „Czy masz książkę?”",
+          "prompt": "Czy masz książkę?",
+          "options": [
+            "Imaš li knjigu?",
+            "Li imaš knjigu?",
+            "Imaš knjigu li?"
+          ],
+          "correct": 0,
+          "explanation": "Li stoi zaraz po czasowniku: Imaš li…?"
+        }
+      ]
     },
     "a1-10": {
       "dialog": {
@@ -1033,11 +1287,48 @@
     "a1-11": {
       "grammar": {
         "title": "Radim, učim, spavam",
-        "text": "W czasie teraźniejszym forma „ja” kończy się na -m: radim, učim, spavam, ustajem. Działa to prawie dla każdego czasownika. Przy czasownikach z se (odmarati se) se stoi na drugim miejscu w zdaniu: Poslijepodne se odmaram.",
+        "text": "W czasie teraźniejszym forma „ja” kończy się na -m, „ty” na -š, a „on / ona” nie ma końcówki: radim — radiš — radi. Czasowniki na -ovati zmieniają się w -ujem: doručkovati → doručkujem, putovati → putujem. Przy czasownikach z se (odmarati se) se stoi na drugim miejscu w zdaniu: Poslijepodne se odmaram.",
         "examples": [
           1,
           3,
           4
+        ],
+        "table": [
+          {
+            "label": "ja · ty · on / ona",
+            "rows": [
+              {
+                "base": "raditi",
+                "form": "radim · radiš · radi",
+                "meaning": "pracuję · pracujesz · pracuje"
+              },
+              {
+                "base": "spavati",
+                "form": "spavam · spavaš · spava",
+                "meaning": "śpię · śpisz · śpi"
+              },
+              {
+                "base": "ustajati",
+                "form": "ustajem · ustaješ · ustaje",
+                "meaning": "wstaję · wstajesz · wstaje"
+              }
+            ]
+          },
+          {
+            "label": "-ovati → -ujem",
+            "rows": [
+              {
+                "base": "doručkovati",
+                "form": "doručkujem · doručkuješ · doručkuje",
+                "meaning": "jem śniadanie · jesz · je"
+              },
+              {
+                "base": "putovati",
+                "form": "putujem · putuješ · putuje",
+                "meaning": "podróżuję · podróżujesz · podróżuje"
+              }
+            ]
+          }
         ]
       },
       "gap": {
@@ -1093,7 +1384,7 @@
                 "Navečer radim."
               ],
               "open": true,
-              "pattern": "^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?((navečer|obično|često|ponekad|uvijek|rijetko) )*((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( (navečer|obično|često|ponekad|uvijek|rijetko))*$"
+              "pattern": "^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?((navečer|obično|često|ponekad|uvijek|rijetko) )*((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( (navečer|obično|često|ponekad|uvijek|rijetko))*$|^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?se ((navečer|obično|često|ponekad|uvijek|rijetko) )+{pres1.bare}( \\p{L}+){0,3}$"
             }
           }
         ]
@@ -1283,13 +1574,51 @@
     "a1-13": {
       "grammar": {
         "title": "Koliko je sati?",
-        "text": "O godzinę pytasz Koliko je sati? Na „o której?” odpowiadasz przez u i samą liczbę: u četiri — o czwartej, u sedam — o siódmej. Pola osam to „wpół do ósmej” — dokładnie jak po polsku.",
+        "text": "O godzinę pytasz Koliko je sati? Odpowiedź zależy od liczby — jak po polsku „godzina / godziny / godzin”: Jedan je sat, Tri su sata, Sedam je sati. Na „o której?” (U koliko sati?) odpowiadasz przez u i samą liczbę: u četiri — o czwartej. Pola osam to „wpół do ósmej”.",
         "examples": [
           1,
+          11,
           3,
-          6
+          12
         ],
-        "tip": "Tri su sata — „jest trzecia”: przy 2, 3 i 4 mówimy su sata."
+        "tip": "1 sat, 2–4 sata, 5 i więcej sati — tak samo jak „1 godzina, 2 godziny, 5 godzin”.",
+        "table": [
+          {
+            "label": "Koliko je sati?",
+            "rows": [
+              {
+                "base": "1",
+                "form": "Jedan je sat.",
+                "meaning": "Jest pierwsza."
+              },
+              {
+                "base": "2, 3, 4",
+                "form": "Dva / Tri / Četiri su sata.",
+                "meaning": "Jest druga / trzecia / czwarta."
+              },
+              {
+                "base": "5–12",
+                "form": "Pet / Sedam / Dvanaest je sati.",
+                "meaning": "Jest piąta / siódma / dwunasta."
+              }
+            ]
+          },
+          {
+            "label": "U koliko sati? — o której?",
+            "rows": [
+              {
+                "base": "u + liczba",
+                "form": "u četiri",
+                "meaning": "o czwartej"
+              },
+              {
+                "base": "u pola + liczba",
+                "form": "u pola osam",
+                "meaning": "o wpół do ósmej"
+              }
+            ]
+          }
+        ]
       },
       "gap": {
         "sentence": 3,
@@ -1302,7 +1631,13 @@
         {
           "sentence": 5,
           "accept": [
-            "Vlak stiže u sedam."
+            "U jedan ručam."
+          ]
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Sada je sedam sati."
           ]
         }
       ],
@@ -1393,7 +1728,31 @@
             "pl": "Masz jeszcze pół godziny."
           }
         ]
-      }
+      },
+      "choices": [
+        {
+          "instruction": "Wybierz brakujące słowo.",
+          "prompt": "Pet je ___.",
+          "options": [
+            "sat",
+            "sata",
+            "sati"
+          ],
+          "correct": 2,
+          "explanation": "5 i więcej → sati."
+        },
+        {
+          "instruction": "Wybierz brakujące słowo.",
+          "prompt": "Dva su ___.",
+          "options": [
+            "sat",
+            "sata",
+            "sati"
+          ],
+          "correct": 1,
+          "explanation": "2, 3, 4 → sata."
+        }
+      ]
     },
     "a1-14": {
       "grammar": {
@@ -1572,14 +1931,14 @@
           },
           {
             "reply": {
-              "prompt": "Powiedz, co często robisz wieczorem.",
+              "prompt": "Powiedz, co zwykle robisz wieczorem.",
               "accept": [
                 5,
-                "Navečer čitam.",
-                "Navečer učim hrvatski."
+                "Navečer učim hrvatski.",
+                "Navečer obično spavam."
               ],
               "open": true,
-              "pattern": "^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?((navečer|obično|često|ponekad|uvijek|rijetko) )*((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( (navečer|obično|često|ponekad|uvijek|rijetko))*$"
+              "pattern": "^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?((navečer|obično|često|ponekad|uvijek|rijetko) )*((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( (navečer|obično|često|ponekad|uvijek|rijetko))*$|^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?se ((navečer|obično|često|ponekad|uvijek|rijetko) )+{pres1.bare}( \\p{L}+){0,3}$"
             }
           }
         ]
@@ -1624,12 +1983,13 @@
     "a1-16": {
       "grammar": {
         "title": "Pijem vodu, jedem kruh",
-        "text": "Po jesti (jeść), piti (pić) i voljeti (lubić) rzeczowniki żeńskie zmieniają -a na -u — jak w polskim „piję wodę”: voda → Pijem vodu, riba → Volim ribu. Słowa męskie i nijakie zostają bez zmian: kruh, sir, čaj, meso.",
+        "text": "Piti to „pić”, jesti — „jeść”; o sobie mówisz pijem i jedem. Po nich rzeczowniki żeńskie zmieniają -a na -u — jak w polskim „piję wodę”: voda → Pijem vodu, riba → Volim ribu. Słowa męskie i nijakie zostają bez zmian: kruh, sir, čaj, meso.",
         "examples": [
           1,
           3,
           4
-        ]
+        ],
+        "tip": "Želim — „chcę”: Želim čaj. W kawiarni grzeczniej: Htio bih… / Htjela bih… (lekcja o kawiarni)."
       },
       "gap": {
         "sentence": 1,
@@ -1870,7 +2230,7 @@
           2,
           3
         ],
-        "tip": "Jedan zmienia się razem z rzeczownikiem: jedna kava → Molim jednu kavu."
+        "tip": "Jedan zmienia się razem z rzeczownikiem: jedna kava → Molim jednu kavu. Najprostsza uprzejma prośba to Mogu li dobiti…? — czy mogę dostać…?"
       },
       "gap": {
         "sentence": 3,
@@ -1887,6 +2247,12 @@
           "sentence": 4,
           "accept": [
             "Molim bez šećera."
+          ]
+        },
+        {
+          "sentence": 10,
+          "accept": [
+            "Mogu li dobiti vode?"
           ]
         }
       ],
@@ -2005,7 +2371,8 @@
           2,
           3,
           6
-        ]
+        ],
+        "tip": "Imate li…? Želite li…? Možete li…? — to forma Vi. Tak mówisz do kelnera, sprzedawcy, obcej osoby albo kilku osób: po polsku „Czy ma Pan / Pani…?”, „Czy mają Państwo…?”."
       },
       "gap": {
         "sentence": 4,
@@ -2468,11 +2835,12 @@
     "a1-23": {
       "grammar": {
         "title": "Idite ravno, skrenite lijevo",
-        "text": "Wskazówki usłyszysz jako grzeczne prośby: Idite — proszę iść, Skrenite — proszę skręcić, Prijeđite — proszę przejść. Nie musisz ich odmieniać — zapamiętaj je jako gotowe zwroty razem z ravno, lijevo i desno.",
+        "text": "Wskazówki usłyszysz jako grzeczne prośby: Idite — proszę iść, Skrenite — proszę skręcić, Prijeđite — proszę przejść. Nie musisz ich odmieniać — zapamiętaj je jako gotowe zwroty razem z ravno, lijevo i desno. O drogę zapytasz: Kako mogu doći do…? — jak mogę dojść do…?",
         "examples": [
           1,
           2,
-          3
+          3,
+          11
         ]
       },
       "gap": {
@@ -2488,6 +2856,9 @@
           "accept": [
             "Je li to daleko?"
           ]
+        },
+        {
+          "sentence": 11
         }
       ],
       "comprehend": 4,
@@ -2584,11 +2955,79 @@
     "a1-24": {
       "grammar": {
         "title": "Koliko košta?",
-        "text": "O cenę pytasz Koliko ovo košta? — ile to kosztuje? Po liczbie mówisz eura: deset eura. Gdy czegoś szukasz, mówisz Tražim… albo Želim kupiti…, a rzeczownik żeński znów dostaje -u: knjiga → ovu knjigu.",
+        "text": "O cenę pytasz Koliko ovo košta? — ile to kosztuje? Po liczbie (od 2 wzwyż) mówisz zawsze eura: dva eura, deset eura, pedeset eura. Grosze to centi: četiri eura i pedeset centi — 4,50 €. Gdy czegoś szukasz, mówisz Tražim… albo Želim kupiti…, a rzeczownik żeński znów dostaje -u: knjiga → ovu knjigu.",
         "examples": [
           1,
           2,
+          11,
           5
+        ],
+        "table": [
+          {
+            "label": "Dziesiątki",
+            "rows": [
+              {
+                "base": "30",
+                "form": "trideset",
+                "meaning": "trzydzieści"
+              },
+              {
+                "base": "40",
+                "form": "četrdeset",
+                "meaning": "czterdzieści"
+              },
+              {
+                "base": "50",
+                "form": "pedeset",
+                "meaning": "pięćdziesiąt"
+              },
+              {
+                "base": "60",
+                "form": "šezdeset",
+                "meaning": "sześćdziesiąt"
+              },
+              {
+                "base": "70",
+                "form": "sedamdeset",
+                "meaning": "siedemdziesiąt"
+              },
+              {
+                "base": "80",
+                "form": "osamdeset",
+                "meaning": "osiemdziesiąt"
+              },
+              {
+                "base": "90",
+                "form": "devedeset",
+                "meaning": "dziewięćdziesiąt"
+              },
+              {
+                "base": "100",
+                "form": "sto",
+                "meaning": "sto"
+              }
+            ]
+          },
+          {
+            "label": "Ceny",
+            "rows": [
+              {
+                "base": "1 €",
+                "form": "jedan euro",
+                "meaning": "jedno euro"
+              },
+              {
+                "base": "10 €",
+                "form": "deset eura",
+                "meaning": "dziesięć euro"
+              },
+              {
+                "base": "4,50 €",
+                "form": "četiri eura i pedeset centi",
+                "meaning": "cztery euro pięćdziesiąt"
+              }
+            ]
+          }
         ]
       },
       "gap": {
@@ -2604,6 +3043,12 @@
         },
         {
           "sentence": 6
+        },
+        {
+          "sentence": 12,
+          "accept": [
+            "To košta trideset eura."
+          ]
         }
       ],
       "comprehend": 3,
@@ -2713,7 +3158,42 @@
             "pl": "Czy mogę zapłacić kartą?"
           }
         ]
-      }
+      },
+      "choices": [
+        {
+          "instruction": "Ile to kosztuje?",
+          "prompt": "Košta sedamdeset eura.",
+          "options": [
+            "17 €",
+            "70 €",
+            "7 €"
+          ],
+          "correct": 1,
+          "targetText": "prompt"
+        },
+        {
+          "instruction": "Ile to kosztuje?",
+          "prompt": "Četiri eura i pedeset centi.",
+          "options": [
+            "4,50 €",
+            "5,40 €",
+            "4,15 €"
+          ],
+          "correct": 0,
+          "targetText": "prompt"
+        },
+        {
+          "instruction": "Ile to kosztuje?",
+          "prompt": "Ovo košta trideset dva eura.",
+          "options": [
+            "23 €",
+            "32 €",
+            "302 €"
+          ],
+          "correct": 1,
+          "targetText": "prompt"
+        }
+      ]
     },
     "a1-25": {
       "dialog": {
@@ -3054,7 +3534,7 @@
           3,
           4
         ],
-        "tip": "Vrijeme to i „pogoda”, i „czas” — Kakvo je vrijeme? pyta o pogodę."
+        "tip": "Vrijeme to i „pogoda”, i „czas” — Kakvo je vrijeme? pyta o pogodę. Sutra će biti toplo — „jutro będzie ciepło”: na razie zapamiętaj će biti jako gotowy zwrot; czas przyszły poznasz w module 8."
       },
       "gap": {
         "sentence": 3,
@@ -3162,7 +3642,7 @@
     "a1-29": {
       "grammar": {
         "title": "Hoćemo li…? — Može!",
-        "text": "Propozycję zaczynasz od Hoćemo li…? — „idziemy…?”: Hoćemo li na kavu? Zgodę wyrażasz jednym słowem: Može! (OK, może być), odmowę — Ne mogu (nie mogę). Porę dodajesz jak przy godzinach: u šest, sutra, večeras.",
+        "text": "Propozycję zaczynasz od Hoćemo li…? — „idziemy…?”: Hoćemo li na kavu? Zgodę wyrażasz jednym słowem: Može! (OK, może być), odmowę — Ne mogu (nie mogę). Porę dodajesz jak przy godzinach: u šest, sutra, večeras. Gdy jesteś zajęty: Nemam vremena — nie mam czasu.",
         "examples": [
           1,
           3,
@@ -3503,11 +3983,38 @@
     "a1-32": {
       "grammar": {
         "title": "Vlak za Split",
-        "text": "„Pociąg do Splitu” to vlak za Split, a „bilet do Zadaru” — karta za Zadar. Po za nazwa miasta zostaje bez zmian. Pytania w podróży zaczynasz od Gdje je…? i Kada je…?",
+        "text": "„Pociąg do Splitu” to vlak za Split, a „bilet do Zadaru” — karta za Zadar. Po za miasta rodzaju męskiego się nie zmieniają (za Split, za Zagreb), a żeńskie na -a zmieniają -a na -u: Rijeka → za Rijeku, Pula → za Pulu. O przyjazd pytasz Kada stiže vlak? — kiedy przyjeżdża pociąg?",
         "examples": [
           2,
           6,
           5
+        ],
+        "table": [
+          {
+            "label": "za + miasto",
+            "rows": [
+              {
+                "base": "Split",
+                "form": "za Split",
+                "meaning": "do Splitu"
+              },
+              {
+                "base": "Zagreb",
+                "form": "za Zagreb",
+                "meaning": "do Zagrzebia"
+              },
+              {
+                "base": "Rijeka",
+                "form": "za Rijeku",
+                "meaning": "do Rijeki"
+              },
+              {
+                "base": "Pula",
+                "form": "za Pulu",
+                "meaning": "do Puli"
+              }
+            ]
+          }
         ]
       },
       "gap": {
@@ -3523,6 +4030,12 @@
         },
         {
           "sentence": 4
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Vlak dolazi u deset."
+          ]
         }
       ],
       "comprehend": 2,
@@ -4129,7 +4642,7 @@
     "a1-37": {
       "grammar": {
         "title": "Sutra ću raditi",
-        "text": "O przyszłości mówisz ću (ja) albo ćeš (ty) + bezokolicznik: Sutra ću raditi — jutro będę pracować. Ću nie otwiera zdania: Sutra ću učiti, Kasnije ću se odmoriti. Pytanie zaczynasz od Hoćeš li…? — Hoćeš li ići sa mnom?",
+        "text": "O przyszłości mówisz ću (ja) albo ćeš (ty) + bezokolicznik: Sutra ću raditi — jutro będę pracować. Ću nie otwiera zdania: Sutra ću učiti, Kasnije ću se odmoriti. Pytanie zaczynasz od Hoćeš li…? — Hoćeš li ići sa mnom? Na takie pytanie odpowiadasz krótko: Hoću! — tak (chcę, pójdę). Plany zapowiesz też słowem planirati: Planiram ići na more.",
         "examples": [
           1,
           2,
@@ -4165,7 +4678,7 @@
           "options": [
             "Jučer sam učio hrvatski.",
             "Sutra ću učiti hrvatski.",
-            "Sutra učim hrvatski."
+            "Sutra sam učio hrvatski."
           ],
           "correct": 1,
           "explanation": "Przyszłość: ću + bezokolicznik (učiti)."
@@ -4309,6 +4822,22 @@
               ],
               "open": true,
               "pattern": "^(ja )?živim u \\p{L}+ (i )?(ja )?(radim|studiram|učim)( (u|na) {loc}| od kuće| kod kuće| hrvatski)?$"
+            }
+          },
+          {
+            "say": "Što voliš raditi vikendom kad je lijepo vrijeme i kad nemaš posla?",
+            "pl": "(Ana mówi bardzo szybko — nie nadążasz.)"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że nie rozumiesz, i poproś, żeby Ana powtórzyła wolniej.",
+              "accept": [
+                "Ne razumijem. Možeš li ponoviti?",
+                6,
+                "Ne razumijem. Polako, molim."
+              ],
+              "open": true,
+              "pattern": "^((ja )?ne razumijem )?((možeš|možete) li )?((to )?ponoviti|govoriti)( (malo )?sporije)?$|^((ja )?ne razumijem )?(još jednom|polako|sporije)( molim)?$|^(ja )?ne razumijem$"
             }
           },
           {

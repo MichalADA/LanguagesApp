@@ -27,7 +27,8 @@ src/curriculum/data/hr-a1/        ← wygenerowane TypeScript (commitowane, nie 
 - **Repliki w dialogach** (`didactics.json → dialog.turns[].reply.pattern`) to ramy zdań. Sloty rozwija generator
   w formy słownictwa całego kursu (`scripts/lib/hr-morphology.mjs`): `{acc}` biernik, `{loc}` miejscownik,
   `{ins}` narzędnik, `{inf}` bezokolicznik, `{inft}` „radit” (radit ću), `{pres1}` 1 os. czasu teraźniejszego,
-  `{pp.self}` imiesłów m/ż, `{adj.f}` / `{adj.m}` / `{adj.self}` przymiotnik, `{pred}` orzecznik (sunčano, vruće).
+  `{pp.self}` imiesłów m/ż, `{adj.f}` / `{adj.m}` / `{adj.self}` przymiotnik, `{pred}` orzecznik (sunčano, vruće),
+  `{nom}` mianownik rzeczownika (Ja sam student), `{pres1.bare}` 1 os. bez „se” (Navečer se obično odmaram).
   Replika o sobie (w odpowiedzi jest „sam” albo „bih”) automatycznie przyjmuje obie formy rodzaju.
   Generator odrzuca dane, w których sugerowana odpowiedź nie pasuje do własnej ramy.
   Każda replika dostaje grzecznościową ramę: na początku „Bok / Dobar dan / Hvala / Oprostite / imię rozmówcy”,
@@ -37,6 +38,12 @@ src/curriculum/data/hr-a1/        ← wygenerowane TypeScript (commitowane, nie 
   przechodzi „Bok, <sugestia> hvala”. Naturalne i błędne odpowiedzi dla każdej otwartej repliki są w
   `tests/fixtures/open-replies.mjs` — dodając otwartą replikę, dopisz ją tam (test pilnuje zgodności listy).
   Replika zamknięta (bez `open`) to polecenie „powiedz, że…” z konkretną treścią.
+- **Gramatyka** (`lessons.<id>.grammar`) może mieć `table: [{ label, rows: [{ base, form, meaning }] }]` — np. liczby,
+  sat / sata / sati, radim · radiš · radi. `choices[].targetText` mówi, gdzie jest chorwacki (`prompt` = zdanie do
+  odsłuchania, np. cena; domyślnie `options`). Powtórka modułu też może mieć `grammar`, `choices` i `translate` na
+  własnych zdaniach (np. „Ne razumijem” w a1-05) — pojawiają się przed dialogiem, który ich wymaga.
+- **Karty słów:** słowo jest nową kartą tylko w jednej zwykłej lekcji; lekcja ma 8–10 kart w grupach po 2–3.
+  Nowe słowo = nowy `record_id` (identyfikator nie jest używany ponownie dla innego słowa, bo trafia do fiszek).
 - **Tłumaczenia** dostają naturalne warianty: drugi rodzaj w zdaniu o sobie (poza lekcją z `genderDrill: true`)
   i opcjonalne „Ja” na początku zdania bez klityk.
 - **Powtórki, Wielka powtórka i test** składa generator z materiału, który uczeń już widział, ale nigdy tym samym

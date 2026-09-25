@@ -89,13 +89,13 @@ test('każda lekcja ma treść i pełny materiał z CSV (bez URL-i w treści pla
     assert.equal(content.lessonId, lesson.id);
     assert.ok(content.steps.length >= 8, `${lesson.id}: za mało kroków`);
     assert.equal(material.records.filter((r) => r.type === 'lesson').length, 1);
-    // Rdzeń: 8 słów i 6 zdań na lekcję; moduły 02–08 mają dodatkowo słownictwo uzupełniające i zdania przykładowe.
+    // Rdzeń: 8–10 słów (karty) i co najmniej 6 zdań do ćwiczeń; do tego słownictwo uzupełniające i zdania przykładowe.
     const words = material.records.filter((r) => r.type === 'vocabulary');
     const sentences = material.records.filter((r) => r.type === 'sentence');
-    assert.equal(words.filter((r) => r.tags.includes('active')).length, 8, lesson.id);
-    assert.equal(sentences.filter((r) => !r.tags.includes('example')).length, 6, lesson.id);
+    const core = words.filter((r) => r.tags.includes('active')).length;
+    assert.ok(core >= 8 && core <= 10, `${lesson.id}: ${core} słów rdzenia`);
+    assert.ok(sentences.filter((r) => !r.tags.includes('example')).length >= 6, lesson.id);
     assert.ok(words.every((r) => r.tags.includes('active') || r.tags.includes('supplement')), lesson.id);
-    if (lesson.moduleId === 'a1-01') assert.equal(words.length, 8, `${lesson.id}: moduł 01 bez zmian`);
     assert.equal(material.records.filter((r) => r.type === 'exercise_blueprint').length, 3, lesson.id);
     assert.ok(material.sources.length > 0);
     assert.ok(!JSON.stringify(content).includes('http'), `${lesson.id}: URL w treści`);
@@ -106,13 +106,14 @@ test('każda lekcja ma treść i pełny materiał z CSV (bez URL-i w treści pla
 
 test('każda zwykła lekcja ma słownictwo i zdania, a słowa są podzielone na małe grupy z ćwiczeniem', () => {
   for (const lesson of lessons.filter((l) => l.kind === 'lesson')) {
-    const { content } = generated.get(lesson.id);
+    const { content, material } = generated.get(lesson.id);
     assert.ok(content.vocabulary.length >= 8 && content.vocabulary.length <= 25, `${lesson.id}: ${content.vocabulary.length} słów`);
+    const core = material.records.filter((r) => r.type === 'vocabulary' && r.tags.includes('active')).length;
     if (lesson.id === 'a1-01-02') continue; // ręczna lekcja demo
     const types = content.steps.map((s) => s.type);
     // Osobne karty tylko dla rdzenia; słowa uzupełniające są jedną listą z nagraniami.
-    assert.equal(types.filter((x) => x === 'word').length, 8, lesson.id);
-    const extra = content.vocabulary.length - 8;
+    assert.equal(types.filter((x) => x === 'word').length, core, lesson.id);
+    const extra = content.vocabulary.length - core;
     if (extra) {
       const list = content.steps.find((s) => s.id === 'more-words');
       assert.equal(list?.items.length, extra, `${lesson.id}: lista słów uzupełniających`);
@@ -182,7 +183,10 @@ test('powtórki modułów korzystają z materiału czterech poprzednich lekcji i
       const word = s.type === 'translate' ? s.accepted[0] : s.prompt;
       assert.ok(prevWords.has(word), `${review.id}: ${word} spoza modułu`);
     }
-    const translations = steps.filter((s) => s.type === 'translate' && !s.id.startsWith('recall-'));
+    // Zwroty samej powtórki (phrase-*, np. „Ne razumijem”) ćwiczy się na jej własnych zdaniach.
+    const own = new Set(generated.get(review.id).material.records.filter((r) => r.type === 'sentence').map((r) => r.pl));
+    for (const s of steps.filter((x) => x.id.startsWith('phrase-'))) assert.ok(own.has(s.prompt), `${review.id}: ${s.prompt}`);
+    const translations = steps.filter((s) => s.type === 'translate' && !s.id.startsWith('recall-') && !s.id.startsWith('phrase-'));
     assert.ok(translations.length >= 2, review.id);
     for (const s of translations) assert.ok(prevSentencesPl.has(s.prompt), `${review.id}: ${s.prompt} spoza modułu`);
     for (const type of ['gap', 'order', 'dialog', 'free']) assert.ok(steps.some((s) => s.type === type), `${review.id}: brak ${type}`);
@@ -321,7 +325,7 @@ test('audyt: naturalne, poprawne odpowiedzi ucznia są akceptowane', () => {
     ['a1-01-01', 0, 'Loše sam.'], ['a1-01-01', 1, 'Vidimo se!'], ['a1-04-03', 0, 'Jednu bijelu kavu, molim.'], ['a1-04-03', 0, 'Mogu li dobiti kavu?'],
     ['a1-05-04', 0, 'Tražim kruh i mlijeko.'], ['a1-08-01', 0, 'Jučer sam gledala film.'], ['a1-08-01', 0, 'Jučer sam bila u gradu.'], ['a1-08-02', 0, 'Sutra ću igrati nogomet.'],
     // rodzaj w odpowiedziach o sobie i naturalne warianty
-    ['a1-03-05', 2, 'U subotu sam slobodna.'], ['a1-03-05', 2, 'Slobodna sam.'], ['a1-08-03', 3, 'Jučer sam bila kod kuće.'], ['a1-08-04', 1, 'Jučer sam gledala film.'],
+    ['a1-03-05', 2, 'U subotu sam slobodna.'], ['a1-03-05', 2, 'Slobodna sam.'], ['a1-08-03', 4, 'Jučer sam bila kod kuće.'], ['a1-08-04', 1, 'Jučer sam gledala film.'],
     ['a1-04-03', 0, 'Htjela bih sok.'], ['a1-08-02', 0, 'Sutra ću se odmoriti.'], ['a1-08-02', 0, 'Radit ću sutra.'], ['a1-06-02', 0, 'Volim plivati i trčati.'],
     ['a1-02-05', 1, 'Moja sestra je vesela.'], ['a1-03-01', 1, 'Navečer se odmaram.'], ['a1-06-05', 1, 'Vikendom igram tenis.'],
   ];
@@ -366,15 +370,13 @@ for (const r of vocabRecords) {
 test('żadne ćwiczenie nie wymaga słowa, którego uczeń wcześniej nie widział (ani formy znanego lematu)', () => {
   // Słowa funkcyjne identyczne jak po polsku.
   const FUNCTION_WORDS = new Set(['ne', 'i', 'a', 'da']);
-  // Znane przypadki kolejności materiału — do naprawy w Etapie 2 (zmiana kolejności / treści), nie w walidatorze.
-  const ETAP_2 = new Set(['a1-02-05|banci', 'a1-03-03|vlak', 'a1-03-03|dolazi', 'a1-03-05|često', 'a1-03-05|čitam', 'a1-04-05|karticom']);
   const seenTokens = new Set();
   const seenRecords = new Set();
   const show = (text) => { for (const t of hrTokens(text)) { seenTokens.add(t); for (const r of formIndex.get(t) ?? []) seenRecords.add(r); } };
   const known = (t) => FUNCTION_WORDS.has(t) || seenTokens.has(t) || (formIndex.get(t) ?? []).some((r) => seenRecords.has(r));
   const problems = [];
   const require = (lessonId, what, text) => {
-    for (const t of hrTokens(text)) if (!known(t) && !ETAP_2.has(`${lessonId}|${t}`)) problems.push(`${lessonId} ${what} „${text}” → ${t}`);
+    for (const t of hrTokens(text)) if (!known(t)) problems.push(`${lessonId} ${what} „${text}” → ${t}`);
   };
   for (const lesson of lessons) {
     for (const s of generated.get(lesson.id).content.steps) {
@@ -506,4 +508,68 @@ test('wszystkie repliki: interpunkcja, wielkość liter i grzecznościowa rama n
     if (open.has(`${id}#${n}`)) variants.push(`Bok, ${s}`, `Bok ${bare} hvala`, `${bare}, a ti?`);
     for (const v of variants) assert.equal(checkLessonAnswer(v, turn.accepted, rules, turn.pattern), 'hit', `${id}#${n} [${turn.prompt}] „${v}”`);
   }
+});
+
+/* ------------------------------------------------------------------ */
+/* Etap 2: liczby, zwroty przetrwania, gramatyka, kolejność słów        */
+/* ------------------------------------------------------------------ */
+
+const vocabOf = (id) => generated.get(id).material.records.filter((r) => r.type === 'vocabulary').map((r) => r.hr);
+const stepsOf = (id) => generated.get(id).content.steps;
+
+test('etap 2: liczby — 1–10 i dziesiątki w module 1, godziny sat/sata/sati, ceny z liczbami', () => {
+  const m1 = vocabOf('a1-01-04');
+  for (const n of ['jedan', 'dva', 'tri', 'četiri', 'pet', 'šest', 'sedam', 'osam', 'devet', 'deset', 'dvadeset', 'trideset']) assert.ok(m1.includes(n), `a1-01-04: brak ${n}`);
+  const table = (id) => stepsOf(id).find((s) => s.id === 'structure').table ?? [];
+  assert.ok(table('a1-01-04').some((g) => g.rows.some((r) => r.form.includes('godine'))), 'a1-01-04: reguła godina / godine');
+  const hours = table('a1-03-03').flatMap((g) => g.rows.map((r) => r.form)).join(' ');
+  for (const form of ['sat', 'sata', 'sati']) assert.match(hours, new RegExp(`\\b${form}\\b`), `a1-03-03: ${form}`);
+  assert.ok(vocabOf('a1-05-04').includes('pedeset'));
+  const prices = stepsOf('a1-05-04').filter((s) => s.type === 'choice' && s.options.some((o) => o.includes('€')));
+  assert.ok(prices.length >= 3, 'a1-05-04: ćwiczenie „ile to kosztuje?”');
+  // wiek i liczby w produkcji
+  assert.equal(verdictOfReply('a1-01-04', 1, 'Marko ima dvadeset pet godina.'), 'hit');
+  const t = stepsOf('a1-01-04').find((s) => s.type === 'translate' && s.prompt === 'Mam trzydzieści cztery lata.');
+  assert.equal(checkLessonAnswer('Imam trideset četiri godine.', t.accepted, rules), 'hit');
+});
+
+test('etap 2: zwroty przetrwania — powitania pory dnia w a1-01-01, „nie rozumiem” przed dialogiem a1-01-05 i w rozmowie a1-08-03', () => {
+  const m1 = vocabOf('a1-01-01');
+  for (const p of ['Kako ste?', 'A ti?', 'Dobro jutro!', 'Dobra večer!', 'Laku noć!']) assert.ok(m1.includes(p), `a1-01-01: brak ${p}`);
+  const review = stepsOf('a1-01-05');
+  const phrases = review.findIndex((s) => s.type === 'structure' && s.examples?.some((e) => e.target === 'Ne razumijem.'));
+  assert.ok(phrases > 0 && phrases < review.findIndex((s) => s.type === 'dialog'), 'a1-01-05: zwroty przed dialogiem');
+  assert.ok(review.some((s) => s.id.startsWith('phrase-') && s.accepted[0] === 'Ne razumijem.'));
+  const talk = stepsOf('a1-08-03').find((s) => s.type === 'dialog').turns.filter((t) => t.kind === 'reply');
+  assert.ok(talk.some((t) => checkLessonAnswer('Ne razumijem. Možeš li ponoviti?', t.accepted, rules, t.pattern) === 'hit'), 'a1-08-03: replika „Ne razumijem”');
+});
+
+test('etap 2: objaśnienia gramatyki używanej w ćwiczeniach', () => {
+  const structure = (id) => stepsOf(id).find((s) => s.id === 'structure');
+  const all = (id) => { const s = structure(id); return [s.explanation, s.note ?? '', ...(s.table ?? []).flatMap((g) => g.rows.map((r) => `${r.base} ${r.form}`))].join(' '); };
+  assert.match(all('a1-02-04'), /Imaš li/, 'pytania z li');
+  assert.match(all('a1-02-01'), /moji roditelji/, 'moj / moja / moje / moji');
+  assert.match(all('a1-03-01'), /radiš/, 'ja / ty / on');
+  assert.match(all('a1-03-01'), /doručkujem/, '-ovati → -ujem');
+  assert.match(all('a1-04-04'), /forma Vi/, 'forma Vi');
+  assert.match(all('a1-06-03'), /će biti/, 'će biti jako gotowy zwrot');
+  assert.match(all('a1-07-02'), /za Rijeku/, 'za + miasto żeńskie');
+  assert.doesNotMatch(all('a1-07-02'), /zostaje bez zmian/, 'błędna reguła za + miasto');
+  assert.match(all('a1-08-02'), /Hoću/, 'odpowiedź Hoću');
+  // o sobie: zawód bez narzędnika
+  assert.equal(verdictOfReply('a1-02-02', 2, 'Ja sam studentica.'), 'hit');
+  assert.equal(verdictOfReply('a1-02-02', 2, 'Ja sam studentom.'), 'miss');
+});
+
+test('etap 2: żadne słowo nie jest nową kartą w dwóch zwykłych lekcjach', () => {
+  const owner = new Map();
+  const dups = [];
+  for (const lesson of lessons.filter((l) => l.kind === 'lesson' && l.id !== 'a1-01-02')) {
+    for (const s of stepsOf(lesson.id).filter((x) => x.type === 'word')) {
+      const key = s.target.toLocaleLowerCase('hr');
+      if (owner.has(key)) dups.push(`${s.target}: ${owner.get(key)} i ${lesson.id}`);
+      else owner.set(key, lesson.id);
+    }
+  }
+  assert.deepEqual(dups, []);
 });
