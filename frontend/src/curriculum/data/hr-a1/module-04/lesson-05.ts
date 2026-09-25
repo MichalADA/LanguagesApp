@@ -117,45 +117,47 @@ export const LESSON: GeneratedLesson = {
       {
         "id": "recall-1",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "sir",
-        "options": [
-          "cukier",
-          "słony",
-          "ser"
-        ],
-        "correctIndex": 2,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "woda",
+        "accepted": [
+          "voda"
+        ]
       },
       {
         "id": "recall-2",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "žedan",
-        "options": [
-          "spragniony",
-          "menu",
-          "jeść"
-        ],
-        "correctIndex": 0,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "jeść",
+        "accepted": [
+          "jesti"
+        ]
       },
       {
         "id": "recall-3",
         "stage": "words",
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "proszę",
+        "accepted": [
+          "molim"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/molim.mp3"
+      },
+      {
+        "id": "recall-4",
+        "stage": "words",
         "type": "choice",
         "instruction": "Co znaczy to słowo?",
-        "prompt": "molim",
+        "prompt": "salata",
         "options": [
-          "rachunek",
-          "proszę",
-          "ryż"
+          "piwo",
+          "słodki",
+          "sałatka"
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-01/molim.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt"
       },
       {
         "id": "vocab",
@@ -253,29 +255,28 @@ export const LESSON: GeneratedLesson = {
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "Za mene",
-        "after": ", molim.",
+        "before": "Htjela bih",
+        "after": ".",
         "accepted": [
-          "juhu"
+          "salatu"
         ],
-        "translation": "Dla mnie zupa, proszę."
+        "translation": "Chciałabym sałatkę."
       },
       {
         "id": "order",
         "stage": "structure",
         "type": "order",
         "instruction": "Ułóż zdanie.",
-        "translation": "Dziś nie jem mięsa.",
+        "translation": "Lubię rybę i warzywa.",
         "tokens": [
-          "ne",
-          "danas",
-          "meso",
-          "jedem"
+          "i",
+          "ribu",
+          "volim",
+          "povrće"
         ],
         "accepted": [
-          "Danas ne jedem meso.",
-          "Ne jedem meso danas.",
-          "Danas ne jedem mesa."
+          "Volim ribu i povrće.",
+          "Ja volim ribu i povrće."
         ]
       },
       {
@@ -283,10 +284,14 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Chcę herbatę.",
+        "prompt": "Dziś nie jem mięsa.",
         "accepted": [
-          "Želim čaj.",
-          "Ja želim čaj."
+          "Danas ne jedem meso.",
+          "Ne jedem meso danas.",
+          "Danas ne jedem mesa.",
+          "Ja danas ne jedem meso.",
+          "Ja ne jedem meso danas.",
+          "Ja danas ne jedem mesa."
         ]
       },
       {
@@ -294,10 +299,10 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Lubię jeść rybę.",
+        "prompt": "Lubię kawę.",
         "accepted": [
-          "Volim jesti ribu.",
-          "Ja volim jesti ribu."
+          "Volim kavu.",
+          "Ja volim kavu."
         ]
       },
       {
@@ -305,9 +310,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Chciałbym zamówić rybę.",
+        "prompt": "Czy to jest ostre?",
         "accepted": [
-          "Htio bih naručiti ribu."
+          "Je li ovo ljuto?"
         ]
       },
       {
@@ -347,9 +352,10 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Zamów danie.",
             "accepted": [
               "Htio bih naručiti ribu.",
+              "Htjela bih naručiti ribu.",
               "Molim juhu."
             ],
-            "pattern": "^((htio|htjela) bih (naručiti )?|molim |za mene )(jednu |jedan )?(juhu|ribu|salatu|rižu|meso|kavu|čaj|sok|vodu|pivo)( i (juhu|ribu|salatu|rižu|meso|kavu|čaj|sok|vodu|pivo))?( molim)?$",
+            "pattern": "^(((?:htio|htjela) bih (naručiti )?|molim |za mene |mogu li dobiti )?(jednu |jedan |jedno )?(?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt)( (i|s|sa|bez) \\p{L}+){0,3})( molim)?$",
             "suggestion": "Htio bih naručiti ribu."
           },
           {
@@ -385,7 +391,7 @@ export const LESSON: GeneratedLesson = {
               "Želim platiti karticom.",
               "Karticom, molim."
             ],
-            "pattern": "^((želim|mogu li) platiti )?karticom( molim)?$",
+            "pattern": "^((želim|mogu li) platiti |plaćam )?karticom( molim)?$",
             "suggestion": "Želim platiti karticom."
           }
         ]

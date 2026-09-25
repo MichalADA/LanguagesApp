@@ -24,6 +24,17 @@ src/curriculum/data/hr-a1/        ← wygenerowane TypeScript (commitowane, nie 
   Generator zgłasza słowo powtórzone w lekcji i ostrzega, gdy słowo uzupełniające jest już w rdzeniu innej lekcji.
 - **Dialog wzorcowy:** `didactics.json → lessons.<id>.model = { title, lines: [{ speaker, hr, pl }] }` → krok `listen`
   przed rozmową z partnerem. Głos wynika z mówiącego (`audio.json → maleSpeakers`).
+- **Repliki w dialogach** (`didactics.json → dialog.turns[].reply.pattern`) to ramy zdań. Sloty rozwija generator
+  w formy słownictwa całego kursu (`scripts/lib/hr-morphology.mjs`): `{acc}` biernik, `{loc}` miejscownik,
+  `{ins}` narzędnik, `{inf}` bezokolicznik, `{inft}` „radit” (radit ću), `{pres1}` 1 os. czasu teraźniejszego,
+  `{pp.self}` imiesłów m/ż, `{adj.f}` / `{adj.m}` / `{adj.self}` przymiotnik, `{pred}` orzecznik (sunčano, vruće).
+  Replika o sobie (w odpowiedzi jest „sam” albo „bih”) automatycznie przyjmuje obie formy rodzaju.
+  Generator odrzuca dane, w których sugerowana odpowiedź nie pasuje do własnej ramy.
+- **Tłumaczenia** dostają naturalne warianty: drugi rodzaj w zdaniu o sobie (poza lekcją z `genderDrill: true`)
+  i opcjonalne „Ja” na początku zdania bez klityk.
+- **Powtórki, Wielka powtórka i test** składa generator z materiału, który uczeń już widział, ale nigdy tym samym
+  zadaniem co wcześniej (tłumaczenie / luka / układanie / pytanie o słowo); kopia zatrzymuje generowanie.
+  Spirala i test w `didactics.json` wskazują tylko, z których lekcji i modułów brać materiał.
 - **Lekcja a1-02** („Skąd jesteś?”) to ręcznie napisana lekcja demo (`src/curriculum/data/lessons/a1-01-02.ts`);
   generator dołącza do niej słownictwo i materiał z CSV.
 - **Audio:** ćwiczenia słuchania używają nagranych dialogów z `public/data/listening/hr-a1-dialogues.json`.

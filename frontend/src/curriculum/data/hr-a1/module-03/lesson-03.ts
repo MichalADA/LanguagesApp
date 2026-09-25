@@ -179,8 +179,8 @@ export const LESSON: GeneratedLesson = {
         "source": "godzina / zegar",
         "partOfSpeech": "rzeczownik",
         "example": {
-          "target": "Koliko je sati?",
-          "source": "Która jest godzina?"
+          "target": "Tri su sata.",
+          "source": "Jest trzecia."
         }
       },
       {
@@ -542,6 +542,7 @@ export const LESSON: GeneratedLesson = {
               "Tri su sata.",
               "Sada su tri sata."
             ],
+            "pattern": "^(sada )?(tri su sata|su tri sata)( sada)?$|^tri sata$",
             "suggestion": "Tri su sata."
           },
           {

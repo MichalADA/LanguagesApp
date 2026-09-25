@@ -73,7 +73,7 @@ export const LESSON: GeneratedLesson = {
         "body": "Krótkie serie z całego poziomu: słowa, miejsca, jedzenie, hobby, podróże — i trzy czasy: teraz, wczoraj, jutro.",
         "goalsTitle": "W tej powtórce",
         "goals": [
-          "rozpoznasz słowa ze wszystkich modułów",
+          "przypomnisz sobie słowa ze wszystkich modułów",
           "uzupełnisz zdania w czasie teraźniejszym, przeszłym i przyszłym",
           "przetłumaczysz zdania z codziennych sytuacji",
           "porozmawiasz o sobie, wczoraj i jutrze"
@@ -82,72 +82,52 @@ export const LESSON: GeneratedLesson = {
       {
         "id": "recall-1",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "obitelj",
-        "options": [
-          "rodzina",
-          "czwartek",
-          "mieć"
-        ],
-        "correctIndex": 0,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "ojciec",
+        "accepted": [
+          "otac"
+        ]
       },
       {
         "id": "recall-2",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "kava",
-        "options": [
-          "adres",
-          "kawa",
-          "była"
-        ],
-        "correctIndex": 1,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "chleb",
+        "accepted": [
+          "kruh"
+        ]
       },
       {
         "id": "recall-3",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "trgovina",
-        "options": [
-          "sok",
-          "apteka",
-          "sklep"
-        ],
-        "correctIndex": 2,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "tam",
+        "accepted": [
+          "tamo"
+        ]
       },
       {
         "id": "recall-4",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "kiša",
-        "options": [
-          "deszcz",
-          "restauracja",
-          "oczywiście"
-        ],
-        "correctIndex": 0,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "czas wolny",
+        "accepted": [
+          "slobodno vrijeme"
+        ]
       },
       {
         "id": "recall-5",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "vlak",
-        "options": [
-          "kelner",
-          "pociąg",
-          "gdzie"
-        ],
-        "correctIndex": 1,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "pociąg",
+        "accepted": [
+          "vlak"
+        ]
       },
       {
         "id": "vocab",
@@ -227,58 +207,58 @@ export const LESSON: GeneratedLesson = {
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "Navečer",
-        "after": "hrvatski.",
+        "before": "",
+        "after": "osam sati.",
         "accepted": [
-          "učim"
+          "Spavam"
         ],
-        "translation": "Wieczorem uczę się chorwackiego."
+        "translation": "Śpię osiem godzin."
       },
       {
         "id": "gap-2",
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "Idem na",
-        "after": ".",
+        "before": "",
+        "after": "na tržnicu po voće.",
         "accepted": [
-          "poštu"
+          "Idem"
         ],
-        "translation": "Idę na pocztę."
+        "translation": "Idę na targ po owoce."
       },
       {
         "id": "gap-3",
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "",
-        "after": "sam kod kuće.",
+        "before": "Jučer sam",
+        "after": ".",
         "accepted": [
-          "Bila"
+          "radila"
         ],
-        "translation": "Byłam w domu."
+        "translation": "Wczoraj pracowałam."
       },
       {
         "id": "gap-4",
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "Sutra",
-        "after": "učiti hrvatski.",
+        "before": "Sljedeći tjedan",
+        "after": "putovati u Split.",
         "accepted": [
           "ću"
         ],
-        "translation": "Jutro będę uczyć się chorwackiego."
+        "translation": "W przyszłym tygodniu pojadę do Splitu."
       },
       {
         "id": "translate-1",
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Rachunek, proszę.",
+        "prompt": "Chciałbym herbatę.",
         "accepted": [
-          "Račun, molim.",
-          "Molim račun."
+          "Htio bih čaj.",
+          "Htjela bih čaj."
         ]
       },
       {
@@ -286,10 +266,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ile to kosztuje?",
+        "prompt": "To jest za drogie.",
         "accepted": [
-          "Koliko ovo košta?",
-          "Koliko to košta?"
+          "To je preskupo."
         ]
       },
       {
@@ -297,14 +276,15 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "order",
         "instruction": "Ułóż zdanie.",
-        "translation": "Pływam w morzu.",
+        "translation": "Łódź płynie na wyspę.",
         "tokens": [
-          "plivam",
-          "moru",
-          "u"
+          "na",
+          "otok",
+          "brod",
+          "ide"
         ],
         "accepted": [
-          "Plivam u moru."
+          "Brod ide na otok."
         ]
       },
       {
@@ -312,11 +292,10 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Słucham muzyki codziennie.",
+        "prompt": "Wieczorem spaceruję.",
         "accepted": [
-          "Slušam glazbu svaki dan.",
-          "Svaki dan slušam glazbu.",
-          "Ja slušam glazbu svaki dan."
+          "Navečer šetam.",
+          "Ja navečer šetam."
         ]
       },
       {
@@ -324,9 +303,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Podróżuję samolotem.",
+        "prompt": "Płyniemy promem na wyspę.",
         "accepted": [
-          "Putujem avionom."
+          "Idemo trajektom na otok."
         ]
       },
       {
@@ -350,7 +329,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Dobro sam, hvala."
             ],
-            "pattern": "^((dobro|odlično|loše) sam|nisam( baš)? dobro)( hvala)?$",
+            "pattern": "^((ja sam )?(dobro|odlično|loše) sam|ja sam (dobro|odlično|loše)|nisam( baš)? dobro|(dobro|odlično)( hvala)?)( hvala)?( a ti)?$",
             "suggestion": "Dobro sam, hvala.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
           },
@@ -369,7 +348,7 @@ export const LESSON: GeneratedLesson = {
               "Jučer sam radio.",
               "Jučer sam radila."
             ],
-            "pattern": "^(jučer sam (radio|radila|bio|bila|išao|išla|vidio|vidjela)( [\\p{L} ]+)?|(radio|radila|bio|bila|išao|išla|vidio|vidjela) sam( [\\p{L} ]+)?)$",
+            "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam (?:fotografirala|fotografirao|doručkovala|izgubila se|odmarala se|odmorila se|planinarila|preporučila|rezervirala|se izgubila|se odmarala|se odmorila|se tuširala|tuširala se|doručkovao|izgubio se|odgovorila|odmarao se|odmorio se|planinario|preporučio|presjedala|rezervirao|sastala se|se izgubio|se odmarao|se odmorio|se sastala|se sunčala|se tuširao|sunčala se|tuširao se|kupala se|nadala se|odgovorio|planirala|posjetila|poslušala|presjedao|razumjela|sastao se|se kupala|se nadala|se sastao|se sunčao|studirala|sunčao se|govorila|izlazila|kupao se|nadao se|napisala|naručila|našao se|našla se|odabrala|planirao|pokazala|ponovila|posjetio|poslušao|pronašao|pronašla|putovala|se kupao|se nadao|se našao|se našla|se zvala|skrenula|studirao|večerala|vježbala|završila|zvala se|gledala|govorio|izlazio|kasnila|koštala|krenula|napisao|naručio|odabrao|opisala|pjevala|platila|plesala|plivala|pokazao|ponovio|poznala|pričala|putovao|razumio|se zvao|skijala|skrenuo|slušala|spavala|tražila|trebala|večerao|vidjela|vježbao|voljela|završio|živjela|zvao se|čitala|crtala|gledao|htjela|igrala|kasnio|koštao|krenuo|kuhala|kupila|nemala|opisao|pitala|pjevao|platio|plesao|plivao|poznao|prešao|prešla|pričao|radila|ronila|ručala|šetala|skijao|slušao|spavao|stigao|stigla|tražio|trčala|trebao|ustala|vozila|čitao|crtao|igrao|imala|kuhao|kupio|nemao|pitao|radio|ronio|ručao|šetao|trčao|učila|ustao|vidio|volio|vozio|živio|znala|bila|bili|htio|imao|išao|išla|jela|pila|učio|znao|bio|jeo|pio)( \\p{L}+){0,4}|(?:fotografirala|fotografirao|doručkovala|izgubila se|odmarala se|odmorila se|planinarila|preporučila|rezervirala|se izgubila|se odmarala|se odmorila|se tuširala|tuširala se|doručkovao|izgubio se|odgovorila|odmarao se|odmorio se|planinario|preporučio|presjedala|rezervirao|sastala se|se izgubio|se odmarao|se odmorio|se sastala|se sunčala|se tuširao|sunčala se|tuširao se|kupala se|nadala se|odgovorio|planirala|posjetila|poslušala|presjedao|razumjela|sastao se|se kupala|se nadala|se sastao|se sunčao|studirala|sunčao se|govorila|izlazila|kupao se|nadao se|napisala|naručila|našao se|našla se|odabrala|planirao|pokazala|ponovila|posjetio|poslušao|pronašao|pronašla|putovala|se kupao|se nadao|se našao|se našla|se zvala|skrenula|studirao|večerala|vježbala|završila|zvala se|gledala|govorio|izlazio|kasnila|koštala|krenula|napisao|naručio|odabrao|opisala|pjevala|platila|plesala|plivala|pokazao|ponovio|poznala|pričala|putovao|razumio|se zvao|skijala|skrenuo|slušala|spavala|tražila|trebala|večerao|vidjela|vježbao|voljela|završio|živjela|zvao se|čitala|crtala|gledao|htjela|igrala|kasnio|koštao|krenuo|kuhala|kupila|nemala|opisao|pitala|pjevao|platio|plesao|plivao|poznao|prešao|prešla|pričao|radila|ronila|ručala|šetala|skijao|slušao|spavao|stigao|stigla|tražio|trčala|trebao|ustala|vozila|čitao|crtao|igrao|imala|kuhao|kupio|nemao|pitao|radio|ronio|ručao|šetao|trčao|učila|ustao|vidio|volio|vozio|živio|znala|bila|bili|htio|imao|išao|išla|jela|pila|učio|znao|bio|jeo|pio) sam( \\p{L}+){0,4})$",
             "suggestion": "Jučer sam radio."
           },
           {
@@ -386,7 +365,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "U subotu ću ići na more."
             ],
-            "pattern": "^u subotu (ću \\p{L}+( [\\p{L} ]+)?|ćemo \\p{L}+( [\\p{L} ]+)?)$",
+            "pattern": "^u subotu (ću|ćemo) (?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)( \\p{L}+){0,3}$",
             "suggestion": "U subotu ću ići na more."
           },
           {

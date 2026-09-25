@@ -515,7 +515,7 @@ export const LESSON: GeneratedLesson = {
               "Ja sam na plaži.",
               "Na plaži sam."
             ],
-            "pattern": "^(ja sam na plaži|na plaži sam|ja sam u moru|u moru sam)$",
+            "pattern": "^(ja sam na plaži|na plaži sam|ja sam u moru|u moru sam|na plaži)$",
             "suggestion": "Ja sam na plaži."
           },
           {
@@ -531,9 +531,10 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, że pływasz w morzu.",
             "accepted": [
               "Plivam u moru.",
+              "Ja plivam u moru.",
               "Kupam se."
             ],
-            "pattern": "^(plivam( u moru)?|kupam se( u moru)?)$",
+            "pattern": "^(ja )?(plivam|kupam se|se kupam)( u moru)?$",
             "suggestion": "Plivam u moru."
           }
         ]

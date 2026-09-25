@@ -590,6 +590,7 @@ export const LESSON: GeneratedLesson = {
               "Kada je polazak?",
               "Kada polazi vlak?"
             ],
+            "pattern": "^kada (je polazak|polazi( vlak| autobus)?)$",
             "suggestion": "Kada je polazak?"
           },
           {

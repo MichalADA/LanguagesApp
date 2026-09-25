@@ -183,7 +183,11 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "trčati",
         "source": "biegać",
-        "partOfSpeech": "czasownik"
+        "partOfSpeech": "czasownik",
+        "example": {
+          "target": "Trčim tri puta tjedno.",
+          "source": "Biegam trzy razy w tygodniu."
+        }
       },
       {
         "id": "check-1",
@@ -205,7 +209,11 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "voziti bicikl",
         "source": "jeździć na rowerze",
-        "partOfSpeech": "zwrot"
+        "partOfSpeech": "zwrot",
+        "example": {
+          "target": "Vozim bicikl vikendom.",
+          "source": "Jeżdżę na rowerze w weekendy."
+        }
       },
       {
         "id": "word-5",
@@ -431,7 +439,8 @@ export const LESSON: GeneratedLesson = {
         "instruction": "Przetłumacz na chorwacki.",
         "prompt": "Lubię pływać.",
         "accepted": [
-          "Volim plivati."
+          "Volim plivati.",
+          "Ja volim plivati."
         ]
       },
       {
@@ -447,7 +456,8 @@ export const LESSON: GeneratedLesson = {
           "tri"
         ],
         "accepted": [
-          "Trčim tri puta tjedno."
+          "Trčim tri puta tjedno.",
+          "Ja trčim tri puta tjedno."
         ]
       },
       {
@@ -569,9 +579,11 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Odpowiedz i powiedz, co lubisz.",
             "accepted": [
               "Da, volim sport.",
-              "Volim plivati."
+              "Ja da, volim sport.",
+              "Volim plivati.",
+              "Ja volim plivati."
             ],
-            "pattern": "^(da |ne )?(ne )?volim (sport|plivati|trčati|voziti bicikl)$",
+            "pattern": "^(da |ne )?(ja )?(ne )?volim ((?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)|(?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt))( i ((?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)|(?:zajedno ili odvojeno|autobusni kolodvor|jednokrevetnu sobu|kremu za sunčanje|dvokrevetnu sobu|osobnu iskaznicu|slobodno vrijeme|hvalu na pomoći|turistički ured|u jednom smjeru|godišnji odmor|nu kraju ulice|povratnu kartu|zu tjedan danu|jednom tjedno|nemam vremenu|nemu problemu|prošli tjedan|stol za dvoje|u koliko sati|hvalu lijepu|kako se kaže|ne razumijem|nemu na čemu|prijateljice|prijateljicu|prijateljiji|svaki tjedan|bijelu kavu|drago mi je|glavno jelo|informacije|informaciju|ponavljanja|ponavljanje|ponedjeljak|ponedjeljke|putu tjedno|razglednice|razglednicu|rezervacije|rezervaciju|roditeljiji|zvuči super|aktivnoste|cijeli dan|inozemstva|inozemstvo|još jednom|konobarice|konobaricu|plan gradu|prijatelja|prijatelje|sretan put|studentice|studenticu|suncobrane|televizije|televiziju|tjestenine|tjesteninu|učiteljice|učiteljicu|aerodrome|aktivnost|dobar dan|dobar tek|fakultete|gramatike|gramatiku|inženjera|inženjere|jelovnike|kašnjenja|kašnjenje|kazališta|kazalište|kilograme|kišobrane|knjižnice|knjižnicu|kolodvore|kupaonice|kupaonicu|liječnice|liječnicu|liječnika|liječnike|molim vas|napojnice|napojnicu|novčanike|prodavača|prodavače|putovanja|putovanje|putovnice|putovnicu|radni dan|raskrižja|raskrižje|razgovore|recepcije|recepciju|restorane|roditelje|sladolede|što radiš|što znači|suncobran|svaki dan|to je sve|vidimo se|vozni red|aerodrom|autobuse|blagajne|blagajnu|četvrtak|četvrtke|čokolade|čokoladu|fakultet|gotovine|gotovinu|hrvatske|hrvatsku|jelovnik|kilogram|kišobran|ključeve|kod kuće|kolegice|kolegicu|kolodvor|koncerte|konobara|konobare|krumpire|ležaljke|ležaljku|limunade|limunadu|ljekarne|ljekarnu|nedjelje|nedjelju|nogomete|novčanik|obitelji|odgovore|piletine|piletinu|pomfrite|predjela|predjelo|prognoze|prognozu|proljeća|proljeće|prtljage|prtljagu|računala|računalo|razgovor|rečenice|rečenicu|restoran|roditelj|sastanak|sastanke|semafore|sladoled|slušanja|slušanje|sportove|studenta|studente|suvenire|telefone|teretane|teretanu|trajekte|tramvaje|trgovine|trgovinu|učitelja|učitelje|utakmice|utakmicu|veličine|veličinu|zadatake|autobus|balkone|bicikle|bolnice|bolnicu|bratove|brodove|brojeve|centove|čitanja|čitanje|deserte|djedove|dolaske|dolazak|doručak|doručke|filmove|gradove|javi se|jogurte|kartice|karticu|koncert|košarke|košarku|kruhove|krumpir|laptope|lekcije|lekciju|liftove|lozinke|lozinku|maslace|mjesece|mlijeka|mlijeko|mostove|naočala|naočale|ne mogu|ne znam|nogomet|nu piće|nu uglu|obitelj|odbojke|odbojku|odgovor|parkove|pijesak|pijeske|pisanja|pisanje|pitanja|pitanje|planine|planinu|planove|polaske|polazak|poljske|poljsku|pomfrit|prijave|prijavu|priloge|putnika|putnike|ručnike|ruksake|semafor|snijege|srijede|srijedu|stanice|stanicu|stanove|stolove|stupanj|stupnje|susjeda|susjede|susjedu|suvenir|taksiji|tanjure|telefon|testove|trajekt|tramvaj|tržnice|tržnicu|turista|turiste|učenika|učenike|ukrcaje|vikende|vlakove|vrećice|vrećicu|vrijema|vrijeme|zadatak|adrese|adresu|avione|balkon|bazene|bicikl|čajeve|centar|centre|cijene|cijenu|danove|desert|dijete|glazbe|glazbu|godine|godinu|govore|hobiji|hotele|igrice|igricu|izlaze|izlete|jabuke|jabuku|jeseni|jezike|jogurt|kafiće|katove|knjige|knjigu|kofere|kolače|kolege|kolegu|komade|laptop|ledove|letove|maslac|minute|minutu|mjesec|mjesta|mjesto|muzeje|muževe|noževe|odjave|odjavu|odmore|pekare|pekaru|perone|pomoći|ponoći|poruke|poruku|povrća|povrće|prilog|putove|račune|riječi|ručnik|ruksak|salate|salatu|šalice|šalicu|satove|šećere|serije|seriju|sestre|sestru|sinove|sirove|snijeg|sokove|subote|subotu|tanjur|tečaje|tenise|tjedan|tjedne|tvrtke|tvrtku|u šest|ukrcaj|utorak|utorke|valove|večere|večeru|vikend|vilice|vilicu|vjetar|vjetre|zabave|zabavu|zadaće|zadaću|zemlje|zemlju|zgrade|zgradu|avion|banke|banku|bazen|brata|crkve|crkvu|djece|djecu|djeda|govor|hotel|hrane|hranu|izlaz|izlet|jesen|jezik|kafić|karte|kartu|klime|klimu|ključ|kofer|kolač|komad|ljeta|ljeto|mačke|mačku|magle|maglu|majke|majku|muzej|novac|novce|obale|obalu|odmor|oluje|oluju|osobe|osobu|otoke|peron|petak|petke|plaže|plažu|podna|podne|pomoć|ponoć|posaa|posao|pošte|poštu|račun|riječ|ručak|ručke|šećer|škole|školu|sport|sunca|sunce|šunke|šunku|taksi|tečaj|tenis|torbe|torbu|ulaze|ulice|ulicu|urede|večer|žlice|žlicu|auta|auto|bake|baku|boce|bocu|brod|broj|čaše|čašu|cent|eura|euro|film|grad|hobi|i ju|jaja|jaje|jela|jelo|joge|jogu|juhe|juhu|kave|kavu|kćer|kćii|kina|kino|kiše|kišu|kruh|kuće|kuću|lift|mame|mamu|mesa|meso|mora|more|most|muža|noći|otok|park|pića|piće|piva|pivo|plan|pole|polu|ribe|ribu|riže|rižu|sina|sobe|sobu|stan|stol|tate|tatu|test|trge|ulaz|ured|vina|vino|vlak|voća|voće|vode|vodu|vrte|žene|ženu|zime|zimu|čaj|dan|ima|ime|kat|led|let|noć|nož|oca|oce|psa|pse|put|sat|sir|sok|trg|val|vrt)))?$",
             "suggestion": "Da, volim sport."
           },
           {
@@ -587,10 +599,13 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, jak często biegasz.",
             "accepted": [
               "Trčim tri puta tjedno.",
+              "Ja trčim tri puta tjedno.",
               "Ponekad trčim.",
-              "Nikad ne trčim."
+              "Ja ponekad trčim.",
+              "Nikad ne trčim.",
+              "Ja nikad ne trčim."
             ],
-            "pattern": "^(da |ne )?((često|ponekad) trčim|nikad ne trčim|trčim (tri puta tjedno|često|ponekad))$",
+            "pattern": "^(da |ne )?(ja )?((često|ponekad|rijetko|obično) trčim( \\p{L}+){0,3}|nikad ne trčim|trčim( \\p{L}+){1,3})$",
             "suggestion": "Trčim tri puta tjedno."
           }
         ]

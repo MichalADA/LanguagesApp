@@ -528,7 +528,7 @@ export const LESSON: GeneratedLesson = {
               "Danas je hladno.",
               "Pada kiša."
             ],
-            "pattern": "^((danas je )?(sunčano|oblačno|hladno|toplo)( je)?( danas)?|pada (kiša|snijeg)|puše vjetar)$",
+            "pattern": "^((danas )?(je )?(?:vegetarijansko|prekosutra|simpatično|zanimljivo|prekjučer|dovoljno|englesko|hrvatsko|nažalost|omiljeno|sljedeće|slobodno|dosadno|jeftino|kasnije|najviše|naravno|navečer|netočno|oblačno|odlično|pametno|pješice|poljsko|ponekad|popodne|rijetko|sigurno|sporije|starije|stvarno|sunčano|također|večeras|zabavno|zajedno|zauzeto|daleko|gladno|hladno|kiselo|koliko|lijepo|lijevo|maleno|obično|odakle|polako|slatko|sretno|ujutro|ukusno|umorno|uskoro|uvijek|veliko|veselo|visoko|zdravo|zgodno|blizu|često|dalje|danas|desno|dobro|dolje|drago|gorko|jučer|kasno|ljuto|mirno|mlađe|mlado|možda|nikad|nisko|ovdje|ravno|sinoć|skupo|slano|staro|sutra|točno|toplo|tužno|vruće|zatim|žedno|brzo|gdje|gore|kada|kako|kamo|kući|loše|malo|novo|prvo|rado|rano|sada|tamo|vani|vrlo|živo|još)( i (?:vegetarijansko|prekosutra|simpatično|zanimljivo|prekjučer|dovoljno|englesko|hrvatsko|nažalost|omiljeno|sljedeće|slobodno|dosadno|jeftino|kasnije|najviše|naravno|navečer|netočno|oblačno|odlično|pametno|pješice|poljsko|ponekad|popodne|rijetko|sigurno|sporije|starije|stvarno|sunčano|također|večeras|zabavno|zajedno|zauzeto|daleko|gladno|hladno|kiselo|koliko|lijepo|lijevo|maleno|obično|odakle|polako|slatko|sretno|ujutro|ukusno|umorno|uskoro|uvijek|veliko|veselo|visoko|zdravo|zgodno|blizu|često|dalje|danas|desno|dobro|dolje|drago|gorko|jučer|kasno|ljuto|mirno|mlađe|mlado|možda|nikad|nisko|ovdje|ravno|sinoć|skupo|slano|staro|sutra|točno|toplo|tužno|vruće|zatim|žedno|brzo|gdje|gore|kada|kako|kamo|kući|loše|malo|novo|prvo|rado|rano|sada|tamo|vani|vrlo|živo|još))?( je)?( danas)?|(danas )?pada (kiša|snijeg)( danas)?|(danas )?puše vjetar)$",
             "suggestion": "Danas je sunčano."
           },
           {
@@ -545,7 +545,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Sutra će biti toplo."
             ],
-            "pattern": "^sutra će biti (sunčano|oblačno|hladno|toplo)$",
+            "pattern": "^sutra će biti (?:vegetarijansko|prekosutra|simpatično|zanimljivo|prekjučer|dovoljno|englesko|hrvatsko|nažalost|omiljeno|sljedeće|slobodno|dosadno|jeftino|kasnije|najviše|naravno|navečer|netočno|oblačno|odlično|pametno|pješice|poljsko|ponekad|popodne|rijetko|sigurno|sporije|starije|stvarno|sunčano|također|večeras|zabavno|zajedno|zauzeto|daleko|gladno|hladno|kiselo|koliko|lijepo|lijevo|maleno|obično|odakle|polako|slatko|sretno|ujutro|ukusno|umorno|uskoro|uvijek|veliko|veselo|visoko|zdravo|zgodno|blizu|često|dalje|danas|desno|dobro|dolje|drago|gorko|jučer|kasno|ljuto|mirno|mlađe|mlado|možda|nikad|nisko|ovdje|ravno|sinoć|skupo|slano|staro|sutra|točno|toplo|tužno|vruće|zatim|žedno|brzo|gdje|gore|kada|kako|kamo|kući|loše|malo|novo|prvo|rado|rano|sada|tamo|vani|vrlo|živo|još)$",
             "suggestion": "Sutra će biti toplo."
           }
         ]

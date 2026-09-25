@@ -434,8 +434,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Słucham muzyki codziennie.",
         "accepted": [
           "Slušam glazbu svaki dan.",
-          "Svaki dan slušam glazbu.",
-          "Ja slušam glazbu svaki dan."
+          "Ja slušam glazbu svaki dan.",
+          "Svaki dan slušam glazbu."
         ]
       },
       {
@@ -451,7 +451,8 @@ export const LESSON: GeneratedLesson = {
           "slobodno"
         ],
         "accepted": [
-          "U slobodno vrijeme čitam."
+          "U slobodno vrijeme čitam.",
+          "Ja u slobodno vrijeme čitam."
         ]
       },
       {
@@ -535,9 +536,11 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, co robisz w wolnym czasie.",
             "accepted": [
               "U slobodno vrijeme čitam.",
-              "U slobodno vrijeme slušam glazbu."
+              "Ja u slobodno vrijeme čitam.",
+              "U slobodno vrijeme slušam glazbu.",
+              "Ja u slobodno vrijeme slušam glazbu."
             ],
-            "pattern": "^(u slobodno vrijeme )?(ja )?(čitam|slušam glazbu|gledam filmove|šetam|igram igre|volim (čitati|šetati|gledati filmove|slušati glazbu))( u slobodno vrijeme)?$",
+            "pattern": "^(u slobodno vrijeme )?(ja )?((?:idem u kupovinu|fotografiram|imam vremena|preporučujem|vozim bicikl|sastanem se|se sastanem|doručkujem|izgubim se|odmaram se|odmorim se|planinarim|preporučim|rezerviram|se izgubim|se odmaram|se odmorim|se tuširam|tuširam se|odgovorim|presjedam|razumijem|se sunčam|sunčam se|kupam se|nadam se|nađem se|odaberem|planiram|posjetim|poslušam|poznajem|prijeđem|pronađem|se kupam|se nadam|se nađem|se zovem|studiram|zovem se|govorim|izlazim|napišem|naručim|pokažem|ponovim|putujem|skrenem|stignem|ustajem|ustanem|večeram|vježbam|završim|gledam|kasnim|koštam|krenem|opišem|pjevam|platim|plešem|plivam|poznam|pričam|skijam|slušam|spavam|stižem|tražim|trebam|čitam|crtam|igram|jedem|kuham|kupim|nemam|pijem|pitam|radim|ronim|ručam|šetam|trčim|vidim|volim|vozim|živim|hoću|idem|imam|učim|znam)|volim (?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići))( \\p{L}+){0,3}( u slobodno vrijeme)?$",
             "suggestion": "U slobodno vrijeme čitam."
           },
           {
@@ -552,9 +555,10 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Powiedz, że lubisz oglądać filmy.",
             "accepted": [
-              "Volim gledati filmove."
+              "Volim gledati filmove.",
+              "Ja volim gledati filmove."
             ],
-            "pattern": "^(volim gledati|gledam) filmove$",
+            "pattern": "^(da )?(ja )?(volim gledati|gledam) filmove$",
             "suggestion": "Volim gledati filmove."
           }
         ]

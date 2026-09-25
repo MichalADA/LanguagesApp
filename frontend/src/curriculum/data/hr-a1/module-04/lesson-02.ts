@@ -163,7 +163,11 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "voljeti",
         "source": "lubić / kochać",
-        "partOfSpeech": "czasownik"
+        "partOfSpeech": "czasownik",
+        "example": {
+          "target": "Volim kavu.",
+          "source": "Lubię kawę."
+        }
       },
       {
         "id": "word-2",
@@ -217,11 +221,7 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "sladak",
         "source": "słodki",
-        "partOfSpeech": "przymiotnik",
-        "example": {
-          "target": "Volim čokoladu i sladoled.",
-          "source": "Lubię czekoladę i lody."
-        }
+        "partOfSpeech": "przymiotnik"
       },
       {
         "id": "word-6",
@@ -229,11 +229,7 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "slan",
         "source": "słony",
-        "partOfSpeech": "przymiotnik",
-        "example": {
-          "target": "Volim čokoladu i sladoled.",
-          "source": "Lubię czekoladę i lody."
-        }
+        "partOfSpeech": "przymiotnik"
       },
       {
         "id": "check-2",
@@ -468,6 +464,7 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Jestem głodny.",
         "accepted": [
           "Gladan sam.",
+          "Gladna sam.",
           "Ja sam gladan."
         ]
       },
@@ -523,10 +520,13 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Odpowiedz, czy lubisz kawę.",
             "accepted": [
               "Volim kavu.",
+              "Ja volim kavu.",
               "Da, volim kavu.",
-              "Ne volim kavu."
+              "Ja da, volim kavu.",
+              "Ne volim kavu.",
+              "Ja ne volim kavu."
             ],
-            "pattern": "^(da |ne )?(ne )?volim kavu$",
+            "pattern": "^(da |ne )?(ja )?(ne )?volim( kavu)?$",
             "suggestion": "Volim kavu."
           },
           {
@@ -542,9 +542,11 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Odpowiedz, czy lubisz zupę.",
             "accepted": [
               "Ne volim juhu.",
-              "Volim juhu."
+              "Ja ne volim juhu.",
+              "Volim juhu.",
+              "Ja volim juhu."
             ],
-            "pattern": "^(da |ne )?(ne )?volim juhu$",
+            "pattern": "^(da |ne )?(ja )?(ne )?volim( juhu)?$",
             "suggestion": "Ne volim juhu."
           }
         ]

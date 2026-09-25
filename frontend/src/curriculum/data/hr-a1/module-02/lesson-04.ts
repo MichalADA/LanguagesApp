@@ -263,7 +263,11 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "pas",
         "source": "pies",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "example": {
+          "target": "Ona ima psa.",
+          "source": "Ona ma psa."
+        }
       },
       {
         "id": "word-8",
@@ -528,9 +532,11 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Odpowiedz, że masz.",
             "accepted": [
               "Da, imam telefon.",
-              "Imam telefon."
+              "Ja da, imam telefon.",
+              "Imam telefon.",
+              "Ja imam telefon."
             ],
-            "pattern": "^(da )?imam( telefon)?$",
+            "pattern": "^(da )?(ja )?imam( telefon)?$",
             "suggestion": "Da, imam telefon."
           },
           {
@@ -545,9 +551,10 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Powiedz, że nie masz psa, ale masz kota.",
             "accepted": [
-              "Nemam psa, ali imam mačku."
+              "Nemam psa, ali imam mačku.",
+              "Ja nemam psa, ali imam mačku."
             ],
-            "pattern": "^(ne )?nemam psa (ali )?imam mačku$",
+            "pattern": "^(ne )?(nemam psa (ali )?imam mačku|imam mačku (ali )?nemam psa)$",
             "suggestion": "Nemam psa, ali imam mačku."
           }
         ]

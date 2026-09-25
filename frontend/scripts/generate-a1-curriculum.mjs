@@ -20,6 +20,7 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
 import { attachAudio, buildManifest } from "./lib/course-audio.mjs";
+import { CLITICS, buildLexicon, expandSlots, genderizePattern, genderPairs, recordForms, swapGender, tokens } from "./lib/hr-morphology.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE_DIR = join(ROOT, "curriculum/hr-a1");
@@ -225,19 +226,47 @@ const byLesson = new Map(ordered.map((b) => [b.lesson.lesson_id, b]));
 const extra = didactics.extraAccepted ?? {};
 const splitAccepted = (value) => value.split("|").map((v) => v.trim()).filter(Boolean);
 
+/* Morfologia kursu: formy słów z całego słownictwa CSV (scripts/lib/hr-morphology.mjs). */
+const vocabRecords = records.filter((r) => r.record_type === "vocabulary");
+const LEXICON = buildLexicon(vocabRecords);
+const GENDER = genderPairs(vocabRecords);
+const PRES1 = new Set(LEXICON.pres1.filter((f) => !f.includes(" ")));
+/** Jednowyrazowe formy rekordu słownictwa (bez klityki „se”). */
+const formsCache = new Map();
+function formsOf(record) {
+  if (!formsCache.has(record.record_id)) {
+    const all = Object.values(recordForms(record)).flat().flatMap((f) => f.split(/\s+/)).filter((f) => f && f !== "se");
+    formsCache.set(record.record_id, new Set(all));
+  }
+  return formsCache.get(record.record_id);
+}
+const genderDrill = (lessonId) => Boolean(didactics.lessons[lessonId]?.genderDrill);
+const isSelf = (text) => tokens(text).some((t) => t === "sam" || t === "bih");
+
+/**
+ * Naturalne warianty poprawnej odpowiedzi (bez nowej treści):
+ *  - zdanie o sobie w drugim rodzaju (Umoran sam. ↔ Umorna sam.) — poza lekcjami, które ćwiczą właśnie rodzaj,
+ *  - podmiot „Ja” na początku, gdy zdanie nie ma klityk (Danas ne radim. → Ja danas ne radim.).
+ */
+function naturalVariants(list, lessonId) {
+  const out = [...list];
+  for (const answer of list) {
+    if (!genderDrill(lessonId) && isSelf(answer)) out.push(swapGender(answer, GENDER));
+    const words = tokens(answer);
+    if (words[0] !== "ja" && !answer.trim().endsWith("?") && !words.some((w) => CLITICS.has(w)) && words.some((w) => PRES1.has(w)) && !PROPER.has(answer.split(/\s+/)[0])) {
+      out.push(`Ja ${answer.charAt(0).toLocaleLowerCase("hr")}${answer.slice(1)}`);
+    }
+  }
+  return unique(out);
+}
+
 /** Zdanie z CSV z pełną listą akceptowanych wariantów. */
 function sentenceOf(lessonId, seq) {
   const bucket = byLesson.get(lessonId);
   const record = bucket?.sentences.find((r) => Number(r.sequence) === Number(seq));
   if (!record) { fail(`Brak zdania ${lessonId}:${seq}`); return { hr: "?", pl: "?", accepted: [] }; }
-  const accepted = unique([record.hr_text, ...splitAccepted(record.accepted_answers), ...(extra[record.record_id] ?? []), ...(extra[`${lessonId}:${seq}`] ?? [])]);
-  return { hr: record.hr_text, pl: record.pl_text, accepted, recordId: record.record_id };
-}
-
-function vocabOf(lessonId, seq) {
-  const record = byLesson.get(lessonId)?.vocabulary.find((r) => Number(r.sequence) === Number(seq));
-  if (!record) { fail(`Brak słowa ${lessonId}:${seq}`); return null; }
-  return record;
+  const base = unique([record.hr_text, ...splitAccepted(record.accepted_answers), ...(extra[record.record_id] ?? []), ...(extra[`${lessonId}:${seq}`] ?? [])]);
+  return { hr: record.hr_text, pl: record.pl_text, accepted: naturalVariants(base, lessonId), recordId: record.record_id, lessonId, seq: Number(seq) };
 }
 
 /** 3 → zdanie 3 tej lekcji; "a1-12:6" → zdanie 6 lekcji a1-12. */
@@ -253,15 +282,24 @@ const vocabItem = (r) => ({ target: r.hr_text, source: r.pl_text, lemma: r.lemma
 /* Budowanie kroków                                                     */
 /* ------------------------------------------------------------------ */
 
-/** Dopasowanie słowa do zdania (dokładnie albo wspólny rdzeń ≥ 3 liter). */
+/**
+ * Przykład do karty słowa: zdanie musi zawierać to słowo albo poprawną formę tego samego lematu
+ * (voda → Pijem vodu). Wyrażenie wielowyrazowe — całe, w mianowniku lub bierniku. Bez dopasowania
+ * po początku wyrazu (dva ≠ dvadeset, slan ≠ sladoled). Brak pasującego zdania = karta bez przykładu.
+ */
 function exampleFor(word, sentences) {
-  const w = fold(word.hr_text);
-  const tokens = (s) => fold(s.hr_text).split(/\s+/);
-  const exact = sentences.find((s) => ` ${fold(s.hr_text)} `.includes(` ${w} `));
+  const phrase = tokens(word.hr_text);
+  if (phrase.length > 1) {
+    const forms = recordForms(word);
+    const variants = unique([phrase.join(" "), ...forms.nom, ...forms.acc, ...forms.inf, ...forms.pres1]).map((v) => ` ${v} `);
+    return sentences.find((s) => variants.some((v) => ` ${tokens(s.hr_text).join(" ")} `.includes(v)));
+  }
+  // Najpierw zdanie z dokładnie tą formą (soba → „Soba je…”), dopiero potem z inną formą lematu (sobu).
+  const base = phrase[0];
+  const exact = sentences.find((s) => tokens(s.hr_text).includes(base));
   if (exact) return exact;
-  if (w.includes(" ")) return undefined;
-  const stem = w.slice(0, Math.max(3, Math.min(w.length - 2, 5)));
-  return sentences.find((s) => tokens(s).some((t) => t.length >= 3 && t.startsWith(stem)));
+  const forms = formsOf(word);
+  return sentences.find((s) => tokens(s.hr_text).some((t) => forms.has(t)));
 }
 
 function wordStep(id, record, sentences) {
@@ -353,17 +391,24 @@ function dialogStep(lessonId, spec) {
     }
     if (turn.say) return { kind: "line", line: { speaker: spec.partner, text: turn.say, translation: turn.pl } };
     const reply = turn.reply;
-    const accepted = unique(reply.accept.flatMap((a) => (typeof a === "number" || /^a1-\d\d:\d$/.test(a) ? resolveSentence(a, lessonId).accepted : [a])));
+    const listed = unique(reply.accept.flatMap((a) => (typeof a === "number" || /^a1-\d\d:\d$/.test(a) ? resolveSentence(a, lessonId).accepted : naturalVariants([a], lessonId))));
+    // Replika o sobie (sam / bih): poprawne są obie formy rodzaju — uczeń mówi o sobie.
+    const self = listed.some(isSelf);
+    const accepted = self ? unique([...listed, ...listed.map((a) => swapGender(a, GENDER))]) : listed;
     if (!accepted.length) fail(`${lessonId}: odpowiedź w dialogu bez wariantów`);
-    if (reply.pattern) {
-      try { new RegExp(reply.pattern, "u"); } catch (e) { fail(`${lessonId}: błędny pattern ${reply.pattern}: ${e.message}`); }
-      // Wzorzec ma przepuszczać przynajmniej sugerowaną odpowiedź — inaczej to błąd w danych.
+    let pattern = reply.pattern;
+    if (pattern) {
+      // Rama zdania: {slot} → formy słownictwa całego kursu (hr-morphology), rodzaj → (?:m|ż) przy replikach o sobie.
+      let regex = null;
+      try {
+        pattern = expandSlots(self ? genderizePattern(pattern, GENDER) : pattern, LEXICON);
+        regex = new RegExp(pattern, "u");
+      } catch (e) { fail(`${lessonId}: błędny pattern ${reply.pattern}: ${e.message}`); }
+      // Wzorzec ma przepuszczać sugerowaną odpowiedź — inaczej to błąd w danych.
       const canon = (x) => x.toLocaleLowerCase("hr").replace(/[.,!?;:„”"]/g, " ").replace(/\s+/g, " ").trim();
-      for (const answer of accepted) {
-        if (!new RegExp(reply.pattern, "u").test(canon(answer))) warn(`${lessonId}: wariant „${answer}” spoza wzorca (akceptowany z listy)`);
-      }
+      if (regex && !regex.test(canon(accepted[0]))) fail(`${lessonId}: sugerowana odpowiedź „${accepted[0]}” nie pasuje do ramy ${reply.pattern}`);
     }
-    return { kind: "reply", prompt: reply.prompt, accepted, ...(reply.pattern ? { pattern: reply.pattern } : {}), suggestion: accepted[0] };
+    return { kind: "reply", prompt: reply.prompt, accepted, ...(pattern ? { pattern } : {}), suggestion: accepted[0] };
   });
   return { id: "dialog", stage: "dialog", type: "dialog", title: spec.title, turns };
 }
@@ -513,19 +558,154 @@ function buildRegular(bucket) {
   return steps;
 }
 
+/* ---------- Śledzenie materiału: co uczeń już widział i co już ćwiczył ---------- */
+
+/**
+ * Powtórki, spirala i test budują zadania z materiału, który uczeń już widział (zdania z lekcji, słowa z kart),
+ * ale w nowej formie: nigdy tego samego zadania co wcześniej. Stan rośnie w kolejności lekcji.
+ */
+const keyOf = (text) => tokens(text).join(" ");
+const usage = { displayed: new Set(), exercised: new Map(), asked: new Set(), tasks: new Map() };
+/** Zapamiętuje, jakim typem zadania zdanie było już ćwiczone (tłumaczenie / układanie / luka). */
+const markExercised = (text, type) => { const k = keyOf(text); usage.exercised.set(k, (usage.exercised.get(k) ?? new Set()).add(type)); };
+const gapSentence = (step) => {
+  const [, punct = "", rest = ""] = step.after.match(/^([.,!?;:]*)\s*(.*)$/) ?? [];
+  return [step.before, `${step.accepted[0]}${punct}`, rest].filter(Boolean).join(" ");
+};
+
+/** Podpis zadania: to samo zadanie w innej lekcji = kopia. */
+function taskSignature(step) {
+  switch (step.type) {
+    case "translate": return `tłumaczenie „${step.prompt}”`;
+    case "gap": return `luka „${gapSentence(step)}” [${step.accepted[0]}]`;
+    case "order": return `układanie „${keyOf(step.accepted[0])}”`;
+    case "choice": return `wybór „${step.prompt}” → ${step.options[step.correctIndex]}`;
+    default: return null;
+  }
+}
+
+function registerLesson(lessonId, steps) {
+  const show = (x) => { if (x) usage.displayed.add(keyOf(typeof x === "string" ? x : x.target)); };
+  for (const s of steps) {
+    show(s.instructionTarget);
+    switch (s.type) {
+      case "intro": s.goals.forEach(show); break;
+      case "word": show(s.target); show(s.example); s.related?.forEach(show); break;
+      case "structure": s.examples?.forEach(show); break;
+      case "vocabList": s.items.forEach(show); break;
+      case "listen": case "listening": s.lines.forEach((l) => show(l.text)); break;
+      case "reading": s.text.forEach(show); break;
+      case "dialog": s.turns.forEach((t) => show(t.kind === "line" ? t.line.text : t.suggestion)); break;
+      case "choice": if (s.targetText !== "options") show(s.prompt); if (s.targetText !== "prompt") s.options.forEach(show); break;
+      case "summary": s.recap.forEach(show); show(s.closing); break;
+      default: break;
+    }
+    if (s.type === "translate" || s.type === "order") markExercised(s.accepted[0], s.type);
+    if (s.type === "gap") markExercised(gapSentence(s), "gap");
+    if (s.type === "choice" && /^(check|recall|vocab)/.test(s.id)) usage.asked.add(keyOf(s.targetText === "options" ? s.options[s.correctIndex] : s.prompt));
+    if (s.type === "translate" && /^recall/.test(s.id)) usage.asked.add(keyOf(s.accepted[0]));
+    const sig = taskSignature(s);
+    if (sig && !usage.tasks.has(sig)) usage.tasks.set(sig, lessonId);
+  }
+}
+
+/**
+ * Zdania lekcji, które uczeń widział: najpierw w ogóle niećwiczone, potem ćwiczone innym typem zadania
+ * (zdanie z luki może wrócić do układania — to nowe zadanie; to samo zadanie drugi raz już nie).
+ * Tłumaczenie nie wraca do zdań już tłumaczonych ani układanych.
+ */
+function freshSentences(lessonId, minWords, type) {
+  const blocked = type === "translate" ? ["translate", "order"] : [type, "translate"];
+  const seen = byLesson.get(lessonId).sentences.filter((r) => usage.displayed.has(keyOf(r.hr_text)) && tokens(r.hr_text).length >= minWords);
+  const done = (r) => usage.exercised.get(keyOf(r.hr_text)) ?? new Set();
+  return [...seen.filter((r) => done(r).size === 0), ...seen.filter((r) => done(r).size > 0 && !blocked.some((t) => done(r).has(t)))];
+}
+
+function takeSentence(lessonIds, minWords = 2) {
+  for (const lid of unique(lessonIds)) {
+    const r = freshSentences(lid, minWords, "translate")[0];
+    if (r) { markExercised(r.hr_text, "translate"); return sentenceOf(lid, r.sequence); }
+  }
+  fail(`Brak nieprzećwiczonego zdania w ${unique(lessonIds).join(", ")}`);
+  return null;
+}
+
+const AUX = new Set(["ću", "ćeš", "će", "ćemo", "ćete"]);
+const single = (list) => new Set(list.filter((f) => !f.includes(" ")));
+const PP_FORMS = single(LEXICON.pp);
+const PRES_FORMS = single(LEXICON.pres);
+const INFLECTED = single([...LEXICON.acc, ...LEXICON.loc, ...LEXICON.ins]);
+const NOMINATIVE = single(LEXICON.nom);
+/** Luka najpierw na tym, co niesie gramatykę: imiesłów / ću, forma osobowa, rzeczownik w przypadku zależnym. */
+const gapPriority = (t) => (PP_FORMS.has(t) || AUX.has(t) ? 0 : PRES_FORMS.has(t) ? 1 : INFLECTED.has(t) && !NOMINATIVE.has(t) ? 2 : 3);
+
+function takeGap(id, stage, lessonIds) {
+  for (const lid of unique(lessonIds)) {
+    const coreForms = new Set(coreOf(byLesson.get(lid)).flatMap((r) => [...formsOf(r)]));
+    let best = null;
+    for (const r of freshSentences(lid, 3, "gap")) {
+      for (const word of r.hr_text.split(/\s+/).map((w) => w.replace(/[.,!?;:]/g, "")).filter(Boolean)) {
+        const t = word.toLocaleLowerCase("hr");
+        if (t.length < 2 || !coreForms.has(t) || (CLITICS.has(t) && !AUX.has(t))) continue;
+        const priority = gapPriority(t);
+        if (!best || priority < best.priority) best = { priority, record: r, word };
+      }
+    }
+    if (best) {
+      markExercised(best.record.hr_text, "gap");
+      return gapStep(id, stage, sentenceOf(lid, best.record.sequence), best.word);
+    }
+  }
+  fail(`Brak zdania na lukę w ${unique(lessonIds).join(", ")}`);
+  return null;
+}
+
+function takeOrder(id, stage, lessonIds, rand) {
+  for (const lid of unique(lessonIds)) {
+    const r = freshSentences(lid, 4, "order")[0];
+    if (r) { markExercised(r.hr_text, "order"); return orderStep(id, stage, sentenceOf(lid, r.sequence), rand); }
+  }
+  fail(`Brak zdania do układania w ${unique(lessonIds).join(", ")}`);
+  return null;
+}
+
+/** Polskie znaczenie → jedno chorwackie słowo w całym kursie (inaczej „wpisz po chorwacku” byłoby niejednoznaczne). */
+const plIndex = new Map();
+for (const r of vocabRecords) {
+  const k = keyOf(r.pl_text);
+  plIndex.set(k, (plIndex.get(k) ?? new Set()).add(keyOf(r.hr_text)));
+}
+
+/** Słowo rdzenia, które uczeń widział, ale o które jeszcze go nie pytano; bez kognatów i niejednoznaczności. */
+function takeWord(lessonIds, rotate) {
+  for (const lid of unique(lessonIds)) {
+    const candidates = coreOf(byLesson.get(lid)).filter((r) => {
+      const hr = keyOf(r.hr_text);
+      return usage.displayed.has(hr) && !usage.asked.has(hr) && plIndex.get(keyOf(r.pl_text)).size === 1
+        && fold(r.hr_text) !== fold(r.pl_text) && !/[()]/.test(r.pl_text);
+    });
+    if (candidates.length) {
+      const r = candidates[rotate % candidates.length];
+      usage.asked.add(keyOf(r.hr_text));
+      return r;
+    }
+  }
+  fail(`Brak słowa do przypomnienia w ${unique(lessonIds).join(", ")}`);
+  return null;
+}
+
+/** Przypomnienie z produkcją: polskie znaczenie → uczeń wpisuje słowo po chorwacku. */
+const recallStep = (id, word, stage = "words") => ({
+  id, stage, type: "translate", instruction: "Jak powiesz to po chorwacku?", prompt: word.pl_text, accepted: [word.hr_text],
+});
+
+const moduleLessons = (moduleNo) => ordered.filter((b) => Number(b.lesson.module_no) === Number(moduleNo) && kindOf(lessonNo(b)) === "lesson").map((b) => b.lesson.lesson_id);
+
 /* ---------- Powtórka modułu ---------- */
 
 function previousLessons(bucket) {
   const m = bucket.lesson.module_no;
   return ordered.filter((b) => b.lesson.module_no === m && lessonNo(b) < lessonNo(bucket));
-}
-
-/** Zdanie do tłumaczenia z wcześniejszej lekcji (z jej wariantami). */
-function reviewTranslation(prev, pickLast) {
-  const spec = didactics.lessons[prev.lesson.lesson_id];
-  const list = spec?.translate ?? [];
-  const chosen = list.length ? list[pickLast ? list.length - 1 : 0] : { sentence: 4 };
-  return translateStep("", "practice", sentenceOf(prev.lesson.lesson_id, chosen.sentence), chosen.accept);
 }
 
 function buildReview(bucket) {
@@ -535,6 +715,7 @@ function buildReview(bucket) {
   const d = didactics.lessons[id];
   const rand = seeded(n * 104729);
   const prev = previousLessons(bucket);
+  const ids = prev.map((p) => p.lesson.lesson_id);
   const steps = [];
   const goals = prev.map((p) => stripDot(p.lesson.communicative_goal));
 
@@ -545,35 +726,29 @@ function buildReview(bucket) {
     goals: goals.map(lowerFirst),
   });
 
-  // 1. Krótkie rozpoznanie: po jednym słowie z trzech lekcji.
+  // 1. Przypominanie: trzy słowa do wpisania (lekcje 1–3) i jedno do rozpoznania (lekcja 4) — słowa, o które jeszcze nie pytano.
   const prevVocab = prev.flatMap(coreOf);
-  prev.slice(0, 3).forEach((p, i) => {
-    const core = coreOf(p);
-    const word = core[(n + i * 3) % core.length];
-    const others = prevVocab.map((v) => v.pl_text);
-    steps.push(choiceStep(`recall-${i + 1}`, "words", "Co znaczy to słowo?", word.hr_text, word.pl_text, pickDistractors(others, word.pl_text, rand), n + i));
+  ids.slice(0, 3).forEach((lid, i) => {
+    const word = takeWord([lid, ...ids], n + i);
+    if (word) steps.push(recallStep(`recall-${i + 1}`, word));
   });
+  if (ids[3]) {
+    const word = takeWord([ids[3], ...ids], n + 3);
+    if (word) steps.push(choiceStep("recall-4", "words", "Co znaczy to słowo?", word.hr_text, word.pl_text, pickDistractors(prevVocab.map((v) => v.pl_text), word.pl_text, rand), n + 3));
+  }
   steps.push(vocabListStep("vocab", "words", "Przydatne słowa na koniec modułu", vocabulary, "Nie musisz ich jeszcze znać na pamięć — pojawią się w rozmowie."));
   steps.push(...examplesStep(bucket));
 
-  // 2. Luka i uporządkowanie zdania z wcześniejszych lekcji.
-  const gapSource = [...prev].reverse().find((p) => didactics.lessons[p.lesson.lesson_id]?.gap);
-  if (gapSource) {
-    const g = didactics.lessons[gapSource.lesson.lesson_id].gap;
-    const step = gapStep("gap", "structure", sentenceOf(gapSource.lesson.lesson_id, g.sentence), g.word);
-    if (step) steps.push(step);
-  }
-  const orderSource = prev[0];
-  const orderSpec = didactics.lessons[orderSource.lesson.lesson_id];
-  const orderSentence = orderSpec?.comprehend && sentenceOf(orderSource.lesson.lesson_id, orderSpec.comprehend).hr.split(/\s+/).length >= 3
-    ? sentenceOf(orderSource.lesson.lesson_id, orderSpec.comprehend)
-    : sentenceOf(orderSource.lesson.lesson_id, 1);
-  steps.push(orderStep("order", "structure", orderSentence, rand));
+  // 2. Luka i układanie na zdaniach z modułu, których uczeń jeszcze nie ćwiczył.
+  const gap = takeGap("gap", "structure", [...ids].reverse());
+  if (gap) steps.push(gap);
+  const order = takeOrder("order", "structure", ids, rand);
+  if (order) steps.push(order);
 
-  // 3. Tłumaczenia z trzech lekcji modułu.
-  [prev[0], prev[1], prev[3]].filter(Boolean).forEach((p, i) => {
-    const t = reviewTranslation(p, i % 2 === 0);
-    steps.push({ ...t, id: `translate-${i + 1}` });
+  // 3. Tłumaczenia: po jednym zdaniu z trzech lekcji — zdania, których uczeń jeszcze nie tłumaczył ani nie układał.
+  [ids[0], ids[1], ids[3] ?? ids[2]].forEach((lid, i) => {
+    const sentence = takeSentence([lid, ...ids]);
+    if (sentence) steps.push({ ...translateStep(`translate-${i + 1}`, "practice", sentence), id: `translate-${i + 1}` });
   });
 
   // 4. Dialog i zadanie komunikacyjne.
@@ -594,41 +769,36 @@ function buildSpiral(bucket) {
   const d = didactics.lessons[id];
   const rand = seeded(39 * 15485863);
   const s = d.spiral;
-  const allVocab = ordered.filter((b) => lessonNo(b) < 39).flatMap(coreOf);
   const steps = [];
 
   steps.push({
     id: "intro", stage: "intro", type: "intro", title: lesson.lesson_title_pl,
     body: "Krótkie serie z całego poziomu: słowa, miejsca, jedzenie, hobby, podróże — i trzy czasy: teraz, wczoraj, jutro.",
     goalsTitle: "W tej powtórce",
-    goals: ["rozpoznasz słowa ze wszystkich modułów", "uzupełnisz zdania w czasie teraźniejszym, przeszłym i przyszłym", "przetłumaczysz zdania z codziennych sytuacji", "porozmawiasz o sobie, wczoraj i jutrze"],
+    goals: ["przypomnisz sobie słowa ze wszystkich modułów", "uzupełnisz zdania w czasie teraźniejszym, przeszłym i przyszłym", "przetłumaczysz zdania z codziennych sytuacji", "porozmawiasz o sobie, wczoraj i jutrze"],
   });
 
-  // Seria 1: słowa (co drugie słowo przeplatane tłumaczeniem, żeby nie było długiego ciągu).
-  const translations = s.translations.map((ref, i) => {
-    const [lid] = ref.split(":");
-    const spec = (didactics.lessons[lid]?.translate ?? []).find((t) => `${lid}:${t.sentence}` === ref);
-    return { ...translateStep(`translate-${i + 1}`, "practice", resolveSentence(ref, id), spec?.accept), id: `translate-${i + 1}` };
-  });
-  s.recognition.forEach((ref, i) => {
-    const [lid, seq] = ref.split(":");
-    const word = vocabOf(lid, Number(seq));
-    if (!word) return;
-    steps.push(choiceStep(`recall-${i + 1}`, "words", "Co znaczy to słowo?", word.hr_text, word.pl_text, pickDistractors(allVocab.map((v) => v.pl_text), word.pl_text, rand), i));
+  // Seria 1: słowa z różnych modułów — do wpisania po chorwacku.
+  s.recallModules.forEach((m, i) => {
+    const word = takeWord(moduleLessons(m), i);
+    if (word) steps.push(recallStep(`recall-${i + 1}`, word));
   });
   steps.push(vocabListStep("vocab", "words", "Słowa o nauce języka", vocabulary));
 
-  // Seria 2: trzy czasy i konstrukcje w kontekście.
+  // Seria 2: trzy czasy i konstrukcje w kontekście — luki w zdaniach, których uczeń jeszcze nie ćwiczył.
   steps.push(structureStep(id, d.grammar));
   s.gaps.forEach((lid, i) => {
-    const g = didactics.lessons[lid]?.gap;
-    if (!g) { fail(`${id}: lekcja ${lid} nie ma luki do spirali`); return; }
-    const step = gapStep(`gap-${i + 1}`, "structure", sentenceOf(lid, g.sentence), g.word);
+    const step = takeGap(`gap-${i + 1}`, "structure", [lid]);
     if (step) steps.push(step);
   });
 
   // Seria 3: tłumaczenia z różnych modułów + układanie zdania.
-  steps.push(translations[0], translations[1], orderStep("order", "practice", resolveSentence(s.order, id), rand), ...translations.slice(2));
+  const translations = s.translations.map((lid, i) => {
+    const sentence = takeSentence([lid]);
+    return sentence ? { ...translateStep(`translate-${i + 1}`, "practice", sentence), id: `translate-${i + 1}` } : null;
+  }).filter(Boolean);
+  const order = takeOrder("order", "practice", [s.order], rand);
+  steps.push(...translations.slice(0, 2), ...(order ? [order] : []), ...translations.slice(2));
 
   // Seria 4: rozmowa i samodzielna wypowiedź.
   steps.push(dialogStep(id, d.dialog), freeStep("can-do", d.canDo));
@@ -657,11 +827,10 @@ function buildTest(bucket) {
   });
   steps.push(vocabListStep("instructions", "intro", "Słowa z poleceń testu", vocabulary, "Polecenia w teście są po chorwacku — pod spodem zawsze zobaczysz tłumaczenie."));
 
-  t.vocabulary.items.forEach((ref, i) => {
-    const [lid, seq] = ref.split(":");
-    const word = vocabOf(lid, Number(seq));
-    if (!word) return;
-    steps.push({ ...choiceStep(`vocab-${i + 1}`, "words", t.vocabulary.instruction, word.hr_text, word.pl_text, pickDistractors(allVocab.map((v) => v.pl_text), word.pl_text, rand), i), section: "vocabulary" });
+  // Słowa, o które kurs (także Wielka powtórka) jeszcze nie pytał.
+  t.vocabulary.modules.forEach((m, i) => {
+    const word = takeWord(moduleLessons(m), i);
+    if (word) steps.push({ ...choiceStep(`vocab-${i + 1}`, "words", t.vocabulary.instruction, word.hr_text, word.pl_text, pickDistractors(allVocab.map((v) => v.pl_text), word.pl_text, rand), i), section: "vocabulary" });
   });
 
   steps.push({
@@ -676,15 +845,14 @@ function buildTest(bucket) {
   const listen = listeningStep("listening", "practice", t.listening.dialogue, t.listening.questions, own(t.listening.instruction));
   if (listen) steps.push({ ...listen, section: "listening" });
 
-  t.grammar.gaps.forEach((g, i) => {
-    const step = gapStep(`grammar-${i + 1}`, "structure", resolveSentence(g.ref, id), g.word);
+  t.grammar.lessons.forEach((lid, i) => {
+    const step = takeGap(`grammar-${i + 1}`, "structure", [lid]);
     if (step) steps.push({ ...step, section: "grammar", instructionTarget: own(t.grammar.instruction) });
   });
 
-  t.translation.items.forEach((ref, i) => {
-    const [lid] = ref.split(":");
-    const spec = (didactics.lessons[lid]?.translate ?? []).find((x) => `${lid}:${x.sentence}` === ref);
-    steps.push({ ...translateStep(`translation-${i + 1}`, "practice", resolveSentence(ref, id), spec?.accept), section: "translation", instructionTarget: own(t.translation.instruction) });
+  t.translation.lessons.forEach((lid, i) => {
+    const sentence = takeSentence([lid]);
+    if (sentence) steps.push({ ...translateStep(`translation-${i + 1}`, "practice", sentence), section: "translation", instructionTarget: own(t.translation.instruction) });
   });
 
   steps.push({ ...freeStep("production", { ...t.production, instruction: "Napisz 2–4 zdania o sobie." }), section: "production", instructionTarget: own(t.production.instruction) });
@@ -754,6 +922,14 @@ const built = ordered.map((bucket) => {
         const steps = kind === "test" ? buildTest(bucket) : kind === "spiral" ? buildSpiral(bucket) : kind === "review" ? buildReview(bucket) : buildRegular(bucket);
         return { lessonId: appId, ...(kind === "test" ? { mode: "test" } : {}), vocabulary, steps };
       })();
+  // Powtórka, spirala i test nie mogą kopiować zadań z wcześniejszych lekcji.
+  if (kind === "review" || kind === "spiral" || kind === "test") {
+    for (const step of content.steps) {
+      const sig = taskSignature(step);
+      if (sig && usage.tasks.has(sig)) fail(`${bucket.lesson.lesson_id}: ${sig} kopiuje zadanie z ${usage.tasks.get(sig)}`);
+    }
+  }
+  registerLesson(bucket.lesson.lesson_id, content.steps);
   return { bucket, n, kind, moduleNo, order, appId, isOverride, content, material: materialOf(bucket), fileName: `module-${pad(moduleNo)}/lesson-${pad(order)}.ts` };
 });
 

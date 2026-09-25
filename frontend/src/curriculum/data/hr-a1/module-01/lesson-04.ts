@@ -128,11 +128,6 @@ export const LESSON: GeneratedLesson = {
         "target": "dva",
         "source": "dwa",
         "partOfSpeech": "liczebnik",
-        "example": {
-          "target": "Imam dvadeset šest godina.",
-          "source": "Mam dwadzieścia sześć lat.",
-          "audioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
-        },
         "audioSrc": "/audio/hr/a1/module-01/dva.mp3"
       },
       {
@@ -340,7 +335,8 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Podaj swój wiek.",
             "accepted": [
-              "Imam dvadeset šest godina."
+              "Imam dvadeset šest godina.",
+              "Ja imam dvadeset šest godina."
             ],
             "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$",
             "suggestion": "Imam dvadeset šest godina.",

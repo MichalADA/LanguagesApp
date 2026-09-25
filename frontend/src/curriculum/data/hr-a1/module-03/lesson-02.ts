@@ -426,6 +426,7 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Dziś nie pracuję.",
         "accepted": [
           "Danas ne radim.",
+          "Ja danas ne radim.",
           "Ne radim danas."
         ]
       },
@@ -442,7 +443,8 @@ export const LESSON: GeneratedLesson = {
           "učim"
         ],
         "accepted": [
-          "Učim hrvatski svaki dan."
+          "Učim hrvatski svaki dan.",
+          "Ja učim hrvatski svaki dan."
         ]
       },
       {
@@ -511,9 +513,11 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, gdzie pracujesz.",
             "accepted": [
               "Radim u uredu.",
-              "Radim od kuće."
+              "Ja radim u uredu.",
+              "Radim od kuće.",
+              "Ja radim od kuće."
             ],
-            "pattern": "^(ja )?radim (u \\p{L}+|od kuće|kod kuće)$",
+            "pattern": "^(ja )?radim ((u|na) (?:prijateljici|prijateljima|informaciji|ponavljanju|ponedjeljku|razglednici|rezervaciji|roditeljima|aktivnostu|inozemstvu|konobarici|prijatelju|studentici|suncobranu|televiziji|tjestenini|učiteljici|aerodromu|fakultetu|gramatici|hrvatskoj|inženjeru|jelovniku|kašnjenju|kazalištu|kilogramu|kišobranu|knjižnici|kolodvoru|kupaonici|liječnici|liječniku|naočalama|napojnici|novčaniku|prodavaču|putovanju|putovnici|raskrižju|razgovoru|recepciji|restoranu|roditelju|sladoledu|autobusu|blagajni|četvrtku|čokoladi|gotovini|kolegici|koncertu|konobaru|krumpiru|ležaljci|limunadi|ljekarni|nedjelji|nogometu|obitelji|odgovoru|piletini|poljskoj|pomfritu|predjelu|prognozi|proljeću|prtljazi|računalu|rečenici|sastanku|semaforu|slušanju|studentu|suveniru|telefonu|teretani|trajektu|tramvaju|trgovini|učitelju|utakmici|veličini|zadataku|balkonu|biciklu|bolnici|čitanju|desertu|djetetu|dolasku|doručku|jogurtu|kartici|košarci|laptopu|lekciji|lozinci|maslacu|mjesecu|mlijeku|odbojci|pijesku|pisanju|pitanju|planini|polasku|prijavi|prilogu|putniku|ručniku|ruksaku|snijegu|srijedi|stanici|stupnju|susjedi|susjedu|taksiju|tanjuru|tržnici|turistu|učeniku|ukrcaju|vikendu|vrećici|vremenu|adresi|avionu|bazenu|centru|cijeni|glazbi|godini|govoru|hobiju|hotelu|igrici|izlazu|izletu|jabuci|jeseni|jeziku|kafiću|ključu|knjizi|koferu|kolaču|kolezi|komadu|minuti|mjestu|muzeju|odjavi|odmoru|pekari|peronu|pomoći|ponoći|poruci|povrću|računu|riječi|salati|šalici|šećeru|seriji|sestri|sportu|suboti|tečaju|tenisu|tjednu|tvrtci|utorku|večeri|večeru|vilici|vjetru|zabavi|zadaći|zemlji|zgradi|banci|bratu|brodu|broju|centu|crkvi|djeci|djedu|filmu|gradu|hrani|karti|kćeri|klimi|kruhu|liftu|ljetu|mačci|magli|majci|mostu|novcu|obali|oluji|osobi|otoku|parku|petku|planu|plaži|podnu|posau|pošti|ručku|školi|stanu|stolu|šunci|suncu|testu|torbi|ulazu|ulici|uredu|vlaku|žlici|autu|baci|boci|čaju|čaši|danu|euru|jaju|jelu|jozi|juhi|katu|kavi|kinu|kiši|kući|ledu|letu|mami|mesu|moru|mužu|noći|nožu|piću|pivu|poli|putu|ribi|riži|satu|sinu|siru|sobi|soku|tati|trgu|valu|vinu|voću|vodi|vrtu|ženi|zimi|imu|ocu|psu)|od kuće|kod kuće)$",
             "suggestion": "Radim u uredu."
           },
           {
@@ -529,9 +533,11 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, że uczysz się chorwackiego.",
             "accepted": [
               "Učim hrvatski svaki dan.",
-              "Učim hrvatski."
+              "Ja učim hrvatski svaki dan.",
+              "Učim hrvatski.",
+              "Ja učim hrvatski."
             ],
-            "pattern": "^(ja )?učim hrvatski( svaki dan)?$",
+            "pattern": "^(ja )?učim hrvatski( jezik)?( svaki dan)?$",
             "suggestion": "Učim hrvatski svaki dan."
           }
         ]

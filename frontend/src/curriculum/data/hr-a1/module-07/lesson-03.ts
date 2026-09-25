@@ -456,7 +456,8 @@ export const LESSON: GeneratedLesson = {
           "trebam"
         ],
         "accepted": [
-          "Trebam sobu za dvije noći."
+          "Trebam sobu za dvije noći.",
+          "Ja trebam sobu za dvije noći."
         ]
       },
       {
@@ -583,7 +584,9 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, że masz rezerwację.",
             "accepted": [
               "Imam rezervaciju.",
-              "Dobar dan, imam rezervaciju."
+              "Ja imam rezervaciju.",
+              "Dobar dan, imam rezervaciju.",
+              "Ja dobar dan, imam rezervaciju."
             ],
             "pattern": "^(dobar dan )?imam rezervaciju( na ime \\p{L}+)?$",
             "suggestion": "Imam rezervaciju."

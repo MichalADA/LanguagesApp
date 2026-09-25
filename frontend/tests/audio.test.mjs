@@ -96,3 +96,10 @@ test('wspólny odtwarzacz: nowe nagranie zatrzymuje poprzednie, ponowne kliknię
   unsubscribe();
   delete globalThis.Audio;
 });
+
+test('kwestie Marka (a1-01-02) czyta głos męski, a głosy pozostałych postaci się nie zmieniły', () => {
+  assert.ok(config.maleSpeakers.includes('Marek'));
+  const voiceOf = (text) => manifest.items.filter((i) => i.text === text).map((i) => i.voice);
+  for (const text of ['Bok! Iz Poljske sam. A ti?', 'Živim u Krakovu.']) assert.deepEqual(voiceOf(text), [config.voices.male], text);
+  for (const speaker of ['Marko', 'Konobar', 'Recepcionar', 'Prolaznik', 'Ivan']) assert.ok(config.maleSpeakers.includes(speaker));
+});

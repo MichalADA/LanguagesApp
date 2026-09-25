@@ -175,8 +175,14 @@ test('powtórki modułów korzystają z materiału czterech poprzednich lekcji i
     const steps = generated.get(review.id).content.steps;
     const recalls = steps.filter((s) => s.id.startsWith('recall-'));
     assert.ok(recalls.length >= 3, review.id);
-    for (const s of recalls) assert.ok(prevWords.has(s.prompt), `${review.id}: ${s.prompt} spoza modułu`);
-    const translations = steps.filter((s) => s.type === 'translate');
+    // Przypominanie głównie produkcyjne: uczeń wpisuje słowo po chorwacku (tylko ostatnie jest rozpoznaniem).
+    const produced = recalls.filter((s) => s.type === 'translate');
+    assert.ok(produced.length >= 3 && produced.length > recalls.length / 2, `${review.id}: recall ma sprawdzać produkcję`);
+    for (const s of recalls) {
+      const word = s.type === 'translate' ? s.accepted[0] : s.prompt;
+      assert.ok(prevWords.has(word), `${review.id}: ${word} spoza modułu`);
+    }
+    const translations = steps.filter((s) => s.type === 'translate' && !s.id.startsWith('recall-'));
     assert.ok(translations.length >= 2, review.id);
     for (const s of translations) assert.ok(prevSentencesPl.has(s.prompt), `${review.id}: ${s.prompt} spoza modułu`);
     for (const type of ['gap', 'order', 'dialog', 'free']) assert.ok(steps.some((s) => s.type === type), `${review.id}: brak ${type}`);
@@ -294,4 +300,157 @@ test('generator: zgłasza duplikaty record_id i brak rekordu lesson', () => {
   assert.equal(run.status, 1);
   assert.match(run.stderr, /Duplikat record_id: A1-0002/);
   assert.match(run.stderr, /a1-01: brak rekordu lesson/);
+});
+
+/* ------------------------------------------------------------------ */
+/* Regresja po audycie A1 (Etap 1)                                     */
+/* ------------------------------------------------------------------ */
+
+const { recordForms, tokens: hrTokens } = await import(join(ROOT, 'scripts/lib/hr-morphology.mjs'));
+const reply = (id, n) => generated.get(id).content.steps.filter((s) => s.type === 'dialog').flatMap((s) => s.turns.filter((t) => t.kind === 'reply'))[n];
+const stepOf = (id, stepId) => generated.get(id).content.steps.find((s) => s.id === stepId);
+const verdictOfReply = (id, n, answer) => { const t = reply(id, n); return checkLessonAnswer(answer, t.accepted, rules, t.pattern); };
+
+test('audyt: naturalne, poprawne odpowiedzi ucznia są akceptowane', () => {
+  // Te same odpowiedzi, które w audycie przechodziły w 5 przypadkach na 32.
+  const dialog = [
+    ['a1-02-04', 0, 'Da, imam.'], ['a1-04-01', 0, 'Pijem mlijeko.'], ['a1-04-01', 1, 'Jedem jogurt i voće.'], ['a1-04-01', 1, 'Jedem piletinu.'],
+    ['a1-05-02', 0, 'Idem u pekaru.'], ['a1-05-02', 0, 'Idem na tržnicu.'], ['a1-06-01', 0, 'U slobodno vrijeme pjevam.'], ['a1-06-01', 0, 'Gledam serije.'],
+    ['a1-06-02', 0, 'Volim tenis.'], ['a1-06-02', 1, 'Trčim dva puta tjedno.'], ['a1-03-01', 1, 'Navečer kuham.'], ['a1-03-01', 1, 'Navečer gledam film.'],
+    ['a1-02-02', 1, 'On je nastavnik.'], ['a1-06-03', 0, 'Danas je vruće.'], ['a1-06-03', 0, 'Oblačno je.'], ['a1-07-01', 1, 'Putujem trajektom.'],
+    ['a1-01-01', 0, 'Loše sam.'], ['a1-01-01', 1, 'Vidimo se!'], ['a1-04-03', 0, 'Jednu bijelu kavu, molim.'], ['a1-04-03', 0, 'Mogu li dobiti kavu?'],
+    ['a1-05-04', 0, 'Tražim kruh i mlijeko.'], ['a1-08-01', 0, 'Jučer sam gledala film.'], ['a1-08-01', 0, 'Jučer sam bila u gradu.'], ['a1-08-02', 0, 'Sutra ću igrati nogomet.'],
+    // rodzaj w odpowiedziach o sobie i naturalne warianty
+    ['a1-03-05', 2, 'U subotu sam slobodna.'], ['a1-03-05', 2, 'Slobodna sam.'], ['a1-08-03', 3, 'Jučer sam bila kod kuće.'], ['a1-08-04', 1, 'Jučer sam gledala film.'],
+    ['a1-04-03', 0, 'Htjela bih sok.'], ['a1-08-02', 0, 'Sutra ću se odmoriti.'], ['a1-08-02', 0, 'Radit ću sutra.'], ['a1-06-02', 0, 'Volim plivati i trčati.'],
+    ['a1-02-05', 1, 'Moja sestra je vesela.'], ['a1-03-01', 1, 'Navečer se odmaram.'], ['a1-06-05', 1, 'Vikendom igram tenis.'],
+  ];
+  for (const [id, n, answer] of dialog) assert.equal(verdictOfReply(id, n, answer), 'hit', `${id} [${reply(id, n).prompt}] „${answer}”`);
+  const translations = [
+    ['a1-02-03', 'translate-1', 'Danas sam umorna.'], ['a1-04-02', 'translate-2', 'Gladna sam.'], ['a1-01-01', 'translate-1', 'Ja sam odlično.'],
+    ['a1-03-02', 'translate-1', 'Ja danas ne radim.'], ['a1-04-03', 'translate-1', 'Molim račun.'], ['a1-05-04', 'translate-1', 'Koliko košta?'],
+  ];
+  for (const [id, stepId, answer] of translations) {
+    const s = stepOf(id, stepId);
+    assert.equal(checkLessonAnswer(answer, s.accepted, rules, s.pattern), 'hit', `${id}/${stepId} «${s.prompt}» „${answer}”`);
+  }
+});
+
+test('audyt: odpowiedzi niezgodne z poleceniem lub błędne gramatycznie nadal są odrzucane', () => {
+  const wrong = [
+    ['a1-04-01', 0, 'Pijem voda.'], ['a1-04-01', 0, 'Ja pije kavu.'], ['a1-04-01', 0, 'Piję wodę.'], ['a1-04-01', 1, 'Jedem piletina.'],
+    ['a1-05-02', 0, 'Idem u pekara.'], ['a1-03-01', 1, 'Navečer kuhati.'], ['a1-03-01', 1, 'Navečer kuha.'],
+    ['a1-08-01', 0, 'Jučer sam radim.'], ['a1-08-01', 0, 'Jučer radila.'], ['a1-08-01', 0, 'Sam radila jučer.'],
+    ['a1-08-02', 0, 'Sutra ću igram nogomet.'], ['a1-08-02', 0, 'Sutra igrati nogomet.'],
+    ['a1-02-03', 1, 'Moja sestra je sretan.'], ['a1-02-03', 0, 'Moj brat je visoka i mlada.'], ['a1-02-05', 1, 'Moja sestra je sretan.'],
+    ['a1-07-01', 1, 'Putujem trajekt.'], ['a1-06-02', 0, 'Volim tenisa.'], ['a1-01-01', 0, 'Sam dobro.'], ['a1-02-01', 0, 'Ovo je moj sestra.'],
+    // polecenie mówi konkretnie, co powiedzieć — inna treść to błąd, nawet jeśli zdanie jest poprawne
+    ['a1-02-03', 1, 'Moja sestra je vesela.'], ['a1-07-04', 1, 'Sunčam se.'],
+  ];
+  for (const [id, n, answer] of wrong) assert.equal(verdictOfReply(id, n, answer), 'miss', `${id} [${reply(id, n).prompt}] „${answer}”`);
+  // tłumaczenie w lekcji o rodzaju (perfekt) zostaje jednoznaczne
+  assert.equal(checkLessonAnswer('Jučer sam radila.', stepOf('a1-08-01', 'translate-1').accepted, rules), 'miss');
+});
+
+/** Formy wszystkich słów kursu: forma → rekordy (lemat), do sprawdzania „czy uczeń to już widział”. */
+const vocabRecords = [...generated.values()].flatMap((g) => g.material.records.filter((r) => r.type === 'vocabulary'))
+  .map((r) => ({ key: r.recordId, hr_text: r.hr, lemma: r.lemma, part_of_speech: r.partOfSpeech }));
+const formIndex = new Map();
+const formsByRecord = new Map();
+for (const r of vocabRecords) {
+  const forms = new Set(Object.values(recordForms(r)).flat().flatMap((f) => f.split(/\s+/)).filter((f) => f && f !== 'se'));
+  formsByRecord.set(r.key, { record: r, forms });
+  for (const f of forms) formIndex.set(f, [...(formIndex.get(f) ?? []), r.key]);
+}
+
+test('żadne ćwiczenie nie wymaga słowa, którego uczeń wcześniej nie widział (ani formy znanego lematu)', () => {
+  // Słowa funkcyjne identyczne jak po polsku.
+  const FUNCTION_WORDS = new Set(['ne', 'i', 'a', 'da']);
+  // Znane przypadki kolejności materiału — do naprawy w Etapie 2 (zmiana kolejności / treści), nie w walidatorze.
+  const ETAP_2 = new Set(['a1-02-05|banci', 'a1-03-03|vlak', 'a1-03-03|dolazi', 'a1-03-05|često', 'a1-03-05|čitam', 'a1-04-05|karticom']);
+  const seenTokens = new Set();
+  const seenRecords = new Set();
+  const show = (text) => { for (const t of hrTokens(text)) { seenTokens.add(t); for (const r of formIndex.get(t) ?? []) seenRecords.add(r); } };
+  const known = (t) => FUNCTION_WORDS.has(t) || seenTokens.has(t) || (formIndex.get(t) ?? []).some((r) => seenRecords.has(r));
+  const problems = [];
+  const require = (lessonId, what, text) => {
+    for (const t of hrTokens(text)) if (!known(t) && !ETAP_2.has(`${lessonId}|${t}`)) problems.push(`${lessonId} ${what} „${text}” → ${t}`);
+  };
+  for (const lesson of lessons) {
+    for (const s of generated.get(lesson.id).content.steps) {
+      if (s.instructionTarget) show(s.instructionTarget.target);
+      switch (s.type) {
+        case 'intro': s.goals.forEach((g) => typeof g !== 'string' && show(g.target)); break;
+        case 'word': show(s.target); if (s.example) show(s.example.target); (s.related ?? []).forEach((x) => show(x.target)); break;
+        case 'structure': (s.examples ?? []).forEach((x) => show(x.target)); (s.table ?? []).forEach((g) => g.rows.forEach((r) => { show(r.base); show(r.form); })); break;
+        case 'vocabList': s.items.forEach((x) => show(x.target)); break;
+        case 'listen': case 'listening': s.lines.forEach((x) => show(x.text)); break;
+        case 'reading': s.text.forEach((x) => show(x.target)); break;
+        case 'choice': if (s.targetText !== 'options') show(s.prompt); else s.options.forEach(show); break;
+        case 'translate': require(lesson.id, 'tłumaczenie', s.accepted[0]); show(s.accepted[0]); break;
+        case 'gap': require(lesson.id, 'luka', s.accepted[0]); show(`${s.before} ${s.accepted[0]} ${s.after}`); break;
+        case 'order': show(s.accepted[0]); break; // elementy są podane
+        case 'dialog':
+          for (const t of s.turns) {
+            if (t.kind === 'line') show(t.line.text);
+            else { require(lesson.id, `dialog [${t.prompt}]`, t.suggestion); show(t.suggestion); }
+          }
+          break;
+        case 'summary': s.recap.forEach((x) => show(x.target)); break;
+        default: break;
+      }
+    }
+  }
+  assert.deepEqual(problems, []);
+});
+
+test('przykład przy karcie słowa zawiera to słowo albo formę tego samego lematu', () => {
+  const bad = [];
+  for (const lesson of lessons) {
+    const { content, material } = generated.get(lesson.id);
+    for (const s of content.steps.filter((x) => x.type === 'word' && x.example)) {
+      const record = material.records.find((r) => r.type === 'vocabulary' && r.hr === s.target);
+      if (!record) continue; // ręczna lekcja demo ma własne karty
+      const { forms } = formsByRecord.get(record.recordId);
+      const words = hrTokens(s.target);
+      const example = hrTokens(s.example.target);
+      const ok = words.length > 1 ? ` ${example.join(' ')} `.includes(` ${words.join(' ')} `) || example.some((t) => forms.has(t)) && words.every((w) => example.some((t) => t === w || forms.has(t)))
+        : example.some((t) => forms.has(t));
+      if (!ok) bad.push(`${lesson.id} ${s.target} → „${s.example.target}”`);
+    }
+  }
+  assert.deepEqual(bad, []);
+  // przypadki z audytu: przykład oparty tylko na początku wyrazu
+  const exampleOf = (id, target) => generated.get(id).content.steps.find((x) => x.type === 'word' && x.target === target)?.example?.target;
+  assert.notEqual(exampleOf('a1-01-04', 'dva'), 'Imam dvadeset šest godina.');
+  assert.notEqual(exampleOf('a1-04-02', 'sladak'), 'Volim čokoladu i sladoled.');
+  assert.notEqual(exampleOf('a1-04-02', 'slan'), 'Volim čokoladu i sladoled.');
+  assert.notEqual(exampleOf('a1-01-03', 'on'), 'Ona se zove Ana.');
+  assert.notEqual(exampleOf('a1-02-02', 'prijateljica'), 'Ovo je moj prijatelj Marko.');
+  assert.notEqual(exampleOf('a1-02-02', 'učitelj'), 'Moja susjeda je učiteljica.');
+  assert.notEqual(exampleOf('a1-02-02', 'liječnik'), 'Ana je liječnica.');
+});
+
+test('powtórki, Wielka powtórka i test nie kopiują zadań z wcześniejszych lekcji', () => {
+  const gapText = (s) => `${s.before}|${s.accepted[0]}|${s.after}`;
+  const sig = (s) => (s.type === 'translate' ? `T:${s.prompt}` : s.type === 'gap' ? `G:${gapText(s)}` : s.type === 'order' ? `O:${s.accepted[0]}` : s.type === 'choice' ? `C:${s.prompt}|${s.options[s.correctIndex]}` : null);
+  const first = new Map();
+  const copies = [];
+  for (const lesson of lessons) {
+    for (const s of generated.get(lesson.id).content.steps) {
+      const k = sig(s);
+      if (!k) continue;
+      if (first.has(k) && ['review', 'spiral', 'test'].includes(lesson.kind)) copies.push(`${lesson.id}: ${k} (= ${first.get(k)})`);
+      if (!first.has(k)) first.set(k, lesson.id);
+    }
+  }
+  assert.deepEqual(copies, []);
+  // test końcowy nie pyta o słowa z Wielkiej powtórki
+  const spiralWords = new Set(generated.get('a1-08-04').content.steps.filter((s) => s.id.startsWith('recall-')).map((s) => s.accepted[0]));
+  const testWords = generated.get('a1-08-05').content.steps.filter((s) => s.section === 'vocabulary').map((s) => s.prompt);
+  assert.equal(testWords.length, 6);
+  for (const w of testWords) assert.ok(!spiralWords.has(w), `test powtarza słowo ze spirali: ${w}`);
+  // spirala przypomina słowa produkcyjnie
+  assert.ok([...spiralWords].length >= 5);
+  assert.ok(generated.get('a1-08-04').content.steps.filter((s) => s.id.startsWith('recall-')).every((s) => s.type === 'translate'));
 });

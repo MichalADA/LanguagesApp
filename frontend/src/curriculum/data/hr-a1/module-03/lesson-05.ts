@@ -117,43 +117,45 @@ export const LESSON: GeneratedLesson = {
       {
         "id": "recall-1",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "navečer",
-        "options": [
-          "wieczorem",
-          "uczelnia / wydział",
-          "poniedziałek"
-        ],
-        "correctIndex": 0,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "spać",
+        "accepted": [
+          "spavati"
+        ]
       },
       {
         "id": "recall-2",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "ured",
-        "options": [
-          "wieczorem",
-          "biuro",
-          "wstać"
-        ],
-        "correctIndex": 1,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "biuro",
+        "accepted": [
+          "ured"
+        ]
       },
       {
         "id": "recall-3",
         "stage": "words",
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "wpół / połowa",
+        "accepted": [
+          "pola"
+        ]
+      },
+      {
+        "id": "recall-4",
+        "stage": "words",
         "type": "choice",
         "instruction": "Co znaczy to słowo?",
-        "prompt": "navečer",
+        "prompt": "subota",
         "options": [
-          "jeść śniadanie",
-          "jeść obiad",
-          "wieczorem"
+          "sobota",
+          "uczelnia / wydział",
+          "dokładnie"
         ],
-        "correctIndex": 2,
+        "correctIndex": 0,
         "targetText": "prompt"
       },
       {
@@ -253,25 +255,27 @@ export const LESSON: GeneratedLesson = {
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
         "before": "U",
-        "after": "idem u grad.",
+        "after": "se odmaram.",
         "accepted": [
-          "subotu"
+          "nedjelju"
         ],
-        "translation": "W sobotę idę do miasta."
+        "translation": "W niedzielę odpoczywam."
       },
       {
         "id": "order",
         "stage": "structure",
         "type": "order",
         "instruction": "Ułóż zdanie.",
-        "translation": "Śpię osiem godzin.",
+        "translation": "Najpierw biorę prysznic, potem jem śniadanie.",
         "tokens": [
-          "osam",
-          "spavam",
-          "sati"
+          "se",
+          "tuširam",
+          "doručkujem",
+          "prvo",
+          "zatim"
         ],
         "accepted": [
-          "Spavam osam sati."
+          "Prvo se tuširam, zatim doručkujem."
         ]
       },
       {
@@ -279,10 +283,10 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Pracuję do czwartej.",
+        "prompt": "Wstaję o siódmej.",
         "accepted": [
-          "Radim do četiri.",
-          "Ja radim do četiri."
+          "Ustajem u sedam.",
+          "Ja ustajem u sedam."
         ]
       },
       {
@@ -290,10 +294,10 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Dziś nie pracuję.",
+        "prompt": "Pracuję z domu.",
         "accepted": [
-          "Danas ne radim.",
-          "Ne radim danas."
+          "Radim od kuće.",
+          "Ja radim od kuće."
         ]
       },
       {
@@ -301,10 +305,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "W poniedziałek pracuję.",
+        "prompt": "Dziś jest czwartek.",
         "accepted": [
-          "U ponedjeljak radim.",
-          "Radim u ponedjeljak."
+          "Danas je četvrtak."
         ]
       },
       {
@@ -326,8 +329,11 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, że codziennie uczysz się chorwackiego.",
             "accepted": [
               "Svaki dan učim hrvatski.",
-              "Učim hrvatski svaki dan."
+              "Ja svaki dan učim hrvatski.",
+              "Učim hrvatski svaki dan.",
+              "Ja učim hrvatski svaki dan."
             ],
+            "pattern": "^(svaki dan (ja )?učim hrvatski( jezik)?|(ja )?učim hrvatski( jezik)? svaki dan)$",
             "suggestion": "Svaki dan učim hrvatski."
           },
           {
@@ -343,9 +349,11 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, od której zwykle pracujesz.",
             "accepted": [
               "Obično radim od deset.",
-              "Radim od deset."
+              "Ja obično radim od deset.",
+              "Radim od deset.",
+              "Ja radim od deset."
             ],
-            "pattern": "^(obično )?radim (od \\p{L}+( do \\p{L}+)?|u \\p{L}+)$",
+            "pattern": "^(obično )?(ja )?radim (od \\p{L}+( do \\p{L}+)?|u \\p{L}+)( sati)?$",
             "suggestion": "Obično radim od deset."
           },
           {
@@ -361,10 +369,13 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, że w sobotę jesteś wolny.",
             "accepted": [
               "U subotu sam slobodan.",
+              "U subotu sam slobodna.",
               "Da, u subotu sam slobodan.",
+              "Da, u subotu sam slobodna.",
               "Da, slobodan sam.",
-              "U subotu sam slobodna."
+              "Da, slobodna sam."
             ],
+            "pattern": "^(da )?(u subotu sam (?:slobodan|slobodna)|(?:slobodan|slobodna) sam( u subotu)?|ja sam (?:slobodan|slobodna)( u subotu)?)$",
             "suggestion": "U subotu sam slobodan."
           },
           {
@@ -380,9 +391,13 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, co często robisz wieczorem.",
             "accepted": [
               "Navečer često čitam.",
+              "Ja navečer često čitam.",
               "Navečer čitam.",
-              "Navečer učim hrvatski."
+              "Ja navečer čitam.",
+              "Navečer učim hrvatski.",
+              "Ja navečer učim hrvatski."
             ],
+            "pattern": "^(navečer )?(često |obično |ponekad )?(ja )?(često |obično |ponekad )?(?:idem u kupovinu|fotografiram|imam vremena|preporučujem|vozim bicikl|sastanem se|se sastanem|doručkujem|izgubim se|odmaram se|odmorim se|planinarim|preporučim|rezerviram|se izgubim|se odmaram|se odmorim|se tuširam|tuširam se|odgovorim|presjedam|razumijem|se sunčam|sunčam se|kupam se|nadam se|nađem se|odaberem|planiram|posjetim|poslušam|poznajem|prijeđem|pronađem|se kupam|se nadam|se nađem|se zovem|studiram|zovem se|govorim|izlazim|napišem|naručim|pokažem|ponovim|putujem|skrenem|stignem|ustajem|ustanem|večeram|vježbam|završim|gledam|kasnim|koštam|krenem|opišem|pjevam|platim|plešem|plivam|poznam|pričam|skijam|slušam|spavam|stižem|tražim|trebam|čitam|crtam|igram|jedem|kuham|kupim|nemam|pijem|pitam|radim|ronim|ručam|šetam|trčim|vidim|volim|vozim|živim|hoću|idem|imam|učim|znam)( \\p{L}+){0,3}( navečer)?$",
             "suggestion": "Navečer često čitam."
           }
         ]

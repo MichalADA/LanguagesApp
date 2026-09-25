@@ -510,6 +510,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Može, kada?"
             ],
+            "pattern": "^(može|dogovoreno|rado)( kada| u koliko sati)$",
             "suggestion": "Može, kada?"
           },
           {
@@ -527,7 +528,7 @@ export const LESSON: GeneratedLesson = {
               "Danas ne mogu. Može sutra?",
               "Večeras ne mogu. Može sutra?"
             ],
-            "pattern": "^(danas|večeras) ne mogu (može sutra|sutra može)$",
+            "pattern": "^(nažalost )?(danas|večeras) ne mogu (može sutra|sutra može)$",
             "suggestion": "Danas ne mogu. Može sutra?"
           },
           {
@@ -545,7 +546,7 @@ export const LESSON: GeneratedLesson = {
               "Vidimo se sutra!",
               "Vidimo se!"
             ],
-            "pattern": "^vidimo se( sutra)?$",
+            "pattern": "^(vidimo se|bok|doviđenja)( sutra)?$",
             "suggestion": "Vidimo se sutra!"
           }
         ]

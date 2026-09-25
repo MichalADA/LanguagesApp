@@ -112,8 +112,7 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marek",
             "text": "Bok! Iz Poljske sam. A ti?",
-            "translation": "Cześć! Jestem z Polski. A ty?",
-            "audioSrc": "/audio/hr/a1/module-01/bok-iz-poljske-sam-a-ti.mp3"
+            "translation": "Cześć! Jestem z Polski. A ty?"
           },
           {
             "speaker": "Ana",
@@ -124,8 +123,7 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marek",
             "text": "Živim u Krakovu.",
-            "translation": "Mieszkam w Krakowie.",
-            "audioSrc": "/audio/hr/a1/module-01/zivim-u-krakovu.mp3"
+            "translation": "Mieszkam w Krakowie."
           }
         ],
         "note": "Nie musisz jeszcze wszystkiego rozumieć. Za kilka minut sam poprowadzisz tę rozmowę."

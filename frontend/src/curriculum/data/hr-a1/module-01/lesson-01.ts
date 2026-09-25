@@ -353,7 +353,7 @@ export const LESSON: GeneratedLesson = {
               "Odlično sam.",
               "Nisam baš dobro."
             ],
-            "pattern": "^((dobro|odlično|loše) sam|nisam( baš)? dobro)( hvala)?$",
+            "pattern": "^((ja sam )?(dobro|odlično|loše) sam|ja sam (dobro|odlično|loše)|nisam( baš)? dobro|(dobro|odlično)( hvala)?)( hvala)?( a ti)?$",
             "suggestion": "Dobro sam, hvala.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
           },
@@ -373,7 +373,7 @@ export const LESSON: GeneratedLesson = {
               "Doviđenja!",
               "Bok!"
             ],
-            "pattern": "^(doviđenja|bok)$",
+            "pattern": "^(doviđenja|bok|vidimo se)( ana)?$",
             "suggestion": "Doviđenja!",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
           }

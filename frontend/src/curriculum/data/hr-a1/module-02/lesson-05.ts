@@ -117,43 +117,45 @@ export const LESSON: GeneratedLesson = {
       {
         "id": "recall-1",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "otac",
-        "options": [
-          "kolega",
-          "ojciec",
-          "przyjaciel"
-        ],
-        "correctIndex": 1,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "matka",
+        "accepted": [
+          "majka"
+        ]
       },
       {
         "id": "recall-2",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "liječnik",
-        "options": [
-          "matka",
-          "wysoki",
-          "lekarz"
-        ],
-        "correctIndex": 2,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "pracować",
+        "accepted": [
+          "raditi"
+        ]
       },
       {
         "id": "recall-3",
         "stage": "words",
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "dobry",
+        "accepted": [
+          "dobar"
+        ]
+      },
+      {
+        "id": "recall-4",
+        "stage": "words",
         "type": "choice",
         "instruction": "Co znaczy to słowo?",
-        "prompt": "visok",
+        "prompt": "knjiga",
         "options": [
-          "wysoki",
-          "babcia",
-          "telefon"
+          "przyjaciółka",
+          "książka",
+          "mój"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "targetText": "prompt"
       },
       {
@@ -252,12 +254,12 @@ export const LESSON: GeneratedLesson = {
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "Imam novu",
-        "after": ".",
+        "before": "Ona",
+        "after": "psa.",
         "accepted": [
-          "knjigu"
+          "ima"
         ],
-        "translation": "Mam nową książkę."
+        "translation": "Ona ma psa."
       },
       {
         "id": "order",
@@ -266,11 +268,11 @@ export const LESSON: GeneratedLesson = {
         "instruction": "Ułóż zdanie.",
         "translation": "Mój ojciec jest w domu.",
         "tokens": [
-          "otac",
-          "moj",
-          "kuće",
+          "je",
           "kod",
-          "je"
+          "kuće",
+          "otac",
+          "moj"
         ],
         "accepted": [
           "Moj otac je kod kuće."
@@ -281,9 +283,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Mój brat mieszka w Zagrzebiu.",
+        "prompt": "Moja matka pracuje.",
         "accepted": [
-          "Moj brat živi u Zagrebu."
+          "Moja majka radi."
         ]
       },
       {
@@ -291,9 +293,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "On jest moim kolegą.",
+        "prompt": "Ana jest lekarką.",
         "accepted": [
-          "On je moj kolega."
+          "Ana je liječnica."
         ]
       },
       {
@@ -301,12 +303,10 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Nie mam roweru.",
+        "prompt": "On nie ma kota.",
         "accepted": [
-          "Nemam bicikl.",
-          "Nemam bicikla.",
-          "Ja nemam bicikl.",
-          "Ja nemam bicikla."
+          "On nema mačku.",
+          "On nema mačke."
         ]
       },
       {
@@ -327,7 +327,8 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Powiedz, że masz małą rodzinę.",
             "accepted": [
-              "Imam malu obitelj."
+              "Imam malu obitelj.",
+              "Ja imam malu obitelj."
             ],
             "pattern": "^(ne )?(ja )?imam malu obitelj$",
             "suggestion": "Imam malu obitelj."
@@ -346,7 +347,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Moja sestra je simpatična."
             ],
-            "pattern": "^(moja sestra|ona) je (vrlo )?(simpatična|sretna|visoka|niska|mlada|dobra|mirna|zanimljiva)$",
+            "pattern": "^(moja sestra|ona) je (vrlo )?(?:vegetarijanska|simpatična|zanimljiva|engleska|hrvatska|omiljena|sljedeća|slobodna|dosadna|pametna|poljska|starija|zabavna|zauzeta|gladna|hladna|kisela|lijepa|malena|slatka|sretna|ukusna|umorna|velika|vesela|visoka|zdrava|zgodna|dobra|draga|gorka|ljuta|mirna|mlada|mlađa|niska|slana|stara|tužna|vruća|žedna|mala|nova|živa)$",
             "suggestion": "Moja sestra je simpatična."
           },
           {
@@ -363,7 +364,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Moj prijatelj radi u banci."
             ],
-            "pattern": "^(moj prijatelj|on) radi u \\p{L}+$",
+            "pattern": "^(moj prijatelj|on) radi ((u|na) (?:prijateljici|prijateljima|informaciji|ponavljanju|ponedjeljku|razglednici|rezervaciji|roditeljima|aktivnostu|inozemstvu|konobarici|prijatelju|studentici|suncobranu|televiziji|tjestenini|učiteljici|aerodromu|fakultetu|gramatici|hrvatskoj|inženjeru|jelovniku|kašnjenju|kazalištu|kilogramu|kišobranu|knjižnici|kolodvoru|kupaonici|liječnici|liječniku|naočalama|napojnici|novčaniku|prodavaču|putovanju|putovnici|raskrižju|razgovoru|recepciji|restoranu|roditelju|sladoledu|autobusu|blagajni|četvrtku|čokoladi|gotovini|kolegici|koncertu|konobaru|krumpiru|ležaljci|limunadi|ljekarni|nedjelji|nogometu|obitelji|odgovoru|piletini|poljskoj|pomfritu|predjelu|prognozi|proljeću|prtljazi|računalu|rečenici|sastanku|semaforu|slušanju|studentu|suveniru|telefonu|teretani|trajektu|tramvaju|trgovini|učitelju|utakmici|veličini|zadataku|balkonu|biciklu|bolnici|čitanju|desertu|djetetu|dolasku|doručku|jogurtu|kartici|košarci|laptopu|lekciji|lozinci|maslacu|mjesecu|mlijeku|odbojci|pijesku|pisanju|pitanju|planini|polasku|prijavi|prilogu|putniku|ručniku|ruksaku|snijegu|srijedi|stanici|stupnju|susjedi|susjedu|taksiju|tanjuru|tržnici|turistu|učeniku|ukrcaju|vikendu|vrećici|vremenu|adresi|avionu|bazenu|centru|cijeni|glazbi|godini|govoru|hobiju|hotelu|igrici|izlazu|izletu|jabuci|jeseni|jeziku|kafiću|ključu|knjizi|koferu|kolaču|kolezi|komadu|minuti|mjestu|muzeju|odjavi|odmoru|pekari|peronu|pomoći|ponoći|poruci|povrću|računu|riječi|salati|šalici|šećeru|seriji|sestri|sportu|suboti|tečaju|tenisu|tjednu|tvrtci|utorku|večeri|večeru|vilici|vjetru|zabavi|zadaći|zemlji|zgradi|banci|bratu|brodu|broju|centu|crkvi|djeci|djedu|filmu|gradu|hrani|karti|kćeri|klimi|kruhu|liftu|ljetu|mačci|magli|majci|mostu|novcu|obali|oluji|osobi|otoku|parku|petku|planu|plaži|podnu|posau|pošti|ručku|školi|stanu|stolu|šunci|suncu|testu|torbi|ulazu|ulici|uredu|vlaku|žlici|autu|baci|boci|čaju|čaši|danu|euru|jaju|jelu|jozi|juhi|katu|kavi|kinu|kiši|kući|ledu|letu|mami|mesu|moru|mužu|noći|nožu|piću|pivu|poli|putu|ribi|riži|satu|sinu|siru|sobi|soku|tati|trgu|valu|vinu|voću|vodi|vrtu|ženi|zimi|imu|ocu|psu)|od kuće|kod kuće)$",
             "suggestion": "Moj prijatelj radi u banci."
           },
           {
@@ -379,7 +380,9 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Odpowiedz, że znasz.",
             "accepted": [
               "Poznajem Anu.",
-              "Da, poznajem Anu."
+              "Ja poznajem Anu.",
+              "Da, poznajem Anu.",
+              "Ja da, poznajem Anu."
             ],
             "pattern": "^(da )?poznajem anu$",
             "suggestion": "Poznajem Anu."

@@ -182,11 +182,7 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "prijateljica",
         "source": "przyjaciółka",
-        "partOfSpeech": "rzeczownik",
-        "example": {
-          "target": "Ovo je moj prijatelj Marko.",
-          "source": "To jest mój przyjaciel Marko."
-        }
+        "partOfSpeech": "rzeczownik"
       },
       {
         "id": "word-3",
@@ -232,11 +228,7 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "učitelj",
         "source": "nauczyciel",
-        "partOfSpeech": "rzeczownik",
-        "example": {
-          "target": "Moja susjeda je učiteljica.",
-          "source": "Moja sąsiadka jest nauczycielką."
-        }
+        "partOfSpeech": "rzeczownik"
       },
       {
         "id": "word-6",
@@ -244,11 +236,7 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "liječnik",
         "source": "lekarz",
-        "partOfSpeech": "rzeczownik",
-        "example": {
-          "target": "Ana je liječnica.",
-          "source": "Ana jest lekarką."
-        }
+        "partOfSpeech": "rzeczownik"
       },
       {
         "id": "check-2",
@@ -552,7 +540,7 @@ export const LESSON: GeneratedLesson = {
               "On je učitelj.",
               "Marko je učitelj."
             ],
-            "pattern": "^(on|marko) je učitelj$",
+            "pattern": "^(on|marko) je (učitelj|nastavnik)$",
             "suggestion": "On je učitelj."
           }
         ]

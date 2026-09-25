@@ -118,43 +118,45 @@ export const LESSON: GeneratedLesson = {
       {
         "id": "recall-1",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "tamo",
-        "options": [
-          "tutaj",
-          "tam",
-          "wejście"
-        ],
-        "correctIndex": 1,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "blisko",
+        "accepted": [
+          "blizu"
+        ]
       },
       {
         "id": "recall-2",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "kolodvor",
-        "options": [
-          "adres",
-          "w prawo",
-          "dworzec"
-        ],
-        "correctIndex": 2,
-        "targetText": "prompt"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "apteka",
+        "accepted": [
+          "ljekarna"
+        ]
       },
       {
         "id": "recall-3",
         "stage": "words",
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "przejść",
+        "accepted": [
+          "prijeći"
+        ]
+      },
+      {
+        "id": "recall-4",
+        "stage": "words",
         "type": "choice",
         "instruction": "Co znaczy to słowo?",
-        "prompt": "ulaz",
+        "prompt": "kupiti",
         "options": [
-          "wejście",
-          "mieć",
-          "apteka"
+          "tutaj",
+          "kupić",
+          "skrzyżowanie"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "targetText": "prompt"
       },
       {
@@ -254,26 +256,27 @@ export const LESSON: GeneratedLesson = {
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "Košta deset",
-        "after": ".",
+        "before": "",
+        "after": "li ovo u drugoj veličini?",
         "accepted": [
-          "eura"
+          "Imate"
         ],
-        "translation": "Kosztuje dziesięć euro."
+        "translation": "Czy mają Państwo to w innym rozmiarze?"
       },
       {
         "id": "order",
         "stage": "structure",
         "type": "order",
         "instruction": "Ułóż zdanie.",
-        "translation": "To jest daleko.",
+        "translation": "Plac jest przed budynkiem.",
         "tokens": [
-          "daleko",
+          "zgrade",
+          "ispred",
           "je",
-          "to"
+          "trg"
         ],
         "accepted": [
-          "To je daleko."
+          "Trg je ispred zgrade."
         ]
       },
       {
@@ -281,9 +284,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Gdzie jest centrum?",
+        "prompt": "To jest daleko.",
         "accepted": [
-          "Gdje je centar?"
+          "To je daleko."
         ]
       },
       {
@@ -291,10 +294,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Idę do sklepu.",
+        "prompt": "Park jest w centrum.",
         "accepted": [
-          "Idem u trgovinu.",
-          "Ja idem u trgovinu."
+          "Park je u centru."
         ]
       },
       {
@@ -302,9 +304,10 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Czy mogę zapłacić kartą?",
+        "prompt": "Szukam wody.",
         "accepted": [
-          "Mogu li platiti karticom?"
+          "Tražim vodu.",
+          "Ja tražim vodu."
         ]
       },
       {
@@ -328,7 +331,7 @@ export const LESSON: GeneratedLesson = {
               "Oprostite, gdje je banka?",
               "Gdje je banka?"
             ],
-            "pattern": "^(oprostite )?gdje je banka$",
+            "pattern": "^(oprostite )?gdje je banka( molim vas)?$",
             "suggestion": "Oprostite, gdje je banka?"
           },
           {
@@ -346,6 +349,7 @@ export const LESSON: GeneratedLesson = {
               "Je li daleko?",
               "Je li to daleko?"
             ],
+            "pattern": "^je li (to )?daleko$",
             "suggestion": "Je li daleko?"
           },
           {
@@ -363,7 +367,7 @@ export const LESSON: GeneratedLesson = {
               "Hvala!",
               "Hvala vam!"
             ],
-            "pattern": "^hvala( vam)?( doviđenja)?$",
+            "pattern": "^hvala( vam| lijepa| na pomoći)?( doviđenja)?$",
             "suggestion": "Hvala!",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/hvala.mp3"
           }

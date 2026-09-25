@@ -252,7 +252,11 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "odmoriti se",
         "source": "odpocząć",
-        "partOfSpeech": "czasownik"
+        "partOfSpeech": "czasownik",
+        "example": {
+          "target": "Kasnije ću se odmoriti.",
+          "source": "Później odpocznę."
+        }
       },
       {
         "id": "word-8",
@@ -532,7 +536,7 @@ export const LESSON: GeneratedLesson = {
               "Sutra ću raditi.",
               "Sutra ću učiti hrvatski."
             ],
-            "pattern": "^sutra ću (raditi|učiti hrvatski|ići u grad|ići na more|gledati film|se odmoriti)$",
+            "pattern": "^((sutra|kasnije|ja)( ja)? ću (?:sljedeći tjedan|ići u kupovinu|fotografirati|imati vremena|kupaći kostim|voziti bicikl|doručkovati|izgubiti se|odmarati se|odmoriti se|planinariti|preporučiti|rezervirati|se izgubiti|se odmarati|se odmoriti|se tuširati|tuširati se|odgovoriti|presjedati|sastati se|se sastati|se sunčati|sunčati se|kupati se|nadati se|planirati|posjetiti|poslušati|razumjeti|se kupati|se nadati|studirati|govoriti|izlaziti|napisati|naručiti|odabrati|pokazati|ponoviti|putovati|se zvati|skrenuti|večerati|vježbati|završiti|zvati se|gledati|kasniti|koštati|krenuti|naći se|opisati|oprosti|pjevati|platiti|plesati|plivati|poznati|pričati|prijeći|pronaći|se naći|skijati|slušati|spavati|tražiti|trebati|vidjeti|voljeti|živjeti|čitati|crtati|htjeti|igrati|kuhati|kupiti|nemati|pitati|raditi|roniti|ručati|šetati|trčati|ustati|voziti|imati|jesti|stići|učiti|znati|piti|ići)( \\p{L}+){0,3}|(?:fotografirat|doručkovat|izgubit se|odmarat se|odmorit se|planinarit|preporučit|rezervirat|se izgubit|se odmarat|se odmorit|se tuširat|tuširat se|odgovorit|presjedat|sastat se|se sastat|se sunčat|sunčat se|kupat se|nadat se|planirat|posjetit|poslušat|razumjet|se kupat|se nadat|studirat|govorit|izlazit|napisat|naručit|odabrat|pokazat|ponovit|putovat|se zvat|skrenut|večerat|vježbat|završit|zvat se|gledat|kasnit|koštat|krenut|opisat|pjevat|platit|plesat|plivat|poznat|pričat|skijat|slušat|spavat|tražit|trebat|vidjet|voljet|živjet|čitat|crtat|htjet|igrat|kuhat|kupit|nemat|pitat|radit|ronit|ručat|šetat|trčat|ustat|vozit|imat|jest|učit|znat|pit) ću( \\p{L}+){0,3})$",
             "suggestion": "Sutra ću raditi."
           },
           {
@@ -548,6 +552,7 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Odpowiedz na zaproszenie.",
             "accepted": [
               "Hoću!",
+              "Ja hoću!",
               "Može!",
               "Ne mogu."
             ],

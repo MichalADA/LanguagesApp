@@ -430,7 +430,8 @@ export const LESSON: GeneratedLesson = {
           "subotu"
         ],
         "accepted": [
-          "U subotu idem u grad."
+          "U subotu idem u grad.",
+          "Ja u subotu idem u grad."
         ]
       },
       {
@@ -455,6 +456,7 @@ export const LESSON: GeneratedLesson = {
         "prompt": "W poniedziałek pracuję.",
         "accepted": [
           "U ponedjeljak radim.",
+          "Ja u ponedjeljak radim.",
           "Radim u ponedjeljak."
         ]
       },
@@ -516,7 +518,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Danas je četvrtak."
             ],
-            "pattern": "^danas je (ponedjeljak|utorak|srijeda|četvrtak|petak|subota|nedjelja)$",
+            "pattern": "^(danas je )?(ponedjeljak|utorak|srijeda|četvrtak|petak|subota|nedjelja)( danas)?$",
             "suggestion": "Danas je četvrtak."
           },
           {
@@ -531,9 +533,10 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Powiedz, co robisz w sobotę.",
             "accepted": [
-              "U subotu idem u grad."
+              "U subotu idem u grad.",
+              "Ja u subotu idem u grad."
             ],
-            "pattern": "^u subotu (idem u grad|radim|se odmaram|idem na bazen)$",
+            "pattern": "^(u subotu )?(ja )?(?:idem u kupovinu|fotografiram|imam vremena|preporučujem|vozim bicikl|sastanem se|se sastanem|doručkujem|izgubim se|odmaram se|odmorim se|planinarim|preporučim|rezerviram|se izgubim|se odmaram|se odmorim|se tuširam|tuširam se|odgovorim|presjedam|razumijem|se sunčam|sunčam se|kupam se|nadam se|nađem se|odaberem|planiram|posjetim|poslušam|poznajem|prijeđem|pronađem|se kupam|se nadam|se nađem|se zovem|studiram|zovem se|govorim|izlazim|napišem|naručim|pokažem|ponovim|putujem|skrenem|stignem|ustajem|ustanem|večeram|vježbam|završim|gledam|kasnim|koštam|krenem|opišem|pjevam|platim|plešem|plivam|poznam|pričam|skijam|slušam|spavam|stižem|tražim|trebam|čitam|crtam|igram|jedem|kuham|kupim|nemam|pijem|pitam|radim|ronim|ručam|šetam|trčim|vidim|volim|vozim|živim|hoću|idem|imam|učim|znam)( \\p{L}+){0,3}( u subotu)?$",
             "suggestion": "U subotu idem u grad."
           }
         ]

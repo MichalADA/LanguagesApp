@@ -114,6 +114,11 @@ export const LESSON: GeneratedLesson = {
         "target": "zvati se",
         "source": "nazywać się",
         "partOfSpeech": "czasownik",
+        "example": {
+          "target": "Zovem se Michał.",
+          "source": "Mam na imię Michał.",
+          "audioSrc": "/audio/hr/a1/module-01/zovem-se-michal.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-01/zvati-se.mp3"
       },
       {
@@ -161,11 +166,6 @@ export const LESSON: GeneratedLesson = {
         "target": "on",
         "source": "on",
         "partOfSpeech": "zaimek",
-        "example": {
-          "target": "Ona se zove Ana.",
-          "source": "Ona ma na imię Ana.",
-          "audioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
-        },
         "audioSrc": "/audio/hr/a1/module-01/on.mp3"
       },
       {
@@ -407,7 +407,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Zovem se Michał."
             ],
-            "pattern": "^(bok )?(ja )?zovem se \\p{L}+( \\p{L}+)?$",
+            "pattern": "^(bok )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$",
             "suggestion": "Zovem se Michał.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/zovem-se-michal.mp3"
           },

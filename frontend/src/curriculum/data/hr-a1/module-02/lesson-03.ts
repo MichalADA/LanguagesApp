@@ -435,6 +435,7 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Dziś jestem zmęczony.",
         "accepted": [
           "Danas sam umoran.",
+          "Danas sam umorna.",
           "Umoran sam danas.",
           "Ja sam danas umoran."
         ]
@@ -523,7 +524,7 @@ export const LESSON: GeneratedLesson = {
               "Moj brat je visok i mlad.",
               "On je visok i mlad."
             ],
-            "pattern": "^(moj brat|on) je (visok i mlad|mlad i visok)$",
+            "pattern": "^(moj brat|on) je (vrlo )?(visok i (vrlo )?mlad|mlad i (vrlo )?visok)$",
             "suggestion": "Moj brat je visok i mlad."
           },
           {

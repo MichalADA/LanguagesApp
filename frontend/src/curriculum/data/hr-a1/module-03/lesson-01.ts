@@ -225,7 +225,11 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "odmarati se",
         "source": "odpoczywać",
-        "partOfSpeech": "czasownik"
+        "partOfSpeech": "czasownik",
+        "example": {
+          "target": "Poslijepodne se odmaram.",
+          "source": "Po południu odpoczywam."
+        }
       },
       {
         "id": "word-6",
@@ -444,8 +448,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Rano jem śniadanie.",
         "accepted": [
           "Ujutro doručkujem.",
-          "Doručkujem ujutro.",
-          "Ja ujutro doručkujem."
+          "Ja ujutro doručkujem.",
+          "Doručkujem ujutro."
         ]
       },
       {
@@ -531,9 +535,10 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Powiedz, o której wstajesz.",
             "accepted": [
-              "Ustajem u sedam."
+              "Ustajem u sedam.",
+              "Ja ustajem u sedam."
             ],
-            "pattern": "^(ja )?ustajem u \\p{L}+$",
+            "pattern": "^(ja )?(ujutro )?ustajem (ujutro )?u (pola )?\\p{L}+( sati)?( ujutro)?$",
             "suggestion": "Ustajem u sedam."
           },
           {
@@ -549,10 +554,14 @@ export const LESSON: GeneratedLesson = {
             "prompt": "Powiedz, co robisz wieczorem.",
             "accepted": [
               "Navečer učim hrvatski.",
+              "Ja navečer učim hrvatski.",
               "Navečer se odmaram.",
               "Navečer spavam.",
-              "Navečer radim."
+              "Ja navečer spavam.",
+              "Navečer radim.",
+              "Ja navečer radim."
             ],
+            "pattern": "^(navečer )?(ja )?(?:idem u kupovinu|fotografiram|imam vremena|preporučujem|vozim bicikl|sastanem se|se sastanem|doručkujem|izgubim se|odmaram se|odmorim se|planinarim|preporučim|rezerviram|se izgubim|se odmaram|se odmorim|se tuširam|tuširam se|odgovorim|presjedam|razumijem|se sunčam|sunčam se|kupam se|nadam se|nađem se|odaberem|planiram|posjetim|poslušam|poznajem|prijeđem|pronađem|se kupam|se nadam|se nađem|se zovem|studiram|zovem se|govorim|izlazim|napišem|naručim|pokažem|ponovim|putujem|skrenem|stignem|ustajem|ustanem|večeram|vježbam|završim|gledam|kasnim|koštam|krenem|opišem|pjevam|platim|plešem|plivam|poznam|pričam|skijam|slušam|spavam|stižem|tražim|trebam|čitam|crtam|igram|jedem|kuham|kupim|nemam|pijem|pitam|radim|ronim|ručam|šetam|trčim|vidim|volim|vozim|živim|hoću|idem|imam|učim|znam)( \\p{L}+){0,3}( navečer)?$",
             "suggestion": "Navečer učim hrvatski."
           }
         ]

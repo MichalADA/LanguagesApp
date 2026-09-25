@@ -459,7 +459,8 @@ export const LESSON: GeneratedLesson = {
           "živim"
         ],
         "accepted": [
-          "Živim blizu centra."
+          "Živim blizu centra.",
+          "Ja živim blizu centra."
         ]
       },
       {
@@ -526,6 +527,7 @@ export const LESSON: GeneratedLesson = {
               "Centar je tamo.",
               "Tamo je centar."
             ],
+            "pattern": "^(centar je tamo|tamo je( centar)?|tamo)$",
             "suggestion": "Centar je tamo."
           },
           {

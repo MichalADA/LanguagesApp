@@ -136,26 +136,26 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "choice",
         "instruction": "Wybierz poprawne znaczenie.",
-        "prompt": "hvala",
+        "prompt": "doviđenja",
         "options": [
-          "dziękuję",
+          "do widzenia",
           "kupić",
           "muzyka"
         ],
         "correctIndex": 0,
         "targetText": "prompt",
         "section": "vocabulary",
-        "promptAudioSrc": "/audio/hr/a1/module-01/hvala.mp3"
+        "promptAudioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
       },
       {
         "id": "vocab-2",
         "stage": "words",
         "type": "choice",
         "instruction": "Wybierz poprawne znaczenie.",
-        "prompt": "obitelj",
+        "prompt": "baka",
         "options": [
           "kot",
-          "rodzina",
+          "babcia",
           "lotnisko"
         ],
         "correctIndex": 1,
@@ -167,11 +167,11 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "choice",
         "instruction": "Wybierz poprawne znaczenie.",
-        "prompt": "kava",
+        "prompt": "odmarati se",
         "options": [
           "apteka",
           "rozmiar",
-          "kawa"
+          "odpoczywać"
         ],
         "correctIndex": 2,
         "targetText": "prompt",
@@ -182,10 +182,10 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "choice",
         "instruction": "Wybierz poprawne znaczenie.",
-        "prompt": "trgovina",
+        "prompt": "čaj",
         "options": [
-          "sklep",
-          "pić",
+          "herbata",
+          "smaczny",
           "spokojny"
         ],
         "correctIndex": 0,
@@ -197,10 +197,10 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "choice",
         "instruction": "Wybierz poprawne znaczenie.",
-        "prompt": "vlak",
+        "prompt": "trg",
         "options": [
           "pisanie",
-          "pociąg",
+          "plac",
           "klucz"
         ],
         "correctIndex": 1,
@@ -212,11 +212,11 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "choice",
         "instruction": "Wybierz poprawne znaczenie.",
-        "prompt": "kiša",
+        "prompt": "auto",
         "options": [
           "Polska",
-          "morze",
-          "deszcz"
+          "słońce",
+          "samochód"
         ],
         "correctIndex": 2,
         "targetText": "prompt",
@@ -349,15 +349,6 @@ export const LESSON: GeneratedLesson = {
               "Dwa bilety"
             ],
             "correctIndex": 0
-          },
-          {
-            "prompt": "Z którego peronu odjeżdża pociąg?",
-            "options": [
-              "Z trzeciego",
-              "Z pierwszego",
-              "Z piątego"
-            ],
-            "correctIndex": 0
           }
         ],
         "section": "listening"
@@ -370,9 +361,9 @@ export const LESSON: GeneratedLesson = {
         "before": "",
         "after": "sam kod kuće.",
         "accepted": [
-          "Bila"
+          "Bio"
         ],
-        "translation": "Byłam w domu.",
+        "translation": "Byłem w domu.",
         "section": "grammar",
         "instructionTarget": {
           "target": "Dopuni rečenicu.",
@@ -384,12 +375,12 @@ export const LESSON: GeneratedLesson = {
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "Sutra",
-        "after": "raditi.",
+        "before": "Kasnije",
+        "after": "se odmoriti.",
         "accepted": [
           "ću"
         ],
-        "translation": "Jutro będę pracować.",
+        "translation": "Później odpocznę.",
         "section": "grammar",
         "instructionTarget": {
           "target": "Dopuni rečenicu.",
@@ -401,12 +392,12 @@ export const LESSON: GeneratedLesson = {
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "Idem na",
-        "after": ".",
+        "before": "",
+        "after": "u banku.",
         "accepted": [
-          "poštu"
+          "Idem"
         ],
-        "translation": "Idę na pocztę.",
+        "translation": "Idę do banku.",
         "section": "grammar",
         "instructionTarget": {
           "target": "Dopuni rečenicu.",
@@ -419,11 +410,11 @@ export const LESSON: GeneratedLesson = {
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
         "before": "Pijem",
-        "after": ".",
+        "after": "s mlijekom.",
         "accepted": [
-          "vodu"
+          "kavu"
         ],
-        "translation": "Piję wodę.",
+        "translation": "Piję kawę z mlekiem.",
         "section": "grammar",
         "instructionTarget": {
           "target": "Dopuni rečenicu.",
@@ -450,9 +441,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Chciałbym zamówić rybę.",
+        "prompt": "Co nam Pan / Pani poleca?",
         "accepted": [
-          "Htio bih naručiti ribu."
+          "Što nam preporučujete?"
         ],
         "section": "translation",
         "instructionTarget": {
@@ -465,10 +456,9 @@ export const LESSON: GeneratedLesson = {
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Wczoraj pracowałam.",
+        "prompt": "Widziałam przyjaciółkę.",
         "accepted": [
-          "Jučer sam radila.",
-          "Radila sam jučer."
+          "Vidjela sam prijateljicu."
         ],
         "section": "translation",
         "instructionTarget": {

@@ -90,47 +90,50 @@ export const LESSON: GeneratedLesson = {
       {
         "id": "recall-1",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "odlično",
-        "options": [
-          "dzień dobry",
-          "miasto",
-          "świetnie"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "cześć",
+        "accepted": [
+          "bok"
         ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-01/odlicno.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-01/bok.mp3"
       },
       {
         "id": "recall-2",
         "stage": "words",
-        "type": "choice",
-        "instruction": "Co znaczy to słowo?",
-        "prompt": "odakle",
-        "options": [
-          "skąd",
-          "dziękuję",
-          "miło mi"
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "gdzie",
+        "accepted": [
+          "gdje"
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-01/odakle.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-01/gdje.mp3"
       },
       {
         "id": "recall-3",
         "stage": "words",
+        "type": "translate",
+        "instruction": "Jak powiesz to po chorwacku?",
+        "prompt": "ty",
+        "accepted": [
+          "ti"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/ti.mp3"
+      },
+      {
+        "id": "recall-4",
+        "stage": "words",
         "type": "choice",
         "instruction": "Co znaczy to słowo?",
-        "prompt": "ti",
+        "prompt": "dvadeset",
         "options": [
-          "Polska",
-          "ty",
-          "ja"
+          "dzień dobry",
+          "Chorwacja",
+          "dwadzieścia"
         ],
-        "correctIndex": 1,
+        "correctIndex": 2,
         "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-01/ti.mp3"
+        "promptAudioSrc": "/audio/hr/a1/module-01/dvadeset.mp3"
       },
       {
         "id": "vocab",
@@ -194,64 +197,63 @@ export const LESSON: GeneratedLesson = {
         "stage": "structure",
         "type": "gap",
         "instruction": "Uzupełnij lukę.",
-        "before": "",
-        "after": "dvadeset šest godina.",
+        "before": "Imam",
+        "after": "telefon.",
         "accepted": [
-          "Imam"
+          "jedan"
         ],
-        "translation": "Mam dwadzieścia sześć lat.",
-        "answerAudioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
+        "translation": "Mam jeden telefon.",
+        "answerAudioSrc": "/audio/hr/a1/module-01/imam-jedan-telefon.mp3"
       },
       {
         "id": "order",
         "stage": "structure",
         "type": "order",
         "instruction": "Ułóż zdanie.",
-        "translation": "Nie mam się zbyt dobrze.",
+        "translation": "Ona ma na imię Ana.",
         "tokens": [
-          "baš",
-          "dobro",
-          "nisam"
+          "se",
+          "Ana",
+          "zove",
+          "ona"
         ],
         "accepted": [
-          "Nisam baš dobro."
+          "Ona se zove Ana."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-01/nisam-bas-dobro.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
       },
       {
         "id": "translate-1",
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Mam się świetnie.",
+        "prompt": "Cześć! Jak się masz?",
         "accepted": [
-          "Odlično sam.",
-          "Ja sam odlično."
+          "Bok! Kako si?"
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-01/bok-kako-si.mp3"
       },
       {
         "id": "translate-2",
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Mieszkam w Polsce.",
+        "prompt": "Skąd jesteś?",
         "accepted": [
-          "Živim u Poljskoj."
+          "Odakle si?"
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-01/zivim-u-poljskoj.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-01/odakle-si.mp3"
       },
       {
         "id": "translate-3",
         "stage": "practice",
         "type": "translate",
         "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ile masz lat?",
+        "prompt": "Ile to jest?",
         "accepted": [
-          "Koliko imaš godina?",
-          "Koliko ti imaš godina?"
+          "Koliko je to?"
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-01/koliko-je-to.mp3"
       },
       {
         "id": "dialog",
@@ -274,7 +276,7 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Bok! Zovem se Michał."
             ],
-            "pattern": "^(bok )?(ja )?zovem se \\p{L}+( \\p{L}+)?$",
+            "pattern": "^(bok )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$",
             "suggestion": "Bok! Zovem se Michał.",
             "suggestionAudioSrc": "/audio/hr/a1/module-01/bok-zovem-se-michal.mp3"
           },
@@ -311,7 +313,8 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Powiedz, gdzie mieszkasz.",
             "accepted": [
-              "Živim u Poljskoj."
+              "Živim u Poljskoj.",
+              "Ja živim u Poljskoj."
             ],
             "pattern": "^(ja )?živim u \\p{L}+$",
             "suggestion": "Živim u Poljskoj.",
@@ -330,7 +333,8 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Podaj swój wiek.",
             "accepted": [
-              "Imam dvadeset šest godina."
+              "Imam dvadeset šest godina.",
+              "Ja imam dvadeset šest godina."
             ],
             "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$",
             "suggestion": "Imam dvadeset šest godina.",
@@ -349,12 +353,12 @@ export const LESSON: GeneratedLesson = {
             "kind": "reply",
             "prompt": "Nie dosłyszałeś — poproś, żeby Ana powtórzyła.",
             "accepted": [
+              "Još jednom, molim.",
               "Možeš li ponoviti, molim?",
               "Možeš li ponoviti?"
             ],
-            "pattern": "^(možeš li )?(to )?ponoviti( molim)?$|^još jednom( molim)?$",
-            "suggestion": "Možeš li ponoviti, molim?",
-            "suggestionAudioSrc": "/audio/hr/a1/module-01/mozes-li-ponoviti-molim.mp3"
+            "pattern": "^(možeš li )?(to )?ponoviti( molim)?$|^(još jednom|polako)( molim)?$",
+            "suggestion": "Još jednom, molim."
           }
         ]
       },
