@@ -12,91 +12,104 @@ export const LESSON: GeneratedLesson = {
         "source": "hobby",
         "lemma": "hobi",
         "partOfSpeech": "noun",
-        "recordId": "A1-0524"
+        "recordId": "A1-0524",
+        "audioSrc": "/audio/hr/a1/module-06/hobi.mp3"
       },
       {
         "target": "vikend",
         "source": "weekend",
         "lemma": "vikend",
         "partOfSpeech": "noun",
-        "recordId": "A1-0525"
+        "recordId": "A1-0525",
+        "audioSrc": "/audio/hr/a1/module-06/vikend.mp3"
       },
       {
         "target": "prijatelji",
         "source": "przyjaciele",
         "lemma": "prijatelji",
         "partOfSpeech": "noun",
-        "recordId": "A1-0526"
+        "recordId": "A1-0526",
+        "audioSrc": "/audio/hr/a1/module-06/prijatelji.mp3"
       },
       {
         "target": "zabava",
         "source": "zabawa",
         "lemma": "zabava",
         "partOfSpeech": "noun",
-        "recordId": "A1-0527"
+        "recordId": "A1-0527",
+        "audioSrc": "/audio/hr/a1/module-06/zabava.mp3"
       },
       {
         "target": "odmor",
         "source": "odpoczynek",
         "lemma": "odmor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0528"
+        "recordId": "A1-0528",
+        "audioSrc": "/audio/hr/a1/module-06/odmor.mp3"
       },
       {
         "target": "aktivnost",
         "source": "aktywność",
         "lemma": "aktivnost",
         "partOfSpeech": "noun",
-        "recordId": "A1-0529"
+        "recordId": "A1-0529",
+        "audioSrc": "/audio/hr/a1/module-06/aktivnost.mp3"
       },
       {
         "target": "zajedno",
         "source": "razem",
         "lemma": "zajedno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0530"
+        "recordId": "A1-0530",
+        "audioSrc": "/audio/hr/a1/module-02/zajedno.mp3"
       },
       {
         "target": "rado",
         "source": "chętnie",
         "lemma": "rado",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0531"
+        "recordId": "A1-0531",
+        "audioSrc": "/audio/hr/a1/module-06/rado.mp3"
       },
       {
         "target": "Zvuči super!",
         "source": "Brzmi super!",
         "lemma": "zvučati",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1030"
+        "recordId": "A1-1030",
+        "audioSrc": "/audio/hr/a1/module-06/zvuci-super.mp3"
       },
       {
         "target": "zabavno",
         "source": "zabawnie / fajnie",
         "lemma": "zabavan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-1031"
+        "recordId": "A1-1031",
+        "audioSrc": "/audio/hr/a1/module-06/zabavno.mp3"
       },
       {
         "target": "dosadno",
         "source": "nudno",
         "lemma": "dosadan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-1032"
+        "recordId": "A1-1032",
+        "audioSrc": "/audio/hr/a1/module-06/dosadno.mp3"
       },
       {
         "target": "Nemam vremena.",
         "source": "Nie mam czasu.",
         "lemma": "imati",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1033"
+        "recordId": "A1-1033",
+        "audioSrc": "/audio/hr/a1/module-06/nemam-vremena.mp3"
       },
       {
         "target": "izlet",
         "source": "wycieczka",
         "lemma": "izlet",
         "partOfSpeech": "noun",
-        "recordId": "A1-1034"
+        "recordId": "A1-1034",
+        "audioSrc": "/audio/hr/a1/module-06/izlet.mp3"
       }
     ],
     "steps": [
@@ -126,7 +139,8 @@ export const LESSON: GeneratedLesson = {
           "sport"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/igrati.mp3"
       },
       {
         "id": "recall-2",
@@ -140,7 +154,8 @@ export const LESSON: GeneratedLesson = {
           "pogoda / czas"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/plivati.mp3"
       },
       {
         "id": "recall-3",
@@ -154,7 +169,8 @@ export const LESSON: GeneratedLesson = {
           "ciepło"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/toplo.mp3"
       },
       {
         "id": "vocab",
@@ -166,67 +182,80 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "hobi",
             "source": "hobby",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/hobi.mp3"
           },
           {
             "target": "vikend",
             "source": "weekend",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/vikend.mp3"
           },
           {
             "target": "prijatelji",
             "source": "przyjaciele",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/prijatelji.mp3"
           },
           {
             "target": "zabava",
             "source": "zabawa",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/zabava.mp3"
           },
           {
             "target": "odmor",
             "source": "odpoczynek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/odmor.mp3"
           },
           {
             "target": "aktivnost",
             "source": "aktywność",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/aktivnost.mp3"
           },
           {
             "target": "zajedno",
             "source": "razem",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-02/zajedno.mp3"
           },
           {
             "target": "rado",
             "source": "chętnie",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-06/rado.mp3"
           },
           {
             "target": "Zvuči super!",
             "source": "Brzmi super!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-06/zvuci-super.mp3"
           },
           {
             "target": "zabavno",
             "source": "zabawnie / fajnie",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-06/zabavno.mp3"
           },
           {
             "target": "dosadno",
             "source": "nudno",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-06/dosadno.mp3"
           },
           {
             "target": "Nemam vremena.",
             "source": "Nie mam czasu.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-06/nemam-vremena.mp3"
           },
           {
             "target": "izlet",
             "source": "wycieczka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/izlet.mp3"
           }
         ]
       },
@@ -239,11 +268,13 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Ovaj film je dosadan.",
-            "source": "Ten film jest nudny."
+            "source": "Ten film jest nudny.",
+            "audioSrc": "/audio/hr/a1/module-06/ovaj-film-je-dosadan.mp3"
           },
           {
             "target": "U nedjelju idemo na izlet.",
-            "source": "W niedzielę jedziemy na wycieczkę."
+            "source": "W niedzielę jedziemy na wycieczkę.",
+            "audioSrc": "/audio/hr/a1/module-06/u-nedjelju-idemo-na-izlet.mp3"
           }
         ]
       },
@@ -257,7 +288,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "mogu"
         ],
-        "translation": "Dziś nie mogę."
+        "translation": "Dziś nie mogę.",
+        "answerAudioSrc": "/audio/hr/a1/module-06/danas-ne-mogu.mp3"
       },
       {
         "id": "order",
@@ -272,7 +304,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Ponekad igram igre."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/ponekad-igram-igre.mp3"
       },
       {
         "id": "translate-1",
@@ -282,7 +315,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Co robisz w wolnym czasie?",
         "accepted": [
           "Što radiš u slobodno vrijeme?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/sto-radis-u-slobodno-vrijeme.mp3"
       },
       {
         "id": "translate-2",
@@ -292,7 +326,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Lubię pływać.",
         "accepted": [
           "Volim plivati."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/volim-plivati.mp3"
       },
       {
         "id": "translate-3",
@@ -302,7 +337,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Do zobaczenia jutro!",
         "accepted": [
           "Vidimo se sutra!"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/vidimo-se-sutra.mp3"
       },
       {
         "id": "dialog",
@@ -315,7 +351,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Što voliš raditi?",
-              "translation": "Co lubisz robić?"
+              "translation": "Co lubisz robić?",
+              "audioSrc": "/audio/hr/a1/module-06/sto-volis-raditi.mp3"
             }
           },
           {
@@ -326,14 +363,16 @@ export const LESSON: GeneratedLesson = {
               "Volim čitati."
             ],
             "pattern": "^(ja )?volim (sport|glazbu|čitati|plivati|šetati|trčati|putovati|gledati filmove|slušati glazbu|igrati nogomet)( i (sport|glazbu|čitati|plivati|šetati|trčati|putovati|gledati filmove|slušati glazbu|igrati nogomet))?$",
-            "suggestion": "Volim sport i glazbu."
+            "suggestion": "Volim sport i glazbu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/volim-sport-i-glazbu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što radiš vikendom?",
-              "translation": "Co robisz w weekendy?"
+              "translation": "Co robisz w weekendy?",
+              "audioSrc": "/audio/hr/a1/module-06/sto-radis-vikendom.mp3"
             }
           },
           {
@@ -344,14 +383,16 @@ export const LESSON: GeneratedLesson = {
               "Vikendom idem na bazen."
             ],
             "pattern": "^vikendom (se odmaram|idem na bazen|gledam film|čitam|šetam|igram nogomet)$",
-            "suggestion": "Vikendom se odmaram."
+            "suggestion": "Vikendom se odmaram.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/vikendom-se-odmaram.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Hoćemo li u subotu na bazen?",
-              "translation": "Idziemy w sobotę na basen?"
+              "translation": "Idziemy w sobotę na basen?",
+              "audioSrc": "/audio/hr/a1/module-06/hocemo-li-u-subotu-na-bazen.mp3"
             }
           },
           {
@@ -363,7 +404,8 @@ export const LESSON: GeneratedLesson = {
               "Ne mogu."
             ],
             "pattern": "^(može|rado|ne mogu)( rado| u \\p{L}+)?$",
-            "suggestion": "Može, rado!"
+            "suggestion": "Može, rado!",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/moze-rado.mp3"
           }
         ]
       },
@@ -403,7 +445,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Volim sport i glazbu. Vikendom se odmaram. Hoćemo li u subotu na bazen?"
+        "sample": "Volim sport i glazbu. Vikendom se odmaram. Hoćemo li u subotu na bazen?",
+        "sampleAudioSrc": "/audio/hr/a1/module-06/volim-sport-i-glazbu-vikendom-se-odmaram-hocemo-li-u-subotu.mp3"
       },
       {
         "id": "summary",
@@ -413,19 +456,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Vikendom se odmaram.",
-            "source": "W weekend odpoczywam."
+            "source": "W weekend odpoczywam.",
+            "audioSrc": "/audio/hr/a1/module-06/vikendom-se-odmaram.mp3"
           },
           {
             "target": "Rado idem na bazen.",
-            "source": "Chętnie chodzę na basen."
+            "source": "Chętnie chodzę na basen.",
+            "audioSrc": "/audio/hr/a1/module-06/rado-idem-na-bazen.mp3"
           },
           {
             "target": "Često sam s prijateljima.",
-            "source": "Często jestem z przyjaciółmi."
+            "source": "Często jestem z przyjaciółmi.",
+            "audioSrc": "/audio/hr/a1/module-06/cesto-sam-s-prijateljima.mp3"
           },
           {
             "target": "Volim sport i glazbu.",
-            "source": "Lubię sport i muzykę."
+            "source": "Lubię sport i muzykę.",
+            "audioSrc": "/audio/hr/a1/module-06/volim-sport-i-glazbu.mp3"
           }
         ],
         "canDo": [

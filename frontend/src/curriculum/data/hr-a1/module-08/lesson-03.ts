@@ -12,21 +12,24 @@ export const LESSON: GeneratedLesson = {
         "source": "pytanie",
         "lemma": "pitanje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0668"
+        "recordId": "A1-0668",
+        "audioSrc": "/audio/hr/a1/module-08/pitanje.mp3"
       },
       {
         "target": "odgovor",
         "source": "odpowiedź",
         "lemma": "odgovor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0669"
+        "recordId": "A1-0669",
+        "audioSrc": "/audio/hr/a1/module-08/odgovor.mp3"
       },
       {
         "target": "pričati",
         "source": "rozmawiać / opowiadać",
         "lemma": "pričati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0670"
+        "recordId": "A1-0670",
+        "audioSrc": "/audio/hr/a1/module-08/pricati.mp3"
       },
       {
         "target": "razumjeti",
@@ -49,63 +52,72 @@ export const LESSON: GeneratedLesson = {
         "source": "wolniej",
         "lemma": "sporije",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0673"
+        "recordId": "A1-0673",
+        "audioSrc": "/audio/hr/a1/module-08/sporije.mp3"
       },
       {
         "target": "naravno",
         "source": "oczywiście",
         "lemma": "naravno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0674"
+        "recordId": "A1-0674",
+        "audioSrc": "/audio/hr/a1/module-08/naravno.mp3"
       },
       {
         "target": "stvarno",
         "source": "naprawdę",
         "lemma": "stvarno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0675"
+        "recordId": "A1-0675",
+        "audioSrc": "/audio/hr/a1/module-08/stvarno.mp3"
       },
       {
         "target": "Ne razumijem.",
         "source": "Nie rozumiem.",
         "lemma": "razumjeti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1126"
+        "recordId": "A1-1126",
+        "audioSrc": "/audio/hr/a1/module-08/ne-razumijem.mp3"
       },
       {
         "target": "Kako se kaže…?",
         "source": "Jak się mówi…?",
         "lemma": "reći",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1127"
+        "recordId": "A1-1127",
+        "audioSrc": "/audio/hr/a1/module-08/kako-se-kaze.mp3"
       },
       {
         "target": "Što znači…?",
         "source": "Co znaczy…?",
         "lemma": "značiti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1128"
+        "recordId": "A1-1128",
+        "audioSrc": "/audio/hr/a1/module-08/sto-znaci.mp3"
       },
       {
         "target": "Oprosti.",
         "source": "Przepraszam. (do znajomej osoby)",
         "lemma": "oprostiti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1129"
+        "recordId": "A1-1129",
+        "audioSrc": "/audio/hr/a1/module-08/oprosti.mp3"
       },
       {
         "target": "Zanimljivo!",
         "source": "Ciekawe!",
         "lemma": "zanimljiv",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1130"
+        "recordId": "A1-1130",
+        "audioSrc": "/audio/hr/a1/module-08/zanimljivo.mp3"
       },
       {
         "target": "Nema na čemu.",
         "source": "Nie ma za co.",
         "lemma": "ništa",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1131"
+        "recordId": "A1-1131",
+        "audioSrc": "/audio/hr/a1/module-08/nema-na-cemu.mp3"
       }
     ],
     "steps": [
@@ -119,15 +131,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Kako se zoveš i odakle si?",
-            "source": "Jak masz na imię i skąd jesteś?"
+            "source": "Jak masz na imię i skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
           },
           {
             "target": "Gdje živiš i što radiš?",
-            "source": "Gdzie mieszkasz i co robisz?"
+            "source": "Gdzie mieszkasz i co robisz?",
+            "audioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
           },
           {
             "target": "Što voliš raditi u slobodno vrijeme?",
-            "source": "Co lubisz robić w wolnym czasie?"
+            "source": "Co lubisz robić w wolnym czasie?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-volis-raditi-u-slobodno-vrijeme.mp3"
           }
         ]
       },
@@ -140,17 +155,20 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "pitanje",
             "source": "pytanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/pitanje.mp3"
           },
           {
             "target": "odgovor",
             "source": "odpowiedź",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/odgovor.mp3"
           },
           {
             "target": "pričati",
             "source": "rozmawiać / opowiadać",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-08/pricati.mp3"
           },
           {
             "target": "razumjeti",
@@ -167,47 +185,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "sporije",
             "source": "wolniej",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/sporije.mp3"
           },
           {
             "target": "naravno",
             "source": "oczywiście",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/naravno.mp3"
           },
           {
             "target": "stvarno",
             "source": "naprawdę",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/stvarno.mp3"
           },
           {
             "target": "Ne razumijem.",
             "source": "Nie rozumiem.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/ne-razumijem.mp3"
           },
           {
             "target": "Kako se kaže…?",
             "source": "Jak się mówi…?",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/kako-se-kaze.mp3"
           },
           {
             "target": "Što znači…?",
             "source": "Co znaczy…?",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/sto-znaci.mp3"
           },
           {
             "target": "Oprosti.",
             "source": "Przepraszam. (do znajomej osoby)",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/oprosti.mp3"
           },
           {
             "target": "Zanimljivo!",
             "source": "Ciekawe!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/zanimljivo.mp3"
           },
           {
             "target": "Nema na čemu.",
             "source": "Nie ma za co.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/nema-na-cemu.mp3"
           }
         ]
       },
@@ -220,11 +247,13 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Što znači ova riječ?",
-            "source": "Co znaczy to słowo?"
+            "source": "Co znaczy to słowo?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-znaci-ova-rijec.mp3"
           },
           {
             "target": "Oprosti, ne razumijem.",
-            "source": "Przepraszam, nie rozumiem."
+            "source": "Przepraszam, nie rozumiem.",
+            "audioSrc": "/audio/hr/a1/module-08/oprosti-ne-razumijem.mp3"
           }
         ]
       },
@@ -237,19 +266,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Kako se zoveš i odakle si?",
-            "source": "Jak masz na imię i skąd jesteś?"
+            "source": "Jak masz na imię i skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
           },
           {
             "target": "Što si radio jučer?",
-            "source": "Co robiłeś wczoraj?"
+            "source": "Co robiłeś wczoraj?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-si-radio-jucer.mp3"
           },
           {
             "target": "Što ćeš raditi sutra?",
-            "source": "Co będziesz robić jutro?"
+            "source": "Co będziesz robić jutro?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-sutra.mp3"
           },
           {
             "target": "Možeš li govoriti malo sporije?",
-            "source": "Czy możesz mówić trochę wolniej?"
+            "source": "Czy możesz mówić trochę wolniej?",
+            "audioSrc": "/audio/hr/a1/module-08/mozes-li-govoriti-malo-sporije.mp3"
           }
         ]
       },
@@ -261,7 +294,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Czy możesz mówić trochę wolniej?",
         "accepted": [
           "Možeš li govoriti malo sporije?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/mozes-li-govoriti-malo-sporije.mp3"
       },
       {
         "id": "order",
@@ -279,7 +313,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Kako se zoveš i odakle si?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
       },
       {
         "id": "comprehend",
@@ -293,7 +328,8 @@ export const LESSON: GeneratedLesson = {
           "Gdzie mieszkasz i co robisz?"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
       },
       {
         "id": "dialog",
@@ -306,7 +342,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Kako se zoveš i odakle si?",
-              "translation": "Jak masz na imię i skąd jesteś?"
+              "translation": "Jak masz na imię i skąd jesteś?",
+              "audioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
             }
           },
           {
@@ -317,14 +354,16 @@ export const LESSON: GeneratedLesson = {
               "Zovem se Michał. Iz Poljske sam."
             ],
             "pattern": "^(ja )?zovem se \\p{L}+ (i )?((ja )?sam iz \\p{L}+|iz \\p{L}+ sam)$",
-            "suggestion": "Zovem se Michał i iz Poljske sam."
+            "suggestion": "Zovem se Michał i iz Poljske sam.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/zovem-se-michal-i-iz-poljske-sam.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Gdje živiš i što radiš?",
-              "translation": "Gdzie mieszkasz i co robisz?"
+              "translation": "Gdzie mieszkasz i co robisz?",
+              "audioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
             }
           },
           {
@@ -334,14 +373,16 @@ export const LESSON: GeneratedLesson = {
               "Živim u Krakovu i radim u uredu."
             ],
             "pattern": "^(ja )?živim u \\p{L}+ (i )?(radim|studiram|učim)( u \\p{L}+| od kuće| kod kuće| hrvatski)?$",
-            "suggestion": "Živim u Krakovu i radim u uredu."
+            "suggestion": "Živim u Krakovu i radim u uredu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/zivim-u-krakovu-i-radim-u-uredu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što voliš raditi u slobodno vrijeme?",
-              "translation": "Co lubisz robić w wolnym czasie?"
+              "translation": "Co lubisz robić w wolnym czasie?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-volis-raditi-u-slobodno-vrijeme.mp3"
             }
           },
           {
@@ -351,14 +392,16 @@ export const LESSON: GeneratedLesson = {
               "Volim čitati i plivati."
             ],
             "pattern": "^(u slobodno vrijeme )?(ja )?volim \\p{L}+( \\p{L}+)?( i \\p{L}+( \\p{L}+)?)?$",
-            "suggestion": "Volim čitati i plivati."
+            "suggestion": "Volim čitati i plivati.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/volim-citati-i-plivati.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što si radio jučer?",
-              "translation": "Co robiłeś wczoraj?"
+              "translation": "Co robiłeś wczoraj?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-si-radio-jucer.mp3"
             }
           },
           {
@@ -369,14 +412,16 @@ export const LESSON: GeneratedLesson = {
               "Jučer sam radila."
             ],
             "pattern": "^(jučer sam (radio|radila|bio|bila|išao|išla|vidio|vidjela)( [\\p{L} ]+)?|(radio|radila|bio|bila|išao|išla|vidio|vidjela) sam( [\\p{L} ]+)?)$",
-            "suggestion": "Jučer sam radio."
+            "suggestion": "Jučer sam radio.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što ćeš raditi sutra?",
-              "translation": "Co będziesz robić jutro?"
+              "translation": "Co będziesz robić jutro?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-sutra.mp3"
             }
           },
           {
@@ -386,14 +431,16 @@ export const LESSON: GeneratedLesson = {
               "Sutra ću učiti hrvatski."
             ],
             "pattern": "^sutra ću \\p{L}+( [\\p{L} ]+)?$",
-            "suggestion": "Sutra ću učiti hrvatski."
+            "suggestion": "Sutra ću učiti hrvatski.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Super! Drago mi je.",
-              "translation": "Super! Miło mi."
+              "translation": "Super! Miło mi.",
+              "audioSrc": "/audio/hr/a1/module-08/super-drago-mi-je.mp3"
             }
           },
           {
@@ -449,7 +496,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 3,
-        "sample": "Zovem se Michał i iz Poljske sam. Živim u Krakovu. Volim plivati. Sutra ću učiti hrvatski."
+        "sample": "Zovem se Michał i iz Poljske sam. Živim u Krakovu. Volim plivati. Sutra ću učiti hrvatski.",
+        "sampleAudioSrc": "/audio/hr/a1/module-08/zovem-se-michal-i-iz-poljske-sam-zivim-u-krakovu-volim-pliva.mp3"
       },
       {
         "id": "summary",
@@ -459,23 +507,28 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Kako se zoveš i odakle si?",
-            "source": "Jak masz na imię i skąd jesteś?"
+            "source": "Jak masz na imię i skąd jesteś?",
+            "audioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
           },
           {
             "target": "Gdje živiš i što radiš?",
-            "source": "Gdzie mieszkasz i co robisz?"
+            "source": "Gdzie mieszkasz i co robisz?",
+            "audioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
           },
           {
             "target": "Što voliš raditi u slobodno vrijeme?",
-            "source": "Co lubisz robić w wolnym czasie?"
+            "source": "Co lubisz robić w wolnym czasie?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-volis-raditi-u-slobodno-vrijeme.mp3"
           },
           {
             "target": "Što si radio jučer?",
-            "source": "Co robiłeś wczoraj?"
+            "source": "Co robiłeś wczoraj?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-si-radio-jucer.mp3"
           },
           {
             "target": "Što ćeš raditi sutra?",
-            "source": "Co będziesz robić jutro?"
+            "source": "Co będziesz robić jutro?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-sutra.mp3"
           }
         ]
       }

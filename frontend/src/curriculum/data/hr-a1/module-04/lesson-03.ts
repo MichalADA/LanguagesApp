@@ -12,14 +12,16 @@ export const LESSON: GeneratedLesson = {
         "source": "kawiarnia / bar",
         "lemma": "kafić",
         "partOfSpeech": "noun",
-        "recordId": "A1-0308"
+        "recordId": "A1-0308",
+        "audioSrc": "/audio/hr/a1/module-04/kafic.mp3"
       },
       {
         "target": "konobar",
         "source": "kelner",
         "lemma": "konobar",
         "partOfSpeech": "noun",
-        "recordId": "A1-0309"
+        "recordId": "A1-0309",
+        "audioSrc": "/audio/hr/a1/module-04/konobar.mp3"
       },
       {
         "target": "molim",
@@ -42,91 +44,104 @@ export const LESSON: GeneratedLesson = {
         "source": "sok",
         "lemma": "sok",
         "partOfSpeech": "noun",
-        "recordId": "A1-0312"
+        "recordId": "A1-0312",
+        "audioSrc": "/audio/hr/a1/module-04/sok.mp3"
       },
       {
         "target": "pivo",
         "source": "piwo",
         "lemma": "pivo",
         "partOfSpeech": "noun",
-        "recordId": "A1-0313"
+        "recordId": "A1-0313",
+        "audioSrc": "/audio/hr/a1/module-04/pivo.mp3"
       },
       {
         "target": "šećer",
         "source": "cukier",
         "lemma": "šećer",
         "partOfSpeech": "noun",
-        "recordId": "A1-0314"
+        "recordId": "A1-0314",
+        "audioSrc": "/audio/hr/a1/module-04/secer.mp3"
       },
       {
         "target": "račun",
         "source": "rachunek",
         "lemma": "račun",
         "partOfSpeech": "noun",
-        "recordId": "A1-0315"
+        "recordId": "A1-0315",
+        "audioSrc": "/audio/hr/a1/module-04/racun.mp3"
       },
       {
         "target": "konobarica",
         "source": "kelnerka",
         "lemma": "konobarica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0882"
+        "recordId": "A1-0882",
+        "audioSrc": "/audio/hr/a1/module-04/konobarica.mp3"
       },
       {
         "target": "Izvolite.",
         "source": "Proszę. / Słucham.",
         "lemma": "izvoljeti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0883"
+        "recordId": "A1-0883",
+        "audioSrc": "/audio/hr/a1/module-04/izvolite.mp3"
       },
       {
         "target": "čaša",
         "source": "szklanka / kieliszek",
         "lemma": "čaša",
         "partOfSpeech": "noun",
-        "recordId": "A1-0884"
+        "recordId": "A1-0884",
+        "audioSrc": "/audio/hr/a1/module-04/casa.mp3"
       },
       {
         "target": "šalica",
         "source": "filiżanka",
         "lemma": "šalica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0885"
+        "recordId": "A1-0885",
+        "audioSrc": "/audio/hr/a1/module-04/salica.mp3"
       },
       {
         "target": "led",
         "source": "lód",
         "lemma": "led",
         "partOfSpeech": "noun",
-        "recordId": "A1-0886"
+        "recordId": "A1-0886",
+        "audioSrc": "/audio/hr/a1/module-04/led.mp3"
       },
       {
         "target": "limunada",
         "source": "lemoniada",
         "lemma": "limunada",
         "partOfSpeech": "noun",
-        "recordId": "A1-0887"
+        "recordId": "A1-0887",
+        "audioSrc": "/audio/hr/a1/module-04/limunada.mp3"
       },
       {
         "target": "vino",
         "source": "wino",
         "lemma": "vino",
         "partOfSpeech": "noun",
-        "recordId": "A1-0888"
+        "recordId": "A1-0888",
+        "audioSrc": "/audio/hr/a1/module-04/vino.mp3"
       },
       {
         "target": "bijela kava",
         "source": "kawa z mlekiem",
         "lemma": "kava",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0889"
+        "recordId": "A1-0889",
+        "audioSrc": "/audio/hr/a1/module-04/bijela-kava.mp3"
       },
       {
         "target": "Hvala lijepa!",
         "source": "Dziękuję bardzo!",
         "lemma": "hvala",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0890"
+        "recordId": "A1-0890",
+        "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
       }
     ],
     "steps": [
@@ -140,15 +155,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Molim jednu kavu.",
-            "source": "Poproszę jedną kawę."
+            "source": "Poproszę jedną kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
           },
           {
             "target": "Htio bih čaj.",
-            "source": "Chciałbym herbatę."
+            "source": "Chciałbym herbatę.",
+            "audioSrc": "/audio/hr/a1/module-04/htio-bih-caj.mp3"
           },
           {
             "target": "Htjela bih sok.",
-            "source": "Chciałabym sok."
+            "source": "Chciałabym sok.",
+            "audioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
           }
         ]
       },
@@ -158,7 +176,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "kafić",
         "source": "kawiarnia / bar",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-04/kafic.mp3"
       },
       {
         "id": "word-2",
@@ -166,7 +185,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "konobar",
         "source": "kelner",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-04/konobar.mp3"
       },
       {
         "id": "word-3",
@@ -177,7 +197,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "wykrzyknik",
         "example": {
           "target": "Molim jednu kavu.",
-          "source": "Poproszę jedną kawę."
+          "source": "Poproszę jedną kawę.",
+          "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-01/molim.mp3"
       },
@@ -193,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "rachunek"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/kafic.mp3"
       },
       {
         "id": "word-4",
@@ -204,7 +226,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Molim jednu kavu.",
-          "source": "Poproszę jedną kawę."
+          "source": "Poproszę jedną kawę.",
+          "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-01/jedan.mp3"
       },
@@ -217,8 +240,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Htjela bih sok.",
-          "source": "Chciałabym sok."
-        }
+          "source": "Chciałabym sok.",
+          "audioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/sok.mp3"
       },
       {
         "id": "word-6",
@@ -226,7 +251,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "pivo",
         "source": "piwo",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-04/pivo.mp3"
       },
       {
         "id": "check-2",
@@ -240,7 +266,8 @@ export const LESSON: GeneratedLesson = {
           "pivo"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-04/sok.mp3"
       },
       {
         "id": "word-7",
@@ -251,8 +278,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Bez šećera, molim.",
-          "source": "Bez cukru, proszę."
-        }
+          "source": "Bez cukru, proszę.",
+          "audioSrc": "/audio/hr/a1/module-04/bez-secera-molim.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/secer.mp3"
       },
       {
         "id": "word-8",
@@ -263,8 +292,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Račun, molim.",
-          "source": "Rachunek, proszę."
-        }
+          "source": "Rachunek, proszę.",
+          "audioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/racun.mp3"
       },
       {
         "id": "check-3",
@@ -278,7 +309,8 @@ export const LESSON: GeneratedLesson = {
           "cukier"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/secer.mp3"
       },
       {
         "id": "more-words",
@@ -290,47 +322,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "konobarica",
             "source": "kelnerka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/konobarica.mp3"
           },
           {
             "target": "Izvolite.",
             "source": "Proszę. / Słucham.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/izvolite.mp3"
           },
           {
             "target": "čaša",
             "source": "szklanka / kieliszek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/casa.mp3"
           },
           {
             "target": "šalica",
             "source": "filiżanka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/salica.mp3"
           },
           {
             "target": "led",
             "source": "lód",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/led.mp3"
           },
           {
             "target": "limunada",
             "source": "lemoniada",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/limunada.mp3"
           },
           {
             "target": "vino",
             "source": "wino",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/vino.mp3"
           },
           {
             "target": "bijela kava",
             "source": "kawa z mlekiem",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/bijela-kava.mp3"
           },
           {
             "target": "Hvala lijepa!",
             "source": "Dziękuję bardzo!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
           }
         ]
       },
@@ -346,7 +387,8 @@ export const LESSON: GeneratedLesson = {
           "Dziękuję bardzo!"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/konobarica.mp3"
       },
       {
         "id": "examples",
@@ -357,15 +399,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Jednu bijelu kavu, molim.",
-            "source": "Jedną kawę z mlekiem, poproszę."
+            "source": "Jedną kawę z mlekiem, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-04/jednu-bijelu-kavu-molim.mp3"
           },
           {
             "target": "Čašu vode, molim.",
-            "source": "Szklankę wody, poproszę."
+            "source": "Szklankę wody, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-04/casu-vode-molim.mp3"
           },
           {
             "target": "Htjela bih limunadu s ledom.",
-            "source": "Chciałabym lemoniadę z lodem."
+            "source": "Chciałabym lemoniadę z lodem.",
+            "audioSrc": "/audio/hr/a1/module-04/htjela-bih-limunadu-s-ledom.mp3"
           }
         ]
       },
@@ -378,15 +423,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Molim jednu kavu.",
-            "source": "Poproszę jedną kawę."
+            "source": "Poproszę jedną kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
           },
           {
             "target": "Htio bih čaj.",
-            "source": "Chciałbym herbatę."
+            "source": "Chciałbym herbatę.",
+            "audioSrc": "/audio/hr/a1/module-04/htio-bih-caj.mp3"
           },
           {
             "target": "Htjela bih sok.",
-            "source": "Chciałabym sok."
+            "source": "Chciałabym sok.",
+            "audioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
           }
         ],
         "note": "Jedan zmienia się razem z rzeczownikiem: jedna kava → Molim jednu kavu."
@@ -401,7 +449,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Htjela"
         ],
-        "translation": "Chciałabym sok."
+        "translation": "Chciałabym sok.",
+        "answerAudioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
       },
       {
         "id": "translate-1",
@@ -412,7 +461,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Račun, molim.",
           "Molim račun."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
       },
       {
         "id": "order",
@@ -427,7 +477,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Molim jednu kavu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
       },
       {
         "id": "comprehend",
@@ -441,7 +492,8 @@ export const LESSON: GeneratedLesson = {
           "Chciałbym herbatę."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/jos-jednu-vodu-molim.mp3"
       },
       {
         "id": "translate-2",
@@ -452,7 +504,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Bez šećera, molim.",
           "Molim bez šećera."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/bez-secera-molim.mp3"
       },
       {
         "id": "listening",
@@ -507,32 +560,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Konobar",
             "text": "Dobar dan! Izvolite.",
-            "translation": "Dzień dobry! Słucham."
+            "translation": "Dzień dobry! Słucham.",
+            "audioSrc": "/audio/hr/a1/module-04/dobar-dan-izvolite-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Dobar dan. Jednu bijelu kavu, molim.",
-            "translation": "Dzień dobry. Jedną kawę z mlekiem, poproszę."
+            "translation": "Dzień dobry. Jedną kawę z mlekiem, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-04/dobar-dan-jednu-bijelu-kavu-molim.mp3"
           },
           {
             "speaker": "Konobar",
             "text": "Veliku ili malu?",
-            "translation": "Dużą czy małą?"
+            "translation": "Dużą czy małą?",
+            "audioSrc": "/audio/hr/a1/module-04/veliku-ili-malu-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Malu, molim. I čašu vode.",
-            "translation": "Małą, poproszę. I szklankę wody."
+            "translation": "Małą, poproszę. I szklankę wody.",
+            "audioSrc": "/audio/hr/a1/module-04/malu-molim-i-casu-vode.mp3"
           },
           {
             "speaker": "Konobar",
             "text": "Izvolite.",
-            "translation": "Proszę."
+            "translation": "Proszę.",
+            "audioSrc": "/audio/hr/a1/module-04/izvolite-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Hvala lijepa!",
-            "translation": "Dziękuję bardzo!"
+            "translation": "Dziękuję bardzo!",
+            "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
           }
         ]
       },
@@ -547,7 +606,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Konobar",
               "text": "Dobar dan. Izvolite.",
-              "translation": "Dzień dobry. Słucham."
+              "translation": "Dzień dobry. Słucham.",
+              "audioSrc": "/audio/hr/a1/module-04/dobar-dan-izvolite-m.mp3"
             }
           },
           {
@@ -559,14 +619,16 @@ export const LESSON: GeneratedLesson = {
               "Htjela bih kavu."
             ],
             "pattern": "^(dobar dan )?(molim( jednu| jedan| jedno)?|htio bih|htjela bih) (kavu|čaj|sok|pivo|vodu)( molim)?$",
-            "suggestion": "Molim jednu kavu."
+            "suggestion": "Molim jednu kavu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Konobar",
               "text": "Želite li šećer?",
-              "translation": "Czy życzy Pan / Pani sobie cukier?"
+              "translation": "Czy życzy Pan / Pani sobie cukier?",
+              "audioSrc": "/audio/hr/a1/module-04/zelite-li-secer-m.mp3"
             }
           },
           {
@@ -577,14 +639,16 @@ export const LESSON: GeneratedLesson = {
               "Ne, hvala."
             ],
             "pattern": "^(ne hvala|bez šećera( molim)?|da molim|da hvala)$",
-            "suggestion": "Bez šećera, molim."
+            "suggestion": "Bez šećera, molim.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/bez-secera-molim.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Konobar",
               "text": "Izvolite.",
-              "translation": "Proszę."
+              "translation": "Proszę.",
+              "audioSrc": "/audio/hr/a1/module-04/izvolite-m.mp3"
             }
           },
           {
@@ -594,7 +658,8 @@ export const LESSON: GeneratedLesson = {
               "Račun, molim.",
               "Molim račun."
             ],
-            "suggestion": "Račun, molim."
+            "suggestion": "Račun, molim.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
           }
         ]
       },
@@ -617,7 +682,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Molim jednu kavu bez šećera. Htio bih i sok."
+        "sample": "Molim jednu kavu bez šećera. Htio bih i sok.",
+        "sampleAudioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu-bez-secera-htio-bih-i-sok.mp3"
       },
       {
         "id": "summary",
@@ -627,19 +693,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Molim jednu kavu.",
-            "source": "Poproszę jedną kawę."
+            "source": "Poproszę jedną kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/molim-jednu-kavu.mp3"
           },
           {
             "target": "Htio bih čaj.",
-            "source": "Chciałbym herbatę."
+            "source": "Chciałbym herbatę.",
+            "audioSrc": "/audio/hr/a1/module-04/htio-bih-caj.mp3"
           },
           {
             "target": "Htjela bih sok.",
-            "source": "Chciałabym sok."
+            "source": "Chciałabym sok.",
+            "audioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
           },
           {
             "target": "Bez šećera, molim.",
-            "source": "Bez cukru, proszę."
+            "source": "Bez cukru, proszę.",
+            "audioSrc": "/audio/hr/a1/module-04/bez-secera-molim.mp3"
           }
         ]
       }

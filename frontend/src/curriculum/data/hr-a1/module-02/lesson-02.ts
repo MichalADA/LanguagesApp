@@ -12,133 +12,152 @@ export const LESSON: GeneratedLesson = {
         "source": "przyjaciel",
         "lemma": "prijatelj",
         "partOfSpeech": "noun",
-        "recordId": "A1-0110"
+        "recordId": "A1-0110",
+        "audioSrc": "/audio/hr/a1/module-02/prijatelj.mp3"
       },
       {
         "target": "prijateljica",
         "source": "przyjaciółka",
         "lemma": "prijateljica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0111"
+        "recordId": "A1-0111",
+        "audioSrc": "/audio/hr/a1/module-02/prijateljica.mp3"
       },
       {
         "target": "kolega",
         "source": "kolega",
         "lemma": "kolega",
         "partOfSpeech": "noun",
-        "recordId": "A1-0112"
+        "recordId": "A1-0112",
+        "audioSrc": "/audio/hr/a1/module-02/kolega.mp3"
       },
       {
         "target": "kolegica",
         "source": "koleżanka",
         "lemma": "kolegica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0113"
+        "recordId": "A1-0113",
+        "audioSrc": "/audio/hr/a1/module-02/kolegica.mp3"
       },
       {
         "target": "učitelj",
         "source": "nauczyciel",
         "lemma": "učitelj",
         "partOfSpeech": "noun",
-        "recordId": "A1-0114"
+        "recordId": "A1-0114",
+        "audioSrc": "/audio/hr/a1/module-02/ucitelj.mp3"
       },
       {
         "target": "liječnik",
         "source": "lekarz",
         "lemma": "liječnik",
         "partOfSpeech": "noun",
-        "recordId": "A1-0115"
+        "recordId": "A1-0115",
+        "audioSrc": "/audio/hr/a1/module-02/lijecnik.mp3"
       },
       {
         "target": "raditi",
         "source": "pracować",
         "lemma": "raditi",
         "partOfSpeech": "verb",
-        "recordId": "A1-0116"
+        "recordId": "A1-0116",
+        "audioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
         "target": "posao",
         "source": "praca",
         "lemma": "posao",
         "partOfSpeech": "noun",
-        "recordId": "A1-0117"
+        "recordId": "A1-0117",
+        "audioSrc": "/audio/hr/a1/module-02/posao.mp3"
       },
       {
         "target": "učiteljica",
         "source": "nauczycielka",
         "lemma": "učiteljica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0737"
+        "recordId": "A1-0737",
+        "audioSrc": "/audio/hr/a1/module-02/uciteljica.mp3"
       },
       {
         "target": "liječnica",
         "source": "lekarka",
         "lemma": "liječnica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0738"
+        "recordId": "A1-0738",
+        "audioSrc": "/audio/hr/a1/module-02/lijecnica.mp3"
       },
       {
         "target": "inženjer",
         "source": "inżynier",
         "lemma": "inženjer",
         "partOfSpeech": "noun",
-        "recordId": "A1-0739"
+        "recordId": "A1-0739",
+        "audioSrc": "/audio/hr/a1/module-02/inzenjer.mp3"
       },
       {
         "target": "prodavač",
         "source": "sprzedawca",
         "lemma": "prodavač",
         "partOfSpeech": "noun",
-        "recordId": "A1-0740"
+        "recordId": "A1-0740",
+        "audioSrc": "/audio/hr/a1/module-02/prodavac.mp3"
       },
       {
         "target": "student",
         "source": "student",
         "lemma": "student",
         "partOfSpeech": "noun",
-        "recordId": "A1-0741"
+        "recordId": "A1-0741",
+        "audioSrc": "/audio/hr/a1/module-02/student.mp3"
       },
       {
         "target": "studentica",
         "source": "studentka",
         "lemma": "studentica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0742"
+        "recordId": "A1-0742",
+        "audioSrc": "/audio/hr/a1/module-02/studentica.mp3"
       },
       {
         "target": "susjed",
         "source": "sąsiad",
         "lemma": "susjed",
         "partOfSpeech": "noun",
-        "recordId": "A1-0743"
+        "recordId": "A1-0743",
+        "audioSrc": "/audio/hr/a1/module-02/susjed.mp3"
       },
       {
         "target": "susjeda",
         "source": "sąsiadka",
         "lemma": "susjeda",
         "partOfSpeech": "noun",
-        "recordId": "A1-0744"
+        "recordId": "A1-0744",
+        "audioSrc": "/audio/hr/a1/module-02/susjeda.mp3"
       },
       {
         "target": "tvrtka",
         "source": "firma",
         "lemma": "tvrtka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0745"
+        "recordId": "A1-0745",
+        "audioSrc": "/audio/hr/a1/module-02/tvrtka.mp3"
       },
       {
         "target": "bolnica",
         "source": "szpital",
         "lemma": "bolnica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0746"
+        "recordId": "A1-0746",
+        "audioSrc": "/audio/hr/a1/module-02/bolnica.mp3"
       },
       {
         "target": "Što radiš?",
         "source": "Co robisz? / Czym się zajmujesz?",
         "lemma": "raditi",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0747"
+        "recordId": "A1-0747",
+        "audioSrc": "/audio/hr/a1/module-02/sto-radis.mp3"
       }
     ],
     "steps": [
@@ -152,15 +171,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Ovo je moj prijatelj Marko.",
-            "source": "To jest mój przyjaciel Marko."
+            "source": "To jest mój przyjaciel Marko.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moj-prijatelj-marko.mp3"
           },
           {
             "target": "Ana je liječnica.",
-            "source": "Ana jest lekarką."
+            "source": "Ana jest lekarką.",
+            "audioSrc": "/audio/hr/a1/module-02/ana-je-lijecnica.mp3"
           },
           {
             "target": "Ivan radi u školi.",
-            "source": "Ivan pracuje w szkole."
+            "source": "Ivan pracuje w szkole.",
+            "audioSrc": "/audio/hr/a1/module-02/ivan-radi-u-skoli.mp3"
           }
         ]
       },
@@ -173,8 +195,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ovo je moj prijatelj Marko.",
-          "source": "To jest mój przyjaciel Marko."
-        }
+          "source": "To jest mój przyjaciel Marko.",
+          "audioSrc": "/audio/hr/a1/module-02/ovo-je-moj-prijatelj-marko.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/prijatelj.mp3"
       },
       {
         "id": "word-2",
@@ -185,8 +209,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ovo je moj prijatelj Marko.",
-          "source": "To jest mój przyjaciel Marko."
-        }
+          "source": "To jest mój przyjaciel Marko.",
+          "audioSrc": "/audio/hr/a1/module-02/ovo-je-moj-prijatelj-marko.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/prijateljica.mp3"
       },
       {
         "id": "word-3",
@@ -197,8 +223,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "On je moj kolega.",
-          "source": "On jest moim kolegą."
-        }
+          "source": "On jest moim kolegą.",
+          "audioSrc": "/audio/hr/a1/module-02/on-je-moj-kolega.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/kolega.mp3"
       },
       {
         "id": "check-1",
@@ -212,7 +240,8 @@ export const LESSON: GeneratedLesson = {
           "koleżanka"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/prijateljica.mp3"
       },
       {
         "id": "word-4",
@@ -223,8 +252,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Moja kolegica radi od kuće.",
-          "source": "Moja koleżanka pracuje z domu."
-        }
+          "source": "Moja koleżanka pracuje z domu.",
+          "audioSrc": "/audio/hr/a1/module-02/moja-kolegica-radi-od-kuce.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/kolegica.mp3"
       },
       {
         "id": "word-5",
@@ -235,8 +266,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Moja susjeda je učiteljica.",
-          "source": "Moja sąsiadka jest nauczycielką."
-        }
+          "source": "Moja sąsiadka jest nauczycielką.",
+          "audioSrc": "/audio/hr/a1/module-02/moja-susjeda-je-uciteljica.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/ucitelj.mp3"
       },
       {
         "id": "word-6",
@@ -247,8 +280,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ana je liječnica.",
-          "source": "Ana jest lekarką."
-        }
+          "source": "Ana jest lekarką.",
+          "audioSrc": "/audio/hr/a1/module-02/ana-je-lijecnica.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/lijecnik.mp3"
       },
       {
         "id": "check-2",
@@ -262,7 +297,8 @@ export const LESSON: GeneratedLesson = {
           "liječnik"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-02/lijecnik.mp3"
       },
       {
         "id": "word-7",
@@ -273,8 +309,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Ivan radi u školi.",
-          "source": "Ivan pracuje w szkole."
-        }
+          "source": "Ivan pracuje w szkole.",
+          "audioSrc": "/audio/hr/a1/module-02/ivan-radi-u-skoli.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
         "id": "word-8",
@@ -282,7 +320,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "posao",
         "source": "praca",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-02/posao.mp3"
       },
       {
         "id": "check-3",
@@ -296,7 +335,8 @@ export const LESSON: GeneratedLesson = {
           "przyjaciel"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/posao.mp3"
       },
       {
         "id": "more-words",
@@ -308,57 +348,68 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "učiteljica",
             "source": "nauczycielka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/uciteljica.mp3"
           },
           {
             "target": "liječnica",
             "source": "lekarka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/lijecnica.mp3"
           },
           {
             "target": "inženjer",
             "source": "inżynier",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/inzenjer.mp3"
           },
           {
             "target": "prodavač",
             "source": "sprzedawca",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/prodavac.mp3"
           },
           {
             "target": "student",
             "source": "student",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/student.mp3"
           },
           {
             "target": "studentica",
             "source": "studentka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/studentica.mp3"
           },
           {
             "target": "susjed",
             "source": "sąsiad",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/susjed.mp3"
           },
           {
             "target": "susjeda",
             "source": "sąsiadka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/susjeda.mp3"
           },
           {
             "target": "tvrtka",
             "source": "firma",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/tvrtka.mp3"
           },
           {
             "target": "bolnica",
             "source": "szpital",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/bolnica.mp3"
           },
           {
             "target": "Što radiš?",
             "source": "Co robisz? / Czym się zajmujesz?",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-02/sto-radis.mp3"
           }
         ]
       },
@@ -374,7 +425,8 @@ export const LESSON: GeneratedLesson = {
           "szpital"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/susjeda.mp3"
       },
       {
         "id": "examples",
@@ -385,19 +437,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Moja susjeda je učiteljica.",
-            "source": "Moja sąsiadka jest nauczycielką."
+            "source": "Moja sąsiadka jest nauczycielką.",
+            "audioSrc": "/audio/hr/a1/module-02/moja-susjeda-je-uciteljica.mp3"
           },
           {
             "target": "Moj brat je inženjer i radi u tvrtki.",
-            "source": "Mój brat jest inżynierem i pracuje w firmie."
+            "source": "Mój brat jest inżynierem i pracuje w firmie.",
+            "audioSrc": "/audio/hr/a1/module-02/moj-brat-je-inzenjer-i-radi-u-tvrtki.mp3"
           },
           {
             "target": "Ana je studentica.",
-            "source": "Ana jest studentką."
+            "source": "Ana jest studentką.",
+            "audioSrc": "/audio/hr/a1/module-02/ana-je-studentica.mp3"
           },
           {
             "target": "Liječnica radi u bolnici.",
-            "source": "Lekarka pracuje w szpitalu."
+            "source": "Lekarka pracuje w szpitalu.",
+            "audioSrc": "/audio/hr/a1/module-02/lijecnica-radi-u-bolnici.mp3"
           }
         ]
       },
@@ -410,15 +466,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Ana je liječnica.",
-            "source": "Ana jest lekarką."
+            "source": "Ana jest lekarką.",
+            "audioSrc": "/audio/hr/a1/module-02/ana-je-lijecnica.mp3"
           },
           {
             "target": "Ivan radi u školi.",
-            "source": "Ivan pracuje w szkole."
+            "source": "Ivan pracuje w szkole.",
+            "audioSrc": "/audio/hr/a1/module-02/ivan-radi-u-skoli.mp3"
           },
           {
             "target": "On je moj kolega.",
-            "source": "On jest moim kolegą."
+            "source": "On jest moim kolegą.",
+            "audioSrc": "/audio/hr/a1/module-02/on-je-moj-kolega.mp3"
           }
         ]
       },
@@ -432,7 +491,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "radi"
         ],
-        "translation": "Ivan pracuje w szkole."
+        "translation": "Ivan pracuje w szkole.",
+        "answerAudioSrc": "/audio/hr/a1/module-02/ivan-radi-u-skoli.mp3"
       },
       {
         "id": "comprehend",
@@ -446,7 +506,8 @@ export const LESSON: GeneratedLesson = {
           "Ana jest lekarką."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/moja-kolegica-radi-od-kuce.mp3"
       },
       {
         "id": "translate-1",
@@ -456,7 +517,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "On jest moim kolegą.",
         "accepted": [
           "On je moj kolega."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/on-je-moj-kolega.mp3"
       },
       {
         "id": "order",
@@ -473,7 +535,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Ovo je moj prijatelj Marko."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/ovo-je-moj-prijatelj-marko.mp3"
       },
       {
         "id": "model",
@@ -484,32 +547,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Bok, Ivane! Tko je ovo?",
-            "translation": "Cześć, Ivan! Kto to jest?"
+            "translation": "Cześć, Ivan! Kto to jest?",
+            "audioSrc": "/audio/hr/a1/module-02/bok-ivane-tko-je-ovo.mp3"
           },
           {
             "speaker": "Ivan",
             "text": "Ovo je moja kolegica Petra.",
-            "translation": "To jest moja koleżanka Petra."
+            "translation": "To jest moja koleżanka Petra.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moja-kolegica-petra-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Drago mi je, Petra. Što radiš?",
-            "translation": "Miło mi, Petro. Czym się zajmujesz?"
+            "translation": "Miło mi, Petro. Czym się zajmujesz?",
+            "audioSrc": "/audio/hr/a1/module-02/drago-mi-je-petra-sto-radis.mp3"
           },
           {
             "speaker": "Petra",
             "text": "Ja sam liječnica. Radim u bolnici.",
-            "translation": "Jestem lekarką. Pracuję w szpitalu."
+            "translation": "Jestem lekarką. Pracuję w szpitalu.",
+            "audioSrc": "/audio/hr/a1/module-02/ja-sam-lijecnica-radim-u-bolnici.mp3"
           },
           {
             "speaker": "Ana",
             "text": "A ti, Ivane?",
-            "translation": "A ty, Ivan?"
+            "translation": "A ty, Ivan?",
+            "audioSrc": "/audio/hr/a1/module-02/a-ti-ivane.mp3"
           },
           {
             "speaker": "Ivan",
             "text": "Ja sam inženjer. Radim u jednoj tvrtki u centru.",
-            "translation": "Jestem inżynierem. Pracuję w pewnej firmie w centrum."
+            "translation": "Jestem inżynierem. Pracuję w pewnej firmie w centrum.",
+            "audioSrc": "/audio/hr/a1/module-02/ja-sam-inzenjer-radim-u-jednoj-tvrtki-u-centru-m.mp3"
           }
         ]
       },
@@ -535,14 +604,16 @@ export const LESSON: GeneratedLesson = {
               "Ovo je moj prijatelj Marko."
             ],
             "pattern": "^(ovo je |to je )?moj prijatelj( marko)?$",
-            "suggestion": "Ovo je moj prijatelj Marko."
+            "suggestion": "Ovo je moj prijatelj Marko.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/ovo-je-moj-prijatelj-marko.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što on radi?",
-              "translation": "Czym on się zajmuje?"
+              "translation": "Czym on się zajmuje?",
+              "audioSrc": "/audio/hr/a1/module-02/sto-on-radi.mp3"
             }
           },
           {
@@ -553,7 +624,8 @@ export const LESSON: GeneratedLesson = {
               "Marko je učitelj."
             ],
             "pattern": "^(on|marko) je učitelj$",
-            "suggestion": "On je učitelj."
+            "suggestion": "On je učitelj.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-02/on-je-ucitelj.mp3"
           }
         ]
       },
@@ -582,7 +654,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Ovo je moja prijateljica Ana. Ana je liječnica."
+        "sample": "Ovo je moja prijateljica Ana. Ana je liječnica.",
+        "sampleAudioSrc": "/audio/hr/a1/module-02/ovo-je-moja-prijateljica-ana-ana-je-lijecnica.mp3"
       },
       {
         "id": "summary",
@@ -592,19 +665,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Ovo je moj prijatelj Marko.",
-            "source": "To jest mój przyjaciel Marko."
+            "source": "To jest mój przyjaciel Marko.",
+            "audioSrc": "/audio/hr/a1/module-02/ovo-je-moj-prijatelj-marko.mp3"
           },
           {
             "target": "Ana je liječnica.",
-            "source": "Ana jest lekarką."
+            "source": "Ana jest lekarką.",
+            "audioSrc": "/audio/hr/a1/module-02/ana-je-lijecnica.mp3"
           },
           {
             "target": "Ivan radi u školi.",
-            "source": "Ivan pracuje w szkole."
+            "source": "Ivan pracuje w szkole.",
+            "audioSrc": "/audio/hr/a1/module-02/ivan-radi-u-skoli.mp3"
           },
           {
             "target": "Moja kolegica radi od kuće.",
-            "source": "Moja koleżanka pracuje z domu."
+            "source": "Moja koleżanka pracuje z domu.",
+            "audioSrc": "/audio/hr/a1/module-02/moja-kolegica-radi-od-kuce.mp3"
           }
         ]
       }

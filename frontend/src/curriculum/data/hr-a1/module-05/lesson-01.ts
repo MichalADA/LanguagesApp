@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "tutaj",
         "lemma": "ovdje",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0362"
+        "recordId": "A1-0362",
+        "audioSrc": "/audio/hr/a1/module-05/ovdje.mp3"
       },
       {
         "target": "tamo",
         "source": "tam",
         "lemma": "tamo",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0363"
+        "recordId": "A1-0363",
+        "audioSrc": "/audio/hr/a1/module-05/tamo.mp3"
       },
       {
         "target": "blizu",
         "source": "blisko",
         "lemma": "blizu",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0364"
+        "recordId": "A1-0364",
+        "audioSrc": "/audio/hr/a1/module-05/blizu.mp3"
       },
       {
         "target": "daleko",
         "source": "daleko",
         "lemma": "daleko",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0365"
+        "recordId": "A1-0365",
+        "audioSrc": "/audio/hr/a1/module-05/daleko.mp3"
       },
       {
         "target": "centar",
         "source": "centrum",
         "lemma": "centar",
         "partOfSpeech": "noun",
-        "recordId": "A1-0366"
+        "recordId": "A1-0366",
+        "audioSrc": "/audio/hr/a1/module-05/centar.mp3"
       },
       {
         "target": "ulica",
         "source": "ulica",
         "lemma": "ulica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0367"
+        "recordId": "A1-0367",
+        "audioSrc": "/audio/hr/a1/module-05/ulica.mp3"
       },
       {
         "target": "trg",
         "source": "plac",
         "lemma": "trg",
         "partOfSpeech": "noun",
-        "recordId": "A1-0368"
+        "recordId": "A1-0368",
+        "audioSrc": "/audio/hr/a1/module-05/trg.mp3"
       },
       {
         "target": "adresa",
         "source": "adres",
         "lemma": "adresa",
         "partOfSpeech": "noun",
-        "recordId": "A1-0369"
+        "recordId": "A1-0369",
+        "audioSrc": "/audio/hr/a1/module-05/adresa.mp3"
       },
       {
         "target": "pored",
         "source": "obok",
         "lemma": "pored",
         "partOfSpeech": "preposition",
-        "recordId": "A1-0915"
+        "recordId": "A1-0915",
+        "audioSrc": "/audio/hr/a1/module-05/pored.mp3"
       },
       {
         "target": "ispred",
         "source": "przed",
         "lemma": "ispred",
         "partOfSpeech": "preposition",
-        "recordId": "A1-0916"
+        "recordId": "A1-0916",
+        "audioSrc": "/audio/hr/a1/module-05/ispred.mp3"
       },
       {
         "target": "iza",
         "source": "za",
         "lemma": "iza",
         "partOfSpeech": "preposition",
-        "recordId": "A1-0917"
+        "recordId": "A1-0917",
+        "audioSrc": "/audio/hr/a1/module-05/iza.mp3"
       },
       {
         "target": "između",
         "source": "między",
         "lemma": "između",
         "partOfSpeech": "preposition",
-        "recordId": "A1-0918"
+        "recordId": "A1-0918",
+        "audioSrc": "/audio/hr/a1/module-05/izmedju.mp3"
       },
       {
         "target": "gore",
         "source": "na górze",
         "lemma": "gore",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0919"
+        "recordId": "A1-0919",
+        "audioSrc": "/audio/hr/a1/module-05/gore.mp3"
       },
       {
         "target": "dolje",
         "source": "na dole",
         "lemma": "dolje",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0920"
+        "recordId": "A1-0920",
+        "audioSrc": "/audio/hr/a1/module-05/dolje.mp3"
       },
       {
         "target": "zgrada",
         "source": "budynek",
         "lemma": "zgrada",
         "partOfSpeech": "noun",
-        "recordId": "A1-0921"
+        "recordId": "A1-0921",
+        "audioSrc": "/audio/hr/a1/module-05/zgrada.mp3"
       },
       {
         "target": "kat",
         "source": "piętro",
         "lemma": "kat",
         "partOfSpeech": "noun",
-        "recordId": "A1-0922"
+        "recordId": "A1-0922",
+        "audioSrc": "/audio/hr/a1/module-05/kat.mp3"
       },
       {
         "target": "broj",
         "source": "numer",
         "lemma": "broj",
         "partOfSpeech": "noun",
-        "recordId": "A1-0923"
+        "recordId": "A1-0923",
+        "audioSrc": "/audio/hr/a1/module-05/broj.mp3"
       },
       {
         "target": "na uglu",
         "source": "na rogu",
         "lemma": "ugao",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0924"
+        "recordId": "A1-0924",
+        "audioSrc": "/audio/hr/a1/module-05/na-uglu.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Gdje je centar?",
-            "source": "Gdzie jest centrum?"
+            "source": "Gdzie jest centrum?",
+            "audioSrc": "/audio/hr/a1/module-05/gdje-je-centar.mp3"
           },
           {
             "target": "Centar je tamo.",
-            "source": "Centrum jest tam."
+            "source": "Centrum jest tam.",
+            "audioSrc": "/audio/hr/a1/module-05/centar-je-tamo.mp3"
           },
           {
             "target": "Banka je ovdje.",
-            "source": "Bank jest tutaj."
+            "source": "Bank jest tutaj.",
+            "audioSrc": "/audio/hr/a1/module-05/banka-je-ovdje.mp3"
           }
         ]
       },
@@ -166,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Banka je ovdje.",
-          "source": "Bank jest tutaj."
-        }
+          "source": "Bank jest tutaj.",
+          "audioSrc": "/audio/hr/a1/module-05/banka-je-ovdje.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/ovdje.mp3"
       },
       {
         "id": "word-2",
@@ -178,8 +201,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Centar je tamo.",
-          "source": "Centrum jest tam."
-        }
+          "source": "Centrum jest tam.",
+          "audioSrc": "/audio/hr/a1/module-05/centar-je-tamo.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/tamo.mp3"
       },
       {
         "id": "word-3",
@@ -190,8 +215,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Živim blizu centra.",
-          "source": "Mieszkam blisko centrum."
-        }
+          "source": "Mieszkam blisko centrum.",
+          "audioSrc": "/audio/hr/a1/module-05/zivim-blizu-centra.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/blizu.mp3"
       },
       {
         "id": "check-1",
@@ -205,7 +232,8 @@ export const LESSON: GeneratedLesson = {
           "blisko"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/ovdje.mp3"
       },
       {
         "id": "word-4",
@@ -216,8 +244,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "To je daleko.",
-          "source": "To jest daleko."
-        }
+          "source": "To jest daleko.",
+          "audioSrc": "/audio/hr/a1/module-05/to-je-daleko.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/daleko.mp3"
       },
       {
         "id": "word-5",
@@ -228,8 +258,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Gdje je centar?",
-          "source": "Gdzie jest centrum?"
-        }
+          "source": "Gdzie jest centrum?",
+          "audioSrc": "/audio/hr/a1/module-05/gdje-je-centar.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/centar.mp3"
       },
       {
         "id": "word-6",
@@ -237,7 +269,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "ulica",
         "source": "ulica",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-05/ulica.mp3"
       },
       {
         "id": "check-2",
@@ -251,7 +284,8 @@ export const LESSON: GeneratedLesson = {
           "ovdje"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-05/centar.mp3"
       },
       {
         "id": "word-7",
@@ -262,8 +296,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Trg je ispred zgrade.",
-          "source": "Plac jest przed budynkiem."
-        }
+          "source": "Plac jest przed budynkiem.",
+          "audioSrc": "/audio/hr/a1/module-05/trg-je-ispred-zgrade.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/trg.mp3"
       },
       {
         "id": "word-8",
@@ -274,8 +310,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Koja je adresa?",
-          "source": "Jaki jest adres?"
-        }
+          "source": "Jaki jest adres?",
+          "audioSrc": "/audio/hr/a1/module-05/koja-je-adresa.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/adresa.mp3"
       },
       {
         "id": "check-3",
@@ -289,7 +327,8 @@ export const LESSON: GeneratedLesson = {
           "adres"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/adresa.mp3"
       },
       {
         "id": "more-words",
@@ -301,52 +340,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "pored",
             "source": "obok",
-            "partOfSpeech": "przyimek"
+            "partOfSpeech": "przyimek",
+            "audioSrc": "/audio/hr/a1/module-05/pored.mp3"
           },
           {
             "target": "ispred",
             "source": "przed",
-            "partOfSpeech": "przyimek"
+            "partOfSpeech": "przyimek",
+            "audioSrc": "/audio/hr/a1/module-05/ispred.mp3"
           },
           {
             "target": "iza",
             "source": "za",
-            "partOfSpeech": "przyimek"
+            "partOfSpeech": "przyimek",
+            "audioSrc": "/audio/hr/a1/module-05/iza.mp3"
           },
           {
             "target": "između",
             "source": "między",
-            "partOfSpeech": "przyimek"
+            "partOfSpeech": "przyimek",
+            "audioSrc": "/audio/hr/a1/module-05/izmedju.mp3"
           },
           {
             "target": "gore",
             "source": "na górze",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-05/gore.mp3"
           },
           {
             "target": "dolje",
             "source": "na dole",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-05/dolje.mp3"
           },
           {
             "target": "zgrada",
             "source": "budynek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/zgrada.mp3"
           },
           {
             "target": "kat",
             "source": "piętro",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/kat.mp3"
           },
           {
             "target": "broj",
             "source": "numer",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/broj.mp3"
           },
           {
             "target": "na uglu",
             "source": "na rogu",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/na-uglu.mp3"
           }
         ]
       },
@@ -362,7 +411,8 @@ export const LESSON: GeneratedLesson = {
           "na górze"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/ispred.mp3"
       },
       {
         "id": "examples",
@@ -373,19 +423,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Trg je ispred zgrade.",
-            "source": "Plac jest przed budynkiem."
+            "source": "Plac jest przed budynkiem.",
+            "audioSrc": "/audio/hr/a1/module-05/trg-je-ispred-zgrade.mp3"
           },
           {
             "target": "Moj stan je na drugom katu.",
-            "source": "Moje mieszkanie jest na drugim piętrze."
+            "source": "Moje mieszkanie jest na drugim piętrze.",
+            "audioSrc": "/audio/hr/a1/module-05/moj-stan-je-na-drugom-katu.mp3"
           },
           {
             "target": "Adresa je Ilica broj deset.",
-            "source": "Adres to Ilica numer dziesięć."
+            "source": "Adres to Ilica numer dziesięć.",
+            "audioSrc": "/audio/hr/a1/module-05/adresa-je-ilica-broj-deset.mp3"
           },
           {
             "target": "Kafić je na uglu, pored trga.",
-            "source": "Kawiarnia jest na rogu, obok placu."
+            "source": "Kawiarnia jest na rogu, obok placu.",
+            "audioSrc": "/audio/hr/a1/module-05/kafic-je-na-uglu-pored-trga.mp3"
           }
         ]
       },
@@ -398,15 +452,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Gdje je centar?",
-            "source": "Gdzie jest centrum?"
+            "source": "Gdzie jest centrum?",
+            "audioSrc": "/audio/hr/a1/module-05/gdje-je-centar.mp3"
           },
           {
             "target": "Centar je tamo.",
-            "source": "Centrum jest tam."
+            "source": "Centrum jest tam.",
+            "audioSrc": "/audio/hr/a1/module-05/centar-je-tamo.mp3"
           },
           {
             "target": "Živim blizu centra.",
-            "source": "Mieszkam blisko centrum."
+            "source": "Mieszkam blisko centrum.",
+            "audioSrc": "/audio/hr/a1/module-05/zivim-blizu-centra.mp3"
           }
         ]
       },
@@ -420,7 +477,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "tamo"
         ],
-        "translation": "Centrum jest tam."
+        "translation": "Centrum jest tam.",
+        "answerAudioSrc": "/audio/hr/a1/module-05/centar-je-tamo.mp3"
       },
       {
         "id": "comprehend",
@@ -434,7 +492,8 @@ export const LESSON: GeneratedLesson = {
           "Centrum jest tam."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/to-je-daleko.mp3"
       },
       {
         "id": "translate-1",
@@ -445,7 +504,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Banka je ovdje.",
           "Ovdje je banka."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/banka-je-ovdje.mp3"
       },
       {
         "id": "order",
@@ -460,7 +520,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Živim blizu centra."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/zivim-blizu-centra.mp3"
       },
       {
         "id": "translate-2",
@@ -470,7 +531,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Gdzie jest centrum?",
         "accepted": [
           "Gdje je centar?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/gdje-je-centar.mp3"
       },
       {
         "id": "model",
@@ -481,27 +543,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Oprostite, gdje je banka?",
-            "translation": "Przepraszam, gdzie jest bank?"
+            "translation": "Przepraszam, gdzie jest bank?",
+            "audioSrc": "/audio/hr/a1/module-05/oprostite-gdje-je-banka.mp3"
           },
           {
             "speaker": "Prolaznik",
             "text": "Nije daleko. Tamo je, iza one zgrade.",
-            "translation": "Niedaleko. Jest tam, za tamtym budynkiem."
+            "translation": "Niedaleko. Jest tam, za tamtym budynkiem.",
+            "audioSrc": "/audio/hr/a1/module-05/nije-daleko-tamo-je-iza-one-zgrade-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Je li na trgu?",
-            "translation": "Czy jest na placu?"
+            "translation": "Czy jest na placu?",
+            "audioSrc": "/audio/hr/a1/module-05/je-li-na-trgu.mp3"
           },
           {
             "speaker": "Prolaznik",
             "text": "Da, na uglu, pored kafića.",
-            "translation": "Tak, na rogu, obok kawiarni."
+            "translation": "Tak, na rogu, obok kawiarni.",
+            "audioSrc": "/audio/hr/a1/module-05/da-na-uglu-pored-kafica-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Hvala lijepa!",
-            "translation": "Dziękuję bardzo!"
+            "translation": "Dziękuję bardzo!",
+            "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
           }
         ]
       },
@@ -516,7 +583,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Gdje je centar?",
-              "translation": "Gdzie jest centrum?"
+              "translation": "Gdzie jest centrum?",
+              "audioSrc": "/audio/hr/a1/module-05/gdje-je-centar-m.mp3"
             }
           },
           {
@@ -526,14 +594,16 @@ export const LESSON: GeneratedLesson = {
               "Centar je tamo.",
               "Tamo je centar."
             ],
-            "suggestion": "Centar je tamo."
+            "suggestion": "Centar je tamo.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/centar-je-tamo.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Je li daleko?",
-              "translation": "Czy to daleko?"
+              "translation": "Czy to daleko?",
+              "audioSrc": "/audio/hr/a1/module-05/je-li-daleko-m.mp3"
             }
           },
           {
@@ -544,7 +614,8 @@ export const LESSON: GeneratedLesson = {
               "Nije daleko."
             ],
             "pattern": "^(ne )?(blizu je|nije daleko|centar je blizu|to je blizu)$",
-            "suggestion": "Ne, blizu je."
+            "suggestion": "Ne, blizu je.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/ne-blizu-je.mp3"
           }
         ]
       },
@@ -574,7 +645,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Živim blizu centra. Banka je tamo."
+        "sample": "Živim blizu centra. Banka je tamo.",
+        "sampleAudioSrc": "/audio/hr/a1/module-05/zivim-blizu-centra-banka-je-tamo.mp3"
       },
       {
         "id": "summary",
@@ -584,19 +656,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Gdje je centar?",
-            "source": "Gdzie jest centrum?"
+            "source": "Gdzie jest centrum?",
+            "audioSrc": "/audio/hr/a1/module-05/gdje-je-centar.mp3"
           },
           {
             "target": "Centar je tamo.",
-            "source": "Centrum jest tam."
+            "source": "Centrum jest tam.",
+            "audioSrc": "/audio/hr/a1/module-05/centar-je-tamo.mp3"
           },
           {
             "target": "Banka je ovdje.",
-            "source": "Bank jest tutaj."
+            "source": "Bank jest tutaj.",
+            "audioSrc": "/audio/hr/a1/module-05/banka-je-ovdje.mp3"
           },
           {
             "target": "Živim blizu centra.",
-            "source": "Mieszkam blisko centrum."
+            "source": "Mieszkam blisko centrum.",
+            "audioSrc": "/audio/hr/a1/module-05/zivim-blizu-centra.mp3"
           }
         ]
       }

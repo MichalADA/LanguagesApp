@@ -12,140 +12,160 @@ export const LESSON: GeneratedLesson = {
         "source": "godzina / zegar",
         "lemma": "sat",
         "partOfSpeech": "noun",
-        "recordId": "A1-0218"
+        "recordId": "A1-0218",
+        "audioSrc": "/audio/hr/a1/module-03/sat.mp3"
       },
       {
         "target": "minuta",
         "source": "minuta",
         "lemma": "minuta",
         "partOfSpeech": "noun",
-        "recordId": "A1-0219"
+        "recordId": "A1-0219",
+        "audioSrc": "/audio/hr/a1/module-03/minuta.mp3"
       },
       {
         "target": "pola",
         "source": "wpół / połowa",
         "lemma": "pola",
         "partOfSpeech": "noun",
-        "recordId": "A1-0220"
+        "recordId": "A1-0220",
+        "audioSrc": "/audio/hr/a1/module-03/pola.mp3"
       },
       {
         "target": "ujutro",
         "source": "rano",
         "lemma": "ujutro",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0221"
+        "recordId": "A1-0221",
+        "audioSrc": "/audio/hr/a1/module-03/ujutro.mp3"
       },
       {
         "target": "popodne",
         "source": "po południu",
         "lemma": "popodne",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0222"
+        "recordId": "A1-0222",
+        "audioSrc": "/audio/hr/a1/module-03/popodne.mp3"
       },
       {
         "target": "navečer",
         "source": "wieczorem",
         "lemma": "navečer",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0223"
+        "recordId": "A1-0223",
+        "audioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
         "target": "kada",
         "source": "kiedy",
         "lemma": "kada",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0224"
+        "recordId": "A1-0224",
+        "audioSrc": "/audio/hr/a1/module-03/kada.mp3"
       },
       {
         "target": "točno",
         "source": "dokładnie",
         "lemma": "točno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0225"
+        "recordId": "A1-0225",
+        "audioSrc": "/audio/hr/a1/module-03/tocno.mp3"
       },
       {
         "target": "tri",
         "source": "trzy",
         "lemma": "tri",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0816"
+        "recordId": "A1-0816",
+        "audioSrc": "/audio/hr/a1/module-03/tri.mp3"
       },
       {
         "target": "četiri",
         "source": "cztery",
         "lemma": "četiri",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0817"
+        "recordId": "A1-0817",
+        "audioSrc": "/audio/hr/a1/module-03/cetiri.mp3"
       },
       {
         "target": "pet",
         "source": "pięć",
         "lemma": "pet",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0818"
+        "recordId": "A1-0818",
+        "audioSrc": "/audio/hr/a1/module-03/pet.mp3"
       },
       {
         "target": "šest",
         "source": "sześć",
         "lemma": "šest",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0819"
+        "recordId": "A1-0819",
+        "audioSrc": "/audio/hr/a1/module-03/sest.mp3"
       },
       {
         "target": "sedam",
         "source": "siedem",
         "lemma": "sedam",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0820"
+        "recordId": "A1-0820",
+        "audioSrc": "/audio/hr/a1/module-03/sedam.mp3"
       },
       {
         "target": "osam",
         "source": "osiem",
         "lemma": "osam",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0821"
+        "recordId": "A1-0821",
+        "audioSrc": "/audio/hr/a1/module-03/osam.mp3"
       },
       {
         "target": "devet",
         "source": "dziewięć",
         "lemma": "devet",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0822"
+        "recordId": "A1-0822",
+        "audioSrc": "/audio/hr/a1/module-03/devet.mp3"
       },
       {
         "target": "jedanaest",
         "source": "jedenaście",
         "lemma": "jedanaest",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0823"
+        "recordId": "A1-0823",
+        "audioSrc": "/audio/hr/a1/module-03/jedanaest.mp3"
       },
       {
         "target": "dvanaest",
         "source": "dwanaście",
         "lemma": "dvanaest",
         "partOfSpeech": "numeral",
-        "recordId": "A1-0824"
+        "recordId": "A1-0824",
+        "audioSrc": "/audio/hr/a1/module-03/dvanaest.mp3"
       },
       {
         "target": "sada",
         "source": "teraz",
         "lemma": "sada",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0825"
+        "recordId": "A1-0825",
+        "audioSrc": "/audio/hr/a1/module-03/sada.mp3"
       },
       {
         "target": "sastanak",
         "source": "spotkanie",
         "lemma": "sastanak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0826"
+        "recordId": "A1-0826",
+        "audioSrc": "/audio/hr/a1/module-03/sastanak.mp3"
       },
       {
         "target": "ponoć",
         "source": "północ",
         "lemma": "ponoć",
         "partOfSpeech": "noun",
-        "recordId": "A1-0827"
+        "recordId": "A1-0827",
+        "audioSrc": "/audio/hr/a1/module-03/ponoc.mp3"
       }
     ],
     "steps": [
@@ -159,15 +179,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Koliko je sati?",
-            "source": "Która jest godzina?"
+            "source": "Która jest godzina?",
+            "audioSrc": "/audio/hr/a1/module-03/koliko-je-sati.mp3"
           },
           {
             "target": "Tri su sata.",
-            "source": "Jest trzecia."
+            "source": "Jest trzecia.",
+            "audioSrc": "/audio/hr/a1/module-03/tri-su-sata.mp3"
           },
           {
             "target": "Sastanak je u četiri.",
-            "source": "Spotkanie jest o czwartej."
+            "source": "Spotkanie jest o czwartej.",
+            "audioSrc": "/audio/hr/a1/module-03/sastanak-je-u-cetiri.mp3"
           }
         ]
       },
@@ -180,8 +203,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Koliko je sati?",
-          "source": "Która jest godzina?"
-        }
+          "source": "Która jest godzina?",
+          "audioSrc": "/audio/hr/a1/module-03/koliko-je-sati.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/sat.mp3"
       },
       {
         "id": "word-2",
@@ -189,7 +214,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "minuta",
         "source": "minuta",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-03/minuta.mp3"
       },
       {
         "id": "word-3",
@@ -200,8 +226,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Vidimo se u pola osam.",
-          "source": "Widzimy się o wpół do ósmej."
-        }
+          "source": "Widzimy się o wpół do ósmej.",
+          "audioSrc": "/audio/hr/a1/module-03/vidimo-se-u-pola-osam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/pola.mp3"
       },
       {
         "id": "check-1",
@@ -215,7 +243,8 @@ export const LESSON: GeneratedLesson = {
           "dokładnie"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/minuta.mp3"
       },
       {
         "id": "word-4",
@@ -223,7 +252,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "ujutro",
         "source": "rano",
-        "partOfSpeech": "przysłówek"
+        "partOfSpeech": "przysłówek",
+        "audioSrc": "/audio/hr/a1/module-03/ujutro.mp3"
       },
       {
         "id": "word-5",
@@ -231,7 +261,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "popodne",
         "source": "po południu",
-        "partOfSpeech": "przysłówek"
+        "partOfSpeech": "przysłówek",
+        "audioSrc": "/audio/hr/a1/module-03/popodne.mp3"
       },
       {
         "id": "word-6",
@@ -239,7 +270,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "navečer",
         "source": "wieczorem",
-        "partOfSpeech": "przysłówek"
+        "partOfSpeech": "przysłówek",
+        "audioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
         "id": "check-2",
@@ -253,7 +285,8 @@ export const LESSON: GeneratedLesson = {
           "navečer"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
         "id": "word-7",
@@ -261,7 +294,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "kada",
         "source": "kiedy",
-        "partOfSpeech": "przysłówek"
+        "partOfSpeech": "przysłówek",
+        "audioSrc": "/audio/hr/a1/module-03/kada.mp3"
       },
       {
         "id": "word-8",
@@ -272,8 +306,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Sastanak je točno u dvanaest.",
-          "source": "Spotkanie jest dokładnie o dwunastej."
-        }
+          "source": "Spotkanie jest dokładnie o dwunastej.",
+          "audioSrc": "/audio/hr/a1/module-03/sastanak-je-tocno-u-dvanaest.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/tocno.mp3"
       },
       {
         "id": "check-3",
@@ -287,7 +323,8 @@ export const LESSON: GeneratedLesson = {
           "po południu"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/tocno.mp3"
       },
       {
         "id": "more-words",
@@ -299,62 +336,74 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "tri",
             "source": "trzy",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/tri.mp3"
           },
           {
             "target": "četiri",
             "source": "cztery",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/cetiri.mp3"
           },
           {
             "target": "pet",
             "source": "pięć",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/pet.mp3"
           },
           {
             "target": "šest",
             "source": "sześć",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/sest.mp3"
           },
           {
             "target": "sedam",
             "source": "siedem",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/sedam.mp3"
           },
           {
             "target": "osam",
             "source": "osiem",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/osam.mp3"
           },
           {
             "target": "devet",
             "source": "dziewięć",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/devet.mp3"
           },
           {
             "target": "jedanaest",
             "source": "jedenaście",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/jedanaest.mp3"
           },
           {
             "target": "dvanaest",
             "source": "dwanaście",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-03/dvanaest.mp3"
           },
           {
             "target": "sada",
             "source": "teraz",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/sada.mp3"
           },
           {
             "target": "sastanak",
             "source": "spotkanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/sastanak.mp3"
           },
           {
             "target": "ponoć",
             "source": "północ",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/ponoc.mp3"
           }
         ]
       },
@@ -370,7 +419,8 @@ export const LESSON: GeneratedLesson = {
           "siedem"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/cetiri.mp3"
       },
       {
         "id": "examples",
@@ -381,19 +431,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Sada je devet sati.",
-            "source": "Teraz jest dziewiąta."
+            "source": "Teraz jest dziewiąta.",
+            "audioSrc": "/audio/hr/a1/module-03/sada-je-devet-sati.mp3"
           },
           {
             "target": "Sastanak je točno u dvanaest.",
-            "source": "Spotkanie jest dokładnie o dwunastej."
+            "source": "Spotkanie jest dokładnie o dwunastej.",
+            "audioSrc": "/audio/hr/a1/module-03/sastanak-je-tocno-u-dvanaest.mp3"
           },
           {
             "target": "Spavam od ponoći do sedam.",
-            "source": "Śpię od północy do siódmej."
+            "source": "Śpię od północy do siódmej.",
+            "audioSrc": "/audio/hr/a1/module-03/spavam-od-ponoci-do-sedam.mp3"
           },
           {
             "target": "Je li sada pet sati?",
-            "source": "Czy jest teraz piąta?"
+            "source": "Czy jest teraz piąta?",
+            "audioSrc": "/audio/hr/a1/module-03/je-li-sada-pet-sati.mp3"
           }
         ]
       },
@@ -406,15 +460,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Koliko je sati?",
-            "source": "Która jest godzina?"
+            "source": "Która jest godzina?",
+            "audioSrc": "/audio/hr/a1/module-03/koliko-je-sati.mp3"
           },
           {
             "target": "Sastanak je u četiri.",
-            "source": "Spotkanie jest o czwartej."
+            "source": "Spotkanie jest o czwartej.",
+            "audioSrc": "/audio/hr/a1/module-03/sastanak-je-u-cetiri.mp3"
           },
           {
             "target": "Vidimo se u pola osam.",
-            "source": "Widzimy się o wpół do ósmej."
+            "source": "Widzimy się o wpół do ósmej.",
+            "audioSrc": "/audio/hr/a1/module-03/vidimo-se-u-pola-osam.mp3"
           }
         ],
         "note": "Tri su sata — „jest trzecia”: przy 2, 3 i 4 mówimy su sata."
@@ -429,7 +486,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "u"
         ],
-        "translation": "Spotkanie jest o czwartej."
+        "translation": "Spotkanie jest o czwartej.",
+        "answerAudioSrc": "/audio/hr/a1/module-03/sastanak-je-u-cetiri.mp3"
       },
       {
         "id": "comprehend",
@@ -443,7 +501,8 @@ export const LESSON: GeneratedLesson = {
           "Jest trzecia."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/radim-od-deset-do-sest.mp3"
       },
       {
         "id": "translate-1",
@@ -453,7 +512,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Która jest godzina?",
         "accepted": [
           "Koliko je sati?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/koliko-je-sati.mp3"
       },
       {
         "id": "order",
@@ -470,7 +530,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Vidimo se u pola osam."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/vidimo-se-u-pola-osam.mp3"
       },
       {
         "id": "translate-2",
@@ -481,7 +542,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Vlak dolazi u sedam.",
           "Vlak stiže u sedam."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/vlak-dolazi-u-sedam.mp3"
       },
       {
         "id": "model",
@@ -492,32 +554,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Oprosti, koliko je sati?",
-            "translation": "Przepraszam, która godzina?"
+            "translation": "Przepraszam, która godzina?",
+            "audioSrc": "/audio/hr/a1/module-03/oprosti-koliko-je-sati.mp3"
           },
           {
             "speaker": "Ivan",
             "text": "Sada je pola devet.",
-            "translation": "Teraz jest wpół do dziewiątej."
+            "translation": "Teraz jest wpół do dziewiątej.",
+            "audioSrc": "/audio/hr/a1/module-03/sada-je-pola-devet-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Joj, kasnim! Sastanak je u devet.",
-            "translation": "Ojej, spóźnię się! Spotkanie jest o dziewiątej."
+            "translation": "Ojej, spóźnię się! Spotkanie jest o dziewiątej.",
+            "audioSrc": "/audio/hr/a1/module-03/joj-kasnim-sastanak-je-u-devet.mp3"
           },
           {
             "speaker": "Ivan",
             "text": "Gdje je sastanak?",
-            "translation": "Gdzie jest spotkanie?"
+            "translation": "Gdzie jest spotkanie?",
+            "audioSrc": "/audio/hr/a1/module-03/gdje-je-sastanak-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "U uredu, blizu centra.",
-            "translation": "W biurze, blisko centrum."
+            "translation": "W biurze, blisko centrum.",
+            "audioSrc": "/audio/hr/a1/module-03/u-uredu-blizu-centra.mp3"
           },
           {
             "speaker": "Ivan",
             "text": "Imaš još pola sata.",
-            "translation": "Masz jeszcze pół godziny."
+            "translation": "Masz jeszcze pół godziny.",
+            "audioSrc": "/audio/hr/a1/module-03/imas-jos-pola-sata-m.mp3"
           }
         ]
       },
@@ -532,7 +600,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Koliko je sati?",
-              "translation": "Która jest godzina?"
+              "translation": "Która jest godzina?",
+              "audioSrc": "/audio/hr/a1/module-03/koliko-je-sati-m.mp3"
             }
           },
           {
@@ -542,14 +611,16 @@ export const LESSON: GeneratedLesson = {
               "Tri su sata.",
               "Sada su tri sata."
             ],
-            "suggestion": "Tri su sata."
+            "suggestion": "Tri su sata.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/tri-su-sata.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Kada je sastanak?",
-              "translation": "Kiedy jest spotkanie?"
+              "translation": "Kiedy jest spotkanie?",
+              "audioSrc": "/audio/hr/a1/module-03/kada-je-sastanak-m.mp3"
             }
           },
           {
@@ -560,7 +631,8 @@ export const LESSON: GeneratedLesson = {
               "U četiri."
             ],
             "pattern": "^(sastanak je )?u četiri( sata)?$",
-            "suggestion": "Sastanak je u četiri."
+            "suggestion": "Sastanak je u četiri.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/sastanak-je-u-cetiri.mp3"
           }
         ]
       },
@@ -584,7 +656,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Radim od deset do šest. Sastanak je u četiri."
+        "sample": "Radim od deset do šest. Sastanak je u četiri.",
+        "sampleAudioSrc": "/audio/hr/a1/module-03/radim-od-deset-do-sest-sastanak-je-u-cetiri.mp3"
       },
       {
         "id": "summary",
@@ -594,19 +667,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Koliko je sati?",
-            "source": "Która jest godzina?"
+            "source": "Która jest godzina?",
+            "audioSrc": "/audio/hr/a1/module-03/koliko-je-sati.mp3"
           },
           {
             "target": "Tri su sata.",
-            "source": "Jest trzecia."
+            "source": "Jest trzecia.",
+            "audioSrc": "/audio/hr/a1/module-03/tri-su-sata.mp3"
           },
           {
             "target": "Sastanak je u četiri.",
-            "source": "Spotkanie jest o czwartej."
+            "source": "Spotkanie jest o czwartej.",
+            "audioSrc": "/audio/hr/a1/module-03/sastanak-je-u-cetiri.mp3"
           },
           {
             "target": "Radim od deset do šest.",
-            "source": "Pracuję od dziesiątej do szóstej."
+            "source": "Pracuję od dziesiątej do szóstej.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-od-deset-do-sest.mp3"
           }
         ]
       }

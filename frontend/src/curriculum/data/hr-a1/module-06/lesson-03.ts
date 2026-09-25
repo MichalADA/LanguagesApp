@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "pogoda / czas",
         "lemma": "vrijeme",
         "partOfSpeech": "noun",
-        "recordId": "A1-0488"
+        "recordId": "A1-0488",
+        "audioSrc": "/audio/hr/a1/module-06/vrijeme.mp3"
       },
       {
         "target": "sunčano",
         "source": "słonecznie",
         "lemma": "sunčano",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0489"
+        "recordId": "A1-0489",
+        "audioSrc": "/audio/hr/a1/module-06/suncano.mp3"
       },
       {
         "target": "oblačno",
         "source": "pochmurno",
         "lemma": "oblačno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0490"
+        "recordId": "A1-0490",
+        "audioSrc": "/audio/hr/a1/module-06/oblacno.mp3"
       },
       {
         "target": "hladno",
         "source": "zimno",
         "lemma": "hladno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0491"
+        "recordId": "A1-0491",
+        "audioSrc": "/audio/hr/a1/module-06/hladno.mp3"
       },
       {
         "target": "toplo",
         "source": "ciepło",
         "lemma": "toplo",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0492"
+        "recordId": "A1-0492",
+        "audioSrc": "/audio/hr/a1/module-06/toplo.mp3"
       },
       {
         "target": "kiša",
         "source": "deszcz",
         "lemma": "kiša",
         "partOfSpeech": "noun",
-        "recordId": "A1-0493"
+        "recordId": "A1-0493",
+        "audioSrc": "/audio/hr/a1/module-06/kisa.mp3"
       },
       {
         "target": "snijeg",
         "source": "śnieg",
         "lemma": "snijeg",
         "partOfSpeech": "noun",
-        "recordId": "A1-0494"
+        "recordId": "A1-0494",
+        "audioSrc": "/audio/hr/a1/module-06/snijeg.mp3"
       },
       {
         "target": "vjetar",
         "source": "wiatr",
         "lemma": "vjetar",
         "partOfSpeech": "noun",
-        "recordId": "A1-0495"
+        "recordId": "A1-0495",
+        "audioSrc": "/audio/hr/a1/module-06/vjetar.mp3"
       },
       {
         "target": "vruće",
         "source": "gorąco",
         "lemma": "vruć",
         "partOfSpeech": "adjective",
-        "recordId": "A1-1004"
+        "recordId": "A1-1004",
+        "audioSrc": "/audio/hr/a1/module-06/vruce.mp3"
       },
       {
         "target": "oluja",
         "source": "burza",
         "lemma": "oluja",
         "partOfSpeech": "noun",
-        "recordId": "A1-1005"
+        "recordId": "A1-1005",
+        "audioSrc": "/audio/hr/a1/module-06/oluja.mp3"
       },
       {
         "target": "magla",
         "source": "mgła",
         "lemma": "magla",
         "partOfSpeech": "noun",
-        "recordId": "A1-1006"
+        "recordId": "A1-1006",
+        "audioSrc": "/audio/hr/a1/module-06/magla.mp3"
       },
       {
         "target": "stupanj",
         "source": "stopień",
         "lemma": "stupanj",
         "partOfSpeech": "noun",
-        "recordId": "A1-1007"
+        "recordId": "A1-1007",
+        "audioSrc": "/audio/hr/a1/module-06/stupanj.mp3"
       },
       {
         "target": "proljeće",
         "source": "wiosna",
         "lemma": "proljeće",
         "partOfSpeech": "noun",
-        "recordId": "A1-1008"
+        "recordId": "A1-1008",
+        "audioSrc": "/audio/hr/a1/module-06/proljece.mp3"
       },
       {
         "target": "ljeto",
         "source": "lato",
         "lemma": "ljeto",
         "partOfSpeech": "noun",
-        "recordId": "A1-1009"
+        "recordId": "A1-1009",
+        "audioSrc": "/audio/hr/a1/module-06/ljeto.mp3"
       },
       {
         "target": "jesen",
         "source": "jesień",
         "lemma": "jesen",
         "partOfSpeech": "noun",
-        "recordId": "A1-1010"
+        "recordId": "A1-1010",
+        "audioSrc": "/audio/hr/a1/module-06/jesen.mp3"
       },
       {
         "target": "zima",
         "source": "zima",
         "lemma": "zima",
         "partOfSpeech": "noun",
-        "recordId": "A1-1011"
+        "recordId": "A1-1011",
+        "audioSrc": "/audio/hr/a1/module-06/zima.mp3"
       },
       {
         "target": "prognoza",
         "source": "prognoza",
         "lemma": "prognoza",
         "partOfSpeech": "noun",
-        "recordId": "A1-1012"
+        "recordId": "A1-1012",
+        "audioSrc": "/audio/hr/a1/module-06/prognoza.mp3"
       },
       {
         "target": "vani",
         "source": "na zewnątrz",
         "lemma": "vani",
         "partOfSpeech": "adverb",
-        "recordId": "A1-1013"
+        "recordId": "A1-1013",
+        "audioSrc": "/audio/hr/a1/module-06/vani.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Danas je sunčano.",
-            "source": "Dziś jest słonecznie."
+            "source": "Dziś jest słonecznie.",
+            "audioSrc": "/audio/hr/a1/module-06/danas-je-suncano.mp3"
           },
           {
             "target": "Danas je hladno.",
-            "source": "Dziś jest zimno."
+            "source": "Dziś jest zimno.",
+            "audioSrc": "/audio/hr/a1/module-06/danas-je-hladno.mp3"
           },
           {
             "target": "Pada kiša.",
-            "source": "Pada deszcz."
+            "source": "Pada deszcz.",
+            "audioSrc": "/audio/hr/a1/module-06/pada-kisa.mp3"
           }
         ]
       },
@@ -166,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Kakvo je vrijeme?",
-          "source": "Jaka jest pogoda?"
-        }
+          "source": "Jaka jest pogoda?",
+          "audioSrc": "/audio/hr/a1/module-06/kakvo-je-vrijeme.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/vrijeme.mp3"
       },
       {
         "id": "word-2",
@@ -178,8 +201,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Danas je sunčano.",
-          "source": "Dziś jest słonecznie."
-        }
+          "source": "Dziś jest słonecznie.",
+          "audioSrc": "/audio/hr/a1/module-06/danas-je-suncano.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/suncano.mp3"
       },
       {
         "id": "word-3",
@@ -187,7 +212,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "oblačno",
         "source": "pochmurno",
-        "partOfSpeech": "przysłówek"
+        "partOfSpeech": "przysłówek",
+        "audioSrc": "/audio/hr/a1/module-06/oblacno.mp3"
       },
       {
         "id": "check-1",
@@ -201,7 +227,8 @@ export const LESSON: GeneratedLesson = {
           "deszcz"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/suncano.mp3"
       },
       {
         "id": "word-4",
@@ -212,8 +239,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Danas je hladno.",
-          "source": "Dziś jest zimno."
-        }
+          "source": "Dziś jest zimno.",
+          "audioSrc": "/audio/hr/a1/module-06/danas-je-hladno.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/hladno.mp3"
       },
       {
         "id": "word-5",
@@ -224,8 +253,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Sutra će biti toplo.",
-          "source": "Jutro będzie ciepło."
-        }
+          "source": "Jutro będzie ciepło.",
+          "audioSrc": "/audio/hr/a1/module-06/sutra-ce-biti-toplo.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/toplo.mp3"
       },
       {
         "id": "word-6",
@@ -236,8 +267,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Pada kiša.",
-          "source": "Pada deszcz."
-        }
+          "source": "Pada deszcz.",
+          "audioSrc": "/audio/hr/a1/module-06/pada-kisa.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/kisa.mp3"
       },
       {
         "id": "check-2",
@@ -251,7 +284,8 @@ export const LESSON: GeneratedLesson = {
           "kiša"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-06/kisa.mp3"
       },
       {
         "id": "word-7",
@@ -262,8 +296,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Zimi pada snijeg.",
-          "source": "Zimą pada śnieg."
-        }
+          "source": "Zimą pada śnieg.",
+          "audioSrc": "/audio/hr/a1/module-06/zimi-pada-snijeg.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/snijeg.mp3"
       },
       {
         "id": "word-8",
@@ -274,8 +310,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Puše vjetar.",
-          "source": "Wieje wiatr."
-        }
+          "source": "Wieje wiatr.",
+          "audioSrc": "/audio/hr/a1/module-06/puse-vjetar.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-06/vjetar.mp3"
       },
       {
         "id": "check-3",
@@ -289,7 +327,8 @@ export const LESSON: GeneratedLesson = {
           "pochmurno"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/snijeg.mp3"
       },
       {
         "id": "more-words",
@@ -301,52 +340,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "vruće",
             "source": "gorąco",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-06/vruce.mp3"
           },
           {
             "target": "oluja",
             "source": "burza",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/oluja.mp3"
           },
           {
             "target": "magla",
             "source": "mgła",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/magla.mp3"
           },
           {
             "target": "stupanj",
             "source": "stopień",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/stupanj.mp3"
           },
           {
             "target": "proljeće",
             "source": "wiosna",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/proljece.mp3"
           },
           {
             "target": "ljeto",
             "source": "lato",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/ljeto.mp3"
           },
           {
             "target": "jesen",
             "source": "jesień",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/jesen.mp3"
           },
           {
             "target": "zima",
             "source": "zima",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/zima.mp3"
           },
           {
             "target": "prognoza",
             "source": "prognoza",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-06/prognoza.mp3"
           },
           {
             "target": "vani",
             "source": "na zewnątrz",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-06/vani.mp3"
           }
         ]
       },
@@ -362,7 +411,8 @@ export const LESSON: GeneratedLesson = {
           "stopień"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/prognoza.mp3"
       },
       {
         "id": "examples",
@@ -373,19 +423,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Ljeti je vruće.",
-            "source": "Latem jest gorąco."
+            "source": "Latem jest gorąco.",
+            "audioSrc": "/audio/hr/a1/module-06/ljeti-je-vruce.mp3"
           },
           {
             "target": "Vani je dvadeset stupnjeva.",
-            "source": "Na zewnątrz jest dwadzieścia stopni."
+            "source": "Na zewnątrz jest dwadzieścia stopni.",
+            "audioSrc": "/audio/hr/a1/module-06/vani-je-dvadeset-stupnjeva.mp3"
           },
           {
             "target": "Zimi pada snijeg.",
-            "source": "Zimą pada śnieg."
+            "source": "Zimą pada śnieg.",
+            "audioSrc": "/audio/hr/a1/module-06/zimi-pada-snijeg.mp3"
           },
           {
             "target": "Prema prognozi, sutra će padati kiša.",
-            "source": "Według prognozy jutro będzie padać deszcz."
+            "source": "Według prognozy jutro będzie padać deszcz.",
+            "audioSrc": "/audio/hr/a1/module-06/prema-prognozi-sutra-ce-padati-kisa.mp3"
           }
         ]
       },
@@ -398,15 +452,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Danas je sunčano.",
-            "source": "Dziś jest słonecznie."
+            "source": "Dziś jest słonecznie.",
+            "audioSrc": "/audio/hr/a1/module-06/danas-je-suncano.mp3"
           },
           {
             "target": "Pada kiša.",
-            "source": "Pada deszcz."
+            "source": "Pada deszcz.",
+            "audioSrc": "/audio/hr/a1/module-06/pada-kisa.mp3"
           },
           {
             "target": "Puše vjetar.",
-            "source": "Wieje wiatr."
+            "source": "Wieje wiatr.",
+            "audioSrc": "/audio/hr/a1/module-06/puse-vjetar.mp3"
           }
         ],
         "note": "Vrijeme to i „pogoda”, i „czas” — Kakvo je vrijeme? pyta o pogodę."
@@ -421,7 +478,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Pada"
         ],
-        "translation": "Pada deszcz."
+        "translation": "Pada deszcz.",
+        "answerAudioSrc": "/audio/hr/a1/module-06/pada-kisa.mp3"
       },
       {
         "id": "translate-1",
@@ -432,7 +490,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Danas je hladno.",
           "Hladno je danas."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/danas-je-hladno.mp3"
       },
       {
         "id": "order",
@@ -447,7 +506,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Danas je sunčano."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/danas-je-suncano.mp3"
       },
       {
         "id": "comprehend",
@@ -461,7 +521,8 @@ export const LESSON: GeneratedLesson = {
           "Dziś jest zimno."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/sutra-ce-biti-toplo.mp3"
       },
       {
         "id": "translate-2",
@@ -471,7 +532,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Jaka jest pogoda?",
         "accepted": [
           "Kakvo je vrijeme?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/kakvo-je-vrijeme.mp3"
       },
       {
         "id": "model",
@@ -482,27 +544,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Kakvo je vrijeme danas?",
-            "translation": "Jaka jest dziś pogoda?"
+            "translation": "Jaka jest dziś pogoda?",
+            "audioSrc": "/audio/hr/a1/module-06/kakvo-je-vrijeme-danas-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Sunčano je i toplo. Vani je dvadeset pet stupnjeva.",
-            "translation": "Słonecznie i ciepło. Na zewnątrz jest dwadzieścia pięć stopni."
+            "translation": "Słonecznie i ciepło. Na zewnątrz jest dwadzieścia pięć stopni.",
+            "audioSrc": "/audio/hr/a1/module-06/suncano-je-i-toplo-vani-je-dvadeset-pet-stupnjeva.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Super! A sutra?",
-            "translation": "Super! A jutro?"
+            "translation": "Super! A jutro?",
+            "audioSrc": "/audio/hr/a1/module-06/super-a-sutra-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Prema prognozi, sutra će padati kiša.",
-            "translation": "Według prognozy jutro będzie padać deszcz."
+            "translation": "Według prognozy jutro będzie padać deszcz.",
+            "audioSrc": "/audio/hr/a1/module-06/prema-prognozi-sutra-ce-padati-kisa.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Onda danas idemo na plažu!",
-            "translation": "To dziś idziemy na plażę!"
+            "translation": "To dziś idziemy na plażę!",
+            "audioSrc": "/audio/hr/a1/module-06/onda-danas-idemo-na-plazu-m.mp3"
           }
         ]
       },
@@ -517,7 +584,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Kakvo je vrijeme?",
-              "translation": "Jaka jest pogoda?"
+              "translation": "Jaka jest pogoda?",
+              "audioSrc": "/audio/hr/a1/module-06/kakvo-je-vrijeme.mp3"
             }
           },
           {
@@ -529,14 +597,16 @@ export const LESSON: GeneratedLesson = {
               "Pada kiša."
             ],
             "pattern": "^((danas je )?(sunčano|oblačno|hladno|toplo)( je)?( danas)?|pada (kiša|snijeg)|puše vjetar)$",
-            "suggestion": "Danas je sunčano."
+            "suggestion": "Danas je sunčano.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/danas-je-suncano.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "A sutra?",
-              "translation": "A jutro?"
+              "translation": "A jutro?",
+              "audioSrc": "/audio/hr/a1/module-06/a-sutra.mp3"
             }
           },
           {
@@ -546,7 +616,8 @@ export const LESSON: GeneratedLesson = {
               "Sutra će biti toplo."
             ],
             "pattern": "^sutra će biti (sunčano|oblačno|hladno|toplo)$",
-            "suggestion": "Sutra će biti toplo."
+            "suggestion": "Sutra će biti toplo.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/sutra-ce-biti-toplo.mp3"
           }
         ]
       },
@@ -573,7 +644,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Danas je hladno. Pada kiša."
+        "sample": "Danas je hladno. Pada kiša.",
+        "sampleAudioSrc": "/audio/hr/a1/module-06/danas-je-hladno-pada-kisa.mp3"
       },
       {
         "id": "summary",
@@ -583,19 +655,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Danas je sunčano.",
-            "source": "Dziś jest słonecznie."
+            "source": "Dziś jest słonecznie.",
+            "audioSrc": "/audio/hr/a1/module-06/danas-je-suncano.mp3"
           },
           {
             "target": "Danas je hladno.",
-            "source": "Dziś jest zimno."
+            "source": "Dziś jest zimno.",
+            "audioSrc": "/audio/hr/a1/module-06/danas-je-hladno.mp3"
           },
           {
             "target": "Pada kiša.",
-            "source": "Pada deszcz."
+            "source": "Pada deszcz.",
+            "audioSrc": "/audio/hr/a1/module-06/pada-kisa.mp3"
           },
           {
             "target": "Puše vjetar.",
-            "source": "Wieje wiatr."
+            "source": "Wieje wiatr.",
+            "audioSrc": "/audio/hr/a1/module-06/puse-vjetar.mp3"
           }
         ]
       }

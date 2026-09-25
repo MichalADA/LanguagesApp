@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "kosztować",
         "lemma": "koštati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0416"
+        "recordId": "A1-0416",
+        "audioSrc": "/audio/hr/a1/module-05/kostati.mp3"
       },
       {
         "target": "cijena",
         "source": "cena",
         "lemma": "cijena",
         "partOfSpeech": "noun",
-        "recordId": "A1-0417"
+        "recordId": "A1-0417",
+        "audioSrc": "/audio/hr/a1/module-05/cijena.mp3"
       },
       {
         "target": "euro",
         "source": "euro",
         "lemma": "euro",
         "partOfSpeech": "noun",
-        "recordId": "A1-0418"
+        "recordId": "A1-0418",
+        "audioSrc": "/audio/hr/a1/module-05/euro.mp3"
       },
       {
         "target": "kupiti",
         "source": "kupić",
         "lemma": "kupiti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0419"
+        "recordId": "A1-0419",
+        "audioSrc": "/audio/hr/a1/module-05/kupiti.mp3"
       },
       {
         "target": "tražiti",
         "source": "szukać / prosić o",
         "lemma": "tražiti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0420"
+        "recordId": "A1-0420",
+        "audioSrc": "/audio/hr/a1/module-05/traziti.mp3"
       },
       {
         "target": "imati",
         "source": "mieć",
         "lemma": "imati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0421"
+        "recordId": "A1-0421",
+        "audioSrc": "/audio/hr/a1/module-02/imati.mp3"
       },
       {
         "target": "veličina",
         "source": "rozmiar",
         "lemma": "veličina",
         "partOfSpeech": "noun",
-        "recordId": "A1-0422"
+        "recordId": "A1-0422",
+        "audioSrc": "/audio/hr/a1/module-05/velicina.mp3"
       },
       {
         "target": "kartica",
         "source": "karta płatnicza",
         "lemma": "kartica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0423"
+        "recordId": "A1-0423",
+        "audioSrc": "/audio/hr/a1/module-05/kartica.mp3"
       },
       {
         "target": "skupo",
         "source": "drogo",
         "lemma": "skup",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0955"
+        "recordId": "A1-0955",
+        "audioSrc": "/audio/hr/a1/module-05/skupo.mp3"
       },
       {
         "target": "jeftino",
         "source": "tanio",
         "lemma": "jeftin",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0956"
+        "recordId": "A1-0956",
+        "audioSrc": "/audio/hr/a1/module-05/jeftino.mp3"
       },
       {
         "target": "cent",
         "source": "cent",
         "lemma": "cent",
         "partOfSpeech": "noun",
-        "recordId": "A1-0957"
+        "recordId": "A1-0957",
+        "audioSrc": "/audio/hr/a1/module-05/cent.mp3"
       },
       {
         "target": "blagajna",
         "source": "kasa",
         "lemma": "blagajna",
         "partOfSpeech": "noun",
-        "recordId": "A1-0958"
+        "recordId": "A1-0958",
+        "audioSrc": "/audio/hr/a1/module-05/blagajna.mp3"
       },
       {
         "target": "vrećica",
         "source": "torebka / reklamówka",
         "lemma": "vrećica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0959"
+        "recordId": "A1-0959",
+        "audioSrc": "/audio/hr/a1/module-05/vrecica.mp3"
       },
       {
         "target": "kilogram",
         "source": "kilogram",
         "lemma": "kilogram",
         "partOfSpeech": "noun",
-        "recordId": "A1-0960"
+        "recordId": "A1-0960",
+        "audioSrc": "/audio/hr/a1/module-05/kilogram.mp3"
       },
       {
         "target": "komad",
         "source": "sztuka / kawałek",
         "lemma": "komad",
         "partOfSpeech": "noun",
-        "recordId": "A1-0961"
+        "recordId": "A1-0961",
+        "audioSrc": "/audio/hr/a1/module-05/komad.mp3"
       },
       {
         "target": "boca",
         "source": "butelka",
         "lemma": "boca",
         "partOfSpeech": "noun",
-        "recordId": "A1-0962"
+        "recordId": "A1-0962",
+        "audioSrc": "/audio/hr/a1/module-05/boca.mp3"
       },
       {
         "target": "nešto",
         "source": "coś",
         "lemma": "nešto",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0963"
+        "recordId": "A1-0963",
+        "audioSrc": "/audio/hr/a1/module-05/nesto.mp3"
       },
       {
         "target": "To je sve.",
         "source": "To wszystko.",
         "lemma": "sve",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0964"
+        "recordId": "A1-0964",
+        "audioSrc": "/audio/hr/a1/module-05/to-je-sve.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Koliko ovo košta?",
-            "source": "Ile to kosztuje?"
+            "source": "Ile to kosztuje?",
+            "audioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
           },
           {
             "target": "Košta deset eura.",
-            "source": "Kosztuje dziesięć euro."
+            "source": "Kosztuje dziesięć euro.",
+            "audioSrc": "/audio/hr/a1/module-05/kosta-deset-eura.mp3"
           },
           {
             "target": "Imate li ovo u drugoj veličini?",
-            "source": "Czy mają Państwo to w innym rozmiarze?"
+            "source": "Czy mają Państwo to w innym rozmiarze?",
+            "audioSrc": "/audio/hr/a1/module-05/imate-li-ovo-u-drugoj-velicini.mp3"
           }
         ]
       },
@@ -166,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Koliko ovo košta?",
-          "source": "Ile to kosztuje?"
-        }
+          "source": "Ile to kosztuje?",
+          "audioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/kostati.mp3"
       },
       {
         "id": "word-2",
@@ -175,7 +198,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "cijena",
         "source": "cena",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-05/cijena.mp3"
       },
       {
         "id": "word-3",
@@ -186,8 +210,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Košta deset eura.",
-          "source": "Kosztuje dziesięć euro."
-        }
+          "source": "Kosztuje dziesięć euro.",
+          "audioSrc": "/audio/hr/a1/module-05/kosta-deset-eura.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/euro.mp3"
       },
       {
         "id": "check-1",
@@ -201,7 +227,8 @@ export const LESSON: GeneratedLesson = {
           "kupić"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/kostati.mp3"
       },
       {
         "id": "word-4",
@@ -212,8 +239,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Želim kupiti ovu knjigu.",
-          "source": "Chcę kupić tę książkę."
-        }
+          "source": "Chcę kupić tę książkę.",
+          "audioSrc": "/audio/hr/a1/module-05/zelim-kupiti-ovu-knjigu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/kupiti.mp3"
       },
       {
         "id": "word-5",
@@ -224,8 +253,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Tražim vodu.",
-          "source": "Szukam wody."
-        }
+          "source": "Szukam wody.",
+          "audioSrc": "/audio/hr/a1/module-05/trazim-vodu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/traziti.mp3"
       },
       {
         "id": "word-6",
@@ -236,8 +267,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Imate li ovo u drugoj veličini?",
-          "source": "Czy mają Państwo to w innym rozmiarze?"
-        }
+          "source": "Czy mają Państwo to w innym rozmiarze?",
+          "audioSrc": "/audio/hr/a1/module-05/imate-li-ovo-u-drugoj-velicini.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-02/imati.mp3"
       },
       {
         "id": "check-2",
@@ -251,7 +284,8 @@ export const LESSON: GeneratedLesson = {
           "kupiti"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-05/traziti.mp3"
       },
       {
         "id": "word-7",
@@ -262,8 +296,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Imate li ovo u drugoj veličini?",
-          "source": "Czy mają Państwo to w innym rozmiarze?"
-        }
+          "source": "Czy mają Państwo to w innym rozmiarze?",
+          "audioSrc": "/audio/hr/a1/module-05/imate-li-ovo-u-drugoj-velicini.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/velicina.mp3"
       },
       {
         "id": "word-8",
@@ -274,8 +310,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Mogu li platiti karticom?",
-          "source": "Czy mogę zapłacić kartą?"
-        }
+          "source": "Czy mogę zapłacić kartą?",
+          "audioSrc": "/audio/hr/a1/module-05/mogu-li-platiti-karticom.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/kartica.mp3"
       },
       {
         "id": "check-3",
@@ -289,7 +327,8 @@ export const LESSON: GeneratedLesson = {
           "rozmiar"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/velicina.mp3"
       },
       {
         "id": "more-words",
@@ -301,52 +340,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "skupo",
             "source": "drogo",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-05/skupo.mp3"
           },
           {
             "target": "jeftino",
             "source": "tanio",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-05/jeftino.mp3"
           },
           {
             "target": "cent",
             "source": "cent",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/cent.mp3"
           },
           {
             "target": "blagajna",
             "source": "kasa",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/blagajna.mp3"
           },
           {
             "target": "vrećica",
             "source": "torebka / reklamówka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/vrecica.mp3"
           },
           {
             "target": "kilogram",
             "source": "kilogram",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/kilogram.mp3"
           },
           {
             "target": "komad",
             "source": "sztuka / kawałek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/komad.mp3"
           },
           {
             "target": "boca",
             "source": "butelka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/boca.mp3"
           },
           {
             "target": "nešto",
             "source": "coś",
-            "partOfSpeech": "zaimek"
+            "partOfSpeech": "zaimek",
+            "audioSrc": "/audio/hr/a1/module-05/nesto.mp3"
           },
           {
             "target": "To je sve.",
             "source": "To wszystko.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/to-je-sve.mp3"
           }
         ]
       },
@@ -362,7 +411,8 @@ export const LESSON: GeneratedLesson = {
           "drogo"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/vrecica.mp3"
       },
       {
         "id": "examples",
@@ -373,19 +423,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "To je preskupo.",
-            "source": "To jest za drogie."
+            "source": "To jest za drogie.",
+            "audioSrc": "/audio/hr/a1/module-05/to-je-preskupo.mp3"
           },
           {
             "target": "Kilogram jabuka, molim.",
-            "source": "Kilogram jabłek, poproszę."
+            "source": "Kilogram jabłek, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-05/kilogram-jabuka-molim.mp3"
           },
           {
             "target": "Dvije boce vode, molim.",
-            "source": "Dwie butelki wody, poproszę."
+            "source": "Dwie butelki wody, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-05/dvije-boce-vode-molim.mp3"
           },
           {
             "target": "Trebate li vrećicu?",
-            "source": "Potrzebuje Pan / Pani torebki?"
+            "source": "Potrzebuje Pan / Pani torebki?",
+            "audioSrc": "/audio/hr/a1/module-05/trebate-li-vrecicu.mp3"
           }
         ]
       },
@@ -398,15 +452,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Koliko ovo košta?",
-            "source": "Ile to kosztuje?"
+            "source": "Ile to kosztuje?",
+            "audioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
           },
           {
             "target": "Košta deset eura.",
-            "source": "Kosztuje dziesięć euro."
+            "source": "Kosztuje dziesięć euro.",
+            "audioSrc": "/audio/hr/a1/module-05/kosta-deset-eura.mp3"
           },
           {
             "target": "Želim kupiti ovu knjigu.",
-            "source": "Chcę kupić tę książkę."
+            "source": "Chcę kupić tę książkę.",
+            "audioSrc": "/audio/hr/a1/module-05/zelim-kupiti-ovu-knjigu.mp3"
           }
         ]
       },
@@ -420,7 +477,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "eura"
         ],
-        "translation": "Kosztuje dziesięć euro."
+        "translation": "Kosztuje dziesięć euro.",
+        "answerAudioSrc": "/audio/hr/a1/module-05/kosta-deset-eura.mp3"
       },
       {
         "id": "translate-1",
@@ -431,7 +489,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Koliko ovo košta?",
           "Koliko to košta?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
       },
       {
         "id": "order",
@@ -447,7 +506,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Želim kupiti ovu knjigu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/zelim-kupiti-ovu-knjigu.mp3"
       },
       {
         "id": "comprehend",
@@ -461,7 +521,8 @@ export const LESSON: GeneratedLesson = {
           "Kosztuje dziesięć euro."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/imate-li-ovo-u-drugoj-velicini.mp3"
       },
       {
         "id": "translate-2",
@@ -471,7 +532,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Czy mogę zapłacić kartą?",
         "accepted": [
           "Mogu li platiti karticom?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/mogu-li-platiti-karticom.mp3"
       },
       {
         "id": "listening",
@@ -532,32 +594,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Prodavačica",
             "text": "Dobar dan! Izvolite?",
-            "translation": "Dzień dobry! Słucham?"
+            "translation": "Dzień dobry! Słucham?",
+            "audioSrc": "/audio/hr/a1/module-05/dobar-dan-izvolite.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Kilogram jabuka i jednu bocu vode, molim.",
-            "translation": "Kilogram jabłek i jedną butelkę wody, poproszę."
+            "translation": "Kilogram jabłek i jedną butelkę wody, poproszę.",
+            "audioSrc": "/audio/hr/a1/module-05/kilogram-jabuka-i-jednu-bocu-vode-molim-m.mp3"
           },
           {
             "speaker": "Prodavačica",
             "text": "Još nešto?",
-            "translation": "Coś jeszcze?"
+            "translation": "Coś jeszcze?",
+            "audioSrc": "/audio/hr/a1/module-05/jos-nesto.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ne, hvala. To je sve. Koliko košta?",
-            "translation": "Nie, dziękuję. To wszystko. Ile kosztuje?"
+            "translation": "Nie, dziękuję. To wszystko. Ile kosztuje?",
+            "audioSrc": "/audio/hr/a1/module-05/ne-hvala-to-je-sve-koliko-kosta-m.mp3"
           },
           {
             "speaker": "Prodavačica",
             "text": "Četiri eura i pedeset centi.",
-            "translation": "Cztery euro i pięćdziesiąt centów."
+            "translation": "Cztery euro i pięćdziesiąt centów.",
+            "audioSrc": "/audio/hr/a1/module-05/cetiri-eura-i-pedeset-centi.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Mogu li platiti karticom?",
-            "translation": "Czy mogę zapłacić kartą?"
+            "translation": "Czy mogę zapłacić kartą?",
+            "audioSrc": "/audio/hr/a1/module-05/mogu-li-platiti-karticom-m.mp3"
           }
         ]
       },
@@ -572,7 +640,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Prodavačica",
               "text": "Dobar dan. Izvolite?",
-              "translation": "Dzień dobry. W czym mogę pomóc?"
+              "translation": "Dzień dobry. W czym mogę pomóc?",
+              "audioSrc": "/audio/hr/a1/module-05/dobar-dan-izvolite.mp3"
             }
           },
           {
@@ -582,14 +651,16 @@ export const LESSON: GeneratedLesson = {
               "Tražim vodu."
             ],
             "pattern": "^(dobar dan )?tražim (vodu|kruh|sir|kavu|knjigu|telefon)$",
-            "suggestion": "Tražim vodu."
+            "suggestion": "Tražim vodu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/trazim-vodu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Prodavačica",
               "text": "Izvolite.",
-              "translation": "Proszę."
+              "translation": "Proszę.",
+              "audioSrc": "/audio/hr/a1/module-04/izvolite.mp3"
             }
           },
           {
@@ -599,14 +670,16 @@ export const LESSON: GeneratedLesson = {
               "Koliko ovo košta?",
               "Koliko to košta?"
             ],
-            "suggestion": "Koliko ovo košta?"
+            "suggestion": "Koliko ovo košta?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Prodavačica",
               "text": "Košta deset eura.",
-              "translation": "Kosztuje dziesięć euro."
+              "translation": "Kosztuje dziesięć euro.",
+              "audioSrc": "/audio/hr/a1/module-05/kosta-deset-eura.mp3"
             }
           },
           {
@@ -615,7 +688,8 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Mogu li platiti karticom?"
             ],
-            "suggestion": "Mogu li platiti karticom?"
+            "suggestion": "Mogu li platiti karticom?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/mogu-li-platiti-karticom.mp3"
           }
         ]
       },
@@ -646,7 +720,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Tražim vodu. Koliko ovo košta?"
+        "sample": "Tražim vodu. Koliko ovo košta?",
+        "sampleAudioSrc": "/audio/hr/a1/module-05/trazim-vodu-koliko-ovo-kosta.mp3"
       },
       {
         "id": "summary",
@@ -656,19 +731,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Koliko ovo košta?",
-            "source": "Ile to kosztuje?"
+            "source": "Ile to kosztuje?",
+            "audioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
           },
           {
             "target": "Košta deset eura.",
-            "source": "Kosztuje dziesięć euro."
+            "source": "Kosztuje dziesięć euro.",
+            "audioSrc": "/audio/hr/a1/module-05/kosta-deset-eura.mp3"
           },
           {
             "target": "Imate li ovo u drugoj veličini?",
-            "source": "Czy mają Państwo to w innym rozmiarze?"
+            "source": "Czy mają Państwo to w innym rozmiarze?",
+            "audioSrc": "/audio/hr/a1/module-05/imate-li-ovo-u-drugoj-velicini.mp3"
           },
           {
             "target": "Tražim vodu.",
-            "source": "Szukam wody."
+            "source": "Szukam wody.",
+            "audioSrc": "/audio/hr/a1/module-05/trazim-vodu.mp3"
           }
         ]
       }

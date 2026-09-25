@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "uczyć się",
         "lemma": "učiti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0200"
+        "recordId": "A1-0200",
+        "audioSrc": "/audio/hr/a1/module-03/uciti.mp3"
       },
       {
         "target": "studirati",
         "source": "studiować",
         "lemma": "studirati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0201"
+        "recordId": "A1-0201",
+        "audioSrc": "/audio/hr/a1/module-03/studirati.mp3"
       },
       {
         "target": "ured",
         "source": "biuro",
         "lemma": "ured",
         "partOfSpeech": "noun",
-        "recordId": "A1-0202"
+        "recordId": "A1-0202",
+        "audioSrc": "/audio/hr/a1/module-03/ured.mp3"
       },
       {
         "target": "škola",
         "source": "szkoła",
         "lemma": "škola",
         "partOfSpeech": "noun",
-        "recordId": "A1-0203"
+        "recordId": "A1-0203",
+        "audioSrc": "/audio/hr/a1/module-03/skola.mp3"
       },
       {
         "target": "fakultet",
         "source": "uczelnia / wydział",
         "lemma": "fakultet",
         "partOfSpeech": "noun",
-        "recordId": "A1-0204"
+        "recordId": "A1-0204",
+        "audioSrc": "/audio/hr/a1/module-03/fakultet.mp3"
       },
       {
         "target": "kod kuće",
         "source": "w domu",
         "lemma": "kod kuće",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0205"
+        "recordId": "A1-0205",
+        "audioSrc": "/audio/hr/a1/module-03/kod-kuce.mp3"
       },
       {
         "target": "računalo",
         "source": "komputer",
         "lemma": "računalo",
         "partOfSpeech": "noun",
-        "recordId": "A1-0206"
+        "recordId": "A1-0206",
+        "audioSrc": "/audio/hr/a1/module-03/racunalo.mp3"
       },
       {
         "target": "hrvatski",
         "source": "chorwacki",
         "lemma": "hrvatski",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0207"
+        "recordId": "A1-0207",
+        "audioSrc": "/audio/hr/a1/module-03/hrvatski.mp3"
       },
       {
         "target": "jezik",
         "source": "język",
         "lemma": "jezik",
         "partOfSpeech": "noun",
-        "recordId": "A1-0802"
+        "recordId": "A1-0802",
+        "audioSrc": "/audio/hr/a1/module-03/jezik.mp3"
       },
       {
         "target": "engleski",
         "source": "angielski",
         "lemma": "engleski",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0803"
+        "recordId": "A1-0803",
+        "audioSrc": "/audio/hr/a1/module-03/engleski.mp3"
       },
       {
         "target": "poljski",
         "source": "polski",
         "lemma": "poljski",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0804"
+        "recordId": "A1-0804",
+        "audioSrc": "/audio/hr/a1/module-03/poljski.mp3"
       },
       {
         "target": "govoriti",
         "source": "mówić",
         "lemma": "govoriti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0805"
+        "recordId": "A1-0805",
+        "audioSrc": "/audio/hr/a1/module-03/govoriti.mp3"
       },
       {
         "target": "znati",
         "source": "wiedzieć / umieć",
         "lemma": "znati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0806"
+        "recordId": "A1-0806",
+        "audioSrc": "/audio/hr/a1/module-03/znati.mp3"
       },
       {
         "target": "tečaj",
         "source": "kurs",
         "lemma": "tečaj",
         "partOfSpeech": "noun",
-        "recordId": "A1-0807"
+        "recordId": "A1-0807",
+        "audioSrc": "/audio/hr/a1/module-03/tecaj.mp3"
       },
       {
         "target": "lekcija",
         "source": "lekcja",
         "lemma": "lekcija",
         "partOfSpeech": "noun",
-        "recordId": "A1-0808"
+        "recordId": "A1-0808",
+        "audioSrc": "/audio/hr/a1/module-03/lekcija.mp3"
       },
       {
         "target": "učenik",
         "source": "uczeń",
         "lemma": "učenik",
         "partOfSpeech": "noun",
-        "recordId": "A1-0809"
+        "recordId": "A1-0809",
+        "audioSrc": "/audio/hr/a1/module-03/ucenik.mp3"
       },
       {
         "target": "zadaća",
         "source": "zadanie domowe",
         "lemma": "zadaća",
         "partOfSpeech": "noun",
-        "recordId": "A1-0810"
+        "recordId": "A1-0810",
+        "audioSrc": "/audio/hr/a1/module-03/zadaca.mp3"
       },
       {
         "target": "malo",
         "source": "trochę",
         "lemma": "malo",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0811"
+        "recordId": "A1-0811",
+        "audioSrc": "/audio/hr/a1/module-03/malo.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Radim od kuće.",
-            "source": "Pracuję z domu."
+            "source": "Pracuję z domu.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-od-kuce.mp3"
           },
           {
             "target": "Radim u uredu.",
-            "source": "Pracuję w biurze."
+            "source": "Pracuję w biurze.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-u-uredu.mp3"
           },
           {
             "target": "Učim hrvatski svaki dan.",
-            "source": "Uczę się chorwackiego codziennie."
+            "source": "Uczę się chorwackiego codziennie.",
+            "audioSrc": "/audio/hr/a1/module-03/ucim-hrvatski-svaki-dan.mp3"
           }
         ]
       },
@@ -166,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Učim hrvatski svaki dan.",
-          "source": "Uczę się chorwackiego codziennie."
-        }
+          "source": "Uczę się chorwackiego codziennie.",
+          "audioSrc": "/audio/hr/a1/module-03/ucim-hrvatski-svaki-dan.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/uciti.mp3"
       },
       {
         "id": "word-2",
@@ -178,8 +201,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Studiram u Zagrebu.",
-          "source": "Studiuję w Zagrzebiu."
-        }
+          "source": "Studiuję w Zagrzebiu.",
+          "audioSrc": "/audio/hr/a1/module-03/studiram-u-zagrebu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/studirati.mp3"
       },
       {
         "id": "word-3",
@@ -190,8 +215,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Radim u uredu.",
-          "source": "Pracuję w biurze."
-        }
+          "source": "Pracuję w biurze.",
+          "audioSrc": "/audio/hr/a1/module-03/radim-u-uredu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/ured.mp3"
       },
       {
         "id": "check-1",
@@ -205,7 +232,8 @@ export const LESSON: GeneratedLesson = {
           "szkoła"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/uciti.mp3"
       },
       {
         "id": "word-4",
@@ -216,8 +244,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Moj brat je učenik i ide u školu.",
-          "source": "Mój brat jest uczniem i chodzi do szkoły."
-        }
+          "source": "Mój brat jest uczniem i chodzi do szkoły.",
+          "audioSrc": "/audio/hr/a1/module-03/moj-brat-je-ucenik-i-ide-u-skolu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/skola.mp3"
       },
       {
         "id": "word-5",
@@ -225,7 +255,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "fakultet",
         "source": "uczelnia / wydział",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-03/fakultet.mp3"
       },
       {
         "id": "word-6",
@@ -233,7 +264,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "kod kuće",
         "source": "w domu",
-        "partOfSpeech": "zwrot"
+        "partOfSpeech": "zwrot",
+        "audioSrc": "/audio/hr/a1/module-03/kod-kuce.mp3"
       },
       {
         "id": "check-2",
@@ -247,7 +279,8 @@ export const LESSON: GeneratedLesson = {
           "učiti"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-03/fakultet.mp3"
       },
       {
         "id": "word-7",
@@ -258,8 +291,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Radim na računalu.",
-          "source": "Pracuję na komputerze."
-        }
+          "source": "Pracuję na komputerze.",
+          "audioSrc": "/audio/hr/a1/module-03/radim-na-racunalu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/racunalo.mp3"
       },
       {
         "id": "word-8",
@@ -270,8 +305,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Učim hrvatski svaki dan.",
-          "source": "Uczę się chorwackiego codziennie."
-        }
+          "source": "Uczę się chorwackiego codziennie.",
+          "audioSrc": "/audio/hr/a1/module-03/ucim-hrvatski-svaki-dan.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/hrvatski.mp3"
       },
       {
         "id": "check-3",
@@ -285,7 +322,8 @@ export const LESSON: GeneratedLesson = {
           "komputer"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/racunalo.mp3"
       },
       {
         "id": "more-words",
@@ -297,52 +335,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "jezik",
             "source": "język",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/jezik.mp3"
           },
           {
             "target": "engleski",
             "source": "angielski",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-03/engleski.mp3"
           },
           {
             "target": "poljski",
             "source": "polski",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-03/poljski.mp3"
           },
           {
             "target": "govoriti",
             "source": "mówić",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-03/govoriti.mp3"
           },
           {
             "target": "znati",
             "source": "wiedzieć / umieć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-03/znati.mp3"
           },
           {
             "target": "tečaj",
             "source": "kurs",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/tecaj.mp3"
           },
           {
             "target": "lekcija",
             "source": "lekcja",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/lekcija.mp3"
           },
           {
             "target": "učenik",
             "source": "uczeń",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/ucenik.mp3"
           },
           {
             "target": "zadaća",
             "source": "zadanie domowe",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/zadaca.mp3"
           },
           {
             "target": "malo",
             "source": "trochę",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/malo.mp3"
           }
         ]
       },
@@ -358,7 +406,8 @@ export const LESSON: GeneratedLesson = {
           "wiedzieć / umieć"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/poljski.mp3"
       },
       {
         "id": "examples",
@@ -369,19 +418,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Govorim poljski i engleski.",
-            "source": "Mówię po polsku i po angielsku."
+            "source": "Mówię po polsku i po angielsku.",
+            "audioSrc": "/audio/hr/a1/module-03/govorim-poljski-i-engleski.mp3"
           },
           {
             "target": "Govorim malo hrvatski.",
-            "source": "Mówię trochę po chorwacku."
+            "source": "Mówię trochę po chorwacku.",
+            "audioSrc": "/audio/hr/a1/module-03/govorim-malo-hrvatski.mp3"
           },
           {
             "target": "Idem na tečaj hrvatskog jezika.",
-            "source": "Chodzę na kurs języka chorwackiego."
+            "source": "Chodzę na kurs języka chorwackiego.",
+            "audioSrc": "/audio/hr/a1/module-03/idem-na-tecaj-hrvatskog-jezika.mp3"
           },
           {
             "target": "Moj brat je učenik i ide u školu.",
-            "source": "Mój brat jest uczniem i chodzi do szkoły."
+            "source": "Mój brat jest uczniem i chodzi do szkoły.",
+            "audioSrc": "/audio/hr/a1/module-03/moj-brat-je-ucenik-i-ide-u-skolu.mp3"
           }
         ]
       },
@@ -394,15 +447,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Radim u uredu.",
-            "source": "Pracuję w biurze."
+            "source": "Pracuję w biurze.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-u-uredu.mp3"
           },
           {
             "target": "Studiram u Zagrebu.",
-            "source": "Studiuję w Zagrzebiu."
+            "source": "Studiuję w Zagrzebiu.",
+            "audioSrc": "/audio/hr/a1/module-03/studiram-u-zagrebu.mp3"
           },
           {
             "target": "Radim od kuće.",
-            "source": "Pracuję z domu."
+            "source": "Pracuję z domu.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-od-kuce.mp3"
           }
         ]
       },
@@ -416,7 +472,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "uredu"
         ],
-        "translation": "Pracuję w biurze."
+        "translation": "Pracuję w biurze.",
+        "answerAudioSrc": "/audio/hr/a1/module-03/radim-u-uredu.mp3"
       },
       {
         "id": "translate-1",
@@ -427,7 +484,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Danas ne radim.",
           "Ne radim danas."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/danas-ne-radim.mp3"
       },
       {
         "id": "order",
@@ -443,7 +501,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Učim hrvatski svaki dan."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/ucim-hrvatski-svaki-dan.mp3"
       },
       {
         "id": "comprehend",
@@ -457,7 +516,8 @@ export const LESSON: GeneratedLesson = {
           "Pracuję w biurze."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/radim-na-racunalu.mp3"
       },
       {
         "id": "model",
@@ -468,27 +528,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Govoriš li hrvatski?",
-            "translation": "Mówisz po chorwacku?"
+            "translation": "Mówisz po chorwacku?",
+            "audioSrc": "/audio/hr/a1/module-03/govoris-li-hrvatski-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Malo. Učim hrvatski na tečaju.",
-            "translation": "Trochę. Uczę się chorwackiego na kursie."
+            "translation": "Trochę. Uczę się chorwackiego na kursie.",
+            "audioSrc": "/audio/hr/a1/module-03/malo-ucim-hrvatski-na-tecaju.mp3"
           },
           {
             "speaker": "Marko",
             "text": "A što radiš? Studiraš li?",
-            "translation": "A co robisz? Studiujesz?"
+            "translation": "A co robisz? Studiujesz?",
+            "audioSrc": "/audio/hr/a1/module-03/a-sto-radis-studiras-li-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ne, radim u uredu. A ti?",
-            "translation": "Nie, pracuję w biurze. A ty?"
+            "translation": "Nie, pracuję w biurze. A ty?",
+            "audioSrc": "/audio/hr/a1/module-03/ne-radim-u-uredu-a-ti.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ja studiram na fakultetu u Zagrebu.",
-            "translation": "Ja studiuję na uczelni w Zagrzebiu."
+            "translation": "Ja studiuję na uczelni w Zagrzebiu.",
+            "audioSrc": "/audio/hr/a1/module-03/ja-studiram-na-fakultetu-u-zagrebu-m.mp3"
           }
         ]
       },
@@ -503,7 +568,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Gdje radiš?",
-              "translation": "Gdzie pracujesz?"
+              "translation": "Gdzie pracujesz?",
+              "audioSrc": "/audio/hr/a1/module-03/gdje-radis.mp3"
             }
           },
           {
@@ -514,14 +580,16 @@ export const LESSON: GeneratedLesson = {
               "Radim od kuće."
             ],
             "pattern": "^(ja )?radim (u \\p{L}+|od kuće|kod kuće)$",
-            "suggestion": "Radim u uredu."
+            "suggestion": "Radim u uredu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/radim-u-uredu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što učiš?",
-              "translation": "Czego się uczysz?"
+              "translation": "Czego się uczysz?",
+              "audioSrc": "/audio/hr/a1/module-03/sto-ucis.mp3"
             }
           },
           {
@@ -532,7 +600,8 @@ export const LESSON: GeneratedLesson = {
               "Učim hrvatski."
             ],
             "pattern": "^(ja )?učim hrvatski( svaki dan)?$",
-            "suggestion": "Učim hrvatski svaki dan."
+            "suggestion": "Učim hrvatski svaki dan.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/ucim-hrvatski-svaki-dan.mp3"
           }
         ]
       },
@@ -564,7 +633,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Radim u uredu. Učim hrvatski svaki dan."
+        "sample": "Radim u uredu. Učim hrvatski svaki dan.",
+        "sampleAudioSrc": "/audio/hr/a1/module-03/radim-u-uredu-ucim-hrvatski-svaki-dan.mp3"
       },
       {
         "id": "summary",
@@ -574,19 +644,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Radim od kuće.",
-            "source": "Pracuję z domu."
+            "source": "Pracuję z domu.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-od-kuce.mp3"
           },
           {
             "target": "Radim u uredu.",
-            "source": "Pracuję w biurze."
+            "source": "Pracuję w biurze.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-u-uredu.mp3"
           },
           {
             "target": "Učim hrvatski svaki dan.",
-            "source": "Uczę się chorwackiego codziennie."
+            "source": "Uczę się chorwackiego codziennie.",
+            "audioSrc": "/audio/hr/a1/module-03/ucim-hrvatski-svaki-dan.mp3"
           },
           {
             "target": "Studiram u Zagrebu.",
-            "source": "Studiuję w Zagrzebiu."
+            "source": "Studiuję w Zagrzebiu.",
+            "audioSrc": "/audio/hr/a1/module-03/studiram-u-zagrebu.mp3"
           }
         ]
       }

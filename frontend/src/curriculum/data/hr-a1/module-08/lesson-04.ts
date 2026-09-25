@@ -12,56 +12,64 @@ export const LESSON: GeneratedLesson = {
         "source": "powtórka",
         "lemma": "ponavljanje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0686"
+        "recordId": "A1-0686",
+        "audioSrc": "/audio/hr/a1/module-08/ponavljanje.mp3"
       },
       {
         "target": "riječ",
         "source": "słowo",
         "lemma": "riječ",
         "partOfSpeech": "noun",
-        "recordId": "A1-0687"
+        "recordId": "A1-0687",
+        "audioSrc": "/audio/hr/a1/module-08/rijec.mp3"
       },
       {
         "target": "rečenica",
         "source": "zdanie",
         "lemma": "rečenica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0688"
+        "recordId": "A1-0688",
+        "audioSrc": "/audio/hr/a1/module-08/recenica.mp3"
       },
       {
         "target": "gramatika",
         "source": "gramatyka",
         "lemma": "gramatika",
         "partOfSpeech": "noun",
-        "recordId": "A1-0689"
+        "recordId": "A1-0689",
+        "audioSrc": "/audio/hr/a1/module-08/gramatika.mp3"
       },
       {
         "target": "slušanje",
         "source": "słuchanie",
         "lemma": "slušanje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0690"
+        "recordId": "A1-0690",
+        "audioSrc": "/audio/hr/a1/module-08/slusanje.mp3"
       },
       {
         "target": "čitanje",
         "source": "czytanie",
         "lemma": "čitanje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0691"
+        "recordId": "A1-0691",
+        "audioSrc": "/audio/hr/a1/module-08/citanje.mp3"
       },
       {
         "target": "pisanje",
         "source": "pisanie",
         "lemma": "pisanje",
         "partOfSpeech": "noun",
-        "recordId": "A1-0692"
+        "recordId": "A1-0692",
+        "audioSrc": "/audio/hr/a1/module-08/pisanje.mp3"
       },
       {
         "target": "govor",
         "source": "mówienie",
         "lemma": "govor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0693"
+        "recordId": "A1-0693",
+        "audioSrc": "/audio/hr/a1/module-08/govor.mp3"
       }
     ],
     "steps": [
@@ -91,7 +99,8 @@ export const LESSON: GeneratedLesson = {
           "mieć"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/obitelj.mp3"
       },
       {
         "id": "recall-2",
@@ -105,7 +114,8 @@ export const LESSON: GeneratedLesson = {
           "była"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/kava.mp3"
       },
       {
         "id": "recall-3",
@@ -119,7 +129,8 @@ export const LESSON: GeneratedLesson = {
           "sklep"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/trgovina.mp3"
       },
       {
         "id": "recall-4",
@@ -133,7 +144,8 @@ export const LESSON: GeneratedLesson = {
           "oczywiście"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/kisa.mp3"
       },
       {
         "id": "recall-5",
@@ -147,7 +159,8 @@ export const LESSON: GeneratedLesson = {
           "gdzie"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/vlak.mp3"
       },
       {
         "id": "vocab",
@@ -158,42 +171,50 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "ponavljanje",
             "source": "powtórka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/ponavljanje.mp3"
           },
           {
             "target": "riječ",
             "source": "słowo",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/rijec.mp3"
           },
           {
             "target": "rečenica",
             "source": "zdanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/recenica.mp3"
           },
           {
             "target": "gramatika",
             "source": "gramatyka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/gramatika.mp3"
           },
           {
             "target": "slušanje",
             "source": "słuchanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/slusanje.mp3"
           },
           {
             "target": "čitanje",
             "source": "czytanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/citanje.mp3"
           },
           {
             "target": "pisanje",
             "source": "pisanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/pisanje.mp3"
           },
           {
             "target": "govor",
             "source": "mówienie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-08/govor.mp3"
           }
         ]
       },
@@ -206,19 +227,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Danas ne radim.",
-            "source": "Dziś nie pracuję."
+            "source": "Dziś nie pracuję.",
+            "audioSrc": "/audio/hr/a1/module-03/danas-ne-radim.mp3"
           },
           {
             "target": "Jučer sam radio.",
-            "source": "Wczoraj pracowałem."
+            "source": "Wczoraj pracowałem.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
           },
           {
             "target": "Jučer sam radila.",
-            "source": "Wczoraj pracowałam."
+            "source": "Wczoraj pracowałam.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radila.mp3"
           },
           {
             "target": "Sutra ću raditi.",
-            "source": "Jutro będę pracować."
+            "source": "Jutro będę pracować.",
+            "audioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
           }
         ]
       },
@@ -232,7 +257,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "učim"
         ],
-        "translation": "Wieczorem uczę się chorwackiego."
+        "translation": "Wieczorem uczę się chorwackiego.",
+        "answerAudioSrc": "/audio/hr/a1/module-03/navecer-ucim-hrvatski.mp3"
       },
       {
         "id": "gap-2",
@@ -244,7 +270,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "poštu"
         ],
-        "translation": "Idę na pocztę."
+        "translation": "Idę na pocztę.",
+        "answerAudioSrc": "/audio/hr/a1/module-05/idem-na-postu.mp3"
       },
       {
         "id": "gap-3",
@@ -256,7 +283,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Bila"
         ],
-        "translation": "Byłam w domu."
+        "translation": "Byłam w domu.",
+        "answerAudioSrc": "/audio/hr/a1/module-08/bila-sam-kod-kuce.mp3"
       },
       {
         "id": "gap-4",
@@ -268,7 +296,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "ću"
         ],
-        "translation": "Jutro będę uczyć się chorwackiego."
+        "translation": "Jutro będę uczyć się chorwackiego.",
+        "answerAudioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
       },
       {
         "id": "translate-1",
@@ -279,7 +308,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Račun, molim.",
           "Molim račun."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
       },
       {
         "id": "translate-2",
@@ -290,7 +320,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Koliko ovo košta?",
           "Koliko to košta?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
       },
       {
         "id": "order",
@@ -305,7 +336,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Plivam u moru."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/plivam-u-moru.mp3"
       },
       {
         "id": "translate-3",
@@ -317,7 +349,8 @@ export const LESSON: GeneratedLesson = {
           "Slušam glazbu svaki dan.",
           "Svaki dan slušam glazbu.",
           "Ja slušam glazbu svaki dan."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
       },
       {
         "id": "translate-4",
@@ -327,7 +360,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Podróżuję samolotem.",
         "accepted": [
           "Putujem avionom."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/putujem-avionom.mp3"
       },
       {
         "id": "dialog",
@@ -359,7 +393,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Što si radio jučer?",
-              "translation": "Co robiłeś wczoraj?"
+              "translation": "Co robiłeś wczoraj?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-si-radio-jucer.mp3"
             }
           },
           {
@@ -370,14 +405,16 @@ export const LESSON: GeneratedLesson = {
               "Jučer sam radila."
             ],
             "pattern": "^(jučer sam (radio|radila|bio|bila|išao|išla|vidio|vidjela)( [\\p{L} ]+)?|(radio|radila|bio|bila|išao|išla|vidio|vidjela) sam( [\\p{L} ]+)?)$",
-            "suggestion": "Jučer sam radio."
+            "suggestion": "Jučer sam radio.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "A što ćeš raditi u subotu?",
-              "translation": "A co będziesz robić w sobotę?"
+              "translation": "A co będziesz robić w sobotę?",
+              "audioSrc": "/audio/hr/a1/module-08/a-sto-ces-raditi-u-subotu.mp3"
             }
           },
           {
@@ -387,14 +424,16 @@ export const LESSON: GeneratedLesson = {
               "U subotu ću ići na more."
             ],
             "pattern": "^u subotu (ću \\p{L}+( [\\p{L} ]+)?|ćemo \\p{L}+( [\\p{L} ]+)?)$",
-            "suggestion": "U subotu ću ići na more."
+            "suggestion": "U subotu ću ići na more.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/u-subotu-cu-ici-na-more.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Hoćemo li na kavu?",
-              "translation": "Idziemy na kawę?"
+              "translation": "Idziemy na kawę?",
+              "audioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
             }
           },
           {
@@ -405,7 +444,8 @@ export const LESSON: GeneratedLesson = {
               "Može sutra."
             ],
             "pattern": "^(može|rado|ne mogu)( u \\p{L}+| sutra| večeras| danas)?$",
-            "suggestion": "Može, u šest."
+            "suggestion": "Može, u šest.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-06/moze-u-sest.mp3"
           }
         ]
       },
@@ -454,7 +494,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 3,
-        "sample": "Zovem se Michał. Volim putovati. Jučer sam bio kod kuće. Sutra ću ići na more."
+        "sample": "Zovem se Michał. Volim putovati. Jučer sam bio kod kuće. Sutra ću ići na more.",
+        "sampleAudioSrc": "/audio/hr/a1/module-08/zovem-se-michal-volim-putovati-jucer-sam-bio-kod-kuce-sutra.mp3"
       },
       {
         "id": "summary",
@@ -464,19 +505,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Mogu napisati kratku poruku.",
-            "source": "Potrafię napisać krótką wiadomość."
+            "source": "Potrafię napisać krótką wiadomość.",
+            "audioSrc": "/audio/hr/a1/module-08/mogu-napisati-kratku-poruku.mp3"
           },
           {
             "target": "Mogu naručiti hranu.",
-            "source": "Potrafię zamówić jedzenie."
+            "source": "Potrafię zamówić jedzenie.",
+            "audioSrc": "/audio/hr/a1/module-08/mogu-naruciti-hranu.mp3"
           },
           {
             "target": "Mogu pitati za put.",
-            "source": "Potrafię zapytać o drogę."
+            "source": "Potrafię zapytać o drogę.",
+            "audioSrc": "/audio/hr/a1/module-08/mogu-pitati-za-put.mp3"
           },
           {
             "target": "Mogu govoriti o sebi.",
-            "source": "Potrafię mówić o sobie."
+            "source": "Potrafię mówić o sobie.",
+            "audioSrc": "/audio/hr/a1/module-08/mogu-govoriti-o-sebi.mp3"
           }
         ]
       }

@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "lubić / kochać",
         "lemma": "voljeti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0290"
+        "recordId": "A1-0290",
+        "audioSrc": "/audio/hr/a1/module-04/voljeti.mp3"
       },
       {
         "target": "jesti",
         "source": "jeść",
         "lemma": "jesti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0291"
+        "recordId": "A1-0291",
+        "audioSrc": "/audio/hr/a1/module-04/jesti.mp3"
       },
       {
         "target": "piti",
         "source": "pić",
         "lemma": "piti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0292"
+        "recordId": "A1-0292",
+        "audioSrc": "/audio/hr/a1/module-04/piti.mp3"
       },
       {
         "target": "ukusan",
         "source": "smaczny",
         "lemma": "ukusan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0293"
+        "recordId": "A1-0293",
+        "audioSrc": "/audio/hr/a1/module-04/ukusan.mp3"
       },
       {
         "target": "sladak",
         "source": "słodki",
         "lemma": "sladak",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0294"
+        "recordId": "A1-0294",
+        "audioSrc": "/audio/hr/a1/module-04/sladak.mp3"
       },
       {
         "target": "slan",
         "source": "słony",
         "lemma": "slan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0295"
+        "recordId": "A1-0295",
+        "audioSrc": "/audio/hr/a1/module-04/slan.mp3"
       },
       {
         "target": "gladan",
         "source": "głodny",
         "lemma": "gladan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0296"
+        "recordId": "A1-0296",
+        "audioSrc": "/audio/hr/a1/module-04/gladan.mp3"
       },
       {
         "target": "žedan",
         "source": "spragniony",
         "lemma": "žedan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0297"
+        "recordId": "A1-0297",
+        "audioSrc": "/audio/hr/a1/module-04/zedan.mp3"
       },
       {
         "target": "čokolada",
         "source": "czekolada",
         "lemma": "čokolada",
         "partOfSpeech": "noun",
-        "recordId": "A1-0868"
+        "recordId": "A1-0868",
+        "audioSrc": "/audio/hr/a1/module-04/cokolada.mp3"
       },
       {
         "target": "sladoled",
         "source": "lody",
         "lemma": "sladoled",
         "partOfSpeech": "noun",
-        "recordId": "A1-0869"
+        "recordId": "A1-0869",
+        "audioSrc": "/audio/hr/a1/module-04/sladoled.mp3"
       },
       {
         "target": "kolač",
         "source": "ciasto",
         "lemma": "kolač",
         "partOfSpeech": "noun",
-        "recordId": "A1-0870"
+        "recordId": "A1-0870",
+        "audioSrc": "/audio/hr/a1/module-04/kolac.mp3"
       },
       {
         "target": "jelo",
         "source": "danie / potrawa",
         "lemma": "jelo",
         "partOfSpeech": "noun",
-        "recordId": "A1-0871"
+        "recordId": "A1-0871",
+        "audioSrc": "/audio/hr/a1/module-04/jelo.mp3"
       },
       {
         "target": "omiljen",
         "source": "ulubiony",
         "lemma": "omiljen",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0872"
+        "recordId": "A1-0872",
+        "audioSrc": "/audio/hr/a1/module-04/omiljen.mp3"
       },
       {
         "target": "ljut",
         "source": "ostry",
         "lemma": "ljut",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0873"
+        "recordId": "A1-0873",
+        "audioSrc": "/audio/hr/a1/module-04/ljut.mp3"
       },
       {
         "target": "kiseo",
         "source": "kwaśny",
         "lemma": "kiseo",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0874"
+        "recordId": "A1-0874",
+        "audioSrc": "/audio/hr/a1/module-04/kiseo.mp3"
       },
       {
         "target": "gorak",
         "source": "gorzki",
         "lemma": "gorak",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0875"
+        "recordId": "A1-0875",
+        "audioSrc": "/audio/hr/a1/module-04/gorak.mp3"
       },
       {
         "target": "najviše",
         "source": "najbardziej",
         "lemma": "najviše",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0876"
+        "recordId": "A1-0876",
+        "audioSrc": "/audio/hr/a1/module-04/najvise.mp3"
       },
       {
         "target": "Dobar tek!",
         "source": "Smacznego!",
         "lemma": "tek",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0877"
+        "recordId": "A1-0877",
+        "audioSrc": "/audio/hr/a1/module-04/dobar-tek.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Volim kavu.",
-            "source": "Lubię kawę."
+            "source": "Lubię kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-kavu.mp3"
           },
           {
             "target": "Ne volim juhu.",
-            "source": "Nie lubię zupy."
+            "source": "Nie lubię zupy.",
+            "audioSrc": "/audio/hr/a1/module-04/ne-volim-juhu.mp3"
           },
           {
             "target": "Volim jesti ribu.",
-            "source": "Lubię jeść rybę."
+            "source": "Lubię jeść rybę.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-jesti-ribu.mp3"
           }
         ]
       },
@@ -163,7 +184,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "voljeti",
         "source": "lubić / kochać",
-        "partOfSpeech": "czasownik"
+        "partOfSpeech": "czasownik",
+        "audioSrc": "/audio/hr/a1/module-04/voljeti.mp3"
       },
       {
         "id": "word-2",
@@ -174,8 +196,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Volim jesti ribu.",
-          "source": "Lubię jeść rybę."
-        }
+          "source": "Lubię jeść rybę.",
+          "audioSrc": "/audio/hr/a1/module-04/volim-jesti-ribu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/jesti.mp3"
       },
       {
         "id": "word-3",
@@ -186,8 +210,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "On voli piti čaj.",
-          "source": "On lubi pić herbatę."
-        }
+          "source": "On lubi pić herbatę.",
+          "audioSrc": "/audio/hr/a1/module-04/on-voli-piti-caj.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/piti.mp3"
       },
       {
         "id": "check-1",
@@ -201,7 +227,8 @@ export const LESSON: GeneratedLesson = {
           "pić"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/piti.mp3"
       },
       {
         "id": "word-4",
@@ -209,7 +236,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "ukusan",
         "source": "smaczny",
-        "partOfSpeech": "przymiotnik"
+        "partOfSpeech": "przymiotnik",
+        "audioSrc": "/audio/hr/a1/module-04/ukusan.mp3"
       },
       {
         "id": "word-5",
@@ -220,8 +248,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Volim čokoladu i sladoled.",
-          "source": "Lubię czekoladę i lody."
-        }
+          "source": "Lubię czekoladę i lody.",
+          "audioSrc": "/audio/hr/a1/module-04/volim-cokoladu-i-sladoled.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/sladak.mp3"
       },
       {
         "id": "word-6",
@@ -232,8 +262,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Volim čokoladu i sladoled.",
-          "source": "Lubię czekoladę i lody."
-        }
+          "source": "Lubię czekoladę i lody.",
+          "audioSrc": "/audio/hr/a1/module-04/volim-cokoladu-i-sladoled.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/slan.mp3"
       },
       {
         "id": "check-2",
@@ -247,7 +279,8 @@ export const LESSON: GeneratedLesson = {
           "voljeti"
         ],
         "correctIndex": 0,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-04/ukusan.mp3"
       },
       {
         "id": "word-7",
@@ -258,8 +291,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Gladan sam.",
-          "source": "Jestem głodny."
-        }
+          "source": "Jestem głodny.",
+          "audioSrc": "/audio/hr/a1/module-04/gladan-sam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/gladan.mp3"
       },
       {
         "id": "word-8",
@@ -270,8 +305,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przymiotnik",
         "example": {
           "target": "Žedna sam.",
-          "source": "Jestem spragniona."
-        }
+          "source": "Jestem spragniona.",
+          "audioSrc": "/audio/hr/a1/module-04/zedna-sam.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/zedan.mp3"
       },
       {
         "id": "check-3",
@@ -285,7 +322,8 @@ export const LESSON: GeneratedLesson = {
           "smaczny"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/zedan.mp3"
       },
       {
         "id": "more-words",
@@ -297,52 +335,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "čokolada",
             "source": "czekolada",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/cokolada.mp3"
           },
           {
             "target": "sladoled",
             "source": "lody",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/sladoled.mp3"
           },
           {
             "target": "kolač",
             "source": "ciasto",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/kolac.mp3"
           },
           {
             "target": "jelo",
             "source": "danie / potrawa",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/jelo.mp3"
           },
           {
             "target": "omiljen",
             "source": "ulubiony",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-04/omiljen.mp3"
           },
           {
             "target": "ljut",
             "source": "ostry",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-04/ljut.mp3"
           },
           {
             "target": "kiseo",
             "source": "kwaśny",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-04/kiseo.mp3"
           },
           {
             "target": "gorak",
             "source": "gorzki",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-04/gorak.mp3"
           },
           {
             "target": "najviše",
             "source": "najbardziej",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-04/najvise.mp3"
           },
           {
             "target": "Dobar tek!",
             "source": "Smacznego!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/dobar-tek.mp3"
           }
         ]
       },
@@ -358,7 +406,8 @@ export const LESSON: GeneratedLesson = {
           "gorzki"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/gorak.mp3"
       },
       {
         "id": "examples",
@@ -369,19 +418,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Volim čokoladu i sladoled.",
-            "source": "Lubię czekoladę i lody."
+            "source": "Lubię czekoladę i lody.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-cokoladu-i-sladoled.mp3"
           },
           {
             "target": "Moje omiljeno jelo je riba.",
-            "source": "Moje ulubione danie to ryba."
+            "source": "Moje ulubione danie to ryba.",
+            "audioSrc": "/audio/hr/a1/module-04/moje-omiljeno-jelo-je-riba.mp3"
           },
           {
             "target": "Ne volim ljutu hranu.",
-            "source": "Nie lubię ostrego jedzenia."
+            "source": "Nie lubię ostrego jedzenia.",
+            "audioSrc": "/audio/hr/a1/module-04/ne-volim-ljutu-hranu.mp3"
           },
           {
             "target": "Kava je gorka bez šećera.",
-            "source": "Kawa jest gorzka bez cukru."
+            "source": "Kawa jest gorzka bez cukru.",
+            "audioSrc": "/audio/hr/a1/module-04/kava-je-gorka-bez-secera.mp3"
           }
         ]
       },
@@ -394,15 +447,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Volim kavu.",
-            "source": "Lubię kawę."
+            "source": "Lubię kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-kavu.mp3"
           },
           {
             "target": "Ne volim juhu.",
-            "source": "Nie lubię zupy."
+            "source": "Nie lubię zupy.",
+            "audioSrc": "/audio/hr/a1/module-04/ne-volim-juhu.mp3"
           },
           {
             "target": "Volim jesti ribu.",
-            "source": "Lubię jeść rybę."
+            "source": "Lubię jeść rybę.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-jesti-ribu.mp3"
           }
         ],
         "note": "Gladan sam / Gladna sam — mężczyzna i kobieta mówią inaczej, jak po polsku głodny / głodna."
@@ -417,7 +473,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ne"
         ],
-        "translation": "Nie lubię zupy."
+        "translation": "Nie lubię zupy.",
+        "answerAudioSrc": "/audio/hr/a1/module-04/ne-volim-juhu.mp3"
       },
       {
         "id": "comprehend",
@@ -431,7 +488,8 @@ export const LESSON: GeneratedLesson = {
           "Jestem spragniona."
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/zedna-sam.mp3"
       },
       {
         "id": "translate-1",
@@ -442,7 +500,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Volim jesti ribu.",
           "Ja volim jesti ribu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/volim-jesti-ribu.mp3"
       },
       {
         "id": "order",
@@ -458,7 +517,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "On voli piti čaj."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/on-voli-piti-caj.mp3"
       },
       {
         "id": "translate-2",
@@ -469,7 +529,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Gladan sam.",
           "Ja sam gladan."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/gladan-sam.mp3"
       },
       {
         "id": "model",
@@ -480,27 +541,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Što najviše voliš jesti?",
-            "translation": "Co najbardziej lubisz jeść?"
+            "translation": "Co najbardziej lubisz jeść?",
+            "audioSrc": "/audio/hr/a1/module-04/sto-najvise-volis-jesti-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Najviše volim ribu. A ti?",
-            "translation": "Najbardziej lubię rybę. A ty?"
+            "translation": "Najbardziej lubię rybę. A ty?",
+            "audioSrc": "/audio/hr/a1/module-04/najvise-volim-ribu-a-ti.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ja volim slatko. Volim kolače i čokoladu.",
-            "translation": "Ja lubię słodkie. Lubię ciasta i czekoladę."
+            "translation": "Ja lubię słodkie. Lubię ciasta i czekoladę.",
+            "audioSrc": "/audio/hr/a1/module-04/ja-volim-slatko-volim-kolace-i-cokoladu-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "A voliš li ljutu hranu?",
-            "translation": "A lubisz ostre jedzenie?"
+            "translation": "A lubisz ostre jedzenie?",
+            "audioSrc": "/audio/hr/a1/module-04/a-volis-li-ljutu-hranu.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ne, ne volim.",
-            "translation": "Nie, nie lubię."
+            "translation": "Nie, nie lubię.",
+            "audioSrc": "/audio/hr/a1/module-04/ne-ne-volim-m.mp3"
           }
         ]
       },
@@ -515,7 +581,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Voliš li kavu?",
-              "translation": "Lubisz kawę?"
+              "translation": "Lubisz kawę?",
+              "audioSrc": "/audio/hr/a1/module-04/volis-li-kavu-m.mp3"
             }
           },
           {
@@ -527,14 +594,16 @@ export const LESSON: GeneratedLesson = {
               "Ne volim kavu."
             ],
             "pattern": "^(da |ne )?(ne )?volim kavu$",
-            "suggestion": "Volim kavu."
+            "suggestion": "Volim kavu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/volim-kavu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "A juhu?",
-              "translation": "A zupę?"
+              "translation": "A zupę?",
+              "audioSrc": "/audio/hr/a1/module-04/a-juhu-m.mp3"
             }
           },
           {
@@ -545,7 +614,8 @@ export const LESSON: GeneratedLesson = {
               "Volim juhu."
             ],
             "pattern": "^(da |ne )?(ne )?volim juhu$",
-            "suggestion": "Ne volim juhu."
+            "suggestion": "Ne volim juhu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/ne-volim-juhu.mp3"
           }
         ]
       },
@@ -573,7 +643,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Volim kavu i ribu. Ne volim juhu."
+        "sample": "Volim kavu i ribu. Ne volim juhu.",
+        "sampleAudioSrc": "/audio/hr/a1/module-04/volim-kavu-i-ribu-ne-volim-juhu.mp3"
       },
       {
         "id": "summary",
@@ -583,19 +654,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Volim kavu.",
-            "source": "Lubię kawę."
+            "source": "Lubię kawę.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-kavu.mp3"
           },
           {
             "target": "Ne volim juhu.",
-            "source": "Nie lubię zupy."
+            "source": "Nie lubię zupy.",
+            "audioSrc": "/audio/hr/a1/module-04/ne-volim-juhu.mp3"
           },
           {
             "target": "Volim jesti ribu.",
-            "source": "Lubię jeść rybę."
+            "source": "Lubię jeść rybę.",
+            "audioSrc": "/audio/hr/a1/module-04/volim-jesti-ribu.mp3"
           },
           {
             "target": "On voli piti čaj.",
-            "source": "On lubi pić herbatę."
+            "source": "On lubi pić herbatę.",
+            "audioSrc": "/audio/hr/a1/module-04/on-voli-piti-caj.mp3"
           }
         ]
       }

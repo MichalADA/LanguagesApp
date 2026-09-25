@@ -12,119 +12,136 @@ export const LESSON: GeneratedLesson = {
         "source": "sklep",
         "lemma": "trgovina",
         "partOfSpeech": "noun",
-        "recordId": "A1-0380"
+        "recordId": "A1-0380",
+        "audioSrc": "/audio/hr/a1/module-05/trgovina.mp3"
       },
       {
         "target": "banka",
         "source": "bank",
         "lemma": "banka",
         "partOfSpeech": "noun",
-        "recordId": "A1-0381"
+        "recordId": "A1-0381",
+        "audioSrc": "/audio/hr/a1/module-05/banka.mp3"
       },
       {
         "target": "pošta",
         "source": "poczta",
         "lemma": "pošta",
         "partOfSpeech": "noun",
-        "recordId": "A1-0382"
+        "recordId": "A1-0382",
+        "audioSrc": "/audio/hr/a1/module-05/posta.mp3"
       },
       {
         "target": "ljekarna",
         "source": "apteka",
         "lemma": "ljekarna",
         "partOfSpeech": "noun",
-        "recordId": "A1-0383"
+        "recordId": "A1-0383",
+        "audioSrc": "/audio/hr/a1/module-05/ljekarna.mp3"
       },
       {
         "target": "kolodvor",
         "source": "dworzec",
         "lemma": "kolodvor",
         "partOfSpeech": "noun",
-        "recordId": "A1-0384"
+        "recordId": "A1-0384",
+        "audioSrc": "/audio/hr/a1/module-05/kolodvor.mp3"
       },
       {
         "target": "park",
         "source": "park",
         "lemma": "park",
         "partOfSpeech": "noun",
-        "recordId": "A1-0385"
+        "recordId": "A1-0385",
+        "audioSrc": "/audio/hr/a1/module-05/park.mp3"
       },
       {
         "target": "ići",
         "source": "iść / jechać",
         "lemma": "ići",
         "partOfSpeech": "verb",
-        "recordId": "A1-0386"
+        "recordId": "A1-0386",
+        "audioSrc": "/audio/hr/a1/module-05/ici.mp3"
       },
       {
         "target": "centar",
         "source": "centrum",
         "lemma": "centar",
         "partOfSpeech": "noun",
-        "recordId": "A1-0387"
+        "recordId": "A1-0387",
+        "audioSrc": "/audio/hr/a1/module-05/centar.mp3"
       },
       {
         "target": "kamo",
         "source": "dokąd",
         "lemma": "kamo",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0929"
+        "recordId": "A1-0929",
+        "audioSrc": "/audio/hr/a1/module-05/kamo.mp3"
       },
       {
         "target": "muzej",
         "source": "muzeum",
         "lemma": "muzej",
         "partOfSpeech": "noun",
-        "recordId": "A1-0930"
+        "recordId": "A1-0930",
+        "audioSrc": "/audio/hr/a1/module-05/muzej.mp3"
       },
       {
         "target": "crkva",
         "source": "kościół",
         "lemma": "crkva",
         "partOfSpeech": "noun",
-        "recordId": "A1-0931"
+        "recordId": "A1-0931",
+        "audioSrc": "/audio/hr/a1/module-05/crkva.mp3"
       },
       {
         "target": "tržnica",
         "source": "targ / rynek",
         "lemma": "tržnica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0932"
+        "recordId": "A1-0932",
+        "audioSrc": "/audio/hr/a1/module-05/trznica.mp3"
       },
       {
         "target": "knjižnica",
         "source": "biblioteka",
         "lemma": "knjižnica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0933"
+        "recordId": "A1-0933",
+        "audioSrc": "/audio/hr/a1/module-05/knjiznica.mp3"
       },
       {
         "target": "pekara",
         "source": "piekarnia",
         "lemma": "pekara",
         "partOfSpeech": "noun",
-        "recordId": "A1-0934"
+        "recordId": "A1-0934",
+        "audioSrc": "/audio/hr/a1/module-05/pekara.mp3"
       },
       {
         "target": "stanica",
         "source": "przystanek",
         "lemma": "stanica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0935"
+        "recordId": "A1-0935",
+        "audioSrc": "/audio/hr/a1/module-05/stanica.mp3"
       },
       {
         "target": "trebati",
         "source": "potrzebować / musieć",
         "lemma": "trebati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0936"
+        "recordId": "A1-0936",
+        "audioSrc": "/audio/hr/a1/module-05/trebati.mp3"
       },
       {
         "target": "ići u kupovinu",
         "source": "iść na zakupy",
         "lemma": "ići",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0937"
+        "recordId": "A1-0937",
+        "audioSrc": "/audio/hr/a1/module-05/ici-u-kupovinu.mp3"
       }
     ],
     "steps": [
@@ -138,15 +155,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Idem u trgovinu.",
-            "source": "Idę do sklepu."
+            "source": "Idę do sklepu.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu.mp3"
           },
           {
             "target": "Idem u banku.",
-            "source": "Idę do banku."
+            "source": "Idę do banku.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-u-banku.mp3"
           },
           {
             "target": "Idem na poštu.",
-            "source": "Idę na pocztę."
+            "source": "Idę na pocztę.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-na-postu.mp3"
           }
         ]
       },
@@ -159,8 +179,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idem u trgovinu.",
-          "source": "Idę do sklepu."
-        }
+          "source": "Idę do sklepu.",
+          "audioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/trgovina.mp3"
       },
       {
         "id": "word-2",
@@ -171,8 +193,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idem u banku.",
-          "source": "Idę do banku."
-        }
+          "source": "Idę do banku.",
+          "audioSrc": "/audio/hr/a1/module-05/idem-u-banku.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/banka.mp3"
       },
       {
         "id": "word-3",
@@ -183,8 +207,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idem na poštu.",
-          "source": "Idę na pocztę."
-        }
+          "source": "Idę na pocztę.",
+          "audioSrc": "/audio/hr/a1/module-05/idem-na-postu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/posta.mp3"
       },
       {
         "id": "check-1",
@@ -198,7 +224,8 @@ export const LESSON: GeneratedLesson = {
           "poczta"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/banka.mp3"
       },
       {
         "id": "word-4",
@@ -209,8 +236,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ljekarna je blizu.",
-          "source": "Apteka jest blisko."
-        }
+          "source": "Apteka jest blisko.",
+          "audioSrc": "/audio/hr/a1/module-05/ljekarna-je-blizu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/ljekarna.mp3"
       },
       {
         "id": "word-5",
@@ -221,8 +250,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Gdje je kolodvor?",
-          "source": "Gdzie jest dworzec?"
-        }
+          "source": "Gdzie jest dworzec?",
+          "audioSrc": "/audio/hr/a1/module-05/gdje-je-kolodvor.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/kolodvor.mp3"
       },
       {
         "id": "word-6",
@@ -233,8 +264,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Park je u centru.",
-          "source": "Park jest w centrum."
-        }
+          "source": "Park jest w centrum.",
+          "audioSrc": "/audio/hr/a1/module-05/park-je-u-centru.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/park.mp3"
       },
       {
         "id": "check-2",
@@ -248,7 +281,8 @@ export const LESSON: GeneratedLesson = {
           "park"
         ],
         "correctIndex": 2,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-05/park.mp3"
       },
       {
         "id": "word-7",
@@ -259,8 +293,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Trebam ići u ljekarnu.",
-          "source": "Muszę iść do apteki."
-        }
+          "source": "Muszę iść do apteki.",
+          "audioSrc": "/audio/hr/a1/module-05/trebam-ici-u-ljekarnu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/ici.mp3"
       },
       {
         "id": "word-8",
@@ -271,8 +307,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Park je u centru.",
-          "source": "Park jest w centrum."
-        }
+          "source": "Park jest w centrum.",
+          "audioSrc": "/audio/hr/a1/module-05/park-je-u-centru.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/centar.mp3"
       },
       {
         "id": "check-3",
@@ -286,7 +324,8 @@ export const LESSON: GeneratedLesson = {
           "poczta"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/ici.mp3"
       },
       {
         "id": "more-words",
@@ -298,47 +337,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "kamo",
             "source": "dokąd",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-05/kamo.mp3"
           },
           {
             "target": "muzej",
             "source": "muzeum",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/muzej.mp3"
           },
           {
             "target": "crkva",
             "source": "kościół",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/crkva.mp3"
           },
           {
             "target": "tržnica",
             "source": "targ / rynek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/trznica.mp3"
           },
           {
             "target": "knjižnica",
             "source": "biblioteka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/knjiznica.mp3"
           },
           {
             "target": "pekara",
             "source": "piekarnia",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/pekara.mp3"
           },
           {
             "target": "stanica",
             "source": "przystanek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/stanica.mp3"
           },
           {
             "target": "trebati",
             "source": "potrzebować / musieć",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-05/trebati.mp3"
           },
           {
             "target": "ići u kupovinu",
             "source": "iść na zakupy",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/ici-u-kupovinu.mp3"
           }
         ]
       },
@@ -354,7 +402,8 @@ export const LESSON: GeneratedLesson = {
           "piekarnia"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/knjiznica.mp3"
       },
       {
         "id": "examples",
@@ -365,19 +414,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Kamo ideš?",
-            "source": "Dokąd idziesz?"
+            "source": "Dokąd idziesz?",
+            "audioSrc": "/audio/hr/a1/module-05/kamo-ides.mp3"
           },
           {
             "target": "Idem na tržnicu po voće.",
-            "source": "Idę na targ po owoce."
+            "source": "Idę na targ po owoce.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-na-trznicu-po-voce.mp3"
           },
           {
             "target": "Trebam ići u ljekarnu.",
-            "source": "Muszę iść do apteki."
+            "source": "Muszę iść do apteki.",
+            "audioSrc": "/audio/hr/a1/module-05/trebam-ici-u-ljekarnu.mp3"
           },
           {
             "target": "Muzej je pored crkve.",
-            "source": "Muzeum jest obok kościoła."
+            "source": "Muzeum jest obok kościoła.",
+            "audioSrc": "/audio/hr/a1/module-05/muzej-je-pored-crkve.mp3"
           }
         ]
       },
@@ -390,15 +443,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Idem u trgovinu.",
-            "source": "Idę do sklepu."
+            "source": "Idę do sklepu.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu.mp3"
           },
           {
             "target": "Idem na poštu.",
-            "source": "Idę na pocztę."
+            "source": "Idę na pocztę.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-na-postu.mp3"
           },
           {
             "target": "Park je u centru.",
-            "source": "Park jest w centrum."
+            "source": "Park jest w centrum.",
+            "audioSrc": "/audio/hr/a1/module-05/park-je-u-centru.mp3"
           }
         ],
         "note": "Na poštu — jak po polsku „na pocztę”."
@@ -413,7 +469,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "poštu"
         ],
-        "translation": "Idę na pocztę."
+        "translation": "Idę na pocztę.",
+        "answerAudioSrc": "/audio/hr/a1/module-05/idem-na-postu.mp3"
       },
       {
         "id": "translate-1",
@@ -424,7 +481,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Idem u trgovinu.",
           "Ja idem u trgovinu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu.mp3"
       },
       {
         "id": "order",
@@ -439,7 +497,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Idem u banku."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/idem-u-banku.mp3"
       },
       {
         "id": "comprehend",
@@ -453,7 +512,8 @@ export const LESSON: GeneratedLesson = {
           "Idę do banku."
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/park-je-u-centru.mp3"
       },
       {
         "id": "translate-2",
@@ -463,7 +523,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Apteka jest blisko.",
         "accepted": [
           "Ljekarna je blizu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/ljekarna-je-blizu.mp3"
       },
       {
         "id": "model",
@@ -474,27 +535,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Bok, Ana! Kamo ideš?",
-            "translation": "Cześć, Ana! Dokąd idziesz?"
+            "translation": "Cześć, Ana! Dokąd idziesz?",
+            "audioSrc": "/audio/hr/a1/module-05/bok-ana-kamo-ides-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Idem u pekaru po kruh. A ti?",
-            "translation": "Idę do piekarni po chleb. A ty?"
+            "translation": "Idę do piekarni po chleb. A ty?",
+            "audioSrc": "/audio/hr/a1/module-05/idem-u-pekaru-po-kruh-a-ti.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ja idem u knjižnicu.",
-            "translation": "Ja idę do biblioteki."
+            "translation": "Ja idę do biblioteki.",
+            "audioSrc": "/audio/hr/a1/module-05/ja-idem-u-knjiznicu-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Gdje je knjižnica?",
-            "translation": "Gdzie jest biblioteka?"
+            "translation": "Gdzie jest biblioteka?",
+            "audioSrc": "/audio/hr/a1/module-05/gdje-je-knjiznica.mp3"
           },
           {
             "speaker": "Marko",
             "text": "U centru, blizu muzeja.",
-            "translation": "W centrum, blisko muzeum."
+            "translation": "W centrum, blisko muzeum.",
+            "audioSrc": "/audio/hr/a1/module-05/u-centru-blizu-muzeja-m.mp3"
           }
         ]
       },
@@ -509,7 +575,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Kamo ideš?",
-              "translation": "Dokąd idziesz?"
+              "translation": "Dokąd idziesz?",
+              "audioSrc": "/audio/hr/a1/module-05/kamo-ides.mp3"
             }
           },
           {
@@ -521,14 +588,16 @@ export const LESSON: GeneratedLesson = {
               "Idem na poštu."
             ],
             "pattern": "^(ja )?idem (u (trgovinu|banku|centar|park|ljekarnu|grad)|na (poštu|kolodvor))$",
-            "suggestion": "Idem u trgovinu."
+            "suggestion": "Idem u trgovinu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Gdje je kolodvor?",
-              "translation": "Gdzie jest dworzec?"
+              "translation": "Gdzie jest dworzec?",
+              "audioSrc": "/audio/hr/a1/module-05/gdje-je-kolodvor.mp3"
             }
           },
           {
@@ -539,7 +608,8 @@ export const LESSON: GeneratedLesson = {
               "Blizu je."
             ],
             "pattern": "^(kolodvor je )?(blizu|tamo|daleko|ovdje|u centru)( je)?$",
-            "suggestion": "Kolodvor je blizu."
+            "suggestion": "Kolodvor je blizu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/kolodvor-je-blizu.mp3"
           }
         ]
       },
@@ -568,7 +638,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Danas idem u banku. Sutra idem na poštu."
+        "sample": "Danas idem u banku. Sutra idem na poštu.",
+        "sampleAudioSrc": "/audio/hr/a1/module-05/danas-idem-u-banku-sutra-idem-na-postu.mp3"
       },
       {
         "id": "summary",
@@ -578,19 +649,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Idem u trgovinu.",
-            "source": "Idę do sklepu."
+            "source": "Idę do sklepu.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu.mp3"
           },
           {
             "target": "Idem u banku.",
-            "source": "Idę do banku."
+            "source": "Idę do banku.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-u-banku.mp3"
           },
           {
             "target": "Idem na poštu.",
-            "source": "Idę na pocztę."
+            "source": "Idę na pocztę.",
+            "audioSrc": "/audio/hr/a1/module-05/idem-na-postu.mp3"
           },
           {
             "target": "Park je u centru.",
-            "source": "Park jest w centrum."
+            "source": "Park jest w centrum.",
+            "audioSrc": "/audio/hr/a1/module-05/park-je-u-centru.mp3"
           }
         ]
       }

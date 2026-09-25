@@ -12,91 +12,104 @@ export const LESSON: GeneratedLesson = {
         "source": "stół",
         "lemma": "stol",
         "partOfSpeech": "noun",
-        "recordId": "A1-0344"
+        "recordId": "A1-0344",
+        "audioSrc": "/audio/hr/a1/module-04/stol.mp3"
       },
       {
         "target": "rezervacija",
         "source": "rezerwacja",
         "lemma": "rezervacija",
         "partOfSpeech": "noun",
-        "recordId": "A1-0345"
+        "recordId": "A1-0345",
+        "audioSrc": "/audio/hr/a1/module-04/rezervacija.mp3"
       },
       {
         "target": "hrana",
         "source": "jedzenie",
         "lemma": "hrana",
         "partOfSpeech": "noun",
-        "recordId": "A1-0346"
+        "recordId": "A1-0346",
+        "audioSrc": "/audio/hr/a1/module-04/hrana.mp3"
       },
       {
         "target": "piće",
         "source": "napój",
         "lemma": "piće",
         "partOfSpeech": "noun",
-        "recordId": "A1-0347"
+        "recordId": "A1-0347",
+        "audioSrc": "/audio/hr/a1/module-04/pice.mp3"
       },
       {
         "target": "još",
         "source": "jeszcze",
         "lemma": "još",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0348"
+        "recordId": "A1-0348",
+        "audioSrc": "/audio/hr/a1/module-04/jos.mp3"
       },
       {
         "target": "dovoljno",
         "source": "wystarczająco",
         "lemma": "dovoljno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0349"
+        "recordId": "A1-0349",
+        "audioSrc": "/audio/hr/a1/module-04/dovoljno.mp3"
       },
       {
         "target": "ukusno",
         "source": "smacznie",
         "lemma": "ukusno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0350"
+        "recordId": "A1-0350",
+        "audioSrc": "/audio/hr/a1/module-04/ukusno.mp3"
       },
       {
         "target": "platiti",
         "source": "zapłacić",
         "lemma": "platiti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0351"
+        "recordId": "A1-0351",
+        "audioSrc": "/audio/hr/a1/module-04/platiti.mp3"
       },
       {
         "target": "gotovina",
         "source": "gotówka",
         "lemma": "gotovina",
         "partOfSpeech": "noun",
-        "recordId": "A1-0908"
+        "recordId": "A1-0908",
+        "audioSrc": "/audio/hr/a1/module-04/gotovina.mp3"
       },
       {
         "target": "napojnica",
         "source": "napiwek",
         "lemma": "napojnica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0909"
+        "recordId": "A1-0909",
+        "audioSrc": "/audio/hr/a1/module-04/napojnica.mp3"
       },
       {
         "target": "Živjeli!",
         "source": "Na zdrowie! (toast)",
         "lemma": "živjeti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0910"
+        "recordId": "A1-0910",
+        "audioSrc": "/audio/hr/a1/module-04/zivjeli.mp3"
       },
       {
         "target": "zajedno ili odvojeno",
         "source": "razem czy osobno",
         "lemma": "zajedno",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0911"
+        "recordId": "A1-0911",
+        "audioSrc": "/audio/hr/a1/module-04/zajedno-ili-odvojeno.mp3"
       },
       {
         "target": "stol za dvoje",
         "source": "stolik dla dwojga",
         "lemma": "stol",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0912"
+        "recordId": "A1-0912",
+        "audioSrc": "/audio/hr/a1/module-04/stol-za-dvoje.mp3"
       }
     ],
     "steps": [
@@ -126,7 +139,8 @@ export const LESSON: GeneratedLesson = {
           "ser"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/sir.mp3"
       },
       {
         "id": "recall-2",
@@ -140,7 +154,8 @@ export const LESSON: GeneratedLesson = {
           "jeść"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/zedan.mp3"
       },
       {
         "id": "recall-3",
@@ -167,67 +182,80 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "stol",
             "source": "stół",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/stol.mp3"
           },
           {
             "target": "rezervacija",
             "source": "rezerwacja",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/rezervacija.mp3"
           },
           {
             "target": "hrana",
             "source": "jedzenie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/hrana.mp3"
           },
           {
             "target": "piće",
             "source": "napój",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/pice.mp3"
           },
           {
             "target": "još",
             "source": "jeszcze",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-04/jos.mp3"
           },
           {
             "target": "dovoljno",
             "source": "wystarczająco",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-04/dovoljno.mp3"
           },
           {
             "target": "ukusno",
             "source": "smacznie",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-04/ukusno.mp3"
           },
           {
             "target": "platiti",
             "source": "zapłacić",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-04/platiti.mp3"
           },
           {
             "target": "gotovina",
             "source": "gotówka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/gotovina.mp3"
           },
           {
             "target": "napojnica",
             "source": "napiwek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-04/napojnica.mp3"
           },
           {
             "target": "Živjeli!",
             "source": "Na zdrowie! (toast)",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/zivjeli.mp3"
           },
           {
             "target": "zajedno ili odvojeno",
             "source": "razem czy osobno",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/zajedno-ili-odvojeno.mp3"
           },
           {
             "target": "stol za dvoje",
             "source": "stolik dla dwojga",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/stol-za-dvoje.mp3"
           }
         ]
       },
@@ -240,11 +268,13 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Plaćam gotovinom.",
-            "source": "Płacę gotówką."
+            "source": "Płacę gotówką.",
+            "audioSrc": "/audio/hr/a1/module-04/placam-gotovinom.mp3"
           },
           {
             "target": "Plaćamo zajedno.",
-            "source": "Płacimy razem."
+            "source": "Płacimy razem.",
+            "audioSrc": "/audio/hr/a1/module-04/placamo-zajedno.mp3"
           }
         ]
       },
@@ -258,7 +288,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "juhu"
         ],
-        "translation": "Dla mnie zupa, proszę."
+        "translation": "Dla mnie zupa, proszę.",
+        "answerAudioSrc": "/audio/hr/a1/module-04/za-mene-juhu-molim.mp3"
       },
       {
         "id": "order",
@@ -276,7 +307,8 @@ export const LESSON: GeneratedLesson = {
           "Danas ne jedem meso.",
           "Ne jedem meso danas.",
           "Danas ne jedem mesa."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/danas-ne-jedem-meso.mp3"
       },
       {
         "id": "translate-1",
@@ -287,7 +319,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Želim čaj.",
           "Ja želim čaj."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/zelim-caj.mp3"
       },
       {
         "id": "translate-2",
@@ -298,7 +331,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Volim jesti ribu.",
           "Ja volim jesti ribu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/volim-jesti-ribu.mp3"
       },
       {
         "id": "translate-3",
@@ -308,7 +342,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Chciałbym zamówić rybę.",
         "accepted": [
           "Htio bih naručiti ribu."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/htio-bih-naruciti-ribu.mp3"
       },
       {
         "id": "dialog",
@@ -321,7 +356,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Konobar",
               "text": "Dobra večer! Imate li rezervaciju?",
-              "translation": "Dobry wieczór! Czy mają Państwo rezerwację?"
+              "translation": "Dobry wieczór! Czy mają Państwo rezerwację?",
+              "audioSrc": "/audio/hr/a1/module-04/dobra-vecer-imate-li-rezervaciju-m.mp3"
             }
           },
           {
@@ -332,14 +368,16 @@ export const LESSON: GeneratedLesson = {
               "Da, imamo rezervaciju za dvoje."
             ],
             "pattern": "^(da )?imamo rezervaciju( za dvoje)?$",
-            "suggestion": "Imamo rezervaciju za dvoje."
+            "suggestion": "Imamo rezervaciju za dvoje.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/imamo-rezervaciju-za-dvoje.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Konobar",
               "text": "Izvolite. Što želite?",
-              "translation": "Proszę. Co podać?"
+              "translation": "Proszę. Co podać?",
+              "audioSrc": "/audio/hr/a1/module-04/izvolite-sto-zelite-m.mp3"
             }
           },
           {
@@ -350,14 +388,16 @@ export const LESSON: GeneratedLesson = {
               "Molim juhu."
             ],
             "pattern": "^((htio|htjela) bih (naručiti )?|molim |za mene )(jednu |jedan )?(juhu|ribu|salatu|rižu|meso|kavu|čaj|sok|vodu|pivo)( i (juhu|ribu|salatu|rižu|meso|kavu|čaj|sok|vodu|pivo))?( molim)?$",
-            "suggestion": "Htio bih naručiti ribu."
+            "suggestion": "Htio bih naručiti ribu.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/htio-bih-naruciti-ribu.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Konobar",
               "text": "Želite li još nešto?",
-              "translation": "Czy chcecie jeszcze coś?"
+              "translation": "Czy chcecie jeszcze coś?",
+              "audioSrc": "/audio/hr/a1/module-04/zelite-li-jos-nesto-m.mp3"
             }
           },
           {
@@ -368,14 +408,16 @@ export const LESSON: GeneratedLesson = {
               "Ne, hvala."
             ],
             "pattern": "^ne hvala( dovoljno je)?$",
-            "suggestion": "Ne, hvala, dovoljno je."
+            "suggestion": "Ne, hvala, dovoljno je.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/ne-hvala-dovoljno-je.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Konobar",
               "text": "Kako želite platiti?",
-              "translation": "Jak chcą Państwo zapłacić?"
+              "translation": "Jak chcą Państwo zapłacić?",
+              "audioSrc": "/audio/hr/a1/module-04/kako-zelite-platiti-m.mp3"
             }
           },
           {
@@ -386,7 +428,8 @@ export const LESSON: GeneratedLesson = {
               "Karticom, molim."
             ],
             "pattern": "^((želim|mogu li) platiti )?karticom( molim)?$",
-            "suggestion": "Želim platiti karticom."
+            "suggestion": "Želim platiti karticom.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-04/zelim-platiti-karticom.mp3"
           }
         ]
       },
@@ -426,7 +469,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Htio bih naručiti juhu. Hrana je vrlo ukusna. Račun, molim."
+        "sample": "Htio bih naručiti juhu. Hrana je vrlo ukusna. Račun, molim.",
+        "sampleAudioSrc": "/audio/hr/a1/module-04/htio-bih-naruciti-juhu-hrana-je-vrlo-ukusna-racun-molim.mp3"
       },
       {
         "id": "summary",
@@ -436,19 +480,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Imamo rezervaciju za dvoje.",
-            "source": "Mamy rezerwację dla dwóch osób."
+            "source": "Mamy rezerwację dla dwóch osób.",
+            "audioSrc": "/audio/hr/a1/module-04/imamo-rezervaciju-za-dvoje.mp3"
           },
           {
             "target": "Hrana je vrlo ukusna.",
-            "source": "Jedzenie jest bardzo smaczne."
+            "source": "Jedzenie jest bardzo smaczne.",
+            "audioSrc": "/audio/hr/a1/module-04/hrana-je-vrlo-ukusna.mp3"
           },
           {
             "target": "Želite li još nešto?",
-            "source": "Czy chcecie jeszcze coś?"
+            "source": "Czy chcecie jeszcze coś?",
+            "audioSrc": "/audio/hr/a1/module-04/zelite-li-jos-nesto.mp3"
           },
           {
             "target": "Ne, hvala, dovoljno je.",
-            "source": "Nie, dziękuję, wystarczy."
+            "source": "Nie, dziękuję, wystarczy.",
+            "audioSrc": "/audio/hr/a1/module-04/ne-hvala-dovoljno-je.mp3"
           }
         ],
         "canDo": [

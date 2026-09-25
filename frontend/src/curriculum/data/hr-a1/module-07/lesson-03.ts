@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "hotel",
         "lemma": "hotel",
         "partOfSpeech": "noun",
-        "recordId": "A1-0578"
+        "recordId": "A1-0578",
+        "audioSrc": "/audio/hr/a1/module-07/hotel.mp3"
       },
       {
         "target": "soba",
         "source": "pokój",
         "lemma": "soba",
         "partOfSpeech": "noun",
-        "recordId": "A1-0579"
+        "recordId": "A1-0579",
+        "audioSrc": "/audio/hr/a1/module-07/soba.mp3"
       },
       {
         "target": "rezervacija",
         "source": "rezerwacja",
         "lemma": "rezervacija",
         "partOfSpeech": "noun",
-        "recordId": "A1-0580"
+        "recordId": "A1-0580",
+        "audioSrc": "/audio/hr/a1/module-04/rezervacija.mp3"
       },
       {
         "target": "ključ",
         "source": "klucz",
         "lemma": "ključ",
         "partOfSpeech": "noun",
-        "recordId": "A1-0581"
+        "recordId": "A1-0581",
+        "audioSrc": "/audio/hr/a1/module-07/kljuc.mp3"
       },
       {
         "target": "putovnica",
         "source": "paszport",
         "lemma": "putovnica",
         "partOfSpeech": "noun",
-        "recordId": "A1-0582"
+        "recordId": "A1-0582",
+        "audioSrc": "/audio/hr/a1/module-07/putovnica.mp3"
       },
       {
         "target": "noć",
         "source": "noc",
         "lemma": "noć",
         "partOfSpeech": "noun",
-        "recordId": "A1-0583"
+        "recordId": "A1-0583",
+        "audioSrc": "/audio/hr/a1/module-07/noc.mp3"
       },
       {
         "target": "recepcija",
         "source": "recepcja",
         "lemma": "recepcija",
         "partOfSpeech": "noun",
-        "recordId": "A1-0584"
+        "recordId": "A1-0584",
+        "audioSrc": "/audio/hr/a1/module-07/recepcija.mp3"
       },
       {
         "target": "doručak",
         "source": "śniadanie",
         "lemma": "doručak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0585"
+        "recordId": "A1-0585",
+        "audioSrc": "/audio/hr/a1/module-07/dorucak.mp3"
       },
       {
         "target": "jednokrevetna soba",
         "source": "pokój jednoosobowy",
         "lemma": "soba",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1065"
+        "recordId": "A1-1065",
+        "audioSrc": "/audio/hr/a1/module-07/jednokrevetna-soba.mp3"
       },
       {
         "target": "dvokrevetna soba",
         "source": "pokój dwuosobowy",
         "lemma": "soba",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1066"
+        "recordId": "A1-1066",
+        "audioSrc": "/audio/hr/a1/module-07/dvokrevetna-soba.mp3"
       },
       {
         "target": "osobna iskaznica",
         "source": "dowód osobisty",
         "lemma": "iskaznica",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1067"
+        "recordId": "A1-1067",
+        "audioSrc": "/audio/hr/a1/module-07/osobna-iskaznica.mp3"
       },
       {
         "target": "lift",
         "source": "winda",
         "lemma": "lift",
         "partOfSpeech": "noun",
-        "recordId": "A1-1068"
+        "recordId": "A1-1068",
+        "audioSrc": "/audio/hr/a1/module-07/lift.mp3"
       },
       {
         "target": "kupaonica",
         "source": "łazienka",
         "lemma": "kupaonica",
         "partOfSpeech": "noun",
-        "recordId": "A1-1069"
+        "recordId": "A1-1069",
+        "audioSrc": "/audio/hr/a1/module-07/kupaonica.mp3"
       },
       {
         "target": "klima",
         "source": "klimatyzacja",
         "lemma": "klima",
         "partOfSpeech": "noun",
-        "recordId": "A1-1070"
+        "recordId": "A1-1070",
+        "audioSrc": "/audio/hr/a1/module-07/klima.mp3"
       },
       {
         "target": "balkon",
         "source": "balkon",
         "lemma": "balkon",
         "partOfSpeech": "noun",
-        "recordId": "A1-1071"
+        "recordId": "A1-1071",
+        "audioSrc": "/audio/hr/a1/module-07/balkon.mp3"
       },
       {
         "target": "lozinka",
         "source": "hasło",
         "lemma": "lozinka",
         "partOfSpeech": "noun",
-        "recordId": "A1-1072"
+        "recordId": "A1-1072",
+        "audioSrc": "/audio/hr/a1/module-07/lozinka.mp3"
       },
       {
         "target": "prijava",
         "source": "zameldowanie",
         "lemma": "prijava",
         "partOfSpeech": "noun",
-        "recordId": "A1-1073"
+        "recordId": "A1-1073",
+        "audioSrc": "/audio/hr/a1/module-07/prijava.mp3"
       },
       {
         "target": "odjava",
         "source": "wymeldowanie",
         "lemma": "odjava",
         "partOfSpeech": "noun",
-        "recordId": "A1-1074"
+        "recordId": "A1-1074",
+        "audioSrc": "/audio/hr/a1/module-07/odjava.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Imam rezervaciju.",
-            "source": "Mam rezerwację."
+            "source": "Mam rezerwację.",
+            "audioSrc": "/audio/hr/a1/module-07/imam-rezervaciju.mp3"
           },
           {
             "target": "Rezervacija je na ime Michał.",
-            "source": "Rezerwacja jest na nazwisko / imię Michał."
+            "source": "Rezerwacja jest na nazwisko / imię Michał.",
+            "audioSrc": "/audio/hr/a1/module-07/rezervacija-je-na-ime-michal.mp3"
           },
           {
             "target": "Gdje je recepcija?",
-            "source": "Gdzie jest recepcja?"
+            "source": "Gdzie jest recepcja?",
+            "audioSrc": "/audio/hr/a1/module-07/gdje-je-recepcija.mp3"
           }
         ]
       },
@@ -163,7 +184,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "hotel",
         "source": "hotel",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-07/hotel.mp3"
       },
       {
         "id": "word-2",
@@ -174,8 +196,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Soba je na trećem katu.",
-          "source": "Pokój jest na trzecim piętrze."
-        }
+          "source": "Pokój jest na trzecim piętrze.",
+          "audioSrc": "/audio/hr/a1/module-07/soba-je-na-trecem-katu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/soba.mp3"
       },
       {
         "id": "word-3",
@@ -186,8 +210,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Rezervacija je na ime Michał.",
-          "source": "Rezerwacja jest na nazwisko / imię Michał."
-        }
+          "source": "Rezerwacja jest na nazwisko / imię Michał.",
+          "audioSrc": "/audio/hr/a1/module-07/rezervacija-je-na-ime-michal.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/rezervacija.mp3"
       },
       {
         "id": "check-1",
@@ -201,7 +227,8 @@ export const LESSON: GeneratedLesson = {
           "noc"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/hotel.mp3"
       },
       {
         "id": "word-4",
@@ -209,7 +236,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "ključ",
         "source": "klucz",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-07/kljuc.mp3"
       },
       {
         "id": "word-5",
@@ -220,8 +248,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ovo je moja putovnica.",
-          "source": "To jest mój paszport."
-        }
+          "source": "To jest mój paszport.",
+          "audioSrc": "/audio/hr/a1/module-07/ovo-je-moja-putovnica.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/putovnica.mp3"
       },
       {
         "id": "word-6",
@@ -232,8 +262,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Trebam sobu za dvije noći.",
-          "source": "Potrzebuję pokoju na dwie noce."
-        }
+          "source": "Potrzebuję pokoju na dwie noce.",
+          "audioSrc": "/audio/hr/a1/module-07/trebam-sobu-za-dvije-noci.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/noc.mp3"
       },
       {
         "id": "check-2",
@@ -247,7 +279,8 @@ export const LESSON: GeneratedLesson = {
           "soba"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-07/putovnica.mp3"
       },
       {
         "id": "word-7",
@@ -258,8 +291,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Gdje je recepcija?",
-          "source": "Gdzie jest recepcja?"
-        }
+          "source": "Gdzie jest recepcja?",
+          "audioSrc": "/audio/hr/a1/module-07/gdje-je-recepcija.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/recepcija.mp3"
       },
       {
         "id": "word-8",
@@ -270,8 +305,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Je li doručak uključen?",
-          "source": "Czy śniadanie jest wliczone?"
-        }
+          "source": "Czy śniadanie jest wliczone?",
+          "audioSrc": "/audio/hr/a1/module-07/je-li-dorucak-ukljucen.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-07/dorucak.mp3"
       },
       {
         "id": "check-3",
@@ -285,7 +322,8 @@ export const LESSON: GeneratedLesson = {
           "śniadanie"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/dorucak.mp3"
       },
       {
         "id": "more-words",
@@ -297,52 +335,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "jednokrevetna soba",
             "source": "pokój jednoosobowy",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/jednokrevetna-soba.mp3"
           },
           {
             "target": "dvokrevetna soba",
             "source": "pokój dwuosobowy",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/dvokrevetna-soba.mp3"
           },
           {
             "target": "osobna iskaznica",
             "source": "dowód osobisty",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/osobna-iskaznica.mp3"
           },
           {
             "target": "lift",
             "source": "winda",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/lift.mp3"
           },
           {
             "target": "kupaonica",
             "source": "łazienka",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/kupaonica.mp3"
           },
           {
             "target": "klima",
             "source": "klimatyzacja",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/klima.mp3"
           },
           {
             "target": "balkon",
             "source": "balkon",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/balkon.mp3"
           },
           {
             "target": "lozinka",
             "source": "hasło",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/lozinka.mp3"
           },
           {
             "target": "prijava",
             "source": "zameldowanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/prijava.mp3"
           },
           {
             "target": "odjava",
             "source": "wymeldowanie",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/odjava.mp3"
           }
         ]
       },
@@ -358,7 +406,8 @@ export const LESSON: GeneratedLesson = {
           "dowód osobisty"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/lift.mp3"
       },
       {
         "id": "examples",
@@ -369,19 +418,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Trebam dvokrevetnu sobu za tri noći.",
-            "source": "Potrzebuję pokoju dwuosobowego na trzy noce."
+            "source": "Potrzebuję pokoju dwuosobowego na trzy noce.",
+            "audioSrc": "/audio/hr/a1/module-07/trebam-dvokrevetnu-sobu-za-tri-noci.mp3"
           },
           {
             "target": "Soba je na trećem katu.",
-            "source": "Pokój jest na trzecim piętrze."
+            "source": "Pokój jest na trzecim piętrze.",
+            "audioSrc": "/audio/hr/a1/module-07/soba-je-na-trecem-katu.mp3"
           },
           {
             "target": "Koja je lozinka za internet?",
-            "source": "Jakie jest hasło do internetu?"
+            "source": "Jakie jest hasło do internetu?",
+            "audioSrc": "/audio/hr/a1/module-07/koja-je-lozinka-za-internet.mp3"
           },
           {
             "target": "Odjava je do jedanaest sati.",
-            "source": "Wymeldowanie jest do jedenastej."
+            "source": "Wymeldowanie jest do jedenastej.",
+            "audioSrc": "/audio/hr/a1/module-07/odjava-je-do-jedanaest-sati.mp3"
           }
         ]
       },
@@ -394,15 +447,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Imam rezervaciju.",
-            "source": "Mam rezerwację."
+            "source": "Mam rezerwację.",
+            "audioSrc": "/audio/hr/a1/module-07/imam-rezervaciju.mp3"
           },
           {
             "target": "Rezervacija je na ime Michał.",
-            "source": "Rezerwacja jest na nazwisko / imię Michał."
+            "source": "Rezerwacja jest na nazwisko / imię Michał.",
+            "audioSrc": "/audio/hr/a1/module-07/rezervacija-je-na-ime-michal.mp3"
           },
           {
             "target": "Trebam sobu za dvije noći.",
-            "source": "Potrzebuję pokoju na dwie noce."
+            "source": "Potrzebuję pokoju na dwie noce.",
+            "audioSrc": "/audio/hr/a1/module-07/trebam-sobu-za-dvije-noci.mp3"
           }
         ]
       },
@@ -416,7 +472,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "rezervaciju"
         ],
-        "translation": "Mam rezerwację."
+        "translation": "Mam rezerwację.",
+        "answerAudioSrc": "/audio/hr/a1/module-07/imam-rezervaciju.mp3"
       },
       {
         "id": "comprehend",
@@ -430,7 +487,8 @@ export const LESSON: GeneratedLesson = {
           "Rezerwacja jest na nazwisko / imię Michał."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/ovo-je-moja-putovnica.mp3"
       },
       {
         "id": "translate-1",
@@ -440,7 +498,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Gdzie jest recepcja?",
         "accepted": [
           "Gdje je recepcija?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/gdje-je-recepcija.mp3"
       },
       {
         "id": "order",
@@ -457,7 +516,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Trebam sobu za dvije noći."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/trebam-sobu-za-dvije-noci.mp3"
       },
       {
         "id": "translate-2",
@@ -467,7 +527,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Czy śniadanie jest wliczone?",
         "accepted": [
           "Je li doručak uključen?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/je-li-dorucak-ukljucen.mp3"
       },
       {
         "id": "listening",
@@ -534,27 +595,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Recepcionar",
             "text": "Dobar dan, dobro došli!",
-            "translation": "Dzień dobry, witamy!"
+            "translation": "Dzień dobry, witamy!",
+            "audioSrc": "/audio/hr/a1/module-07/dobar-dan-dobro-dosli-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Dobar dan. Imam rezervaciju na ime Ana Kovač.",
-            "translation": "Dzień dobry. Mam rezerwację na nazwisko Ana Kovač."
+            "translation": "Dzień dobry. Mam rezerwację na nazwisko Ana Kovač.",
+            "audioSrc": "/audio/hr/a1/module-07/dobar-dan-imam-rezervaciju-na-ime-ana-kovac.mp3"
           },
           {
             "speaker": "Recepcionar",
             "text": "Da, dvokrevetna soba za dvije noći. Vašu putovnicu, molim.",
-            "translation": "Tak, pokój dwuosobowy na dwie noce. Poproszę paszport."
+            "translation": "Tak, pokój dwuosobowy na dwie noce. Poproszę paszport.",
+            "audioSrc": "/audio/hr/a1/module-07/da-dvokrevetna-soba-za-dvije-noci-vasu-putovnicu-molim-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Izvolite. Je li doručak uključen?",
-            "translation": "Proszę. Czy śniadanie jest wliczone?"
+            "translation": "Proszę. Czy śniadanie jest wliczone?",
+            "audioSrc": "/audio/hr/a1/module-07/izvolite-je-li-dorucak-ukljucen.mp3"
           },
           {
             "speaker": "Recepcionar",
             "text": "Da, od sedam do deset. Soba je na trećem katu.",
-            "translation": "Tak, od siódmej do dziesiątej. Pokój jest na trzecim piętrze."
+            "translation": "Tak, od siódmej do dziesiątej. Pokój jest na trzecim piętrze.",
+            "audioSrc": "/audio/hr/a1/module-07/da-od-sedam-do-deset-soba-je-na-trecem-katu-m.mp3"
           },
           {
             "speaker": "Ana",
@@ -575,7 +641,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Recepcionar",
               "text": "Dobar dan. Izvolite?",
-              "translation": "Dzień dobry. W czym mogę pomóc?"
+              "translation": "Dzień dobry. W czym mogę pomóc?",
+              "audioSrc": "/audio/hr/a1/module-04/dobar-dan-izvolite-m.mp3"
             }
           },
           {
@@ -586,14 +653,16 @@ export const LESSON: GeneratedLesson = {
               "Dobar dan, imam rezervaciju."
             ],
             "pattern": "^(dobar dan )?imam rezervaciju( na ime \\p{L}+)?$",
-            "suggestion": "Imam rezervaciju."
+            "suggestion": "Imam rezervaciju.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/imam-rezervaciju.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Recepcionar",
               "text": "Na koje ime?",
-              "translation": "Na jakie nazwisko?"
+              "translation": "Na jakie nazwisko?",
+              "audioSrc": "/audio/hr/a1/module-07/na-koje-ime-m.mp3"
             }
           },
           {
@@ -604,14 +673,16 @@ export const LESSON: GeneratedLesson = {
               "Na ime Michał."
             ],
             "pattern": "^(rezervacija je )?na ime \\p{L}+( \\p{L}+)?$",
-            "suggestion": "Rezervacija je na ime Michał."
+            "suggestion": "Rezervacija je na ime Michał.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/rezervacija-je-na-ime-michal.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Recepcionar",
               "text": "Mogu li vidjeti vašu putovnicu?",
-              "translation": "Czy mogę zobaczyć paszport?"
+              "translation": "Czy mogę zobaczyć paszport?",
+              "audioSrc": "/audio/hr/a1/module-07/mogu-li-vidjeti-vasu-putovnicu-m.mp3"
             }
           },
           {
@@ -622,7 +693,8 @@ export const LESSON: GeneratedLesson = {
               "Izvolite."
             ],
             "pattern": "^(izvolite|ovo je moja putovnica|izvolite ovo je moja putovnica)$",
-            "suggestion": "Ovo je moja putovnica."
+            "suggestion": "Ovo je moja putovnica.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/ovo-je-moja-putovnica.mp3"
           }
         ]
       },
@@ -652,7 +724,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Imam rezervaciju na ime Michał. Trebam sobu za dvije noći."
+        "sample": "Imam rezervaciju na ime Michał. Trebam sobu za dvije noći.",
+        "sampleAudioSrc": "/audio/hr/a1/module-07/imam-rezervaciju-na-ime-michal-trebam-sobu-za-dvije-noci.mp3"
       },
       {
         "id": "summary",
@@ -662,19 +735,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Imam rezervaciju.",
-            "source": "Mam rezerwację."
+            "source": "Mam rezerwację.",
+            "audioSrc": "/audio/hr/a1/module-07/imam-rezervaciju.mp3"
           },
           {
             "target": "Rezervacija je na ime Michał.",
-            "source": "Rezerwacja jest na nazwisko / imię Michał."
+            "source": "Rezerwacja jest na nazwisko / imię Michał.",
+            "audioSrc": "/audio/hr/a1/module-07/rezervacija-je-na-ime-michal.mp3"
           },
           {
             "target": "Gdje je recepcija?",
-            "source": "Gdzie jest recepcja?"
+            "source": "Gdzie jest recepcja?",
+            "audioSrc": "/audio/hr/a1/module-07/gdje-je-recepcija.mp3"
           },
           {
             "target": "Trebam sobu za dvije noći.",
-            "source": "Potrzebuję pokoju na dwie noce."
+            "source": "Potrzebuję pokoju na dwie noce.",
+            "audioSrc": "/audio/hr/a1/module-07/trebam-sobu-za-dvije-noci.mp3"
           }
         ]
       }

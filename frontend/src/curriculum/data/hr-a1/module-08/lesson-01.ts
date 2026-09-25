@@ -12,126 +12,144 @@ export const LESSON: GeneratedLesson = {
         "source": "wczoraj",
         "lemma": "jučer",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0632"
+        "recordId": "A1-0632",
+        "audioSrc": "/audio/hr/a1/module-08/jucer.mp3"
       },
       {
         "target": "bio",
         "source": "był",
         "lemma": "bio",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-0633"
+        "recordId": "A1-0633",
+        "audioSrc": "/audio/hr/a1/module-08/bio.mp3"
       },
       {
         "target": "bila",
         "source": "była",
         "lemma": "bila",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-0634"
+        "recordId": "A1-0634",
+        "audioSrc": "/audio/hr/a1/module-08/bila.mp3"
       },
       {
         "target": "radio",
         "source": "pracował / robił",
         "lemma": "radio",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-0635"
+        "recordId": "A1-0635",
+        "audioSrc": "/audio/hr/a1/module-08/radio.mp3"
       },
       {
         "target": "radila",
         "source": "pracowała / robiła",
         "lemma": "radila",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-0636"
+        "recordId": "A1-0636",
+        "audioSrc": "/audio/hr/a1/module-08/radila.mp3"
       },
       {
         "target": "išao",
         "source": "szedł / jechał",
         "lemma": "išao",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-0637"
+        "recordId": "A1-0637",
+        "audioSrc": "/audio/hr/a1/module-08/isao.mp3"
       },
       {
         "target": "išla",
         "source": "szła / jechała",
         "lemma": "išla",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-0638"
+        "recordId": "A1-0638",
+        "audioSrc": "/audio/hr/a1/module-08/isla.mp3"
       },
       {
         "target": "vidjeti",
         "source": "widzieć",
         "lemma": "vidjeti",
         "partOfSpeech": "verb",
-        "recordId": "A1-0639"
+        "recordId": "A1-0639",
+        "audioSrc": "/audio/hr/a1/module-08/vidjeti.mp3"
       },
       {
         "target": "prekjučer",
         "source": "przedwczoraj",
         "lemma": "prekjučer",
         "partOfSpeech": "adverb",
-        "recordId": "A1-1099"
+        "recordId": "A1-1099",
+        "audioSrc": "/audio/hr/a1/module-08/prekjucer.mp3"
       },
       {
         "target": "sinoć",
         "source": "wczoraj wieczorem",
         "lemma": "sinoć",
         "partOfSpeech": "adverb",
-        "recordId": "A1-1100"
+        "recordId": "A1-1100",
+        "audioSrc": "/audio/hr/a1/module-08/sinoc.mp3"
       },
       {
         "target": "prošli tjedan",
         "source": "w zeszłym tygodniu",
         "lemma": "tjedan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1101"
+        "recordId": "A1-1101",
+        "audioSrc": "/audio/hr/a1/module-08/prosli-tjedan.mp3"
       },
       {
         "target": "bili",
         "source": "byli",
         "lemma": "biti",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-1102"
+        "recordId": "A1-1102",
+        "audioSrc": "/audio/hr/a1/module-08/bili.mp3"
       },
       {
         "target": "jeo",
         "source": "jadł",
         "lemma": "jesti",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-1103"
+        "recordId": "A1-1103",
+        "audioSrc": "/audio/hr/a1/module-08/jeo.mp3"
       },
       {
         "target": "jela",
         "source": "jadła",
         "lemma": "jesti",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-1104"
+        "recordId": "A1-1104",
+        "audioSrc": "/audio/hr/a1/module-08/jela.mp3"
       },
       {
         "target": "gledao",
         "source": "oglądał",
         "lemma": "gledati",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-1105"
+        "recordId": "A1-1105",
+        "audioSrc": "/audio/hr/a1/module-08/gledao.mp3"
       },
       {
         "target": "gledala",
         "source": "oglądała",
         "lemma": "gledati",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-1106"
+        "recordId": "A1-1106",
+        "audioSrc": "/audio/hr/a1/module-08/gledala.mp3"
       },
       {
         "target": "kupio",
         "source": "kupił",
         "lemma": "kupiti",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-1107"
+        "recordId": "A1-1107",
+        "audioSrc": "/audio/hr/a1/module-08/kupio.mp3"
       },
       {
         "target": "kupila",
         "source": "kupiła",
         "lemma": "kupiti",
         "partOfSpeech": "verb_form",
-        "recordId": "A1-1108"
+        "recordId": "A1-1108",
+        "audioSrc": "/audio/hr/a1/module-08/kupila.mp3"
       }
     ],
     "steps": [
@@ -145,15 +163,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Jučer sam radio.",
-            "source": "Wczoraj pracowałem."
+            "source": "Wczoraj pracowałem.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
           },
           {
             "target": "Jučer sam radila.",
-            "source": "Wczoraj pracowałam."
+            "source": "Wczoraj pracowałam.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radila.mp3"
           },
           {
             "target": "Bio sam kod kuće.",
-            "source": "Byłem w domu."
+            "source": "Byłem w domu.",
+            "audioSrc": "/audio/hr/a1/module-08/bio-sam-kod-kuce.mp3"
           }
         ]
       },
@@ -166,8 +187,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Jučer sam radio.",
-          "source": "Wczoraj pracowałem."
-        }
+          "source": "Wczoraj pracowałem.",
+          "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/jucer.mp3"
       },
       {
         "id": "word-2",
@@ -178,8 +201,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "forma czasownika",
         "example": {
           "target": "Bio sam kod kuće.",
-          "source": "Byłem w domu."
-        }
+          "source": "Byłem w domu.",
+          "audioSrc": "/audio/hr/a1/module-08/bio-sam-kod-kuce.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/bio.mp3"
       },
       {
         "id": "word-3",
@@ -190,8 +215,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "forma czasownika",
         "example": {
           "target": "Bila sam kod kuće.",
-          "source": "Byłam w domu."
-        }
+          "source": "Byłam w domu.",
+          "audioSrc": "/audio/hr/a1/module-08/bila-sam-kod-kuce.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/bila.mp3"
       },
       {
         "id": "check-1",
@@ -205,7 +232,8 @@ export const LESSON: GeneratedLesson = {
           "była"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/jucer.mp3"
       },
       {
         "id": "word-4",
@@ -216,8 +244,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "forma czasownika",
         "example": {
           "target": "Jučer sam radio.",
-          "source": "Wczoraj pracowałem."
-        }
+          "source": "Wczoraj pracowałem.",
+          "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/radio.mp3"
       },
       {
         "id": "word-5",
@@ -228,8 +258,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "forma czasownika",
         "example": {
           "target": "Jučer sam radila.",
-          "source": "Wczoraj pracowałam."
-        }
+          "source": "Wczoraj pracowałam.",
+          "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radila.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/radila.mp3"
       },
       {
         "id": "word-6",
@@ -240,8 +272,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "forma czasownika",
         "example": {
           "target": "Išao sam u grad.",
-          "source": "Poszedłem / pojechałem do miasta."
-        }
+          "source": "Poszedłem / pojechałem do miasta.",
+          "audioSrc": "/audio/hr/a1/module-08/isao-sam-u-grad.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/isao.mp3"
       },
       {
         "id": "check-2",
@@ -255,7 +289,8 @@ export const LESSON: GeneratedLesson = {
           "bila"
         ],
         "correctIndex": 1,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-08/radila.mp3"
       },
       {
         "id": "word-7",
@@ -263,7 +298,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "išla",
         "source": "szła / jechała",
-        "partOfSpeech": "forma czasownika"
+        "partOfSpeech": "forma czasownika",
+        "audioSrc": "/audio/hr/a1/module-08/isla.mp3"
       },
       {
         "id": "word-8",
@@ -274,8 +310,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Vidjela sam prijateljicu.",
-          "source": "Widziałam przyjaciółkę."
-        }
+          "source": "Widziałam przyjaciółkę.",
+          "audioSrc": "/audio/hr/a1/module-08/vidjela-sam-prijateljicu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-08/vidjeti.mp3"
       },
       {
         "id": "check-3",
@@ -289,7 +327,8 @@ export const LESSON: GeneratedLesson = {
           "szła / jechała"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/isla.mp3"
       },
       {
         "id": "more-words",
@@ -301,52 +340,62 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "prekjučer",
             "source": "przedwczoraj",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/prekjucer.mp3"
           },
           {
             "target": "sinoć",
             "source": "wczoraj wieczorem",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-08/sinoc.mp3"
           },
           {
             "target": "prošli tjedan",
             "source": "w zeszłym tygodniu",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-08/prosli-tjedan.mp3"
           },
           {
             "target": "bili",
             "source": "byli",
-            "partOfSpeech": "forma czasownika"
+            "partOfSpeech": "forma czasownika",
+            "audioSrc": "/audio/hr/a1/module-08/bili.mp3"
           },
           {
             "target": "jeo",
             "source": "jadł",
-            "partOfSpeech": "forma czasownika"
+            "partOfSpeech": "forma czasownika",
+            "audioSrc": "/audio/hr/a1/module-08/jeo.mp3"
           },
           {
             "target": "jela",
             "source": "jadła",
-            "partOfSpeech": "forma czasownika"
+            "partOfSpeech": "forma czasownika",
+            "audioSrc": "/audio/hr/a1/module-08/jela.mp3"
           },
           {
             "target": "gledao",
             "source": "oglądał",
-            "partOfSpeech": "forma czasownika"
+            "partOfSpeech": "forma czasownika",
+            "audioSrc": "/audio/hr/a1/module-08/gledao.mp3"
           },
           {
             "target": "gledala",
             "source": "oglądała",
-            "partOfSpeech": "forma czasownika"
+            "partOfSpeech": "forma czasownika",
+            "audioSrc": "/audio/hr/a1/module-08/gledala.mp3"
           },
           {
             "target": "kupio",
             "source": "kupił",
-            "partOfSpeech": "forma czasownika"
+            "partOfSpeech": "forma czasownika",
+            "audioSrc": "/audio/hr/a1/module-08/kupio.mp3"
           },
           {
             "target": "kupila",
             "source": "kupiła",
-            "partOfSpeech": "forma czasownika"
+            "partOfSpeech": "forma czasownika",
+            "audioSrc": "/audio/hr/a1/module-08/kupila.mp3"
           }
         ]
       },
@@ -362,7 +411,8 @@ export const LESSON: GeneratedLesson = {
           "przedwczoraj"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/gledao.mp3"
       },
       {
         "id": "examples",
@@ -373,19 +423,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Sinoć sam gledao film.",
-            "source": "Wczoraj wieczorem oglądałem film."
+            "source": "Wczoraj wieczorem oglądałem film.",
+            "audioSrc": "/audio/hr/a1/module-08/sinoc-sam-gledao-film.mp3"
           },
           {
             "target": "Jučer sam jela ribu.",
-            "source": "Wczoraj jadłam rybę."
+            "source": "Wczoraj jadłam rybę.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-jela-ribu.mp3"
           },
           {
             "target": "Prošli tjedan smo bili na moru.",
-            "source": "W zeszłym tygodniu byliśmy nad morzem."
+            "source": "W zeszłym tygodniu byliśmy nad morzem.",
+            "audioSrc": "/audio/hr/a1/module-08/prosli-tjedan-smo-bili-na-moru.mp3"
           },
           {
             "target": "Kupila sam novu knjigu.",
-            "source": "Kupiłam nową książkę."
+            "source": "Kupiłam nową książkę.",
+            "audioSrc": "/audio/hr/a1/module-08/kupila-sam-novu-knjigu.mp3"
           }
         ]
       },
@@ -398,27 +452,33 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Jučer sam radio.",
-            "source": "Wczoraj pracowałem."
+            "source": "Wczoraj pracowałem.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
           },
           {
             "target": "Jučer sam radila.",
-            "source": "Wczoraj pracowałam."
+            "source": "Wczoraj pracowałam.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radila.mp3"
           },
           {
             "target": "Bio sam kod kuće.",
-            "source": "Byłem w domu."
+            "source": "Byłem w domu.",
+            "audioSrc": "/audio/hr/a1/module-08/bio-sam-kod-kuce.mp3"
           },
           {
             "target": "Bila sam kod kuće.",
-            "source": "Byłam w domu."
+            "source": "Byłam w domu.",
+            "audioSrc": "/audio/hr/a1/module-08/bila-sam-kod-kuce.mp3"
           },
           {
             "target": "Išao sam u grad.",
-            "source": "Poszedłem / pojechałem do miasta."
+            "source": "Poszedłem / pojechałem do miasta.",
+            "audioSrc": "/audio/hr/a1/module-08/isao-sam-u-grad.mp3"
           },
           {
             "target": "Vidjela sam prijateljicu.",
-            "source": "Widziałam przyjaciółkę."
+            "source": "Widziałam przyjaciółkę.",
+            "audioSrc": "/audio/hr/a1/module-08/vidjela-sam-prijateljicu.mp3"
           }
         ],
         "note": "Gdy zdanie zaczyna się od czasownika, sam stoi zaraz za nim: Bio sam kod kuće."
@@ -433,7 +493,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Bila"
         ],
-        "translation": "Byłam w domu."
+        "translation": "Byłam w domu.",
+        "answerAudioSrc": "/audio/hr/a1/module-08/bila-sam-kod-kuce.mp3"
       },
       {
         "id": "translate-1",
@@ -444,7 +505,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Jučer sam radio.",
           "Radio sam jučer."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
       },
       {
         "id": "order",
@@ -460,7 +522,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Išao sam u grad."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/isao-sam-u-grad.mp3"
       },
       {
         "id": "choice-1",
@@ -475,7 +538,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "explanation": "Kobieta mówi radila; sam = ja, si = ty.",
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radila.mp3"
       },
       {
         "id": "choice-2",
@@ -490,7 +554,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "explanation": "Mężczyzna: bio; o sobie: sam.",
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-08/bio-sam-kod-kuce.mp3"
       },
       {
         "id": "comprehend",
@@ -504,7 +569,8 @@ export const LESSON: GeneratedLesson = {
           "Wczoraj pracowałam."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/vidjela-sam-prijateljicu.mp3"
       },
       {
         "id": "translate-2",
@@ -515,7 +581,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Bila sam kod kuće.",
           "Ja sam bila kod kuće."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/bila-sam-kod-kuce.mp3"
       },
       {
         "id": "model",
@@ -526,27 +593,32 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Bok, Ana! Što si radila jučer?",
-            "translation": "Cześć, Ana! Co robiłaś wczoraj?"
+            "translation": "Cześć, Ana! Co robiłaś wczoraj?",
+            "audioSrc": "/audio/hr/a1/module-08/bok-ana-sto-si-radila-jucer-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Jučer sam bila u gradu. Kupila sam novu knjigu.",
-            "translation": "Wczoraj byłam w mieście. Kupiłam nową książkę."
+            "translation": "Wczoraj byłam w mieście. Kupiłam nową książkę.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-bila-u-gradu-kupila-sam-novu-knjigu.mp3"
           },
           {
             "speaker": "Marko",
             "text": "A sinoć?",
-            "translation": "A wczoraj wieczorem?"
+            "translation": "A wczoraj wieczorem?",
+            "audioSrc": "/audio/hr/a1/module-08/a-sinoc-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Sinoć sam gledala film kod kuće. A ti?",
-            "translation": "Wczoraj wieczorem oglądałam film w domu. A ty?"
+            "translation": "Wczoraj wieczorem oglądałam film w domu. A ty?",
+            "audioSrc": "/audio/hr/a1/module-08/sinoc-sam-gledala-film-kod-kuce-a-ti.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ja sam radio cijeli dan.",
-            "translation": "Ja pracowałem cały dzień."
+            "translation": "Ja pracowałem cały dzień.",
+            "audioSrc": "/audio/hr/a1/module-08/ja-sam-radio-cijeli-dan-m.mp3"
           }
         ]
       },
@@ -561,7 +633,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Što si radio jučer?",
-              "translation": "Co robiłeś wczoraj?"
+              "translation": "Co robiłeś wczoraj?",
+              "audioSrc": "/audio/hr/a1/module-08/sto-si-radio-jucer.mp3"
             }
           },
           {
@@ -576,14 +649,16 @@ export const LESSON: GeneratedLesson = {
               "Išao sam u grad."
             ],
             "pattern": "^(jučer sam (radio|radila|bio kod kuće|bila kod kuće|išao u grad|išla u grad)|(bio|bila) sam kod kuće( jučer)?|(išao|išla) sam u grad( jučer)?|(radio|radila) sam( jučer)?)$",
-            "suggestion": "Jučer sam radio."
+            "suggestion": "Jučer sam radio.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Ja sam išla u grad.",
-              "translation": "Ja poszłam do miasta."
+              "translation": "Ja poszłam do miasta.",
+              "audioSrc": "/audio/hr/a1/module-08/ja-sam-isla-u-grad.mp3"
             }
           }
         ]
@@ -619,7 +694,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Jučer sam radila. Navečer sam bila kod kuće."
+        "sample": "Jučer sam radila. Navečer sam bila kod kuće.",
+        "sampleAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radila-navecer-sam-bila-kod-kuce.mp3"
       },
       {
         "id": "summary",
@@ -629,19 +705,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Jučer sam radio.",
-            "source": "Wczoraj pracowałem."
+            "source": "Wczoraj pracowałem.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
           },
           {
             "target": "Jučer sam radila.",
-            "source": "Wczoraj pracowałam."
+            "source": "Wczoraj pracowałam.",
+            "audioSrc": "/audio/hr/a1/module-08/jucer-sam-radila.mp3"
           },
           {
             "target": "Bio sam kod kuće.",
-            "source": "Byłem w domu."
+            "source": "Byłem w domu.",
+            "audioSrc": "/audio/hr/a1/module-08/bio-sam-kod-kuce.mp3"
           },
           {
             "target": "Bila sam kod kuće.",
-            "source": "Byłam w domu."
+            "source": "Byłam w domu.",
+            "audioSrc": "/audio/hr/a1/module-08/bila-sam-kod-kuce.mp3"
           }
         ]
       }

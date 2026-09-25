@@ -12,119 +12,136 @@ export const LESSON: GeneratedLesson = {
         "source": "poniedziałek",
         "lemma": "ponedjeljak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0236"
+        "recordId": "A1-0236",
+        "audioSrc": "/audio/hr/a1/module-03/ponedjeljak.mp3"
       },
       {
         "target": "utorak",
         "source": "wtorek",
         "lemma": "utorak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0237"
+        "recordId": "A1-0237",
+        "audioSrc": "/audio/hr/a1/module-03/utorak.mp3"
       },
       {
         "target": "srijeda",
         "source": "środa",
         "lemma": "srijeda",
         "partOfSpeech": "noun",
-        "recordId": "A1-0238"
+        "recordId": "A1-0238",
+        "audioSrc": "/audio/hr/a1/module-03/srijeda.mp3"
       },
       {
         "target": "četvrtak",
         "source": "czwartek",
         "lemma": "četvrtak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0239"
+        "recordId": "A1-0239",
+        "audioSrc": "/audio/hr/a1/module-03/cetvrtak.mp3"
       },
       {
         "target": "petak",
         "source": "piątek",
         "lemma": "petak",
         "partOfSpeech": "noun",
-        "recordId": "A1-0240"
+        "recordId": "A1-0240",
+        "audioSrc": "/audio/hr/a1/module-03/petak.mp3"
       },
       {
         "target": "subota",
         "source": "sobota",
         "lemma": "subota",
         "partOfSpeech": "noun",
-        "recordId": "A1-0241"
+        "recordId": "A1-0241",
+        "audioSrc": "/audio/hr/a1/module-03/subota.mp3"
       },
       {
         "target": "nedjelja",
         "source": "niedziela",
         "lemma": "nedjelja",
         "partOfSpeech": "noun",
-        "recordId": "A1-0242"
+        "recordId": "A1-0242",
+        "audioSrc": "/audio/hr/a1/module-03/nedjelja.mp3"
       },
       {
         "target": "sutra",
         "source": "jutro",
         "lemma": "sutra",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0243"
+        "recordId": "A1-0243",
+        "audioSrc": "/audio/hr/a1/module-03/sutra.mp3"
       },
       {
         "target": "danas",
         "source": "dziś",
         "lemma": "danas",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0832"
+        "recordId": "A1-0832",
+        "audioSrc": "/audio/hr/a1/module-03/danas.mp3"
       },
       {
         "target": "prekosutra",
         "source": "pojutrze",
         "lemma": "prekosutra",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0833"
+        "recordId": "A1-0833",
+        "audioSrc": "/audio/hr/a1/module-03/prekosutra.mp3"
       },
       {
         "target": "sljedeći",
         "source": "następny",
         "lemma": "sljedeći",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0834"
+        "recordId": "A1-0834",
+        "audioSrc": "/audio/hr/a1/module-03/sljedeci.mp3"
       },
       {
         "target": "ovaj",
         "source": "ten",
         "lemma": "ovaj",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0835"
+        "recordId": "A1-0835",
+        "audioSrc": "/audio/hr/a1/module-03/ovaj.mp3"
       },
       {
         "target": "koji",
         "source": "który",
         "lemma": "koji",
         "partOfSpeech": "pronoun",
-        "recordId": "A1-0836"
+        "recordId": "A1-0836",
+        "audioSrc": "/audio/hr/a1/module-03/koji.mp3"
       },
       {
         "target": "kino",
         "source": "kino",
         "lemma": "kino",
         "partOfSpeech": "noun",
-        "recordId": "A1-0837"
+        "recordId": "A1-0837",
+        "audioSrc": "/audio/hr/a1/module-03/kino.mp3"
       },
       {
         "target": "bazen",
         "source": "basen",
         "lemma": "bazen",
         "partOfSpeech": "noun",
-        "recordId": "A1-0838"
+        "recordId": "A1-0838",
+        "audioSrc": "/audio/hr/a1/module-03/bazen.mp3"
       },
       {
         "target": "imati vremena",
         "source": "mieć czas",
         "lemma": "imati",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0839"
+        "recordId": "A1-0839",
+        "audioSrc": "/audio/hr/a1/module-03/imati-vremena.mp3"
       },
       {
         "target": "cijeli dan",
         "source": "cały dzień",
         "lemma": "dan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0840"
+        "recordId": "A1-0840",
+        "audioSrc": "/audio/hr/a1/module-03/cijeli-dan.mp3"
       }
     ],
     "steps": [
@@ -138,15 +155,18 @@ export const LESSON: GeneratedLesson = {
         "goals": [
           {
             "target": "Danas je četvrtak.",
-            "source": "Dziś jest czwartek."
+            "source": "Dziś jest czwartek.",
+            "audioSrc": "/audio/hr/a1/module-03/danas-je-cetvrtak.mp3"
           },
           {
             "target": "Sutra je petak.",
-            "source": "Jutro jest piątek."
+            "source": "Jutro jest piątek.",
+            "audioSrc": "/audio/hr/a1/module-03/sutra-je-petak.mp3"
           },
           {
             "target": "U ponedjeljak radim.",
-            "source": "W poniedziałek pracuję."
+            "source": "W poniedziałek pracuję.",
+            "audioSrc": "/audio/hr/a1/module-03/u-ponedjeljak-radim.mp3"
           }
         ]
       },
@@ -159,8 +179,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "U ponedjeljak radim.",
-          "source": "W poniedziałek pracuję."
-        }
+          "source": "W poniedziałek pracuję.",
+          "audioSrc": "/audio/hr/a1/module-03/u-ponedjeljak-radim.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/ponedjeljak.mp3"
       },
       {
         "id": "word-2",
@@ -168,7 +190,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "utorak",
         "source": "wtorek",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-03/utorak.mp3"
       },
       {
         "id": "word-3",
@@ -176,7 +199,8 @@ export const LESSON: GeneratedLesson = {
         "type": "word",
         "target": "srijeda",
         "source": "środa",
-        "partOfSpeech": "rzeczownik"
+        "partOfSpeech": "rzeczownik",
+        "audioSrc": "/audio/hr/a1/module-03/srijeda.mp3"
       },
       {
         "id": "check-1",
@@ -190,7 +214,8 @@ export const LESSON: GeneratedLesson = {
           "środa"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/srijeda.mp3"
       },
       {
         "id": "word-4",
@@ -201,8 +226,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Danas je četvrtak.",
-          "source": "Dziś jest czwartek."
-        }
+          "source": "Dziś jest czwartek.",
+          "audioSrc": "/audio/hr/a1/module-03/danas-je-cetvrtak.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/cetvrtak.mp3"
       },
       {
         "id": "word-5",
@@ -213,8 +240,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Sutra je petak.",
-          "source": "Jutro jest piątek."
-        }
+          "source": "Jutro jest piątek.",
+          "audioSrc": "/audio/hr/a1/module-03/sutra-je-petak.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/petak.mp3"
       },
       {
         "id": "word-6",
@@ -225,8 +254,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Prekosutra je subota.",
-          "source": "Pojutrze jest sobota."
-        }
+          "source": "Pojutrze jest sobota.",
+          "audioSrc": "/audio/hr/a1/module-03/prekosutra-je-subota.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/subota.mp3"
       },
       {
         "id": "check-2",
@@ -240,7 +271,8 @@ export const LESSON: GeneratedLesson = {
           "sutra"
         ],
         "correctIndex": 0,
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-03/cetvrtak.mp3"
       },
       {
         "id": "word-7",
@@ -251,8 +283,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "U nedjelju se odmaram.",
-          "source": "W niedzielę odpoczywam."
-        }
+          "source": "W niedzielę odpoczywam.",
+          "audioSrc": "/audio/hr/a1/module-03/u-nedjelju-se-odmaram.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/nedjelja.mp3"
       },
       {
         "id": "word-8",
@@ -263,8 +297,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Sutra je petak.",
-          "source": "Jutro jest piątek."
-        }
+          "source": "Jutro jest piątek.",
+          "audioSrc": "/audio/hr/a1/module-03/sutra-je-petak.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/sutra.mp3"
       },
       {
         "id": "check-3",
@@ -278,7 +314,8 @@ export const LESSON: GeneratedLesson = {
           "sobota"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/nedjelja.mp3"
       },
       {
         "id": "more-words",
@@ -290,47 +327,56 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "danas",
             "source": "dziś",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/danas.mp3"
           },
           {
             "target": "prekosutra",
             "source": "pojutrze",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/prekosutra.mp3"
           },
           {
             "target": "sljedeći",
             "source": "następny",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-03/sljedeci.mp3"
           },
           {
             "target": "ovaj",
             "source": "ten",
-            "partOfSpeech": "zaimek"
+            "partOfSpeech": "zaimek",
+            "audioSrc": "/audio/hr/a1/module-03/ovaj.mp3"
           },
           {
             "target": "koji",
             "source": "który",
-            "partOfSpeech": "zaimek"
+            "partOfSpeech": "zaimek",
+            "audioSrc": "/audio/hr/a1/module-03/koji.mp3"
           },
           {
             "target": "kino",
             "source": "kino",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/kino.mp3"
           },
           {
             "target": "bazen",
             "source": "basen",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/bazen.mp3"
           },
           {
             "target": "imati vremena",
             "source": "mieć czas",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-03/imati-vremena.mp3"
           },
           {
             "target": "cijeli dan",
             "source": "cały dzień",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-03/cijeli-dan.mp3"
           }
         ]
       },
@@ -346,7 +392,8 @@ export const LESSON: GeneratedLesson = {
           "kino"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/kino.mp3"
       },
       {
         "id": "examples",
@@ -357,19 +404,23 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Prekosutra je subota.",
-            "source": "Pojutrze jest sobota."
+            "source": "Pojutrze jest sobota.",
+            "audioSrc": "/audio/hr/a1/module-03/prekosutra-je-subota.mp3"
           },
           {
             "target": "Ovaj tjedan radim svaki dan.",
-            "source": "W tym tygodniu pracuję codziennie."
+            "source": "W tym tygodniu pracuję codziennie.",
+            "audioSrc": "/audio/hr/a1/module-03/ovaj-tjedan-radim-svaki-dan.mp3"
           },
           {
             "target": "U petak navečer idem u kino.",
-            "source": "W piątek wieczorem idę do kina."
+            "source": "W piątek wieczorem idę do kina.",
+            "audioSrc": "/audio/hr/a1/module-03/u-petak-navecer-idem-u-kino.mp3"
           },
           {
             "target": "Imaš li vremena u nedjelju?",
-            "source": "Masz czas w niedzielę?"
+            "source": "Masz czas w niedzielę?",
+            "audioSrc": "/audio/hr/a1/module-03/imas-li-vremena-u-nedjelju.mp3"
           }
         ]
       },
@@ -382,15 +433,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "U ponedjeljak radim.",
-            "source": "W poniedziałek pracuję."
+            "source": "W poniedziałek pracuję.",
+            "audioSrc": "/audio/hr/a1/module-03/u-ponedjeljak-radim.mp3"
           },
           {
             "target": "U subotu idem u grad.",
-            "source": "W sobotę idę do miasta."
+            "source": "W sobotę idę do miasta.",
+            "audioSrc": "/audio/hr/a1/module-03/u-subotu-idem-u-grad.mp3"
           },
           {
             "target": "Sutra idem na bazen.",
-            "source": "Jutro idę na basen."
+            "source": "Jutro idę na basen.",
+            "audioSrc": "/audio/hr/a1/module-03/sutra-idem-na-bazen.mp3"
           }
         ]
       },
@@ -404,7 +458,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "subotu"
         ],
-        "translation": "W sobotę idę do miasta."
+        "translation": "W sobotę idę do miasta.",
+        "answerAudioSrc": "/audio/hr/a1/module-03/u-subotu-idem-u-grad.mp3"
       },
       {
         "id": "translate-1",
@@ -414,7 +469,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Jutro jest piątek.",
         "accepted": [
           "Sutra je petak."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/sutra-je-petak.mp3"
       },
       {
         "id": "order",
@@ -431,7 +487,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "U subotu idem u grad."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/u-subotu-idem-u-grad.mp3"
       },
       {
         "id": "comprehend",
@@ -445,7 +502,8 @@ export const LESSON: GeneratedLesson = {
           "W niedzielę odpoczywam."
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/u-nedjelju-se-odmaram.mp3"
       },
       {
         "id": "translate-2",
@@ -456,7 +514,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "U ponedjeljak radim.",
           "Radim u ponedjeljak."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/u-ponedjeljak-radim.mp3"
       },
       {
         "id": "model",
@@ -467,32 +526,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Koji je danas dan?",
-            "translation": "Jaki jest dziś dzień?"
+            "translation": "Jaki jest dziś dzień?",
+            "audioSrc": "/audio/hr/a1/module-03/koji-je-danas-dan-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Danas je srijeda.",
-            "translation": "Dziś jest środa."
+            "translation": "Dziś jest środa.",
+            "audioSrc": "/audio/hr/a1/module-03/danas-je-srijeda.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Imaš li vremena u petak?",
-            "translation": "Masz czas w piątek?"
+            "translation": "Masz czas w piątek?",
+            "audioSrc": "/audio/hr/a1/module-03/imas-li-vremena-u-petak-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "U petak radim cijeli dan. Ali u subotu sam slobodna.",
-            "translation": "W piątek pracuję cały dzień. Ale w sobotę jestem wolna."
+            "translation": "W piątek pracuję cały dzień. Ale w sobotę jestem wolna.",
+            "audioSrc": "/audio/hr/a1/module-03/u-petak-radim-cijeli-dan-ali-u-subotu-sam-slobodna.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Super! Idemo u kino u subotu?",
-            "translation": "Super! Idziemy do kina w sobotę?"
+            "translation": "Super! Idziemy do kina w sobotę?",
+            "audioSrc": "/audio/hr/a1/module-03/super-idemo-u-kino-u-subotu-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Može!",
-            "translation": "Pasuje!"
+            "translation": "Pasuje!",
+            "audioSrc": "/audio/hr/a1/module-03/moze.mp3"
           }
         ]
       },
@@ -507,7 +572,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Koji je danas dan?",
-              "translation": "Jaki jest dziś dzień?"
+              "translation": "Jaki jest dziś dzień?",
+              "audioSrc": "/audio/hr/a1/module-03/koji-je-danas-dan.mp3"
             }
           },
           {
@@ -517,14 +583,16 @@ export const LESSON: GeneratedLesson = {
               "Danas je četvrtak."
             ],
             "pattern": "^danas je (ponedjeljak|utorak|srijeda|četvrtak|petak|subota|nedjelja)$",
-            "suggestion": "Danas je četvrtak."
+            "suggestion": "Danas je četvrtak.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/danas-je-cetvrtak.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Ana",
               "text": "Što radiš u subotu?",
-              "translation": "Co robisz w sobotę?"
+              "translation": "Co robisz w sobotę?",
+              "audioSrc": "/audio/hr/a1/module-03/sto-radis-u-subotu.mp3"
             }
           },
           {
@@ -534,7 +602,8 @@ export const LESSON: GeneratedLesson = {
               "U subotu idem u grad."
             ],
             "pattern": "^u subotu (idem u grad|radim|se odmaram|idem na bazen)$",
-            "suggestion": "U subotu idem u grad."
+            "suggestion": "U subotu idem u grad.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/u-subotu-idem-u-grad.mp3"
           }
         ]
       },
@@ -564,7 +633,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "U ponedjeljak radim. U subotu idem u grad."
+        "sample": "U ponedjeljak radim. U subotu idem u grad.",
+        "sampleAudioSrc": "/audio/hr/a1/module-03/u-ponedjeljak-radim-u-subotu-idem-u-grad.mp3"
       },
       {
         "id": "summary",
@@ -574,19 +644,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Danas je četvrtak.",
-            "source": "Dziś jest czwartek."
+            "source": "Dziś jest czwartek.",
+            "audioSrc": "/audio/hr/a1/module-03/danas-je-cetvrtak.mp3"
           },
           {
             "target": "Sutra je petak.",
-            "source": "Jutro jest piątek."
+            "source": "Jutro jest piątek.",
+            "audioSrc": "/audio/hr/a1/module-03/sutra-je-petak.mp3"
           },
           {
             "target": "U ponedjeljak radim.",
-            "source": "W poniedziałek pracuję."
+            "source": "W poniedziałek pracuję.",
+            "audioSrc": "/audio/hr/a1/module-03/u-ponedjeljak-radim.mp3"
           },
           {
             "target": "U subotu idem u grad.",
-            "source": "W sobotę idę do miasta."
+            "source": "W sobotę idę do miasta.",
+            "audioSrc": "/audio/hr/a1/module-03/u-subotu-idem-u-grad.mp3"
           }
         ]
       }

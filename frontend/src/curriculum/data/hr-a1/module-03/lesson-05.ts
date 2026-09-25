@@ -12,91 +12,104 @@ export const LESSON: GeneratedLesson = {
         "source": "tydzień",
         "lemma": "tjedan",
         "partOfSpeech": "noun",
-        "recordId": "A1-0254"
+        "recordId": "A1-0254",
+        "audioSrc": "/audio/hr/a1/module-03/tjedan.mp3"
       },
       {
         "target": "svaki dan",
         "source": "codziennie",
         "lemma": "svaki dan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0255"
+        "recordId": "A1-0255",
+        "audioSrc": "/audio/hr/a1/module-03/svaki-dan.mp3"
       },
       {
         "target": "obično",
         "source": "zwykle",
         "lemma": "obično",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0256"
+        "recordId": "A1-0256",
+        "audioSrc": "/audio/hr/a1/module-03/obicno.mp3"
       },
       {
         "target": "ponekad",
         "source": "czasami",
         "lemma": "ponekad",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0257"
+        "recordId": "A1-0257",
+        "audioSrc": "/audio/hr/a1/module-03/ponekad.mp3"
       },
       {
         "target": "rano",
         "source": "rano",
         "lemma": "rano",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0258"
+        "recordId": "A1-0258",
+        "audioSrc": "/audio/hr/a1/module-03/rano.mp3"
       },
       {
         "target": "kasno",
         "source": "późno",
         "lemma": "kasno",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0259"
+        "recordId": "A1-0259",
+        "audioSrc": "/audio/hr/a1/module-03/kasno.mp3"
       },
       {
         "target": "plan",
         "source": "plan",
         "lemma": "plan",
         "partOfSpeech": "noun",
-        "recordId": "A1-0260"
+        "recordId": "A1-0260",
+        "audioSrc": "/audio/hr/a1/module-03/plan.mp3"
       },
       {
         "target": "slobodan",
         "source": "wolny",
         "lemma": "slobodan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-0261"
+        "recordId": "A1-0261",
+        "audioSrc": "/audio/hr/a1/module-03/slobodan.mp3"
       },
       {
         "target": "rijetko",
         "source": "rzadko",
         "lemma": "rijetko",
         "partOfSpeech": "adverb",
-        "recordId": "A1-0845"
+        "recordId": "A1-0845",
+        "audioSrc": "/audio/hr/a1/module-03/rijetko.mp3"
       },
       {
         "target": "jednom tjedno",
         "source": "raz w tygodniu",
         "lemma": "tjedno",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0846"
+        "recordId": "A1-0846",
+        "audioSrc": "/audio/hr/a1/module-03/jednom-tjedno.mp3"
       },
       {
         "target": "svaki tjedan",
         "source": "co tydzień",
         "lemma": "tjedan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0847"
+        "recordId": "A1-0847",
+        "audioSrc": "/audio/hr/a1/module-03/svaki-tjedan.mp3"
       },
       {
         "target": "mjesec",
         "source": "miesiąc",
         "lemma": "mjesec",
         "partOfSpeech": "noun",
-        "recordId": "A1-0848"
+        "recordId": "A1-0848",
+        "audioSrc": "/audio/hr/a1/module-03/mjesec.mp3"
       },
       {
         "target": "radni dan",
         "source": "dzień roboczy",
         "lemma": "dan",
         "partOfSpeech": "phrase",
-        "recordId": "A1-0849"
+        "recordId": "A1-0849",
+        "audioSrc": "/audio/hr/a1/module-03/radni-dan.mp3"
       }
     ],
     "steps": [
@@ -126,7 +139,8 @@ export const LESSON: GeneratedLesson = {
           "poniedziałek"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
         "id": "recall-2",
@@ -140,7 +154,8 @@ export const LESSON: GeneratedLesson = {
           "wstać"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/ured.mp3"
       },
       {
         "id": "recall-3",
@@ -154,7 +169,8 @@ export const LESSON: GeneratedLesson = {
           "wieczorem"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
         "id": "vocab",
@@ -166,67 +182,80 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "tjedan",
             "source": "tydzień",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/tjedan.mp3"
           },
           {
             "target": "svaki dan",
             "source": "codziennie",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-03/svaki-dan.mp3"
           },
           {
             "target": "obično",
             "source": "zwykle",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/obicno.mp3"
           },
           {
             "target": "ponekad",
             "source": "czasami",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/ponekad.mp3"
           },
           {
             "target": "rano",
             "source": "rano",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/rano.mp3"
           },
           {
             "target": "kasno",
             "source": "późno",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/kasno.mp3"
           },
           {
             "target": "plan",
             "source": "plan",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/plan.mp3"
           },
           {
             "target": "slobodan",
             "source": "wolny",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-03/slobodan.mp3"
           },
           {
             "target": "rijetko",
             "source": "rzadko",
-            "partOfSpeech": "przysłówek"
+            "partOfSpeech": "przysłówek",
+            "audioSrc": "/audio/hr/a1/module-03/rijetko.mp3"
           },
           {
             "target": "jednom tjedno",
             "source": "raz w tygodniu",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-03/jednom-tjedno.mp3"
           },
           {
             "target": "svaki tjedan",
             "source": "co tydzień",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-03/svaki-tjedan.mp3"
           },
           {
             "target": "mjesec",
             "source": "miesiąc",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-03/mjesec.mp3"
           },
           {
             "target": "radni dan",
             "source": "dzień roboczy",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-03/radni-dan.mp3"
           }
         ]
       },
@@ -239,11 +268,13 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Rijetko radim vikendom.",
-            "source": "Rzadko pracuję w weekendy."
+            "source": "Rzadko pracuję w weekendy.",
+            "audioSrc": "/audio/hr/a1/module-03/rijetko-radim-vikendom.mp3"
           },
           {
             "target": "Jednom tjedno idem na bazen.",
-            "source": "Raz w tygodniu chodzę na basen."
+            "source": "Raz w tygodniu chodzę na basen.",
+            "audioSrc": "/audio/hr/a1/module-03/jednom-tjedno-idem-na-bazen.mp3"
           }
         ]
       },
@@ -257,7 +288,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "subotu"
         ],
-        "translation": "W sobotę idę do miasta."
+        "translation": "W sobotę idę do miasta.",
+        "answerAudioSrc": "/audio/hr/a1/module-03/u-subotu-idem-u-grad.mp3"
       },
       {
         "id": "order",
@@ -272,7 +304,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Spavam osam sati."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/spavam-osam-sati.mp3"
       },
       {
         "id": "translate-1",
@@ -283,7 +316,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Radim do četiri.",
           "Ja radim do četiri."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/radim-do-cetiri.mp3"
       },
       {
         "id": "translate-2",
@@ -294,7 +328,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Danas ne radim.",
           "Ne radim danas."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/danas-ne-radim.mp3"
       },
       {
         "id": "translate-3",
@@ -305,7 +340,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "U ponedjeljak radim.",
           "Radim u ponedjeljak."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/u-ponedjeljak-radim.mp3"
       },
       {
         "id": "dialog",
@@ -318,7 +354,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Marko",
               "text": "Što radiš svaki dan?",
-              "translation": "Co robisz codziennie?"
+              "translation": "Co robisz codziennie?",
+              "audioSrc": "/audio/hr/a1/module-03/sto-radis-svaki-dan-m.mp3"
             }
           },
           {
@@ -328,14 +365,16 @@ export const LESSON: GeneratedLesson = {
               "Svaki dan učim hrvatski.",
               "Učim hrvatski svaki dan."
             ],
-            "suggestion": "Svaki dan učim hrvatski."
+            "suggestion": "Svaki dan učim hrvatski.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/svaki-dan-ucim-hrvatski.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Kada radiš?",
-              "translation": "Kiedy pracujesz?"
+              "translation": "Kiedy pracujesz?",
+              "audioSrc": "/audio/hr/a1/module-03/kada-radis-m.mp3"
             }
           },
           {
@@ -346,14 +385,16 @@ export const LESSON: GeneratedLesson = {
               "Radim od deset."
             ],
             "pattern": "^(obično )?radim (od \\p{L}+( do \\p{L}+)?|u \\p{L}+)$",
-            "suggestion": "Obično radim od deset."
+            "suggestion": "Obično radim od deset.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/obicno-radim-od-deset.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Jesi li slobodan u subotu?",
-              "translation": "Jesteś wolny w sobotę?"
+              "translation": "Jesteś wolny w sobotę?",
+              "audioSrc": "/audio/hr/a1/module-03/jesi-li-slobodan-u-subotu-m.mp3"
             }
           },
           {
@@ -365,14 +406,16 @@ export const LESSON: GeneratedLesson = {
               "Da, slobodan sam.",
               "U subotu sam slobodna."
             ],
-            "suggestion": "U subotu sam slobodan."
+            "suggestion": "U subotu sam slobodan.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/u-subotu-sam-slobodan.mp3"
           },
           {
             "kind": "line",
             "line": {
               "speaker": "Marko",
               "text": "Što radiš navečer?",
-              "translation": "Co robisz wieczorem?"
+              "translation": "Co robisz wieczorem?",
+              "audioSrc": "/audio/hr/a1/module-03/sto-radis-navecer-m.mp3"
             }
           },
           {
@@ -383,7 +426,8 @@ export const LESSON: GeneratedLesson = {
               "Navečer čitam.",
               "Navečer učim hrvatski."
             ],
-            "suggestion": "Navečer često čitam."
+            "suggestion": "Navečer često čitam.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-03/navecer-cesto-citam.mp3"
           }
         ]
       },
@@ -425,7 +469,8 @@ export const LESSON: GeneratedLesson = {
           }
         ],
         "minSentences": 2,
-        "sample": "Svaki dan učim hrvatski. Obično radim od deset. U subotu sam slobodan."
+        "sample": "Svaki dan učim hrvatski. Obično radim od deset. U subotu sam slobodan.",
+        "sampleAudioSrc": "/audio/hr/a1/module-03/svaki-dan-ucim-hrvatski-obicno-radim-od-deset-u-subotu-sam-s.mp3"
       },
       {
         "id": "summary",
@@ -435,19 +480,23 @@ export const LESSON: GeneratedLesson = {
         "recap": [
           {
             "target": "Svaki dan učim hrvatski.",
-            "source": "Codziennie uczę się chorwackiego."
+            "source": "Codziennie uczę się chorwackiego.",
+            "audioSrc": "/audio/hr/a1/module-03/svaki-dan-ucim-hrvatski.mp3"
           },
           {
             "target": "Obično radim od deset.",
-            "source": "Zwykle pracuję od dziesiątej."
+            "source": "Zwykle pracuję od dziesiątej.",
+            "audioSrc": "/audio/hr/a1/module-03/obicno-radim-od-deset.mp3"
           },
           {
             "target": "Ponekad idem u teretanu.",
-            "source": "Czasami chodzę na siłownię."
+            "source": "Czasami chodzę na siłownię.",
+            "audioSrc": "/audio/hr/a1/module-03/ponekad-idem-u-teretanu.mp3"
           },
           {
             "target": "U subotu sam slobodan.",
-            "source": "W sobotę jestem wolny."
+            "source": "W sobotę jestem wolny.",
+            "audioSrc": "/audio/hr/a1/module-03/u-subotu-sam-slobodan.mp3"
           }
         ],
         "canDo": [
