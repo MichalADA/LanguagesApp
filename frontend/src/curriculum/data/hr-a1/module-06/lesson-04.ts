@@ -20,7 +20,8 @@ export const LESSON: GeneratedLesson = {
         "source": "Czy pójdziemy…? (propozycja)",
         "lemma": "htjeti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1177"
+        "recordId": "A1-1177",
+        "audioSrc": "/audio/hr/a1/module-06/hocemo-li.mp3"
       },
       {
         "target": "večeras",
@@ -181,7 +182,8 @@ export const LESSON: GeneratedLesson = {
           "target": "Hoćemo li na kavu?",
           "source": "Idziemy na kawę?",
           "audioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
-        }
+        },
+        "audioSrc": "/audio/hr/a1/module-06/hocemo-li.mp3"
       },
       {
         "id": "word-3",
@@ -221,7 +223,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Danas nemam vremena.",
-          "source": "Dziś nie mam czasu."
+          "source": "Dziś nie mam czasu.",
+          "audioSrc": "/audio/hr/a1/module-06/danas-nemam-vremena.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-06/nemam-vremena.mp3"
       },
@@ -412,7 +415,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Danas nemam vremena.",
-            "source": "Dziś nie mam czasu."
+            "source": "Dziś nie mam czasu.",
+            "audioSrc": "/audio/hr/a1/module-06/danas-nemam-vremena.mp3"
           }
         ]
       },

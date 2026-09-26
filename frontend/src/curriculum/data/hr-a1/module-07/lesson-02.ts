@@ -196,7 +196,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Vlak stiže u deset.",
-          "source": "Pociąg przyjeżdża o dziesiątej."
+          "source": "Pociąg przyjeżdża o dziesiątej.",
+          "audioSrc": "/audio/hr/a1/module-07/vlak-stize-u-deset.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-07/stici.mp3"
       },
@@ -567,7 +568,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Vlak stiže u deset.",
           "Vlak dolazi u deset."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/vlak-stize-u-deset.mp3"
       },
       {
         "id": "translate-more",

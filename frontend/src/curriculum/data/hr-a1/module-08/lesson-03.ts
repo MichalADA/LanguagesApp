@@ -382,7 +382,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Što voliš raditi vikendom kad je lijepo vrijeme i kad nemaš posla?",
-              "translation": "(Ana mówi bardzo szybko — nie nadążasz.)"
+              "translation": "(Ana mówi bardzo szybko — nie nadążasz.)",
+              "audioSrc": "/audio/hr/a1/module-08/sto-volis-raditi-vikendom-kad-je-lijepo-vrijeme-i-kad-nemas.mp3"
             }
           },
           {
@@ -395,7 +396,8 @@ export const LESSON: GeneratedLesson = {
               "Ja ne razumijem. Polako, molim."
             ],
             "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:((ja )?ne razumijem )?((možeš|možete) li )?((to )?ponoviti|govoriti)( (malo )?sporije)?|((ja )?ne razumijem )?(još jednom|polako|sporije)( molim)?|(ja )?ne razumijem)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
-            "suggestion": "Ne razumijem. Možeš li ponoviti?"
+            "suggestion": "Ne razumijem. Možeš li ponoviti?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-08/ne-razumijem-mozes-li-ponoviti.mp3"
           },
           {
             "kind": "line",

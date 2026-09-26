@@ -116,7 +116,8 @@ export const LESSON: GeneratedLesson = {
         "source": "trzydzieści",
         "lemma": "trideset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-1144"
+        "recordId": "A1-1144",
+        "audioSrc": "/audio/hr/a1/module-01/trideset.mp3"
       },
       {
         "target": "nula",
@@ -227,7 +228,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Jedan, dva, tri, četiri, pet!",
-          "source": "Raz, dwa, trzy, cztery, pięć!"
+          "source": "Raz, dwa, trzy, cztery, pięć!",
+          "audioSrc": "/audio/hr/a1/module-01/jedan-dva-tri-cetiri-pet.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-01/dva.mp3"
       },
@@ -240,7 +242,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Jedan, dva, tri, četiri, pet!",
-          "source": "Raz, dwa, trzy, cztery, pięć!"
+          "source": "Raz, dwa, trzy, cztery, pięć!",
+          "audioSrc": "/audio/hr/a1/module-01/jedan-dva-tri-cetiri-pet.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-03/tri.mp3"
       },
@@ -253,7 +256,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Imam trideset četiri godine.",
-          "source": "Mam trzydzieści cztery lata."
+          "source": "Mam trzydzieści cztery lata.",
+          "audioSrc": "/audio/hr/a1/module-01/imam-trideset-cetiri-godine.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-03/cetiri.mp3"
       },
@@ -281,7 +285,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Marko ima dvadeset pet godina.",
-          "source": "Marko ma dwadzieścia pięć lat."
+          "source": "Marko ma dwadzieścia pięć lat.",
+          "audioSrc": "/audio/hr/a1/module-01/marko-ima-dvadeset-pet-godina.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-03/pet.mp3"
       },
@@ -294,7 +299,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Ona ima deset godina.",
-          "source": "Ona ma dziesięć lat."
+          "source": "Ona ma dziesięć lat.",
+          "audioSrc": "/audio/hr/a1/module-01/ona-ima-deset-godina.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-01/deset.mp3"
       },
@@ -361,7 +367,8 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "trideset",
             "source": "trzydzieści",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-01/trideset.mp3"
           },
           {
             "target": "nula",
@@ -389,7 +396,8 @@ export const LESSON: GeneratedLesson = {
           "sto"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/trideset.mp3"
       },
       {
         "id": "examples",
@@ -400,15 +408,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Jedan, dva, tri, četiri, pet!",
-            "source": "Raz, dwa, trzy, cztery, pięć!"
+            "source": "Raz, dwa, trzy, cztery, pięć!",
+            "audioSrc": "/audio/hr/a1/module-01/jedan-dva-tri-cetiri-pet.mp3"
           },
           {
             "target": "Dva i dva su četiri.",
-            "source": "Dwa i dwa to cztery."
+            "source": "Dwa i dwa to cztery.",
+            "audioSrc": "/audio/hr/a1/module-01/dva-i-dva-su-cetiri.mp3"
           },
           {
             "target": "Ona ima deset godina.",
-            "source": "Ona ma dziesięć lat."
+            "source": "Ona ma dziesięć lat.",
+            "audioSrc": "/audio/hr/a1/module-01/ona-ima-deset-godina.mp3"
           }
         ]
       },
@@ -523,11 +534,13 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Imam trideset četiri godine.",
-            "source": "Mam trzydzieści cztery lata."
+            "source": "Mam trzydzieści cztery lata.",
+            "audioSrc": "/audio/hr/a1/module-01/imam-trideset-cetiri-godine.mp3"
           },
           {
             "target": "Ana ima dvadeset dvije godine.",
-            "source": "Ana ma dwadzieścia dwa lata."
+            "source": "Ana ma dwadzieścia dwa lata.",
+            "audioSrc": "/audio/hr/a1/module-01/ana-ima-dvadeset-dvije-godine.mp3"
           }
         ],
         "note": "Jak po polsku „lata / lat”: po 2, 3, 4 mówisz godine, po 5 i więcej — godina. Godina jest rodzaju żeńskiego, więc „dwa lata” to dvije godine (nie dva)."
@@ -586,7 +599,8 @@ export const LESSON: GeneratedLesson = {
           "73"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/trideset-sedam.mp3"
       },
       {
         "id": "choice-2",
@@ -600,7 +614,8 @@ export const LESSON: GeneratedLesson = {
           "14"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/dvadeset-cetiri.mp3"
       },
       {
         "id": "comprehend",
@@ -627,7 +642,8 @@ export const LESSON: GeneratedLesson = {
           "Imam trideset četiri godine.",
           "Ja imam trideset četiri godine.",
           "Imam trideset i četiri godine."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/imam-trideset-cetiri-godine.mp3"
       },
       {
         "id": "translate-3",
@@ -638,7 +654,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ana ima dvadeset dvije godine.",
           "Ana ima dvadeset i dvije godine."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/ana-ima-dvadeset-dvije-godine.mp3"
       },
       {
         "id": "dialog",
@@ -680,7 +697,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "A koliko godina ima Marko?",
-              "translation": "A ile lat ma Marko?"
+              "translation": "A ile lat ma Marko?",
+              "audioSrc": "/audio/hr/a1/module-01/a-koliko-godina-ima-marko.mp3"
             }
           },
           {
@@ -691,7 +709,8 @@ export const LESSON: GeneratedLesson = {
               "Marko ima dvadeset i pet godina."
             ],
             "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:((marko|on) ima )?dvadeset (i )?pet godina)(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
-            "suggestion": "Marko ima dvadeset pet godina."
+            "suggestion": "Marko ima dvadeset pet godina.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-01/marko-ima-dvadeset-pet-godina.mp3"
           }
         ]
       },

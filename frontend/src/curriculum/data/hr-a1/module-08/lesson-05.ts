@@ -417,7 +417,8 @@ export const LESSON: GeneratedLesson = {
           "target": "Dopuni rečenicu.",
           "source": "Uzupełnij zdanie.",
           "audioSrc": "/audio/hr/a1/module-08/dopuni-recenicu.mp3"
-        }
+        },
+        "answerAudioSrc": "/audio/hr/a1/module-08/hoces-li-ici-na-more-hocu.mp3"
       },
       {
         "id": "grammar-3",

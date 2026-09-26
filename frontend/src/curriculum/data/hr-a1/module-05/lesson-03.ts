@@ -453,7 +453,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Kako mogu doći do kolodvora?",
-            "source": "Jak mogę dojść do dworca?"
+            "source": "Jak mogę dojść do dworca?",
+            "audioSrc": "/audio/hr/a1/module-05/kako-mogu-doci-do-kolodvora.mp3"
           }
         ]
       },
@@ -533,7 +534,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Jak mogę dojść do dworca?",
         "accepted": [
           "Kako mogu doći do kolodvora?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/kako-mogu-doci-do-kolodvora.mp3"
       },
       {
         "id": "translate-more",

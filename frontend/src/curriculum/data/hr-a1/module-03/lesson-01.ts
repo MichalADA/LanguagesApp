@@ -12,7 +12,8 @@ export const LESSON: GeneratedLesson = {
         "source": "wstawać",
         "lemma": "ustajati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0182"
+        "recordId": "A1-0182",
+        "audioSrc": "/audio/hr/a1/module-03/ustajati.mp3"
       },
       {
         "target": "doručkovati",
@@ -27,7 +28,8 @@ export const LESSON: GeneratedLesson = {
         "source": "budzić się",
         "lemma": "buditi se",
         "partOfSpeech": "verb",
-        "recordId": "A1-1154"
+        "recordId": "A1-1154",
+        "audioSrc": "/audio/hr/a1/module-03/buditi-se.mp3"
       },
       {
         "target": "ručati",
@@ -187,7 +189,8 @@ export const LESSON: GeneratedLesson = {
           "target": "Ustajem u sedam.",
           "source": "Wstaję o siódmej.",
           "audioSrc": "/audio/hr/a1/module-03/ustajem-u-sedam.mp3"
-        }
+        },
+        "audioSrc": "/audio/hr/a1/module-03/ustajati.mp3"
       },
       {
         "id": "word-2",
@@ -212,8 +215,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Budim se u šest.",
-          "source": "Budzę się o szóstej."
-        }
+          "source": "Budzę się o szóstej.",
+          "audioSrc": "/audio/hr/a1/module-03/budim-se-u-sest.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-03/buditi-se.mp3"
       },
       {
         "id": "check-1",
@@ -227,7 +232,8 @@ export const LESSON: GeneratedLesson = {
           "budzić się"
         ],
         "correctIndex": 2,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/buditi-se.mp3"
       },
       {
         "id": "word-4",
@@ -442,7 +448,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Budim se u šest.",
-            "source": "Budzę się o szóstej."
+            "source": "Budzę się o szóstej.",
+            "audioSrc": "/audio/hr/a1/module-03/budim-se-u-sest.mp3"
           }
         ]
       },

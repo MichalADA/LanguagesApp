@@ -196,7 +196,8 @@ export const LESSON: GeneratedLesson = {
         "source": "chcieć (želim — chcę)",
         "lemma": "željeti",
         "partOfSpeech": "verb",
-        "recordId": "A1-1161"
+        "recordId": "A1-1161",
+        "audioSrc": "/audio/hr/a1/module-04/zeljeti.mp3"
       }
     ],
     "steps": [
@@ -513,7 +514,8 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "željeti",
             "source": "chcieć (želim — chcę)",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-04/zeljeti.mp3"
           }
         ]
       },

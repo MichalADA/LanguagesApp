@@ -52,7 +52,8 @@ export const LESSON: GeneratedLesson = {
         "source": "Czy ma Pan / Pani…?",
         "lemma": "imati",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1167"
+        "recordId": "A1-1167",
+        "audioSrc": "/audio/hr/a1/module-05/imate-li.mp3"
       },
       {
         "target": "skupo",
@@ -147,42 +148,48 @@ export const LESSON: GeneratedLesson = {
         "source": "czterdzieści",
         "lemma": "četrdeset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-1168"
+        "recordId": "A1-1168",
+        "audioSrc": "/audio/hr/a1/module-05/cetrdeset.mp3"
       },
       {
         "target": "pedeset",
         "source": "pięćdziesiąt",
         "lemma": "pedeset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-1169"
+        "recordId": "A1-1169",
+        "audioSrc": "/audio/hr/a1/module-05/pedeset.mp3"
       },
       {
         "target": "šezdeset",
         "source": "sześćdziesiąt",
         "lemma": "šezdeset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-1170"
+        "recordId": "A1-1170",
+        "audioSrc": "/audio/hr/a1/module-05/sezdeset.mp3"
       },
       {
         "target": "sedamdeset",
         "source": "siedemdziesiąt",
         "lemma": "sedamdeset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-1171"
+        "recordId": "A1-1171",
+        "audioSrc": "/audio/hr/a1/module-05/sedamdeset.mp3"
       },
       {
         "target": "osamdeset",
         "source": "osiemdziesiąt",
         "lemma": "osamdeset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-1172"
+        "recordId": "A1-1172",
+        "audioSrc": "/audio/hr/a1/module-05/osamdeset.mp3"
       },
       {
         "target": "devedeset",
         "source": "dziewięćdziesiąt",
         "lemma": "devedeset",
         "partOfSpeech": "numeral",
-        "recordId": "A1-1173"
+        "recordId": "A1-1173",
+        "audioSrc": "/audio/hr/a1/module-05/devedeset.mp3"
       }
     ],
     "steps": [
@@ -298,9 +305,17 @@ export const LESSON: GeneratedLesson = {
         "source": "Czy ma Pan / Pani…?",
         "partOfSpeech": "zwrot",
         "example": {
+<<<<<<< HEAD
           "target": "Imate li vodu?",
           "source": "Czy ma Pan / Pani wodę?"
         }
+=======
+          "target": "Imate li ovo u drugoj veličini?",
+          "source": "Czy mają Państwo to w innym rozmiarze?",
+          "audioSrc": "/audio/hr/a1/module-05/imate-li-ovo-u-drugoj-velicini.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-05/imate-li.mp3"
+>>>>>>> e88cd64 (Generaownie voice)
       },
       {
         "id": "check-2",
@@ -423,32 +438,38 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "četrdeset",
             "source": "czterdzieści",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/cetrdeset.mp3"
           },
           {
             "target": "pedeset",
             "source": "pięćdziesiąt",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/pedeset.mp3"
           },
           {
             "target": "šezdeset",
             "source": "sześćdziesiąt",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/sezdeset.mp3"
           },
           {
             "target": "sedamdeset",
             "source": "siedemdziesiąt",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/sedamdeset.mp3"
           },
           {
             "target": "osamdeset",
             "source": "osiemdziesiąt",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/osamdeset.mp3"
           },
           {
             "target": "devedeset",
             "source": "dziewięćdziesiąt",
-            "partOfSpeech": "liczebnik"
+            "partOfSpeech": "liczebnik",
+            "audioSrc": "/audio/hr/a1/module-05/devedeset.mp3"
           }
         ]
       },
@@ -495,7 +516,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Imate li vodu?",
-            "source": "Czy ma Pan / Pani wodę?"
+            "source": "Czy ma Pan / Pani wodę?",
+            "audioSrc": "/audio/hr/a1/module-05/imate-li-vodu.mp3"
           }
         ]
       },
@@ -585,7 +607,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Košta četiri eura i pedeset centi.",
-            "source": "Kosztuje cztery euro i pięćdziesiąt centów."
+            "source": "Kosztuje cztery euro i pięćdziesiąt centów.",
+            "audioSrc": "/audio/hr/a1/module-05/kosta-cetiri-eura-i-pedeset-centi.mp3"
           },
           {
             "target": "Želim kupiti ovu knjigu.",
@@ -650,7 +673,8 @@ export const LESSON: GeneratedLesson = {
           "7 €"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/kosta-sedamdeset-eura.mp3"
       },
       {
         "id": "choice-2",
@@ -679,7 +703,8 @@ export const LESSON: GeneratedLesson = {
           "302 €"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/ovo-kosta-trideset-dva-eura.mp3"
       },
       {
         "id": "comprehend",
@@ -715,7 +740,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ovo košta trideset eura.",
           "To košta trideset eura."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/ovo-kosta-trideset-eura.mp3"
       },
       {
         "id": "translate-more",

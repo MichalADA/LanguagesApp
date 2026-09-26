@@ -36,7 +36,8 @@ export const LESSON: GeneratedLesson = {
         "source": "Czy mogę dostać…?",
         "lemma": "dobiti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1162"
+        "recordId": "A1-1162",
+        "audioSrc": "/audio/hr/a1/module-04/mogu-li-dobiti.mp3"
       },
       {
         "target": "sok",
@@ -225,8 +226,10 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "zwrot",
         "example": {
           "target": "Mogu li dobiti vodu?",
-          "source": "Czy mogę dostać wodę?"
-        }
+          "source": "Czy mogę dostać wodę?",
+          "audioSrc": "/audio/hr/a1/module-04/mogu-li-dobiti-vodu.mp3"
+        },
+        "audioSrc": "/audio/hr/a1/module-04/mogu-li-dobiti.mp3"
       },
       {
         "id": "word-5",
@@ -514,7 +517,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Mogu li dobiti vodu?",
           "Mogu li dobiti vode?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/mogu-li-dobiti-vodu.mp3"
       },
       {
         "id": "translate-more",

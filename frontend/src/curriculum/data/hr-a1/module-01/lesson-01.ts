@@ -76,35 +76,40 @@ export const LESSON: GeneratedLesson = {
         "source": "Jak się Pan / Pani ma?",
         "lemma": "biti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1134"
+        "recordId": "A1-1134",
+        "audioSrc": "/audio/hr/a1/module-01/kako-ste.mp3"
       },
       {
         "target": "A ti?",
         "source": "A ty?",
         "lemma": "ti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1135"
+        "recordId": "A1-1135",
+        "audioSrc": "/audio/hr/a1/module-01/a-ti.mp3"
       },
       {
         "target": "Dobro jutro!",
         "source": "Dzień dobry! (rano)",
         "lemma": "jutro",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1136"
+        "recordId": "A1-1136",
+        "audioSrc": "/audio/hr/a1/module-01/dobro-jutro.mp3"
       },
       {
         "target": "Dobra večer!",
         "source": "Dobry wieczór!",
         "lemma": "večer",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1137"
+        "recordId": "A1-1137",
+        "audioSrc": "/audio/hr/a1/module-01/dobra-vecer.mp3"
       },
       {
         "target": "Laku noć!",
         "source": "Dobranoc!",
         "lemma": "noć",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1138"
+        "recordId": "A1-1138",
+        "audioSrc": "/audio/hr/a1/module-01/laku-noc.mp3"
       }
     ],
     "steps": [
@@ -256,7 +261,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Danas sam loše.",
-          "source": "Dziś czuję się źle."
+          "source": "Dziś czuję się źle.",
+          "audioSrc": "/audio/hr/a1/module-01/danas-sam-lose.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-01/lose.mp3"
       },
@@ -299,27 +305,32 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "Kako ste?",
             "source": "Jak się Pan / Pani ma?",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-01/kako-ste.mp3"
           },
           {
             "target": "A ti?",
             "source": "A ty?",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-01/a-ti.mp3"
           },
           {
             "target": "Dobro jutro!",
             "source": "Dzień dobry! (rano)",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-01/dobro-jutro.mp3"
           },
           {
             "target": "Dobra večer!",
             "source": "Dobry wieczór!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-01/dobra-vecer.mp3"
           },
           {
             "target": "Laku noć!",
             "source": "Dobranoc!",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-01/laku-noc.mp3"
           }
         ]
       },
@@ -335,7 +346,8 @@ export const LESSON: GeneratedLesson = {
           "Jak się Pan / Pani ma?"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/a-ti.mp3"
       },
       {
         "id": "examples",
@@ -346,15 +358,18 @@ export const LESSON: GeneratedLesson = {
         "examples": [
           {
             "target": "Dobro jutro, Ana!",
-            "source": "Dzień dobry, Ano!"
+            "source": "Dzień dobry, Ano!",
+            "audioSrc": "/audio/hr/a1/module-01/dobro-jutro-ana.mp3"
           },
           {
             "target": "Laku noć, Marko!",
-            "source": "Dobranoc, Marko!"
+            "source": "Dobranoc, Marko!",
+            "audioSrc": "/audio/hr/a1/module-01/laku-noc-marko.mp3"
           },
           {
             "target": "Danas sam loše.",
-            "source": "Dziś czuję się źle."
+            "source": "Dziś czuję się źle.",
+            "audioSrc": "/audio/hr/a1/module-01/danas-sam-lose.mp3"
           }
         ]
       },
@@ -438,7 +453,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Dobro sam, hvala, a ti?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala-a-ti.mp3"
       },
       {
         "id": "translate-2",
@@ -449,7 +465,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Dobra večer! Kako ste?",
           "Dobra večer, kako ste?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/dobra-vecer-kako-ste.mp3"
       },
       {
         "id": "translate-more",

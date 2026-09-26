@@ -116,7 +116,8 @@ export const LESSON: GeneratedLesson = {
         "source": "zapłacić kartą",
         "lemma": "platiti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1165"
+        "recordId": "A1-1165",
+        "audioSrc": "/audio/hr/a1/module-04/platiti-karticom.mp3"
       }
     ],
     "steps": [
@@ -164,7 +165,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Czy mogę dostać…?",
         "accepted": [
           "Mogu li dobiti…?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/mogu-li-dobiti.mp3"
       },
       {
         "id": "recall-4",
@@ -269,7 +271,8 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "platiti karticom",
             "source": "zapłacić kartą",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-04/platiti-karticom.mp3"
           }
         ]
       },

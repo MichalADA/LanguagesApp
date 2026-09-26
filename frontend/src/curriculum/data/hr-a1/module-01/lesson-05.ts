@@ -274,11 +274,13 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Polako, molim.",
-            "source": "Powoli, proszę."
+            "source": "Powoli, proszę.",
+            "audioSrc": "/audio/hr/a1/module-01/polako-molim.mp3"
           },
           {
             "target": "Kako se to kaže na hrvatskom?",
-            "source": "Jak to się mówi po chorwacku?"
+            "source": "Jak to się mówi po chorwacku?",
+            "audioSrc": "/audio/hr/a1/module-01/kako-se-to-kaze-na-hrvatskom.mp3"
           }
         ],
         "note": "Možeš li…? to „czy możesz…?”. Do obcej osoby grzeczniej: Možete li ponoviti?"
@@ -296,7 +298,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "explanation": "Polako — powoli.",
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-01/polako-molim.mp3"
       },
       {
         "id": "phrase-1",

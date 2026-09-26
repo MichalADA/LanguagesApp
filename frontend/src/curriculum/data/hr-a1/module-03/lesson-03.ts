@@ -183,7 +183,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "liczebnik",
         "example": {
           "target": "Sada je jedanaest sati.",
-          "source": "Teraz jest jedenasta."
+          "source": "Teraz jest jedenasta.",
+          "audioSrc": "/audio/hr/a1/module-03/sada-je-jedanaest-sati.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-03/jedanaest.mp3"
       },
@@ -196,7 +197,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Radim popodne.",
-          "source": "Pracuję po południu."
+          "source": "Pracuję po południu.",
+          "audioSrc": "/audio/hr/a1/module-03/radim-popodne.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-03/popodne.mp3"
       },
@@ -238,7 +240,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Kada je sastanak?",
-          "source": "Kiedy jest spotkanie?"
+          "source": "Kiedy jest spotkanie?",
+          "audioSrc": "/audio/hr/a1/module-03/kada-je-sastanak.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-03/kada.mp3"
       },
@@ -342,15 +345,18 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Sada je jedanaest sati.",
-            "source": "Teraz jest jedenasta."
+            "source": "Teraz jest jedenasta.",
+            "audioSrc": "/audio/hr/a1/module-03/sada-je-jedanaest-sati.mp3"
           },
           {
             "target": "Kada je sastanak?",
-            "source": "Kiedy jest spotkanie?"
+            "source": "Kiedy jest spotkanie?",
+            "audioSrc": "/audio/hr/a1/module-03/kada-je-sastanak.mp3"
           },
           {
             "target": "Radim popodne.",
-            "source": "Pracuję po południu."
+            "source": "Pracuję po południu.",
+            "audioSrc": "/audio/hr/a1/module-03/radim-popodne.mp3"
           }
         ]
       },
@@ -405,7 +411,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Sedam je sati.",
-            "source": "Jest siódma."
+            "source": "Jest siódma.",
+            "audioSrc": "/audio/hr/a1/module-03/sedam-je-sati.mp3"
           },
           {
             "target": "Sastanak je u četiri.",
@@ -414,7 +421,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "U koliko sati je sastanak?",
-            "source": "O której jest spotkanie?"
+            "source": "O której jest spotkanie?",
+            "audioSrc": "/audio/hr/a1/module-03/u-koliko-sati-je-sastanak.mp3"
           }
         ],
         "note": "1 sat, 2–4 sata, 5 i więcej sati — tak samo jak „1 godzina, 2 godziny, 5 godzin”."
@@ -460,7 +468,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "explanation": "5 i więcej → sati.",
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-03/sati.mp3"
       },
       {
         "id": "choice-2",
@@ -475,7 +484,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "explanation": "2, 3, 4 → sata.",
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-03/sata.mp3"
       },
       {
         "id": "translate-1",
@@ -516,7 +526,8 @@ export const LESSON: GeneratedLesson = {
           "Ručam u jedan.",
           "Ja ručam u jedan.",
           "U jedan ručam."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/rucam-u-jedan.mp3"
       },
       {
         "id": "translate-3",
@@ -527,7 +538,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Sedam je sati.",
           "Sada je sedam sati."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/sedam-je-sati.mp3"
       },
       {
         "id": "translate-more",

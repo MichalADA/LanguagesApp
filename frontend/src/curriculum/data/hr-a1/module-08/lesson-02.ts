@@ -36,7 +36,8 @@ export const LESSON: GeneratedLesson = {
         "source": "Czy zrobisz / pójdziesz…?",
         "lemma": "htjeti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1183"
+        "recordId": "A1-1183",
+        "audioSrc": "/audio/hr/a1/module-08/hoces-li.mp3"
       },
       {
         "target": "planirati",
@@ -162,7 +163,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "forma czasownika",
         "example": {
           "target": "Hoćeš li ići na more? — Hoću!",
-          "source": "Pojedziesz nad morze? — Tak!"
+          "source": "Pojedziesz nad morze? — Tak!",
+          "audioSrc": "/audio/hr/a1/module-08/hoces-li-ici-na-more-hocu.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-08/hocu.mp3"
       },
@@ -189,7 +191,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "forma pomocnicza",
         "example": {
           "target": "Što ćeš raditi u subotu?",
-          "source": "Co będziesz robić w sobotę?"
+          "source": "Co będziesz robić w sobotę?",
+          "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-u-subotu.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-08/ces.mp3"
       },
@@ -219,7 +222,8 @@ export const LESSON: GeneratedLesson = {
           "target": "Hoćeš li ići sa mnom?",
           "source": "Czy pójdziesz / pojedziesz ze mną?",
           "audioSrc": "/audio/hr/a1/module-08/hoces-li-ici-sa-mnom.mp3"
-        }
+        },
+        "audioSrc": "/audio/hr/a1/module-08/hoces-li.mp3"
       },
       {
         "id": "word-5",
@@ -230,7 +234,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Planiram ići na more.",
-          "source": "Planuję pojechać nad morze."
+          "source": "Planuję pojechać nad morze.",
+          "audioSrc": "/audio/hr/a1/module-08/planiram-ici-na-more.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-08/planirati.mp3"
       },
@@ -401,15 +406,18 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Hoćeš li ići na more? — Hoću!",
-            "source": "Pojedziesz nad morze? — Tak!"
+            "source": "Pojedziesz nad morze? — Tak!",
+            "audioSrc": "/audio/hr/a1/module-08/hoces-li-ici-na-more-hocu.mp3"
           },
           {
             "target": "Planiram ići na more.",
-            "source": "Planuję pojechać nad morze."
+            "source": "Planuję pojechać nad morze.",
+            "audioSrc": "/audio/hr/a1/module-08/planiram-ici-na-more.mp3"
           },
           {
             "target": "Što ćeš raditi u subotu?",
-            "source": "Co będziesz robić w sobotę?"
+            "source": "Co będziesz robić w sobotę?",
+            "audioSrc": "/audio/hr/a1/module-08/sto-ces-raditi-u-subotu.mp3"
           }
         ]
       },

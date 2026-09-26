@@ -257,7 +257,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "czasownik",
         "example": {
           "target": "Možete li nam preporučiti jelo?",
-          "source": "Czy może nam Pan / Pani polecić jakieś danie?"
+          "source": "Czy może nam Pan / Pani polecić jakieś danie?",
+          "audioSrc": "/audio/hr/a1/module-04/mozete-li-nam-preporuciti-jelo.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-04/preporuciti.mp3"
       },
@@ -353,7 +354,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Možete li nam preporučiti jelo?",
-            "source": "Czy może nam Pan / Pani polecić jakieś danie?"
+            "source": "Czy może nam Pan / Pani polecić jakieś danie?",
+            "audioSrc": "/audio/hr/a1/module-04/mozete-li-nam-preporuciti-jelo.mp3"
           }
         ]
       },

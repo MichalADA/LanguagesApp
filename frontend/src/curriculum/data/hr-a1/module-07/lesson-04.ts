@@ -272,7 +272,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Imate li suncobran?",
-          "source": "Czy ma Pan / Pani parasol plażowy?"
+          "source": "Czy ma Pan / Pani parasol plażowy?",
+          "audioSrc": "/audio/hr/a1/module-07/imate-li-suncobran.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-07/suncobran.mp3"
       },
@@ -380,7 +381,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Imate li suncobran?",
-            "source": "Czy ma Pan / Pani parasol plażowy?"
+            "source": "Czy ma Pan / Pani parasol plażowy?",
+            "audioSrc": "/audio/hr/a1/module-07/imate-li-suncobran.mp3"
           }
         ]
       },

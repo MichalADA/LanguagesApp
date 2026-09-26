@@ -514,7 +514,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "explanation": "Li stoi zaraz po czasowniku: Imaš li…?",
-        "targetText": "options"
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a1/module-02/imas-li-knjigu.mp3"
       },
       {
         "id": "translate-1",
@@ -567,7 +568,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Imaš li auto?",
           "Imaš li ti auto?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/imas-li-auto.mp3"
       },
       {
         "id": "translate-more",
