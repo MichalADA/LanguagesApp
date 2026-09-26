@@ -498,7 +498,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Vidimo se sutra u šest."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/vidimo-se-sutra-u-sest.mp3"
       },
       {
         "id": "translate-2",

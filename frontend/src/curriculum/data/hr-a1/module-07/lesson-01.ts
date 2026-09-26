@@ -148,14 +148,16 @@ export const LESSON: GeneratedLesson = {
         "source": "wysiąść / wyjść",
         "lemma": "izaći",
         "partOfSpeech": "verb",
-        "recordId": "A1-1204"
+        "recordId": "A1-1204",
+        "audioSrc": "/audio/hr/a1/module-07/izaci.mp3"
       },
       {
         "target": "Do centra, molim.",
         "source": "Do centrum, proszę. (w taksówce)",
         "lemma": "centar",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1205"
+        "recordId": "A1-1205",
+        "audioSrc": "/audio/hr/a1/module-07/do-centra-molim.mp3"
       }
     ],
     "steps": [
@@ -250,7 +252,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ide li ovaj autobus do centra?",
-          "source": "Czy ten autobus jedzie do centrum?"
+          "source": "Czy ten autobus jedzie do centrum?",
+          "audioSrc": "/audio/hr/a1/module-07/ide-li-ovaj-autobus-do-centra.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-07/autobus.mp3"
       },
@@ -404,12 +407,14 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "izaći",
             "source": "wysiąść / wyjść",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-07/izaci.mp3"
           },
           {
             "target": "Do centra, molim.",
             "source": "Do centrum, proszę. (w taksówce)",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-07/do-centra-molim.mp3"
           }
         ]
       },
@@ -425,7 +430,8 @@ export const LESSON: GeneratedLesson = {
           "odwiedzić"
         ],
         "correctIndex": 1,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/izaci.mp3"
       },
       {
         "id": "examples",
@@ -456,7 +462,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Gdje trebam izaći?",
-            "source": "Gdzie mam wysiąść?"
+            "source": "Gdzie mam wysiąść?",
+            "audioSrc": "/audio/hr/a1/module-07/gdje-trebam-izaci.mp3"
           }
         ]
       },
@@ -564,7 +571,8 @@ export const LESSON: GeneratedLesson = {
           "Ide li ovaj autobus do centra?",
           "Ide li ovaj autobus u centar?",
           "Oprostite, ide li ovaj autobus do centra?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/ide-li-ovaj-autobus-do-centra.mp3"
       },
       {
         "id": "translate-more",
@@ -574,7 +582,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Gdzie mam wysiąść?",
         "accepted": [
           "Gdje trebam izaći?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/gdje-trebam-izaci.mp3"
       },
       {
         "id": "listening",
@@ -725,7 +734,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Autobus je tamo, na stanici.",
-              "translation": "Autobus jest tam, na przystanku."
+              "translation": "Autobus jest tam, na przystanku.",
+              "audioSrc": "/audio/hr/a1/module-07/autobus-je-tamo-na-stanici.mp3"
             }
           },
           {
@@ -735,7 +745,8 @@ export const LESSON: GeneratedLesson = {
               "Ide li ovaj autobus do centra?"
             ],
             "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:ide li (ovaj )?autobus (do centra|u centar))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
-            "suggestion": "Ide li ovaj autobus do centra?"
+            "suggestion": "Ide li ovaj autobus do centra?",
+            "suggestionAudioSrc": "/audio/hr/a1/module-07/ide-li-ovaj-autobus-do-centra.mp3"
           }
         ]
       },

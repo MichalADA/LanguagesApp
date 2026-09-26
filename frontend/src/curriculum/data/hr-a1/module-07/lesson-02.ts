@@ -641,32 +641,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Ana",
             "text": "Oprostite, kada je let za Zagreb?",
-            "translation": "Przepraszam, kiedy jest lot do Zagrzebia?"
+            "translation": "Przepraszam, kiedy jest lot do Zagrzebia?",
+            "audioSrc": "/audio/hr/a1/module-07/oprostite-kada-je-let-za-zagreb.mp3"
           },
           {
             "speaker": "Službenica",
             "text": "U deset, ali let kasni sat vremena.",
-            "translation": "O dziesiątej, ale lot jest opóźniony o godzinę."
+            "translation": "O dziesiątej, ale lot jest opóźniony o godzinę.",
+            "audioSrc": "/audio/hr/a1/module-07/u-deset-ali-let-kasni-sat-vremena.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Joj! Gdje je izlaz?",
-            "translation": "Ojej! Gdzie jest bramka?"
+            "translation": "Ojej! Gdzie jest bramka?",
+            "audioSrc": "/audio/hr/a1/module-07/joj-gdje-je-izlaz.mp3"
           },
           {
             "speaker": "Službenica",
             "text": "Izlaz pet, lijevo.",
-            "translation": "Bramka piąta, w lewo."
+            "translation": "Bramka piąta, w lewo.",
+            "audioSrc": "/audio/hr/a1/module-07/izlaz-pet-lijevo.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Kada je ukrcaj?",
-            "translation": "Kiedy jest wejście na pokład?"
+            "translation": "Kiedy jest wejście na pokład?",
+            "audioSrc": "/audio/hr/a1/module-07/kada-je-ukrcaj.mp3"
           },
           {
             "speaker": "Službenica",
             "text": "U deset i trideset.",
-            "translation": "O dziesiątej trzydzieści."
+            "translation": "O dziesiątej trzydzieści.",
+            "audioSrc": "/audio/hr/a1/module-07/u-deset-i-trideset.mp3"
           }
         ]
       },

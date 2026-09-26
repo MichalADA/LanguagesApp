@@ -28,7 +28,8 @@ export const LESSON: GeneratedLesson = {
         "source": "bracia",
         "lemma": "brat",
         "partOfSpeech": "noun",
-        "recordId": "A1-1213"
+        "recordId": "A1-1213",
+        "audioSrc": "/audio/hr/a1/module-02/braca.mp3"
       },
       {
         "target": "miran",
@@ -51,7 +52,8 @@ export const LESSON: GeneratedLesson = {
         "source": "znać (kogoś)",
         "lemma": "poznavati",
         "partOfSpeech": "verb",
-        "recordId": "A1-0169"
+        "recordId": "A1-0169",
+        "audioSrc": "/audio/hr/a1/module-02/poznavati.mp3"
       },
       {
         "target": "opisati",
@@ -195,7 +197,8 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "braća",
             "source": "bracia",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-02/braca.mp3"
           },
           {
             "target": "miran",
@@ -212,7 +215,8 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "poznavati",
             "source": "znać (kogoś)",
-            "partOfSpeech": "czasownik"
+            "partOfSpeech": "czasownik",
+            "audioSrc": "/audio/hr/a1/module-02/poznavati.mp3"
           },
           {
             "target": "opisati",
@@ -277,7 +281,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Imaš li braću i sestre?",
-            "source": "Masz rodzeństwo?"
+            "source": "Masz rodzeństwo?",
+            "audioSrc": "/audio/hr/a1/module-02/imas-li-bracu-i-sestre.mp3"
           }
         ]
       },
@@ -406,14 +411,9 @@ export const LESSON: GeneratedLesson = {
             "accepted": [
               "Moj prijatelj radi u školi."
             ],
-<<<<<<< HEAD
             "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(((moj prijatelj|on) )?radi )?((u|na) (?:prijateljici|prijateljima|informaciji|ponavljanju|ponedjeljku|razglednici|rezervaciji|roditeljima|temperaturi|inozemstvu|konobarici|prijatelju|studentici|suncobranu|televiziji|tjestenini|učiteljici|aerodromu|apartmanu|fakultetu|gramatici|hrvatskoj|inženjeru|jelovniku|kašnjenju|kazalištu|kilogramu|kišobranu|knjižnici|kolodvoru|kupaonici|liječnici|liječniku|naočalama|napojnici|novčaniku|prodavaču|putovanju|putovnici|raskrižju|razgovoru|recepciji|restoranu|roditelju|sladoledu|autobusu|blagajni|četvrtku|čokoladi|domaćinu|gotovini|kolegici|koncertu|konobaru|krumpiru|ležaljci|limunadi|ljekarni|nedjelji|nogometu|obitelji|odgovoru|piletini|poljskoj|pomfritu|predjelu|prognozi|proljeću|prtljazi|računalu|rečenici|sastanku|semaforu|slušanju|studentu|suveniru|telefonu|teretani|trajektu|tramvaju|trgovini|učitelju|utakmici|zadataku|balkonu|biciklu|bolnici|čitanju|desertu|djetetu|dolasku|doručku|jogurtu|kartici|košarci|kuhinji|laptopu|lekciji|lozinci|maslacu|mjesecu|mlijeku|odbojci|pijesku|pisanju|pitanju|planini|polasku|prijavi|putniku|ručniku|ruksaku|snijegu|srijedi|stanici|stupnju|susjedi|susjedu|taksiju|tržnici|turistu|učeniku|ukrcaju|vikendu|vrećici|vremenu|adresi|avionu|bazenu|centru|cijeni|glazbi|godini|govoru|hobiju|hotelu|igrici|izlazu|izletu|jabuci|jeseni|jeziku|kafiću|ključu|knjizi|koferu|kolaču|kolezi|komadu|lijeku|minuti|mjestu|muzeju|odjavi|odmoru|pekari|peronu|pomoći|ponoći|poruci|povrću|računu|riječi|salati|šalici|šećeru|seriji|sestri|sportu|suboti|tečaju|tenisu|tjednu|tvrtci|utorku|večeri|večeru|vilici|vjetru|zabavi|zemlji|zgradi|banci|braći|bratu|brodu|broju|centu|crkvi|djeci|djedu|filmu|gradu|hrani|karti|kćeri|klimi|kruhu|liftu|ljetu|mačci|magli|majci|mostu|novcu|obali|oluji|osobi|otoku|parku|petku|planu|plaži|podnu|posau|pošti|ručku|školi|stanu|stolu|šunci|suncu|testu|torbi|ulazu|ulici|uredu|vlaku|autu|baci|boci|čaju|čaši|danu|euru|jaju|jelu|jozi|juhi|katu|kavi|kinu|kiši|kući|ledu|letu|mami|mesu|moru|mužu|noći|piću|pivu|poli|putu|ribi|riži|satu|sinu|siru|sobi|soku|tati|trgu|valu|vinu|voću|vodi|vrtu|ženi|zimi|imu|ocu|psu|wcu)|od kuće|kod kuće))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
-            "suggestion": "Moj prijatelj radi u školi."
-=======
-            "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(((moj prijatelj|on) )?radi )?((u|na) (?:prijateljici|prijateljima|informaciji|ponavljanju|ponedjeljku|razglednici|rezervaciji|roditeljima|aktivnostu|inozemstvu|konobarici|prijatelju|studentici|suncobranu|televiziji|tjestenini|učiteljici|aerodromu|fakultetu|gramatici|hrvatskoj|inženjeru|jelovniku|kašnjenju|kazalištu|kilogramu|kišobranu|knjižnici|kolodvoru|kupaonici|liječnici|liječniku|naočalama|napojnici|novčaniku|prodavaču|putovanju|putovnici|raskrižju|razgovoru|recepciji|restoranu|roditelju|sladoledu|autobusu|blagajni|četvrtku|čokoladi|gotovini|kolegici|koncertu|konobaru|krumpiru|ležaljci|limunadi|ljekarni|nedjelji|nogometu|obitelji|odgovoru|piletini|poljskoj|pomfritu|predjelu|prognozi|proljeću|prtljazi|računalu|rečenici|sastanku|semaforu|slušanju|studentu|suveniru|telefonu|teretani|trajektu|tramvaju|trgovini|učitelju|utakmici|veličini|zadataku|balkonu|biciklu|bolnici|čitanju|desertu|djetetu|dolasku|doručku|jogurtu|kartici|košarci|laptopu|lekciji|lozinci|maslacu|mjesecu|mlijeku|odbojci|pijesku|pisanju|pitanju|planini|polasku|prijavi|prilogu|putniku|ručniku|ruksaku|snijegu|srijedi|stanici|stupnju|susjedi|susjedu|taksiju|tanjuru|tržnici|turistu|učeniku|ukrcaju|vikendu|vrećici|vremenu|adresi|avionu|bazenu|centru|cijeni|glazbi|godini|govoru|hobiju|hotelu|igrici|izlazu|izletu|jabuci|jeseni|jeziku|kafiću|ključu|knjizi|koferu|kolaču|kolezi|komadu|minuti|mjestu|muzeju|odjavi|odmoru|pekari|peronu|pomoći|ponoći|poruci|povrću|računu|riječi|salati|šalici|šećeru|seriji|sestri|sportu|suboti|tečaju|tenisu|tjednu|tvrtci|utorku|večeri|večeru|vilici|vjetru|zabavi|zadaći|zemlji|zgradi|banci|bratu|brodu|broju|centu|crkvi|djeci|djedu|filmu|gradu|hrani|karti|kćeri|klimi|kruhu|liftu|ljetu|mačci|magli|majci|mostu|novcu|obali|oluji|osobi|otoku|parku|petku|planu|plaži|podnu|posau|pošti|ručku|školi|stanu|stolu|šunci|suncu|testu|torbi|ulazu|ulici|uredu|vlaku|žlici|autu|baci|boci|čaju|čaši|danu|euru|jaju|jelu|jozi|juhi|katu|kavi|kinu|kiši|kući|ledu|letu|mami|mesu|moru|mužu|noći|nožu|piću|pivu|poli|putu|ribi|riži|satu|sinu|siru|sobi|soku|tati|trgu|valu|vinu|voću|vodi|vrtu|ženi|zimi|imu|ocu|psu)|od kuće|kod kuće))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
             "suggestion": "Moj prijatelj radi u školi.",
             "suggestionAudioSrc": "/audio/hr/a1/module-02/moj-prijatelj-radi-u-skoli.mp3"
->>>>>>> e88cd64 (Generaownie voice)
           },
           {
             "kind": "line",

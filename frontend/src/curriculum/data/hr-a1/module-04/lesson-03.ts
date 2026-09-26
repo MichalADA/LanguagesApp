@@ -585,17 +585,20 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Ana, što piješ?",
-            "translation": "Ana, co pijesz?"
+            "translation": "Ana, co pijesz?",
+            "audioSrc": "/audio/hr/a1/module-04/ana-sto-pijes-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Limunadu s ledom. A ti?",
-            "translation": "Lemoniadę z lodem. A ty?"
+            "translation": "Lemoniadę z lodem. A ty?",
+            "audioSrc": "/audio/hr/a1/module-04/limunadu-s-ledom-a-ti.mp3"
           },
           {
             "speaker": "Marko",
             "text": "Ja pijem pivo. Oprostite!",
-            "translation": "Ja piję piwo. Przepraszam!"
+            "translation": "Ja piję piwo. Przepraszam!",
+            "audioSrc": "/audio/hr/a1/module-04/ja-pijem-pivo-oprostite-m.mp3"
           },
           {
             "speaker": "Konobar",
@@ -606,17 +609,20 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Marko",
             "text": "Mogu li dobiti jednu limunadu i jedno pivo?",
-            "translation": "Czy mogę dostać jedną lemoniadę i jedno piwo?"
+            "translation": "Czy mogę dostać jedną lemoniadę i jedno piwo?",
+            "audioSrc": "/audio/hr/a1/module-04/mogu-li-dobiti-jednu-limunadu-i-jedno-pivo-m.mp3"
           },
           {
             "speaker": "Konobar",
             "text": "Naravno. Još nešto?",
-            "translation": "Oczywiście. Coś jeszcze?"
+            "translation": "Oczywiście. Coś jeszcze?",
+            "audioSrc": "/audio/hr/a1/module-04/naravno-jos-nesto-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ne, hvala.",
-            "translation": "Nie, dziękuję."
+            "translation": "Nie, dziękuję.",
+            "audioSrc": "/audio/hr/a1/module-04/ne-hvala.mp3"
           }
         ]
       },

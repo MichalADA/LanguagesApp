@@ -215,7 +215,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Danas je hladno i oblačno.",
-          "source": "Dziś jest zimno i pochmurno."
+          "source": "Dziś jest zimno i pochmurno.",
+          "audioSrc": "/audio/hr/a1/module-06/danas-je-hladno-i-oblacno.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-06/oblacno.mp3"
       },
@@ -512,7 +513,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Danas je hladno i oblačno."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/danas-je-hladno-i-oblacno.mp3"
       },
       {
         "id": "comprehend",

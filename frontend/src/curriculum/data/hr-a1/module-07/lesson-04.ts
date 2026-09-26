@@ -230,7 +230,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Idem na plažu s ručnikom.",
-          "source": "Idę na plażę z ręcznikiem."
+          "source": "Idę na plażę z ręcznikiem.",
+          "audioSrc": "/audio/hr/a1/module-07/idem-na-plazu-s-rucnikom.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-07/rucnik.mp3"
       },
@@ -456,7 +457,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Idem na plažu s ručnikom.",
           "Ja idem na plažu s ručnikom."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/idem-na-plazu-s-rucnikom.mp3"
       },
       {
         "id": "comprehend",

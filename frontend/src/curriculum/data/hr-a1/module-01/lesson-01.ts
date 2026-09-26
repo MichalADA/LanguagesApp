@@ -476,7 +476,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Dzień dobry, Ano!",
         "accepted": [
           "Dobro jutro, Ana!"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/dobro-jutro-ana.mp3"
       },
       {
         "id": "dialog",

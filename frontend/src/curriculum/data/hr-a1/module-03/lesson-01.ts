@@ -570,7 +570,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Ujutro se tuširam i doručkujem."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/ujutro-se-tusiram-i-doruckujem.mp3"
       },
       {
         "id": "translate-2",

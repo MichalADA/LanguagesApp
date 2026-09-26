@@ -156,21 +156,24 @@ export const LESSON: GeneratedLesson = {
         "source": "apartament / kwatera",
         "lemma": "apartman",
         "partOfSpeech": "noun",
-        "recordId": "A1-1208"
+        "recordId": "A1-1208",
+        "audioSrc": "/audio/hr/a1/module-07/apartman.mp3"
       },
       {
         "target": "kuhinja",
         "source": "kuchnia",
         "lemma": "kuhinja",
         "partOfSpeech": "noun",
-        "recordId": "A1-1209"
+        "recordId": "A1-1209",
+        "audioSrc": "/audio/hr/a1/module-07/kuhinja.mp3"
       },
       {
         "target": "domaćin",
         "source": "gospodarz (kwatery)",
         "lemma": "domaćin",
         "partOfSpeech": "noun",
-        "recordId": "A1-1210"
+        "recordId": "A1-1210",
+        "audioSrc": "/audio/hr/a1/module-07/domacin.mp3"
       }
     ],
     "steps": [
@@ -260,7 +263,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "rzeczownik",
         "example": {
           "target": "Ovo je ključ od apartmana.",
-          "source": "To jest klucz do apartamentu."
+          "source": "To jest klucz do apartamentu.",
+          "audioSrc": "/audio/hr/a1/module-07/ovo-je-kljuc-od-apartmana.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-07/kljuc.mp3"
       },
@@ -420,17 +424,20 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "apartman",
             "source": "apartament / kwatera",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/apartman.mp3"
           },
           {
             "target": "kuhinja",
             "source": "kuchnia",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/kuhinja.mp3"
           },
           {
             "target": "domaćin",
             "source": "gospodarz (kwatery)",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-07/domacin.mp3"
           }
         ]
       },
@@ -478,7 +485,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Ovo je ključ od apartmana.",
-            "source": "To jest klucz do apartamentu."
+            "source": "To jest klucz do apartamentu.",
+            "audioSrc": "/audio/hr/a1/module-07/ovo-je-kljuc-od-apartmana.mp3"
           }
         ]
       },
@@ -584,7 +592,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Imate li slobodnu sobu?",
           "Imate li jednu slobodnu sobu?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/imate-li-slobodnu-sobu.mp3"
       },
       {
         "id": "translate-more",
@@ -662,32 +671,38 @@ export const LESSON: GeneratedLesson = {
           {
             "speaker": "Domaćin",
             "text": "Dobar dan! Dobro došli. Ovo je vaš apartman.",
-            "translation": "Dzień dobry! Witamy. To jest Pani apartament."
+            "translation": "Dzień dobry! Witamy. To jest Pani apartament.",
+            "audioSrc": "/audio/hr/a1/module-07/dobar-dan-dobro-dosli-ovo-je-vas-apartman-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Hvala! Gdje je kupaonica?",
-            "translation": "Dziękuję! Gdzie jest łazienka?"
+            "translation": "Dziękuję! Gdzie jest łazienka?",
+            "audioSrc": "/audio/hr/a1/module-07/hvala-gdje-je-kupaonica.mp3"
           },
           {
             "speaker": "Domaćin",
             "text": "Tamo, pored kuhinje. Ovo je ključ.",
-            "translation": "Tam, obok kuchni. To jest klucz."
+            "translation": "Tam, obok kuchni. To jest klucz.",
+            "audioSrc": "/audio/hr/a1/module-07/tamo-pored-kuhinje-ovo-je-kljuc-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Ima li klima?",
-            "translation": "Czy jest klimatyzacja?"
+            "translation": "Czy jest klimatyzacja?",
+            "audioSrc": "/audio/hr/a1/module-07/ima-li-klima.mp3"
           },
           {
             "speaker": "Domaćin",
             "text": "Ima, i balkon. Lozinka za internet je na stolu.",
-            "translation": "Jest, i balkon. Hasło do internetu jest na stole."
+            "translation": "Jest, i balkon. Hasło do internetu jest na stole.",
+            "audioSrc": "/audio/hr/a1/module-07/ima-i-balkon-lozinka-za-internet-je-na-stolu-m.mp3"
           },
           {
             "speaker": "Ana",
             "text": "Super, hvala lijepa!",
-            "translation": "Super, dziękuję bardzo!"
+            "translation": "Super, dziękuję bardzo!",
+            "audioSrc": "/audio/hr/a1/module-07/super-hvala-lijepa.mp3"
           }
         ]
       },

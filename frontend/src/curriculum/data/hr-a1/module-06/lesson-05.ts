@@ -263,7 +263,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "nemam"
         ],
-        "translation": "Dziś nie mam czasu."
+        "translation": "Dziś nie mam czasu.",
+        "answerAudioSrc": "/audio/hr/a1/module-06/danas-nemam-vremena.mp3"
       },
       {
         "id": "order",

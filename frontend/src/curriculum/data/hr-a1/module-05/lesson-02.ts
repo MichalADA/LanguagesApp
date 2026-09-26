@@ -132,28 +132,32 @@ export const LESSON: GeneratedLesson = {
         "source": "Boli mnie głowa.",
         "lemma": "boljeti",
         "partOfSpeech": "phrase",
-        "recordId": "A1-1198"
+        "recordId": "A1-1198",
+        "audioSrc": "/audio/hr/a1/module-05/boli-me-glava.mp3"
       },
       {
         "target": "lijek",
         "source": "lek",
         "lemma": "lijek",
         "partOfSpeech": "noun",
-        "recordId": "A1-1199"
+        "recordId": "A1-1199",
+        "audioSrc": "/audio/hr/a1/module-05/lijek.mp3"
       },
       {
         "target": "temperatura",
         "source": "gorączka / temperatura",
         "lemma": "temperatura",
         "partOfSpeech": "noun",
-        "recordId": "A1-1200"
+        "recordId": "A1-1200",
+        "audioSrc": "/audio/hr/a1/module-05/temperatura.mp3"
       },
       {
         "target": "bolestan",
         "source": "chory",
         "lemma": "bolestan",
         "partOfSpeech": "adjective",
-        "recordId": "A1-1201"
+        "recordId": "A1-1201",
+        "audioSrc": "/audio/hr/a1/module-05/bolestan.mp3"
       }
     ],
     "steps": [
@@ -391,22 +395,26 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "Boli me glava.",
             "source": "Boli mnie głowa.",
-            "partOfSpeech": "zwrot"
+            "partOfSpeech": "zwrot",
+            "audioSrc": "/audio/hr/a1/module-05/boli-me-glava.mp3"
           },
           {
             "target": "lijek",
             "source": "lek",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/lijek.mp3"
           },
           {
             "target": "temperatura",
             "source": "gorączka / temperatura",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/temperatura.mp3"
           },
           {
             "target": "bolestan",
             "source": "chory",
-            "partOfSpeech": "przymiotnik"
+            "partOfSpeech": "przymiotnik",
+            "audioSrc": "/audio/hr/a1/module-05/bolestan.mp3"
           }
         ]
       },
@@ -454,7 +462,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Imate li nešto za glavu?",
-            "source": "Czy ma Pan / Pani coś na ból głowy?"
+            "source": "Czy ma Pan / Pani coś na ból głowy?",
+            "audioSrc": "/audio/hr/a1/module-05/imate-li-nesto-za-glavu.mp3"
           }
         ]
       },
@@ -524,7 +533,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Idem u trgovinu po kruh.",
           "Ja idem u trgovinu po kruh."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu-po-kruh.mp3"
       },
       {
         "id": "comprehend",
@@ -562,7 +572,8 @@ export const LESSON: GeneratedLesson = {
           "Idem u ljekarnu. Boli me glava.",
           "Ja idem u ljekarnu. Boli me glava.",
           "Idem u ljekarnu, boli me glava."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/idem-u-ljekarnu-boli-me-glava.mp3"
       },
       {
         "id": "translate-more",
@@ -719,7 +730,8 @@ export const LESSON: GeneratedLesson = {
             "line": {
               "speaker": "Ana",
               "text": "Jesi li dobro?",
-              "translation": "Wszystko w porządku?"
+              "translation": "Wszystko w porządku?",
+              "audioSrc": "/audio/hr/a1/module-05/jesi-li-dobro.mp3"
             }
           },
           {
@@ -730,7 +742,8 @@ export const LESSON: GeneratedLesson = {
               "Boli me glava."
             ],
             "pattern": "^(?:(?:bok|zdravo|hej|dobar dan|dobro jutro|dobra večer|oprostite|hvala(?: lijepa| vam)?|ana) )*(?:(ne |nisam dobro )?(boli me glava|glava me boli))(?: (?:hvala(?: lijepa| vam)?|a ti|a vi|molim(?: vas)?|ana))*$",
-            "suggestion": "Ne, boli me glava."
+            "suggestion": "Ne, boli me glava.",
+            "suggestionAudioSrc": "/audio/hr/a1/module-05/ne-boli-me-glava.mp3"
           }
         ]
       },

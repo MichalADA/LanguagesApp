@@ -543,7 +543,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Imaš li novi telefon?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/imas-li-novi-telefon.mp3"
       },
       {
         "id": "translate-2",

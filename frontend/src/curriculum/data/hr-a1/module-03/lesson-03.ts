@@ -549,7 +549,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Kiedy jest spotkanie?",
         "accepted": [
           "Kada je sastanak?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/kada-je-sastanak.mp3"
       },
       {
         "id": "model",

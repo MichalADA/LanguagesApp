@@ -291,7 +291,8 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Košta"
         ],
-        "translation": "Kosztuje cztery euro i pięćdziesiąt centów."
+        "translation": "Kosztuje cztery euro i pięćdziesiąt centów.",
+        "answerAudioSrc": "/audio/hr/a1/module-05/kosta-cetiri-eura-i-pedeset-centi.mp3"
       },
       {
         "id": "order",
@@ -344,7 +345,8 @@ export const LESSON: GeneratedLesson = {
         "prompt": "Czy to jest drogie?",
         "accepted": [
           "Je li ovo skupo?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/je-li-ovo-skupo.mp3"
       },
       {
         "id": "dialog",

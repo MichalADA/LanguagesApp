@@ -164,7 +164,8 @@ export const LESSON: GeneratedLesson = {
         "source": "toaleta",
         "lemma": "WC",
         "partOfSpeech": "noun",
-        "recordId": "A1-1196"
+        "recordId": "A1-1196",
+        "audioSrc": "/audio/hr/a1/module-05/wc.mp3"
       }
     ],
     "steps": [
@@ -429,7 +430,8 @@ export const LESSON: GeneratedLesson = {
           {
             "target": "WC",
             "source": "toaleta",
-            "partOfSpeech": "rzeczownik"
+            "partOfSpeech": "rzeczownik",
+            "audioSrc": "/audio/hr/a1/module-05/wc.mp3"
           }
         ]
       },
@@ -445,7 +447,8 @@ export const LESSON: GeneratedLesson = {
           "między"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/wc.mp3"
       },
       {
         "id": "examples",
@@ -554,7 +557,8 @@ export const LESSON: GeneratedLesson = {
         ],
         "accepted": [
           "Banka je blizu trga."
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/banka-je-blizu-trga.mp3"
       },
       {
         "id": "translate-2",
@@ -578,7 +582,8 @@ export const LESSON: GeneratedLesson = {
           "Oprostite, gdje je toalet?",
           "Oprostite, gdje je zahod?",
           "Gdje je WC?"
-        ]
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/oprostite-gdje-je-wc.mp3"
       },
       {
         "id": "translate-more",

@@ -213,7 +213,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Je li ovo skupo?",
-            "source": "Czy to jest drogie?"
+            "source": "Czy to jest drogie?",
+            "audioSrc": "/audio/hr/a1/module-05/je-li-ovo-skupo.mp3"
           }
         ]
       },
@@ -305,17 +306,11 @@ export const LESSON: GeneratedLesson = {
         "source": "Czy ma Pan / Pani…?",
         "partOfSpeech": "zwrot",
         "example": {
-<<<<<<< HEAD
           "target": "Imate li vodu?",
-          "source": "Czy ma Pan / Pani wodę?"
-        }
-=======
-          "target": "Imate li ovo u drugoj veličini?",
-          "source": "Czy mają Państwo to w innym rozmiarze?",
-          "audioSrc": "/audio/hr/a1/module-05/imate-li-ovo-u-drugoj-velicini.mp3"
+          "source": "Czy ma Pan / Pani wodę?",
+          "audioSrc": "/audio/hr/a1/module-05/imate-li-vodu.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-05/imate-li.mp3"
->>>>>>> e88cd64 (Generaownie voice)
       },
       {
         "id": "check-2",
@@ -341,7 +336,8 @@ export const LESSON: GeneratedLesson = {
         "partOfSpeech": "przysłówek",
         "example": {
           "target": "Je li ovo skupo?",
-          "source": "Czy to jest drogie?"
+          "source": "Czy to jest drogie?",
+          "audioSrc": "/audio/hr/a1/module-05/je-li-ovo-skupo.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-05/skupo.mp3"
       },
@@ -485,7 +481,8 @@ export const LESSON: GeneratedLesson = {
           "cent"
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/cetrdeset.mp3"
       },
       {
         "id": "examples",
@@ -718,7 +715,8 @@ export const LESSON: GeneratedLesson = {
           "Kosztuje dziesięć euro."
         ],
         "correctIndex": 0,
-        "targetText": "prompt"
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/je-li-ovo-skupo.mp3"
       },
       {
         "id": "translate-2",
@@ -964,7 +962,8 @@ export const LESSON: GeneratedLesson = {
           },
           {
             "target": "Je li ovo skupo?",
-            "source": "Czy to jest drogie?"
+            "source": "Czy to jest drogie?",
+            "audioSrc": "/audio/hr/a1/module-05/je-li-ovo-skupo.mp3"
           },
           {
             "target": "Tražim vodu.",
