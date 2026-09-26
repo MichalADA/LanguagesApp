@@ -356,7 +356,8 @@ const PROPER = new Set(["Ana", "Anu", "Marko", "Ivan", "Michał", "Marta", "Zagr
 
 function orderStep(id, stage, sentence, rand) {
   const words = sentence.hr.replace(/[.,!?;:]/g, "").split(/\s+/).filter(Boolean);
-  if (words.length < 3) fail(`${id}: zdanie „${sentence.hr}” jest za krótkie do układania`);
+  // Trzy elementy to zgadywanie, nie budowanie zdania.
+  if (words.length < 4) fail(`${id}: zdanie „${sentence.hr}” jest za krótkie do układania (min. 4 elementy)`);
   const tokens = words.map((w, i) => (i === 0 && !PROPER.has(w) ? w.charAt(0).toLocaleLowerCase("hr") + w.slice(1) : w));
   let shuffled = [...tokens];
   for (let attempt = 0; attempt < 10 && shuffled.join(" ") === tokens.join(" "); attempt++) {
@@ -509,6 +510,24 @@ function examplesStep(bucket) {
   }];
 }
 
+/**
+ * Słowo uzupełniające w produkcji: tłumaczenie najkrótszego zdania przykładowego ze słowem z listy
+ * „Więcej przydatnych słów” (uczeń słyszał je chwilę wcześniej). didactics.supplementTranslate:
+ * numer zdania albo false.
+ */
+function supplementTranslateStep(bucket, d, used) {
+  if (d.supplementTranslate === false) return null;
+  const extra = supplementOf(bucket);
+  if (!extra.length) return null;
+  const forms = new Set(extra.flatMap((r) => [...formsOf(r)]));
+  const candidates = bucket.sentences.filter((r) => isExampleSentence(r) && !used.has(Number(r.sequence)));
+  const pick = d.supplementTranslate
+    ? candidates.find((r) => Number(r.sequence) === d.supplementTranslate)
+    : candidates.filter((r) => tokens(r.hr_text).length >= 3 && tokens(r.hr_text).some((t) => forms.has(t)))
+      .sort((a, b) => tokens(a.hr_text).length - tokens(b.hr_text).length || Number(a.sequence) - Number(b.sequence))[0];
+  return pick ? translateStep("translate-more", "practice", sentenceOf(bucket.lesson.lesson_id, pick.sequence)) : null;
+}
+
 /** Dialog wzorcowy (didactics → model): najpierw słuchasz rozmowy, potem prowadzisz własną. */
 function modelStep(lessonId) {
   const model = didactics.lessons[lessonId]?.model;
@@ -577,6 +596,8 @@ function buildRegular(bucket) {
   const translations = (d.translate ?? []).map((t, i) => translateStep(`translate-${i + 1}`, "practice", sentenceOf(id, t.sentence), t.accept));
   const order = d.order ? orderStep("order", "practice", sentenceOf(id, d.order), rand) : null;
   const extraChoices = extraChoiceSteps(d);
+  const more = kindOf(n) === "lesson" ? supplementTranslateStep(bucket, d, new Set((d.translate ?? []).map((t) => t.sentence))) : null;
+  if (more) translations.push(more);
   const [t1, ...rest] = translations;
   if (n % 2) practice.push(comprehend, ...extraChoices, t1, order, ...rest);
   else practice.push(t1, order, ...extraChoices, comprehend, ...rest);

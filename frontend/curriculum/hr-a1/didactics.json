@@ -84,6 +84,19 @@
     ],
     "a1-24:1": [
       "Koliko košta?"
+    ],
+    "A1-0736": [
+      "Imam sina i kćerku."
+    ],
+    "A1-0813": [
+      "Malo govorim hrvatski."
+    ],
+    "A1-0892": [
+      "Molim čašu vode."
+    ],
+    "A1-1089": [
+      "Danas je more hladno.",
+      "More je hladno danas."
     ]
   },
   "modules": {
@@ -1090,7 +1103,7 @@
         }
       ],
       "comprehend": 5,
-      "order": 6,
+      "order": 12,
       "dialog": {
         "title": "Co masz?",
         "partner": "Marko",
@@ -1351,7 +1364,7 @@
         }
       ],
       "comprehend": 6,
-      "order": 4,
+      "order": 12,
       "dialog": {
         "title": "Twój dzień",
         "partner": "Marko",
@@ -2256,8 +2269,8 @@
           ]
         }
       ],
-      "comprehend": 5,
-      "order": 1,
+      "comprehend": 2,
+      "order": 5,
       "listening": "a1-kafic",
       "dialog": {
         "title": "Zamawiasz kawę",
@@ -2328,37 +2341,42 @@
         "sample": "Molim jednu kavu bez šećera. Htio bih i sok."
       },
       "model": {
-        "title": "Kawa z mlekiem",
+        "title": "Kawa ze znajomym",
         "lines": [
           {
-            "speaker": "Konobar",
-            "hr": "Dobar dan! Izvolite.",
-            "pl": "Dzień dobry! Słucham."
+            "speaker": "Marko",
+            "hr": "Ana, što piješ?",
+            "pl": "Ana, co pijesz?"
           },
           {
             "speaker": "Ana",
-            "hr": "Dobar dan. Jednu bijelu kavu, molim.",
-            "pl": "Dzień dobry. Jedną kawę z mlekiem, poproszę."
+            "hr": "Limunadu s ledom. A ti?",
+            "pl": "Lemoniadę z lodem. A ty?"
           },
           {
-            "speaker": "Konobar",
-            "hr": "Veliku ili malu?",
-            "pl": "Dużą czy małą?"
-          },
-          {
-            "speaker": "Ana",
-            "hr": "Malu, molim. I čašu vode.",
-            "pl": "Małą, poproszę. I szklankę wody."
+            "speaker": "Marko",
+            "hr": "Ja pijem pivo. Oprostite!",
+            "pl": "Ja piję piwo. Przepraszam!"
           },
           {
             "speaker": "Konobar",
             "hr": "Izvolite.",
-            "pl": "Proszę."
+            "pl": "Słucham."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Mogu li dobiti jednu limunadu i jedno pivo?",
+            "pl": "Czy mogę dostać jedną lemoniadę i jedno piwo?"
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Naravno. Još nešto?",
+            "pl": "Oczywiście. Coś jeszcze?"
           },
           {
             "speaker": "Ana",
-            "hr": "Hvala lijepa!",
-            "pl": "Dziękuję bardzo!"
+            "hr": "Ne, hvala.",
+            "pl": "Nie, dziękuję."
           }
         ]
       }
@@ -2623,10 +2641,18 @@
         },
         {
           "sentence": 1
+        },
+        {
+          "sentence": 12,
+          "accept": [
+            "Oprostite, gdje je toalet?",
+            "Oprostite, gdje je zahod?",
+            "Gdje je WC?"
+          ]
         }
       ],
       "comprehend": 5,
-      "order": 4,
+      "order": 11,
       "dialog": {
         "title": "Gdzie jest centrum?",
         "partner": "Marko",
@@ -2739,10 +2765,16 @@
         },
         {
           "sentence": 5
+        },
+        {
+          "sentence": 12,
+          "accept": [
+            "Idem u ljekarnu, boli me glava."
+          ]
         }
       ],
       "comprehend": 4,
-      "order": 2,
+      "order": 11,
       "dialog": {
         "title": "Dokąd idziesz?",
         "partner": "Ana",
@@ -2774,6 +2806,20 @@
                 "Blizu je."
               ],
               "pattern": "^(kolodvor je )?(blizu|tamo|daleko|ovdje|u centru)( je)?$"
+            }
+          },
+          {
+            "say": "Jesi li dobro?",
+            "pl": "Wszystko w porządku?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że boli cię głowa.",
+              "accept": [
+                "Ne, boli me glava.",
+                "Boli me glava."
+              ],
+              "pattern": "^(ne |nisam dobro )?(boli me glava|glava me boli)$"
             }
           }
         ]
@@ -2830,7 +2876,8 @@
             "pl": "W centrum, blisko muzeum."
           }
         ]
-      }
+      },
+      "listening": "a1-ljekarna"
     },
     "a1-23": {
       "grammar": {
@@ -3552,7 +3599,7 @@
         }
       ],
       "comprehend": 5,
-      "order": 1,
+      "order": 11,
       "dialog": {
         "title": "Jaka pogoda?",
         "partner": "Ana",
@@ -3662,7 +3709,7 @@
         }
       ],
       "comprehend": 5,
-      "order": 3,
+      "order": 12,
       "dialog": {
         "title": "Umawiamy się",
         "partner": "Marko",
@@ -3883,6 +3930,13 @@
         },
         {
           "sentence": 5
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Ide li ovaj autobus u centar?",
+            "Oprostite, ide li ovaj autobus do centra?"
+          ]
         }
       ],
       "comprehend": 6,
@@ -3919,6 +3973,19 @@
               ],
               "open": true,
               "pattern": "^(ja )?(putujem |idem )?{ins}$"
+            }
+          },
+          {
+            "say": "Autobus je tamo, na stanici.",
+            "pl": "Autobus jest tam, na przystanku."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj kierowcę, czy ten autobus jedzie do centrum.",
+              "accept": [
+                11
+              ],
+              "pattern": "^ide li (ovaj )?autobus (do centra|u centar)$"
             }
           }
         ]
@@ -3978,7 +4045,8 @@
             "pl": "Super podróż!"
           }
         ]
-      }
+      },
+      "listening": "a1-autobus"
     },
     "a1-32": {
       "grammar": {
@@ -4038,8 +4106,8 @@
           ]
         }
       ],
-      "comprehend": 2,
-      "order": 5,
+      "comprehend": 3,
+      "order": 2,
       "listening": "a1-kolodvor",
       "dialog": {
         "title": "Przy kasie biletowej",
@@ -4104,37 +4172,37 @@
         "sample": "Imam kartu za Zadar. Vlak polazi u sedam."
       },
       "model": {
-        "title": "Bilet do Splitu",
+        "title": "Na lotnisku",
         "lines": [
           {
             "speaker": "Ana",
-            "hr": "Dobar dan. Jednu kartu za Split, molim.",
-            "pl": "Dzień dobry. Jeden bilet do Splitu, poproszę."
+            "hr": "Oprostite, kada je let za Zagreb?",
+            "pl": "Przepraszam, kiedy jest lot do Zagrzebia?"
           },
           {
-            "speaker": "Blagajnica",
-            "hr": "U jednom smjeru ili povratnu?",
-            "pl": "W jedną stronę czy powrotny?"
-          },
-          {
-            "speaker": "Ana",
-            "hr": "Povratnu, molim. Kada je polazak?",
-            "pl": "Powrotny, poproszę. Kiedy jest odjazd?"
-          },
-          {
-            "speaker": "Blagajnica",
-            "hr": "Autobus polazi u deset, s perona dva.",
-            "pl": "Autobus odjeżdża o dziesiątej, z peronu drugiego."
+            "speaker": "Službenica",
+            "hr": "U deset, ali let kasni sat vremena.",
+            "pl": "O dziesiątej, ale lot jest opóźniony o godzinę."
           },
           {
             "speaker": "Ana",
-            "hr": "Moram li presjedati?",
-            "pl": "Czy muszę się przesiadać?"
+            "hr": "Joj! Gdje je izlaz?",
+            "pl": "Ojej! Gdzie jest bramka?"
           },
           {
-            "speaker": "Blagajnica",
-            "hr": "Ne, autobus ide izravno.",
-            "pl": "Nie, autobus jedzie bezpośrednio."
+            "speaker": "Službenica",
+            "hr": "Izlaz pet, lijevo.",
+            "pl": "Bramka piąta, w lewo."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Kada je ukrcaj?",
+            "pl": "Kiedy jest wejście na pokład?"
+          },
+          {
+            "speaker": "Službenica",
+            "hr": "U deset i trideset.",
+            "pl": "O dziesiątej trzydzieści."
           }
         ]
       }
@@ -4159,6 +4227,12 @@
         },
         {
           "sentence": 5
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Imate li jednu slobodnu sobu?"
+          ]
         }
       ],
       "comprehend": 6,
@@ -4237,37 +4311,37 @@
         "sample": "Imam rezervaciju na ime Michał. Trebam sobu za dvije noći."
       },
       "model": {
-        "title": "Ana w recepcji",
+        "title": "W apartamencie",
         "lines": [
           {
-            "speaker": "Recepcionar",
-            "hr": "Dobar dan, dobro došli!",
-            "pl": "Dzień dobry, witamy!"
+            "speaker": "Domaćin",
+            "hr": "Dobar dan! Dobro došli. Ovo je vaš apartman.",
+            "pl": "Dzień dobry! Witamy. To jest Pani apartament."
           },
           {
             "speaker": "Ana",
-            "hr": "Dobar dan. Imam rezervaciju na ime Ana Kovač.",
-            "pl": "Dzień dobry. Mam rezerwację na nazwisko Ana Kovač."
+            "hr": "Hvala! Gdje je kupaonica?",
+            "pl": "Dziękuję! Gdzie jest łazienka?"
           },
           {
-            "speaker": "Recepcionar",
-            "hr": "Da, dvokrevetna soba za dvije noći. Vašu putovnicu, molim.",
-            "pl": "Tak, pokój dwuosobowy na dwie noce. Poproszę paszport."
-          },
-          {
-            "speaker": "Ana",
-            "hr": "Izvolite. Je li doručak uključen?",
-            "pl": "Proszę. Czy śniadanie jest wliczone?"
-          },
-          {
-            "speaker": "Recepcionar",
-            "hr": "Da, od sedam do deset. Soba je na trećem katu.",
-            "pl": "Tak, od siódmej do dziesiątej. Pokój jest na trzecim piętrze."
+            "speaker": "Domaćin",
+            "hr": "Tamo, pored kuhinje. Ovo je ključ.",
+            "pl": "Tam, obok kuchni. To jest klucz."
           },
           {
             "speaker": "Ana",
-            "hr": "Hvala!",
-            "pl": "Dziękuję!"
+            "hr": "Ima li klima?",
+            "pl": "Czy jest klimatyzacja?"
+          },
+          {
+            "speaker": "Domaćin",
+            "hr": "Ima, i balkon. Lozinka za internet je na stolu.",
+            "pl": "Jest, i balkon. Hasło do internetu jest na stole."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Super, hvala lijepa!",
+            "pl": "Super, dziękuję bardzo!"
           }
         ]
       }
@@ -4302,7 +4376,7 @@
         }
       ],
       "comprehend": 6,
-      "order": 5,
+      "order": 12,
       "dialog": {
         "title": "Nad morzem",
         "partner": "Ana",

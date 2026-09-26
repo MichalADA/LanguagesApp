@@ -573,3 +573,47 @@ test('etap 2: żadne słowo nie jest nową kartą w dwóch zwykłych lekcjach', 
   }
   assert.deepEqual(dups, []);
 });
+
+/* ------------------------------------------------------------------ */
+/* Etap 3: sytuacje z życia, słowa uzupełniające w produkcji, jakość    */
+/* ------------------------------------------------------------------ */
+
+test('etap 3: każde „ułóż zdanie” ma co najmniej 4 elementy', () => {
+  const short = lessons.flatMap((l) => stepsOf(l.id).filter((s) => s.type === 'order' && s.tokens.length < 4).map((s) => `${l.id}: ${s.accepted[0]}`));
+  assert.deepEqual(short, []);
+});
+
+test('etap 3: słowa uzupełniające są też produkowane — tłumaczenie ze słowem z listy w każdej zwykłej lekcji', () => {
+  for (const lesson of lessons.filter((l) => l.kind === 'lesson' && l.id !== 'a1-01-02')) {
+    const supp = generated.get(lesson.id).material.records.filter((r) => r.type === 'vocabulary' && r.tags.includes('supplement'));
+    if (!supp.length) continue;
+    const forms = new Set(supp.flatMap((r) => [...formsByRecord.get(r.recordId).forms]));
+    const produced = stepsOf(lesson.id).filter((s) => s.type === 'translate').some((s) => hrTokens(s.accepted[0]).some((t) => forms.has(t)));
+    assert.ok(produced, `${lesson.id}: żadne tłumaczenie nie używa słowa uzupełniającego`);
+  }
+  // słowa uzupełniające przechodzą też w otwartych replikach
+  assert.equal(verdictOfReply('a1-05-02', 0, 'Idem u pekaru.'), 'hit');
+  assert.equal(verdictOfReply('a1-04-01', 0, 'Pijem mlijeko.'), 'hit');
+});
+
+test('etap 3: apteka, WC, autobus miejski i apartament', () => {
+  const translate = (id, answer) => stepsOf(id).some((s) => s.type === 'translate' && checkLessonAnswer(answer, s.accepted, rules) === 'hit');
+  assert.ok(translate('a1-05-01', 'Oprostite, gdje je WC?'), 'WC');
+  assert.equal(stepsOf('a1-05-02').find((s) => s.type === 'listening').title, 'W aptece');
+  assert.equal(verdictOfReply('a1-05-02', 2, 'Boli me glava.'), 'hit');
+  assert.equal(stepsOf('a1-07-01').find((s) => s.type === 'listening').title, 'W autobusie');
+  assert.equal(verdictOfReply('a1-07-01', 2, 'Oprostite, ide li ovaj autobus do centra?'), 'hit');
+  assert.ok(translate('a1-07-03', 'Imate li slobodnu sobu?'), 'wolny pokój');
+  assert.ok(stepsOf('a1-07-03').find((s) => s.id === 'model').lines.some((l) => l.speaker === 'Domaćin'));
+});
+
+test('etap 3: dialog wzorcowy nie powtarza sceny z nagrania, poprawione tłumaczenia słów', () => {
+  const model = (id) => stepsOf(id).find((s) => s.id === 'model').lines.map((l) => l.text).join(' ');
+  assert.doesNotMatch(model('a1-04-03'), /bijelu kavu/);
+  assert.doesNotMatch(model('a1-07-02'), /kartu za Split/);
+  assert.doesNotMatch(model('a1-07-03'), /putovnicu/);
+  const all = [...generated.values()].flatMap((g) => g.material.records.filter((r) => r.type === 'vocabulary'));
+  assert.equal(all.find((r) => r.hr === 'rano').pl, 'wcześnie');
+  assert.ok(all.some((r) => r.hr === 'poznavati') && !all.some((r) => r.hr === 'poznati'));
+  assert.ok(!all.some((r) => r.hr === 'živ'));
+});

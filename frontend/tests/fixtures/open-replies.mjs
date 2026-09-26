@@ -85,7 +85,7 @@ export const OPEN_REPLIES = [
 
   // Moduł 4
   { lesson: 'a1-04-01', reply: 0, topic: 'co pijesz',
-    hit: ['Pijem vodu.', 'Kavu.', 'Pijem čaj, hvala.', 'Kavu s mlijekom.', 'Čaj, molim.', 'Ja pijem sok.', 'Ne pijem kavu.'],
+    hit: ['Pijem mlijeko.', 'Limunadu, molim.', 'Pijem vodu.', 'Kavu.', 'Pijem čaj, hvala.', 'Kavu s mlijekom.', 'Čaj, molim.', 'Ja pijem sok.', 'Ne pijem kavu.'],
     miss: ['Pijem voda.', 'Pije kavu.'] },
   { lesson: 'a1-04-01', reply: 1, topic: 'co jesz',
     hit: ['Jedem kruh i sir.', 'Ribu.', 'Jedem salatu.', 'Kruh i sir.', 'Jedem meso i povrće.'],
@@ -111,12 +111,12 @@ export const OPEN_REPLIES = [
 
   // Moduł 5
   { lesson: 'a1-05-02', reply: 0, topic: 'dokąd idziesz',
-    hit: ['Idem u trgovinu.', 'Idem kući.', 'U grad.', 'Idem na poštu.', 'Idem u banku, a ti?', 'Ja idem u park.'],
+    hit: ['Idem u pekaru.', 'Idem u knjižnicu.', 'Idem na tržnicu.', 'Idem u trgovinu.', 'Idem kući.', 'U grad.', 'Idem na poštu.', 'Idem u banku, a ti?', 'Ja idem u park.'],
     miss: ['Idem u trgovina.', 'Ide u grad.'] },
 
   // Moduł 6
   { lesson: 'a1-06-01', reply: 0, topic: 'wolny czas',
-    hit: ['U slobodno vrijeme čitam.', 'Čitam.', 'Slušam glazbu.', 'Volim čitati.', 'Gledam filmove i čitam.', 'U slobodno vrijeme se odmaram.'],
+    hit: ['Gledam seriju.', 'Volim pjevati.', 'U slobodno vrijeme čitam.', 'Čitam.', 'Slušam glazbu.', 'Volim čitati.', 'Gledam filmove i čitam.', 'U slobodno vrijeme se odmaram.'],
     miss: ['Čitati.', 'Volim čitam.'] },
   { lesson: 'a1-06-02', reply: 0, topic: 'co lubisz (sport)',
     hit: ['Da, volim sport.', 'Volim plivati.', 'Ne volim sport.', 'Da, volim trčati.', 'Da, jako volim sport.', 'Ne, ali volim glazbu.'],
@@ -148,7 +148,7 @@ export const OPEN_REPLIES = [
     hit: ['Putujem u Zagreb.', 'Idem na more.', 'U Zagreb.', 'Putujem vlakom u Split.', 'Na more.', 'Putujem u Hrvatsku.'],
     miss: ['Putujem Zagreb.', 'Putuje u Zagreb.'] },
   { lesson: 'a1-07-01', reply: 1, topic: 'czym podróżujesz',
-    hit: ['Putujem avionom.', 'Vlakom.', 'Autom.', 'Putujem autobusom.', 'Idem vlakom.'],
+    hit: ['Tramvajem.', 'Putujem trajektom.', 'Putujem avionom.', 'Vlakom.', 'Autom.', 'Putujem autobusom.', 'Idem vlakom.'],
     miss: ['Putujem vlak.', 'Avion.'] },
 
   // Moduł 8
