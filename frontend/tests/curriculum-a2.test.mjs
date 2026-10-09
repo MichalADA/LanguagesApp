@@ -10,7 +10,7 @@ import Renderer, { act } from 'react-test-renderer';
 import ts from 'typescript';
 import { audioSlots } from '../scripts/lib/course-audio.mjs';
 
-/* Kurs A2 (moduły 1–2) — ten sam generator i player co A1, osobny poziom. */
+/* Kurs A2 (moduły 1–4) — ten sam generator i player co A1, osobny poziom. */
 
 const require = createRequire(import.meta.url);
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -89,7 +89,7 @@ test('A2: generator — wygenerowane pliki są aktualne względem CSV', () => {
 
 test('A2: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 bez zmian', () => {
   assert.equal(a2.available, true);
-  assert.deepEqual(a2.modules.map((m) => [m.id, m.title]), [['a2-01', 'Opowiadam o przeszłości'], ['a2-02', 'Plany i obowiązki']]);
+  assert.deepEqual(a2.modules.map((m) => [m.id, m.title]), [['a2-01', 'Opowiadam o przeszłości'], ['a2-02', 'Plany i obowiązki'], ['a2-03', 'Zdrowie'], ['a2-04', 'Praca i nauka']]);
   for (const [i, module] of a2.modules.entries()) {
     const m = String(i + 1).padStart(2, '0');
     assert.equal(module.levelId, 'A2');
@@ -101,7 +101,8 @@ test('A2: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 bez zmian
   // Postęp A2 liczy się osobno: nowy uczeń zaczyna od a2-01-01.
   assert.equal(deriveLevel(a2, new Set()).current.lesson.lesson.id, 'a2-01-01');
   assert.equal(nextLessonId(a2, 'a2-01-05'), 'a2-02-01');
-  assert.equal(nextLessonId(a2, 'a2-02-05'), null);
+  assert.equal(nextLessonId(a2, 'a2-02-05'), 'a2-03-01');
+  assert.equal(nextLessonId(a2, 'a2-04-05'), null);
   // Moduł 2 otwiera się po bieżącym module, tak jak w A1.
   assert.equal(deriveLevel(a2, new Set()).modules[1].status, 'locked');
 });
@@ -180,6 +181,52 @@ const OPEN_REPLIES = [
     miss: ['Bio sam kod kuće.'] },
   { lesson: 'a2-02-05', reply: 2, hit: ['Javit ću ti se.', 'Nazvat ću te sutra.', 'Dobro, javit ću ti se kasnije.', 'Naravno, ja ću te nazvati.', 'Svakako ću ti se javiti.'],
     miss: ['Ću te nazvati.', 'Javit ću se ti.'] },
+  // Moduł 3: zdrowie
+  { lesson: 'a2-03-01', reply: 0, hit: ['Boli me glava.', 'Bole me leđa.', 'Glava me boli.', 'Loše sam, boli me grlo.', 'Prehlađena sam.', 'Imam temperaturu.', 'Boli me trbuh i glava.'],
+    miss: ['Me boli glava.', 'Boli glava.'] },
+  { lesson: 'a2-03-01', reply: 1, hit: ['Nemam, ali imam kašalj.', 'Imam, trideset osam.', 'Mislim da imam.', 'Ne, nemam.', 'Da, imam temperaturu.'],
+    miss: ['Jesam.', 'Sam imam.'] },
+  { lesson: 'a2-03-02', reply: 0, hit: ['Već tri dana kašljem.', 'Boli me grlo i kašljem.', 'Kašljem i imam temperaturu.', 'Imam temperaturu već dva dana.', 'Teško dišem.'],
+    miss: ['Kašljati.', 'Imam kašljem.'] },
+  { lesson: 'a2-03-03', reply: 0, hit: ['Trebam nešto protiv kašlja.', 'Imate li nešto protiv bolova?', 'Molim nešto protiv temperature.', 'Htjela bih nešto protiv kašlja.', 'Tražim sirup protiv kašlja.'],
+    miss: ['Trebam protiv.', 'Boli me glava.'] },
+  { lesson: 'a2-03-03', reply: 1, hit: ['Koliko puta dnevno?', 'Koliko puta dnevno ih trebam uzeti?', 'Koliko često?', 'Koliko puta na dan?'],
+    miss: ['Kada?', 'Koliko košta?'] },
+  { lesson: 'a2-03-04', reply: 0, hit: ['Trebam više spavati.', 'Želim manje raditi.', 'Moram se više kretati.', 'Želim jesti manje slatkiša.', 'Htjela bih više čitati.'],
+    miss: ['Više spavati.', 'Trebam spavam više.', 'Trebam više spavam.'] },
+  { lesson: 'a2-03-04', reply: 1, hit: ['Bicikl je bolji nego autobus.', 'Bolje je ići biciklom.', 'Mislim da je bicikl bolji.', 'Bicikl je zdraviji.', 'Autobus je brži nego bicikl.'],
+    miss: ['Bicikl je dobar.', 'Bolji bicikl.'] },
+  { lesson: 'a2-03-05', reply: 0, hit: ['Osjećam se puno bolje.', 'Puno bolje, hvala.', 'Sad sam dobro.', 'Još sam malo bolesna.', 'Bolje.'],
+    miss: ['Sam bolje.', 'Osjećam bolje.'] },
+  { lesson: 'a2-03-05', reply: 1, hit: ['Imao sam gripu.', 'Imala sam temperaturu.', 'Bolio me trbuh.', 'Boljelo me grlo.', 'Bila sam prehlađena.'],
+    miss: ['Sam imao gripu.', 'Gripa sam.'] },
+  { lesson: 'a2-03-05', reply: 2, hit: ['Jesam. Rekao je da se odmorim.', 'Jesam, dao mi je recept.', 'Nisam.', 'Da, rekla je da moram spavati.', 'Jesam, moram piti puno vode.'],
+    miss: ['Sam bio.', 'Bio.'] },
+  // Moduł 4: praca i nauka
+  { lesson: 'a2-04-01', reply: 0, hit: ['Radim kao konobar.', 'Bavim se programiranjem.', 'Ja sam inženjer.', 'Student sam.', 'Radim kao programer u tvrtki.', 'Nezaposlena sam.'],
+    miss: ['Radim konobar.', 'Bavim programiranjem.'] },
+  { lesson: 'a2-04-01', reply: 1, hit: ['Radim s kupcima.', 'Radim s kolegama.', 'S kolegama.', 'Sa šefom.', 'Radim sam.'],
+    miss: ['Radim kupcima.'] },
+  { lesson: 'a2-04-02', reply: 0, hit: ['Imam pet godina iskustva.', 'Radim kao konobar već tri godine.', 'Radim već dvije godine.', 'Radim od prošle godine.', 'Nemam puno iskustva.', 'Imam godinu dana iskustva.'],
+    miss: ['Imam iskustvo pet godina.'] },
+  { lesson: 'a2-04-02', reply: 1, hit: ['Tražim posao na puno radno vrijeme.', 'Želim raditi na daljinu.', 'Jer tražim novi posao.', 'Volim raditi s ljudima.'],
+    miss: ['Posao.'] },
+  { lesson: 'a2-04-03', reply: 0, hit: ['Poslao sam vam e-mail.', 'Poslala sam vam e-mail.', 'Dobar dan, ovdje Ana. Jučer sam vam poslala e-mail.', 'Ja sam Marek, poslao sam vam životopis.'],
+    miss: ['Sam vam poslao e-mail.', 'Poslao vam e-mail.'] },
+  { lesson: 'a2-04-03', reply: 1, hit: ['Možete li potvrditi termin?', 'Molim vas da mi pošaljete račun.', 'Pošaljite mi račun, molim.', 'Možete li mi poslati račun?', 'Molim vas, potvrdite termin.'],
+    miss: ['Pošalji račun.', 'Hoću račun.'] },
+  { lesson: 'a2-04-04', reply: 0, hit: ['Učim hrvatski godinu dana.', 'Godinu dana.', 'Već dvije godine.', 'Tri mjeseca.', 'Od prošle godine.', 'Učim već šest mjeseci.'],
+    miss: ['Učio sam.', 'Dugo.'] },
+  { lesson: 'a2-04-04', reply: 1, hit: ['Izgovor je težak.', 'Gramatika mi je teška.', 'Gramatika.', 'Padeži su teški.', 'Najteža je gramatika.'],
+    miss: ['Teško je.'] },
+  { lesson: 'a2-04-04', reply: 2, hit: ['Možeš li govoriti sporije?', 'Možete li govoriti malo glasnije?', 'Govori sporije, molim te.', 'Molim vas, govorite glasnije.', 'Možete li sporije?'],
+    miss: ['Govori brzo.', 'Sporije govoriti.'] },
+  { lesson: 'a2-04-05', reply: 0, hit: ['Dobro, radim s kupcima.', 'Super, radim kao konobar.', 'Odlično!', 'Nije loše, imam dobre kolege.', 'Radim puno.'],
+    miss: ['Radio.'] },
+  { lesson: 'a2-04-05', reply: 1, hit: ['Sve bolje, hvala!', 'Učim godinu dana i napredujem.', 'Polako, ali napredujem.', 'Dobro.', 'Napredujem.'],
+    miss: ['Bolje sve.'] },
+  { lesson: 'a2-04-05', reply: 2, hit: ['Moj cilj je položiti ispit iz hrvatskog.', 'Želim tečno govoriti hrvatski.', 'Cilj mi je raditi u Hrvatskoj.', 'Planiram položiti ispit.'],
+    miss: ['Cilj.', 'Ispit.'] },
 ];
 
 test('A2: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

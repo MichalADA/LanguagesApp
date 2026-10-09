@@ -21,11 +21,12 @@ const FLEETING_NOUN = {
   pas: "ps", otac: "oc", novac: "novc", sastanak: "sastank", stupanj: "stupnj", doručak: "doručk", ručak: "ručk",
   petak: "petk", četvrtak: "četvrtk", utorak: "utork", ponedjeljak: "ponedjeljk", tjedan: "tjedn", polazak: "polask",
   dolazak: "dolask", vjetar: "vjetr", centar: "centr", ugao: "ugl", pijesak: "pijesk",
+  kašalj: "kašlj", kupac: "kupc", obrazac: "obrasc", naglasak: "naglask",
 };
 /** Rzeczowniki żywotne rodzaju męskiego: biernik = dopełniacz (brat → brata). */
 const ANIMATE = new Set([
   "brat", "otac", "djed", "sin", "muž", "pas", "prijatelj", "susjed", "učitelj", "liječnik", "inženjer", "prodavač",
-  "student", "učenik", "konobar", "turist", "putnik", "tata",
+  "student", "učenik", "konobar", "turist", "putnik", "tata", "šef", "kupac", "suradnik",
 ]);
 /** Rzeczowniki żeńskie zakończone spółgłoską (odmiana na -i). */
 const I_STEM = new Set(["obitelj", "noć", "jesen", "pomoć", "riječ", "kći", "ponoć"]);
@@ -44,6 +45,10 @@ const NOUN_OVERRIDES = {
   more: { ins: ["morem"], loc: ["moru"], gen: ["mora"], acc: ["more"] },
   sunce: { ins: ["suncem"], loc: ["suncu"], gen: ["sunca"], acc: ["sunce"] },
   gost: { pl: ["gosti", "goste"] },
+  leđa: { acc: ["leđa"], gen: ["leđa"], loc: ["leđima"], ins: ["leđima"], pl: ["leđa"] },
+  kapi: { acc: ["kapi"], gen: ["kapi"], loc: ["kapima"], ins: ["kapima"], pl: ["kapi"] },
+  uvjeti: { acc: ["uvjete"], gen: ["uvjeta"], loc: ["uvjetima"], ins: ["uvjetima"], pl: ["uvjeti", "uvjete"] },
+  bol: { gen: ["bola", "bolova"], pl: ["bolovi", "bolove"] },
 };
 const PREPOSITIONS = new Set(["za", "u", "na", "i", "s", "sa", "od", "do", "kod", "iz", "bez", "po", "o"]);
 
@@ -96,7 +101,8 @@ const PRES_OVERRIDES = {
   otići: ["odem"], provesti: ["provedem"], sresti: ["sretnem"],
   uzeti: ["uzmem"], ostati: ["ostanem"], odustati: ["odustanem"], smjeti: ["smijem"], pomoći: ["pomognem"],
   pozvati: ["pozovem"], nazvati: ["nazovem"], otkazati: ["otkažem"], zapisati: ["zapišem"],
-  trajati: ["trajem"], izaći: ["izađem"],
+  trajati: ["trajem"], izaći: ["izađem"], kašljati: ["kašljem"], disati: ["dišem"], kretati: ["krećem"], poslati: ["pošaljem"],
+  prevesti: ["prevedem"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
@@ -104,6 +110,7 @@ const PP_OVERRIDES = {
   htjeti: ["htio", "htjela", "htjeli"], biti: ["bio", "bila", "bili"], doći: ["došao", "došla", "došli"],
   otići: ["otišao", "otišla", "otišli"], provesti: ["proveo", "provela", "proveli"], sresti: ["sreo", "srela", "sreli"],
   uzeti: ["uzeo", "uzela", "uzeli"], pomoći: ["pomogao", "pomogla", "pomogli"], izaći: ["izašao", "izašla", "izašli"],
+  prevesti: ["preveo", "prevela", "preveli"],
 };
 
 function present1(inf) {
@@ -193,7 +200,7 @@ const ADJ_OVERRIDES = {
 };
 const FLEETING_ADJ = new Set([
   "umoran", "sretan", "simpatičan", "gladan", "žedan", "slobodan", "pametan", "zgodan", "tužan", "ukusan", "hladan",
-  "miran", "zabavan", "dosadan",
+  "miran", "zabavan", "dosadan", "ozbiljan", "alergičan",
 ]);
 
 function adjForms(masc) {
@@ -401,5 +408,5 @@ export function genderizePattern(pattern, pairs) {
 }
 
 /** Klityki: zdanie z nimi nie może dostać wariantu z „Ja” na początku bez zmiany szyku. */
-export const CLITICS = new Set(["sam", "si", "je", "smo", "ste", "su", "se", "ću", "ćeš", "će", "ćemo", "ćete", "bih", "li", "mi", "ti", "ga", "joj", "mu"]);
+export const CLITICS = new Set(["sam", "si", "je", "smo", "ste", "su", "se", "ću", "ćeš", "će", "ćemo", "ćete", "bih", "li", "mi", "ti", "ga", "joj", "mu", "me", "te", "nas", "nam", "vas", "vam", "ih"]);
 export const tokens = (text) => low(text).replace(/[.,!?;:„”"…«»()]/g, " ").split(/\s+/).filter(Boolean);

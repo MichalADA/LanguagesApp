@@ -9,6 +9,12 @@
     },
     "2": {
       "description": "Mówisz o przyszłości: plany twoje i innych, co musisz i możesz, co zrobisz, jeśli…, i umawiasz się ze znajomymi."
+    },
+    "3": {
+      "description": "Mówisz, co cię boli, rozumiesz polecenia lekarza, kupujesz lek w aptece i porównujesz zdrowe i niezdrowe nawyki."
+    },
+    "4": {
+      "description": "Opowiadasz o pracy i doświadczeniu, rozmawiasz z rekruterem, piszesz formalny e-mail i mówisz o nauce języka."
     }
   },
   "lessons": {
@@ -1860,6 +1866,1815 @@
         ],
         "minSentences": 3,
         "sample": "Sljedeći tjedan moram puno raditi. U petak ću ići na večeru s prijateljima. Ako bude sunčano, u subotu ćemo ići na izlet."
+      }
+    },
+    "a2-11": {
+      "grammar": {
+        "title": "Boli me glava",
+        "text": "Ból opisujesz jak po polsku: boli me (boli mnie) + to, co boli, w mianowniku: Boli me glava. Gdy słowo jest w liczbie mnogiej (leđa, noge) — bole me: Bole me leđa. Kogo boli: me (mnie), te (ciebie), ga (jego), je (ją). W przeszłości forma zgadza się z tym, co bolało: Bolio me trbuh, Boljela me glava, Boljelo me grlo.",
+        "table": [
+          {
+            "label": "Kogo boli?",
+            "rows": [
+              {
+                "base": "mnie",
+                "form": "Boli me glava.",
+                "meaning": "Boli mnie głowa."
+              },
+              {
+                "base": "ciebie",
+                "form": "Boli li te grlo?",
+                "meaning": "Boli cię gardło?"
+              },
+              {
+                "base": "jego",
+                "form": "Boli ga zub.",
+                "meaning": "Boli go ząb."
+              },
+              {
+                "base": "ją (lm.)",
+                "form": "Bole je leđa.",
+                "meaning": "Bolą ją plecy."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "tip": "Imam temperaturu — mam gorączkę (dosłownie: mam temperaturę)."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "Bole"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 3,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Bolą mnie plecy.",
+          "options": [
+            "Boli me leđa.",
+            "Bole mi leđa.",
+            "Bole me leđa."
+          ],
+          "correct": 2,
+          "explanation": "leđa to liczba mnoga → bole; mnie → me."
+        }
+      ],
+      "model": {
+        "title": "Zły dzień",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, izgledaš umorno. Je li sve u redu?",
+            "pl": "Marko, wyglądasz na zmęczonego. Wszystko w porządku?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Nije. Boli me glava, a i grlo me boli.",
+            "pl": "Nie. Boli mnie głowa, a do tego gardło."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Imaš li temperaturu?",
+            "pl": "Masz gorączkę?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Mislim da imam. Prehlađen sam.",
+            "pl": "Chyba mam. Jestem przeziębiony."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Idi kući i odmori se!",
+            "pl": "Idź do domu i odpocznij!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Jak się czujesz?",
+        "partner": "Ivan",
+        "turns": [
+          {
+            "say": "Bok! Kako se osjećaš?",
+            "pl": "Cześć! Jak się czujesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co cię boli.",
+              "accept": [
+                1,
+                2
+              ],
+              "open": true,
+              "pattern": "^(nisam dobro |loše sam |loše )?(boli me|bole me)( \\p{L}+){1,3}$|^(\\p{L}+ )?me (boli|bole)$|^(imam temperaturu|prehlađen sam|prehlađena sam)( i \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Imaš li temperaturu?",
+            "pl": "Masz gorączkę?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz (masz albo nie) i dodaj coś o sobie.",
+              "accept": [
+                "Nemam, ali imam kašalj.",
+                "Imam, trideset osam."
+              ],
+              "open": true,
+              "pattern": "^(da |ne )?(mislim da )?(imam|nemam)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Onda ostani kod kuće i pij puno čaja.",
+            "pl": "To zostań w domu i pij dużo herbaty."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co cię boli i od kiedy.",
+        "points": [
+          "co boli",
+          "od kiedy"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "boli",
+              "bole",
+              "bolio",
+              "boljela",
+              "boljelo"
+            ],
+            "label": "boli / bole me"
+          },
+          {
+            "any": [
+              "glava",
+              "grlo",
+              "leđa",
+              "trbuh",
+              "zub",
+              "noge",
+              "uho"
+            ],
+            "label": "część ciała"
+          }
+        ],
+        "sample": "Od jučer me boli grlo. Imam i temperaturu."
+      }
+    },
+    "a2-12": {
+      "grammar": {
+        "title": "Odmorite se!",
+        "text": "Lekarz mówi w trybie rozkazującym. Do Pana / Pani i do grupy: -ite / -jte: Odmorite se, Pijte, Uzmite, Dođite. Do kolegi: bez -te: Odmori se, Pij, Uzmi, Dođi. Formę budujesz od „ja”: odmorim → odmori(te), pijem → pij(te), čitam → čitaj(te), dišem → diši(te). Zakaz: ne + tryb rozkazujący — Ne pijte kavu!",
+        "table": [
+          {
+            "label": "ty · Pan(i) / wy",
+            "rows": [
+              {
+                "base": "odmoriti se",
+                "form": "odmori se · odmorite se",
+                "meaning": "odpocznij · proszę odpocząć"
+              },
+              {
+                "base": "piti",
+                "form": "pij · pijte",
+                "meaning": "pij · proszę pić"
+              },
+              {
+                "base": "uzeti",
+                "form": "uzmi · uzmite",
+                "meaning": "weź · proszę wziąć"
+              },
+              {
+                "base": "doći",
+                "form": "dođi · dođite",
+                "meaning": "przyjdź · proszę przyjść"
+              },
+              {
+                "base": "disati",
+                "form": "diši · dišite",
+                "meaning": "oddychaj · proszę oddychać"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          4,
+          3,
+          5,
+          6
+        ],
+        "tip": "Već tri dana kašljem — od trzech dni kaszlę: trwający stan to czas teraźniejszy + već."
+      },
+      "gap": {
+        "sentence": 4,
+        "word": "pijte"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 1,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Lekarz mówi do pacjenta. Wybierz zdanie.",
+          "prompt": "Proszę odpocząć.",
+          "options": [
+            "Odmori se.",
+            "Odmorite se.",
+            "Odmaram se."
+          ],
+          "correct": 1,
+          "explanation": "Do Pana / Pani: -ite → Odmorite se."
+        }
+      ],
+      "listening": "a2-kod-lijecnika",
+      "model": {
+        "title": "W gabinecie",
+        "lines": [
+          {
+            "speaker": "Liječnik",
+            "hr": "Dobar dan. Što vas muči?",
+            "pl": "Dzień dobry. Co Panu dolega?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Već tri dana kašljem i teško dišem.",
+            "pl": "Od trzech dni kaszlę i ciężko oddycham."
+          },
+          {
+            "speaker": "Liječnik",
+            "hr": "Imate li temperaturu?",
+            "pl": "Ma Pan gorączkę?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imam, trideset osam.",
+            "pl": "Mam, trzydzieści osiem."
+          },
+          {
+            "speaker": "Liječnik",
+            "hr": "Moram vas pregledati. Dišite duboko, molim.",
+            "pl": "Muszę Pana zbadać. Proszę głęboko oddychać."
+          },
+          {
+            "speaker": "Liječnik",
+            "hr": "Nije ništa ozbiljno, samo gripa. Odmorite se i pijte puno vode.",
+            "pl": "To nic poważnego, tylko grypa. Proszę odpocząć i pić dużo wody."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Wizyta",
+        "partner": "Liječnik",
+        "turns": [
+          {
+            "say": "Dobar dan. Koje simptome imate?",
+            "pl": "Dzień dobry. Jakie ma Pan objawy?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz objawy.",
+              "accept": [
+                1,
+                "Boli me grlo i kašljem."
+              ],
+              "open": true,
+              "pattern": "^(već \\p{L}+ \\p{L}+ )?(kašljem|teško dišem|boli me \\p{L}+|bole me \\p{L}+|imam (temperaturu|kašalj|gripu))(( i| a)? (kašljem|teško dišem|boli me \\p{L}+|bole me \\p{L}+|imam \\p{L}+|me boli \\p{L}+))*( već \\p{L}+ \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Moram vas pregledati. Nije ništa ozbiljno.",
+            "pl": "Muszę Pana zbadać. To nic poważnego."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, czy musisz zostać w domu.",
+              "accept": [
+                "Moram li ostati kod kuće?",
+                "Trebam li ostati kod kuće?"
+              ],
+              "pattern": "^(moram li|trebam li) ostati (kod kuće|doma|u krevetu)$"
+            }
+          },
+          {
+            "say": "Da, dva-tri dana. Odmorite se i pijte puno vode.",
+            "pl": "Tak, dwa–trzy dni. Proszę odpocząć i pić dużo wody."
+          },
+          {
+            "reply": {
+              "prompt": "Podziękuj i pożegnaj się.",
+              "accept": [
+                "Hvala, doviđenja!"
+              ],
+              "pattern": "^hvala( vam| lijepa)?( doktore)?( doviđenja)?$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 polecenia lekarza w trybie rozkazującym: co robić i czego nie robić.",
+        "points": [
+          "co robić",
+          "czego nie robić (ne + …)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "odmorite",
+              "pijte",
+              "uzmite",
+              "dođite",
+              "ostanite",
+              "spavajte",
+              "jedite",
+              "odmori",
+              "pij",
+              "uzmi",
+              "ostani",
+              "spavaj",
+              "jedi"
+            ],
+            "label": "tryb rozkazujący"
+          },
+          {
+            "any": [
+              "ne"
+            ],
+            "label": "zakaz: ne + …"
+          }
+        ],
+        "sample": "Ostanite kod kuće i odmorite se. Ne pijte kavu."
+      }
+    },
+    "a2-13": {
+      "grammar": {
+        "title": "Nešto protiv kašlja",
+        "text": "Po protiv (przeciw, na), bez, od, do, prije i poslije stoi dopełniacz: protiv kašlja, protiv bolova, bez recepta, prije jela, poslije jela. Ile razy: jednom, dvaput, triput + dnevno (dziennie) albo tjedno (tygodniowo): dvaput dnevno.",
+        "table": [
+          {
+            "label": "protiv + dopełniacz",
+            "rows": [
+              {
+                "base": "kašalj",
+                "form": "protiv kašlja",
+                "meaning": "na kaszel"
+              },
+              {
+                "base": "bolovi",
+                "form": "protiv bolova",
+                "meaning": "na ból"
+              },
+              {
+                "base": "temperatura",
+                "form": "protiv temperature",
+                "meaning": "na gorączkę"
+              },
+              {
+                "base": "alergija",
+                "form": "protiv alergije",
+                "meaning": "na alergię"
+              }
+            ]
+          },
+          {
+            "label": "Jak brać?",
+            "rows": [
+              {
+                "base": "1× dziennie",
+                "form": "jednom dnevno",
+                "meaning": "raz dziennie"
+              },
+              {
+                "base": "2× dziennie",
+                "form": "dvaput dnevno",
+                "meaning": "dwa razy dziennie"
+              },
+              {
+                "base": "przed jedzeniem",
+                "form": "prije jela",
+                "meaning": "przed jedzeniem"
+              },
+              {
+                "base": "po jedzeniu",
+                "form": "poslije jela",
+                "meaning": "po jedzeniu"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "tip": "Alergičan sam na… / Alergična sam na… — jestem uczulony / uczulona na…"
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "kašlja"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 4,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Potrzebuję czegoś na kaszel.",
+          "options": [
+            "Trebam nešto protiv kašalj.",
+            "Trebam nešto protiv kašlja.",
+            "Trebam nešto za kašljati."
+          ],
+          "correct": 1,
+          "explanation": "protiv + dopełniacz: kašalj → kašlja."
+        }
+      ],
+      "model": {
+        "title": "W aptece",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Trebam nešto protiv kašlja.",
+            "pl": "Dzień dobry. Potrzebuję czegoś na kaszel."
+          },
+          {
+            "speaker": "Ljekarnik",
+            "hr": "Imate li i temperaturu?",
+            "pl": "Ma Pani też gorączkę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Nemam, samo kašljem i boli me grlo.",
+            "pl": "Nie, tylko kaszlę i boli mnie gardło."
+          },
+          {
+            "speaker": "Ljekarnik",
+            "hr": "Preporučujem ovaj sirup. Pijte ga triput dnevno poslije jela.",
+            "pl": "Polecam ten syrop. Proszę go pić trzy razy dziennie po jedzeniu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Treba li mi recept?",
+            "pl": "Czy potrzebuję recepty?"
+          },
+          {
+            "speaker": "Ljekarnik",
+            "hr": "Ne treba, sirup je bez recepta.",
+            "pl": "Nie, syrop jest bez recepty."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Coś na ból",
+        "partner": "Ljekarnik",
+        "turns": [
+          {
+            "say": "Dobar dan, izvolite.",
+            "pl": "Dzień dobry, słucham."
+          },
+          {
+            "reply": {
+              "prompt": "Poproś o coś na ból, kaszel albo gorączkę.",
+              "accept": [
+                1,
+                2
+              ],
+              "open": true,
+              "pattern": "^(trebam|imate li|tražim|htio bih|htjela bih|molim) (nešto |neki lijek |tablete |sirup )?(protiv|za) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Uzmite ove tablete.",
+            "pl": "Proszę wziąć te tabletki."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, jak często je brać.",
+              "accept": [
+                7,
+                "Koliko puta dnevno ih trebam uzeti?"
+              ],
+              "open": true,
+              "pattern": "^koliko (puta|često)( dnevno| na dan)?( ih| ga)?( (trebam|moram) (uzeti|piti|uzimati))?$"
+            }
+          },
+          {
+            "say": "Dvaput dnevno, poslije jela.",
+            "pl": "Dwa razy dziennie, po jedzeniu."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że jesteś uczulony / uczulona na penicylinę.",
+              "accept": [
+                "Alergičan sam na penicilin."
+              ],
+              "pattern": "^(ja sam alergičan|alergičan sam) na penicilin$"
+            }
+          },
+          {
+            "say": "Nema problema, ove tablete nemaju penicilin.",
+            "pl": "Nie ma problemu, te tabletki nie zawierają penicyliny."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: czego potrzebujesz w aptece i jak to brać.",
+        "points": [
+          "czego potrzebujesz",
+          "jak brać"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "protiv"
+            ],
+            "label": "protiv + dopełniacz"
+          },
+          {
+            "any": [
+              "dnevno",
+              "jela",
+              "puta",
+              "dvaput",
+              "triput",
+              "jednom"
+            ],
+            "label": "jak brać"
+          }
+        ],
+        "sample": "Trebam nešto protiv bolova. Uzimam jednu tabletu dvaput dnevno."
+      }
+    },
+    "a2-14": {
+      "grammar": {
+        "title": "Bolje nego jučer",
+        "text": "Porównujesz stopniem wyższym: dobro → bolje (lepiej), loše → lošije (gorzej), puno → više (więcej), malo → manje (mniej), zdravo → zdravije (zdrowiej). „Niż” to nego: Bolje je hodati nego voziti. Przymiotniki mają formy na -iji: zdrav → zdraviji; nieregularnie dobar → bolji.",
+        "table": [
+          {
+            "label": "przysłówek → stopień wyższy",
+            "rows": [
+              {
+                "base": "dobro",
+                "form": "bolje",
+                "meaning": "lepiej"
+              },
+              {
+                "base": "loše",
+                "form": "lošije",
+                "meaning": "gorzej"
+              },
+              {
+                "base": "puno",
+                "form": "više",
+                "meaning": "więcej"
+              },
+              {
+                "base": "malo",
+                "form": "manje",
+                "meaning": "mniej"
+              },
+              {
+                "base": "zdravo",
+                "form": "zdravije",
+                "meaning": "zdrowiej"
+              }
+            ]
+          },
+          {
+            "label": "przymiotnik",
+            "rows": [
+              {
+                "base": "dobar",
+                "form": "bolji",
+                "meaning": "lepszy"
+              },
+              {
+                "base": "zdrav",
+                "form": "zdraviji",
+                "meaning": "zdrowszy"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          5,
+          7
+        ],
+        "tip": "Previše = za dużo: Pijem previše kave."
+      },
+      "gap": {
+        "sentence": 7,
+        "word": "nego"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 2,
+      "order": 8,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Dziś czuję się lepiej.",
+          "options": [
+            "Danas se osjećam dobrije.",
+            "Danas se osjećam bolje.",
+            "Danas se osjećam boljeg."
+          ],
+          "correct": 1,
+          "explanation": "dobro → bolje (forma nieregularna)."
+        }
+      ],
+      "model": {
+        "title": "Nowe postanowienia",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ana, izgledaš odlično! Što radiš?",
+            "pl": "Ana, świetnie wyglądasz! Co robisz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Više se krećem i jedem manje slatkiša.",
+            "pl": "Więcej się ruszam i jem mniej słodyczy."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja imam loše navike. Puno sjedim i pijem previše kave.",
+            "pl": "Ja mam złe nawyki. Dużo siedzę i piję za dużo kawy."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Probaj ići pješice na posao. Bolje je nego autom.",
+            "pl": "Spróbuj chodzić pieszo do pracy. To lepsze niż samochodem."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Dobra ideja. Od sutra!",
+            "pl": "Dobry pomysł. Od jutra!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Co zmienić?",
+        "partner": "Marta",
+        "turns": [
+          {
+            "say": "Što želiš promijeniti u životu?",
+            "pl": "Co chcesz zmienić w życiu?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co chcesz robić więcej albo mniej.",
+              "accept": [
+                1,
+                "Želim manje raditi."
+              ],
+              "open": true,
+              "pattern": "^(ja )?(trebam|želim|moram|hoću|htio bih|htjela bih|planiram)( se)? (više|manje|bolje|zdravije|češće)( se)? \\p{L}+(ti|ći)( \\p{L}+){0,3}$|^(ja )?(trebam|želim|moram)( se)? \\p{L}+(ti|ći)( \\p{L}+)? (više|manje)( \\p{L}+){0,2}$"
+            }
+          },
+          {
+            "say": "A što je bolje: autobus ili bicikl?",
+            "pl": "A co jest lepsze: autobus czy rower?"
+          },
+          {
+            "reply": {
+              "prompt": "Porównaj: co jest lepsze (możesz użyć nego).",
+              "accept": [
+                "Bicikl je bolji nego autobus.",
+                "Bolje je ići biciklom."
+              ],
+              "open": true,
+              "pattern": "^(mislim da je |mislim da )?(\\p{L}+ (je )?(bolji|bolje|zdraviji|zdravije|brži|brže|jeftiniji|jeftinije)|(bolje|zdravije|brže) je( \\p{L}+){1,3})( nego \\p{L}+( \\p{L}+)?)?$"
+            }
+          },
+          {
+            "say": "Slažem se! Idemo biciklom.",
+            "pl": "Zgadzam się! Jedziemy rowerem."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: jaki masz zły nawyk i co będziesz robić lepiej.",
+        "points": [
+          "zły nawyk",
+          "co zmienisz"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "više",
+              "manje",
+              "bolje",
+              "lošije",
+              "zdravije"
+            ],
+            "label": "więcej / mniej / lepiej"
+          },
+          {
+            "any": [
+              "ću",
+              "želim",
+              "trebam",
+              "moram"
+            ],
+            "label": "plan"
+          }
+        ],
+        "sample": "Pijem previše kave. Od sutra ću piti manje kave i više vode."
+      }
+    },
+    "a2-15": {
+      "grammar": {
+        "title": "Zdrowie — wszystko razem",
+        "text": "Ból: Boli me glava, Bole me leđa. Polecenia lekarza: Odmorite se! Pijte puno vode! W aptece: nešto protiv kašlja, dvaput dnevno. Porównanie: Osjećam se puno bolje.",
+        "examples": [
+          6,
+          1,
+          5
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Proszę wezwać pogotowie!",
+          "options": [
+            "Zovi hitna pomoć!",
+            "Zovete hitnu pomoć!",
+            "Zovite hitnu pomoć!"
+          ],
+          "correct": 2,
+          "explanation": "Tryb rozkazujący na Vi: zovite; pomoć w bierniku: hitnu pomoć."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Już lepiej?",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Bok! Čula sam da si bio bolestan. Kako si sada?",
+            "pl": "Cześć! Słyszałam, że byłeś chory. Jak się teraz czujesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak się czujesz.",
+              "accept": [
+                6,
+                "Puno bolje, hvala."
+              ],
+              "open": true,
+              "pattern": "^((sad |sada |već )?osjećam se( puno| mnogo| malo)? (bolje|dobro|loše|odlično)|(sad|sada|već|ja) sam( puno| mnogo| malo)? (bolje|dobro|odlično)|(puno |mnogo |malo )?(bolje|dobro)|dobro sam|još (sam )?(malo )?(bolestan|bolesna|umoran|umorna))( nego jučer)?$"
+            }
+          },
+          {
+            "say": "Što ti je bilo?",
+            "pl": "Co ci było?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co ci było (np. grypa, ból gardła).",
+              "accept": [
+                "Imao sam gripu.",
+                "Bolio me trbuh."
+              ],
+              "open": true,
+              "pattern": "^(imao sam|imala sam|bio sam|bila sam) (gripu|temperaturu|kašalj|prehlađen|prehlađena|bolestan|bolesna)( \\p{L}+){0,3}$|^(bolio|boljela|boljelo|boljeli|boljele) me( \\p{L}+){1,2}$|^gripu$"
+            }
+          },
+          {
+            "say": "Jesi li išao liječniku?",
+            "pl": "Byłeś u lekarza?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz i powiedz, co poradził lekarz.",
+              "accept": [
+                "Jesam. Rekao je da se odmorim.",
+                "Jesam, dao mi je recept."
+              ],
+              "open": true,
+              "pattern": "^(jesam|nisam|da|ne)( (bio sam|bila sam|rekao je|rekla je|dao mi je|dala mi je|moram|trebam)( \\p{L}+){0,5})?$"
+            }
+          },
+          {
+            "say": "Drago mi je. Brzo ozdravi!",
+            "pl": "Cieszę się. Wracaj szybko do zdrowia!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3 zdaniach wizytę u lekarza: co cię bolało, co powiedział lekarz i jak się czujesz teraz.",
+        "points": [
+          "co bolało",
+          "co powiedział lekarz",
+          "jak się czujesz"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "boli",
+              "bole",
+              "bolio",
+              "boljela",
+              "boljelo"
+            ],
+            "label": "ból"
+          },
+          {
+            "any": [
+              "liječnik",
+              "liječnika",
+              "liječnica",
+              "doktor"
+            ],
+            "label": "lekarz"
+          },
+          {
+            "any": [
+              "bolje",
+              "dobro"
+            ],
+            "label": "jak się czujesz"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Prošli tjedan me boljelo grlo. Liječnik mi je dao sirup. Sada se osjećam puno bolje."
+      }
+    },
+    "a2-16": {
+      "grammar": {
+        "title": "Bavim se programiranjem",
+        "text": "Narzędnik (instrumental) odpowiada na pytania čime? i s kim?. baviti se + narzędnik: Bavim se sportom, Bavim se programiranjem. Z kim: s + narzędnik: Radim s kupcima, s kolegicom. Jako kto: kao + mianownik: Radim kao konobar. Końcówki: -om / -em (rodzaj męski i nijaki), -om (żeński: s kolegicom), -ima / -ama (liczba mnoga).",
+        "table": [
+          {
+            "label": "čime? s kim? (narzędnik)",
+            "rows": [
+              {
+                "base": "sport",
+                "form": "Bavim se sportom.",
+                "meaning": "Uprawiam sport."
+              },
+              {
+                "base": "programiranje",
+                "form": "Bavim se programiranjem.",
+                "meaning": "Zajmuję się programowaniem."
+              },
+              {
+                "base": "kolegica",
+                "form": "Radim s kolegicom.",
+                "meaning": "Pracuję z koleżanką."
+              },
+              {
+                "base": "kupci",
+                "form": "Radim s kupcima.",
+                "meaning": "Pracuję z klientami."
+              }
+            ]
+          },
+          {
+            "label": "kao + mianownik",
+            "rows": [
+              {
+                "base": "konobar",
+                "form": "Radim kao konobar.",
+                "meaning": "Pracuję jako kelner."
+              },
+              {
+                "base": "učiteljica",
+                "form": "Radim kao učiteljica.",
+                "meaning": "Pracuję jako nauczycielka."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "Pytanie: Čime se baviš? — Czym się zajmujesz? (što → čime w narzędniku)."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "programiranjem"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Uprawiam sport.",
+          "options": [
+            "Bavim se sport.",
+            "Bavim sportom.",
+            "Bavim se sportom."
+          ],
+          "correct": 2,
+          "explanation": "baviti se + narzędnik: sport → sportom."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Pracuję jako kelner.",
+          "options": [
+            "Radim kao konobar.",
+            "Radim kao konobarom.",
+            "Radim za konobar."
+          ],
+          "correct": 0,
+          "explanation": "Po kao stoi mianownik: konobar."
+        }
+      ],
+      "model": {
+        "title": "Nowa praca",
+        "lines": [
+          {
+            "speaker": "Ivan",
+            "hr": "Ana, čujem da imaš novi posao! Čime se baviš?",
+            "pl": "Ana, słyszę, że masz nową pracę! Czym się zajmujesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Radim kao prodavačica u knjižari.",
+            "pl": "Pracuję jako sprzedawczyni w księgarni."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Super! Radiš li s puno ljudi?",
+            "pl": "Super! Pracujesz z dużą liczbą ludzi?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, cijeli dan radim s kupcima. Šef je super, a plaća je solidna.",
+            "pl": "Tak, cały dzień pracuję z klientami. Szef jest super, a pensja przyzwoita."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "A radiš li vikendom?",
+            "pl": "A pracujesz w weekendy?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Samo jednu smjenu u subotu.",
+            "pl": "Tylko jedną zmianę w sobotę."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Twoja praca",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Čime se baviš?",
+            "pl": "Czym się zajmujesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czym się zajmujesz albo jako kto pracujesz.",
+              "accept": [
+                3,
+                2
+              ],
+              "open": true,
+              "pattern": "^(ja )?(radim kao \\p{L}+( \\p{L}+)?|bavim se \\p{L}+( \\p{L}+)?|ja sam \\p{L}+|(student|studentica|nezaposlen|nezaposlena|u mirovini)( sam)?)( u \\p{L}+( \\p{L}+)?)?$"
+            }
+          },
+          {
+            "say": "S kim radiš?",
+            "pl": "Z kim pracujesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, z kim pracujesz.",
+              "accept": [
+                4,
+                "Radim s kolegama."
+              ],
+              "open": true,
+              "pattern": "^(ja )?(radim |najviše radim |uglavnom radim )?sa? \\p{L}+( i \\p{L}+)?( \\p{L}+)?$|^(radim )?sam(a)?$"
+            }
+          },
+          {
+            "say": "Zvuči zanimljivo!",
+            "pl": "Brzmi ciekawie!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o swojej pracy albo nauce: jako kto, czym się zajmujesz, z kim.",
+        "points": [
+          "jako kto",
+          "czym się zajmujesz",
+          "z kim"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "radim",
+              "bavim",
+              "studiram",
+              "zaposlen",
+              "zaposlena"
+            ],
+            "label": "praca"
+          },
+          {
+            "any": [
+              "kao",
+              "s",
+              "sa"
+            ],
+            "label": "kao / s + narzędnik"
+          }
+        ],
+        "sample": "Radim kao programer u maloj tvrtki. Bavim se web stranicama. Radim s dobrim kolegama."
+      }
+    },
+    "a2-17": {
+      "grammar": {
+        "title": "Radim već tri godine",
+        "text": "Jak długo? Jak po polsku: czas teraźniejszy + već: Radim ovdje već tri godine — pracuję tu już trzy lata. Od kiedy: od + dopełniacz — od prošle godine. Co było wcześniej: prije toga + perfekt — Prije toga sam radio u banci. Do rekrutera mówisz na Vi: Koje vještine imate?",
+        "table": [
+          {
+            "label": "Doświadczenie",
+            "rows": [
+              {
+                "base": "jak długo",
+                "form": "Radim već tri godine.",
+                "meaning": "Pracuję już trzy lata."
+              },
+              {
+                "base": "od kiedy",
+                "form": "Radim od prošle godine.",
+                "meaning": "Pracuję od zeszłego roku."
+              },
+              {
+                "base": "wcześniej",
+                "form": "Prije toga sam radio u banci.",
+                "meaning": "Wcześniej pracowałem w banku."
+              },
+              {
+                "base": "ile",
+                "form": "Imam pet godina iskustva.",
+                "meaning": "Mam pięć lat doświadczenia."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          4,
+          8,
+          7
+        ],
+        "tip": "Prijavio sam se na oglas — zgłosiłem się na ogłoszenie (prijaviti se na + biernik)."
+      },
+      "gap": {
+        "sentence": 4,
+        "word": "već"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": [
+            "Tražim posao s punim radnim vremenom."
+          ]
+        }
+      ],
+      "comprehend": 6,
+      "order": 3,
+      "choices": [
+        {
+          "instruction": "Nadal tu pracujesz. Wybierz zdanie.",
+          "prompt": "Pracuję tu już dwa lata.",
+          "options": [
+            "Radio sam ovdje dvije godine.",
+            "Radim ovdje već dvije godine.",
+            "Radit ću ovdje dvije godine."
+          ],
+          "correct": 1,
+          "explanation": "Stan trwa → czas teraźniejszy + već."
+        }
+      ],
+      "listening": "a2-razgovor-za-posao",
+      "model": {
+        "title": "Rozmowa kwalifikacyjna",
+        "lines": [
+          {
+            "speaker": "Marta",
+            "hr": "Dobar dan. Pročitala sam vaš životopis. Recite mi nešto o sebi.",
+            "pl": "Dzień dobry. Przeczytałam Pana CV. Proszę powiedzieć coś o sobie."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Radim kao programer već četiri godine. Prije toga sam radio u banci.",
+            "pl": "Pracuję jako programista już cztery lata. Wcześniej pracowałem w banku."
+          },
+          {
+            "speaker": "Marta",
+            "hr": "Zašto ste se prijavili na naš oglas?",
+            "pl": "Dlaczego zgłosił się Pan na nasze ogłoszenie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Tražim posao na daljinu i zanimaju me novi projekti.",
+            "pl": "Szukam pracy zdalnej i interesują mnie nowe projekty."
+          },
+          {
+            "speaker": "Marta",
+            "hr": "Odlično. Kada možete početi?",
+            "pl": "Świetnie. Kiedy może Pan zacząć?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Od početka sljedećeg mjeseca.",
+            "pl": "Od początku przyszłego miesiąca."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Rozmowa o pracę",
+        "partner": "Marta",
+        "turns": [
+          {
+            "say": "Recite mi nešto o svom iskustvu.",
+            "pl": "Proszę powiedzieć coś o swoim doświadczeniu."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak długo i jako kto pracujesz.",
+              "accept": [
+                1,
+                "Radim kao konobar već tri godine."
+              ],
+              "open": true,
+              "pattern": "^(ja )?(imam (\\p{L}+ )?(godinu|godine|godina)( dana)? (radnog )?iskustva|radim( kao \\p{L}+)?( u \\p{L}+( \\p{L}+)?)? (već|od) \\p{L}+( \\p{L}+)?|radim kao \\p{L}+( \\p{L}+)?|nemam (puno )?iskustva)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Zašto se prijavljujete na ovaj posao?",
+            "pl": "Dlaczego aplikuje Pan na tę pracę?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego szukasz.",
+              "accept": [
+                7,
+                "Želim raditi na daljinu."
+              ],
+              "open": true,
+              "pattern": "^(zato što |jer )?(tražim|želim|hoću|volim|htio bih|htjela bih)( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "Hvala vam. Javit ćemo vam se ovaj tjedan.",
+            "pl": "Dziękujemy. Odezwiemy się w tym tygodniu."
+          },
+          {
+            "reply": {
+              "prompt": "Podziękuj grzecznie i pożegnaj się.",
+              "accept": [
+                "Hvala vama. Doviđenja!"
+              ],
+              "pattern": "^hvala( vama| vam| lijepa)?( na (pozivu|razgovoru))?( doviđenja)?$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania do CV: jak długo pracujesz, co umiesz i czego szukasz.",
+        "points": [
+          "doświadczenie",
+          "umiejętności",
+          "czego szukasz"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "već",
+              "od",
+              "godina",
+              "godine",
+              "iskustva"
+            ],
+            "label": "doświadczenie"
+          },
+          {
+            "any": [
+              "tražim",
+              "želim"
+            ],
+            "label": "czego szukasz"
+          }
+        ],
+        "sample": "Radim kao konobar već tri godine. Govorim engleski i malo hrvatski. Tražim posao na puno radno vrijeme."
+      }
+    },
+    "a2-18": {
+      "grammar": {
+        "title": "Molim vas da…",
+        "text": "W pracy piszesz i mówisz na Vi. E-mail zaczynasz od Poštovani (Szanowni Państwo; do kobiety: Poštovana), kończysz Lijep pozdrav albo S poštovanjem. Uprzejma prośba: Molim vas da + czas teraźniejszy: Molim vas da mi pošaljete račun. Krócej: Možete li…? albo Pošaljite…, molim. Załącznik: u prilogu.",
+        "table": [
+          {
+            "label": "E-mail krok po kroku",
+            "rows": [
+              {
+                "base": "powitanie",
+                "form": "Poštovani,",
+                "meaning": "Szanowni Państwo,"
+              },
+              {
+                "base": "cel",
+                "form": "šaljem vam ponudu.",
+                "meaning": "przesyłam Państwu ofertę."
+              },
+              {
+                "base": "załącznik",
+                "form": "U prilogu je ponuda.",
+                "meaning": "W załączniku jest oferta."
+              },
+              {
+                "base": "prośba",
+                "form": "Molim vas da potvrdite termin.",
+                "meaning": "Proszę o potwierdzenie terminu."
+              },
+              {
+                "base": "podziękowanie",
+                "form": "Hvala unaprijed.",
+                "meaning": "Z góry dziękuję."
+              },
+              {
+                "base": "pożegnanie",
+                "form": "Lijep pozdrav",
+                "meaning": "Pozdrawiam"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "Do kolegi z pracy na ty możesz napisać Bok, … / Pozdrav — ale do klienta zawsze Poštovani."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "pošaljete"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 5,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Proszę mi przesłać rachunek.",
+          "options": [
+            "Molim vas da mi pošaljete račun.",
+            "Molim vas da mi poslati račun.",
+            "Molim vas da mi šaljem račun."
+          ],
+          "correct": 0,
+          "explanation": "Molim vas da + czas teraźniejszy w formie vi: pošaljete."
+        },
+        {
+          "instruction": "Jak zaczniesz e-mail do klienta?",
+          "prompt": "Nowy e-mail do klienta",
+          "options": [
+            "Bok,",
+            "Poštovani,",
+            "Ćao,"
+          ],
+          "correct": 1,
+          "targetText": "options",
+          "explanation": "Formalnie: Poštovani / Poštovana."
+        }
+      ],
+      "model": {
+        "title": "Telefon do biura",
+        "lines": [
+          {
+            "speaker": "Recepcionar",
+            "hr": "Dobar dan, tvrtka Adria, izvolite.",
+            "pl": "Dzień dobry, firma Adria, słucham."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan, ovdje Ana Kowalska. Jučer sam vam poslala e-mail.",
+            "pl": "Dzień dobry, mówi Ana Kowalska. Wczoraj wysłałam Państwu e-mail."
+          },
+          {
+            "speaker": "Recepcionar",
+            "hr": "Da, vidim. Proslijedio sam ga šefu.",
+            "pl": "Tak, widzę. Przekazałem go szefowi."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala. Možete li mi potvrditi termin sastanka?",
+            "pl": "Dziękuję. Może Pan potwierdzić termin spotkania?"
+          },
+          {
+            "speaker": "Recepcionar",
+            "hr": "Naravno, sastanak je u četvrtak u deset.",
+            "pl": "Oczywiście, spotkanie jest w czwartek o dziesiątej."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Odlično, hvala vam. Doviđenja!",
+            "pl": "Świetnie, dziękuję. Do widzenia!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Telefon w sprawie e-maila",
+        "partner": "Recepcionar",
+        "turns": [
+          {
+            "say": "Dobar dan, izvolite.",
+            "pl": "Dzień dobry, słucham."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że wysłałeś / wysłałaś im e-mail.",
+              "accept": [
+                "Poslao sam vam e-mail."
+              ],
+              "open": true,
+              "pattern": "^((ovdje|ja sam|zovem se) \\p{L}+( \\p{L}+)? )?((jučer |danas )?(poslao|poslala) sam vam (e-mail|email|mail|poruku|životopis)|(jučer|danas) sam vam (poslao|poslala) (e-mail|email|mail|poruku|životopis))( jučer| danas)?$"
+            }
+          },
+          {
+            "say": "Da, dobili smo ga. Što trebate?",
+            "pl": "Tak, dostaliśmy go. Czego Pan potrzebuje?"
+          },
+          {
+            "reply": {
+              "prompt": "Poproś grzecznie o potwierdzenie terminu albo przesłanie rachunku.",
+              "accept": [
+                4,
+                3
+              ],
+              "open": true,
+              "pattern": "^(molim vas da (mi )?\\p{L}+( \\p{L}+){0,4}|možete li (mi )?\\p{L}+( \\p{L}+){0,4}|(molim vas )?(pošaljite|potvrdite|proslijedite)( mi)?( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "say": "Naravno, odmah.",
+            "pl": "Oczywiście, od razu."
+          },
+          {
+            "reply": {
+              "prompt": "Podziękuj z góry i pożegnaj się.",
+              "accept": [
+                "Hvala unaprijed. Doviđenja!"
+              ],
+              "pattern": "^hvala( vam)?( unaprijed)?( doviđenja| lijep pozdrav)?$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz krótki formalny e-mail: powitanie, prośba i pożegnanie.",
+        "points": [
+          "Poštovani",
+          "prośba",
+          "pożegnanie"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "poštovani",
+              "poštovana"
+            ],
+            "label": "Poštovani"
+          },
+          {
+            "any": [
+              "molim",
+              "možete"
+            ],
+            "label": "prośba"
+          },
+          {
+            "any": [
+              "pozdrav",
+              "poštovanjem"
+            ],
+            "label": "pożegnanie"
+          }
+        ],
+        "sample": "Poštovani, molim vas da mi pošaljete ponudu. Hvala unaprijed. Lijep pozdrav, Ana"
+      }
+    },
+    "a2-19": {
+      "grammar": {
+        "title": "Sve bolje",
+        "text": "Jak długo się uczysz: czas teraźniejszy + okres: Učim hrvatski godinu dana (od roku). Postęp: sve + stopień wyższy = coraz: sve bolje (coraz lepiej), sve brže, sve lakše. Gdy nie rozumiesz, poproś: Što znači…? Kako se kaže…? Možete li ponoviti? Možete li govoriti sporije / glasnije?",
+        "table": [
+          {
+            "label": "Gdy nie rozumiesz",
+            "rows": [
+              {
+                "base": "znaczenie",
+                "form": "Što znači ova riječ?",
+                "meaning": "Co znaczy to słowo?"
+              },
+              {
+                "base": "jak powiedzieć",
+                "form": "Kako se to kaže na hrvatskom?",
+                "meaning": "Jak to się mówi po chorwacku?"
+              },
+              {
+                "base": "wolniej",
+                "form": "Možete li govoriti sporije?",
+                "meaning": "Może Pan mówić wolniej?"
+              },
+              {
+                "base": "głośniej",
+                "form": "Možete li govoriti glasnije?",
+                "meaning": "Może Pan mówić głośniej?"
+              }
+            ]
+          },
+          {
+            "label": "sve + stopień wyższy = coraz",
+            "rows": [
+              {
+                "base": "dobro",
+                "form": "sve bolje",
+                "meaning": "coraz lepiej"
+              },
+              {
+                "base": "brzo",
+                "form": "sve brže",
+                "meaning": "coraz szybciej"
+              },
+              {
+                "base": "lako",
+                "form": "sve lakše",
+                "meaning": "coraz łatwiej"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "tip": "Svi griješe — wszyscy popełniają błędy. Błąd to nie porażka, to nauka."
+      },
+      "gap": {
+        "sentence": 5,
+        "word": "sve"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 8,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne pytanie.",
+          "prompt": "Może Pan mówić głośniej?",
+          "options": [
+            "Možete li govoriti glasno?",
+            "Možete govoriti li glasnije?",
+            "Možete li govoriti glasnije?"
+          ],
+          "correct": 2,
+          "explanation": "Głośniej = glasnije (stopień wyższy od glasno)."
+        }
+      ],
+      "model": {
+        "title": "Rozmowa w kawiarni",
+        "lines": [
+          {
+            "speaker": "Ivan",
+            "hr": "Odlično govoriš hrvatski! Koliko dugo učiš?",
+            "pl": "Świetnie mówisz po chorwacku! Jak długo się uczysz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala! Učim godinu dana, ali još griješim.",
+            "pl": "Dzięki! Uczę się od roku, ale jeszcze robię błędy."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Svi griješe. Tvoj izgovor je jako dobar.",
+            "pl": "Wszyscy robią błędy. Twoja wymowa jest bardzo dobra."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Oprosti, što znači riječ izgovor?",
+            "pl": "Przepraszam, co znaczy słowo izgovor?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Izgovor je kako govoriš, kako zvučiš.",
+            "pl": "Izgovor to to, jak mówisz, jak brzmisz."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Aha, hvala! Napredujem sve brže.",
+            "pl": "Aha, dzięki! Robię coraz szybsze postępy."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Twój chorwacki",
+        "partner": "Ivan",
+        "turns": [
+          {
+            "say": "Koliko dugo učiš hrvatski?",
+            "pl": "Jak długo uczysz się chorwackiego?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak długo się uczysz.",
+              "accept": [
+                1,
+                "Godinu dana."
+              ],
+              "open": true,
+              "pattern": "^((već )?(učim (hrvatski )?|hrvatski učim )(već )?(\\p{L}+ )?(dan|dana|tjedan|tjedna|tjedana|mjesec|mjeseca|mjeseci|godinu|godine|godina)( dana)?|(već )?(\\p{L}+ )?(dan|dana|tjedan|tjedna|tjedana|mjesec|mjeseca|mjeseci|godinu|godine|godina)( dana)?( učim( hrvatski)?)?|(od|tek) \\p{L}+( \\p{L}+)?)$"
+            }
+          },
+          {
+            "say": "Bravo! A što ti je najteže?",
+            "pl": "Brawo! A co jest dla ciebie najtrudniejsze?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co jest trudne (np. wymowa, gramatyka).",
+              "accept": [
+                "Izgovor je težak.",
+                "Gramatika mi je teška."
+              ],
+              "open": true,
+              "pattern": "^\\p{L}+( mi)? (je|su) (težak|teška|teško|teški|teške)( za mene)?$|^najteži (mi )?je \\p{L}+( \\p{L}+)?$|^najteža (mi )?je \\p{L}+( \\p{L}+)?$|^najteže (mi )?je \\p{L}+( \\p{L}+)?$|^(izgovor|gramatika|padeži|glagoli|riječi|slušanje)$"
+            }
+          },
+          {
+            "say": "Ne brini, napreduješ!",
+            "pl": "Nie martw się, robisz postępy!"
+          },
+          {
+            "reply": {
+              "prompt": "Poproś, żeby mówił wolniej albo głośniej.",
+              "accept": [
+                "Možeš li govoriti sporije?",
+                3
+              ],
+              "open": true,
+              "pattern": "^(možeš li|možete li)( govoriti)?( malo)? (sporije|glasnije|polakše)( molim( te| vas)?)?$|^(molim te |molim vas )?(govori|govorite)( malo)? (sporije|glasnije)( molim( te| vas)?)?$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o swojej nauce chorwackiego.",
+        "points": [
+          "jak długo",
+          "co idzie dobrze",
+          "co jest trudne"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "učim"
+            ],
+            "label": "učim"
+          },
+          {
+            "any": [
+              "godinu",
+              "godina",
+              "godine",
+              "mjeseci",
+              "mjesec",
+              "mjeseca",
+              "tjedana"
+            ],
+            "label": "jak długo"
+          },
+          {
+            "any": [
+              "bolje",
+              "brže",
+              "lakše",
+              "bolji"
+            ],
+            "label": "postęp: sve bolje"
+          }
+        ],
+        "sample": "Učim hrvatski godinu dana. Moj izgovor je sve bolji, ali još griješim."
+      }
+    },
+    "a2-20": {
+      "grammar": {
+        "title": "Praca i nauka — wszystko razem",
+        "text": "Praca: Radim kao…, Bavim se + narzędnik. Doświadczenie: Radim već…, Prije toga sam… Styl formalny: Poštovani…, Molim vas da… Nauka: Učim… godinu dana, sve bolje. Cele: Moj cilj je + bezokolicznik.",
+        "examples": [
+          2,
+          4,
+          6
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zajmuję się turystyką.",
+          "options": [
+            "Bavim se turizam.",
+            "Bavim se turizmom.",
+            "Bavim turizmom."
+          ],
+          "correct": 1,
+          "explanation": "baviti se + narzędnik: turizam → turizmom."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Co nowego?",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Bok! Kako ide novi posao?",
+            "pl": "Cześć! Jak idzie nowa praca?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz krótko, jak idzie i co robisz.",
+              "accept": [
+                "Dobro, radim s kupcima.",
+                "Super, radim kao konobar."
+              ],
+              "open": true,
+              "pattern": "^(dobro|super|odlično|loše|nije loše|sve je u redu)( ide)?( (radim|bavim se|imam)( \\p{L}+){1,4})?$|^(radim|bavim se|imam)( \\p{L}+){1,4}$"
+            }
+          },
+          {
+            "say": "A kako ide hrvatski?",
+            "pl": "A jak idzie chorwacki?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak idzie nauka.",
+              "accept": [
+                "Sve bolje, hvala!",
+                "Učim godinu dana i napredujem."
+              ],
+              "open": true,
+              "pattern": "^(sve bolje|dobro|super|polako|napredujem|učim( \\p{L}+){1,4})( (ali|i)( \\p{L}+){1,4})?$"
+            }
+          },
+          {
+            "say": "Bravo! Koji ti je cilj?",
+            "pl": "Brawo! Jaki masz cel?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jaki masz cel.",
+              "accept": [
+                2,
+                "Želim tečno govoriti hrvatski."
+              ],
+              "open": true,
+              "pattern": "^(moj cilj je|cilj mi je|želim|htio bih|htjela bih|hoću|planiram)( \\p{L}+){1,5}$"
+            }
+          },
+          {
+            "say": "Puno uspjeha!",
+            "pl": "Powodzenia!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3–4 zdaniach swoją pracę albo naukę i swój cel.",
+        "points": [
+          "co robisz",
+          "jak długo",
+          "twój cel"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "radim",
+              "bavim",
+              "učim",
+              "studiram"
+            ],
+            "label": "co robisz"
+          },
+          {
+            "any": [
+              "već",
+              "godinu",
+              "godina",
+              "godine",
+              "od"
+            ],
+            "label": "jak długo"
+          },
+          {
+            "any": [
+              "cilj",
+              "želim",
+              "planiram"
+            ],
+            "label": "cel"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Radim kao konobar već tri godine. Bavim se i fotografijom. Učim hrvatski godinu dana. Moj cilj je tečno govoriti."
       }
     }
   }
