@@ -178,7 +178,7 @@ export const pl: Dictionary = {
     "subtitle": "Ucz się krok po kroku i buduj język od podstaw.",
     "chooseLevel": "Poziom kursu",
     "soon": "wkrótce",
-    "soonTitle": "Poziom {level} pojawi się po A1.",
+    "soonTitle": "Poziom {level} jest w przygotowaniu.",
     "lessonsOf": "lekcji",
     "lessonsCount": "{done} / {total} lekcji",
     "modulesDone": "{done} / {total} modułów ukończonych",

@@ -1,0 +1,230 @@
+import { existsSync, readFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
+import { createRequire } from 'node:module';
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import React from 'react';
+import Renderer, { act } from 'react-test-renderer';
+import ts from 'typescript';
+import { audioSlots } from '../scripts/lib/course-audio.mjs';
+
+/* Kurs A2 (pilot: moduł 1) — ten sam generator i player co A1, osobny poziom. */
+
+const require = createRequire(import.meta.url);
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const SRC = join(ROOT, 'src');
+
+/* Minimalne środowisko przeglądarki dla playera (bez DOM). */
+const storage = new Map();
+globalThis.window = { addEventListener() {}, removeEventListener() {}, scrollTo() {}, setTimeout, clearTimeout };
+globalThis.localStorage = { getItem: (k) => storage.get(k) ?? null, setItem: (k, v) => storage.set(k, String(v)), removeItem: (k) => storage.delete(k) };
+globalThis.requestAnimationFrame = (fn) => setTimeout(fn, 0);
+
+const cache = new Map();
+function resolveFile(from, id) {
+  const base = id.startsWith('@/') ? join(SRC, id.slice(2)) : resolve(dirname(from), id);
+  for (const candidate of [`${base}.ts`, `${base}.tsx`, join(base, 'index.ts'), base]) if (existsSync(candidate) && /\.tsx?$/.test(candidate)) return candidate;
+  throw new Error(`Nie znaleziono ${id} (z ${from})`);
+}
+function loadFile(file) {
+  if (cache.has(file)) return cache.get(file);
+  const { outputText } = ts.transpileModule(readFileSync(file, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, target: ts.ScriptTarget.ES2020, esModuleInterop: true } });
+  const exports = {};
+  cache.set(file, exports);
+  const req = (id) => (MOCKS[id] ? MOCKS[id] : id.startsWith('.') || id.startsWith('@/') ? loadFile(resolveFile(file, id)) : require(id));
+  new Function('require', 'exports', 'module', outputText)(req, exports, { exports });
+  return exports;
+}
+const load = (path) => loadFile(join(ROOT, path));
+
+const plDict = load('src/i18n/locales/pl.ts').pl;
+const { lookup, interpolate } = load('src/i18n/types.ts');
+const t = (key, params) => { const value = lookup(plDict, key); assert.ok(value, `brak tłumaczenia: ${key}`); return interpolate(value, params); };
+const course = { id: 'pl-hr', specialCharacters: ['č', 'ć', 'đ', 'š', 'ž'], validation: { caseInsensitive: true, trimWhitespace: true, diacriticsMatter: true, foldMap: { č: 'c', ć: 'c', š: 's', ž: 'z', đ: 'd' } } };
+const MOCKS = {
+  '@/i18n': { useT: () => t, useI18n: () => ({ t, locale: 'pl' }) },
+  'react-router-dom': { Link: ({ to, children, ...props }) => React.createElement('a', { href: to, ...props }, children) },
+  '@/courses/CourseProvider': { useCourse: () => ({ course }) },
+};
+
+const { PL_HR_OUTLINE } = load('src/curriculum/data/a1.ts');
+const { deriveLevel, nextLessonId } = load('src/curriculum/progress.ts');
+const { checkLessonAnswer } = load('src/curriculum/answers.ts');
+const { LessonPlayer } = load('src/curriculum/player/LessonPlayer.tsx');
+const rules = course.validation;
+
+const a2 = PL_HR_OUTLINE.levels.find((level) => level.id === 'A2');
+const lessons = a2.modules.flatMap((m) => m.lessons);
+const fileOf = (lesson) => join(SRC, 'curriculum/data/hr-a2', `module-${lesson.moduleId.slice(-2)}/lesson-${String(lesson.order).padStart(2, '0')}.ts`);
+const generated = new Map(lessons.map((lesson) => [lesson.id, loadFile(fileOf(lesson)).LESSON]));
+const PUBLIC = join(ROOT, 'public');
+
+/** CSV (RFC 4180, pola w cudzysłowach) → rekordy z nagłówka. */
+function parseCsvFile(path) {
+  const rows = [[]];
+  let field = '';
+  let quoted = false;
+  const src = readFileSync(path, 'utf8').replace(/^\uFEFF/, '');
+  for (let i = 0; i < src.length; i++) {
+    const ch = src[i];
+    if (quoted) {
+      if (ch === '"' && src[i + 1] === '"') { field += '"'; i++; } else if (ch === '"') quoted = false; else field += ch;
+    } else if (ch === '"') quoted = true;
+    else if (ch === ',') { rows.at(-1).push(field); field = ''; }
+    else if (ch === '\n') { rows.at(-1).push(field); field = ''; rows.push([]); }
+    else if (ch !== '\r') field += ch;
+  }
+  if (field) rows.at(-1).push(field);
+  const [header, ...body] = rows.filter((r) => r.length > 1);
+  return body.map((cells) => Object.fromEntries(header.map((key, i) => [key, cells[i] ?? ''])));
+}
+
+test('A2: generator — wygenerowane pliki są aktualne względem CSV', () => {
+  const run = spawnSync(process.execPath, ['scripts/generate-curriculum.mjs', '--level', 'hr-a2', '--check'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(run.status, 0, run.stderr);
+  assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
+});
+
+test('A2: poziom dostępny, moduł 1 ma 4 lekcje i powtórkę, A1 bez zmian', () => {
+  assert.equal(a2.available, true);
+  assert.equal(a2.modules.length, 1);
+  assert.deepEqual(lessons.map((l) => l.id), ['a2-01-01', 'a2-01-02', 'a2-01-03', 'a2-01-04', 'a2-01-05']);
+  assert.deepEqual(lessons.map((l) => l.kind), ['lesson', 'lesson', 'lesson', 'lesson', 'review']);
+  assert.ok(a2.modules.every((m) => m.levelId === 'A2' && m.id === 'a2-01'));
+  const a1 = PL_HR_OUTLINE.levels.find((level) => level.id === 'A1');
+  assert.equal(a1.modules.flatMap((m) => m.lessons).length, 40);
+  // Postęp A2 liczy się osobno: nowy uczeń zaczyna od a2-01-01.
+  assert.equal(deriveLevel(a2, new Set()).current.lesson.lesson.id, 'a2-01-01');
+  assert.equal(nextLessonId(a2, 'a2-01-04'), 'a2-01-05');
+  assert.equal(nextLessonId(a2, 'a2-01-05'), null);
+});
+
+test('A2: rdzeń lekcji nie powtarza słów, które uczeń zna z A1', () => {
+  const a1Words = new Set(parseCsvFile(join(ROOT, 'curriculum/hr-a1/lexodromia_hr_A1_curriculum.csv'))
+    .filter((r) => r.record_type === 'vocabulary').map((r) => r.hr_text.toLocaleLowerCase('hr')));
+  for (const [id, lesson] of generated) {
+    for (const record of lesson.material.records.filter((r) => r.type === 'vocabulary' && r.tags.includes('active'))) {
+      assert.ok(!a1Words.has(record.hr.toLocaleLowerCase('hr')), `${id}: „${record.hr}” jest już w A1`);
+    }
+  }
+});
+
+test('A2: odpowiedzi wzorcowe przechodzą walidację, a opcje wyboru są spójne', () => {
+  for (const [id, lesson] of generated) {
+    for (const step of lesson.content.steps) {
+      if (step.type === 'translate' || step.type === 'gap' || step.type === 'order') assert.equal(checkLessonAnswer(step.accepted[0], step.accepted, rules), 'hit', `${id}/${step.id}`);
+      if (step.type === 'choice') {
+        assert.equal(new Set(step.options).size, step.options.length, `${id}/${step.id}: powtórzone opcje`);
+        assert.ok(step.correctIndex >= 0 && step.correctIndex < step.options.length);
+      }
+    }
+  }
+});
+
+const reply = (id, n) => generated.get(id).content.steps.filter((s) => s.type === 'dialog').flatMap((s) => s.turns.filter((x) => x.kind === 'reply'))[n];
+const verdict = (id, n, answer) => { const r = reply(id, n); return checkLessonAnswer(answer, r.accepted, rules, r.pattern); };
+
+/** Otwarte repliki A2: naturalne odpowiedzi muszą przejść, błędne (szyk klityk, brak „sam”) — nie. */
+const OPEN_REPLIES = [
+  { lesson: 'a2-01-01', reply: 0, hit: ['Vikend sam proveo na moru.', 'Vikend sam provela kod kuće.', 'Bila sam kod bake.', 'Prošli vikend smo posjetili baku.', 'U subotu sam igrao nogomet.', 'Bok, bio sam u gradu, a ti?', 'Za vikend sam gledala filmove.', 'Mi smo bili na izletu.'],
+    miss: ['Sam bio na moru.', 'Bio na moru.', 'Ja proveo vikend na moru.'] },
+  { lesson: 'a2-01-01', reply: 1, hit: ['Gledali smo film.', 'Navečer smo bili u gradu.', 'Bile smo u kinu.', 'Sinoć smo gledali seriju.'],
+    miss: ['Smo gledali film.', 'Gledali film.'] },
+  { lesson: 'a2-01-02', reply: 0, hit: ['Zakasnio sam jer je autobus kasnio.', 'Nisam imala vremena.', 'Bila sam bolesna.', 'Žao mi je, nisam imao vremena.', 'Jer sam bio bolestan.', 'Propustila sam vlak.', 'Zaboravio sam.'],
+    miss: ['Sam zakasnio.', 'Ne sam imao vremena.', 'Nisam imam vremena.'] },
+  { lesson: 'a2-01-03', reply: 0, hit: ['Jesam, bio sam prošle godine.', 'Jesam.', 'Nisam.', 'Nisam, još nisam bila.', 'Da, jesam.', 'Ne, nisam.', 'Jesam, bila sam ljetos.'],
+    miss: ['Sam.', 'Da sam.', 'Jesam bio.'] },
+  { lesson: 'a2-01-03', reply: 1, hit: ['Bio sam u Splitu.', 'Bila sam na moru.', 'Ja sam bio u Zagrebu.', 'U Zadru.', 'Na moru.', 'Bila sam kod prijatelja u Splitu.'],
+    miss: ['Sam bio u Splitu.', 'Bio u Splitu.'] },
+  { lesson: 'a2-01-03', reply: 2, hit: ['Vratio sam se jučer.', 'Vratila sam se prošli tjedan.', 'Jučer sam se vratila.', 'Jučer.', 'Prošli tjedan.', 'U nedjelju.'],
+    miss: ['Vratio se jučer.', 'Sam se vratio jučer.'] },
+  { lesson: 'a2-01-04', reply: 0, hit: ['Prvo smo otišli u hotel.', 'Prvo sam išla na plažu.', 'Najprije smo ručali.'],
+    miss: ['Prvo otišli smo u hotel.', 'Smo prvo otišli u hotel.'] },
+  { lesson: 'a2-01-04', reply: 1, hit: ['Poslije smo ručali u gradu.', 'Onda smo išli na plažu.', 'Zatim sam srela prijateljicu.', 'Na kraju smo našli apartman.', 'Napokon smo stigli u hotel.'],
+    miss: ['Onda išli smo na plažu.', 'Poslije ručali.'] },
+  { lesson: 'a2-01-05', reply: 0, hit: ['Bio sam na moru.', 'Bila sam u Istri.', 'Prošle godine smo bili u Istri.', 'Ljetos sam bila u Splitu.', 'Bili smo na otoku.', 'Na moru.'],
+    miss: ['Sam bio na moru.', 'Bio na moru.'] },
+  { lesson: 'a2-01-05', reply: 1, hit: ['Plivali smo i jeli ribu.', 'Svaki dan smo plivali.', 'Plivala sam u moru.', 'Navečer smo gledali filmove.'],
+    miss: ['Smo plivali.', 'Plivali.'] },
+  { lesson: 'a2-01-05', reply: 2, hit: ['Nismo imali nikakvih problema.', 'Nažalost, nisam vidio Dubrovnik.', 'Ne, nije.', 'Ništa loše.', 'Nisam vidjela Zagreb.'],
+    miss: ['Ne sam vidio Dubrovnik.', 'Sam nisam vidio.'] },
+];
+
+test('A2: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {
+  for (const f of OPEN_REPLIES) {
+    const r = reply(f.lesson, f.reply);
+    assert.ok(r, `${f.lesson}#${f.reply}: brak repliki`);
+    for (const answer of f.hit) assert.equal(verdict(f.lesson, f.reply, answer), 'hit', `${f.lesson}#${f.reply} [${r.prompt}] „${answer}”`);
+    for (const answer of f.miss) assert.equal(verdict(f.lesson, f.reply, answer), 'miss', `${f.lesson}#${f.reply} [${r.prompt}] przepuszcza „${answer}”`);
+  }
+});
+
+test('A2: lista otwartych replik w teście = repliki oznaczone „open” w didactics', () => {
+  const didactics = JSON.parse(readFileSync(join(ROOT, 'curriculum/hr-a2/didactics.json'), 'utf8'));
+  const flagged = Object.entries(didactics.lessons).flatMap(([key, lesson]) => {
+    const n = Number(key.slice(3));
+    const appId = `a2-${String(Math.ceil(n / 5)).padStart(2, '0')}-${String(((n - 1) % 5) + 1).padStart(2, '0')}`;
+    return (lesson.dialog?.turns ?? []).filter((x) => x.reply).flatMap((x, i) => (x.reply.open ? [`${appId}#${i}`] : []));
+  });
+  assert.deepEqual(OPEN_REPLIES.map((f) => `${f.lesson}#${f.reply}`).sort(), flagged.sort());
+});
+
+test('A2: wszystkie repliki — interpunkcja, wielkość liter i grzecznościowa rama nie zmieniają wyniku', () => {
+  for (const [id, lesson] of generated) {
+    const turns = lesson.content.steps.filter((s) => s.type === 'dialog').flatMap((s) => s.turns.filter((x) => x.kind === 'reply'));
+    for (const turn of turns) {
+      const bare = turn.suggestion.toLocaleLowerCase('hr').replace(/[.,!?]/g, '');
+      for (const v of [turn.suggestion, bare, turn.suggestion.toLocaleUpperCase('hr'), `${bare}!`, `${turn.suggestion} Hvala.`, `Bok, ${turn.suggestion}`]) {
+        assert.equal(checkLessonAnswer(v, turn.accepted, rules, turn.pattern), 'hit', `${id} [${turn.prompt}] „${v}”`);
+      }
+    }
+  }
+});
+
+test('A2: każdy chorwacki tekst lekcji ma nagranie, a każde audioSrc wskazuje istniejący plik', () => {
+  const manifest = JSON.parse(readFileSync(join(ROOT, 'curriculum/hr-a2/audio-manifest.json'), 'utf8'));
+  for (const item of manifest.items) {
+    assert.match(item.audioPath, /^\/audio\/hr\/a2\/module-\d\d\/[a-z0-9-]+\.mp3$/, item.audioPath);
+    assert.ok(existsSync(join(PUBLIC, item.audioPath)), `brak pliku ${item.audioPath} („${item.text}”)`);
+  }
+  for (const [id, lesson] of generated) {
+    const content = structuredClone(lesson.content);
+    const slots = audioSlots(content);
+    const json = JSON.stringify(lesson.content);
+    const attached = [...json.matchAll(/"(?:audioSrc|promptAudioSrc|answerAudioSrc|suggestionAudioSrc|sampleAudioSrc|audio)":"([^"]+)"/g)].map((m) => m[1]);
+    assert.ok(attached.length >= slots.length, `${id}: ${slots.length - attached.length} tekstów bez nagrania`);
+    for (const src of attached) assert.ok(existsSync(join(PUBLIC, src)), `${id}: brak pliku ${src}`);
+  }
+});
+
+/** Przechodzi lekcję w playerze jak użytkownik (odpowiada czymkolwiek) aż do podsumowania. */
+async function walk(content) {
+  let completed = 0;
+  let renderer;
+  const element = React.createElement(LessonPlayer, { content, header: { position: 'A2', title: 'T', meta: 'M', closeTo: '/m' }, nextHref: null, moduleHref: '/m', onComplete: () => { completed++; } });
+  await act(async () => { renderer = Renderer.create(element); });
+  const byClass = (type, cls) => renderer.root.findAll((n) => n.type === type && typeof n.props.className === 'string' && n.props.className.split(' ').includes(cls));
+  for (let guard = 0; guard < 400; guard++) {
+    if (byClass('div', 'step-summary').length) break;
+    const footer = byClass('button', 'btn-lg')[0];
+    if (footer && !footer.props.disabled) { await act(async () => footer.props.onClick()); continue; }
+    const choice = byClass('button', 'choice').find((n) => n.props['aria-disabled'] !== true);
+    if (choice) { await act(async () => choice.props.onClick()); continue; }
+    const token = byClass('button', 'order-token').find((n) => !n.props.disabled && !n.props.className.includes('placed'));
+    if (token) { await act(async () => token.props.onClick()); continue; }
+    const input = renderer.root.findAll((n) => n.type === 'input' && !n.props.disabled && !n.props.readOnly)[0];
+    if (input) { await act(async () => input.props.onChange({ target: { value: 'x' } })); continue; }
+    const skip = byClass('button', 'btn-ghost').find((n) => n.props.children === t('curriculum.player.skip'));
+    if (skip) { await act(async () => skip.props.onClick()); continue; }
+    throw new Error(`Player utknął w ${content.lessonId}`);
+  }
+  assert.equal(byClass('div', 'step-summary').length, 1, `${content.lessonId}: nie doszedł do podsumowania`);
+  act(() => renderer.unmount());
+  return completed;
+}
+
+test('A2: wszystkie lekcje da się otworzyć i przejść w playerze bez błędów', async () => {
+  for (const lesson of lessons) assert.equal(await walk(generated.get(lesson.id).content), 1, `${lesson.id}: onComplete`);
+});

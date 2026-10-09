@@ -1,0 +1,938 @@
+{
+  "$comment": "Warstwa dydaktyczna kursu HR A2 (format jak curriculum/hr-a1/didactics.json): objaśnienia gramatyki, dialogi z ramami odpowiedzi, zadania swobodne. Treści autorskie — wymagają przeglądu native speakera przed rozbudową poziomu.",
+  "version": 1,
+  "corrections": [],
+  "extraAccepted": {},
+  "modules": {
+    "1": {
+      "description": "Opowiadasz o przeszłości: co robiłeś ty i inni, czego nie zrobiłeś, pytasz o podróże i opowiadasz historię po kolei."
+    }
+  },
+  "lessons": {
+    "a2-01": {
+      "grammar": {
+        "title": "Bili smo zajedno",
+        "text": "Perfekt to krótka forma biti (sam, si, je, smo, ste, su) + forma czasownika. Forma zależy od rodzaju i liczby: on radio, ona radila, oni radili, one radile. Ana je upoznala Marka. Mi smo bili zajedno. Gosti su došli. Krótka forma nie zaczyna zdania — stoi na drugim miejscu: Cijeli dan smo bili zajedno.",
+        "table": [
+          {
+            "label": "biti + imiesłów",
+            "rows": [
+              {
+                "base": "ja",
+                "form": "sam radio / radila",
+                "meaning": "pracowałem / pracowałam"
+              },
+              {
+                "base": "ti",
+                "form": "si radio / radila",
+                "meaning": "pracowałeś / pracowałaś"
+              },
+              {
+                "base": "on / ona",
+                "form": "je radio / radila",
+                "meaning": "pracował / pracowała"
+              },
+              {
+                "base": "mi",
+                "form": "smo radili",
+                "meaning": "pracowaliśmy"
+              },
+              {
+                "base": "vi",
+                "form": "ste radili",
+                "meaning": "pracowaliście"
+              },
+              {
+                "base": "oni / one",
+                "form": "su radili / radile",
+                "meaning": "pracowali / pracowały"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "tip": "Grupa mieszana dostaje formę męską: Ana i Marko su bili u kinu."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "smo"
+      },
+      "translate": [
+        {
+          "sentence": 5,
+          "accept": [
+            "Proveo sam vikend na moru."
+          ]
+        },
+        {
+          "sentence": 1,
+          "accept": [
+            "Posjetili smo baku prošli vikend."
+          ]
+        }
+      ],
+      "comprehend": 4,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Byliśmy w kinie.",
+          "options": [
+            "Bili smo u kinu.",
+            "Bili su u kinu.",
+            "Bio sam u kinu."
+          ],
+          "correct": 0,
+          "explanation": "My: smo + forma na -li."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Oni pracowali cały dzień.",
+          "options": [
+            "Radili smo cijeli dan.",
+            "Radio je cijeli dan.",
+            "Radili su cijeli dan."
+          ],
+          "correct": 2,
+          "explanation": "Oni: su + forma na -li."
+        }
+      ],
+      "listening": "a2-bucni-susjed",
+      "model": {
+        "title": "Weekend Any",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Bok, Ana! Kako si provela vikend?",
+            "pl": "Cześć, Ana! Jak spędziłaś weekend?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Super! U subotu sam bila na rođendanu kod prijateljice.",
+            "pl": "Super! W sobotę byłam na urodzinach u przyjaciółki."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Je li bilo puno gostiju?",
+            "pl": "Było dużo gości?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, i upoznala sam nove ljude. A ti?",
+            "pl": "Tak, i poznałam nowych ludzi. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Mi smo cijeli vikend bili na moru.",
+            "pl": "My cały weekend byliśmy nad morzem."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Jak było w weekend?",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Bok! Kako je bilo za vikend?",
+            "pl": "Cześć! Jak było w weekend?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robiłeś / robiłaś w weekend.",
+              "accept": [
+                5,
+                1
+              ],
+              "open": true,
+              "pattern": "^((prošli vikend|za vikend|vikend|u subotu|u nedjelju|jučer|ja|mi)( ja| mi)? (sam|smo) (se )?{pp}( \\p{L}+){0,4}|{pp} (sam|smo)( se)?( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "say": "A što ste radili navečer?",
+            "pl": "A co robiliście wieczorem?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robiliście wieczorem.",
+              "accept": [
+                "Gledali smo film.",
+                "Bili smo u gradu."
+              ],
+              "open": true,
+              "pattern": "^((navečer|sinoć|onda|poslije|mi)( mi)? smo (se )?{pp}( \\p{L}+){0,4}|{pp} smo( se)?( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "say": "Zvuči super! I mi smo se dobro zabavili.",
+            "pl": "Brzmi super! My też dobrze się bawiliśmy."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o swoim ostatnim weekendzie.",
+        "points": [
+          "gdzie byłeś / byłaś",
+          "co robiłeś / robiłaś",
+          "z kim"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "sam",
+              "smo",
+              "je",
+              "su"
+            ],
+            "label": "biti: sam / smo / je / su"
+          },
+          {
+            "any": [
+              "bio",
+              "bila",
+              "bili",
+              "bile",
+              "proveo",
+              "provela",
+              "proveli",
+              "upoznao",
+              "upoznala",
+              "posjetio",
+              "posjetila",
+              "posjetili",
+              "radio",
+              "radila",
+              "radili",
+              "išao",
+              "išla",
+              "išli",
+              "gledao",
+              "gledala",
+              "gledali",
+              "zabavio",
+              "zabavila",
+              "zabavili"
+            ],
+            "label": "forma przeszła (-o / -la / -li)"
+          }
+        ],
+        "sample": "Prošli vikend sam bila kod bake. Cijeli dan smo bili zajedno."
+      }
+    },
+    "a2-02": {
+      "grammar": {
+        "title": "Nisam imao vremena",
+        "text": "Przeczenie w przeszłości: zamiast sam, si, je, smo, ste, su mówisz nisam, nisi, nije, nismo, niste, nisu. Ta forma może zacząć zdanie: Nisam imao vremena. Ana nije došla. Po przeczeniu imati rzecz stoi w dopełniaczu: Nisam imao vremena (vrijeme → vremena). Dlaczego? — jer: Zakasnio sam jer je autobus kasnio.",
+        "table": [
+          {
+            "label": "ne + biti",
+            "rows": [
+              {
+                "base": "sam",
+                "form": "nisam došao / došla",
+                "meaning": "nie przyszedłem / nie przyszłam"
+              },
+              {
+                "base": "si",
+                "form": "nisi došao / došla",
+                "meaning": "nie przyszedłeś / nie przyszłaś"
+              },
+              {
+                "base": "je",
+                "form": "nije došao / došla",
+                "meaning": "nie przyszedł / nie przyszła"
+              },
+              {
+                "base": "smo",
+                "form": "nismo došli",
+                "meaning": "nie przyszliśmy"
+              },
+              {
+                "base": "ste",
+                "form": "niste došli",
+                "meaning": "nie przyszliście"
+              },
+              {
+                "base": "su",
+                "form": "nisu došli",
+                "meaning": "nie przyszli"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          6,
+          7
+        ],
+        "tip": "Nie mów „ne sam” ani „sam nisam” — przeczenie to jedno słowo: nisam."
+      },
+      "gap": {
+        "sentence": 6,
+        "word": "nije"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": [
+            "Ja nisam imao vremena."
+          ]
+        },
+        {
+          "sentence": 3,
+          "accept": []
+        }
+      ],
+      "comprehend": 4,
+      "order": 5,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Nie byliśmy w domu.",
+          "options": [
+            "Nismo bili kod kuće.",
+            "Bili nismo kod kuće.",
+            "Ne smo bili kod kuće."
+          ],
+          "correct": 0,
+          "explanation": "Przeczenie: nismo (= ne + smo) na początku, potem imiesłów."
+        }
+      ],
+      "listening": "a2-zagubljena-prtljaga",
+      "model": {
+        "title": "Pechowy poranek",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Bok, Marko! Zašto si tako umoran?",
+            "pl": "Cześć, Marko! Dlaczego jesteś taki zmęczony?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Budilica nije zvonila i propustio sam vlak.",
+            "pl": "Budzik nie zadzwonił i uciekł mi pociąg."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Joj! Jesi li zakasnio na posao?",
+            "pl": "Ojej! Spóźniłeś się do pracy?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jesam, a zaboravio sam i punjač kod kuće.",
+            "pl": "Tak, a do tego zapomniałem ładowarki z domu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Nažalost, danas nije tvoj dan!",
+            "pl": "Niestety, dziś nie twój dzień!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Dlaczego cię nie było?",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Zašto nisi došao na sastanak?",
+            "pl": "Dlaczego nie przyszedłeś na spotkanie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, dlaczego nie przyszedłeś / nie przyszłaś.",
+              "accept": [
+                5,
+                1
+              ],
+              "open": true,
+              "pattern": "^(nažalost |oprosti |žao mi je )?((ja )?nisam (se )?{pp}( \\p{L}+){0,4}|{pp} sam( se)?( \\p{L}+){0,5}|(jer|zato što) (sam|je|nisam|su|nije)( \\p{L}+){1,5})$"
+            }
+          },
+          {
+            "say": "Šteta, sastanak je bio važan.",
+            "pl": "Szkoda, spotkanie było ważne."
+          },
+          {
+            "reply": {
+              "prompt": "Przeproś: powiedz, że jest ci przykro.",
+              "accept": [
+                "Žao mi je."
+              ],
+              "pattern": "^(oprosti |oprostite )?(jako |stvarno |baš )?žao mi je( jako)?$"
+            }
+          },
+          {
+            "say": "Nema problema. Vidimo se sutra!",
+            "pl": "Nie ma problemu. Do jutra!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o tym, czego ostatnio nie zrobiłeś / nie zrobiłaś i dlaczego.",
+        "points": [
+          "czego nie zrobiłeś / nie zrobiłaś",
+          "dlaczego (jer)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "nisam",
+              "nismo",
+              "nije",
+              "nisu",
+              "nisi"
+            ],
+            "label": "przeczenie: nisam / nije"
+          },
+          {
+            "any": [
+              "jer"
+            ],
+            "label": "dlaczego: jer"
+          }
+        ],
+        "sample": "Jučer nisam išla na posao jer sam bila bolesna. Nisam imala vremena za kavu."
+      }
+    },
+    "a2-03": {
+      "grammar": {
+        "title": "Jesi li bio u Splitu?",
+        "text": "Pytanie tak/nie zaczynasz od pełnej formy biti + li: Jesi li bio…? (ty), Je li Ana stigla? (on, ona), Jeste li probali…? (wy). Krótka odpowiedź powtarza tę formę: Jesam (tak) albo Nisam (nie). Po słowie pytającym gdje, kada, što krótka forma stoi zaraz za nim: Gdje si bio? Kada si se vratila?",
+        "table": [
+          {
+            "label": "Pytanie i krótka odpowiedź",
+            "rows": [
+              {
+                "base": "ty",
+                "form": "Jesi li bio? — Jesam. / Nisam.",
+                "meaning": "Byłeś? — Tak. / Nie."
+              },
+              {
+                "base": "on / ona",
+                "form": "Je li stigla? — Jest. / Nije.",
+                "meaning": "Dotarła? — Tak. / Nie."
+              },
+              {
+                "base": "wy",
+                "form": "Jeste li probali? — Jesmo. / Nismo.",
+                "meaning": "Próbowaliście? — Tak. / Nie."
+              }
+            ]
+          },
+          {
+            "label": "Słowo pytające + perfekt",
+            "rows": [
+              {
+                "base": "gdzie",
+                "form": "Gdje si bio?",
+                "meaning": "Gdzie byłeś?"
+              },
+              {
+                "base": "kiedy",
+                "form": "Kada si se vratila?",
+                "meaning": "Kiedy wróciłaś?"
+              },
+              {
+                "base": "co",
+                "form": "Što ste radili?",
+                "meaning": "Co robiliście?"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "tip": "već = już, još nije = jeszcze nie: Ana još nije stigla."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "Jesi"
+      },
+      "translate": [
+        {
+          "sentence": 5,
+          "accept": [
+            "Marko je otišao doma."
+          ]
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 3,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne pytanie.",
+          "prompt": "Byłeś już w Zagrzebiu?",
+          "options": [
+            "Jesi li već bio u Zagrebu?",
+            "Si li već bio u Zagrebu?",
+            "Već si li bio u Zagrebu?"
+          ],
+          "correct": 0,
+          "explanation": "Pytanie zaczyna pełna forma jesi, a li stoi zaraz po niej."
+        },
+        {
+          "instruction": "Jak krótko odpowiesz „tak”?",
+          "prompt": "Jesi li bila na moru?",
+          "options": [
+            "Sam.",
+            "Jesam.",
+            "Je."
+          ],
+          "correct": 1,
+          "targetText": "both",
+          "explanation": "Krótka odpowiedź to pełna forma: Jesam (tak) / Nisam (nie)."
+        }
+      ],
+      "listening": "a2-kasnjenje-paketa",
+      "model": {
+        "title": "Po urlopie",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Bok, Marko! Kada si se vratio s odmora?",
+            "pl": "Cześć, Marko! Kiedy wróciłeś z urlopu?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jučer navečer. Bio sam u Dubrovniku.",
+            "pl": "Wczoraj wieczorem. Byłem w Dubrowniku."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Super! Jesi li probao crni rižoto?",
+            "pl": "Super! Próbowałeś czarnego risotto?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jesam, bio je odličan! A jesi li ti već bila u Dubrovniku?",
+            "pl": "Tak, było świetne! A ty byłaś już w Dubrowniku?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Nisam, još nisam bila.",
+            "pl": "Nie, jeszcze nie byłam."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Byłeś już w Chorwacji?",
+        "partner": "Ivan",
+        "turns": [
+          {
+            "say": "Jesi li već bio u Hrvatskoj?",
+            "pl": "Byłeś już w Chorwacji?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz krótko i dodaj, kiedy byłeś / byłaś (albo że jeszcze nie).",
+              "accept": [
+                2,
+                "Nisam, još nisam bio."
+              ],
+              "open": true,
+              "pattern": "^(da |ne )?(jesam|nisam)( (bio|bila) sam( \\p{L}+){0,4}| još nisam (bio|bila)( \\p{L}+){0,3}| još nisam| nisam (bio|bila)( \\p{L}+){0,3})?$"
+            }
+          },
+          {
+            "say": "A gdje si bio na odmoru?",
+            "pl": "A gdzie byłeś na urlopie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie byłeś / byłaś.",
+              "accept": [
+                "Bio sam u Splitu.",
+                "Bio sam na moru."
+              ],
+              "open": true,
+              "pattern": "^(ja sam (bio|bila)|(bio|bila) sam|(prošle godine|ljetos|lani) sam (bio|bila))( \\p{L}+){1,4}$|^(u|na|kod) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Kada si se vratio?",
+            "pl": "Kiedy wróciłeś?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, kiedy wróciłeś / wróciłaś.",
+              "accept": [
+                "Vratio sam se jučer.",
+                "Vratio sam se prošli tjedan."
+              ],
+              "open": true,
+              "pattern": "^((ja sam se|(jučer|prekjučer|sinoć|danas|prošli tjedan|prošle godine|u \\p{L}+) sam se) (vratio|vratila)|(vratio|vratila) sam se)( \\p{L}+){0,3}$|^(jučer|prekjučer|sinoć|danas|prošli tjedan|prošle godine|u \\p{L}+)$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 3 pytania do znajomego o jego ostatniej podróży.",
+        "points": [
+          "czy już gdzieś był",
+          "gdzie był",
+          "kiedy wrócił"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "jesi",
+              "jeste"
+            ],
+            "label": "Jesi li…? / Jeste li…?"
+          },
+          {
+            "any": [
+              "gdje",
+              "kada",
+              "kad",
+              "što"
+            ],
+            "label": "słowo pytające"
+          }
+        ],
+        "sample": "Jesi li već bio na moru? Gdje si bio? Kada si se vratio?"
+      }
+    },
+    "a2-04": {
+      "grammar": {
+        "title": "Prvo, zatim, na kraju",
+        "text": "Historię opowiadasz po kolei: prvo (najpierw), zatim, onda, poslije (potem), na kraju (na koniec). Takie słowo zaczyna zdanie, a sam / smo stoi zaraz po nim: Prvo smo otišli u hotel. Kiedy to było? prije + dopełniacz znaczy „temu”: prije dva dana — dwa dni temu.",
+        "table": [
+          {
+            "label": "Po kolei",
+            "rows": [
+              {
+                "base": "1.",
+                "form": "Prvo smo otišli u hotel.",
+                "meaning": "Najpierw poszliśmy do hotelu."
+              },
+              {
+                "base": "2.",
+                "form": "Zatim smo ručali.",
+                "meaning": "Następnie zjedliśmy obiad."
+              },
+              {
+                "base": "3.",
+                "form": "Onda smo išli na plažu.",
+                "meaning": "Potem poszliśmy na plażę."
+              },
+              {
+                "base": "4.",
+                "form": "Na kraju smo bili umorni.",
+                "meaning": "Na koniec byliśmy zmęczeni."
+              }
+            ]
+          },
+          {
+            "label": "prije … = … temu",
+            "rows": [
+              {
+                "base": "2 dni",
+                "form": "prije dva dana",
+                "meaning": "dwa dni temu"
+              },
+              {
+                "base": "tydzień",
+                "form": "prije tjedan dana",
+                "meaning": "tydzień temu"
+              },
+              {
+                "base": "rok",
+                "form": "prije godinu dana",
+                "meaning": "rok temu"
+              },
+              {
+                "base": "godzina",
+                "form": "prije sat vremena",
+                "meaning": "godzinę temu"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "tip": "Co się stało? — Što se dogodilo? Odjednom (nagle) dodaje napięcia: Odjednom je počela padati kiša."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "Prije"
+      },
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        },
+        {
+          "sentence": 1,
+          "accept": [
+            "Najprije smo otišli u hotel.",
+            "Prvo smo išli u hotel."
+          ]
+        }
+      ],
+      "comprehend": 5,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Tydzień temu byłem w Zadarze.",
+          "options": [
+            "Za tjedan dana sam bio u Zadru.",
+            "Prije tjedan dana sam bio u Zadru.",
+            "Prije tjedan dana ću biti u Zadru."
+          ],
+          "correct": 1,
+          "explanation": "prije + dopełniacz = temu; za tjedan dana = za tydzień."
+        }
+      ],
+      "listening": "a2-pogresna-narudzba",
+      "model": {
+        "title": "Przygoda w Zadarze",
+        "lines": [
+          {
+            "speaker": "Ivan",
+            "hr": "Ana, kako je bilo u Zadru?",
+            "pl": "Ana, jak było w Zadarze?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Zanimljivo! Prvo smo izgubili put do hotela.",
+            "pl": "Ciekawie! Najpierw zgubiliśmy drogę do hotelu."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Ozbiljno? Što ste onda napravili?",
+            "pl": "Serio? I co wtedy zrobiliście?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Slučajno smo sreli Marka i on nam je pokazao put.",
+            "pl": "Przypadkiem spotkaliśmy Marka i pokazał nam drogę."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Super! A na kraju?",
+            "pl": "Super! A na koniec?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Na kraju smo gledali zalazak sunca na moru.",
+            "pl": "Na koniec oglądaliśmy zachód słońca nad morzem."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Jak było w podróży?",
+        "partner": "Marta",
+        "turns": [
+          {
+            "say": "Kako je bilo na putovanju?",
+            "pl": "Jak było w podróży?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobiliście najpierw.",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^(prvo|najprije) (smo|sam)( se)? {pp}( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "A što se dogodilo poslije?",
+            "pl": "A co stało się potem?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co stało się potem.",
+              "accept": [
+                2
+              ],
+              "open": true,
+              "pattern": "^(zatim|onda|poslije( toga)?|na kraju|napokon|odjednom|slučajno) (smo|sam|je|su)( se)? {pp}( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Zvuči kao dobra priča!",
+            "pl": "Brzmi jak dobra historia!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Opowiedz w 3 zdaniach krótką historię z podróży: najpierw, potem, na koniec.",
+        "points": [
+          "najpierw",
+          "potem",
+          "na koniec"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "prvo",
+              "najprije"
+            ],
+            "label": "najpierw: prvo"
+          },
+          {
+            "any": [
+              "zatim",
+              "onda",
+              "poslije"
+            ],
+            "label": "potem: zatim / onda"
+          },
+          {
+            "any": [
+              "kraju",
+              "napokon"
+            ],
+            "label": "na koniec: na kraju"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Prvo smo stigli u Split. Zatim smo išli na plažu. Na kraju smo jeli ribu u restoranu."
+      }
+    },
+    "a2-05": {
+      "grammar": {
+        "title": "Perfekt — wszystko razem",
+        "text": "Twierdzenie: Prošle godine smo bili u Istri. Przeczenie: Nismo imali nikakvih problema. Pytanie: Kako ste proveli ljeto? Jeste li bili na moru? — Jesmo. Historię opowiadasz po kolei: prvo, zatim, na kraju.",
+        "examples": [
+          1,
+          6,
+          5
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Nie byliśmy jeszcze na Istrii.",
+          "options": [
+            "Još ne smo bili u Istri.",
+            "Još smo nismo bili u Istri.",
+            "Još nismo bili u Istri."
+          ],
+          "correct": 2,
+          "explanation": "Przeczenie: nismo + imiesłów."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": [
+            "Bio je to nezaboravan doživljaj."
+          ]
+        }
+      ],
+      "dialog": {
+        "title": "Jak minęło lato?",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Bok! Kako si proveo ljeto?",
+            "pl": "Cześć! Jak spędziłeś lato?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie byłeś / byłaś latem.",
+              "accept": [
+                "Bio sam na moru.",
+                1
+              ],
+              "open": true,
+              "pattern": "^(prošle godine|ljetos|lani|ljeti|u \\p{L}+|ja|mi) (sam|smo) (bio|bila|bili|bile)( \\p{L}+){1,4}$|^(bio|bila|bili|bile) (sam|smo)( \\p{L}+){1,4}$|^(na|u|kod) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Što ste radili?",
+            "pl": "Co robiliście?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robiliście (np. dwie rzeczy).",
+              "accept": [
+                "Plivali smo i jeli ribu."
+              ],
+              "open": true,
+              "pattern": "^(((prvo|onda|zatim|svaki dan|ujutro|navečer|mi) )(smo|sam) {pp}|{pp} (smo|sam))( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Zvuči super! Je li bilo nešto loše?",
+            "pl": "Brzmi super! Było coś złego?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego nie zrobiłeś / nie zrobiliście albo co się nie udało.",
+              "accept": [
+                6,
+                "Nažalost, nisam vidio Dubrovnik."
+              ],
+              "open": true,
+              "pattern": "^(ne |nažalost |srećom )?(nisam|nismo|nije|nisu)( se)? {pp}( \\p{L}+){0,4}$|^(ne )?(nije|ništa( loše)?)$|^ne$"
+            }
+          },
+          {
+            "say": "Dobro je. Sljedeće godine idemo zajedno!",
+            "pl": "To dobrze. W przyszłym roku jedziemy razem!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3–4 zdaniach swoje ostatnie wakacje.",
+        "points": [
+          "gdzie byłeś / byłaś",
+          "co robiłeś / robiłaś",
+          "czego nie zrobiłeś / co się nie udało"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "sam",
+              "smo"
+            ],
+            "label": "perfekt: sam / smo"
+          },
+          {
+            "any": [
+              "nisam",
+              "nismo",
+              "nije"
+            ],
+            "label": "przeczenie: nisam / nismo"
+          },
+          {
+            "any": [
+              "prvo",
+              "zatim",
+              "onda",
+              "kraju",
+              "poslije"
+            ],
+            "label": "kolejność: prvo / zatim"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Prošle godine sam bila u Istri. Prvo smo bili u Puli, zatim u Rovinju. Nismo imali nikakvih problema. Bio je to nezaboravan doživljaj."
+      }
+    }
+  }
+}

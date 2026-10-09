@@ -79,7 +79,7 @@ test('A1 ma dokładnie 8 modułów po 5 lekcji, 40 unikalnych id i wymagane pola
     for (const key of ['id', 'moduleId', 'order', 'title', 'shortDescription', 'estimatedMinutes', 'status']) assert.ok(lesson[key] !== undefined, `${lesson.id}.${key}`);
     assert.equal(lesson.hasContent, true, lesson.id);
   }
-  assert.deepEqual(PL_HR_OUTLINE.levels.map((l) => [l.id, l.available]), [['A1', true], ['A2', false], ['B1', false], ['B2', false]]);
+  assert.deepEqual(PL_HR_OUTLINE.levels.map((l) => [l.id, l.available]), [['A1', true], ['A2', true], ['B1', false], ['B2', false]]);
   assert.equal(a1.modules[1].title, 'Ja i moje otoczenie');
 });
 

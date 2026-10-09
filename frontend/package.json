@@ -13,7 +13,10 @@
     "typecheck": "tsc --noEmit",
     "curriculum:a1": "node scripts/generate-curriculum.mjs --level hr-a1",
     "curriculum:a1:check": "node scripts/generate-curriculum.mjs --level hr-a1 --check",
-    "curriculum:a1:audio-check": "node scripts/generate-curriculum.mjs --level hr-a1 --check --audio-strict"
+    "curriculum:a1:audio-check": "node scripts/generate-curriculum.mjs --level hr-a1 --check --audio-strict",
+    "curriculum:a2": "node scripts/generate-curriculum.mjs --level hr-a2",
+    "curriculum:a2:check": "node scripts/generate-curriculum.mjs --level hr-a2 --check",
+    "curriculum:a2:audio-check": "node scripts/generate-curriculum.mjs --level hr-a2 --check --audio-strict"
   },
   "dependencies": {
     "react": "^18.3.1",
