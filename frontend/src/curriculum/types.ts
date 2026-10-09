@@ -145,7 +145,7 @@ export interface StructureStep extends StepBase {
   title: string;
   explanation: string;
   /** Pary „forma podstawowa → forma w konstrukcji”. */
-  table?: { label: string; rows: { base: string; form: string; meaning: string }[] }[];
+  table?: { label: string; rows: ({ base: string; form: string; meaning: string } & Audible)[] }[];
   /** Przykładowe zdania z lekcji ilustrujące wzorzec. */
   examples?: Bilingual[];
   note?: string;

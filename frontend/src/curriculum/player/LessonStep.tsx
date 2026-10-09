@@ -127,7 +127,7 @@ export function StructureView({ step, onNext }: { step: StructureStep; onNext: (
                     <tr key={row.form}>
                       <td className="muted">{row.base}</td>
                       <td aria-hidden="true" className="dim">→</td>
-                      <td className="target">{row.form}</td>
+                      <td><SpokenText text={row.form} src={row.audioSrc} /></td>
                       <td className="muted">{row.meaning}</td>
                     </tr>
                   ))}

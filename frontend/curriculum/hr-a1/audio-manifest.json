@@ -15,7 +15,7 @@
     7,
     8
   ],
-  "characters": 19960,
+  "characters": 20377,
   "items": [
     {
       "text": "A kako se ti zoveš?",
@@ -208,6 +208,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-01/deset.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -366,6 +367,7 @@
       "audioPath": "/audio/hr/a1/module-01/dva.mp3",
       "kinds": [
         "question",
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -384,11 +386,34 @@
       ]
     },
     {
+      "text": "dvadeset pet",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/dvadeset-pet.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
       "text": "dvadeset",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-01/dvadeset.mp3",
       "kinds": [
+        "table",
         "vocabulary"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "dvije, tri, četiri godine",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/dvije-tri-cetiri-godine.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         1
@@ -553,12 +578,34 @@
       ]
     },
     {
+      "text": "iz Hrvatske",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/iz-hrvatske.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
       "text": "Iz Poljske sam.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-01/iz-poljske-sam.mp3",
       "kinds": [
         "answer",
         "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "iz Poljske",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/iz-poljske.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         1
@@ -657,6 +704,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-01/jedan.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -993,6 +1041,17 @@
       ]
     },
     {
+      "text": "pet, dvadeset godina",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/pet-dvadeset-godina.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
       "text": "pitati",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-01/pitati.mp3",
@@ -1078,10 +1137,12 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-01/sto.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
-        1
+        1,
+        5
       ]
     },
     {
@@ -1133,6 +1194,17 @@
       ]
     },
     {
+      "text": "trideset četiri",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/trideset-cetiri.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
       "text": "trideset sedam",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-01/trideset-sedam.mp3",
@@ -1149,7 +1221,31 @@
       "audioPath": "/audio/hr/a1/module-01/trideset.mp3",
       "kinds": [
         "question",
+        "table",
         "vocabulary"
+      ],
+      "modules": [
+        1,
+        5
+      ]
+    },
+    {
+      "text": "u Hrvatskoj",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/u-hrvatskoj.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "u Poljskoj",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/u-poljskoj.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         1
@@ -2273,6 +2369,17 @@
       ]
     },
     {
+      "text": "moj brat",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-02/moj-brat.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
       "text": "Moj otac je kod kuće.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-02/moj-otac-je-kod-kuce.mp3",
@@ -2393,11 +2500,33 @@
       ]
     },
     {
+      "text": "moja sestra",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-02/moja-sestra.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
       "text": "Moja susjeda je učiteljica.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-02/moja-susjeda-je-uciteljica.mp3",
       "kinds": [
         "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "moje dijete",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-02/moje-dijete.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         2
@@ -2420,6 +2549,17 @@
       "audioPath": "/audio/hr/a1/module-02/moji-roditelji-zive-u-splitu.mp3",
       "kinds": [
         "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "moji roditelji",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-02/moji-roditelji.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         2
@@ -3417,6 +3557,7 @@
       "audioPath": "/audio/hr/a1/module-03/cetiri.mp3",
       "kinds": [
         "answer",
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -3510,6 +3651,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/devet.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -3522,6 +3664,28 @@
       "audioPath": "/audio/hr/a1/module-03/doruckovati.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "doručkujem, doručkuješ, doručkuje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/doruckujem-doruckujes-doruckuje.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Dva, Tri, Četiri su sata.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/dva-tri-cetiri-su-sata.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         3
@@ -3724,6 +3888,17 @@
       "audioPath": "/audio/hr/a1/module-03/je-li-sada-pet-sati.mp3",
       "kinds": [
         "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Jedan je sat.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/jedan-je-sat.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         3
@@ -4187,6 +4362,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/osam.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -4216,11 +4392,23 @@
       ]
     },
     {
+      "text": "Pet, Sedam, Dvanaest je sati.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/pet-sedam-dvanaest-je-sati.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
       "text": "pet",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/pet.mp3",
       "kinds": [
         "question",
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -4396,6 +4584,17 @@
       ]
     },
     {
+      "text": "putujem, putuješ, putuje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/putujem-putujes-putuje.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
       "text": "računalo",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/racunalo.mp3",
@@ -4474,6 +4673,17 @@
       "audioPath": "/audio/hr/a1/module-03/radim-popodne.mp3",
       "kinds": [
         "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "radim, radiš, radi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/radim-radis-radi.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         3
@@ -4711,6 +4921,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/sedam.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -4722,6 +4933,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/sest.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -4784,6 +4996,17 @@
       "modules": [
         3,
         8
+      ]
+    },
+    {
+      "text": "spavam, spavaš, spava",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/spavam-spavas-spava.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
       ]
     },
     {
@@ -5036,6 +5259,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/tri.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -5048,6 +5272,17 @@
       "audioPath": "/audio/hr/a1/module-03/tusirati-se.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "u četiri",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/u-cetiri.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         3
@@ -5106,6 +5341,17 @@
       "kinds": [
         "answer",
         "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "u pola osam",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/u-pola-osam.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         3
@@ -5307,6 +5553,17 @@
       "audioPath": "/audio/hr/a1/module-03/ustajem-u-sest-i-prvo-se-tusiram-m.mp3",
       "kinds": [
         "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ustajem, ustaješ, ustaje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/ustajem-ustajes-ustaje.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         3
@@ -7535,7 +7792,8 @@
       "audioPath": "/audio/hr/a1/module-05/cetiri-eura-i-pedeset-centi.mp3",
       "kinds": [
         "dialog",
-        "question"
+        "question",
+        "table"
       ],
       "modules": [
         5
@@ -7547,6 +7805,7 @@
       "audioPath": "/audio/hr/a1/module-05/cetrdeset.mp3",
       "kinds": [
         "question",
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -7633,6 +7892,17 @@
       ]
     },
     {
+      "text": "deset eura",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-05/deset-eura.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
       "text": "Deset minuta pješice.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/deset-minuta-pjesice.mp3",
@@ -7661,6 +7931,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/devedeset.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -8133,6 +8404,17 @@
         "example",
         "phrase",
         "question"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "jedan euro",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-05/jedan-euro.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         5
@@ -8731,6 +9013,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/osamdeset.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -8814,6 +9097,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/pedeset.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -8994,6 +9278,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/sedamdeset.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -9016,6 +9301,7 @@
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/sezdeset.mp3",
       "kinds": [
+        "table",
         "vocabulary"
       ],
       "modules": [
@@ -13287,6 +13573,50 @@
       "audioPath": "/audio/hr/a1/module-07/za-godisnji-odmor-idemo-na-obalu.mp3",
       "kinds": [
         "example"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
+      "text": "za Pulu",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/za-pulu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
+      "text": "za Rijeku",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/za-rijeku.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
+      "text": "za Split",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/za-split.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
+      "text": "za Zagreb",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/za-zagreb.mp3",
+      "kinds": [
+        "table"
       ],
       "modules": [
         7

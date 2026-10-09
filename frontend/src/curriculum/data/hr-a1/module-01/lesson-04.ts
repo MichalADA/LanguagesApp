@@ -436,52 +436,62 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "1",
                 "form": "jedan",
-                "meaning": "jeden"
+                "meaning": "jeden",
+                "audioSrc": "/audio/hr/a1/module-01/jedan.mp3"
               },
               {
                 "base": "2",
                 "form": "dva",
-                "meaning": "dwa"
+                "meaning": "dwa",
+                "audioSrc": "/audio/hr/a1/module-01/dva.mp3"
               },
               {
                 "base": "3",
                 "form": "tri",
-                "meaning": "trzy"
+                "meaning": "trzy",
+                "audioSrc": "/audio/hr/a1/module-03/tri.mp3"
               },
               {
                 "base": "4",
                 "form": "četiri",
-                "meaning": "cztery"
+                "meaning": "cztery",
+                "audioSrc": "/audio/hr/a1/module-03/cetiri.mp3"
               },
               {
                 "base": "5",
                 "form": "pet",
-                "meaning": "pięć"
+                "meaning": "pięć",
+                "audioSrc": "/audio/hr/a1/module-03/pet.mp3"
               },
               {
                 "base": "6",
                 "form": "šest",
-                "meaning": "sześć"
+                "meaning": "sześć",
+                "audioSrc": "/audio/hr/a1/module-03/sest.mp3"
               },
               {
                 "base": "7",
                 "form": "sedam",
-                "meaning": "siedem"
+                "meaning": "siedem",
+                "audioSrc": "/audio/hr/a1/module-03/sedam.mp3"
               },
               {
                 "base": "8",
                 "form": "osam",
-                "meaning": "osiem"
+                "meaning": "osiem",
+                "audioSrc": "/audio/hr/a1/module-03/osam.mp3"
               },
               {
                 "base": "9",
                 "form": "devet",
-                "meaning": "dziewięć"
+                "meaning": "dziewięć",
+                "audioSrc": "/audio/hr/a1/module-03/devet.mp3"
               },
               {
                 "base": "10",
                 "form": "deset",
-                "meaning": "dziesięć"
+                "meaning": "dziesięć",
+                "audioSrc": "/audio/hr/a1/module-01/deset.mp3"
               }
             ]
           },
@@ -491,7 +501,8 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "20",
                 "form": "dvadeset",
-                "meaning": "dwadzieścia"
+                "meaning": "dwadzieścia",
+                "audioSrc": "/audio/hr/a1/module-01/dvadeset.mp3"
               },
               {
                 "base": "25",
@@ -501,7 +512,8 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "30",
                 "form": "trideset",
-                "meaning": "trzydzieści"
+                "meaning": "trzydzieści",
+                "audioSrc": "/audio/hr/a1/module-01/trideset.mp3"
               },
               {
                 "base": "34",

@@ -531,42 +531,50 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "30",
                 "form": "trideset",
-                "meaning": "trzydzieści"
+                "meaning": "trzydzieści",
+                "audioSrc": "/audio/hr/a1/module-01/trideset.mp3"
               },
               {
                 "base": "40",
                 "form": "četrdeset",
-                "meaning": "czterdzieści"
+                "meaning": "czterdzieści",
+                "audioSrc": "/audio/hr/a1/module-05/cetrdeset.mp3"
               },
               {
                 "base": "50",
                 "form": "pedeset",
-                "meaning": "pięćdziesiąt"
+                "meaning": "pięćdziesiąt",
+                "audioSrc": "/audio/hr/a1/module-05/pedeset.mp3"
               },
               {
                 "base": "60",
                 "form": "šezdeset",
-                "meaning": "sześćdziesiąt"
+                "meaning": "sześćdziesiąt",
+                "audioSrc": "/audio/hr/a1/module-05/sezdeset.mp3"
               },
               {
                 "base": "70",
                 "form": "sedamdeset",
-                "meaning": "siedemdziesiąt"
+                "meaning": "siedemdziesiąt",
+                "audioSrc": "/audio/hr/a1/module-05/sedamdeset.mp3"
               },
               {
                 "base": "80",
                 "form": "osamdeset",
-                "meaning": "osiemdziesiąt"
+                "meaning": "osiemdziesiąt",
+                "audioSrc": "/audio/hr/a1/module-05/osamdeset.mp3"
               },
               {
                 "base": "90",
                 "form": "devedeset",
-                "meaning": "dziewięćdziesiąt"
+                "meaning": "dziewięćdziesiąt",
+                "audioSrc": "/audio/hr/a1/module-05/devedeset.mp3"
               },
               {
                 "base": "100",
                 "form": "sto",
-                "meaning": "sto"
+                "meaning": "sto",
+                "audioSrc": "/audio/hr/a1/module-01/sto.mp3"
               }
             ]
           },
@@ -586,7 +594,8 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "4,50 €",
                 "form": "četiri eura i pedeset centi",
-                "meaning": "cztery euro pięćdziesiąt"
+                "meaning": "cztery euro pięćdziesiąt",
+                "audioSrc": "/audio/hr/a1/module-05/cetiri-eura-i-pedeset-centi.mp3"
               }
             ]
           }

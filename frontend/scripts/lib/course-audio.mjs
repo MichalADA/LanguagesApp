@@ -55,6 +55,9 @@ export function audioSlots(content) {
         break;
       case "structure":
         step.examples?.forEach((item) => bilingual("example", item));
+        // Formy z tabel gramatyki („radim · radiš · radi”, „Dva / Tri / Četiri su sata.”) czytamy jako wyliczenie.
+        step.table?.forEach((group) => group.rows.forEach((row) =>
+          add("table", row.form.replace(/\s+[·/]\s+/g, ", "), (src) => { row.audioSrc = src; })));
         break;
       case "listen":
         step.lines.forEach((line) => add("dialog", line.text, (src) => { line.audioSrc = src; }, line.speaker));
