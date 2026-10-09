@@ -45,6 +45,7 @@ cd frontend && npm run curriculum:a1       # attaches audioSrc to lessons now th
 `--dry-run` prints the number of texts, existing recordings and characters to synthesize without any
 request. Existing files are skipped; the summary lists found / existing / new / errors. The script refuses
 any provider other than `edge-tts`, so it can never switch to a paid service by accident.
-To add module 2, append `2` to `modules` in `frontend/curriculum/hr-a1/audio.json` and repeat the steps.
+All eight A1 modules are listed in `frontend/curriculum/hr-a1/audio.json`; to add a module, append its number
+there and repeat the steps. `npm run curriculum:a1:audio-check` (in `frontend/`) fails until every file in the manifest exists.
 Files land in `frontend/public/audio/hr/a1/module-XX/<slug>.mp3`; texts already recorded for an earlier
 module are reused, not regenerated.

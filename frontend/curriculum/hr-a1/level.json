@@ -1,0 +1,12 @@
+{
+  "$comment": "Konfiguracja poziomu dla scripts/generate-curriculum.mjs (--level hr-a1). Wyjście: src/curriculum/data/hr-a1/.",
+  "level": "A1",
+  "prefix": "a1",
+  "exportName": "HR_A1",
+  "csv": "lexodromia_hr_A1_curriculum.csv",
+  "listening": "public/data/listening/hr-a1-dialogues.json",
+  "modules": 8,
+  "lessonsPerModule": 5,
+  "special": { "38": "conversation", "39": "spiral", "40": "test" },
+  "inherit": []
+}

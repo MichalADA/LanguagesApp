@@ -78,7 +78,7 @@ export const LESSON_STAGES: LessonStage[] = ["intro", "words", "structure", "pra
 
 /**
  * Nagranie przypięte do chorwackiego tekstu. Ścieżki wpisuje generator
- * (scripts/generate-a1-curriculum.mjs) tylko wtedy, gdy plik istnieje w public/,
+ * (scripts/generate-curriculum.mjs) tylko wtedy, gdy plik istnieje w public/,
  * więc komponenty nigdy nie trafiają na 404 i nie składają ścieżek same.
  */
 export interface Audible {
@@ -129,8 +129,19 @@ export interface ListenStep extends StepBase {
   note?: string;
 }
 
+/** Odmiana czasownika na karcie słowa (generowana z morfologii kursu). */
+export interface Conjugation extends Audible {
+  /** ja, ti, on/ona, mi, vi, oni */
+  present: string[];
+  /** on, ona, oni */
+  past: string[];
+  /** ja: radit ću */
+  future: string;
+}
+
 export interface WordStep extends StepBase, Audible {
   type: "word";
+  conjugation?: Conjugation;
   target: string;
   source: string;
   partOfSpeech?: string;
@@ -145,7 +156,7 @@ export interface StructureStep extends StepBase {
   title: string;
   explanation: string;
   /** Pary „forma podstawowa → forma w konstrukcji”. */
-  table?: { label: string; rows: { base: string; form: string; meaning: string }[] }[];
+  table?: { label: string; rows: ({ base: string; form: string; meaning: string } & Audible)[] }[];
   /** Przykładowe zdania z lekcji ilustrujące wzorzec. */
   examples?: Bilingual[];
   note?: string;

@@ -64,6 +64,9 @@ export const en: Dictionary = {
     courses: "Languages",
     settings: "Settings",
     profile: "Profile",
+    more: "More",
+    mobileLabel: "Main navigation",
+    close: "Close",
   },
   auth: {
     login: "Sign in",
@@ -175,7 +178,7 @@ export const en: Dictionary = {
     "subtitle": "Learn step by step and build the language from the ground up.",
     "chooseLevel": "Course level",
     "soon": "soon",
-    "soonTitle": "Level {level} arrives after A1.",
+    "soonTitle": "Level {level} is in preparation.",
     "lessonsOf": "lessons",
     "lessonsCount": "{done} / {total} lessons",
     "modulesDone": "{done} / {total} modules completed",
@@ -258,6 +261,9 @@ export const en: Dictionary = {
         "hideTranslation": "Hide translation",
         "related": "Also remember",
         "example": "Example",
+        "conjugation": "Conjugation",
+        "conjugationPast": "past (he · she · they):",
+        "conjugationFuture": "future (I):",
         "writeHere": "Write here…",
         "freeSentences": "Sentences: {n} of {min}",
         "freeFound": "Included",
@@ -293,7 +299,7 @@ export const en: Dictionary = {
             "strong": "Well mastered",
             "review": "Worth reviewing",
             "productionNote": "The written answer is not scored — compare it with the sample.",
-            "testAdvice": "Go back to lessons in these areas or take the Big A1 review. You can retake the test at any time."
+            "testAdvice": "Go back to lessons in these areas or take the big level review. You can retake the test at any time."
     }
 },
   home: {

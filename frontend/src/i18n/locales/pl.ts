@@ -64,6 +64,9 @@ export const pl: Dictionary = {
     courses: "Języki",
     settings: "Ustawienia",
     profile: "Profil",
+    more: "Więcej",
+    mobileLabel: "Nawigacja główna",
+    close: "Zamknij",
   },
   auth: {
     login: "Zaloguj się",
@@ -175,7 +178,7 @@ export const pl: Dictionary = {
     "subtitle": "Ucz się krok po kroku i buduj język od podstaw.",
     "chooseLevel": "Poziom kursu",
     "soon": "wkrótce",
-    "soonTitle": "Poziom {level} pojawi się po A1.",
+    "soonTitle": "Poziom {level} jest w przygotowaniu.",
     "lessonsOf": "lekcji",
     "lessonsCount": "{done} / {total} lekcji",
     "modulesDone": "{done} / {total} modułów ukończonych",
@@ -258,6 +261,9 @@ export const pl: Dictionary = {
         "hideTranslation": "Ukryj tłumaczenie",
         "related": "Zapamiętaj też",
         "example": "Przykład",
+        "conjugation": "Odmiana",
+        "conjugationPast": "przeszły (on · ona · oni):",
+        "conjugationFuture": "przyszły (ja):",
         "writeHere": "Napisz tutaj…",
         "freeSentences": "Zdania: {n} z {min}",
         "freeFound": "Jest",
@@ -293,7 +299,7 @@ export const pl: Dictionary = {
             "strong": "Dobrze opanowane",
             "review": "Warto powtórzyć",
             "productionNote": "Wypowiedź pisemna nie jest liczona do wyniku — porównaj ją z przykładem.",
-            "testAdvice": "Wróć do lekcji z tych obszarów albo zrób Wielką powtórkę A1. Test możesz powtórzyć w każdej chwili."
+            "testAdvice": "Wróć do lekcji z tych obszarów albo zrób Wielką powtórkę poziomu. Test możesz powtórzyć w każdej chwili."
     }
 },
   home: {

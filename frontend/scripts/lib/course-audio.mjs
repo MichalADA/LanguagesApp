@@ -50,11 +50,19 @@ export function audioSlots(content) {
         break;
       case "word":
         add("vocabulary", step.target, (src) => { step.audioSrc = src; });
+        // Odmiana czytana w całości: „radim, radiš, … rade. radio, radila, radili. radit ću.”
+        if (step.conjugation) {
+          const c = step.conjugation;
+          add("conjugation", `${c.present.join(", ")}. ${c.past.join(", ")}. ${c.future}.`, (src) => { c.audioSrc = src; });
+        }
         bilingual("example", step.example);
         step.related?.forEach((item) => bilingual("vocabulary", item));
         break;
       case "structure":
         step.examples?.forEach((item) => bilingual("example", item));
+        // Formy z tabel gramatyki („radim · radiš · radi”, „Dva / Tri / Četiri su sata.”) czytamy jako wyliczenie.
+        step.table?.forEach((group) => group.rows.forEach((row) =>
+          add("table", row.form.replace(/\s+[·/]\s+/g, ", "), (src) => { row.audioSrc = src; })));
         break;
       case "listen":
         step.lines.forEach((line) => add("dialog", line.text, (src) => { line.audioSrc = src; }, line.speaker));

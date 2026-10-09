@@ -368,7 +368,7 @@ export function FiszkiSessionPage() {
           <span className="eyebrow">
             {t("flashcards.session.progress", { current: index + 1, total })}
           </span>
-          <Link to="/fiszki" className="mono dim" style={{ fontSize: 12 }}>
+          <Link to="/fiszki" className="mono dim flashcard-back" style={{ fontSize: 12 }}>
             {t("common.back")}
           </Link>
         </div>
@@ -498,7 +498,7 @@ function FeedbackBlock({
       <WordDetails entry={entry} />
 
       <div
-        className="row"
+        className="row flashcard-rate-row"
         style={{ gap: 8, justifyContent: "center", flexWrap: "wrap" }}
       >
         <button type="button" className="btn" onClick={() => onRate("GOOD")}>

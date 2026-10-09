@@ -44,7 +44,7 @@ test('manifest audio pokrywa moduły z audio.json i ma bezpieczne, unikalne ści
   assert.equal(manifest.characters, manifest.items.reduce((s, i) => s + [...i.text].length, 0));
 });
 
-test('każdy chorwacki tekst Modułu 1, który warto odsłuchać, jest w manifeście', () => {
+test('każdy chorwacki tekst modułów z audio.json, który warto odsłuchać, jest w manifeście', () => {
   const spoken = (t) => t.toLocaleLowerCase('hr').replace(/[.,!?;:„”"«»…]/g, '').replace(/\s+/g, ' ').trim();
   const known = new Set(manifest.items.map((i) => spoken(i.text)));
   const module1 = lessons.filter(({ file }) => config.modules.includes(moduleOf(file)));
@@ -54,7 +54,9 @@ test('każdy chorwacki tekst Modułu 1, który warto odsłuchać, jest w manife�
     assert.ok(slots.length > 20, `${lesson.content.lessonId}: za mało tekstów`);
     for (const slot of slots) assert.ok(known.has(spoken(slot.text)), `${lesson.content.lessonId}: brak „${slot.text}”`);
     const kinds = new Set(slots.map((s) => s.kind));
-    for (const kind of ['vocabulary', 'answer', 'dialog', 'phrase']) assert.ok(kinds.has(kind), `${lesson.content.lessonId}: brak ${kind}`);
+    // Test poziomu (tryb „test”) nie ma dialogów — słuchanie idzie tam z nagranego wcześniej pliku.
+    const required = lesson.content.mode === 'test' ? ['vocabulary', 'answer'] : ['vocabulary', 'answer', 'dialog', 'phrase'];
+    for (const kind of required) assert.ok(kinds.has(kind), `${lesson.content.lessonId}: brak ${kind}`);
   }
 });
 
@@ -93,4 +95,11 @@ test('wspólny odtwarzacz: nowe nagranie zatrzymuje poprzednie, ponowne kliknię
   stopAudio();
   unsubscribe();
   delete globalThis.Audio;
+});
+
+test('kwestie Marka (a1-01-02) czyta głos męski, a głosy pozostałych postaci się nie zmieniły', () => {
+  assert.ok(config.maleSpeakers.includes('Marek'));
+  const voiceOf = (text) => manifest.items.filter((i) => i.text === text).map((i) => i.voice);
+  for (const text of ['Bok! Iz Poljske sam. A ti?', 'Živim u Krakovu.']) assert.deepEqual(voiceOf(text), [config.voices.male], text);
+  for (const speaker of ['Marko', 'Konobar', 'Recepcionar', 'Prolaznik', 'Ivan']) assert.ok(config.maleSpeakers.includes(speaker));
 });

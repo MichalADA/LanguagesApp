@@ -1,0 +1,12 @@
+{
+  "$comment": "Konfiguracja nagrań kursu HR A2 (jak curriculum/hr-a1/audio.json). Kroki: npm run curriculum:a2 → python tools/listening/generate_tts.py --course-manifest frontend/curriculum/hr-a2/audio-manifest.json → npm run curriculum:a2.",
+  "provider": "edge-tts",
+  "voices": {
+    "female": "hr-HR-GabrijelaNeural",
+    "male": "hr-HR-SreckoNeural"
+  },
+  "rate": "-8%",
+  "pathPrefix": "/audio/hr/a2",
+  "maleSpeakers": ["Marko", "Marek", "Konobar", "Recepcionar", "Prolaznik", "Ivan", "Domaćin", "Liječnik", "Ljekarnik", "Prodavač", "Stanodavac", "Službenik"],
+  "modules": [1, 2, 3, 4, 5, 6, 7, 8]
+}

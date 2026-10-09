@@ -63,6 +63,9 @@
     }
   ],
   "extraAccepted": {
+    "A1-1202": [
+      "Ja idem u ljekarnu. Boli me glava."
+    ],
     "A1-0155": [
       "Nemam bicikla."
     ],
@@ -81,6 +84,22 @@
     ],
     "a1-36:2": [
       "Radila sam jučer."
+    ],
+    "a1-24:1": [
+      "Koliko košta?"
+    ],
+    "A1-0736": [
+      "Imam sina i kćerku."
+    ],
+    "A1-0813": [
+      "Malo govorim hrvatski."
+    ],
+    "A1-0892": [
+      "Molim čašu vode."
+    ],
+    "A1-1089": [
+      "Danas je more hladno.",
+      "More je hladno danas."
     ]
   },
   "modules": {
@@ -118,7 +137,8 @@
           2,
           3,
           4
-        ]
+        ],
+        "tip": "Kako si? mówisz do kolegi, Kako ste? — do osoby, której nie znasz albo której mówisz „Pan / Pani”. Rano witasz się Dobro jutro!, wieczorem Dobra večer!, a na dobranoc mówisz Laku noć!"
       },
       "gap": {
         "sentence": 2,
@@ -130,10 +150,16 @@
           "accept": [
             "Ja sam odlično."
           ]
+        },
+        {
+          "sentence": 8,
+          "accept": [
+            "Dobra večer, kako ste?"
+          ]
         }
       ],
       "comprehend": 4,
-      "order": 2,
+      "order": 7,
       "dialog": {
         "title": "Spotkanie z Aną",
         "partner": "Ana",
@@ -149,7 +175,8 @@
                 3,
                 4
               ],
-              "pattern": "^((dobro|odlično|loše) sam|nisam( baš)? dobro)( hvala)?$"
+              "open": true,
+              "pattern": "^((vrlo |jako )?(dobro|odlično|super|loše|ok) sam|ja sam (vrlo |jako )?(dobro|odlično|super|loše)|(vrlo |jako )?(dobro|odlično|super|ok)|nisam( baš)?( tako)? dobro|(ja sam |sam )?{adj.self}( sam)?)$"
             }
           },
           {
@@ -162,7 +189,8 @@
                 6,
                 "Bok!"
               ],
-              "pattern": "^(doviđenja|bok)$"
+              "open": true,
+              "pattern": "^((dobro|može) )?(doviđenja|bok|vidimo se( sutra)?)( (doviđenja|bok|vidimo se( sutra)?))*$"
             }
           }
         ]
@@ -238,7 +266,8 @@
               "accept": [
                 2
               ],
-              "pattern": "^(bok )?(ja )?zovem se \\p{L}+( \\p{L}+)?$"
+              "open": true,
+              "pattern": "^(drago mi je )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$"
             }
           },
           {
@@ -251,7 +280,8 @@
                 "I meni.",
                 5
               ],
-              "pattern": "^(i meni|drago mi je|i meni je drago)$"
+              "open": true,
+              "pattern": "^(i meni( je drago| isto)?|drago mi je( isto| također)?|također)$"
             }
           }
         ]
@@ -276,12 +306,110 @@
     "a1-04": {
       "grammar": {
         "title": "Koliko imaš godina?",
-        "text": "O wiek pytasz czasownikiem imati — „mieć”, zupełnie jak po polsku: Imam dvadeset šest godina — mam dwadzieścia sześć lat. Liczby składasz tak samo jak w polskim: dvadeset + šest = dvadeset šest.",
+        "text": "O wiek pytasz czasownikiem imati — „mieć”, zupełnie jak po polsku: Imam dvadeset šest godina — mam dwadzieścia sześć lat. Liczby 21–39 składasz jak w polskim: dvadeset + pet = dvadeset pet, trideset + četiri = trideset četiri (można też powiedzieć dvadeset i pet).",
         "examples": [
-          1,
           2,
-          3
-        ]
+          7,
+          9
+        ],
+        "table": [
+          {
+            "label": "Liczby 1–10",
+            "rows": [
+              {
+                "base": "1",
+                "form": "jedan",
+                "meaning": "jeden"
+              },
+              {
+                "base": "2",
+                "form": "dva",
+                "meaning": "dwa"
+              },
+              {
+                "base": "3",
+                "form": "tri",
+                "meaning": "trzy"
+              },
+              {
+                "base": "4",
+                "form": "četiri",
+                "meaning": "cztery"
+              },
+              {
+                "base": "5",
+                "form": "pet",
+                "meaning": "pięć"
+              },
+              {
+                "base": "6",
+                "form": "šest",
+                "meaning": "sześć"
+              },
+              {
+                "base": "7",
+                "form": "sedam",
+                "meaning": "siedem"
+              },
+              {
+                "base": "8",
+                "form": "osam",
+                "meaning": "osiem"
+              },
+              {
+                "base": "9",
+                "form": "devet",
+                "meaning": "dziewięć"
+              },
+              {
+                "base": "10",
+                "form": "deset",
+                "meaning": "dziesięć"
+              }
+            ]
+          },
+          {
+            "label": "Dziesiątki i składanie",
+            "rows": [
+              {
+                "base": "20",
+                "form": "dvadeset",
+                "meaning": "dwadzieścia"
+              },
+              {
+                "base": "25",
+                "form": "dvadeset pet",
+                "meaning": "dwadzieścia pięć"
+              },
+              {
+                "base": "30",
+                "form": "trideset",
+                "meaning": "trzydzieści"
+              },
+              {
+                "base": "34",
+                "form": "trideset četiri",
+                "meaning": "trzydzieści cztery"
+              }
+            ]
+          },
+          {
+            "label": "Ile lat? godina / godine",
+            "rows": [
+              {
+                "base": "2, 3, 4 (22, 34…)",
+                "form": "dvije / tri / četiri godine",
+                "meaning": "2–4 lata"
+              },
+              {
+                "base": "5–20 (25, 30…)",
+                "form": "pet / dvadeset godina",
+                "meaning": "5 i więcej lat"
+              }
+            ]
+          }
+        ],
+        "tip": "Jak po polsku „lata / lat”: po 2, 3, 4 mówisz godine, po 5 i więcej — godina. Godina jest rodzaju żeńskiego, więc „dwa lata” to dvije godine (nie dva)."
       },
       "gap": {
         "sentence": 2,
@@ -292,6 +420,19 @@
           "sentence": 1,
           "accept": [
             "Koliko ti imaš godina?"
+          ]
+        },
+        {
+          "sentence": 7,
+          "accept": [
+            "Ja imam trideset četiri godine.",
+            "Imam trideset i četiri godine."
+          ]
+        },
+        {
+          "sentence": 9,
+          "accept": [
+            "Ana ima dvadeset i dvije godine."
           ]
         }
       ],
@@ -310,12 +451,27 @@
               "accept": [
                 2
               ],
-              "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$"
+              "open": true,
+              "pattern": "^((ja )?imam )?(\\d+ godin[aue]|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(dva|dvije|tri|četiri) godine|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*jednu godinu|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) godina)$"
             }
           },
           {
             "say": "Ja imam trideset godina.",
             "pl": "Ja mam trzydzieści lat."
+          },
+          {
+            "say": "A koliko godina ima Marko?",
+            "pl": "A ile lat ma Marko?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że Marko ma 25 lat.",
+              "accept": [
+                8,
+                "Marko ima dvadeset i pet godina."
+              ],
+              "pattern": "^((marko|on) ima )?dvadeset (i )?pet godina$"
+            }
           }
         ]
       },
@@ -340,7 +496,31 @@
           }
         ],
         "sample": "Imam dvadeset šest godina. Ona ima trideset godina."
-      }
+      },
+      "choices": [
+        {
+          "instruction": "Posłuchaj i wybierz liczbę.",
+          "prompt": "trideset sedam",
+          "options": [
+            "37",
+            "27",
+            "73"
+          ],
+          "correct": 0,
+          "targetText": "prompt"
+        },
+        {
+          "instruction": "Posłuchaj i wybierz liczbę.",
+          "prompt": "dvadeset četiri",
+          "options": [
+            "42",
+            "24",
+            "14"
+          ],
+          "correct": 1,
+          "targetText": "prompt"
+        }
+      ]
     },
     "a1-05": {
       "dialog": {
@@ -356,7 +536,8 @@
               "accept": [
                 "Bok! Zovem se Michał."
               ],
-              "pattern": "^(bok )?(ja )?zovem se \\p{L}+( \\p{L}+)?$"
+              "open": true,
+              "pattern": "^(drago mi je )?((ja )?zovem se|ja sam|moje ime je) \\p{L}+( \\p{L}+)?$"
             }
           },
           {
@@ -369,6 +550,7 @@
                 3,
                 "Ja sam iz Poljske."
               ],
+              "open": true,
               "pattern": "^(ja sam )?iz \\p{L}+( sam)?$"
             }
           },
@@ -381,7 +563,8 @@
               "accept": [
                 "Živim u Poljskoj."
               ],
-              "pattern": "^(ja )?živim u \\p{L}+$"
+              "open": true,
+              "pattern": "^((ja )?živim )?u \\p{L}+( u \\p{L}+)?$"
             }
           },
           {
@@ -394,7 +577,8 @@
               "accept": [
                 5
               ],
-              "pattern": "^(ja )?imam [\\p{L} ]+ godin[aue]$"
+              "open": true,
+              "pattern": "^((ja )?imam )?(\\d+ godin[aue]|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(dva|dvije|tri|četiri) godine|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*jednu godinu|((jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) )*(jedan|jedna|jednu|dva|dvije|tri|četiri|pet|šest|sedam|osam|devet|deset|jedanaest|dvanaest|trinaest|četrnaest|petnaest|šesnaest|sedamnaest|osamnaest|devetnaest|dvadeset|trideset|četrdeset|pedeset|šezdeset|sedamdeset|osamdeset|devedeset|sto|i) godina)$"
             }
           },
           {
@@ -405,10 +589,12 @@
             "reply": {
               "prompt": "Nie dosłyszałeś — poproś, żeby Ana powtórzyła.",
               "accept": [
+                "Još jednom, molim.",
                 6,
                 "Možeš li ponoviti?"
               ],
-              "pattern": "^(možeš li )?(to )?ponoviti( molim)?$|^još jednom( molim)?$"
+              "open": true,
+              "pattern": "^((možeš|možete) li )?(to )?ponoviti( molim)?$|^(još jednom|polako|molim)( molim| još jednom)?$|^(ja )?ne razumijem$"
             }
           }
         ]
@@ -448,18 +634,74 @@
           }
         ],
         "sample": "Zovem se Michał. Iz Poljske sam. Živim u Krakovu. Imam dvadeset šest godina."
-      }
+      },
+      "grammar": {
+        "title": "Gdy czegoś nie rozumiesz",
+        "text": "Te zdania przydadzą się w każdej rozmowie. Ne razumijem — nie rozumiem. O powtórzenie poprosisz: Možeš li ponoviti? albo krótko Još jednom, molim. Gdy ktoś mówi za szybko: Polako, molim. Gdy brakuje ci słowa: Kako se to kaže na hrvatskom?",
+        "examples": [
+          7,
+          6,
+          8,
+          9
+        ],
+        "tip": "Možeš li…? to „czy możesz…?”. Do obcej osoby grzeczniej: Možete li ponoviti?"
+      },
+      "choices": [
+        {
+          "instruction": "Co powiesz?",
+          "prompt": "Ana mówi bardzo szybko. Poproś, żeby mówiła wolniej.",
+          "options": [
+            "Polako, molim.",
+            "Doviđenja!",
+            "Dobro sam, hvala."
+          ],
+          "correct": 0,
+          "explanation": "Polako — powoli."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 7
+        }
+      ]
     },
     "a1-06": {
       "grammar": {
-        "title": "Moj, moja, moje",
-        "text": "Moj zachowuje się jak polskie „mój” i zmienia się razem z rzeczownikiem: moj brat, moj otac — ale moja sestra, moja majka. Ovo je … znaczy „to jest …” i przydaje się, gdy kogoś przedstawiasz.",
+        "title": "Moj, moja, moje, moji",
+        "text": "Moj zachowuje się jak polskie „mój” i zmienia się razem z rzeczownikiem: moj brat, moja sestra, moje dijete, a w liczbie mnogiej moji roditelji. Ovo je … znaczy „to jest …” i przydaje się, gdy kogoś przedstawiasz.",
         "examples": [
           1,
           3,
           4
         ],
-        "tip": "Obitelj kończy się spółgłoską, ale jest rodzaju żeńskiego — dlatego moja obitelj."
+        "tip": "Obitelj kończy się spółgłoską, ale jest rodzaju żeńskiego — dlatego moja obitelj.",
+        "table": [
+          {
+            "label": "mój / moja / moje / moi",
+            "rows": [
+              {
+                "base": "on: brat, otac",
+                "form": "moj brat",
+                "meaning": "mój brat"
+              },
+              {
+                "base": "ona: sestra, majka",
+                "form": "moja sestra",
+                "meaning": "moja siostra"
+              },
+              {
+                "base": "ono: dijete",
+                "form": "moje dijete",
+                "meaning": "moje dziecko"
+              },
+              {
+                "base": "oni: roditelji",
+                "form": "moji roditelji",
+                "meaning": "moi rodzice"
+              }
+            ]
+          }
+        ]
       },
       "gap": {
         "sentence": 2,
@@ -526,12 +768,47 @@
           }
         ],
         "sample": "Ovo je moja obitelj. Imam jednu sestru."
+      },
+      "model": {
+        "title": "Rodzina Any",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Tko je ovo?",
+            "pl": "Kto to jest?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ovo je moja obitelj. Ovo su moji roditelji.",
+            "pl": "To moja rodzina. To są moi rodzice."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A tko je ovo?",
+            "pl": "A kto to jest?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "To je moj mlađi brat. Zove se Ivan.",
+            "pl": "To mój młodszy brat. Ma na imię Ivan."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imaš li sestru?",
+            "pl": "Masz siostrę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, imam stariju sestru. Ona živi u Zagrebu.",
+            "pl": "Tak, mam starszą siostrę. Ona mieszka w Zagrzebiu."
+          }
+        ]
       }
     },
     "a1-07": {
       "grammar": {
         "title": "Tko je to? Što radi?",
-        "text": "Zawód podajesz prościej niż po polsku — bez zmiany końcówki: Ana je liječnica — Ana jest lekarką. Kobieta ma zwykle żeńską formę: liječnik → liječnica, učitelj → učiteljica. Radi znaczy „pracuje”: Ivan radi u školi.",
+        "text": "Zawód podajesz prościej niż po polsku — bez zmiany końcówki: Ana je liječnica — Ana jest lekarką. Kobieta ma zwykle żeńską formę: liječnik → liječnica, učitelj → učiteljica. Radi znaczy „pracuje”: Ivan radi u školi. O sobie mówisz tak samo: Ja sam student — jestem studentem (nie „studentom”).",
         "examples": [
           2,
           3,
@@ -545,6 +822,14 @@
       "translate": [
         {
           "sentence": 6
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Student sam.",
+            "Ja sam studentica.",
+            "Studentica sam."
+          ]
         }
       ],
       "comprehend": 4,
@@ -576,7 +861,22 @@
                 "On je učitelj.",
                 "Marko je učitelj."
               ],
-              "pattern": "^(on|marko) je učitelj$"
+              "pattern": "^(on|marko) je (učitelj|nastavnik)$"
+            }
+          },
+          {
+            "say": "A što ti radiš?",
+            "pl": "A czym ty się zajmujesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czym się zajmujesz: zawód albo gdzie pracujesz.",
+              "accept": [
+                11,
+                "Student sam."
+              ],
+              "open": true,
+              "pattern": "^(ja sam (\\p{L}+ )?{nom}|{nom} sam|(ja )?radim ((u|na) {loc}|od kuće|kod kuće)|(ja )?(ne radim|studiram)( \\p{L}+){0,2})$"
             }
           }
         ]
@@ -603,6 +903,41 @@
           }
         ],
         "sample": "Ovo je moja prijateljica Ana. Ana je liječnica."
+      },
+      "model": {
+        "title": "Nowa znajoma",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Bok, Ivane! Tko je ovo?",
+            "pl": "Cześć, Ivan! Kto to jest?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Ovo je moja kolegica Petra.",
+            "pl": "To jest moja koleżanka Petra."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Drago mi je, Petra. Što radiš?",
+            "pl": "Miło mi, Petro. Czym się zajmujesz?"
+          },
+          {
+            "speaker": "Petra",
+            "hr": "Ja sam liječnica. Radim u bolnici.",
+            "pl": "Jestem lekarką. Pracuję w szpitalu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A ti, Ivane?",
+            "pl": "A ty, Ivan?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Ja sam inženjer. Radim u jednoj tvrtki u centru.",
+            "pl": "Jestem inżynierem. Pracuję w pewnej firmie w centrum."
+          }
+        ]
       }
     },
     "a1-08": {
@@ -646,7 +981,7 @@
                 "Moj brat je visok i mlad.",
                 "On je visok i mlad."
               ],
-              "pattern": "^(moj brat|on) je (visok i mlad|mlad i visok)$"
+              "pattern": "^(moj brat|on) je (vrlo )?(visok i (vrlo )?mlad|mlad i (vrlo )?visok)$"
             }
           },
           {
@@ -702,12 +1037,42 @@
           }
         ],
         "sample": "Moj brat je visok. Danas sam umoran."
+      },
+      "model": {
+        "title": "Jaka jest nowa koleżanka?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Kakva je tvoja nova kolegica?",
+            "pl": "Jaka jest twoja nowa koleżanka?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Vrlo je simpatična i vesela.",
+            "pl": "Jest bardzo sympatyczna i wesoła."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Je li mlada?",
+            "pl": "Czy jest młoda?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, mlada je i visoka. A tvoj novi kolega?",
+            "pl": "Tak, jest młoda i wysoka. A twój nowy kolega?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "On je drag, ali danas je umoran.",
+            "pl": "Jest miły, ale dziś jest zmęczony."
+          }
+        ]
       }
     },
     "a1-09": {
       "grammar": {
         "title": "Imam / nemam",
-        "text": "Imati to „mieć”, a nemati — „nie mieć” (jedno słowo!). Rzeczowniki żeńskie po imam zmieniają -a na -u: knjiga → Imam knjigu, mačka → On nema mačku. Po nemati usłyszysz też formę jak w polskim „nie mam kota”: nema mačke — obie są poprawne.",
+        "text": "Imati to „mieć”, a nemati — „nie mieć” (jedno słowo!). Rzeczowniki żeńskie po imam zmieniają -a na -u: knjiga → Imam knjigu, mačka → On nema mačku. Po nemati usłyszysz też formę jak w polskim „nie mam kota”: nema mačke — obie są poprawne. Pytanie „czy…?” tworzysz słówkiem li zaraz po czasowniku: Imaš li telefon? — czy masz telefon? Odpowiadasz Da, imam albo Ne, nemam.",
         "examples": [
           1,
           2,
@@ -732,10 +1097,16 @@
             "Ja nemam bicikl.",
             "Ja nemam bicikla."
           ]
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Imaš li ti auto?"
+          ]
         }
       ],
       "comprehend": 5,
-      "order": 6,
+      "order": 12,
       "dialog": {
         "title": "Co masz?",
         "partner": "Marko",
@@ -750,7 +1121,7 @@
                 "Da, imam telefon.",
                 "Imam telefon."
               ],
-              "pattern": "^(da )?imam( telefon)?$"
+              "pattern": "^(da )?(ja )?imam( telefon)?$"
             }
           },
           {
@@ -763,7 +1134,7 @@
               "accept": [
                 "Nemam psa, ali imam mačku."
               ],
-              "pattern": "^(ne )?nemam psa (ali )?imam mačku$"
+              "pattern": "^(ne )?(nemam psa (ali )?imam mačku|imam mačku (ali )?nemam psa)$"
             }
           }
         ]
@@ -789,7 +1160,50 @@
           }
         ],
         "sample": "Imam auto i psa. Nemam bicikl."
-      }
+      },
+      "model": {
+        "title": "Dom czy mieszkanie?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, imaš li auto?",
+            "pl": "Marko, masz samochód?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Nemam auto, ali imam bicikl.",
+            "pl": "Nie mam samochodu, ale mam rower."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A imaš li kuću ili stan?",
+            "pl": "A masz dom czy mieszkanie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imam mali stan u centru. A ti?",
+            "pl": "Mam małe mieszkanie w centrum. A ty?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja imam kuću i vrt. I imam psa!",
+            "pl": "Ja mam dom i ogród. I mam psa!"
+          }
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Jak zapytasz: „Czy masz książkę?”",
+          "prompt": "Czy masz książkę?",
+          "options": [
+            "Imaš li knjigu?",
+            "Li imaš knjigu?",
+            "Imaš knjigu li?"
+          ],
+          "correct": 0,
+          "explanation": "Li stoi zaraz po czasowniku: Imaš li…?"
+        }
+      ]
     },
     "a1-10": {
       "dialog": {
@@ -819,7 +1233,8 @@
               "accept": [
                 2
               ],
-              "pattern": "^(moja sestra|ona) je (vrlo )?(simpatična|sretna|visoka|niska|mlada|dobra|mirna|zanimljiva)$"
+              "open": true,
+              "pattern": "^((moja sestra|ona) je (vrlo |jako )?{adj.f}|(vrlo |jako )?{adj.f} je)$"
             }
           },
           {
@@ -832,7 +1247,8 @@
               "accept": [
                 3
               ],
-              "pattern": "^(moj prijatelj|on) radi u \\p{L}+$"
+              "open": true,
+              "pattern": "^(((moj prijatelj|on) )?radi )?((u|na) {loc}|od kuće|kod kuće)$"
             }
           },
           {
@@ -887,11 +1303,48 @@
     "a1-11": {
       "grammar": {
         "title": "Radim, učim, spavam",
-        "text": "W czasie teraźniejszym forma „ja” kończy się na -m: radim, učim, spavam, ustajem. Działa to prawie dla każdego czasownika. Przy czasownikach z se (odmarati se) se stoi na drugim miejscu w zdaniu: Poslijepodne se odmaram.",
+        "text": "W czasie teraźniejszym forma „ja” kończy się na -m, „ty” na -š, a „on / ona” nie ma końcówki: radim — radiš — radi. Czasowniki na -ovati zmieniają się w -ujem: doručkovati → doručkujem, putovati → putujem. Przy czasownikach z se (odmarati se) se stoi na drugim miejscu w zdaniu: Poslijepodne se odmaram.",
         "examples": [
           1,
           3,
           4
+        ],
+        "table": [
+          {
+            "label": "ja · ty · on / ona",
+            "rows": [
+              {
+                "base": "raditi",
+                "form": "radim · radiš · radi",
+                "meaning": "pracuję · pracujesz · pracuje"
+              },
+              {
+                "base": "spavati",
+                "form": "spavam · spavaš · spava",
+                "meaning": "śpię · śpisz · śpi"
+              },
+              {
+                "base": "ustajati",
+                "form": "ustajem · ustaješ · ustaje",
+                "meaning": "wstaję · wstajesz · wstaje"
+              }
+            ]
+          },
+          {
+            "label": "-ovati → -ujem",
+            "rows": [
+              {
+                "base": "doručkovati",
+                "form": "doručkujem · doručkuješ · doručkuje",
+                "meaning": "jem śniadanie · jesz · je"
+              },
+              {
+                "base": "putovati",
+                "form": "putujem · putuješ · putuje",
+                "meaning": "podróżuję · podróżujesz · podróżuje"
+              }
+            ]
+          }
         ]
       },
       "gap": {
@@ -914,7 +1367,7 @@
         }
       ],
       "comprehend": 6,
-      "order": 4,
+      "order": 12,
       "dialog": {
         "title": "Twój dzień",
         "partner": "Marko",
@@ -929,7 +1382,8 @@
               "accept": [
                 1
               ],
-              "pattern": "^(ja )?ustajem u \\p{L}+$"
+              "open": true,
+              "pattern": "^((ja )?((obično|ujutro) )?ustajem ((ujutro|obično) )?)?u (pola )?\\p{L}+( sati)?( ujutro)?$"
             }
           },
           {
@@ -944,7 +1398,9 @@
                 "Navečer se odmaram.",
                 "Navečer spavam.",
                 "Navečer radim."
-              ]
+              ],
+              "open": true,
+              "pattern": "^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?((navečer|obično|često|ponekad|uvijek|rijetko) )*((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( (navečer|obično|često|ponekad|uvijek|rijetko))*$|^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?se ((navečer|obično|često|ponekad|uvijek|rijetko) )+{pres1.bare}( \\p{L}+){0,3}$"
             }
           }
         ]
@@ -978,6 +1434,41 @@
           }
         ],
         "sample": "Ujutro doručkujem. Navečer učim hrvatski."
+      },
+      "model": {
+        "title": "Dzień Marka",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Kada ustaješ ujutro?",
+            "pl": "O której wstajesz rano?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ustajem u šest i prvo se tuširam.",
+            "pl": "Wstaję o szóstej i najpierw biorę prysznic."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Rano! Kada ideš na posao?",
+            "pl": "Wcześnie! Kiedy idziesz do pracy?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U sedam. Idem kući u četiri.",
+            "pl": "O siódmej. Do domu idę o czwartej."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A što radiš navečer?",
+            "pl": "A co robisz wieczorem?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Kuham, večeram i rano idem spavati.",
+            "pl": "Gotuję, jem kolację i wcześnie idę spać."
+          }
+        ]
       }
     },
     "a1-12": {
@@ -1019,7 +1510,8 @@
                 2,
                 1
               ],
-              "pattern": "^(ja )?radim (u \\p{L}+|od kuće|kod kuće)$"
+              "open": true,
+              "pattern": "^((ja )?radim )?((u|na) {loc}|od kuće|kod kuće)$|^(ja )?(ne radim|studiram)( \\p{L}+){0,2}$"
             }
           },
           {
@@ -1033,7 +1525,7 @@
                 3,
                 "Učim hrvatski."
               ],
-              "pattern": "^(ja )?učim hrvatski( svaki dan)?$"
+              "pattern": "^(ja )?učim hrvatski( jezik)?( svaki dan)?$"
             }
           }
         ]
@@ -1063,18 +1555,86 @@
           }
         ],
         "sample": "Radim u uredu. Učim hrvatski svaki dan."
+      },
+      "model": {
+        "title": "Uczysz się czy pracujesz?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Govoriš li hrvatski?",
+            "pl": "Mówisz po chorwacku?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Malo. Učim hrvatski na tečaju.",
+            "pl": "Trochę. Uczę się chorwackiego na kursie."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A što radiš? Studiraš li?",
+            "pl": "A co robisz? Studiujesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne, radim u uredu. A ti?",
+            "pl": "Nie, pracuję w biurze. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja studiram na fakultetu u Zagrebu.",
+            "pl": "Ja studiuję na uczelni w Zagrzebiu."
+          }
+        ]
       }
     },
     "a1-13": {
       "grammar": {
         "title": "Koliko je sati?",
-        "text": "O godzinę pytasz Koliko je sati? Na „o której?” odpowiadasz przez u i samą liczbę: u četiri — o czwartej, u sedam — o siódmej. Pola osam to „wpół do ósmej” — dokładnie jak po polsku.",
+        "text": "O godzinę pytasz Koliko je sati? Odpowiedź zależy od liczby — jak po polsku „godzina / godziny / godzin”: Jedan je sat, Tri su sata, Sedam je sati. Na „o której?” (U koliko sati?) odpowiadasz przez u i samą liczbę: u četiri — o czwartej. Pola osam to „wpół do ósmej”.",
         "examples": [
           1,
+          11,
           3,
-          6
+          12
         ],
-        "tip": "Tri su sata — „jest trzecia”: przy 2, 3 i 4 mówimy su sata."
+        "tip": "1 sat, 2–4 sata, 5 i więcej sati — tak samo jak „1 godzina, 2 godziny, 5 godzin”.",
+        "table": [
+          {
+            "label": "Koliko je sati?",
+            "rows": [
+              {
+                "base": "1",
+                "form": "Jedan je sat.",
+                "meaning": "Jest pierwsza."
+              },
+              {
+                "base": "2, 3, 4",
+                "form": "Dva / Tri / Četiri su sata.",
+                "meaning": "Jest druga / trzecia / czwarta."
+              },
+              {
+                "base": "5–12",
+                "form": "Pet / Sedam / Dvanaest je sati.",
+                "meaning": "Jest piąta / siódma / dwunasta."
+              }
+            ]
+          },
+          {
+            "label": "U koliko sati? — o której?",
+            "rows": [
+              {
+                "base": "u + liczba",
+                "form": "u četiri",
+                "meaning": "o czwartej"
+              },
+              {
+                "base": "u pola + liczba",
+                "form": "u pola osam",
+                "meaning": "o wpół do ósmej"
+              }
+            ]
+          }
+        ]
       },
       "gap": {
         "sentence": 3,
@@ -1087,7 +1647,13 @@
         {
           "sentence": 5,
           "accept": [
-            "Vlak stiže u sedam."
+            "U jedan ručam."
+          ]
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Sada je sedam sati."
           ]
         }
       ],
@@ -1106,7 +1672,8 @@
               "accept": [
                 2,
                 "Sada su tri sata."
-              ]
+              ],
+              "pattern": "^(sada )?(tri su sata|su tri sata)( sada)?$|^tri sata$"
             }
           },
           {
@@ -1142,7 +1709,66 @@
           }
         ],
         "sample": "Radim od deset do šest. Sastanak je u četiri."
-      }
+      },
+      "model": {
+        "title": "Spóźnię się!",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Oprosti, koliko je sati?",
+            "pl": "Przepraszam, która godzina?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Sada je pola devet.",
+            "pl": "Teraz jest wpół do dziewiątej."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Joj, kasnim! Sastanak je u devet.",
+            "pl": "Ojej, spóźnię się! Spotkanie jest o dziewiątej."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Gdje je sastanak?",
+            "pl": "Gdzie jest spotkanie?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "U uredu, blizu centra.",
+            "pl": "W biurze, blisko centrum."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Imaš još pola sata.",
+            "pl": "Masz jeszcze pół godziny."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Wybierz brakujące słowo.",
+          "prompt": "Pet je ___.",
+          "options": [
+            "sat",
+            "sata",
+            "sati"
+          ],
+          "correct": 2,
+          "explanation": "5 i więcej → sati."
+        },
+        {
+          "instruction": "Wybierz brakujące słowo.",
+          "prompt": "Dva su ___.",
+          "options": [
+            "sat",
+            "sata",
+            "sati"
+          ],
+          "correct": 1,
+          "explanation": "2, 3, 4 → sata."
+        }
+      ]
     },
     "a1-14": {
       "grammar": {
@@ -1185,7 +1811,8 @@
               "accept": [
                 1
               ],
-              "pattern": "^danas je (ponedjeljak|utorak|srijeda|četvrtak|petak|subota|nedjelja)$"
+              "open": true,
+              "pattern": "^(danas je )?(ponedjeljak|utorak|srijeda|četvrtak|petak|subota|nedjelja)( je)?( danas)?$"
             }
           },
           {
@@ -1198,7 +1825,8 @@
               "accept": [
                 4
               ],
-              "pattern": "^u subotu (idem u grad|radim|se odmaram|idem na bazen)$"
+              "open": true,
+              "pattern": "^(u subotu )?(ja )?(((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}|(ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3}))( u subotu)?$"
             }
           }
         ]
@@ -1226,6 +1854,41 @@
           }
         ],
         "sample": "U ponedjeljak radim. U subotu idem u grad."
+      },
+      "model": {
+        "title": "Masz czas w piątek?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Koji je danas dan?",
+            "pl": "Jaki jest dziś dzień?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Danas je srijeda.",
+            "pl": "Dziś jest środa."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imaš li vremena u petak?",
+            "pl": "Masz czas w piątek?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "U petak radim cijeli dan. Ali u subotu sam slobodna.",
+            "pl": "W piątek pracuję cały dzień. Ale w sobotę jestem wolna."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! Idemo u kino u subotu?",
+            "pl": "Super! Idziemy do kina w sobotę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Može!",
+            "pl": "Pasuje!"
+          }
+        ]
       }
     },
     "a1-15": {
@@ -1243,7 +1906,8 @@
               "accept": [
                 1,
                 "Učim hrvatski svaki dan."
-              ]
+              ],
+              "pattern": "^(svaki dan (ja )?učim hrvatski( jezik)?|(ja )?učim hrvatski( jezik)? svaki dan)$"
             }
           },
           {
@@ -1257,7 +1921,8 @@
                 2,
                 "Radim od deset."
               ],
-              "pattern": "^(obično )?radim (od \\p{L}+( do \\p{L}+)?|u \\p{L}+)$"
+              "open": true,
+              "pattern": "^((obično )?(ja )?(obično )?radim )?(od \\p{L}+( do \\p{L}+)?|u \\p{L}+)( sati)?$"
             }
           },
           {
@@ -1272,7 +1937,8 @@
                 "Da, u subotu sam slobodan.",
                 "Da, slobodan sam.",
                 "U subotu sam slobodna."
-              ]
+              ],
+              "pattern": "^(da )?(u subotu sam slobodan|slobodan sam( u subotu)?|ja sam slobodan( u subotu)?)$"
             }
           },
           {
@@ -1281,12 +1947,14 @@
           },
           {
             "reply": {
-              "prompt": "Powiedz, co często robisz wieczorem.",
+              "prompt": "Powiedz, co zwykle robisz wieczorem.",
               "accept": [
                 5,
-                "Navečer čitam.",
-                "Navečer učim hrvatski."
-              ]
+                "Navečer učim hrvatski.",
+                "Navečer obično spavam."
+              ],
+              "open": true,
+              "pattern": "^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?((navečer|obično|često|ponekad|uvijek|rijetko) )*((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( (navečer|obično|često|ponekad|uvijek|rijetko))*$|^((navečer|obično|često|ponekad|uvijek|rijetko) )*(ja )?se ((navečer|obično|često|ponekad|uvijek|rijetko) )+{pres1.bare}( \\p{L}+){0,3}$"
             }
           }
         ]
@@ -1331,12 +1999,13 @@
     "a1-16": {
       "grammar": {
         "title": "Pijem vodu, jedem kruh",
-        "text": "Po jesti (jeść), piti (pić) i voljeti (lubić) rzeczowniki żeńskie zmieniają -a na -u — jak w polskim „piję wodę”: voda → Pijem vodu, riba → Volim ribu. Słowa męskie i nijakie zostają bez zmian: kruh, sir, čaj, meso.",
+        "text": "Piti to „pić”, jesti — „jeść”; o sobie mówisz pijem i jedem. Po nich rzeczowniki żeńskie zmieniają -a na -u — jak w polskim „piję wodę”: voda → Pijem vodu, riba → Volim ribu. Słowa męskie i nijakie zostają bez zmian: kruh, sir, čaj, meso.",
         "examples": [
           1,
           3,
           4
-        ]
+        ],
+        "tip": "Želim — „chcę”: Želim čaj. W kawiarni grzeczniej: Htio bih… / Htjela bih… (lekcja o kawiarni)."
       },
       "gap": {
         "sentence": 1,
@@ -1374,7 +2043,8 @@
                 "Pijem kavu.",
                 "Pijem čaj."
               ],
-              "pattern": "^(ja )?pijem (vodu|kavu|čaj|sok)( bez šećera)?$"
+              "open": true,
+              "pattern": "^((ja )?(ne )?pijem )?(jednu |jedan |jedno )?{acc}( (i|s|sa|bez) \\p{L}+){0,3}$"
             }
           },
           {
@@ -1387,7 +2057,8 @@
               "accept": [
                 3
               ],
-              "pattern": "^(ja )?jedem (kruh|sir|ribu|meso|povrće)( i (kruh|sir|ribu|meso|povrće))?$"
+              "open": true,
+              "pattern": "^((ja )?(ne )?jedem )?(jednu |jedan |jedno )?{acc}( (i|s|sa|bez) \\p{L}+){0,3}$"
             }
           }
         ]
@@ -1413,6 +2084,36 @@
           }
         ],
         "sample": "Pijem kavu bez šećera. Jedem kruh i sir."
+      },
+      "model": {
+        "title": "Co jesz na śniadanie?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Što jedeš za doručak?",
+            "pl": "Co jesz na śniadanie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Obično jedem jaja i kruh. A ti?",
+            "pl": "Zwykle jem jajka i chleb. A ty?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja jedem jogurt i voće.",
+            "pl": "Ja jem jogurt i owoce."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Piješ li kavu?",
+            "pl": "Pijesz kawę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, kavu s mlijekom.",
+            "pl": "Tak, kawę z mlekiem."
+          }
+        ]
       }
     },
     "a1-17": {
@@ -1462,7 +2163,8 @@
                 "Da, volim kavu.",
                 "Ne volim kavu."
               ],
-              "pattern": "^(da |ne )?(ne )?volim kavu$"
+              "open": true,
+              "pattern": "^(da|ne)$|^((da|ne) )?(ja )?((jako|baš) )?(ne )?volim( kavu)?$"
             }
           },
           {
@@ -1476,7 +2178,8 @@
                 2,
                 "Volim juhu."
               ],
-              "pattern": "^(da |ne )?(ne )?volim juhu$"
+              "open": true,
+              "pattern": "^(da|ne)$|^((da|ne) )?(ja )?((jako|baš) )?(ne )?volim( juhu)?$"
             }
           }
         ]
@@ -1502,6 +2205,36 @@
           }
         ],
         "sample": "Volim kavu i ribu. Ne volim juhu."
+      },
+      "model": {
+        "title": "Słodkie czy ostre?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Što najviše voliš jesti?",
+            "pl": "Co najbardziej lubisz jeść?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Najviše volim ribu. A ti?",
+            "pl": "Najbardziej lubię rybę. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja volim slatko. Volim kolače i čokoladu.",
+            "pl": "Ja lubię słodkie. Lubię ciasta i czekoladę."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A voliš li ljutu hranu?",
+            "pl": "A lubisz ostre jedzenie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ne, ne volim.",
+            "pl": "Nie, nie lubię."
+          }
+        ]
       }
     },
     "a1-18": {
@@ -1513,7 +2246,7 @@
           2,
           3
         ],
-        "tip": "Jedan zmienia się razem z rzeczownikiem: jedna kava → Molim jednu kavu."
+        "tip": "Jedan zmienia się razem z rzeczownikiem: jedna kava → Molim jednu kavu. Najprostsza uprzejma prośba to Mogu li dobiti…? — czy mogę dostać…?"
       },
       "gap": {
         "sentence": 3,
@@ -1531,10 +2264,16 @@
           "accept": [
             "Molim bez šećera."
           ]
+        },
+        {
+          "sentence": 10,
+          "accept": [
+            "Mogu li dobiti vode?"
+          ]
         }
       ],
-      "comprehend": 5,
-      "order": 1,
+      "comprehend": 2,
+      "order": 5,
       "listening": "a1-kafic",
       "dialog": {
         "title": "Zamawiasz kawę",
@@ -1552,7 +2291,8 @@
                 "Htio bih kavu.",
                 "Htjela bih kavu."
               ],
-              "pattern": "^(dobar dan )?(molim( jednu| jedan| jedno)?|htio bih|htjela bih) (kavu|čaj|sok|pivo|vodu)( molim)?$"
+              "open": true,
+              "pattern": "^((molim|htio bih|mogu li dobiti|za mene)( jednu| jedan| jedno)? {acc}( \\p{L}+){0,3}|(jednu |jedan |jedno )?{acc}( \\p{L}+){0,3})$"
             }
           },
           {
@@ -1566,7 +2306,8 @@
                 4,
                 "Ne, hvala."
               ],
-              "pattern": "^(ne hvala|bez šećera( molim)?|da molim|da hvala)$"
+              "open": true,
+              "pattern": "^(ne|da|bez šećera|sa šećerom|s šećerom)( bez šećera)?$"
             }
           },
           {
@@ -1579,7 +2320,8 @@
               "accept": [
                 6,
                 "Molim račun."
-              ]
+              ],
+              "pattern": "^(račun molim|molim račun|mogu li dobiti račun|možemo li dobiti račun)$"
             }
           }
         ]
@@ -1600,6 +2342,46 @@
           }
         ],
         "sample": "Molim jednu kavu bez šećera. Htio bih i sok."
+      },
+      "model": {
+        "title": "Kawa ze znajomym",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ana, što piješ?",
+            "pl": "Ana, co pijesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Limunadu s ledom. A ti?",
+            "pl": "Lemoniadę z lodem. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja pijem pivo. Oprostite!",
+            "pl": "Ja piję piwo. Przepraszam!"
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Izvolite.",
+            "pl": "Słucham."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Mogu li dobiti jednu limunadu i jedno pivo?",
+            "pl": "Czy mogę dostać jedną lemoniadę i jedno piwo?"
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Naravno. Još nešto?",
+            "pl": "Oczywiście. Coś jeszcze?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne, hvala.",
+            "pl": "Nie, dziękuję."
+          }
+        ]
       }
     },
     "a1-19": {
@@ -1610,7 +2392,8 @@
           2,
           3,
           6
-        ]
+        ],
+        "tip": "Imate li…? Želite li…? Možete li…? — to forma Vi. Tak mówisz do kelnera, sprzedawcy, obcej osoby albo kilku osób: po polsku „Czy ma Pan / Pani…?”, „Czy mają Państwo…?”."
       },
       "gap": {
         "sentence": 4,
@@ -1642,7 +2425,7 @@
                 2,
                 "Htjela bih naručiti ribu."
               ],
-              "pattern": "^((htio|htjela) bih (naručiti )?ribu|za mene ribu)( molim)?$"
+              "pattern": "^((htio bih (naručiti )?|za mene |molim |mogu li dobiti )?ribu( s \\p{L}+)?)( molim)?$"
             }
           },
           {
@@ -1656,7 +2439,8 @@
                 "Vodu, molim.",
                 "Molim vodu."
               ],
-              "pattern": "^((molim )?(vodu|sok|čaj|kavu|pivo)( molim)?|(htio|htjela) bih (vodu|sok|čaj|kavu|pivo))$"
+              "open": true,
+              "pattern": "^((molim|htio bih|htjela bih|za mene|mogu li dobiti) )?(jednu |jedan |jedno )?{acc}$"
             }
           },
           {
@@ -1669,7 +2453,7 @@
               "accept": [
                 "Ne, hvala. Račun, molim."
               ],
-              "pattern": "^ne hvala (račun molim|molim račun|možemo li dobiti račun)$"
+              "pattern": "^ne hvala (račun molim|molim račun|možemo li dobiti račun|mogu li dobiti račun)$"
             }
           }
         ]
@@ -1702,6 +2486,41 @@
           }
         ],
         "sample": "Htio bih naručiti juhu i ribu. Račun, molim."
+      },
+      "model": {
+        "title": "Co Pan poleca?",
+        "lines": [
+          {
+            "speaker": "Konobar",
+            "hr": "Dobra večer! Izvolite jelovnik.",
+            "pl": "Dobry wieczór! Proszę, oto menu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala. Što nam preporučujete?",
+            "pl": "Dziękuję. Co nam Pan poleca?"
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Riba je danas vrlo dobra.",
+            "pl": "Ryba jest dziś bardzo dobra."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobro, za glavno jelo ribu s rižom.",
+            "pl": "Dobrze, na danie główne rybę z ryżem."
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "A za predjelo?",
+            "pl": "A na przystawkę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Juhu, molim.",
+            "pl": "Zupę, poproszę."
+          }
+        ]
       }
     },
     "a1-20": {
@@ -1734,7 +2553,8 @@
                 "Htio bih naručiti ribu.",
                 "Molim juhu."
               ],
-              "pattern": "^((htio|htjela) bih (naručiti )?|molim |za mene )(jednu |jedan )?(juhu|ribu|salatu|rižu|meso|kavu|čaj|sok|vodu|pivo)( i (juhu|ribu|salatu|rižu|meso|kavu|čaj|sok|vodu|pivo))?( molim)?$"
+              "open": true,
+              "pattern": "^((htio bih (naručiti )?|molim |za mene |mogu li dobiti )?(jednu |jedan |jedno )?{acc}( (i|s|sa|bez) \\p{L}+){0,3})$"
             }
           },
           {
@@ -1761,7 +2581,7 @@
                 5,
                 "Karticom, molim."
               ],
-              "pattern": "^((želim|mogu li) platiti )?karticom( molim)?$"
+              "pattern": "^((želim|mogu li) platiti |plaćam )?karticom( molim)?$"
             }
           }
         ]
@@ -1824,10 +2644,18 @@
         },
         {
           "sentence": 1
+        },
+        {
+          "sentence": 12,
+          "accept": [
+            "Oprostite, gdje je toalet?",
+            "Oprostite, gdje je zahod?",
+            "Gdje je WC?"
+          ]
         }
       ],
       "comprehend": 5,
-      "order": 4,
+      "order": 11,
       "dialog": {
         "title": "Gdzie jest centrum?",
         "partner": "Marko",
@@ -1841,7 +2669,8 @@
               "accept": [
                 2,
                 "Tamo je centar."
-              ]
+              ],
+              "pattern": "^(centar je tamo|tamo je( centar)?|tamo)$"
             }
           },
           {
@@ -1883,6 +2712,36 @@
           }
         ],
         "sample": "Živim blizu centra. Banka je tamo."
+      },
+      "model": {
+        "title": "Gdzie jest bank?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Oprostite, gdje je banka?",
+            "pl": "Przepraszam, gdzie jest bank?"
+          },
+          {
+            "speaker": "Prolaznik",
+            "hr": "Nije daleko. Tamo je, iza one zgrade.",
+            "pl": "Niedaleko. Jest tam, za tamtym budynkiem."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Je li na trgu?",
+            "pl": "Czy jest na placu?"
+          },
+          {
+            "speaker": "Prolaznik",
+            "hr": "Da, na uglu, pored kafića.",
+            "pl": "Tak, na rogu, obok kawiarni."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala lijepa!",
+            "pl": "Dziękuję bardzo!"
+          }
+        ]
       }
     },
     "a1-22": {
@@ -1909,10 +2768,16 @@
         },
         {
           "sentence": 5
+        },
+        {
+          "sentence": 12,
+          "accept": [
+            "Idem u ljekarnu, boli me glava."
+          ]
         }
       ],
       "comprehend": 4,
-      "order": 2,
+      "order": 11,
       "dialog": {
         "title": "Dokąd idziesz?",
         "partner": "Ana",
@@ -1929,7 +2794,8 @@
                 2,
                 3
               ],
-              "pattern": "^(ja )?idem (u (trgovinu|banku|centar|park|ljekarnu|grad)|na (poštu|kolodvor))$"
+              "open": true,
+              "pattern": "^((ja )?idem )?((u|na) {acc}( \\p{L}+){0,2}|kući)$"
             }
           },
           {
@@ -1943,6 +2809,20 @@
                 "Blizu je."
               ],
               "pattern": "^(kolodvor je )?(blizu|tamo|daleko|ovdje|u centru)( je)?$"
+            }
+          },
+          {
+            "say": "Jesi li dobro?",
+            "pl": "Wszystko w porządku?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że boli cię głowa.",
+              "accept": [
+                "Ne, boli me glava.",
+                "Boli me glava."
+              ],
+              "pattern": "^(ne |nisam dobro )?(boli me glava|glava me boli)$"
             }
           }
         ]
@@ -1969,16 +2849,48 @@
           }
         ],
         "sample": "Danas idem u banku. Sutra idem na poštu."
-      }
+      },
+      "model": {
+        "title": "Spotkanie na ulicy",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Bok, Ana! Kamo ideš?",
+            "pl": "Cześć, Ana! Dokąd idziesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Idem u pekaru po kruh. A ti?",
+            "pl": "Idę do piekarni po chleb. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja idem u knjižnicu.",
+            "pl": "Ja idę do biblioteki."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Gdje je knjižnica?",
+            "pl": "Gdzie jest biblioteka?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U centru, blizu muzeja.",
+            "pl": "W centrum, blisko muzeum."
+          }
+        ]
+      },
+      "listening": "a1-ljekarna"
     },
     "a1-23": {
       "grammar": {
         "title": "Idite ravno, skrenite lijevo",
-        "text": "Wskazówki usłyszysz jako grzeczne prośby: Idite — proszę iść, Skrenite — proszę skręcić, Prijeđite — proszę przejść. Nie musisz ich odmieniać — zapamiętaj je jako gotowe zwroty razem z ravno, lijevo i desno.",
+        "text": "Wskazówki usłyszysz jako grzeczne prośby: Idite — proszę iść, Skrenite — proszę skręcić, Prijeđite — proszę przejść. Nie musisz ich odmieniać — zapamiętaj je jako gotowe zwroty razem z ravno, lijevo i desno. O drogę zapytasz: Kako mogu doći do…? — jak mogę dojść do…?",
         "examples": [
           1,
           2,
-          3
+          3,
+          11
         ]
       },
       "gap": {
@@ -1994,6 +2906,9 @@
           "accept": [
             "Je li to daleko?"
           ]
+        },
+        {
+          "sentence": 11
         }
       ],
       "comprehend": 4,
@@ -2055,16 +2970,114 @@
           }
         ],
         "sample": "Idite ravno. Skrenite desno na semaforu."
+      },
+      "model": {
+        "title": "Jak dojść na dworzec?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Oprostite, kako mogu doći do kolodvora?",
+            "pl": "Przepraszam, jak mogę dojść do dworca?"
+          },
+          {
+            "speaker": "Prolaznik",
+            "hr": "Idite ravno do semafora, pa skrenite lijevo.",
+            "pl": "Proszę iść prosto do świateł, a potem skręcić w lewo."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Je li daleko?",
+            "pl": "Czy to daleko?"
+          },
+          {
+            "speaker": "Prolaznik",
+            "hr": "Ne, deset minuta pješice.",
+            "pl": "Nie, dziesięć minut pieszo."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala lijepa!",
+            "pl": "Dziękuję bardzo!"
+          }
+        ]
       }
     },
     "a1-24": {
       "grammar": {
         "title": "Koliko košta?",
-        "text": "O cenę pytasz Koliko ovo košta? — ile to kosztuje? Po liczbie mówisz eura: deset eura. Gdy czegoś szukasz, mówisz Tražim… albo Želim kupiti…, a rzeczownik żeński znów dostaje -u: knjiga → ovu knjigu.",
+        "text": "O cenę pytasz Koliko ovo košta? — ile to kosztuje? Po liczbie (od 2 wzwyż) mówisz zawsze eura: dva eura, deset eura, pedeset eura. Grosze to centi: četiri eura i pedeset centi — 4,50 €. Gdy czegoś szukasz, mówisz Tražim… albo Želim kupiti…, a rzeczownik żeński znów dostaje -u: knjiga → ovu knjigu.",
         "examples": [
           1,
           2,
+          11,
           5
+        ],
+        "table": [
+          {
+            "label": "Dziesiątki",
+            "rows": [
+              {
+                "base": "30",
+                "form": "trideset",
+                "meaning": "trzydzieści"
+              },
+              {
+                "base": "40",
+                "form": "četrdeset",
+                "meaning": "czterdzieści"
+              },
+              {
+                "base": "50",
+                "form": "pedeset",
+                "meaning": "pięćdziesiąt"
+              },
+              {
+                "base": "60",
+                "form": "šezdeset",
+                "meaning": "sześćdziesiąt"
+              },
+              {
+                "base": "70",
+                "form": "sedamdeset",
+                "meaning": "siedemdziesiąt"
+              },
+              {
+                "base": "80",
+                "form": "osamdeset",
+                "meaning": "osiemdziesiąt"
+              },
+              {
+                "base": "90",
+                "form": "devedeset",
+                "meaning": "dziewięćdziesiąt"
+              },
+              {
+                "base": "100",
+                "form": "sto",
+                "meaning": "sto"
+              }
+            ]
+          },
+          {
+            "label": "Ceny",
+            "rows": [
+              {
+                "base": "1 €",
+                "form": "jedan euro",
+                "meaning": "jedno euro"
+              },
+              {
+                "base": "10 €",
+                "form": "deset eura",
+                "meaning": "dziesięć euro"
+              },
+              {
+                "base": "4,50 €",
+                "form": "četiri eura i pedeset centi",
+                "meaning": "cztery euro pięćdziesiąt"
+              }
+            ]
+          }
         ]
       },
       "gap": {
@@ -2080,6 +3093,12 @@
         },
         {
           "sentence": 6
+        },
+        {
+          "sentence": 12,
+          "accept": [
+            "To košta trideset eura."
+          ]
         }
       ],
       "comprehend": 3,
@@ -2099,7 +3118,7 @@
               "accept": [
                 4
               ],
-              "pattern": "^(dobar dan )?tražim (vodu|kruh|sir|kavu|knjigu|telefon)$"
+              "pattern": "^(dobar dan )?(ja )?tražim {acc}( i {acc})?$"
             }
           },
           {
@@ -2112,7 +3131,8 @@
               "accept": [
                 1,
                 "Koliko to košta?"
-              ]
+              ],
+              "pattern": "^koliko (ovo |to )?košta( ovo| to)?$|^koliko je to$"
             }
           },
           {
@@ -2123,7 +3143,8 @@
               "prompt": "Zapytaj, czy możesz zapłacić kartą.",
               "accept": [
                 6
-              ]
+              ],
+              "pattern": "^mogu li platiti karticom$|^može li karticom$"
             }
           }
         ]
@@ -2152,7 +3173,77 @@
           }
         ],
         "sample": "Tražim vodu. Koliko ovo košta?"
-      }
+      },
+      "model": {
+        "title": "Na targu",
+        "lines": [
+          {
+            "speaker": "Prodavačica",
+            "hr": "Dobar dan! Izvolite?",
+            "pl": "Dzień dobry! Słucham?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Kilogram jabuka i jednu bocu vode, molim.",
+            "pl": "Kilogram jabłek i jedną butelkę wody, poproszę."
+          },
+          {
+            "speaker": "Prodavačica",
+            "hr": "Još nešto?",
+            "pl": "Coś jeszcze?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ne, hvala. To je sve. Koliko košta?",
+            "pl": "Nie, dziękuję. To wszystko. Ile kosztuje?"
+          },
+          {
+            "speaker": "Prodavačica",
+            "hr": "Četiri eura i pedeset centi.",
+            "pl": "Cztery euro i pięćdziesiąt centów."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Mogu li platiti karticom?",
+            "pl": "Czy mogę zapłacić kartą?"
+          }
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Ile to kosztuje?",
+          "prompt": "Košta sedamdeset eura.",
+          "options": [
+            "17 €",
+            "70 €",
+            "7 €"
+          ],
+          "correct": 1,
+          "targetText": "prompt"
+        },
+        {
+          "instruction": "Ile to kosztuje?",
+          "prompt": "Četiri eura i pedeset centi.",
+          "options": [
+            "4,50 €",
+            "5,40 €",
+            "4,15 €"
+          ],
+          "correct": 0,
+          "targetText": "prompt"
+        },
+        {
+          "instruction": "Ile to kosztuje?",
+          "prompt": "Ovo košta trideset dva eura.",
+          "options": [
+            "23 €",
+            "32 €",
+            "302 €"
+          ],
+          "correct": 1,
+          "targetText": "prompt"
+        }
+      ]
     },
     "a1-25": {
       "dialog": {
@@ -2170,7 +3261,7 @@
                 1,
                 "Gdje je banka?"
               ],
-              "pattern": "^(oprostite )?gdje je banka$"
+              "pattern": "^(oprostite )?gdje je banka( molim vas)?$"
             }
           },
           {
@@ -2182,7 +3273,8 @@
               "accept": [
                 "Je li daleko?",
                 "Je li to daleko?"
-              ]
+              ],
+              "pattern": "^je li (to )?daleko$"
             }
           },
           {
@@ -2196,7 +3288,7 @@
                 "Hvala!",
                 "Hvala vam!"
               ],
-              "pattern": "^hvala( vam)?( doviđenja)?$"
+              "pattern": "^hvala( vam| lijepa| na pomoći)?( doviđenja)?$"
             }
           }
         ]
@@ -2277,7 +3369,8 @@
                 1,
                 "U slobodno vrijeme slušam glazbu."
               ],
-              "pattern": "^(u slobodno vrijeme )?(ja )?(čitam|slušam glazbu|gledam filmove|šetam|igram igre|volim (čitati|šetati|gledati filmove|slušati glazbu))( u slobodno vrijeme)?$"
+              "open": true,
+              "pattern": "^(u slobodno vrijeme )?(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( u slobodno vrijeme)?$"
             }
           },
           {
@@ -2290,7 +3383,7 @@
               "accept": [
                 2
               ],
-              "pattern": "^(volim gledati|gledam) filmove$"
+              "pattern": "^(da )?(ja )?(volim gledati|gledam) filmove$"
             }
           }
         ]
@@ -2320,6 +3413,41 @@
           }
         ],
         "sample": "U slobodno vrijeme čitam. Volim gledati filmove."
+      },
+      "model": {
+        "title": "Koncert w parku",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Što radiš u slobodno vrijeme?",
+            "pl": "Co robisz w wolnym czasie?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Čitam i slušam glazbu. Ponekad crtam.",
+            "pl": "Czytam i słucham muzyki. Czasami rysuję."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Voliš li koncerte?",
+            "pl": "Lubisz koncerty?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, volim koncerte!",
+            "pl": "Tak, lubię koncerty!"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U petak je koncert u parku. Ideš?",
+            "pl": "W piątek jest koncert w parku. Idziesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Idem!",
+            "pl": "Idę!"
+          }
+        ]
       }
     },
     "a1-27": {
@@ -2365,7 +3493,8 @@
                 "Da, volim sport.",
                 1
               ],
-              "pattern": "^(da |ne )?(ne )?volim (sport|plivati|trčati|voziti bicikl)$"
+              "open": true,
+              "pattern": "^((da|ne) )?(ali )?(ja )?((jako|baš) )?(ne )?volim ({inf}|{acc})( i ({inf}|{acc}))?$"
             }
           },
           {
@@ -2380,7 +3509,8 @@
                 "Ponekad trčim.",
                 "Nikad ne trčim."
               ],
-              "pattern": "^(da |ne )?((često|ponekad) trčim|nikad ne trčim|trčim (tri puta tjedno|često|ponekad))$"
+              "open": true,
+              "pattern": "^(da |ne )?(ja )?((često|ponekad|rijetko|obično) trčim( \\p{L}+){0,3}|nikad ne trčim|ne trčim|trčim( \\p{L}+){1,3})$|^(da|ne)( (često|ponekad|rijetko|svaki dan))?$"
             }
           }
         ]
@@ -2413,6 +3543,36 @@
           }
         ],
         "sample": "Ponekad igram nogomet. Nikad ne trčim ujutro."
+      },
+      "model": {
+        "title": "Uprawiasz sport?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Ivane, baviš li se sportom?",
+            "pl": "Ivan, uprawiasz sport?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Da, igram košarku i često trčim.",
+            "pl": "Tak, gram w koszykówkę i często biegam."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Koliko puta tjedno?",
+            "pl": "Ile razy w tygodniu?"
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Trčim tri puta tjedno. A ti?",
+            "pl": "Biegam trzy razy w tygodniu. A ty?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja idem na jogu i ponekad plivam.",
+            "pl": "Ja chodzę na jogę i czasami pływam."
+          }
+        ]
       }
     },
     "a1-28": {
@@ -2424,7 +3584,7 @@
           3,
           4
         ],
-        "tip": "Vrijeme to i „pogoda”, i „czas” — Kakvo je vrijeme? pyta o pogodę."
+        "tip": "Vrijeme to i „pogoda”, i „czas” — Kakvo je vrijeme? pyta o pogodę. Sutra će biti toplo — „jutro będzie ciepło”: na razie zapamiętaj će biti jako gotowy zwrot; czas przyszły poznasz w module 8."
       },
       "gap": {
         "sentence": 3,
@@ -2442,7 +3602,7 @@
         }
       ],
       "comprehend": 5,
-      "order": 1,
+      "order": 11,
       "dialog": {
         "title": "Jaka pogoda?",
         "partner": "Ana",
@@ -2458,7 +3618,8 @@
                 2,
                 3
               ],
-              "pattern": "^((danas je )?(sunčano|oblačno|hladno|toplo)( je)?( danas)?|pada (kiša|snijeg)|puše vjetar)$"
+              "open": true,
+              "pattern": "^((danas )?(je )?{pred}( i {pred})?( je)?( danas)?|{pred} je i {pred}|(danas )?pada (kiša|snijeg)( danas)?|(danas )?(kiša|snijeg) pada( danas)?|(danas )?puše vjetar)$"
             }
           },
           {
@@ -2471,7 +3632,7 @@
               "accept": [
                 5
               ],
-              "pattern": "^sutra će biti (sunčano|oblačno|hladno|toplo)$"
+              "pattern": "^sutra će biti {pred}$"
             }
           }
         ]
@@ -2496,12 +3657,42 @@
           }
         ],
         "sample": "Danas je hladno. Pada kiša."
+      },
+      "model": {
+        "title": "Plaża czy deszcz?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Kakvo je vrijeme danas?",
+            "pl": "Jaka jest dziś pogoda?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Sunčano je i toplo. Vani je dvadeset pet stupnjeva.",
+            "pl": "Słonecznie i ciepło. Na zewnątrz jest dwadzieścia pięć stopni."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! A sutra?",
+            "pl": "Super! A jutro?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Prema prognozi, sutra će padati kiša.",
+            "pl": "Według prognozy jutro będzie padać deszcz."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Onda danas idemo na plažu!",
+            "pl": "To dziś idziemy na plażę!"
+          }
+        ]
       }
     },
     "a1-29": {
       "grammar": {
         "title": "Hoćemo li…? — Može!",
-        "text": "Propozycję zaczynasz od Hoćemo li…? — „idziemy…?”: Hoćemo li na kavu? Zgodę wyrażasz jednym słowem: Može! (OK, może być), odmowę — Ne mogu (nie mogę). Porę dodajesz jak przy godzinach: u šest, sutra, večeras.",
+        "text": "Propozycję zaczynasz od Hoćemo li…? — „idziemy…?”: Hoćemo li na kavu? Zgodę wyrażasz jednym słowem: Može! (OK, może być), odmowę — Ne mogu (nie mogę). Porę dodajesz jak przy godzinach: u šest, sutra, večeras. Gdy jesteś zajęty: Nemam vremena — nie mam czasu.",
         "examples": [
           1,
           3,
@@ -2521,7 +3712,7 @@
         }
       ],
       "comprehend": 5,
-      "order": 3,
+      "order": 12,
       "dialog": {
         "title": "Umawiamy się",
         "partner": "Marko",
@@ -2534,7 +3725,9 @@
               "prompt": "Zgódź się i zapytaj, kiedy.",
               "accept": [
                 2
-              ]
+              ],
+              "open": true,
+              "pattern": "^(da )?(može|dogovoreno|rado|naravno) (kada|kad|u koliko sati)$"
             }
           },
           {
@@ -2548,7 +3741,7 @@
                 "Danas ne mogu. Može sutra?",
                 "Večeras ne mogu. Može sutra?"
               ],
-              "pattern": "^(danas|večeras) ne mogu (može sutra|sutra može)$"
+              "pattern": "^(nažalost )?(danas|večeras) ne mogu (može sutra|sutra može)$"
             }
           },
           {
@@ -2562,7 +3755,8 @@
                 6,
                 "Vidimo se!"
               ],
-              "pattern": "^vidimo se( sutra)?$"
+              "open": true,
+              "pattern": "^((dobro|može) )?(doviđenja|bok|vidimo se( sutra)?)( (doviđenja|bok|vidimo se( sutra)?))*$"
             }
           }
         ]
@@ -2590,6 +3784,46 @@
           }
         ],
         "sample": "Hoćemo li na kavu? Može sutra u šest."
+      },
+      "model": {
+        "title": "Drink na placu",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Bok, Marko! Hoćemo li sutra na piće?",
+            "pl": "Cześć, Marko! Idziemy jutro na drinka?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Može! U koliko sati?",
+            "pl": "Może być! O której?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "U osam?",
+            "pl": "O ósmej?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U osam ne mogu. Možda u devet?",
+            "pl": "O ósmej nie mogę. Może o dziewiątej?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobro. Gdje se nalazimo?",
+            "pl": "Dobrze. Gdzie się spotykamy?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ispred kafića na trgu. Dogovoreno?",
+            "pl": "Przed kawiarnią na placu. Umówione?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dogovoreno! Vidimo se sutra.",
+            "pl": "Umówione! Do zobaczenia jutro."
+          }
+        ]
       }
     },
     "a1-30": {
@@ -2607,7 +3841,8 @@
                 4,
                 "Volim čitati."
               ],
-              "pattern": "^(ja )?volim (sport|glazbu|čitati|plivati|šetati|trčati|putovati|gledati filmove|slušati glazbu|igrati nogomet)( i (sport|glazbu|čitati|plivati|šetati|trčati|putovati|gledati filmove|slušati glazbu|igrati nogomet))?$"
+              "open": true,
+              "pattern": "^(ja )?((jako|baš) )?(ne )?volim ({inf}|{acc})( i ({inf}|{acc}))?$|^(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}$"
             }
           },
           {
@@ -2621,7 +3856,8 @@
                 1,
                 "Vikendom idem na bazen."
               ],
-              "pattern": "^vikendom (se odmaram|idem na bazen|gledam film|čitam|šetam|igram nogomet)$"
+              "open": true,
+              "pattern": "^(vikendom )?(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}( vikendom)?$"
             }
           },
           {
@@ -2636,7 +3872,8 @@
                 "Može!",
                 "Ne mogu."
               ],
-              "pattern": "^(može|rado|ne mogu)( rado| u \\p{L}+)?$"
+              "open": true,
+              "pattern": "^(da )?(može|rado|naravno|dogovoreno|(nažalost )?ne mogu)( rado)?( (u \\p{L}+|sutra|večeras|danas|vikendom)( u \\p{L}+)?)?$"
             }
           }
         ]
@@ -2696,6 +3933,13 @@
         },
         {
           "sentence": 5
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Ide li ovaj autobus u centar?",
+            "Oprostite, ide li ovaj autobus do centra?"
+          ]
         }
       ],
       "comprehend": 6,
@@ -2715,7 +3959,8 @@
                 "Putujem u Zagreb.",
                 "Idem na more."
               ],
-              "pattern": "^(putujem|idem|idemo)( (avionom|vlakom|autom|autobusom))? (u \\p{L}+|na (more|otok))( (avionom|vlakom|autom|autobusom))?$"
+              "open": true,
+              "pattern": "^((putujem|idem|idemo)( {ins})? )?(u|na) \\p{L}+( {ins})?$"
             }
           },
           {
@@ -2729,7 +3974,21 @@
                 2,
                 "Putujem vlakom."
               ],
-              "pattern": "^(putujem |idem )?(avionom|vlakom|autom|autobusom)$"
+              "open": true,
+              "pattern": "^(ja )?(putujem |idem )?{ins}$"
+            }
+          },
+          {
+            "say": "Autobus je tamo, na stanici.",
+            "pl": "Autobus jest tam, na przystanku."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj kierowcę, czy ten autobus jedzie do centrum.",
+              "accept": [
+                11
+              ],
+              "pattern": "^ide li (ovaj )?autobus (do centra|u centar)$"
             }
           }
         ]
@@ -2759,16 +4018,74 @@
           }
         ],
         "sample": "Volim putovati. Idem vlakom u Zagreb."
-      }
+      },
+      "model": {
+        "title": "Wakacje na wyspie",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Kamo putuješ ljeti?",
+            "pl": "Dokąd jedziesz latem?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Idem u Hrvatsku, na obalu.",
+            "pl": "Jadę do Chorwacji, na wybrzeże."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Kako putuješ? Avionom?",
+            "pl": "Jak jedziesz? Samolotem?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne, autom do Splita, a onda trajektom na otok.",
+            "pl": "Nie, samochodem do Splitu, a potem promem na wyspę."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super putovanje!",
+            "pl": "Super podróż!"
+          }
+        ]
+      },
+      "listening": "a1-autobus"
     },
     "a1-32": {
       "grammar": {
         "title": "Vlak za Split",
-        "text": "„Pociąg do Splitu” to vlak za Split, a „bilet do Zadaru” — karta za Zadar. Po za nazwa miasta zostaje bez zmian. Pytania w podróży zaczynasz od Gdje je…? i Kada je…?",
+        "text": "„Pociąg do Splitu” to vlak za Split, a „bilet do Zadaru” — karta za Zadar. Po za miasta rodzaju męskiego się nie zmieniają (za Split, za Zagreb), a żeńskie na -a zmieniają -a na -u: Rijeka → za Rijeku, Pula → za Pulu. O przyjazd pytasz Kada stiže vlak? — kiedy przyjeżdża pociąg?",
         "examples": [
           2,
           6,
           5
+        ],
+        "table": [
+          {
+            "label": "za + miasto",
+            "rows": [
+              {
+                "base": "Split",
+                "form": "za Split",
+                "meaning": "do Splitu"
+              },
+              {
+                "base": "Zagreb",
+                "form": "za Zagreb",
+                "meaning": "do Zagrzebia"
+              },
+              {
+                "base": "Rijeka",
+                "form": "za Rijeku",
+                "meaning": "do Rijeki"
+              },
+              {
+                "base": "Pula",
+                "form": "za Pulu",
+                "meaning": "do Puli"
+              }
+            ]
+          }
         ]
       },
       "gap": {
@@ -2784,10 +4101,16 @@
         },
         {
           "sentence": 4
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Vlak dolazi u deset."
+          ]
         }
       ],
-      "comprehend": 2,
-      "order": 5,
+      "comprehend": 3,
+      "order": 2,
       "listening": "a1-kolodvor",
       "dialog": {
         "title": "Przy kasie biletowej",
@@ -2816,7 +4139,8 @@
               "accept": [
                 5,
                 "Kada polazi vlak?"
-              ]
+              ],
+              "pattern": "^kada (je polazak|polazi( vlak| autobus)?)$"
             }
           },
           {
@@ -2849,6 +4173,41 @@
           }
         ],
         "sample": "Imam kartu za Zadar. Vlak polazi u sedam."
+      },
+      "model": {
+        "title": "Na lotnisku",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Oprostite, kada je let za Zagreb?",
+            "pl": "Przepraszam, kiedy jest lot do Zagrzebia?"
+          },
+          {
+            "speaker": "Službenica",
+            "hr": "U deset, ali let kasni sat vremena.",
+            "pl": "O dziesiątej, ale lot jest opóźniony o godzinę."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Joj! Gdje je izlaz?",
+            "pl": "Ojej! Gdzie jest bramka?"
+          },
+          {
+            "speaker": "Službenica",
+            "hr": "Izlaz pet, lijevo.",
+            "pl": "Bramka piąta, w lewo."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Kada je ukrcaj?",
+            "pl": "Kiedy jest wejście na pokład?"
+          },
+          {
+            "speaker": "Službenica",
+            "hr": "U deset i trideset.",
+            "pl": "O dziesiątej trzydzieści."
+          }
+        ]
       }
     },
     "a1-33": {
@@ -2871,6 +4230,12 @@
         },
         {
           "sentence": 5
+        },
+        {
+          "sentence": 11,
+          "accept": [
+            "Imate li jednu slobodnu sobu?"
+          ]
         }
       ],
       "comprehend": 6,
@@ -2947,6 +4312,41 @@
           }
         ],
         "sample": "Imam rezervaciju na ime Michał. Trebam sobu za dvije noći."
+      },
+      "model": {
+        "title": "W apartamencie",
+        "lines": [
+          {
+            "speaker": "Domaćin",
+            "hr": "Dobar dan! Dobro došli. Ovo je vaš apartman.",
+            "pl": "Dzień dobry! Witamy. To jest Pani apartament."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala! Gdje je kupaonica?",
+            "pl": "Dziękuję! Gdzie jest łazienka?"
+          },
+          {
+            "speaker": "Domaćin",
+            "hr": "Tamo, pored kuhinje. Ovo je ključ.",
+            "pl": "Tam, obok kuchni. To jest klucz."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ima li klima?",
+            "pl": "Czy jest klimatyzacja?"
+          },
+          {
+            "speaker": "Domaćin",
+            "hr": "Ima, i balkon. Lozinka za internet je na stolu.",
+            "pl": "Jest, i balkon. Hasło do internetu jest na stole."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Super, hvala lijepa!",
+            "pl": "Super, dziękuję bardzo!"
+          }
+        ]
       }
     },
     "a1-34": {
@@ -2979,7 +4379,7 @@
         }
       ],
       "comprehend": 6,
-      "order": 5,
+      "order": 12,
       "dialog": {
         "title": "Nad morzem",
         "partner": "Ana",
@@ -2995,7 +4395,7 @@
                 2,
                 "Na plaži sam."
               ],
-              "pattern": "^(ja sam na plaži|na plaži sam|ja sam u moru|u moru sam)$"
+              "pattern": "^(ja sam na plaži|na plaži sam|ja sam u moru|u moru sam|na plaži)$"
             }
           },
           {
@@ -3009,7 +4409,7 @@
                 3,
                 "Kupam se."
               ],
-              "pattern": "^(plivam( u moru)?|kupam se( u moru)?)$"
+              "pattern": "^(ja )?(plivam|kupam se|se kupam)( u moru)?$"
             }
           }
         ]
@@ -3038,6 +4438,36 @@
           }
         ],
         "sample": "Idem na plažu. Plivam u moru."
+      },
+      "model": {
+        "title": "Zimne morze?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ideš li u more?",
+            "pl": "Wchodzisz do morza?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne još. More je hladno!",
+            "pl": "Jeszcze nie. Morze jest zimne!"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Nije, toplo je! Dođi!",
+            "pl": "Nie jest, jest ciepłe! Chodź!"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobro, ali prvo trebam kremu za sunčanje.",
+            "pl": "Dobrze, ale najpierw potrzebuję kremu do opalania."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Evo, izvoli.",
+            "pl": "Proszę, masz."
+          }
+        ]
       }
     },
     "a1-35": {
@@ -3070,7 +4500,7 @@
                 "Autobusom.",
                 "Putujem autobusom."
               ],
-              "pattern": "^(putujem |idem )?(avionom|vlakom|autom|autobusom)$"
+              "pattern": "^(ja )?(putujem |idem )?{ins}$"
             }
           },
           {
@@ -3082,7 +4512,8 @@
               "prompt": "Zapytaj, kiedy autobus przyjeżdża na miejsce.",
               "accept": [
                 3
-              ]
+              ],
+              "pattern": "^kada (stiže|dolazi)( autobus)?$|^kada je dolazak$"
             }
           },
           {
@@ -3095,7 +4526,7 @@
               "accept": [
                 "Hvala, doviđenja!"
               ],
-              "pattern": "^hvala( vam)?( doviđenja)?$"
+              "pattern": "^hvala( vam| lijepa)?( doviđenja)?$"
             }
           }
         ]
@@ -3214,7 +4645,8 @@
                 4,
                 5
               ],
-              "pattern": "^(jučer sam (radio|radila|bio kod kuće|bila kod kuće|išao u grad|išla u grad)|(bio|bila) sam kod kuće( jučer)?|(išao|išla) sam u grad( jučer)?|(radio|radila) sam( jučer)?)$"
+              "open": true,
+              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam (se )?{pp.self}( \\p{L}+){0,4}|{pp.self} sam( se)?( \\p{L}+){0,4})$"
             }
           },
           {
@@ -3251,12 +4683,43 @@
           }
         ],
         "sample": "Jučer sam radila. Navečer sam bila kod kuće."
-      }
+      },
+      "model": {
+        "title": "Dzień Any w mieście",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Bok, Ana! Što si radila jučer?",
+            "pl": "Cześć, Ana! Co robiłaś wczoraj?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Jučer sam bila u gradu. Kupila sam novu knjigu.",
+            "pl": "Wczoraj byłam w mieście. Kupiłam nową książkę."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A sinoć?",
+            "pl": "A wczoraj wieczorem?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Sinoć sam gledala film kod kuće. A ti?",
+            "pl": "Wczoraj wieczorem oglądałam film w domu. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja sam radio cijeli dan.",
+            "pl": "Ja pracowałem cały dzień."
+          }
+        ]
+      },
+      "genderDrill": true
     },
     "a1-37": {
       "grammar": {
         "title": "Sutra ću raditi",
-        "text": "O przyszłości mówisz ću (ja) albo ćeš (ty) + bezokolicznik: Sutra ću raditi — jutro będę pracować. Ću nie otwiera zdania: Sutra ću učiti, Kasnije ću se odmoriti. Pytanie zaczynasz od Hoćeš li…? — Hoćeš li ići sa mnom?",
+        "text": "O przyszłości mówisz ću (ja) albo ćeš (ty) + bezokolicznik: Sutra ću raditi — jutro będę pracować. Ću nie otwiera zdania: Sutra ću učiti, Kasnije ću se odmoriti. Pytanie zaczynasz od Hoćeš li…? — Hoćeš li ići sa mnom? Na takie pytanie odpowiadasz krótko: Hoću! — tak (chcę, pójdę). Plany zapowiesz też słowem planirati: Planiram ići na more.",
         "examples": [
           1,
           2,
@@ -3292,7 +4755,7 @@
           "options": [
             "Jučer sam učio hrvatski.",
             "Sutra ću učiti hrvatski.",
-            "Sutra učim hrvatski."
+            "Sutra sam učio hrvatski."
           ],
           "correct": 1,
           "explanation": "Przyszłość: ću + bezokolicznik (učiti)."
@@ -3313,7 +4776,8 @@
                 1,
                 2
               ],
-              "pattern": "^sutra ću (raditi|učiti hrvatski|ići u grad|ići na more|gledati film|se odmoriti)$"
+              "open": true,
+              "pattern": "^((sutra|kasnije|ja)( ja)? (ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})|(ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})( sutra)?|sutra (ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}|(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3} sutra)$"
             }
           },
           {
@@ -3327,7 +4791,8 @@
                 "Može!",
                 "Ne mogu."
               ],
-              "pattern": "^(da )?(hoću|može|ne mogu|naravno)( rado)?$"
+              "open": true,
+              "pattern": "^(da )?(hoću|može|rado|naravno|dogovoreno|(nažalost )?ne mogu)( rado)?( (u \\p{L}+|sutra|večeras|danas|vikendom)( u \\p{L}+)?)?$"
             }
           }
         ]
@@ -3355,6 +4820,36 @@
           }
         ],
         "sample": "Sutra ću raditi. Navečer ću gledati film."
+      },
+      "model": {
+        "title": "Plany na weekend",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Što ćeš raditi za vikend?",
+            "pl": "Co będziesz robić w weekend?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U subotu ću igrati nogomet, a u nedjelju ću se odmoriti.",
+            "pl": "W sobotę będę grać w piłkę, a w niedzielę odpocznę."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Mi ćemo ići na izlet na otok.",
+            "pl": "My pojedziemy na wycieczkę na wyspę."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! Nadam se da će biti sunčano.",
+            "pl": "Super! Mam nadzieję, że będzie słonecznie."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Sigurno hoće!",
+            "pl": "Na pewno będzie!"
+          }
+        ]
       }
     },
     "a1-38": {
@@ -3389,7 +4884,8 @@
                 "Zovem se Michał i iz Poljske sam.",
                 "Zovem se Michał. Iz Poljske sam."
               ],
-              "pattern": "^(ja )?zovem se \\p{L}+ (i )?((ja )?sam iz \\p{L}+|iz \\p{L}+ sam)$"
+              "open": true,
+              "pattern": "^((ja )?zovem se|ja sam) \\p{L}+ (i )?((ja )?sam iz \\p{L}+|iz \\p{L}+ sam|iz \\p{L}+)$"
             }
           },
           {
@@ -3401,7 +4897,24 @@
               "accept": [
                 "Živim u Krakovu i radim u uredu."
               ],
-              "pattern": "^(ja )?živim u \\p{L}+ (i )?(radim|studiram|učim)( u \\p{L}+| od kuće| kod kuće| hrvatski)?$"
+              "open": true,
+              "pattern": "^(ja )?živim u \\p{L}+ (i )?(ja )?(radim|studiram|učim)( (u|na) {loc}| od kuće| kod kuće| hrvatski)?$"
+            }
+          },
+          {
+            "say": "Što voliš raditi vikendom kad je lijepo vrijeme i kad nemaš posla?",
+            "pl": "(Ana mówi bardzo szybko — nie nadążasz.)"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że nie rozumiesz, i poproś, żeby Ana powtórzyła wolniej.",
+              "accept": [
+                "Ne razumijem. Možeš li ponoviti?",
+                6,
+                "Ne razumijem. Polako, molim."
+              ],
+              "open": true,
+              "pattern": "^((ja )?ne razumijem )?((možeš|možete) li )?((to )?ponoviti|govoriti)( (malo )?sporije)?$|^((ja )?ne razumijem )?(još jednom|polako|sporije)( molim)?$|^(ja )?ne razumijem$"
             }
           },
           {
@@ -3413,7 +4926,8 @@
               "accept": [
                 "Volim čitati i plivati."
               ],
-              "pattern": "^(u slobodno vrijeme )?(ja )?volim \\p{L}+( \\p{L}+)?( i \\p{L}+( \\p{L}+)?)?$"
+              "open": true,
+              "pattern": "^(u slobodno vrijeme )?((ja )?((jako|baš) )?(ne )?volim ({inf}|{acc})( i ({inf}|{acc}))?|(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3})$"
             }
           },
           {
@@ -3426,7 +4940,8 @@
                 "Jučer sam radio.",
                 "Jučer sam radila."
               ],
-              "pattern": "^(jučer sam (radio|radila|bio|bila|išao|išla|vidio|vidjela)( [\\p{L} ]+)?|(radio|radila|bio|bila|išao|išla|vidio|vidjela) sam( [\\p{L} ]+)?)$"
+              "open": true,
+              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam (se )?{pp.self}( \\p{L}+){0,4}|{pp.self} sam( se)?( \\p{L}+){0,4})$"
             }
           },
           {
@@ -3438,7 +4953,8 @@
               "accept": [
                 "Sutra ću učiti hrvatski."
               ],
-              "pattern": "^sutra ću \\p{L}+( [\\p{L} ]+)?$"
+              "open": true,
+              "pattern": "^((sutra|kasnije|ja)( ja)? (ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})|(ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})( sutra)?|sutra (ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3}|(ja )?((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3} sutra)$"
             }
           },
           {
@@ -3452,7 +4968,8 @@
                 "I meni!",
                 "Drago mi je."
               ],
-              "pattern": "^(i meni( je drago)?|drago mi je)$"
+              "open": true,
+              "pattern": "^(i meni( je drago| isto)?|drago mi je( isto| također)?|također)$"
             }
           }
         ]
@@ -3509,12 +5026,12 @@
         ]
       },
       "spiral": {
-        "recognition": [
-          "a1-06:1",
-          "a1-16:2",
-          "a1-22:1",
-          "a1-28:6",
-          "a1-31:3"
+        "recallModules": [
+          2,
+          4,
+          5,
+          6,
+          7
         ],
         "gaps": [
           "a1-11",
@@ -3523,12 +5040,12 @@
           "a1-37"
         ],
         "translations": [
-          "a1-18:6",
-          "a1-24:1",
-          "a1-26:3",
-          "a1-31:2"
+          "a1-18",
+          "a1-24",
+          "a1-26",
+          "a1-31"
         ],
-        "order": "a1-34:3"
+        "order": "a1-34"
       },
       "dialog": {
         "title": "Spotkanie po latach",
@@ -3544,7 +5061,8 @@
               "accept": [
                 "Dobro sam, hvala."
               ],
-              "pattern": "^((dobro|odlično|loše) sam|nisam( baš)? dobro)( hvala)?$"
+              "open": true,
+              "pattern": "^((vrlo |jako )?(dobro|odlično|super|loše|ok) sam|ja sam (vrlo |jako )?(dobro|odlično|super|loše)|(vrlo |jako )?(dobro|odlično|super|ok)|nisam( baš)?( tako)? dobro|(ja sam |sam )?{adj.self}( sam)?)$"
             }
           },
           {
@@ -3558,7 +5076,8 @@
                 "Jučer sam radio.",
                 "Jučer sam radila."
               ],
-              "pattern": "^(jučer sam (radio|radila|bio|bila|išao|išla|vidio|vidjela)( [\\p{L} ]+)?|(radio|radila|bio|bila|išao|išla|vidio|vidjela) sam( [\\p{L} ]+)?)$"
+              "open": true,
+              "pattern": "^((jučer|sinoć|prekjučer|ja)( ja)? sam (se )?{pp.self}( \\p{L}+){0,4}|{pp.self} sam( se)?( \\p{L}+){0,4})$"
             }
           },
           {
@@ -3571,7 +5090,8 @@
               "accept": [
                 "U subotu ću ići na more."
               ],
-              "pattern": "^u subotu (ću \\p{L}+( [\\p{L} ]+)?|ćemo \\p{L}+( [\\p{L} ]+)?)$"
+              "open": true,
+              "pattern": "^(u subotu )?(ja )?((ću (se )?{inf}( \\p{L}+){0,3}|{inft} ću( se)?( \\p{L}+){0,3})|((?!volim ){pres1}|se {pres1}|volim ({inf}|{acc}))( \\p{L}+){0,3})( u subotu)?$"
             }
           },
           {
@@ -3585,7 +5105,8 @@
                 "Može, u šest.",
                 "Može sutra."
               ],
-              "pattern": "^(može|rado|ne mogu)( u \\p{L}+| sutra| večeras| danas)?$"
+              "open": true,
+              "pattern": "^(da )?(može|rado|naravno|dogovoreno)( rado)?( (u \\p{L}+|sutra|večeras|danas|vikendom)( u \\p{L}+)?)?$"
             }
           }
         ]
@@ -3639,13 +5160,13 @@
       "test": {
         "vocabulary": {
           "instruction": "Wybierz poprawne znaczenie.",
-          "items": [
-            "a1-01:8",
-            "a1-06:1",
-            "a1-16:2",
-            "a1-22:1",
-            "a1-31:3",
-            "a1-28:6"
+          "modules": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
           ]
         },
         "reading": {
@@ -3710,39 +5231,24 @@
                 "Dwa bilety"
               ],
               "correct": 0
-            },
-            {
-              "fromManifest": true
             }
           ]
         },
         "grammar": {
           "instruction": 4,
-          "gaps": [
-            {
-              "ref": "a1-36:4",
-              "word": "Bila"
-            },
-            {
-              "ref": "a1-37:1",
-              "word": "ću"
-            },
-            {
-              "ref": "a1-22:3",
-              "word": "poštu"
-            },
-            {
-              "ref": "a1-16:1",
-              "word": "vodu"
-            }
+          "lessons": [
+            "a1-36",
+            "a1-37",
+            "a1-22",
+            "a1-16"
           ]
         },
         "translation": {
           "instruction": 5,
-          "items": [
-            "a1-22:6",
-            "a1-19:2",
-            "a1-36:2"
+          "lessons": [
+            "a1-22",
+            "a1-19",
+            "a1-36"
           ]
         },
         "production": {

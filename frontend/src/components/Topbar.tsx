@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useCourse } from "@/courses/CourseProvider";
 import { useI18n } from "@/i18n";
+import { Logo } from "./Logo";
 import { UserMenu } from "./UserMenu";
 
 export function Topbar() {
@@ -9,15 +10,21 @@ export function Topbar() {
 
   return (
     <header className="topbar">
-      <Link to="/jezyki" className="course-pill" title={t("course.switch")}>
-        <span className="course-flag" aria-hidden="true">
-          {course.flag}
-        </span>
-        <span className="course-pill-name">{course.name[locale]}</span>
-        <span className="course-pill-pair">
-          {course.sourceLanguage.toUpperCase()} → {course.targetLanguage.toUpperCase()}
-        </span>
-      </Link>
+      <div className="topbar-start">
+        {/* Sidebar znika na telefonie — znak marki przechodzi do górnego paska. */}
+        <Link to="/" className="topbar-brand" aria-label="Lexodromia">
+          <Logo size={28} markOnly />
+        </Link>
+        <Link to="/jezyki" className="course-pill" title={t("course.switch")}>
+          <span className="course-flag" aria-hidden="true">
+            {course.flag}
+          </span>
+          <span className="course-pill-name">{course.name[locale]}</span>
+          <span className="course-pill-pair">
+            {course.sourceLanguage.toUpperCase()} → {course.targetLanguage.toUpperCase()}
+          </span>
+        </Link>
+      </div>
 
       <UserMenu />
     </header>
