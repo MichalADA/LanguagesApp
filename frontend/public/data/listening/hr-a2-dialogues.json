@@ -259,6 +259,81 @@
         ],
         "correctOptionId": "quiet"
       }
+    },
+    {
+      "id": "a2-trgovina-odjece",
+      "level": "A2",
+      "titlePl": "W sklepie z ubraniami",
+      "titleEn": "At the clothes shop",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Dobar dan! Tražite li nešto posebno?", "textPl": "Dzień dobry! Szuka Pani czegoś konkretnego?", "audioPath": "/audio/listening/hr-a2/a2-trgovina-odjece/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Tražim toplu jaknu za zimu, po mogućnosti crnu.", "textPl": "Szukam ciepłej kurtki na zimę, najlepiej czarnej.", "audioPath": "/audio/listening/hr-a2/a2-trgovina-odjece/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Imamo ove dvije. Koju veličinu nosite?", "textPl": "Mamy te dwie. Jaki rozmiar Pani nosi?", "audioPath": "/audio/listening/hr-a2/a2-trgovina-odjece/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Obično nosim srednju. Mogu li probati ovu dužu?", "textPl": "Zwykle noszę średni. Mogę przymierzyć tę dłuższą?", "audioPath": "/audio/listening/hr-a2/a2-trgovina-odjece/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Naravno, kabina je lijevo. Ta je jakna sada na popustu.", "textPl": "Oczywiście, przymierzalnia jest po lewej. Ta kurtka jest teraz przeceniona.", "audioPath": "/audio/listening/hr-a2/a2-trgovina-odjece/05-marko.mp3" },
+        { "speaker": "ana", "textHr": "Odlično, onda je uzimam ako mi pristaje.", "textPl": "Świetnie, to ją biorę, jeśli będzie pasować.", "audioPath": "/audio/listening/hr-a2/a2-trgovina-odjece/06-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Jaką kurtkę chce przymierzyć Ana?",
+        "options": [
+          { "id": "long-black", "textPl": "Dłuższą, czarną i ciepłą kurtkę" },
+          { "id": "short-white", "textPl": "Krótką, białą kurtkę" },
+          { "id": "raincoat", "textPl": "Lekki płaszcz przeciwdeszczowy" }
+        ],
+        "correctOptionId": "long-black"
+      }
+    },
+    {
+      "id": "a2-novi-kaput",
+      "level": "A2",
+      "titlePl": "Który płaszcz?",
+      "titleEn": "Which coat?",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Marko, koji ti se kaput više sviđa?", "textPl": "Marko, który płaszcz bardziej ci się podoba?", "audioPath": "/audio/listening/hr-a2/a2-novi-kaput/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Sivi je elegantniji, ali plavi je topliji.", "textPl": "Szary jest bardziej elegancki, ale niebieski jest cieplejszy.", "audioPath": "/audio/listening/hr-a2/a2-novi-kaput/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Plavi je i jeftiniji, košta osamdeset eura.", "textPl": "Niebieski jest też tańszy, kosztuje osiemdziesiąt euro.", "audioPath": "/audio/listening/hr-a2/a2-novi-kaput/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "A koliko košta sivi?", "textPl": "A ile kosztuje szary?", "audioPath": "/audio/listening/hr-a2/a2-novi-kaput/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "Sto dvadeset. To mi je previše.", "textPl": "Sto dwadzieścia. To dla mnie za dużo.", "audioPath": "/audio/listening/hr-a2/a2-novi-kaput/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Onda uzmi plavi. I meni se više sviđa.", "textPl": "To weź niebieski. Mnie też bardziej się podoba.", "audioPath": "/audio/listening/hr-a2/a2-novi-kaput/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Dlaczego Ana weźmie niebieski płaszcz?",
+        "options": [
+          { "id": "cheaper", "textPl": "Jest tańszy i cieplejszy" },
+          { "id": "elegant", "textPl": "Jest bardziej elegancki" },
+          { "id": "size", "textPl": "Szary jest za mały" }
+        ],
+        "correctOptionId": "cheaper"
+      }
+    },
+    {
+      "id": "a2-povrat-robe",
+      "level": "A2",
+      "titlePl": "Zwrot w sklepie",
+      "titleEn": "Returning an item",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Dobar dan. Prošli tjedan sam kupila ove slušalice, ali lijeva ne radi.", "textPl": "Dzień dobry. W zeszłym tygodniu kupiłam te słuchawki, ale lewa nie działa.", "audioPath": "/audio/listening/hr-a2/a2-povrat-robe/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Žao mi je. Imate li račun?", "textPl": "Przykro mi. Ma Pani paragon?", "audioPath": "/audio/listening/hr-a2/a2-povrat-robe/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Imam, evo ga. Htjela bih ih zamijeniti.", "textPl": "Mam, proszę. Chciałabym je wymienić.", "audioPath": "/audio/listening/hr-a2/a2-povrat-robe/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Nažalost, taj model više nemamo. Mogu vam vratiti novac.", "textPl": "Niestety nie mamy już tego modelu. Mogę zwrócić Pani pieniądze.", "audioPath": "/audio/listening/hr-a2/a2-povrat-robe/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "U redu, onda povrat novca, molim.", "textPl": "W porządku, to poproszę o zwrot pieniędzy.", "audioPath": "/audio/listening/hr-a2/a2-povrat-robe/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Novac će biti na vašoj kartici za tri do pet dana.", "textPl": "Pieniądze będą na Pani karcie w ciągu trzech do pięciu dni.", "audioPath": "/audio/listening/hr-a2/a2-povrat-robe/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Co dostanie Ana?",
+        "options": [
+          { "id": "refund", "textPl": "Zwrot pieniędzy na kartę" },
+          { "id": "same-model", "textPl": "Nowe słuchawki tego samego modelu" },
+          { "id": "voucher", "textPl": "Bon do sklepu" }
+        ],
+        "correctOptionId": "refund"
+      }
     }
   ]
 }

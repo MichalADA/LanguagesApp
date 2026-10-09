@@ -102,7 +102,7 @@ const PRES_OVERRIDES = {
   uzeti: ["uzmem"], ostati: ["ostanem"], odustati: ["odustanem"], smjeti: ["smijem"], pomoći: ["pomognem"],
   pozvati: ["pozovem"], nazvati: ["nazovem"], otkazati: ["otkažem"], zapisati: ["zapišem"],
   trajati: ["trajem"], izaći: ["izađem"], kašljati: ["kašljem"], disati: ["dišem"], kretati: ["krećem"], poslati: ["pošaljem"],
-  prevesti: ["prevedem"],
+  prevesti: ["prevedem"], stajati: ["stojim"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
@@ -197,10 +197,11 @@ export function conjugation(verb) {
 const ADJ_OVERRIDES = {
   sladak: ["slatka", "slatko"], nizak: ["niska", "nisko"], veseo: ["vesela", "veselo"], kiseo: ["kisela", "kiselo"],
   gorak: ["gorka", "gorko"], dobar: ["dobra", "dobro"], vruć: ["vruća", "vruće"], topao: ["topla", "toplo"],
+  uzak: ["uska", "usko"],
 };
 const FLEETING_ADJ = new Set([
   "umoran", "sretan", "simpatičan", "gladan", "žedan", "slobodan", "pametan", "zgodan", "tužan", "ukusan", "hladan",
-  "miran", "zabavan", "dosadan", "ozbiljan", "alergičan",
+  "miran", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan",
 ]);
 
 function adjForms(masc) {
@@ -221,6 +222,7 @@ const PRONOUN_FORMS = {
   tvoj: ["tvoj", "tvoja", "tvoje", "tvoji", "tvoju", "tvog", "tvojeg", "tvojoj", "tvojim"],
   ovaj: ["ovaj", "ova", "ovo", "ovu", "ovog", "ovoj", "ovim", "ovi", "ove"],
   koji: ["koji", "koja", "koje", "koju", "kojeg", "kojoj"],
+  onaj: ["onaj", "ona", "ono", "onu", "onog", "onoj", "onim", "oni", "one"],
   kakav: ["kakav", "kakva", "kakvo", "kakvu"],
   ja: ["ja", "me", "mene", "meni", "mnom"],
   ti: ["ti", "te", "tebe", "tebi", "tobom"],

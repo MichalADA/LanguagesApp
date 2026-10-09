@@ -10,7 +10,7 @@ import Renderer, { act } from 'react-test-renderer';
 import ts from 'typescript';
 import { audioSlots } from '../scripts/lib/course-audio.mjs';
 
-/* Kurs A2 (moduły 1–4) — ten sam generator i player co A1, osobny poziom. */
+/* Kurs A2 (moduły 1–5) — ten sam generator i player co A1, osobny poziom. */
 
 const require = createRequire(import.meta.url);
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -89,7 +89,7 @@ test('A2: generator — wygenerowane pliki są aktualne względem CSV', () => {
 
 test('A2: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 bez zmian', () => {
   assert.equal(a2.available, true);
-  assert.deepEqual(a2.modules.map((m) => [m.id, m.title]), [['a2-01', 'Opowiadam o przeszłości'], ['a2-02', 'Plany i obowiązki'], ['a2-03', 'Zdrowie'], ['a2-04', 'Praca i nauka']]);
+  assert.deepEqual(a2.modules.map((m) => [m.id, m.title]), [['a2-01', 'Opowiadam o przeszłości'], ['a2-02', 'Plany i obowiązki'], ['a2-03', 'Zdrowie'], ['a2-04', 'Praca i nauka'], ['a2-05', 'Zakupy i usługi']]);
   for (const [i, module] of a2.modules.entries()) {
     const m = String(i + 1).padStart(2, '0');
     assert.equal(module.levelId, 'A2');
@@ -102,7 +102,8 @@ test('A2: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 bez zmian
   assert.equal(deriveLevel(a2, new Set()).current.lesson.lesson.id, 'a2-01-01');
   assert.equal(nextLessonId(a2, 'a2-01-05'), 'a2-02-01');
   assert.equal(nextLessonId(a2, 'a2-02-05'), 'a2-03-01');
-  assert.equal(nextLessonId(a2, 'a2-04-05'), null);
+  assert.equal(nextLessonId(a2, 'a2-04-05'), 'a2-05-01');
+  assert.equal(nextLessonId(a2, 'a2-05-05'), null);
   // Moduł 2 otwiera się po bieżącym module, tak jak w A1.
   assert.equal(deriveLevel(a2, new Set()).modules[1].status, 'locked');
 });
@@ -227,6 +228,33 @@ const OPEN_REPLIES = [
     miss: ['Bolje sve.'] },
   { lesson: 'a2-04-05', reply: 2, hit: ['Moj cilj je položiti ispit iz hrvatskog.', 'Želim tečno govoriti hrvatski.', 'Cilj mi je raditi u Hrvatskoj.', 'Planiram položiti ispit.'],
     miss: ['Cilj.', 'Ispit.'] },
+  // Moduł 5: zakupy i usługi
+  { lesson: 'a2-05-01', reply: 0, hit: ['Tražim crnu jaknu.', 'Trebam nove cipele.', 'Tražim haljinu.', 'Htjela bih bijelu košulju.', 'Tražim plavu majicu za ljeto.'],
+    miss: ['Tražim crna jakna.', 'Tražim jakna.'] },
+  { lesson: 'a2-05-01', reply: 1, hit: ['Nosim srednju veličinu.', 'Srednju.', 'Veličinu M.', 'Obično nosim L.', 'Broj četrdeset.'],
+    miss: [] },
+  { lesson: 'a2-05-02', reply: 0, hit: ['Sviđa mi se, jako je moderna.', 'Super je, stoji ti odlično.', 'Jako mi se sviđa!', 'Sviđa mi se boja.', 'Lijepa je.'],
+    miss: ['Sviđa se mi.', 'Sviđam se.'] },
+  { lesson: 'a2-05-02', reply: 1, hit: ['Sviđaju mi se.', 'Ne sviđaju mi se, preuske su.', 'Jako mi se sviđaju!', 'Lijepe su.'],
+    miss: ['Sviđa mi se.', 'Sviđaju se mi.'] },
+  { lesson: 'a2-05-03', reply: 0, hit: ['Imate li veći broj?', 'Male su. Imate li veći broj?', 'Trebam manju veličinu.', 'Velike su mi.', 'Imate li manji broj?'],
+    miss: ['Imate li veću broj?', 'Imate li veći veličinu?'] },
+  { lesson: 'a2-05-03', reply: 1, hit: ['Koliko koštaju?', 'Ima li popusta?', 'Koliko košta?', 'Je li to na popustu?'],
+    miss: ['Koliko sati?'] },
+  { lesson: 'a2-05-03', reply: 2, hit: ['Uzet ću ih.', 'Hvala, ali preskupe su.', 'Dobro, kupit ću ih.', 'Razmislit ću.'],
+    miss: ['Uzeti ću ih.'] },
+  { lesson: 'a2-05-04', reply: 0, hit: ['Kupila sam ovaj telefon jučer, ali ne radi.', 'Kupio sam ovaj punjač, ali ne radi.', 'Moj telefon ne radi.', 'Kupila sam ove slušalice, ali ne rade.', 'Ova kutija je oštećena.'],
+    miss: ['Kupio ovaj telefon, ne radi.', 'Sam kupio telefon.'] },
+  { lesson: 'a2-05-04', reply: 1, hit: ['Imam, izvolite.', 'Nažalost, nemam račun.', 'Da, imam ga.', 'Imam, evo ga.'],
+    miss: ['Sam.', 'Jesam račun.'] },
+  { lesson: 'a2-05-04', reply: 2, hit: ['Htio bih novi.', 'Želim povrat novca.', 'Radije bih povrat novca.', 'Zamjenu, molim.', 'Htjela bih novu.'],
+    miss: ['Novac.'] },
+  { lesson: 'a2-05-05', reply: 0, hit: ['Kupio sam crnu jaknu.', 'Kupila sam nove cipele.', 'Kupila sam haljinu za ljeto.', 'Ja sam kupio bijelu košulju.'],
+    miss: ['Kupio sam crna jakna.', 'Sam kupio jaknu.'] },
+  { lesson: 'a2-05-05', reply: 1, hit: ['Sviđa mi se, jako je udobna.', 'Da, jako mi se sviđa.', 'Sviđaju mi se.', 'Ne sviđa mi se boja.'],
+    miss: ['Sviđa se.'] },
+  { lesson: 'a2-05-05', reply: 2, hit: ['Ne, bilo je na popustu.', 'Bilo je jeftinije nego prošli put.', 'Bilo je skupo.', 'Trideset eura.', 'Malo preskupo.'],
+    miss: ['Ne znam.'] },
 ];
 
 test('A2: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

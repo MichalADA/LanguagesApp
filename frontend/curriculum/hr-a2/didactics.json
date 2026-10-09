@@ -15,6 +15,9 @@
     },
     "4": {
       "description": "Opowiadasz o pracy i doświadczeniu, rozmawiasz z rekruterem, piszesz formalny e-mail i mówisz o nauce języka."
+    },
+    "5": {
+      "description": "Kupujesz ubrania (rozmiar, kolor), mówisz, co ci się podoba, porównujesz ceny i składasz reklamację."
     }
   },
   "lessons": {
@@ -3675,6 +3678,974 @@
         ],
         "minSentences": 3,
         "sample": "Radim kao konobar već tri godine. Bavim se i fotografijom. Učim hrvatski godinu dana. Moj cilj je tečno govoriti."
+      }
+    },
+    "a2-21": {
+      "grammar": {
+        "title": "Tražim crnu jaknu",
+        "text": "Po tražim, trebam, kupujem, nosim stoi biernik — zmienia się i rzeczownik, i przymiotnik. Rodzaj żeński: -a → -u: crna jakna → Tražim crnu jaknu. Męski nieżywotny bez zmian: Trebam crni kaput. Liczba mnoga (hlače, cipele): -e: nove cipele, crne hlače. Ovaj / ova / ovo → ovaj, ovu, ovo, ove.",
+        "table": [
+          {
+            "label": "mianownik → biernik",
+            "rows": [
+              {
+                "base": "crna jakna",
+                "form": "Tražim crnu jaknu.",
+                "meaning": "Szukam czarnej kurtki."
+              },
+              {
+                "base": "bijela košulja",
+                "form": "Kupio sam bijelu košulju.",
+                "meaning": "Kupiłem białą koszulę."
+              },
+              {
+                "base": "crni kaput",
+                "form": "Trebam crni kaput.",
+                "meaning": "Potrzebuję czarnego płaszcza."
+              },
+              {
+                "base": "nove cipele",
+                "form": "Trebam nove cipele.",
+                "meaning": "Potrzebuję nowych butów."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          4,
+          5,
+          7
+        ],
+        "tip": "Rozmiar butów to broj (numer): Nosim broj četrdeset."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "crnu"
+      },
+      "translate": [
+        {
+          "sentence": 5,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Szukam białej koszuli.",
+          "options": [
+            "Tražim bijela košulja.",
+            "Tražim bijelu košulju.",
+            "Tražim bijelo košulju."
+          ],
+          "correct": 1,
+          "explanation": "Biernik rodzaju żeńskiego: -u w przymiotniku i w rzeczowniku."
+        }
+      ],
+      "listening": "a2-trgovina-odjece",
+      "model": {
+        "title": "W przymierzalni",
+        "lines": [
+          {
+            "speaker": "Prodavač",
+            "hr": "Dobar dan! Mogu li vam pomoći?",
+            "pl": "Dzień dobry! Mogę w czymś pomóc?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Tražim crnu jaknu za zimu.",
+            "pl": "Szukam czarnej kurtki na zimę."
+          },
+          {
+            "speaker": "Prodavač",
+            "hr": "Koju veličinu nosite?",
+            "pl": "Jaki rozmiar Pani nosi?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Obično nosim srednju veličinu.",
+            "pl": "Zwykle noszę średni rozmiar."
+          },
+          {
+            "speaker": "Prodavač",
+            "hr": "Izvolite, kabina je tamo.",
+            "pl": "Proszę, przymierzalnia jest tam."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala! Mogu li probati i ove hlače?",
+            "pl": "Dziękuję! Mogę przymierzyć też te spodnie?"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "W sklepie",
+        "partner": "Prodavač",
+        "turns": [
+          {
+            "say": "Dobar dan! Što tražite?",
+            "pl": "Dzień dobry! Czego Pani szuka?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego szukasz (ubranie, możesz dodać kolor).",
+              "accept": [
+                1,
+                "Trebam nove cipele."
+              ],
+              "open": true,
+              "pattern": "^(tražim|trebam|htio bih|htjela bih|želim kupiti|kupujem)( jednu| jedan| neke)?( \\p{L}+(u|e|i|o))? {acc}( za \\p{L}+( \\p{L}+)?)?$"
+            }
+          },
+          {
+            "say": "Koju veličinu nosite?",
+            "pl": "Jaki rozmiar Pani nosi?"
+          },
+          {
+            "reply": {
+              "prompt": "Podaj swój rozmiar.",
+              "accept": [
+                3,
+                "Srednju."
+              ],
+              "open": true,
+              "pattern": "^((obično |najčešće )?nosim |trebam )?(veličinu |broj )?\\p{L}+( \\p{L}+)?( veličinu)?$"
+            }
+          },
+          {
+            "say": "Izvolite, kabina je tamo.",
+            "pl": "Proszę, przymierzalnia jest tam."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, czy możesz przymierzyć też spodnie.",
+              "accept": [
+                4
+              ],
+              "pattern": "^mogu li (i )?(probati|isprobati) (i )?(ove |te )?hlače$"
+            }
+          },
+          {
+            "say": "Naravno!",
+            "pl": "Oczywiście!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: jakie ubranie kupujesz (kolor, rozmiar).",
+        "points": [
+          "ubranie i kolor",
+          "rozmiar"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "jaknu",
+              "košulju",
+              "majicu",
+              "haljinu",
+              "hlače",
+              "cipele",
+              "suknju",
+              "kaput"
+            ],
+            "label": "ubranie w bierniku"
+          },
+          {
+            "any": [
+              "crnu",
+              "bijelu",
+              "plavu",
+              "crvenu",
+              "zelenu",
+              "crne",
+              "bijele",
+              "plave",
+              "crni",
+              "bijeli",
+              "plavi"
+            ],
+            "label": "kolor"
+          }
+        ],
+        "sample": "Tražim plavu košulju. Nosim srednju veličinu."
+      }
+    },
+    "a2-22": {
+      "grammar": {
+        "title": "Sviđa mi se",
+        "text": "„Podoba mi się” to sviđa mi se + to, co się podoba, w mianowniku. Liczba mnoga → sviđaju: Sviđaju mi se tvoje cipele. Komu: mi (mnie), ti (tobie), mu (jemu), joj (jej), nam (nam), vam (wam), im (im). Z imieniem: Marku se sviđa…, Ani se sviđa… O ubraniu: Stoji ti odlično — świetnie na tobie leży.",
+        "table": [
+          {
+            "label": "komu się podoba?",
+            "rows": [
+              {
+                "base": "mnie",
+                "form": "Sviđa mi se.",
+                "meaning": "Podoba mi się."
+              },
+              {
+                "base": "tobie",
+                "form": "Sviđa li ti se?",
+                "meaning": "Podoba ci się?"
+              },
+              {
+                "base": "jemu",
+                "form": "Sviđa mu se.",
+                "meaning": "Podoba mu się."
+              },
+              {
+                "base": "jej",
+                "form": "Sviđa joj se.",
+                "meaning": "Podoba jej się."
+              },
+              {
+                "base": "nam",
+                "form": "Sviđa nam se.",
+                "meaning": "Podoba nam się."
+              },
+              {
+                "base": "im",
+                "form": "Sviđa im se.",
+                "meaning": "Podoba im się."
+              }
+            ]
+          },
+          {
+            "label": "jedno · wiele",
+            "rows": [
+              {
+                "base": "jakna",
+                "form": "Sviđa mi se jakna.",
+                "meaning": "Podoba mi się kurtka."
+              },
+              {
+                "base": "cipele",
+                "form": "Sviđaju mi se cipele.",
+                "meaning": "Podobają mi się buty."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "Nie podoba się: Ne sviđa mi se. Ne sviđaju mi se."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "Sviđaju"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 8,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 3,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Podobają mi się te buty.",
+          "options": [
+            "Sviđa mi se ove cipele.",
+            "Sviđaju mi se ove cipele.",
+            "Sviđam se ove cipele."
+          ],
+          "correct": 1,
+          "explanation": "cipele to liczba mnoga → sviđaju."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Jej się podoba.",
+          "options": [
+            "Sviđa mu se.",
+            "Sviđa joj se.",
+            "Sviđa ju se."
+          ],
+          "correct": 1,
+          "explanation": "jej → joj (jemu → mu)."
+        }
+      ],
+      "model": {
+        "title": "Nowa sukienka",
+        "lines": [
+          {
+            "speaker": "Marta",
+            "hr": "Ana, sviđa mi se tvoja nova haljina!",
+            "pl": "Ana, podoba mi się twoja nowa sukienka!"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala! Kupila sam je jučer na rasprodaji.",
+            "pl": "Dzięki! Kupiłam ją wczoraj na wyprzedaży."
+          },
+          {
+            "speaker": "Marta",
+            "hr": "Ta boja ti odlično stoji.",
+            "pl": "W tym kolorze świetnie wyglądasz."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Misliš? Meni je malo uska.",
+            "pl": "Tak myślisz? Dla mnie jest trochę za wąska."
+          },
+          {
+            "speaker": "Marta",
+            "hr": "Ne, savršena je. Imaš dobar ukus!",
+            "pl": "Nie, jest idealna. Masz dobry gust!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Jak ci się podoba?",
+        "partner": "Marta",
+        "turns": [
+          {
+            "say": "Kako ti se sviđa moja nova jakna?",
+            "pl": "Jak ci się podoba moja nowa kurtka?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że ci się podoba (i dlaczego).",
+              "accept": [
+                "Sviđa mi se, jako je moderna.",
+                "Super je, stoji ti odlično."
+              ],
+              "open": true,
+              "pattern": "^(da |jako |baš )*(sviđa mi se|jako mi se sviđa|baš mi se sviđa|super je|lijepa je|odlična je|stoji ti (odlično|super|dobro|lijepo))( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "A ove cipele?",
+            "pl": "A te buty?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czy buty ci się podobają (to liczba mnoga!).",
+              "accept": [
+                "Sviđaju mi se.",
+                "Ne sviđaju mi se, preuske su."
+              ],
+              "open": true,
+              "pattern": "^(da |ne |jako |baš )*(sviđaju mi se|jako mi se sviđaju|baš mi se sviđaju|ne sviđaju mi se|lijepe su|super su)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Super, onda ih kupujem!",
+            "pl": "Super, to je kupuję!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co ci się podoba w ubraniach, a co nie.",
+        "points": [
+          "co ci się podoba",
+          "co ci się nie podoba"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "sviđa",
+              "sviđaju"
+            ],
+            "label": "sviđa / sviđaju"
+          },
+          {
+            "any": [
+              "mi",
+              "mu",
+              "joj",
+              "nam",
+              "im"
+            ],
+            "label": "komu: mi / mu / joj"
+          }
+        ],
+        "sample": "Sviđa mi se jednostavna odjeća. Ne sviđaju mi se uske hlače."
+      }
+    },
+    "a2-23": {
+      "grammar": {
+        "title": "Jeftinija od one",
+        "text": "Stopień wyższy przymiotnika: -iji / -ji: jeftin → jeftiniji, skup → skuplji, dug → duži, kratak → kraći; nieregularnie velik → veći, malen → manji. Zgadza się z rzeczownikiem: jeftinija jakna, skuplje cipele. „Niż”: od + dopełniacz (jeftinija od one) albo nego (skuplje nego bijele). Najwyższy: naj- + stopień wyższy: najjeftiniji.",
+        "table": [
+          {
+            "label": "przymiotnik → stopień wyższy",
+            "rows": [
+              {
+                "base": "velik",
+                "form": "veći",
+                "meaning": "większy"
+              },
+              {
+                "base": "malen",
+                "form": "manji",
+                "meaning": "mniejszy"
+              },
+              {
+                "base": "jeftin",
+                "form": "jeftiniji",
+                "meaning": "tańszy"
+              },
+              {
+                "base": "skup",
+                "form": "skuplji",
+                "meaning": "droższy"
+              },
+              {
+                "base": "dug",
+                "form": "duži",
+                "meaning": "dłuższy"
+              },
+              {
+                "base": "kratak",
+                "form": "kraći",
+                "meaning": "krótszy"
+              }
+            ]
+          },
+          {
+            "label": "ovaj · taj · onaj",
+            "rows": [
+              {
+                "base": "tu, przy mnie",
+                "form": "ovaj kaput",
+                "meaning": "ten płaszcz"
+              },
+              {
+                "base": "przy tobie",
+                "form": "taj kaput",
+                "meaning": "ten płaszcz (twój)"
+              },
+              {
+                "base": "daleko",
+                "form": "onaj kaput",
+                "meaning": "tamten płaszcz"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          3,
+          1,
+          7
+        ],
+        "tip": "Rozmiar butów: veći / manji broj; rozmiar ubrania: veća / manja veličina (veličina jest rodzaju żeńskiego)."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "jeftinija"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 3,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Te buty są droższe.",
+          "options": [
+            "Ove cipele su skupije.",
+            "Ove cipele su skuplje.",
+            "Ove cipele su više skupe."
+          ],
+          "correct": 1,
+          "explanation": "skup → skuplji; cipele (lm. ż.) → skuplje."
+        }
+      ],
+      "listening": "a2-novi-kaput",
+      "model": {
+        "title": "Który płaszcz?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Koji kaput ti se više sviđa, ovaj ili onaj?",
+            "pl": "Który płaszcz bardziej ci się podoba, ten czy tamten?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Onaj sivi je ljepši, ali je skuplji.",
+            "pl": "Tamten szary jest ładniejszy, ale droższy."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ovaj je jeftiniji i topliji.",
+            "pl": "Ten jest tańszy i cieplejszy."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Imaju li ga u manjoj veličini?",
+            "pl": "Mają go w mniejszym rozmiarze?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Pitat ću prodavača. Danas ima i popust!",
+            "pl": "Zapytam sprzedawcę. Dziś jest też zniżka!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Inny rozmiar",
+        "partner": "Prodavač",
+        "turns": [
+          {
+            "say": "Kako vam pristaju cipele?",
+            "pl": "Jak pasują buty?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że są za małe albo za duże, i poproś o inny rozmiar.",
+              "accept": [
+                1,
+                "Male su. Imate li veći broj?"
+              ],
+              "open": true,
+              "pattern": "^((male|velike|uske|široke|premale|prevelike) su( mi)? )?(imate li|trebam|molim)( jedan| jednu)? ((veći|manji|drugi) broj|(veću|manju|drugu) veličinu)$|^(male|velike|uske|premale|prevelike) su( mi)?$"
+            }
+          },
+          {
+            "say": "Izvolite, ovo je broj četrdeset dva.",
+            "pl": "Proszę, to jest rozmiar czterdzieści dwa."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj o cenę albo o zniżkę.",
+              "accept": [
+                "Koliko koštaju?",
+                8
+              ],
+              "open": true,
+              "pattern": "^(koliko (košta|koštaju|je)( to| ovo| ovaj| ove)?|ima li (popusta|neki popust)|imate li (popust|neki popust)|je li (to|ovo) na (popustu|akciji))$"
+            }
+          },
+          {
+            "say": "Sto eura, ali danas je dvadeset posto popusta.",
+            "pl": "Sto euro, ale dziś jest dwadzieścia procent zniżki."
+          },
+          {
+            "reply": {
+              "prompt": "Zdecyduj: bierzesz je albo nie.",
+              "accept": [
+                "Uzet ću ih.",
+                "Hvala, ali preskupe su."
+              ],
+              "open": true,
+              "pattern": "^(dobro |onda |super |hvala( ali)? )*(uzet ću ih|uzimam ih|kupit ću ih|kupujem ih|preskupe su|to je preskupo|razmislit ću|ne hvala)( hvala)?$"
+            }
+          },
+          {
+            "say": "U redu, hvala vam.",
+            "pl": "W porządku, dziękuję."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Porównaj dwie rzeczy w sklepie (2 zdania).",
+        "points": [
+          "co jest tańsze / droższe",
+          "co jest większe / mniejsze"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "veći",
+              "veća",
+              "veće",
+              "manji",
+              "manja",
+              "manje",
+              "jeftiniji",
+              "jeftinija",
+              "jeftinije",
+              "skuplji",
+              "skuplja",
+              "skuplje",
+              "duži",
+              "duža",
+              "duže",
+              "kraći",
+              "kraća",
+              "kraće"
+            ],
+            "label": "stopień wyższy"
+          },
+          {
+            "any": [
+              "od",
+              "nego"
+            ],
+            "label": "od / nego"
+          }
+        ],
+        "sample": "Ova jakna je jeftinija od one. Ali onaj kaput je topliji."
+      }
+    },
+    "a2-24": {
+      "grammar": {
+        "title": "Htio bih vratiti…",
+        "text": "Grzeczna prośba w sklepie: Htio bih / Htjela bih + bezokolicznik (chciałbym / chciałabym): Htio bih vratiti ove cipele. Problem opisujesz w perfekcie i w czasie teraźniejszym: Kupila sam ga jučer, ali ne radi. Pokvaren (zepsuty) i oštećen (uszkodzony) zgadzają się z rzeczą: pokvaren punjač, pokvarena perilica, oštećena kutija.",
+        "table": [
+          {
+            "label": "Prośba",
+            "rows": [
+              {
+                "base": "zwrot",
+                "form": "Htio bih vratiti ovo.",
+                "meaning": "Chciałbym to zwrócić."
+              },
+              {
+                "base": "wymiana",
+                "form": "Možete li ga zamijeniti?",
+                "meaning": "Może go Pan wymienić?"
+              },
+              {
+                "base": "pieniądze",
+                "form": "Želim povrat novca.",
+                "meaning": "Chcę zwrotu pieniędzy."
+              },
+              {
+                "base": "problem",
+                "form": "Kupila sam ga jučer, ali ne radi.",
+                "meaning": "Kupiłam go wczoraj, ale nie działa."
+              }
+            ]
+          },
+          {
+            "label": "pokvaren · oštećen",
+            "rows": [
+              {
+                "base": "on (punjač)",
+                "form": "Punjač je pokvaren.",
+                "meaning": "Ładowarka jest zepsuta."
+              },
+              {
+                "base": "ona (kutija)",
+                "form": "Kutija je oštećena.",
+                "meaning": "Pudełko jest uszkodzone."
+              },
+              {
+                "base": "ono (pakiranje)",
+                "form": "Pakiranje je oštećeno.",
+                "meaning": "Opakowanie jest uszkodzone."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          8
+        ],
+        "tip": "Gwarancja: Telefon ima dvije godine jamstva — telefon ma dwa lata gwarancji."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "vratiti"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 8,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 9,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Chciałabym zwrócić tę kurtkę.",
+          "options": [
+            "Htio bih vratiti ova jakna.",
+            "Htjela sam vratiti ovu jaknu.",
+            "Htjela bih vratiti ovu jaknu."
+          ],
+          "correct": 2,
+          "explanation": "Kobieta: htjela bih + bezokolicznik; jaknu w bierniku."
+        }
+      ],
+      "listening": "a2-povrat-robe",
+      "model": {
+        "title": "Zepsuty telefon",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Kupila sam ovaj telefon prošli tjedan, ali ne radi.",
+            "pl": "Dzień dobry. Kupiłam ten telefon w zeszłym tygodniu, ale nie działa."
+          },
+          {
+            "speaker": "Prodavač",
+            "hr": "Žao mi je. Imate li račun?",
+            "pl": "Przykro mi. Ma Pani paragon?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Imam, izvolite. Ekran se ne uključuje.",
+            "pl": "Mam, proszę. Ekran się nie włącza."
+          },
+          {
+            "speaker": "Prodavač",
+            "hr": "Telefon ima dvije godine jamstva. Možemo ga zamijeniti ili vam vratiti novac.",
+            "pl": "Telefon ma dwa lata gwarancji. Możemy go wymienić albo zwrócić Pani pieniądze."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Radije bih novi telefon.",
+            "pl": "Wolałabym nowy telefon."
+          },
+          {
+            "speaker": "Prodavač",
+            "hr": "U redu. Ispunite ovaj obrazac, molim.",
+            "pl": "W porządku. Proszę wypełnić ten formularz."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Reklamacja",
+        "partner": "Prodavač",
+        "turns": [
+          {
+            "say": "Dobar dan, izvolite?",
+            "pl": "Dzień dobry, w czym mogę pomóc?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co kupiłeś / kupiłaś i co nie działa.",
+              "accept": [
+                2,
+                "Kupio sam ovaj punjač, ali ne radi."
+              ],
+              "open": true,
+              "pattern": "^(kupio|kupila) sam (ovaj|ovu|ovo|ove) \\p{L}+( \\p{L}+)?( ali| i)? ((on |ona |to |oni |one )?ne (radi|rade)|(je|su) (pokvaren|pokvarena|pokvareno|pokvareni|pokvarene|oštećen|oštećena|oštećeno|oštećeni|oštećene))$|^(ovaj|ova|ovo|ove|moj|moja|moje) \\p{L}+ (ne (radi|rade)|(je|su) (pokvaren|pokvarena|pokvareno|pokvareni|pokvarene|oštećen|oštećena|oštećeno|oštećeni|oštećene))$"
+            }
+          },
+          {
+            "say": "Imate li račun?",
+            "pl": "Ma Pan paragon?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy masz paragon.",
+              "accept": [
+                "Imam, izvolite.",
+                "Nažalost, nemam račun."
+              ],
+              "open": true,
+              "pattern": "^(da |ne |nažalost )?(imam|nemam)( ga| račun| računa)?( izvolite| evo ga| ovdje je)?$"
+            }
+          },
+          {
+            "say": "Možemo ga zamijeniti ili vam vratiti novac.",
+            "pl": "Możemy go wymienić albo zwrócić Panu pieniądze."
+          },
+          {
+            "reply": {
+              "prompt": "Wybierz: wymiana albo zwrot pieniędzy.",
+              "accept": [
+                "Htio bih novi.",
+                8
+              ],
+              "open": true,
+              "pattern": "^(htio bih|htjela bih|radije bih|želim|molim)( novi| novu| novo| zamjenu| povrat novca| da ga zamijenite| da mi vratite novac)( molim)?$|^(zamjenu|povrat novca|novi|novu)( molim)?$"
+            }
+          },
+          {
+            "say": "U redu, nema problema.",
+            "pl": "W porządku, nie ma problemu."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania reklamacji: co kupiłeś, co nie działa i czego chcesz.",
+        "points": [
+          "co kupiłeś / kupiłaś",
+          "problem",
+          "wymiana albo zwrot"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "kupio",
+              "kupila"
+            ],
+            "label": "co kupiłeś"
+          },
+          {
+            "any": [
+              "radi",
+              "pokvaren",
+              "pokvarena",
+              "pokvareno",
+              "oštećen",
+              "oštećena",
+              "oštećeno"
+            ],
+            "label": "problem"
+          },
+          {
+            "any": [
+              "vratiti",
+              "zamijeniti",
+              "povrat"
+            ],
+            "label": "czego chcesz"
+          }
+        ],
+        "sample": "Kupio sam ovaj punjač jučer, ali ne radi. Htio bih ga zamijeniti."
+      }
+    },
+    "a2-25": {
+      "grammar": {
+        "title": "Zakupy — wszystko razem",
+        "text": "Biernik: Tražim crnu jaknu. Podoba się: Sviđa mi se / Sviđaju mi se. Porównanie: jeftinija od one, skuplje nego… Reklamacja: Htio bih zamijeniti…, Želim povrat novca.",
+        "examples": [
+          6,
+          5,
+          3
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Podobają mi się te spodnie.",
+          "options": [
+            "Sviđa mi se ove hlače.",
+            "Sviđaju me ove hlače.",
+            "Sviđaju mi se ove hlače."
+          ],
+          "correct": 2,
+          "explanation": "hlače to liczba mnoga → sviđaju; mnie → mi."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Po zakupach",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Bok! Što si kupio u gradu?",
+            "pl": "Cześć! Co kupiłeś w mieście?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co kupiłeś / kupiłaś (możesz dodać kolor).",
+              "accept": [
+                "Kupio sam crnu jaknu.",
+                "Kupila sam nove cipele."
+              ],
+              "open": true,
+              "pattern": "^(kupio sam|kupila sam|ja sam kupio|ja sam kupila)( jednu| jedan| nove| novu| novi)?( \\p{L}+(u|e|i|o))? {acc}( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Super! Sviđa li ti se?",
+            "pl": "Super! Podoba ci się?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czy ci się podoba i dlaczego.",
+              "accept": [
+                "Sviđa mi se, jako je udobna.",
+                "Da, jako mi se sviđa."
+              ],
+              "open": true,
+              "pattern": "^(da |ne |jako |baš )*(sviđa mi se|jako mi se sviđa|baš mi se sviđa|ne sviđa mi se|sviđaju mi se|ne sviđaju mi se)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "A je li bilo skupo?",
+            "pl": "A było drogie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz coś o cenie (zniżka, taniej, drożej).",
+              "accept": [
+                "Ne, bilo je na popustu.",
+                "Bilo je jeftinije nego prošli put."
+              ],
+              "open": true,
+              "pattern": "^(da |ne |nije |malo )?(( ?\\p{L}+){0,4} )?(na popustu|jeftin\\p{L}*|skup\\p{L}*|preskup\\p{L}*|\\p{L}+ eura|besplatn\\p{L}*)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Bravo, dobra kupovina!",
+            "pl": "Brawo, dobre zakupy!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3 zdaniach swoje zakupy: co kupiłeś, czy ci się podoba i ile kosztowało.",
+        "points": [
+          "co kupiłeś / kupiłaś",
+          "czy ci się podoba",
+          "cena"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "kupio",
+              "kupila",
+              "kupujem"
+            ],
+            "label": "zakup"
+          },
+          {
+            "any": [
+              "sviđa",
+              "sviđaju"
+            ],
+            "label": "sviđa mi se"
+          },
+          {
+            "any": [
+              "eura",
+              "popust",
+              "popustu",
+              "jeftinije",
+              "skuplje",
+              "jeftinija",
+              "skuplja",
+              "besplatna",
+              "besplatno"
+            ],
+            "label": "cena"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Kupila sam plavu haljinu. Jako mi se sviđa. Bila je na popustu, samo trideset eura."
       }
     }
   }

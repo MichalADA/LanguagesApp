@@ -1,9 +1,9 @@
-# Kurs chorwackiego A2 — źródła treści (moduły 1–4)
+# Kurs chorwackiego A2 — źródła treści (moduły 1–5)
 
 Ten sam format i generator co A1 (zob. `curriculum/hr-a1/README.md`), osobny poziom:
 
 ```
-level.json                          ← poziom: A2, prefiks a2, 4 moduły × 5 lekcji, dziedziczy słownictwo hr-a1
+level.json                          ← poziom: A2, prefiks a2, 5 modułów × 5 lekcji, dziedziczy słownictwo hr-a1
 lexodromia_hr_A2_curriculum.csv     ← źródło prawdy: lekcje, słownictwo, zdania, blueprinty
 didactics.json                      ← gramatyka, dialogi z ramami odpowiedzi, zadania swobodne
 audio.json / audio-manifest.json    ← nagrania w /audio/hr/a2/module-XX/
@@ -22,7 +22,10 @@ src/curriculum/data/hr-a2/          ← wygenerowane TypeScript (commitowane, ni
   apteka: protiv + dopełniacz, dvaput dnevno (a2-13), stopień wyższy bolje / više / manje + nego (a2-14), powtórka (a2-15).
 - **Moduł 4 „Praca i nauka”:** narzędnik po baviti se i s, kao + mianownik (a2-16), rozmowa o pracę: već, od, prije toga (a2-17),
   formalny e-mail i telefon: Poštovani, Molim vas da… (a2-18), nauka języka: sve bolje, Možete li govoriti sporije? (a2-19), powtórka (a2-20).
-- Ćwiczenia słuchania używają nagranych dialogów z `public/data/listening/hr-a2-dialogues.json` (wszystkie 10 są już w lekcjach).
+- **Moduł 5 „Zakupy i usługi”:** biernik przymiotnika (Tražim crnu jaknu, a2-21), sviđa mi se / sviđaju mi se + mi, ti, mu, joj (a2-22),
+  stopień wyższy przymiotników veći, jeftiniji, skuplji + od / nego, onaj (a2-23), reklamacja: Htio bih vratiti…, povrat novca (a2-24), powtórka (a2-25).
+- Ćwiczenia słuchania używają nagranych dialogów z `public/data/listening/hr-a2-dialogues.json` (13 dialogów; moduł 5 dodał
+  a2-trgovina-odjece, a2-novi-kaput, a2-povrat-robe — nagrania: `python tools/listening/generate_tts.py --manifest frontend/public/data/listening/hr-a2-dialogues.json`).
 - **Odmiana czasowników:** karta każdego nowego czasownika pokazuje czas teraźniejszy, przeszły i przyszły z nagraniem
   (`conjugation` w `scripts/lib/hr-morphology.mjs`); nieregularne formy dopisz w `PRES_OVERRIDES` / `PP_OVERRIDES`.
 - **Dziedziczenie A1:** ramy odpowiedzi (`{pp}`, `{acc}`, `{inf}`…) znają formy całego słownictwa A1, a generator ostrzega,
