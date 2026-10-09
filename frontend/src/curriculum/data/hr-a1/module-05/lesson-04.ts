@@ -584,12 +584,14 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "1 €",
                 "form": "jedan euro",
-                "meaning": "jedno euro"
+                "meaning": "jedno euro",
+                "audioSrc": "/audio/hr/a1/module-05/jedan-euro.mp3"
               },
               {
                 "base": "10 €",
                 "form": "deset eura",
-                "meaning": "dziesięć euro"
+                "meaning": "dziesięć euro",
+                "audioSrc": "/audio/hr/a1/module-05/deset-eura.mp3"
               },
               {
                 "base": "4,50 €",

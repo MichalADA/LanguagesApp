@@ -479,22 +479,26 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "on: brat, otac",
                 "form": "moj brat",
-                "meaning": "mój brat"
+                "meaning": "mój brat",
+                "audioSrc": "/audio/hr/a1/module-02/moj-brat.mp3"
               },
               {
                 "base": "ona: sestra, majka",
                 "form": "moja sestra",
-                "meaning": "moja siostra"
+                "meaning": "moja siostra",
+                "audioSrc": "/audio/hr/a1/module-02/moja-sestra.mp3"
               },
               {
                 "base": "ono: dijete",
                 "form": "moje dijete",
-                "meaning": "moje dziecko"
+                "meaning": "moje dziecko",
+                "audioSrc": "/audio/hr/a1/module-02/moje-dijete.mp3"
               },
               {
                 "base": "oni: roditelji",
                 "form": "moji roditelji",
-                "meaning": "moi rodzice"
+                "meaning": "moi rodzice",
+                "audioSrc": "/audio/hr/a1/module-02/moji-roditelji.mp3"
               }
             ]
           }

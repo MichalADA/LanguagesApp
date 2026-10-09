@@ -266,12 +266,14 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "Poljska",
                 "form": "iz Poljske",
-                "meaning": "z Polski"
+                "meaning": "z Polski",
+                "audioSrc": "/audio/hr/a1/module-01/iz-poljske.mp3"
               },
               {
                 "base": "Hrvatska",
                 "form": "iz Hrvatske",
-                "meaning": "z Chorwacji"
+                "meaning": "z Chorwacji",
+                "audioSrc": "/audio/hr/a1/module-01/iz-hrvatske.mp3"
               }
             ]
           },
@@ -281,12 +283,14 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "Poljska",
                 "form": "u Poljskoj",
-                "meaning": "w Polsce"
+                "meaning": "w Polsce",
+                "audioSrc": "/audio/hr/a1/module-01/u-poljskoj.mp3"
               },
               {
                 "base": "Hrvatska",
                 "form": "u Hrvatskoj",
-                "meaning": "w Chorwacji"
+                "meaning": "w Chorwacji",
+                "audioSrc": "/audio/hr/a1/module-01/u-hrvatskoj.mp3"
               }
             ]
           }

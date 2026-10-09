@@ -373,17 +373,20 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "1",
                 "form": "Jedan je sat.",
-                "meaning": "Jest pierwsza."
+                "meaning": "Jest pierwsza.",
+                "audioSrc": "/audio/hr/a1/module-03/jedan-je-sat.mp3"
               },
               {
                 "base": "2, 3, 4",
                 "form": "Dva / Tri / Četiri su sata.",
-                "meaning": "Jest druga / trzecia / czwarta."
+                "meaning": "Jest druga / trzecia / czwarta.",
+                "audioSrc": "/audio/hr/a1/module-03/dva-tri-cetiri-su-sata.mp3"
               },
               {
                 "base": "5–12",
                 "form": "Pet / Sedam / Dvanaest je sati.",
-                "meaning": "Jest piąta / siódma / dwunasta."
+                "meaning": "Jest piąta / siódma / dwunasta.",
+                "audioSrc": "/audio/hr/a1/module-03/pet-sedam-dvanaest-je-sati.mp3"
               }
             ]
           },
@@ -393,12 +396,14 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "u + liczba",
                 "form": "u četiri",
-                "meaning": "o czwartej"
+                "meaning": "o czwartej",
+                "audioSrc": "/audio/hr/a1/module-03/u-cetiri.mp3"
               },
               {
                 "base": "u pola + liczba",
                 "form": "u pola osam",
-                "meaning": "o wpół do ósmej"
+                "meaning": "o wpół do ósmej",
+                "audioSrc": "/audio/hr/a1/module-03/u-pola-osam.mp3"
               }
             ]
           }

@@ -466,17 +466,20 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "raditi",
                 "form": "radim · radiš · radi",
-                "meaning": "pracuję · pracujesz · pracuje"
+                "meaning": "pracuję · pracujesz · pracuje",
+                "audioSrc": "/audio/hr/a1/module-03/radim-radis-radi.mp3"
               },
               {
                 "base": "spavati",
                 "form": "spavam · spavaš · spava",
-                "meaning": "śpię · śpisz · śpi"
+                "meaning": "śpię · śpisz · śpi",
+                "audioSrc": "/audio/hr/a1/module-03/spavam-spavas-spava.mp3"
               },
               {
                 "base": "ustajati",
                 "form": "ustajem · ustaješ · ustaje",
-                "meaning": "wstaję · wstajesz · wstaje"
+                "meaning": "wstaję · wstajesz · wstaje",
+                "audioSrc": "/audio/hr/a1/module-03/ustajem-ustajes-ustaje.mp3"
               }
             ]
           },
@@ -486,12 +489,14 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "doručkovati",
                 "form": "doručkujem · doručkuješ · doručkuje",
-                "meaning": "jem śniadanie · jesz · je"
+                "meaning": "jem śniadanie · jesz · je",
+                "audioSrc": "/audio/hr/a1/module-03/doruckujem-doruckujes-doruckuje.mp3"
               },
               {
                 "base": "putovati",
                 "form": "putujem · putuješ · putuje",
-                "meaning": "podróżuję · podróżujesz · podróżuje"
+                "meaning": "podróżuję · podróżujesz · podróżuje",
+                "audioSrc": "/audio/hr/a1/module-03/putujem-putujes-putuje.mp3"
               }
             ]
           }

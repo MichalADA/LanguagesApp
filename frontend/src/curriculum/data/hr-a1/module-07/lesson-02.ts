@@ -451,22 +451,26 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "Split",
                 "form": "za Split",
-                "meaning": "do Splitu"
+                "meaning": "do Splitu",
+                "audioSrc": "/audio/hr/a1/module-07/za-split.mp3"
               },
               {
                 "base": "Zagreb",
                 "form": "za Zagreb",
-                "meaning": "do Zagrzebia"
+                "meaning": "do Zagrzebia",
+                "audioSrc": "/audio/hr/a1/module-07/za-zagreb.mp3"
               },
               {
                 "base": "Rijeka",
                 "form": "za Rijeku",
-                "meaning": "do Rijeki"
+                "meaning": "do Rijeki",
+                "audioSrc": "/audio/hr/a1/module-07/za-rijeku.mp3"
               },
               {
                 "base": "Pula",
                 "form": "za Pulu",
-                "meaning": "do Puli"
+                "meaning": "do Puli",
+                "audioSrc": "/audio/hr/a1/module-07/za-pulu.mp3"
               }
             ]
           }

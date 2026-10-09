@@ -507,7 +507,8 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "25",
                 "form": "dvadeset pet",
-                "meaning": "dwadzieścia pięć"
+                "meaning": "dwadzieścia pięć",
+                "audioSrc": "/audio/hr/a1/module-01/dvadeset-pet.mp3"
               },
               {
                 "base": "30",
@@ -518,7 +519,8 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "34",
                 "form": "trideset četiri",
-                "meaning": "trzydzieści cztery"
+                "meaning": "trzydzieści cztery",
+                "audioSrc": "/audio/hr/a1/module-01/trideset-cetiri.mp3"
               }
             ]
           },
@@ -528,12 +530,14 @@ export const LESSON: GeneratedLesson = {
               {
                 "base": "2, 3, 4 (22, 34…)",
                 "form": "dvije / tri / četiri godine",
-                "meaning": "2–4 lata"
+                "meaning": "2–4 lata",
+                "audioSrc": "/audio/hr/a1/module-01/dvije-tri-cetiri-godine.mp3"
               },
               {
                 "base": "5–20 (25, 30…)",
                 "form": "pet / dvadeset godina",
-                "meaning": "5 i więcej lat"
+                "meaning": "5 i więcej lat",
+                "audioSrc": "/audio/hr/a1/module-01/pet-dvadeset-godina.mp3"
               }
             ]
           }
