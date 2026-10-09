@@ -10,7 +10,7 @@ import Renderer, { act } from 'react-test-renderer';
 import ts from 'typescript';
 import { audioSlots } from '../scripts/lib/course-audio.mjs';
 
-/* Kurs A2 (moduły 1–5) — ten sam generator i player co A1, osobny poziom. */
+/* Kurs A2 (8 modułów, jak A1: rozmowa, Wielka powtórka i test na końcu) — ten sam generator i player co A1, osobny poziom. */
 
 const require = createRequire(import.meta.url);
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -89,12 +89,13 @@ test('A2: generator — wygenerowane pliki są aktualne względem CSV', () => {
 
 test('A2: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 bez zmian', () => {
   assert.equal(a2.available, true);
-  assert.deepEqual(a2.modules.map((m) => [m.id, m.title]), [['a2-01', 'Opowiadam o przeszłości'], ['a2-02', 'Plany i obowiązki'], ['a2-03', 'Zdrowie'], ['a2-04', 'Praca i nauka'], ['a2-05', 'Zakupy i usługi']]);
+  assert.deepEqual(a2.modules.map((m) => [m.id, m.title]), [['a2-01', 'Opowiadam o przeszłości'], ['a2-02', 'Plany i obowiązki'], ['a2-03', 'Zdrowie'], ['a2-04', 'Praca i nauka'], ['a2-05', 'Zakupy i usługi'], ['a2-06', 'Mieszkanie'], ['a2-07', 'Urzędy i usługi'], ['a2-08', 'Ja i świat']]);
   for (const [i, module] of a2.modules.entries()) {
     const m = String(i + 1).padStart(2, '0');
     assert.equal(module.levelId, 'A2');
     assert.deepEqual(module.lessons.map((l) => l.id), [1, 2, 3, 4, 5].map((n) => `a2-${m}-0${n}`));
-    assert.deepEqual(module.lessons.map((l) => l.kind), ['lesson', 'lesson', 'lesson', 'lesson', 'review']);
+    const kinds = i === 7 ? ['lesson', 'lesson', 'conversation', 'spiral', 'test'] : ['lesson', 'lesson', 'lesson', 'lesson', 'review'];
+    assert.deepEqual(module.lessons.map((l) => l.kind), kinds);
   }
   const a1 = PL_HR_OUTLINE.levels.find((level) => level.id === 'A1');
   assert.equal(a1.modules.flatMap((m) => m.lessons).length, 40);
@@ -103,7 +104,9 @@ test('A2: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 bez zmian
   assert.equal(nextLessonId(a2, 'a2-01-05'), 'a2-02-01');
   assert.equal(nextLessonId(a2, 'a2-02-05'), 'a2-03-01');
   assert.equal(nextLessonId(a2, 'a2-04-05'), 'a2-05-01');
-  assert.equal(nextLessonId(a2, 'a2-05-05'), null);
+  assert.equal(nextLessonId(a2, 'a2-05-05'), 'a2-06-01');
+  assert.equal(nextLessonId(a2, 'a2-08-05'), null);
+  assert.equal(lessons.length, 40);
   // Moduł 2 otwiera się po bieżącym module, tak jak w A1.
   assert.equal(deriveLevel(a2, new Set()).modules[1].status, 'locked');
 });
@@ -255,6 +258,49 @@ const OPEN_REPLIES = [
     miss: ['Sviđa se.'] },
   { lesson: 'a2-05-05', reply: 2, hit: ['Ne, bilo je na popustu.', 'Bilo je jeftinije nego prošli put.', 'Bilo je skupo.', 'Trideset eura.', 'Malo preskupo.'],
     miss: ['Ne znam.'] },
+  // Moduł 6: mieszkanie
+  { lesson: 'a2-06-01', reply: 0, hit: ['Živim u stanu na trećem katu.', 'Živim u kući s vrtom.', 'U stanu u centru.', 'Ja živim u maloj kući.'], miss: ['Živim stan.'] },
+  { lesson: 'a2-06-01', reply: 1, hit: ['Stan ima dvije spavaće sobe.', 'Ima tri sobe.', 'Dvije sobe.', 'Moj stan ima jednu sobu i kuhinju.'], miss: ['Ima dva soba.'] },
+  { lesson: 'a2-06-01', reply: 2, hit: ['Na terasi.', 'U dnevnom boravku.', 'Najradije sjedim na balkonu.', 'Čitam u kuhinji.'], miss: ['Terasa.'] },
+  { lesson: 'a2-06-02', reply: 0, hit: ['Da. Koliko iznosi stanarina?', 'Koliko je stanarina?', 'Da, zovem zbog stana. Koliko iznosi najam?', 'Kolika je stanarina?'], miss: ['Stanarina?'] },
+  { lesson: 'a2-06-03', reply: 0, hit: ['Ključevi su na stolu.', 'Ispod kreveta.', 'Na polici pored televizora.', 'Tvoji ključevi su u ormaru.'], miss: ['Stol.'] },
+  { lesson: 'a2-06-03', reply: 1, hit: ['Mačka spava ispod kreveta.', 'Na kauču.', 'Mačka je na fotelji.', 'Iza televizora.'], miss: ['Spava.'] },
+  { lesson: 'a2-06-04', reply: 0, hit: ['Pokvario se bojler.', 'Grijanje ne radi.', 'Nemamo struje.', 'Perilica se pokvarila.', 'Iz slavine curi voda.', 'Nemamo tople vode od jučer.'], miss: ['Bojler pokvario.', 'Se pokvario bojler.'] },
+  { lesson: 'a2-06-04', reply: 1, hit: ['Jučer navečer.', 'Od jutros.', 'Prije dva dana.', 'To je bilo jučer.'], miss: ['Sutra.'] },
+  { lesson: 'a2-06-04', reply: 2, hit: ['U koliko sati će doći?', 'Kada će doći majstor?', 'Kad dolazi?', 'U koliko sati majstor dolazi?'], miss: ['Majstor?'] },
+  { lesson: 'a2-06-05', reply: 0, hit: ['Malen je, ali ima balkon.', 'Stan je velik i svijetao.', 'Iz dnevnog boravka imam lijep pogled na more.', 'Ima dvije sobe i terasu.'], miss: [] },
+  { lesson: 'a2-06-05', reply: 1, hit: ['Susjedi su vrlo ljubazni.', 'Ljubazni su.', 'Malo glasni.', 'Moji susjedi su jako dragi.'], miss: ['Ljubazan.'] },
+  { lesson: 'a2-06-05', reply: 2, hit: ['Ne, hvala, majstor je popravio grijanje.', 'Da, trebam pomoć s ormarom.', 'Ne, hvala.'], miss: ['Možda.'] },
+  // Moduł 7: urzędy i usługi
+  { lesson: 'a2-07-01', reply: 0, hit: ['Htio bih poslati paket u Poljsku.', 'Htjela bih poslati pismo u Hrvatsku.', 'Trebam poslati razglednicu u Njemačku.', 'Želim poslati paket preporučeno u Poljsku.'], miss: ['Poslati paket.', 'Htio bih poslati paket u Poljskoj.'] },
+  { lesson: 'a2-07-01', reply: 2, hit: ['Da, trebam tri marke.', 'Imate li omotnicu?', 'Molim pet maraka.', 'Trebam jednu marku za Poljsku.'], miss: ['Marka.'] },
+  { lesson: 'a2-07-02', reply: 0, hit: ['Htio bih otvoriti tekući račun.', 'Moram podići novac.', 'Želim uplatiti petsto eura.', 'Htjela bih mijenjati novac.'], miss: ['Račun.'] },
+  { lesson: 'a2-07-02', reply: 1, hit: ['Imam, izvolite.', 'Nemam, ali imam putovnicu.', 'Da, imam je.'], miss: ['Sam.'] },
+  { lesson: 'a2-07-02', reply: 2, hit: ['Ima li naknade za podizanje novca?', 'Gdje je najbliži bankomat?', 'Koliko je naknada?', 'Ima li bankomat ovdje?'], miss: ['Bankomat.'] },
+  { lesson: 'a2-07-03', reply: 0, hit: ['Htjela bih rezervirati sobu od petog do sedmog srpnja.', 'Htio bih rezervirati sobu od prvog do petog kolovoza.', 'Trebam dvokrevetnu sobu.', 'Htio bih rezervirati sobu za dvije osobe.'], miss: ['Soba od petog.'] },
+  { lesson: 'a2-07-03', reply: 1, hit: ['Je li doručak uključen?', 'Je li otkazivanje besplatno?', 'Imate li parking?', 'Je li parking besplatan?'], miss: ['Doručak.'] },
+  { lesson: 'a2-07-04', reply: 0, hit: ['Trebam prijaviti boravak.', 'Htio bih predati zahtjev.', 'Moram potpisati dokument.', 'Došla sam zbog putovnice.'], miss: ['Zahtjev.'] },
+  { lesson: 'a2-07-04', reply: 1, hit: ['Gdje se plaća?', 'Gdje moram potpisati?', 'Gdje se plaća pristojba?', 'Gdje se predaje zahtjev?'], miss: ['Gdje plaća se?'] },
+  { lesson: 'a2-07-05', reply: 0, hit: ['Bio sam na pošti i u banci.', 'Bila sam u uredu.', 'Ja sam bio u banci.'], miss: ['Sam bio na pošti.', 'Bio na pošti.'] },
+  { lesson: 'a2-07-05', reply: 1, hit: ['Podigla sam novac na bankomatu.', 'Otvorio sam račun.', 'Uplatila sam novac.'], miss: ['Sam otvorio račun.'] },
+  { lesson: 'a2-07-05', reply: 2, hit: ['Jesam, ali moram doći opet.', 'Nisam, nedostaje mi kopija.', 'Jesam.'], miss: ['Sam.'] },
+  // Moduł 8: ja i świat
+  { lesson: 'a2-08-01', reply: 0, hit: ['Odrastao sam u Krakovu.', 'Odrasla sam u malom gradu.', 'Na selu.', 'U Gdanjsku.'], miss: ['Sam odrastao u Krakovu.'] },
+  { lesson: 'a2-08-01', reply: 1, hit: ['Volio sam igrati nogomet.', 'Nekad sam obožavao crtiće.', 'Voljela sam čitati.', 'Često smo se igrali vani.', 'Igrao sam se s prijateljima.'], miss: ['Sam volio nogomet.'] },
+  { lesson: 'a2-08-01', reply: 2, hit: ['Sjećam se svog prvog bicikla.', 'Sjećam se ljeta kod bake.', 'Najviše se sjećam mora.'], miss: ['Sjećam svog bicikla.'] },
+  { lesson: 'a2-08-02', reply: 0, hit: ['Mislim da je Zagreb lijep grad.', 'Po mom mišljenju, Zagreb je zanimljiv.', 'Zagreb je super grad.', 'Iskreno, malo je dosadan.'], miss: ['Lijep.'] },
+  { lesson: 'a2-08-02', reply: 1, hit: ['Slažem se, Split je na moru.', 'Ne slažem se, Zagreb je zanimljiviji.', 'U pravu si.', 'Imaš pravo.', 'Možda.'], miss: ['Slažem.'] },
+  { lesson: 'a2-08-03', reply: 0, hit: ['Iz Poljske sam i živim ovdje godinu dana.', 'Ja sam iz Poljske i tu sam tri mjeseca.', 'Iz Krakova sam.', 'Živim ovdje već dvije godine.'], miss: ['Poljska.'] },
+  { lesson: 'a2-08-03', reply: 1, hit: ['Radim kao programer i jako mi se sviđa.', 'Bavim se turizmom.', 'Studiram i učim hrvatski.', 'Radim u banci, ali nije mi zanimljivo.'], miss: ['Programer.'] },
+  { lesson: 'a2-08-03', reply: 2, hit: ['Prošli vikend sam bio na moru.', 'Bila sam kod kuće.', 'U subotu smo bili u gradu.'], miss: ['Sam bio na moru.'] },
+  { lesson: 'a2-08-03', reply: 3, hit: ['Ljeti ću putovati po Dalmaciji.', 'Ići ću na more.', 'Planiram ići u Split.', 'U kolovozu ćemo ići u Istru.'], miss: ['Ću ići na more.'] },
+  { lesson: 'a2-08-03', reply: 4, hit: ['Mislim da je odlična.', 'Odlična je!', 'Sviđa mi se riba.', 'Iskreno, malo je preslana.'], miss: ['Hrana.'] },
+  { lesson: 'a2-08-03', reply: 5, hit: ['Naravno! Javit ću ti se.', 'Može, evo ga.', 'Radije ne, ali vidimo se ovdje.'], miss: ['Broj.'] },
+  { lesson: 'a2-08-03', reply: 6, hit: ['I meni! Vidimo se!', 'Bilo mi je drago.', 'Vidimo se uskoro!', 'Bok, čujemo se!'], miss: ['Hvala, zdravo.'] },
+  { lesson: 'a2-08-04', reply: 0, hit: ['Puno sam radio.', 'Bila sam u Zagrebu.', 'Ovaj tjedan sam učio hrvatski.'], miss: ['Sam radio.'] },
+  { lesson: 'a2-08-04', reply: 1, hit: ['Ići ću na izlet.', 'Ostat ću kod kuće.', 'U subotu ću igrati tenis.'], miss: ['Ću ići.'] },
+  { lesson: 'a2-08-04', reply: 2, hit: ['Onda ću ostati kod kuće.', 'Ostat ću kod kuće.', 'Onda idem u kino.'], miss: ['Ću ostati kod kuće.'] },
+  { lesson: 'a2-08-04', reply: 3, hit: ['Mislim da je sve bolji.', 'Napredujem, ali još griješim.', 'Sve bolje!', 'Iskreno, još griješim.'], miss: ['Dobar.'] },
 ];
 
 test('A2: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {
@@ -332,4 +378,16 @@ async function walk(content) {
 
 test('A2: wszystkie lekcje da się otworzyć i przejść w playerze bez błędów', async () => {
   for (const lesson of lessons) assert.equal(await walk(generated.get(lesson.id).content), 1, `${lesson.id}: onComplete`);
+});
+
+test('A2: lekcja 40 to test poziomu z sześcioma sekcjami, a 39 to Wielka powtórka A2', () => {
+  const content = generated.get('a2-08-05').content;
+  assert.equal(content.mode, 'test');
+  const sections = new Set(content.steps.map((s) => s.section).filter(Boolean));
+  assert.deepEqual([...sections].sort(), ['grammar', 'listening', 'production', 'reading', 'translation', 'vocabulary']);
+  assert.ok(content.steps.find((s) => s.type === 'listening').lines.every((l) => l.audio && existsSync(join(PUBLIC, l.audio))));
+  assert.equal(content.steps.at(-1).title, 'Wynik testu A2');
+  const spiral = generated.get('a2-08-04').content;
+  assert.match(spiral.steps[0].body, /całego A2/);
+  assert.ok(spiral.steps.filter((s) => s.type === 'gap').length >= 4);
 });

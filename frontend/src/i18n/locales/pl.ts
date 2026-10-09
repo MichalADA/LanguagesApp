@@ -299,7 +299,7 @@ export const pl: Dictionary = {
             "strong": "Dobrze opanowane",
             "review": "Warto powtórzyć",
             "productionNote": "Wypowiedź pisemna nie jest liczona do wyniku — porównaj ją z przykładem.",
-            "testAdvice": "Wróć do lekcji z tych obszarów albo zrób Wielką powtórkę A1. Test możesz powtórzyć w każdej chwili."
+            "testAdvice": "Wróć do lekcji z tych obszarów albo zrób Wielką powtórkę poziomu. Test możesz powtórzyć w każdej chwili."
     }
 },
   home: {

@@ -334,6 +334,181 @@
         ],
         "correctOptionId": "refund"
       }
+    },
+    {
+      "id": "a2-najam-stana",
+      "level": "A2",
+      "titlePl": "Mieszkanie do wynajęcia",
+      "titleEn": "A flat to rent",
+      "topic": "dom",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Dobar dan, zovem zbog stana iz oglasa. Je li još slobodan?", "textPl": "Dzień dobry, dzwonię w sprawie mieszkania z ogłoszenia. Czy jest jeszcze wolne?", "audioPath": "/audio/listening/hr-a2/a2-najam-stana/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Je, slobodan je od prvog lipnja.", "textPl": "Tak, jest wolne od pierwszego czerwca.", "audioPath": "/audio/listening/hr-a2/a2-najam-stana/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Koliko iznosi stanarina?", "textPl": "Ile wynosi czynsz?", "audioPath": "/audio/listening/hr-a2/a2-najam-stana/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Petsto eura mjesečno, a režije su oko osamdeset eura.", "textPl": "Pięćset euro miesięcznie, a opłaty to około osiemdziesiąt euro.", "audioPath": "/audio/listening/hr-a2/a2-najam-stana/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "Treba li platiti polog?", "textPl": "Czy trzeba zapłacić kaucję?", "audioPath": "/audio/listening/hr-a2/a2-najam-stana/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Da, jednu stanarinu. Možete doći pogledati stan sutra u pet.", "textPl": "Tak, jeden czynsz. Może Pani przyjść obejrzeć mieszkanie jutro o piątej.", "audioPath": "/audio/listening/hr-a2/a2-najam-stana/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Ile wynosi czynsz?",
+        "options": [
+          { "id": "rent-500", "textPl": "500 euro, opłaty osobno" },
+          { "id": "rent-580", "textPl": "580 euro razem z opłatami" },
+          { "id": "rent-800", "textPl": "800 euro" }
+        ],
+        "correctOptionId": "rent-500"
+      }
+    },
+    {
+      "id": "a2-kvar-u-stanu",
+      "level": "A2",
+      "titlePl": "Awaria w mieszkaniu",
+      "titleEn": "A breakdown in the flat",
+      "topic": "dom",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Dobar dan, ovdje Ana iz stana broj sedam. Pokvario se bojler.", "textPl": "Dzień dobry, mówi Ana z mieszkania numer siedem. Zepsuł się bojler.", "audioPath": "/audio/listening/hr-a2/a2-kvar-u-stanu/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Od kada nemate tople vode?", "textPl": "Od kiedy nie ma Pani ciepłej wody?", "audioPath": "/audio/listening/hr-a2/a2-kvar-u-stanu/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Od jučer navečer. A iz slavine u kuhinji curi voda.", "textPl": "Od wczoraj wieczorem. A z kranu w kuchni cieknie woda.", "audioPath": "/audio/listening/hr-a2/a2-kvar-u-stanu/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Žao mi je. Poslat ću majstora sutra ujutro.", "textPl": "Przykro mi. Przyślę fachowca jutro rano.", "audioPath": "/audio/listening/hr-a2/a2-kvar-u-stanu/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "U koliko sati će doći? Radim do četiri.", "textPl": "O której przyjdzie? Pracuję do czwartej.", "audioPath": "/audio/listening/hr-a2/a2-kvar-u-stanu/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Doći će u osam, prije vašeg posla.", "textPl": "Przyjdzie o ósmej, przed Pani pracą.", "audioPath": "/audio/listening/hr-a2/a2-kvar-u-stanu/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Kiedy przyjdzie fachowiec?",
+        "options": [
+          { "id": "tomorrow-8", "textPl": "Jutro o ósmej rano" },
+          { "id": "tonight", "textPl": "Dziś wieczorem" },
+          { "id": "tomorrow-4", "textPl": "Jutro o czwartej po południu" }
+        ],
+        "correctOptionId": "tomorrow-8"
+      }
+    },
+    {
+      "id": "a2-na-posti",
+      "level": "A2",
+      "titlePl": "Na poczcie",
+      "titleEn": "At the post office",
+      "topic": "usługi",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Dobar dan. Htio bih poslati ovaj paket u Poljsku.", "textPl": "Dzień dobry. Chciałbym wysłać tę paczkę do Polski.", "audioPath": "/audio/listening/hr-a2/a2-na-posti/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Stavite ga na vagu, molim. Dva kilograma.", "textPl": "Proszę położyć ją na wadze. Dwa kilogramy.", "audioPath": "/audio/listening/hr-a2/a2-na-posti/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Koliko košta poštarina?", "textPl": "Ile kosztuje przesyłka?", "audioPath": "/audio/listening/hr-a2/a2-na-posti/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Dvadeset eura. Želite li ga poslati preporučeno?", "textPl": "Dwadzieścia euro. Chce Pan wysłać ją poleconym?", "audioPath": "/audio/listening/hr-a2/a2-na-posti/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Da, molim. Kada će stići?", "textPl": "Tak, poproszę. Kiedy dotrze?", "audioPath": "/audio/listening/hr-a2/a2-na-posti/05-marko.mp3" },
+        { "speaker": "ana", "textHr": "Za pet do sedam dana.", "textPl": "Za pięć do siedmiu dni.", "audioPath": "/audio/listening/hr-a2/a2-na-posti/06-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Kiedy paczka dotrze do Polski?",
+        "options": [
+          { "id": "5-7-days", "textPl": "Za pięć do siedmiu dni" },
+          { "id": "tomorrow", "textPl": "Jutro" },
+          { "id": "2-weeks", "textPl": "Za dwa tygodnie" }
+        ],
+        "correctOptionId": "5-7-days"
+      }
+    },
+    {
+      "id": "a2-u-banci",
+      "level": "A2",
+      "titlePl": "W banku",
+      "titleEn": "At the bank",
+      "topic": "usługi",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Dobar dan. Htjela bih otvoriti tekući račun.", "textPl": "Dzień dobry. Chciałabym otworzyć konto osobiste.", "audioPath": "/audio/listening/hr-a2/a2-u-banci/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Naravno. Trebam vašu osobnu iskaznicu ili putovnicu.", "textPl": "Oczywiście. Potrzebuję Pani dowodu osobistego albo paszportu.", "audioPath": "/audio/listening/hr-a2/a2-u-banci/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Izvolite putovnicu. Ima li mjesečna naknada?", "textPl": "Proszę, paszport. Czy jest opłata miesięczna?", "audioPath": "/audio/listening/hr-a2/a2-u-banci/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Prvih šest mjeseci je besplatno, a poslije dva eura mjesečno.", "textPl": "Pierwsze sześć miesięcy jest bezpłatne, a potem dwa euro miesięcznie.", "audioPath": "/audio/listening/hr-a2/a2-u-banci/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "A mogu li podizati novac na svakom bankomatu?", "textPl": "A czy mogę wypłacać pieniądze w każdym bankomacie?", "audioPath": "/audio/listening/hr-a2/a2-u-banci/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Možete, ali na našim bankomatima nema naknade.", "textPl": "Może Pani, ale w naszych bankomatach nie ma opłaty.", "audioPath": "/audio/listening/hr-a2/a2-u-banci/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Ile kosztuje konto po sześciu miesiącach?",
+        "options": [
+          { "id": "2-eur", "textPl": "Dwa euro miesięcznie" },
+          { "id": "free", "textPl": "Jest darmowe" },
+          { "id": "6-eur", "textPl": "Sześć euro miesięcznie" }
+        ],
+        "correctOptionId": "2-eur"
+      }
+    },
+    {
+      "id": "a2-rezervacija-hotela",
+      "level": "A2",
+      "titlePl": "Rezerwacja hotelu",
+      "titleEn": "Booking a hotel",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Hotel Adria, dobar dan.", "textPl": "Hotel Adria, dzień dobry.", "audioPath": "/audio/listening/hr-a2/a2-rezervacija-hotela/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Dobar dan. Htjela bih rezervirati dvokrevetnu sobu od petog do osmog srpnja.", "textPl": "Dzień dobry. Chciałabym zarezerwować pokój dwuosobowy od piątego do ósmego lipca.", "audioPath": "/audio/listening/hr-a2/a2-rezervacija-hotela/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Imamo slobodnu sobu s pogledom na more. Noćenje s doručkom je sto eura.", "textPl": "Mamy wolny pokój z widokiem na morze. Nocleg ze śniadaniem to sto euro.", "audioPath": "/audio/listening/hr-a2/a2-rezervacija-hotela/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Je li otkazivanje besplatno?", "textPl": "Czy anulowanie jest bezpłatne?", "audioPath": "/audio/listening/hr-a2/a2-rezervacija-hotela/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Da, do tri dana prije dolaska.", "textPl": "Tak, do trzech dni przed przyjazdem.", "audioPath": "/audio/listening/hr-a2/a2-rezervacija-hotela/05-marko.mp3" },
+        { "speaker": "ana", "textHr": "Odlično, rezervirat ću je.", "textPl": "Świetnie, zarezerwuję go.", "audioPath": "/audio/listening/hr-a2/a2-rezervacija-hotela/06-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "Do kiedy można bezpłatnie anulować rezerwację?",
+        "options": [
+          { "id": "3-days", "textPl": "Do trzech dni przed przyjazdem" },
+          { "id": "5th", "textPl": "Do piątego lipca" },
+          { "id": "never", "textPl": "Nie można anulować" }
+        ],
+        "correctOptionId": "3-days"
+      }
+    },
+    {
+      "id": "a2-djetinjstvo",
+      "level": "A2",
+      "titlePl": "Dzieciństwo",
+      "titleEn": "Childhood",
+      "topic": "wspomnienia",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "ana", "textHr": "Marko, gdje si odrastao?", "textPl": "Marko, gdzie się wychowałeś?", "audioPath": "/audio/listening/hr-a2/a2-djetinjstvo/01-ana.mp3" },
+        { "speaker": "marko", "textHr": "Odrastao sam na malom selu blizu Osijeka.", "textPl": "Wychowałem się na małej wsi niedaleko Osijeku.", "audioPath": "/audio/listening/hr-a2/a2-djetinjstvo/02-marko.mp3" },
+        { "speaker": "ana", "textHr": "Što si volio raditi kad si bio dijete?", "textPl": "Co lubiłeś robić, kiedy byłeś dzieckiem?", "audioPath": "/audio/listening/hr-a2/a2-djetinjstvo/03-ana.mp3" },
+        { "speaker": "marko", "textHr": "Svako ljeto sam bio kod djeda i bake. Igrali smo se vani cijeli dan.", "textPl": "Każde lato spędzałem u dziadków. Bawiliśmy się na dworze cały dzień.", "audioPath": "/audio/listening/hr-a2/a2-djetinjstvo/04-marko.mp3" },
+        { "speaker": "ana", "textHr": "Zvuči lijepo. Ja sam odrasla u gradu, pa nisam imala takvo djetinjstvo.", "textPl": "Brzmi pięknie. Ja wychowałam się w mieście, więc nie miałam takiego dzieciństwa.", "audioPath": "/audio/listening/hr-a2/a2-djetinjstvo/05-ana.mp3" },
+        { "speaker": "marko", "textHr": "Zato se još uvijek rado sjećam toga vremena.", "textPl": "Dlatego wciąż chętnie wspominam tamten czas.", "audioPath": "/audio/listening/hr-a2/a2-djetinjstvo/06-marko.mp3" }
+      ],
+      "question": {
+        "promptPl": "Gdzie Marko spędzał każde lato?",
+        "options": [
+          { "id": "grandparents", "textPl": "U dziadków na wsi" },
+          { "id": "sea", "textPl": "Nad morzem" },
+          { "id": "city", "textPl": "W mieście" }
+        ],
+        "correctOptionId": "grandparents"
+      }
+    },
+    {
+      "id": "a2-test-preseljenje",
+      "level": "A2",
+      "titlePl": "Przeprowadzka",
+      "titleEn": "Moving house",
+      "topic": "dom",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        { "speaker": "marko", "textHr": "Bok, Ana! Čujem da se seliš.", "textPl": "Cześć, Ana! Słyszę, że się przeprowadzasz.", "audioPath": "/audio/listening/hr-a2/a2-test-preseljenje/01-marko.mp3" },
+        { "speaker": "ana", "textHr": "Da, u subotu se selim u novi stan u centru.", "textPl": "Tak, w sobotę przeprowadzam się do nowego mieszkania w centrum.", "audioPath": "/audio/listening/hr-a2/a2-test-preseljenje/02-ana.mp3" },
+        { "speaker": "marko", "textHr": "Super! Je li veći od starog?", "textPl": "Super! Jest większe od starego?", "audioPath": "/audio/listening/hr-a2/a2-test-preseljenje/03-marko.mp3" },
+        { "speaker": "ana", "textHr": "Malo je manji, ali je bliže poslu i ima balkon.", "textPl": "Jest trochę mniejsze, ale bliżej pracy i ma balkon.", "audioPath": "/audio/listening/hr-a2/a2-test-preseljenje/04-ana.mp3" },
+        { "speaker": "marko", "textHr": "Trebaš li pomoć sa selidbom?", "textPl": "Potrzebujesz pomocy przy przeprowadzce?", "audioPath": "/audio/listening/hr-a2/a2-test-preseljenje/05-marko.mp3" },
+        { "speaker": "ana", "textHr": "Bilo bi super! Dođi u subotu u devet ujutro.", "textPl": "Byłoby super! Przyjdź w sobotę o dziewiątej rano.", "audioPath": "/audio/listening/hr-a2/a2-test-preseljenje/06-ana.mp3" }
+      ],
+      "question": {
+        "promptPl": "O której Marko ma przyjść w sobotę?",
+        "options": [
+          { "id": "9am", "textPl": "O dziewiątej rano" },
+          { "id": "noon", "textPl": "W południe" },
+          { "id": "evening", "textPl": "Wieczorem" }
+        ],
+        "correctOptionId": "9am"
+      }
     }
   ]
 }

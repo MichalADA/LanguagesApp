@@ -861,11 +861,16 @@ function buildSpiral(bucket) {
   const s = d.spiral;
   const steps = [];
 
+  // Wstęp i tytuł listy słów z didactics (spiral.intro, spiral.vocabTitle); domyślnie tekst Wielkiej powtórki A1.
+  const intro = s.intro ?? {
+    body: "Krótkie serie z całego poziomu: słowa, miejsca, jedzenie, hobby, podróże — i trzy czasy: teraz, wczoraj, jutro.",
+    goals: ["przypomnisz sobie słowa ze wszystkich modułów", "uzupełnisz zdania w czasie teraźniejszym, przeszłym i przyszłym", "przetłumaczysz zdania z codziennych sytuacji", "porozmawiasz o sobie, wczoraj i jutrze"],
+  };
   steps.push({
     id: "intro", stage: "intro", type: "intro", title: lesson.lesson_title_pl,
-    body: "Krótkie serie z całego poziomu: słowa, miejsca, jedzenie, hobby, podróże — i trzy czasy: teraz, wczoraj, jutro.",
+    body: intro.body,
     goalsTitle: "W tej powtórce",
-    goals: ["przypomnisz sobie słowa ze wszystkich modułów", "uzupełnisz zdania w czasie teraźniejszym, przeszłym i przyszłym", "przetłumaczysz zdania z codziennych sytuacji", "porozmawiasz o sobie, wczoraj i jutrze"],
+    goals: intro.goals,
   });
 
   // Seria 1: słowa z różnych modułów — do wpisania po chorwacku.
@@ -873,7 +878,7 @@ function buildSpiral(bucket) {
     const word = takeWord(moduleLessons(m), i);
     if (word) steps.push(recallStep(`recall-${i + 1}`, word));
   });
-  steps.push(vocabListStep("vocab", "words", "Słowa o nauce języka", vocabulary));
+  steps.push(vocabListStep("vocab", "words", s.vocabTitle ?? "Słowa o nauce języka", vocabulary));
 
   // Seria 2: trzy czasy i konstrukcje w kontekście — luki w zdaniach, których uczeń jeszcze nie ćwiczył.
   steps.push(structureStep(id, d.grammar));

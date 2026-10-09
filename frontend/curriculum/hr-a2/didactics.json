@@ -18,6 +18,15 @@
     },
     "5": {
       "description": "Kupujesz ubrania (rozmiar, kolor), mówisz, co ci się podoba, porównujesz ceny i składasz reklamację."
+    },
+    "6": {
+      "description": "Opisujesz mieszkanie, wynajmujesz je, mówisz, gdzie co stoi, i zgłaszasz awarię."
+    },
+    "7": {
+      "description": "Załatwiasz sprawy na poczcie, w banku, w hotelu i w urzędzie."
+    },
+    "8": {
+      "description": "Wspomnienia, opinie, cała rozmowa, Wielka powtórka i test A2."
     }
   },
   "lessons": {
@@ -4646,6 +4655,2633 @@
         ],
         "minSentences": 3,
         "sample": "Kupila sam plavu haljinu. Jako mi se sviđa. Bila je na popustu, samo trideset eura."
+      }
+    },
+    "a2-26": {
+      "grammar": {
+        "title": "U dnevnom boravku",
+        "text": "Gdzie? u / na + miejscownik. Rodzaj żeński: -a → -i (kuhinja → u kuhinji, terasa → na terasi, kupaonica → u kupaonici). Męski i nijaki: -u (balkon → na balkonu, prizemlje → u prizemlju), a przymiotnik -om / -oj: u dnevnom boravku, u spavaćoj sobi, na trećem katu. Czego nie ma: nema + dopełniacz — Zgrada nema dizala.",
+        "table": [
+          {
+            "label": "gdje? (u / na + miejscownik)",
+            "rows": [
+              {
+                "base": "kuhinja",
+                "form": "u kuhinji",
+                "meaning": "w kuchni"
+              },
+              {
+                "base": "spavaća soba",
+                "form": "u spavaćoj sobi",
+                "meaning": "w sypialni"
+              },
+              {
+                "base": "dnevni boravak",
+                "form": "u dnevnom boravku",
+                "meaning": "w salonie"
+              },
+              {
+                "base": "terasa",
+                "form": "na terasi",
+                "meaning": "na tarasie"
+              },
+              {
+                "base": "treći kat",
+                "form": "na trećem katu",
+                "meaning": "na trzecim piętrze"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          7
+        ],
+        "tip": "Piętro: na katu (na piętrze), ale u prizemlju (na parterze) i u potkrovlju (na poddaszu)."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "boravku"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Mieszkam na drugim piętrze.",
+          "options": [
+            "Živim na drugi kat.",
+            "Živim na drugom katu.",
+            "Živim u drugom katu."
+          ],
+          "correct": 1,
+          "explanation": "na + miejscownik: drugi kat → na drugom katu."
+        }
+      ],
+      "model": {
+        "title": "Nowe mieszkanie",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Kakav je tvoj novi stan?",
+            "pl": "Jakie jest twoje nowe mieszkanie?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Malen, ali lijep. Ima dnevni boravak, spavaću sobu i terasu.",
+            "pl": "Małe, ale ładne. Ma salon, sypialnię i taras."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Na kojem je katu?",
+            "pl": "Na którym jest piętrze?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Na petom, a zgrada ima dizalo.",
+            "pl": "Na piątym, a budynek ma windę."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! Je li namješten?",
+            "pl": "Super! Jest umeblowane?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, ima čak i novi kauč.",
+            "pl": "Tak, ma nawet nową kanapę."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Gdzie mieszkasz?",
+        "partner": "Ivan",
+        "turns": [
+          {
+            "say": "Gdje živiš?",
+            "pl": "Gdzie mieszkasz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz krótko, gdzie mieszkasz (dom / mieszkanie, piętro).",
+              "accept": [
+                1,
+                "Živim u kući s vrtom."
+              ],
+              "open": true,
+              "pattern": "^(ja )?živim u (\\p{L}+ )?(stanu|kući|apartmanu|sobi|zgradi)( \\p{L}+){0,5}$|^u (\\p{L}+ )?(stanu|kući)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Koliko soba ima tvoj stan?",
+            "pl": "Ile pokoi ma twoje mieszkanie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, ile ma pokoi.",
+              "accept": [
+                2,
+                "Ima tri sobe."
+              ],
+              "open": true,
+              "pattern": "^((moj )?stan |kuća )?ima (jednu (spavaću )?sobu|(dvije|tri|četiri) (spavaće )?sobe|(pet|šest) (spavaćih )?soba)( i \\p{L}+( \\p{L}+)?)?$|^(jednu sobu|(dvije|tri|četiri) sobe|(pet|šest) soba)$"
+            }
+          },
+          {
+            "say": "A gdje najradije sjediš?",
+            "pl": "A gdzie najchętniej siedzisz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, w którym miejscu najchętniej siedzisz.",
+              "accept": [
+                "Na terasi.",
+                "U dnevnom boravku."
+              ],
+              "open": true,
+              "pattern": "^((najradije )?(sjedim|sam|čitam|pijem kavu|radim) )?(u|na) \\p{L}+( \\p{L}+)?$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Opisz swoje mieszkanie w 2–3 zdaniach.",
+        "points": [
+          "jakie mieszkanie i piętro",
+          "pokoje",
+          "co gdzie jest"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "stan",
+              "kuća",
+              "stanu",
+              "kući"
+            ],
+            "label": "mieszkanie"
+          },
+          {
+            "any": [
+              "kuhinji",
+              "kupaonici",
+              "boravku",
+              "sobi",
+              "balkonu",
+              "terasi",
+              "katu",
+              "prizemlju"
+            ],
+            "label": "gdzie? u / na + miejscownik"
+          }
+        ],
+        "sample": "Živim u stanu na drugom katu. Stan ima dnevni boravak i dvije spavaće sobe. Na balkonu imam puno cvijeća."
+      }
+    },
+    "a2-27": {
+      "grammar": {
+        "title": "Koliko iznosi stanarina?",
+        "text": "O mieszkanie pytasz krótko: Koliko iznosi stanarina? (ile wynosi czynsz), Jesu li režije uključene? (režije to liczba mnoga → jesu, uključene), Koliki je polog? Kada se mogu useliti? Daty: od + liczebnik porządkowy i miesiąc w dopełniaczu: od prvog lipnja (od pierwszego czerwca).",
+        "table": [
+          {
+            "label": "Pytania o mieszkanie",
+            "rows": [
+              {
+                "base": "czynsz",
+                "form": "Koliko iznosi stanarina?",
+                "meaning": "Ile wynosi czynsz?"
+              },
+              {
+                "base": "opłaty",
+                "form": "Jesu li režije uključene?",
+                "meaning": "Czy opłaty są wliczone?"
+              },
+              {
+                "base": "kaucja",
+                "form": "Koliki je polog?",
+                "meaning": "Jaka jest kaucja?"
+              },
+              {
+                "base": "wprowadzenie",
+                "form": "Kada se mogu useliti?",
+                "meaning": "Kiedy mogę się wprowadzić?"
+              }
+            ]
+          },
+          {
+            "label": "od + data",
+            "rows": [
+              {
+                "base": "1 czerwca",
+                "form": "od prvog lipnja",
+                "meaning": "od pierwszego czerwca"
+              },
+              {
+                "base": "5 lipca",
+                "form": "od petog srpnja",
+                "meaning": "od piątego lipca"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          3,
+          6,
+          8
+        ],
+        "tip": "Kvadrat to potocznie metr kwadratowy: Stan ima pedeset kvadrata."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "uključene"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 5,
+      "order": 8,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne pytanie.",
+          "prompt": "Czy opłaty są wliczone?",
+          "options": [
+            "Je li režije uključene?",
+            "Jesu li režije uključene?",
+            "Jesu li režije uključen?"
+          ],
+          "correct": 1,
+          "explanation": "režije to liczba mnoga: jesu li … uključene."
+        }
+      ],
+      "listening": "a2-najam-stana",
+      "model": {
+        "title": "Oglądanie mieszkania",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan, stan je stvarno lijep. Koliko iznosi stanarina?",
+            "pl": "Dzień dobry, mieszkanie jest naprawdę ładne. Ile wynosi czynsz?"
+          },
+          {
+            "speaker": "Stanodavac",
+            "hr": "Šesto eura mjesečno.",
+            "pl": "Sześćset euro miesięcznie."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Jesu li režije uključene?",
+            "pl": "Czy opłaty są wliczone?"
+          },
+          {
+            "speaker": "Stanodavac",
+            "hr": "Nisu, režije su oko sto eura. Polog je jedna stanarina.",
+            "pl": "Nie, opłaty to około sto euro. Kaucja to jeden czynsz."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Kada se mogu useliti?",
+            "pl": "Kiedy mogę się wprowadzić?"
+          },
+          {
+            "speaker": "Stanodavac",
+            "hr": "Od prvog lipnja.",
+            "pl": "Od pierwszego czerwca."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Telefon w sprawie mieszkania",
+        "partner": "Stanodavac",
+        "turns": [
+          {
+            "say": "Dobar dan! Zovete zbog stana?",
+            "pl": "Dzień dobry! Dzwoni Pani w sprawie mieszkania?"
+          },
+          {
+            "reply": {
+              "prompt": "Potwierdź i zapytaj o czynsz.",
+              "accept": [
+                "Da. Koliko iznosi stanarina?",
+                2
+              ],
+              "open": true,
+              "pattern": "^(da )?((zovem|javljam se) zbog (stana|oglasa)( za najam)? )?(koliko (iznosi|je|košta) (stanarina|najam)( mjesečno)?|kolika je stanarina|koliko košta stan)$"
+            }
+          },
+          {
+            "say": "Šesto eura mjesečno.",
+            "pl": "Sześćset euro miesięcznie."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, czy opłaty są wliczone.",
+              "accept": [
+                3
+              ],
+              "pattern": "^(a )?jesu li režije uključene( u (cijenu|stanarinu))?$"
+            }
+          },
+          {
+            "say": "Nisu, režije su oko sto eura.",
+            "pl": "Nie, opłaty to około sto euro."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, kiedy możesz się wprowadzić.",
+              "accept": [
+                6
+              ],
+              "pattern": "^(a )?(kada|kad) se (mogu|možemo) useliti$|^(a )?od kada je stan slobodan$"
+            }
+          },
+          {
+            "say": "Od prvog lipnja.",
+            "pl": "Od pierwszego czerwca."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz krótką wiadomość do właściciela: 2–3 pytania o mieszkanie.",
+        "points": [
+          "czynsz",
+          "opłaty / kaucja",
+          "termin"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "stanarina",
+              "najam",
+              "režije",
+              "polog"
+            ],
+            "label": "warunki"
+          },
+          {
+            "any": [
+              "koliko",
+              "jesu",
+              "je",
+              "kada",
+              "kad"
+            ],
+            "label": "pytanie"
+          }
+        ],
+        "sample": "Dobar dan, zanima me vaš stan. Koliko iznosi stanarina? Jesu li režije uključene?"
+      }
+    },
+    "a2-28": {
+      "grammar": {
+        "title": "Ispod kreveta",
+        "text": "Gdzie coś jest? na / u + miejscownik: na stolu, na polici, u ormaru. Po ispod (pod), iznad (nad), pored (obok), iza (za), ispred (przed) i između (między) stoi dopełniacz: ispod kreveta, iznad kauča, pored prozora, ispred zgrade, između kauča i televizora.",
+        "table": [
+          {
+            "label": "na / u + miejscownik",
+            "rows": [
+              {
+                "base": "stol",
+                "form": "na stolu",
+                "meaning": "na stole"
+              },
+              {
+                "base": "polica",
+                "form": "na polici",
+                "meaning": "na półce"
+              },
+              {
+                "base": "ormar",
+                "form": "u ormaru",
+                "meaning": "w szafie"
+              }
+            ]
+          },
+          {
+            "label": "przyimek + dopełniacz",
+            "rows": [
+              {
+                "base": "pod",
+                "form": "ispod kreveta",
+                "meaning": "pod łóżkiem"
+              },
+              {
+                "base": "nad",
+                "form": "iznad kauča",
+                "meaning": "nad kanapą"
+              },
+              {
+                "base": "obok",
+                "form": "pored prozora",
+                "meaning": "obok okna"
+              },
+              {
+                "base": "przed",
+                "form": "ispred zgrade",
+                "meaning": "przed budynkiem"
+              },
+              {
+                "base": "między",
+                "form": "između kauča i stola",
+                "meaning": "między kanapą a stołem"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "tip": "Polski „pod łóżkiem” (narzędnik) to po chorwacku ispod kreveta (dopełniacz)."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "ispod"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 3,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Kot śpi pod łóżkiem.",
+          "options": [
+            "Mačka spava ispod krevet.",
+            "Mačka spava ispod kreveta.",
+            "Mačka spava ispod krevetu."
+          ],
+          "correct": 1,
+          "explanation": "ispod + dopełniacz: krevet → kreveta."
+        }
+      ],
+      "model": {
+        "title": "Porządki",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, gdje su moje naočale?",
+            "pl": "Marko, gdzie są moje okulary?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Na polici, pored televizora.",
+            "pl": "Na półce, obok telewizora."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Nisu tamo. A jesi li vidio moj telefon?",
+            "pl": "Nie ma ich tam. A widziałeś mój telefon?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Mislim da je ispod kauča.",
+            "pl": "Chyba jest pod kanapą."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Evo ga! A naočale su bile u ormaru.",
+            "pl": "Jest! A okulary były w szafie."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Gdzie są klucze?",
+        "partner": "Marta",
+        "turns": [
+          {
+            "say": "Ne mogu naći ključeve! Gdje su?",
+            "pl": "Nie mogę znaleźć kluczy! Gdzie są?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie są klucze.",
+              "accept": [
+                1,
+                "Ispod kreveta."
+              ],
+              "open": true,
+              "pattern": "^((tvoji |moji )?ključevi )?(su )?(na|u|ispod|iznad|pored|iza|ispred|između|kod) \\p{L}+( i \\p{L}+)?( (na|u|ispod|iznad|pored|iza|ispred|kod) \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "A gdje je mačka?",
+            "pl": "A gdzie jest kot?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie jest kot.",
+              "accept": [
+                2,
+                "Na kauču."
+              ],
+              "open": true,
+              "pattern": "^(mačka )?(je |spava |sjedi |leži )?(na|u|ispod|iznad|pored|iza|ispred|između) \\p{L}+( i \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Hvala! Što bih bez tebe?",
+            "pl": "Dzięki! Co ja bym bez ciebie zrobiła?"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Opisz 2–3 zdaniami swój pokój: co gdzie stoi.",
+        "points": [
+          "meble",
+          "gdzie stoją"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "ispod",
+              "iznad",
+              "pored",
+              "iza",
+              "ispred",
+              "između"
+            ],
+            "label": "przyimek + dopełniacz"
+          },
+          {
+            "any": [
+              "na",
+              "u"
+            ],
+            "label": "na / u + miejscownik"
+          }
+        ],
+        "sample": "Krevet je pored prozora. Iznad kreveta je slika. Knjige su na polici."
+      }
+    },
+    "a2-29": {
+      "grammar": {
+        "title": "Pokvario se bojler",
+        "text": "Awarię opisujesz czasownikiem zwrotnym w perfekcie, który zgadza się z rzeczą: pokvario se bojler (on), pokvarila se perilica (ona), pokvarilo se grijanje (ono). Se stoi na drugim miejscu: Bojler se pokvario albo Pokvario se bojler. Czego brakuje: nemamo + dopełniacz (struje, vode, grijanja). Co trzeba zrobić: treba + bezokolicznik (Treba popraviti perilicu).",
+        "table": [
+          {
+            "label": "pokvariti se w perfekcie",
+            "rows": [
+              {
+                "base": "bojler (on)",
+                "form": "Pokvario se bojler.",
+                "meaning": "Zepsuł się bojler."
+              },
+              {
+                "base": "perilica (ona)",
+                "form": "Pokvarila se perilica.",
+                "meaning": "Zepsuła się pralka."
+              },
+              {
+                "base": "grijanje (ono)",
+                "form": "Pokvarilo se grijanje.",
+                "meaning": "Zepsuło się ogrzewanie."
+              }
+            ]
+          },
+          {
+            "label": "nemamo + dopełniacz",
+            "rows": [
+              {
+                "base": "struja",
+                "form": "Nemamo struje.",
+                "meaning": "Nie mamy prądu."
+              },
+              {
+                "base": "topla voda",
+                "form": "Nemamo tople vode.",
+                "meaning": "Nie mamy ciepłej wody."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          5,
+          8
+        ],
+        "tip": "Curi voda — cieknie woda; ne radi — nie działa (o urządzeniu)."
+      },
+      "gap": {
+        "sentence": 8,
+        "word": "pokvarila"
+      },
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 2,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Pralka się zepsuła.",
+          "options": [
+            "Perilica se pokvario.",
+            "Perilica je pokvarila.",
+            "Perilica se pokvarila."
+          ],
+          "correct": 2,
+          "explanation": "perilica (ona) → pokvarila se."
+        }
+      ],
+      "listening": "a2-kvar-u-stanu",
+      "model": {
+        "title": "Zimny prysznic",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ana, nema tople vode!",
+            "pl": "Ana, nie ma ciepłej wody!"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Opet? Mislim da se pokvario bojler.",
+            "pl": "Znowu? Chyba zepsuł się bojler."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "I iz slavine u kuhinji curi voda.",
+            "pl": "I z kranu w kuchni cieknie woda."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Nazvat ću stanodavca. Treba poslati majstora.",
+            "pl": "Zadzwonię do właściciela. Trzeba przysłać fachowca."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Dobro, a ja ću se danas tuširati kod susjeda.",
+            "pl": "Dobrze, a ja się dziś wykąpię u sąsiada."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Zgłoszenie awarii",
+        "partner": "Stanodavac",
+        "turns": [
+          {
+            "say": "Halo, izvolite?",
+            "pl": "Halo, słucham?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co się zepsuło albo nie działa.",
+              "accept": [
+                1,
+                4
+              ],
+              "open": true,
+              "pattern": "^((pokvario|pokvarila|pokvarilo|pokvarili) se \\p{L}+|\\p{L}+ se (pokvario|pokvarila|pokvarilo|pokvarili)|\\p{L}+ ne radi|nemamo (struje|vode|grijanja|tople vode)|(iz \\p{L}+ )?curi voda( iz \\p{L}+)?)( od \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Kada se to dogodilo?",
+            "pl": "Kiedy to się stało?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, kiedy to się stało.",
+              "accept": [
+                "Jučer navečer.",
+                "Od jutros."
+              ],
+              "open": true,
+              "pattern": "^((to se )?dogodilo se |to je bilo )?(jučer|jutros|danas|sinoć|prekjučer|od jutros|od jučer|prije \\p{L}+( \\p{L}+)?)( ujutro| navečer| poslijepodne)?$"
+            }
+          },
+          {
+            "say": "Poslat ću majstora sutra.",
+            "pl": "Przyślę fachowca jutro."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, o której przyjdzie fachowiec.",
+              "accept": [
+                "U koliko sati će doći?",
+                "Kada će doći majstor?"
+              ],
+              "open": true,
+              "pattern": "^(u koliko sati|kada|kad) (će )?(doći|dolazi)( majstor)?$|^(u koliko sati|kada|kad) majstor (dolazi|će doći)$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz SMS do właściciela: co się zepsuło i od kiedy.",
+        "points": [
+          "co się zepsuło",
+          "od kiedy",
+          "prośba"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "pokvario",
+              "pokvarila",
+              "pokvarilo",
+              "radi",
+              "curi",
+              "nemamo"
+            ],
+            "label": "awaria"
+          },
+          {
+            "any": [
+              "majstora",
+              "popraviti",
+              "možete"
+            ],
+            "label": "prośba"
+          }
+        ],
+        "sample": "Dobar dan, od jučer nemamo tople vode. Pokvario se bojler. Možete li poslati majstora?"
+      }
+    },
+    "a2-30": {
+      "grammar": {
+        "title": "Mieszkanie — wszystko razem",
+        "text": "Gdzie: u dnevnom boravku, na terasi, ispod kreveta, pored prozora. Wynajem: Koliko iznosi stanarina? Jesu li režije uključene? Awaria: Pokvario se bojler. Majstor je popravio grijanje.",
+        "examples": [
+          3,
+          6,
+          1
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Szafa jest obok okna.",
+          "options": [
+            "Ormar je pored prozor.",
+            "Ormar je pored prozoru.",
+            "Ormar je pored prozora."
+          ],
+          "correct": 2,
+          "explanation": "pored + dopełniacz: prozor → prozora."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Nowe mieszkanie",
+        "partner": "Ivan",
+        "turns": [
+          {
+            "say": "Bok! Čujem da si se preselio. Kakav je novi stan?",
+            "pl": "Cześć! Słyszę, że się przeprowadziłeś. Jakie jest nowe mieszkanie?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz krótko nowe mieszkanie.",
+              "accept": [
+                "Malen je, ali ima balkon.",
+                3
+              ],
+              "open": true,
+              "pattern": "^((novi )?stan )?(je|ima|nema)( \\p{L}+){1,7}$|^\\p{L}+ je( \\p{L}+){0,6}$|^(u|iz|na) \\p{L}+( \\p{L}+){1,7}$"
+            }
+          },
+          {
+            "say": "Kakvi su susjedi?",
+            "pl": "Jacy są sąsiedzi?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz sąsiadów.",
+              "accept": [
+                5,
+                "Ljubazni su."
+              ],
+              "open": true,
+              "pattern": "^((moji |naši )?susjedi su |oni su )?(vrlo |jako |baš |malo )?(ljubazni|dragi|glasni|mirni|super|simpatični|dosadni)( i (vrlo |jako )?[a-zčćšžđ]+)?( su)?$"
+            }
+          },
+          {
+            "say": "Treba li ti pomoć s nečim?",
+            "pl": "Potrzebujesz w czymś pomocy?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz i dodaj, co się dzieje w mieszkaniu.",
+              "accept": [
+                "Ne, hvala, majstor je popravio grijanje.",
+                "Da, trebam pomoć s ormarom."
+              ],
+              "open": true,
+              "pattern": "^(ne|da)( hvala)?( \\p{L}+){0,7}$"
+            }
+          },
+          {
+            "say": "Super, javi se ako trebaš nešto!",
+            "pl": "Super, daj znać, jeśli czegoś potrzebujesz!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3 zdaniach swoje mieszkanie: pokoje, gdzie co stoi i jeden problem.",
+        "points": [
+          "pokoje",
+          "gdzie co stoi",
+          "problem"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "stan",
+              "kuća",
+              "soba",
+              "sobe",
+              "boravak",
+              "boravku"
+            ],
+            "label": "pokoje"
+          },
+          {
+            "any": [
+              "ispod",
+              "iznad",
+              "pored",
+              "iza",
+              "ispred",
+              "između",
+              "na",
+              "u"
+            ],
+            "label": "gdzie"
+          },
+          {
+            "any": [
+              "pokvario",
+              "pokvarila",
+              "radi",
+              "curi",
+              "nemamo"
+            ],
+            "label": "problem"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Imam mali stan s balkonom. Krevet je pored prozora, a ormar je iza vrata. Jučer se pokvarila perilica."
+      }
+    },
+    "a2-31": {
+      "grammar": {
+        "title": "Paket u Poljsku",
+        "text": "Dokąd wysyłasz: u + biernik (u Poljsku, u Hrvatsku, u Njemačku). Gdzie coś jest: u + miejscownik (u Poljskoj). Liczebniki: 1 → marka, 2–4 → marke (dvije marke, tri marke), 5 i więcej → maraka (pet maraka). Tak samo: dva kilograma, pet kilograma.",
+        "table": [
+          {
+            "label": "dokąd? (u + biernik)",
+            "rows": [
+              {
+                "base": "Poljska",
+                "form": "u Poljsku",
+                "meaning": "do Polski"
+              },
+              {
+                "base": "Hrvatska",
+                "form": "u Hrvatsku",
+                "meaning": "do Chorwacji"
+              },
+              {
+                "base": "Njemačka",
+                "form": "u Njemačku",
+                "meaning": "do Niemiec"
+              }
+            ]
+          },
+          {
+            "label": "liczebnik + rzeczownik",
+            "rows": [
+              {
+                "base": "1",
+                "form": "jedna marka",
+                "meaning": "jeden znaczek"
+              },
+              {
+                "base": "2–4",
+                "form": "tri marke",
+                "meaning": "trzy znaczki"
+              },
+              {
+                "base": "5+",
+                "form": "pet maraka",
+                "meaning": "pięć znaczków"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "tip": "Preporučeno — poleconym: Šaljem pismo preporučeno."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "Poljsku"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 5,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Wysyłam paczkę do Polski.",
+          "options": [
+            "Šaljem paket u Poljskoj.",
+            "Šaljem paket u Poljsku.",
+            "Šaljem paket za Poljska."
+          ],
+          "correct": 1,
+          "explanation": "dokąd? → u + biernik: u Poljsku."
+        }
+      ],
+      "listening": "a2-na-posti",
+      "model": {
+        "title": "Kartki z wakacji",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Trebam pet maraka za Poljsku.",
+            "pl": "Dzień dobry. Potrzebuję pięciu znaczków do Polski."
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Izvolite. Šaljete razglednice?",
+            "pl": "Proszę. Wysyła Pani pocztówki?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, i jedno pismo preporučeno. Koliko košta poštarina?",
+            "pl": "Tak, i jeden list poleconym. Ile kosztuje przesyłka?"
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Ukupno dvanaest eura.",
+            "pl": "Razem dwanaście euro."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Kada će pismo stići?",
+            "pl": "Kiedy list dotrze?"
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Za tri do četiri dana.",
+            "pl": "Za trzy do czterech dni."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Na poczcie",
+        "partner": "Službenik",
+        "turns": [
+          {
+            "say": "Dobar dan, izvolite.",
+            "pl": "Dzień dobry, słucham."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co i dokąd chcesz wysłać.",
+              "accept": [
+                1,
+                "Htjela bih poslati pismo u Hrvatsku."
+              ],
+              "open": true,
+              "pattern": "^(htio bih|htjela bih|želim|trebam) poslati (ovaj |ovo |jedan |jedno )?(paket|pismo|razglednicu|razglednice|pošiljku)( preporučeno)? u (\\p{L}+u|{acc})( preporučeno)?$"
+            }
+          },
+          {
+            "say": "Stavite ga na vagu. Tri kilograma.",
+            "pl": "Proszę położyć na wadze. Trzy kilogramy."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj o cenę przesyłki.",
+              "accept": [
+                2
+              ],
+              "pattern": "^koliko (košta|je) (poštarina|to|slanje)$"
+            }
+          },
+          {
+            "say": "Petnaest eura. Još nešto?",
+            "pl": "Piętnaście euro. Coś jeszcze?"
+          },
+          {
+            "reply": {
+              "prompt": "Poproś o znaczki albo kopertę.",
+              "accept": [
+                "Da, trebam tri marke.",
+                6
+              ],
+              "open": true,
+              "pattern": "^(da |molim |još )*(trebam|imate li|htio bih|htjela bih|molim)( (jednu|dvije|tri|četiri|pet))? (marku|marke|maraka|omotnicu|omotnice)( za [a-zčćšžđ]+)?$"
+            }
+          },
+          {
+            "say": "Izvolite. Ukupno osamnaest eura.",
+            "pl": "Proszę. Razem osiemnaście euro."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co wysyłasz, dokąd i jak.",
+        "points": [
+          "co",
+          "dokąd",
+          "jak (poleconym?)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "paket",
+              "pismo",
+              "razglednicu",
+              "razglednice",
+              "pošiljku"
+            ],
+            "label": "co wysyłasz"
+          },
+          {
+            "any": [
+              "u"
+            ],
+            "label": "dokąd: u + biernik"
+          }
+        ],
+        "sample": "Šaljem paket u Poljsku. Šaljem ga preporučeno jer je važan."
+      }
+    },
+    "a2-32": {
+      "grammar": {
+        "title": "Htio bih otvoriti račun",
+        "text": "W banku prosisz formą Htio / Htjela bih + bezokolicznik (otvoriti račun, podići novac) albo mówisz, czego potrzebujesz: Trebam vašu osobnu iskaznicu (biernik). Najbliższy, najtańszy: naj- + stopień wyższy: najbliži bankomat, najjeftinija naknada.",
+        "table": [
+          {
+            "label": "W banku",
+            "rows": [
+              {
+                "base": "konto",
+                "form": "otvoriti tekući račun",
+                "meaning": "otworzyć konto"
+              },
+              {
+                "base": "wypłata",
+                "form": "podići novac",
+                "meaning": "wypłacić pieniądze"
+              },
+              {
+                "base": "wpłata",
+                "form": "uplatiti novac",
+                "meaning": "wpłacić pieniądze"
+              },
+              {
+                "base": "wymiana",
+                "form": "mijenjati novac",
+                "meaning": "wymienić pieniądze"
+              },
+              {
+                "base": "oszczędności",
+                "form": "štedjeti za auto",
+                "meaning": "oszczędzać na samochód"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "Bankomat mi je progutao karticu — bankomat połknął mi kartę: wtedy idziesz do okienka."
+      },
+      "gap": {
+        "sentence": 4,
+        "word": "podići"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne pytanie.",
+          "prompt": "Gdzie jest najbliższy bankomat?",
+          "options": [
+            "Gdje je bliži bankomat?",
+            "Gdje je najbliži bankomat?",
+            "Gdje je najbliže bankomat?"
+          ],
+          "correct": 1,
+          "explanation": "Stopień najwyższy: naj- + bliži → najbliži (bankomat, rodzaj męski)."
+        }
+      ],
+      "listening": "a2-u-banci",
+      "model": {
+        "title": "Nowe konto",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Dobar dan. Htio bih otvoriti tekući račun.",
+            "pl": "Dzień dobry. Chciałbym otworzyć konto osobiste."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Naravno. Trebam vašu osobnu iskaznicu.",
+            "pl": "Oczywiście. Potrzebuję Pana dowodu osobistego."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Izvolite. Ima li mjesečna naknada?",
+            "pl": "Proszę. Czy jest opłata miesięczna?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dva eura mjesečno, ali podizanje na našim bankomatima je besplatno.",
+            "pl": "Dwa euro miesięcznie, ale wypłaty w naszych bankomatach są bezpłatne."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U redu. Mogu li odmah uplatiti novac?",
+            "pl": "W porządku. Mogę od razu wpłacić pieniądze?"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "W okienku",
+        "partner": "Službenik",
+        "turns": [
+          {
+            "say": "Dobar dan, kako vam mogu pomoći?",
+            "pl": "Dzień dobry, jak mogę pomóc?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co chcesz załatwić w banku.",
+              "accept": [
+                1,
+                4
+              ],
+              "open": true,
+              "pattern": "^(htio bih|htjela bih|želim|trebam|moram) (otvoriti (tekući )?račun|podići( \\p{L}+)? novac|uplatiti( \\p{L}+){1,3}|mijenjati( \\p{L}+)? novac|zatvoriti račun)$"
+            }
+          },
+          {
+            "say": "Imate li osobnu iskaznicu?",
+            "pl": "Ma Pan dowód osobisty?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy masz dokument.",
+              "accept": [
+                "Imam, izvolite.",
+                "Nemam, ali imam putovnicu."
+              ],
+              "open": true,
+              "pattern": "^(da |ne )?(imam|nemam)( je| osobnu( iskaznicu)?)?( izvolite| ali imam putovnicu| imam putovnicu| evo je)?$"
+            }
+          },
+          {
+            "say": "Hvala. Još nešto?",
+            "pl": "Dziękuję. Coś jeszcze?"
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj o opłatę albo o bankomat.",
+              "accept": [
+                6,
+                3
+              ],
+              "open": true,
+              "pattern": "^(ima li (neke |mjesečne )?naknade( za \\p{L}+( \\p{L}+)?)?|koliko je naknada|gdje je (najbliži )?bankomat|ima li bankomat (ovdje|blizu))$"
+            }
+          },
+          {
+            "say": "Bankomat je odmah ispred banke.",
+            "pl": "Bankomat jest zaraz przed bankiem."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co załatwiasz w banku i o co pytasz.",
+        "points": [
+          "sprawa",
+          "pytanie"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "račun",
+              "novac",
+              "bankomat",
+              "uplatiti",
+              "podići"
+            ],
+            "label": "bank"
+          },
+          {
+            "any": [
+              "htio",
+              "htjela",
+              "želim",
+              "trebam"
+            ],
+            "label": "prośba"
+          }
+        ],
+        "sample": "Htjela bih podići novac. Ima li naknade za podizanje?"
+      }
+    },
+    "a2-33": {
+      "grammar": {
+        "title": "Od petog do sedmog srpnja",
+        "text": "Daty mówisz liczebnikiem porządkowym w dopełniaczu + miesiąc w dopełniaczu: prvog kolovoza (pierwszego sierpnia), od petog do sedmog srpnja. Miesiące (rodzaj męski): lipanj → lipnja, srpanj → srpnja, kolovoz → kolovoza. W którym miesiącu: u + miejscownik: u lipnju, u srpnju, u kolovozu.",
+        "table": [
+          {
+            "label": "miesiąc → data → w miesiącu",
+            "rows": [
+              {
+                "base": "lipanj",
+                "form": "prvog lipnja · u lipnju",
+                "meaning": "pierwszego czerwca · w czerwcu"
+              },
+              {
+                "base": "srpanj",
+                "form": "petog srpnja · u srpnju",
+                "meaning": "piątego lipca · w lipcu"
+              },
+              {
+                "base": "kolovoz",
+                "form": "desetog kolovoza · u kolovozu",
+                "meaning": "dziesiątego sierpnia · w sierpniu"
+              }
+            ]
+          },
+          {
+            "label": "porządkowe (dopełniacz)",
+            "rows": [
+              {
+                "base": "1.",
+                "form": "prvog",
+                "meaning": "pierwszego"
+              },
+              {
+                "base": "2.",
+                "form": "drugog",
+                "meaning": "drugiego"
+              },
+              {
+                "base": "5.",
+                "form": "petog",
+                "meaning": "piątego"
+              },
+              {
+                "base": "7.",
+                "form": "sedmog",
+                "meaning": "siódmego"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          5,
+          8,
+          2
+        ],
+        "tip": "Uwaga: srpanj to lipiec, a lipanj to czerwiec!"
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "petog"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 8,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Przyjeżdżamy piątego lipca.",
+          "options": [
+            "Dolazimo peti srpanj.",
+            "Dolazimo petog srpnja.",
+            "Dolazimo pet srpnja."
+          ],
+          "correct": 1,
+          "explanation": "Data: porządkowy w dopełniaczu (petog) + miesiąc w dopełniaczu (srpnja)."
+        }
+      ],
+      "listening": "a2-rezervacija-hotela",
+      "model": {
+        "title": "Rezerwacja przez telefon",
+        "lines": [
+          {
+            "speaker": "Recepcionar",
+            "hr": "Apartmani Sunce, dobar dan.",
+            "pl": "Apartamenty Sunce, dzień dobry."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Imate li slobodnu dvokrevetnu sobu u kolovozu?",
+            "pl": "Dzień dobry. Ma Pan wolny pokój dwuosobowy w sierpniu?"
+          },
+          {
+            "speaker": "Recepcionar",
+            "hr": "Za koji datum?",
+            "pl": "Na jaką datę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Od desetog do petnaestog kolovoza.",
+            "pl": "Od dziesiątego do piętnastego sierpnia."
+          },
+          {
+            "speaker": "Recepcionar",
+            "hr": "Imamo. Noćenje s doručkom je devedeset eura.",
+            "pl": "Mamy. Nocleg ze śniadaniem to dziewięćdziesiąt euro."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Odlično, rezerviram.",
+            "pl": "Świetnie, rezerwuję."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Rezerwacja",
+        "partner": "Recepcionar",
+        "turns": [
+          {
+            "say": "Hotel Adria, dobar dan.",
+            "pl": "Hotel Adria, dzień dobry."
+          },
+          {
+            "reply": {
+              "prompt": "Poproś o pokój i podaj daty.",
+              "accept": [
+                1,
+                "Htio bih rezervirati sobu od prvog do petog kolovoza."
+              ],
+              "open": true,
+              "pattern": "^(htio bih|htjela bih|želim|trebam) (rezervirati )?(jednu |jednokrevetnu |dvokrevetnu )?sobu( za \\p{L}+ (osobe|osobu|osoba))?( od \\p{L}+ do \\p{L}+ \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Imamo slobodnu sobu. Noćenje je osamdeset eura.",
+            "pl": "Mamy wolny pokój. Nocleg kosztuje osiemdziesiąt euro."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj o śniadanie albo o anulowanie.",
+              "accept": [
+                "Je li doručak uključen?",
+                "Je li otkazivanje besplatno?"
+              ],
+              "open": true,
+              "pattern": "^(je li|jesu li) (doručak|otkazivanje|parking|polupansion)( uključen| uključeno| besplatan| besplatno| u cijeni)$|^(ima li|imate li) (doručak|parking|polupansion)$"
+            }
+          },
+          {
+            "say": "Doručak je uključen, a otkazivanje je besplatno.",
+            "pl": "Śniadanie jest wliczone, a anulowanie jest bezpłatne."
+          },
+          {
+            "reply": {
+              "prompt": "Potwierdź rezerwację.",
+              "accept": [
+                "Odlično, rezerviram.",
+                "Rezervirat ću je."
+              ],
+              "pattern": "^(odlično |super |dobro )?(rezerviram|rezervirat ću( je| sobu)?|uzimam je|uzet ću je)$"
+            }
+          },
+          {
+            "say": "Hvala, vidimo se u kolovozu!",
+            "pl": "Dziękuję, do zobaczenia w sierpniu!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz e-mail do hotelu: jaki pokój, daty i jedno pytanie.",
+        "points": [
+          "pokój",
+          "daty",
+          "pytanie"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "sobu",
+              "dvokrevetnu",
+              "jednokrevetnu",
+              "apartman"
+            ],
+            "label": "pokój"
+          },
+          {
+            "any": [
+              "lipnja",
+              "srpnja",
+              "kolovoza",
+              "rujna"
+            ],
+            "label": "data"
+          }
+        ],
+        "sample": "Poštovani, htjela bih rezervirati dvokrevetnu sobu od prvog do petog srpnja. Je li doručak uključen?"
+      }
+    },
+    "a2-34": {
+      "grammar": {
+        "title": "Gdje se predaje zahtjev?",
+        "text": "W urzędzie często słyszysz formę bezosobową z se: Gdje se predaje zahtjev? (gdzie się składa wniosek), Gdje se plaća? Ovdje se čeka. Polecenia urzędnika są na Vi: Potpišite ovdje. Ispunite obrazac. Obowiązek: morate + bezokolicznik (Morate potpisati).",
+        "table": [
+          {
+            "label": "Forma z se",
+            "rows": [
+              {
+                "base": "składać",
+                "form": "Gdje se predaje zahtjev?",
+                "meaning": "Gdzie składa się wniosek?"
+              },
+              {
+                "base": "płacić",
+                "form": "Gdje se plaća?",
+                "meaning": "Gdzie się płaci?"
+              },
+              {
+                "base": "czekać",
+                "form": "Ovdje se čeka.",
+                "meaning": "Tu się czeka."
+              },
+              {
+                "base": "polecenie",
+                "form": "Potpišite ovdje.",
+                "meaning": "Proszę podpisać tutaj."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          6,
+          8
+        ],
+        "tip": "Nedostaje — brakuje: Nedostaje pečat. Nedostaje vam kopija."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "predaje"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 3,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne pytanie.",
+          "prompt": "Gdzie się płaci?",
+          "options": [
+            "Gdje plaća se?",
+            "Gdje se plaća?",
+            "Gdje se plaćam?"
+          ],
+          "correct": 1,
+          "explanation": "se stoi na drugim miejscu: Gdje se plaća?"
+        }
+      ],
+      "model": {
+        "title": "Meldunek",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Trebam prijaviti boravak.",
+            "pl": "Dzień dobry. Muszę zameldować pobyt."
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Ispunite ovaj zahtjev i potpišite ga dolje.",
+            "pl": "Proszę wypełnić ten wniosek i podpisać go na dole."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Gotovo. Trebate li još nešto?",
+            "pl": "Gotowe. Potrzebuje Pan czegoś jeszcze?"
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Vašu putovnicu i ugovor o najmu.",
+            "pl": "Pani paszport i umowę najmu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Izvolite. Gdje se plaća pristojba?",
+            "pl": "Proszę. Gdzie płaci się opłatę?"
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Na šalteru broj dva.",
+            "pl": "W okienku numer dwa."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "W urzędzie",
+        "partner": "Službenik",
+        "turns": [
+          {
+            "say": "Dobar dan, izvolite.",
+            "pl": "Dzień dobry, słucham."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co musisz załatwić.",
+              "accept": [
+                6,
+                "Htio bih predati zahtjev."
+              ],
+              "open": true,
+              "pattern": "^(trebam|moram|htio bih|htjela bih|želim|došao sam|došla sam)( \\p{L}+){1,4}$"
+            }
+          },
+          {
+            "say": "Trebam vašu putovnicu i ovaj obrazac.",
+            "pl": "Potrzebuję Pana paszportu i tego formularza."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, gdzie się płaci albo gdzie podpisać.",
+              "accept": [
+                8,
+                "Gdje moram potpisati?"
+              ],
+              "open": true,
+              "pattern": "^gdje (se plaća|moram (potpisati|platiti)|se potpisuje|se predaje( [a-zčćšžđ]+)?)( pristojba)?$"
+            }
+          },
+          {
+            "say": "Ovdje, dolje desno. Pa na šalter broj tri.",
+            "pl": "Tutaj, na dole po prawej. Potem do okienka numer trzy."
+          },
+          {
+            "reply": {
+              "prompt": "Podziękuj.",
+              "accept": [
+                "Hvala vam."
+              ],
+              "pattern": "^hvala( vam| lijepa)?( doviđenja)?$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: jaką sprawę załatwiasz w urzędzie i o co pytasz.",
+        "points": [
+          "sprawa",
+          "pytanie"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "zahtjev",
+              "dokument",
+              "boravak",
+              "putovnicu",
+              "obrazac"
+            ],
+            "label": "sprawa"
+          },
+          {
+            "any": [
+              "gdje",
+              "kada",
+              "koliko",
+              "moram"
+            ],
+            "label": "pytanie"
+          }
+        ],
+        "sample": "Trebam prijaviti boravak. Gdje se predaje zahtjev?"
+      }
+    },
+    "a2-35": {
+      "grammar": {
+        "title": "Sprawy w mieście — wszystko razem",
+        "text": "Poczta: paket u Poljsku, tri marke. Bank: Htio bih podići novac. Hotel: od petog do sedmog srpnja. Urząd: Gdje se plaća? Morate doći osobno.",
+        "examples": [
+          4,
+          5,
+          6
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Musi Pan przyjść osobiście.",
+          "options": [
+            "Morate dođete osobno.",
+            "Morate doći osobno.",
+            "Morate doći osoban."
+          ],
+          "correct": 1,
+          "explanation": "morate + bezokolicznik (doći); osobno — osobiście."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Pracowity ranek",
+        "partner": "Marta",
+        "turns": [
+          {
+            "say": "Gdje si bio cijelo jutro?",
+            "pl": "Gdzie byłeś cały ranek?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie byłeś / byłaś (poczta, bank, urząd).",
+              "accept": [
+                "Bio sam na pošti i u banci.",
+                "Bila sam u uredu."
+              ],
+              "open": true,
+              "pattern": "^(bio sam|bila sam|ja sam bio|ja sam bila) (na|u) \\p{L}+( i (na|u) \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Što si radio u banci?",
+            "pl": "Co robiłeś w banku?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobiłeś / zrobiłaś w banku.",
+              "accept": [
+                6,
+                "Otvorio sam račun."
+              ],
+              "open": true,
+              "pattern": "^{pp} sam( \\p{L}+){1,4}$|^u banci sam {pp}( \\p{L}+){1,4}$"
+            }
+          },
+          {
+            "say": "A jesi li predao zahtjev?",
+            "pl": "A złożyłeś wniosek?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz krótko i dodaj szczegół.",
+              "accept": [
+                "Jesam, ali moram doći opet.",
+                "Nisam, nedostaje mi kopija."
+              ],
+              "open": true,
+              "pattern": "^(jesam|nisam|da|ne)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Bravo, sve si riješio!",
+            "pl": "Brawo, wszystko załatwiłeś!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3 zdaniach, jakie sprawy załatwiłeś / załatwiłaś w mieście.",
+        "points": [
+          "poczta",
+          "bank lub hotel",
+          "urząd"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "pošti",
+              "paket",
+              "pismo"
+            ],
+            "label": "poczta"
+          },
+          {
+            "any": [
+              "banci",
+              "novac",
+              "račun",
+              "sobu"
+            ],
+            "label": "bank / hotel"
+          },
+          {
+            "any": [
+              "zahtjev",
+              "uredu",
+              "šalter",
+              "dokument"
+            ],
+            "label": "urząd"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Ujutro sam bila na pošti i poslala sam paket. Zatim sam u banci podigla novac. Na kraju sam predala zahtjev u uredu."
+      }
+    },
+    "a2-36": {
+      "grammar": {
+        "title": "Kad sam bio dijete",
+        "text": "O dzieciństwie mówisz w perfekcie: Kad sam bio dijete / bila dijete… (kiedy byłem / byłam dzieckiem). To, co robiło się regularnie: svako ljeto, često, uvijek, nekad + perfekt czasownika niedokonanego: Svako ljeto smo ljetovali na moru. Pamiętać: sjećati se + dopełniacz: Sjećam se svog prvog bicikla.",
+        "table": [
+          {
+            "label": "Wspomnienia",
+            "rows": [
+              {
+                "base": "kiedy byłem dzieckiem",
+                "form": "Kad sam bio dijete…",
+                "meaning": "Kiedy byłem dzieckiem…"
+              },
+              {
+                "base": "każdego lata",
+                "form": "Svako ljeto smo ljetovali na moru.",
+                "meaning": "Każdego lata jeździliśmy nad morze."
+              },
+              {
+                "base": "często",
+                "form": "Često smo se igrali vani.",
+                "meaning": "Często bawiliśmy się na dworze."
+              },
+              {
+                "base": "pamiętam",
+                "form": "Sjećam se svog prvog bicikla.",
+                "meaning": "Pamiętam swój pierwszy rower."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "tip": "Odrastao sam / Odrasla sam u… — wychowałem się / wychowałam się w…"
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "ljetovali"
+      },
+      "translate": [
+        {
+          "sentence": 5,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Pamiętam swój pierwszy rower.",
+          "options": [
+            "Sjećam se svoj prvi bicikl.",
+            "Sjećam svog prvog bicikla.",
+            "Sjećam se svog prvog bicikla."
+          ],
+          "correct": 2,
+          "explanation": "sjećati se + dopełniacz: svoj prvi bicikl → svog prvog bicikla."
+        }
+      ],
+      "listening": "a2-djetinjstvo",
+      "model": {
+        "title": "Stare zdjęcia",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Gledaj, ovo sam ja kad sam imala pet godina!",
+            "pl": "Zobacz, to ja, kiedy miałam pięć lat!"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Slatko! Gdje je to?",
+            "pl": "Słodko! Gdzie to jest?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Kod bake na selu. Tamo smo provodili svako ljeto.",
+            "pl": "U babci na wsi. Tam spędzaliśmy każde lato."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja sam odrastao u gradu, ali često smo ljetovali na moru.",
+            "pl": "Ja wychowałem się w mieście, ale często spędzaliśmy wakacje nad morzem."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Sjećaš li se svog prvog putovanja?",
+            "pl": "Pamiętasz swoją pierwszą podróż?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Naravno! Išli smo vlakom u Split.",
+            "pl": "Oczywiście! Jechaliśmy pociągiem do Splitu."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Twoje dzieciństwo",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Gdje si odrastao?",
+            "pl": "Gdzie się wychowałeś?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie się wychowałeś / wychowałaś.",
+              "accept": [
+                "Odrastao sam u Krakovu.",
+                5
+              ],
+              "open": true,
+              "pattern": "^(odrastao sam|odrasla sam|ja sam odrastao|ja sam odrasla) (u|na) \\p{L}+( \\p{L}+){0,3}$|^(u|na) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Što si volio raditi kad si bio dijete?",
+            "pl": "Co lubiłeś robić, kiedy byłeś dzieckiem?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co lubiłeś / lubiłaś robić.",
+              "accept": [
+                "Volio sam igrati nogomet.",
+                4
+              ],
+              "open": true,
+              "pattern": "^(volio|voljela|obožavao|obožavala) sam( \\p{L}+){1,4}$|^(nekad|često|uvijek|svako ljeto) (sam|smo)( se)? {pp}( \\p{L}+){0,4}$|^{pp} (sam|smo)( se)?( \\p{L}+){1,4}$"
+            }
+          },
+          {
+            "say": "A čega se najviše sjećaš?",
+            "pl": "A co najbardziej pamiętasz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co najbardziej pamiętasz.",
+              "accept": [
+                2,
+                "Sjećam se ljeta kod bake."
+              ],
+              "open": true,
+              "pattern": "^(najviše se sjećam|sjećam se|najviše pamtim)( \\p{L}+){1,4}$"
+            }
+          },
+          {
+            "say": "Lijepe uspomene!",
+            "pl": "Piękne wspomnienia!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o swoim dzieciństwie.",
+        "points": [
+          "gdzie się wychowałeś",
+          "co robiłeś często",
+          "co pamiętasz"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "dijete",
+              "djetinjstvo",
+              "odrastao",
+              "odrasla"
+            ],
+            "label": "dzieciństwo"
+          },
+          {
+            "any": [
+              "često",
+              "svako",
+              "nekad",
+              "uvijek"
+            ],
+            "label": "jak często"
+          },
+          {
+            "any": [
+              "sjećam"
+            ],
+            "label": "sjećam se"
+          }
+        ],
+        "sample": "Odrasla sam u malom gradu. Svako ljeto smo išli na more. Sjećam se svog prvog psa."
+      }
+    },
+    "a2-37": {
+      "grammar": {
+        "title": "Mislim da…",
+        "text": "Opinia: Mislim da + zdanie (Mislim da je hrvatski lijep). Przeczenie: Ne mislim da… Zgoda: Slažem se (s tobom / s vama), U pravu si. Niezgoda: Ne slažem se. Po mom mišljenju… — moim zdaniem. Stany z celownikiem: dosadno mi je (nudzi mi się), drago mi je (cieszę się), hladno mi je (zimno mi).",
+        "table": [
+          {
+            "label": "Opinia",
+            "rows": [
+              {
+                "base": "myślę, że",
+                "form": "Mislim da je to dobro.",
+                "meaning": "Myślę, że to dobrze."
+              },
+              {
+                "base": "moim zdaniem",
+                "form": "Po mom mišljenju…",
+                "meaning": "Moim zdaniem…"
+              },
+              {
+                "base": "zgoda",
+                "form": "Slažem se s tobom.",
+                "meaning": "Zgadzam się z tobą."
+              },
+              {
+                "base": "niezgoda",
+                "form": "Ne slažem se.",
+                "meaning": "Nie zgadzam się."
+              }
+            ]
+          },
+          {
+            "label": "mi je (celownik)",
+            "rows": [
+              {
+                "base": "nuda",
+                "form": "Dosadno mi je.",
+                "meaning": "Nudzi mi się."
+              },
+              {
+                "base": "radość",
+                "form": "Drago mi je.",
+                "meaning": "Cieszę się."
+              },
+              {
+                "base": "zimno",
+                "form": "Hladno mi je.",
+                "meaning": "Zimno mi."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "tip": "Slagati se jest zwrotne: slažem se, slažeš se, slaže se…"
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "Slažem"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 4,
+      "order": 5,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zgadzam się z tobą.",
+          "options": [
+            "Slažem s tobom.",
+            "Slažem se ti.",
+            "Slažem se s tobom."
+          ],
+          "correct": 2,
+          "explanation": "slagati se (zwrotne) + s tobom (narzędnik)."
+        }
+      ],
+      "model": {
+        "title": "Zagrzeb czy Split?",
+        "lines": [
+          {
+            "speaker": "Ivan",
+            "hr": "Što misliš, gdje je bolje živjeti, u Zagrebu ili u Splitu?",
+            "pl": "Jak myślisz, gdzie lepiej się żyje, w Zagrzebiu czy w Splicie?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Po mom mišljenju, u Splitu. Tamo je more i sunce.",
+            "pl": "Moim zdaniem w Splicie. Tam jest morze i słońce."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Ne slažem se. Zagreb ima više posla i kulture.",
+            "pl": "Nie zgadzam się. Zagrzeb ma więcej pracy i kultury."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "U pravu si, ali zimi mi je u Zagrebu dosadno.",
+            "pl": "Masz rację, ale zimą w Zagrzebiu mi się nudzi."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Zapravo, i meni. Idemo ljeti u Split!",
+            "pl": "Właściwie mnie też. Jedźmy latem do Splitu!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Twoje zdanie",
+        "partner": "Ivan",
+        "turns": [
+          {
+            "say": "Što misliš o Zagrebu?",
+            "pl": "Co myślisz o Zagrzebiu?"
+          },
+          {
+            "reply": {
+              "prompt": "Wyraź opinię.",
+              "accept": [
+                "Mislim da je Zagreb lijep grad.",
+                4
+              ],
+              "open": true,
+              "pattern": "^(mislim da( je)?|po mom mišljenju( je)?|meni je|meni se sviđa|ne mislim da( je)?|iskreno( je)?)( \\p{L}+){1,6}$|^(zagreb )?je (lijep|lijepi|zanimljiv|velik|dosadan|super)( grad)?$"
+            }
+          },
+          {
+            "say": "Ja mislim da je Split ljepši.",
+            "pl": "Ja myślę, że Split jest ładniejszy."
+          },
+          {
+            "reply": {
+              "prompt": "Zgódź się albo nie i dodaj dlaczego.",
+              "accept": [
+                "Slažem se, Split je na moru.",
+                "Ne slažem se, Zagreb je zanimljiviji."
+              ],
+              "open": true,
+              "pattern": "^(i ja |ja )?(slažem se|ne slažem se|u pravu si|nisi u pravu|imaš pravo|možda)( s tobom)?( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Dobro, svatko ima svoje mišljenje!",
+            "pl": "Dobrze, każdy ma swoje zdanie!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania z opinią o mieście, jedzeniu albo nauce chorwackiego.",
+        "points": [
+          "opinia",
+          "uzasadnienie"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "mislim",
+              "mišljenju",
+              "slažem"
+            ],
+            "label": "opinia"
+          },
+          {
+            "any": [
+              "jer",
+              "zato"
+            ],
+            "label": "uzasadnienie"
+          }
+        ],
+        "sample": "Mislim da je hrvatska hrana odlična. Po mom mišljenju, najbolja je riba jer je svježa."
+      }
+    },
+    "a2-38": {
+      "grammar": {
+        "title": "Wszystko, co już umiesz",
+        "text": "W tej rozmowie łączysz całe A2: skąd jesteś i jak długo tu mieszkasz, praca, przeszłość (Što si radio…?), plany (Kakve planove imaš?), opinia (Mislim da…) i prośba o kontakt. Gdy nie rozumiesz: Kako to misliš? Možeš li ponoviti?",
+        "examples": [
+          1,
+          3,
+          4,
+          5
+        ]
+      },
+      "translate": [
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 2,
+      "order": 4,
+      "dialog": {
+        "title": "Nowa znajoma",
+        "partner": "Ana",
+        "turns": [
+          {
+            "line": 1
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, skąd jesteś i jak długo tu mieszkasz.",
+              "accept": [
+                "Iz Poljske sam i živim ovdje godinu dana."
+              ],
+              "open": true,
+              "pattern": "^((ja sam )?iz \\p{L}+( sam)?)( i)?( (živim ovdje|ovdje živim|živim u \\p{L}+|tu sam)( već)?( \\p{L}+){0,3})?$|^(živim ovdje|ovdje živim|živim u \\p{L}+)( već)?( \\p{L}+){1,3}$"
+            }
+          },
+          {
+            "line": 2
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czym się zajmujesz i czy ci się podoba.",
+              "accept": [
+                "Radim kao programer i jako mi se sviđa."
+              ],
+              "open": true,
+              "pattern": "^(ja )?(radim kao \\p{L}+|bavim se \\p{L}+|radim u \\p{L}+|studiram|učim hrvatski|ja sam \\p{L}+)( \\p{L}+){0,2}(( i| ali)( \\p{L}+){1,5})?$"
+            }
+          },
+          {
+            "line": 3
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robiłeś / robiłaś w zeszły weekend.",
+              "accept": [
+                "Prošli vikend sam bio na moru."
+              ],
+              "open": true,
+              "pattern": "^((prošli vikend|vikend|u subotu|u nedjelju|jučer|ja|mi)( ja| mi)? (sam|smo) (se )?{pp}( \\p{L}+){0,4}|{pp} (sam|smo)( se)?( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "line": 4
+          },
+          {
+            "reply": {
+              "prompt": "Opowiedz o planach na lato.",
+              "accept": [
+                "Ljeti ću putovati po Dalmaciji."
+              ],
+              "open": true,
+              "pattern": "^((ljeti|ovo ljeto|u srpnju|u kolovozu|u lipnju|ja|mi)( ja| mi)? (ću|ćemo) (se )?{inf}( \\p{L}+){0,4}|{inft} (ću|ćemo)( se)?( \\p{L}+){0,4}|(planiram|namjeravam|želim|htio bih|htjela bih)( \\p{L}+){1,5})$"
+            }
+          },
+          {
+            "line": 5
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co myślisz o chorwackim jedzeniu.",
+              "accept": [
+                "Mislim da je odlična."
+              ],
+              "open": true,
+              "pattern": "^(mislim da( je)?|po mom mišljenju( je)?|iskreno( je)?|meni je|sviđa mi se|jako mi se sviđa)( \\p{L}+){1,5}$|^(odlična|ukusna|super|dobra|odlično|ukusno)( je)?$"
+            }
+          },
+          {
+            "line": 6
+          },
+          {
+            "reply": {
+              "prompt": "Podaj numer albo grzecznie odmów.",
+              "accept": [
+                "Naravno! Javit ću ti se.",
+                "Može, evo ga."
+              ],
+              "open": true,
+              "pattern": "^(naravno|može|da|svakako|rado)( \\p{L}+){0,5}$|^(radije ne|ne hvala|žao mi je)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Bilo mi je drago! Vidimo se uskoro!",
+            "pl": "Miło było! Do zobaczenia wkrótce!"
+          },
+          {
+            "reply": {
+              "prompt": "Pożegnaj się uprzejmie.",
+              "accept": [
+                "I meni! Vidimo se!"
+              ],
+              "open": true,
+              "pattern": "^(i meni( je bilo drago)?|bilo mi je drago|vidimo se( uskoro)?|bok|čujemo se)( (vidimo se|bok|čujemo se)( uskoro)?)*$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 4 zdania o sobie: skąd jesteś, praca, zeszły weekend i plany.",
+        "points": [
+          "skąd jesteś",
+          "praca",
+          "weekend",
+          "plany"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "iz",
+              "živim"
+            ],
+            "label": "skąd jesteś"
+          },
+          {
+            "any": [
+              "radim",
+              "bavim",
+              "studiram"
+            ],
+            "label": "praca"
+          },
+          {
+            "any": [
+              "sam",
+              "smo"
+            ],
+            "label": "przeszłość"
+          },
+          {
+            "any": [
+              "ću",
+              "ćemo",
+              "planiram"
+            ],
+            "label": "plany"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Iz Poljske sam i živim u Zagrebu godinu dana. Radim kao programer. Prošli vikend sam bio na moru. Ljeti ću putovati po Dalmaciji."
+      }
+    },
+    "a2-39": {
+      "grammar": {
+        "title": "Przeszłość, przyszłość, warunek",
+        "text": "Na koniec A2 zestaw obok siebie to, co najważniejsze: przeszłość we wszystkich osobach (bili smo), przyszłość (ići ćemo), warunek (ako bude…) i to, co lubisz (sviđa mi se). Reszta to materiał całego poziomu w krótkich seriach.",
+        "examples": [
+          "a2-01:1",
+          "a2-06:1",
+          "a2-08:1",
+          "a2-22:1"
+        ]
+      },
+      "spiral": {
+        "intro": {
+          "body": "Krótkie serie z całego A2: przeszłość, plany, zdrowie, praca, zakupy, mieszkanie i sprawy w mieście.",
+          "goals": [
+            "przypomnisz sobie słowa ze wszystkich modułów",
+            "uzupełnisz zdania z najważniejszą gramatyką A2",
+            "przetłumaczysz zdania z codziennych sytuacji",
+            "porozmawiasz o przeszłości, planach i opiniach"
+          ]
+        },
+        "vocabTitle": "Słowa o nauce gramatyki",
+        "recallModules": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "gaps": [
+          "a2-07",
+          "a2-19",
+          "a2-24",
+          "a2-27"
+        ],
+        "translations": [
+          "a2-06",
+          "a2-16",
+          "a2-22",
+          "a2-29"
+        ],
+        "order": "a2-08"
+      },
+      "dialog": {
+        "title": "Po roku nauki",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Bok! Što si radio ovaj tjedan?",
+            "pl": "Cześć! Co robiłeś w tym tygodniu?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robiłeś / robiłaś.",
+              "accept": [
+                "Puno sam radio.",
+                "Bila sam u Zagrebu."
+              ],
+              "open": true,
+              "pattern": "^((ovaj tjedan|puno|jučer|ja|mi)( ja| mi)? (sam|smo) (se )?{pp}( \\p{L}+){0,4}|{pp} (sam|smo)( se)?( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "say": "A što ćeš raditi za vikend?",
+            "pl": "A co będziesz robić w weekend?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobisz w weekend.",
+              "accept": [
+                "Ići ću na izlet.",
+                "Ostat ću kod kuće."
+              ],
+              "open": true,
+              "pattern": "^((za vikend|u subotu|u nedjelju|vjerojatno|ja|mi)( ja| mi)? (ću|ćemo) (se )?{inf}( \\p{L}+){0,4}|{inft} (ću|ćemo)( se)?( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "say": "A ako bude kiša?",
+            "pl": "A jeśli będzie padać?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobisz, jeśli będzie padać.",
+              "accept": [
+                "Onda ću ostati kod kuće."
+              ],
+              "open": true,
+              "pattern": "^((onda|u tom slučaju|ja) ću (se )?{inf}|(onda )?{inft} ću( se)?|(onda )?(idem|ostajem))( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Što misliš o svom hrvatskom sada?",
+            "pl": "Co myślisz o swoim chorwackim teraz?"
+          },
+          {
+            "reply": {
+              "prompt": "Wyraź opinię o swoich postępach.",
+              "accept": [
+                "Mislim da je sve bolji.",
+                "Napredujem, ali još griješim."
+              ],
+              "open": true,
+              "pattern": "^(mislim da( je)?|po mom mišljenju( je)?|iskreno( je)?|napredujem|sve bolje|još griješim)( \\p{L}+){0,6}$"
+            }
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Napisz 3–4 zdania: co robiłeś / robiłaś ostatnio, co zrobisz i co myślisz o swojej nauce.",
+        "points": [
+          "przeszłość",
+          "przyszłość",
+          "opinia"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "sam",
+              "smo"
+            ],
+            "label": "przeszłość"
+          },
+          {
+            "any": [
+              "ću",
+              "ćemo"
+            ],
+            "label": "przyszłość"
+          },
+          {
+            "any": [
+              "mislim",
+              "mišljenju"
+            ],
+            "label": "opinia"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Prošli tjedan sam puno radio. Za vikend ću ići na more. Mislim da je moj hrvatski sve bolji."
+      }
+    },
+    "a2-40": {
+      "test": {
+        "vocabulary": {
+          "instruction": "Wybierz poprawne znaczenie.",
+          "modules": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ]
+        },
+        "reading": {
+          "instruction": 1,
+          "title": "Tomasz u Splitu",
+          "text": [
+            "Zovem se Tomasz i iz Poljske sam.",
+            "Prije dvije godine preselio sam se u Split.",
+            "Radim kao kuhar u malom restoranu blizu mora.",
+            "Stan mi je malen, ali ima lijep pogled na luku.",
+            "Prošle zime bio sam bolestan, ali sada se osjećam odlično.",
+            "Sljedeće godine želim položiti ispit iz hrvatskog."
+          ],
+          "questions": [
+            {
+              "prompt": "Od kiedy Tomasz mieszka w Splicie?",
+              "options": [
+                "Od dwóch lat",
+                "Od roku",
+                "Od dzieciństwa"
+              ],
+              "correct": 0
+            },
+            {
+              "prompt": "Gdzie pracuje Tomasz?",
+              "options": [
+                "W hotelu",
+                "W restauracji",
+                "W banku"
+              ],
+              "correct": 1
+            },
+            {
+              "prompt": "Jaki ma plan na przyszły rok?",
+              "options": [
+                "Kupić mieszkanie",
+                "Wrócić do Polski",
+                "Zdać egzamin z chorwackiego"
+              ],
+              "correct": 2
+            }
+          ]
+        },
+        "listening": {
+          "instruction": 2,
+          "dialogue": "a2-test-preseljenje",
+          "questions": [
+            {
+              "prompt": "Kiedy Ana się przeprowadza?",
+              "options": [
+                "W sobotę",
+                "W niedzielę",
+                "W piątek"
+              ],
+              "correct": 0
+            },
+            {
+              "prompt": "Jakie jest nowe mieszkanie?",
+              "options": [
+                "Większe i dalej od pracy",
+                "Trochę mniejsze, bliżej pracy, z balkonem",
+                "Takie samo jak stare"
+              ],
+              "correct": 1
+            }
+          ]
+        },
+        "grammar": {
+          "instruction": 4,
+          "lessons": [
+            "a2-01",
+            "a2-09",
+            "a2-14",
+            "a2-28"
+          ]
+        },
+        "translation": {
+          "instruction": 5,
+          "lessons": [
+            "a2-02",
+            "a2-23",
+            "a2-33"
+          ]
+        },
+        "production": {
+          "instruction": 3,
+          "points": [
+            "gdzie mieszkasz i co robisz",
+            "co robiłeś / robiłaś ostatnio",
+            "twoje plany"
+          ],
+          "keywords": [
+            {
+              "any": [
+                "živim",
+                "radim",
+                "stan"
+              ],
+              "label": "teraz"
+            },
+            {
+              "any": [
+                "sam",
+                "smo"
+              ],
+              "label": "przeszłość"
+            },
+            {
+              "any": [
+                "ću",
+                "ćemo",
+                "želim",
+                "planiram"
+              ],
+              "label": "plany"
+            }
+          ],
+          "sample": "Živim u Krakovu i radim u banci. Prošle godine sam bio u Splitu. Sljedeće ljeto ću opet ići u Hrvatsku.",
+          "minSentences": 3
+        },
+        "finished": 6
       }
     }
   }

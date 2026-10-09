@@ -22,11 +22,13 @@ const FLEETING_NOUN = {
   petak: "petk", četvrtak: "četvrtk", utorak: "utork", ponedjeljak: "ponedjeljk", tjedan: "tjedn", polazak: "polask",
   dolazak: "dolask", vjetar: "vjetr", centar: "centr", ugao: "ugl", pijesak: "pijesk",
   kašalj: "kašlj", kupac: "kupc", obrazac: "obrasc", naglasak: "naglask",
+  lipanj: "lipnj", srpanj: "srpnj", rujan: "rujn", boravak: "boravk", stanodavac: "stanodavc", napredak: "napredk", ljubimac: "ljubimc",
 };
 /** Rzeczowniki żywotne rodzaju męskiego: biernik = dopełniacz (brat → brata). */
 const ANIMATE = new Set([
   "brat", "otac", "djed", "sin", "muž", "pas", "prijatelj", "susjed", "učitelj", "liječnik", "inženjer", "prodavač",
   "student", "učenik", "konobar", "turist", "putnik", "tata", "šef", "kupac", "suradnik",
+  "majstor", "primatelj", "pošiljatelj", "stanodavac", "službenik", "električar", "ljubimac",
 ]);
 /** Rzeczowniki żeńskie zakończone spółgłoską (odmiana na -i). */
 const I_STEM = new Set(["obitelj", "noć", "jesen", "pomoć", "riječ", "kći", "ponoć"]);
@@ -102,7 +104,8 @@ const PRES_OVERRIDES = {
   uzeti: ["uzmem"], ostati: ["ostanem"], odustati: ["odustanem"], smjeti: ["smijem"], pomoći: ["pomognem"],
   pozvati: ["pozovem"], nazvati: ["nazovem"], otkazati: ["otkažem"], zapisati: ["zapišem"],
   trajati: ["trajem"], izaći: ["izađem"], kašljati: ["kašljem"], disati: ["dišem"], kretati: ["krećem"], poslati: ["pošaljem"],
-  prevesti: ["prevedem"], stajati: ["stojim"],
+  prevesti: ["prevedem"], stajati: ["stojim"], podići: ["podignem"], potpisati: ["potpišem"], odrasti: ["odrastem"],
+  slagati: ["slažem"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
@@ -110,7 +113,7 @@ const PP_OVERRIDES = {
   htjeti: ["htio", "htjela", "htjeli"], biti: ["bio", "bila", "bili"], doći: ["došao", "došla", "došli"],
   otići: ["otišao", "otišla", "otišli"], provesti: ["proveo", "provela", "proveli"], sresti: ["sreo", "srela", "sreli"],
   uzeti: ["uzeo", "uzela", "uzeli"], pomoći: ["pomogao", "pomogla", "pomogli"], izaći: ["izašao", "izašla", "izašli"],
-  prevesti: ["preveo", "prevela", "preveli"],
+  prevesti: ["preveo", "prevela", "preveli"], podići: ["podigao", "podigla", "podigli"], odrasti: ["odrastao", "odrasla", "odrasli"],
 };
 
 function present1(inf) {
@@ -201,7 +204,7 @@ const ADJ_OVERRIDES = {
 };
 const FLEETING_ADJ = new Set([
   "umoran", "sretan", "simpatičan", "gladan", "žedan", "slobodan", "pametan", "zgodan", "tužan", "ukusan", "hladan",
-  "miran", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan",
+  "miran", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan", "ljubazan", "naporan",
 ]);
 
 function adjForms(masc) {

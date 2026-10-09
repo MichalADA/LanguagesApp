@@ -7,6 +7,6 @@
   },
   "rate": "-8%",
   "pathPrefix": "/audio/hr/a2",
-  "maleSpeakers": ["Marko", "Marek", "Konobar", "Recepcionar", "Prolaznik", "Ivan", "Domaćin", "Liječnik", "Ljekarnik", "Prodavač"],
-  "modules": [1, 2, 3, 4, 5]
+  "maleSpeakers": ["Marko", "Marek", "Konobar", "Recepcionar", "Prolaznik", "Ivan", "Domaćin", "Liječnik", "Ljekarnik", "Prodavač", "Stanodavac", "Službenik"],
+  "modules": [1, 2, 3, 4, 5, 6, 7, 8]
 }
