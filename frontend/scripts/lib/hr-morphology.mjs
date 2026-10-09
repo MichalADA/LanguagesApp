@@ -1,5 +1,5 @@
 /**
- * Minimalna morfologia chorwacka dla kursu A1 (bez zależności, deterministyczna).
+ * Minimalna morfologia chorwacka dla kursu (A1, A2; bez zależności, deterministyczna).
  *
  * Z rekordów słownictwa CSV wyprowadza formy potrzebne generatorowi:
  *  - leksykon kategorii ({acc}, {loc}, {pres1}, {pp.self}…) do ram odpowiedzi w dialogach,
@@ -43,6 +43,7 @@ const NOUN_OVERRIDES = {
   vrijeme: { gen: ["vremena"], loc: ["vremenu"], ins: ["vremenom"], acc: ["vrijeme"] },
   more: { ins: ["morem"], loc: ["moru"], gen: ["mora"], acc: ["more"] },
   sunce: { ins: ["suncem"], loc: ["suncu"], gen: ["sunca"], acc: ["sunce"] },
+  gost: { pl: ["gosti", "goste"] },
 };
 const PREPOSITIONS = new Set(["za", "u", "na", "i", "s", "sa", "od", "do", "kod", "iz", "bez", "po", "o"]);
 
@@ -92,11 +93,13 @@ const PRES_OVERRIDES = {
   pokazati: ["pokažem"], opisati: ["opišem"], napisati: ["napišem"], sastati: ["sastanem"], zvati: ["zovem"],
   odabrati: ["odaberem"], poznati: ["poznajem", "poznam"], poznavati: ["poznajem"], htjeti: ["hoću"], moći: ["mogu"], spavati: ["spavam"],
   kupati: ["kupam"], doći: ["dođem"], trebati: ["trebam"], preporučiti: ["preporučim", "preporučujem"],
+  otići: ["odem"], provesti: ["provedem"], sresti: ["sretnem"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
   prijeći: ["prešao", "prešla", "prešli"], stići: ["stigao", "stigla", "stigli"], moći: ["mogao", "mogla", "mogli"],
   htjeti: ["htio", "htjela", "htjeli"], biti: ["bio", "bila", "bili"], doći: ["došao", "došla", "došli"],
+  otići: ["otišao", "otišla", "otišli"], provesti: ["proveo", "provela", "proveli"], sresti: ["sreo", "srela", "sreli"],
 };
 
 function present1(inf) {
@@ -319,6 +322,8 @@ export const SLOTS = {
   "pres1.bare": (lx) => lx.pres1.map((f) => f.replace(/^se | se$/g, "")),
   nom: (lx) => lx.nom,
   "pp.self": (lx) => lx.ppSelf,
+  // imiesłów w każdej osobie i liczbie (radio, radila, radilo, radili, radile) — do zdań z „smo / su / nisu”
+  pp: (lx) => lx.pp.flatMap((f) => [f, f.replace(/^(\p{L}+)l([ai])\b/u, (_, stem, end) => `${stem}l${end === "i" ? "e" : "o"}`)]),
   "adj.f": (lx) => lx.adjF,
   "adj.m": (lx) => lx.adjM,
   "adj.self": (lx) => [...lx.adjM, ...lx.adjF],

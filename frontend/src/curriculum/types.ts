@@ -78,7 +78,7 @@ export const LESSON_STAGES: LessonStage[] = ["intro", "words", "structure", "pra
 
 /**
  * Nagranie przypięte do chorwackiego tekstu. Ścieżki wpisuje generator
- * (scripts/generate-a1-curriculum.mjs) tylko wtedy, gdy plik istnieje w public/,
+ * (scripts/generate-curriculum.mjs) tylko wtedy, gdy plik istnieje w public/,
  * więc komponenty nigdy nie trafiają na 404 i nie składają ścieżek same.
  */
 export interface Audible {

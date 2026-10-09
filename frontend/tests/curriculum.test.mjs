@@ -289,7 +289,7 @@ test('postęp: nowy użytkownik zaczyna od lekcji 1, lekcja liczy się raz, kole
 });
 
 test('generator: wygenerowane pliki są aktualne względem CSV', () => {
-  const run = spawnSync(process.execPath, ['scripts/generate-a1-curriculum.mjs', '--check'], { cwd: ROOT, encoding: 'utf8' });
+  const run = spawnSync(process.execPath, ['scripts/generate-curriculum.mjs', '--check'], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(run.status, 0, run.stderr);
 });
 
@@ -300,7 +300,7 @@ test('generator: zgłasza duplikaty record_id i brak rekordu lesson', () => {
   const dir = mkdtempSync(join(tmpdir(), 'curriculum-'));
   const file = join(dir, 'broken.csv');
   writeFileSync(file, broken);
-  const run = spawnSync(process.execPath, ['scripts/generate-a1-curriculum.mjs', '--dry', '--csv', file], { cwd: ROOT, encoding: 'utf8' });
+  const run = spawnSync(process.execPath, ['scripts/generate-curriculum.mjs', '--dry', '--csv', file], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(run.status, 1);
   assert.match(run.stderr, /Duplikat record_id: A1-0002/);
   assert.match(run.stderr, /a1-01: brak rekordu lesson/);

@@ -1,16 +1,19 @@
 #!/usr/bin/env node
 /**
- * Generator kursu HR A1: CSV → TypeScript.
+ * Generator kursu HR (jeden poziom na uruchomienie): CSV → TypeScript.
  *
- *   node scripts/generate-a1-curriculum.mjs          # generuje src/curriculum/data/hr-a1/**
- *   node scripts/generate-a1-curriculum.mjs --check  # tylko sprawdza, czy wygenerowane pliki są aktualne
- *   node scripts/generate-a1-curriculum.mjs --dry --csv inny.csv  # sama walidacja innego pliku (testy)
- *   node scripts/generate-a1-curriculum.mjs --check --audio-strict  # + błąd, gdy brakuje któregoś nagrania z manifestu
+ *   node scripts/generate-curriculum.mjs --level hr-a2  # generuje src/curriculum/data/hr-a2/** (domyślnie hr-a1)
+ *   node scripts/generate-curriculum.mjs --check        # tylko sprawdza, czy wygenerowane pliki są aktualne
+ *   node scripts/generate-curriculum.mjs --dry --csv inny.csv  # sama walidacja innego pliku (testy)
+ *   node scripts/generate-curriculum.mjs --check --audio-strict  # + błąd, gdy brakuje któregoś nagrania z manifestu
  *
- * Wejście (poza src/, więc build aplikacji ich nie potrzebuje):
+ * Wejście (poza src/, więc build aplikacji ich nie potrzebuje), np. dla hr-a1:
+ *   curriculum/hr-a1/level.json                       — poziom: liczba modułów, prefiks id, lekcje specjalne, dziedziczenie,
  *   curriculum/hr-a1/lexodromia_hr_A1_curriculum.csv — źródło prawdy treści,
  *   curriculum/hr-a1/didactics.json                   — warstwa dydaktyczna i jawne poprawki,
  *   public/data/listening/hr-a1-dialogues.json        — nagrane dialogi (audio w ćwiczeniach słuchania).
+ * Poziom wyższy (hr-a2) dziedziczy słownictwo niższych (`inherit`): morfologia ram odpowiedzi zna ich formy,
+ * a generator ostrzega, gdy rdzeń nowej lekcji powtarza słowo, które uczeń już zna.
  * Wyjście jest deterministyczne (bez dat i losowości), commitowane do repozytorium.
  * Bez zależności: własny parser CSV (RFC 4180).
  */
@@ -23,13 +26,16 @@ import { attachAudio, buildManifest } from "./lib/course-audio.mjs";
 import { CLITICS, buildLexicon, expandSlots, genderizePattern, genderPairs, recordForms, swapGender, tokens } from "./lib/hr-morphology.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const SOURCE_DIR = join(ROOT, "curriculum/hr-a1");
 const argValue = (flag) => (process.argv.includes(flag) ? process.argv[process.argv.indexOf(flag) + 1] : null);
-const CSV_PATH = argValue("--csv") ? resolve(argValue("--csv")) : join(SOURCE_DIR, "lexodromia_hr_A1_curriculum.csv");
+const LEVEL_DIR = argValue("--level") ?? "hr-a1";
+const SOURCE_DIR = join(ROOT, "curriculum", LEVEL_DIR);
+const LEVEL = JSON.parse(readFileSync(join(SOURCE_DIR, "level.json"), "utf8"));
+const LESSON_COUNT = LEVEL.modules * LEVEL.lessonsPerModule;
+const CSV_PATH = argValue("--csv") ? resolve(argValue("--csv")) : join(SOURCE_DIR, LEVEL.csv);
 const DRY = process.argv.includes("--dry");
 const DIDACTICS_PATH = join(SOURCE_DIR, "didactics.json");
-const LISTENING_PATH = join(ROOT, "public/data/listening/hr-a1-dialogues.json");
-const OUT_DIR = join(ROOT, "src/curriculum/data/hr-a1");
+const LISTENING_PATH = join(ROOT, LEVEL.listening);
+const OUT_DIR = join(ROOT, "src/curriculum/data", LEVEL_DIR);
 const AUDIO_CONFIG_PATH = join(SOURCE_DIR, "audio.json");
 const AUDIO_MANIFEST_PATH = join(SOURCE_DIR, "audio-manifest.json");
 const PUBLIC_DIR = join(ROOT, "public");
@@ -145,7 +151,7 @@ for (const record of records) {
   for (const key of required) if (!record[key]) fail(`${record.record_id || "(brak id)"}: brak pola ${key}`);
   if (seenIds.has(record.record_id)) fail(`Duplikat record_id: ${record.record_id}`);
   seenIds.add(record.record_id);
-  if (record.level !== "A1") fail(`${record.record_id}: poziom ${record.level}, oczekiwano A1`);
+  if (record.level !== LEVEL.level) fail(`${record.record_id}: poziom ${record.level}, oczekiwano ${LEVEL.level}`);
 }
 
 // Jawne poprawki treści (didactics.corrections) — sprawdzamy, czy nadal pasują do CSV.
@@ -181,16 +187,17 @@ for (const [id, bucket] of lessons) {
 }
 
 const ordered = [...lessons.values()].filter((b) => b.lesson).sort((a, b) => Number(a.lesson.lesson_no) - Number(b.lesson.lesson_no));
-if (ordered.length !== 40) fail(`Oczekiwano 40 lekcji, jest ${ordered.length}`);
+if (ordered.length !== LESSON_COUNT) fail(`Oczekiwano ${LESSON_COUNT} lekcji, jest ${ordered.length}`);
 const moduleNos = unique(ordered.map((b) => b.lesson.module_no));
-if (moduleNos.length !== 8) fail(`Oczekiwano 8 modułów, jest ${moduleNos.length}`);
+if (moduleNos.length !== LEVEL.modules) fail(`Oczekiwano ${LEVEL.modules} modułów, jest ${moduleNos.length}`);
 for (const m of moduleNos) {
   const count = ordered.filter((b) => b.lesson.module_no === m).length;
-  if (count !== 5) fail(`Moduł ${m}: ${count} lekcji zamiast 5`);
+  if (count !== LEVEL.lessonsPerModule) fail(`Moduł ${m}: ${count} lekcji zamiast ${LEVEL.lessonsPerModule}`);
 }
 
 const lessonNo = (b) => Number(b.lesson.lesson_no);
-const kindOf = (n) => (n === 40 ? "test" : n === 39 ? "spiral" : n === 38 ? "conversation" : n % 5 === 0 ? "review" : "lesson");
+/** Lekcje specjalne (rozmowa, spirala, test) wskazuje level.json; ostatnia lekcja modułu to powtórka. */
+const kindOf = (n) => LEVEL.special?.[String(n)] ?? (n % LEVEL.lessonsPerModule === 0 ? "review" : "lesson");
 for (const bucket of ordered) {
   const kind = kindOf(lessonNo(bucket));
   if (kind !== "test" && kind !== "review" && (!bucket.vocabulary.length || !bucket.sentences.length)) {
@@ -204,12 +211,25 @@ for (const bucket of ordered) {
     fail(`${bucket.lesson.lesson_id}: dialog wzorcowy (model) wymaga title i linii { speaker, hr, pl }`);
   }
 }
+/** Słownictwo poziomów niższych (level.json → inherit): uczeń już je zna. */
+const inheritedVocab = (LEVEL.inherit ?? []).flatMap((dir) => {
+  const config = JSON.parse(readFileSync(join(ROOT, "curriculum", dir, "level.json"), "utf8"));
+  return parseCsv(readFileSync(join(ROOT, "curriculum", dir, config.csv), "utf8")).filter((r) => r.record_type === "vocabulary");
+});
 // Słowo uzupełniające, które jest już w rdzeniu innej lekcji, to zwykle pomyłka (recykling robią zdania, nie listy).
 const coreWords = new Map(ordered.flatMap((b) => coreOf(b).map((r) => [fold(r.hr_text), b.lesson.lesson_id])));
 for (const bucket of ordered) {
   for (const r of supplementOf(bucket)) {
     const owner = coreWords.get(fold(r.hr_text));
     if (owner) warn(`${bucket.lesson.lesson_id}: słowo uzupełniające „${r.hr_text}” jest już w rdzeniu ${owner}`);
+  }
+}
+// Rdzeń lekcji wyższego poziomu nie powtarza słów, które uczeń zna z niższego.
+const knownWords = new Map(inheritedVocab.map((r) => [fold(r.hr_text), r.lesson_id]));
+for (const bucket of ordered) {
+  for (const r of coreOf(bucket)) {
+    const owner = knownWords.get(fold(r.hr_text));
+    if (owner) warn(`${bucket.lesson.lesson_id}: słowo rdzenia „${r.hr_text}” uczeń zna już z ${owner}`);
   }
 }
 
@@ -227,7 +247,7 @@ const extra = didactics.extraAccepted ?? {};
 const splitAccepted = (value) => value.split("|").map((v) => v.trim()).filter(Boolean);
 
 /* Morfologia kursu: formy słów z całego słownictwa CSV (scripts/lib/hr-morphology.mjs). */
-const vocabRecords = records.filter((r) => r.record_type === "vocabulary");
+const vocabRecords = [...inheritedVocab, ...records.filter((r) => r.record_type === "vocabulary")];
 const LEXICON = buildLexicon(vocabRecords);
 const GENDER = genderPairs(vocabRecords);
 const PRES1 = new Set(LEXICON.pres1.filter((f) => !f.includes(" ")));
@@ -269,7 +289,7 @@ function sentenceOf(lessonId, seq) {
   return { hr: record.hr_text, pl: record.pl_text, accepted: naturalVariants(base, lessonId), recordId: record.record_id, lessonId, seq: Number(seq) };
 }
 
-/** 3 → zdanie 3 tej lekcji; "a1-12:6" → zdanie 6 lekcji a1-12. */
+/** 3 → zdanie 3 tej lekcji; "a1-12:6" → zdanie 6 lekcji a1-12 (tego samego poziomu). */
 function resolveSentence(ref, lessonId) {
   if (typeof ref === "number") return sentenceOf(lessonId, ref);
   const [id, seq] = String(ref).split(":");
@@ -430,7 +450,7 @@ function dialogStep(lessonId, spec) {
     }
     if (turn.say) return { kind: "line", line: { speaker: spec.partner, text: turn.say, translation: turn.pl } };
     const reply = turn.reply;
-    const listed = unique(reply.accept.flatMap((a) => (typeof a === "number" || /^a1-\d\d:\d$/.test(a) ? resolveSentence(a, lessonId).accepted : naturalVariants([a], lessonId))));
+    const listed = unique(reply.accept.flatMap((a) => (typeof a === "number" || /^[a-z]\d-\d\d:\d+$/.test(a) ? resolveSentence(a, lessonId).accepted : naturalVariants([a], lessonId))));
     // Replika o sobie (sam / bih): poprawne są obie formy rodzaju — uczeń mówi o sobie.
     const self = listed.some(isSelf);
     const accepted = self ? unique([...listed, ...listed.map((a) => swapGender(a, GENDER))]) : listed;
@@ -824,7 +844,7 @@ function buildReview(bucket) {
   return steps;
 }
 
-/* ---------- Wielka powtórka A1 (spirala) ---------- */
+/* ---------- Wielka powtórka poziomu (spirala) ---------- */
 
 function buildSpiral(bucket) {
   const { lesson, vocabulary, sentences } = bucket;
@@ -871,7 +891,7 @@ function buildSpiral(bucket) {
   return steps;
 }
 
-/* ---------- Test A1 ---------- */
+/* ---------- Test poziomu ---------- */
 
 function buildTest(bucket) {
   const { lesson, vocabulary } = bucket;
@@ -879,12 +899,12 @@ function buildTest(bucket) {
   const t = didactics.lessons[id].test;
   const rand = seeded(40 * 32452843);
   const own = (seq) => bi(sentenceOf(id, seq));
-  const allVocab = ordered.filter((b) => lessonNo(b) < 40).flatMap(coreOf);
+  const allVocab = ordered.filter((b) => lessonNo(b) < LESSON_COUNT).flatMap(coreOf);
   const steps = [];
 
   steps.push({
     id: "intro", stage: "intro", type: "intro", title: lesson.lesson_title_pl,
-    body: "Test obejmuje materiał całego poziomu A1. Nie ma tu zaliczenia ani oblania — na końcu zobaczysz, co masz dobrze opanowane, a co warto powtórzyć.",
+    body: `Test obejmuje materiał całego poziomu ${LEVEL.level}. Nie ma tu zaliczenia ani oblania — na końcu zobaczysz, co masz dobrze opanowane, a co warto powtórzyć.`,
     goalsTitle: "Sześć krótkich części",
     goals: ["słownictwo", "czytanie", "słuchanie", "gramatyka w kontekście", "tłumaczenie", "krótka wypowiedź"],
   });
@@ -919,7 +939,7 @@ function buildTest(bucket) {
   });
 
   steps.push({ ...freeStep("production", { ...t.production, instruction: "Napisz 2–4 zdania o sobie." }), section: "production", instructionTarget: own(t.production.instruction) });
-  steps.push({ ...summaryStep([]), title: "Wynik testu A1", closing: own(t.finished) });
+  steps.push({ ...summaryStep([]), title: `Wynik testu ${LEVEL.level}`, closing: own(t.finished) });
   return steps;
 }
 
@@ -954,7 +974,7 @@ function materialOf(bucket) {
   };
 }
 
-const HEADER = (what) => `// AUTO-GENERATED by scripts/generate-a1-curriculum.mjs — nie edytuj ręcznie.\n// ${what}\n// Źródło: curriculum/hr-a1/lexodromia_hr_A1_curriculum.csv (sha256 ${csvHash}…) + didactics.json\n`;
+const HEADER = (what) => `// AUTO-GENERATED by scripts/generate-curriculum.mjs — nie edytuj ręcznie.\n// ${what}\n// Źródło: curriculum/${LEVEL_DIR}/${LEVEL.csv} (sha256 ${csvHash}…) + didactics.json\n`;
 const json = (value) => JSON.stringify(value, null, 2);
 
 const files = new Map();
@@ -981,8 +1001,8 @@ const built = ordered.map((bucket) => {
   const n = lessonNo(bucket);
   const kind = kindOf(n);
   const moduleNo = Number(bucket.lesson.module_no);
-  const order = n - (moduleNo - 1) * 5;
-  const appId = `a1-${pad(moduleNo)}-${pad(order)}`;
+  const order = n - (moduleNo - 1) * LEVEL.lessonsPerModule;
+  const appId = `${LEVEL.prefix}-${pad(moduleNo)}-${pad(order)}`;
   const vocabulary = bucket.vocabulary.map(vocabItem);
   const isOverride = Boolean(didactics.overrides?.[bucket.lesson.lesson_id]);
   // Lekcja demo zostaje w swoim pliku jako źródło; generator dołącza słownictwo z CSV.
@@ -1003,7 +1023,7 @@ const built = ordered.map((bucket) => {
   return { bucket, n, kind, moduleNo, order, appId, isOverride, content, material: materialOf(bucket), fileName: `module-${pad(moduleNo)}/lesson-${pad(order)}.ts` };
 });
 
-// 2. Audio: manifest nagrań dla modułów z curriculum/hr-a1/audio.json + audioSrc tam, gdzie plik już istnieje.
+// 2. Audio: manifest nagrań dla modułów z curriculum/<poziom>/audio.json + audioSrc tam, gdzie plik już istnieje.
 const audioConfig = JSON.parse(readFileSync(AUDIO_CONFIG_PATH, "utf8"));
 const previousManifest = existsSync(AUDIO_MANIFEST_PATH) ? JSON.parse(readFileSync(AUDIO_MANIFEST_PATH, "utf8")) : null;
 const lessonsByModule = new Map(audioConfig.modules.map((m) => [m, built.filter((b) => b.moduleNo === m)]));
@@ -1028,7 +1048,7 @@ for (const { bucket, kind, moduleNo, order, appId, isOverride, content, material
     moduleTitle: bucket.lesson.module_title_pl,
     lesson: {
       id: appId,
-      moduleId: `a1-${pad(moduleNo)}`,
+      moduleId: `${LEVEL.prefix}-${pad(moduleNo)}`,
       order,
       title: bucket.lesson.lesson_title_pl,
       shortDescription: bucket.lesson.communicative_goal,
@@ -1045,8 +1065,8 @@ for (const { bucket, kind, moduleNo, order, appId, isOverride, content, material
 const modules = unique(outline.map((o) => o.moduleNo)).map((m) => {
   const items = outline.filter((o) => o.moduleNo === m);
   return {
-    id: `a1-${pad(m)}`,
-    levelId: "A1",
+    id: `${LEVEL.prefix}-${pad(m)}`,
+    levelId: LEVEL.level,
     order: m,
     title: items[0].moduleTitle,
     description: didactics.modules?.[String(m)]?.description ?? "",
@@ -1057,13 +1077,13 @@ const modules = unique(outline.map((o) => o.moduleNo)).map((m) => {
 
 files.set(
   "outline.ts",
-  HEADER("Plan poziomu A1: 8 modułów × 5 lekcji") +
-    `import type { CourseModule } from "../../types";\n\nexport const HR_A1_MODULES: CourseModule[] = ${json(modules)};\n`,
+  HEADER(`Plan poziomu ${LEVEL.level}: ${LEVEL.modules} modułów × ${LEVEL.lessonsPerModule} lekcji`) +
+    `import type { CourseModule } from "../../types";\n\nexport const ${LEVEL.exportName}_MODULES: CourseModule[] = ${json(modules)};\n`,
 );
 files.set(
   "lessons.ts",
   HEADER("Leniwe ładowanie treści lekcji (osobny chunk na lekcję)") +
-    `import type { GeneratedLesson } from "../../types";\n\nexport const HR_A1_LESSONS: Record<string, () => Promise<GeneratedLesson>> = {\n${outline
+    `import type { GeneratedLesson } from "../../types";\n\nexport const ${LEVEL.exportName}_LESSONS: Record<string, () => Promise<GeneratedLesson>> = {\n${outline
       .map((o) => `  "${o.lesson.id}": () => import("./${o.file.replace(/\.ts$/, "")}").then((m) => m.LESSON),`)
       .join("\n")}\n};\n`,
 );
@@ -1101,7 +1121,7 @@ const audioReport = () => {
   }
   if (lessonsMissingAudio.length) console.log(`  lekcje z brakującymi nagraniami: ${lessonsMissingAudio.join(", ")}`);
   if (AUDIO_STRICT && present !== audioManifest.items.length) {
-    console.error(`Brakuje ${audioManifest.items.length - present} nagrań. Uruchom: python tools/listening/generate_tts.py --course-manifest frontend/curriculum/hr-a1/audio-manifest.json, potem npm run curriculum:a1`);
+    console.error(`Brakuje ${audioManifest.items.length - present} nagrań. Uruchom: python tools/listening/generate_tts.py --course-manifest frontend/curriculum/${LEVEL_DIR}/audio-manifest.json, potem npm run curriculum:${LEVEL.prefix}`);
     process.exitCode = 1;
   }
 };
@@ -1117,10 +1137,10 @@ if (DRY) {
   const extraFiles = listExisting(OUT_DIR).filter((f) => !files.has(f));
   if (!existsSync(AUDIO_MANIFEST_PATH) || readFileSync(AUDIO_MANIFEST_PATH, "utf8") !== manifestText) stale.push(relative(ROOT, AUDIO_MANIFEST_PATH));
   if (stale.length || extraFiles.length) {
-    console.error(`Wygenerowane pliki są nieaktualne. Uruchom: npm run curriculum:a1\n${[...stale, ...extraFiles.map((f) => `${f} (zbędny)`)].map((f) => `- ${f}`).join("\n")}`);
+    console.error(`Wygenerowane pliki są nieaktualne. Uruchom: npm run curriculum:${LEVEL.prefix}\n${[...stale, ...extraFiles.map((f) => `${f} (zbędny)`)].map((f) => `- ${f}`).join("\n")}`);
     process.exit(1);
   }
-  console.log(`OK: ${files.size} plików aktualnych (40 lekcji, ${records.length} rekordów CSV).`);
+  console.log(`OK: ${files.size} plików aktualnych (${LESSON_COUNT} lekcji, ${records.length} rekordów CSV).`);
   audioReport();
 } else {
   rmSync(OUT_DIR, { recursive: true, force: true });
@@ -1130,7 +1150,7 @@ if (DRY) {
     writeFileSync(path, content);
   }
   writeFileSync(AUDIO_MANIFEST_PATH, manifestText);
-  console.log(`Wygenerowano ${files.size} plików w ${relative(ROOT, OUT_DIR)} (40 lekcji, ${records.length} rekordów CSV, poprawek: ${appliedCorrections.length}).`);
+  console.log(`Wygenerowano ${files.size} plików w ${relative(ROOT, OUT_DIR)} (${LESSON_COUNT} lekcji, ${records.length} rekordów CSV, poprawek: ${appliedCorrections.length}).`);
   audioReport();
 }
 if (warnings.length) console.warn(`Ostrzeżenia (${warnings.length}):\n- ${warnings.join("\n- ")}`);

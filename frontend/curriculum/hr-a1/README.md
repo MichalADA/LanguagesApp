@@ -5,7 +5,7 @@ lexodromia_hr_A1_curriculum.csv   ← źródło prawdy: lekcje, słownictwo, zda
 didactics.json                    ← warstwa dydaktyczna: objaśnienia gramatyki, role zdań, dialogi,
                                      zadania swobodne, test A1, jawne poprawki treści (corrections)
         │
-        ▼  npm run curriculum:a1   (scripts/generate-a1-curriculum.mjs, bez zależności)
+        ▼  npm run curriculum:a1   (scripts/generate-curriculum.mjs --level hr-a1, bez zależności)
 src/curriculum/data/hr-a1/        ← wygenerowane TypeScript (commitowane, nie edytuj ręcznie)
   outline.ts                      ← 8 modułów × 5 lekcji dla /kurs
   lessons.ts                      ← leniwe ładowanie lekcji (osobny chunk na lekcję)
@@ -53,6 +53,7 @@ src/curriculum/data/hr-a1/        ← wygenerowane TypeScript (commitowane, nie 
   generator dołącza do niej słownictwo i materiał z CSV.
 - **Audio:** ćwiczenia słuchania używają nagranych dialogów z `public/data/listening/hr-a1-dialogues.json`.
 - **Build aplikacji nie potrzebuje CSV** — czyta tylko wygenerowane pliki.
+- **Kolejne poziomy** (np. `curriculum/hr-a2/`) używają tego samego generatora; poziom opisuje `level.json`.
 
 ## Audio
 
