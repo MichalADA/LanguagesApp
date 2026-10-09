@@ -1,11 +1,11 @@
 {
-  "$comment": "Konfiguracja poziomu dla scripts/generate-curriculum.mjs (--level hr-a2). Pilot A2: moduł 1. Słownictwo A1 jest znane (inherit).",
+  "$comment": "Konfiguracja poziomu dla scripts/generate-curriculum.mjs (--level hr-a2). Moduły 1–2. Słownictwo A1 jest znane (inherit).",
   "level": "A2",
   "prefix": "a2",
   "exportName": "HR_A2",
   "csv": "lexodromia_hr_A2_curriculum.csv",
   "listening": "public/data/listening/hr-a2-dialogues.json",
-  "modules": 1,
+  "modules": 2,
   "lessonsPerModule": 5,
   "special": {},
   "inherit": ["hr-a1"]

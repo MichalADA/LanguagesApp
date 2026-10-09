@@ -6,6 +6,9 @@
   "modules": {
     "1": {
       "description": "Opowiadasz o przeszłości: co robiłeś ty i inni, czego nie zrobiłeś, pytasz o podróże i opowiadasz historię po kolei."
+    },
+    "2": {
+      "description": "Mówisz o przyszłości: plany twoje i innych, co musisz i możesz, co zrobisz, jeśli…, i umawiasz się ze znajomymi."
     }
   },
   "lessons": {
@@ -932,6 +935,931 @@
         ],
         "minSentences": 3,
         "sample": "Prošle godine sam bila u Istri. Prvo smo bili u Puli, zatim u Rovinju. Nismo imali nikakvih problema. Bio je to nezaboravan doživljaj."
+      }
+    },
+    "a2-06": {
+      "grammar": {
+        "title": "Ići ćemo na izlet",
+        "text": "Czas przyszły: krótka forma htjeti (ću, ćeš, će, ćemo, ćete, će) + bezokolicznik. Krótka forma nie zaczyna zdania: Mi ćemo raditi albo Sutra ćemo raditi. Gdy zdanie zaczyna czasownik, bezokolicznik na -ti traci -i: Radit ćemo (nie: Raditi ćemo); czasowniki na -ći zostają bez zmian: Ići ćemo.",
+        "table": [
+          {
+            "label": "ću + bezokolicznik",
+            "rows": [
+              {
+                "base": "ja",
+                "form": "ću raditi",
+                "meaning": "będę pracować"
+              },
+              {
+                "base": "ti",
+                "form": "ćeš raditi",
+                "meaning": "będziesz pracować"
+              },
+              {
+                "base": "on / ona",
+                "form": "će raditi",
+                "meaning": "będzie pracować"
+              },
+              {
+                "base": "mi",
+                "form": "ćemo raditi",
+                "meaning": "będziemy pracować"
+              },
+              {
+                "base": "vi",
+                "form": "ćete raditi",
+                "meaning": "będziecie pracować"
+              },
+              {
+                "base": "oni / one",
+                "form": "će raditi",
+                "meaning": "będą pracować"
+              }
+            ]
+          },
+          {
+            "label": "Szyk",
+            "rows": [
+              {
+                "base": "z podmiotem",
+                "form": "Mi ćemo ostati.",
+                "meaning": "My zostaniemy."
+              },
+              {
+                "base": "czasownik na początku",
+                "form": "Ostat ćemo.",
+                "meaning": "Zostaniemy."
+              },
+              {
+                "base": "-ći",
+                "form": "Ići ćemo.",
+                "meaning": "Pójdziemy."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "tip": "Plan i zamiar: Namjeravam ostati… (zamierzam), Odlučila sam… (zdecydowałam)."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "će"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 4,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Pojedziemy nad morze.",
+          "options": [
+            "Ćemo ići na more.",
+            "Ići ćemo na more.",
+            "Ići ćeš na more."
+          ],
+          "correct": 1,
+          "explanation": "My: ćemo — i ćemo nie zaczyna zdania."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Będę pracować.",
+          "options": [
+            "Radit ću.",
+            "Raditi ću.",
+            "Ću raditi."
+          ],
+          "correct": 0,
+          "explanation": "Na początku zdania bezokolicznik traci -i: Radit ću."
+        }
+      ],
+      "listening": "a2-najam-automobila",
+      "model": {
+        "title": "Plany na urlop",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Što ćete raditi na odmoru?",
+            "pl": "Co będziecie robić na urlopie?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Iznajmit ćemo auto i ići ćemo u Istru.",
+            "pl": "Wynajmiemy samochód i pojedziemy na Istrię."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Koliko ćete ostati?",
+            "pl": "Jak długo zostaniecie?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Vjerojatno tjedan dana. A ti?",
+            "pl": "Prawdopodobnie tydzień. A ty?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja ću ostati kod kuće. Imam puno obveza.",
+            "pl": "Ja zostanę w domu. Mam dużo obowiązków."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Plany na weekend",
+        "partner": "Ivan",
+        "turns": [
+          {
+            "say": "Što ćeš raditi za vikend?",
+            "pl": "Co będziesz robić w weekend?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co będziesz robić w weekend.",
+              "accept": [
+                "Ići ću na izlet.",
+                "Ostat ću kod kuće."
+              ],
+              "open": true,
+              "pattern": "^((za vikend|u subotu|u nedjelju|sutra|vjerojatno|svakako|ja|mi)( ja| mi)? (ću|ćemo) (se )?{inf}( \\p{L}+){0,4}|{inft} (ću|ćemo)( se)?( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "say": "A što će raditi Ana?",
+            "pl": "A co będzie robić Ana?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co będzie robić Ana.",
+              "accept": [
+                2
+              ],
+              "open": true,
+              "pattern": "^((ana|ona|vjerojatno|sutra) će (se )?{inf}( \\p{L}+){0,4}|{inft} će( se)?( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "say": "Dobro. Vidimo se u ponedjeljak!",
+            "pl": "Dobrze. Do zobaczenia w poniedziałek!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o swoich planach na przyszły tydzień.",
+        "points": [
+          "co zrobisz",
+          "kiedy",
+          "z kim"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "ću",
+              "ćemo",
+              "će",
+              "ćeš"
+            ],
+            "label": "ću / ćemo + bezokolicznik"
+          },
+          {
+            "any": [
+              "sutra",
+              "vikend",
+              "subotu",
+              "nedjelju",
+              "tjedan",
+              "godine",
+              "ponedjeljak",
+              "petak"
+            ],
+            "label": "kiedy"
+          }
+        ],
+        "sample": "Sljedeći tjedan ću puno raditi. U subotu ćemo ići na izlet."
+      }
+    },
+    "a2-07": {
+      "grammar": {
+        "title": "Moram, mogu, smijem",
+        "text": "Po morati (musieć), moći (móc), smjeti (wolno) i trebati (trzeba, powinno się) stoi bezokolicznik: Moram raditi. Možeš li mi pomoći? Mogu li…? to grzeczna prośba o pozwolenie: Mogu li ovdje sjesti? Uwaga na przeczenie: ne moraš — nie musisz, ne smiješ — nie wolno ci.",
+        "table": [
+          {
+            "label": "ja · ty · on, ona · my · wy · oni",
+            "rows": [
+              {
+                "base": "morati",
+                "form": "moram · moraš · mora · moramo · morate · moraju",
+                "meaning": "muszę, musisz…"
+              },
+              {
+                "base": "moći",
+                "form": "mogu · možeš · može · možemo · možete · mogu",
+                "meaning": "mogę, możesz…"
+              },
+              {
+                "base": "smjeti",
+                "form": "smijem · smiješ · smije · smijemo · smijete · smiju",
+                "meaning": "wolno mi, wolno ci…"
+              }
+            ]
+          },
+          {
+            "label": "nie musisz ≠ nie wolno ci",
+            "rows": [
+              {
+                "base": "nie musisz",
+                "form": "Ne moraš doći.",
+                "meaning": "Nie musisz przychodzić."
+              },
+              {
+                "base": "nie wolno ci",
+                "form": "Ne smiješ doći.",
+                "meaning": "Nie wolno ci przyjść."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "tip": "Trebaš se odmoriti — powinieneś odpocząć. Treba rezervirati — trzeba zarezerwować."
+      },
+      "gap": {
+        "sentence": 5,
+        "word": "Moramo"
+      },
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        },
+        {
+          "sentence": 1,
+          "accept": [
+            "Moram raditi do šest sati."
+          ]
+        }
+      ],
+      "comprehend": 3,
+      "order": 9,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Nie musisz przychodzić.",
+          "options": [
+            "Ne smiješ doći.",
+            "Ne moraš doći.",
+            "Ne možeš doći."
+          ],
+          "correct": 1,
+          "explanation": "Nie musisz = ne moraš; ne smiješ = nie wolno ci."
+        },
+        {
+          "instruction": "Jak grzecznie zapytasz o pozwolenie?",
+          "prompt": "Czy mogę zapłacić kartą?",
+          "options": [
+            "Moram li platiti karticom?",
+            "Mogu li platiti karticom?",
+            "Smijem platiti karticom li?"
+          ],
+          "correct": 1,
+          "explanation": "Prośba o pozwolenie: Mogu li…?"
+        }
+      ],
+      "listening": "a2-rad-iz-kafica",
+      "model": {
+        "title": "Kawiarnia z laptopem",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Oprostite, mogu li ovdje sjesti?",
+            "pl": "Przepraszam, czy mogę tu usiąść?"
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Možete, naravno. Trebate li lozinku za Wi-Fi?",
+            "pl": "Oczywiście. Potrzebuje Pani hasła do Wi-Fi?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da, molim. Moram hitno poslati e-mail.",
+            "pl": "Tak, poproszę. Muszę pilnie wysłać e-mail."
+          },
+          {
+            "speaker": "Konobar",
+            "hr": "Lozinka je na računu. Ovdje se ne smije pušiti.",
+            "pl": "Hasło jest na rachunku. Tu nie wolno palić."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Nema problema, ne pušim.",
+            "pl": "Nie ma problemu, nie palę."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Spotkanie o trzeciej",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Možeš li doći na sastanak u tri?",
+            "pl": "Możesz przyjść na spotkanie o trzeciej?"
+          },
+          {
+            "reply": {
+              "prompt": "Odmów: powiedz, że nie możesz, i co musisz zrobić.",
+              "accept": [
+                "Ne mogu, moram raditi.",
+                "Nažalost, ne mogu. Imam termin kod liječnika."
+              ],
+              "open": true,
+              "pattern": "^(nažalost |žao mi je |ispričavam se )?ne mogu( jer)?( (moram|imam|trebam)( se)?( \\p{L}+){1,5})?$"
+            }
+          },
+          {
+            "say": "Šteta. Možemo li ga odgoditi?",
+            "pl": "Szkoda. Możemy je przełożyć?"
+          },
+          {
+            "reply": {
+              "prompt": "Zaproponuj inny termin.",
+              "accept": [
+                "Možemo sutra u deset.",
+                "Može u petak?"
+              ],
+              "open": true,
+              "pattern": "^(da |naravno )?((možemo|mogu)( ga)?( odgoditi)? |može )?(sutra|danas|navečer|ujutro|poslijepodne|(u|za) \\p{L}+)( (u|oko) \\p{L}+)?( ujutro| navečer| poslijepodne)?$"
+            }
+          },
+          {
+            "say": "Dogovoreno! Vidimo se.",
+            "pl": "Umówione! Do zobaczenia."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co musisz zrobić w tym tygodniu i czego nie możesz.",
+        "points": [
+          "co musisz",
+          "czego nie możesz i dlaczego"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "moram",
+              "moramo",
+              "trebam"
+            ],
+            "label": "moram + bezokolicznik"
+          },
+          {
+            "any": [
+              "mogu",
+              "možemo",
+              "smijem"
+            ],
+            "label": "mogu / ne mogu"
+          }
+        ],
+        "sample": "Ovaj tjedan moram puno raditi. U petak ne mogu doći jer imam termin kod liječnika."
+      }
+    },
+    "a2-08": {
+      "grammar": {
+        "title": "Ako bude sunčano…",
+        "text": "Warunek zaczynasz od ako (jeśli). Ogólnie albo teraz: ako + czas teraźniejszy — Ako imaš vremena, nazovi me. O przyszłej pogodzie i sytuacji: ako bude… — Ako bude sunčano, ići ćemo na plažu. Druga część to zwykle czas przyszły albo prośba. Inače znaczy „bo inaczej”: Ponesi kišobran, inače ćeš pokisnuti.",
+        "table": [
+          {
+            "label": "ako bude … = jeśli będzie …",
+            "rows": [
+              {
+                "base": "słonecznie",
+                "form": "ako bude sunčano",
+                "meaning": "jeśli będzie słonecznie"
+              },
+              {
+                "base": "zimno",
+                "form": "ako bude hladno",
+                "meaning": "jeśli będzie zimno"
+              },
+              {
+                "base": "deszcz",
+                "form": "ako bude kiše",
+                "meaning": "jeśli będzie padać"
+              },
+              {
+                "base": "czas",
+                "form": "ako bude vremena",
+                "meaning": "jeśli będzie czas"
+              }
+            ]
+          },
+          {
+            "label": "ako + teraz",
+            "rows": [
+              {
+                "base": "masz czas",
+                "form": "Ako imaš vremena, nazovi me.",
+                "meaning": "Jeśli masz czas, zadzwoń."
+              },
+              {
+                "base": "pada",
+                "form": "Ako pada kiša, ostajemo kod kuće.",
+                "meaning": "Jeśli pada, zostajemy w domu."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "tip": "Na początku zdania z ako stawiasz przecinek po warunku: Ako bude hladno, odustat ćemo."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "bude"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": [
+            "Ako bude hladno, onda ćemo odustati."
+          ]
+        }
+      ],
+      "comprehend": 4,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Jeśli będzie słonecznie, pójdziemy na plażę.",
+          "options": [
+            "Ako je sunčano, išli smo na plažu.",
+            "Ako bude sunčano, ići ćemo na plažu.",
+            "Ako bude sunčano, išli smo na plažu."
+          ],
+          "correct": 1,
+          "explanation": "Warunek w przyszłości: ako bude…, potem czas przyszły: ići ćemo."
+        }
+      ],
+      "listening": "a2-vikend-izlet",
+      "model": {
+        "title": "Plany na sobotę",
+        "lines": [
+          {
+            "speaker": "Ivan",
+            "hr": "Što ćemo raditi u subotu?",
+            "pl": "Co będziemy robić w sobotę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ako bude sunčano, možemo ići na planinu.",
+            "pl": "Jeśli będzie słonecznie, możemy pojechać w góry."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "A ako pada kiša?",
+            "pl": "A jeśli będzie padać?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Onda ćemo ići u kino. Ali moramo rezervirati unaprijed.",
+            "pl": "To pójdziemy do kina. Ale musimy zarezerwować z wyprzedzeniem."
+          },
+          {
+            "speaker": "Ivan",
+            "hr": "Dobro. Ponijet ću kišobran, za svaki slučaj.",
+            "pl": "Dobrze. Wezmę parasol, na wszelki wypadek."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Wycieczka?",
+        "partner": "Marta",
+        "turns": [
+          {
+            "say": "Hoćemo li sutra na izlet?",
+            "pl": "Jedziemy jutro na wycieczkę?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz z warunkiem: jeśli będzie ładnie…",
+              "accept": [
+                "Ako bude lijepo, idemo!",
+                1
+              ],
+              "open": true,
+              "pattern": "^(da |može |rado )?ako (bude|je|ne bude|nije|ne pada|pada)( \\p{L}+){1,2}( onda)? (ići ćemo|idemo|ćemo ići|hoćemo|može|ostat ćemo|ostajemo|{inft} ćemo|ćemo {inf})( \\p{L}+){0,3}$|^(da |može |rado )*ako (bude|je|ne bude|nije|ne pada|pada)( \\p{L}+){1,2}$"
+            }
+          },
+          {
+            "say": "A ako pada kiša?",
+            "pl": "A jeśli będzie padać?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobicie, jeśli będzie padać.",
+              "accept": [
+                "Onda ćemo ostati kod kuće.",
+                "Ostat ćemo kod kuće."
+              ],
+              "open": true,
+              "pattern": "^((onda|u tom slučaju|mi) ćemo (se )?{inf}|(onda |u tom slučaju )?({inft} ćemo( se)?|idemo|ostajemo|odustajemo))( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Dobro, ponijet ću kišobran.",
+            "pl": "Dobrze, wezmę parasol."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z ako o planach na weekend.",
+        "points": [
+          "co zrobisz, jeśli będzie ładnie",
+          "co zrobisz, jeśli będzie padać"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "ako"
+            ],
+            "label": "warunek: ako"
+          },
+          {
+            "any": [
+              "ću",
+              "ćemo",
+              "bude"
+            ],
+            "label": "przyszłość: ćemo / bude"
+          }
+        ],
+        "sample": "Ako bude sunčano, ići ćemo na more. Ako pada kiša, ostat ću kod kuće."
+      }
+    },
+    "a2-09": {
+      "grammar": {
+        "title": "Hoćeš li doći?",
+        "text": "Zaproszenie: Imaš li vremena…? Hoćeš li doći…? Želim te pozvati na… Zgoda: Može! Rado! Dogovoreno! Grzeczna odmowa: Nažalost, ne mogu jer… — i od razu nowy termin: Može li u sedam? Krótkie zaimki (te, ti, me) stoją na drugim miejscu, zaraz po ću: Nazvat ću te. Javit ću ti se.",
+        "table": [
+          {
+            "label": "Zaproszenie i odpowiedź",
+            "rows": [
+              {
+                "base": "zaproszenie",
+                "form": "Hoćeš li doći na večeru?",
+                "meaning": "Przyjdziesz na kolację?"
+              },
+              {
+                "base": "zgoda",
+                "form": "Rado! Dogovoreno!",
+                "meaning": "Chętnie! Umówione!"
+              },
+              {
+                "base": "odmowa",
+                "form": "Nažalost, ne mogu.",
+                "meaning": "Niestety nie mogę."
+              },
+              {
+                "base": "nowy termin",
+                "form": "Može li sutra?",
+                "meaning": "Może jutro?"
+              }
+            ]
+          },
+          {
+            "label": "te · ti · vas",
+            "rows": [
+              {
+                "base": "do ciebie",
+                "form": "Nazvat ću te.",
+                "meaning": "Zadzwonię do ciebie."
+              },
+              {
+                "base": "ci (dam znać)",
+                "form": "Javit ću ti se.",
+                "meaning": "Odezwę się do ciebie."
+              },
+              {
+                "base": "was / Pana",
+                "form": "Pozvat ću vas.",
+                "meaning": "Zaproszę was."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "Hvala na pozivu! — dziękuję za zaproszenie (po pozvati: poziv)."
+      },
+      "gap": {
+        "sentence": 7,
+        "word": "te"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 9,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 2,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zadzwonię do ciebie jutro.",
+          "options": [
+            "Te ću nazvati sutra.",
+            "Nazvat ću sutra te.",
+            "Nazvat ću te sutra."
+          ],
+          "correct": 2,
+          "explanation": "te stoi zaraz po ću: Nazvat ću te."
+        }
+      ],
+      "listening": "a2-autoservis",
+      "model": {
+        "title": "Zaproszenie na urodziny",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ana, imaš li vremena u subotu navečer?",
+            "pl": "Ana, masz czas w sobotę wieczorem?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Mislim da imam. Zašto?",
+            "pl": "Chyba mam. Dlaczego?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Slavim rođendan i želim te pozvati.",
+            "pl": "Świętuję urodziny i chcę cię zaprosić."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala na pozivu! U koliko sati?",
+            "pl": "Dziękuję za zaproszenie! O której?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "U osam, u restoranu kod luke.",
+            "pl": "O ósmej, w restauracji przy porcie."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dogovoreno! Vidimo se tamo.",
+            "pl": "Umówione! Do zobaczenia na miejscu."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Kawa w piątek?",
+        "partner": "Ivan",
+        "turns": [
+          {
+            "say": "Bok! Hoćeš li doći na kavu u petak?",
+            "pl": "Cześć! Przyjdziesz na kawę w piątek?"
+          },
+          {
+            "reply": {
+              "prompt": "Odmów grzecznie i powiedz dlaczego.",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^(hvala( na pozivu)?( ali)? )?(nažalost |žao mi je |ispričavam se )?ne mogu( jer| zato što)?( (moram|imam|trebam|idem|radim|putujem)( se)?( \\p{L}+){0,5})?$"
+            }
+          },
+          {
+            "say": "Šteta! A može li u subotu?",
+            "pl": "Szkoda! A może w sobotę?"
+          },
+          {
+            "reply": {
+              "prompt": "Zgódź się i zaproponuj godzinę.",
+              "accept": [
+                "Može, u deset.",
+                "Rado! Može u deset?"
+              ],
+              "open": true,
+              "pattern": "^(da |rado |super |naravno )*(može|dogovoreno|može li)( (u|oko) \\p{L}+( \\p{L}+)?)?( (ujutro|navečer|poslijepodne))?$"
+            }
+          },
+          {
+            "say": "Super, dogovoreno!",
+            "pl": "Super, umówione!"
+          },
+          {
+            "reply": {
+              "prompt": "Pożegnaj się i obiecaj, że się odezwiesz.",
+              "accept": [
+                "Javit ću ti se. Bok!",
+                "Nazvat ću te sutra."
+              ],
+              "open": true,
+              "pattern": "^(dobro |super |hvala )?(javit ću ti se|nazvat ću te|(ja|svakako) ću ti se javiti|(ja|svakako) ću te nazvati|čujemo se|vidimo se)( sutra| kasnije| večeras| u \\p{L}+)?( (bok|pozdrav|doviđenja|vidimo se|čujemo se))?$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz krótką wiadomość: zaproś znajomego, podaj dzień i godzinę.",
+        "points": [
+          "zaproszenie",
+          "dzień",
+          "godzina"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "hoćeš",
+              "pozvati",
+              "imaš",
+              "dođi",
+              "želiš"
+            ],
+            "label": "zaproszenie"
+          },
+          {
+            "any": [
+              "petak",
+              "subotu",
+              "nedjelju",
+              "sutra",
+              "večeras",
+              "ponedjeljak",
+              "utorak",
+              "srijedu",
+              "četvrtak"
+            ],
+            "label": "dzień"
+          },
+          {
+            "any": [
+              "sati",
+              "pet",
+              "šest",
+              "sedam",
+              "osam",
+              "devet",
+              "deset"
+            ],
+            "label": "godzina"
+          }
+        ],
+        "sample": "Bok! Hoćeš li doći na večeru u subotu? Može u osam. Javi mi se!"
+      }
+    },
+    "a2-10": {
+      "grammar": {
+        "title": "Plany — wszystko razem",
+        "text": "Przyszłość: Zapisat ću to u kalendar. Obowiązek i możliwość: Moram provjeriti raspored. Warunek: Ako stignem, doći ću. Zaproszenie i odpowiedź: Hoćeš li doći? — Dogovoreno!",
+        "examples": [
+          5,
+          2,
+          6
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Jeśli zdążę, przyjdę.",
+          "options": [
+            "Ako stignem, doći ću.",
+            "Ako stignem, došao sam.",
+            "Ako ću stići, dođem."
+          ],
+          "correct": 0,
+          "explanation": "ako + czas teraźniejszy (stignem), potem czas przyszły (doći ću)."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": [
+            "Moram pogledati raspored."
+          ]
+        }
+      ],
+      "dialog": {
+        "title": "Plan na tydzień",
+        "partner": "Marta",
+        "turns": [
+          {
+            "say": "Bok! Što ćeš raditi sljedeći tjedan?",
+            "pl": "Cześć! Co będziesz robić w przyszłym tygodniu?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co będziesz robić w przyszłym tygodniu.",
+              "accept": [
+                "Radit ću cijeli tjedan.",
+                1
+              ],
+              "open": true,
+              "pattern": "^((sljedeći tjedan|u \\p{L}+|sutra|vjerojatno|ja)( ja)? (ću (se )?{inf}|imam)( \\p{L}+){0,4}|{inft} ću( se)?( \\p{L}+){0,4}|(ja )?imam( \\p{L}+){1,4})$"
+            }
+          },
+          {
+            "say": "Možeš li doći u četvrtak na sastanak?",
+            "pl": "Możesz przyjść w czwartek na spotkanie?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz: możesz, nie możesz (i dlaczego) albo przyjdziesz, jeśli zdążysz.",
+              "accept": [
+                "Ne mogu, moram raditi.",
+                6
+              ],
+              "open": true,
+              "pattern": "^(nažalost |da |naravno )?(ne mogu|mogu|može|ako (stignem|mogu|imam vremena|bude vremena))( jer| ali)?( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "U redu. Javi mi se ako nešto promijeniš.",
+            "pl": "W porządku. Daj znać, jeśli coś zmienisz."
+          },
+          {
+            "reply": {
+              "prompt": "Obiecaj, że się odezwiesz.",
+              "accept": [
+                "Javit ću ti se.",
+                "Nazvat ću te sutra."
+              ],
+              "open": true,
+              "pattern": "^(dobro |naravno |hvala )*(javit ću ti se|nazvat ću te|(ja|svakako) ću ti se javiti|(ja|svakako) ću te nazvati)( sutra| kasnije| večeras| u \\p{L}+)?( bok)?$"
+            }
+          },
+          {
+            "say": "Super. Čujemo se!",
+            "pl": "Super. Zdzwonimy się!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3–4 zdaniach swój plan na przyszły tydzień: co musisz, co zrobisz i co, jeśli…",
+        "points": [
+          "co musisz",
+          "co zrobisz",
+          "co, jeśli…"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "ću",
+              "ćemo"
+            ],
+            "label": "przyszłość: ću / ćemo"
+          },
+          {
+            "any": [
+              "moram",
+              "mogu",
+              "moramo"
+            ],
+            "label": "moram / mogu"
+          },
+          {
+            "any": [
+              "ako"
+            ],
+            "label": "warunek: ako"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Sljedeći tjedan moram puno raditi. U petak ću ići na večeru s prijateljima. Ako bude sunčano, u subotu ćemo ići na izlet."
       }
     }
   }

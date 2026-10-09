@@ -309,17 +309,21 @@ const vocabItem = (r) => ({ target: r.hr_text, source: r.pl_text, lemma: r.lemma
  */
 function exampleFor(word, sentences) {
   const phrase = tokens(word.hr_text);
+  // Czasownik zwrotny, którego fraza nie występuje w całości (javit ću ti se, dogovorili smo se): szukamy formy czasownika obok „se”.
+  const reflexiveVerb = word.part_of_speech === "verb" && phrase.length === 2 && phrase[1] === "se";
   if (phrase.length > 1) {
     const forms = recordForms(word);
     const variants = unique([phrase.join(" "), ...forms.nom, ...forms.acc, ...forms.inf, ...forms.pres1]).map((v) => ` ${v} `);
-    return sentences.find((s) => variants.some((v) => ` ${tokens(s.hr_text).join(" ")} `.includes(v)));
+    const found = sentences.find((s) => variants.some((v) => ` ${tokens(s.hr_text).join(" ")} `.includes(v)));
+    if (found || !reflexiveVerb) return found;
   }
   // Najpierw zdanie z dokładnie tą formą (soba → „Soba je…”), dopiero potem z inną formą lematu (sobu).
   const base = phrase[0];
-  const exact = sentences.find((s) => tokens(s.hr_text).includes(base));
+  const exact = sentences.find((s) => tokens(s.hr_text).includes(base) && (!reflexiveVerb || tokens(s.hr_text).includes("se")));
   if (exact) return exact;
-  const forms = formsOf(word);
-  return sentences.find((s) => tokens(s.hr_text).some((t) => forms.has(t)));
+  // Zwrotne często występują w rodzaju nijakim: Što se dogodilo? (dogodila → dogodilo).
+  const forms = reflexiveVerb ? new Set([...formsOf(word), ...[...formsOf(word)].filter((f) => f.endsWith("la")).map((f) => `${f.slice(0, -1)}o`)]) : formsOf(word);
+  return sentences.find((s) => tokens(s.hr_text).some((t) => forms.has(t)) && (!reflexiveVerb || tokens(s.hr_text).includes("se")));
 }
 
 function wordStep(id, record, sentences) {

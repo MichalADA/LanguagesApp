@@ -1,9 +1,9 @@
-# Kurs chorwackiego A2 — źródła treści (pilot: moduł 1)
+# Kurs chorwackiego A2 — źródła treści (moduły 1–2)
 
 Ten sam format i generator co A1 (zob. `curriculum/hr-a1/README.md`), osobny poziom:
 
 ```
-level.json                          ← poziom: A2, prefiks a2, 1 moduł × 5 lekcji, dziedziczy słownictwo hr-a1
+level.json                          ← poziom: A2, prefiks a2, 2 moduły × 5 lekcji, dziedziczy słownictwo hr-a1
 lexodromia_hr_A2_curriculum.csv     ← źródło prawdy: lekcje, słownictwo, zdania, blueprinty
 didactics.json                      ← gramatyka, dialogi z ramami odpowiedzi, zadania swobodne
 audio.json / audio-manifest.json    ← nagrania w /audio/hr/a2/module-XX/
@@ -14,7 +14,12 @@ src/curriculum/data/hr-a2/          ← wygenerowane TypeScript (commitowane, ni
 
 - **Moduł 1 „Opowiadam o przeszłości”:** perfekt we wszystkich osobach (a2-01), przeczenie nisam / nije + jer (a2-02),
   pytania Jesi li…? i krótkie odpowiedzi Jesam / Nisam (a2-03), historia po kolei: prvo, zatim, na kraju, prije + dopełniacz (a2-04),
-  powtórka z rozmową o wakacjach (a2-05). Ćwiczenia słuchania używają nagranych dialogów z `public/data/listening/hr-a2-dialogues.json`.
+  powtórka z rozmową o wakacjach (a2-05).
+- **Moduł 2 „Plany i obowiązki”:** czas przyszły we wszystkich osobach i szyk Radit ćemo (a2-06), morati / moći / smjeti
+  + bezokolicznik, ne moraš ≠ ne smiješ (a2-07), warunek z ako i ako bude… (a2-08), zaproszenie, odmowa i nowy termin,
+  te / ti po ću (a2-09), powtórka z planowaniem tygodnia (a2-10).
+- Ćwiczenia słuchania używają nagranych dialogów z `public/data/listening/hr-a2-dialogues.json`
+  (do kolejnego modułu zostały: kod-lijecnika, razgovor-za-posao).
 - **Dziedziczenie A1:** ramy odpowiedzi (`{pp}`, `{acc}`, `{inf}`…) znają formy całego słownictwa A1, a generator ostrzega,
   gdy rdzeń lekcji A2 powtarza słowo, które uczeń zna z A1 (test `tests/curriculum-a2.test.mjs` traktuje to jako błąd).
 - **Slot `{pp}`:** imiesłów w każdej osobie i liczbie (radio, radila, radilo, radili, radile) — do zdań z „smo / su / nisu”.

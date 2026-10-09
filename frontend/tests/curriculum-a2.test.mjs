@@ -10,7 +10,7 @@ import Renderer, { act } from 'react-test-renderer';
 import ts from 'typescript';
 import { audioSlots } from '../scripts/lib/course-audio.mjs';
 
-/* Kurs A2 (pilot: moduł 1) — ten sam generator i player co A1, osobny poziom. */
+/* Kurs A2 (moduły 1–2) — ten sam generator i player co A1, osobny poziom. */
 
 const require = createRequire(import.meta.url);
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -87,18 +87,23 @@ test('A2: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-test('A2: poziom dostępny, moduł 1 ma 4 lekcje i powtórkę, A1 bez zmian', () => {
+test('A2: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 bez zmian', () => {
   assert.equal(a2.available, true);
-  assert.equal(a2.modules.length, 1);
-  assert.deepEqual(lessons.map((l) => l.id), ['a2-01-01', 'a2-01-02', 'a2-01-03', 'a2-01-04', 'a2-01-05']);
-  assert.deepEqual(lessons.map((l) => l.kind), ['lesson', 'lesson', 'lesson', 'lesson', 'review']);
-  assert.ok(a2.modules.every((m) => m.levelId === 'A2' && m.id === 'a2-01'));
+  assert.deepEqual(a2.modules.map((m) => [m.id, m.title]), [['a2-01', 'Opowiadam o przeszłości'], ['a2-02', 'Plany i obowiązki']]);
+  for (const [i, module] of a2.modules.entries()) {
+    const m = String(i + 1).padStart(2, '0');
+    assert.equal(module.levelId, 'A2');
+    assert.deepEqual(module.lessons.map((l) => l.id), [1, 2, 3, 4, 5].map((n) => `a2-${m}-0${n}`));
+    assert.deepEqual(module.lessons.map((l) => l.kind), ['lesson', 'lesson', 'lesson', 'lesson', 'review']);
+  }
   const a1 = PL_HR_OUTLINE.levels.find((level) => level.id === 'A1');
   assert.equal(a1.modules.flatMap((m) => m.lessons).length, 40);
   // Postęp A2 liczy się osobno: nowy uczeń zaczyna od a2-01-01.
   assert.equal(deriveLevel(a2, new Set()).current.lesson.lesson.id, 'a2-01-01');
-  assert.equal(nextLessonId(a2, 'a2-01-04'), 'a2-01-05');
-  assert.equal(nextLessonId(a2, 'a2-01-05'), null);
+  assert.equal(nextLessonId(a2, 'a2-01-05'), 'a2-02-01');
+  assert.equal(nextLessonId(a2, 'a2-02-05'), null);
+  // Moduł 2 otwiera się po bieżącym module, tak jak w A1.
+  assert.equal(deriveLevel(a2, new Set()).modules[1].status, 'locked');
 });
 
 test('A2: rdzeń lekcji nie powtarza słów, które uczeń zna z A1', () => {
@@ -150,6 +155,31 @@ const OPEN_REPLIES = [
     miss: ['Smo plivali.', 'Plivali.'] },
   { lesson: 'a2-01-05', reply: 2, hit: ['Nismo imali nikakvih problema.', 'Nažalost, nisam vidio Dubrovnik.', 'Ne, nije.', 'Ništa loše.', 'Nisam vidjela Zagreb.'],
     miss: ['Ne sam vidio Dubrovnik.', 'Sam nisam vidio.'] },
+  // Moduł 2: plany i obowiązki
+  { lesson: 'a2-02-01', reply: 0, hit: ['Ići ću na izlet.', 'Ostat ću kod kuće.', 'U subotu ću raditi.', 'Za vikend ćemo ići na more.', 'Ja ću se odmarati.', 'Vjerojatno ću gledati filmove.', 'Bok, igrat ću tenis, a ti?'],
+    miss: ['Ću ići na izlet.', 'Ostati ću kod kuće.', 'Idem ću na izlet.'] },
+  { lesson: 'a2-02-01', reply: 1, hit: ['Ana će ostati kod kuće.', 'Ona će raditi.', 'Ostat će kod kuće.', 'Ana će ići u grad.'],
+    miss: ['Ana ostati kod kuće.', 'Će ostati kod kuće.'] },
+  { lesson: 'a2-02-02', reply: 0, hit: ['Ne mogu, moram raditi.', 'Nažalost, ne mogu. Imam termin kod liječnika.', 'Žao mi je, ne mogu.', 'Ne mogu jer moram ići kod liječnika.', 'Ispričavam se, ne mogu, moram hitno nazvati šefa.'],
+    miss: ['Mogu.', 'Ne moram raditi.'] },
+  { lesson: 'a2-02-02', reply: 1, hit: ['Možemo sutra u deset.', 'Može u petak?', 'Sutra u devet.', 'U ponedjeljak ujutro.', 'Možemo ga odgoditi za petak.'],
+    miss: ['Ne mogu.', 'Možemo.'] },
+  { lesson: 'a2-02-03', reply: 0, hit: ['Ako bude lijepo, idemo!', 'Ako bude sunčano, ići ćemo na plažu.', 'Može, ako bude lijepo.', 'Ako ne pada kiša, idemo.', 'Ako bude toplo, ići ćemo na more.'],
+    miss: ['Ako sunčano, idemo.', 'Idemo na plažu.', 'Ako bude sunčano, išli smo na plažu.'] },
+  { lesson: 'a2-02-03', reply: 1, hit: ['Onda ćemo ostati kod kuće.', 'Ostat ćemo kod kuće.', 'Onda idemo u kino.', 'Gledat ćemo filmove.', 'U tom slučaju ćemo ići u kino.'],
+    miss: ['Ostati ćemo kod kuće.', 'Ćemo ostati kod kuće.'] },
+  { lesson: 'a2-02-04', reply: 0, hit: ['Nažalost, ne mogu jer moram raditi.', 'Hvala na pozivu, ali ne mogu.', 'Ne mogu, idem kod bake.', 'Žao mi je, ne mogu jer putujem.', 'Hvala, ali nažalost ne mogu.'],
+    miss: ['Mogu.', 'Ne moram.'] },
+  { lesson: 'a2-02-04', reply: 1, hit: ['Može, u deset.', 'Rado! Može u deset?', 'Može u osam.', 'Dogovoreno!', 'Da, može.'],
+    miss: ['Ne mogu.', 'Nažalost ne.'] },
+  { lesson: 'a2-02-04', reply: 2, hit: ['Javit ću ti se. Bok!', 'Nazvat ću te sutra.', 'Dobro, čujemo se!', 'Super, vidimo se u subotu!', 'Ja ću te nazvati.'],
+    miss: ['Ću te nazvati.', 'Nazvat te ću.'] },
+  { lesson: 'a2-02-05', reply: 0, hit: ['Radit ću cijeli tjedan.', 'Sljedeći tjedan imam godišnji odmor.', 'U ponedjeljak ću ići na sastanak.', 'Imam puno obveza.', 'Ja ću putovati.'],
+    miss: ['Ću raditi.', 'Raditi ću cijeli tjedan.'] },
+  { lesson: 'a2-02-05', reply: 1, hit: ['Ne mogu, moram raditi.', 'Ako stignem, doći ću.', 'Mogu.', 'Naravno, mogu doći.', 'Nažalost, ne mogu jer putujem.'],
+    miss: ['Bio sam kod kuće.'] },
+  { lesson: 'a2-02-05', reply: 2, hit: ['Javit ću ti se.', 'Nazvat ću te sutra.', 'Dobro, javit ću ti se kasnije.', 'Naravno, ja ću te nazvati.', 'Svakako ću ti se javiti.'],
+    miss: ['Ću te nazvati.', 'Javit ću se ti.'] },
 ];
 
 test('A2: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

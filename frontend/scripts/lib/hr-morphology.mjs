@@ -94,12 +94,15 @@ const PRES_OVERRIDES = {
   odabrati: ["odaberem"], poznati: ["poznajem", "poznam"], poznavati: ["poznajem"], htjeti: ["hoću"], moći: ["mogu"], spavati: ["spavam"],
   kupati: ["kupam"], doći: ["dođem"], trebati: ["trebam"], preporučiti: ["preporučim", "preporučujem"],
   otići: ["odem"], provesti: ["provedem"], sresti: ["sretnem"],
+  uzeti: ["uzmem"], ostati: ["ostanem"], odustati: ["odustanem"], smjeti: ["smijem"], pomoći: ["pomognem"],
+  pozvati: ["pozovem"], nazvati: ["nazovem"], otkazati: ["otkažem"], zapisati: ["zapišem"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
   prijeći: ["prešao", "prešla", "prešli"], stići: ["stigao", "stigla", "stigli"], moći: ["mogao", "mogla", "mogli"],
   htjeti: ["htio", "htjela", "htjeli"], biti: ["bio", "bila", "bili"], doći: ["došao", "došla", "došli"],
   otići: ["otišao", "otišla", "otišli"], provesti: ["proveo", "provela", "proveli"], sresti: ["sreo", "srela", "sreli"],
+  uzeti: ["uzeo", "uzela", "uzeli"], pomoći: ["pomogao", "pomogla", "pomogli"],
 };
 
 function present1(inf) {

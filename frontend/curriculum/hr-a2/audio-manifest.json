@@ -6,9 +6,10 @@
     "male": "hr-HR-SreckoNeural"
   },
   "modules": [
-    1
+    1,
+    2
   ],
-  "characters": 4062,
+  "characters": 8187,
   "items": [
     {
       "text": "A gdje si bio na odmoru?",
@@ -1692,6 +1693,7 @@
       "audioPath": "/audio/hr/a2/module-01/sto-se-dogodilo.mp3",
       "kinds": [
         "answer",
+        "example",
         "phrase"
       ],
       "modules": [
@@ -2092,6 +2094,2145 @@
       ],
       "modules": [
         1
+      ]
+    },
+    {
+      "text": "A ako pada kiša?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/a-ako-pada-kisa-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "A ako pada kiša?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/a-ako-pada-kisa.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "A što će raditi Ana?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/a-sto-ce-raditi-ana-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako bude hladno, odustat ćemo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-hladno-odustat-cemo.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ako bude hladno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-hladno.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ako bude kiše",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-kise.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako bude lijepo, idemo u šetnju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-lijepo-idemo-u-setnju.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako bude lijepo, idemo!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-lijepo-idemo.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako bude sunčano, ići ćemo na more. Ako pada kiša, ostat ću kod kuće.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-suncano-ici-cemo-na-more-ako-pada-kisa-ostat-cu-kod.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako bude sunčano, ići ćemo na plažu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-suncano-ici-cemo-na-plazu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako bude sunčano, možemo ići na planinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-suncano-mozemo-ici-na-planinu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ako bude sunčano",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-suncano.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ako bude vremena",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-bude-vremena.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako imaš vremena, nazovi me.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-imas-vremena-nazovi-me.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako pada kiša, ostajemo kod kuće.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-pada-kisa-ostajemo-kod-kuce.mp3",
+      "kinds": [
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ako stignem, doći ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako-stignem-doci-cu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ako",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ako.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ana će ostati kod kuće.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ana-ce-ostati-kod-kuce.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ana, imaš li vremena u subotu navečer?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/ana-imas-li-vremena-u-subotu-navecer-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Bok! Hoćeš li doći na kavu u petak?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/bok-hoces-li-doci-na-kavu-u-petak-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Bok! Hoćeš li doći na večeru u subotu? Može u osam. Javi mi se!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/bok-hoces-li-doci-na-veceru-u-subotu-moze-u-osam-javi-mi-se.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Bok! Što ćeš raditi sljedeći tjedan?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/bok-sto-ces-raditi-sljedeci-tjedan.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "bude",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/bude.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "će raditi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ce-raditi.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ćemo raditi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/cemo-raditi.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ćeš raditi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ces-raditi.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ćete raditi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/cete-raditi.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ću raditi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/cu-raditi.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čujemo se sutra!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/cujemo-se-sutra.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čujemo se!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/cujemo-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Da, molim. Moram hitno poslati e-mail.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/da-molim-moram-hitno-poslati-e-mail.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Danas je jako vjetrovito.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/danas-je-jako-vjetrovito.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dobro. Ponijet ću kišobran, za svaki slučaj.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/dobro-ponijet-cu-kisobran-za-svaki-slucaj-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dobro, ponijet ću kišobran.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/dobro-ponijet-cu-kisobran.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dobro. Vidimo se u ponedjeljak!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/dobro-vidimo-se-u-ponedjeljak-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dogovoreno! Vidimo se.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/dogovoreno-vidimo-se-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dogovoreno! Vidimo se tamo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/dogovoreno-vidimo-se-tamo.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dogovorili smo se za subotu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/dogovorili-smo-se-za-subotu.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "dogovoriti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/dogovoriti-se.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Gdje je utičnica?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/gdje-je-uticnica.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "gorivo",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/gorivo.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Hitno moram nazvati šefa.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/hitno-moram-nazvati-sefa.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "hitno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/hitno.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Hoćemo li sutra na izlet?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/hocemo-li-sutra-na-izlet.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Hoćeš li doći na večeru?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/hoces-li-doci-na-veceru.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Hvala na pozivu! U koliko sati?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/hvala-na-pozivu-u-koliko-sati.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Hvala na pozivu!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/hvala-na-pozivu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ići ćemo na more.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ici-cemo-na-more.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ići ćemo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ici-cemo.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ići ću na izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ici-cu-na-izlet.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Iduće godine ćemo ići u Dubrovnik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/iduce-godine-cemo-ici-u-dubrovnik.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "iduće godine",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/iduce-godine.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Imam jedan prijedlog.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/imam-jedan-prijedlog.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Imam puno obveza ovaj tjedan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/imam-puno-obveza-ovaj-tjedan.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Imam termin kod liječnika u tri.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/imam-termin-kod-lijecnika-u-tri.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Imaš li vremena u petak navečer?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/imas-li-vremena-u-petak-navecer.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "inače",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/inace.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ispričavam se, ne mogu doći.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ispricavam-se-ne-mogu-doci.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ispričavati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ispricavati-se.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "izložba",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/izlozba.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Iznajmit ćemo auto i ići ćemo u Istru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/iznajmit-cemo-auto-i-ici-cemo-u-istru.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Iznajmit ćemo auto na tri dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/iznajmit-cemo-auto-na-tri-dana.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "iznajmiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/iznajmiti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ja ću ostati kod kuće. Imam puno obveza.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/ja-cu-ostati-kod-kuce-imam-puno-obveza-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Javit ću ti se. Bok!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/javit-cu-ti-se-bok.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Javit ću ti se sutra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/javit-cu-ti-se-sutra.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Javit ću ti se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/javit-cu-ti-se.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "javiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/javiti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Je li osiguranje uključeno?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/je-li-osiguranje-ukljuceno.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "kabanica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/kabanica.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "kalendar",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/kalendar.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Koliko ćete ostati?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/koliko-cete-ostati-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Kupio sam dvije ulaznice za izložbu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/kupio-sam-dvije-ulaznice-za-izlozbu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Lozinka je na računu. Ovdje se ne smije pušiti.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/lozinka-je-na-racunu-ovdje-se-ne-smije-pusiti-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Mi ćemo ostati.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/mi-cemo-ostati.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Mislim da imam. Zašto?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/mislim-da-imam-zasto.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "moći",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moci.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Mogu li ovdje sjesti?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/mogu-li-ovdje-sjesti.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Mogu li platiti karticom?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/mogu-li-platiti-karticom.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "mogu, možeš, može, možemo, možete, mogu",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/mogu-mozes-moze-mozemo-mozete-mogu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Molim vas, koristite slušalice.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/molim-vas-koristite-slusalice.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "moram, moraš, mora, moramo, morate, moraju",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moram-moras-mora-moramo-morate-moraju.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Moram provjeriti raspored.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moram-provjeriti-raspored.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Moram raditi do šest.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moram-raditi-do-sest.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Moramo odgoditi sastanak.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moramo-odgoditi-sastanak.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Moramo otkazati rezervaciju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moramo-otkazati-rezervaciju.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Moramo rezervirati unaprijed.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moramo-rezervirati-unaprijed.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "morati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/morati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Može li sutra?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moze-li-sutra.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Može li u sedam?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moze-li-u-sedam.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Može, u deset.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/moze-u-deset.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Možemo sutra u deset.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/mozemo-sutra-u-deset.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Možeš li doći na sastanak u tri?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/mozes-li-doci-na-sastanak-u-tri-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Možeš li doći u četvrtak na sastanak?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/mozes-li-doci-u-cetvrtak-na-sastanak.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Možeš li mi pomoći?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/mozes-li-mi-pomoci.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Možete, naravno. Trebate li lozinku za Wi-Fi?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/mozete-naravno-trebate-li-lozinku-za-wi-fi-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nadam se da će biti sunčano.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nadam-se-da-ce-biti-suncano.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nadam se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nadam-se.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Namjeravam ostati do nedjelje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/namjeravam-ostati-do-nedjelje.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "namjeravati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/namjeravati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nažalost, ne mogu jer moram raditi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nazalost-ne-mogu-jer-moram-raditi.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nažalost, ne mogu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nazalost-ne-mogu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nazvat ću te kasnije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nazvat-cu-te-kasnije.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nazvat ću te sutra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nazvat-cu-te-sutra.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nazvat ću te.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nazvat-cu-te.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "nazvati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nazvati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ne mogu, moram raditi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ne-mogu-moram-raditi.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ne moraš doći.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ne-moras-doci.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ne smiješ doći.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ne-smijes-doci.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ne zaboravi vozačku dozvolu!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ne-zaboravi-vozacku-dozvolu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nema problema, ne pušim.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/nema-problema-ne-pusim.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "obveza",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/obveza.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "odgoditi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/odgoditi.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Odlučila sam ostati još jedan dan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/odlucila-sam-ostati-jos-jedan-dan.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "odlučiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/odluciti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "odustati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/odustati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Onda ćemo ići u kino. Ali moramo rezervirati unaprijed.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/onda-cemo-ici-u-kino-ali-moramo-rezervirati-unaprijed.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Onda ćemo ostati kod kuće.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/onda-cemo-ostati-kod-kuce.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Oprostite, mogu li ovdje sjesti?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/oprostite-mogu-li-ovdje-sjesti.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "osiguranje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/osiguranje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ostat ćemo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ostat-cemo.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ostati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ostati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "otkazati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/otkazati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ovaj tjedan moram puno raditi. U petak ne mogu doći jer imam termin kod liječnika.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ovaj-tjedan-moram-puno-raditi-u-petak-ne-mogu-doci-jer-imam.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ovdje je pušenje zabranjeno.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ovdje-je-pusenje-zabranjeno.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ovdje se ne smije pušiti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ovdje-se-ne-smije-pusiti.mp3",
+      "kinds": [
+        "example",
+        "phrase",
+        "question"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "podsjetnik",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/podsjetnik.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "pokisnuti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/pokisnuti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "pomoći",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/pomoci.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ponesi kišobran, inače ćeš pokisnuti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ponesi-kisobran-inace-ces-pokisnuti.mp3",
+      "kinds": [
+        "example",
+        "phrase",
+        "question"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "poziv",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/poziv.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Pozvat ću vas.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/pozvat-cu-vas.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "pozvati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/pozvati.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "prijedlog",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/prijedlog.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "proslaviti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/proslaviti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "provjeriti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/provjeriti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "pušenje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/pusenje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Radit ću cijeli tjedan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/radit-cu-cijeli-tjedan.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Radit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/radit-cu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Rado! Dogovoreno!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/rado-dogovoreno.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "raspored",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/raspored.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Rođendan ćemo proslaviti u restoranu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/rodjendan-cemo-proslaviti-u-restoranu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Rok je do kraja mjeseca.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/rok-je-do-kraja-mjeseca.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "rok",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/rok.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "šetnja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/setnja.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Slavim rođendan i želim te pozvati.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/slavim-rodjendan-i-zelim-te-pozvati-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Sljedeći tjedan ću puno raditi. U subotu ćemo ići na izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/sljedeci-tjedan-cu-puno-raditi-u-subotu-cemo-ici-na-izlet.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Sljedeći tjedan imam godišnji odmor.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/sljedeci-tjedan-imam-godisnji-odmor.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Sljedeći tjedan moram puno raditi. U petak ću ići na večeru s prijateljima. Ako bude sunčano, u subotu ćemo ići na izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/sljedeci-tjedan-moram-puno-raditi-u-petak-cu-ici-na-veceru-s.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "slobodan dan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/slobodan-dan.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "slušalice",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/slusalice.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "smijem, smiješ, smije, smijemo, smijete, smiju",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/smijem-smijes-smije-smijemo-smijete-smiju.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "smjeti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/smjeti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Šteta! A može li u subotu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/steta-a-moze-li-u-subotu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Šteta. Možemo li ga odgoditi?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/steta-mozemo-li-ga-odgoditi-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Što ćemo raditi u subotu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/sto-cemo-raditi-u-subotu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Što ćeš raditi za vikend?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/sto-ces-raditi-za-vikend-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Što ćete raditi na odmoru?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/sto-cete-raditi-na-odmoru-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Što ćete raditi za vikend?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/sto-cete-raditi-za-vikend.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Super. Čujemo se!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/super-cujemo-se.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Super, dogovoreno!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/super-dogovoreno-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Sutra ćemo ići na izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/sutra-cemo-ici-na-izlet.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Svakako ću naučiti hrvatski.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/svakako-cu-nauciti-hrvatski.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "svakako",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/svakako.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "termin",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/termin.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Trebaš se odmoriti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/trebas-se-odmoriti.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "U osam, u restoranu kod luke.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/a2/module-02/u-osam-u-restoranu-kod-luke-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "U petak imam slobodan dan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/u-petak-imam-slobodan-dan.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "U redu. Javi mi se ako nešto promijeniš.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/u-redu-javi-mi-se-ako-nesto-promijenis.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "U subotu ćemo ići na planinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/u-subotu-cemo-ici-na-planinu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ulaznica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/ulaznica.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "unaprijed",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/unaprijed.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "utičnica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/uticnica.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Uzet ću taksi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/uzet-cu-taksi.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "uzeti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/uzeti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Uzmi kabanicu, za svaki slučaj!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/uzmi-kabanicu-za-svaki-slucaj.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Večeras će biti oluja.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/veceras-ce-biti-oluja.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Vidimo se tamo!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/vidimo-se-tamo.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Vjerojatno će padati kiša.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/vjerojatno-ce-padati-kisa.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Vjerojatno tjedan dana. A ti?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/vjerojatno-tjedan-dana-a-ti.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "vjerojatno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/vjerojatno.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "vjetrovito",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/vjetrovito.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "vozačka dozvola",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/vozacka-dozvola.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "za svaki slučaj",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/za-svaki-slucaj.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "zabranjeno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/zabranjeno.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Zapisat ću to u kalendar.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/zapisat-cu-to-u-kalendar.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "zapisati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/zapisati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Želim te pozvati na večeru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a2/module-02/zelim-te-pozvati-na-veceru.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
       ]
     }
   ]
