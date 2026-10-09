@@ -199,6 +199,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Czy próbowaliście ćevapi?",
           "audioSrc": "/audio/hr/a2/module-01/jeste-li-probali-cevape.mp3"
         },
+        "conjugation": {
+          "present": [
+            "probam",
+            "probaš",
+            "proba",
+            "probamo",
+            "probate",
+            "probaju"
+          ],
+          "past": [
+            "probao",
+            "probala",
+            "probali"
+          ],
+          "future": "probat ću",
+          "audioSrc": "/audio/hr/a2/module-01/probam-probas-proba-probamo-probate-probaju-probao-probala-p.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-01/probati.mp3"
       },
       {
@@ -213,6 +230,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Kiedy wróciłaś znad morza?",
           "audioSrc": "/audio/hr/a2/module-01/kada-si-se-vratila-s-mora.mp3"
         },
+        "conjugation": {
+          "present": [
+            "vratim se",
+            "vratiš se",
+            "vrati se",
+            "vratimo se",
+            "vratite se",
+            "vrate se"
+          ],
+          "past": [
+            "vratio se",
+            "vratila se",
+            "vratili se"
+          ],
+          "future": "vratit ću se",
+          "audioSrc": "/audio/hr/a2/module-01/vratim-se-vratis-se-vrati-se-vratimo-se-vratite-se-vrate-se.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-01/vratiti-se.mp3"
       },
       {
@@ -226,6 +260,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Marko je otišao kući.",
           "source": "Marko poszedł do domu.",
           "audioSrc": "/audio/hr/a2/module-01/marko-je-otisao-kuci.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "odem",
+            "odeš",
+            "ode",
+            "odemo",
+            "odete",
+            "odu"
+          ],
+          "past": [
+            "otišao",
+            "otišla",
+            "otišli"
+          ],
+          "future": "otići ću",
+          "audioSrc": "/audio/hr/a2/module-01/odem-odes-ode-odemo-odete-odu-otisao-otisla-otisli-otici-cu.mp3"
         },
         "audioSrc": "/audio/hr/a2/module-01/otici.mp3"
       },

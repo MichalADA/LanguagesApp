@@ -142,6 +142,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Muszę pracować do szóstej.",
           "audioSrc": "/audio/hr/a2/module-02/moram-raditi-do-sest.mp3"
         },
+        "conjugation": {
+          "present": [
+            "moram",
+            "moraš",
+            "mora",
+            "moramo",
+            "morate",
+            "moraju"
+          ],
+          "past": [
+            "morao",
+            "morala",
+            "morali"
+          ],
+          "future": "morat ću",
+          "audioSrc": "/audio/hr/a2/module-02/moram-moras-mora-moramo-morate-moraju-morao-morala-morali-mo.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/morati.mp3"
       },
       {
@@ -156,6 +173,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Czy mogę tu usiąść?",
           "audioSrc": "/audio/hr/a2/module-02/mogu-li-ovdje-sjesti.mp3"
         },
+        "conjugation": {
+          "present": [
+            "mogu",
+            "možeš",
+            "može",
+            "možemo",
+            "možete",
+            "mogu"
+          ],
+          "past": [
+            "mogao",
+            "mogla",
+            "mogli"
+          ],
+          "future": "moći ću",
+          "audioSrc": "/audio/hr/a2/module-02/mogu-mozes-moze-mozemo-mozete-mogu-mogao-mogla-mogli-moci-cu.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/moci.mp3"
       },
       {
@@ -169,6 +203,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Ovdje se ne smije pušiti.",
           "source": "Tu nie wolno palić.",
           "audioSrc": "/audio/hr/a2/module-02/ovdje-se-ne-smije-pusiti.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "smijem",
+            "smiješ",
+            "smije",
+            "smijemo",
+            "smijete",
+            "smiju"
+          ],
+          "past": [
+            "smio",
+            "smjela",
+            "smjeli"
+          ],
+          "future": "smjet ću",
+          "audioSrc": "/audio/hr/a2/module-02/smijem-smijes-smije-smijemo-smijete-smiju-smio-smjela-smjeli.mp3"
         },
         "audioSrc": "/audio/hr/a2/module-02/smjeti.mp3"
       },
@@ -199,6 +250,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Możesz mi pomóc?",
           "audioSrc": "/audio/hr/a2/module-02/mozes-li-mi-pomoci.mp3"
         },
+        "conjugation": {
+          "present": [
+            "pomognem",
+            "pomogneš",
+            "pomogne",
+            "pomognemo",
+            "pomognete",
+            "pomognu"
+          ],
+          "past": [
+            "pomogao",
+            "pomogla",
+            "pomogli"
+          ],
+          "future": "pomoći ću",
+          "audioSrc": "/audio/hr/a2/module-02/pomognem-pomognes-pomogne-pomognemo-pomognete-pomognu-pomoga.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/pomoci.mp3"
       },
       {
@@ -213,6 +281,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Musimy przełożyć spotkanie.",
           "audioSrc": "/audio/hr/a2/module-02/moramo-odgoditi-sastanak.mp3"
         },
+        "conjugation": {
+          "present": [
+            "odgodim",
+            "odgodiš",
+            "odgodi",
+            "odgodimo",
+            "odgodite",
+            "odgode"
+          ],
+          "past": [
+            "odgodio",
+            "odgodila",
+            "odgodili"
+          ],
+          "future": "odgodit ću",
+          "audioSrc": "/audio/hr/a2/module-02/odgodim-odgodis-odgodi-odgodimo-odgodite-odgode-odgodio-odgo.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/odgoditi.mp3"
       },
       {
@@ -226,6 +311,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Ispričavam se, ne mogu doći.",
           "source": "Przepraszam, nie mogę przyjść.",
           "audioSrc": "/audio/hr/a2/module-02/ispricavam-se-ne-mogu-doci.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "ispričavam se",
+            "ispričavaš se",
+            "ispričava se",
+            "ispričavamo se",
+            "ispričavate se",
+            "ispričavaju se"
+          ],
+          "past": [
+            "ispričavao se",
+            "ispričavala se",
+            "ispričavali se"
+          ],
+          "future": "ispričavat ću se",
+          "audioSrc": "/audio/hr/a2/module-02/ispricavam-se-ispricavas-se-ispricava-se-ispricavamo-se-ispr.mp3"
         },
         "audioSrc": "/audio/hr/a2/module-02/ispricavati-se.mp3"
       },

@@ -15,7 +15,7 @@
     7,
     8
   ],
-  "characters": 20377,
+  "characters": 23952,
   "items": [
     {
       "text": "A kako se ti zoveš?",
@@ -1299,6 +1299,17 @@
       ]
     },
     {
+      "text": "živim, živiš, živi, živimo, živite, žive. živio, živjela, živjeli. živjet ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zivim-zivis-zivi-zivimo-zivite-zive-zivio-zivjela-zivjeli-zi.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
       "text": "živim",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-01/zivim.mp3",
@@ -1350,6 +1361,17 @@
         "answer",
         "example",
         "phrase"
+      ],
+      "modules": [
+        1
+      ]
+    },
+    {
+      "text": "zovem se, zoveš se, zove se, zovemo se, zovete se, zovu se. zvao se, zvala se, zvali se. zvat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-01/zovem-se-zoves-se-zove-se-zovemo-se-zovete-se-zovu-se-zvao-s.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         1
@@ -1727,6 +1749,17 @@
         "answer",
         "example",
         "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "imam, imaš, ima, imamo, imate, imaju. imao, imala, imali. imat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-02/imam-imas-ima-imamo-imate-imaju-imao-imala-imali-imat-cu.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         2
@@ -2612,6 +2645,17 @@
       ]
     },
     {
+      "text": "nemam, nemaš, nema, nemamo, nemate, nemaju. nemao, nemala, nemali. nemat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-02/nemam-nemas-nema-nemamo-nemate-nemaju-nemao-nemala-nemali-ne.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
       "text": "Nemam novca.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-02/nemam-novca.mp3",
@@ -3009,6 +3053,17 @@
       "audioPath": "/audio/hr/a1/module-02/prodavac.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "radim, radiš, radi, radimo, radite, rade. radio, radila, radili. radit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-02/radim-radis-radi-radimo-radite-rade-radio-radila-radili-radi.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         2
@@ -3529,6 +3584,17 @@
       ]
     },
     {
+      "text": "budim se, budiš se, budi se, budimo se, budite se, bude se. budio se, budila se, budili se. budit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/budim-se-budis-se-budi-se-budimo-se-budite-se-bude-se-budio.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
       "text": "Budim se u šest.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/budim-se-u-sest.mp3",
@@ -3664,6 +3730,17 @@
       "audioPath": "/audio/hr/a1/module-03/doruckovati.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "doručkujem, doručkuješ, doručkuje, doručkujemo, doručkujete, doručkuju. doručkovao, doručkovala, doručkovali. doručkovat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/doruckujem-doruckujes-doruckuje-doruckujemo-doruckujete-doru.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         3
@@ -4336,6 +4413,17 @@
       ]
     },
     {
+      "text": "odmaram se, odmaraš se, odmara se, odmaramo se, odmarate se, odmaraju se. odmarao se, odmarala se, odmarali se. odmarat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/odmaram-se-odmaras-se-odmara-se-odmaramo-se-odmarate-se-odma.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
       "text": "odmarati se",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/odmarati-se.mp3",
@@ -4769,6 +4857,17 @@
       ]
     },
     {
+      "text": "ručam, ručaš, ruča, ručamo, ručate, ručaju. ručao, ručala, ručali. ručat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/rucam-rucas-ruca-rucamo-rucate-rucaju-rucao-rucala-rucali-ru.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
       "text": "Ručam u jedan.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/rucam-u-jedan.mp3",
@@ -4999,6 +5098,17 @@
       ]
     },
     {
+      "text": "spavam, spavaš, spava, spavamo, spavate, spavaju. spavao, spavala, spavali. spavat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/spavam-spavas-spava-spavamo-spavate-spavaju-spavao-spavala-s.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
       "text": "spavam, spavaš, spava",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/spavam-spavas-spava.mp3",
@@ -5073,6 +5183,17 @@
       "audioPath": "/audio/hr/a1/module-03/sto-ucis.mp3",
       "kinds": [
         "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "studiram, studiraš, studira, studiramo, studirate, studiraju. studirao, studirala, studirali. studirat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/studiram-studiras-studira-studiramo-studirate-studiraju-stud.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         3
@@ -5453,6 +5574,17 @@
       ]
     },
     {
+      "text": "učim, učiš, uči, učimo, učite, uče. učio, učila, učili. učit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/ucim-ucis-uci-ucimo-ucite-uce-ucio-ucila-ucili-ucit-cu.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
       "text": "učiti",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-03/uciti.mp3",
@@ -5553,6 +5685,17 @@
       "audioPath": "/audio/hr/a1/module-03/ustajem-u-sest-i-prvo-se-tusiram-m.mp3",
       "kinds": [
         "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ustajem, ustaješ, ustaje, ustajemo, ustajete, ustaju. ustajao, ustajala, ustajali. ustajat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-03/ustajem-ustajes-ustaje-ustajemo-ustajete-ustaju-ustajao-usta.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         3
@@ -6205,6 +6348,17 @@
       ]
     },
     {
+      "text": "jedem, jedeš, jede, jedemo, jedete, jedu. jeo, jela, jeli. jest ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-04/jedem-jedes-jede-jedemo-jedete-jedu-jeo-jela-jeli-jest-cu.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
       "text": "Jedem kruh i sir.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3",
@@ -6662,6 +6816,17 @@
       ]
     },
     {
+      "text": "naručim, naručiš, naruči, naručimo, naručite, naruče. naručio, naručila, naručili. naručit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-04/narucim-narucis-naruci-narucimo-narucite-naruce-narucio-naru.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
       "text": "naručiti",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-04/naruciti.mp3",
@@ -6835,6 +7000,17 @@
       ]
     },
     {
+      "text": "pijem, piješ, pije, pijemo, pijete, piju. pio, pila, pili. pit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-04/pijem-pijes-pije-pijemo-pijete-piju-pio-pila-pili-pit-cu.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
       "text": "Pijem vodu.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-04/pijem-vodu.mp3",
@@ -6965,6 +7141,17 @@
       "audioPath": "/audio/hr/a1/module-04/predjelo.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "preporučim, preporučiš, preporuči, preporučimo, preporučite, preporuče. preporučio, preporučila, preporučili. preporučit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-04/preporucim-preporucis-preporuci-preporucimo-preporucite-prep.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         4
@@ -7414,6 +7601,17 @@
         "answer",
         "example",
         "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "volim, voliš, voli, volimo, volite, vole. volio, voljela, voljeli. voljet ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-04/volim-volis-voli-volimo-volite-vole-volio-voljela-voljeli-vo.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         4
@@ -8100,6 +8298,17 @@
       ]
     },
     {
+      "text": "idem, ideš, ide, idemo, idete, idu. išao, išla, išli. ići ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-05/idem-ides-ide-idemo-idete-idu-isao-isla-isli-ici-cu.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
       "text": "Idem na poštu.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/idem-na-postu.mp3",
@@ -8672,12 +8881,34 @@
       ]
     },
     {
+      "text": "koštam, koštaš, košta, koštamo, koštate, koštaju. koštao, koštala, koštali. koštat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-05/kostam-kostas-kosta-kostamo-kostate-kostaju-kostao-kostala-k.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
       "text": "koštati",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/kostati.mp3",
       "kinds": [
         "question",
         "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "kupim, kupiš, kupi, kupimo, kupite, kupe. kupio, kupila, kupili. kupit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-05/kupim-kupis-kupi-kupimo-kupite-kupe-kupio-kupila-kupili-kupi.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         5
@@ -9206,6 +9437,17 @@
       ]
     },
     {
+      "text": "prijeđem, prijeđeš, prijeđe, prijeđemo, prijeđete, prijeđu. prešao, prešla, prešli. prijeći ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-05/prijedjem-prijedjes-prijedje-prijedjemo-prijedjete-prijedju.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
       "text": "Prijeđite ulicu.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-05/prijedjite-ulicu.mp3",
@@ -9303,6 +9545,17 @@
       "kinds": [
         "table",
         "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "skrenem, skreneš, skrene, skrenemo, skrenete, skrenu. skrenuo, skrenula, skrenuli. skrenut ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-05/skrenem-skrenes-skrene-skrenemo-skrenete-skrenu-skrenuo-skre.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         5
@@ -9434,6 +9687,17 @@
       "audioPath": "/audio/hr/a1/module-05/to-je-sve.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "tražim, tražiš, traži, tražimo, tražite, traže. tražio, tražila, tražili. tražit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-05/trazim-trazis-trazi-trazimo-trazite-traze-trazio-trazila-tra.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         5
@@ -9749,6 +10013,17 @@
       ]
     },
     {
+      "text": "čitam, čitaš, čita, čitamo, čitate, čitaju. čitao, čitala, čitali. čitat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-06/citam-citas-cita-citamo-citate-citaju-citao-citala-citali-ci.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
       "text": "Čitam i slušam glazbu. Ponekad crtam.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-06/citam-i-slusam-glazbu-ponekad-crtam.mp3",
@@ -9991,6 +10266,17 @@
       ]
     },
     {
+      "text": "gledam, gledaš, gleda, gledamo, gledate, gledaju. gledao, gledala, gledali. gledat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-06/gledam-gledas-gleda-gledamo-gledate-gledaju-gledao-gledala-g.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
       "text": "Gledam utakmicu na televiziji.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-06/gledam-utakmicu-na-televiziji.mp3",
@@ -10125,6 +10411,17 @@
       "audioPath": "/audio/hr/a1/module-06/idemo-na-koncert-u-petak.mp3",
       "kinds": [
         "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "igram, igraš, igra, igramo, igrate, igraju. igrao, igrala, igrali. igrat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-06/igram-igras-igra-igramo-igrate-igraju-igrao-igrala-igrali-ig.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         6
@@ -10702,6 +10999,17 @@
       ]
     },
     {
+      "text": "plivam, plivaš, pliva, plivamo, plivate, plivaju. plivao, plivala, plivali. plivat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-06/plivam-plivas-pliva-plivamo-plivate-plivaju-plivao-plivala-p.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
       "text": "plivati",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-06/plivati.mp3",
@@ -10851,6 +11159,17 @@
       ]
     },
     {
+      "text": "sastanem se, sastaneš se, sastane se, sastanemo se, sastanete se, sastanu se. sastao se, sastala se, sastali se. sastat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-06/sastanem-se-sastanes-se-sastane-se-sastanemo-se-sastanete-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
       "text": "sastati se",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-06/sastati-se.mp3",
@@ -10867,6 +11186,17 @@
       "audioPath": "/audio/hr/a1/module-06/serija.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "šetam, šetaš, šeta, šetamo, šetate, šetaju. šetao, šetala, šetali. šetat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-06/setam-setas-seta-setamo-setate-setaju-setao-setala-setali-se.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         6
@@ -10915,6 +11245,17 @@
         "answer",
         "example",
         "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "slušam, slušaš, sluša, slušamo, slušate, slušaju. slušao, slušala, slušali. slušat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-06/slusam-slusas-slusa-slusamo-slusate-slusaju-slusao-slusala-s.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         6
@@ -11121,6 +11462,17 @@
       "kinds": [
         "answer",
         "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "trčim, trčiš, trči, trčimo, trčite, trče. trčao, trčala, trčali. trčat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-06/trcim-trcis-trci-trcimo-trcite-trce-trcao-trcala-trcali-trca.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         6
@@ -12442,6 +12794,17 @@
       ]
     },
     {
+      "text": "kasnim, kasniš, kasni, kasnimo, kasnite, kasne. kasnio, kasnila, kasnili. kasnit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/kasnim-kasnis-kasni-kasnimo-kasnite-kasne-kasnio-kasnila-kas.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
       "text": "kasniti",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-07/kasniti.mp3",
@@ -12557,6 +12920,17 @@
       "audioPath": "/audio/hr/a1/module-07/kupaci-kostim.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
+      "text": "kupam se, kupaš se, kupa se, kupamo se, kupate se, kupaju se. kupao se, kupala se, kupali se. kupat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/kupam-se-kupas-se-kupa-se-kupamo-se-kupate-se-kupaju-se-kupa.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         7
@@ -13042,6 +13416,17 @@
       ]
     },
     {
+      "text": "putujem, putuješ, putuje, putujemo, putujete, putuju. putovao, putovala, putovali. putovat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/putujem-putujes-putuje-putujemo-putujete-putuju-putovao-puto.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
       "text": "Putujem u Zagreb.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-07/putujem-u-zagreb.mp3",
@@ -13180,12 +13565,34 @@
       ]
     },
     {
+      "text": "stignem, stigneš, stigne, stignemo, stignete, stignu. stigao, stigla, stigli. stići ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/stignem-stignes-stigne-stignemo-stignete-stignu-stigao-stigl.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
       "text": "Sunčam se na plaži.",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-07/suncam-se-na-plazi.mp3",
       "kinds": [
         "answer",
         "example"
+      ],
+      "modules": [
+        7
+      ]
+    },
+    {
+      "text": "sunčam se, sunčaš se, sunča se, sunčamo se, sunčate se, sunčaju se. sunčao se, sunčala se, sunčali se. sunčat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-07/suncam-se-suncas-se-sunca-se-suncamo-se-suncate-se-suncaju-s.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         7
@@ -14391,6 +14798,17 @@
       ]
     },
     {
+      "text": "odmorim se, odmoriš se, odmori se, odmorimo se, odmorite se, odmore se. odmorio se, odmorila se, odmorili se. odmorit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-08/odmorim-se-odmoris-se-odmori-se-odmorimo-se-odmorite-se-odmo.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
       "text": "odmoriti se",
       "voice": "hr-HR-GabrijelaNeural",
       "audioPath": "/audio/hr/a1/module-08/odmoriti-se.mp3",
@@ -14451,6 +14869,17 @@
       "audioPath": "/audio/hr/a1/module-08/planiram-ici-na-more.mp3",
       "kinds": [
         "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "planiram, planiraš, planira, planiramo, planirate, planiraju. planirao, planirala, planirali. planirat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-08/planiram-planiras-planira-planiramo-planirate-planiraju-plan.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         8
@@ -14950,6 +15379,17 @@
       "audioPath": "/audio/hr/a1/module-08/uskoro.mp3",
       "kinds": [
         "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "vidim, vidiš, vidi, vidimo, vidite, vide. vidio, vidjela, vidjeli. vidjet ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/a1/module-08/vidim-vidis-vidi-vidimo-vidite-vide-vidio-vidjela-vidjeli-vi.mp3",
+      "kinds": [
+        "conjugation"
       ],
       "modules": [
         8

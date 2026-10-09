@@ -142,6 +142,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Chcę cię zaprosić na kolację.",
           "audioSrc": "/audio/hr/a2/module-02/zelim-te-pozvati-na-veceru.mp3"
         },
+        "conjugation": {
+          "present": [
+            "pozovem",
+            "pozoveš",
+            "pozove",
+            "pozovemo",
+            "pozovete",
+            "pozovu"
+          ],
+          "past": [
+            "pozvao",
+            "pozvala",
+            "pozvali"
+          ],
+          "future": "pozvat ću",
+          "audioSrc": "/audio/hr/a2/module-02/pozovem-pozoves-pozove-pozovemo-pozovete-pozovu-pozvao-pozva.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/pozvati.mp3"
       },
       {
@@ -156,6 +173,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Zadzwonię do ciebie później.",
           "audioSrc": "/audio/hr/a2/module-02/nazvat-cu-te-kasnije.mp3"
         },
+        "conjugation": {
+          "present": [
+            "nazovem",
+            "nazoveš",
+            "nazove",
+            "nazovemo",
+            "nazovete",
+            "nazovu"
+          ],
+          "past": [
+            "nazvao",
+            "nazvala",
+            "nazvali"
+          ],
+          "future": "nazvat ću",
+          "audioSrc": "/audio/hr/a2/module-02/nazovem-nazoves-nazove-nazovemo-nazovete-nazovu-nazvao-nazva.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/nazvati.mp3"
       },
       {
@@ -169,6 +203,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Javit ću ti se sutra.",
           "source": "Odezwę się do ciebie jutro.",
           "audioSrc": "/audio/hr/a2/module-02/javit-cu-ti-se-sutra.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "javim se",
+            "javiš se",
+            "javi se",
+            "javimo se",
+            "javite se",
+            "jave se"
+          ],
+          "past": [
+            "javio se",
+            "javila se",
+            "javili se"
+          ],
+          "future": "javit ću se",
+          "audioSrc": "/audio/hr/a2/module-02/javim-se-javis-se-javi-se-javimo-se-javite-se-jave-se-javio.mp3"
         },
         "audioSrc": "/audio/hr/a2/module-02/javiti-se.mp3"
       },
@@ -199,6 +250,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Umówiliśmy się na sobotę.",
           "audioSrc": "/audio/hr/a2/module-02/dogovorili-smo-se-za-subotu.mp3"
         },
+        "conjugation": {
+          "present": [
+            "dogovorim se",
+            "dogovoriš se",
+            "dogovori se",
+            "dogovorimo se",
+            "dogovorite se",
+            "dogovore se"
+          ],
+          "past": [
+            "dogovorio se",
+            "dogovorila se",
+            "dogovorili se"
+          ],
+          "future": "dogovorit ću se",
+          "audioSrc": "/audio/hr/a2/module-02/dogovorim-se-dogovoris-se-dogovori-se-dogovorimo-se-dogovori.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/dogovoriti-se.mp3"
       },
       {
@@ -213,6 +281,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Musimy odwołać rezerwację.",
           "audioSrc": "/audio/hr/a2/module-02/moramo-otkazati-rezervaciju.mp3"
         },
+        "conjugation": {
+          "present": [
+            "otkažem",
+            "otkažeš",
+            "otkaže",
+            "otkažemo",
+            "otkažete",
+            "otkažu"
+          ],
+          "past": [
+            "otkazao",
+            "otkazala",
+            "otkazali"
+          ],
+          "future": "otkazat ću",
+          "audioSrc": "/audio/hr/a2/module-02/otkazem-otkazes-otkaze-otkazemo-otkazete-otkazu-otkazao-otka.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/otkazati.mp3"
       },
       {
@@ -226,6 +311,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Rođendan ćemo proslaviti u restoranu.",
           "source": "Urodziny będziemy świętować w restauracji.",
           "audioSrc": "/audio/hr/a2/module-02/rodjendan-cemo-proslaviti-u-restoranu.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "proslavim",
+            "proslaviš",
+            "proslavi",
+            "proslavimo",
+            "proslavite",
+            "proslave"
+          ],
+          "past": [
+            "proslavio",
+            "proslavila",
+            "proslavili"
+          ],
+          "future": "proslavit ću",
+          "audioSrc": "/audio/hr/a2/module-02/proslavim-proslavis-proslavi-proslavimo-proslavite-proslave.mp3"
         },
         "audioSrc": "/audio/hr/a2/module-02/proslaviti.mp3"
       },

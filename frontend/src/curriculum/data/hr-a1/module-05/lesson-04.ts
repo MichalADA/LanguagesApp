@@ -230,6 +230,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Ile to kosztuje?",
           "audioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
         },
+        "conjugation": {
+          "present": [
+            "koštam",
+            "koštaš",
+            "košta",
+            "koštamo",
+            "koštate",
+            "koštaju"
+          ],
+          "past": [
+            "koštao",
+            "koštala",
+            "koštali"
+          ],
+          "future": "koštat ću",
+          "audioSrc": "/audio/hr/a1/module-05/kostam-kostas-kosta-kostamo-kostate-kostaju-kostao-kostala-k.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-05/kostati.mp3"
       },
       {
@@ -282,6 +299,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Chcę kupić tę książkę.",
           "audioSrc": "/audio/hr/a1/module-05/zelim-kupiti-ovu-knjigu.mp3"
         },
+        "conjugation": {
+          "present": [
+            "kupim",
+            "kupiš",
+            "kupi",
+            "kupimo",
+            "kupite",
+            "kupe"
+          ],
+          "past": [
+            "kupio",
+            "kupila",
+            "kupili"
+          ],
+          "future": "kupit ću",
+          "audioSrc": "/audio/hr/a1/module-05/kupim-kupis-kupi-kupimo-kupite-kupe-kupio-kupila-kupili-kupi.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-05/kupiti.mp3"
       },
       {
@@ -295,6 +329,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Tražim vodu.",
           "source": "Szukam wody.",
           "audioSrc": "/audio/hr/a1/module-05/trazim-vodu.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "tražim",
+            "tražiš",
+            "traži",
+            "tražimo",
+            "tražite",
+            "traže"
+          ],
+          "past": [
+            "tražio",
+            "tražila",
+            "tražili"
+          ],
+          "future": "tražit ću",
+          "audioSrc": "/audio/hr/a1/module-05/trazim-trazis-trazi-trazimo-trazite-traze-trazio-trazila-tra.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-05/traziti.mp3"
       },

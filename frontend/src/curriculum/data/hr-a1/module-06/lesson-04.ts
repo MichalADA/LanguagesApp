@@ -169,6 +169,23 @@ export const LESSON: GeneratedLesson = {
         "target": "sastati se",
         "source": "spotkać się",
         "partOfSpeech": "czasownik",
+        "conjugation": {
+          "present": [
+            "sastanem se",
+            "sastaneš se",
+            "sastane se",
+            "sastanemo se",
+            "sastanete se",
+            "sastanu se"
+          ],
+          "past": [
+            "sastao se",
+            "sastala se",
+            "sastali se"
+          ],
+          "future": "sastat ću se",
+          "audioSrc": "/audio/hr/a1/module-06/sastanem-se-sastanes-se-sastane-se-sastanemo-se-sastanete-se.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-06/sastati-se.mp3"
       },
       {

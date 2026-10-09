@@ -172,6 +172,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Opalam się na plaży.",
           "audioSrc": "/audio/hr/a1/module-07/suncam-se-na-plazi.mp3"
         },
+        "conjugation": {
+          "present": [
+            "sunčam se",
+            "sunčaš se",
+            "sunča se",
+            "sunčamo se",
+            "sunčate se",
+            "sunčaju se"
+          ],
+          "past": [
+            "sunčao se",
+            "sunčala se",
+            "sunčali se"
+          ],
+          "future": "sunčat ću se",
+          "audioSrc": "/audio/hr/a1/module-07/suncam-se-suncas-se-sunca-se-suncamo-se-suncate-se-suncaju-s.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-07/suncati-se.mp3"
       },
       {
@@ -219,6 +236,23 @@ export const LESSON: GeneratedLesson = {
         "target": "kupati se",
         "source": "kąpać się",
         "partOfSpeech": "czasownik",
+        "conjugation": {
+          "present": [
+            "kupam se",
+            "kupaš se",
+            "kupa se",
+            "kupamo se",
+            "kupate se",
+            "kupaju se"
+          ],
+          "past": [
+            "kupao se",
+            "kupala se",
+            "kupali se"
+          ],
+          "future": "kupat ću se",
+          "audioSrc": "/audio/hr/a1/module-07/kupam-se-kupas-se-kupa-se-kupamo-se-kupate-se-kupaju-se-kupa.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-07/kupati-se.mp3"
       },
       {

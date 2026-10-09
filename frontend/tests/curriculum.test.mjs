@@ -617,3 +617,22 @@ test('etap 3: dialog wzorcowy nie powtarza sceny z nagrania, poprawione tłumacz
   assert.ok(all.some((r) => r.hr === 'poznavati') && !all.some((r) => r.hr === 'poznati'));
   assert.ok(!all.some((r) => r.hr === 'živ'));
 });
+
+test('karta nowego czasownika pokazuje odmianę: teraźniejszy, przeszły i przyszły (z nagraniem)', () => {
+  const cards = [...generated.values()].flatMap((g) => g.content.steps.filter((s) => s.type === 'word' && s.partOfSpeech === 'czasownik'));
+  assert.ok(cards.length >= 40, `${cards.length} kart czasowników`);
+  for (const card of cards) {
+    assert.ok(card.conjugation, `${card.target}: brak odmiany`);
+    assert.equal(card.conjugation.present.length, 6, card.target);
+    assert.equal(card.conjugation.past.length, 3, card.target);
+    assert.ok(card.conjugation.audioSrc, `${card.target}: odmiana bez nagrania`);
+  }
+  const of = (word) => cards.find((c) => c.target === word).conjugation;
+  assert.deepEqual(of('jesti').present, ['jedem', 'jedeš', 'jede', 'jedemo', 'jedete', 'jedu']);
+  assert.deepEqual(of('ići').past, ['išao', 'išla', 'išli']);
+  assert.equal(of('ići').future, 'ići ću');
+  assert.equal(of('raditi').future, 'radit ću');
+  assert.deepEqual(of('voljeti').past, ['volio', 'voljela', 'voljeli']);
+  assert.deepEqual(of('odmarati se').present.slice(0, 2), ['odmaram se', 'odmaraš se']);
+  assert.equal(of('odmarati se').future, 'odmarat ću se');
+});

@@ -297,6 +297,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Ivan pracuje w szkole.",
           "audioSrc": "/audio/hr/a1/module-02/ivan-radi-u-skoli.mp3"
         },
+        "conjugation": {
+          "present": [
+            "radim",
+            "radiš",
+            "radi",
+            "radimo",
+            "radite",
+            "rade"
+          ],
+          "past": [
+            "radio",
+            "radila",
+            "radili"
+          ],
+          "future": "radit ću",
+          "audioSrc": "/audio/hr/a1/module-02/radim-radis-radi-radimo-radite-rade-radio-radila-radili-radi.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {

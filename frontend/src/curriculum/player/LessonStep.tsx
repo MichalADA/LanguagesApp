@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Icon } from "@/components/Icon";
 import { AudioButton, BilingualLine, SpokenText } from "@/components/AudioButton";
 import { useT } from "@/i18n";
-import type { IntroStep, ListenStep, LessonContent, StructureStep, SummaryStep, VocabListStep, WordStep } from "../types";
+import type { Conjugation, IntroStep, ListenStep, LessonContent, StructureStep, SummaryStep, VocabListStep, WordStep } from "../types";
 import { StepFooter } from "./StepFooter";
 
 /* Kroki „treściowe” — wprowadzają nową rzecz. Ćwiczenia są w Exercises.tsx. */
@@ -60,6 +60,40 @@ export function ListenView({ step, onNext }: { step: ListenStep; onNext: () => v
   );
 }
 
+const PERSONS = ["ja", "ti", "on / ona", "mi", "vi", "oni / one"];
+
+/** Odmiana nowego czasownika: teraźniejszy w dwóch kolumnach (lp. | lm.), pod spodem przeszły i przyszły. */
+function ConjugationTable({ conjugation }: { conjugation: Conjugation }) {
+  const t = useT();
+  const { present, past, future } = conjugation;
+  return (
+    <div className="conjugation">
+      <div className="conjugation-head">
+        <span className="eyebrow">{t("curriculum.player.conjugation")}</span>
+        <AudioButton src={conjugation.audioSrc} text={present.join(", ")} size="sm" />
+      </div>
+      <table className="conjugation-table">
+        <tbody>
+          {[0, 1, 2].map((i) => (
+            <tr key={i}>
+              <td className="muted">{PERSONS[i]}</td>
+              <td className="target">{present[i]}</td>
+              <td className="muted">{PERSONS[i + 3]}</td>
+              <td className="target">{present[i + 3]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p className="conjugation-line">
+        <span className="muted">{t("curriculum.player.conjugationPast")}</span> <span className="target">{past.join(" · ")}</span>
+      </p>
+      <p className="conjugation-line">
+        <span className="muted">{t("curriculum.player.conjugationFuture")}</span> <span className="target">{future}</span>
+      </p>
+    </div>
+  );
+}
+
 export function WordView({ step, onNext }: { step: WordStep; onNext: () => void }) {
   const t = useT();
   return (
@@ -80,6 +114,7 @@ export function WordView({ step, onNext }: { step: WordStep; onNext: () => void 
             </div>
           )}
         </div>
+        {step.conjugation && <ConjugationTable conjugation={step.conjugation} />}
         {step.related && (
           <div className="word-related">
             <span className="eyebrow">{t("curriculum.player.related")}</span>

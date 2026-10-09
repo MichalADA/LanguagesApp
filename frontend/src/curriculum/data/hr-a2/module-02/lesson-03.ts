@@ -191,6 +191,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Jeśli będzie zimno, zrezygnujemy.",
           "audioSrc": "/audio/hr/a2/module-02/ako-bude-hladno-odustat-cemo.mp3"
         },
+        "conjugation": {
+          "present": [
+            "odustanem",
+            "odustaneš",
+            "odustane",
+            "odustanemo",
+            "odustanete",
+            "odustanu"
+          ],
+          "past": [
+            "odustao",
+            "odustala",
+            "odustali"
+          ],
+          "future": "odustat ću",
+          "audioSrc": "/audio/hr/a2/module-02/odustanem-odustanes-odustane-odustanemo-odustanete-odustanu.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/odustati.mp3"
       },
       {
@@ -204,6 +221,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Ponesi kišobran, inače ćeš pokisnuti.",
           "source": "Weź parasol, bo inaczej zmokniesz.",
           "audioSrc": "/audio/hr/a2/module-02/ponesi-kisobran-inace-ces-pokisnuti.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "pokisnem",
+            "pokisneš",
+            "pokisne",
+            "pokisnemo",
+            "pokisnete",
+            "pokisnu"
+          ],
+          "past": [
+            "pokisnuo",
+            "pokisnula",
+            "pokisnuli"
+          ],
+          "future": "pokisnut ću",
+          "audioSrc": "/audio/hr/a2/module-02/pokisnem-pokisnes-pokisne-pokisnemo-pokisnete-pokisnu-pokisn.mp3"
         },
         "audioSrc": "/audio/hr/a2/module-02/pokisnuti.mp3"
       },

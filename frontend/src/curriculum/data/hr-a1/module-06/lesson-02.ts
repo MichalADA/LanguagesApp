@@ -199,6 +199,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Lubię pływać.",
           "audioSrc": "/audio/hr/a1/module-06/volim-plivati.mp3"
         },
+        "conjugation": {
+          "present": [
+            "plivam",
+            "plivaš",
+            "pliva",
+            "plivamo",
+            "plivate",
+            "plivaju"
+          ],
+          "past": [
+            "plivao",
+            "plivala",
+            "plivali"
+          ],
+          "future": "plivat ću",
+          "audioSrc": "/audio/hr/a1/module-06/plivam-plivas-pliva-plivamo-plivate-plivaju-plivao-plivala-p.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-06/plivati.mp3"
       },
       {
@@ -212,6 +229,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Trčim tri puta tjedno.",
           "source": "Biegam trzy razy w tygodniu.",
           "audioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "trčim",
+            "trčiš",
+            "trči",
+            "trčimo",
+            "trčite",
+            "trče"
+          ],
+          "past": [
+            "trčao",
+            "trčala",
+            "trčali"
+          ],
+          "future": "trčat ću",
+          "audioSrc": "/audio/hr/a1/module-06/trcim-trcis-trci-trcimo-trcite-trce-trcao-trcala-trcali-trca.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-06/trcati.mp3"
       },

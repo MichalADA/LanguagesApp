@@ -119,6 +119,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Mam na imię Michał.",
           "audioSrc": "/audio/hr/a1/module-01/zovem-se-michal.mp3"
         },
+        "conjugation": {
+          "present": [
+            "zovem se",
+            "zoveš se",
+            "zove se",
+            "zovemo se",
+            "zovete se",
+            "zovu se"
+          ],
+          "past": [
+            "zvao se",
+            "zvala se",
+            "zvali se"
+          ],
+          "future": "zvat ću se",
+          "audioSrc": "/audio/hr/a1/module-01/zovem-se-zoves-se-zove-se-zovemo-se-zovete-se-zovu-se-zvao-s.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-01/zvati-se.mp3"
       },
       {

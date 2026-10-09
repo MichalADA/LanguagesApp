@@ -165,6 +165,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Chciałbym zamówić rybę.",
           "audioSrc": "/audio/hr/a1/module-04/htio-bih-naruciti-ribu.mp3"
         },
+        "conjugation": {
+          "present": [
+            "naručim",
+            "naručiš",
+            "naruči",
+            "naručimo",
+            "naručite",
+            "naruče"
+          ],
+          "past": [
+            "naručio",
+            "naručila",
+            "naručili"
+          ],
+          "future": "naručit ću",
+          "audioSrc": "/audio/hr/a1/module-04/narucim-narucis-naruci-narucimo-narucite-naruce-narucio-naru.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-04/naruciti.mp3"
       },
       {
@@ -259,6 +276,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Možete li nam preporučiti jelo?",
           "source": "Czy może nam Pan / Pani polecić jakieś danie?",
           "audioSrc": "/audio/hr/a1/module-04/mozete-li-nam-preporuciti-jelo.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "preporučim",
+            "preporučiš",
+            "preporuči",
+            "preporučimo",
+            "preporučite",
+            "preporuče"
+          ],
+          "past": [
+            "preporučio",
+            "preporučila",
+            "preporučili"
+          ],
+          "future": "preporučit ću",
+          "audioSrc": "/audio/hr/a1/module-04/preporucim-preporucis-preporuci-preporucimo-preporucite-prep.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-04/preporuciti.mp3"
       },

@@ -198,6 +198,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Lubię podróżować.",
           "audioSrc": "/audio/hr/a1/module-07/volim-putovati.mp3"
         },
+        "conjugation": {
+          "present": [
+            "putujem",
+            "putuješ",
+            "putuje",
+            "putujemo",
+            "putujete",
+            "putuju"
+          ],
+          "past": [
+            "putovao",
+            "putovala",
+            "putovali"
+          ],
+          "future": "putovat ću",
+          "audioSrc": "/audio/hr/a1/module-07/putujem-putujes-putuje-putujemo-putujete-putuju-putovao-puto.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-07/putovati.mp3"
       },
       {

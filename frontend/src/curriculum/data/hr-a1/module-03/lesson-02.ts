@@ -182,6 +182,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Uczę się chorwackiego codziennie.",
           "audioSrc": "/audio/hr/a1/module-03/ucim-hrvatski-svaki-dan.mp3"
         },
+        "conjugation": {
+          "present": [
+            "učim",
+            "učiš",
+            "uči",
+            "učimo",
+            "učite",
+            "uče"
+          ],
+          "past": [
+            "učio",
+            "učila",
+            "učili"
+          ],
+          "future": "učit ću",
+          "audioSrc": "/audio/hr/a1/module-03/ucim-ucis-uci-ucimo-ucite-uce-ucio-ucila-ucili-ucit-cu.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-03/uciti.mp3"
       },
       {
@@ -195,6 +212,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Studiram u Zagrebu.",
           "source": "Studiuję w Zagrzebiu.",
           "audioSrc": "/audio/hr/a1/module-03/studiram-u-zagrebu.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "studiram",
+            "studiraš",
+            "studira",
+            "studiramo",
+            "studirate",
+            "studiraju"
+          ],
+          "past": [
+            "studirao",
+            "studirala",
+            "studirali"
+          ],
+          "future": "studirat ću",
+          "audioSrc": "/audio/hr/a1/module-03/studiram-studiras-studira-studiramo-studirate-studiraju-stud.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-03/studirati.mp3"
       },

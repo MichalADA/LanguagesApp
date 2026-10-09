@@ -23,7 +23,7 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
 import { attachAudio, buildManifest } from "./lib/course-audio.mjs";
-import { CLITICS, buildLexicon, expandSlots, genderizePattern, genderPairs, recordForms, swapGender, tokens } from "./lib/hr-morphology.mjs";
+import { CLITICS, buildLexicon, conjugation, expandSlots, genderizePattern, genderPairs, recordForms, swapGender, tokens } from "./lib/hr-morphology.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const argValue = (flag) => (process.argv.includes(flag) ? process.argv[process.argv.indexOf(flag) + 1] : null);
@@ -328,11 +328,14 @@ function exampleFor(word, sentences) {
 
 function wordStep(id, record, sentences) {
   const example = exampleFor(record, sentences);
+  // Nowy czasownik od razu z odmianą: teraźniejszy, przeszły i przyszły.
+  const forms = record.part_of_speech === "verb" ? conjugation(record.hr_text) : null;
   return {
     id, stage: "words", type: "word",
     target: record.hr_text, source: record.pl_text,
     partOfSpeech: POS_PL[record.part_of_speech] ?? record.part_of_speech,
     ...(example ? { example: { target: example.hr_text, source: example.pl_text } } : {}),
+    ...(forms ? { conjugation: forms } : {}),
   };
 }
 
@@ -993,6 +996,10 @@ function loadDemoLesson() {
   const lesson = structuredClone(exports.LESSON_A1_01_02);
   // Repliki lekcji demo (skąd jesteś, gdzie mieszkasz) są otwarte — dostają tę samą ramę co reszta A1.
   for (const step of lesson.steps) {
+    // Karty czasowników dostają odmianę tak jak w lekcjach generowanych.
+    const verb = step.type === "word" && vocabRecords.find((r) => r.hr_text === step.target && r.part_of_speech === "verb");
+    const forms = verb ? conjugation(verb.hr_text) : null;
+    if (forms) step.conjugation = forms;
     if (step.type !== "dialog") continue;
     const partner = step.turns.find((t) => t.kind === "line")?.line.speaker;
     step.turns = step.turns.map((t) => (t.kind === "reply" ? replyTurn(lesson.lessonId, t.prompt, t.accepted, t.pattern, partner, { open: true }) : t));

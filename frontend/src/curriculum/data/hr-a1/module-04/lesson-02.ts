@@ -174,6 +174,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Lubię kawę.",
           "audioSrc": "/audio/hr/a1/module-04/volim-kavu.mp3"
         },
+        "conjugation": {
+          "present": [
+            "volim",
+            "voliš",
+            "voli",
+            "volimo",
+            "volite",
+            "vole"
+          ],
+          "past": [
+            "volio",
+            "voljela",
+            "voljeli"
+          ],
+          "future": "voljet ću",
+          "audioSrc": "/audio/hr/a1/module-04/volim-volis-voli-volimo-volite-vole-volio-voljela-voljeli-vo.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-04/voljeti.mp3"
       },
       {

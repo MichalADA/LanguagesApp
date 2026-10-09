@@ -142,6 +142,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Wezmę taksówkę.",
           "audioSrc": "/audio/hr/a2/module-02/uzet-cu-taksi.mp3"
         },
+        "conjugation": {
+          "present": [
+            "uzmem",
+            "uzmeš",
+            "uzme",
+            "uzmemo",
+            "uzmete",
+            "uzmu"
+          ],
+          "past": [
+            "uzeo",
+            "uzela",
+            "uzeli"
+          ],
+          "future": "uzet ću",
+          "audioSrc": "/audio/hr/a2/module-02/uzmem-uzmes-uzme-uzmemo-uzmete-uzmu-uzeo-uzela-uzeli-uzet-cu.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/uzeti.mp3"
       },
       {
@@ -156,6 +173,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Ana zostanie w domu.",
           "audioSrc": "/audio/hr/a2/module-02/ana-ce-ostati-kod-kuce.mp3"
         },
+        "conjugation": {
+          "present": [
+            "ostanem",
+            "ostaneš",
+            "ostane",
+            "ostanemo",
+            "ostanete",
+            "ostanu"
+          ],
+          "past": [
+            "ostao",
+            "ostala",
+            "ostali"
+          ],
+          "future": "ostat ću",
+          "audioSrc": "/audio/hr/a2/module-02/ostanem-ostanes-ostane-ostanemo-ostanete-ostanu-ostao-ostala.mp3"
+        },
         "audioSrc": "/audio/hr/a2/module-02/ostati.mp3"
       },
       {
@@ -169,6 +203,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Namjeravam ostati do nedjelje.",
           "source": "Zamierzam zostać do niedzieli.",
           "audioSrc": "/audio/hr/a2/module-02/namjeravam-ostati-do-nedjelje.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "namjeravam",
+            "namjeravaš",
+            "namjerava",
+            "namjeravamo",
+            "namjeravate",
+            "namjeravaju"
+          ],
+          "past": [
+            "namjeravao",
+            "namjeravala",
+            "namjeravali"
+          ],
+          "future": "namjeravat ću",
+          "audioSrc": "/audio/hr/a2/module-02/namjeravam-namjeravas-namjerava-namjeravamo-namjeravate-namj.mp3"
         },
         "audioSrc": "/audio/hr/a2/module-02/namjeravati.mp3"
       },
@@ -198,6 +249,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Odlučila sam ostati još jedan dan.",
           "source": "Zdecydowałam się zostać jeszcze jeden dzień.",
           "audioSrc": "/audio/hr/a2/module-02/odlucila-sam-ostati-jos-jedan-dan.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "odlučim",
+            "odlučiš",
+            "odluči",
+            "odlučimo",
+            "odlučite",
+            "odluče"
+          ],
+          "past": [
+            "odlučio",
+            "odlučila",
+            "odlučili"
+          ],
+          "future": "odlučit ću",
+          "audioSrc": "/audio/hr/a2/module-02/odlucim-odlucis-odluci-odlucimo-odlucite-odluce-odlucio-odlu.mp3"
         },
         "audioSrc": "/audio/hr/a2/module-02/odluciti.mp3"
       },

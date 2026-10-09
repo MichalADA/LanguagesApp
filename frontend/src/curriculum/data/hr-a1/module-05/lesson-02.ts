@@ -312,6 +312,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Muszę iść do apteki.",
           "audioSrc": "/audio/hr/a1/module-05/trebam-ici-u-ljekarnu.mp3"
         },
+        "conjugation": {
+          "present": [
+            "idem",
+            "ideš",
+            "ide",
+            "idemo",
+            "idete",
+            "idu"
+          ],
+          "past": [
+            "išao",
+            "išla",
+            "išli"
+          ],
+          "future": "ići ću",
+          "audioSrc": "/audio/hr/a1/module-05/idem-ides-ide-idemo-idete-idu-isao-isla-isli-ici-cu.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-05/ici.mp3"
       },
       {

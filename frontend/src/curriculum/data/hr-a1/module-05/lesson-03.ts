@@ -239,6 +239,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Proszę skręcić w lewo.",
           "audioSrc": "/audio/hr/a1/module-05/skrenite-lijevo.mp3"
         },
+        "conjugation": {
+          "present": [
+            "skrenem",
+            "skreneš",
+            "skrene",
+            "skrenemo",
+            "skrenete",
+            "skrenu"
+          ],
+          "past": [
+            "skrenuo",
+            "skrenula",
+            "skrenuli"
+          ],
+          "future": "skrenut ću",
+          "audioSrc": "/audio/hr/a1/module-05/skrenem-skrenes-skrene-skrenemo-skrenete-skrenu-skrenuo-skre.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-05/skrenuti.mp3"
       },
       {
@@ -252,6 +269,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Prijeđite ulicu.",
           "source": "Proszę przejść przez ulicę.",
           "audioSrc": "/audio/hr/a1/module-05/prijedjite-ulicu.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "prijeđem",
+            "prijeđeš",
+            "prijeđe",
+            "prijeđemo",
+            "prijeđete",
+            "prijeđu"
+          ],
+          "past": [
+            "prešao",
+            "prešla",
+            "prešli"
+          ],
+          "future": "prijeći ću",
+          "audioSrc": "/audio/hr/a1/module-05/prijedjem-prijedjes-prijedje-prijedjemo-prijedjete-prijedju.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-05/prijeci.mp3"
       },

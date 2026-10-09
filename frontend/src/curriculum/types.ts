@@ -129,8 +129,19 @@ export interface ListenStep extends StepBase {
   note?: string;
 }
 
+/** Odmiana czasownika na karcie słowa (generowana z morfologii kursu). */
+export interface Conjugation extends Audible {
+  /** ja, ti, on/ona, mi, vi, oni */
+  present: string[];
+  /** on, ona, oni */
+  past: string[];
+  /** ja: radit ću */
+  future: string;
+}
+
 export interface WordStep extends StepBase, Audible {
   type: "word";
+  conjugation?: Conjugation;
   target: string;
   source: string;
   partOfSpeech?: string;

@@ -199,6 +199,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Pociąg przyjeżdża o dziesiątej.",
           "audioSrc": "/audio/hr/a1/module-07/vlak-stize-u-deset.mp3"
         },
+        "conjugation": {
+          "present": [
+            "stignem",
+            "stigneš",
+            "stigne",
+            "stignemo",
+            "stignete",
+            "stignu"
+          ],
+          "past": [
+            "stigao",
+            "stigla",
+            "stigli"
+          ],
+          "future": "stići ću",
+          "audioSrc": "/audio/hr/a1/module-07/stignem-stignes-stigne-stignemo-stignete-stignu-stigao-stigl.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-07/stici.mp3"
       },
       {
@@ -307,6 +324,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Avion kasni.",
           "source": "Samolot jest opóźniony.",
           "audioSrc": "/audio/hr/a1/module-07/avion-kasni.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "kasnim",
+            "kasniš",
+            "kasni",
+            "kasnimo",
+            "kasnite",
+            "kasne"
+          ],
+          "past": [
+            "kasnio",
+            "kasnila",
+            "kasnili"
+          ],
+          "future": "kasnit ću",
+          "audioSrc": "/audio/hr/a1/module-07/kasnim-kasnis-kasni-kasnimo-kasnite-kasne-kasnio-kasnila-kas.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-07/kasniti.mp3"
       },

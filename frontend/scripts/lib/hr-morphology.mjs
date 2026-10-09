@@ -96,13 +96,14 @@ const PRES_OVERRIDES = {
   otići: ["odem"], provesti: ["provedem"], sresti: ["sretnem"],
   uzeti: ["uzmem"], ostati: ["ostanem"], odustati: ["odustanem"], smjeti: ["smijem"], pomoći: ["pomognem"],
   pozvati: ["pozovem"], nazvati: ["nazovem"], otkazati: ["otkažem"], zapisati: ["zapišem"],
+  trajati: ["trajem"], izaći: ["izađem"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
   prijeći: ["prešao", "prešla", "prešli"], stići: ["stigao", "stigla", "stigli"], moći: ["mogao", "mogla", "mogli"],
   htjeti: ["htio", "htjela", "htjeli"], biti: ["bio", "bila", "bili"], doći: ["došao", "došla", "došli"],
   otići: ["otišao", "otišla", "otišli"], provesti: ["proveo", "provela", "proveli"], sresti: ["sreo", "srela", "sreli"],
-  uzeti: ["uzeo", "uzela", "uzeli"], pomoći: ["pomogao", "pomogla", "pomogli"],
+  uzeti: ["uzeo", "uzela", "uzeli"], pomoći: ["pomogao", "pomogla", "pomogli"], izaći: ["izašao", "izašla", "izašli"],
 };
 
 function present1(inf) {
@@ -163,6 +164,24 @@ function verbForms(verb) {
     ppSelf: pp.slice(0, 2).flatMap((x) => withSe(x, refl)),
     pp: pp.flatMap((x) => withSe(x, refl)),
     bare: [inf, ...firsts, ...pres, ...pp, ...trunc, ...firsts.flatMap(imperative)],
+  };
+}
+
+/**
+ * Odmiana czasownika do karty słowa: czas teraźniejszy (ja … oni), przeszły (on, ona, oni) i przyszły (ja).
+ * Null, gdy reguły nie znają formy — wtedy karta pokazuje tylko słowo (lepiej nic niż błędna forma).
+ */
+export function conjugation(verb) {
+  const [inf, refl] = splitReflexive(low(verb));
+  const first = present1(inf)[0];
+  const pp = participles(inf);
+  const present = first ? presentParadigm(first) : [];
+  if (present.length !== 6 || pp.length !== 3) return null;
+  const se = refl ? " se" : "";
+  return {
+    present: present.map((f) => f + se),
+    past: pp.map((f) => f + se),
+    future: `${inf.endsWith("ći") ? inf : inf.slice(0, -1)} ću${se}`,
   };
 }
 

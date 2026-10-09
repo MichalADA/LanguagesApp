@@ -190,6 +190,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Mam samochód.",
           "audioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
         },
+        "conjugation": {
+          "present": [
+            "imam",
+            "imaš",
+            "ima",
+            "imamo",
+            "imate",
+            "imaju"
+          ],
+          "past": [
+            "imao",
+            "imala",
+            "imali"
+          ],
+          "future": "imat ću",
+          "audioSrc": "/audio/hr/a1/module-02/imam-imas-ima-imamo-imate-imaju-imao-imala-imali-imat-cu.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-02/imati.mp3"
       },
       {
@@ -203,6 +220,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Nemam bicikl.",
           "source": "Nie mam roweru.",
           "audioSrc": "/audio/hr/a1/module-02/nemam-bicikl.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "nemam",
+            "nemaš",
+            "nema",
+            "nemamo",
+            "nemate",
+            "nemaju"
+          ],
+          "past": [
+            "nemao",
+            "nemala",
+            "nemali"
+          ],
+          "future": "nemat ću",
+          "audioSrc": "/audio/hr/a1/module-02/nemam-nemas-nema-nemamo-nemate-nemaju-nemao-nemala-nemali-ne.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-02/nemati.mp3"
       },

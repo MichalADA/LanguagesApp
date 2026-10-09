@@ -237,6 +237,23 @@ export const LESSON: GeneratedLesson = {
             "audioSrc": "/audio/hr/a1/module-01/gdje.mp3"
           }
         ],
+        "conjugation": {
+          "present": [
+            "živim",
+            "živiš",
+            "živi",
+            "živimo",
+            "živite",
+            "žive"
+          ],
+          "past": [
+            "živio",
+            "živjela",
+            "živjeli"
+          ],
+          "future": "živjet ću",
+          "audioSrc": "/audio/hr/a1/module-01/zivim-zivis-zivi-zivimo-zivite-zive-zivio-zivjela-zivjeli-zi.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-01/zivjeti.mp3"
       },
       {

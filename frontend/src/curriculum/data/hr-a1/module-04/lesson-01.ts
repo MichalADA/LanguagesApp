@@ -238,6 +238,23 @@ export const LESSON: GeneratedLesson = {
           "source": "Piję wodę.",
           "audioSrc": "/audio/hr/a1/module-04/pijem-vodu.mp3"
         },
+        "conjugation": {
+          "present": [
+            "pijem",
+            "piješ",
+            "pije",
+            "pijemo",
+            "pijete",
+            "piju"
+          ],
+          "past": [
+            "pio",
+            "pila",
+            "pili"
+          ],
+          "future": "pit ću",
+          "audioSrc": "/audio/hr/a1/module-04/pijem-pijes-pije-pijemo-pijete-piju-pio-pila-pili-pit-cu.mp3"
+        },
         "audioSrc": "/audio/hr/a1/module-04/piti.mp3"
       },
       {
@@ -308,6 +325,23 @@ export const LESSON: GeneratedLesson = {
           "target": "Jedem kruh i sir.",
           "source": "Jem chleb i ser.",
           "audioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
+        },
+        "conjugation": {
+          "present": [
+            "jedem",
+            "jedeš",
+            "jede",
+            "jedemo",
+            "jedete",
+            "jedu"
+          ],
+          "past": [
+            "jeo",
+            "jela",
+            "jeli"
+          ],
+          "future": "jest ću",
+          "audioSrc": "/audio/hr/a1/module-04/jedem-jedes-jede-jedemo-jedete-jedu-jeo-jela-jeli-jest-cu.mp3"
         },
         "audioSrc": "/audio/hr/a1/module-04/jesti.mp3"
       },
