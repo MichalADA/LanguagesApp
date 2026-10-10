@@ -2343,3 +2343,29 @@ a.stories-city:hover { transform: translateY(-2px); border-color: var(--burgundy
   .vn-card { padding: var(--space-5); }
   .stories-pin-label { font-size: 11px; }
 }
+
+/* XP konta i dzienny cel */
+.daily-goal { display: flex; flex-direction: column; gap: var(--space-3); }
+.daily-goal-head { display: flex; gap: var(--space-4); align-items: center; }
+.daily-goal-ring { width: 88px; height: 88px; flex-shrink: 0; }
+.daily-goal-ring circle { fill: none; stroke-width: 8; }
+.daily-goal-ring .track { stroke: var(--track); }
+.daily-goal-ring .value { stroke: var(--gold-accent); stroke-linecap: round; transition: stroke-dashoffset 0.5s var(--ease); }
+.daily-goal-ring .ring-value { font-size: 20px; font-weight: 700; fill: var(--text-primary); }
+.daily-goal-ring .ring-label { font-size: 9.5px; fill: var(--text-tertiary); }
+.daily-goal-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.daily-goal-copy h2 { font-size: 17px; }
+.daily-goal-week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; height: 72px; align-items: end; }
+.daily-goal-week span { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; height: 100%; }
+.daily-goal-week i { display: block; width: 100%; max-width: 18px; border-radius: 4px 4px 2px 2px; background: var(--burgundy-soft); }
+.daily-goal-week .met i { background: var(--gold-accent); }
+.daily-goal-week small { font-size: 11px; color: var(--text-tertiary); }
+.daily-goal-week small.is-today { color: var(--text-primary); font-weight: 600; }
+.daily-goal-foot { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); font-size: 14px; color: var(--text-secondary); }
+.daily-goal-foot span { display: inline-flex; align-items: center; gap: 6px; }
+.goal-picker { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: var(--space-2); }
+.goal-option { display: flex; flex-direction: column; gap: 2px; align-items: flex-start; padding: 10px 12px; min-height: 44px; border-radius: var(--radius-md); border: 1px solid var(--border-strong); background: var(--surface-inset); color: var(--text-primary); text-align: left; cursor: pointer; font-size: 13.5px; }
+.goal-option strong { font-size: 14.5px; }
+.goal-option.on { border-color: var(--gold-accent); background: var(--gold-soft); }
+.goal-option:hover:not(:disabled), .goal-option:focus-visible { border-color: var(--burgundy-text); outline: none; }
+.goal-picker .inline-alert { grid-column: 1 / -1; }

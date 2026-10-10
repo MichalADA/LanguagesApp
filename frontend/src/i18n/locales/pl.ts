@@ -130,6 +130,31 @@ export const pl: Dictionary = {
     continueLearning: "Kontynuuj naukę",
     nextCourses: "Rozwijamy Lexodromię",
   },
+  xp: {
+    "eyebrow": "Dzienny cel",
+    "chooseGoal": "Wybierz dzienny cel nauki",
+    "goalXp": "{xp} XP dziennie",
+    "goalMinutes": "ok. {m} min",
+    "levels": {
+        "light": "Lekko",
+        "regular": "Regularnie",
+        "serious": "Intensywnie",
+        "intense": "Bardzo intensywnie"
+    },
+    "todayOf": "Dziś {today} z {goal} XP",
+    "goalMet": "Cel na dziś osiągnięty!",
+    "goalLeft": "Jeszcze {n} XP do celu",
+    "streak": "dni z celem z rzędu: {n}",
+    "week": "XP w ostatnim tygodniu",
+    "total": "Łącznie {n} XP",
+    "changeGoal": "Zmień cel",
+    "pending": "Niewysłane XP: {n}. Zapiszemy je, gdy wróci połączenie.",
+    "loadError": "Nie udało się pobrać XP.",
+    "saveError": "Nie udało się zapisać celu. Spróbuj ponownie.",
+    "howTo": "XP zdobywasz za zaliczone lekcje (pierwszy raz), misje Stories (pierwsze ukończenie) i poprawne odpowiedzi w powtórkach.",
+    "settingsTitle": "Dzienny cel nauki",
+    "settingsNote": "Ile chcesz uczyć się każdego dnia. Cel możesz zmienić w dowolnej chwili."
+  },
   stories: {
     "eyebrow": "Gra fabularna",
     "title": "Lexodromia Stories",

@@ -9,6 +9,7 @@ import { GrammarProvider } from "@/grammar/GrammarProvider";
 import { ProgressProvider } from "@/progress/ProgressProvider";
 import { AuthProvider } from "@/auth/AuthContext";
 import { CurriculumProvider } from "@/curriculum/CurriculumProvider";
+import { XpProvider } from "@/xp/XpProvider";
 import "./styles.css";
 
 /**
@@ -23,9 +24,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <VocabularyProvider>
               <GrammarProvider>
                 <ProgressProvider>
-                  <CurriculumProvider>
-                    <App />
-                  </CurriculumProvider>
+                  <XpProvider>
+                    <CurriculumProvider>
+                      <App />
+                    </CurriculumProvider>
+                  </XpProvider>
                 </ProgressProvider>
               </GrammarProvider>
             </VocabularyProvider>

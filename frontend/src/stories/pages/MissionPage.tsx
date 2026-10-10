@@ -7,6 +7,7 @@ import { useCourse } from "@/courses/CourseProvider";
 import { useT } from "@/i18n";
 import { useProgress } from "@/progress/ProgressProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
+import { useXp } from "@/xp/XpProvider";
 import type { Verdict as AnswerVerdict } from "@/services/validation";
 import { Art, Portrait } from "../art/registry";
 import { currentNode, markHint, scoreOf, scriptedDriver, type PlayerInput, type RunState, type WorldContext } from "../engine";
@@ -33,6 +34,7 @@ export function MissionPage() {
   const { apiRequest } = useAuth();
   const { entries } = useVocabulary();
   const { recordRound } = useProgress();
+  const xp = useXp();
   const mission = story?.missions.find((m) => m.id === missionId) ?? null;
   const [phase, setPhase] = useState<Phase>("briefing");
   const [run, setRun] = useState<RunState | null>(null);
@@ -77,6 +79,8 @@ export function MissionPage() {
       try {
         const result = await data.complete(mission, score, finalRun.flags);
         setSaved(result);
+        // XP konta: nagroda misji tylko za pierwsze ukończenie (reguła „raz na misję”).
+        void xp.award({ courseId: story.courseId, source: "story", sourceId: `${story.id}:${mission.id}`, xp: mission.xp }).catch(() => undefined);
         await enrollMissionVocabulary(data.owner, story, mission, data.authenticated ? apiRequest : null);
         // Statystyki i dzień aktywności — ten sam zapis co inne gry (słowa ze słownika kursu).
         const byId = new Map(entries.map((e) => [e.id, e]));
@@ -91,7 +95,7 @@ export function MissionPage() {
         setPhase("saving");
       }
     },
-    [mission, story, data, apiRequest, entries, recordRound],
+    [mission, story, data, apiRequest, entries, recordRound, xp],
   );
 
   const answer = useCallback(
@@ -165,7 +169,7 @@ export function MissionPage() {
         run={run}
         world={world}
         audio={audio}
-        xp={progress.xp}
+        xp={xp.summary?.total ?? progress.xp}
         onAnswer={answer}
         onProceed={proceed}
         onHint={() => setRun((r) => (r ? markHint(r) : r))}

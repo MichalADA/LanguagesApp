@@ -1,6 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useAuth } from "@/auth/useAuth";
 import { useCourse } from "@/courses/CourseProvider";
+import { useXp } from "@/xp/XpProvider";
+import { lessonXp } from "@/xp/goals";
 import { deriveLevel, type LevelView } from "./progress";
 import { fetchCompletedLessons, fetchCourseOutline, fetchLessonContent, saveCompletedLessons } from "./repository";
 import { enrollmentRefs, pendingLessonVocabulary, queueLessonVocabulary, syncLessonVocabulary } from "./srs";
@@ -44,6 +46,7 @@ export function CurriculumProvider({ children }: { children: ReactNode }) {
   const { user, status: authStatus, apiRequest } = useAuth();
   const owner = user?.id ?? "guest";
   const authenticated = authStatus === "authenticated";
+  const { award } = useXp();
   const [reviewSync, setReviewSync] = useState<ReviewSyncState>(authenticated ? "saved" : "local");
   const key = `${owner}:${course.id}`;
   const syncKey = useRef(key);
@@ -111,6 +114,9 @@ export function CurriculumProvider({ children }: { children: ReactNode }) {
         queueLessonVocabulary(owner, course.id, lessonId, vocabulary);
         syncReviews();
       }
+      // XP za zaliczenie — tylko pierwsze (reguła „raz na lekcję” w backendzie i w księdze gościa).
+      const kind = current?.outline?.levels.flatMap((l) => l.modules.flatMap((m) => m.lessons)).find((l) => l.id === lessonId)?.kind;
+      void award({ courseId: course.id, source: "lesson", sourceId: lessonId, xp: lessonXp(kind) }).catch(() => undefined);
       setData((prev) => {
         if (!prev || prev.key !== key || prev.completed.includes(lessonId)) return prev;
         const next = [...prev.completed, lessonId];
@@ -118,7 +124,7 @@ export function CurriculumProvider({ children }: { children: ReactNode }) {
         return { ...prev, completed: next };
       });
     },
-    [key, owner, course.id, syncReviews],
+    [key, owner, course.id, syncReviews, award, current],
   );
 
   const value = useMemo<CurriculumContextValue>(

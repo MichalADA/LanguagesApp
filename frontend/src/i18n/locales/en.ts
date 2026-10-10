@@ -130,6 +130,31 @@ export const en: Dictionary = {
     continueLearning: "Continue learning",
     nextCourses: "Lexodromia is growing",
   },
+  xp: {
+    "eyebrow": "Daily goal",
+    "chooseGoal": "Choose your daily learning goal",
+    "goalXp": "{xp} XP a day",
+    "goalMinutes": "about {m} min",
+    "levels": {
+        "light": "Light",
+        "regular": "Regular",
+        "serious": "Serious",
+        "intense": "Intense"
+    },
+    "todayOf": "Today {today} of {goal} XP",
+    "goalMet": "Today's goal reached!",
+    "goalLeft": "{n} XP to go",
+    "streak": "goal days in a row: {n}",
+    "week": "XP over the last week",
+    "total": "Total {n} XP",
+    "changeGoal": "Change goal",
+    "pending": "Unsent XP: {n}. We will save it once you are back online.",
+    "loadError": "Could not load XP.",
+    "saveError": "Could not save your goal. Please try again.",
+    "howTo": "Earn XP for passed lessons (first time), Stories missions (first completion) and correct answers in reviews.",
+    "settingsTitle": "Daily learning goal",
+    "settingsNote": "How much you want to learn every day. You can change it any time."
+  },
   stories: {
     "eyebrow": "Story game",
     "title": "Lexodromia Stories",

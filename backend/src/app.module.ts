@@ -15,6 +15,7 @@ import { FlashcardsModule } from './flashcards/flashcards.module';
 import { StatisticsModule } from './statistics/statistics.module';
 import { HealthModule } from './health/health.module';
 import { StoriesModule } from './stories/stories.module';
+import { XpModule } from './xp/xp.module';
 import { validateEnvironment } from './config/environment';
 
 @Module({
@@ -35,6 +36,7 @@ import { validateEnvironment } from './config/environment';
     HealthModule,
     ReviewsModule,
     StoriesModule,
+    XpModule,
   ],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })

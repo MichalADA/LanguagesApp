@@ -35,6 +35,8 @@ model User {
   flashcardSessions FlashcardSession[]
   storyProgress     StoryProgress[]
   storyMissions     StoryMissionCompletion[]
+  xpEvents          XpEvent[]
+  xpSettings        XpSettings?
 
   @@index([email])
 }
@@ -81,6 +83,7 @@ model Course {
   flashcardSessions FlashcardSession[]
   storyProgress     StoryProgress[]
   storyMissions     StoryMissionCompletion[]
+  xpEvents          XpEvent[]
 
   @@unique([sourceLanguageId, targetLanguageId])
   @@index([sourceLanguageId])
@@ -336,4 +339,39 @@ model StoryMissionCompletion {
 
   @@unique([userId, courseId, storyId, missionId])
   @@index([userId, courseId, storyId])
+}
+
+/// Account XP preferences (a separate table, so the User table is untouched).
+model XpSettings {
+  userId    String   @id
+  /// Daily learning goal in XP (10 / 20 / 30 / 50 — "lekko" … "bardzo intensywnie").
+  dailyGoal Int      @default(20)
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+/// Account-wide experience points. One row per award; the sum is the user's XP.
+/// "once" sources (a passed lesson, a story mission) are awarded only for the first completion.
+model XpEvent {
+  id        String   @id @default(cuid())
+  userId    String
+  courseId  String
+  /// Idempotency key from the client (network retries never award twice).
+  eventId   String
+  /// lesson | story | review
+  source    String
+  /// e.g. lesson id, "split-a1:m3-coffee", review session id
+  sourceId  String
+  xp        Int
+  /// Calendar day in Europe/Warsaw (YYYY-MM-DD) — daily goal and history.
+  day       String
+  createdAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventId])
+  @@index([userId, day])
+  @@index([userId, source, sourceId])
 }

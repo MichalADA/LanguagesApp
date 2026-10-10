@@ -43,6 +43,16 @@ Backend: `GET /stories/:storyId/progress?course=`, `POST /stories/:storyId/missi
 powtórka zwiększa licznik podejść i najlepszy wynik; ten sam `eventId` (ponowienie po błędzie sieci) nic
 nie zmienia. Gość: ta sama logika lokalnie (`progress.ts → completeMission`).
 
+## XP konta i dzienny cel
+
+XP jest wspólny dla całej aplikacji (`frontend/src/xp/`, backend `/me/xp`, tabele `XpEvent` i `XpSettings`):
+zaliczona lekcja — 20 XP (powtórka modułu / rozmowa / spirala 30, test poziomu 50), ukończona misja
+Stories — nagroda misji, sesja powtórek — 1 XP za poprawną odpowiedź (maks. 50). Lekcja i misja dają XP
+tylko za pierwsze ukończenie; ten sam `eventId` nigdy nie liczy się dwa razy. Dzienny cel wybiera
+użytkownik (Lekko 10 / Regularnie 20 / Intensywnie 30 / Bardzo intensywnie 50 XP) na pulpicie albo
+w Ustawieniach; pulpit pokazuje dzisiejszy XP, liczbę dni z osiągniętym celem z rzędu i ostatni tydzień.
+Gość: ta sama logika lokalnie. XP mierzy wysiłek — o opanowaniu materiału decyduje FSRS.
+
 ## FSRS — bez równoległego systemu powtórek
 
 - Słownictwo misji (`mission.vocabulary`) ma te same karty co lekcje kursu (`WORD pl-hr:<rank>` /

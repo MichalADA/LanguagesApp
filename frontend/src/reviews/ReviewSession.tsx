@@ -18,6 +18,8 @@ import { loadCurriculumReviewItems } from "@/curriculum/reviewItems";
 import { pendingLessonVocabulary, syncLessonVocabulary } from "@/curriculum/srs";
 import { fetchLessonContent } from "@/curriculum/repository";
 import { fetchDue, submitReview, type ReviewAnswer } from "./api";
+import { useXp } from "@/xp/XpProvider";
+import { reviewXp } from "@/xp/goals";
 import {
   createReviewTasks,
   matchedExpected,
@@ -57,6 +59,7 @@ function Session() {
   const [finishing, setFinishing] = useState(false),
     [finishError, setFinishError] = useState(false);
   const sessionRef = useRef<string | null>(null);
+  const { award } = useXp();
   const task = queue[index];
   // Lekcje ukończone w trybie gościa na tym urządzeniu: ich słowa można świadomie dodać do konta.
   const [guestLessons, setGuestLessons] = useState(() => pendingLessonVocabulary("guest", course.id).length);
@@ -208,6 +211,14 @@ function Session() {
     started.current = Date.now();
     if (index + 1 >= queue.length) {
       setPhase("done");
+      // XP konta: 1 za każdą poprawną odpowiedź w sesji (maks. 50).
+      if (correct > 0)
+        void award({
+          courseId: course.id,
+          source: "review",
+          sourceId: sessionRef.current ?? `review-${started.current}`,
+          xp: reviewXp(correct),
+        }).catch(() => undefined);
       void closeSession();
     } else setIndex((n) => n + 1);
   }
