@@ -168,7 +168,7 @@ export const pl: Dictionary = {
         "SENTENCE": "Zdanie",
         "VERB": "Odmiana",
         "GRAMMAR": "Gramatyka",
-        "PHRASE": "Wyrażenie"
+        "PHRASE": "Z kursu"
     },
     "accuracy7": "Skuteczność · 7 dni",
     "accuracy30": "Skuteczność · 30 dni",
