@@ -2261,7 +2261,7 @@ a.stories-city:hover { transform: translateY(-2px); border-color: var(--burgundy
 .vn-objectives li.done { color: var(--success); }
 .vn-objectives-bar { height: 4px; border-radius: 2px; background: var(--track); overflow: hidden; }
 .vn-objectives-bar > span { display: block; height: 100%; background: var(--gold-accent); transition: width 0.4s var(--ease); }
-.vn-character { position: absolute; z-index: 1; left: max(2vw, 12px); bottom: 210px; width: min(34vw, 420px); animation: vn-enter 0.45s var(--ease); transition: transform 0.25s var(--ease); }
+.vn-character { position: absolute; z-index: 1; left: max(3vw, 16px); bottom: -2px; width: min(36vw, 460px); animation: vn-enter 0.45s var(--ease); transition: transform 0.25s var(--ease); }
 .vn-character svg, .vn-character img { width: 100%; height: auto; display: block; filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.35)); }
 .vn-character.mood-happy { transform: translateY(-4px); }
 .vn-character.mood-puzzled { transform: rotate(-2deg); }
@@ -2295,9 +2295,11 @@ a.stories-city:hover { transform: translateY(-2px); border-color: var(--burgundy
 .vn-feedback p { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; color: var(--text-secondary); }
 .vn-explanation { font-size: 14.5px; }
 
-.vn-static { display: grid; place-items: center; padding: var(--space-6) var(--space-4); }
-.vn-card { position: relative; z-index: 2; width: min(640px, 100%); max-height: calc(100dvh - 48px); overflow-y: auto; padding: var(--space-7); border-radius: var(--radius-lg); background: rgba(22, 18, 19, 0.95); border: 1px solid var(--border-strong); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45); display: flex; flex-direction: column; gap: var(--space-3); align-items: flex-start; animation: vn-enter 0.35s var(--ease); }
+.vn-static { display: grid; place-items: center; padding: var(--space-6) var(--space-4); overflow: visible; }
+.vn-static > .vn-bg { position: fixed; }
+.vn-card { position: relative; z-index: 2; width: min(640px, 100%); padding: var(--space-7); border-radius: var(--radius-lg); background: rgba(22, 18, 19, 0.95); border: 1px solid var(--border-strong); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45); display: flex; flex-direction: column; gap: var(--space-3); align-items: flex-start; animation: vn-enter 0.35s var(--ease); }
 .vn-card h1 { font-family: var(--display); font-weight: 500; font-size: clamp(30px, 4vw, 40px); letter-spacing: -0.02em; }
+.vn-card > * { flex-shrink: 0; }
 .vn-result-portrait { width: 96px; height: 96px; border-radius: 50%; overflow: hidden; background: var(--gold-soft); }
 .vn-result-portrait svg, .vn-result-portrait img { width: 100%; height: 100%; transform: scale(1.5) translateY(14%); }
 .vn-story { font-size: 16.5px; line-height: 1.55; }
@@ -2311,6 +2313,10 @@ a.stories-city:hover { transform: translateY(-2px); border-color: var(--burgundy
 
 @keyframes vn-fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes vn-enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@media (min-width: 1100px) {
+  .vn-character { left: max(2vw, 16px); width: min(30vw, 440px); }
+  .vn-panel { left: auto; right: var(--space-6); transform: none; width: min(860px, calc(68vw - 48px)); bottom: var(--space-6); }
+}
 @media (prefers-reduced-motion: reduce) {
   .vn-bg, .vn-line, .vn-character, .vn-card, .vn-feedback, .vn-translation, .stories-pin.next .stories-pin-dot { animation: none; }
   .vn-character, .vn-choice { transition: none; }
@@ -2318,6 +2324,9 @@ a.stories-city:hover { transform: translateY(-2px); border-color: var(--burgundy
 
 @media (max-width: 900px) {
   .stories-city-layout { grid-template-columns: 1fr; }
+}
+/* Tablet i telefon: postać u góry, panel na dole. Desktop (≥ 1100 px): postać po lewej, panel po prawej. */
+@media (max-width: 1099px) {
   .vn-objectives { top: 68px; left: var(--space-4); right: var(--space-4); width: auto; padding: 10px var(--space-3); }
   .vn-objectives ul { flex-direction: row; flex-wrap: wrap; gap: 4px 12px; font-size: 12.5px; }
   .vn-character { left: 50%; transform: translateX(-50%); width: min(62vw, 300px); bottom: auto; top: 150px; }
