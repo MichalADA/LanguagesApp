@@ -173,6 +173,17 @@ async function setup({
       },
     },
     "./tasks": tasks,
+    "@/curriculum/reviewItems": { loadCurriculumReviewItems: async () => ({}) },
+    "@/curriculum/repository": { fetchLessonContent: async () => null },
+    "@/curriculum/srs": {
+      pendingLessonVocabulary: () => [],
+      syncLessonVocabulary: async () => ({ synced: 0, created: 0, pending: 0 }),
+    },
+    "@/components/AudioButton": { AudioButton: () => null },
+    "@/components/AnswerInput": {
+      AnswerInput: ({ value, onChange, disabled }) =>
+        React.createElement("input", { value, disabled, onChange: (e) => onChange(e.target.value) }),
+    },
   });
   let view;
   await act(async () => {
@@ -240,4 +251,27 @@ test("load error can recover to translated empty state without starting a sessio
   );
   assert.deepEqual(finished, []);
   act(() => view.unmount());
+});
+test("lesson phrases (PHRASE cards) become review tasks; alternatives, punctuation and diacritics are handled", () => {
+  const phrases = {
+    "pl-hr:phrase:kako ste": { target: "Kako ste?", source: "Jak się Pan / Pani ma?", accepted: ["Kako ste?"], audioSrc: "/audio/kako-ste.mp3" },
+    "pl-hr:phrase:polako": { target: "polako", source: "powoli (nie szybko)", accepted: ["polako"] },
+  };
+  const items = [item("pl-hr:phrase:kako ste", "PHRASE"), item("pl-hr:phrase:polako", "PHRASE"), item("pl-hr:phrase:missing", "PHRASE")];
+  const queue = tasks.createReviewTasks(items, words, verbs, sentences, phrases);
+  assert.equal(queue.length, 2, "unknown phrase is skipped, not crashed on");
+  const [forward, reverse] = queue;
+  assert.equal(forward.direction, "SOURCE_TO_TARGET");
+  assert.equal(forward.audioSrc, "/audio/kako-ste.mp3");
+  // Punctuation and case do not matter; missing diacritics is "near", wrong words are a miss.
+  assert.equal(tasks.reviewVerdict(forward, "kako ste"), "hit");
+  assert.equal(tasks.reviewVerdict(forward, "Kako si"), "miss");
+  const zivjeti = tasks.createReviewTasks([item("pl-hr:0")], [{ ...words[0], targetText: "živjeti", sourceText: "mieszkać / żyć" }], verbs, sentences)[0];
+  assert.equal(tasks.reviewVerdict(zivjeti, "zivjeti"), "near");
+  assert.equal(tasks.matchedExpected(zivjeti, "zivjeti"), "živjeti");
+  // Reverse direction: every part of "powoli (nie szybko)" / "mieszkać / żyć" is a valid Polish answer.
+  assert.equal(reverse.direction, "TARGET_TO_SOURCE");
+  assert.equal(tasks.reviewVerdict(reverse, "powoli"), "hit");
+  assert.deepEqual(tasks.sourceAlternatives("mieszkać / żyć").slice(-2), ["mieszkać", "żyć"]);
+  assert.equal(tasks.reviewVerdict(reverse, "szybko"), "miss");
 });

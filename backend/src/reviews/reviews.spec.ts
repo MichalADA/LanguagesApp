@@ -81,6 +81,7 @@ describe("FSRS scheduling policy", () => {
       { responseTimeMs: 61000 },
       { gameType: "match-columns" },
       { gameType: "sentence-builder" },
+      { nearMiss: true },
     ])
       expect(calculateReviewRating({ ...base, ...extra }, 40)).toBe(
         Rating.Hard,

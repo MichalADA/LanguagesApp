@@ -132,6 +132,13 @@ export const pl: Dictionary = {
   },
   reviews: {
     "finishError": "Odpowiedzi są zapisane, ale nie udało się zamknąć sesji. Ponów zapis podsumowania.",
+    "near": "Prawie — zwróć uwagę na znaki č, ć, š, ž, đ",
+    "answerTarget": "Napisz po chorwacku",
+    "answerSource": "Napisz po polsku",
+    "guestWaiting": "Na tym urządzeniu czekają słowa z ukończonych lekcji w trybie gościa ({n}). Po zalogowaniu dodasz je do powtórek.",
+    "guestImport": "Na tym urządzeniu są słowa z lekcji ukończonych w trybie gościa ({n}). Dodać je do Twoich powtórek?",
+    "guestImportAction": "Dodaj słowa do powtórek",
+    "guestImportError": "Nie udało się dodać wszystkich słów. Spróbuj ponownie za chwilę.",
     "title": "Powtórki na dziś",
     "description": "Słowa, zdania i odmiana w jednej sesji. Terminy dobiera FSRS.",
     "login": "Zaloguj się, aby korzystać ze wspólnego harmonogramu powtórek.",
@@ -331,6 +338,8 @@ export const pl: Dictionary = {
 },
   home: {
     "title": "Twój trening na dziś",
+    "planLesson": "Lekcja kursu",
+    "planLessonMeta": "{title} · około {n} min",
     "subtitle": "Wybierz krótką sesję i zrób kolejny krok.",
     "lastMode": "Ostatni tryb",
     "training": "Od czego zaczynamy?",

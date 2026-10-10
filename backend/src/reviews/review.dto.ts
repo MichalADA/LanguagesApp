@@ -32,6 +32,8 @@ export class ReviewAnswerDto {
   @IsOptional() @IsInt() @Min(0) @Max(86400000) responseTimeMs?: number;
   @IsOptional() @IsBoolean() usedHint?: boolean;
   @IsOptional() @IsInt() @Min(0) @Max(1000) attemptsBeforeCorrect?: number;
+  /** Correct apart from diacritics (čaša → casa): counts as recalled, rated Hard. */
+  @IsOptional() @IsBoolean() nearMiss?: boolean;
 }
 
 /** Item a lesson introduced. Only WORD (dataset vocabulary) and PHRASE (curriculum-only) are enrollable. */

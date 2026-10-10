@@ -132,6 +132,13 @@ export const en: Dictionary = {
   },
   reviews: {
     "finishError": "Your answers are saved, but the session could not be closed. Retry saving the summary.",
+    "near": "Almost — mind the letters č, ć, š, ž, đ",
+    "answerTarget": "Write it in Croatian",
+    "answerSource": "Write it in Polish",
+    "guestWaiting": "Words from lessons completed in guest mode are waiting on this device ({n}). Sign in to add them to your reviews.",
+    "guestImport": "This device has words from lessons completed in guest mode ({n}). Add them to your reviews?",
+    "guestImportAction": "Add words to reviews",
+    "guestImportError": "Could not add all the words. Please try again in a moment.",
     "title": "Reviews due today",
     "description": "Words, sentences and conjugation in one session. Scheduled by FSRS.",
     "login": "Sign in to use your shared review schedule.",
@@ -331,6 +338,8 @@ export const en: Dictionary = {
 },
   home: {
     "title": "Your practice for today",
+    "planLesson": "Course lesson",
+    "planLessonMeta": "{title} · about {n} min",
     "subtitle": "Choose a short session and take the next step.",
     "lastMode": "Last mode",
     "training": "Where shall we start?",

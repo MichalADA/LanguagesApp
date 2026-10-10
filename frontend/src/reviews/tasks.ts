@@ -2,7 +2,7 @@ import type { ReviewItem } from "./api";
 import type { VocabularyEntry } from "@/vocabulary/types";
 import type { VerbEntry, PersonId } from "@/grammar/types";
 import type { Sentence } from "@/sentences/types";
-import { normalizeAnswer } from "@/sentences/validation";
+import type { CurriculumReviewItem } from "@/curriculum/types";
 export interface ReviewTask {
   item: ReviewItem;
   prompt: string;
@@ -10,20 +10,45 @@ export interface ReviewTask {
   gameType: string;
   direction: "SOURCE_TO_TARGET" | "TARGET_TO_SOURCE";
   options?: string[];
+  /** Nagranie chorwackiej formy (słowo / zwrot), gdy jest. */
+  audioSrc?: string;
+}
+
+/** Słowo do powtórki: wpis słownika kursu albo zwrot z lekcji (PHRASE). */
+interface Card {
+  id: string;
+  targetText: string;
+  sourceText: string;
+  acceptedAnswers?: string[];
+  audioUrl?: string;
+}
+
+/**
+ * Polskie znaczenie „mieszkać / żyć”, „wolno (nie szybko)” → każda część jest poprawną
+ * odpowiedzią (plus całość). Nawias to doprecyzowanie, nie część odpowiedzi.
+ */
+export function sourceAlternatives(text: string): string[] {
+  const bare = text.replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim();
+  const parts = bare.split(/\s*[/,;]\s*/).map((part) => part.trim()).filter(Boolean);
+  return [...new Set([text, bare, ...parts])];
 }
 export function createReviewTasks(
   items: ReviewItem[],
   words: VocabularyEntry[],
   verbs: VerbEntry[],
   sentences: Sentence[],
+  /** Zwroty z lekcji spoza słownika (karty PHRASE), zob. curriculum/reviewItems.ts. */
+  phrases: Record<string, CurriculumReviewItem> = {},
 ): ReviewTask[] {
-  const wordMap = new Map(words.map((w) => [w.id, w]));
+  const wordMap = new Map<string, Card>(words.map((w) => [w.id, w]));
+  for (const [id, phrase] of Object.entries(phrases))
+    wordMap.set(id, { id, targetText: phrase.target, sourceText: phrase.source, acceptedAnswers: phrase.accepted, audioUrl: phrase.audioSrc });
   const verbMap = new Map(verbs.map((v) => [v.id, v]));
   const sentenceMap = new Map(
     sentences.map((s) => [`${items[0]?.course.slug}:sentence:${s.id}`, s]),
   );
   return items.flatMap((item, index): ReviewTask[] => {
-    if (item.itemType === "WORD") {
+    if (item.itemType === "WORD" || item.itemType === "PHRASE") {
       const w = wordMap.get(item.itemId);
       if (!w) return [];
       const reverse = index % 3 === 1;
@@ -31,10 +56,11 @@ export function createReviewTasks(
         item,
         prompt: reverse ? w.targetText : w.sourceText,
         expected: reverse
-          ? [w.sourceText]
+          ? sourceAlternatives(w.sourceText)
           : [w.targetText, ...(w.acceptedAnswers ?? [])],
         direction: reverse ? "TARGET_TO_SOURCE" : "SOURCE_TO_TARGET",
         gameType: "review-translation",
+        ...(w.audioUrl ? { audioSrc: w.audioUrl } : {}),
       };
       if (index % 3 === 2) {
         const options = [
@@ -89,11 +115,37 @@ export function createReviewTasks(
     return [];
   });
 }
-export const isReviewCorrect = (task: ReviewTask, answer: string) =>
-  Boolean(answer.trim()) &&
-  task.expected.some(
-    (expected) => normalizeAnswer(expected) === normalizeAnswer(answer),
-  );
+/** Wielkość liter, interpunkcja i nadmiarowe spacje nie zmieniają odpowiedzi (Kako ste = Kako ste?). */
+const normalizeReview = (value: string) =>
+  value
+    .normalize("NFC")
+    .toLocaleLowerCase("hr")
+    .replace(/[.,!?;:„”"«»…]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+const FOLD: Record<string, string> = { č: "c", ć: "c", š: "s", ž: "z", đ: "d" };
+const foldCroatian = (value: string) => value.replace(/[čćšžđ]/g, (c) => FOLD[c]);
+
+/**
+ * hit — poprawnie; near — po chorwacku poprawnie poza znakami diakrytycznymi
+ * (dobry kierunek, ale FSRS dostaje ocenę „trudne”); miss — błąd.
+ */
+export function reviewVerdict(task: ReviewTask, answer: string): "hit" | "near" | "miss" {
+  const given = normalizeReview(answer);
+  if (!given) return "miss";
+  if (task.expected.some((expected) => normalizeReview(expected) === given)) return "hit";
+  if (task.direction === "SOURCE_TO_TARGET" && !task.options && task.expected.some((expected) => foldCroatian(normalizeReview(expected)) === foldCroatian(given)))
+    return "near";
+  return "miss";
+}
+
+/** Poprawna pisownia wariantu, do którego pasuje odpowiedź (dla „near”). */
+export function matchedExpected(task: ReviewTask, answer: string): string {
+  const given = foldCroatian(normalizeReview(answer));
+  return task.expected.find((expected) => foldCroatian(normalizeReview(expected)) === given) ?? task.expected[0];
+}
+
+export const isReviewCorrect = (task: ReviewTask, answer: string) => reviewVerdict(task, answer) === "hit";
 /** Only reinsert when three other tasks can intervene. Otherwise keep the server due. */
 export function repeatAfterError(
   queue: ReviewTask[],
