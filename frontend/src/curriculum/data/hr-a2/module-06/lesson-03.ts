@@ -364,7 +364,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "fotelja",
@@ -399,6 +399,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-06/tepih.mp3"
       },
       {
@@ -608,6 +609,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Mačka spava na fotelji."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-06/macka-spava-na-fotelji.mp3"
       },
       {

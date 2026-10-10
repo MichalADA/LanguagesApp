@@ -109,6 +109,8 @@ interface StepBase {
   section?: TestSection;
   /** Polecenie po chorwacku (z CSV), pokazywane nad instrukcją. */
   instructionTarget?: Bilingual;
+  /** Zadanie dodatkowe (np. na słowach z listy uzupełniającej) — nie liczy się do zaliczenia. */
+  optional?: boolean;
 }
 
 export interface IntroStep extends StepBase {

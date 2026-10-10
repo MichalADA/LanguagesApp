@@ -42,6 +42,18 @@ src/curriculum/data/hr-a1/        ← wygenerowane TypeScript (commitowane, nie 
   sat / sata / sati, radim · radiš · radi. `choices[].targetText` mówi, gdzie jest chorwacki (`prompt` = zdanie do
   odsłuchania, np. cena; domyślnie `options`). Powtórka modułu też może mieć `grammar`, `choices` i `translate` na
   własnych zdaniach (np. „Ne razumijem” w a1-05) — pojawiają się przed dialogiem, który ich wymaga.
+- **Materiał obowiązkowy i opcjonalny:** słowa z osobnych kart (`word`) są obowiązkowe — po zaliczeniu
+  lekcji trafiają do powtórek FSRS (`vocabulary[].review`: istniejąca karta słownika `WORD pl-hr:<rank>`
+  albo `PHRASE pl-hr:phrase:<tekst>`). Słowa z list (uzupełniające, do rozmowy, polecenia testu) dostają
+  `optional: true`. Zadania na słowach uzupełniających (`check-more`, `translate-more`) też są `optional`:
+  mają informację zwrotną, ale nie liczą się do zaliczenia.
+- **Kolejność ćwiczeń** w zwykłej lekcji jest stała: rozpoznanie (co znaczy zdanie, wybór) → ułóż zdanie
+  → tłumaczenia (samodzielne wpisanie).
+- **Reguła po błędzie:** luka lekcji dostaje `rule` (tytuł + pierwsze zdanie `grammar.text`), układanie zdania
+  z krótkimi formami (sam, je, se, ću…) — regułę o drugim miejscu w zdaniu.
+- **Zaliczenie** (`src/curriculum/grading.ts`): lekcja ≥ 70% punktów ważonych (wybór 1, luka/układanie 2,
+  tłumaczenie/dialog 3; poprawka w rundzie błędów = pół punktu); test poziomu ≥ 70% w pierwszym podejściu
+  i ≥ 50% w każdej sekcji.
 - **Karty słów:** słowo jest nową kartą tylko w jednej zwykłej lekcji; lekcja ma 8–10 kart w grupach po 2–3.
   Nowe słowo = nowy `record_id` (identyfikator nie jest używany ponownie dla innego słowa, bo trafia do fiszek).
 - **Tłumaczenia** dostają naturalne warianty: drugi rodzaj w zdaniu o sobie (poza lekcją z `genderDrill: true`)

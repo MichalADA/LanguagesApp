@@ -87,6 +87,11 @@ test('ocena: wpisanie zdania waży więcej niż wybór, poprawka daje połowę p
   const skipped = grading.evaluateLesson(steps, { c1: { correct: 1, total: 1 }, c2: { correct: 1, total: 1 } });
   assert.deepEqual(skipped.unanswered, ['t1']);
   assert.equal(skipped.passed, false);
+  // Zadanie dodatkowe (słowa z listy uzupełniającej) nie wpływa na zaliczenie.
+  const withOptional = [...steps.slice(0, 3), { ...translate('extra'), optional: true }, steps[3]];
+  const ok = { c1: { correct: 1, total: 1 }, c2: { correct: 1, total: 1 }, t1: { correct: 1, total: 1 } };
+  assert.equal(grading.evaluateLesson(withOptional, { ...ok, extra: { correct: 0, total: 1 } }).score, 1);
+  assert.equal(grading.evaluateLesson(withOptional, ok).passed, true, 'pominięte zadanie dodatkowe nie blokuje');
   // Wynik niepasujący do kroku (np. zmieniony zapis) jest ignorowany.
   assert.equal(grading.evaluateLesson(steps, { c1: { correct: 5, total: 1 }, c2: { correct: 1, total: 1 }, t1: { correct: 1, total: 1 } }).unanswered[0], 'c1');
 });

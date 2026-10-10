@@ -509,7 +509,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "taksi",
@@ -592,6 +592,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-07/izaci.mp3"
       },
       {
@@ -745,6 +746,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Gdje trebam izaći?"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-07/gdje-trebam-izaci.mp3"
       },
       {

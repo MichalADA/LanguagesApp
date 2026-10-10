@@ -333,7 +333,8 @@ export const en: Dictionary = {
             "reviewSyncing": "Saving words to your reviews…",
             "reviewSaved": "{n} words are in your reviews (FSRS).",
             "goReviews": "Go to reviews",
-            "rule": "Rule:"
+            "rule": "Rule:",
+            "optionalTask": "Extra task — it does not affect passing the lesson."
     }
 },
   home: {

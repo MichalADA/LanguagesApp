@@ -333,7 +333,8 @@ export const pl: Dictionary = {
             "reviewSyncing": "Zapisuję słowa w powtórkach…",
             "reviewSaved": "Słowa obowiązkowe ({n}) są w Twoich powtórkach (FSRS).",
             "goReviews": "Przejdź do powtórek",
-            "rule": "Reguła:"
+            "rule": "Reguła:",
+            "optionalTask": "Zadanie dodatkowe — nie wpływa na zaliczenie lekcji."
     }
 },
   home: {

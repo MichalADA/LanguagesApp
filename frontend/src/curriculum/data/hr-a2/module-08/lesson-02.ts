@@ -393,7 +393,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "svejedno",
@@ -428,6 +428,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-08/nikako.mp3"
       },
       {
@@ -632,6 +633,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Meni je svejedno."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-08/meni-je-svejedno.mp3"
       },
       {

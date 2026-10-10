@@ -431,7 +431,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "ćevapi",
@@ -472,6 +472,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-01/jednom.mp3"
       },
       {
@@ -690,6 +691,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Još nisam probao crni rižoto."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-01/jos-nisam-probao-crni-rizoto.mp3"
       },
       {

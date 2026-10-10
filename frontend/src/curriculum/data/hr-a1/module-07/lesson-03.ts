@@ -519,7 +519,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "jednokrevetna soba",
@@ -614,6 +614,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-07/lozinka.mp3"
       },
       {
@@ -765,6 +766,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Soba je na trećem katu."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-07/soba-je-na-trecem-katu.mp3"
       },
       {

@@ -431,7 +431,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "materinski jezik",
@@ -472,6 +472,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-04/kako-se-kaze.mp3"
       },
       {
@@ -679,6 +680,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Moj materinski jezik je poljski."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-04/moj-materinski-jezik-je-poljski.mp3"
       },
       {

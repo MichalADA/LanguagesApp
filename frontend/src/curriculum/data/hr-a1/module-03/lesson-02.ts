@@ -484,7 +484,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "jezik",
@@ -555,6 +555,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-03/govoriti.mp3"
       },
       {
@@ -682,6 +683,7 @@ export const LESSON: GeneratedLesson = {
           "Ja govorim malo hrvatski.",
           "Ja malo govorim hrvatski."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-03/govorim-malo-hrvatski.mp3"
       },
       {

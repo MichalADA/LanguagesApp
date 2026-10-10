@@ -500,7 +500,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "košarka",
@@ -577,6 +577,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-06/utakmica.mp3"
       },
       {
@@ -713,6 +714,7 @@ export const LESSON: GeneratedLesson = {
           "Vježbam svaki dan.",
           "Ja vježbam svaki dan."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-06/vjezbam-svaki-dan.mp3"
       },
       {

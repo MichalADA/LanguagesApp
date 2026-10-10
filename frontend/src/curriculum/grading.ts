@@ -42,8 +42,9 @@ export const EVIDENCE_WEIGHT: Record<ScoredStep["type"], number> = {
   dialog: 3,
 };
 
+/** Ćwiczenie liczone do zaliczenia (zadania dodatkowe — `optional` — mają tylko informację zwrotną). */
 export function isScored(step: LessonStep): step is ScoredStep {
-  return step.type in EVIDENCE_WEIGHT;
+  return step.type in EVIDENCE_WEIGHT && !step.optional;
 }
 
 /** Ile pytań ma krok (oczekiwane `total` wyniku). */

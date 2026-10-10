@@ -543,8 +543,9 @@ function supplementSteps(bucket) {
   const rand = seeded(n * 6151);
   const asked = extra[n % extra.length];
   return [
-    vocabListStep("more-words", "words", "Więcej przydatnych słów", extra, "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji."),
-    choiceStep("check-more", "words", "Co znaczy to słowo?", asked.hr_text, asked.pl_text, pickDistractors(extra.map((v) => v.pl_text), asked.pl_text, rand), n),
+    vocabListStep("more-words", "words", "Więcej przydatnych słów", extra, "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart."),
+    // Zadanie na słowach dodatkowych: informacja zwrotna jest, ale wynik nie wpływa na zaliczenie lekcji.
+    { ...choiceStep("check-more", "words", "Co znaczy to słowo?", asked.hr_text, asked.pl_text, pickDistractors(extra.map((v) => v.pl_text), asked.pl_text, rand), n), optional: true },
   ];
 }
 
@@ -575,7 +576,7 @@ function supplementTranslateStep(bucket, d, used) {
     ? candidates.find((r) => Number(r.sequence) === d.supplementTranslate)
     : candidates.filter((r) => tokens(r.hr_text).length >= 3 && tokens(r.hr_text).some((t) => forms.has(t)))
       .sort((a, b) => tokens(a.hr_text).length - tokens(b.hr_text).length || Number(a.sequence) - Number(b.sequence))[0];
-  return pick ? translateStep("translate-more", "practice", sentenceOf(bucket.lesson.lesson_id, pick.sequence)) : null;
+  return pick ? { ...translateStep("translate-more", "practice", sentenceOf(bucket.lesson.lesson_id, pick.sequence)), optional: true } : null;
 }
 
 /** Dialog wzorcowy (didactics → model): najpierw słuchasz rozmowy, potem prowadzisz własną. */

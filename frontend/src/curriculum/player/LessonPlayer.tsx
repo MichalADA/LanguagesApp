@@ -176,6 +176,7 @@ export function LessonPlayer({ content, header, nextHref, moduleHref, storageKey
           </div>
         )}
         {retry && <p className="lesson-retry-note">{t("curriculum.player.retryNote")}</p>}
+        {step.optional && !retry && <p className="lesson-optional-note">{t("curriculum.player.optionalTask")}</p>}
         {step.instructionTarget && (
           <p className="instruction-target">
             <SpokenText text={step.instructionTarget.target} src={step.instructionTarget.audioSrc} />

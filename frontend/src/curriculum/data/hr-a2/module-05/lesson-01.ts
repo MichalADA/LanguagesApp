@@ -396,7 +396,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "crn",
@@ -443,6 +443,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-05/bijel.mp3"
       },
       {
@@ -629,6 +630,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Crvena ili zelena?"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-05/crvena-ili-zelena.mp3"
       },
       {

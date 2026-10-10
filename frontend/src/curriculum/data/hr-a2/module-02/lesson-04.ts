@@ -482,7 +482,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "izložba",
@@ -523,6 +523,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-02/ulaznica.mp3"
       },
       {
@@ -731,6 +732,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Vidimo se tamo!"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-02/vidimo-se-tamo.mp3"
       },
       {
