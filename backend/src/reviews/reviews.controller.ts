@@ -14,7 +14,7 @@ import {
   CurrentUserPayload,
 } from "../common/decorators/current-user.decorator";
 import { ReviewsService } from "./reviews.service";
-import { ReviewAnswerDto } from "./review.dto";
+import { EnrollReviewItemsDto, ReviewAnswerDto } from "./review.dto";
 @Controller("reviews")
 @UseGuards(JwtAuthGuard)
 export class ReviewsController {
@@ -59,5 +59,12 @@ export class ReviewsController {
     @Body() dto: ReviewAnswerDto,
   ) {
     return this.reviews.answer(user.sub, dto);
+  }
+  /** Lesson completion → new FSRS cards. Safe to retry. */
+  @Post("enroll") enroll(
+    @CurrentUser() user: CurrentUserPayload,
+    @Body() dto: EnrollReviewItemsDto,
+  ) {
+    return this.reviews.enroll(user.sub, dto);
   }
 }

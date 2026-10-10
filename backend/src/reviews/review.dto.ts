@@ -1,4 +1,8 @@
+import { Type } from "class-transformer";
 import {
+  ArrayMaxSize,
+  ArrayMinSize,
+  IsArray,
   IsBoolean,
   IsEnum,
   IsIn,
@@ -9,6 +13,7 @@ import {
   MaxLength,
   Min,
   MinLength,
+  ValidateNested,
 } from "class-validator";
 import { ReviewItemType } from "@prisma/client";
 
@@ -27,4 +32,26 @@ export class ReviewAnswerDto {
   @IsOptional() @IsInt() @Min(0) @Max(86400000) responseTimeMs?: number;
   @IsOptional() @IsBoolean() usedHint?: boolean;
   @IsOptional() @IsInt() @Min(0) @Max(1000) attemptsBeforeCorrect?: number;
+}
+
+/** Item a lesson introduced. Only WORD (dataset vocabulary) and PHRASE (curriculum-only) are enrollable. */
+export class EnrollItemDto {
+  @IsIn(["WORD", "PHRASE"]) itemType!: "WORD" | "PHRASE";
+  @IsString() @MinLength(1) @MaxLength(200) itemId!: string;
+}
+
+/**
+ * Lesson material → new FSRS cards. Enrolling is not a review: no attempt is
+ * recorded and no rating is given, so seeing a word never counts as knowing it.
+ */
+export class EnrollReviewItemsDto {
+  @IsString() @MinLength(1) @MaxLength(64) course!: string;
+  /** Where the material came from, e.g. "lesson:a1-01-02" (diagnostics only). */
+  @IsString() @MinLength(1) @MaxLength(100) source!: string;
+  @IsArray()
+  @ArrayMinSize(1)
+  @ArrayMaxSize(100)
+  @ValidateNested({ each: true })
+  @Type(() => EnrollItemDto)
+  items!: EnrollItemDto[];
 }

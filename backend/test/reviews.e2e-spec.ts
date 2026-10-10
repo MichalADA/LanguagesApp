@@ -289,4 +289,72 @@ describe("Unified reviews (Postgres e2e)", () => {
     ).rejects.toMatchObject({ status: 409 });
     expect((await reviews.stats(alice, "pl-hr")).accuracy7).toBe(50);
   });
+  it("enrolls lesson material as new due cards, idempotently and without touching existing schedules", async () => {
+    const server = app.getHttpServer();
+    // A word already practised in a game keeps its schedule.
+    await reviews.answer(alice, body({ itemId: "pl-hr:7" }));
+    const practised = await db.reviewState.findFirstOrThrow({
+      where: { userId: alice, itemId: "pl-hr:7" },
+    });
+    const enroll = {
+      course: "pl-hr",
+      source: "lesson:a1-01-02",
+      items: [
+        { itemType: "WORD", itemId: "pl-hr:7" },
+        { itemType: "WORD", itemId: "pl-hr:8" },
+        { itemType: "WORD", itemId: "pl-hr:8" },
+        { itemType: "PHRASE", itemId: "pl-hr:lesson:A1-0001" },
+      ],
+    };
+    const first = await request(server)
+      .post("/reviews/enroll")
+      .set("Authorization", `Bearer ${token}`)
+      .send(enroll)
+      .expect(201);
+    expect(first.body).toEqual({ created: 2, existing: 1, total: 3 });
+    // Network retry / replayed lesson: nothing new, nothing reset.
+    const retry = await request(server)
+      .post("/reviews/enroll")
+      .set("Authorization", `Bearer ${token}`)
+      .send(enroll)
+      .expect(201);
+    expect(retry.body).toEqual({ created: 0, existing: 3, total: 3 });
+    const states = await db.reviewState.findMany({
+      where: { userId: alice },
+      orderBy: { itemId: "asc" },
+    });
+    expect(states).toHaveLength(3);
+    const kept = states.find((s) => s.itemId === "pl-hr:7")!;
+    expect(kept.reps).toBe(1);
+    expect(kept.due).toEqual(practised.due);
+    // Seeing a word is not a review: no attempts, reps 0, due now.
+    expect(await db.reviewAttempt.count({ where: { userId: alice } })).toBe(1);
+    const fresh = states.filter((s) => s.itemId !== "pl-hr:7");
+    expect(fresh.every((s) => s.reps === 0 && s.due <= new Date())).toBe(true);
+    const due = await reviews.due(alice, { course: "pl-hr" });
+    expect(due.map((d) => d.itemId)).toEqual(
+      expect.arrayContaining(["pl-hr:8", "pl-hr:lesson:A1-0001"]),
+    );
+    // Other users and foreign namespaces stay isolated.
+    expect(await db.reviewState.count({ where: { userId: bob } })).toBe(0);
+    await request(server)
+      .post("/reviews/enroll")
+      .set("Authorization", `Bearer ${token}`)
+      .send({ ...enroll, items: [{ itemType: "WORD", itemId: "pl-en:1" }] })
+      .expect(400);
+    await request(server)
+      .post("/reviews/enroll")
+      .set("Authorization", `Bearer ${token}`)
+      .send({
+        ...enroll,
+        items: [{ itemType: "VERB", itemId: "pl-hr:verb:1" }],
+      })
+      .expect(400);
+    await request(server)
+      .post("/reviews/enroll")
+      .set("Authorization", `Bearer ${token}`)
+      .send({ ...enroll, items: [] })
+      .expect(400);
+    await request(server).post("/reviews/enroll").send(enroll).expect(401);
+  });
 });
