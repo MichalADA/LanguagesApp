@@ -16,7 +16,9 @@
     "curriculum:a1:audio-check": "node scripts/generate-curriculum.mjs --level hr-a1 --check --audio-strict",
     "curriculum:a2": "node scripts/generate-curriculum.mjs --level hr-a2",
     "curriculum:a2:check": "node scripts/generate-curriculum.mjs --level hr-a2 --check",
-    "curriculum:a2:audio-check": "node scripts/generate-curriculum.mjs --level hr-a2 --check --audio-strict"
+    "curriculum:a2:audio-check": "node scripts/generate-curriculum.mjs --level hr-a2 --check --audio-strict",
+    "stories:audio": "node scripts/stories-audio.mjs",
+    "stories:audio:check": "node scripts/stories-audio.mjs --check"
   },
   "dependencies": {
     "react": "^18.3.1",

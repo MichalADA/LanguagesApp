@@ -5,6 +5,9 @@ import { GamesPage } from "@/pages/GamesPage";
 import { PlayPage } from "@/pages/PlayPage";
 import { StatsPage } from "@/pages/StatsPage";
 import { ReviewSession } from "@/reviews/ReviewSession";
+import { StoriesHub } from "@/stories/pages/StoriesHub";
+import { CityPage } from "@/stories/pages/CityPage";
+import { MissionPage } from "@/stories/pages/MissionPage";
 import { FiszkiPage } from "@/pages/FiszkiPage";
 import { FiszkiSessionPage } from "@/pages/FiszkiSessionPage";
 import { ProgressPage } from "@/pages/ProgressPage";
@@ -62,11 +65,14 @@ export default function App() {
         <Route path="/start" element={<StartRoute />} />
         {/* Lekcja ma własny układ skupienia — bez sidebaru i topbaru. */}
         <Route path="/lekcja/:lessonId" element={<LessonPage />} />
+        <Route path="/stories/:storyId/:missionId" element={<MissionPage />} />
         <Route element={<ShellLayout />}>
           <Route path="/" element={<HomeRoute />} />
           <Route path="/kurs" element={<CoursePage />} />
           <Route path="/kurs/:levelId/modul/:moduleOrder" element={<ModulePage />} />
           <Route path="/gry" element={<GamesPage />} />
+          <Route path="/stories" element={<StoriesHub />} />
+          <Route path="/stories/:storyId" element={<CityPage />} />
           <Route path="/radio" element={<RadioPage />} />
           <Route path="/gry/kategoria/:categoryId" element={<GamesPage />} />
           <Route path="/gry/:gameId" element={<PlayPage />} />
