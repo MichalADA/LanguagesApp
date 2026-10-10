@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "djetinjstvo",
         "partOfSpeech": "noun",
         "recordId": "A2-0868",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:534"
+        },
+        "accepted": [
+          "djetinjstvo"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/djetinjstvo.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sjećati se",
         "partOfSpeech": "verb",
         "recordId": "A2-0869",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:688"
+        },
+        "accepted": [
+          "sjećati se"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/sjecati-se.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "selo",
         "partOfSpeech": "noun",
         "recordId": "A2-0870",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:253"
+        },
+        "accepted": [
+          "selo"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/selo.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nekad",
         "partOfSpeech": "adverb",
         "recordId": "A2-0871",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1028"
+        },
+        "accepted": [
+          "nekad"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/nekad.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "obožavati",
         "partOfSpeech": "verb",
         "recordId": "A2-0872",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:obožavati"
+        },
+        "accepted": [
+          "obožavati"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/obozavati.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "igralište",
         "partOfSpeech": "noun",
         "recordId": "A2-0873",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4376"
+        },
+        "accepted": [
+          "igralište"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/igraliste.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odrasti",
         "partOfSpeech": "verb",
         "recordId": "A2-0874",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:odrasti"
+        },
+        "accepted": [
+          "odrasti"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/odrasti.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ljetovati",
         "partOfSpeech": "verb",
         "recordId": "A2-0875",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ljetovati"
+        },
+        "accepted": [
+          "ljetovati"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/ljetovati.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "crtić",
         "partOfSpeech": "noun",
         "recordId": "A2-0876",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:crtić"
+        },
+        "accepted": [
+          "crtić"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/crtic.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "igračka",
         "partOfSpeech": "noun",
         "recordId": "A2-0877",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:igračka"
+        },
+        "accepted": [
+          "igračka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/igracka.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "susjedstvo",
         "partOfSpeech": "noun",
         "recordId": "A2-0878",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:540"
+        },
+        "accepted": [
+          "susjedstvo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/susjedstvo.mp3"
       }
     ],
@@ -352,7 +432,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "crtić",
@@ -387,6 +467,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-08/crtic.mp3"
       },
       {
@@ -485,38 +566,23 @@ export const LESSON: GeneratedLesson = {
           "ljetovali"
         ],
         "translation": "Każdego lata spędzaliśmy wakacje nad morzem.",
+        "rule": "Kad sam bio dijete — O dzieciństwie mówisz w perfekcie: Kad sam bio dijete / bila dijete… (kiedy byłem / byłam dzieckiem).",
         "answerAudioSrc": "/audio/hr/a2/module-08/svako-ljeto-smo-ljetovali-na-moru.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Wychowałam się w małym mieście.",
-        "accepted": [
-          "Odrasla sam u malom gradu.",
-          "Odrastao sam u malom gradu."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Djed mi je pričao zanimljive priče.",
+        "options": [
+          "Dziadek opowiadał mi ciekawe historie.",
+          "Kiedy byłem dzieckiem, mieszkałem na wsi.",
+          "Pamiętam swój pierwszy rower."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-08/odrasla-sam-u-malom-gradu.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Często bawiliśmy się na placu zabaw.",
-        "tokens": [
-          "često",
-          "igrali",
-          "se",
-          "na",
-          "igralištu",
-          "smo"
-        ],
-        "accepted": [
-          "Često smo se igrali na igralištu."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-08/cesto-smo-se-igrali-na-igralistu.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-08/djed-mi-je-pricao-zanimljive-price.mp3"
       },
       {
         "id": "choice-1",
@@ -535,19 +601,36 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-08/sjecam-se-svog-prvog-bicikla.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Djed mi je pričao zanimljive priče.",
-        "options": [
-          "Dziadek opowiadał mi ciekawe historie.",
-          "Kiedy byłem dzieckiem, mieszkałem na wsi.",
-          "Pamiętam swój pierwszy rower."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Często bawiliśmy się na placu zabaw.",
+        "tokens": [
+          "često",
+          "igrali",
+          "se",
+          "na",
+          "igralištu",
+          "smo"
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-08/djed-mi-je-pricao-zanimljive-price.mp3"
+        "accepted": [
+          "Često smo se igrali na igralištu."
+        ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
+        "answerAudioSrc": "/audio/hr/a2/module-08/cesto-smo-se-igrali-na-igralistu.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Wychowałam się w małym mieście.",
+        "accepted": [
+          "Odrasla sam u malom gradu.",
+          "Odrastao sam u malom gradu."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-08/odrasla-sam-u-malom-gradu.mp3"
       },
       {
         "id": "translate-2",
@@ -569,6 +652,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Moja omiljena igračka bila je lopta."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-08/moja-omiljena-igracka-bila-je-lopta.mp3"
       },
       {

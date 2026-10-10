@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pitanje",
         "partOfSpeech": "noun",
         "recordId": "A1-0668",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:249"
+        },
+        "accepted": [
+          "pitanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/pitanje.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odgovor",
         "partOfSpeech": "noun",
         "recordId": "A1-0669",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:250"
+        },
+        "accepted": [
+          "odgovor"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/odgovor.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pričati",
         "partOfSpeech": "verb",
         "recordId": "A1-0670",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:750"
+        },
+        "accepted": [
+          "pričati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/pricati.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "razumjeti",
         "partOfSpeech": "verb",
         "recordId": "A1-0671",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:24"
+        },
+        "accepted": [
+          "razumjeti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/razumjeti.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ponoviti",
         "partOfSpeech": "verb",
         "recordId": "A1-0672",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:752"
+        },
+        "accepted": [
+          "ponoviti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/ponoviti.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sporije",
         "partOfSpeech": "adverb",
         "recordId": "A1-0673",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:sporije"
+        },
+        "accepted": [
+          "sporije"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/sporije.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "naravno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0674",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:197"
+        },
+        "accepted": [
+          "naravno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/naravno.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stvarno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0675",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:882"
+        },
+        "accepted": [
+          "stvarno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/stvarno.mp3"
       },
       {
@@ -77,6 +141,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "razumjeti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1126",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ne razumijem"
+        },
+        "accepted": [
+          "Ne razumijem."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/ne-razumijem.mp3"
       },
       {
@@ -85,6 +157,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "reći",
         "partOfSpeech": "phrase",
         "recordId": "A1-1127",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kako se kaže"
+        },
+        "accepted": [
+          "Kako se kaže…?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/kako-se-kaze.mp3"
       },
       {
@@ -93,6 +173,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "značiti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1128",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:što znači"
+        },
+        "accepted": [
+          "Što znači…?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/sto-znaci.mp3"
       },
       {
@@ -101,6 +189,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "oprostiti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1129",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:oprosti"
+        },
+        "accepted": [
+          "Oprosti."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/oprosti.mp3"
       },
       {
@@ -109,6 +205,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zanimljiv",
         "partOfSpeech": "phrase",
         "recordId": "A1-1130",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zanimljivo"
+        },
+        "accepted": [
+          "Zanimljivo!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/zanimljivo.mp3"
       },
       {
@@ -117,6 +221,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ništa",
         "partOfSpeech": "phrase",
         "recordId": "A1-1131",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nema na čemu"
+        },
+        "accepted": [
+          "Nema na čemu."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/nema-na-cemu.mp3"
       }
     ],
@@ -287,15 +399,19 @@ export const LESSON: GeneratedLesson = {
         ]
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Czy możesz mówić trochę wolniej?",
-        "accepted": [
-          "Možeš li govoriti malo sporije?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Gdje živiš i što radiš?",
+        "options": [
+          "Jak masz na imię i skąd jesteś?",
+          "Co lubisz robić w wolnym czasie?",
+          "Gdzie mieszkasz i co robisz?"
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-08/mozes-li-govoriti-malo-sporije.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
       },
       {
         "id": "order",
@@ -314,22 +430,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Kako se zoveš i odakle si?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-08/kako-se-zoves-i-odakle-si.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Gdje živiš i što radiš?",
-        "options": [
-          "Jak masz na imię i skąd jesteś?",
-          "Co lubisz robić w wolnym czasie?",
-          "Gdzie mieszkasz i co robisz?"
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Czy możesz mówić trochę wolniej?",
+        "accepted": [
+          "Možeš li govoriti malo sporije?"
         ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-08/gdje-zivis-i-sto-radis.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-08/mozes-li-govoriti-malo-sporije.mp3"
       },
       {
         "id": "dialog",

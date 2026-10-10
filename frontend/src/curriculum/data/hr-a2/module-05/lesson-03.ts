@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "velik",
         "partOfSpeech": "adjective",
         "recordId": "A2-0556",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:894"
+        },
+        "accepted": [
+          "veći"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/veci.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "malen",
         "partOfSpeech": "adjective",
         "recordId": "A2-0557",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:895"
+        },
+        "accepted": [
+          "manji"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/manji.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jeftin",
         "partOfSpeech": "adjective",
         "recordId": "A2-0558",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:jeftiniji"
+        },
+        "accepted": [
+          "jeftiniji"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/jeftiniji.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "skup",
         "partOfSpeech": "adjective",
         "recordId": "A2-0559",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:skuplji"
+        },
+        "accepted": [
+          "skuplji"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/skuplji.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kratak",
         "partOfSpeech": "adjective",
         "recordId": "A2-0560",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kraći"
+        },
+        "accepted": [
+          "kraći"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/kraci.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dug",
         "partOfSpeech": "adjective",
         "recordId": "A2-0561",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:duži"
+        },
+        "accepted": [
+          "duži"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/duzi.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "onaj",
         "partOfSpeech": "pronoun",
         "recordId": "A2-0562",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:95"
+        },
+        "accepted": [
+          "onaj"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/onaj.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "popust",
         "partOfSpeech": "noun",
         "recordId": "A2-0563",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:556"
+        },
+        "accepted": [
+          "popust"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/popust.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rasprodaja",
         "partOfSpeech": "noun",
         "recordId": "A2-0564",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:rasprodaja"
+        },
+        "accepted": [
+          "rasprodaja"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/rasprodaja.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jeftin",
         "partOfSpeech": "adjective",
         "recordId": "A2-0565",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:najjeftiniji"
+        },
+        "accepted": [
+          "najjeftiniji"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/najjeftiniji.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "isti",
         "partOfSpeech": "adjective",
         "recordId": "A2-0566",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:896"
+        },
+        "accepted": [
+          "isti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/isti.mp3"
       }
     ],
@@ -284,7 +364,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "rasprodaja",
@@ -319,6 +399,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-05/isti.mp3"
       },
       {
@@ -452,6 +533,7 @@ export const LESSON: GeneratedLesson = {
           "jeftinija"
         ],
         "translation": "Ta kurtka jest tańsza od tamtej.",
+        "rule": "Jeftinija od one — Stopień wyższy przymiotnika: -iji / -ji: jeftin → jeftiniji, skup → skuplji, dug → duži, kratak → kraći; nieregularnie velik → veći, malen → manji.",
         "answerAudioSrc": "/audio/hr/a2/module-05/ova-jakna-je-jeftinija-od-one.mp3"
       },
       {
@@ -486,17 +568,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-05/ove-cipele-su-skuplje.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ma Pani większy rozmiar?",
-        "accepted": [
-          "Imate li veći broj?"
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-05/imate-li-veci-broj.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -512,7 +583,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Sviđa mi se onaj kaput."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-05/svidja-mi-se-onaj-kaput.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Ma Pani większy rozmiar?",
+        "accepted": [
+          "Imate li veći broj?"
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-05/imate-li-veci-broj.mp3"
       },
       {
         "id": "translate-2",
@@ -535,6 +618,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Danas je velika rasprodaja."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-05/danas-je-velika-rasprodaja.mp3"
       },
       {

@@ -59,6 +59,7 @@ export function Feedback({
   explanation,
   audioSrc,
   audioText,
+  rule,
 }: {
   verdict: Verdict;
   /** Przy „hit” pomijane; przy „near” — poprawna pisownia; przy „miss” — poprawna odpowiedź. */
@@ -68,6 +69,8 @@ export function Feedback({
   audioSrc?: string;
   /** Tekst nagrania (do aria-label), gdy różni się od `answer`. */
   audioText?: string;
+  /** Reguła z materiału lekcji — tylko po błędzie, gdy lekcja ją zawiera. */
+  rule?: string;
 }) {
   const t = useT();
   const title = verdict === "hit" ? "correct" : verdict === "near" ? "near" : "wrong";
@@ -100,6 +103,11 @@ export function Feedback({
           </p>
         )}
         {explanation && <p className="feedback-explanation">{explanation}</p>}
+        {rule && verdict === "miss" && (
+          <p className="feedback-explanation feedback-rule">
+            <b>{t("curriculum.player.rule")}</b> {rule}
+          </p>
+        )}
       </div>
     </div>
   );

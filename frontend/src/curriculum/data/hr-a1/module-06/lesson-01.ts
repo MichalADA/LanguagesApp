@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slobodno vrijeme",
         "partOfSpeech": "phrase",
         "recordId": "A1-0452",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:730"
+        },
+        "accepted": [
+          "slobodno vrijeme"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/slobodno-vrijeme.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "čitati",
         "partOfSpeech": "verb",
         "recordId": "A1-0453",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:38"
+        },
+        "accepted": [
+          "čitati"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/citati.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gledati",
         "partOfSpeech": "verb",
         "recordId": "A1-0454",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:gledati"
+        },
+        "accepted": [
+          "gledati"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/gledati.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slušati",
         "partOfSpeech": "verb",
         "recordId": "A1-0455",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:41"
+        },
+        "accepted": [
+          "slušati"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/slusati.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "glazba",
         "partOfSpeech": "noun",
         "recordId": "A1-0456",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:297"
+        },
+        "accepted": [
+          "glazba"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/glazba.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "film",
         "partOfSpeech": "noun",
         "recordId": "A1-0457",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:296"
+        },
+        "accepted": [
+          "film"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/film.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "igrati",
         "partOfSpeech": "verb",
         "recordId": "A1-0458",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:734"
+        },
+        "accepted": [
+          "igrati"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/igrati.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šetati",
         "partOfSpeech": "verb",
         "recordId": "A1-0459",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:738"
+        },
+        "accepted": [
+          "šetati"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/setati.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "serija",
         "partOfSpeech": "noun",
         "recordId": "A1-0976",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1589"
+        },
+        "accepted": [
+          "serija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/serija.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "televizija",
         "partOfSpeech": "noun",
         "recordId": "A1-0977",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:474"
+        },
+        "accepted": [
+          "televizija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/televizija.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "crtati",
         "partOfSpeech": "verb",
         "recordId": "A1-0978",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:crtati"
+        },
+        "accepted": [
+          "crtati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/crtati.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pjevati",
         "partOfSpeech": "verb",
         "recordId": "A1-0979",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:740"
+        },
+        "accepted": [
+          "pjevati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/pjevati.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "plesati",
         "partOfSpeech": "verb",
         "recordId": "A1-0980",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:739"
+        },
+        "accepted": [
+          "plesati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/plesati.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izlaziti",
         "partOfSpeech": "verb",
         "recordId": "A1-0982",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:345"
+        },
+        "accepted": [
+          "izlaziti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/izlaziti.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "koncert",
         "partOfSpeech": "noun",
         "recordId": "A1-0983",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:742"
+        },
+        "accepted": [
+          "koncert"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/koncert.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kazalište",
         "partOfSpeech": "noun",
         "recordId": "A1-0984",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:743"
+        },
+        "accepted": [
+          "kazalište"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/kazaliste.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "igrica",
         "partOfSpeech": "noun",
         "recordId": "A1-0985",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:igrica"
+        },
+        "accepted": [
+          "igrica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/igrica.mp3"
       }
     ],
@@ -417,7 +545,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "serija",
@@ -488,6 +616,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-06/igrica.mp3"
       },
       {
@@ -554,20 +683,23 @@ export const LESSON: GeneratedLesson = {
           "gledati"
         ],
         "translation": "Lubię oglądać filmy.",
+        "rule": "Volim čitati — Po volim dodajesz czynność w bezokoliczniku, który zwykle kończy się na -ti: Volim gledati filmove, volim čitati.",
         "answerAudioSrc": "/audio/hr/a1/module-06/volim-gledati-filmove.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Słucham muzyki codziennie.",
-        "accepted": [
-          "Slušam glazbu svaki dan.",
-          "Ja slušam glazbu svaki dan.",
-          "Svaki dan slušam glazbu."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Ponekad igram igre.",
+        "options": [
+          "W wolnym czasie czytam.",
+          "Lubię oglądać filmy.",
+          "Czasami gram w gry."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/ponekad-igram-igre.mp3"
       },
       {
         "id": "order",
@@ -588,19 +720,17 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-06/u-slobodno-vrijeme-citam.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Ponekad igram igre.",
-        "options": [
-          "W wolnym czasie czytam.",
-          "Lubię oglądać filmy.",
-          "Czasami gram w gry."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Słucham muzyki codziennie.",
+        "accepted": [
+          "Slušam glazbu svaki dan.",
+          "Ja slušam glazbu svaki dan.",
+          "Svaki dan slušam glazbu."
         ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-06/ponekad-igram-igre.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-06/slusam-glazbu-svaki-dan.mp3"
       },
       {
         "id": "translate-2",
@@ -623,6 +753,7 @@ export const LESSON: GeneratedLesson = {
           "Navečer gledam seriju.",
           "Ja navečer gledam seriju."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-06/navecer-gledam-seriju.mp3"
       },
       {

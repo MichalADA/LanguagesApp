@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bankomat",
         "partOfSpeech": "noun",
         "recordId": "A2-0773",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2583"
+        },
+        "accepted": [
+          "bankomat"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/bankomat.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "podići",
         "partOfSpeech": "verb",
         "recordId": "A2-0774",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1899"
+        },
+        "accepted": [
+          "podići"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/podici.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uplatiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0775",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:uplatiti"
+        },
+        "accepted": [
+          "uplatiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/uplatiti.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "otvoriti",
         "partOfSpeech": "verb",
         "recordId": "A2-0776",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:36"
+        },
+        "accepted": [
+          "otvoriti"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/otvoriti.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "račun",
         "partOfSpeech": "phrase",
         "recordId": "A2-0777",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:tekući račun"
+        },
+        "accepted": [
+          "tekući račun"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/tekuci-racun.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "naknada",
         "partOfSpeech": "noun",
         "recordId": "A2-0778",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1487"
+        },
+        "accepted": [
+          "naknada"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/naknada.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mijenjati",
         "partOfSpeech": "verb",
         "recordId": "A2-0779",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:357"
+        },
+        "accepted": [
+          "mijenjati"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/mijenjati.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "štedjeti",
         "partOfSpeech": "verb",
         "recordId": "A2-0780",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:508"
+        },
+        "accepted": [
+          "štedjeti"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/stedjeti.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mjenjačnica",
         "partOfSpeech": "noun",
         "recordId": "A2-0781",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:mjenjačnica"
+        },
+        "accepted": [
+          "mjenjačnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/mjenjacnica.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kamata",
         "partOfSpeech": "noun",
         "recordId": "A2-0782",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2587"
+        },
+        "accepted": [
+          "kamata"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/kamata.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stanje",
         "partOfSpeech": "phrase",
         "recordId": "A2-0783",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stanje računa"
+        },
+        "accepted": [
+          "stanje računa"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/stanje-racuna.mp3"
       }
     ],
@@ -369,7 +449,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "mjenjačnica",
@@ -404,6 +484,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-07/stanje-racuna.mp3"
       },
       {
@@ -508,17 +589,38 @@ export const LESSON: GeneratedLesson = {
           "podići"
         ],
         "translation": "Muszę wypłacić pieniądze.",
+        "rule": "Htio bih otvoriti račun — W banku prosisz formą Htio / Htjela bih + bezokolicznik (otvoriti račun, podići novac) albo mówisz, czego potrzebujesz: Trebam vašu osobnu iskaznicu (biernik).",
         "answerAudioSrc": "/audio/hr/a2/module-07/moram-podici-novac.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Gdzie jest najbliższy bankomat?",
-        "accepted": [
-          "Gdje je najbliži bankomat?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Štedim za novi auto.",
+        "options": [
+          "Chciałbym otworzyć konto osobiste.",
+          "Potrzebuję Pana dowodu osobistego.",
+          "Oszczędzam na nowy samochód."
         ],
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-07/stedim-za-novi-auto.mp3"
+      },
+      {
+        "id": "choice-1",
+        "stage": "practice",
+        "type": "choice",
+        "instruction": "Wybierz poprawne pytanie.",
+        "prompt": "Gdzie jest najbliższy bankomat?",
+        "options": [
+          "Gdje je bliži bankomat?",
+          "Gdje je najbliži bankomat?",
+          "Gdje je najbliže bankomat?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Stopień najwyższy: naj- + bliži → najbliži (bankomat, rodzaj męski).",
+        "targetText": "options",
         "answerAudioSrc": "/audio/hr/a2/module-07/gdje-je-najblizi-bankomat.mp3"
       },
       {
@@ -538,38 +640,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ima li naknade za podizanje novca?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-07/ima-li-naknade-za-podizanje-novca.mp3"
       },
       {
-        "id": "choice-1",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Wybierz poprawne pytanie.",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
         "prompt": "Gdzie jest najbliższy bankomat?",
-        "options": [
-          "Gdje je bliži bankomat?",
-          "Gdje je najbliži bankomat?",
-          "Gdje je najbliže bankomat?"
+        "accepted": [
+          "Gdje je najbliži bankomat?"
         ],
-        "correctIndex": 1,
-        "explanation": "Stopień najwyższy: naj- + bliži → najbliži (bankomat, rodzaj męski).",
-        "targetText": "options",
         "answerAudioSrc": "/audio/hr/a2/module-07/gdje-je-najblizi-bankomat.mp3"
-      },
-      {
-        "id": "comprehend",
-        "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Štedim za novi auto.",
-        "options": [
-          "Chciałbym otworzyć konto osobiste.",
-          "Potrzebuję Pana dowodu osobistego.",
-          "Oszczędzam na nowy samochód."
-        ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-07/stedim-za-novi-auto.mp3"
       },
       {
         "id": "translate-2",
@@ -591,6 +674,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Kolika je kamata?"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-07/kolika-je-kamata.mp3"
       },
       {

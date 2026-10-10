@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "visok",
         "partOfSpeech": "adjective",
         "recordId": "A1-0128",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:119"
+        },
+        "accepted": [
+          "visok"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/visok.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nizak",
         "partOfSpeech": "adjective",
         "recordId": "A1-0129",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:120"
+        },
+        "accepted": [
+          "nizak"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/nizak.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mlad",
         "partOfSpeech": "adjective",
         "recordId": "A1-0130",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:116"
+        },
+        "accepted": [
+          "mlad"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/mlad.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "star",
         "partOfSpeech": "adjective",
         "recordId": "A1-0131",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:115"
+        },
+        "accepted": [
+          "star"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/star.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dobar",
         "partOfSpeech": "adjective",
         "recordId": "A1-0132",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:110"
+        },
+        "accepted": [
+          "dobar"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/dobar.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "simpatičan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0133",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:simpatičan"
+        },
+        "accepted": [
+          "simpatičan"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/simpatican.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "umoran",
         "partOfSpeech": "adjective",
         "recordId": "A1-0134",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:140"
+        },
+        "accepted": [
+          "umoran"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/umoran.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sretan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0135",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:138"
+        },
+        "accepted": [
+          "sretan"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/sretan.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lijep",
         "partOfSpeech": "adjective",
         "recordId": "A1-0752",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:123"
+        },
+        "accepted": [
+          "lijep"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/lijep.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zgodan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0753",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zgodan"
+        },
+        "accepted": [
+          "zgodan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/zgodan.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pametan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0754",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:769"
+        },
+        "accepted": [
+          "pametan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/pametan.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "drag",
         "partOfSpeech": "adjective",
         "recordId": "A1-0755",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:766"
+        },
+        "accepted": [
+          "drag"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/drag.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "veseo",
         "partOfSpeech": "adjective",
         "recordId": "A1-0756",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:780"
+        },
+        "accepted": [
+          "veseo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/veseo.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tužan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0757",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:139"
+        },
+        "accepted": [
+          "tužan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/tuzan.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zauzet",
         "partOfSpeech": "adjective",
         "recordId": "A1-0758",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:367"
+        },
+        "accepted": [
+          "zauzet"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/zauzet.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "velik",
         "partOfSpeech": "adjective",
         "recordId": "A1-0759",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:112"
+        },
+        "accepted": [
+          "velik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/velik.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "malen",
         "partOfSpeech": "adjective",
         "recordId": "A1-0760",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:mali"
+        },
+        "accepted": [
+          "mali"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/mali.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vrlo",
         "partOfSpeech": "adverb",
         "recordId": "A1-0761",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:190"
+        },
+        "accepted": [
+          "vrlo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/vrlo.mp3"
       },
       {
@@ -157,6 +293,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kakav",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0762",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2304"
+        },
+        "accepted": [
+          "kakav"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/kakav.mp3"
       }
     ],
@@ -333,7 +477,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "lijep",
@@ -416,6 +560,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-02/mali.mp3"
       },
       {
@@ -483,38 +628,8 @@ export const LESSON: GeneratedLesson = {
           "visoka"
         ],
         "translation": "Ana jest wysoka.",
+        "rule": "Visok, visoka — Przymiotnik dopasowuje się do osoby.",
         "answerAudioSrc": "/audio/hr/a1/module-02/ana-je-visoka.mp3"
-      },
-      {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Dziś jestem zmęczony.",
-        "accepted": [
-          "Danas sam umoran.",
-          "Danas sam umorna.",
-          "Umoran sam danas.",
-          "Ja sam danas umoran."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-02/danas-sam-umoran.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Mój brat jest młody.",
-        "tokens": [
-          "mlad",
-          "brat",
-          "je",
-          "moj"
-        ],
-        "accepted": [
-          "Moj brat je mlad."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-02/moj-brat-je-mlad.mp3"
       },
       {
         "id": "comprehend",
@@ -532,6 +647,38 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-02/moja-baka-je-vrlo-dobra.mp3"
       },
       {
+        "id": "order",
+        "stage": "practice",
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Mój brat jest młody.",
+        "tokens": [
+          "mlad",
+          "brat",
+          "je",
+          "moj"
+        ],
+        "accepted": [
+          "Moj brat je mlad."
+        ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
+        "answerAudioSrc": "/audio/hr/a1/module-02/moj-brat-je-mlad.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Dziś jestem zmęczony.",
+        "accepted": [
+          "Danas sam umoran.",
+          "Danas sam umorna.",
+          "Umoran sam danas.",
+          "Ja sam danas umoran."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/danas-sam-umoran.mp3"
+      },
+      {
         "id": "translate-more",
         "stage": "practice",
         "type": "translate",
@@ -540,6 +687,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Kakav je tvoj otac?"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-02/kakav-je-tvoj-otac.mp3"
       },
       {

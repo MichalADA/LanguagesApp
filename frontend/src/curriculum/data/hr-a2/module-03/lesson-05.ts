@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pomoć",
         "partOfSpeech": "phrase",
         "recordId": "A2-0360",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2790"
+        },
+        "accepted": [
+          "hitna pomoć"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/hitna-pomoc.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iskaznica",
         "partOfSpeech": "phrase",
         "recordId": "A2-0361",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zdravstvena iskaznica"
+        },
+        "accepted": [
+          "zdravstvena iskaznica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/zdravstvena-iskaznica.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "oporaviti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0362",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:oporaviti se"
+        },
+        "accepted": [
+          "oporaviti se"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/oporaviti-se.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ozdraviti",
         "partOfSpeech": "phrase",
         "recordId": "A2-0363",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:brzo ozdravi"
+        },
+        "accepted": [
+          "Brzo ozdravi!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/brzo-ozdravi.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pregled",
         "partOfSpeech": "noun",
         "recordId": "A2-0364",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pregled"
+        },
+        "accepted": [
+          "pregled"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/pregled.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "cjepivo",
         "partOfSpeech": "noun",
         "recordId": "A2-0365",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2782"
+        },
+        "accepted": [
+          "cjepivo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/cjepivo.mp3"
       }
     ],
@@ -192,6 +240,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Boli li te grlo?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-03/boli-li-te-grlo.mp3"
       },
       {

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ovdje",
         "partOfSpeech": "adverb",
         "recordId": "A1-0362",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:187"
+        },
+        "accepted": [
+          "ovdje"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/ovdje.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tamo",
         "partOfSpeech": "adverb",
         "recordId": "A1-0363",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:188"
+        },
+        "accepted": [
+          "tamo"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/tamo.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "blizu",
         "partOfSpeech": "adverb",
         "recordId": "A1-0364",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:392"
+        },
+        "accepted": [
+          "blizu"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/blizu.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "daleko",
         "partOfSpeech": "adverb",
         "recordId": "A1-0365",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:393"
+        },
+        "accepted": [
+          "daleko"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/daleko.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "centar",
         "partOfSpeech": "noun",
         "recordId": "A1-0366",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:584"
+        },
+        "accepted": [
+          "centar"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/centar.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ulica",
         "partOfSpeech": "noun",
         "recordId": "A1-0367",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:254"
+        },
+        "accepted": [
+          "ulica"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/ulica.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "trg",
         "partOfSpeech": "noun",
         "recordId": "A1-0368",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:443"
+        },
+        "accepted": [
+          "trg"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/trg.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "adresa",
         "partOfSpeech": "noun",
         "recordId": "A1-0369",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:433"
+        },
+        "accepted": [
+          "adresa"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/adresa.mp3"
       },
       {
@@ -77,6 +133,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "banka",
         "partOfSpeech": "noun",
         "recordId": "A1-0381",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:437"
+        },
+        "accepted": [
+          "banka"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/banka.mp3"
       },
       {
@@ -85,6 +148,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pored",
         "partOfSpeech": "preposition",
         "recordId": "A1-0915",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:398"
+        },
+        "accepted": [
+          "pored"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/pored.mp3"
       },
       {
@@ -93,6 +164,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ispred",
         "partOfSpeech": "preposition",
         "recordId": "A1-0916",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1207"
+        },
+        "accepted": [
+          "ispred"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/ispred.mp3"
       },
       {
@@ -101,6 +180,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iza",
         "partOfSpeech": "preposition",
         "recordId": "A1-0917",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1208"
+        },
+        "accepted": [
+          "iza"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/iza.mp3"
       },
       {
@@ -109,6 +196,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "između",
         "partOfSpeech": "preposition",
         "recordId": "A1-0918",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:75"
+        },
+        "accepted": [
+          "između"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/izmedju.mp3"
       },
       {
@@ -117,6 +212,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gore",
         "partOfSpeech": "adverb",
         "recordId": "A1-0919",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:394"
+        },
+        "accepted": [
+          "gore"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/gore.mp3"
       },
       {
@@ -125,6 +228,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dolje",
         "partOfSpeech": "adverb",
         "recordId": "A1-0920",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:395"
+        },
+        "accepted": [
+          "dolje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/dolje.mp3"
       },
       {
@@ -133,6 +244,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zgrada",
         "partOfSpeech": "noun",
         "recordId": "A1-0921",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:585"
+        },
+        "accepted": [
+          "zgrada"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/zgrada.mp3"
       },
       {
@@ -141,6 +260,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kat",
         "partOfSpeech": "noun",
         "recordId": "A1-0922",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:445"
+        },
+        "accepted": [
+          "kat"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/kat.mp3"
       },
       {
@@ -149,6 +276,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "broj",
         "partOfSpeech": "noun",
         "recordId": "A1-0923",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:432"
+        },
+        "accepted": [
+          "broj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/broj.mp3"
       },
       {
@@ -157,6 +292,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ugao",
         "partOfSpeech": "phrase",
         "recordId": "A1-0924",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:na uglu"
+        },
+        "accepted": [
+          "na uglu"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/na-uglu.mp3"
       },
       {
@@ -165,6 +308,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "WC",
         "partOfSpeech": "noun",
         "recordId": "A1-1196",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2655"
+        },
+        "accepted": [
+          "WC"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/wc.mp3"
       }
     ],
@@ -365,7 +516,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "pored",
@@ -448,6 +599,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-05/wc.mp3"
       },
       {
@@ -514,6 +666,7 @@ export const LESSON: GeneratedLesson = {
           "tamo"
         ],
         "translation": "Centrum jest tam.",
+        "rule": "Gdje je…? — Pytasz Gdje je …?",
         "answerAudioSrc": "/audio/hr/a1/module-05/centar-je-tamo.mp3"
       },
       {
@@ -532,18 +685,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-05/to-je-daleko.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Bank jest tutaj.",
-        "accepted": [
-          "Banka je ovdje.",
-          "Ovdje je banka."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-05/banka-je-ovdje.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -558,7 +699,20 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Banka je blizu trga."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-05/banka-je-blizu-trga.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Bank jest tutaj.",
+        "accepted": [
+          "Banka je ovdje.",
+          "Ovdje je banka."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/banka-je-ovdje.mp3"
       },
       {
         "id": "translate-2",
@@ -594,6 +748,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Trg je ispred zgrade."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-05/trg-je-ispred-zgrade.mp3"
       },
       {

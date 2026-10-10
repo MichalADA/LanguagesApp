@@ -16,7 +16,7 @@ async function compile(path, mocks = {}) {
 const levels = await compile('../src/config/learningLevels.ts');
 const { lookup, interpolate } = await compile('../src/i18n/types.ts');
 const dictionaries = { pl: (await compile('../src/i18n/locales/pl.ts')).pl, en: (await compile('../src/i18n/locales/en.ts')).en };
-async function setup(fetcher, status = 'authenticated', locale = 'pl', reviewStats = async () => ({due:3})) {
+async function setup(fetcher, status = 'authenticated', locale = 'pl', reviewStats = async () => ({due:3}), curriculum = {status:'unavailable',levelView: () => null}) {
   const course = { id: 'pl-hr', name: {pl:'Chorwacki',en:'Croatian'}, blocks: [{id:'one'},{id:'two'}] };
   const entries = [{id:'a',block:'one'}, {id:'b',block:'two'}];
   const writes = [];
@@ -36,7 +36,8 @@ async function setup(fetcher, status = 'authenticated', locale = 'pl', reviewSta
     '@/reviews/api': {fetchReviewStats: reviewStats},
     '@/utils/date': {currentStreak: () => 0, todayKey: d => d.toISOString().slice(0,10)},
     '@/components/Icon': {Icon: () => null},
-    '@/curriculum/CurriculumProvider': {useCurriculum: () => ({status:'unavailable',levelView: () => null})},
+    '@/curriculum/CurriculumProvider': {useCurriculum: () => curriculum},
+    '@/curriculum/components/format': {coursePaths: {lesson: id => `/lekcja/${id}`}},
     '@/curriculum/components/ContinueCourse': {ContinueCourse: () => null},
     '@/components/StatCard': {ProgressRing: ({label,children}) => React.createElement('div',{role:'img','aria-label':label},children)},
   });
@@ -107,4 +108,16 @@ test('review stats failure is reported with a retry instead of a fake count',asy
   assert.equal(calls,2);
   assert.equal(view.root.findAllByProps({role:'alert'}).length,0);
   act(()=>view.unmount());
+});
+test('with an active course the daily plan is reviews → next lesson; the lesson is the main CTA when nothing is due',async()=>{
+  const lesson={id:'a1-01-03',title:'Jak się nazywasz?',estimatedMinutes:14};
+  const curriculum={status:'ready',levelView:()=>({current:{lesson:{lesson},module:{}}})};
+  const {view}=await setup(async()=>cards,'authenticated','pl',async()=>({due:0}),curriculum);
+  assert.equal(cta(view).props.href,'/lekcja/a1-01-03');
+  assert.ok(view.root.findAllByType('a').some(n=>n.props.href==='/lekcja/a1-01-03'&&String(n.props.className).includes('plan-step')));
+  assert.equal(link(view,'/fiszki/sesja'),undefined,'the deck step gives way to the course lesson');
+  act(()=>view.unmount());
+  const busy=await setup(async()=>cards,'authenticated','pl',async()=>({due:5}),curriculum);
+  assert.equal(cta(busy.view).props.href,'/powtorki','due reviews (incl. lesson words) come first');
+  act(()=>busy.view.unmount());
 });

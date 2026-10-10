@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pregledati",
         "partOfSpeech": "verb",
         "recordId": "A2-0283",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pregledati"
+        },
+        "accepted": [
+          "pregledati"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/pregledati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "recept",
         "partOfSpeech": "noun",
         "recordId": "A2-0284",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:922"
+        },
+        "accepted": [
+          "recept"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/recept.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kašljati",
         "partOfSpeech": "verb",
         "recordId": "A2-0285",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kašljati"
+        },
+        "accepted": [
+          "kašljati"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/kasljati.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "disati",
         "partOfSpeech": "verb",
         "recordId": "A2-0286",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1566"
+        },
+        "accepted": [
+          "disati"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/disati.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "simptom",
         "partOfSpeech": "noun",
         "recordId": "A2-0287",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2795"
+        },
+        "accepted": [
+          "simptom"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/simptom.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ozbiljan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0288",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:772"
+        },
+        "accepted": [
+          "ozbiljan"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/ozbiljan.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nalaz",
         "partOfSpeech": "noun",
         "recordId": "A2-0289",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1692"
+        },
+        "accepted": [
+          "nalaz"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/nalaz.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gripa",
         "partOfSpeech": "noun",
         "recordId": "A2-0290",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:916"
+        },
+        "accepted": [
+          "gripa"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/gripa.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uputnica",
         "partOfSpeech": "noun",
         "recordId": "A2-0291",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1695"
+        },
+        "accepted": [
+          "uputnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/uputnica.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bolovanje",
         "partOfSpeech": "noun",
         "recordId": "A2-0292",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:978"
+        },
+        "accepted": [
+          "bolovanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/bolovanje.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "usta",
         "partOfSpeech": "phrase",
         "recordId": "A2-0293",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:otvorite usta"
+        },
+        "accepted": [
+          "Otvorite usta."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/otvorite-usta.mp3"
       }
     ],
@@ -335,7 +415,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "uputnica",
@@ -370,6 +450,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-03/uputnica.mp3"
       },
       {
@@ -474,19 +555,39 @@ export const LESSON: GeneratedLesson = {
           "pijte"
         ],
         "translation": "Proszę odpocząć i pić dużo wody.",
+        "rule": "Odmorite se! — Lekarz mówi w trybie rozkazującym.",
         "answerAudioSrc": "/audio/hr/a2/module-03/odmorite-se-i-pijte-puno-vode.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ciężko oddycham.",
-        "accepted": [
-          "Teško dišem.",
-          "Ja teško dišem."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Koje simptome imate?",
+        "options": [
+          "Jakie ma Pan objawy?",
+          "Od trzech dni kaszlę.",
+          "Ciężko oddycham."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-03/tesko-disem.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-03/koje-simptome-imate.mp3"
+      },
+      {
+        "id": "choice-1",
+        "stage": "practice",
+        "type": "choice",
+        "instruction": "Lekarz mówi do pacjenta. Wybierz zdanie.",
+        "prompt": "Proszę odpocząć.",
+        "options": [
+          "Odmori se.",
+          "Odmorite se.",
+          "Odmaram se."
+        ],
+        "correctIndex": 1,
+        "explanation": "Do Pana / Pani: -ite → Odmorite se.",
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a2/module-03/odmorite-se.mp3"
       },
       {
         "id": "order",
@@ -507,35 +608,16 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-03/nije-nista-ozbiljno-samo-gripa.mp3"
       },
       {
-        "id": "choice-1",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Lekarz mówi do pacjenta. Wybierz zdanie.",
-        "prompt": "Proszę odpocząć.",
-        "options": [
-          "Odmori se.",
-          "Odmorite se.",
-          "Odmaram se."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Ciężko oddycham.",
+        "accepted": [
+          "Teško dišem.",
+          "Ja teško dišem."
         ],
-        "correctIndex": 1,
-        "explanation": "Do Pana / Pani: -ite → Odmorite se.",
-        "targetText": "options",
-        "answerAudioSrc": "/audio/hr/a2/module-03/odmorite-se.mp3"
-      },
-      {
-        "id": "comprehend",
-        "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Koje simptome imate?",
-        "options": [
-          "Jakie ma Pan objawy?",
-          "Od trzech dni kaszlę.",
-          "Ciężko oddycham."
-        ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-03/koje-simptome-imate.mp3"
+        "answerAudioSrc": "/audio/hr/a2/module-03/tesko-disem.mp3"
       },
       {
         "id": "translate-2",
@@ -560,6 +642,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Otvorite usta, molim."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-03/otvorite-usta-molim.mp3"
       },
       {

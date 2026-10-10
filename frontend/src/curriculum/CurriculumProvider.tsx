@@ -1,9 +1,21 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useAuth } from "@/auth/useAuth";
 import { useCourse } from "@/courses/CourseProvider";
 import { deriveLevel, type LevelView } from "./progress";
-import { fetchCompletedLessons, fetchCourseOutline, saveCompletedLessons } from "./repository";
-import type { CefrLevelId, CourseOutline } from "./types";
+import { fetchCompletedLessons, fetchCourseOutline, fetchLessonContent, saveCompletedLessons } from "./repository";
+import { enrollmentRefs, pendingLessonVocabulary, queueLessonVocabulary, syncLessonVocabulary } from "./srs";
+import type { CefrLevelId, CourseOutline, LessonVocabularyItem } from "./types";
+
+/**
+ * Stan zapisu słów z lekcji w powtórkach FSRS:
+ * - local   — gość: słowa czekają na tym urządzeniu,
+ * - syncing — wysyłamy,
+ * - saved   — backend potwierdził karty,
+ * - pending — błąd sieci; ponowimy przy następnej okazji (albo przyciskiem).
+ */
+export type ReviewSyncState = "local" | "syncing" | "saved" | "pending";
+
+const resolveVocabulary = (lessonId: string) => fetchLessonContent(lessonId).then((content) => content?.vocabulary ?? null);
 
 interface CurriculumContextValue {
   status: "loading" | "ready" | "unavailable" | "error";
@@ -11,7 +23,11 @@ interface CurriculumContextValue {
   completed: ReadonlySet<string>;
   /** Widok poziomu z wyliczonymi statusami; null, gdy poziom nie ma treści. */
   levelView: (levelId: CefrLevelId) => LevelView | null;
-  completeLesson: (lessonId: string) => void;
+  /** Ukończenie lekcji: zapis postępu i (dla słów obowiązkowych) nowe karty FSRS. */
+  completeLesson: (lessonId: string, vocabulary?: LessonVocabularyItem[]) => void;
+  reviewSync: ReviewSyncState;
+  /** Ponowna próba wysłania słów, które czekają na zapis w FSRS. */
+  syncReviews: () => void;
   retry: () => void;
 }
 
@@ -25,9 +41,12 @@ function seedFrom(outline: CourseOutline): string[] {
 
 export function CurriculumProvider({ children }: { children: ReactNode }) {
   const { course } = useCourse();
-  const { user } = useAuth();
+  const { user, status: authStatus, apiRequest } = useAuth();
   const owner = user?.id ?? "guest";
+  const authenticated = authStatus === "authenticated";
+  const [reviewSync, setReviewSync] = useState<ReviewSyncState>(authenticated ? "saved" : "local");
   const key = `${owner}:${course.id}`;
+  const syncKey = useRef(key);
   const [data, setData] = useState<{ key: string; outline: CourseOutline | null; completed: string[] } | null>(null);
   const [failed, setFailed] = useState<string | null>(null);
   const [attempt, setAttempt] = useState(0);
@@ -59,8 +78,39 @@ export function CurriculumProvider({ children }: { children: ReactNode }) {
     [current, completed],
   );
 
+  const syncReviews = useCallback(() => {
+    if (!authenticated) {
+      setReviewSync("local");
+      return;
+    }
+    const requestKey = key;
+    syncKey.current = key;
+    if (!pendingLessonVocabulary(owner, course.id).length) {
+      setReviewSync("saved");
+      return;
+    }
+    setReviewSync("syncing");
+    void syncLessonVocabulary(apiRequest, owner, course.id, resolveVocabulary).then((result) => {
+      if (syncKey.current === requestKey) setReviewSync(result.pending ? "pending" : "saved");
+    });
+  }, [authenticated, key, owner, course.id, apiRequest]);
+
+  // Po zalogowaniu i przy każdym wejściu: dosyłamy to, czego nie udało się zapisać wcześniej.
+  useEffect(() => {
+    syncReviews();
+    if (!authenticated) return;
+    const online = () => syncReviews();
+    window.addEventListener("online", online);
+    return () => window.removeEventListener("online", online);
+  }, [syncReviews, authenticated]);
+
   const completeLesson = useCallback(
-    (lessonId: string) => {
+    (lessonId: string, vocabulary?: LessonVocabularyItem[]) => {
+      // Najpierw zapis lokalny (przetrwa odświeżenie i brak sieci), potem wysyłka do FSRS.
+      if (vocabulary && enrollmentRefs(vocabulary).length) {
+        queueLessonVocabulary(owner, course.id, lessonId, vocabulary);
+        syncReviews();
+      }
       setData((prev) => {
         if (!prev || prev.key !== key || prev.completed.includes(lessonId)) return prev;
         const next = [...prev.completed, lessonId];
@@ -68,7 +118,7 @@ export function CurriculumProvider({ children }: { children: ReactNode }) {
         return { ...prev, completed: next };
       });
     },
-    [key, owner, course.id],
+    [key, owner, course.id, syncReviews],
   );
 
   const value = useMemo<CurriculumContextValue>(
@@ -78,9 +128,11 @@ export function CurriculumProvider({ children }: { children: ReactNode }) {
       completed,
       levelView,
       completeLesson,
+      reviewSync,
+      syncReviews,
       retry: () => setAttempt((n) => n + 1),
     }),
-    [failed, key, current, completed, levelView, completeLesson],
+    [failed, key, current, completed, levelView, completeLesson, reviewSync, syncReviews],
   );
 
   return <CurriculumContext.Provider value={value}>{children}</CurriculumContext.Provider>;

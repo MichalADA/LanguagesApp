@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ponoviti",
         "partOfSpeech": "verb",
         "recordId": "A1-0074",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:752"
+        },
+        "accepted": [
+          "ponoviti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/ponoviti.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "razumjeti",
         "partOfSpeech": "verb",
         "recordId": "A1-0075",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:24"
+        },
+        "accepted": [
+          "razumjeti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/razumjeti.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pitati",
         "partOfSpeech": "verb",
         "recordId": "A1-0076",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:22"
+        },
+        "accepted": [
+          "pitati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/pitati.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odgovoriti",
         "partOfSpeech": "verb",
         "recordId": "A1-0077",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:23"
+        },
+        "accepted": [
+          "odgovoriti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/odgovoriti.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "razgovor",
         "partOfSpeech": "noun",
         "recordId": "A1-0078",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:833"
+        },
+        "accepted": [
+          "razgovor"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/razgovor.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "još jednom",
         "partOfSpeech": "phrase",
         "recordId": "A1-0079",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:200"
+        },
+        "accepted": [
+          "još jednom"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/jos-jednom.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "polako",
         "partOfSpeech": "adverb",
         "recordId": "A1-0080",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:polako"
+        },
+        "accepted": [
+          "polako"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/polako.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "molim",
         "partOfSpeech": "interjection",
         "recordId": "A1-0081",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:412"
+        },
+        "accepted": [
+          "molim"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/molim.mp3"
       }
     ],
@@ -220,6 +284,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ona se zove Ana."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
       },
       {

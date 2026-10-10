@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "voljeti",
         "partOfSpeech": "verb",
         "recordId": "A1-0290",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:25"
+        },
+        "accepted": [
+          "voljeti"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/voljeti.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "čokolada",
         "partOfSpeech": "noun",
         "recordId": "A1-0868",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1130"
+        },
+        "accepted": [
+          "čokolada"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/cokolada.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "omiljen",
         "partOfSpeech": "adjective",
         "recordId": "A1-0872",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:omiljen"
+        },
+        "accepted": [
+          "omiljen"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/omiljen.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ukusan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0293",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ukusan"
+        },
+        "accepted": [
+          "ukusan"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/ukusan.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sladak",
         "partOfSpeech": "adjective",
         "recordId": "A1-0294",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:606"
+        },
+        "accepted": [
+          "sladak"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/sladak.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0295",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:607"
+        },
+        "accepted": [
+          "slan"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/slan.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gladan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0296",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:141"
+        },
+        "accepted": [
+          "gladan"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/gladan.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "žedan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0297",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2258"
+        },
+        "accepted": [
+          "žedan"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/zedan.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sladoled",
         "partOfSpeech": "noun",
         "recordId": "A1-0869",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:620"
+        },
+        "accepted": [
+          "sladoled"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/sladoled.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kolač",
         "partOfSpeech": "noun",
         "recordId": "A1-0870",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:619"
+        },
+        "accepted": [
+          "kolač"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/kolac.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jelo",
         "partOfSpeech": "noun",
         "recordId": "A1-0871",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:629"
+        },
+        "accepted": [
+          "jelo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/jelo.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ljut",
         "partOfSpeech": "adjective",
         "recordId": "A1-0873",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:609"
+        },
+        "accepted": [
+          "ljut"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/ljut.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kiseo",
         "partOfSpeech": "adjective",
         "recordId": "A1-0874",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:608"
+        },
+        "accepted": [
+          "kiseo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/kiseo.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gorak",
         "partOfSpeech": "adjective",
         "recordId": "A1-0875",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2250"
+        },
+        "accepted": [
+          "gorak"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/gorak.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "najviše",
         "partOfSpeech": "adverb",
         "recordId": "A1-0876",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:najviše"
+        },
+        "accepted": [
+          "najviše"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/najvise.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tek",
         "partOfSpeech": "phrase",
         "recordId": "A1-0877",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:dobar tek"
+        },
+        "accepted": [
+          "Dobar tek!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/dobar-tek.mp3"
       }
     ],
@@ -326,7 +446,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "sladoled",
@@ -391,6 +511,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-04/kolac.mp3"
       },
       {
@@ -458,6 +579,7 @@ export const LESSON: GeneratedLesson = {
           "Ne"
         ],
         "translation": "Nie lubię zupy.",
+        "rule": "Volim / ne volim — Volim to „lubię”, ne volim — „nie lubię”.",
         "answerAudioSrc": "/audio/hr/a1/module-04/ne-volim-juhu.mp3"
       },
       {
@@ -476,18 +598,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-04/zedna-sam.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Lubię jeść rybę.",
-        "accepted": [
-          "Volim jesti ribu.",
-          "Ja volim jesti ribu."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-04/volim-jesti-ribu.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -503,6 +613,18 @@ export const LESSON: GeneratedLesson = {
           "On voli piti čaj."
         ],
         "answerAudioSrc": "/audio/hr/a1/module-04/on-voli-piti-caj.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Lubię jeść rybę.",
+        "accepted": [
+          "Volim jesti ribu.",
+          "Ja volim jesti ribu."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/volim-jesti-ribu.mp3"
       },
       {
         "id": "translate-2",
@@ -527,6 +649,7 @@ export const LESSON: GeneratedLesson = {
           "Volim čokoladu i sladoled.",
           "Ja volim čokoladu i sladoled."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-04/volim-cokoladu-i-sladoled.mp3"
       },
       {

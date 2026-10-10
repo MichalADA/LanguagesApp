@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "boravak",
         "partOfSpeech": "phrase",
         "recordId": "A2-0627",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:3603"
+        },
+        "accepted": [
+          "dnevni boravak"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/dnevni-boravak.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "soba",
         "partOfSpeech": "phrase",
         "recordId": "A2-0628",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1070"
+        },
+        "accepted": [
+          "spavaća soba"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/spavaca-soba.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dizalo",
         "partOfSpeech": "noun",
         "recordId": "A2-0629",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2659"
+        },
+        "accepted": [
+          "dizalo"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/dizalo.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prizemlje",
         "partOfSpeech": "noun",
         "recordId": "A2-0630",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1580"
+        },
+        "accepted": [
+          "prizemlje"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/prizemlje.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "namješten",
         "partOfSpeech": "adjective",
         "recordId": "A2-0631",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4753"
+        },
+        "accepted": [
+          "namješten"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/namjesten.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kauč",
         "partOfSpeech": "noun",
         "recordId": "A2-0632",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1071"
+        },
+        "accepted": [
+          "kauč"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/kauc.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "potkrovlje",
         "partOfSpeech": "noun",
         "recordId": "A2-0633",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:potkrovlje"
+        },
+        "accepted": [
+          "potkrovlje"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/potkrovlje.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "terasa",
         "partOfSpeech": "noun",
         "recordId": "A2-0634",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:958"
+        },
+        "accepted": [
+          "terasa"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/terasa.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "garaža",
         "partOfSpeech": "noun",
         "recordId": "A2-0635",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1066"
+        },
+        "accepted": [
+          "garaža"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/garaza.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "podrum",
         "partOfSpeech": "noun",
         "recordId": "A2-0636",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1065"
+        },
+        "accepted": [
+          "podrum"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/podrum.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hodnik",
         "partOfSpeech": "noun",
         "recordId": "A2-0637",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1068"
+        },
+        "accepted": [
+          "hodnik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/hodnik.mp3"
       }
     ],
@@ -274,7 +354,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "garaža",
@@ -309,6 +389,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-06/hodnik.mp3"
       },
       {
@@ -413,18 +494,39 @@ export const LESSON: GeneratedLesson = {
           "boravku"
         ],
         "translation": "W salonie mamy dużą kanapę.",
+        "rule": "U dnevnom boravku — Gdzie?",
         "answerAudioSrc": "/audio/hr/a2/module-06/u-dnevnom-boravku-imamo-veliki-kauc.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Mieszkanie ma dwie sypialnie.",
-        "accepted": [
-          "Stan ima dvije spavaće sobe."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Soba u potkrovlju je moja radna soba.",
+        "options": [
+          "Mieszkam w mieszkaniu na trzecim piętrze.",
+          "Mieszkanie ma dwie sypialnie.",
+          "Pokój na poddaszu to mój gabinet."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-06/stan-ima-dvije-spavace-sobe.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-06/soba-u-potkrovlju-je-moja-radna-soba.mp3"
+      },
+      {
+        "id": "choice-1",
+        "stage": "practice",
+        "type": "choice",
+        "instruction": "Wybierz poprawne zdanie.",
+        "prompt": "Mieszkam na drugim piętrze.",
+        "options": [
+          "Živim na drugi kat.",
+          "Živim na drugom katu.",
+          "Živim u drugom katu."
+        ],
+        "correctIndex": 1,
+        "explanation": "na + miejscownik: drugi kat → na drugom katu.",
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a2/module-06/zivim-na-drugom-katu.mp3"
       },
       {
         "id": "order",
@@ -444,35 +546,15 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-06/ljeti-doruckujemo-na-terasi.mp3"
       },
       {
-        "id": "choice-1",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Wybierz poprawne zdanie.",
-        "prompt": "Mieszkam na drugim piętrze.",
-        "options": [
-          "Živim na drugi kat.",
-          "Živim na drugom katu.",
-          "Živim u drugom katu."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Mieszkanie ma dwie sypialnie.",
+        "accepted": [
+          "Stan ima dvije spavaće sobe."
         ],
-        "correctIndex": 1,
-        "explanation": "na + miejscownik: drugi kat → na drugom katu.",
-        "targetText": "options",
-        "answerAudioSrc": "/audio/hr/a2/module-06/zivim-na-drugom-katu.mp3"
-      },
-      {
-        "id": "comprehend",
-        "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Soba u potkrovlju je moja radna soba.",
-        "options": [
-          "Mieszkam w mieszkaniu na trzecim piętrze.",
-          "Mieszkanie ma dwie sypialnie.",
-          "Pokój na poddaszu to mój gabinet."
-        ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-06/soba-u-potkrovlju-je-moja-radna-soba.mp3"
+        "answerAudioSrc": "/audio/hr/a2/module-06/stan-ima-dvije-spavace-sobe.mp3"
       },
       {
         "id": "translate-2",
@@ -494,6 +576,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Bicikl je u podrumu."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-06/bicikl-je-u-podrumu.mp3"
       },
       {

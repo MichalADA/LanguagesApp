@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nego",
         "partOfSpeech": "conjunction",
         "recordId": "A2-0334",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1791"
+        },
+        "accepted": [
+          "nego"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/nego.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bolje",
         "partOfSpeech": "adverb",
         "recordId": "A2-0335",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2297"
+        },
+        "accepted": [
+          "bolje"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/bolje.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lošije",
         "partOfSpeech": "adverb",
         "recordId": "A2-0336",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:lošije"
+        },
+        "accepted": [
+          "lošije"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/losije.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "više",
         "partOfSpeech": "adverb",
         "recordId": "A2-0337",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:više"
+        },
+        "accepted": [
+          "više"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/vise.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "manje",
         "partOfSpeech": "adverb",
         "recordId": "A2-0338",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:manje"
+        },
+        "accepted": [
+          "manje"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/manje.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "navika",
         "partOfSpeech": "noun",
         "recordId": "A2-0339",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:navika"
+        },
+        "accepted": [
+          "navika"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/navika.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kretati se",
         "partOfSpeech": "verb",
         "recordId": "A2-0340",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kretati se"
+        },
+        "accepted": [
+          "kretati se"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/kretati-se.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "smanjiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0341",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:805"
+        },
+        "accepted": [
+          "smanjiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/smanjiti.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prehrana",
         "partOfSpeech": "noun",
         "recordId": "A2-0342",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prehrana"
+        },
+        "accepted": [
+          "prehrana"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/prehrana.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stres",
         "partOfSpeech": "noun",
         "recordId": "A2-0343",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stres"
+        },
+        "accepted": [
+          "stres"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/stres.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hrana",
         "partOfSpeech": "phrase",
         "recordId": "A2-0344",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:brza hrana"
+        },
+        "accepted": [
+          "brza hrana"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/brza-hrana.mp3"
       }
     ],
@@ -318,7 +398,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "prehrana",
@@ -353,6 +433,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-03/brza-hrana.mp3"
       },
       {
@@ -474,38 +555,23 @@ export const LESSON: GeneratedLesson = {
           "nego"
         ],
         "translation": "Dziś czuję się lepiej niż wczoraj.",
+        "rule": "Bolje nego jučer — Porównujesz stopniem wyższym: dobro → bolje (lepiej), loše → lošije (gorzej), puno → više (więcej), malo → manje (mniej), zdravo → zdravije (zdrowiej).",
         "answerAudioSrc": "/audio/hr/a2/module-03/danas-se-osjecam-bolje-nego-jucer.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Muszę więcej spać.",
-        "accepted": [
-          "Trebam više spavati.",
-          "Ja trebam više spavati."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Bolje je hodati nego voziti auto.",
+        "options": [
+          "Muszę więcej spać.",
+          "Jem mniej słodyczy.",
+          "Lepiej chodzić niż jeździć samochodem."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-03/trebam-vise-spavati.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Gorzej śpię, kiedy jestem zestresowany.",
-        "tokens": [
-          "lošije",
-          "stresom",
-          "sam",
-          "pod",
-          "kad",
-          "spavam"
-        ],
-        "accepted": [
-          "Lošije spavam kad sam pod stresom."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-03/losije-spavam-kad-sam-pod-stresom.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-03/bolje-je-hodati-nego-voziti-auto.mp3"
       },
       {
         "id": "choice-1",
@@ -524,19 +590,36 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-03/danas-se-osjecam-bolje.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Bolje je hodati nego voziti auto.",
-        "options": [
-          "Muszę więcej spać.",
-          "Jem mniej słodyczy.",
-          "Lepiej chodzić niż jeździć samochodem."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Gorzej śpię, kiedy jestem zestresowany.",
+        "tokens": [
+          "lošije",
+          "stresom",
+          "sam",
+          "pod",
+          "kad",
+          "spavam"
         ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-03/bolje-je-hodati-nego-voziti-auto.mp3"
+        "accepted": [
+          "Lošije spavam kad sam pod stresom."
+        ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
+        "answerAudioSrc": "/audio/hr/a2/module-03/losije-spavam-kad-sam-pod-stresom.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Muszę więcej spać.",
+        "accepted": [
+          "Trebam više spavati.",
+          "Ja trebam više spavati."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-03/trebam-vise-spavati.mp3"
       },
       {
         "id": "translate-2",
@@ -558,6 +641,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Važna je dobra prehrana."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-03/vazna-je-dobra-prehrana.mp3"
       },
       {

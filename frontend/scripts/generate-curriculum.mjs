@@ -23,6 +23,7 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
 import { attachAudio, buildManifest } from "./lib/course-audio.mjs";
+import { datasetIndex, reviewRefFor } from "./lib/review-identity.mjs";
 import { CLITICS, buildLexicon, conjugation, expandSlots, genderizePattern, genderPairs, recordForms, swapGender, tokens } from "./lib/hr-morphology.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -296,7 +297,21 @@ function resolveSentence(ref, lessonId) {
   return sentenceOf(id, Number(seq));
 }
 
-const vocabItem = (r) => ({ target: r.hr_text, source: r.pl_text, lemma: r.lemma, partOfSpeech: r.part_of_speech, recordId: r.record_id });
+/** Słownik kursu (public/data) — słowa lekcji, które w nim są, używają jego kart FSRS (scripts/lib/review-identity.mjs). */
+const COURSE = LEVEL.course ?? "pl-hr";
+const DATASET = datasetIndex(readFileSync(join(ROOT, LEVEL.dataset ?? "public/data/chorwacki_2000_PL-HR.csv"), "utf8"));
+const vocabItem = (r) => {
+  const { itemType, itemId } = reviewRefFor({ hr: r.hr_text, pl: r.pl_text }, DATASET, COURSE);
+  return { target: r.hr_text, source: r.pl_text, lemma: r.lemma, partOfSpeech: r.part_of_speech, recordId: r.record_id, review: { itemType, itemId }, accepted: unique([r.hr_text, ...splitAccepted(r.accepted_answers)]) };
+};
+/**
+ * Słowo jest materiałem obowiązkowym (→ powtórki FSRS), gdy lekcja uczy go na osobnej karcie.
+ * Słowa z list („Więcej przydatnych słów”, słowa do rozmowy, polecenia testu) są opcjonalne.
+ */
+function markOptional(content) {
+  const taught = new Set(content.steps.filter((s) => s.type === "word").map((s) => fold(s.target)));
+  for (const item of content.vocabulary) if (!taught.has(fold(item.target))) item.optional = true;
+}
 
 /* ------------------------------------------------------------------ */
 /* Budowanie kroków                                                     */
@@ -371,6 +386,13 @@ function gapStep(id, stage, sentence, word) {
   };
 }
 
+/** Pierwsze zdanie objaśnienia gramatyki — krótka reguła do informacji zwrotnej po błędzie. */
+const firstSentence = (text) => (text.match(/^.+?[.!?](?=\s|$)/u)?.[0] ?? text).trim();
+const ruleOf = (grammar) => (grammar?.text ? `${grammar.title} — ${firstSentence(grammar.text)}` : undefined);
+/** Krótkie formy, które w zdaniu stoją zwykle na drugim miejscu (Dobro sam, a nie Sam dobro). */
+const SECOND_POSITION = new Set(["sam", "si", "je", "smo", "ste", "su", "se", "ću", "ćeš", "će", "ćemo", "ćete", "bih", "li"]);
+const ORDER_RULE = "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.";
+
 function translateStep(id, stage, sentence, extraAccept = []) {
   return {
     id, stage, type: "translate", instruction: "Przetłumacz na chorwacki.",
@@ -394,7 +416,8 @@ function orderStep(id, stage, sentence, rand) {
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
   }
-  return { id, stage, type: "order", instruction: "Ułóż zdanie.", translation: sentence.pl, tokens: shuffled, accepted: sentence.accepted };
+  const rule = tokens.some((t) => SECOND_POSITION.has(t.toLocaleLowerCase("hr").replace(/[.,!?;:]/g, ""))) ? ORDER_RULE : undefined;
+  return { id, stage, type: "order", instruction: "Ułóż zdanie.", translation: sentence.pl, tokens: shuffled, accepted: sentence.accepted, ...(rule ? { rule } : {}) };
 }
 
 function comprehendStep(id, stage, target, others, rotate) {
@@ -520,8 +543,9 @@ function supplementSteps(bucket) {
   const rand = seeded(n * 6151);
   const asked = extra[n % extra.length];
   return [
-    vocabListStep("more-words", "words", "Więcej przydatnych słów", extra, "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji."),
-    choiceStep("check-more", "words", "Co znaczy to słowo?", asked.hr_text, asked.pl_text, pickDistractors(extra.map((v) => v.pl_text), asked.pl_text, rand), n),
+    vocabListStep("more-words", "words", "Więcej przydatnych słów", extra, "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart."),
+    // Zadanie na słowach dodatkowych: informacja zwrotna jest, ale wynik nie wpływa na zaliczenie lekcji.
+    { ...choiceStep("check-more", "words", "Co znaczy to słowo?", asked.hr_text, asked.pl_text, pickDistractors(extra.map((v) => v.pl_text), asked.pl_text, rand), n), optional: true },
   ];
 }
 
@@ -552,7 +576,7 @@ function supplementTranslateStep(bucket, d, used) {
     ? candidates.find((r) => Number(r.sequence) === d.supplementTranslate)
     : candidates.filter((r) => tokens(r.hr_text).length >= 3 && tokens(r.hr_text).some((t) => forms.has(t)))
       .sort((a, b) => tokens(a.hr_text).length - tokens(b.hr_text).length || Number(a.sequence) - Number(b.sequence))[0];
-  return pick ? translateStep("translate-more", "practice", sentenceOf(bucket.lesson.lesson_id, pick.sequence)) : null;
+  return pick ? { ...translateStep("translate-more", "practice", sentenceOf(bucket.lesson.lesson_id, pick.sequence)), optional: true } : null;
 }
 
 /** Dialog wzorcowy (didactics → model): najpierw słuchasz rozmowy, potem prowadzisz własną. */
@@ -614,10 +638,13 @@ function buildRegular(bucket) {
   if (d.grammar) steps.push(structureStep(id, d.grammar));
   if (d.gap) {
     const gap = gapStep("gap", "structure", sentenceOf(id, d.gap.sentence), d.gap.word);
-    if (gap) steps.push(gap);
+    // Luka lekcji ćwiczy jej konstrukcję — po błędzie pokazujemy regułę z objaśnienia.
+    const rule = ruleOf(d.grammar);
+    if (gap) steps.push(rule ? { ...gap, rule } : gap);
   }
 
-  // Ćwiczenia: kolejność różni się między lekcjami, żeby nie powtarzać schematu.
+  // Ćwiczenia: od rozpoznania (co znaczy zdanie, wybór) przez produkcję z podpowiedzią (ułóż zdanie)
+  // do samodzielnego wpisania zdań (tłumaczenia) — trudność rośnie, nie skacze.
   const practice = [];
   const comprehend = d.comprehend ? comprehendStep("comprehend", "practice", sentenceOf(id, d.comprehend), all.filter((s) => s.hr !== sentenceOf(id, d.comprehend).hr), n) : null;
   const translations = (d.translate ?? []).map((t, i) => translateStep(`translate-${i + 1}`, "practice", sentenceOf(id, t.sentence), t.accept));
@@ -625,9 +652,7 @@ function buildRegular(bucket) {
   const extraChoices = extraChoiceSteps(d);
   const more = kindOf(n) === "lesson" ? supplementTranslateStep(bucket, d, new Set((d.translate ?? []).map((t) => t.sentence))) : null;
   if (more) translations.push(more);
-  const [t1, ...rest] = translations;
-  if (n % 2) practice.push(comprehend, ...extraChoices, t1, order, ...rest);
-  else practice.push(t1, order, ...extraChoices, comprehend, ...rest);
+  practice.push(comprehend, ...extraChoices, order, ...translations);
   steps.push(...practice.filter(Boolean));
 
   if (d.listening) {
@@ -916,7 +941,7 @@ function buildTest(bucket) {
 
   steps.push({
     id: "intro", stage: "intro", type: "intro", title: lesson.lesson_title_pl,
-    body: `Test obejmuje materiał całego poziomu ${LEVEL.level}. Nie ma tu zaliczenia ani oblania — na końcu zobaczysz, co masz dobrze opanowane, a co warto powtórzyć.`,
+    body: `Test obejmuje materiał całego poziomu ${LEVEL.level}. Zaliczasz go, zdobywając co najmniej 70% punktów i połowę w każdej części; na końcu zobaczysz też, co masz dobrze opanowane, a co warto powtórzyć.`,
     goalsTitle: "Sześć krótkich części",
     goals: ["słownictwo", "czytanie", "słuchanie", "gramatyka w kontekście", "tłumaczenie", "krótka wypowiedź"],
   });
@@ -1035,6 +1060,7 @@ const built = ordered.map((bucket) => {
       if (sig && usage.tasks.has(sig)) fail(`${bucket.lesson.lesson_id}: ${sig} kopiuje zadanie z ${usage.tasks.get(sig)}`);
     }
   }
+  markOptional(content);
   registerLesson(bucket.lesson.lesson_id, content.steps);
   return { bucket, n, kind, moduleNo, order, appId, isOverride, content, material: materialOf(bucket), fileName: `module-${pad(moduleNo)}/lesson-${pad(order)}.ts` };
 });
@@ -1102,6 +1128,20 @@ files.set(
     `import type { GeneratedLesson } from "../../types";\n\nexport const ${LEVEL.exportName}_LESSONS: Record<string, () => Promise<GeneratedLesson>> = {\n${outline
       .map((o) => `  "${o.lesson.id}": () => import("./${o.file.replace(/\.ts$/, "")}").then((m) => m.LESSON),`)
       .join("\n")}\n};\n`,
+);
+
+// Zwroty spoza słownika kursu (PHRASE) — powtórki FSRS potrzebują ich treści bez ładowania lekcji.
+const reviewItems = {};
+for (const { content } of built) {
+  for (const item of content.vocabulary) {
+    if (item.optional || item.review.itemType !== "PHRASE" || reviewItems[item.review.itemId]) continue;
+    reviewItems[item.review.itemId] = { target: item.target, source: item.source, accepted: item.accepted, ...(item.audioSrc ? { audioSrc: item.audioSrc } : {}) };
+  }
+}
+files.set(
+  "review-items.ts",
+  HEADER("Zwroty z lekcji spoza słownika kursu — treść kart PHRASE w powtórkach FSRS") +
+    `import type { CurriculumReviewItem } from "../../types";\n\nexport const ${LEVEL.exportName}_REVIEW_ITEMS: Record<string, CurriculumReviewItem> = ${json(reviewItems)};\n`,
 );
 
 if (errors.length) {

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sport",
         "partOfSpeech": "noun",
         "recordId": "A1-0470",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:731"
+        },
+        "accepted": [
+          "sport"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/sport.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "plivati",
         "partOfSpeech": "verb",
         "recordId": "A1-0471",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:737"
+        },
+        "accepted": [
+          "plivati"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/plivati.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "trčati",
         "partOfSpeech": "verb",
         "recordId": "A1-0472",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:343"
+        },
+        "accepted": [
+          "trčati"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/trcati.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "voziti bicikl",
         "partOfSpeech": "phrase",
         "recordId": "A1-0473",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2138"
+        },
+        "accepted": [
+          "voziti bicikl"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/voziti-bicikl.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nogomet",
         "partOfSpeech": "noun",
         "recordId": "A1-0474",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:732"
+        },
+        "accepted": [
+          "nogomet"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/nogomet.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "teretana",
         "partOfSpeech": "noun",
         "recordId": "A1-0475",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1061"
+        },
+        "accepted": [
+          "teretana"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/teretana.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "često",
         "partOfSpeech": "adverb",
         "recordId": "A1-0476",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:178"
+        },
+        "accepted": [
+          "često"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/cesto.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nikad",
         "partOfSpeech": "adverb",
         "recordId": "A1-0477",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:177"
+        },
+        "accepted": [
+          "nikad"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/nikad.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "košarka",
         "partOfSpeech": "noun",
         "recordId": "A1-0990",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4385"
+        },
+        "accepted": [
+          "košarka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/kosarka.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tenis",
         "partOfSpeech": "noun",
         "recordId": "A1-0991",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:tenis"
+        },
+        "accepted": [
+          "tenis"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/tenis.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odbojka",
         "partOfSpeech": "noun",
         "recordId": "A1-0992",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4384"
+        },
+        "accepted": [
+          "odbojka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/odbojka.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "joga",
         "partOfSpeech": "noun",
         "recordId": "A1-0993",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2821"
+        },
+        "accepted": [
+          "joga"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/joga.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vježbati",
         "partOfSpeech": "verb",
         "recordId": "A1-0994",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1563"
+        },
+        "accepted": [
+          "vježbati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/vjezbati.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "planinariti",
         "partOfSpeech": "verb",
         "recordId": "A1-0995",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:planinariti"
+        },
+        "accepted": [
+          "planinariti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/planinariti.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "skijati",
         "partOfSpeech": "verb",
         "recordId": "A1-0996",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:skijati"
+        },
+        "accepted": [
+          "skijati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/skijati.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "utakmica",
         "partOfSpeech": "noun",
         "recordId": "A1-0997",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:733"
+        },
+        "accepted": [
+          "utakmica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/utakmica.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "put",
         "partOfSpeech": "phrase",
         "recordId": "A1-0998",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:puta tjedno"
+        },
+        "accepted": [
+          "puta tjedno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/puta-tjedno.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zdrav",
         "partOfSpeech": "adjective",
         "recordId": "A1-0999",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:143"
+        },
+        "accepted": [
+          "zdrav"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/zdrav.mp3"
       }
     ],
@@ -364,7 +500,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "košarka",
@@ -441,6 +577,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-06/utakmica.mp3"
       },
       {
@@ -507,6 +644,7 @@ export const LESSON: GeneratedLesson = {
           "ne"
         ],
         "translation": "Nigdy nie biegam rano.",
+        "rule": "Često, ponekad, nikad — Jak często?",
         "answerAudioSrc": "/audio/hr/a1/module-06/nikad-ne-trcim-ujutro.mp3"
       },
       {
@@ -525,18 +663,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-06/vozim-bicikl-vikendom.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Lubię pływać.",
-        "accepted": [
-          "Volim plivati.",
-          "Ja volim plivati."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-06/volim-plivati.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -553,6 +679,18 @@ export const LESSON: GeneratedLesson = {
           "Ja trčim tri puta tjedno."
         ],
         "answerAudioSrc": "/audio/hr/a1/module-06/trcim-tri-puta-tjedno.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Lubię pływać.",
+        "accepted": [
+          "Volim plivati.",
+          "Ja volim plivati."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/volim-plivati.mp3"
       },
       {
         "id": "translate-2",
@@ -576,6 +714,7 @@ export const LESSON: GeneratedLesson = {
           "Vježbam svaki dan.",
           "Ja vježbam svaki dan."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-06/vjezbam-svaki-dan.mp3"
       },
       {

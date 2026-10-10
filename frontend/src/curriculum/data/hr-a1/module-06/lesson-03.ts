@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vrijeme",
         "partOfSpeech": "noun",
         "recordId": "A1-0488",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:171"
+        },
+        "accepted": [
+          "vrijeme"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/vrijeme.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sunčano",
         "partOfSpeech": "adverb",
         "recordId": "A1-0489",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:sunčano"
+        },
+        "accepted": [
+          "sunčano"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/suncano.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "oblačno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0490",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:oblačno"
+        },
+        "accepted": [
+          "oblačno"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/oblacno.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hladno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0491",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:hladno"
+        },
+        "accepted": [
+          "hladno"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/hladno.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "toplo",
         "partOfSpeech": "adverb",
         "recordId": "A1-0492",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:toplo"
+        },
+        "accepted": [
+          "toplo"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/toplo.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kiša",
         "partOfSpeech": "noun",
         "recordId": "A1-0493",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:269"
+        },
+        "accepted": [
+          "kiša"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/kisa.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "snijeg",
         "partOfSpeech": "noun",
         "recordId": "A1-0494",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:270"
+        },
+        "accepted": [
+          "snijeg"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/snijeg.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vjetar",
         "partOfSpeech": "noun",
         "recordId": "A1-0495",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:272"
+        },
+        "accepted": [
+          "vjetar"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/vjetar.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vruć",
         "partOfSpeech": "adjective",
         "recordId": "A1-1004",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:vruće"
+        },
+        "accepted": [
+          "vruće"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/vruce.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "oluja",
         "partOfSpeech": "noun",
         "recordId": "A1-1005",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2663"
+        },
+        "accepted": [
+          "oluja"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/oluja.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "magla",
         "partOfSpeech": "noun",
         "recordId": "A1-1006",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1153"
+        },
+        "accepted": [
+          "magla"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/magla.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stupanj",
         "partOfSpeech": "noun",
         "recordId": "A1-1007",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1157"
+        },
+        "accepted": [
+          "stupanj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/stupanj.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "proljeće",
         "partOfSpeech": "noun",
         "recordId": "A1-1008",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:486"
+        },
+        "accepted": [
+          "proljeće"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/proljece.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ljeto",
         "partOfSpeech": "noun",
         "recordId": "A1-1009",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:484"
+        },
+        "accepted": [
+          "ljeto"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/ljeto.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jesen",
         "partOfSpeech": "noun",
         "recordId": "A1-1010",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:487"
+        },
+        "accepted": [
+          "jesen"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/jesen.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zima",
         "partOfSpeech": "noun",
         "recordId": "A1-1011",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:485"
+        },
+        "accepted": [
+          "zima"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/zima.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prognoza",
         "partOfSpeech": "noun",
         "recordId": "A1-1012",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1156"
+        },
+        "accepted": [
+          "prognoza"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/prognoza.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vani",
         "partOfSpeech": "adverb",
         "recordId": "A1-1013",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:397"
+        },
+        "accepted": [
+          "vani"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/vani.mp3"
       }
     ],
@@ -340,7 +476,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "vruće",
@@ -417,6 +553,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-06/prognoza.mp3"
       },
       {
@@ -484,19 +621,23 @@ export const LESSON: GeneratedLesson = {
           "Pada"
         ],
         "translation": "Pada deszcz.",
+        "rule": "Kakvo je vrijeme? — O pogodzie mówisz bez podmiotu, jak po polsku: Danas je sunčano — dziś jest słonecznie, hladno je — jest zimno.",
         "answerAudioSrc": "/audio/hr/a1/module-06/pada-kisa.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Dziś jest zimno.",
-        "accepted": [
-          "Danas je hladno.",
-          "Hladno je danas."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Sutra će biti toplo.",
+        "options": [
+          "Dziś jest słonecznie.",
+          "Jutro będzie ciepło.",
+          "Dziś jest zimno."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-06/danas-je-hladno.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-06/sutra-ce-biti-toplo.mp3"
       },
       {
         "id": "order",
@@ -514,22 +655,20 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Danas je hladno i oblačno."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-06/danas-je-hladno-i-oblacno.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Sutra će biti toplo.",
-        "options": [
-          "Dziś jest słonecznie.",
-          "Jutro będzie ciepło.",
-          "Dziś jest zimno."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Dziś jest zimno.",
+        "accepted": [
+          "Danas je hladno.",
+          "Hladno je danas."
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-06/sutra-ce-biti-toplo.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-06/danas-je-hladno.mp3"
       },
       {
         "id": "translate-2",
@@ -551,6 +690,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ljeti je vruće."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-06/ljeti-je-vruce.mp3"
       },
       {

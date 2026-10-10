@@ -14,6 +14,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rezultat",
         "partOfSpeech": "noun",
         "recordId": "A2-0958",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:465"
+        },
+        "accepted": [
+          "rezultat"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/rezultat.mp3"
       },
       {
@@ -22,6 +30,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "razina",
         "partOfSpeech": "noun",
         "recordId": "A2-0959",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:razina"
+        },
+        "accepted": [
+          "razina"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/razina.mp3"
       },
       {
@@ -30,6 +46,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uputa",
         "partOfSpeech": "noun",
         "recordId": "A2-0960",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1809"
+        },
+        "accepted": [
+          "uputa"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/uputa.mp3"
       },
       {
@@ -38,6 +62,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bod",
         "partOfSpeech": "noun",
         "recordId": "A2-0961",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:bod"
+        },
+        "accepted": [
+          "bod"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/bod.mp3"
       },
       {
@@ -46,6 +78,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ocjena",
         "partOfSpeech": "noun",
         "recordId": "A2-0962",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1197"
+        },
+        "accepted": [
+          "ocjena"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/ocjena.mp3"
       },
       {
@@ -54,6 +94,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uspješno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0963",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:uspješno"
+        },
+        "accepted": [
+          "uspješno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/uspjesno.mp3"
       },
       {
@@ -62,6 +110,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pokušaj",
         "partOfSpeech": "noun",
         "recordId": "A2-0964",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:726"
+        },
+        "accepted": [
+          "pokušaj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/pokusaj.mp3"
       },
       {
@@ -70,6 +126,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dopuniti",
         "partOfSpeech": "verb",
         "recordId": "A2-0965",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:dopuniti"
+        },
+        "accepted": [
+          "dopuniti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/dopuniti.mp3"
       }
     ],
@@ -79,7 +143,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "intro",
         "type": "intro",
         "title": "Test A2",
-        "body": "Test obejmuje materiał całego poziomu A2. Nie ma tu zaliczenia ani oblania — na końcu zobaczysz, co masz dobrze opanowane, a co warto powtórzyć.",
+        "body": "Test obejmuje materiał całego poziomu A2. Zaliczasz go, zdobywając co najmniej 70% punktów i połowę w każdej części; na końcu zobaczysz też, co masz dobrze opanowane, a co warto powtórzyć.",
         "goalsTitle": "Sześć krótkich części",
         "goals": [
           "słownictwo",

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prijatelj",
         "partOfSpeech": "noun",
         "recordId": "A1-0110",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:151"
+        },
+        "accepted": [
+          "prijatelj"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/prijatelj.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prijateljica",
         "partOfSpeech": "noun",
         "recordId": "A1-0111",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prijateljica"
+        },
+        "accepted": [
+          "prijateljica"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/prijateljica.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kolega",
         "partOfSpeech": "noun",
         "recordId": "A1-0112",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:247"
+        },
+        "accepted": [
+          "kolega"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/kolega.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kolegica",
         "partOfSpeech": "noun",
         "recordId": "A1-0113",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kolegica"
+        },
+        "accepted": [
+          "kolegica"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/kolegica.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "učitelj",
         "partOfSpeech": "noun",
         "recordId": "A1-0114",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:517"
+        },
+        "accepted": [
+          "učitelj"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/ucitelj.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "liječnik",
         "partOfSpeech": "noun",
         "recordId": "A1-0115",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:311"
+        },
+        "accepted": [
+          "liječnik"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/lijecnik.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "raditi",
         "partOfSpeech": "verb",
         "recordId": "A1-0116",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:18"
+        },
+        "accepted": [
+          "raditi"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/raditi.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "posao",
         "partOfSpeech": "noun",
         "recordId": "A1-0117",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:243"
+        },
+        "accepted": [
+          "posao"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/posao.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "učiteljica",
         "partOfSpeech": "noun",
         "recordId": "A1-0737",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2605"
+        },
+        "accepted": [
+          "učiteljica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/uciteljica.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "liječnica",
         "partOfSpeech": "noun",
         "recordId": "A1-0738",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:liječnica"
+        },
+        "accepted": [
+          "liječnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/lijecnica.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "inženjer",
         "partOfSpeech": "noun",
         "recordId": "A1-0739",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:524"
+        },
+        "accepted": [
+          "inženjer"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/inzenjer.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prodavač",
         "partOfSpeech": "noun",
         "recordId": "A1-0740",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prodavač"
+        },
+        "accepted": [
+          "prodavač"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/prodavac.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "student",
         "partOfSpeech": "noun",
         "recordId": "A1-0741",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:516"
+        },
+        "accepted": [
+          "student"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/student.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "studentica",
         "partOfSpeech": "noun",
         "recordId": "A1-0742",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:studentica"
+        },
+        "accepted": [
+          "studentica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/studentica.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "susjed",
         "partOfSpeech": "noun",
         "recordId": "A1-0743",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:528"
+        },
+        "accepted": [
+          "susjed"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/susjed.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "susjeda",
         "partOfSpeech": "noun",
         "recordId": "A1-0744",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:susjeda"
+        },
+        "accepted": [
+          "susjeda"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/susjeda.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tvrtka",
         "partOfSpeech": "noun",
         "recordId": "A1-0745",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:tvrtka"
+        },
+        "accepted": [
+          "tvrtka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/tvrtka.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bolnica",
         "partOfSpeech": "noun",
         "recordId": "A1-0746",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:312"
+        },
+        "accepted": [
+          "bolnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/bolnica.mp3"
       },
       {
@@ -157,6 +293,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "raditi",
         "partOfSpeech": "phrase",
         "recordId": "A1-0747",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:što radiš"
+        },
+        "accepted": [
+          "Što radiš?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/sto-radis.mp3"
       }
     ],
@@ -345,7 +489,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "učiteljica",
@@ -428,6 +572,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-02/susjeda.mp3"
       },
       {
@@ -494,6 +639,7 @@ export const LESSON: GeneratedLesson = {
           "radi"
         ],
         "translation": "Ivan pracuje w szkole.",
+        "rule": "Tko je to? Što radi? — Zawód podajesz prościej niż po polsku — bez zmiany końcówki: Ana je liječnica — Ana jest lekarką.",
         "answerAudioSrc": "/audio/hr/a1/module-02/ivan-radi-u-skoli.mp3"
       },
       {
@@ -512,17 +658,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-02/moja-kolegica-radi-od-kuce.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "On jest moim kolegą.",
-        "accepted": [
-          "On je moj kolega."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-02/on-je-moj-kolega.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -538,7 +673,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ovo je moj prijatelj Marko."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-02/ovo-je-moj-prijatelj-marko.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "On jest moim kolegą.",
+        "accepted": [
+          "On je moj kolega."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/on-je-moj-kolega.mp3"
       },
       {
         "id": "translate-2",
@@ -563,6 +710,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ana je studentica."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-02/ana-je-studentica.mp3"
       },
       {

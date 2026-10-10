@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@/components/Icon";
 import { AudioButton, BilingualLine, SpokenText } from "@/components/AudioButton";
 import { useT } from "@/i18n";
 import type { Conjugation, IntroStep, ListenStep, LessonContent, StructureStep, SummaryStep, VocabListStep, WordStep } from "../types";
+import { PASS_THRESHOLD, TEST_SECTION_THRESHOLD, type LessonEvaluation } from "../grading";
 import { StepFooter } from "./StepFooter";
 
 /* Kroki „treściowe” — wprowadzają nową rzecz. Ćwiczenia są w Exercises.tsx. */
@@ -204,24 +205,74 @@ export function VocabListView({ step, onNext }: { step: VocabListStep; onNext: (
 export function SummaryView({
   step,
   content,
-  score,
+  evaluation,
   nextHref,
   moduleHref,
+  onRetry,
+  onRestart,
+  reviewStatus,
 }: {
   step: SummaryStep;
   content: LessonContent;
-  score: { correct: number; total: number };
+  evaluation: LessonEvaluation;
   nextHref: string | null;
   moduleHref: string;
+  onRetry: () => void;
+  onRestart: () => void;
+  reviewStatus?: ReactNode;
 }) {
   const t = useT();
+  const { passed, mistakes } = evaluation;
+  const core = content.vocabulary.filter((word) => !word.optional);
+  const extra = content.vocabulary.filter((word) => word.optional);
+  const retryLabel = t("curriculum.player.retryMistakes", { n: mistakes.length });
   return (
     <div className="step step-summary">
-      <span className="summary-mark" aria-hidden="true">
-        <Icon name="check" size={26} />
+      <span className={passed ? "summary-mark" : "summary-mark pending"} aria-hidden="true">
+        <Icon name={passed ? "check" : "repeat"} size={26} />
       </span>
-      <h2 className="summary-title">{step.title}</h2>
-      <p className="muted">{t("curriculum.player.summaryScore", score)}</p>
+      <h2 className="summary-title">{passed ? step.title : t("curriculum.player.failTitle")}</h2>
+      <ScoreLine evaluation={evaluation} />
+      {!passed && (
+        <p className="summary-verdict" role="status">
+          {t(mistakes.length ? "curriculum.player.failHint" : "curriculum.player.failRestart")}
+        </p>
+      )}
+
+      <div className="summary-actions">
+        {passed ? (
+          <>
+            {nextHref && (
+              <Link className="btn btn-lg" to={nextHref}>
+                {t("curriculum.nextLesson")}
+                <Icon name="arrowRight" size={18} />
+              </Link>
+            )}
+            {mistakes.length > 0 && (
+              <button type="button" className="btn-ghost" onClick={onRetry}>
+                {retryLabel}
+              </button>
+            )}
+          </>
+        ) : mistakes.length > 0 ? (
+          <button type="button" className="btn btn-lg" onClick={onRetry}>
+            {retryLabel}
+            <Icon name="arrowRight" size={18} />
+          </button>
+        ) : (
+          <button type="button" className="btn btn-lg" onClick={onRestart}>
+            {t("curriculum.player.restart")}
+          </button>
+        )}
+        {!passed && mistakes.length > 0 && (
+          <button type="button" className="btn-ghost" onClick={onRestart}>
+            {t("curriculum.player.restart")}
+          </button>
+        )}
+        <Link className="btn-ghost" to={moduleHref}>
+          {t("curriculum.player.backToModule")}
+        </Link>
+      </div>
 
       {step.canDo && step.canDo.length > 0 && (
         <section className="summary-can-do">
@@ -248,31 +299,50 @@ export function SummaryView({
             ))}
           </ul>
         </section>
-        <section>
-          <span className="eyebrow">{t("curriculum.player.summaryWords")}</span>
+        {core.length > 0 && (
+          <section>
+            <span className="eyebrow">{t("curriculum.player.summaryWords")}</span>
+            <ul className="summary-words">
+              {core.map((word, index) => (
+                <li key={`${word.target}-${index}`}>
+                  <SpokenText text={word.target} src={word.audioSrc} />
+                  <span className="muted">{word.source}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="meta summary-review">{passed ? reviewStatus : t("curriculum.player.reviewAfterPass")}</div>
+          </section>
+        )}
+      </div>
+      {extra.length > 0 && (
+        <details className="summary-extra">
+          <summary>{t("curriculum.player.summaryExtra", { n: extra.length })}</summary>
           <ul className="summary-words">
-            {content.vocabulary.map((word, index) => (
+            {extra.map((word, index) => (
               <li key={`${word.target}-${index}`}>
                 <SpokenText text={word.target} src={word.audioSrc} />
                 <span className="muted">{word.source}</span>
               </li>
             ))}
           </ul>
-          <p className="meta">{t("curriculum.player.summaryWordsNote")}</p>
-        </section>
-      </div>
-
-      <div className="summary-actions">
-        {nextHref && (
-          <Link className="btn btn-lg" to={nextHref}>
-            {t("curriculum.nextLesson")}
-            <Icon name="arrowRight" size={18} />
-          </Link>
-        )}
-        <Link className="btn-ghost" to={moduleHref}>
-          {t("curriculum.player.backToModule")}
-        </Link>
-      </div>
+        </details>
+      )}
     </div>
+  );
+}
+
+/** Wynik z wagami i próg zaliczenia — jedna linijka, bez udawanej precyzji. */
+export function ScoreLine({ evaluation }: { evaluation: LessonEvaluation }) {
+  const t = useT();
+  if (!evaluation.total) return null;
+  const score = Math.round((evaluation.mode === "test" ? evaluation.firstTry : evaluation.score) * 100);
+  return (
+    <>
+      <p className="muted">
+        {t("curriculum.player.summaryScore", { correct: evaluation.correct, total: evaluation.total })} ·{" "}
+        {t("curriculum.player.scoreLine", { score, threshold: Math.round(PASS_THRESHOLD * 100) })}
+      </p>
+      <p className="meta">{t(evaluation.mode === "test" ? "curriculum.player.testRule" : "curriculum.player.passRule", { section: Math.round(TEST_SECTION_THRESHOLD * 100) })}</p>
+    </>
   );
 }

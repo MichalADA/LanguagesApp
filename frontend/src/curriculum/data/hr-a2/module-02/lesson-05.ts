@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kalendar",
         "partOfSpeech": "noun",
         "recordId": "A2-0240",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kalendar"
+        },
+        "accepted": [
+          "kalendar"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/kalendar.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "raspored",
         "partOfSpeech": "noun",
         "recordId": "A2-0241",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:938"
+        },
+        "accepted": [
+          "raspored"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/raspored.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dan",
         "partOfSpeech": "phrase",
         "recordId": "A2-0242",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:977"
+        },
+        "accepted": [
+          "slobodan dan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/slobodan-dan.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "podsjetnik",
         "partOfSpeech": "noun",
         "recordId": "A2-0243",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:podsjetnik"
+        },
+        "accepted": [
+          "podsjetnik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/podsjetnik.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rok",
         "partOfSpeech": "noun",
         "recordId": "A2-0244",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:705"
+        },
+        "accepted": [
+          "rok"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/rok.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zapisati",
         "partOfSpeech": "verb",
         "recordId": "A2-0245",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:818"
+        },
+        "accepted": [
+          "zapisati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/zapisati.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "provjeriti",
         "partOfSpeech": "verb",
         "recordId": "A2-0246",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:937"
+        },
+        "accepted": [
+          "provjeriti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/provjeriti.mp3"
       }
     ],
@@ -208,6 +264,7 @@ export const LESSON: GeneratedLesson = {
           "Sutra ćemo ići na izlet.",
           "Ići ćemo sutra na izlet."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-02/sutra-cemo-ici-na-izlet.mp3"
       },
       {

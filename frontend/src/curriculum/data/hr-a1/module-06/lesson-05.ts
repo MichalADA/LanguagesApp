@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hobi",
         "partOfSpeech": "noun",
         "recordId": "A1-0524",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1051"
+        },
+        "accepted": [
+          "hobi"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/hobi.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vikend",
         "partOfSpeech": "noun",
         "recordId": "A1-0525",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:480"
+        },
+        "accepted": [
+          "vikend"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/vikend.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prijatelji",
         "partOfSpeech": "noun",
         "recordId": "A1-0526",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prijatelji"
+        },
+        "accepted": [
+          "prijatelji"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/prijatelji.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zabava",
         "partOfSpeech": "noun",
         "recordId": "A1-0527",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zabava"
+        },
+        "accepted": [
+          "zabava"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/zabava.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odmor",
         "partOfSpeech": "noun",
         "recordId": "A1-0528",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:729"
+        },
+        "accepted": [
+          "odmor"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/odmor.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izlet",
         "partOfSpeech": "noun",
         "recordId": "A1-1034",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:969"
+        },
+        "accepted": [
+          "izlet"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/izlet.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zajedno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0530",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:198"
+        },
+        "accepted": [
+          "zajedno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/zajedno.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rado",
         "partOfSpeech": "adverb",
         "recordId": "A1-0531",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2325"
+        },
+        "accepted": [
+          "rado"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/rado.mp3"
       },
       {
@@ -77,6 +141,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zvučati",
         "partOfSpeech": "phrase",
         "recordId": "A1-1030",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zvuči super"
+        },
+        "accepted": [
+          "Zvuči super!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/zvuci-super.mp3"
       },
       {
@@ -85,6 +157,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zabavan",
         "partOfSpeech": "adjective",
         "recordId": "A1-1031",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zabavno"
+        },
+        "accepted": [
+          "zabavno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/zabavno.mp3"
       },
       {
@@ -93,6 +173,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dosadan",
         "partOfSpeech": "adjective",
         "recordId": "A1-1032",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:dosadno"
+        },
+        "accepted": [
+          "dosadno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/dosadno.mp3"
       }
     ],

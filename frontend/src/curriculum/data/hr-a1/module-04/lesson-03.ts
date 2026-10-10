@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kafić",
         "partOfSpeech": "noun",
         "recordId": "A1-0308",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2435"
+        },
+        "accepted": [
+          "kafić"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/kafic.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "konobar",
         "partOfSpeech": "noun",
         "recordId": "A1-0309",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:526"
+        },
+        "accepted": [
+          "konobar"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/konobar.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "molim",
         "partOfSpeech": "interjection",
         "recordId": "A1-0310",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:412"
+        },
+        "accepted": [
+          "molim"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/molim.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dobiti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1162",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:mogu li dobiti"
+        },
+        "accepted": [
+          "Mogu li dobiti…?"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/mogu-li-dobiti.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sok",
         "partOfSpeech": "noun",
         "recordId": "A1-0312",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1132"
+        },
+        "accepted": [
+          "sok"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/sok.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pivo",
         "partOfSpeech": "noun",
         "recordId": "A1-0313",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:218"
+        },
+        "accepted": [
+          "pivo"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/pivo.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šećer",
         "partOfSpeech": "noun",
         "recordId": "A1-0314",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:231"
+        },
+        "accepted": [
+          "šećer"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/secer.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "račun",
         "partOfSpeech": "noun",
         "recordId": "A1-0315",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:241"
+        },
+        "accepted": [
+          "račun"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/racun.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "konobarica",
         "partOfSpeech": "noun",
         "recordId": "A1-0882",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:632"
+        },
+        "accepted": [
+          "konobarica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/konobarica.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izvoljeti",
         "partOfSpeech": "phrase",
         "recordId": "A1-0883",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:izvolite"
+        },
+        "accepted": [
+          "Izvolite."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/izvolite.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "čaša",
         "partOfSpeech": "noun",
         "recordId": "A1-0884",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:621"
+        },
+        "accepted": [
+          "čaša"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/casa.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šalica",
         "partOfSpeech": "noun",
         "recordId": "A1-0885",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:622"
+        },
+        "accepted": [
+          "šalica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/salica.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "led",
         "partOfSpeech": "noun",
         "recordId": "A1-0886",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2481"
+        },
+        "accepted": [
+          "led"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/led.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "limunada",
         "partOfSpeech": "noun",
         "recordId": "A1-0887",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:limunada"
+        },
+        "accepted": [
+          "limunada"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/limunada.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vino",
         "partOfSpeech": "noun",
         "recordId": "A1-0888",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:217"
+        },
+        "accepted": [
+          "vino"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/vino.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kava",
         "partOfSpeech": "phrase",
         "recordId": "A1-0889",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:bijela kava"
+        },
+        "accepted": [
+          "bijela kava"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/bijela-kava.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hvala",
         "partOfSpeech": "phrase",
         "recordId": "A1-0890",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:hvala lijepa"
+        },
+        "accepted": [
+          "Hvala lijepa!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/hvala-lijepa.mp3"
       }
     ],
@@ -317,7 +445,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "konobarica",
@@ -388,6 +516,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-04/konobarica.mp3"
       },
       {
@@ -450,19 +579,23 @@ export const LESSON: GeneratedLesson = {
           "Htjela"
         ],
         "translation": "Chciałabym sok.",
+        "rule": "Molim… / Htio bih… — W kawiarni wystarczy nazwa i molim: Molim jednu kavu.",
         "answerAudioSrc": "/audio/hr/a1/module-04/htjela-bih-sok.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Rachunek, proszę.",
-        "accepted": [
-          "Račun, molim.",
-          "Molim račun."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Htio bih čaj.",
+        "options": [
+          "Chciałbym herbatę.",
+          "Poproszę jedną kawę.",
+          "Chciałabym sok."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/htio-bih-caj.mp3"
       },
       {
         "id": "order",
@@ -482,19 +615,16 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-04/jos-jednu-vodu-molim.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Htio bih čaj.",
-        "options": [
-          "Chciałbym herbatę.",
-          "Poproszę jedną kawę.",
-          "Chciałabym sok."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Rachunek, proszę.",
+        "accepted": [
+          "Račun, molim.",
+          "Molim račun."
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-04/htio-bih-caj.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-04/racun-molim.mp3"
       },
       {
         "id": "translate-2",
@@ -530,6 +660,7 @@ export const LESSON: GeneratedLesson = {
           "Čašu vode, molim.",
           "Molim čašu vode."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-04/casu-vode-molim.mp3"
       },
       {

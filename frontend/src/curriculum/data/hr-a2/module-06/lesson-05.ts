@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "selidba",
         "partOfSpeech": "noun",
         "recordId": "A2-0731",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1926"
+        },
+        "accepted": [
+          "selidba"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/selidba.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "preseliti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0732",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1080"
+        },
+        "accepted": [
+          "preseliti se"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/preseliti-se.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ljubimac",
         "partOfSpeech": "phrase",
         "recordId": "A2-0733",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kućni ljubimac"
+        },
+        "accepted": [
+          "kućni ljubimac"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/kucni-ljubimac.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pogled",
         "partOfSpeech": "noun",
         "recordId": "A2-0734",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:959"
+        },
+        "accepted": [
+          "pogled"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/pogled.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ljubazan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0735",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:767"
+        },
+        "accepted": [
+          "ljubazan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/ljubazan.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "naporan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0736",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1927"
+        },
+        "accepted": [
+          "naporan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/naporan.mp3"
       }
     ],

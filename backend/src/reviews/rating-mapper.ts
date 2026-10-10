@@ -7,6 +7,7 @@ export interface RatingInput {
   attemptsBeforeCorrect?: number;
   responseTimeMs?: number;
   gameType: string;
+  nearMiss?: boolean;
 }
 /** Product policy, not scientifically calibrated weights. Never infer speed when absent. */
 export function calculateReviewRating(
@@ -16,6 +17,7 @@ export function calculateReviewRating(
   if (!input.correct) return Rating.Again;
   if (
     input.usedHint ||
+    input.nearMiss ||
     (input.attemptsBeforeCorrect ?? 0) > 0 ||
     (input.responseTimeMs ?? 0) > 60_000
   )

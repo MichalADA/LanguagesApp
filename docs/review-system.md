@@ -11,7 +11,8 @@ plikach CSV, a identyfikatory zawierają kurs:
 | WORD | `pl-hr:42` — istniejący identyfikator VocabularyEntry |
 | SENTENCE | `pl-hr:sentence:a1-01` — identyfikator rekordu, bez trybu gry |
 | VERB | `pl-hr:verb:1:ja` — czasownik i konkretna osoba |
-| GRAMMAR / PHRASE | przestrzeń rozszerzeń; nowa treść wymaga adaptera zadania |
+| PHRASE | `pl-hr:phrase:kako ste` — słowo/zwrot z lekcji kursu, którego nie ma w słowniku (klucz z tekstu) |
+| GRAMMAR | przestrzeń rozszerzeń; nowa treść wymaga adaptera zadania |
 
 `ReviewState` ma UNIQUE `(userId, itemType, itemId)`. Gra ani kierunek tłumaczenia
 nie są częścią tego klucza. To samo słowo w Bura, Trasie, fiszkach i quizie ma jeden
@@ -22,6 +23,27 @@ Pełne zdanie sprawdza wiedzę o zdaniu. Nie zaliczamy automatycznie wszystkich 
 które się w nim pojawiają — bez jawnego powiązania zadania z konkretnym wordId nie
 wiemy, czy użytkownik zna każde z nich. Przyszłe zadanie kontekstowe dotyczące
 konkretnego słowa powinno wysyłać jego istniejący WORD/itemId.
+
+## Słowa z lekcji kursu
+
+Zaliczenie lekcji (`frontend/src/curriculum/grading.ts`) dodaje jej **słowa obowiązkowe**
+(te z osobnych kart słów) do FSRS przez `POST /reviews/enroll`:
+
+- karty powstają jako NOWE (reps 0, due = teraz) — **bez próby i bez oceny**. Obejrzenie
+  słowa w lekcji, ani odpowiedź chwilę po jego poznaniu, nie są dowodem zapamiętania;
+  pierwszą ocenę daje dopiero powtórka,
+- słowo, które jest w słowniku kursu w tym samym znaczeniu, dostaje istniejący WORD
+  (`pl-hr:<rank>`) — tę samą kartę co gry i fiszki (generator, `scripts/lib/review-identity.mjs`;
+  homonimy jak `radio` = „pracował” nie trafiają na cudzą kartę); pozostałe → PHRASE,
+- operacja jest idempotentna (`createMany … skipDuplicates`): istniejąca karta, np. z Bury,
+  zostaje bez zmian, a ponowienie po błędzie sieci niczego nie dubluje,
+- frontend zapisuje wpis najpierw lokalnie (`curriculum/srs.ts`) i wysyła go przy zaliczeniu,
+  przy starcie aplikacji, po zalogowaniu i po powrocie sieci; wpis jest oznaczany jako wysłany
+  dopiero po potwierdzeniu,
+- gość: słowa czekają na urządzeniu; po zalogowaniu `/powtorki` proponuje ich import,
+- słowa z list „Więcej przydatnych słów” są opcjonalne i do FSRS nie trafiają.
+
+Treść kart PHRASE dla sesji powtórek generuje się do `src/curriculum/data/<poziom>/review-items.ts`.
 
 ## Stan i historia
 
@@ -58,6 +80,7 @@ Centralny `rating-mapper.ts`, w kolejności pierwszeństwa:
 | --- | --- |
 | Again | błędna odpowiedź |
 | Hard | poprawna z podpowiedzią, po wcześniejszym błędzie lub po ponad 60 s |
+| Hard | poprawna poza znakami diakrytycznymi (`nearMiss`, np. „zivjeti” zamiast „živjeti”) |
 | Hard | zadania rozpoznawania: pary, łączenie kolumn, wybór, tak/nie, intruz, układanie/scramble |
 | Easy | poprawna bez pomocy, stability >= 30, zmierzony czas 0–4 s (granice wyłączne) |
 | Good | pozostałe poprawne odpowiedzi |

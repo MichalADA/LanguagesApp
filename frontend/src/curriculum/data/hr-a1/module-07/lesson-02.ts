@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "aerodrom",
         "partOfSpeech": "noun",
         "recordId": "A1-0560",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:261"
+        },
+        "accepted": [
+          "aerodrom"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/aerodrom.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stići",
         "partOfSpeech": "verb",
         "recordId": "A1-1179",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stići"
+        },
+        "accepted": [
+          "stići"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/stici.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "peron",
         "partOfSpeech": "noun",
         "recordId": "A1-0562",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:564"
+        },
+        "accepted": [
+          "peron"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/peron.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izlaz",
         "partOfSpeech": "noun",
         "recordId": "A1-0563",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:izlaz"
+        },
+        "accepted": [
+          "izlaz"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/izlaz.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "karta",
         "partOfSpeech": "noun",
         "recordId": "A1-0564",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:262"
+        },
+        "accepted": [
+          "karta"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/karta.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "polazak",
         "partOfSpeech": "noun",
         "recordId": "A1-0565",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1668"
+        },
+        "accepted": [
+          "polazak"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/polazak.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dolazak",
         "partOfSpeech": "noun",
         "recordId": "A1-0566",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1669"
+        },
+        "accepted": [
+          "dolazak"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/dolazak.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kasniti",
         "partOfSpeech": "verb",
         "recordId": "A1-0567",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:692"
+        },
+        "accepted": [
+          "kasniti"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/kasniti.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "karta",
         "partOfSpeech": "phrase",
         "recordId": "A1-1051",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1256"
+        },
+        "accepted": [
+          "povratna karta"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/povratna-karta.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "smjer",
         "partOfSpeech": "phrase",
         "recordId": "A1-1052",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1257"
+        },
+        "accepted": [
+          "u jednom smjeru"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/u-jednom-smjeru.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "red",
         "partOfSpeech": "phrase",
         "recordId": "A1-1053",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4083"
+        },
+        "accepted": [
+          "vozni red"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/vozni-red.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kolodvor",
         "partOfSpeech": "phrase",
         "recordId": "A1-1054",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:autobusni kolodvor"
+        },
+        "accepted": [
+          "autobusni kolodvor"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/autobusni-kolodvor.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prtljaga",
         "partOfSpeech": "noun",
         "recordId": "A1-1055",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:561"
+        },
+        "accepted": [
+          "prtljaga"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/prtljaga.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "let",
         "partOfSpeech": "noun",
         "recordId": "A1-1056",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:562"
+        },
+        "accepted": [
+          "let"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/let.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ukrcaj",
         "partOfSpeech": "noun",
         "recordId": "A1-1057",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ukrcaj"
+        },
+        "accepted": [
+          "ukrcaj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/ukrcaj.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kašnjenje",
         "partOfSpeech": "noun",
         "recordId": "A1-1058",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:563"
+        },
+        "accepted": [
+          "kašnjenje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/kasnjenje.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "putnik",
         "partOfSpeech": "noun",
         "recordId": "A1-1059",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1881"
+        },
+        "accepted": [
+          "putnik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/putnik.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "presjedati",
         "partOfSpeech": "verb",
         "recordId": "A1-1060",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:presjedati"
+        },
+        "accepted": [
+          "presjedati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/presjedati.mp3"
       }
     ],
@@ -364,7 +500,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "povratna karta",
@@ -441,6 +577,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-07/vozni-red.mp3"
       },
       {
@@ -538,19 +675,23 @@ export const LESSON: GeneratedLesson = {
           "za"
         ],
         "translation": "Mam bilet do Zadaru.",
+        "rule": "Vlak za Split — „Pociąg do Splitu” to vlak za Split, a „bilet do Zadaru” — karta za Zadar.",
         "answerAudioSrc": "/audio/hr/a1/module-07/imam-kartu-za-zadar.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Gdzie jest peron trzeci?",
-        "accepted": [
-          "Gdje je peron tri?",
-          "Gdje je treći peron?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Gdje je izlaz pet?",
+        "options": [
+          "Gdzie jest peron trzeci?",
+          "Pociąg do Splitu odjeżdża o siódmej.",
+          "Gdzie jest bramka numer pięć?"
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-07/gdje-je-peron-tri.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/gdje-je-izlaz-pet.mp3"
       },
       {
         "id": "order",
@@ -572,19 +713,16 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-07/vlak-za-split-polazi-u-sedam.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Gdje je izlaz pet?",
-        "options": [
-          "Gdzie jest peron trzeci?",
-          "Pociąg do Splitu odjeżdża o siódmej.",
-          "Gdzie jest bramka numer pięć?"
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Gdzie jest peron trzeci?",
+        "accepted": [
+          "Gdje je peron tri?",
+          "Gdje je treći peron?"
         ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-07/gdje-je-izlaz-pet.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-07/gdje-je-peron-tri.mp3"
       },
       {
         "id": "translate-2",
@@ -618,6 +756,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Moram li presjedati?"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-07/moram-li-presjedati.mp3"
       },
       {

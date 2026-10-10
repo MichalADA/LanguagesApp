@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "trgovina",
         "partOfSpeech": "noun",
         "recordId": "A1-0380",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:237"
+        },
+        "accepted": [
+          "trgovina"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/trgovina.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tržnica",
         "partOfSpeech": "noun",
         "recordId": "A1-0932",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:238"
+        },
+        "accepted": [
+          "tržnica"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/trznica.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pošta",
         "partOfSpeech": "noun",
         "recordId": "A1-0382",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:438"
+        },
+        "accepted": [
+          "pošta"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/posta.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ljekarna",
         "partOfSpeech": "noun",
         "recordId": "A1-0383",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:439"
+        },
+        "accepted": [
+          "ljekarna"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/ljekarna.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kolodvor",
         "partOfSpeech": "noun",
         "recordId": "A1-0384",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:260"
+        },
+        "accepted": [
+          "kolodvor"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/kolodvor.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "park",
         "partOfSpeech": "noun",
         "recordId": "A1-0385",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:442"
+        },
+        "accepted": [
+          "park"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/park.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ići",
         "partOfSpeech": "verb",
         "recordId": "A1-0386",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:7"
+        },
+        "accepted": [
+          "ići"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/ici.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kamo",
         "partOfSpeech": "adverb",
         "recordId": "A1-0929",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4882"
+        },
+        "accepted": [
+          "kamo"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/kamo.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "muzej",
         "partOfSpeech": "noun",
         "recordId": "A1-0930",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:745"
+        },
+        "accepted": [
+          "muzej"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/muzej.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "crkva",
         "partOfSpeech": "noun",
         "recordId": "A1-0931",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:441"
+        },
+        "accepted": [
+          "crkva"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/crkva.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "knjižnica",
         "partOfSpeech": "noun",
         "recordId": "A1-0933",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:747"
+        },
+        "accepted": [
+          "knjižnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/knjiznica.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pekara",
         "partOfSpeech": "noun",
         "recordId": "A1-0934",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:541"
+        },
+        "accepted": [
+          "pekara"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/pekara.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stanica",
         "partOfSpeech": "noun",
         "recordId": "A1-0935",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:565"
+        },
+        "accepted": [
+          "stanica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/stanica.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "trebati",
         "partOfSpeech": "verb",
         "recordId": "A1-0936",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:332"
+        },
+        "accepted": [
+          "trebati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/trebati.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ići",
         "partOfSpeech": "phrase",
         "recordId": "A1-0937",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ići u kupovinu"
+        },
+        "accepted": [
+          "ići u kupovinu"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/ici-u-kupovinu.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "boljeti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1198",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:boli me glava"
+        },
+        "accepted": [
+          "Boli me glava."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/boli-me-glava.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lijek",
         "partOfSpeech": "noun",
         "recordId": "A1-1199",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:lijek"
+        },
+        "accepted": [
+          "lijek"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/lijek.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "temperatura",
         "partOfSpeech": "noun",
         "recordId": "A1-1200",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:500"
+        },
+        "accepted": [
+          "temperatura"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/temperatura.mp3"
       },
       {
@@ -157,6 +293,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bolestan",
         "partOfSpeech": "adjective",
         "recordId": "A1-1201",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:142"
+        },
+        "accepted": [
+          "bolestan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/bolestan.mp3"
       }
     ],
@@ -365,7 +509,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "muzej",
@@ -448,6 +592,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-05/muzej.mp3"
       },
       {
@@ -520,19 +665,23 @@ export const LESSON: GeneratedLesson = {
           "poštu"
         ],
         "translation": "Idę na pocztę.",
+        "rule": "Idem u… / idem na… — Mówiąc, dokąd idziesz, używasz u albo na, a słowa żeńskie zmieniają -a na -u: trgovina → Idem u trgovinu, pošta → Idem na poštu.",
         "answerAudioSrc": "/audio/hr/a1/module-05/idem-na-postu.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Idę do sklepu.",
-        "accepted": [
-          "Idem u trgovinu.",
-          "Ja idem u trgovinu."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Park je u centru.",
+        "options": [
+          "Idę do sklepu.",
+          "Park jest w centrum.",
+          "Idę do banku."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/park-je-u-centru.mp3"
       },
       {
         "id": "order",
@@ -554,19 +703,16 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu-po-kruh.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Park je u centru.",
-        "options": [
-          "Idę do sklepu.",
-          "Park jest w centrum.",
-          "Idę do banku."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Idę do sklepu.",
+        "accepted": [
+          "Idem u trgovinu.",
+          "Ja idem u trgovinu."
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-05/park-je-u-centru.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-05/idem-u-trgovinu.mp3"
       },
       {
         "id": "translate-2",
@@ -602,6 +748,7 @@ export const LESSON: GeneratedLesson = {
           "Trebam ići u ljekarnu.",
           "Ja trebam ići u ljekarnu."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-05/trebam-ici-u-ljekarnu.mp3"
       },
       {

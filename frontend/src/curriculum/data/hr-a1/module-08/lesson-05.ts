@@ -14,6 +14,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "test",
         "partOfSpeech": "noun",
         "recordId": "A1-0704",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2811"
+        },
+        "accepted": [
+          "test"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/test.mp3"
       },
       {
@@ -22,6 +30,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zadatak",
         "partOfSpeech": "noun",
         "recordId": "A1-0705",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:519"
+        },
+        "accepted": [
+          "zadatak"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/zadatak.mp3"
       },
       {
@@ -30,6 +46,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "točno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0706",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:točno"
+        },
+        "accepted": [
+          "točno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/tocno.mp3"
       },
       {
@@ -38,6 +62,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "netočno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0707",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4867"
+        },
+        "accepted": [
+          "netočno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/netocno.mp3"
       },
       {
@@ -46,6 +78,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odabrati",
         "partOfSpeech": "verb",
         "recordId": "A1-0708",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2019"
+        },
+        "accepted": [
+          "odabrati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/odabrati.mp3"
       },
       {
@@ -54,6 +94,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "napisati",
         "partOfSpeech": "verb",
         "recordId": "A1-0709",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:napisati"
+        },
+        "accepted": [
+          "napisati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/napisati.mp3"
       },
       {
@@ -62,6 +110,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poslušati",
         "partOfSpeech": "verb",
         "recordId": "A1-0710",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:poslušati"
+        },
+        "accepted": [
+          "poslušati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/poslusati.mp3"
       },
       {
@@ -70,6 +126,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "završiti",
         "partOfSpeech": "verb",
         "recordId": "A1-0711",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:završiti"
+        },
+        "accepted": [
+          "završiti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/zavrsiti.mp3"
       }
     ],
@@ -79,7 +143,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "intro",
         "type": "intro",
         "title": "Test A1",
-        "body": "Test obejmuje materiał całego poziomu A1. Nie ma tu zaliczenia ani oblania — na końcu zobaczysz, co masz dobrze opanowane, a co warto powtórzyć.",
+        "body": "Test obejmuje materiał całego poziomu A1. Zaliczasz go, zdobywając co najmniej 70% punktów i połowę w każdej części; na końcu zobaczysz też, co masz dobrze opanowane, a co warto powtórzyć.",
         "goalsTitle": "Sześć krótkich części",
         "goals": [
           "słownictwo",

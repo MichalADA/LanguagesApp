@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tjedan",
         "partOfSpeech": "noun",
         "recordId": "A1-0254",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:168"
+        },
+        "accepted": [
+          "tjedan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/tjedan.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "svaki dan",
         "partOfSpeech": "phrase",
         "recordId": "A1-0255",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2299"
+        },
+        "accepted": [
+          "svaki dan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/svaki-dan.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "obično",
         "partOfSpeech": "adverb",
         "recordId": "A1-0256",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:863"
+        },
+        "accepted": [
+          "obično"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/obicno.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ponekad",
         "partOfSpeech": "adverb",
         "recordId": "A1-0257",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:180"
+        },
+        "accepted": [
+          "ponekad"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/ponekad.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rano",
         "partOfSpeech": "adverb",
         "recordId": "A1-0258",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:186"
+        },
+        "accepted": [
+          "rano"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/rano.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kasno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0259",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:185"
+        },
+        "accepted": [
+          "kasno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/kasno.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "plan",
         "partOfSpeech": "noun",
         "recordId": "A1-0260",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:457"
+        },
+        "accepted": [
+          "plan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/plan.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slobodan",
         "partOfSpeech": "adjective",
         "recordId": "A1-0261",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:366"
+        },
+        "accepted": [
+          "slobodan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/slobodan.mp3"
       },
       {
@@ -77,6 +141,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rijetko",
         "partOfSpeech": "adverb",
         "recordId": "A1-0845",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:179"
+        },
+        "accepted": [
+          "rijetko"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/rijetko.mp3"
       },
       {
@@ -85,6 +157,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tjedno",
         "partOfSpeech": "phrase",
         "recordId": "A1-0846",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:jednom tjedno"
+        },
+        "accepted": [
+          "jednom tjedno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/jednom-tjedno.mp3"
       },
       {
@@ -93,6 +173,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tjedan",
         "partOfSpeech": "phrase",
         "recordId": "A1-0847",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:svaki tjedan"
+        },
+        "accepted": [
+          "svaki tjedan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/svaki-tjedan.mp3"
       },
       {
@@ -101,6 +189,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mjesec",
         "partOfSpeech": "noun",
         "recordId": "A1-0848",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:169"
+        },
+        "accepted": [
+          "mjesec"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/mjesec.mp3"
       },
       {
@@ -109,6 +205,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dan",
         "partOfSpeech": "phrase",
         "recordId": "A1-0849",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:976"
+        },
+        "accepted": [
+          "radni dan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/radni-dan.mp3"
       }
     ],
@@ -310,6 +414,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Prvo se tuširam, zatim doručkujem."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-03/prvo-se-tusiram-zatim-doruckujem.mp3"
       },
       {

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "paket",
         "partOfSpeech": "noun",
         "recordId": "A2-0747",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1582"
+        },
+        "accepted": [
+          "paket"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/paket.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pismo",
         "partOfSpeech": "noun",
         "recordId": "A2-0748",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:714"
+        },
+        "accepted": [
+          "pismo"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/pismo.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "marka",
         "partOfSpeech": "noun",
         "recordId": "A2-0749",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:marka"
+        },
+        "accepted": [
+          "marka"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/marka.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "omotnica",
         "partOfSpeech": "noun",
         "recordId": "A2-0750",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4155"
+        },
+        "accepted": [
+          "omotnica"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/omotnica.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poštarina",
         "partOfSpeech": "noun",
         "recordId": "A2-0751",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:poštarina"
+        },
+        "accepted": [
+          "poštarina"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/postarina.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "preporučeno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0752",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:preporučeno"
+        },
+        "accepted": [
+          "preporučeno"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/preporuceno.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pošiljka",
         "partOfSpeech": "noun",
         "recordId": "A2-0753",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pošiljka"
+        },
+        "accepted": [
+          "pošiljka"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/posiljka.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "primatelj",
         "partOfSpeech": "noun",
         "recordId": "A2-0754",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:primatelj"
+        },
+        "accepted": [
+          "primatelj"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/primatelj.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vaga",
         "partOfSpeech": "noun",
         "recordId": "A2-0755",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:vaga"
+        },
+        "accepted": [
+          "vaga"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/vaga.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pošiljatelj",
         "partOfSpeech": "noun",
         "recordId": "A2-0756",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pošiljatelj"
+        },
+        "accepted": [
+          "pošiljatelj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/posiljatelj.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sandučić",
         "partOfSpeech": "phrase",
         "recordId": "A2-0757",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:3623"
+        },
+        "accepted": [
+          "poštanski sandučić"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/postanski-sanducic.mp3"
       }
     ],
@@ -284,7 +364,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "vaga",
@@ -319,6 +399,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-07/posiljatelj.mp3"
       },
       {
@@ -434,6 +515,7 @@ export const LESSON: GeneratedLesson = {
           "Poljsku"
         ],
         "translation": "Chciałbym wysłać paczkę do Polski.",
+        "rule": "Paket u Poljsku — Dokąd wysyłasz: u + biernik (u Poljsku, u Hrvatsku, u Njemačku).",
         "answerAudioSrc": "/audio/hr/a2/module-07/htio-bih-poslati-paket-u-poljsku.mp3"
       },
       {
@@ -468,17 +550,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-07/saljem-paket-u-poljsku.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ile kosztuje przesyłka?",
-        "accepted": [
-          "Koliko košta poštarina?"
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-07/koliko-kosta-postarina.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -494,6 +565,17 @@ export const LESSON: GeneratedLesson = {
           "Paket teži dva kilograma."
         ],
         "answerAudioSrc": "/audio/hr/a2/module-07/paket-tezi-dva-kilograma.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Ile kosztuje przesyłka?",
+        "accepted": [
+          "Koliko košta poštarina?"
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-07/koliko-kosta-postarina.mp3"
       },
       {
         "id": "translate-2",
@@ -515,6 +597,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ovdje napišite pošiljatelja."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-07/ovdje-napisite-posiljatelja.mp3"
       },
       {

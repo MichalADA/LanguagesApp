@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sat",
         "partOfSpeech": "noun",
         "recordId": "A1-0218",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:173"
+        },
+        "accepted": [
+          "sat"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/sat.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "minuta",
         "partOfSpeech": "noun",
         "recordId": "A1-0219",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:174"
+        },
+        "accepted": [
+          "minuta"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/minuta.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pola",
         "partOfSpeech": "noun",
         "recordId": "A1-0220",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pola"
+        },
+        "accepted": [
+          "pola"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/pola.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jedanaest",
         "partOfSpeech": "numeral",
         "recordId": "A1-0823",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1224"
+        },
+        "accepted": [
+          "jedanaest"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/jedanaest.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "popodne",
         "partOfSpeech": "adverb",
         "recordId": "A1-0222",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1830"
+        },
+        "accepted": [
+          "popodne"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/popodne.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dvanaest",
         "partOfSpeech": "numeral",
         "recordId": "A1-0824",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1225"
+        },
+        "accepted": [
+          "dvanaest"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/dvanaest.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kada",
         "partOfSpeech": "adverb",
         "recordId": "A1-0224",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:92"
+        },
+        "accepted": [
+          "kada"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/kada.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "točno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0225",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:859"
+        },
+        "accepted": [
+          "točno"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/tocno.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sada",
         "partOfSpeech": "adverb",
         "recordId": "A1-0825",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:175"
+        },
+        "accepted": [
+          "sada"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/sada.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sastanak",
         "partOfSpeech": "noun",
         "recordId": "A1-0826",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:248"
+        },
+        "accepted": [
+          "sastanak"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/sastanak.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ponoć",
         "partOfSpeech": "noun",
         "recordId": "A1-0827",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:946"
+        },
+        "accepted": [
+          "ponoć"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/ponoc.mp3"
       }
     ],
@@ -279,7 +359,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "sada",
@@ -314,6 +394,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-03/sastanak.mp3"
       },
       {
@@ -443,6 +524,7 @@ export const LESSON: GeneratedLesson = {
           "u"
         ],
         "translation": "Spotkanie jest o czwartej.",
+        "rule": "Koliko je sati? — O godzinę pytasz Koliko je sati?",
         "answerAudioSrc": "/audio/hr/a1/module-03/sastanak-je-u-cetiri.mp3"
       },
       {
@@ -493,17 +575,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-03/sata.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Która jest godzina?",
-        "accepted": [
-          "Koliko je sati?"
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-03/koliko-je-sati.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -519,7 +590,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Vidimo se u pola osam."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-03/vidimo-se-u-pola-osam.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Która jest godzina?",
+        "accepted": [
+          "Koliko je sati?"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/koliko-je-sati.mp3"
       },
       {
         "id": "translate-2",
@@ -555,6 +638,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Kada je sastanak?"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-03/kada-je-sastanak.mp3"
       },
       {

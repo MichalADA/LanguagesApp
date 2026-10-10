@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mišljenje",
         "partOfSpeech": "noun",
         "recordId": "A2-0894",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:682"
+        },
+        "accepted": [
+          "mišljenje"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/misljenje.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slagati se",
         "partOfSpeech": "verb",
         "recordId": "A2-0895",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:680"
+        },
+        "accepted": [
+          "slagati se"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/slagati-se.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vjerovati",
         "partOfSpeech": "verb",
         "recordId": "A2-0896",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:677"
+        },
+        "accepted": [
+          "vjerovati"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/vjerovati.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mišljenje",
         "partOfSpeech": "phrase",
         "recordId": "A2-0897",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:683"
+        },
+        "accepted": [
+          "po mom mišljenju"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/po-mom-misljenju.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "važno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0898",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:važno"
+        },
+        "accepted": [
+          "važno"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/vazno.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "istina",
         "partOfSpeech": "noun",
         "recordId": "A2-0899",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:307"
+        },
+        "accepted": [
+          "istina"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/istina.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zapravo",
         "partOfSpeech": "adverb",
         "recordId": "A2-0900",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zapravo"
+        },
+        "accepted": [
+          "zapravo"
+        ],
         "audioSrc": "/audio/hr/a2/module-08/zapravo.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pravo",
         "partOfSpeech": "phrase",
         "recordId": "A2-0901",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:u pravu si"
+        },
+        "accepted": [
+          "U pravu si."
+        ],
         "audioSrc": "/audio/hr/a2/module-08/u-pravu-si.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "svejedno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0902",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:svejedno"
+        },
+        "accepted": [
+          "svejedno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/svejedno.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nikako",
         "partOfSpeech": "adverb",
         "recordId": "A2-0903",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nikako"
+        },
+        "accepted": [
+          "nikako"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/nikako.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pravo",
         "partOfSpeech": "phrase",
         "recordId": "A2-0904",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:imaš pravo"
+        },
+        "accepted": [
+          "Imaš pravo."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/imas-pravo.mp3"
       }
     ],
@@ -313,7 +393,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "svejedno",
@@ -348,6 +428,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-08/nikako.mp3"
       },
       {
@@ -469,6 +550,7 @@ export const LESSON: GeneratedLesson = {
           "Slažem"
         ],
         "translation": "Zgadzam się z tobą.",
+        "rule": "Mislim da… — Opinia: Mislim da + zdanie (Mislim da je hrvatski lijep).",
         "answerAudioSrc": "/audio/hr/a2/module-08/slazem-se-s-tobom.mp3"
       },
       {
@@ -503,17 +585,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-08/slazem-se-s-tobom.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Myślę, że chorwacki to piękny język.",
-        "accepted": [
-          "Mislim da je hrvatski lijep jezik."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-08/mislim-da-je-hrvatski-lijep-jezik.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -528,7 +599,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Vjerujem da ćeš uspjeti."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-08/vjerujem-da-ces-uspjeti.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Myślę, że chorwacki to piękny język.",
+        "accepted": [
+          "Mislim da je hrvatski lijep jezik."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-08/mislim-da-je-hrvatski-lijep-jezik.mp3"
       },
       {
         "id": "translate-2",
@@ -550,6 +633,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Meni je svejedno."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-08/meni-je-svejedno.mp3"
       },
       {

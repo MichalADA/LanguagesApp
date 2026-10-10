@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ugovor",
         "partOfSpeech": "noun",
         "recordId": "A2-0484",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:469"
+        },
+        "accepted": [
+          "ugovor"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/ugovor.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "karijera",
         "partOfSpeech": "noun",
         "recordId": "A2-0485",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:karijera"
+        },
+        "accepted": [
+          "karijera"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/karijera.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "cilj",
         "partOfSpeech": "noun",
         "recordId": "A2-0486",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:702"
+        },
+        "accepted": [
+          "cilj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/cilj.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uspjeh",
         "partOfSpeech": "noun",
         "recordId": "A2-0487",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:663"
+        },
+        "accepted": [
+          "uspjeh"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/uspjeh.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ispit",
         "partOfSpeech": "noun",
         "recordId": "A2-0488",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:514"
+        },
+        "accepted": [
+          "ispit"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/ispit.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "položiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0489",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:položiti"
+        },
+        "accepted": [
+          "položiti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/poloziti.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "certifikat",
         "partOfSpeech": "noun",
         "recordId": "A2-0490",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2598"
+        },
+        "accepted": [
+          "certifikat"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/certifikat.mp3"
       }
     ],
@@ -210,6 +266,7 @@ export const LESSON: GeneratedLesson = {
           "Zaposlen sam u velikoj tvrtki.",
           "U velikoj tvrtki sam zaposlen."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-04/zaposlena-sam-u-velikoj-tvrtki.mp3"
       },
       {

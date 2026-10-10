@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kupovina",
         "partOfSpeech": "noun",
         "recordId": "A2-0611",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1543"
+        },
+        "accepted": [
+          "kupovina"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/kupovina.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "centar",
         "partOfSpeech": "phrase",
         "recordId": "A2-0612",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2744"
+        },
+        "accepted": [
+          "trgovački centar"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/trgovacki-centar.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kabina",
         "partOfSpeech": "phrase",
         "recordId": "A2-0613",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kabina za presvlačenje"
+        },
+        "accepted": [
+          "kabina za presvlačenje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/kabina-za-presvlacenje.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dostava",
         "partOfSpeech": "noun",
         "recordId": "A2-0614",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1583"
+        },
+        "accepted": [
+          "dostava"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/dostava.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "besplatan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0615",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:besplatan"
+        },
+        "accepted": [
+          "besplatan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/besplatan.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "preskup",
         "partOfSpeech": "adjective",
         "recordId": "A2-0616",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:preskup"
+        },
+        "accepted": [
+          "preskup"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/preskup.mp3"
       }
     ],
@@ -192,6 +240,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ova haljina je prekrasna."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-05/ova-haljina-je-prekrasna.mp3"
       },
       {

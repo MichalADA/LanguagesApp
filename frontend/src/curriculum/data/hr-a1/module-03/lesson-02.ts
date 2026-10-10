@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "učiti",
         "partOfSpeech": "verb",
         "recordId": "A1-0200",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:43"
+        },
+        "accepted": [
+          "učiti"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/uciti.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "studirati",
         "partOfSpeech": "verb",
         "recordId": "A1-0201",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:513"
+        },
+        "accepted": [
+          "studirati"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/studirati.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ured",
         "partOfSpeech": "noun",
         "recordId": "A1-0202",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:244"
+        },
+        "accepted": [
+          "ured"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/ured.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "škola",
         "partOfSpeech": "noun",
         "recordId": "A1-0203",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:298"
+        },
+        "accepted": [
+          "škola"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/skola.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "fakultet",
         "partOfSpeech": "noun",
         "recordId": "A1-0204",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4181"
+        },
+        "accepted": [
+          "fakultet"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/fakultet.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kod kuće",
         "partOfSpeech": "phrase",
         "recordId": "A1-0205",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kod kuće"
+        },
+        "accepted": [
+          "kod kuće"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/kod-kuce.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "računalo",
         "partOfSpeech": "noun",
         "recordId": "A1-0206",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:292"
+        },
+        "accepted": [
+          "računalo"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/racunalo.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hrvatski",
         "partOfSpeech": "adjective",
         "recordId": "A1-0207",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:329"
+        },
+        "accepted": [
+          "hrvatski"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/hrvatski.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jezik",
         "partOfSpeech": "noun",
         "recordId": "A1-0802",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:300"
+        },
+        "accepted": [
+          "jezik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/jezik.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "engleski",
         "partOfSpeech": "adjective",
         "recordId": "A1-0803",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2615"
+        },
+        "accepted": [
+          "engleski"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/engleski.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poljski",
         "partOfSpeech": "adjective",
         "recordId": "A1-0804",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:328"
+        },
+        "accepted": [
+          "poljski"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/poljski.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "govoriti",
         "partOfSpeech": "verb",
         "recordId": "A1-0805",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:10"
+        },
+        "accepted": [
+          "govoriti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/govoriti.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "znati",
         "partOfSpeech": "verb",
         "recordId": "A1-0806",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:8"
+        },
+        "accepted": [
+          "znati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/znati.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tečaj",
         "partOfSpeech": "noun",
         "recordId": "A1-0807",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:520"
+        },
+        "accepted": [
+          "tečaj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/tecaj.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lekcija",
         "partOfSpeech": "noun",
         "recordId": "A1-0808",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:518"
+        },
+        "accepted": [
+          "lekcija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/lekcija.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "učenik",
         "partOfSpeech": "noun",
         "recordId": "A1-0809",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2603"
+        },
+        "accepted": [
+          "učenik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/ucenik.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "malo",
         "partOfSpeech": "adverb",
         "recordId": "A1-0811",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:191"
+        },
+        "accepted": [
+          "malo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/malo.mp3"
       }
     ],
@@ -356,7 +484,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "jezik",
@@ -427,6 +555,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-03/govoriti.mp3"
       },
       {
@@ -493,20 +622,23 @@ export const LESSON: GeneratedLesson = {
           "uredu"
         ],
         "translation": "Pracuję w biurze.",
+        "rule": "Gdje radiš? — Na pytanie „gdzie?” odpowiadasz przez u i zmienioną końcówkę — tak jak po polsku: ured → u uredu (w biurze), Zagreb → u Zagrebu.",
         "answerAudioSrc": "/audio/hr/a1/module-03/radim-u-uredu.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Dziś nie pracuję.",
-        "accepted": [
-          "Danas ne radim.",
-          "Ja danas ne radim.",
-          "Ne radim danas."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Radim na računalu.",
+        "options": [
+          "Pracuję na komputerze.",
+          "Pracuję z domu.",
+          "Pracuję w biurze."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-03/danas-ne-radim.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/radim-na-racunalu.mp3"
       },
       {
         "id": "order",
@@ -527,19 +659,17 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-03/ucim-hrvatski-svaki-dan.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Radim na računalu.",
-        "options": [
-          "Pracuję na komputerze.",
-          "Pracuję z domu.",
-          "Pracuję w biurze."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Dziś nie pracuję.",
+        "accepted": [
+          "Danas ne radim.",
+          "Ja danas ne radim.",
+          "Ne radim danas."
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-03/radim-na-racunalu.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-03/danas-ne-radim.mp3"
       },
       {
         "id": "translate-more",
@@ -553,6 +683,7 @@ export const LESSON: GeneratedLesson = {
           "Ja govorim malo hrvatski.",
           "Ja malo govorim hrvatski."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-03/govorim-malo-hrvatski.mp3"
       },
       {

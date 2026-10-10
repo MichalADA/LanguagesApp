@@ -31,6 +31,8 @@ export interface ReviewAnswer {
   usedHint: boolean;
   responseTimeMs: number;
   attemptsBeforeCorrect: number;
+  /** Poprawnie poza znakami diakrytycznymi — FSRS: „trudne”. */
+  nearMiss?: boolean;
 }
 export const fetchDue = (request: AuthenticatedRequest, course: string) =>
   request<ReviewItem[]>(

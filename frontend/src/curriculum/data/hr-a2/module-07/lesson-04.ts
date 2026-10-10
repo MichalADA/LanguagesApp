@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šalter",
         "partOfSpeech": "noun",
         "recordId": "A2-0826",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:šalter"
+        },
+        "accepted": [
+          "šalter"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/salter.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dokument",
         "partOfSpeech": "noun",
         "recordId": "A2-0827",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:434"
+        },
+        "accepted": [
+          "dokument"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/dokument.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zahtjev",
         "partOfSpeech": "noun",
         "recordId": "A2-0828",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:719"
+        },
+        "accepted": [
+          "zahtjev"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/zahtjev.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "potpisati",
         "partOfSpeech": "verb",
         "recordId": "A2-0829",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:716"
+        },
+        "accepted": [
+          "potpisati"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/potpisati.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "predati",
         "partOfSpeech": "verb",
         "recordId": "A2-0830",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:predati"
+        },
+        "accepted": [
+          "predati"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/predati.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "važeći",
         "partOfSpeech": "adjective",
         "recordId": "A2-0831",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1744"
+        },
+        "accepted": [
+          "važeći"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/vazeci.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "boravak",
         "partOfSpeech": "noun",
         "recordId": "A2-0832",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1747"
+        },
+        "accepted": [
+          "boravak"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/boravak.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pečat",
         "partOfSpeech": "noun",
         "recordId": "A2-0833",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1486"
+        },
+        "accepted": [
+          "pečat"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/pecat.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "red",
         "partOfSpeech": "noun",
         "recordId": "A2-0834",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:421"
+        },
+        "accepted": [
+          "red"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/red.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "službenik",
         "partOfSpeech": "noun",
         "recordId": "A2-0835",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2978"
+        },
+        "accepted": [
+          "službenik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/sluzbenik.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vrijeme",
         "partOfSpeech": "phrase",
         "recordId": "A2-0836",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:975"
+        },
+        "accepted": [
+          "radno vrijeme"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/radno-vrijeme.mp3"
       }
     ],
@@ -313,7 +393,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "red",
@@ -348,6 +428,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-07/sluzbenik.mp3"
       },
       {
@@ -446,18 +527,39 @@ export const LESSON: GeneratedLesson = {
           "predaje"
         ],
         "translation": "Gdzie składa się wniosek?",
+        "rule": "Gdje se predaje zahtjev? — W urzędzie często słyszysz formę bezosobową z se: Gdje se predaje zahtjev?",
         "answerAudioSrc": "/audio/hr/a2/module-07/gdje-se-predaje-zahtjev.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Musi Pan podpisać ten dokument.",
-        "accepted": [
-          "Morate potpisati ovaj dokument."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Na dokumentu nedostaje pečat.",
+        "options": [
+          "Gdzie składa się wniosek?",
+          "Na dokumencie brakuje pieczątki.",
+          "Musi Pan podpisać ten dokument."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-07/morate-potpisati-ovaj-dokument.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-07/na-dokumentu-nedostaje-pecat.mp3"
+      },
+      {
+        "id": "choice-1",
+        "stage": "practice",
+        "type": "choice",
+        "instruction": "Wybierz poprawne pytanie.",
+        "prompt": "Gdzie się płaci?",
+        "options": [
+          "Gdje plaća se?",
+          "Gdje se plaća?",
+          "Gdje se plaćam?"
+        ],
+        "correctIndex": 1,
+        "explanation": "se stoi na drugim miejscu: Gdje se plaća?",
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a2/module-07/gdje-se-placa.mp3"
       },
       {
         "id": "order",
@@ -479,35 +581,15 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-07/cekam-u-redu-vec-sat-vremena.mp3"
       },
       {
-        "id": "choice-1",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Wybierz poprawne pytanie.",
-        "prompt": "Gdzie się płaci?",
-        "options": [
-          "Gdje plaća se?",
-          "Gdje se plaća?",
-          "Gdje se plaćam?"
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Musi Pan podpisać ten dokument.",
+        "accepted": [
+          "Morate potpisati ovaj dokument."
         ],
-        "correctIndex": 1,
-        "explanation": "se stoi na drugim miejscu: Gdje se plaća?",
-        "targetText": "options",
-        "answerAudioSrc": "/audio/hr/a2/module-07/gdje-se-placa.mp3"
-      },
-      {
-        "id": "comprehend",
-        "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Na dokumentu nedostaje pečat.",
-        "options": [
-          "Gdzie składa się wniosek?",
-          "Na dokumencie brakuje pieczątki.",
-          "Musi Pan podpisać ten dokument."
-        ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-07/na-dokumentu-nedostaje-pecat.mp3"
+        "answerAudioSrc": "/audio/hr/a2/module-07/morate-potpisati-ovaj-dokument.mp3"
       },
       {
         "id": "translate-2",
@@ -530,6 +612,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ovdje je dug red."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-07/ovdje-je-dug-red.mp3"
       },
       {

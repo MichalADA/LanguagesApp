@@ -12,11 +12,17 @@ import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useGrammar } from "@/grammar/GrammarProvider";
 import { useI18n } from "@/i18n";
 import { loadSentences } from "@/sentences/loader";
+import { AnswerInput } from "@/components/AnswerInput";
+import { AudioButton } from "@/components/AudioButton";
+import { loadCurriculumReviewItems } from "@/curriculum/reviewItems";
+import { pendingLessonVocabulary, syncLessonVocabulary } from "@/curriculum/srs";
+import { fetchLessonContent } from "@/curriculum/repository";
 import { fetchDue, submitReview, type ReviewAnswer } from "./api";
 import {
   createReviewTasks,
-  isReviewCorrect,
+  matchedExpected,
   repeatAfterError,
+  reviewVerdict,
   type ReviewTask,
 } from "./tasks";
 
@@ -36,7 +42,7 @@ function Session() {
   const [phase, setPhase] = useState<
     "loading" | "play" | "done" | "empty" | "error"
   >("loading");
-  const [feedback, setFeedback] = useState<boolean | null>(null),
+  const [feedback, setFeedback] = useState<"hit" | "near" | "miss" | null>(null),
     [error, setError] = useState(false),
     [retry, setRetry] = useState(0),
     [correct, setCorrect] = useState(0),
@@ -52,6 +58,21 @@ function Session() {
     [finishError, setFinishError] = useState(false);
   const sessionRef = useRef<string | null>(null);
   const task = queue[index];
+  // Lekcje ukończone w trybie gościa na tym urządzeniu: ich słowa można świadomie dodać do konta.
+  const [guestLessons, setGuestLessons] = useState(() => pendingLessonVocabulary("guest", course.id).length);
+  const [importing, setImporting] = useState(false),
+    [importError, setImportError] = useState(false);
+  async function importGuest() {
+    setImporting(true);
+    setImportError(false);
+    const result = await syncLessonVocabulary(apiRequest, "guest", course.id, (lessonId) =>
+      fetchLessonContent(lessonId).then((content) => content?.vocabulary ?? null),
+    );
+    setImporting(false);
+    setGuestLessons(pendingLessonVocabulary("guest", course.id).length);
+    if (result.pending) setImportError(true);
+    if (result.synced) setRetry((n) => n + 1);
+  }
   useEffect(() => {
     if (status !== "authenticated" || vocabLoading || grammarLoading) return;
     if (vocabError || grammarError) {
@@ -63,10 +84,11 @@ function Session() {
     Promise.all([
       fetchDue(apiRequest, course.id),
       course.id === "pl-hr" ? loadSentences() : Promise.resolve([]),
+      loadCurriculumReviewItems(course.id),
     ])
-      .then(async ([items, sentences]) => {
+      .then(async ([items, sentences, phrases]) => {
         if (!alive) return;
-        const tasks = createReviewTasks(items, entries, verbs, sentences);
+        const tasks = createReviewTasks(items, entries, verbs, sentences, phrases);
         setUnavailable(items.length - tasks.length);
         if (tasks.length) {
           const session = await startLearningSession(apiRequest, course.id);
@@ -136,7 +158,8 @@ function Session() {
     busy.current = true;
     setSaving(true);
     setError(false);
-    const hit = isReviewCorrect(task, value);
+    const verdict = reviewVerdict(task, value);
+    const hit = verdict !== "miss";
     pending.current ??= {
       sessionId: sessionRef.current ?? undefined,
       eventId: createEventId(),
@@ -150,11 +173,12 @@ function Session() {
       usedHint: false,
       responseTimeMs: Math.min(86400000, Date.now() - started.current),
       attemptsBeforeCorrect: failures.current.get(task.item.itemId) ?? 0,
+      ...(verdict === "near" ? { nearMiss: true } : {}),
     };
     try {
       inFlight.current = submitReview(apiRequest, pending.current);
       await inFlight.current;
-      setFeedback(pending.current.correct);
+      setFeedback(pending.current.nearMiss ? "near" : pending.current.correct ? "hit" : "miss");
       if (pending.current.correct) setCorrect((n) => n + 1);
       else {
         setWrong((n) => n + 1);
@@ -203,6 +227,7 @@ function Session() {
       <div className="page">
         <h1>{t("reviews.title")}</h1>
         <p>{t("reviews.login")}</p>
+        {guestLessons > 0 && <p className="muted">{t("reviews.guestWaiting", { n: guestLessons })}</p>}
         <Link to="/login" className="btn">
           {t("reviews.loginAction")}
         </Link>
@@ -215,6 +240,15 @@ function Session() {
         <h1>{t("reviews.title")}</h1>
         <p>{t("reviews.description")}</p>
       </header>
+      {guestLessons > 0 && (
+        <section className="panel panel-pad stack review-import">
+          <p>{t("reviews.guestImport", { n: guestLessons })}</p>
+          <button className="btn" disabled={importing} onClick={() => void importGuest()}>
+            {t("reviews.guestImportAction")}
+          </button>
+          {importError && <p role="alert">{t("reviews.guestImportError")}</p>}
+        </section>
+      )}
       {phase === "loading" && <p role="status">{t("reviews.loading")}</p>}
       {phase === "error" && (
         <section role="alert">
@@ -303,25 +337,21 @@ function Session() {
                 void submit();
               }}
             >
-              <label>
-                {t("reviews.answer")}
-                <input
-                  className="login-input"
-                  autoComplete="off"
-                  maxLength={500}
-                  value={answer}
-                  disabled={saving || feedback !== null || error}
-                  onChange={(e) => setAnswer(e.target.value)}
-                />
-              </label>
-              <button
-                className="btn"
-                disabled={
-                  saving || feedback !== null || !answer.trim() || error
-                }
-              >
-                {t("reviews.check")}
-              </button>
+              <span className="muted">{t(task.direction === "TARGET_TO_SOURCE" ? "reviews.answerSource" : "reviews.answerTarget")}</span>
+              <AnswerInput
+                value={answer}
+                onChange={(value) => setAnswer(value.slice(0, 500))}
+                onSubmit={() => void submit()}
+                placeholder={t("reviews.answer")}
+                characters={task.direction === "TARGET_TO_SOURCE" ? [] : course.specialCharacters}
+                focusKey={index}
+                disabled={saving || feedback !== null || error}
+              />
+              {feedback === null && (
+                <button className="btn" disabled={saving || !answer.trim() || error}>
+                  {t("reviews.check")}
+                </button>
+              )}
             </form>
           )}
           {error && (
@@ -337,13 +367,20 @@ function Session() {
             </div>
           )}
           {feedback !== null && (
-            <div className="stack" role="status">
+            <div className={`stack review-feedback ${feedback}`} role="status">
               <strong>
-                {t(feedback ? "reviews.correct" : "reviews.incorrect")}
+                {t(feedback === "hit" ? "reviews.correct" : feedback === "near" ? "reviews.near" : "reviews.incorrect")}
               </strong>
               <p>
-                {t("reviews.expected")}: {task.expected[0]}
+                {t("reviews.expected")}:{" "}
+                <span className="target">{feedback === "near" ? matchedExpected(task, answer) : task.expected[0]}</span>
+                {task.direction === "SOURCE_TO_TARGET" && <AudioButton src={task.audioSrc} text={task.expected[0]} size="sm" />}
               </p>
+              {task.direction === "TARGET_TO_SOURCE" && task.audioSrc && (
+                <p>
+                  <span className="target">{task.prompt}</span> <AudioButton src={task.audioSrc} text={task.prompt} size="sm" />
+                </p>
+              )}
               <button className="btn" onClick={next}>
                 {t("reviews.next")}
               </button>

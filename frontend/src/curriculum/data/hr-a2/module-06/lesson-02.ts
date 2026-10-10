@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "najam",
         "partOfSpeech": "noun",
         "recordId": "A2-0653",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:najam"
+        },
+        "accepted": [
+          "najam"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/najam.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stanarina",
         "partOfSpeech": "noun",
         "recordId": "A2-0654",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stanarina"
+        },
+        "accepted": [
+          "stanarina"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/stanarina.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "režije",
         "partOfSpeech": "noun",
         "recordId": "A2-0655",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1643"
+        },
+        "accepted": [
+          "režije"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/rezije.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "polog",
         "partOfSpeech": "noun",
         "recordId": "A2-0656",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1647"
+        },
+        "accepted": [
+          "polog"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/polog.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stanodavac",
         "partOfSpeech": "noun",
         "recordId": "A2-0657",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stanodavac"
+        },
+        "accepted": [
+          "stanodavac"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/stanodavac.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uključen",
         "partOfSpeech": "adjective",
         "recordId": "A2-0658",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1645"
+        },
+        "accepted": [
+          "uključen"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/ukljucen.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "useliti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0659",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4706"
+        },
+        "accepted": [
+          "useliti se"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/useliti-se.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kvadrat",
         "partOfSpeech": "noun",
         "recordId": "A2-0660",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kvadrat"
+        },
+        "accepted": [
+          "kvadrat"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/kvadrat.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "agencija",
         "partOfSpeech": "noun",
         "recordId": "A2-0661",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:agencija"
+        },
+        "accepted": [
+          "agencija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/agencija.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "red",
         "partOfSpeech": "phrase",
         "recordId": "A2-0662",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kućni red"
+        },
+        "accepted": [
+          "kućni red"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/kucni-red.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "internet",
         "partOfSpeech": "noun",
         "recordId": "A2-0663",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:473"
+        },
+        "accepted": [
+          "internet"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/internet.mp3"
       }
     ],
@@ -301,7 +381,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "agencija",
@@ -336,6 +416,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 0,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a2/module-06/agencija.mp3"
       },
       {
@@ -451,6 +532,7 @@ export const LESSON: GeneratedLesson = {
           "uključene"
         ],
         "translation": "Czy opłaty są wliczone?",
+        "rule": "Koliko iznosi stanarina? — O mieszkanie pytasz krótko: Koliko iznosi stanarina?",
         "answerAudioSrc": "/audio/hr/a2/module-06/jesu-li-rezije-ukljucene.mp3"
       },
       {
@@ -485,18 +567,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-06/jesu-li-rezije-ukljucene.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ile wynosi czynsz?",
-        "accepted": [
-          "Koliko iznosi stanarina?",
-          "Kolika je stanarina?"
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-06/koliko-iznosi-stanarina.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -513,7 +583,20 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Možete se useliti od prvog lipnja."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-06/mozete-se-useliti-od-prvog-lipnja.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Ile wynosi czynsz?",
+        "accepted": [
+          "Koliko iznosi stanarina?",
+          "Kolika je stanarina?"
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-06/koliko-iznosi-stanarina.mp3"
       },
       {
         "id": "translate-2",
@@ -537,6 +620,7 @@ export const LESSON: GeneratedLesson = {
           "Tražim stan preko agencije.",
           "Ja tražim stan preko agencije."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a2/module-06/trazim-stan-preko-agencije.mp3"
       },
       {

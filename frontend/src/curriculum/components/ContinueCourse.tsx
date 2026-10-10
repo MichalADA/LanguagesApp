@@ -6,9 +6,9 @@ import { coursePaths } from "./format";
 
 /**
  * „Kontynuuj kurs” — jedna linia ścieżki: gdzie jestem, co dalej, ile to potrwa.
- * `variant="band"` na pulpicie (nie konkuruje z treningiem), `"rail"` w bocznej kolumnie kursu.
+ * `variant="band"` na pulpicie (nie konkuruje z planem dnia), `"rail"` w bocznej kolumnie kursu.
  */
-export function ContinueCourse({ view, variant = "band" }: { view: LevelView; variant?: "band" | "rail" }) {
+export function ContinueCourse({ view, variant = "band", primary = true }: { view: LevelView; variant?: "band" | "rail"; primary?: boolean }) {
   const { t } = useI18n();
   const current = view.current;
 
@@ -43,7 +43,8 @@ export function ContinueCourse({ view, variant = "band" }: { view: LevelView; va
           {t("curriculum.lessonsCount", { done: view.completedCount, total: view.total })}
         </span>
       </div>
-      <Link className="btn" to={coursePaths.lesson(lesson.id)}>
+      {/* Na pulpicie główną akcją jest plan dnia — tu przycisk drugorzędny, żeby nie było dwóch głównych. */}
+      <Link className={primary ? "btn" : "btn-ghost"} to={coursePaths.lesson(lesson.id)}>
         {t("curriculum.continue")}
         <Icon name="arrowRight" size={16} />
       </Link>

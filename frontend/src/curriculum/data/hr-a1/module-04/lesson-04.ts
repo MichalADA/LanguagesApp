@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "restoran",
         "partOfSpeech": "noun",
         "recordId": "A1-0326",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:235"
+        },
+        "accepted": [
+          "restoran"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/restoran.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jelovnik",
         "partOfSpeech": "noun",
         "recordId": "A1-0327",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:628"
+        },
+        "accepted": [
+          "jelovnik"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/jelovnik.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "naručiti",
         "partOfSpeech": "verb",
         "recordId": "A1-0328",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:504"
+        },
+        "accepted": [
+          "naručiti"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/naruciti.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jelo",
         "partOfSpeech": "phrase",
         "recordId": "A1-0895",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:glavno jelo"
+        },
+        "accepted": [
+          "glavno jelo"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/glavno-jelo.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "salata",
         "partOfSpeech": "noun",
         "recordId": "A1-0330",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1112"
+        },
+        "accepted": [
+          "salata"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/salata.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "riža",
         "partOfSpeech": "noun",
         "recordId": "A1-0331",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:611"
+        },
+        "accepted": [
+          "riža"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/riza.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "desert",
         "partOfSpeech": "noun",
         "recordId": "A1-0332",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:631"
+        },
+        "accepted": [
+          "desert"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/desert.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "preporučiti",
         "partOfSpeech": "verb",
         "recordId": "A1-0897",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:preporučiti"
+        },
+        "accepted": [
+          "preporučiti"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/preporuciti.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "predjelo",
         "partOfSpeech": "noun",
         "recordId": "A1-0894",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:630"
+        },
+        "accepted": [
+          "predjelo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/predjelo.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vegetarijanski",
         "partOfSpeech": "adjective",
         "recordId": "A1-0898",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1127"
+        },
+        "accepted": [
+          "vegetarijanski"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/vegetarijanski.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vilica",
         "partOfSpeech": "noun",
         "recordId": "A1-0900",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:624"
+        },
+        "accepted": [
+          "vilica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/vilica.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pomfrit",
         "partOfSpeech": "noun",
         "recordId": "A1-0903",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pomfrit"
+        },
+        "accepted": [
+          "pomfrit"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/pomfrit.mp3"
       }
     ],
@@ -316,7 +404,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "predjelo",
@@ -357,6 +445,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-04/pomfrit.mp3"
       },
       {
@@ -429,6 +518,7 @@ export const LESSON: GeneratedLesson = {
           "juhu"
         ],
         "translation": "Dla mnie zupa, proszę.",
+        "rule": "Htio bih naručiti… — Zamawiając danie łączysz znaną formułę z czasownikiem: Htio bih naručiti ribu — chciałbym zamówić rybę.",
         "answerAudioSrc": "/audio/hr/a1/module-04/za-mene-juhu-molim.mp3"
       },
       {
@@ -447,17 +537,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-04/je-li-ovo-ljuto.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Czy mają Państwo menu?",
-        "accepted": [
-          "Imate li jelovnik?"
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-04/imate-li-jelovnik.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -472,7 +551,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Možemo li dobiti račun?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-04/mozemo-li-dobiti-racun.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Czy mają Państwo menu?",
+        "accepted": [
+          "Imate li jelovnik?"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-04/imate-li-jelovnik.mp3"
       },
       {
         "id": "translate-2",
@@ -495,6 +586,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Imate li vegetarijansko jelo?"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-04/imate-li-vegetarijansko-jelo.mp3"
       },
       {

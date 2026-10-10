@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "putovati",
         "partOfSpeech": "verb",
         "recordId": "A1-0542",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:348"
+        },
+        "accepted": [
+          "putovati"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/putovati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "avion",
         "partOfSpeech": "noun",
         "recordId": "A1-0543",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:259"
+        },
+        "accepted": [
+          "avion"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/avion.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vlak",
         "partOfSpeech": "noun",
         "recordId": "A1-0544",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:257"
+        },
+        "accepted": [
+          "vlak"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/vlak.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "autobus",
         "partOfSpeech": "noun",
         "recordId": "A1-0545",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:258"
+        },
+        "accepted": [
+          "autobus"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/autobus.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "trajekt",
         "partOfSpeech": "noun",
         "recordId": "A1-1037",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:489"
+        },
+        "accepted": [
+          "trajekt"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/trajekt.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "more",
         "partOfSpeech": "noun",
         "recordId": "A1-0547",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:265"
+        },
+        "accepted": [
+          "more"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/more.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "otok",
         "partOfSpeech": "noun",
         "recordId": "A1-0548",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:488"
+        },
+        "accepted": [
+          "otok"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/otok.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "putovanje",
         "partOfSpeech": "noun",
         "recordId": "A1-0549",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:putovanje"
+        },
+        "accepted": [
+          "putovanje"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/putovanje.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "taksi",
         "partOfSpeech": "noun",
         "recordId": "A1-1038",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:566"
+        },
+        "accepted": [
+          "taksi"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/taksi.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tramvaj",
         "partOfSpeech": "noun",
         "recordId": "A1-1039",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4051"
+        },
+        "accepted": [
+          "tramvaj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/tramvaj.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "posjetiti",
         "partOfSpeech": "verb",
         "recordId": "A1-1040",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:653"
+        },
+        "accepted": [
+          "posjetiti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/posjetiti.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "voziti",
         "partOfSpeech": "verb",
         "recordId": "A1-1041",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:29"
+        },
+        "accepted": [
+          "voziti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/voziti.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "planina",
         "partOfSpeech": "noun",
         "recordId": "A1-1042",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2702"
+        },
+        "accepted": [
+          "planina"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/planina.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "obala",
         "partOfSpeech": "noun",
         "recordId": "A1-1043",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:952"
+        },
+        "accepted": [
+          "obala"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/obala.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zemlja",
         "partOfSpeech": "noun",
         "recordId": "A1-1044",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:325"
+        },
+        "accepted": [
+          "zemlja"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/zemlja.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "inozemstvo",
         "partOfSpeech": "noun",
         "recordId": "A1-1045",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1473"
+        },
+        "accepted": [
+          "inozemstvo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/inozemstvo.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odmor",
         "partOfSpeech": "phrase",
         "recordId": "A1-1046",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:479"
+        },
+        "accepted": [
+          "godišnji odmor"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/godisnji-odmor.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izaći",
         "partOfSpeech": "verb",
         "recordId": "A1-1204",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:izaći"
+        },
+        "accepted": [
+          "izaći"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/izaci.mp3"
       },
       {
@@ -157,6 +293,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "centar",
         "partOfSpeech": "phrase",
         "recordId": "A1-1205",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:do centra molim"
+        },
+        "accepted": [
+          "Do centra, molim."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/do-centra-molim.mp3"
       }
     ],
@@ -365,7 +509,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "taksi",
@@ -448,6 +592,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-07/izaci.mp3"
       },
       {
@@ -519,6 +664,7 @@ export const LESSON: GeneratedLesson = {
           "avionom"
         ],
         "translation": "Podróżuję samolotem.",
+        "rule": "Avionom, vlakom, autom — Czym podróżujesz?",
         "answerAudioSrc": "/audio/hr/a1/module-07/putujem-avionom.mp3"
       },
       {
@@ -537,18 +683,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-07/putovanje-je-dugo.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Lubię podróżować.",
-        "accepted": [
-          "Volim putovati.",
-          "Ja volim putovati."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-07/volim-putovati.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -565,6 +699,18 @@ export const LESSON: GeneratedLesson = {
           "Ja idem vlakom u Zagreb."
         ],
         "answerAudioSrc": "/audio/hr/a1/module-07/idem-vlakom-u-zagreb.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Lubię podróżować.",
+        "accepted": [
+          "Volim putovati.",
+          "Ja volim putovati."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/volim-putovati.mp3"
       },
       {
         "id": "translate-2",
@@ -600,6 +746,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Gdje trebam izaći?"
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-07/gdje-trebam-izaci.mp3"
       },
       {

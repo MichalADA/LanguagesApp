@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ime",
         "partOfSpeech": "noun",
         "recordId": "A1-0038",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:322"
+        },
+        "accepted": [
+          "ime"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/ime.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zvati se",
         "partOfSpeech": "verb",
         "recordId": "A1-0039",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4634"
+        },
+        "accepted": [
+          "zvati se"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/zvati-se.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ja",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0040",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:79"
+        },
+        "accepted": [
+          "ja"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/ja.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ti",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0041",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:80"
+        },
+        "accepted": [
+          "ti"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/ti.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "on",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0042",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:81"
+        },
+        "accepted": [
+          "on"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/on.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ona",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0043",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:82"
+        },
+        "accepted": [
+          "ona"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/ona.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tko",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0044",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:86"
+        },
+        "accepted": [
+          "tko"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/tko.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "drago mi je",
         "partOfSpeech": "phrase",
         "recordId": "A1-0045",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1407"
+        },
+        "accepted": [
+          "drago mi je"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/drago-mi-je.mp3"
       }
     ],
@@ -292,6 +348,7 @@ export const LESSON: GeneratedLesson = {
           "zove"
         ],
         "translation": "Ona ma na imię Ana.",
+        "rule": "Kako se zoveš? — O imię pytasz czasownikiem zvati se — „nazywać się”.",
         "answerAudioSrc": "/audio/hr/a1/module-01/ona-se-zove-ana.mp3"
       },
       {
@@ -310,18 +367,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-01/tko-je-to.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Jak masz na imię?",
-        "accepted": [
-          "Kako se zoveš?",
-          "Kako se ti zoveš?"
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-01/kako-se-zoves.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -337,7 +382,20 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "A kako se ti zoveš?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-01/a-kako-se-ti-zoves.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Jak masz na imię?",
+        "accepted": [
+          "Kako se zoveš?",
+          "Kako se ti zoveš?"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/kako-se-zoves.mp3"
       },
       {
         "id": "translate-2",

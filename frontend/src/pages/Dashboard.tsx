@@ -17,6 +17,7 @@ import { Icon, type IconName } from "@/components/Icon";
 import { ProgressRing } from "@/components/StatCard";
 import { useCurriculum } from "@/curriculum/CurriculumProvider";
 import { ContinueCourse } from "@/curriculum/components/ContinueCourse";
+import { coursePaths } from "@/curriculum/components/format";
 
 interface PlanStep {
   key: string;
@@ -132,7 +133,20 @@ export function Dashboard() {
   const practiceStep: PlanStep = hasSentences
     ? { key: "sentences", icon: "text", title: t("home.planSentences"), meta: t("home.planSentencesMeta"), count: "10", href: "/gry/sentence-builder" }
     : { key: "games", icon: "play", title: t("home.planGames"), meta: t("home.planGamesMeta"), count: null, href: "/gry" };
-  const plan = [reviewStep, newStep, practiceStep];
+  // Gdy kurs ma bieżącą lekcję, nowy materiał to lekcja (jej słowa trafiają potem do FSRS),
+  // a nie losowe słowa z talii — fiszki zostają w skrótach.
+  const currentLesson = courseView?.current?.lesson.lesson;
+  const lessonStep: PlanStep | null = currentLesson
+    ? {
+        key: "lesson",
+        icon: "route",
+        title: t("home.planLesson"),
+        meta: t("home.planLessonMeta", { title: currentLesson.title, n: currentLesson.estimatedMinutes }),
+        count: null,
+        href: coursePaths.lesson(currentLesson.id),
+      }
+    : null;
+  const plan = [reviewStep, lessonStep ?? newStep, practiceStep];
   // Główne CTA prowadzi do pierwszego kroku, który ma coś do zrobienia.
   const next = plan.find(step => !step.done) ?? newStep;
 
@@ -160,7 +174,7 @@ export function Dashboard() {
 
   return <div className="page page-wide dashboard">
     <div className="dashboard-main">
-      {courseView && <ContinueCourse view={courseView} />}
+      {courseView && <ContinueCourse view={courseView} primary={false} />}
       <section className="today" aria-labelledby="today-title">
         <header className="today-head">
           <span className="eyebrow">{today} · {course.name[locale]}</span>

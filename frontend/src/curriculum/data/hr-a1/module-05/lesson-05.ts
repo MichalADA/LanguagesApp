@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "karta",
         "partOfSpeech": "noun",
         "recordId": "A1-0434",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:262"
+        },
+        "accepted": [
+          "karta"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/karta.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "put",
         "partOfSpeech": "noun",
         "recordId": "A1-0435",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:255"
+        },
+        "accepted": [
+          "put"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/put.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mjesto",
         "partOfSpeech": "noun",
         "recordId": "A1-0436",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:426"
+        },
+        "accepted": [
+          "mjesto"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/mjesto.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pomoć",
         "partOfSpeech": "noun",
         "recordId": "A1-0437",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:454"
+        },
+        "accepted": [
+          "pomoć"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/pomoc.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pitati",
         "partOfSpeech": "verb",
         "recordId": "A1-0438",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:22"
+        },
+        "accepted": [
+          "pitati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/pitati.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pokazati",
         "partOfSpeech": "verb",
         "recordId": "A1-0439",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:337"
+        },
+        "accepted": [
+          "pokazati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/pokazati.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pronaći",
         "partOfSpeech": "verb",
         "recordId": "A1-0440",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2080"
+        },
+        "accepted": [
+          "pronaći"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/pronaci.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izgubiti se",
         "partOfSpeech": "verb",
         "recordId": "A1-0441",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1512"
+        },
+        "accepted": [
+          "izgubiti se"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/izgubiti-se.mp3"
       },
       {
@@ -77,6 +141,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "plan",
         "partOfSpeech": "phrase",
         "recordId": "A1-0969",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:plan grada"
+        },
+        "accepted": [
+          "plan grada"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/plan-grada.mp3"
       },
       {
@@ -85,6 +157,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "znati",
         "partOfSpeech": "phrase",
         "recordId": "A1-0970",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ne znam"
+        },
+        "accepted": [
+          "Ne znam."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/ne-znam.mp3"
       },
       {
@@ -93,6 +173,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pomoć",
         "partOfSpeech": "phrase",
         "recordId": "A1-0971",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:hvala na pomoći"
+        },
+        "accepted": [
+          "Hvala na pomoći!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/hvala-na-pomoci.mp3"
       },
       {
@@ -101,6 +189,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "problem",
         "partOfSpeech": "phrase",
         "recordId": "A1-0972",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nema problema"
+        },
+        "accepted": [
+          "Nema problema."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/nema-problema.mp3"
       },
       {
@@ -109,6 +205,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "moliti",
         "partOfSpeech": "phrase",
         "recordId": "A1-0973",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:molim vas"
+        },
+        "accepted": [
+          "molim vas"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/molim-vas.mp3"
       }
     ],
@@ -311,6 +415,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Moj stan je na drugom katu."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-05/moj-stan-je-na-drugom-katu.mp3"
       },
       {

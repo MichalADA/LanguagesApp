@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "koliko",
         "partOfSpeech": "adverb",
         "recordId": "A1-0063",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:93"
+        },
+        "accepted": [
+          "koliko"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/koliko.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "godina",
         "partOfSpeech": "noun",
         "recordId": "A1-0062",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:170"
+        },
+        "accepted": [
+          "godina"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/godina.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jedan",
         "partOfSpeech": "numeral",
         "recordId": "A1-0057",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:273"
+        },
+        "accepted": [
+          "jedan"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/jedan.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dva",
         "partOfSpeech": "numeral",
         "recordId": "A1-0058",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:274"
+        },
+        "accepted": [
+          "dva"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/dva.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tri",
         "partOfSpeech": "numeral",
         "recordId": "A1-0816",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:275"
+        },
+        "accepted": [
+          "tri"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/tri.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "četiri",
         "partOfSpeech": "numeral",
         "recordId": "A1-0817",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:276"
+        },
+        "accepted": [
+          "četiri"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/cetiri.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pet",
         "partOfSpeech": "numeral",
         "recordId": "A1-0818",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:277"
+        },
+        "accepted": [
+          "pet"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/pet.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "deset",
         "partOfSpeech": "numeral",
         "recordId": "A1-0059",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:282"
+        },
+        "accepted": [
+          "deset"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/deset.mp3"
       },
       {
@@ -77,6 +133,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dvadeset",
         "partOfSpeech": "numeral",
         "recordId": "A1-0060",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:283"
+        },
+        "accepted": [
+          "dvadeset"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/dvadeset.mp3"
       },
       {
@@ -85,6 +148,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šest",
         "partOfSpeech": "numeral",
         "recordId": "A1-0819",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:278"
+        },
+        "accepted": [
+          "šest"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/sest.mp3"
       },
       {
@@ -93,6 +164,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sedam",
         "partOfSpeech": "numeral",
         "recordId": "A1-0820",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:279"
+        },
+        "accepted": [
+          "sedam"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/sedam.mp3"
       },
       {
@@ -101,6 +180,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "osam",
         "partOfSpeech": "numeral",
         "recordId": "A1-0821",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:280"
+        },
+        "accepted": [
+          "osam"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/osam.mp3"
       },
       {
@@ -109,6 +196,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "devet",
         "partOfSpeech": "numeral",
         "recordId": "A1-0822",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:281"
+        },
+        "accepted": [
+          "devet"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/devet.mp3"
       },
       {
@@ -117,6 +212,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "trideset",
         "partOfSpeech": "numeral",
         "recordId": "A1-1144",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1227"
+        },
+        "accepted": [
+          "trideset"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/trideset.mp3"
       },
       {
@@ -125,6 +228,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nula",
         "partOfSpeech": "numeral",
         "recordId": "A1-0056",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nula"
+        },
+        "accepted": [
+          "nula"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/nula.mp3"
       },
       {
@@ -133,6 +244,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sto",
         "partOfSpeech": "numeral",
         "recordId": "A1-0061",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:284"
+        },
+        "accepted": [
+          "sto"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/sto.mp3"
       }
     ],
@@ -338,7 +457,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "šest",
@@ -397,6 +516,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 1,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-01/trideset.mp3"
       },
       {
@@ -572,36 +692,23 @@ export const LESSON: GeneratedLesson = {
           "Imam"
         ],
         "translation": "Mam dwadzieścia sześć lat.",
+        "rule": "Koliko imaš godina? — O wiek pytasz czasownikiem imati — „mieć”, zupełnie jak po polsku: Imam dvadeset šest godina — mam dwadzieścia sześć lat.",
         "answerAudioSrc": "/audio/hr/a1/module-01/imam-dvadeset-sest-godina.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ile masz lat?",
-        "accepted": [
-          "Koliko imaš godina?",
-          "Koliko ti imaš godina?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Koliko je to?",
+        "options": [
+          "Ile masz lat?",
+          "Ile to jest?",
+          "Mam dwadzieścia sześć lat."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Ona ma trzydzieści lat.",
-        "tokens": [
-          "ona",
-          "trideset",
-          "ima",
-          "godina"
-        ],
-        "accepted": [
-          "Ona ima trideset godina."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-01/ona-ima-trideset-godina.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-01/koliko-je-to.mp3"
       },
       {
         "id": "choice-1",
@@ -634,19 +741,33 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-01/dvadeset-cetiri.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Koliko je to?",
-        "options": [
-          "Ile masz lat?",
-          "Ile to jest?",
-          "Mam dwadzieścia sześć lat."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Ona ma trzydzieści lat.",
+        "tokens": [
+          "ona",
+          "trideset",
+          "ima",
+          "godina"
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-01/koliko-je-to.mp3"
+        "accepted": [
+          "Ona ima trideset godina."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/ona-ima-trideset-godina.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Ile masz lat?",
+        "accepted": [
+          "Koliko imaš godina?",
+          "Koliko ti imaš godina?"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/koliko-imas-godina.mp3"
       },
       {
         "id": "translate-2",

@@ -10,7 +10,7 @@ import { Prisma, ReviewItemType, type ReviewState } from "@prisma/client";
 import { PrismaService } from "../prisma/prisma.service";
 import { calculateReviewRating } from "./rating-mapper";
 import { reviewStatus, schedule, SCHEDULER_VERSION } from "./fsrs-scheduler";
-import type { ReviewAnswerDto } from "./review.dto";
+import type { EnrollReviewItemsDto, ReviewAnswerDto } from "./review.dto";
 
 @Injectable()
 export class ReviewsService {
@@ -180,6 +180,36 @@ export class ReviewsService {
       create: { userId, courseId, itemType, itemId },
       update: {},
     });
+  }
+
+  /**
+   * Adds lesson material to the FSRS queue as new cards (due now, reps 0).
+   * Idempotent: a card that already exists — from an earlier lesson, a game or
+   * flashcards — is left untouched, so a retry or a replayed lesson never
+   * resets or duplicates a schedule. No attempt is recorded.
+   */
+  async enroll(userId: string, dto: EnrollReviewItemsDto) {
+    const course = await this.course(dto.course);
+    const unique = new Map(
+      dto.items.map((item) => [`${item.itemType}|${item.itemId}`, item]),
+    );
+    const items = [...unique.values()];
+    if (items.some((item) => !item.itemId.startsWith(`${course.slug}:`)))
+      throw new BadRequestException("Item must be namespaced by its course");
+    const { count } = await this.prisma.reviewState.createMany({
+      data: items.map((item) => ({
+        userId,
+        courseId: course.id,
+        itemType: item.itemType,
+        itemId: item.itemId,
+      })),
+      skipDuplicates: true,
+    });
+    return {
+      created: count,
+      existing: items.length - count,
+      total: items.length,
+    };
   }
 
   async due(

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ustajati",
         "partOfSpeech": "verb",
         "recordId": "A1-0182",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:35"
+        },
+        "accepted": [
+          "ustajati"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/ustajati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "doručkovati",
         "partOfSpeech": "verb",
         "recordId": "A1-0183",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:doručkovati"
+        },
+        "accepted": [
+          "doručkovati"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/doruckovati.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "buditi se",
         "partOfSpeech": "verb",
         "recordId": "A1-1154",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:640"
+        },
+        "accepted": [
+          "buditi se"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/buditi-se.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ručati",
         "partOfSpeech": "verb",
         "recordId": "A1-0185",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ručati"
+        },
+        "accepted": [
+          "ručati"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/rucati.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odmarati se",
         "partOfSpeech": "verb",
         "recordId": "A1-0186",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:639"
+        },
+        "accepted": [
+          "odmarati se"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/odmarati-se.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "spavati",
         "partOfSpeech": "verb",
         "recordId": "A1-0187",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:34"
+        },
+        "accepted": [
+          "spavati"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/spavati.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ujutro",
         "partOfSpeech": "adverb",
         "recordId": "A1-0188",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ujutro"
+        },
+        "accepted": [
+          "ujutro"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/ujutro.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "navečer",
         "partOfSpeech": "adverb",
         "recordId": "A1-0189",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:navečer"
+        },
+        "accepted": [
+          "navečer"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/navecer.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dan",
         "partOfSpeech": "noun",
         "recordId": "A1-0788",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:161"
+        },
+        "accepted": [
+          "dan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/dan.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "večer",
         "partOfSpeech": "noun",
         "recordId": "A1-0789",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:167"
+        },
+        "accepted": [
+          "večer"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/vecer.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "podne",
         "partOfSpeech": "noun",
         "recordId": "A1-0790",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:947"
+        },
+        "accepted": [
+          "podne"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/podne.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "večerati",
         "partOfSpeech": "verb",
         "recordId": "A1-0791",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:večerati"
+        },
+        "accepted": [
+          "večerati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/vecerati.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kuhati",
         "partOfSpeech": "verb",
         "recordId": "A1-0792",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:601"
+        },
+        "accepted": [
+          "kuhati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/kuhati.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tuširati se",
         "partOfSpeech": "verb",
         "recordId": "A1-0793",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4475"
+        },
+        "accepted": [
+          "tuširati se"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/tusirati-se.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prvo",
         "partOfSpeech": "adverb",
         "recordId": "A1-0794",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prvo"
+        },
+        "accepted": [
+          "prvo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/prvo.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zatim",
         "partOfSpeech": "adverb",
         "recordId": "A1-0795",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zatim"
+        },
+        "accepted": [
+          "zatim"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/zatim.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kuća",
         "partOfSpeech": "adverb",
         "recordId": "A1-0796",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kući"
+        },
+        "accepted": [
+          "kući"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/kuci.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "brzo",
         "partOfSpeech": "adverb",
         "recordId": "A1-0797",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1037"
+        },
+        "accepted": [
+          "brzo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/brzo.mp3"
       }
     ],
@@ -442,7 +578,7 @@ export const LESSON: GeneratedLesson = {
         "stage": "words",
         "type": "vocabList",
         "title": "Więcej przydatnych słów",
-        "note": "Odsłuchaj i powtórz na głos. Te słowa trafią do fiszek razem z resztą lekcji.",
+        "note": "Słowa dodatkowe: odsłuchaj i powtórz na głos. Nie musisz znać ich na pamięć — do powtórek trafiają słowa z kart.",
         "items": [
           {
             "target": "dan",
@@ -519,6 +655,7 @@ export const LESSON: GeneratedLesson = {
         ],
         "correctIndex": 2,
         "targetText": "prompt",
+        "optional": true,
         "promptAudioSrc": "/audio/hr/a1/module-03/vecer.mp3"
       },
       {
@@ -632,6 +769,7 @@ export const LESSON: GeneratedLesson = {
           "učim"
         ],
         "translation": "Wieczorem uczę się chorwackiego.",
+        "rule": "Radim, učim, spavam — W czasie teraźniejszym forma „ja” kończy się na -m, „ty” na -š, a „on / ona” nie ma końcówki: radim — radiš — radi.",
         "answerAudioSrc": "/audio/hr/a1/module-03/navecer-ucim-hrvatski.mp3"
       },
       {
@@ -650,19 +788,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-03/spavam-osam-sati.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Rano jem śniadanie.",
-        "accepted": [
-          "Ujutro doručkujem.",
-          "Ja ujutro doručkujem.",
-          "Doručkujem ujutro."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-03/ujutro-doruckujem.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -678,7 +803,21 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ujutro se tuširam i doručkujem."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-03/ujutro-se-tusiram-i-doruckujem.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Rano jem śniadanie.",
+        "accepted": [
+          "Ujutro doručkujem.",
+          "Ja ujutro doručkujem.",
+          "Doručkujem ujutro."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-03/ujutro-doruckujem.mp3"
       },
       {
         "id": "translate-2",
@@ -702,6 +841,7 @@ export const LESSON: GeneratedLesson = {
           "U podne ručam.",
           "Ja u podne ručam."
         ],
+        "optional": true,
         "answerAudioSrc": "/audio/hr/a1/module-03/u-podne-rucam.mp3"
       },
       {

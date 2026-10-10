@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stol",
         "partOfSpeech": "noun",
         "recordId": "A1-0344",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:208"
+        },
+        "accepted": [
+          "stol"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/stol.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rezervacija",
         "partOfSpeech": "noun",
         "recordId": "A1-0345",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1939"
+        },
+        "accepted": [
+          "rezervacija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/rezervacija.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hrana",
         "partOfSpeech": "noun",
         "recordId": "A1-0346",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:219"
+        },
+        "accepted": [
+          "hrana"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/hrana.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "piće",
         "partOfSpeech": "noun",
         "recordId": "A1-0347",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:piće"
+        },
+        "accepted": [
+          "piće"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/pice.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "još",
         "partOfSpeech": "adverb",
         "recordId": "A1-0348",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:182"
+        },
+        "accepted": [
+          "još"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/jos.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dovoljno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0349",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1662"
+        },
+        "accepted": [
+          "dovoljno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/dovoljno.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ukusno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0350",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ukusno"
+        },
+        "accepted": [
+          "ukusno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/ukusno.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "platiti",
         "partOfSpeech": "verb",
         "recordId": "A1-0351",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:31"
+        },
+        "accepted": [
+          "platiti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/platiti.mp3"
       },
       {
@@ -77,6 +141,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gotovina",
         "partOfSpeech": "noun",
         "recordId": "A1-0908",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:466"
+        },
+        "accepted": [
+          "gotovina"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/gotovina.mp3"
       },
       {
@@ -85,6 +157,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "napojnica",
         "partOfSpeech": "noun",
         "recordId": "A1-0909",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:633"
+        },
+        "accepted": [
+          "napojnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/napojnica.mp3"
       },
       {
@@ -93,6 +173,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "živjeti",
         "partOfSpeech": "phrase",
         "recordId": "A1-0910",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:živjeli"
+        },
+        "accepted": [
+          "Živjeli!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/zivjeli.mp3"
       },
       {
@@ -101,6 +189,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zajedno",
         "partOfSpeech": "phrase",
         "recordId": "A1-0911",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zajedno ili odvojeno"
+        },
+        "accepted": [
+          "zajedno ili odvojeno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/zajedno-ili-odvojeno.mp3"
       },
       {
@@ -109,6 +205,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stol",
         "partOfSpeech": "phrase",
         "recordId": "A1-0912",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stol za dvoje"
+        },
+        "accepted": [
+          "stol za dvoje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/stol-za-dvoje.mp3"
       },
       {
@@ -117,6 +221,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "platiti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1165",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:platiti karticom"
+        },
+        "accepted": [
+          "platiti karticom"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/platiti-karticom.mp3"
       }
     ],
