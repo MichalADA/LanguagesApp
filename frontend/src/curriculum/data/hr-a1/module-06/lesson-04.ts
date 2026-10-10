@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sastati se",
         "partOfSpeech": "verb",
         "recordId": "A1-0506",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:sastati se"
+        },
+        "accepted": [
+          "sastati se"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/sastati-se.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "htjeti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1177",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:hoćemo li"
+        },
+        "accepted": [
+          "Hoćemo li…?"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/hocemo-li.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "večeras",
         "partOfSpeech": "adverb",
         "recordId": "A1-0508",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1023"
+        },
+        "accepted": [
+          "večeras"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/veceras.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "imati",
         "partOfSpeech": "phrase",
         "recordId": "A1-1033",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nemam vremena"
+        },
+        "accepted": [
+          "Nemam vremena."
+        ],
         "audioSrc": "/audio/hr/a1/module-06/nemam-vremena.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "može",
         "partOfSpeech": "phrase",
         "recordId": "A1-0510",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:može"
+        },
+        "accepted": [
+          "može"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/moze.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ne mogu",
         "partOfSpeech": "phrase",
         "recordId": "A1-0511",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ne mogu"
+        },
+        "accepted": [
+          "ne mogu"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/ne-mogu.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "u šest",
         "partOfSpeech": "phrase",
         "recordId": "A1-0512",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:u šest"
+        },
+        "accepted": [
+          "u šest"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/u-sest.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vidimo se",
         "partOfSpeech": "phrase",
         "recordId": "A1-0513",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1323"
+        },
+        "accepted": [
+          "vidimo se"
+        ],
         "audioSrc": "/audio/hr/a1/module-06/vidimo-se.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nažalost",
         "partOfSpeech": "adverb",
         "recordId": "A1-1018",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:878"
+        },
+        "accepted": [
+          "nažalost"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/nazalost.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "možda",
         "partOfSpeech": "adverb",
         "recordId": "A1-1019",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:196"
+        },
+        "accepted": [
+          "možda"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/mozda.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "naći se",
         "partOfSpeech": "verb",
         "recordId": "A1-1020",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:naći se"
+        },
+        "accepted": [
+          "naći se"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/naci-se.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "piće",
         "partOfSpeech": "phrase",
         "recordId": "A1-1021",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:na piće"
+        },
+        "accepted": [
+          "na piće"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/na-pice.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sat",
         "partOfSpeech": "phrase",
         "recordId": "A1-1022",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:u koliko sati"
+        },
+        "accepted": [
+          "U koliko sati?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/u-koliko-sati.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dogovoriti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1023",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:dogovoreno"
+        },
+        "accepted": [
+          "Dogovoreno!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/dogovoreno.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poruka",
         "partOfSpeech": "noun",
         "recordId": "A1-1024",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:472"
+        },
+        "accepted": [
+          "poruka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/poruka.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "javiti se",
         "partOfSpeech": "phrase",
         "recordId": "A1-1025",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:javi se"
+        },
+        "accepted": [
+          "Javi se!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/javi-se.mp3"
       }
     ],
@@ -472,6 +592,7 @@ export const LESSON: GeneratedLesson = {
           "mogu"
         ],
         "translation": "Dziś nie mogę.",
+        "rule": "Hoćemo li…? — Može! — Propozycję zaczynasz od Hoćemo li…?",
         "answerAudioSrc": "/audio/hr/a1/module-06/danas-ne-mogu.mp3"
       },
       {
@@ -490,17 +611,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-06/moze-sutra.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Idziemy na kawę?",
-        "accepted": [
-          "Hoćemo li na kavu?"
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -516,7 +626,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Vidimo se sutra u šest."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-06/vidimo-se-sutra-u-sest.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Idziemy na kawę?",
+        "accepted": [
+          "Hoćemo li na kavu?"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-06/hocemo-li-na-kavu.mp3"
       },
       {
         "id": "translate-2",

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ravno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0398",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1514"
+        },
+        "accepted": [
+          "ravno"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/ravno.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lijevo",
         "partOfSpeech": "adverb",
         "recordId": "A1-0399",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:lijevo"
+        },
+        "accepted": [
+          "lijevo"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/lijevo.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "desno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0400",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:400"
+        },
+        "accepted": [
+          "desno"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/desno.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "skrenuti",
         "partOfSpeech": "verb",
         "recordId": "A1-0401",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1250"
+        },
+        "accepted": [
+          "skrenuti"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/skrenuti.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prijeći",
         "partOfSpeech": "verb",
         "recordId": "A1-0402",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prijeći"
+        },
+        "accepted": [
+          "prijeći"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/prijeci.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "semafor",
         "partOfSpeech": "noun",
         "recordId": "A1-0403",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1251"
+        },
+        "accepted": [
+          "semafor"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/semafor.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "raskrižje",
         "partOfSpeech": "noun",
         "recordId": "A1-0404",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1976"
+        },
+        "accepted": [
+          "raskrižje"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/raskrizje.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ulaz",
         "partOfSpeech": "noun",
         "recordId": "A1-0405",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ulaz"
+        },
+        "accepted": [
+          "ulaz"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/ulaz.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "oprostiti",
         "partOfSpeech": "phrase",
         "recordId": "A1-0942",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:oprostite"
+        },
+        "accepted": [
+          "Oprostite."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/oprostite.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prvi",
         "partOfSpeech": "numeral",
         "recordId": "A1-0943",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:286"
+        },
+        "accepted": [
+          "prvi"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/prvi.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "drugi",
         "partOfSpeech": "numeral",
         "recordId": "A1-0944",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1229"
+        },
+        "accepted": [
+          "drugi"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/drugi.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "treći",
         "partOfSpeech": "numeral",
         "recordId": "A1-0945",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1230"
+        },
+        "accepted": [
+          "treći"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/treci.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pa",
         "partOfSpeech": "conjunction",
         "recordId": "A1-0946",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pa"
+        },
+        "accepted": [
+          "pa"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/pa.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dalje",
         "partOfSpeech": "adverb",
         "recordId": "A1-0947",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1979"
+        },
+        "accepted": [
+          "dalje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/dalje.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pješice",
         "partOfSpeech": "adverb",
         "recordId": "A1-0948",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1252"
+        },
+        "accepted": [
+          "pješice"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/pjesice.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "most",
         "partOfSpeech": "noun",
         "recordId": "A1-0949",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:444"
+        },
+        "accepted": [
+          "most"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/most.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kraj",
         "partOfSpeech": "phrase",
         "recordId": "A1-0950",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:3337"
+        },
+        "accepted": [
+          "na kraju ulice"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/na-kraju-ulice.mp3"
       }
     ],
@@ -503,6 +631,7 @@ export const LESSON: GeneratedLesson = {
           "lijevo"
         ],
         "translation": "Proszę skręcić w lewo.",
+        "rule": "Idite ravno, skrenite lijevo — Wskazówki usłyszysz jako grzeczne prośby: Idite — proszę iść, Skrenite — proszę skręcić, Prijeđite — proszę przejść.",
         "answerAudioSrc": "/audio/hr/a1/module-05/skrenite-lijevo.mp3"
       },
       {
@@ -521,17 +650,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-05/prijedjite-ulicu.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Proszę iść prosto.",
-        "accepted": [
-          "Idite ravno."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-05/idite-ravno.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -547,6 +665,17 @@ export const LESSON: GeneratedLesson = {
           "Skrenite desno na semaforu."
         ],
         "answerAudioSrc": "/audio/hr/a1/module-05/skrenite-desno-na-semaforu.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Proszę iść prosto.",
+        "accepted": [
+          "Idite ravno."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/idite-ravno.mp3"
       },
       {
         "id": "translate-2",

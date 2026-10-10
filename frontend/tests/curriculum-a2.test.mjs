@@ -53,6 +53,7 @@ const { PL_HR_OUTLINE } = load('src/curriculum/data/a1.ts');
 const { deriveLevel, nextLessonId } = load('src/curriculum/progress.ts');
 const { checkLessonAnswer } = load('src/curriculum/answers.ts');
 const { LessonPlayer } = load('src/curriculum/player/LessonPlayer.tsx');
+const { walkLesson } = await import('./fixtures/lesson-walker.mjs');
 const rules = course.validation;
 
 const a2 = PL_HR_OUTLINE.levels.find((level) => level.id === 'A2');
@@ -350,34 +351,15 @@ test('A2: każdy chorwacki tekst lekcji ma nagranie, a każde audioSrc wskazuje 
   }
 });
 
-/** Przechodzi lekcję w playerze jak użytkownik (odpowiada czymkolwiek) aż do podsumowania. */
-async function walk(content) {
-  let completed = 0;
-  let renderer;
-  const element = React.createElement(LessonPlayer, { content, header: { position: 'A2', title: 'T', meta: 'M', closeTo: '/m' }, nextHref: null, moduleHref: '/m', onComplete: () => { completed++; } });
-  await act(async () => { renderer = Renderer.create(element); });
-  const byClass = (type, cls) => renderer.root.findAll((n) => n.type === type && typeof n.props.className === 'string' && n.props.className.split(' ').includes(cls));
-  for (let guard = 0; guard < 400; guard++) {
-    if (byClass('div', 'step-summary').length) break;
-    const footer = byClass('button', 'btn-lg')[0];
-    if (footer && !footer.props.disabled) { await act(async () => footer.props.onClick()); continue; }
-    const choice = byClass('button', 'choice').find((n) => n.props['aria-disabled'] !== true);
-    if (choice) { await act(async () => choice.props.onClick()); continue; }
-    const token = byClass('button', 'order-token').find((n) => !n.props.disabled && !n.props.className.includes('placed'));
-    if (token) { await act(async () => token.props.onClick()); continue; }
-    const input = renderer.root.findAll((n) => n.type === 'input' && !n.props.disabled && !n.props.readOnly)[0];
-    if (input) { await act(async () => input.props.onChange({ target: { value: 'x' } })); continue; }
-    const skip = byClass('button', 'btn-ghost').find((n) => n.props.children === t('curriculum.player.skip'));
-    if (skip) { await act(async () => skip.props.onClick()); continue; }
-    throw new Error(`Player utknął w ${content.lessonId}`);
+test('A2: wszystkie lekcje da się zaliczyć poprawnymi odpowiedziami, a błędne odpowiedzi nie zaliczają lekcji', async () => {
+  for (const lesson of lessons) {
+    const content = generated.get(lesson.id).content;
+    const options = { React, Renderer, act, LessonPlayer, t, content };
+    const right = await walkLesson({ ...options, answers: 'right' });
+    assert.equal(right.completed, 1, `${lesson.id}: poprawne odpowiedzi → zaliczenie`);
+    assert.equal(right.mistakes, false, `${lesson.id}: poprawne odpowiedzi bez błędów`);
+    assert.equal((await walkLesson({ ...options, answers: 'wrong' })).completed, 0, `${lesson.id}: błędne odpowiedzi nie zaliczają`);
   }
-  assert.equal(byClass('div', 'step-summary').length, 1, `${content.lessonId}: nie doszedł do podsumowania`);
-  act(() => renderer.unmount());
-  return completed;
-}
-
-test('A2: wszystkie lekcje da się otworzyć i przejść w playerze bez błędów', async () => {
-  for (const lesson of lessons) assert.equal(await walk(generated.get(lesson.id).content), 1, `${lesson.id}: onComplete`);
 });
 
 test('A2: lekcja 40 to test poziomu z sześcioma sekcjami, a 39 to Wielka powtórka A2', () => {

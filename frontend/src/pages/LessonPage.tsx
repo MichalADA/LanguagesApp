@@ -2,14 +2,15 @@ import { useCallback, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Icon } from "@/components/Icon";
 import { useT } from "@/i18n";
-import { useCurriculum } from "@/curriculum/CurriculumProvider";
+import { useCurriculum, type ReviewSyncState } from "@/curriculum/CurriculumProvider";
 import { CourseStates } from "@/curriculum/components/CourseStates";
 import { coursePaths, pad2 } from "@/curriculum/components/format";
 import { LessonPlayer } from "@/curriculum/player/LessonPlayer";
 import { LessonProgress } from "@/curriculum/player/LessonProgress";
 import { nextLessonId } from "@/curriculum/progress";
 import { fetchLessonContent } from "@/curriculum/repository";
-import { queueLessonVocabulary } from "@/curriculum/srs";
+import { enrollmentRefs } from "@/curriculum/srs";
+import { sessionKey } from "@/curriculum/session";
 import { useAuth } from "@/auth/useAuth";
 import { useCourse } from "@/courses/CourseProvider";
 import type { LessonContent } from "@/curriculum/types";
@@ -18,7 +19,7 @@ import type { LessonContent } from "@/curriculum/types";
 export function LessonPage() {
   const t = useT();
   const { lessonId = "" } = useParams();
-  const { status, outline, levelView, completeLesson } = useCurriculum();
+  const { status, outline, levelView, completeLesson, reviewSync, syncReviews } = useCurriculum();
   const [content, setContent] = useState<{ id: string; data: LessonContent | null } | null>(null);
 
   useEffect(() => {
@@ -38,11 +39,11 @@ export function LessonPage() {
   const { user } = useAuth();
   const { course } = useCourse();
   const vocabulary = content?.id === lessonId ? content.data?.vocabulary : undefined;
-  // Ukończenie = dojście do podsumowania. Słowa trafiają do kolejki przyszłych powtórek (srs.ts).
+  // Ukończenie = zaliczenie lekcji (curriculum/grading.ts). Słowa obowiązkowe trafiają do FSRS (srs.ts).
   const onComplete = useCallback(() => {
-    completeLesson(lessonId);
-    if (vocabulary) queueLessonVocabulary(user?.id ?? "guest", course.id, lessonId, vocabulary);
-  }, [completeLesson, lessonId, vocabulary, user?.id, course.id]);
+    completeLesson(lessonId, vocabulary);
+  }, [completeLesson, lessonId, vocabulary]);
+  const enrolled = vocabulary ? enrollmentRefs(vocabulary).length : 0;
 
   if (status !== "ready" || !content || content.id !== lessonId) {
     return (
@@ -126,6 +127,8 @@ export function LessonPage() {
     );
   }
 
+  const reviewStatus = enrolled ? <ReviewSyncNote state={reviewSync} count={enrolled} onRetry={syncReviews} /> : null;
+
   return (
     <LessonPlayer
       key={lessonId}
@@ -133,7 +136,38 @@ export function LessonPage() {
       header={header}
       nextHref={next ? coursePaths.lesson(next) : null}
       moduleHref={moduleHref}
+      storageKey={sessionKey(user?.id ?? "guest", course.id, lessonId)}
+      alreadyCompleted={row.status === "completed"}
       onComplete={onComplete}
+      reviewStatus={reviewStatus}
     />
+  );
+}
+
+/** Czy słowa z lekcji są już w powtórkach FSRS — jasno, bez obietnic na wyrost. */
+function ReviewSyncNote({ state, count, onRetry }: { state: ReviewSyncState; count: number; onRetry: () => void }) {
+  const t = useT();
+  if (state === "local") {
+    return (
+      <p>
+        {t("curriculum.player.reviewLocal", { n: count })} <Link to="/login">{t("curriculum.player.reviewLogin")}</Link>
+      </p>
+    );
+  }
+  if (state === "pending") {
+    return (
+      <p role="alert">
+        {t("curriculum.player.reviewPending")}{" "}
+        <button type="button" className="linklike" onClick={onRetry}>
+          {t("curriculum.player.reviewRetry")}
+        </button>
+      </p>
+    );
+  }
+  if (state === "syncing") return <p role="status">{t("curriculum.player.reviewSyncing")}</p>;
+  return (
+    <p>
+      {t("curriculum.player.reviewSaved", { n: count })} <Link to="/powtorki">{t("curriculum.player.goReviews")}</Link>
+    </p>
   );
 }

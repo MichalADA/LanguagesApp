@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sviđati se",
         "partOfSpeech": "verb",
         "recordId": "A2-0529",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:554"
+        },
+        "accepted": [
+          "sviđati se"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/svidjati-se.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stajati",
         "partOfSpeech": "verb",
         "recordId": "A2-0530",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stajati"
+        },
+        "accepted": [
+          "stajati"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/stajati.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uzak",
         "partOfSpeech": "adjective",
         "recordId": "A2-0531",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1569"
+        },
+        "accepted": [
+          "uzak"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/uzak.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "širok",
         "partOfSpeech": "adjective",
         "recordId": "A2-0532",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1570"
+        },
+        "accepted": [
+          "širok"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/sirok.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "udoban",
         "partOfSpeech": "adjective",
         "recordId": "A2-0533",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1072"
+        },
+        "accepted": [
+          "udoban"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/udoban.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "moderan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0534",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1756"
+        },
+        "accepted": [
+          "moderan"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/moderan.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "elegantan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0535",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:elegantan"
+        },
+        "accepted": [
+          "elegantan"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/elegantan.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ukus",
         "partOfSpeech": "noun",
         "recordId": "A2-0536",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ukus"
+        },
+        "accepted": [
+          "ukus"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/ukus.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šaren",
         "partOfSpeech": "adjective",
         "recordId": "A2-0537",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4825"
+        },
+        "accepted": [
+          "šaren"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/saren.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jednostavan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0538",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:372"
+        },
+        "accepted": [
+          "jednostavan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/jednostavan.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sviđati se",
         "partOfSpeech": "phrase",
         "recordId": "A2-0539",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ne sviđa mi se"
+        },
+        "accepted": [
+          "Ne sviđa mi se."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/ne-svidja-mi-se.mp3"
       }
     ],
@@ -480,38 +560,23 @@ export const LESSON: GeneratedLesson = {
           "Sviđaju"
         ],
         "translation": "Podobają mi się twoje buty.",
+        "rule": "Sviđa mi se — „Podoba mi się” to sviđa mi se + to, co się podoba, w mianowniku.",
         "answerAudioSrc": "/audio/hr/a2/module-05/svidjaju-mi-se-tvoje-cipele.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Podoba mi się ta kurtka.",
-        "accepted": [
-          "Sviđa mi se ova jakna.",
-          "Ova jakna mi se sviđa."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Marku se sviđa moderna odjeća.",
+        "options": [
+          "Podoba mi się ta kurtka.",
+          "Markowi podobają się modne ubrania.",
+          "Podobają mi się twoje buty."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-05/svidja-mi-se-ova-jakna.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Jak ci się podoba ta sukienka?",
-        "tokens": [
-          "kako",
-          "haljina",
-          "se",
-          "ova",
-          "sviđa",
-          "ti"
-        ],
-        "accepted": [
-          "Kako ti se sviđa ova haljina?"
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-05/kako-ti-se-svidja-ova-haljina.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-05/marku-se-svidja-moderna-odjeca.mp3"
       },
       {
         "id": "choice-1",
@@ -546,19 +611,36 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-05/svidja-joj-se.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Marku se sviđa moderna odjeća.",
-        "options": [
-          "Podoba mi się ta kurtka.",
-          "Markowi podobają się modne ubrania.",
-          "Podobają mi się twoje buty."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Jak ci się podoba ta sukienka?",
+        "tokens": [
+          "kako",
+          "haljina",
+          "se",
+          "ova",
+          "sviđa",
+          "ti"
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-05/marku-se-svidja-moderna-odjeca.mp3"
+        "accepted": [
+          "Kako ti se sviđa ova haljina?"
+        ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
+        "answerAudioSrc": "/audio/hr/a2/module-05/kako-ti-se-svidja-ova-haljina.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Podoba mi się ta kurtka.",
+        "accepted": [
+          "Sviđa mi se ova jakna.",
+          "Ova jakna mi se sviđa."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-05/svidja-mi-se-ova-jakna.mp3"
       },
       {
         "id": "translate-2",

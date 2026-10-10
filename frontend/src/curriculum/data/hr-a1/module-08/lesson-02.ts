@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "htjeti",
         "partOfSpeech": "verb_form",
         "recordId": "A1-1182",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:hoću"
+        },
+        "accepted": [
+          "hoću"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/hocu.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ću",
         "partOfSpeech": "auxiliary",
         "recordId": "A1-0651",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ću"
+        },
+        "accepted": [
+          "ću"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/cu.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ćeš",
         "partOfSpeech": "auxiliary",
         "recordId": "A1-0652",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ćeš"
+        },
+        "accepted": [
+          "ćeš"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/ces.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "htjeti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1183",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:hoćeš li"
+        },
+        "accepted": [
+          "Hoćeš li…?"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/hoces-li.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "planirati",
         "partOfSpeech": "verb",
         "recordId": "A1-1119",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1311"
+        },
+        "accepted": [
+          "planirati"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/planirati.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tjedan",
         "partOfSpeech": "phrase",
         "recordId": "A1-1116",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1026"
+        },
+        "accepted": [
+          "sljedeći tjedan"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/sljedeci-tjedan.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odmoriti se",
         "partOfSpeech": "verb",
         "recordId": "A1-0656",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:odmoriti se"
+        },
+        "accepted": [
+          "odmoriti se"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/odmoriti-se.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kasnije",
         "partOfSpeech": "adverb",
         "recordId": "A1-0657",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1275"
+        },
+        "accepted": [
+          "kasnije"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/kasnije.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "htjeti",
         "partOfSpeech": "auxiliary",
         "recordId": "A1-1113",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:će"
+        },
+        "accepted": [
+          "će"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/ce.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "htjeti",
         "partOfSpeech": "auxiliary",
         "recordId": "A1-1114",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ćemo"
+        },
+        "accepted": [
+          "ćemo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/cemo.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "htjeti",
         "partOfSpeech": "auxiliary",
         "recordId": "A1-1115",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ćete"
+        },
+        "accepted": [
+          "ćete"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/cete.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tjedan",
         "partOfSpeech": "phrase",
         "recordId": "A1-1117",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:za tjedan dana"
+        },
+        "accepted": [
+          "za tjedan dana"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/za-tjedan-dana.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uskoro",
         "partOfSpeech": "adverb",
         "recordId": "A1-1118",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:184"
+        },
+        "accepted": [
+          "uskoro"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/uskoro.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nadati se",
         "partOfSpeech": "verb",
         "recordId": "A1-1120",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1371"
+        },
+        "accepted": [
+          "nadati se"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/nadati-se.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "siguran",
         "partOfSpeech": "adverb",
         "recordId": "A1-1121",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:854"
+        },
+        "accepted": [
+          "sigurno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/sigurno.mp3"
       }
     ],
@@ -496,6 +608,7 @@ export const LESSON: GeneratedLesson = {
           "ću"
         ],
         "translation": "Jutro będę uczyć się chorwackiego.",
+        "rule": "Sutra ću raditi — O przyszłości mówisz ću (ja) albo ćeš (ty) + bezokolicznik: Sutra ću raditi — jutro będę pracować.",
         "answerAudioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
       },
       {
@@ -530,18 +643,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-08/sutra-cu-uciti-hrvatski.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Jutro będę pracować.",
-        "accepted": [
-          "Sutra ću raditi.",
-          "Radit ću sutra."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -556,7 +657,20 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Kasnije ću se odmoriti."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-08/kasnije-cu-se-odmoriti.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Jutro będę pracować.",
+        "accepted": [
+          "Sutra ću raditi.",
+          "Radit ću sutra."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/sutra-cu-raditi.mp3"
       },
       {
         "id": "translate-2",

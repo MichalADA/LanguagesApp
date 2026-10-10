@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "piti",
         "partOfSpeech": "verb",
         "recordId": "A1-0292",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:33"
+        },
+        "accepted": [
+          "piti"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/piti.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "voda",
         "partOfSpeech": "noun",
         "recordId": "A1-0272",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:212"
+        },
+        "accepted": [
+          "voda"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/voda.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kava",
         "partOfSpeech": "noun",
         "recordId": "A1-0273",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:215"
+        },
+        "accepted": [
+          "kava"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/kava.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "čaj",
         "partOfSpeech": "noun",
         "recordId": "A1-0274",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:216"
+        },
+        "accepted": [
+          "čaj"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/caj.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jesti",
         "partOfSpeech": "verb",
         "recordId": "A1-0291",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:32"
+        },
+        "accepted": [
+          "jesti"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/jesti.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kruh",
         "partOfSpeech": "noun",
         "recordId": "A1-0275",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:213"
+        },
+        "accepted": [
+          "kruh"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/kruh.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sir",
         "partOfSpeech": "noun",
         "recordId": "A1-0276",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:233"
+        },
+        "accepted": [
+          "sir"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/sir.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "riba",
         "partOfSpeech": "noun",
         "recordId": "A1-0277",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:224"
+        },
+        "accepted": [
+          "riba"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/riba.mp3"
       },
       {
@@ -77,6 +133,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "meso",
         "partOfSpeech": "noun",
         "recordId": "A1-0278",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:223"
+        },
+        "accepted": [
+          "meso"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/meso.mp3"
       },
       {
@@ -85,6 +148,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "povrće",
         "partOfSpeech": "noun",
         "recordId": "A1-0279",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:225"
+        },
+        "accepted": [
+          "povrće"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/povrce.mp3"
       },
       {
@@ -93,6 +163,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mlijeko",
         "partOfSpeech": "noun",
         "recordId": "A1-0852",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:214"
+        },
+        "accepted": [
+          "mlijeko"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/mlijeko.mp3"
       },
       {
@@ -101,6 +179,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jaje",
         "partOfSpeech": "noun",
         "recordId": "A1-0853",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:234"
+        },
+        "accepted": [
+          "jaje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/jaje.mp3"
       },
       {
@@ -109,6 +195,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "voće",
         "partOfSpeech": "noun",
         "recordId": "A1-0854",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:226"
+        },
+        "accepted": [
+          "voće"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/voce.mp3"
       },
       {
@@ -117,6 +211,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jabuka",
         "partOfSpeech": "noun",
         "recordId": "A1-0855",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:227"
+        },
+        "accepted": [
+          "jabuka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/jabuka.mp3"
       },
       {
@@ -125,6 +227,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "piletina",
         "partOfSpeech": "noun",
         "recordId": "A1-0856",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1114"
+        },
+        "accepted": [
+          "piletina"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/piletina.mp3"
       },
       {
@@ -133,6 +243,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "krumpir",
         "partOfSpeech": "noun",
         "recordId": "A1-0857",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:228"
+        },
+        "accepted": [
+          "krumpir"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/krumpir.mp3"
       },
       {
@@ -141,6 +259,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tjestenina",
         "partOfSpeech": "noun",
         "recordId": "A1-0858",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:610"
+        },
+        "accepted": [
+          "tjestenina"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/tjestenina.mp3"
       },
       {
@@ -149,6 +275,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "maslac",
         "partOfSpeech": "noun",
         "recordId": "A1-0859",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:616"
+        },
+        "accepted": [
+          "maslac"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/maslac.mp3"
       },
       {
@@ -157,6 +291,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jogurt",
         "partOfSpeech": "noun",
         "recordId": "A1-0860",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:618"
+        },
+        "accepted": [
+          "jogurt"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/jogurt.mp3"
       },
       {
@@ -165,6 +307,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šunka",
         "partOfSpeech": "noun",
         "recordId": "A1-0861",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:3728"
+        },
+        "accepted": [
+          "šunka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/sunka.mp3"
       },
       {
@@ -173,6 +323,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ručak",
         "partOfSpeech": "noun",
         "recordId": "A1-0862",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:220"
+        },
+        "accepted": [
+          "ručak"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/rucak.mp3"
       },
       {
@@ -181,6 +339,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "večera",
         "partOfSpeech": "noun",
         "recordId": "A1-0863",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:221"
+        },
+        "accepted": [
+          "večera"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/vecera.mp3"
       },
       {
@@ -189,6 +355,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "juha",
         "partOfSpeech": "noun",
         "recordId": "A1-0329",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:232"
+        },
+        "accepted": [
+          "juha"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/juha.mp3"
       },
       {
@@ -197,6 +371,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "željeti",
         "partOfSpeech": "verb",
         "recordId": "A1-1161",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:željeti"
+        },
+        "accepted": [
+          "željeti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-04/zeljeti.mp3"
       }
     ],
@@ -633,19 +815,23 @@ export const LESSON: GeneratedLesson = {
           "vodu"
         ],
         "translation": "Piję wodę.",
+        "rule": "Pijem vodu, jedem kruh — Piti to „pić”, jesti — „jeść”; o sobie mówisz pijem i jedem.",
         "answerAudioSrc": "/audio/hr/a1/module-04/pijem-vodu.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Piję kawę bez cukru.",
-        "accepted": [
-          "Pijem kavu bez šećera.",
-          "Ja pijem kavu bez šećera."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Danas ne jedem meso.",
+        "options": [
+          "Piję wodę.",
+          "Dziś nie jem mięsa.",
+          "Piję kawę bez cukru."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-04/pijem-kavu-bez-secera.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-04/danas-ne-jedem-meso.mp3"
       },
       {
         "id": "order",
@@ -666,19 +852,16 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-04/jedem-kruh-i-sir.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Danas ne jedem meso.",
-        "options": [
-          "Piję wodę.",
-          "Dziś nie jem mięsa.",
-          "Piję kawę bez cukru."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Piję kawę bez cukru.",
+        "accepted": [
+          "Pijem kavu bez šećera.",
+          "Ja pijem kavu bez šećera."
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-04/danas-ne-jedem-meso.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-04/pijem-kavu-bez-secera.mp3"
       },
       {
         "id": "translate-2",

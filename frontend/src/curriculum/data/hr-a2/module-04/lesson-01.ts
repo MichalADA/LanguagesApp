@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "baviti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0376",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2163"
+        },
+        "accepted": [
+          "baviti se"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/baviti-se.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kao",
         "partOfSpeech": "conjunction",
         "recordId": "A2-0377",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kao"
+        },
+        "accepted": [
+          "kao"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/kao.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zaposlen",
         "partOfSpeech": "adjective",
         "recordId": "A2-0378",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zaposlen"
+        },
+        "accepted": [
+          "zaposlen"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/zaposlen.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "plaća",
         "partOfSpeech": "noun",
         "recordId": "A2-0379",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:plaća"
+        },
+        "accepted": [
+          "plaća"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/placa.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "smjena",
         "partOfSpeech": "noun",
         "recordId": "A2-0380",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1349"
+        },
+        "accepted": [
+          "smjena"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/smjena.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šef",
         "partOfSpeech": "noun",
         "recordId": "A2-0381",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:246"
+        },
+        "accepted": [
+          "šef"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/sef.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kupac",
         "partOfSpeech": "noun",
         "recordId": "A2-0382",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kupac"
+        },
+        "accepted": [
+          "kupac"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/kupac.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "suradnik",
         "partOfSpeech": "noun",
         "recordId": "A2-0383",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1287"
+        },
+        "accepted": [
+          "suradnik"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/suradnik.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nezaposlen",
         "partOfSpeech": "adjective",
         "recordId": "A2-0384",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nezaposlen"
+        },
+        "accepted": [
+          "nezaposlen"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/nezaposlen.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "honorarno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0385",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:honorarno"
+        },
+        "accepted": [
+          "honorarno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/honorarno.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prekovremeno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0386",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prekovremeno"
+        },
+        "accepted": [
+          "prekovremeno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/prekovremeno.mp3"
       }
     ],
@@ -456,37 +536,23 @@ export const LESSON: GeneratedLesson = {
           "programiranjem"
         ],
         "translation": "Zajmuję się programowaniem.",
+        "rule": "Bavim se programiranjem — Narzędnik (instrumental) odpowiada na pytania čime?",
         "answerAudioSrc": "/audio/hr/a2/module-04/bavim-se-programiranjem.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Czym się zajmujesz?",
-        "accepted": [
-          "Čime se baviš?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Plaća je dobra, ali posao je težak.",
+        "options": [
+          "Czym się zajmujesz?",
+          "Pensja jest dobra, ale praca jest ciężka.",
+          "Zajmuję się programowaniem."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-04/cime-se-bavis.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "W tym tygodniu pracuję na nocną zmianę.",
-        "tokens": [
-          "radim",
-          "tjedan",
-          "smjenu",
-          "noćnu",
-          "ovaj"
-        ],
-        "accepted": [
-          "Ovaj tjedan radim noćnu smjenu.",
-          "Ja ovaj tjedan radim noćnu smjenu."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-04/ovaj-tjedan-radim-nocnu-smjenu.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-04/placa-je-dobra-ali-posao-je-tezak.mp3"
       },
       {
         "id": "choice-1",
@@ -521,19 +587,34 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-04/radim-kao-konobar.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Plaća je dobra, ali posao je težak.",
-        "options": [
-          "Czym się zajmujesz?",
-          "Pensja jest dobra, ale praca jest ciężka.",
-          "Zajmuję się programowaniem."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "W tym tygodniu pracuję na nocną zmianę.",
+        "tokens": [
+          "radim",
+          "tjedan",
+          "smjenu",
+          "noćnu",
+          "ovaj"
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-04/placa-je-dobra-ali-posao-je-tezak.mp3"
+        "accepted": [
+          "Ovaj tjedan radim noćnu smjenu.",
+          "Ja ovaj tjedan radim noćnu smjenu."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-04/ovaj-tjedan-radim-nocnu-smjenu.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Czym się zajmujesz?",
+        "accepted": [
+          "Čime se baviš?"
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-04/cime-se-bavis.mp3"
       },
       {
         "id": "translate-2",

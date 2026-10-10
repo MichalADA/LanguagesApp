@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odakle",
         "partOfSpeech": "adverb",
         "recordId": "A1-0020",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4884"
+        },
+        "accepted": [
+          "odakle"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/odakle.mp3"
       },
       {
@@ -21,6 +28,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gdje",
         "partOfSpeech": "adverb",
         "recordId": "A1-0021",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:89"
+        },
+        "accepted": [
+          "gdje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/gdje.mp3"
       },
       {
@@ -29,6 +44,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "živjeti",
         "partOfSpeech": "verb",
         "recordId": "A1-0022",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:19"
+        },
+        "accepted": [
+          "živjeti"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/zivjeti.mp3"
       },
       {
@@ -37,6 +59,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "Poljska",
         "partOfSpeech": "proper_noun",
         "recordId": "A1-0023",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:poljska"
+        },
+        "accepted": [
+          "Poljska"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/poljska.mp3"
       },
       {
@@ -45,6 +75,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "Hrvatska",
         "partOfSpeech": "proper_noun",
         "recordId": "A1-0024",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:hrvatska"
+        },
+        "accepted": [
+          "Hrvatska"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/hrvatska.mp3"
       },
       {
@@ -53,6 +91,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "grad",
         "partOfSpeech": "noun",
         "recordId": "A1-0025",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:252"
+        },
+        "accepted": [
+          "grad"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/grad.mp3"
       },
       {
@@ -61,6 +107,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iz",
         "partOfSpeech": "preposition",
         "recordId": "A1-0026",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:iz"
+        },
+        "accepted": [
+          "iz"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/iz.mp3"
       },
       {
@@ -69,6 +123,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "u",
         "partOfSpeech": "preposition",
         "recordId": "A1-0027",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:u"
+        },
+        "accepted": [
+          "u"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/u.mp3"
       }
     ],

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vratiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0582",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1298"
+        },
+        "accepted": [
+          "vratiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/vratiti.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zamijeniti",
         "partOfSpeech": "verb",
         "recordId": "A2-0583",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1299"
+        },
+        "accepted": [
+          "zamijeniti"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/zamijeniti.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pokvaren",
         "partOfSpeech": "adjective",
         "recordId": "A2-0584",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1123"
+        },
+        "accepted": [
+          "pokvaren"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/pokvaren.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "oštećen",
         "partOfSpeech": "adjective",
         "recordId": "A2-0585",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1581"
+        },
+        "accepted": [
+          "oštećen"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/ostecen.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jamstvo",
         "partOfSpeech": "noun",
         "recordId": "A2-0586",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:jamstvo"
+        },
+        "accepted": [
+          "jamstvo"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/jamstvo.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "reklamacija",
         "partOfSpeech": "noun",
         "recordId": "A2-0587",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1297"
+        },
+        "accepted": [
+          "reklamacija"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/reklamacija.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "povrat",
         "partOfSpeech": "phrase",
         "recordId": "A2-0588",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1874"
+        },
+        "accepted": [
+          "povrat novca"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/povrat-novca.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "potvrda",
         "partOfSpeech": "noun",
         "recordId": "A2-0589",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1941"
+        },
+        "accepted": [
+          "potvrda"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/potvrda.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uređaj",
         "partOfSpeech": "noun",
         "recordId": "A2-0590",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:uređaj"
+        },
+        "accepted": [
+          "uređaj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/uredjaj.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kutija",
         "partOfSpeech": "noun",
         "recordId": "A2-0591",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1900"
+        },
+        "accepted": [
+          "kutija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/kutija.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ekran",
         "partOfSpeech": "noun",
         "recordId": "A2-0592",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:821"
+        },
+        "accepted": [
+          "ekran"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/ekran.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "raditi",
         "partOfSpeech": "phrase",
         "recordId": "A2-0593",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ne radi"
+        },
+        "accepted": [
+          "Ne radi."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/ne-radi.mp3"
       }
     ],
@@ -488,18 +576,39 @@ export const LESSON: GeneratedLesson = {
           "vratiti"
         ],
         "translation": "Chciałbym zwrócić te buty.",
+        "rule": "Htio bih vratiti… — Grzeczna prośba w sklepie: Htio bih / Htjela bih + bezokolicznik (chciałbym / chciałabym): Htio bih vratiti ove cipele.",
         "answerAudioSrc": "/audio/hr/a2/module-05/htio-bih-vratiti-ove-cipele.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Czy może go Pan wymienić?",
-        "accepted": [
-          "Možete li ga zamijeniti?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Telefon ima dvije godine jamstva.",
+        "options": [
+          "Telefon ma dwa lata gwarancji.",
+          "Chciałbym zwrócić te buty.",
+          "Kupiłam wczoraj ten telefon, ale nie działa."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-05/mozete-li-ga-zamijeniti.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-05/telefon-ima-dvije-godine-jamstva.mp3"
+      },
+      {
+        "id": "choice-1",
+        "stage": "practice",
+        "type": "choice",
+        "instruction": "Wybierz poprawne zdanie.",
+        "prompt": "Chciałabym zwrócić tę kurtkę.",
+        "options": [
+          "Htio bih vratiti ova jakna.",
+          "Htjela sam vratiti ovu jaknu.",
+          "Htjela bih vratiti ovu jaknu."
+        ],
+        "correctIndex": 2,
+        "explanation": "Kobieta: htjela bih + bezokolicznik; jaknu w bierniku.",
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a2/module-05/htjela-bih-vratiti-ovu-jaknu.mp3"
       },
       {
         "id": "order",
@@ -519,35 +628,15 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-05/ispunite-obrazac-za-reklamaciju.mp3"
       },
       {
-        "id": "choice-1",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Wybierz poprawne zdanie.",
-        "prompt": "Chciałabym zwrócić tę kurtkę.",
-        "options": [
-          "Htio bih vratiti ova jakna.",
-          "Htjela sam vratiti ovu jaknu.",
-          "Htjela bih vratiti ovu jaknu."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Czy może go Pan wymienić?",
+        "accepted": [
+          "Možete li ga zamijeniti?"
         ],
-        "correctIndex": 2,
-        "explanation": "Kobieta: htjela bih + bezokolicznik; jaknu w bierniku.",
-        "targetText": "options",
-        "answerAudioSrc": "/audio/hr/a2/module-05/htjela-bih-vratiti-ovu-jaknu.mp3"
-      },
-      {
-        "id": "comprehend",
-        "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Telefon ima dvije godine jamstva.",
-        "options": [
-          "Telefon ma dwa lata gwarancji.",
-          "Chciałbym zwrócić te buty.",
-          "Kupiłam wczoraj ten telefon, ale nie działa."
-        ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-05/telefon-ima-dvije-godine-jamstva.mp3"
+        "answerAudioSrc": "/audio/hr/a2/module-05/mozete-li-ga-zamijeniti.mp3"
       },
       {
         "id": "translate-2",

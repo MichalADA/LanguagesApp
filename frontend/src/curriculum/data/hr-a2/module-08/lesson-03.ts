@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "predstaviti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0920",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4635"
+        },
+        "accepted": [
+          "predstaviti se"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/predstaviti-se.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iskreno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0921",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:iskreno"
+        },
+        "accepted": [
+          "iskreno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/iskreno.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "misliti",
         "partOfSpeech": "phrase",
         "recordId": "A2-0922",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kako to misliš"
+        },
+        "accepted": [
+          "Kako to misliš?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/kako-to-mislis.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zanimati",
         "partOfSpeech": "verb",
         "recordId": "A2-0923",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zanimati"
+        },
+        "accepted": [
+          "zanimati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/zanimati.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "drag",
         "partOfSpeech": "phrase",
         "recordId": "A2-0924",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:bilo mi je drago"
+        },
+        "accepted": [
+          "Bilo mi je drago."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/bilo-mi-je-drago.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vidjeti",
         "partOfSpeech": "phrase",
         "recordId": "A2-0925",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:vidimo se uskoro"
+        },
+        "accepted": [
+          "Vidimo se uskoro!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/vidimo-se-uskoro.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "broj",
         "partOfSpeech": "phrase",
         "recordId": "A2-0926",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:broj telefona"
+        },
+        "accepted": [
+          "broj telefona"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/broj-telefona.mp3"
       }
     ],
@@ -194,15 +250,19 @@ export const LESSON: GeneratedLesson = {
         ]
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Możesz mi dać swój numer telefonu?",
-        "accepted": [
-          "Možeš li mi dati svoj broj telefona?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Čime se baviš i sviđa li ti se posao?",
+        "options": [
+          "Skąd jesteś i jak długo mieszkasz w Chorwacji?",
+          "Co robiłeś w zeszły weekend?",
+          "Czym się zajmujesz i czy podoba ci się praca?"
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-08/mozes-li-mi-dati-svoj-broj-telefona.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-08/cime-se-bavis-i-svidja-li-ti-se-posao.mp3"
       },
       {
         "id": "order",
@@ -223,19 +283,15 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-08/kakve-planove-imas-za-ljeto.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Čime se baviš i sviđa li ti se posao?",
-        "options": [
-          "Skąd jesteś i jak długo mieszkasz w Chorwacji?",
-          "Co robiłeś w zeszły weekend?",
-          "Czym się zajmujesz i czy podoba ci się praca?"
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Możesz mi dać swój numer telefonu?",
+        "accepted": [
+          "Možeš li mi dati svoj broj telefona?"
         ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-08/cime-se-bavis-i-svidja-li-ti-se-posao.mp3"
+        "answerAudioSrc": "/audio/hr/a2/module-08/mozes-li-mi-dati-svoj-broj-telefona.mp3"
       },
       {
         "id": "dialog",

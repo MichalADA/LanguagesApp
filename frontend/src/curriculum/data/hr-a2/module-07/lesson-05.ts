@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pristojba",
         "partOfSpeech": "noun",
         "recordId": "A2-0852",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pristojba"
+        },
+        "accepted": [
+          "pristojba"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/pristojba.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kopija",
         "partOfSpeech": "noun",
         "recordId": "A2-0853",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1484"
+        },
+        "accepted": [
+          "kopija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/kopija.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uplatnica",
         "partOfSpeech": "noun",
         "recordId": "A2-0854",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:uplatnica"
+        },
+        "accepted": [
+          "uplatnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/uplatnica.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rok",
         "partOfSpeech": "phrase",
         "recordId": "A2-0855",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:rok valjanosti"
+        },
+        "accepted": [
+          "rok valjanosti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/rok-valjanosti.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ovjera",
         "partOfSpeech": "noun",
         "recordId": "A2-0856",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ovjera"
+        },
+        "accepted": [
+          "ovjera"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/ovjera.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "osobno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0857",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2312"
+        },
+        "accepted": [
+          "osobno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/osobno.mp3"
       }
     ],

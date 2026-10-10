@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ispod",
         "partOfSpeech": "preposition",
         "recordId": "A2-0679",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ispod"
+        },
+        "accepted": [
+          "ispod"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/ispod.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iznad",
         "partOfSpeech": "preposition",
         "recordId": "A2-0680",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:iznad"
+        },
+        "accepted": [
+          "iznad"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/iznad.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ormar",
         "partOfSpeech": "noun",
         "recordId": "A2-0681",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:594"
+        },
+        "accepted": [
+          "ormar"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/ormar.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "polica",
         "partOfSpeech": "noun",
         "recordId": "A2-0682",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1523"
+        },
+        "accepted": [
+          "polica"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/polica.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "krevet",
         "partOfSpeech": "noun",
         "recordId": "A2-0683",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:210"
+        },
+        "accepted": [
+          "krevet"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/krevet.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slika",
         "partOfSpeech": "noun",
         "recordId": "A2-0684",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1859"
+        },
+        "accepted": [
+          "slika"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/slika.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prozor",
         "partOfSpeech": "noun",
         "recordId": "A2-0685",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:207"
+        },
+        "accepted": [
+          "prozor"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/prozor.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "televizor",
         "partOfSpeech": "noun",
         "recordId": "A2-0686",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2642"
+        },
+        "accepted": [
+          "televizor"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/televizor.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "fotelja",
         "partOfSpeech": "noun",
         "recordId": "A2-0687",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2641"
+        },
+        "accepted": [
+          "fotelja"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/fotelja.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tepih",
         "partOfSpeech": "noun",
         "recordId": "A2-0688",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2637"
+        },
+        "accepted": [
+          "tepih"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/tepih.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lampa",
         "partOfSpeech": "noun",
         "recordId": "A2-0689",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:lampa"
+        },
+        "accepted": [
+          "lampa"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/lampa.mp3"
       }
     ],
@@ -446,18 +526,39 @@ export const LESSON: GeneratedLesson = {
           "ispod"
         ],
         "translation": "Kot śpi pod łóżkiem.",
+        "rule": "Ispod kreveta — Gdzie coś jest?",
         "answerAudioSrc": "/audio/hr/a2/module-06/macka-spava-ispod-kreveta.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Klucze są na stole.",
-        "accepted": [
-          "Ključevi su na stolu."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Stol je između kauča i televizora.",
+        "options": [
+          "Klucze są na stole.",
+          "Stół jest między kanapą a telewizorem.",
+          "Kot śpi pod łóżkiem."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-06/kljucevi-su-na-stolu.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-06/stol-je-izmedju-kauca-i-televizora.mp3"
+      },
+      {
+        "id": "choice-1",
+        "stage": "practice",
+        "type": "choice",
+        "instruction": "Wybierz poprawne zdanie.",
+        "prompt": "Kot śpi pod łóżkiem.",
+        "options": [
+          "Mačka spava ispod krevet.",
+          "Mačka spava ispod kreveta.",
+          "Mačka spava ispod krevetu."
+        ],
+        "correctIndex": 1,
+        "explanation": "ispod + dopełniacz: krevet → kreveta.",
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a2/module-06/macka-spava-ispod-kreveta.mp3"
       },
       {
         "id": "order",
@@ -477,35 +578,15 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-06/slika-visi-iznad-kauca.mp3"
       },
       {
-        "id": "choice-1",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Wybierz poprawne zdanie.",
-        "prompt": "Kot śpi pod łóżkiem.",
-        "options": [
-          "Mačka spava ispod krevet.",
-          "Mačka spava ispod kreveta.",
-          "Mačka spava ispod krevetu."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Klucze są na stole.",
+        "accepted": [
+          "Ključevi su na stolu."
         ],
-        "correctIndex": 1,
-        "explanation": "ispod + dopełniacz: krevet → kreveta.",
-        "targetText": "options",
-        "answerAudioSrc": "/audio/hr/a2/module-06/macka-spava-ispod-kreveta.mp3"
-      },
-      {
-        "id": "comprehend",
-        "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Stol je između kauča i televizora.",
-        "options": [
-          "Klucze są na stole.",
-          "Stół jest między kanapą a telewizorem.",
-          "Kot śpi pod łóżkiem."
-        ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-06/stol-je-izmedju-kauca-i-televizora.mp3"
+        "answerAudioSrc": "/audio/hr/a2/module-06/kljucevi-su-na-stolu.mp3"
       },
       {
         "id": "translate-2",

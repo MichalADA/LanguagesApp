@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bok",
         "partOfSpeech": "interjection",
         "recordId": "A1-0002",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:bok"
+        },
+        "accepted": [
+          "bok"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/bok.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dobar dan",
         "partOfSpeech": "phrase",
         "recordId": "A1-0003",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:406"
+        },
+        "accepted": [
+          "dobar dan"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/dobar-dan.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "doviđenja",
         "partOfSpeech": "phrase",
         "recordId": "A1-0004",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:doviđenja"
+        },
+        "accepted": [
+          "doviđenja"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/dovidjenja.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kako",
         "partOfSpeech": "adverb",
         "recordId": "A1-0005",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:90"
+        },
+        "accepted": [
+          "kako"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/kako.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dobro",
         "partOfSpeech": "adverb",
         "recordId": "A1-0006",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2295"
+        },
+        "accepted": [
+          "dobro"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/dobro.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odlično",
         "partOfSpeech": "adverb",
         "recordId": "A1-0007",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:odlično"
+        },
+        "accepted": [
+          "odlično"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/odlicno.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "loše",
         "partOfSpeech": "adverb",
         "recordId": "A1-0008",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2296"
+        },
+        "accepted": [
+          "loše"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/lose.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hvala",
         "partOfSpeech": "interjection",
         "recordId": "A1-0009",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:402"
+        },
+        "accepted": [
+          "hvala"
+        ],
         "audioSrc": "/audio/hr/a1/module-01/hvala.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "biti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1134",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kako ste"
+        },
+        "accepted": [
+          "Kako ste?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/kako-ste.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ti",
         "partOfSpeech": "phrase",
         "recordId": "A1-1135",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:a ti"
+        },
+        "accepted": [
+          "A ti?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/a-ti.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jutro",
         "partOfSpeech": "phrase",
         "recordId": "A1-1136",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:dobro jutro"
+        },
+        "accepted": [
+          "Dobro jutro!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/dobro-jutro.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "večer",
         "partOfSpeech": "phrase",
         "recordId": "A1-1137",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:dobra večer"
+        },
+        "accepted": [
+          "Dobra večer!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/dobra-vecer.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "noć",
         "partOfSpeech": "phrase",
         "recordId": "A1-1138",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:laku noć"
+        },
+        "accepted": [
+          "Laku noć!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-01/laku-noc.mp3"
       }
     ],
@@ -409,6 +505,7 @@ export const LESSON: GeneratedLesson = {
           "sam"
         ],
         "translation": "Mam się dobrze, dziękuję.",
+        "rule": "Kako si? — Dobro sam. — Mówiąc, jak się masz, dodajesz sam — „jestem”: Dobro sam.",
         "answerAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala.mp3"
       },
       {
@@ -427,18 +524,6 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-01/nisam-bas-dobro.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Mam się świetnie.",
-        "accepted": [
-          "Odlično sam.",
-          "Ja sam odlično."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -454,7 +539,20 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Dobro sam, hvala, a ti?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-01/dobro-sam-hvala-a-ti.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Mam się świetnie.",
+        "accepted": [
+          "Odlično sam.",
+          "Ja sam odlično."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-01/odlicno-sam.mp3"
       },
       {
         "id": "translate-2",

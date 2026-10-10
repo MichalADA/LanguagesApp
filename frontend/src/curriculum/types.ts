@@ -184,6 +184,8 @@ export interface TranslateStep extends StepBase {
   accepted: string[];
   hint?: string;
   answerAudioSrc?: string;
+  /** Krótka reguła z materiału lekcji — pokazywana po błędnej odpowiedzi. */
+  rule?: string;
 }
 
 export interface GapStep extends StepBase {
@@ -196,6 +198,8 @@ export interface GapStep extends StepBase {
   hint?: string;
   /** Nagranie całego zdania z uzupełnioną luką. */
   answerAudioSrc?: string;
+  /** Krótka reguła z materiału lekcji — pokazywana po błędnej odpowiedzi. */
+  rule?: string;
 }
 
 export interface DialogStep extends StepBase {
@@ -237,6 +241,8 @@ export interface OrderStep extends StepBase {
   tokens: string[];
   accepted: string[];
   answerAudioSrc?: string;
+  /** Krótka reguła (np. szyk krótkich form) — pokazywana po błędnej odpowiedzi. */
+  rule?: string;
 }
 
 export interface ComprehensionQuestion {
@@ -287,7 +293,14 @@ export type LessonStep =
   | ListeningStep
   | VocabListStep;
 
-/** Słowo z lekcji — materiał do przyszłych powtórek (FSRS). */
+/** Karta FSRS w backendzie (ReviewState): słowo ze słownika kursu albo zwrot z lekcji. */
+export interface ReviewRef {
+  itemType: "WORD" | "PHRASE";
+  /** `pl-hr:<rank>` (WORD — ta sama karta co w grach i fiszkach) albo `pl-hr:phrase:<tekst>`. */
+  itemId: string;
+}
+
+/** Słowo z lekcji — materiał do powtórek (FSRS). */
 export interface LessonVocabularyItem extends Audible {
   target: string;
   source: string;
@@ -295,6 +308,19 @@ export interface LessonVocabularyItem extends Audible {
   partOfSpeech?: string;
   /** record_id z CSV. */
   recordId?: string;
+  /** Karta FSRS, do której trafia słowo po ukończeniu lekcji (wpisuje generator). */
+  review?: ReviewRef;
+  /** Poprawne warianty odpowiedzi (z CSV). */
+  accepted?: string[];
+  /** Słowo z listy, nie z osobnej karty — opcjonalne, nie trafia samo do powtórek. */
+  optional?: boolean;
+}
+
+/** Treść karty PHRASE w powtórkach (src/curriculum/data/<poziom>/review-items.ts). */
+export interface CurriculumReviewItem extends Audible {
+  target: string;
+  source: string;
+  accepted: string[];
 }
 
 export interface LessonContent {

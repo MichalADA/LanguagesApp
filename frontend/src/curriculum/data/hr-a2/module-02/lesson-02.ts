@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "morati",
         "partOfSpeech": "verb",
         "recordId": "A2-0155",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:5"
+        },
+        "accepted": [
+          "morati"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/morati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "moći",
         "partOfSpeech": "verb",
         "recordId": "A2-0156",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:3"
+        },
+        "accepted": [
+          "moći"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/moci.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "smjeti",
         "partOfSpeech": "verb",
         "recordId": "A2-0157",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:724"
+        },
+        "accepted": [
+          "smjeti"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/smjeti.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pomoći",
         "partOfSpeech": "verb",
         "recordId": "A2-0158",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:46"
+        },
+        "accepted": [
+          "pomoći"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/pomoci.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odgoditi",
         "partOfSpeech": "verb",
         "recordId": "A2-0159",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2862"
+        },
+        "accepted": [
+          "odgoditi"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/odgoditi.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ispričavati se",
         "partOfSpeech": "verb",
         "recordId": "A2-0160",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2105"
+        },
+        "accepted": [
+          "ispričavati se"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/ispricavati-se.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hitno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0161",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1425"
+        },
+        "accepted": [
+          "hitno"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/hitno.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "termin",
         "partOfSpeech": "noun",
         "recordId": "A2-0162",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1871"
+        },
+        "accepted": [
+          "termin"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/termin.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "utičnica",
         "partOfSpeech": "noun",
         "recordId": "A2-0163",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1823"
+        },
+        "accepted": [
+          "utičnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/uticnica.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slušalice",
         "partOfSpeech": "noun",
         "recordId": "A2-0164",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1609"
+        },
+        "accepted": [
+          "slušalice"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/slusalice.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pušenje",
         "partOfSpeech": "noun",
         "recordId": "A2-0165",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pušenje"
+        },
+        "accepted": [
+          "pušenje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/pusenje.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zabranjeno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0166",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1711"
+        },
+        "accepted": [
+          "zabranjeno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/zabranjeno.mp3"
       }
     ],
@@ -544,6 +632,7 @@ export const LESSON: GeneratedLesson = {
           "Moramo"
         ],
         "translation": "Musimy przełożyć spotkanie.",
+        "rule": "Moram, mogu, smijem — Po morati (musieć), moći (móc), smjeti (wolno) i trebati (trzeba, powinno się) stoi bezokolicznik: Moram raditi.",
         "answerAudioSrc": "/audio/hr/a2/module-02/moramo-odgoditi-sastanak.mp3"
       },
       {
@@ -594,17 +683,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-02/mogu-li-platiti-karticom.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Możesz mi pomóc?",
-        "accepted": [
-          "Možeš li mi pomoći?"
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-02/mozes-li-mi-pomoci.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -620,7 +698,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ispričavam se, ne mogu doći."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-02/ispricavam-se-ne-mogu-doci.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Możesz mi pomóc?",
+        "accepted": [
+          "Možeš li mi pomoći?"
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-02/mozes-li-mi-pomoci.mp3"
       },
       {
         "id": "translate-2",

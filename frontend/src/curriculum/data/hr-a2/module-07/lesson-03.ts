@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "noćenje",
         "partOfSpeech": "noun",
         "recordId": "A2-0799",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:955"
+        },
+        "accepted": [
+          "noćenje"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/nocenje.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "datum",
         "partOfSpeech": "noun",
         "recordId": "A2-0800",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1017"
+        },
+        "accepted": [
+          "datum"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/datum.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "otkazivanje",
         "partOfSpeech": "noun",
         "recordId": "A2-0801",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1873"
+        },
+        "accepted": [
+          "otkazivanje"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/otkazivanje.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lipanj",
         "partOfSpeech": "noun",
         "recordId": "A2-0802",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1006"
+        },
+        "accepted": [
+          "lipanj"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/lipanj.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "srpanj",
         "partOfSpeech": "noun",
         "recordId": "A2-0803",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1007"
+        },
+        "accepted": [
+          "srpanj"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/srpanj.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kolovoz",
         "partOfSpeech": "noun",
         "recordId": "A2-0804",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1008"
+        },
+        "accepted": [
+          "kolovoz"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/kolovoz.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "polupansion",
         "partOfSpeech": "noun",
         "recordId": "A2-0805",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:polupansion"
+        },
+        "accepted": [
+          "polupansion"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/polupansion.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "doplata",
         "partOfSpeech": "noun",
         "recordId": "A2-0806",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:doplata"
+        },
+        "accepted": [
+          "doplata"
+        ],
         "audioSrc": "/audio/hr/a2/module-07/doplata.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odjava",
         "partOfSpeech": "noun",
         "recordId": "A2-0807",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:odjava"
+        },
+        "accepted": [
+          "odjava"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/odjava.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rujan",
         "partOfSpeech": "noun",
         "recordId": "A2-0808",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1009"
+        },
+        "accepted": [
+          "rujan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/rujan.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pogled",
         "partOfSpeech": "phrase",
         "recordId": "A2-0809",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pogled na more"
+        },
+        "accepted": [
+          "pogled na more"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-07/pogled-na-more.mp3"
       }
     ],
@@ -440,6 +520,7 @@ export const LESSON: GeneratedLesson = {
           "petog"
         ],
         "translation": "Chciałabym zarezerwować pokój od piątego do siódmego lipca.",
+        "rule": "Od petog do sedmog srpnja — Daty mówisz liczebnikiem porządkowym w dopełniaczu + miesiąc w dopełniaczu: prvog kolovoza (pierwszego sierpnia), od petog do sedmog srpnja.",
         "answerAudioSrc": "/audio/hr/a2/module-07/htjela-bih-rezervirati-sobu-od-petog-do-sedmog-srpnja.mp3"
       },
       {
@@ -474,17 +555,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-07/dolazimo-petog-srpnja.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ile kosztuje nocleg ze śniadaniem?",
-        "accepted": [
-          "Koliko košta noćenje s doručkom?"
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-07/koliko-kosta-nocenje-s-doruckom.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -500,7 +570,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "U lipnju je hotel jeftiniji."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-07/u-lipnju-je-hotel-jeftiniji.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Ile kosztuje nocleg ze śniadaniem?",
+        "accepted": [
+          "Koliko košta noćenje s doručkom?"
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-07/koliko-kosta-nocenje-s-doruckom.mp3"
       },
       {
         "id": "translate-2",

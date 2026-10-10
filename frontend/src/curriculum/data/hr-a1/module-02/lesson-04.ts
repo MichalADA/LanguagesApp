@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "imati",
         "partOfSpeech": "verb",
         "recordId": "A1-0146",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2"
+        },
+        "accepted": [
+          "imati"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/imati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nemati",
         "partOfSpeech": "verb",
         "recordId": "A1-0147",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nemati"
+        },
+        "accepted": [
+          "nemati"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/nemati.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "auto",
         "partOfSpeech": "noun",
         "recordId": "A1-0148",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:256"
+        },
+        "accepted": [
+          "auto"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/auto.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bicikl",
         "partOfSpeech": "noun",
         "recordId": "A1-0149",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:567"
+        },
+        "accepted": [
+          "bicikl"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/bicikl.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "telefon",
         "partOfSpeech": "noun",
         "recordId": "A1-0150",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:telefon"
+        },
+        "accepted": [
+          "telefon"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/telefon.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "knjiga",
         "partOfSpeech": "noun",
         "recordId": "A1-0151",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:293"
+        },
+        "accepted": [
+          "knjiga"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/knjiga.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pas",
         "partOfSpeech": "noun",
         "recordId": "A1-0152",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:452"
+        },
+        "accepted": [
+          "pas"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/pas.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mačka",
         "partOfSpeech": "noun",
         "recordId": "A1-0153",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:453"
+        },
+        "accepted": [
+          "mačka"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/macka.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kuća",
         "partOfSpeech": "noun",
         "recordId": "A1-0767",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:201"
+        },
+        "accepted": [
+          "kuća"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/kuca.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stan",
         "partOfSpeech": "noun",
         "recordId": "A1-0768",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:202"
+        },
+        "accepted": [
+          "stan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/stan.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "torba",
         "partOfSpeech": "noun",
         "recordId": "A1-0769",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:544"
+        },
+        "accepted": [
+          "torba"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/torba.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "novčanik",
         "partOfSpeech": "noun",
         "recordId": "A1-0770",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1459"
+        },
+        "accepted": [
+          "novčanik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/novcanik.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "novac",
         "partOfSpeech": "noun",
         "recordId": "A1-0771",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:240"
+        },
+        "accepted": [
+          "novac"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/novac.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "laptop",
         "partOfSpeech": "noun",
         "recordId": "A1-0772",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2647"
+        },
+        "accepted": [
+          "laptop"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/laptop.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kišobran",
         "partOfSpeech": "noun",
         "recordId": "A1-0773",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1679"
+        },
+        "accepted": [
+          "kišobran"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/kisobran.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "naočale",
         "partOfSpeech": "noun",
         "recordId": "A1-0774",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1163"
+        },
+        "accepted": [
+          "naočale"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/naocale.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vrt",
         "partOfSpeech": "noun",
         "recordId": "A1-0775",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:448"
+        },
+        "accepted": [
+          "vrt"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/vrt.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nov",
         "partOfSpeech": "adjective",
         "recordId": "A1-0776",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:114"
+        },
+        "accepted": [
+          "nov"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/nov.mp3"
       }
     ],
@@ -518,6 +654,7 @@ export const LESSON: GeneratedLesson = {
           "knjigu"
         ],
         "translation": "Mam nową książkę.",
+        "rule": "Imam / nemam — Imati to „mieć”, a nemati — „nie mieć” (jedno słowo!).",
         "answerAudioSrc": "/audio/hr/a1/module-02/imam-novu-knjigu.mp3"
       },
       {
@@ -552,18 +689,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-02/imas-li-knjigu.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Mam samochód.",
-        "accepted": [
-          "Imam auto.",
-          "Ja imam auto."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -578,7 +703,20 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Imaš li novi telefon?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-02/imas-li-novi-telefon.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Mam samochód.",
+        "accepted": [
+          "Imam auto.",
+          "Ja imam auto."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-02/imam-auto.mp3"
       },
       {
         "id": "translate-2",

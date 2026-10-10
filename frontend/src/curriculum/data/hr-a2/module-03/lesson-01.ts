@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "glava",
         "partOfSpeech": "noun",
         "recordId": "A2-0257",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:315"
+        },
+        "accepted": [
+          "glava"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/glava.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "grlo",
         "partOfSpeech": "noun",
         "recordId": "A2-0258",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:919"
+        },
+        "accepted": [
+          "grlo"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/grlo.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "leđa",
         "partOfSpeech": "noun",
         "recordId": "A2-0259",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:908"
+        },
+        "accepted": [
+          "leđa"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/ledja.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "trbuh",
         "partOfSpeech": "noun",
         "recordId": "A2-0260",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:909"
+        },
+        "accepted": [
+          "trbuh"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/trbuh.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zub",
         "partOfSpeech": "noun",
         "recordId": "A2-0261",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zub"
+        },
+        "accepted": [
+          "zub"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/zub.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "boljeti",
         "partOfSpeech": "verb",
         "recordId": "A2-0262",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:918"
+        },
+        "accepted": [
+          "boljeti"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/boljeti.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prehlađen",
         "partOfSpeech": "adjective",
         "recordId": "A2-0263",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prehlađen"
+        },
+        "accepted": [
+          "prehlađen"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/prehladjen.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kašalj",
         "partOfSpeech": "noun",
         "recordId": "A2-0264",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:914"
+        },
+        "accepted": [
+          "kašalj"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/kasalj.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nos",
         "partOfSpeech": "noun",
         "recordId": "A2-0265",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2388"
+        },
+        "accepted": [
+          "nos"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/nos.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uho",
         "partOfSpeech": "noun",
         "recordId": "A2-0266",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2387"
+        },
+        "accepted": [
+          "uho"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/uho.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "noga",
         "partOfSpeech": "noun",
         "recordId": "A2-0267",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:317"
+        },
+        "accepted": [
+          "noga"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/noga.mp3"
       }
     ],
@@ -434,6 +514,7 @@ export const LESSON: GeneratedLesson = {
           "Bole"
         ],
         "translation": "Bolą mnie plecy.",
+        "rule": "Boli me glava — Ból opisujesz jak po polsku: boli me (boli mnie) + to, co boli, w mianowniku: Boli me glava.",
         "answerAudioSrc": "/audio/hr/a2/module-03/bole-me-ledja.mp3"
       },
       {
@@ -468,18 +549,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-03/bole-me-ledja.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Boli mnie głowa.",
-        "accepted": [
-          "Boli me glava.",
-          "Glava me boli."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-03/boli-me-glava.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -495,6 +564,18 @@ export const LESSON: GeneratedLesson = {
           "Jučer me bolio trbuh."
         ],
         "answerAudioSrc": "/audio/hr/a2/module-03/jucer-me-bolio-trbuh.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Boli mnie głowa.",
+        "accepted": [
+          "Boli me glava.",
+          "Glava me boli."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-03/boli-me-glava.mp3"
       },
       {
         "id": "translate-2",

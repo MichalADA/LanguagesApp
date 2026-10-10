@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "koštati",
         "partOfSpeech": "verb",
         "recordId": "A1-0416",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:506"
+        },
+        "accepted": [
+          "koštati"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/kostati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "cijena",
         "partOfSpeech": "noun",
         "recordId": "A1-0417",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:239"
+        },
+        "accepted": [
+          "cijena"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/cijena.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "euro",
         "partOfSpeech": "noun",
         "recordId": "A1-0418",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2593"
+        },
+        "accepted": [
+          "euro"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/euro.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kupiti",
         "partOfSpeech": "verb",
         "recordId": "A1-0419",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kupiti"
+        },
+        "accepted": [
+          "kupiti"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/kupiti.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tražiti",
         "partOfSpeech": "verb",
         "recordId": "A1-0420",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:333"
+        },
+        "accepted": [
+          "tražiti"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/traziti.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "imati",
         "partOfSpeech": "phrase",
         "recordId": "A1-1167",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:imate li"
+        },
+        "accepted": [
+          "Imate li…?"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/imate-li.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "skup",
         "partOfSpeech": "adverb",
         "recordId": "A1-0955",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1306"
+        },
+        "accepted": [
+          "skupo"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/skupo.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kartica",
         "partOfSpeech": "noun",
         "recordId": "A1-0423",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:242"
+        },
+        "accepted": [
+          "kartica"
+        ],
         "audioSrc": "/audio/hr/a1/module-05/kartica.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jeftin",
         "partOfSpeech": "adverb",
         "recordId": "A1-0956",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1307"
+        },
+        "accepted": [
+          "jeftino"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/jeftino.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "cent",
         "partOfSpeech": "noun",
         "recordId": "A1-0957",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:cent"
+        },
+        "accepted": [
+          "cent"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/cent.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "blagajna",
         "partOfSpeech": "noun",
         "recordId": "A1-0958",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2580"
+        },
+        "accepted": [
+          "blagajna"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/blagajna.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vrećica",
         "partOfSpeech": "noun",
         "recordId": "A1-0959",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:vrećica"
+        },
+        "accepted": [
+          "vrećica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/vrecica.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kilogram",
         "partOfSpeech": "noun",
         "recordId": "A1-0960",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:756"
+        },
+        "accepted": [
+          "kilogram"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/kilogram.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "komad",
         "partOfSpeech": "noun",
         "recordId": "A1-0961",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:komad"
+        },
+        "accepted": [
+          "komad"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/komad.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "boca",
         "partOfSpeech": "noun",
         "recordId": "A1-0962",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:627"
+        },
+        "accepted": [
+          "boca"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/boca.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nešto",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0963",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:103"
+        },
+        "accepted": [
+          "nešto"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/nesto.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sve",
         "partOfSpeech": "phrase",
         "recordId": "A1-0964",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:to je sve"
+        },
+        "accepted": [
+          "To je sve."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/to-je-sve.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "četrdeset",
         "partOfSpeech": "numeral",
         "recordId": "A1-1168",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2568"
+        },
+        "accepted": [
+          "četrdeset"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/cetrdeset.mp3"
       },
       {
@@ -157,6 +293,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pedeset",
         "partOfSpeech": "numeral",
         "recordId": "A1-1169",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1228"
+        },
+        "accepted": [
+          "pedeset"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/pedeset.mp3"
       },
       {
@@ -165,6 +309,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šezdeset",
         "partOfSpeech": "numeral",
         "recordId": "A1-1170",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2569"
+        },
+        "accepted": [
+          "šezdeset"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/sezdeset.mp3"
       },
       {
@@ -173,6 +325,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sedamdeset",
         "partOfSpeech": "numeral",
         "recordId": "A1-1171",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2570"
+        },
+        "accepted": [
+          "sedamdeset"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/sedamdeset.mp3"
       },
       {
@@ -181,6 +341,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "osamdeset",
         "partOfSpeech": "numeral",
         "recordId": "A1-1172",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2571"
+        },
+        "accepted": [
+          "osamdeset"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/osamdeset.mp3"
       },
       {
@@ -189,6 +357,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "devedeset",
         "partOfSpeech": "numeral",
         "recordId": "A1-1173",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2572"
+        },
+        "accepted": [
+          "devedeset"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-05/devedeset.mp3"
       }
     ],
@@ -687,38 +863,23 @@ export const LESSON: GeneratedLesson = {
           "eura"
         ],
         "translation": "Kosztuje dziesięć euro.",
+        "rule": "Koliko košta? — O cenę pytasz Koliko ovo košta?",
         "answerAudioSrc": "/audio/hr/a1/module-05/kosta-deset-eura.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ile to kosztuje?",
-        "accepted": [
-          "Koliko ovo košta?",
-          "Koliko košta?",
-          "Koliko to košta?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Je li ovo skupo?",
+        "options": [
+          "Czy to jest drogie?",
+          "Ile to kosztuje?",
+          "Kosztuje dziesięć euro."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Chcę kupić tę książkę.",
-        "tokens": [
-          "kupiti",
-          "knjigu",
-          "ovu",
-          "želim"
-        ],
-        "accepted": [
-          "Želim kupiti ovu knjigu.",
-          "Ja želim kupiti ovu knjigu."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-05/zelim-kupiti-ovu-knjigu.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-05/je-li-ovo-skupo.mp3"
       },
       {
         "id": "choice-1",
@@ -766,19 +927,35 @@ export const LESSON: GeneratedLesson = {
         "promptAudioSrc": "/audio/hr/a1/module-05/ovo-kosta-trideset-dva-eura.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Je li ovo skupo?",
-        "options": [
-          "Czy to jest drogie?",
-          "Ile to kosztuje?",
-          "Kosztuje dziesięć euro."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Chcę kupić tę książkę.",
+        "tokens": [
+          "kupiti",
+          "knjigu",
+          "ovu",
+          "želim"
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-05/je-li-ovo-skupo.mp3"
+        "accepted": [
+          "Želim kupiti ovu knjigu.",
+          "Ja želim kupiti ovu knjigu."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/zelim-kupiti-ovu-knjigu.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Ile to kosztuje?",
+        "accepted": [
+          "Koliko ovo košta?",
+          "Koliko košta?",
+          "Koliko to košta?"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-05/koliko-ovo-kosta.mp3"
       },
       {
         "id": "translate-2",

@@ -114,7 +114,7 @@ export function ExerciseTranslation({ step, onNext }: { step: TranslateStep; onN
         label={t(verdict ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!verdict && !value.trim()}
         onAction={verdict ? () => onNext(verdict !== "miss") : check}
-        feedback={verdict ? <Feedback verdict={verdict} answer={verdict === "miss" ? step.accepted[0] : expected} audioSrc={step.answerAudioSrc} audioText={step.accepted[0]} /> : null}
+        feedback={verdict ? <Feedback verdict={verdict} answer={verdict === "miss" ? step.accepted[0] : expected} audioSrc={step.answerAudioSrc} audioText={step.accepted[0]} rule={step.rule} /> : null}
       />
     </>
   );
@@ -175,7 +175,7 @@ export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done 
         label={t(verdict ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!verdict && !value.trim()}
         onAction={verdict ? () => onNext(verdict !== "miss") : check}
-        feedback={verdict ? <Feedback verdict={verdict} answer={sentence(verdict === "near" && expected ? expected : step.accepted[0])} audioSrc={step.answerAudioSrc} audioText={sentence(step.accepted[0])} /> : null}
+        feedback={verdict ? <Feedback verdict={verdict} answer={sentence(verdict === "near" && expected ? expected : step.accepted[0])} audioSrc={step.answerAudioSrc} audioText={sentence(step.accepted[0])} rule={step.rule} /> : null}
       />
     </>
   );
@@ -414,7 +414,7 @@ export function ExerciseWordOrder({ step, onNext }: { step: OrderStep; onNext: D
         label={t(result ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!result && !complete}
         onAction={result ? () => onNext(result.verdict !== "miss") : check}
-        feedback={result ? <Feedback verdict={result.verdict} answer={result.verdict === "miss" ? step.accepted[0] : result.expected} audioSrc={step.answerAudioSrc} audioText={step.accepted[0]} /> : null}
+        feedback={result ? <Feedback verdict={result.verdict} answer={result.verdict === "miss" ? step.accepted[0] : result.expected} audioSrc={step.answerAudioSrc} audioText={step.accepted[0]} rule={step.rule} /> : null}
       />
     </>
   );

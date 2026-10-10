@@ -1870,6 +1870,22 @@ a.lesson-row:hover .lesson-row-link { color: var(--text-primary); }
 .test-sections li.strong .test-section-label { color: var(--gold-text); }
 .test-sections li.weak .test-section-label { color: var(--burgundy-text); }
 
+/* Wznawianie, licznik kroków, runda poprawy błędów, wynik i zaliczenie */
+.lesson-counter { max-width: 760px; margin: 0 auto; padding: 0 0 10px; font-size: 12.5px; color: var(--text-tertiary); font-variant-numeric: tabular-nums; text-align: right; }
+.lesson-resume { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-5); padding: 10px 14px; border-radius: var(--radius-md); background: var(--surface); font-size: 14px; color: var(--text-secondary); }
+.lesson-retry-note { margin-bottom: var(--space-4); font-size: 14px; color: var(--gold-text); }
+.summary-mark.pending { background: var(--surface); color: var(--burgundy-text); }
+.summary-verdict { font-size: 15.5px; color: var(--text-primary); }
+.summary-review p { margin: 0; }
+.summary-extra { width: 100%; padding: var(--space-4) var(--space-5); background: var(--surface); border-radius: var(--radius-lg); }
+.summary-extra summary { cursor: pointer; font-size: 14px; font-weight: 500; color: var(--text-secondary); min-height: 32px; display: flex; align-items: center; }
+.summary-extra .summary-words { margin-top: var(--space-3); }
+.test-verdict { font-size: 15px; font-weight: 600; }
+.test-verdict.pass { color: var(--success); }
+.test-verdict.fail { color: var(--burgundy-text); }
+.feedback-rule { color: var(--text-secondary) !important; }
+.feedback-rule b { font-weight: 600; color: var(--text-primary); }
+
 @media (max-width: 1180px) {
   .course-layout { grid-template-columns: minmax(0, 1fr); }
   .course-rail { position: static; order: -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
@@ -1901,6 +1917,7 @@ a.lesson-row:hover .lesson-row-link { color: var(--text-primary); }
   .dashboard-main > .continue-course + .today { margin-top: 0; }
   .lesson-stages { display: none; }
   .lesson-stage-compact { display: block; }
+  .lesson-stage-compact + .lesson-counter { margin-top: -10px; }
   .lesson-stage { padding: var(--space-7) var(--space-5) 160px; }
 }
 

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "plaža",
         "partOfSpeech": "noun",
         "recordId": "A1-0596",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:264"
+        },
+        "accepted": [
+          "plaža"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/plaza.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sunčati se",
         "partOfSpeech": "verb",
         "recordId": "A1-1085",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1162"
+        },
+        "accepted": [
+          "sunčati se"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/suncati-se.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sunce",
         "partOfSpeech": "noun",
         "recordId": "A1-0598",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:271"
+        },
+        "accepted": [
+          "sunce"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/sunce.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kostim",
         "partOfSpeech": "phrase",
         "recordId": "A1-1084",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1165"
+        },
+        "accepted": [
+          "kupaći kostim"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/kupaci-kostim.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kupati se",
         "partOfSpeech": "verb",
         "recordId": "A1-0600",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1167"
+        },
+        "accepted": [
+          "kupati se"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/kupati-se.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ručnik",
         "partOfSpeech": "noun",
         "recordId": "A1-0601",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:593"
+        },
+        "accepted": [
+          "ručnik"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/rucnik.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "brod",
         "partOfSpeech": "noun",
         "recordId": "A1-0602",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1172"
+        },
+        "accepted": [
+          "brod"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/brod.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "suncobran",
         "partOfSpeech": "noun",
         "recordId": "A1-1081",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:suncobran"
+        },
+        "accepted": [
+          "suncobran"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/suncobran.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pijesak",
         "partOfSpeech": "noun",
         "recordId": "A1-1079",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1169"
+        },
+        "accepted": [
+          "pijesak"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/pijesak.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "val",
         "partOfSpeech": "noun",
         "recordId": "A1-1080",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1168"
+        },
+        "accepted": [
+          "val"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/val.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ležaljka",
         "partOfSpeech": "noun",
         "recordId": "A1-1082",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ležaljka"
+        },
+        "accepted": [
+          "ležaljka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/lezaljka.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "krema",
         "partOfSpeech": "phrase",
         "recordId": "A1-1083",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1161"
+        },
+        "accepted": [
+          "krema za sunčanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/krema-za-suncanje.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "roniti",
         "partOfSpeech": "verb",
         "recordId": "A1-1086",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2144"
+        },
+        "accepted": [
+          "roniti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/roniti.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hladan",
         "partOfSpeech": "adjective",
         "recordId": "A1-1087",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:136"
+        },
+        "accepted": [
+          "hladan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/hladan.mp3"
       }
     ],
@@ -461,19 +565,23 @@ export const LESSON: GeneratedLesson = {
           "plaži"
         ],
         "translation": "Jestem na plaży.",
+        "rule": "Na plažu czy na plaži? — Chorwacki, jak polski, odróżnia kierunek od miejsca.",
         "answerAudioSrc": "/audio/hr/a1/module-07/ja-sam-na-plazi.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Idę na plażę.",
-        "accepted": [
-          "Idem na plažu.",
-          "Ja idem na plažu."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Brod ide na otok.",
+        "options": [
+          "Idę na plażę.",
+          "Łódź płynie na wyspę.",
+          "Jestem na plaży."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-07/idem-na-plazu.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-07/brod-ide-na-otok.mp3"
       },
       {
         "id": "order",
@@ -495,19 +603,16 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-07/idem-na-plazu-s-rucnikom.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Brod ide na otok.",
-        "options": [
-          "Idę na plażę.",
-          "Łódź płynie na wyspę.",
-          "Jestem na plaży."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Idę na plażę.",
+        "accepted": [
+          "Idem na plažu.",
+          "Ja idem na plažu."
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-07/brod-ide-na-otok.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-07/idem-na-plazu.mp3"
       },
       {
         "id": "translate-2",

@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ponavljanje",
         "partOfSpeech": "noun",
         "recordId": "A1-0686",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1767"
+        },
+        "accepted": [
+          "ponavljanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/ponavljanje.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "riječ",
         "partOfSpeech": "noun",
         "recordId": "A1-0687",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:299"
+        },
+        "accepted": [
+          "riječ"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/rijec.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rečenica",
         "partOfSpeech": "noun",
         "recordId": "A1-0688",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1394"
+        },
+        "accepted": [
+          "rečenica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/recenica.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gramatika",
         "partOfSpeech": "noun",
         "recordId": "A1-0689",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1392"
+        },
+        "accepted": [
+          "gramatika"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/gramatika.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slušanje",
         "partOfSpeech": "noun",
         "recordId": "A1-0690",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:slušanje"
+        },
+        "accepted": [
+          "slušanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/slusanje.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "čitanje",
         "partOfSpeech": "noun",
         "recordId": "A1-0691",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:čitanje"
+        },
+        "accepted": [
+          "čitanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/citanje.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pisanje",
         "partOfSpeech": "noun",
         "recordId": "A1-0692",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pisanje"
+        },
+        "accepted": [
+          "pisanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/pisanje.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "govor",
         "partOfSpeech": "noun",
         "recordId": "A1-0693",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:govor"
+        },
+        "accepted": [
+          "govor"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/govor.mp3"
       }
     ],

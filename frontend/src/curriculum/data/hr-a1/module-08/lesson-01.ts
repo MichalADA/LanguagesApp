@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jučer",
         "partOfSpeech": "adverb",
         "recordId": "A1-0632",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:166"
+        },
+        "accepted": [
+          "jučer"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/jucer.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bio",
         "partOfSpeech": "verb_form",
         "recordId": "A1-0633",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:bio"
+        },
+        "accepted": [
+          "bio"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/bio.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bila",
         "partOfSpeech": "verb_form",
         "recordId": "A1-0634",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:bila"
+        },
+        "accepted": [
+          "bila"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/bila.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "radio",
         "partOfSpeech": "verb_form",
         "recordId": "A1-0635",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:radio"
+        },
+        "accepted": [
+          "radio"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/radio.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "radila",
         "partOfSpeech": "verb_form",
         "recordId": "A1-0636",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:radila"
+        },
+        "accepted": [
+          "radila"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/radila.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "išao",
         "partOfSpeech": "verb_form",
         "recordId": "A1-0637",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:išao"
+        },
+        "accepted": [
+          "išao"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/isao.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "išla",
         "partOfSpeech": "verb_form",
         "recordId": "A1-0638",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:išla"
+        },
+        "accepted": [
+          "išla"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/isla.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vidjeti",
         "partOfSpeech": "verb",
         "recordId": "A1-0639",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:12"
+        },
+        "accepted": [
+          "vidjeti"
+        ],
         "audioSrc": "/audio/hr/a1/module-08/vidjeti.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prekjučer",
         "partOfSpeech": "adverb",
         "recordId": "A1-1099",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1025"
+        },
+        "accepted": [
+          "prekjučer"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/prekjucer.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sinoć",
         "partOfSpeech": "adverb",
         "recordId": "A1-1100",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1021"
+        },
+        "accepted": [
+          "sinoć"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/sinoc.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tjedan",
         "partOfSpeech": "phrase",
         "recordId": "A1-1101",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prošli tjedan"
+        },
+        "accepted": [
+          "prošli tjedan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/prosli-tjedan.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "biti",
         "partOfSpeech": "verb_form",
         "recordId": "A1-1102",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:bili"
+        },
+        "accepted": [
+          "bili"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/bili.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jesti",
         "partOfSpeech": "verb_form",
         "recordId": "A1-1103",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:jeo"
+        },
+        "accepted": [
+          "jeo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/jeo.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jesti",
         "partOfSpeech": "verb_form",
         "recordId": "A1-1104",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:jela"
+        },
+        "accepted": [
+          "jela"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/jela.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gledati",
         "partOfSpeech": "verb_form",
         "recordId": "A1-1105",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:gledao"
+        },
+        "accepted": [
+          "gledao"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/gledao.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gledati",
         "partOfSpeech": "verb_form",
         "recordId": "A1-1106",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:gledala"
+        },
+        "accepted": [
+          "gledala"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/gledala.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kupiti",
         "partOfSpeech": "verb_form",
         "recordId": "A1-1107",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kupio"
+        },
+        "accepted": [
+          "kupio"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/kupio.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kupiti",
         "partOfSpeech": "verb_form",
         "recordId": "A1-1108",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kupila"
+        },
+        "accepted": [
+          "kupila"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-08/kupila.mp3"
       }
     ],
@@ -511,36 +647,23 @@ export const LESSON: GeneratedLesson = {
           "Bila"
         ],
         "translation": "Byłam w domu.",
+        "rule": "Jučer sam radio — O przeszłości mówisz dwiema częściami: sam (ja) albo si (ty) + forma czasownika.",
         "answerAudioSrc": "/audio/hr/a1/module-08/bila-sam-kod-kuce.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Wczoraj pracowałem.",
-        "accepted": [
-          "Jučer sam radio.",
-          "Radio sam jučer."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Vidjela sam prijateljicu.",
+        "options": [
+          "Widziałam przyjaciółkę.",
+          "Wczoraj pracowałem.",
+          "Wczoraj pracowałam."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Poszedłem / pojechałem do miasta.",
-        "tokens": [
-          "u",
-          "išao",
-          "grad",
-          "sam"
-        ],
-        "accepted": [
-          "Išao sam u grad."
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-08/isao-sam-u-grad.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-08/vidjela-sam-prijateljicu.mp3"
       },
       {
         "id": "choice-1",
@@ -575,19 +698,34 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-08/bio-sam-kod-kuce.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Vidjela sam prijateljicu.",
-        "options": [
-          "Widziałam przyjaciółkę.",
-          "Wczoraj pracowałem.",
-          "Wczoraj pracowałam."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Poszedłem / pojechałem do miasta.",
+        "tokens": [
+          "u",
+          "išao",
+          "grad",
+          "sam"
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-08/vidjela-sam-prijateljicu.mp3"
+        "accepted": [
+          "Išao sam u grad."
+        ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
+        "answerAudioSrc": "/audio/hr/a1/module-08/isao-sam-u-grad.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Wczoraj pracowałem.",
+        "accepted": [
+          "Jučer sam radio.",
+          "Radio sam jučer."
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-08/jucer-sam-radio.mp3"
       },
       {
         "id": "translate-2",

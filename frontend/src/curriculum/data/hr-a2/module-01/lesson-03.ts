@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "već",
         "partOfSpeech": "adverb",
         "recordId": "A2-0055",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:181"
+        },
+        "accepted": [
+          "već"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/vec.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ikad",
         "partOfSpeech": "adverb",
         "recordId": "A2-0056",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ikad"
+        },
+        "accepted": [
+          "ikad"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/ikad.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "biti",
         "partOfSpeech": "phrase",
         "recordId": "A2-0057",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:jesam"
+        },
+        "accepted": [
+          "Jesam."
+        ],
         "audioSrc": "/audio/hr/a2/module-01/jesam.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "probati",
         "partOfSpeech": "verb",
         "recordId": "A2-0058",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:probati"
+        },
+        "accepted": [
+          "probati"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/probati.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vratiti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0059",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:vratiti se"
+        },
+        "accepted": [
+          "vratiti se"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/vratiti-se.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "otići",
         "partOfSpeech": "verb",
         "recordId": "A2-0060",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:otići"
+        },
+        "accepted": [
+          "otići"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/otici.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "put",
         "partOfSpeech": "phrase",
         "recordId": "A2-0061",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zadnji put"
+        },
+        "accepted": [
+          "zadnji put"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/zadnji-put.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dosad",
         "partOfSpeech": "adverb",
         "recordId": "A2-0062",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:dosad"
+        },
+        "accepted": [
+          "dosad"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/dosad.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ćevapi",
         "partOfSpeech": "noun",
         "recordId": "A2-0063",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ćevapi"
+        },
+        "accepted": [
+          "ćevapi"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/cevapi.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rižoto",
         "partOfSpeech": "phrase",
         "recordId": "A2-0064",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:crni rižoto"
+        },
+        "accepted": [
+          "crni rižoto"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/crni-rizoto.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "biti",
         "partOfSpeech": "phrase",
         "recordId": "A2-0065",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:još nisam"
+        },
+        "accepted": [
+          "Još nisam."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/jos-nisam.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jednom",
         "partOfSpeech": "adverb",
         "recordId": "A2-0066",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1231"
+        },
+        "accepted": [
+          "jednom"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/jednom.mp3"
       }
     ],
@@ -499,6 +587,7 @@ export const LESSON: GeneratedLesson = {
           "Jesi"
         ],
         "translation": "Byłeś już w Splicie?",
+        "rule": "Jesi li bio u Splitu? — Pytanie tak/nie zaczynasz od pełnej formy biti + li: Jesi li bio…?",
         "answerAudioSrc": "/audio/hr/a2/module-01/jesi-li-vec-bio-u-splitu.mp3"
       },
       {
@@ -550,18 +639,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-01/jesam.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Marko poszedł do domu.",
-        "accepted": [
-          "Marko je otišao kući.",
-          "Marko je otišao doma."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-01/marko-je-otisao-kuci.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -577,7 +654,20 @@ export const LESSON: GeneratedLesson = {
           "Jeste li probali ćevape?",
           "Jeste li probali ćevapčiće?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-01/jeste-li-probali-cevape.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Marko poszedł do domu.",
+        "accepted": [
+          "Marko je otišao kući.",
+          "Marko je otišao doma."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-01/marko-je-otisao-kuci.mp3"
       },
       {
         "id": "translate-2",

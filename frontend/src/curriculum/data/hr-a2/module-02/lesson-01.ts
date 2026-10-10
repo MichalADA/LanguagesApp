@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uzeti",
         "partOfSpeech": "verb",
         "recordId": "A2-0126",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:15"
+        },
+        "accepted": [
+          "uzeti"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/uzeti.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ostati",
         "partOfSpeech": "verb",
         "recordId": "A2-0127",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:50"
+        },
+        "accepted": [
+          "ostati"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/ostati.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "namjeravati",
         "partOfSpeech": "verb",
         "recordId": "A2-0128",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:namjeravati"
+        },
+        "accepted": [
+          "namjeravati"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/namjeravati.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odlučiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0129",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:356"
+        },
+        "accepted": [
+          "odlučiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/odluciti.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vjerojatno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0130",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:855"
+        },
+        "accepted": [
+          "vjerojatno"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/vjerojatno.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "svakako",
         "partOfSpeech": "adverb",
         "recordId": "A2-0131",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:svakako"
+        },
+        "accepted": [
+          "svakako"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/svakako.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "godina",
         "partOfSpeech": "phrase",
         "recordId": "A2-0132",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:iduće godine"
+        },
+        "accepted": [
+          "iduće godine"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/iduce-godine.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "obveza",
         "partOfSpeech": "noun",
         "recordId": "A2-0133",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:989"
+        },
+        "accepted": [
+          "obveza"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/obveza.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iznajmiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0134",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4705"
+        },
+        "accepted": [
+          "iznajmiti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/iznajmiti.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "osiguranje",
         "partOfSpeech": "noun",
         "recordId": "A2-0135",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:763"
+        },
+        "accepted": [
+          "osiguranje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/osiguranje.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gorivo",
         "partOfSpeech": "noun",
         "recordId": "A2-0136",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:gorivo"
+        },
+        "accepted": [
+          "gorivo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/gorivo.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dozvola",
         "partOfSpeech": "phrase",
         "recordId": "A2-0137",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:436"
+        },
+        "accepted": [
+          "vozačka dozvola"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/vozacka-dozvola.mp3"
       }
     ],
@@ -534,39 +622,23 @@ export const LESSON: GeneratedLesson = {
           "će"
         ],
         "translation": "Ana zostanie w domu.",
+        "rule": "Ići ćemo na izlet — Czas przyszły: krótka forma htjeti (ću, ćeš, će, ćemo, ćete, će) + bezokolicznik.",
         "answerAudioSrc": "/audio/hr/a2/module-02/ana-ce-ostati-kod-kuce.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Wezmę taksówkę.",
-        "accepted": [
-          "Uzet ću taksi.",
-          "Ja ću uzeti taksi."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Vjerojatno će padati kiša.",
+        "options": [
+          "Prawdopodobnie będzie padać deszcz.",
+          "Jutro pojedziemy na wycieczkę.",
+          "Ana zostanie w domu."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-02/uzet-cu-taksi.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "W przyszłym roku pojedziemy do Dubrownika.",
-        "tokens": [
-          "ćemo",
-          "Dubrovnik",
-          "ići",
-          "godine",
-          "u",
-          "iduće"
-        ],
-        "accepted": [
-          "Iduće godine ćemo ići u Dubrovnik.",
-          "Ići ćemo u Dubrovnik iduće godine."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-02/iduce-godine-cemo-ici-u-dubrovnik.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-02/vjerojatno-ce-padati-kisa.mp3"
       },
       {
         "id": "choice-1",
@@ -601,19 +673,37 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-02/radit-cu.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Vjerojatno će padati kiša.",
-        "options": [
-          "Prawdopodobnie będzie padać deszcz.",
-          "Jutro pojedziemy na wycieczkę.",
-          "Ana zostanie w domu."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "W przyszłym roku pojedziemy do Dubrownika.",
+        "tokens": [
+          "ćemo",
+          "Dubrovnik",
+          "ići",
+          "godine",
+          "u",
+          "iduće"
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-02/vjerojatno-ce-padati-kisa.mp3"
+        "accepted": [
+          "Iduće godine ćemo ići u Dubrovnik.",
+          "Ići ćemo u Dubrovnik iduće godine."
+        ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
+        "answerAudioSrc": "/audio/hr/a2/module-02/iduce-godine-cemo-ici-u-dubrovnik.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Wezmę taksówkę.",
+        "accepted": [
+          "Uzet ću taksi.",
+          "Ja ću uzeti taksi."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-02/uzet-cu-taksi.mp3"
       },
       {
         "id": "translate-2",

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pozvati",
         "partOfSpeech": "verb",
         "recordId": "A2-0210",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:652"
+        },
+        "accepted": [
+          "pozvati"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/pozvati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nazvati",
         "partOfSpeech": "verb",
         "recordId": "A2-0211",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2109"
+        },
+        "accepted": [
+          "nazvati"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/nazvati.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "javiti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0212",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:17"
+        },
+        "accepted": [
+          "javiti se"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/javiti-se.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dogovoriti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0213",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:695"
+        },
+        "accepted": [
+          "dogovoriti se"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/dogovoriti-se.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "otkazati",
         "partOfSpeech": "verb",
         "recordId": "A2-0214",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:696"
+        },
+        "accepted": [
+          "otkazati"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/otkazati.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "proslaviti",
         "partOfSpeech": "verb",
         "recordId": "A2-0215",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:proslaviti"
+        },
+        "accepted": [
+          "proslaviti"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/proslaviti.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poziv",
         "partOfSpeech": "noun",
         "recordId": "A2-0216",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1626"
+        },
+        "accepted": [
+          "poziv"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/poziv.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prijedlog",
         "partOfSpeech": "noun",
         "recordId": "A2-0217",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1629"
+        },
+        "accepted": [
+          "prijedlog"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/prijedlog.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izložba",
         "partOfSpeech": "noun",
         "recordId": "A2-0218",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:746"
+        },
+        "accepted": [
+          "izložba"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/izlozba.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ulaznica",
         "partOfSpeech": "noun",
         "recordId": "A2-0219",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1848"
+        },
+        "accepted": [
+          "ulaznica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/ulaznica.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vidjeti",
         "partOfSpeech": "phrase",
         "recordId": "A2-0220",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:vidimo se tamo"
+        },
+        "accepted": [
+          "Vidimo se tamo!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/vidimo-se-tamo.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "čuti",
         "partOfSpeech": "phrase",
         "recordId": "A2-0221",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:čujemo se"
+        },
+        "accepted": [
+          "Čujemo se!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/cujemo-se.mp3"
       }
     ],
@@ -556,6 +644,7 @@ export const LESSON: GeneratedLesson = {
           "te"
         ],
         "translation": "Zadzwonię do ciebie później.",
+        "rule": "Hoćeš li doći? — Zaproszenie: Imaš li vremena…?",
         "answerAudioSrc": "/audio/hr/a2/module-02/nazvat-cu-te-kasnije.mp3"
       },
       {
@@ -590,20 +679,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-02/nazvat-cu-te-sutra.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Niestety nie mogę, bo muszę pracować.",
-        "accepted": [
-          "Nažalost, ne mogu jer moram raditi.",
-          "Nažalost ne mogu, moram raditi.",
-          "Ja nažalost, ne mogu jer moram raditi.",
-          "Ja nažalost ne mogu, moram raditi."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-02/nazalost-ne-mogu-jer-moram-raditi.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -620,6 +695,20 @@ export const LESSON: GeneratedLesson = {
           "Želim te pozvati na večeru."
         ],
         "answerAudioSrc": "/audio/hr/a2/module-02/zelim-te-pozvati-na-veceru.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Niestety nie mogę, bo muszę pracować.",
+        "accepted": [
+          "Nažalost, ne mogu jer moram raditi.",
+          "Nažalost ne mogu, moram raditi.",
+          "Ja nažalost, ne mogu jer moram raditi.",
+          "Ja nažalost ne mogu, moram raditi."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-02/nazalost-ne-mogu-jer-moram-raditi.mp3"
       },
       {
         "id": "translate-2",

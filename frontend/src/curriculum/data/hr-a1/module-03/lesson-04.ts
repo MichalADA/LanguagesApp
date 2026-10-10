@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ponedjeljak",
         "partOfSpeech": "noun",
         "recordId": "A1-0236",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:481"
+        },
+        "accepted": [
+          "ponedjeljak"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/ponedjeljak.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "utorak",
         "partOfSpeech": "noun",
         "recordId": "A1-0237",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1013"
+        },
+        "accepted": [
+          "utorak"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/utorak.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "srijeda",
         "partOfSpeech": "noun",
         "recordId": "A1-0238",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1014"
+        },
+        "accepted": [
+          "srijeda"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/srijeda.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "četvrtak",
         "partOfSpeech": "noun",
         "recordId": "A1-0239",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1015"
+        },
+        "accepted": [
+          "četvrtak"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/cetvrtak.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "petak",
         "partOfSpeech": "noun",
         "recordId": "A1-0240",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:482"
+        },
+        "accepted": [
+          "petak"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/petak.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "subota",
         "partOfSpeech": "noun",
         "recordId": "A1-0241",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1016"
+        },
+        "accepted": [
+          "subota"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/subota.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nedjelja",
         "partOfSpeech": "noun",
         "recordId": "A1-0242",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:483"
+        },
+        "accepted": [
+          "nedjelja"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/nedjelja.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sutra",
         "partOfSpeech": "adverb",
         "recordId": "A1-0243",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:164"
+        },
+        "accepted": [
+          "sutra"
+        ],
         "audioSrc": "/audio/hr/a1/module-03/sutra.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "danas",
         "partOfSpeech": "adverb",
         "recordId": "A1-0832",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:165"
+        },
+        "accepted": [
+          "danas"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/danas.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prekosutra",
         "partOfSpeech": "adverb",
         "recordId": "A1-0833",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1024"
+        },
+        "accepted": [
+          "prekosutra"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/prekosutra.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sljedeći",
         "partOfSpeech": "adjective",
         "recordId": "A1-0834",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:sljedeći"
+        },
+        "accepted": [
+          "sljedeći"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/sljedeci.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ovaj",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0835",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:94"
+        },
+        "accepted": [
+          "ovaj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/ovaj.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "koji",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0836",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:88"
+        },
+        "accepted": [
+          "koji"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/koji.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kino",
         "partOfSpeech": "noun",
         "recordId": "A1-0837",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:744"
+        },
+        "accepted": [
+          "kino"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/kino.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bazen",
         "partOfSpeech": "noun",
         "recordId": "A1-0838",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2825"
+        },
+        "accepted": [
+          "bazen"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/bazen.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "imati",
         "partOfSpeech": "phrase",
         "recordId": "A1-0839",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:imati vremena"
+        },
+        "accepted": [
+          "imati vremena"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/imati-vremena.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dan",
         "partOfSpeech": "phrase",
         "recordId": "A1-0840",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:cijeli dan"
+        },
+        "accepted": [
+          "cijeli dan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-03/cijeli-dan.mp3"
       }
     ],
@@ -459,18 +587,23 @@ export const LESSON: GeneratedLesson = {
           "subotu"
         ],
         "translation": "W sobotę idę do miasta.",
+        "rule": "U ponedjeljak, u subotu — „W poniedziałek” to u ponedjeljak, „w sobotę” — u subotu.",
         "answerAudioSrc": "/audio/hr/a1/module-03/u-subotu-idem-u-grad.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Jutro jest piątek.",
-        "accepted": [
-          "Sutra je petak."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "U nedjelju se odmaram.",
+        "options": [
+          "Dziś jest czwartek.",
+          "Jutro jest piątek.",
+          "W niedzielę odpoczywam."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-03/sutra-je-petak.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-03/u-nedjelju-se-odmaram.mp3"
       },
       {
         "id": "order",
@@ -492,19 +625,15 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a1/module-03/u-subotu-idem-u-grad.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "U nedjelju se odmaram.",
-        "options": [
-          "Dziś jest czwartek.",
-          "Jutro jest piątek.",
-          "W niedzielę odpoczywam."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Jutro jest piątek.",
+        "accepted": [
+          "Sutra je petak."
         ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-03/u-nedjelju-se-odmaram.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-03/sutra-je-petak.mp3"
       },
       {
         "id": "translate-2",

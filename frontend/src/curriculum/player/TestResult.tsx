@@ -2,51 +2,57 @@ import { Link } from "react-router-dom";
 import { Icon } from "@/components/Icon";
 import { SpokenText } from "@/components/AudioButton";
 import { useT } from "@/i18n";
-import { TEST_SECTIONS, type SummaryStep, type TestSection } from "../types";
-import type { StepScore } from "./Exercises";
+import { TEST_SECTIONS, type SummaryStep } from "../types";
+import { TEST_SECTION_THRESHOLD, type LessonEvaluation } from "../grading";
+import { ScoreLine } from "./LessonStep";
 
-/** Próg „dobrze opanowane” — bez zaliczania i oblewania, tylko wskazówka, co powtórzyć. */
+/** Sekcja „dobrze opanowana” — wskazówka, co powtórzyć (niezależna od progu zaliczenia). */
 const STRONG = 0.75;
 
 export function TestResult({
   step,
-  sections,
+  evaluation,
+  onRetry,
+  onRestart,
   moduleHref,
   courseHref,
 }: {
   step: SummaryStep;
-  sections: Partial<Record<TestSection, StepScore>>;
+  evaluation: LessonEvaluation;
+  onRetry: () => void;
+  onRestart: () => void;
   moduleHref: string;
   courseHref: string;
 }) {
   const t = useT();
+  const { sections, passed, mistakes } = evaluation;
   const scored = TEST_SECTIONS.filter((section) => sections[section] && sections[section]!.total > 0);
-  const correct = scored.reduce((sum, s) => sum + sections[s]!.correct, 0);
-  const total = scored.reduce((sum, s) => sum + sections[s]!.total, 0);
-  const percent = total ? Math.round((correct / total) * 100) : 0;
+  const percent = Math.round(evaluation.firstTry * 100);
   const strong = scored.filter((s) => sections[s]!.correct / sections[s]!.total >= STRONG);
   const weak = scored.filter((s) => !strong.includes(s));
 
   return (
     <div className="step step-summary test-result">
-      <span className="summary-mark" aria-hidden="true">
-        <Icon name="check" size={26} />
+      <span className={passed ? "summary-mark" : "summary-mark pending"} aria-hidden="true">
+        <Icon name={passed ? "check" : "repeat"} size={26} />
       </span>
-      {step.closing && (
+      {passed && step.closing && (
         <p className="test-closing">
           <SpokenText text={step.closing.target} src={step.closing.audioSrc} /> <span className="muted">— {step.closing.source}</span>
         </p>
       )}
-      <h2 className="summary-title">{step.title}</h2>
+      <h2 className="summary-title">{passed ? step.title : t("curriculum.player.testFailed")}</h2>
       <div className="test-score">
         <strong>{percent}%</strong>
-        <span className="muted">{t("curriculum.player.testCorrect", { correct, total })}</span>
+        <span className={passed ? "test-verdict pass" : "test-verdict fail"}>{t(passed ? "curriculum.player.testPassed" : "curriculum.player.testFailed")}</span>
       </div>
+      <ScoreLine evaluation={evaluation} />
 
       <ul className="test-sections">
         {scored.map((section) => {
           const score = sections[section]!;
           const good = strong.includes(section);
+          const below = score.correct / score.total < TEST_SECTION_THRESHOLD;
           return (
             <li key={section} className={good ? "strong" : "weak"}>
               <span className="test-section-name">{t(`curriculum.player.sections.${section}`)}</span>
@@ -56,7 +62,7 @@ export function TestResult({
               <span className="test-section-score">
                 {score.correct} / {score.total}
               </span>
-              <span className="test-section-label">{t(good ? "curriculum.player.strong" : "curriculum.player.review")}</span>
+              <span className="test-section-label">{t(below ? "curriculum.player.belowThreshold" : good ? "curriculum.player.strong" : "curriculum.player.review")}</span>
             </li>
           );
         })}
@@ -65,10 +71,21 @@ export function TestResult({
       {weak.length > 0 && <p className="muted">{t("curriculum.player.testAdvice")}</p>}
 
       <div className="summary-actions">
-        <Link className="btn btn-lg" to={courseHref}>
-          {t("curriculum.player.backToCourse")}
-          <Icon name="arrowRight" size={18} />
-        </Link>
+        {passed ? (
+          <Link className="btn btn-lg" to={courseHref}>
+            {t("curriculum.player.backToCourse")}
+            <Icon name="arrowRight" size={18} />
+          </Link>
+        ) : (
+          <button type="button" className="btn btn-lg" onClick={onRestart}>
+            {t("curriculum.player.testRetake")}
+          </button>
+        )}
+        {mistakes.length > 0 && (
+          <button type="button" className="btn-ghost" onClick={onRetry}>
+            {t("curriculum.player.retryMistakes", { n: mistakes.length })}
+          </button>
+        )}
         <Link className="btn-ghost" to={moduleHref}>
           {t("curriculum.player.backToModule")}
         </Link>

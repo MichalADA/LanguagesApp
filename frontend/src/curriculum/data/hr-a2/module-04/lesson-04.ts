@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "napredovati",
         "partOfSpeech": "verb",
         "recordId": "A2-0456",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1770"
+        },
+        "accepted": [
+          "napredovati"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/napredovati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "griješiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0457",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1400"
+        },
+        "accepted": [
+          "griješiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/grijesiti.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "brže",
         "partOfSpeech": "adverb",
         "recordId": "A2-0458",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:brže"
+        },
+        "accepted": [
+          "brže"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/brze.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "glasnije",
         "partOfSpeech": "adverb",
         "recordId": "A2-0459",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:glasnije"
+        },
+        "accepted": [
+          "glasnije"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/glasnije.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izgovor",
         "partOfSpeech": "noun",
         "recordId": "A2-0460",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1390"
+        },
+        "accepted": [
+          "izgovor"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/izgovor.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tečno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0461",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:tečno"
+        },
+        "accepted": [
+          "tečno"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/tecno.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rječnik",
         "partOfSpeech": "noun",
         "recordId": "A2-0462",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1393"
+        },
+        "accepted": [
+          "rječnik"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/rjecnik.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "značiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0463",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1396"
+        },
+        "accepted": [
+          "značiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/znaciti.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jezik",
         "partOfSpeech": "phrase",
         "recordId": "A2-0464",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4252"
+        },
+        "accepted": [
+          "materinski jezik"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/materinski-jezik.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "naglasak",
         "partOfSpeech": "noun",
         "recordId": "A2-0465",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4237"
+        },
+        "accepted": [
+          "naglasak"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/naglasak.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prevesti",
         "partOfSpeech": "verb",
         "recordId": "A2-0466",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prevesti"
+        },
+        "accepted": [
+          "prevesti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/prevesti.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kazati",
         "partOfSpeech": "phrase",
         "recordId": "A2-0467",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kako se kaže"
+        },
+        "accepted": [
+          "Kako se kaže?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/kako-se-kaze.mp3"
       }
     ],
@@ -505,6 +593,7 @@ export const LESSON: GeneratedLesson = {
           "sve"
         ],
         "translation": "Moja wymowa jest coraz lepsza.",
+        "rule": "Sve bolje — Jak długo się uczysz: czas teraźniejszy + okres: Učim hrvatski godinu dana (od roku).",
         "answerAudioSrc": "/audio/hr/a2/module-04/moj-izgovor-je-sve-bolji.mp3"
       },
       {
@@ -539,17 +628,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-04/mozete-li-govoriti-glasnije.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Co znaczy to słowo?",
-        "accepted": [
-          "Što znači ova riječ?"
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-04/sto-znaci-ova-rijec.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -566,6 +644,17 @@ export const LESSON: GeneratedLesson = {
           "Ja napredujem polako, ali sigurno."
         ],
         "answerAudioSrc": "/audio/hr/a2/module-04/napredujem-polako-ali-sigurno.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Co znaczy to słowo?",
+        "accepted": [
+          "Što znači ova riječ?"
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-04/sto-znaci-ova-rijec.mp3"
       },
       {
         "id": "translate-2",

@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "obitelj",
         "partOfSpeech": "noun",
         "recordId": "A1-0092",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:152"
+        },
+        "accepted": [
+          "obitelj"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/obitelj.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "majka",
         "partOfSpeech": "noun",
         "recordId": "A1-0093",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:153"
+        },
+        "accepted": [
+          "majka"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/majka.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "otac",
         "partOfSpeech": "noun",
         "recordId": "A1-0094",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:154"
+        },
+        "accepted": [
+          "otac"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/otac.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sestra",
         "partOfSpeech": "noun",
         "recordId": "A1-0095",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:156"
+        },
+        "accepted": [
+          "sestra"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/sestra.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "brat",
         "partOfSpeech": "noun",
         "recordId": "A1-0096",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:155"
+        },
+        "accepted": [
+          "brat"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/brat.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "baka",
         "partOfSpeech": "noun",
         "recordId": "A1-0097",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:531"
+        },
+        "accepted": [
+          "baka"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/baka.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "djed",
         "partOfSpeech": "noun",
         "recordId": "A1-0098",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:530"
+        },
+        "accepted": [
+          "djed"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/djed.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "moj",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0099",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:97"
+        },
+        "accepted": [
+          "moj"
+        ],
         "audioSrc": "/audio/hr/a1/module-02/moj.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mama",
         "partOfSpeech": "noun",
         "recordId": "A1-0721",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2218"
+        },
+        "accepted": [
+          "mama"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/mama.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tata",
         "partOfSpeech": "noun",
         "recordId": "A1-0722",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2217"
+        },
+        "accepted": [
+          "tata"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/tata.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "roditelj",
         "partOfSpeech": "noun",
         "recordId": "A1-0723",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2219"
+        },
+        "accepted": [
+          "roditelji"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/roditelji.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sin",
         "partOfSpeech": "noun",
         "recordId": "A1-0724",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:157"
+        },
+        "accepted": [
+          "sin"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/sin.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kći",
         "partOfSpeech": "noun",
         "recordId": "A1-0725",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:158"
+        },
+        "accepted": [
+          "kći"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/kci.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dijete",
         "partOfSpeech": "noun",
         "recordId": "A1-0726",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:148"
+        },
+        "accepted": [
+          "dijete"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/dijete.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dijete",
         "partOfSpeech": "noun",
         "recordId": "A1-0727",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:djeca"
+        },
+        "accepted": [
+          "djeca"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/djeca.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "muž",
         "partOfSpeech": "noun",
         "recordId": "A1-0728",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:159"
+        },
+        "accepted": [
+          "muž"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/muz.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "žena",
         "partOfSpeech": "noun",
         "recordId": "A1-0729",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:147"
+        },
+        "accepted": [
+          "žena"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/zena.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tvoj",
         "partOfSpeech": "pronoun",
         "recordId": "A1-0730",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:98"
+        },
+        "accepted": [
+          "tvoj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/tvoj.mp3"
       },
       {
@@ -157,6 +293,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "star",
         "partOfSpeech": "adjective",
         "recordId": "A1-0731",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stariji"
+        },
+        "accepted": [
+          "stariji"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/stariji.mp3"
       },
       {
@@ -165,6 +309,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "mlad",
         "partOfSpeech": "adjective",
         "recordId": "A1-0732",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:mlađi"
+        },
+        "accepted": [
+          "mlađi"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/mladji.mp3"
       }
     ],
@@ -533,18 +685,23 @@ export const LESSON: GeneratedLesson = {
           "moja"
         ],
         "translation": "To jest moja siostra.",
+        "rule": "Moj, moja, moje, moji — Moj zachowuje się jak polskie „mój” i zmienia się razem z rzeczownikiem: moj brat, moja sestra, moje dijete, a w liczbie mnogiej moji roditelji.",
         "answerAudioSrc": "/audio/hr/a1/module-02/ovo-je-moja-sestra.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Mój brat mieszka w Zagrzebiu.",
-        "accepted": [
-          "Moj brat živi u Zagrebu."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Moj otac je kod kuće.",
+        "options": [
+          "Mój ojciec jest w domu.",
+          "To jest moja rodzina.",
+          "To jest moja siostra."
         ],
-        "answerAudioSrc": "/audio/hr/a1/module-02/moj-brat-zivi-u-zagrebu.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a1/module-02/moj-otac-je-kod-kuce.mp3"
       },
       {
         "id": "order",
@@ -561,22 +718,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Ovo je moja obitelj."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-02/ovo-je-moja-obitelj.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Moj otac je kod kuće.",
-        "options": [
-          "Mój ojciec jest w domu.",
-          "To jest moja rodzina.",
-          "To jest moja siostra."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Mój brat mieszka w Zagrzebiu.",
+        "accepted": [
+          "Moj brat živi u Zagrebu."
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a1/module-02/moj-otac-je-kod-kuce.mp3"
+        "answerAudioSrc": "/audio/hr/a1/module-02/moj-brat-zivi-u-zagrebu.mp3"
       },
       {
         "id": "translate-more",

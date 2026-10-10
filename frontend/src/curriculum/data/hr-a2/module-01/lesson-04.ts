@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poslije",
         "partOfSpeech": "adverb",
         "recordId": "A2-0081",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:poslije"
+        },
+        "accepted": [
+          "poslije"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/poslije.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kraj",
         "partOfSpeech": "phrase",
         "recordId": "A2-0082",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:na kraju"
+        },
+        "accepted": [
+          "na kraju"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/na-kraju.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prije",
         "partOfSpeech": "preposition",
         "recordId": "A2-0083",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prije"
+        },
+        "accepted": [
+          "prije"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/prije.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sresti",
         "partOfSpeech": "verb",
         "recordId": "A2-0084",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1404"
+        },
+        "accepted": [
+          "sresti"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/sresti.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dogoditi se",
         "partOfSpeech": "verb",
         "recordId": "A2-0085",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:335"
+        },
+        "accepted": [
+          "dogoditi se"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/dogoditi-se.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "priča",
         "partOfSpeech": "noun",
         "recordId": "A2-0086",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:749"
+        },
+        "accepted": [
+          "priča"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/prica.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slučajno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0087",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1403"
+        },
+        "accepted": [
+          "slučajno"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/slucajno.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odjednom",
         "partOfSpeech": "adverb",
         "recordId": "A2-0088",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1235"
+        },
+        "accepted": [
+          "odjednom"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/odjednom.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "napokon",
         "partOfSpeech": "adverb",
         "recordId": "A2-0089",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1234"
+        },
+        "accepted": [
+          "napokon"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/napokon.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iznenađenje",
         "partOfSpeech": "noun",
         "recordId": "A2-0090",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1313"
+        },
+        "accepted": [
+          "iznenađenje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/iznenadjenje.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zalazak",
         "partOfSpeech": "phrase",
         "recordId": "A2-0091",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1500"
+        },
+        "accepted": [
+          "zalazak sunca"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/zalazak-sunca.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ozbiljno",
         "partOfSpeech": "phrase",
         "recordId": "A2-0092",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ozbiljno"
+        },
+        "accepted": [
+          "Ozbiljno?"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/ozbiljno.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "naći",
         "partOfSpeech": "verb",
         "recordId": "A2-0093",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:16"
+        },
+        "accepted": [
+          "naći"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/naci.mp3"
       }
     ],
@@ -508,37 +604,23 @@ export const LESSON: GeneratedLesson = {
           "Prije"
         ],
         "translation": "Dwa dni temu spotkałam starą przyjaciółkę.",
+        "rule": "Prvo, zatim, na kraju — Historię opowiadasz po kolei: prvo (najpierw), zatim, onda, poslije (potem), na kraju (na koniec).",
         "answerAudioSrc": "/audio/hr/a2/module-01/prije-dva-dana-sam-srela-staru-prijateljicu.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Co się stało?",
-        "accepted": [
-          "Što se dogodilo?"
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Slučajno sam sreo kolegu.",
+        "options": [
+          "Najpierw poszliśmy do hotelu.",
+          "Przypadkiem spotkałem kolegę.",
+          "Potem zjedliśmy obiad w mieście."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-01/sto-se-dogodilo.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Na koniec znaleźliśmy mały apartament.",
-        "tokens": [
-          "na",
-          "apartman",
-          "kraju",
-          "našli",
-          "smo",
-          "mali"
-        ],
-        "accepted": [
-          "Na kraju smo našli mali apartman."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-01/na-kraju-smo-nasli-mali-apartman.mp3"
+        "correctIndex": 1,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-01/slucajno-sam-sreo-kolegu.mp3"
       },
       {
         "id": "choice-1",
@@ -557,19 +639,35 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-01/prije-tjedan-dana-sam-bio-u-zadru.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Slučajno sam sreo kolegu.",
-        "options": [
-          "Najpierw poszliśmy do hotelu.",
-          "Przypadkiem spotkałem kolegę.",
-          "Potem zjedliśmy obiad w mieście."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Na koniec znaleźliśmy mały apartament.",
+        "tokens": [
+          "na",
+          "apartman",
+          "kraju",
+          "našli",
+          "smo",
+          "mali"
         ],
-        "correctIndex": 1,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-01/slucajno-sam-sreo-kolegu.mp3"
+        "accepted": [
+          "Na kraju smo našli mali apartman."
+        ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
+        "answerAudioSrc": "/audio/hr/a2/module-01/na-kraju-smo-nasli-mali-apartman.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Co się stało?",
+        "accepted": [
+          "Što se dogodilo?"
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-01/sto-se-dogodilo.mp3"
       },
       {
         "id": "translate-2",

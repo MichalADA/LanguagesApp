@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ako",
         "partOfSpeech": "conjunction",
         "recordId": "A2-0183",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:59"
+        },
+        "accepted": [
+          "ako"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/ako.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "inače",
         "partOfSpeech": "adverb",
         "recordId": "A2-0184",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1964"
+        },
+        "accepted": [
+          "inače"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/inace.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "biti",
         "partOfSpeech": "auxiliary",
         "recordId": "A2-0185",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:bude"
+        },
+        "accepted": [
+          "bude"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/bude.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odustati",
         "partOfSpeech": "verb",
         "recordId": "A2-0186",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1447"
+        },
+        "accepted": [
+          "odustati"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/odustati.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pokisnuti",
         "partOfSpeech": "verb",
         "recordId": "A2-0187",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pokisnuti"
+        },
+        "accepted": [
+          "pokisnuti"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/pokisnuti.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "unaprijed",
         "partOfSpeech": "adverb",
         "recordId": "A2-0188",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:unaprijed"
+        },
+        "accepted": [
+          "unaprijed"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/unaprijed.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "šetnja",
         "partOfSpeech": "noun",
         "recordId": "A2-0189",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:šetnja"
+        },
+        "accepted": [
+          "šetnja"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/setnja.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vjetrovito",
         "partOfSpeech": "adverb",
         "recordId": "A2-0190",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:vjetrovito"
+        },
+        "accepted": [
+          "vjetrovito"
+        ],
         "audioSrc": "/audio/hr/a2/module-02/vjetrovito.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kabanica",
         "partOfSpeech": "noun",
         "recordId": "A2-0191",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:3856"
+        },
+        "accepted": [
+          "kabanica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/kabanica.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slučaj",
         "partOfSpeech": "phrase",
         "recordId": "A2-0192",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1678"
+        },
+        "accepted": [
+          "za svaki slučaj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/za-svaki-slucaj.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nadati se",
         "partOfSpeech": "phrase",
         "recordId": "A2-0193",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nadam se"
+        },
+        "accepted": [
+          "Nadam se."
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-02/nadam-se.mp3"
       }
     ],
@@ -468,37 +548,23 @@ export const LESSON: GeneratedLesson = {
           "bude"
         ],
         "translation": "Jeśli będzie słonecznie, pójdziemy na plażę.",
+        "rule": "Ako bude sunčano… — Warunek zaczynasz od ako (jeśli).",
         "answerAudioSrc": "/audio/hr/a2/module-02/ako-bude-suncano-ici-cemo-na-plazu.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Jeśli masz czas, zadzwoń do mnie.",
-        "accepted": [
-          "Ako imaš vremena, nazovi me."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Ponesi kišobran, inače ćeš pokisnuti.",
+        "options": [
+          "Jeśli będzie słonecznie, pójdziemy na plażę.",
+          "Jeśli pada deszcz, zostajemy w domu.",
+          "Weź parasol, bo inaczej zmokniesz."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-02/ako-imas-vremena-nazovi-me.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "W sobotę pojedziemy w góry.",
-        "tokens": [
-          "planinu",
-          "ići",
-          "u",
-          "ćemo",
-          "na",
-          "subotu"
-        ],
-        "accepted": [
-          "U subotu ćemo ići na planinu."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-02/u-subotu-cemo-ici-na-planinu.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-02/ponesi-kisobran-inace-ces-pokisnuti.mp3"
       },
       {
         "id": "choice-1",
@@ -517,19 +583,35 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-02/ako-bude-suncano-ici-cemo-na-plazu.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Ponesi kišobran, inače ćeš pokisnuti.",
-        "options": [
-          "Jeśli będzie słonecznie, pójdziemy na plażę.",
-          "Jeśli pada deszcz, zostajemy w domu.",
-          "Weź parasol, bo inaczej zmokniesz."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "W sobotę pojedziemy w góry.",
+        "tokens": [
+          "planinu",
+          "ići",
+          "u",
+          "ćemo",
+          "na",
+          "subotu"
         ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-02/ponesi-kisobran-inace-ces-pokisnuti.mp3"
+        "accepted": [
+          "U subotu ćemo ići na planinu."
+        ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
+        "answerAudioSrc": "/audio/hr/a2/module-02/u-subotu-cemo-ici-na-planinu.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Jeśli masz czas, zadzwoń do mnie.",
+        "accepted": [
+          "Ako imaš vremena, nazovi me."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-02/ako-imas-vremena-nazovi-me.mp3"
       },
       {
         "id": "translate-2",

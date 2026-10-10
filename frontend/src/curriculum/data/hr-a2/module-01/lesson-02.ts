@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zaboraviti",
         "partOfSpeech": "verb",
         "recordId": "A2-0028",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:45"
+        },
+        "accepted": [
+          "zaboraviti"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/zaboraviti.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izgubiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0029",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1458"
+        },
+        "accepted": [
+          "izgubiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/izgubiti.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zakasniti",
         "partOfSpeech": "verb",
         "recordId": "A2-0030",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1965"
+        },
+        "accepted": [
+          "zakasniti"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/zakasniti.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "propustiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0031",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:propustiti"
+        },
+        "accepted": [
+          "propustiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/propustiti.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jer",
         "partOfSpeech": "conjunction",
         "recordId": "A2-0032",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:58"
+        },
+        "accepted": [
+          "jer"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/jer.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "budilica",
         "partOfSpeech": "noun",
         "recordId": "A2-0033",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:budilica"
+        },
+        "accepted": [
+          "budilica"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/budilica.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "punjač",
         "partOfSpeech": "noun",
         "recordId": "A2-0034",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:829"
+        },
+        "accepted": [
+          "punjač"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/punjac.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "žao",
         "partOfSpeech": "phrase",
         "recordId": "A2-0035",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:žao mi je"
+        },
+        "accepted": [
+          "Žao mi je."
+        ],
         "audioSrc": "/audio/hr/a2/module-01/zao-mi-je.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zvoniti",
         "partOfSpeech": "verb",
         "recordId": "A2-0036",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zvoniti"
+        },
+        "accepted": [
+          "zvoniti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/zvoniti.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pokvariti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0037",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:646"
+        },
+        "accepted": [
+          "pokvariti se"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/pokvariti-se.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gužva",
         "partOfSpeech": "noun",
         "recordId": "A2-0038",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1265"
+        },
+        "accepted": [
+          "gužva"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/guzva.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "srećom",
         "partOfSpeech": "adverb",
         "recordId": "A2-0039",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:srećom"
+        },
+        "accepted": [
+          "srećom"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/srecom.mp3"
       }
     ],
@@ -511,19 +599,39 @@ export const LESSON: GeneratedLesson = {
           "nije"
         ],
         "translation": "Ana nie przyszła do pracy.",
+        "rule": "Nisam imao vremena — Przeczenie w przeszłości: zamiast sam, si, je, smo, ste, su mówisz nisam, nisi, nije, nismo, niste, nisu.",
         "answerAudioSrc": "/audio/hr/a2/module-01/ana-nije-dosla-na-posao.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Nie miałem czasu.",
-        "accepted": [
-          "Nisam imao vremena.",
-          "Ja nisam imao vremena."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Nismo propustili vlak.",
+        "options": [
+          "Nie miałem czasu.",
+          "Zapomniałam ładowarki w hotelu.",
+          "Nie uciekł nam pociąg."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-01/nisam-imao-vremena.mp3"
+        "correctIndex": 2,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-01/nismo-propustili-vlak.mp3"
+      },
+      {
+        "id": "choice-1",
+        "stage": "practice",
+        "type": "choice",
+        "instruction": "Wybierz poprawne zdanie.",
+        "prompt": "Nie byliśmy w domu.",
+        "options": [
+          "Nismo bili kod kuće.",
+          "Bili nismo kod kuće.",
+          "Ne smo bili kod kuće."
+        ],
+        "correctIndex": 0,
+        "explanation": "Przeczenie: nismo (= ne + smo) na początku, potem imiesłów.",
+        "targetText": "options",
+        "answerAudioSrc": "/audio/hr/a2/module-01/nismo-bili-kod-kuce.mp3"
       },
       {
         "id": "order",
@@ -545,38 +653,20 @@ export const LESSON: GeneratedLesson = {
           "Zakasnila sam jer je autobus kasnila.",
           "Zakasnila sam jer je kasnila autobus."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-01/zakasnio-sam-jer-je-autobus-kasnio.mp3"
       },
       {
-        "id": "choice-1",
+        "id": "translate-1",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Wybierz poprawne zdanie.",
-        "prompt": "Nie byliśmy w domu.",
-        "options": [
-          "Nismo bili kod kuće.",
-          "Bili nismo kod kuće.",
-          "Ne smo bili kod kuće."
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Nie miałem czasu.",
+        "accepted": [
+          "Nisam imao vremena.",
+          "Ja nisam imao vremena."
         ],
-        "correctIndex": 0,
-        "explanation": "Przeczenie: nismo (= ne + smo) na początku, potem imiesłów.",
-        "targetText": "options",
-        "answerAudioSrc": "/audio/hr/a2/module-01/nismo-bili-kod-kuce.mp3"
-      },
-      {
-        "id": "comprehend",
-        "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Nismo propustili vlak.",
-        "options": [
-          "Nie miałem czasu.",
-          "Zapomniałam ładowarki w hotelu.",
-          "Nie uciekł nam pociąg."
-        ],
-        "correctIndex": 2,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-01/nismo-propustili-vlak.mp3"
+        "answerAudioSrc": "/audio/hr/a2/module-01/nisam-imao-vremena.mp3"
       },
       {
         "id": "translate-2",

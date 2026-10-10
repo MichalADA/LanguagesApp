@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "doživljaj",
         "partOfSpeech": "noun",
         "recordId": "A2-0109",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2169"
+        },
+        "accepted": [
+          "doživljaj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/dozivljaj.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uspomena",
         "partOfSpeech": "noun",
         "recordId": "A2-0110",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:uspomena"
+        },
+        "accepted": [
+          "uspomena"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/uspomena.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ljetovanje",
         "partOfSpeech": "noun",
         "recordId": "A2-0111",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ljetovanje"
+        },
+        "accepted": [
+          "ljetovanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/ljetovanje.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nezaboravan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0112",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nezaboravan"
+        },
+        "accepted": [
+          "nezaboravan"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/nezaboravan.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "godina",
         "partOfSpeech": "phrase",
         "recordId": "A2-0113",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1027"
+        },
+        "accepted": [
+          "prošle godine"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/prosle-godine.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "fotografirati",
         "partOfSpeech": "verb",
         "recordId": "A2-0114",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:fotografirati"
+        },
+        "accepted": [
+          "fotografirati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/fotografirati.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ljetos",
         "partOfSpeech": "adverb",
         "recordId": "A2-0115",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:ljetos"
+        },
+        "accepted": [
+          "ljetos"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/ljetos.mp3"
       }
     ],
@@ -207,6 +263,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Jeste li se dobro zabavili?"
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-01/jeste-li-se-dobro-zabavili.mp3"
       },
       {

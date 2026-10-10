@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "majstor",
         "partOfSpeech": "noun",
         "recordId": "A2-0705",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:majstor"
+        },
+        "accepted": [
+          "majstor"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/majstor.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "popraviti",
         "partOfSpeech": "verb",
         "recordId": "A2-0706",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:645"
+        },
+        "accepted": [
+          "popraviti"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/popraviti.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "curiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0707",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:curiti"
+        },
+        "accepted": [
+          "curiti"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/curiti.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bojler",
         "partOfSpeech": "noun",
         "recordId": "A2-0708",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:3630"
+        },
+        "accepted": [
+          "bojler"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/bojler.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "struja",
         "partOfSpeech": "noun",
         "recordId": "A2-0709",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:499"
+        },
+        "accepted": [
+          "struja"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/struja.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "grijanje",
         "partOfSpeech": "noun",
         "recordId": "A2-0710",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:600"
+        },
+        "accepted": [
+          "grijanje"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/grijanje.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "slavina",
         "partOfSpeech": "noun",
         "recordId": "A2-0711",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1832"
+        },
+        "accepted": [
+          "slavina"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/slavina.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "perilica",
         "partOfSpeech": "noun",
         "recordId": "A2-0712",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:592"
+        },
+        "accepted": [
+          "perilica"
+        ],
         "audioSrc": "/audio/hr/a2/module-06/perilica.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kvar",
         "partOfSpeech": "noun",
         "recordId": "A2-0713",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1243"
+        },
+        "accepted": [
+          "kvar"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/kvar.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poplava",
         "partOfSpeech": "noun",
         "recordId": "A2-0714",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1835"
+        },
+        "accepted": [
+          "poplava"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/poplava.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "električar",
         "partOfSpeech": "noun",
         "recordId": "A2-0715",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1829"
+        },
+        "accepted": [
+          "električar"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-06/elektricar.mp3"
       }
     ],
@@ -462,6 +542,7 @@ export const LESSON: GeneratedLesson = {
           "pokvarila"
         ],
         "translation": "Pralka się zepsuła.",
+        "rule": "Pokvario se bojler — Awarię opisujesz czasownikiem zwrotnym w perfekcie, który zgadza się z rzeczą: pokvario se bojler (on), pokvarila se perilica (ona), pokvarilo se grijanje (ono).",
         "answerAudioSrc": "/audio/hr/a2/module-06/perilica-se-pokvarila.mp3"
       },
       {
@@ -496,17 +577,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-06/perilica-se-pokvarila.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Ogrzewanie nie działa.",
-        "accepted": [
-          "Grijanje ne radi."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-06/grijanje-ne-radi.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -522,7 +592,19 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Majstor će doći sutra ujutro."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-06/majstor-ce-doci-sutra-ujutro.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Ogrzewanie nie działa.",
+        "accepted": [
+          "Grijanje ne radi."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-06/grijanje-ne-radi.mp3"
       },
       {
         "id": "translate-2",

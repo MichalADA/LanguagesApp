@@ -18,10 +18,12 @@ interface Props {
   stages?: ProgressStage[];
   /** Id bieżącego etapu (null — żaden, np. ekran wstępu testu). */
   current?: string | null;
+  /** „Krok 7 z 32” — konkretna pozycja w lekcji. */
+  counter?: string;
 }
 
 /** Nagłówek playera: gdzie jestem w kursie, ile lekcji za mną, na jakim etapie. */
-export function LessonProgress({ position, title, meta, closeTo, percent, stages = [], current = null }: Props) {
+export function LessonProgress({ position, title, meta, closeTo, percent, stages = [], current = null, counter }: Props) {
   const t = useT();
   const stageIndex = stages.findIndex((stage) => stage.id === current);
   return (
@@ -60,6 +62,7 @@ export function LessonProgress({ position, title, meta, closeTo, percent, stages
           )}
         </>
       )}
+      {counter && <p className="lesson-counter">{counter}</p>}
     </header>
   );
 }

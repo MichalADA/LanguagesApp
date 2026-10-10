@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "protiv",
         "partOfSpeech": "preposition",
         "recordId": "A2-0309",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:844"
+        },
+        "accepted": [
+          "protiv"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/protiv.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dnevno",
         "partOfSpeech": "adverb",
         "recordId": "A2-0310",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1689"
+        },
+        "accepted": [
+          "dnevno"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/dnevno.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "dvaput",
         "partOfSpeech": "adverb",
         "recordId": "A2-0311",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4860"
+        },
+        "accepted": [
+          "dvaput"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/dvaput.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tableta",
         "partOfSpeech": "noun",
         "recordId": "A2-0312",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1686"
+        },
+        "accepted": [
+          "tableta"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/tableta.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "sirup",
         "partOfSpeech": "noun",
         "recordId": "A2-0313",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:sirup"
+        },
+        "accepted": [
+          "sirup"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/sirup.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kap",
         "partOfSpeech": "noun",
         "recordId": "A2-0314",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:kapi"
+        },
+        "accepted": [
+          "kapi"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/kapi.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "alergičan",
         "partOfSpeech": "adjective",
         "recordId": "A2-0315",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:alergičan"
+        },
+        "accepted": [
+          "alergičan"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/alergican.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bol",
         "partOfSpeech": "noun",
         "recordId": "A2-0316",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:314"
+        },
+        "accepted": [
+          "bol"
+        ],
         "audioSrc": "/audio/hr/a2/module-03/bol.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "recept",
         "partOfSpeech": "phrase",
         "recordId": "A2-0317",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:na recept"
+        },
+        "accepted": [
+          "na recept"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/na-recept.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "nuspojava",
         "partOfSpeech": "noun",
         "recordId": "A2-0318",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:nuspojava"
+        },
+        "accepted": [
+          "nuspojava"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/nuspojava.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "flaster",
         "partOfSpeech": "noun",
         "recordId": "A2-0319",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1685"
+        },
+        "accepted": [
+          "flaster"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-03/flaster.mp3"
       }
     ],
@@ -446,6 +526,7 @@ export const LESSON: GeneratedLesson = {
           "kašlja"
         ],
         "translation": "Potrzebuję czegoś na kaszel.",
+        "rule": "Nešto protiv kašlja — Po protiv (przeciw, na), bez, od, do, prije i poslije stoi dopełniacz: protiv kašlja, protiv bolova, bez recepta, prije jela, poslije jela.",
         "answerAudioSrc": "/audio/hr/a2/module-03/trebam-nesto-protiv-kaslja.mp3"
       },
       {
@@ -480,18 +561,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-03/trebam-nesto-protiv-kaslja.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Proszę brać jedną tabletkę dwa razy dziennie.",
-        "accepted": [
-          "Uzmite jednu tabletu dvaput dnevno.",
-          "Uzmite jednu tabletu dva puta dnevno."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-03/uzmite-jednu-tabletu-dvaput-dnevno.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -508,6 +577,18 @@ export const LESSON: GeneratedLesson = {
           "Pijte sirup poslije jela."
         ],
         "answerAudioSrc": "/audio/hr/a2/module-03/sirup-pijte-poslije-jela.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Proszę brać jedną tabletkę dwa razy dziennie.",
+        "accepted": [
+          "Uzmite jednu tabletu dvaput dnevno.",
+          "Uzmite jednu tabletu dva puta dnevno."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-03/uzmite-jednu-tabletu-dvaput-dnevno.mp3"
       },
       {
         "id": "translate-2",

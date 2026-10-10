@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "napredak",
         "partOfSpeech": "noun",
         "recordId": "A2-0940",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1769"
+        },
+        "accepted": [
+          "napredak"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/napredak.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "razumijevanje",
         "partOfSpeech": "noun",
         "recordId": "A2-0941",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:razumijevanje"
+        },
+        "accepted": [
+          "razumijevanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/razumijevanje.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "izražavanje",
         "partOfSpeech": "noun",
         "recordId": "A2-0942",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:izražavanje"
+        },
+        "accepted": [
+          "izražavanje"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/izrazavanje.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "padež",
         "partOfSpeech": "noun",
         "recordId": "A2-0943",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4210"
+        },
+        "accepted": [
+          "padež"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/padez.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "glagol",
         "partOfSpeech": "noun",
         "recordId": "A2-0944",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:4198"
+        },
+        "accepted": [
+          "glagol"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/glagol.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vrijeme",
         "partOfSpeech": "phrase",
         "recordId": "A2-0945",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:glagolsko vrijeme"
+        },
+        "accepted": [
+          "glagolsko vrijeme"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/glagolsko-vrijeme.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pravilo",
         "partOfSpeech": "noun",
         "recordId": "A2-0946",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:pravilo"
+        },
+        "accepted": [
+          "pravilo"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/pravilo.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iznimka",
         "partOfSpeech": "noun",
         "recordId": "A2-0947",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1916"
+        },
+        "accepted": [
+          "iznimka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-08/iznimka.mp3"
       }
     ],

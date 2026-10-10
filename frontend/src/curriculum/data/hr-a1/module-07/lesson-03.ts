@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hotel",
         "partOfSpeech": "noun",
         "recordId": "A1-0578",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:263"
+        },
+        "accepted": [
+          "hotel"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/hotel.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "soba",
         "partOfSpeech": "noun",
         "recordId": "A1-0579",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:203"
+        },
+        "accepted": [
+          "soba"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/soba.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rezervacija",
         "partOfSpeech": "noun",
         "recordId": "A1-0580",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1939"
+        },
+        "accepted": [
+          "rezervacija"
+        ],
         "audioSrc": "/audio/hr/a1/module-04/rezervacija.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ključ",
         "partOfSpeech": "noun",
         "recordId": "A1-0581",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:211"
+        },
+        "accepted": [
+          "ključ"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/kljuc.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "putovnica",
         "partOfSpeech": "noun",
         "recordId": "A1-0582",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:435"
+        },
+        "accepted": [
+          "putovnica"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/putovnica.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "noć",
         "partOfSpeech": "noun",
         "recordId": "A1-0583",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:162"
+        },
+        "accepted": [
+          "noć"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/noc.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "recepcija",
         "partOfSpeech": "noun",
         "recordId": "A1-0584",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:960"
+        },
+        "accepted": [
+          "recepcija"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/recepcija.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "doručak",
         "partOfSpeech": "noun",
         "recordId": "A1-0585",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:222"
+        },
+        "accepted": [
+          "doručak"
+        ],
         "audioSrc": "/audio/hr/a1/module-07/dorucak.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "soba",
         "partOfSpeech": "phrase",
         "recordId": "A1-1065",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:jednokrevetna soba"
+        },
+        "accepted": [
+          "jednokrevetna soba"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/jednokrevetna-soba.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "soba",
         "partOfSpeech": "phrase",
         "recordId": "A1-1066",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:dvokrevetna soba"
+        },
+        "accepted": [
+          "dvokrevetna soba"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/dvokrevetna-soba.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iskaznica",
         "partOfSpeech": "phrase",
         "recordId": "A1-1067",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1912"
+        },
+        "accepted": [
+          "osobna iskaznica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/osobna-iskaznica.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lift",
         "partOfSpeech": "noun",
         "recordId": "A1-1068",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:446"
+        },
+        "accepted": [
+          "lift"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/lift.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kupaonica",
         "partOfSpeech": "noun",
         "recordId": "A1-1069",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:205"
+        },
+        "accepted": [
+          "kupaonica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/kupaonica.mp3"
       },
       {
@@ -117,6 +213,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "klima",
         "partOfSpeech": "noun",
         "recordId": "A1-1070",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:599"
+        },
+        "accepted": [
+          "klima"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/klima.mp3"
       },
       {
@@ -125,6 +229,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "balkon",
         "partOfSpeech": "noun",
         "recordId": "A1-1071",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1067"
+        },
+        "accepted": [
+          "balkon"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/balkon.mp3"
       },
       {
@@ -133,6 +245,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "lozinka",
         "partOfSpeech": "noun",
         "recordId": "A1-1072",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:823"
+        },
+        "accepted": [
+          "lozinka"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/lozinka.mp3"
       },
       {
@@ -141,6 +261,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prijava",
         "partOfSpeech": "noun",
         "recordId": "A1-1073",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prijava"
+        },
+        "accepted": [
+          "prijava"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/prijava.mp3"
       },
       {
@@ -149,6 +277,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odjava",
         "partOfSpeech": "noun",
         "recordId": "A1-1074",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:odjava"
+        },
+        "accepted": [
+          "odjava"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/odjava.mp3"
       },
       {
@@ -157,6 +293,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "apartman",
         "partOfSpeech": "noun",
         "recordId": "A1-1208",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:957"
+        },
+        "accepted": [
+          "apartman"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/apartman.mp3"
       },
       {
@@ -165,6 +309,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kuhinja",
         "partOfSpeech": "noun",
         "recordId": "A1-1209",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:204"
+        },
+        "accepted": [
+          "kuhinja"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/kuhinja.mp3"
       },
       {
@@ -173,6 +325,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "domaćin",
         "partOfSpeech": "noun",
         "recordId": "A1-1210",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:domaćin"
+        },
+        "accepted": [
+          "domaćin"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/domacin.mp3"
       }
     ],
@@ -525,6 +685,7 @@ export const LESSON: GeneratedLesson = {
           "rezervaciju"
         ],
         "translation": "Mam rezerwację.",
+        "rule": "Imam rezervaciju — W hotelu przydadzą się gotowe zwroty: Imam rezervaciju — mam rezerwację, na ime … — na nazwisko …, za dvije noći — na dwie noce.",
         "answerAudioSrc": "/audio/hr/a1/module-07/imam-rezervaciju.mp3"
       },
       {
@@ -541,17 +702,6 @@ export const LESSON: GeneratedLesson = {
         "correctIndex": 0,
         "targetText": "prompt",
         "promptAudioSrc": "/audio/hr/a1/module-07/ovo-je-moja-putovnica.mp3"
-      },
-      {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Gdzie jest recepcja?",
-        "accepted": [
-          "Gdje je recepcija?"
-        ],
-        "answerAudioSrc": "/audio/hr/a1/module-07/gdje-je-recepcija.mp3"
       },
       {
         "id": "order",
@@ -571,6 +721,17 @@ export const LESSON: GeneratedLesson = {
           "Ja trebam sobu za dvije noći."
         ],
         "answerAudioSrc": "/audio/hr/a1/module-07/trebam-sobu-za-dvije-noci.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Gdzie jest recepcja?",
+        "accepted": [
+          "Gdje je recepcija?"
+        ],
+        "answerAudioSrc": "/audio/hr/a1/module-07/gdje-je-recepcija.mp3"
       },
       {
         "id": "translate-2",

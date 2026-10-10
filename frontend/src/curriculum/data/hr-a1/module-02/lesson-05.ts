@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "osoba",
         "partOfSpeech": "noun",
         "recordId": "A1-0164",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:321"
+        },
+        "accepted": [
+          "osoba"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/osoba.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zajedno",
         "partOfSpeech": "adverb",
         "recordId": "A1-0165",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:198"
+        },
+        "accepted": [
+          "zajedno"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/zajedno.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "brat",
         "partOfSpeech": "noun",
         "recordId": "A1-1213",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:braća"
+        },
+        "accepted": [
+          "braća"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/braca.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "miran",
         "partOfSpeech": "adjective",
         "recordId": "A1-0167",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:773"
+        },
+        "accepted": [
+          "miran"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/miran.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zanimljiv",
         "partOfSpeech": "adjective",
         "recordId": "A1-0168",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1049"
+        },
+        "accepted": [
+          "zanimljiv"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/zanimljiv.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poznavati",
         "partOfSpeech": "verb",
         "recordId": "A1-0169",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:poznavati"
+        },
+        "accepted": [
+          "poznavati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/poznavati.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "opisati",
         "partOfSpeech": "verb",
         "recordId": "A1-0170",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2113"
+        },
+        "accepted": [
+          "opisati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/opisati.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "obitelj",
         "partOfSpeech": "noun",
         "recordId": "A1-0171",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:152"
+        },
+        "accepted": [
+          "obitelj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/obitelj.mp3"
       },
       {
@@ -77,6 +141,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ali",
         "partOfSpeech": "conjunction",
         "recordId": "A1-0781",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:55"
+        },
+        "accepted": [
+          "ali"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/ali.mp3"
       },
       {
@@ -85,6 +157,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ili",
         "partOfSpeech": "conjunction",
         "recordId": "A1-0782",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:56"
+        },
+        "accepted": [
+          "ili"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/ili.mp3"
       },
       {
@@ -93,6 +173,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "također",
         "partOfSpeech": "adverb",
         "recordId": "A1-0783",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:također"
+        },
+        "accepted": [
+          "također"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/takodjer.mp3"
       },
       {
@@ -101,6 +189,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uvijek",
         "partOfSpeech": "adverb",
         "recordId": "A1-0784",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:176"
+        },
+        "accepted": [
+          "uvijek"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/uvijek.mp3"
       },
       {
@@ -109,6 +205,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ja",
         "partOfSpeech": "phrase",
         "recordId": "A1-0785",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:i ja"
+        },
+        "accepted": [
+          "i ja"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-02/i-ja.mp3"
       }
     ],
@@ -315,6 +419,7 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Moj otac je kod kuće."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a1/module-02/moj-otac-je-kod-kuce.mp3"
       },
       {

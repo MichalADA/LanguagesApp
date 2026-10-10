@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poslati",
         "partOfSpeech": "verb",
         "recordId": "A2-0430",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:360"
+        },
+        "accepted": [
+          "poslati"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/poslati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prilog",
         "partOfSpeech": "noun",
         "recordId": "A2-0431",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:prilog"
+        },
+        "accepted": [
+          "prilog"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/prilog.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poštovan",
         "partOfSpeech": "phrase",
         "recordId": "A2-0432",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:poštovani"
+        },
+        "accepted": [
+          "Poštovani"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/postovani.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "pozdrav",
         "partOfSpeech": "phrase",
         "recordId": "A2-0433",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1422"
+        },
+        "accepted": [
+          "Lijep pozdrav"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/lijep-pozdrav.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "potvrditi",
         "partOfSpeech": "verb",
         "recordId": "A2-0434",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:698"
+        },
+        "accepted": [
+          "potvrditi"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/potvrditi.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "proslijediti",
         "partOfSpeech": "verb",
         "recordId": "A2-0435",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:proslijediti"
+        },
+        "accepted": [
+          "proslijediti"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/proslijediti.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hvala",
         "partOfSpeech": "phrase",
         "recordId": "A2-0436",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:hvala unaprijed"
+        },
+        "accepted": [
+          "Hvala unaprijed."
+        ],
         "audioSrc": "/audio/hr/a2/module-04/hvala-unaprijed.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ispuniti",
         "partOfSpeech": "verb",
         "recordId": "A2-0437",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:717"
+        },
+        "accepted": [
+          "ispuniti"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/ispuniti.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "obrazac",
         "partOfSpeech": "noun",
         "recordId": "A2-0438",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:718"
+        },
+        "accepted": [
+          "obrazac"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/obrazac.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "predmet",
         "partOfSpeech": "noun",
         "recordId": "A2-0439",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:predmet"
+        },
+        "accepted": [
+          "predmet"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/predmet.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "potpis",
         "partOfSpeech": "noun",
         "recordId": "A2-0440",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:715"
+        },
+        "accepted": [
+          "potpis"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/potpis.mp3"
       }
     ],
@@ -497,37 +577,23 @@ export const LESSON: GeneratedLesson = {
           "pošaljete"
         ],
         "translation": "Proszę mi przesłać rachunek.",
+        "rule": "Molim vas da… — W pracy piszesz i mówisz na Vi.",
         "answerAudioSrc": "/audio/hr/a2/module-04/molim-vas-da-mi-posaljete-racun.mp3"
       },
       {
-        "id": "translate-1",
+        "id": "comprehend",
         "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "W załączniku jest moje CV.",
-        "accepted": [
-          "U prilogu je moj životopis.",
-          "Moj životopis je u prilogu."
+        "type": "choice",
+        "instruction": "Co znaczy to zdanie?",
+        "prompt": "Proslijedit ću vaš e-mail kolegi.",
+        "options": [
+          "Przekażę Pana e-mail koledze.",
+          "Szanowni Państwo, przesyłam ofertę.",
+          "W załączniku jest moje CV."
         ],
-        "answerAudioSrc": "/audio/hr/a2/module-04/u-prilogu-je-moj-zivotopis.mp3"
-      },
-      {
-        "id": "order",
-        "stage": "practice",
-        "type": "order",
-        "instruction": "Ułóż zdanie.",
-        "translation": "Proszę wypełnić ten formularz.",
-        "tokens": [
-          "molim",
-          "ovaj",
-          "vas",
-          "ispunite",
-          "obrazac"
-        ],
-        "accepted": [
-          "Molim vas, ispunite ovaj obrazac."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-04/molim-vas-ispunite-ovaj-obrazac.mp3"
+        "correctIndex": 0,
+        "targetText": "prompt",
+        "promptAudioSrc": "/audio/hr/a2/module-04/proslijedit-cu-vas-e-mail-kolegi.mp3"
       },
       {
         "id": "choice-1",
@@ -562,19 +628,34 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-04/postovani.mp3"
       },
       {
-        "id": "comprehend",
+        "id": "order",
         "stage": "practice",
-        "type": "choice",
-        "instruction": "Co znaczy to zdanie?",
-        "prompt": "Proslijedit ću vaš e-mail kolegi.",
-        "options": [
-          "Przekażę Pana e-mail koledze.",
-          "Szanowni Państwo, przesyłam ofertę.",
-          "W załączniku jest moje CV."
+        "type": "order",
+        "instruction": "Ułóż zdanie.",
+        "translation": "Proszę wypełnić ten formularz.",
+        "tokens": [
+          "molim",
+          "ovaj",
+          "vas",
+          "ispunite",
+          "obrazac"
         ],
-        "correctIndex": 0,
-        "targetText": "prompt",
-        "promptAudioSrc": "/audio/hr/a2/module-04/proslijedit-cu-vas-e-mail-kolegi.mp3"
+        "accepted": [
+          "Molim vas, ispunite ovaj obrazac."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-04/molim-vas-ispunite-ovaj-obrazac.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "W załączniku jest moje CV.",
+        "accepted": [
+          "U prilogu je moj životopis.",
+          "Moj životopis je u prilogu."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-04/u-prilogu-je-moj-zivotopis.mp3"
       },
       {
         "id": "translate-2",

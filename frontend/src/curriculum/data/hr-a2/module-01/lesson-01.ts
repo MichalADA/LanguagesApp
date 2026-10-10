@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "upoznati",
         "partOfSpeech": "verb",
         "recordId": "A2-0002",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1405"
+        },
+        "accepted": [
+          "upoznati"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/upoznati.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "provesti",
         "partOfSpeech": "verb",
         "recordId": "A2-0003",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2116"
+        },
+        "accepted": [
+          "provesti"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/provesti.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zabaviti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0004",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:zabaviti se"
+        },
+        "accepted": [
+          "zabaviti se"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/zabaviti-se.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "društvo",
         "partOfSpeech": "noun",
         "recordId": "A2-0005",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:539"
+        },
+        "accepted": [
+          "društvo"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/drustvo.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "cijeli",
         "partOfSpeech": "adjective",
         "recordId": "A2-0006",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:cijeli"
+        },
+        "accepted": [
+          "cijeli"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/cijeli.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rođendan",
         "partOfSpeech": "noun",
         "recordId": "A2-0007",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:477"
+        },
+        "accepted": [
+          "rođendan"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/rodjendan.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "gost",
         "partOfSpeech": "noun",
         "recordId": "A2-0008",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:529"
+        },
+        "accepted": [
+          "gost"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/gost.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "proslava",
         "partOfSpeech": "noun",
         "recordId": "A2-0009",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:proslava"
+        },
+        "accepted": [
+          "proslava"
+        ],
         "audioSrc": "/audio/hr/a2/module-01/proslava.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "roštilj",
         "partOfSpeech": "noun",
         "recordId": "A2-0010",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2488"
+        },
+        "accepted": [
+          "roštilj"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/rostilj.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "poklon",
         "partOfSpeech": "noun",
         "recordId": "A2-0011",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:poklon"
+        },
+        "accepted": [
+          "poklon"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/poklon.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "torta",
         "partOfSpeech": "noun",
         "recordId": "A2-0012",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2457"
+        },
+        "accepted": [
+          "torta"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/torta.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "trajati",
         "partOfSpeech": "verb",
         "recordId": "A2-0013",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1039"
+        },
+        "accepted": [
+          "trajati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-01/trajati.mp3"
       }
     ],
@@ -494,6 +582,7 @@ export const LESSON: GeneratedLesson = {
           "smo"
         ],
         "translation": "Cały dzień byliśmy razem.",
+        "rule": "Bili smo zajedno — Perfekt to krótka forma biti (sam, si, je, smo, ste, su) + forma czasownika.",
         "answerAudioSrc": "/audio/hr/a2/module-01/cijeli-dan-smo-bili-zajedno.mp3"
       },
       {
@@ -544,19 +633,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-01/radili-su-cijeli-dan.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Weekend spędziłem nad morzem.",
-        "accepted": [
-          "Vikend sam proveo na moru.",
-          "Vikend sam provela na moru.",
-          "Proveo sam vikend na moru."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-01/vikend-sam-proveo-na-moru.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -572,7 +648,21 @@ export const LESSON: GeneratedLesson = {
         "accepted": [
           "Gosti su došli na proslavu."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-01/gosti-su-dosli-na-proslavu.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Weekend spędziłem nad morzem.",
+        "accepted": [
+          "Vikend sam proveo na moru.",
+          "Vikend sam provela na moru.",
+          "Proveo sam vikend na moru."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-01/vikend-sam-proveo-na-moru.mp3"
       },
       {
         "id": "translate-2",

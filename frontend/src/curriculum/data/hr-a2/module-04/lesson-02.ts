@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "iskustvo",
         "partOfSpeech": "noun",
         "recordId": "A2-0404",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:522"
+        },
+        "accepted": [
+          "iskustvo"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/iskustvo.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "životopis",
         "partOfSpeech": "noun",
         "recordId": "A2-0405",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:životopis"
+        },
+        "accepted": [
+          "životopis"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/zivotopis.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "prijaviti se",
         "partOfSpeech": "verb",
         "recordId": "A2-0406",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:961"
+        },
+        "accepted": [
+          "prijaviti se"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/prijaviti-se.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "oglas",
         "partOfSpeech": "noun",
         "recordId": "A2-0407",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1880"
+        },
+        "accepted": [
+          "oglas"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/oglas.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vještina",
         "partOfSpeech": "noun",
         "recordId": "A2-0408",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:vještina"
+        },
+        "accepted": [
+          "vještina"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/vjestina.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "uvjet",
         "partOfSpeech": "noun",
         "recordId": "A2-0409",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:uvjeti"
+        },
+        "accepted": [
+          "uvjeti"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/uvjeti.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "daljina",
         "partOfSpeech": "phrase",
         "recordId": "A2-0410",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:na daljinu"
+        },
+        "accepted": [
+          "na daljinu"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/na-daljinu.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "vrijeme",
         "partOfSpeech": "phrase",
         "recordId": "A2-0411",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1353"
+        },
+        "accepted": [
+          "puno radno vrijeme"
+        ],
         "audioSrc": "/audio/hr/a2/module-04/puno-radno-vrijeme.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "tehnologija",
         "partOfSpeech": "noun",
         "recordId": "A2-0412",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:tehnologija"
+        },
+        "accepted": [
+          "tehnologija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/tehnologija.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "koristiti",
         "partOfSpeech": "verb",
         "recordId": "A2-0413",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1440"
+        },
+        "accepted": [
+          "koristiti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/koristiti.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "posljednji",
         "partOfSpeech": "adjective",
         "recordId": "A2-0414",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:287"
+        },
+        "accepted": [
+          "posljednji"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-04/posljednji.mp3"
       }
     ],
@@ -434,6 +514,7 @@ export const LESSON: GeneratedLesson = {
           "već"
         ],
         "translation": "Pracuję zdalnie już od dwóch lat.",
+        "rule": "Radim već tri godine — Jak długo?",
         "answerAudioSrc": "/audio/hr/a2/module-04/radim-na-daljinu-vec-dvije-godine.mp3"
       },
       {
@@ -468,20 +549,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-04/radim-ovdje-vec-dvije-godine.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Mam pięć lat doświadczenia.",
-        "accepted": [
-          "Imam pet godina iskustva.",
-          "Imam pet godina radnog iskustva.",
-          "Ja imam pet godina iskustva.",
-          "Ja imam pet godina radnog iskustva."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-04/imam-pet-godina-iskustva.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -498,7 +565,22 @@ export const LESSON: GeneratedLesson = {
           "Prijavio sam se na oglas.",
           "Prijavila sam se na oglas."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-04/prijavio-sam-se-na-oglas.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Mam pięć lat doświadczenia.",
+        "accepted": [
+          "Imam pet godina iskustva.",
+          "Imam pet godina radnog iskustva.",
+          "Ja imam pet godina iskustva.",
+          "Ja imam pet godina radnog iskustva."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-04/imam-pet-godina-iskustva.mp3"
       },
       {
         "id": "translate-2",

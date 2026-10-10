@@ -13,6 +13,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "jakna",
         "partOfSpeech": "noun",
         "recordId": "A2-0501",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:551"
+        },
+        "accepted": [
+          "jakna"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/jakna.mp3"
       },
       {
@@ -21,6 +28,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "hlače",
         "partOfSpeech": "noun",
         "recordId": "A2-0502",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:548"
+        },
+        "accepted": [
+          "hlače"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/hlace.mp3"
       },
       {
@@ -29,6 +43,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "cipele",
         "partOfSpeech": "noun",
         "recordId": "A2-0503",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:2526"
+        },
+        "accepted": [
+          "cipele"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/cipele.mp3"
       },
       {
@@ -37,6 +58,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "majica",
         "partOfSpeech": "noun",
         "recordId": "A2-0504",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:majica"
+        },
+        "accepted": [
+          "majica"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/majica.mp3"
       },
       {
@@ -45,6 +73,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "haljina",
         "partOfSpeech": "noun",
         "recordId": "A2-0505",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:549"
+        },
+        "accepted": [
+          "haljina"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/haljina.mp3"
       },
       {
@@ -53,6 +88,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "košulja",
         "partOfSpeech": "noun",
         "recordId": "A2-0506",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:547"
+        },
+        "accepted": [
+          "košulja"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/kosulja.mp3"
       },
       {
@@ -61,6 +103,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "veličina",
         "partOfSpeech": "noun",
         "recordId": "A2-0507",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:552"
+        },
+        "accepted": [
+          "veličina"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/velicina.mp3"
       },
       {
@@ -69,6 +118,13 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odjeća",
         "partOfSpeech": "noun",
         "recordId": "A2-0508",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:546"
+        },
+        "accepted": [
+          "odjeća"
+        ],
         "audioSrc": "/audio/hr/a2/module-05/odjeca.mp3"
       },
       {
@@ -77,6 +133,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "crn",
         "partOfSpeech": "adjective",
         "recordId": "A2-0509",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:384"
+        },
+        "accepted": [
+          "crn"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/crn.mp3"
       },
       {
@@ -85,6 +149,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "bijel",
         "partOfSpeech": "adjective",
         "recordId": "A2-0510",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:383"
+        },
+        "accepted": [
+          "bijel"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/bijel.mp3"
       },
       {
@@ -93,6 +165,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "plav",
         "partOfSpeech": "adjective",
         "recordId": "A2-0511",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:387"
+        },
+        "accepted": [
+          "plav"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/plav.mp3"
       },
       {
@@ -101,6 +181,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "crven",
         "partOfSpeech": "adjective",
         "recordId": "A2-0512",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:385"
+        },
+        "accepted": [
+          "crven"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/crven.mp3"
       },
       {
@@ -109,6 +197,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "zelen",
         "partOfSpeech": "adjective",
         "recordId": "A2-0513",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:386"
+        },
+        "accepted": [
+          "zelen"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a2/module-05/zelen.mp3"
       }
     ],
@@ -445,6 +541,7 @@ export const LESSON: GeneratedLesson = {
           "crnu"
         ],
         "translation": "Szukam czarnej kurtki.",
+        "rule": "Tražim crnu jaknu — Po tražim, trebam, kupujem, nosim stoi biernik — zmienia się i rzeczownik, i przymiotnik.",
         "answerAudioSrc": "/audio/hr/a2/module-05/trazim-crnu-jaknu.mp3"
       },
       {
@@ -479,20 +576,6 @@ export const LESSON: GeneratedLesson = {
         "answerAudioSrc": "/audio/hr/a2/module-05/trazim-bijelu-kosulju.mp3"
       },
       {
-        "id": "translate-1",
-        "stage": "practice",
-        "type": "translate",
-        "instruction": "Przetłumacz na chorwacki.",
-        "prompt": "Potrzebuję nowych butów do pracy.",
-        "accepted": [
-          "Trebam nove cipele za posao.",
-          "Za posao trebam nove cipele.",
-          "Ja trebam nove cipele za posao.",
-          "Ja za posao trebam nove cipele."
-        ],
-        "answerAudioSrc": "/audio/hr/a2/module-05/trebam-nove-cipele-za-posao.mp3"
-      },
-      {
         "id": "order",
         "stage": "practice",
         "type": "order",
@@ -508,7 +591,22 @@ export const LESSON: GeneratedLesson = {
           "Kupio sam bijelu košulju.",
           "Kupila sam bijelu košulju."
         ],
+        "rule": "Krótkie słowa (sam, si, je, se, ću, li…) stoją zwykle na drugim miejscu w zdaniu — zaraz po pierwszym słowie albo zwrocie.",
         "answerAudioSrc": "/audio/hr/a2/module-05/kupio-sam-bijelu-kosulju.mp3"
+      },
+      {
+        "id": "translate-1",
+        "stage": "practice",
+        "type": "translate",
+        "instruction": "Przetłumacz na chorwacki.",
+        "prompt": "Potrzebuję nowych butów do pracy.",
+        "accepted": [
+          "Trebam nove cipele za posao.",
+          "Za posao trebam nove cipele.",
+          "Ja trebam nove cipele za posao.",
+          "Ja za posao trebam nove cipele."
+        ],
+        "answerAudioSrc": "/audio/hr/a2/module-05/trebam-nove-cipele-za-posao.mp3"
       },
       {
         "id": "translate-2",

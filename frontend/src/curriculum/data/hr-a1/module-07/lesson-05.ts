@@ -13,6 +13,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "kofer",
         "partOfSpeech": "noun",
         "recordId": "A1-0614",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:545"
+        },
+        "accepted": [
+          "kofer"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/kofer.mp3"
       },
       {
@@ -21,6 +29,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "putovnica",
         "partOfSpeech": "noun",
         "recordId": "A1-0615",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:435"
+        },
+        "accepted": [
+          "putovnica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/putovnica.mp3"
       },
       {
@@ -29,6 +45,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "rezervirati",
         "partOfSpeech": "verb",
         "recordId": "A1-0616",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:505"
+        },
+        "accepted": [
+          "rezervirati"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/rezervirati.mp3"
       },
       {
@@ -37,6 +61,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "stići",
         "partOfSpeech": "verb",
         "recordId": "A1-0617",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:stići"
+        },
+        "accepted": [
+          "stići"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/stici.mp3"
       },
       {
@@ -45,6 +77,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "krenuti",
         "partOfSpeech": "verb",
         "recordId": "A1-0618",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:krenuti"
+        },
+        "accepted": [
+          "krenuti"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/krenuti.mp3"
       },
       {
@@ -53,6 +93,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "odmor",
         "partOfSpeech": "noun",
         "recordId": "A1-0619",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:729"
+        },
+        "accepted": [
+          "odmor"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-06/odmor.mp3"
       },
       {
@@ -61,6 +109,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "turist",
         "partOfSpeech": "noun",
         "recordId": "A1-0620",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:953"
+        },
+        "accepted": [
+          "turist"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/turist.mp3"
       },
       {
@@ -69,6 +125,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "informacija",
         "partOfSpeech": "noun",
         "recordId": "A1-0621",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:709"
+        },
+        "accepted": [
+          "informacija"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/informacija.mp3"
       },
       {
@@ -77,6 +141,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "put",
         "partOfSpeech": "phrase",
         "recordId": "A1-1092",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:sretan put"
+        },
+        "accepted": [
+          "Sretan put!"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/sretan-put.mp3"
       },
       {
@@ -85,6 +157,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ruksak",
         "partOfSpeech": "noun",
         "recordId": "A1-1093",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1455"
+        },
+        "accepted": [
+          "ruksak"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/ruksak.mp3"
       },
       {
@@ -93,6 +173,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "ured",
         "partOfSpeech": "phrase",
         "recordId": "A1-1094",
+        "review": {
+          "itemType": "PHRASE",
+          "itemId": "pl-hr:phrase:turistički ured"
+        },
+        "accepted": [
+          "turistički ured"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/turisticki-ured.mp3"
       },
       {
@@ -101,6 +189,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "razglednica",
         "partOfSpeech": "noun",
         "recordId": "A1-1095",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1498"
+        },
+        "accepted": [
+          "razglednica"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/razglednica.mp3"
       },
       {
@@ -109,6 +205,14 @@ export const LESSON: GeneratedLesson = {
         "lemma": "suvenir",
         "partOfSpeech": "noun",
         "recordId": "A1-1096",
+        "review": {
+          "itemType": "WORD",
+          "itemId": "pl-hr:1497"
+        },
+        "accepted": [
+          "suvenir"
+        ],
+        "optional": true,
         "audioSrc": "/audio/hr/a1/module-07/suvenir.mp3"
       }
     ],
