@@ -16,6 +16,7 @@ import { completedIds, missionStatus, nextMission } from "../progress";
 import type { SavedCompletion } from "../repository";
 import { DialogueScene } from "../components/DialogueScene";
 import { useStory } from "../useStory";
+import type { StoryAudio } from "../types";
 import { StoryStateView } from "./StoryStateView";
 
 type Phase = "briefing" | "playing" | "saving" | "result";
@@ -40,7 +41,7 @@ export function MissionPage() {
   const [run, setRun] = useState<RunState | null>(null);
   const [saved, setSaved] = useState<SavedCompletion | null>(null);
   const [saveError, setSaveError] = useState(false);
-  const [audio, setAudio] = useState<Record<string, { female?: string; male?: string }>>({});
+  const [audio, setAudio] = useState<StoryAudio>({});
   const nodeStarted = useRef(Date.now());
   /** Wyniki zadań ze wskazanym słowem — do statystyk gościa (FSRS wysyła się na bieżąco). */
   const practiceLog = useRef<{ itemId: string; verdict: AnswerVerdict }[]>([]);
@@ -240,7 +241,7 @@ export function MissionPage() {
               {mission.vocabulary.map((w) => (
                 <li key={w.hr}>
                   <span className="target">
-                    {w.hr} <AudioButton src={audioFor(audio, w.hr)} text={w.hr} size="sm" />
+                    {w.hr} <AudioButton src={audioFor(audio, w.hr, "player")} text={w.hr} size="sm" />
                   </span>
                   <span className="muted">{w.pl}</span>
                 </li>

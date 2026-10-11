@@ -357,16 +357,23 @@ test('słownictwo misji używa tych samych kart FSRS co lekcje kursu (bez duplik
   }
 });
 
-test('nagrania: tylko dokładnie te same teksty i istniejące pliki; mapa aktualna', () => {
+test('głosy postaci: każda kwestia ma nagranie głosem mówiącego; mapa i manifest aktualne', () => {
   const run = spawnSync(process.execPath, ['scripts/stories-audio.mjs', '--check'], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(run.status, 0, run.stderr);
   const { SPLIT_A1_AUDIO } = src('src/stories/data/split-a1/audio.ts');
   const { audioFor } = src('src/stories/integration.ts');
   for (const entry of Object.values(SPLIT_A1_AUDIO)) for (const p of Object.values(entry)) assert.ok(existsSync(join(ROOT, 'public', p)), p);
-  // Głos zgodny z postacią: „Izvolite.” ma oba głosy, Marko dostaje męski.
-  assert.match(audioFor(SPLIT_A1_AUDIO, 'Izvolite.', 'male'), /-m\.mp3$/);
-  assert.doesNotMatch(audioFor(SPLIT_A1_AUDIO, 'Izvolite.', 'female'), /-m\.mp3$/);
-  assert.equal(audioFor(SPLIT_A1_AUDIO, 'Dobro jutro!', 'male'), undefined, 'bez nagrania w złym głosie');
+  for (const m of SPLIT_A1.missions) {
+    for (const n of Object.values(m.dialogue.graph.nodes)) {
+      if (n.kind === 'say') assert.ok(audioFor(SPLIT_A1_AUDIO, n.text.hr, n.speaker), `${m.id}/${n.id}: brak głosu „${n.text.hr}”`);
+    }
+  }
+  // Ten sam tekst brzmi głosem tej postaci, która go mówi (Ana i Ivana mają różną barwę).
+  assert.notEqual(audioFor(SPLIT_A1_AUDIO, 'Još nešto?', 'ana'), audioFor(SPLIT_A1_AUDIO, 'Još nešto?', 'ivana'));
+  assert.match(audioFor(SPLIT_A1_AUDIO, 'Još nešto?', 'ivana'), /\/stories\/split-a1\/ivana\//);
+  // Nagrania kursu wykorzystane, gdy tekst i głos są identyczne.
+  assert.equal(audioFor(SPLIT_A1_AUDIO, 'Dobro jutro!', 'ana'), '/audio/hr/a1/module-01/dobro-jutro.mp3');
+  assert.equal(audioFor(SPLIT_A1_AUDIO, 'Dobro jutro!', 'marko'), undefined, 'Marko nie mówi tej kwestii');
 });
 
 test('rejestr gier: Stories jest w sekcji Gry i prowadzi do /stories', () => {
@@ -379,6 +386,8 @@ test('rejestr gier: Stories jest w sekcji Gry i prowadzi do /stories', () => {
 
 test('UI: misja w kawiarni rozegrana w scenie — wybór, kafelki, wpisywanie, tłumaczenie na żądanie', async () => {
   MOCKS['@/components/AudioButton'] = { AudioButton: ({ src }) => (src ? React.createElement('button', { className: 'audio-btn', 'data-src': src }) : null) };
+  const played = [];
+  MOCKS['@/audio/player'] = { playAudio: (src) => { played.push(src); return () => {}; }, stopAudio: () => played.push('stop') };
   MOCKS['@/components/AnswerInput'] = { AnswerInput: ({ value, onChange, onSubmit }) => React.createElement('input', { value, onChange: (e) => onChange(e.target.value), onKeyDown: () => onSubmit() }) };
   const { DialogueScene } = src('src/stories/components/DialogueScene.tsx');
   const { SPLIT_A1_AUDIO } = src('src/stories/data/split-a1/audio.ts');
@@ -409,9 +418,20 @@ test('UI: misja w kawiarni rozegrana w scenie — wybór, kafelki, wpisywanie, t
   await click(buttonText(t('stories.continue')));
   assert.equal(text(byClass('vn-nametag')[0]), 'Ana');
   assert.ok(view.root.findAll((n) => n.props?.['data-src'] === '/audio/hr/a1/module-01/dobro-jutro.mp3').length, 'nagranie wypowiedzi');
+  // Postać mówi sama: narrator, potem Ana — bez klikania odsłuchu.
+  assert.ok(played.some((p) => p.includes('/stories/split-a1/narrator/')), 'głos narratora');
+  assert.equal(played.at(-1), '/audio/hr/a1/module-01/dobro-jutro.mp3', 'głos Any');
+  // Przełącznik „Bez głosu” zatrzymuje i wycisza kolejne kwestie.
+  await click(buttonText(t('stories.voiceOn')));
+  assert.equal(played.at(-1), 'stop');
+  const before = played.length;
+  await click(buttonText(t('stories.continue')));
+  assert.equal(played.length, before, 'wyciszone');
+  await click(buttonText(t('stories.voiceOff')));
+  assert.equal(played.at(-1), SPLIT_A1_AUDIO.ana['Izvolite.'], 'włączenie głosu czyta bieżącą kwestię');
+  // dalej jak wcześniej (Izvolite → wybór)
   assert.equal(byClass('vn-translation').length, 0);
   assert.equal(byClass('vn-objectives').length, 1, 'cele misji widoczne');
-  await click(buttonText(t('stories.continue')));
   await click(buttonText(t('stories.continue')));
 
   // Wybór: zła opcja → wyjaśnienie i zmieszana mina, potem konsekwencja (herbata).

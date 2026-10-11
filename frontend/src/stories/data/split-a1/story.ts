@@ -10,10 +10,12 @@ export const SPLIT_A1: Story = {
   tagline: "Pierwsze dni w Dalmacji: meldunek, kawa na nabrzeżu i zakupy za rogiem.",
   map: "split-map",
   languageReview: "unverified",
+  // Narrator czyta wolniej i niżej niż Marko — słychać, że to nie postać.
+  narratorVoice: { gender: "male", pitch: "-8Hz", rate: "-14%" },
   npcs: [
-    { id: "marko", name: "Marko", role: "właściciel apartamentu", portrait: "marko", voice: "male" },
-    { id: "ana", name: "Ana", role: "baristka", portrait: "ana", voice: "female" },
-    { id: "ivana", name: "Ivana", role: "sprzedawczyni", portrait: "ivana", voice: "female" },
+    { id: "marko", name: "Marko", role: "właściciel apartamentu", portrait: "marko", voice: { gender: "male" } },
+    { id: "ana", name: "Ana", role: "baristka", portrait: "ana", voice: { gender: "female" } },
+    { id: "ivana", name: "Ivana", role: "sprzedawczyni", portrait: "ivana", voice: { gender: "female", pitch: "-12Hz", rate: "-12%" } },
   ],
   locations: [
     { id: "apartman", name: { hr: "Apartman", pl: "Apartament" }, description: "Twój pokój na starym mieście. Marko zna tu każdy kamień.", background: "apartman", map: { x: 34, y: 42 } },

@@ -4,18 +4,16 @@ import { queueLessonVocabulary, syncLessonVocabulary } from "@/curriculum/srs";
 import type { LessonVocabularyItem } from "@/curriculum/types";
 import { submitReview } from "@/reviews/api";
 import { createEventId } from "@/utils/eventId";
-import type { BuildNode, Mission, Story, TypeNode } from "./types";
+import type { BuildNode, Mission, Story, StoryAudio, TypeNode } from "./types";
 
 /**
  * Stories ↔ reszta Lexodromii: nagrania kursu, FSRS i kolejka nowych kart.
  * Żadnego równoległego systemu powtórek — tylko istniejące endpointy.
  */
 
-/** Nagranie dokładnie tej wypowiedzi (src/stories/data/<historia>/audio.ts), głosem pasującym do postaci. */
-export function audioFor(audio: Record<string, { female?: string; male?: string }>, text: string, voice?: "female" | "male"): string | undefined {
-  const entry = audio[text];
-  if (!entry) return undefined;
-  return voice ? entry[voice] : entry.female ?? entry.male;
+/** Nagranie dokładnie tej wypowiedzi głosem danego mówiącego (id postaci, "narrator" albo "player"). */
+export function audioFor(audio: StoryAudio, text: string, speaker = "player"): string | undefined {
+  return audio[speaker]?.[text];
 }
 
 /**

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { playAudio, stopAudio } from "@/audio/player";
 import { AnswerInput } from "@/components/AnswerInput";
 import { AudioButton } from "@/components/AudioButton";
 import { Icon } from "@/components/Icon";
@@ -7,14 +8,14 @@ import { useT } from "@/i18n";
 import { Art, Portrait } from "../art/registry";
 import { currentNode, evaluate, fill, visibleOptions, type PlayerInput, type RunState, type WorldContext } from "../engine";
 import { audioFor } from "../integration";
-import type { BuildNode, ChoiceNode, Mission, Npc, Story, TypeNode } from "../types";
+import type { BuildNode, ChoiceNode, Mission, Npc, Story, StoryAudio, TypeNode } from "../types";
 
 interface Props {
   story: Story;
   mission: Mission;
   run: RunState;
   world: WorldContext;
-  audio: Record<string, { female?: string; male?: string }>;
+  audio: StoryAudio;
   /** XP widoczne w HUD (obecny stan konta / gościa). */
   xp: number;
   onAnswer: (input: PlayerInput) => void;
@@ -23,8 +24,19 @@ interface Props {
   onExit: () => void;
 }
 
+const VOICE_KEY = "lexodromia.stories.voice";
+const readVoice = () => {
+  try {
+    return localStorage.getItem(VOICE_KEY) !== "off";
+  } catch {
+    return true;
+  }
+};
+
 /**
  * Scena rozmowy: tło lokacji, postać na pierwszym planie, panel dialogowy na dole.
+ * Postacie mówią: każda nowa kwestia odtwarza się automatycznie głosem tej postaci
+ * (przełącznik „Głos” w HUD, zapamiętywany; przycisk odsłuchu przy kwestii działa zawsze).
  * Klawiatura: 1–4 wybiera odpowiedź, Enter = dalej / sprawdź, T = tłumaczenie.
  */
 export function DialogueScene({ story, mission, run, world, audio, xp, onAnswer, onProceed, onHint, onExit }: Props) {
@@ -68,7 +80,25 @@ export function DialogueScene({ story, mission, run, world, audio, xp, onAnswer,
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  const lineAudio = line ? audioFor(audio, line.text.hr, speaker?.voice) : undefined;
+  const lineAudio = line ? audioFor(audio, line.text.hr, line.speaker) : undefined;
+  const [voiceOn, setVoiceOn] = useState(readVoice);
+  // Nowa kwestia postaci → głos. Zależność od obiektu kwestii: silnik tworzy nowy tylko przy nowej wypowiedzi.
+  useEffect(() => {
+    if (voiceOn && lineAudio) playAudio(lineAudio);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [line]);
+  useEffect(() => () => stopAudio(), []);
+  const toggleVoice = () => {
+    const next = !voiceOn;
+    setVoiceOn(next);
+    try {
+      localStorage.setItem(VOICE_KEY, next ? "on" : "off");
+    } catch {
+      /* noop */
+    }
+    if (!next) stopAudio();
+    else if (lineAudio) playAudio(lineAudio);
+  };
 
   return (
     <div className="vn" data-location={location.id}>
@@ -83,6 +113,10 @@ export function DialogueScene({ story, mission, run, world, audio, xp, onAnswer,
         <span className="vn-chip">
           {t("stories.missionChip", { n: String(mission.order).padStart(2, "0") })} · <span className="target">{mission.title.hr}</span>
         </span>
+        <button type="button" className={voiceOn ? "vn-voice on" : "vn-voice"} onClick={toggleVoice} aria-pressed={voiceOn} title={t("stories.voiceHint")}>
+          <Icon name="volume" size={16} />
+          <span>{t(voiceOn ? "stories.voiceOn" : "stories.voiceOff")}</span>
+        </button>
         <span className="vn-xp" aria-label={`XP: ${xp}`}>
           ★ {xp} XP
         </span>
@@ -271,7 +305,7 @@ function TypeView({ node, attempt, onAnswer, onHint }: { node: TypeNode; attempt
   );
 }
 
-function FeedbackView({ run, onProceed, audio }: { run: RunState; onProceed: () => void; audio: Record<string, { female?: string; male?: string }> }) {
+function FeedbackView({ run, onProceed, audio }: { run: RunState; onProceed: () => void; audio: StoryAudio }) {
   const t = useT();
   const { feedback } = run.pending!;
   const player = [...run.transcript].reverse().find((e) => e.player);
@@ -288,7 +322,7 @@ function FeedbackView({ run, onProceed, audio }: { run: RunState; onProceed: () 
       {expected && feedback.verdict !== "correct" && (
         <p>
           {t(feedback.verdict === "near" ? "stories.spelling" : "stories.correctAnswer")} <span className="target">{expected}</span>
-          <AudioButton src={audioFor(audio, expected)} text={expected} size="sm" />
+          <AudioButton src={audioFor(audio, expected, "player")} text={expected} size="sm" />
         </p>
       )}
       {feedback.explanation && feedback.verdict !== "correct" && <p className="vn-explanation">{feedback.explanation}</p>}

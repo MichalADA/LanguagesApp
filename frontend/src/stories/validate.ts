@@ -48,6 +48,8 @@ export function validateGraph(graph: DialogueGraph, label: string, speakers: Rea
     for (const next of targets(n)) if (!graph.nodes[next]) fail(`${id} → nieistniejący węzeł „${next}”`);
     if (n.kind === "say" && !speakers.has(n.speaker)) fail(`${id}: nieznana postać „${n.speaker}”`);
     if (n.kind === "say" && (!n.text.hr.trim() || !n.text.pl.trim())) fail(`${id}: wypowiedź bez tekstu lub tłumaczenia`);
+    // Kwestie postaci są nagrane z góry — szablon {name} byłby niemy.
+    if (n.kind === "say" && /\{\w+\}/.test(n.text.hr)) fail(`${id}: wypowiedź postaci z {zmienną} nie może mieć nagrania`);
     if (n.kind === "choice") {
       if (n.options.length < 2) fail(`${id}: wybór wymaga co najmniej dwóch opcji`);
       const optionIds = n.options.map((o) => o.id);

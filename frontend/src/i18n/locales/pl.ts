@@ -215,7 +215,10 @@ export const pl: Dictionary = {
     "nextMission": "Następna misja: {title}",
     "goal": "Cel",
     "replayNote": "Powtórka: bez nagrody i bez wpływu na powtórki FSRS",
-    "helpNote": "Tłumaczenie odsłonisz, gdy będzie potrzebne (klawisz T)"
+    "helpNote": "Tłumaczenie odsłonisz, gdy będzie potrzebne (klawisz T)",
+    "voiceOn": "Głos",
+    "voiceOff": "Bez głosu",
+    "voiceHint": "Postacie czytają swoje kwestie na głos"
   },
   reviews: {
     "finishError": "Odpowiedzi są zapisane, ale nie udało się zamknąć sesji. Ponów zapis podsumowania.",

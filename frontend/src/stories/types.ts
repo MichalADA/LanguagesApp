@@ -164,8 +164,17 @@ export interface Npc {
   role: string;
   /** Id portretu w rejestrze grafik (art/registry.tsx). */
   portrait: string;
-  /** Głos nagrań (nagranie pasuje do postaci tylko przy zgodnym tekście i głosie). */
-  voice: "female" | "male";
+  /** Głos postaci: płeć głosu syntezy + stała barwa (wysokość, tempo), żeby postać brzmiała zawsze tak samo. */
+  voice: VoiceProfile;
+}
+
+/** Profil głosu (edge-tts): dostępne są dwa chorwackie głosy, barwę różnicuje wysokość i tempo. */
+export interface VoiceProfile {
+  gender: "female" | "male";
+  /** np. "-10Hz"; brak = naturalna wysokość głosu. */
+  pitch?: string;
+  /** np. "-12%"; brak = tempo kursu (-8%). */
+  rate?: string;
 }
 
 export interface StoryLocation {
@@ -193,6 +202,8 @@ export interface Story {
   map: string;
   /** Status treści: językowa weryfikacja przez native speakera jeszcze się nie odbyła. */
   languageReview: "unverified" | "native-reviewed";
+  /** Głos narratora (wypowiedzi „narrator”). */
+  narratorVoice: VoiceProfile;
   npcs: Npc[];
   locations: StoryLocation[];
   missions: Mission[];
@@ -206,6 +217,9 @@ export interface StoryEntry {
   tagline: string;
   courseId: string;
   load?: () => Promise<Story>;
-  /** Nagrania kursu pasujące do wypowiedzi (generowane: npm run stories:audio). */
-  loadAudio?: () => Promise<Record<string, { female?: string; male?: string }>>;
+  /** Nagrania wypowiedzi per mówiący (generowane: npm run stories:audio). */
+  loadAudio?: () => Promise<StoryAudio>;
 }
+
+/** Nagrania historii: mówiący (id postaci, "narrator", "player") → tekst → ścieżka MP3. */
+export type StoryAudio = Record<string, Record<string, string>>;

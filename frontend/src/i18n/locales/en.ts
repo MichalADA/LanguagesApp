@@ -215,7 +215,10 @@ export const en: Dictionary = {
     "nextMission": "Next mission: {title}",
     "goal": "Goal",
     "replayNote": "Replay: no reward and no effect on FSRS reviews",
-    "helpNote": "Reveal the translation when you need it (T key)"
+    "helpNote": "Reveal the translation when you need it (T key)",
+    "voiceOn": "Voice",
+    "voiceOff": "Muted",
+    "voiceHint": "Characters read their lines aloud"
   },
   reviews: {
     "finishError": "Your answers are saved, but the session could not be closed. Retry saving the summary.",

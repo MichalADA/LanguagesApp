@@ -62,7 +62,7 @@ const welcome: Mission = {
       ]),
       say("se-first", "marko", "Molim? Ja se zovem Marko. A ti?", "Słucham? Ja nazywam się Marko. A ty?", "c-name", { mood: "puzzled" }),
       say("slow", "marko", "Polako: kako — se — zoveš? Tvoje ime?", "Powoli: jak — masz — na imię? Twoje imię?", "c-name"),
-      say("nice", "marko", "Drago mi je, {name}! Odakle si?", "Miło mi, {name}! Skąd jesteś?", "b-from", { mood: "happy", effects: [flag("met-marko")] }),
+      say("nice", "marko", "Drago mi je! Odakle si?", "Miło mi! Skąd jesteś?", "b-from", { mood: "happy", effects: [flag("met-marko")] }),
       build("b-from", {
         instruction: "Odpowiedz, skąd jesteś.",
         translation: "Jestem z Polski.",
@@ -79,7 +79,7 @@ const welcome: Mission = {
         option("name", "Rezervacija je na ime {name}.", "Rezerwacja jest na nazwisko {name}.", "correct", "where"),
         option("no", "Ne, hvala.", "Nie, dziękuję.", "wrong", "no-res", { explanation: "„Ne, hvala” to „nie, dziękuję” — a przecież masz rezerwację. Powiedz: Da, imam rezervaciju." }),
       ]),
-      say("no-res", "marko", "Ne? Ali ovdje je rezervacija za {name}!", "Nie? Ale tu jest rezerwacja dla {name}!", "c-res", { mood: "puzzled" }),
+      say("no-res", "marko", "Ne? Ali ovdje je rezervacija na tvoje ime!", "Nie? Ale tu jest rezerwacja na twoje nazwisko!", "c-res", { mood: "puzzled" }),
       say("where", "marko", "Odlično! Još nešto: gdje živiš u Poljskoj?", "Świetnie! Jeszcze jedno: gdzie mieszkasz w Polsce?", "t-live", { mood: "happy" }),
       type("t-live", {
         instruction: "Napisz, w jakim mieście mieszkasz.",
@@ -136,7 +136,7 @@ const key: Mission = {
     kind: "scripted",
     graph: graph("back", [
       say("back", "narrator", "Apartman. Marko je tu.", "Apartament. Marko jest na miejscu.", "hi"),
-      say("hi", "marko", "Bok, {name}! Kako si?", "Cześć, {name}! Jak się masz?", "c-how", { mood: "happy" }),
+      say("hi", "marko", "Bok! Kako si?", "Cześć! Jak się masz?", "c-how", { mood: "happy" }),
       choice("c-how", "Odpowiedz Markowi.", [
         option("good", "Dobro sam, hvala.", "Dobrze, dziękuję.", "correct", "need"),
         option("great", "Odlično sam!", "Świetnie!", "correct", "need"),

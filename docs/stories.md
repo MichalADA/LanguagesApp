@@ -63,11 +63,20 @@ Gość: ta sama logika lokalnie. XP mierzy wysiłek — o opanowaniu materiału 
   Kafelki = `stories-builder` (FSRS: trudne), wpisanie = `stories-typing`; błąd tylko w diakrytykach
   i odsłonięte tłumaczenie obniżają ocenę do „trudne”.
 
-## Nagrania
+## Głosy postaci
 
-`npm run stories:audio` zapisuje `data/<miasto>/audio.ts`: wypowiedź dostaje nagranie kursu tylko przy
-dokładnie tym samym tekście i istniejącym pliku; odtwarzacz wybiera głos zgodny z postacią
-(`npc.voice`), więc Marko nie mówi głosem lektorki. `npm test` sprawdza aktualność pliku.
+Postacie mówią: każda nowa kwestia (także narratora) odtwarza się automatycznie jej głosem; w scenie
+jest przełącznik „Głos / Bez głosu” (zapamiętywany) i przycisk ponownego odsłuchu przy kwestii.
+Bez animacji ust.
+
+- Profil głosu postaci jest w danych (`story.ts`: `npc.voice`, `narratorVoice`) — chorwackie głosy
+  edge-tts (damski Gabrijela, męski Srećko); Ivanę odróżnia od Any niższa wysokość i wolniejsze tempo.
+- `npm run stories:audio` zbiera wszystkie kwestie (postacie, narrator, wzorcowe odpowiedzi gracza),
+  wykorzystuje nagrania kursu przy identycznym tekście i głosie, a resztę zapisuje do
+  `curriculum/stories/<historia>-audio-manifest.json`. Synteza (jednorazowo, pliki trafiają do repo):
+  `python tools/listening/generate_tts.py --course-manifest frontend/curriculum/stories/split-a1-audio-manifest.json`,
+  potem ponownie `npm run stories:audio`. W `audio.ts` są tylko istniejące pliki; test pilnuje, że
+  każda kwestia postaci ma nagranie. Kwestie postaci nie mogą zawierać `{name}` (nie da się ich nagrać z góry).
 
 ## Grafiki
 

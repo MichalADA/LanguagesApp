@@ -2369,3 +2369,8 @@ a.stories-city:hover { transform: translateY(-2px); border-color: var(--burgundy
 .goal-option.on { border-color: var(--gold-accent); background: var(--gold-soft); }
 .goal-option:hover:not(:disabled), .goal-option:focus-visible { border-color: var(--burgundy-text); outline: none; }
 .goal-picker .inline-alert { grid-column: 1 / -1; }
+.vn-voice { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: var(--radius-pill); border: 0; background: rgba(46, 20, 30, 0.88); color: var(--text-secondary); font-size: 13px; font-weight: 600; cursor: pointer; }
+.vn-voice.on { color: var(--gold-text); }
+.vn-voice:focus-visible { outline: 2px solid var(--burgundy-focus); outline-offset: 2px; }
+.vn-voice + .vn-xp { margin-left: 0; }
+@media (max-width: 560px) { .vn-voice span { display: none; } .vn-voice { padding: 8px; } }

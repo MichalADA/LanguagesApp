@@ -1,28 +1,35 @@
 #!/usr/bin/env node
 /**
- * Nagrania dla Lexodromia Stories — z istniejących nagrań kursu, bez nowej syntezy.
+ * Głosy postaci w Lexodromia Stories.
  *
- *   node scripts/stories-audio.mjs            # zapisuje src/stories/data/<historia>/audio.ts
- *   node scripts/stories-audio.mjs --check    # błąd, gdy plik jest nieaktualny (npm test)
+ *   node scripts/stories-audio.mjs            # zapisuje manifest nagrań + src/stories/data/<historia>/audio.ts
+ *   node scripts/stories-audio.mjs --check    # błąd, gdy pliki są nieaktualne (npm test)
  *
- * Wypowiedź dostaje nagranie tylko wtedy, gdy manifest kursu ma DOKŁADNIE ten sam tekst
- * i plik istnieje. Głos (damski / męski) wybiera potem odtwarzacz według postaci,
- * więc Marko nie mówi głosem lektorki. Teksty z {name} nigdy nie mają nagrania.
+ * Każda wypowiedź postaci i narratora ma nagranie głosem tej postaci (profil: płeć głosu, wysokość,
+ * tempo — story.ts). Gdy kurs ma już nagranie DOKŁADNIE tego tekstu tym samym głosem (bez zmiany barwy),
+ * używamy go zamiast nowej syntezy. Brakujące pliki syntezuje istniejące narzędzie:
+ *   python tools/listening/generate_tts.py --course-manifest frontend/curriculum/stories/<historia>-audio-manifest.json
+ * a potem ponownie `npm run stories:audio`. W audio.ts trafiają tylko pliki, które istnieją —
+ * brak nagrania oznacza brak głosu, nigdy błąd 404. Teksty z {name} nie są nagrywane.
  */
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
+import { slugify } from "./lib/course-audio.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
 const ts = require("typescript");
 const CHECK = process.argv.includes("--check");
 
-/** Historie i manifesty nagrań kursu, z których mogą korzystać. */
-const STORIES = [{ dir: "split-a1", exportName: "SPLIT_A1", manifests: ["curriculum/hr-a1/audio-manifest.json"] }];
+const VOICES = { female: "hr-HR-GabrijelaNeural", male: "hr-HR-SreckoNeural" };
+const COURSE_RATE = "-8%";
+/** Gracz nie ma postaci — jego wzorcowe odpowiedzi czyta neutralny głos kursu. */
+const PLAYER = { gender: "female" };
 
-/** Ładuje moduł TS z danymi (bez bundlera): transpilacja + własny require dla ścieżek względnych. */
+const STORIES = [{ dir: "split-a1", exportName: "SPLIT_A1", courseManifests: ["curriculum/hr-a1/audio-manifest.json"] }];
+
 function loadTs(file, cache = new Map()) {
   if (cache.has(file)) return cache.get(file);
   const { outputText } = ts.transpileModule(readFileSync(file, "utf8"), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } });
@@ -37,43 +44,89 @@ function loadTs(file, cache = new Map()) {
   return exports;
 }
 
-const VOICES = { "hr-HR-GabrijelaNeural": "female", "hr-HR-SreckoNeural": "male" };
+const json = (value) => `${JSON.stringify(value, null, 2)}\n`;
 let stale = 0;
-for (const { dir, exportName, manifests } of STORIES) {
+
+for (const { dir, exportName, courseManifests } of STORIES) {
   const story = loadTs(join(ROOT, "src/stories/data", dir, "story.ts"))[exportName];
-  const recordings = new Map();
-  for (const path of manifests) {
+  const profiles = { narrator: story.narratorVoice, player: PLAYER, ...Object.fromEntries(story.npcs.map((n) => [n.id, n.voice])) };
+
+  // Nagrania kursu: tekst + głos → ścieżka (tylko istniejące pliki, nagrane tempem kursu bez zmiany barwy).
+  const course = new Map();
+  for (const path of courseManifests) {
     const manifest = JSON.parse(readFileSync(join(ROOT, path), "utf8"));
     for (const item of manifest.items) {
-      const voice = VOICES[item.voice];
-      if (!voice || !existsSync(join(ROOT, "public", item.audioPath))) continue;
-      const entry = recordings.get(item.text) ?? {};
-      entry[voice] ??= item.audioPath;
-      recordings.set(item.text, entry);
+      if ((manifest.rate ?? COURSE_RATE) !== COURSE_RATE || !existsSync(join(ROOT, "public", item.audioPath))) continue;
+      const key = `${item.voice}|${item.text}`;
+      if (!course.has(key)) course.set(key, item.audioPath);
     }
   }
-  const texts = new Set();
+
+  // Kto co mówi: postacie i narrator (say), gracz (opcje wyboru, wzorcowe odpowiedzi).
+  const lines = new Map();
+  const add = (speaker, text) => {
+    if (!text || text.includes("{")) return;
+    lines.set(`${speaker}|${text}`, { speaker, text });
+  };
   for (const mission of story.missions) {
     for (const node of Object.values(mission.dialogue.graph.nodes)) {
-      if (node.kind === "say") texts.add(node.text.hr);
-      if (node.kind === "choice") node.options.forEach((o) => o.text.hr && texts.add(o.text.hr));
-      if (node.kind === "build" || node.kind === "type") texts.add(node.accepted[0]);
+      if (node.kind === "say") add(node.speaker, node.text.hr);
+      if (node.kind === "choice") node.options.forEach((o) => add("player", o.text.hr));
+      if (node.kind === "build" || node.kind === "type") add("player", node.accepted[0]);
     }
+    mission.vocabulary.forEach((w) => add("player", w.hr));
   }
-  const audio = Object.fromEntries([...texts].filter((t) => !t.includes("{") && recordings.has(t)).sort().map((t) => [t, recordings.get(t)]));
+
+  const items = [...lines.values()]
+    .sort((a, b) => a.speaker.localeCompare(b.speaker) || a.text.localeCompare(b.text))
+    .map(({ speaker, text }) => {
+      const profile = profiles[speaker];
+      if (!profile) throw new Error(`${dir}: brak profilu głosu dla „${speaker}”`);
+      const voice = VOICES[profile.gender];
+      const plain = !profile.pitch && (profile.rate ?? COURSE_RATE) === COURSE_RATE;
+      const reused = plain ? course.get(`${voice}|${text}`) : undefined;
+      return {
+        speaker,
+        text,
+        voice,
+        rate: profile.rate ?? COURSE_RATE,
+        ...(profile.pitch ? { pitch: profile.pitch } : {}),
+        audioPath: reused ?? `/audio/hr/stories/${dir}/${speaker}/${slugify(text)}.mp3`,
+        ...(reused ? { reused: true } : {}),
+      };
+    });
+  const manifest = { provider: "edge-tts", rate: COURSE_RATE, story: story.id, items: items.filter((i) => !i.reused) };
+
+  const audio = {};
+  for (const item of items) {
+    if (!existsSync(join(ROOT, "public", item.audioPath))) continue;
+    (audio[item.speaker] ??= {})[item.text] = item.audioPath;
+  }
+  const recorded = Object.values(audio).reduce((n, m) => n + Object.keys(m).length, 0);
   const body =
     `// AUTO-GENERATED by scripts/stories-audio.mjs — nie edytuj ręcznie.\n` +
-    `// Nagrania kursu, których tekst jest dokładnie taki sam jak wypowiedź w historii (${Object.keys(audio).length} z ${texts.size}).\n` +
-    `export const ${exportName}_AUDIO: Record<string, { female?: string; male?: string }> = ${JSON.stringify(audio, null, 2)};\n`;
-  const out = join(ROOT, "src/stories/data", dir, "audio.ts");
+    `// Nagrania wypowiedzi per mówiący: ${recorded} z ${items.length} (${items.filter((i) => i.reused).length} z nagrań kursu).\n` +
+    `import type { StoryAudio } from "../../types";\n\n` +
+    `export const ${exportName}_AUDIO: StoryAudio = ${JSON.stringify(audio, null, 2)};\n`;
+
+  const audioFile = join(ROOT, "src/stories/data", dir, "audio.ts");
+  const manifestFile = join(ROOT, "curriculum/stories", `${dir}-audio-manifest.json`);
   if (CHECK) {
-    if (!existsSync(out) || readFileSync(out, "utf8") !== body) {
-      console.error(`Nieaktualne: src/stories/data/${dir}/audio.ts — uruchom: npm run stories:audio`);
+    const outdated = [
+      [audioFile, body],
+      [manifestFile, json(manifest)],
+    ].filter(([file, content]) => !existsSync(file) || readFileSync(file, "utf8") !== content);
+    if (outdated.length) {
+      console.error(`Nieaktualne nagrania historii ${dir} — uruchom: npm run stories:audio`);
       stale++;
-    } else console.log(`OK: ${dir} (${Object.keys(audio).length} nagrań z ${texts.size} wypowiedzi)`);
+    }
+    const missing = items.length - recorded;
+    console.log(`${dir}: ${recorded} z ${items.length} wypowiedzi ma nagranie${missing ? ` (brakuje ${missing})` : ""}`);
   } else {
-    writeFileSync(out, body);
-    console.log(`Zapisano src/stories/data/${dir}/audio.ts: ${Object.keys(audio).length} nagrań z ${texts.size} wypowiedzi.`);
+    mkdirSync(dirname(manifestFile), { recursive: true });
+    writeFileSync(manifestFile, json(manifest));
+    writeFileSync(audioFile, body);
+    console.log(`${dir}: ${recorded} z ${items.length} wypowiedzi ma nagranie; do syntezy w manifeście: ${manifest.items.filter((i) => !existsSync(join(ROOT, "public", i.audioPath))).length}`);
   }
 }
 if (stale) process.exit(1);

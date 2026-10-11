@@ -55,7 +55,7 @@ def output_path(public_dir: Path, audio_path: str) -> Path:
     return candidate
 
 
-def course_jobs(args: argparse.Namespace) -> tuple[list[tuple[str, str, Path]], int, int, str]:
+def course_jobs(args: argparse.Namespace) -> tuple[list[tuple[str, str, Path, str | None, str | None]], int, int, str]:
     """(pending, found, existing, rate) for a course audio manifest."""
     payload = json.loads(args.course_manifest.read_text(encoding="utf-8"))
     provider = payload.get("provider")
@@ -69,23 +69,24 @@ def course_jobs(args: argparse.Namespace) -> tuple[list[tuple[str, str, Path]], 
         if target.exists() and not args.force:
             existing += 1
             continue
-        pending.append((item["text"], item["voice"], target))
+        # Opcjonalnie per wypowiedź (np. postacie Stories): własne tempo i wysokość głosu.
+        pending.append((item["text"], item["voice"], target, item.get("rate"), item.get("pitch")))
     return pending, len(payload["items"]), existing, payload.get("rate", args.rate)
 
 
-async def synthesize(args: argparse.Namespace, pending: list[tuple[str, str, Path]], rate: str) -> list[str]:
+async def synthesize(args: argparse.Namespace, pending: list[tuple[str, str, Path, str | None, str | None]], rate: str) -> list[str]:
     """Generate pending clips; returns error messages (other clips keep going)."""
     import edge_tts  # dopiero tutaj: --dry-run działa bez instalowania pakietu
 
     semaphore = asyncio.Semaphore(args.jobs)
     errors: list[str] = []
 
-    async def generate_one(text: str, voice: str, target: Path) -> None:
+    async def generate_one(text: str, voice: str, target: Path, item_rate: str | None, pitch: str | None) -> None:
         async with semaphore:
             target.parent.mkdir(parents=True, exist_ok=True)
             temporary = target.with_suffix(".tmp.mp3")
             try:
-                await edge_tts.Communicate(text, voice, rate=rate).save(temporary)
+                await edge_tts.Communicate(text, voice, rate=item_rate or rate, pitch=pitch or "+0Hz").save(temporary)
                 temporary.replace(target)
                 print(f"generated {target.relative_to(args.public_dir)}")
             except Exception as error:  # noqa: BLE001 — report every failure, keep the rest
@@ -99,7 +100,7 @@ async def synthesize(args: argparse.Namespace, pending: list[tuple[str, str, Pat
 
 async def generate_course(args: argparse.Namespace) -> None:
     pending, found, existing, rate = course_jobs(args)
-    characters = sum(len(text) for text, _, _ in pending)
+    characters = sum(len(item[0]) for item in pending)
     print(f"Provider: {SUPPORTED_PROVIDER} (no account, no billing) · rate {rate}")
     print(f"Found {found} texts · {existing} recordings exist · {len(pending)} to generate ({characters} characters)")
     if args.dry_run or not pending:
