@@ -37,6 +37,7 @@ async function setup(fetcher, status = 'authenticated', locale = 'pl', reviewSta
     '@/utils/date': {currentStreak: () => 0, todayKey: d => d.toISOString().slice(0,10)},
     '@/components/Icon': {Icon: () => null},
     '@/curriculum/CurriculumProvider': {useCurriculum: () => curriculum},
+    '@/xp/DailyGoal': {DailyGoalCard: () => null},
     '@/curriculum/components/format': {coursePaths: {lesson: id => `/lekcja/${id}`}},
     '@/curriculum/components/ContinueCourse': {ContinueCourse: () => null},
     '@/components/StatCard': {ProgressRing: ({label,children}) => React.createElement('div',{role:'img','aria-label':label},children)},

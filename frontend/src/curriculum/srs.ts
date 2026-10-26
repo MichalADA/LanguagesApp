@@ -109,7 +109,8 @@ export function syncLessonVocabulary(
           const response = await request<{ created: number }>("/reviews/enroll", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ course: courseId, source: `lesson:${entry.lessonId}`, items: refs }),
+            // Wpisy spoza kursu (np. „stories:split-a1:m3-coffee”) niosą własne źródło.
+            body: JSON.stringify({ course: courseId, source: entry.lessonId.includes(":") ? entry.lessonId : `lesson:${entry.lessonId}`, items: refs }),
           });
           result.created += response?.created ?? 0;
         }

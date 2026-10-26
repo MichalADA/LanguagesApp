@@ -4,6 +4,7 @@ import { useProgress } from "@/progress/ProgressProvider";
 import { useVocabulary } from "@/vocabulary/VocabularyProvider";
 import { useI18n, UI_LOCALES } from "@/i18n";
 import type { UiLocale } from "@/i18n/types";
+import { GoalPicker } from "@/xp/DailyGoal";
 
 export function SettingsPage() {
   const { t, locale, setLocale } = useI18n();
@@ -47,6 +48,12 @@ export function SettingsPage() {
             ))}
           </div>
         </Row>
+      </section>
+
+      <section className="panel panel-pad stack" style={{ gap: 14 }} aria-labelledby="settings-goal">
+        <h2 id="settings-goal" style={{ fontSize: 18 }}>{t("xp.settingsTitle")}</h2>
+        <p className="muted">{t("xp.settingsNote")}</p>
+        <GoalPicker />
       </section>
 
       <section className="panel panel-pad stack" style={{ gap: 20 }}>

@@ -42,7 +42,8 @@ test('learning hub hides individual quick games until their category is opened',
   let view;
   act(() => { view = Renderer.create(React.createElement(GamesPage)); });
   const links = () => view.root.findAllByType('a').map(node => node.props.href);
-  assert.equal(links().length, 7);
+  assert.equal(links().length, 8);
+  assert.ok(links().includes('/stories'), 'Lexodromia Stories w trybach głównych');
   assert.ok(links().includes('/fiszki'));
   assert.ok(links().includes('/gry/kategoria/quick'));
   assert.ok(links().includes('/radio'));

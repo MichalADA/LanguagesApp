@@ -32,6 +32,8 @@ export const GAMES: GameModule[] = [
   existing("bura", "quick", BuraGame),
   { ...existing("trasa", "main", TrasaGame), requiresRoute: true },
   existing("odmiana", "grammar", OdmianaGame),
+  // Lexodromia Stories — przygoda językowa z postaciami (własne trasy /stories, tryb skupienia w misji).
+  { id: "stories", category: "main", nameKey: "gameNames.stories", taglineKey: "gameList.stories.tagline", descriptionKey: "gameList.stories.description", status: "active", href: "/stories" },
   { id: "flashcards", category: "main", nameKey: "gameNames.flashcards", taglineKey: "gameList.flashcards.tagline", descriptionKey: "gameList.flashcards.description", status: "active", href: "/fiszki" },
   ...QUICK_GAME_IDS.map((mode): GameModule => ({
     id: mode, category: "quick", nameKey: `gameNames.${mode}`, taglineKey: `quickDescriptions.${mode}`, descriptionKey: `quickDescriptions.${mode}`, status: "active",

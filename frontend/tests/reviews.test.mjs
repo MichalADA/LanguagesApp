@@ -127,7 +127,8 @@ async function setup({
 } = {}) {
   const course = { id: "pl-hr", name: { pl: "Chorwacki", en: "Croatian" } };
   const submitted = [],
-    finished = [];
+    finished = [],
+    awarded = [];
   let loadCalls = 0,
     saveCalls = 0;
   const request = () => {};
@@ -180,6 +181,8 @@ async function setup({
       syncLessonVocabulary: async () => ({ synced: 0, created: 0, pending: 0 }),
     },
     "@/components/AudioButton": { AudioButton: () => null },
+    "@/xp/goals": { reviewXp: (n) => Math.max(0, Math.min(50, n)) },
+    "@/xp/XpProvider": { useXp: () => ({ award: async (input) => { awarded.push(input); } }) },
     "@/components/AnswerInput": {
       AnswerInput: ({ value, onChange, disabled }) =>
         React.createElement("input", { value, disabled, onChange: (e) => onChange(e.target.value) }),
@@ -189,12 +192,12 @@ async function setup({
   await act(async () => {
     view = Renderer.create(React.createElement(ReviewSession));
   });
-  return { view, submitted, finished, t };
+  return { view, submitted, finished, awarded, t };
 }
 const button = (view, text) =>
   view.root.findAllByType("button").find((n) => n.children.includes(text));
 test("failed save retries the identical event; double clicks count once and session closes once", async () => {
-  const { view, submitted, finished, t } = await setup({ failSave: true });
+  const { view, submitted, finished, awarded, t } = await setup({ failSave: true });
   act(() =>
     view.root.findByType("input").props.onChange({ target: { value: "kuća" } }),
   );
@@ -229,6 +232,9 @@ test("failed save retries the identical event; double clicks count once and sess
   }
   assert.deepEqual(finished, ["session"]);
   assert.equal(submitted.length, 5);
+  // XP konta: jedno zdarzenie na sesję, 1 XP za poprawną odpowiedź.
+  const correct = submitted.slice(1).filter((a) => a.correct).length;
+  assert.deepEqual(awarded, [{ courseId: "pl-hr", source: "review", sourceId: "session", xp: correct }]);
   assert.ok(
     view.root
       .findAllByType("h2")

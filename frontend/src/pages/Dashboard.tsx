@@ -18,6 +18,7 @@ import { ProgressRing } from "@/components/StatCard";
 import { useCurriculum } from "@/curriculum/CurriculumProvider";
 import { ContinueCourse } from "@/curriculum/components/ContinueCourse";
 import { coursePaths } from "@/curriculum/components/format";
+import { DailyGoalCard } from "@/xp/DailyGoal";
 
 interface PlanStep {
   key: string;
@@ -241,6 +242,7 @@ export function Dashboard() {
     </div>
 
     <aside className="dashboard-rail">
+      <DailyGoalCard />
       <section className="surface rail-progress" aria-labelledby="progress-title" aria-busy={loading}>
         <div className="section-head">
           <div>

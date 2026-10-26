@@ -33,6 +33,10 @@ model User {
   learningAnswers   LearningAnswer[]
   wordProgress      UserWordProgress[]
   flashcardSessions FlashcardSession[]
+  storyProgress     StoryProgress[]
+  storyMissions     StoryMissionCompletion[]
+  xpEvents          XpEvent[]
+  xpSettings        XpSettings?
 
   @@index([email])
 }
@@ -77,6 +81,9 @@ model Course {
   sessions          LearningSession[]
   wordProgress      UserWordProgress[]
   flashcardSessions FlashcardSession[]
+  storyProgress     StoryProgress[]
+  storyMissions     StoryMissionCompletion[]
+  xpEvents          XpEvent[]
 
   @@unique([sourceLanguageId, targetLanguageId])
   @@index([sourceLanguageId])
@@ -287,4 +294,84 @@ model ReviewAttempt {
   @@index([userId, courseId, timestamp])
   @@index([userId, itemType, itemId, timestamp])
   @@index([reviewStateId])
+}
+
+/// Lexodromia Stories: world state of one story (city) per user and course.
+/// Mission content lives in the frontend (typed data); this only stores progress.
+model StoryProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  courseId  String
+  /// e.g. "split-a1"
+  storyId   String
+  /// Story flags set by dialogue events (e.g. "has-key"). Order-insensitive set.
+  flags     String[] @default([])
+  /// Sum of first-completion rewards — never increased by replays.
+  xp        Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, courseId, storyId])
+}
+
+/// One row per completed mission. The reward is granted only when the row is created.
+model StoryMissionCompletion {
+  id               String   @id @default(cuid())
+  userId           String
+  courseId         String
+  storyId          String
+  missionId        String
+  firstCompletedAt DateTime @default(now())
+  lastCompletedAt  DateTime @default(now())
+  plays            Int      @default(1)
+  /// Best score in percent (0–100).
+  bestScore        Int      @default(0)
+  /// Reward granted on the first completion.
+  xp               Int      @default(0)
+  /// Idempotency key of the last recorded completion (network retries).
+  lastEventId      String
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, courseId, storyId, missionId])
+  @@index([userId, courseId, storyId])
+}
+
+/// Account XP preferences (a separate table, so the User table is untouched).
+model XpSettings {
+  userId    String   @id
+  /// Daily learning goal in XP (10 / 20 / 30 / 50 — "lekko" … "bardzo intensywnie").
+  dailyGoal Int      @default(20)
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+/// Account-wide experience points. One row per award; the sum is the user's XP.
+/// "once" sources (a passed lesson, a story mission) are awarded only for the first completion.
+model XpEvent {
+  id        String   @id @default(cuid())
+  userId    String
+  courseId  String
+  /// Idempotency key from the client (network retries never award twice).
+  eventId   String
+  /// lesson | story | review
+  source    String
+  /// e.g. lesson id, "split-a1:m3-coffee", review session id
+  sourceId  String
+  xp        Int
+  /// Calendar day in Europe/Warsaw (YYYY-MM-DD) — daily goal and history.
+  day       String
+  createdAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventId])
+  @@index([userId, day])
+  @@index([userId, source, sourceId])
 }

@@ -49,3 +49,14 @@ All eight A1 modules are listed in `frontend/curriculum/hr-a1/audio.json`; to ad
 there and repeat the steps. `npm run curriculum:a1:audio-check` (in `frontend/`) fails until every file in the manifest exists.
 Files land in `frontend/public/audio/hr/a1/module-XX/<slug>.mp3`; texts already recorded for an earlier
 module are reused, not regenerated.
+
+## Lexodromia Stories (character voices)
+
+`frontend/curriculum/stories/<story>-audio-manifest.json` uses the same course-manifest format with optional
+per-item `rate` and `pitch` (e.g. `"-12Hz"`), so each character keeps a distinct, consistent voice:
+
+```bash
+cd frontend && npm run stories:audio && cd ..
+python tools/listening/generate_tts.py --course-manifest frontend/curriculum/stories/split-a1-audio-manifest.json
+cd frontend && npm run stories:audio
+```
