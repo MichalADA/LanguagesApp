@@ -15,78 +15,72 @@ export function GamesPage() {
   if (!category) {
     const mainGames = GAMES.filter((game) => game.category === "main");
     return (
-      <div className="page">
+      <div className="page games-page">
         <header className="page-head">
-          <span className="eyebrow">{t("games.eyebrow")}</span>
           <h1>{t("games.title")}</h1>
-          <p className="lede">{t("games.chooseMode")}</p>
+          <p className="lede">{t("games.subtitle")}</p>
         </header>
-        <div className="grid grid-3">
+        <ul className="games-main">
           {mainGames.map((game) => (
-            <Link key={game.id} to={game.href ?? `/gry/${game.id}`} className="panel panel-pad game-card mode-card">
-              <h2>{t(game.nameKey)}</h2>
-              <p className="muted">{t(game.descriptionKey)}</p>
-              <span className="mode-card-action">{t("games.openMode")} →</span>
-            </Link>
+            <li key={game.id}>
+              <Link to={game.href ?? `/gry/${game.id}`} className="games-entry">
+                <h2>{t(game.nameKey)}</h2>
+                {game.id === "stories" && <p className="games-sample" lang="hr">{t("games.storiesSample")}</p>}
+                <p className="muted">{t(game.descriptionKey)}</p>
+              </Link>
+            </li>
           ))}
-          {GAME_CATEGORIES.filter((id) => id !== "main").map((id) => (
-            <Link key={id} to={id === "radio" ? "/radio" : `/gry/kategoria/${id}`} className="panel panel-pad game-card mode-card">
-              <h2>{t(`gameCategories.${id}.name`)}</h2>
-              <p className="muted">{t(`gameCategories.${id}.description`)}</p>
-              <span className="mode-card-action">{t("games.openMode")} →</span>
-              {!GAMES.some((game) => game.category === id && game.status === "active") && <span className="badge">{t("common.soon")}</span>}
-              {id === "radio" && <span className="badge on">{t("common.active")}</span>}
-            </Link>
-          ))}
-        </div>
+        </ul>
+        <ul className="games-list" aria-label={t("games.categories")}>
+          {GAME_CATEGORIES.filter((id) => id !== "main").map((id) => {
+            const soon = !GAMES.some((game) => game.category === id && game.status === "active");
+            return (
+              <li key={id}>
+                <Link to={id === "radio" ? "/radio" : `/gry/kategoria/${id}`} className={soon ? "games-row soon" : "games-row"}>
+                  <span className="games-row-name">{t(`gameCategories.${id}.name`)}</span>
+                  <span className="games-row-desc">{t(`gameCategories.${id}.description`)}</span>
+                  {soon && <span className="games-row-meta">{t("common.soon")}</span>}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }
 
   return (
-    <div className="page">
+    <div className="page games-page">
       <header className="page-head">
-        <span className="eyebrow">{t("games.eyebrow")}</span>
+        <Link to="/gry" className="text-link back-link">{t("games.backToModes")}</Link>
         <h1>{t(`gameCategories.${category}.name`)}</h1>
         <p className="lede">{t(`gameCategories.${category}.description`)}</p>
-        <Link to="/gry" className="mono dim">{t("games.backToModes")}</Link>
       </header>
 
-      <div className="grid grid-3">
+      <ul className="games-list">
         {GAMES.filter((game) => game.category === category).map((g) => {
           const rec = current.games[g.id];
           const active = g.status === "active";
+          // Rekord tylko wtedy, gdy jest — „nie grane” przy każdej pozycji to szum.
+          const meta = !active ? t("common.soon") : rec ? t("games.record", { score: rec.bestScore, rounds: rec.rounds }) : null;
+          const body = (
+            <>
+              <span className="games-row-name">{t(g.nameKey)}</span>
+              <span className="games-row-desc">{t(g.descriptionKey)}</span>
+              {meta && <span className="games-row-meta">{meta}</span>}
+            </>
+          );
           return (
-            <article key={g.id} className={active ? "panel panel-pad game-card" : "panel panel-pad game-card soon"}>
-              <div className="row" style={{ justifyContent: "space-between", gap: 8 }}>
-                <h3 style={{ fontSize: 20 }}>{t(g.nameKey)}</h3>
-                <span className={active ? "badge on" : "badge"}>
-                  {active ? t("common.active") : t("common.soon")}
-                </span>
-              </div>
-              <p className="muted" style={{ fontSize: 15, lineHeight: 1.55 }}>
-                {t(g.descriptionKey)}
-              </p>
+            <li key={g.id}>
               {active ? (
-                <div className="row" style={{ justifyContent: "space-between", marginTop: 6 }}>
-                  <Link to={g.href ?? `/gry/${g.id}`} className="btn">
-                    {t("games.play")}
-                  </Link>
-                  <span className="mono dim" style={{ fontSize: 12 }}>
-                    {rec
-                      ? t("games.record", { score: rec.bestScore, rounds: rec.rounds })
-                      : t("games.noRound")}
-                  </span>
-                </div>
+                <Link to={g.href ?? `/gry/${g.id}`} className="games-row">{body}</Link>
               ) : (
-                <span className="mono dim" style={{ fontSize: 12, marginTop: 6 }}>
-                  {t("common.soon")}
-                </span>
+                <div className="games-row soon" aria-disabled="true">{body}</div>
               )}
-            </article>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 }

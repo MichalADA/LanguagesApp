@@ -157,10 +157,11 @@ export const pl: Dictionary = {
   },
   stories: {
     "eyebrow": "Gra fabularna",
+    "upcoming": "Następne miasta",
     "title": "Lexodromia Stories",
-    "subtitle": "Podróżujesz po Chorwacji, poznajesz mieszkańców i załatwiasz codzienne sprawy po chorwacku. Każde miasto to jeden poziom.",
+    "subtitle": "Każde miasto to jeden poziom. W Splicie meldujesz się w apartamencie, zamawiasz kawę na Rivie i robisz zakupy — pięć misji, wszystko po chorwacku.",
     "noCourse": "Dla tego kursu nie ma jeszcze historii.",
-    "enterCity": "Jedź do: {city}",
+    "enterCity": "Otwórz mapę i misje",
     "allCities": "Wszystkie miasta",
     "missions": "Misje",
     "mapLabel": "Mapa: {city}",
@@ -555,18 +556,20 @@ export const pl: Dictionary = {
   games: {
     chooseMode: "Wybierz tryb nauki. Wejdź w kategorię, aby zobaczyć dostępne gry.",
     openMode: "Otwórz",
-    backToModes: "← Tryby nauki",
+    backToModes: "Wszystkie gry",
     eyebrow: "gry",
-    title: "Tryby nauki",
+    title: "Gry i tryby",
     subtitle:
-      "Każdy tryb korzysta z tej samej talii i tego samego postępu. Pulę słów wybierasz w grze.",
+      "Wszystkie korzystają z tej samej talii i tego samego postępu.",
     play: "Graj",
-    record: "rekord {score} · rund {rounds}",
-    noRound: "brak rundy",
+    record: "rekord {score} · {rounds} rund",
+    noRound: "jeszcze nie grane",
     prepared: "moduł przygotowany, brak implementacji",
     notReady: "Ten tryb jest jeszcze w planach. Wróć do listy i wybierz aktywną grę.",
     notFound: "Nie ma takiej gry",
     backToList: "← Lista gier",
+    storiesSample: "„Jednu kavu, molim!“",
+    categories: "Pozostałe tryby",
   },
   "gameNames": {
     "bura": "Bura",
@@ -597,23 +600,23 @@ export const pl: Dictionary = {
     },
     "quick": {
       "name": "Szybkie gry",
-      "description": "Krótka nauka bez długich sesji."
+      "description": "Rundy na 2–3 minuty: pary, swipe, tak/nie, rozsypane litery."
     },
     "grammar": {
       "name": "Gramatyka",
-      "description": "Ćwicz odmianę i struktury językowe."
+      "description": "Odmiana czasowników przez osoby: ja sam, ti si, on je…"
     },
     "sentences": {
       "name": "Zdania",
-      "description": "Ćwicz język w kontekście."
+      "description": "Tłumaczenie, układanie, luki i poprawianie zdań."
     },
     "listening": {
       "name": "Słuchanie",
-      "description": "Miejsce na nagrania i ćwiczenia ze słuchu."
+      "description": "Nagrania native speakera — zapisujesz, co słyszysz."
     },
     "radio": {
       "name": "Radio",
-      "description": "Osłuchuj się z naturalnym językiem."
+      "description": "Chorwackie stacje na żywo, do osłuchania się z językiem."
     }
   },
   "quickDescriptions": {

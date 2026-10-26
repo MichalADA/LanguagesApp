@@ -157,10 +157,11 @@ export const en: Dictionary = {
   },
   stories: {
     "eyebrow": "Story game",
+    "upcoming": "Next cities",
     "title": "Lexodromia Stories",
-    "subtitle": "Travel around Croatia, meet the locals and handle everyday situations in Croatian. Each city is one level.",
+    "subtitle": "Each city is one level. In Split you check into a flat, order coffee on the Riva and go shopping — five missions, all in Croatian.",
     "noCourse": "There are no stories for this course yet.",
-    "enterCity": "Travel to {city}",
+    "enterCity": "Open the map and missions",
     "allCities": "All cities",
     "missions": "Missions",
     "mapLabel": "Map: {city}",
@@ -555,18 +556,20 @@ export const en: Dictionary = {
   games: {
     chooseMode: "Choose a learning mode. Open a category to see its games.",
     openMode: "Open",
-    backToModes: "← Learning modes",
+    backToModes: "All games",
     eyebrow: "games",
-    title: "Practice modes",
+    title: "Games and modes",
     subtitle:
-      "Every mode uses the same deck and the same progress. You pick the word pool inside the game.",
+      "They all share one deck and one progress record.",
     play: "Play",
-    record: "record {score} · rounds {rounds}",
-    noRound: "no rounds yet",
+    record: "best {score} · {rounds} rounds",
+    noRound: "not played yet",
     prepared: "module scaffolded, not implemented",
     notReady: "This mode is still planned. Go back and pick an active game.",
     notFound: "No such game",
     backToList: "← Game list",
+    storiesSample: "“Jednu kavu, molim!”",
+    categories: "Other modes",
   },
   "gameNames": {
     "bura": "Bura",
@@ -597,23 +600,23 @@ export const en: Dictionary = {
     },
     "quick": {
       "name": "Quick games",
-      "description": "Short practice without long sessions."
+      "description": "2–3 minute rounds: pairs, swipe, true/false, scrambled letters."
     },
     "grammar": {
       "name": "Grammar",
-      "description": "Practise conjugation and language structures."
+      "description": "Verb conjugation by person: ja sam, ti si, on je…"
     },
     "sentences": {
       "name": "Sentences",
-      "description": "Practise language in context."
+      "description": "Translating, building, gap-filling and correcting sentences."
     },
     "listening": {
       "name": "Listening",
-      "description": "A home for recordings and listening practice."
+      "description": "Native speaker recordings — you write down what you hear."
     },
     "radio": {
       "name": "Radio",
-      "description": "Get used to natural spoken language."
+      "description": "Live Croatian stations to get your ear used to the language."
     }
   },
   "quickDescriptions": {

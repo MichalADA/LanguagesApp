@@ -2267,14 +2267,42 @@ a.lesson-row:hover .lesson-row-link { color: var(--text-primary); }
    Lexodromia Stories — hub miast, mapa, scena visual novel
    ========================================================================== */
 
-.stories-cities { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-4); }
-.stories-city { display: flex; flex-direction: column; overflow: hidden; color: inherit; text-decoration: none; transition: transform 0.18s var(--ease), border-color 0.18s var(--ease); }
-a.stories-city:hover { border-color: var(--border-strong); background: var(--surface-hover); }
-.stories-city.locked { opacity: 0.6; }
-.stories-city-art { position: relative; height: 160px; overflow: hidden; }
+
+/* Hub: grywalne miasto to karta z mapą, zapowiedzi — cicha lista. */
+.stories-city { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); overflow: hidden; color: var(--text-primary); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); transition: background 0.14s var(--ease), border-color 0.14s var(--ease); }
+.stories-city:hover { color: var(--text-primary); background: var(--surface-hover); border-color: var(--border-strong); }
+.stories-city-art { position: relative; min-height: 300px; overflow: hidden; }
 .stories-city-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.stories-city-body { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-5); align-items: flex-start; }
-.stories-city-body h2 { font-family: var(--display); font-weight: 500; font-size: 30px; }
+.stories-city-body { display: flex; flex-direction: column; justify-content: center; gap: var(--space-2); padding: var(--space-8) var(--space-7); }
+.stories-city-level { font-size: var(--text-sm); font-weight: 600; letter-spacing: 0.04em; color: var(--text-tertiary); }
+.stories-city-body h2 { font-family: var(--display); font-weight: 500; font-size: 56px; letter-spacing: -0.02em; line-height: 1; }
+.stories-city-cta { margin-top: var(--space-4); font-weight: 600; color: var(--burgundy-text); text-decoration: underline; text-decoration-color: rgba(226, 123, 146, 0.4); text-underline-offset: 4px; }
+.stories-city:hover .stories-city-cta { text-decoration-color: currentColor; }
+.stories-upcoming { display: flex; flex-direction: column; gap: var(--space-3); }
+.stories-upcoming ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
+.stories-upcoming li { display: grid; grid-template-columns: 180px 40px minmax(0, 1fr); align-items: baseline; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--border); }
+.stories-upcoming-city { font-family: var(--display); font-size: var(--text-2xl); font-weight: 500; color: var(--text-secondary); }
+.stories-upcoming-level { font-size: var(--text-sm); font-weight: 600; color: var(--text-tertiary); }
+
+/* ---------- Lista gier ---------- */
+.games-page { gap: var(--space-8); }
+.games-main { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-7); }
+.games-entry { display: flex; flex-direction: column; gap: var(--space-2); height: 100%; padding-top: var(--space-4); border-top: 2px solid var(--border-strong); color: var(--text-primary); transition: border-color 0.14s var(--ease); }
+.games-entry:hover { color: var(--text-primary); border-top-color: var(--burgundy-text); }
+.games-entry h2 { font-size: var(--text-xl); }
+.games-entry .muted { line-height: 1.55; }
+.games-sample { font-family: var(--display); font-style: italic; font-weight: 400; font-size: var(--text-2xl); line-height: 1.2; }
+.games-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
+.games-list > li { border-bottom: 1px solid var(--border); }
+/* Listy gier mają własne linie — nagłówek strony nie dokłada kolejnej. */
+.games-page .page-head { border-bottom: 0; padding-bottom: 0; }
+.games-row { display: grid; grid-template-columns: 220px minmax(0, 1fr) auto; align-items: baseline; gap: var(--space-6); min-height: var(--tap); padding: var(--space-4) var(--space-3); margin: 0 calc(-1 * var(--space-3)); border-radius: var(--radius-sm); color: var(--text-primary); transition: background 0.14s var(--ease); }
+a.games-row:hover { background: rgba(244, 232, 228, 0.03); color: var(--text-primary); }
+.games-row-name { font-size: var(--text-lg); font-weight: 600; }
+.games-row-desc { font-size: var(--text-md); color: var(--text-secondary); }
+.games-row-meta { font-size: var(--text-sm); color: var(--text-tertiary); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.games-row.soon .games-row-name { color: var(--text-secondary); font-weight: 500; }
+.games-row.soon .games-row-desc { color: var(--text-tertiary); }
 
 .stories-city-head { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--space-5); flex-wrap: wrap; margin-bottom: var(--space-5); }
 .stories-city-head h1 { display: flex; align-items: center; gap: var(--space-3); margin-top: var(--space-2); }
@@ -2392,6 +2420,15 @@ a.stories-city:hover { border-color: var(--border-strong); background: var(--sur
 
 @media (max-width: 900px) {
   .stories-city-layout { grid-template-columns: 1fr; }
+  .stories-city { grid-template-columns: 1fr; }
+  .stories-city-art { min-height: 200px; }
+  .stories-city-body { padding: var(--space-5) var(--space-5) var(--space-6); }
+  .stories-city-body h2 { font-size: 44px; }
+  .games-main { grid-template-columns: 1fr; gap: var(--space-6); }
+  .games-row { grid-template-columns: minmax(0, 1fr) auto; row-gap: 2px; column-gap: var(--space-4); }
+  .games-row-desc { grid-column: 1 / -1; grid-row: 2; }
+  .stories-upcoming li { grid-template-columns: minmax(0, 1fr) auto; row-gap: 2px; }
+  .stories-upcoming li .muted { grid-column: 1 / -1; }
 }
 /* Tablet i telefon: postać u góry, panel na dole. Desktop (≥ 1100 px): postać po lewej, panel po prawej. */
 @media (max-width: 1099px) {
