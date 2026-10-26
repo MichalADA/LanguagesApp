@@ -49,7 +49,8 @@ async function setup(fetcher, status = 'authenticated', locale = 'pl', reviewSta
 const cards = [{wordRef:'a',status:'NEW',isDue:false},{wordRef:'b',status:'MASTERED',isDue:true},{wordRef:'sentence:builder:1',status:'MASTERED',isDue:true}];
 const ring = view => view.root.findAll(n => n.props.role === 'img' && /Opanowane|Mastered/.test(n.props['aria-label'] ?? ''))[0].props['aria-label'];
 const link = (view, href) => view.root.findAllByType('a').find(n => n.props.href === href);
-const cta = view => view.root.findAllByType('a').find(n => n.props.className === 'btn btn-lg');
+// Główną akcją pulpitu jest sam krok planu oznaczony jako „next” — nie ma osobnego przycisku.
+const cta = view => { const next = view.root.findAllByType('a').filter(n => String(n.props.className).split(' ').includes('next')); assert.equal(next.length, 1, 'dokładnie jedna główna akcja'); return next[0]; };
 const totals = view => view.root.findAllByType('dd').map(node => node.children.join(''));
 test('account dashboard ignores local mastery and non-vocabulary references; level totals are cumulative', async () => {
   const {view,writes}=await setup(async()=>cards);

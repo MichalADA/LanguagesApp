@@ -5,7 +5,6 @@ import { useProgress } from "@/progress/ProgressProvider";
 import { useCourse } from "@/courses/CourseProvider";
 import { useAuth } from "@/auth/useAuth";
 import { isLearned, needsReview, statFor } from "@/progress/service";
-import { findGame } from "@/games/registry";
 import { useI18n } from "@/i18n";
 import { fetchProgress } from "@/flashcards/flashcardsApi";
 import { readPreferences, writePreferences } from "@/flashcards/preferences";
@@ -13,23 +12,24 @@ import type { FlashcardProgress, FlashcardMode } from "@/flashcards/types";
 import { fetchReviewStats, type ReviewStats } from "@/reviews/api";
 import { entriesForLevel, LEARNING_LEVELS, type LearningLevelId } from "@/config/learningLevels";
 import { currentStreak, todayKey } from "@/utils/date";
-import { Icon, type IconName } from "@/components/Icon";
-import { ProgressRing } from "@/components/StatCard";
 import { useCurriculum } from "@/curriculum/CurriculumProvider";
-import { ContinueCourse } from "@/curriculum/components/ContinueCourse";
 import { coursePaths } from "@/curriculum/components/format";
 import { DailyGoalCard } from "@/xp/DailyGoal";
 
 interface PlanStep {
   key: string;
-  icon: IconName;
   title: string;
+  /** Tytuł po chorwacku (lekcja kursu) — składany krojem słowa, nie interfejsu. */
+  target?: string;
   meta: string;
   count: string | null;
   href: string;
   onStart?: () => void;
   done?: boolean;
 }
+
+/** Ok. pół minuty na pozycję powtórki — tyle wychodzi średnio w sesji FSRS. */
+const reviewMinutes = (n: number) => Math.max(1, Math.round(n / 2));
 
 export function Dashboard() {
   const { t, locale } = useI18n();
@@ -95,9 +95,8 @@ export function Dashboard() {
   const untouched = pool.length - levelMastered - learning;
   const known = levelMastered + learning;
   const percent = pool.length ? Math.round(levelMastered / pool.length * 100) : 0;
-  const levelInfo = LEARNING_LEVELS.find(item => item.id === level)!;
-  const last = findGame(current.lastActivity?.gameId);
   const streak = currentStreak(current.activeDays);
+  const activeToday = current.activeDays.includes(todayKey(new Date()));
 
   const reviewStats = reviews?.key === key ? reviews.stats : null;
   const reviewsFailed = account && reviewsFailedKey === key;
@@ -112,157 +111,103 @@ export function Dashboard() {
   const hasSentences = course.id === "pl-hr";
   const newStep: PlanStep = {
     key: "new",
-    icon: "plus",
     title: t("home.planNew"),
     meta: t(account ? "home.planNewMeta" : "home.planNewGuest"),
     count: "10",
     href: account ? "/fiszki/sesja" : "/gry/bura",
     onStart: () => flashcardStart("NEW"),
   };
+  const reviewMeta = reviewCount === 0
+    ? t("home.planReviewsNone")
+    : [t(account ? "home.planReviewsMeta" : "home.planReviewsGuest"), reviewCount ? t("home.aboutMin", { n: reviewMinutes(reviewCount) }) : null]
+        .filter(Boolean).join(" · ");
   const reviewStep: PlanStep = {
     key: "reviews",
-    icon: "repeat",
     title: t("home.planReviews"),
-    meta: reviewCount === 0
-      ? t("home.planReviewsNone")
-      : t(account ? "home.planReviewsMeta" : "home.planReviewsGuest"),
+    meta: reviewMeta,
     count: reviewsFailed ? "—" : reviewCount === null ? "…" : String(reviewCount),
     href: reviewCount === 0 ? (account ? "/fiszki" : "/powtorki") : "/powtorki",
     onStart: reviewCount === 0 ? undefined : () => flashcardStart("REVIEW"),
     done: reviewCount === 0,
   };
   const practiceStep: PlanStep = hasSentences
-    ? { key: "sentences", icon: "text", title: t("home.planSentences"), meta: t("home.planSentencesMeta"), count: "10", href: "/gry/sentence-builder" }
-    : { key: "games", icon: "play", title: t("home.planGames"), meta: t("home.planGamesMeta"), count: null, href: "/gry" };
-  // Gdy kurs ma bieżącą lekcję, nowy materiał to lekcja (jej słowa trafiają potem do FSRS),
-  // a nie losowe słowa z talii — fiszki zostają w skrótach.
-  const currentLesson = courseView?.current?.lesson.lesson;
+    ? { key: "sentences", title: t("home.planSentences"), meta: t("home.planSentencesMeta"), count: "10", href: "/gry/sentence-builder" }
+    : { key: "games", title: t("home.planGames"), meta: t("home.planGamesMeta"), count: null, href: "/gry" };
+  // Lekcja kursu jest krokiem planu (a nie osobnym blokiem nad nim): jej słowa trafiają potem do FSRS,
+  // więc zastępuje losowe nowe słowa z talii — fiszki zostają w trybach.
+  const currentView = courseView?.current;
+  const currentLesson = currentView?.lesson.lesson;
   const lessonStep: PlanStep | null = currentLesson
     ? {
         key: "lesson",
-        icon: "route",
-        title: t("home.planLesson"),
-        meta: t("home.planLessonMeta", { title: currentLesson.title, n: currentLesson.estimatedMinutes }),
+        title: t("home.planLesson", { n: currentView.lesson.number ?? currentLesson.order ?? 1 }),
+        target: currentLesson.title,
+        meta: [
+          currentView.module?.module ? t("home.planLessonModule", { n: currentView.module.module.order }) : null,
+          t("home.aboutMin", { n: currentLesson.estimatedMinutes }),
+          courseView?.total ? t("home.planLessonDone", { done: courseView.completedCount, total: courseView.total }) : null,
+        ].filter(Boolean).join(" · "),
         count: null,
         href: coursePaths.lesson(currentLesson.id),
       }
     : null;
   const plan = [reviewStep, lessonStep ?? newStep, practiceStep];
-  // Główne CTA prowadzi do pierwszego kroku, który ma coś do zrobienia.
+  // Krok „next” sam jest główną akcją strony — nie ma osobnego przycisku, który by go dublował.
   const next = plan.find(step => !step.done) ?? newStep;
-
-  const shortcuts: { key: string; href: string; icon: IconName }[] = [
-    { key: "flashcards", href: "/fiszki", icon: "cards" },
-    { key: "quick", href: "/gry/kategoria/quick", icon: "bolt" },
-    ...(hasSentences ? [{ key: "sentences", href: "/gry/kategoria/sentences", icon: "text" as const }] : []),
-    { key: "grammar", href: "/gry/kategoria/grammar", icon: "swap" },
-    ...(hasSentences ? [{ key: "radio", href: "/radio", icon: "radio" as const }] : []),
-  ];
+  const headline = next === reviewStep && reviewCount
+    ? t("home.headReviews", { n: reviewCount, m: reviewMinutes(reviewCount) })
+    : next === lessonStep
+      ? t("home.headLesson")
+      : next === newStep
+        ? t("home.headNew", { n: 10 })
+        : next.key === "sentences" ? t("home.headSentences", { n: 10 }) : t("home.headGames");
 
   const dateLocale = locale === "pl" ? "pl-PL" : "en-GB";
   const today = new Date().toLocaleDateString(dateLocale, { weekday: "long", day: "numeric", month: "long" });
-  const activeDays = new Set(current.activeDays);
-  const week = Array.from({ length: 7 }, (_, index) => {
-    const day = new Date();
-    day.setDate(day.getDate() - (6 - index));
-    return {
-      key: todayKey(day),
-      label: day.toLocaleDateString(dateLocale, { weekday: "narrow" }),
-      on: activeDays.has(todayKey(day)),
-      today: index === 6,
-    };
-  });
 
   return <div className="page page-wide dashboard">
     <div className="dashboard-main">
-      {courseView && <ContinueCourse view={courseView} primary={false} />}
       <section className="today" aria-labelledby="today-title">
         <header className="today-head">
           <span className="eyebrow">{today} · {course.name[locale]}</span>
-          <h1 id="today-title" className="display">{t("home.title")}</h1>
-          <p className="lede">{t("home.subtitle")}</p>
+          <h1 id="today-title">
+            {headline}
+            {next === lessonStep && lessonStep?.target && <> <span className="today-target" lang="hr">{lessonStep.target}</span></>}
+          </h1>
         </header>
 
-        <div className="plan">
-          <span className="plan-label">{t("home.planEyebrow")}</span>
-          <ol className="plan-steps" aria-label={t("home.planLabel")}>
-            {plan.map((step, index) => (
-              <li key={step.key}>
-                <Link
-                  className={["plan-step", step.done && "done", step === next && "next"].filter(Boolean).join(" ")}
-                  to={step.href}
-                  onClick={step.onStart}
-                >
-                  <span className="plan-step-icon"><Icon name={step.done ? "check" : step.icon} /></span>
-                  <span className="plan-step-body">
-                    <span className="plan-step-title">
-                      <span className="plan-step-index">{String(index + 1).padStart(2, "0")}</span>
-                      {step.title}
-                      {step === next && <span className="tag">{t("home.planNext")}</span>}
-                    </span>
-                    <span className="plan-step-meta">{step.meta}</span>
+        <ol className="plan-steps" aria-label={t("home.planLabel")}>
+          {plan.map((step, index) => (
+            <li key={step.key}>
+              <Link
+                className={["plan-step", step.done && "done", step === next && "next"].filter(Boolean).join(" ")}
+                to={step.href}
+                onClick={step.onStart}
+                aria-current={step === next ? "step" : undefined}
+              >
+                <span className="plan-step-index" aria-hidden="true">{step.done ? "✓" : index + 1}</span>
+                <span className="plan-step-body">
+                  <span className="plan-step-title">
+                    {step.title}
+                    {step.target && <span className="plan-step-target" lang="hr">{step.target}</span>}
                   </span>
-                  {step.count !== null && <span className="plan-step-count">{step.count}</span>}
-                  <span className="plan-step-arrow"><Icon name="arrowRight" size={16} /></span>
-                </Link>
-              </li>
-            ))}
-          </ol>
-          {reviewsFailed && (
-            <div className="inline-alert" role="alert">
-              <span>{t("reviews.error")}</span>
-              <button className="linklike" onClick={() => setRetry(n => n + 1)}>{t("reviews.retry")}</button>
-            </div>
-          )}
-        </div>
-
-        <div className="today-cta">
-          <Link className="btn btn-lg" to={next.href} onClick={next.onStart}>
-            {t("home.start")}
-            <Icon name="arrowRight" size={18} />
-          </Link>
-          <span className="today-cta-hint">{t("home.startsWith", { step: next.title.toLocaleLowerCase(dateLocale) })}</span>
-        </div>
-      </section>
-
-      <section className="explore" aria-labelledby="explore-title">
-        <div className="section-head">
-          <h2 id="explore-title">{t("home.explore")}</h2>
-          <Link className="text-link" to="/gry">{t("home.allGames")} <Icon name="arrowRight" size={14} /></Link>
-        </div>
-        <div className="explore-grid">
-          {shortcuts.map(item => (
-            <Link className="explore-item" key={item.key} to={item.href}>
-              <Icon name={item.icon} size={20} />
-              <span>{t(`home.shortcuts.${item.key}`)}</span>
-            </Link>
+                  <span className="plan-step-meta">{step.meta}</span>
+                </span>
+                {step.count !== null && <span className="plan-step-count">{step.count}</span>}
+              </Link>
+            </li>
           ))}
-        </div>
-      </section>
-    </div>
-
-    <aside className="dashboard-rail">
-      <DailyGoalCard />
-      <section className="surface rail-progress" aria-labelledby="progress-title" aria-busy={loading}>
-        <div className="section-head">
-          <div>
-            <span className="eyebrow">{t("home.progressEyebrow")}</span>
-            <h2 id="progress-title">{t("home.progressTitle")}</h2>
+        </ol>
+        {reviewsFailed && (
+          <div className="inline-alert" role="alert">
+            <span>{t("reviews.error")}</span>
+            <button className="linklike" onClick={() => setRetry(n => n + 1)}>{t("reviews.retry")}</button>
           </div>
-        </div>
-        <div className="segmented" role="group" aria-label={t("home.chooseLevel")}>
-          {LEARNING_LEVELS.map(item => (
-            <button
-              className={level === item.id ? "on" : ""}
-              aria-pressed={level === item.id}
-              key={item.id}
-              onClick={() => setLevel(item.id)}
-            >
-              {item.id}
-            </button>
-          ))}
-        </div>
+        )}
+        <Link className="text-link today-more" to="/gry">{t("home.allGames")}</Link>
+      </section>
 
+      <section className="level-line ruled" aria-labelledby="level-title" aria-busy={loading}>
         {loading && <p className="loading" role="status">{t("home.loading")}</p>}
         {error && (
           <div className="inline-alert" role="alert">
@@ -270,72 +215,58 @@ export function Dashboard() {
             {!vocabularyError && <button className="linklike" onClick={() => setRetry(n => n + 1)}>{t("home.retry")}</button>}
           </div>
         )}
-        {available && <>
-          <div className="level-hero">
-            <ProgressRing
-              mastered={pool.length ? levelMastered / pool.length : 0}
-              learning={pool.length ? learning / pool.length : 0}
-              label={t("home.progressLabel", { mastered: levelMastered, learning, untouched })}
-            >
-              <strong>{percent}%</strong>
-              <span>{t("home.masteredShort")}</span>
-            </ProgressRing>
-            <div className="level-hero-copy">
-              <span className="level-known">
-                <strong>{known}</strong>
-                <span>/ {pool.length}</span>
-              </span>
-              <span className="level-known-label">{t("home.known")}</span>
-              <span className="level-name">{t("home.levelOf", { level, name: t(levelInfo.nameKey) })}</span>
+        {available && (
+          <details className="details level-details">
+            <summary>
+              <span id="level-title">{t("home.levelLine", { level, known, total: pool.length, pct: percent })}</span>
+            </summary>
+            <div className="level-body">
+              <div className="segmented" role="group" aria-label={t("home.chooseLevel")}>
+                {LEARNING_LEVELS.map(item => (
+                  <button
+                    className={level === item.id ? "on" : ""}
+                    aria-pressed={level === item.id}
+                    key={item.id}
+                    onClick={() => setLevel(item.id)}
+                  >
+                    {item.id}
+                  </button>
+                ))}
+              </div>
+              <div
+                className="level-bar"
+                role="img"
+                aria-label={t("home.progressLabel", { mastered: levelMastered, learning, untouched })}
+              >
+                <span className="gold" style={{ width: `${pool.length ? levelMastered / pool.length * 100 : 0}%` }} />
+                <span className="burgundy" style={{ width: `${pool.length ? learning / pool.length * 100 : 0}%` }} />
+              </div>
+              <ul className="legend">
+                <li><i className="swatch gold" />{t("home.mastered")}<strong>{levelMastered}</strong></li>
+                <li><i className="swatch burgundy" />{t("home.learning")}<strong>{learning}</strong></li>
+                <li><i className="swatch" />{t("home.untouched")}<strong>{untouched}</strong></li>
+              </ul>
+              <dl className="details-grid">
+                {[{ label: "seen", value: seen }, { label: "mastered", value: mastered }, { label: account ? "due" : "mistakes", value: due }].map(item => (
+                  <div key={item.label}><dt>{t(`home.${item.label}`)}</dt><dd>{item.value}</dd></div>
+                ))}
+              </dl>
+              <p className="meta">{t("home.materialNote", { n: percent })} {t(account ? "home.accountSource" : "home.guestSource")}</p>
             </div>
-          </div>
-          <ul className="legend">
-            <li><i className="swatch gold" />{t("home.mastered")}<strong>{levelMastered}</strong></li>
-            <li><i className="swatch burgundy" />{t("home.learning")}<strong>{learning}</strong></li>
-            <li><i className="swatch" />{t("home.untouched")}<strong>{untouched}</strong></li>
-          </ul>
-          <details className="details">
-            <summary>{t("home.details")}</summary>
-            <dl className="details-grid">
-              {[{ label: "seen", value: seen }, { label: "mastered", value: mastered }, { label: account ? "due" : "mistakes", value: due }].map(item => (
-                <div key={item.label}><dt>{t(`home.${item.label}`)}</dt><dd>{item.value}</dd></div>
-              ))}
-            </dl>
-            <p className="meta">{t("home.materialNote", { n: percent })}</p>
-            <p className="meta">{t(account ? "home.accountSource" : "home.guestSource")}</p>
           </details>
-        </>}
+        )}
       </section>
+    </div>
 
-      <section className="rail-block" aria-labelledby="streak-title">
-        <div className="streak">
-          <span className="streak-icon"><Icon name="flame" size={20} /></span>
-          <div>
-            <span className="streak-value">{streak}</span>
-            <h2 id="streak-title" className="streak-label">{t("dashboard.streak")}</h2>
-          </div>
-          <span className="streak-hint">{t(streak > 0 ? "dashboard.streakOn" : "dashboard.streakOff")}</span>
-        </div>
-        <div className="week" role="img" aria-label={t("home.week")}>
-          {week.map(day => (
-            <span key={day.key} className={["week-day", day.on && "on", day.today && "is-today"].filter(Boolean).join(" ")} title={day.key}>
-              <i />
-              {day.label}
-            </span>
-          ))}
+    <aside className="dashboard-rail">
+      <DailyGoalCard />
+      <section className="streak ruled" aria-labelledby="streak-title">
+        <span className={streak > 0 ? "streak-value on" : "streak-value"}>{streak}</span>
+        <div>
+          <h2 id="streak-title" className="streak-label">{t("home.streakDays")}</h2>
+          <span className="meta">{t(activeToday ? "home.streakToday" : streak > 0 ? "home.streakKeep" : "home.streakStart")}</span>
         </div>
       </section>
-
-      {last?.status === "active" && (
-        <Link className="rail-block continue" to={last.href ?? `/gry/${last.id}`}>
-          <span className="continue-icon"><Icon name="clock" size={18} /></span>
-          <span className="continue-copy">
-            <span className="meta">{t("home.lastMode")}</span>
-            <strong>{t(last.nameKey)}</strong>
-          </span>
-          <Icon name="arrowRight" size={16} />
-        </Link>
-      )}
     </aside>
   </div>;
 }
