@@ -875,10 +875,11 @@ export const en: Dictionary = {
     },
     feedback: {
       correct: "Correct",
-      near: "Almost — you missed a diacritic",
-      wrong: "Not quite",
+      near: "Almost — a diacritic is missing",
+      wrong: "Not quite.",
       yourAnswer: "Your answer",
       correctAnswer: "Correct answer",
+      falseFriend: "False friend:",
     },
     rate: {
       again: "Forgot",
@@ -893,15 +894,15 @@ export const en: Dictionary = {
     session: {
       loading: "Loading flashcards…",
       loadError: "Could not start the session.",
-      progress: "Card {current} / {total}",
+      progress: "Card {current} of {total}",
       finished: "Session complete",
       summary: "{total} cards · {correct} correct · {wrong} wrong · {newWords} new · {requeues} scheduled for a quick retry.",
       backToDashboard: "Back to flashcards",
       oneMoreRound: "Another round",
       emptyTitle: "Nothing to study in this mode",
       emptyBody: "Pick another mode or come back tomorrow — the scheduler is holding future reviews for the coming days.",
-      hudScore: "✓ {correct} · ✗ {wrong}",
-      hudRequeues: "Retries today: {n}",
+      hudScore: "{correct} right · {wrong} to fix",
+      hudRequeues: "{n} coming back this session",
     },
   },
   review: {

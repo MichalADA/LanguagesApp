@@ -875,10 +875,11 @@ export const pl: Dictionary = {
     },
     feedback: {
       correct: "Dobrze",
-      near: "Prawie — brakuje znaku diakrytycznego",
-      wrong: "Błędna odpowiedź",
+      near: "Prawie — zgubiony znak diakrytyczny",
+      wrong: "Nie tak.",
       yourAnswer: "Twoja odpowiedź",
       correctAnswer: "Poprawna odpowiedź",
+      falseFriend: "Fałszywy przyjaciel:",
     },
     rate: {
       again: "Nie pamiętam",
@@ -893,15 +894,15 @@ export const pl: Dictionary = {
     session: {
       loading: "Ładuję fiszki…",
       loadError: "Nie udało się rozpocząć sesji.",
-      progress: "Fiszka {current} / {total}",
+      progress: "Fiszka {current} z {total}",
       finished: "Sesja zakończona",
       summary: "{total} kart · {correct} poprawnych · {wrong} błędnych · {newWords} nowych · {requeues} do szybkiej powtórki.",
       backToDashboard: "Wróć do Fiszek",
       oneMoreRound: "Jeszcze jedna runda",
       emptyTitle: "Nic do nauki w tym trybie",
       emptyBody: "Wybierz inny tryb lub wróć jutro — algorytm zaplanuje kolejne powtórki na następne dni.",
-      hudScore: "✓ {correct} · ✗ {wrong}",
-      hudRequeues: "Do powtórzenia dziś: {n}",
+      hudScore: "{correct} dobrze · {wrong} do poprawy",
+      hudRequeues: "{n} wróci w tej sesji",
     },
   },
   review: {
