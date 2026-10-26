@@ -335,7 +335,7 @@ export function ExerciseFreeResponse({ step, onNext }: { step: FreeResponseStep;
               </p>
             )}
             <div className="free-sample">
-              <span className="eyebrow">{t("curriculum.player.freeSample")}</span>
+              <span className="step-label">{t("curriculum.player.freeSample")}</span>
               <SpokenText text={step.sample} src={step.sampleAudioSrc} />
             </div>
           </div>

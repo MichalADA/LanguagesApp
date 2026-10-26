@@ -16,7 +16,7 @@ export function IntroView({ step, onNext }: { step: IntroStep; onNext: () => voi
       <div className="step step-intro">
         <p className="step-lede">{step.body}</p>
         <div className="step-goals">
-          <span className="eyebrow">{step.goalsTitle ?? t("curriculum.player.goals")}</span>
+          <h3 className="step-label">{step.goalsTitle ?? t("curriculum.player.goals")}</h3>
           <ul>
             {step.goals.map((goal, index) => (
               <li key={index}>
@@ -70,7 +70,7 @@ function ConjugationTable({ conjugation }: { conjugation: Conjugation }) {
   return (
     <div className="conjugation">
       <div className="conjugation-head">
-        <span className="eyebrow">{t("curriculum.player.conjugation")}</span>
+        <h3 className="step-label">{t("curriculum.player.conjugation")}</h3>
         <AudioButton src={conjugation.audioSrc} text={present.join(", ")} size="sm" />
       </div>
       <table className="conjugation-table">
@@ -109,7 +109,6 @@ export function WordView({ step, onNext }: { step: WordStep; onNext: () => void 
           {step.partOfSpeech && <span className="meta">{step.partOfSpeech}</span>}
           {step.example && (
             <div className="word-example">
-              <span className="eyebrow">{t("curriculum.player.example")}</span>
               <SpokenText text={step.example.target} src={step.example.audioSrc} />
               <span className="muted">{step.example.source}</span>
             </div>
@@ -118,7 +117,7 @@ export function WordView({ step, onNext }: { step: WordStep; onNext: () => void 
         {step.conjugation && <ConjugationTable conjugation={step.conjugation} />}
         {step.related && (
           <div className="word-related">
-            <span className="eyebrow">{t("curriculum.player.related")}</span>
+            <h3 className="step-label">{t("curriculum.player.related")}</h3>
             <ul>
               {step.related.map((item) => (
                 <li key={item.target}>
@@ -276,7 +275,7 @@ export function SummaryView({
 
       {step.canDo && step.canDo.length > 0 && (
         <section className="summary-can-do">
-          <span className="eyebrow">{t("curriculum.canDo")}</span>
+          <h3 className="step-label">{t("curriculum.canDo")}</h3>
           <ul>
             {step.canDo.map((item) => (
               <li key={item}>
@@ -290,7 +289,7 @@ export function SummaryView({
 
       <div className="summary-grid">
         <section>
-          <span className="eyebrow">{t("curriculum.player.recap")}</span>
+          <h3 className="step-label">{t("curriculum.player.recap")}</h3>
           <ul className="summary-recap">
             {step.recap.map((item, index) => (
               <li key={index}>
@@ -301,7 +300,7 @@ export function SummaryView({
         </section>
         {core.length > 0 && (
           <section>
-            <span className="eyebrow">{t("curriculum.player.summaryWords")}</span>
+            <h3 className="step-label">{t("curriculum.player.summaryWords")}</h3>
             <ul className="summary-words">
               {core.map((word, index) => (
                 <li key={`${word.target}-${index}`}>

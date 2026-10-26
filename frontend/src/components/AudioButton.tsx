@@ -51,7 +51,7 @@ export function AudioButton({ src, text, size = "md" }: Props) {
 export function SpokenText({ text, src, className = "target" }: { text: string; src?: string; className?: string }) {
   return (
     <span className="spoken">
-      <span className={className}>{text}</span>
+      <span className={className} lang="hr">{text}</span>
       <AudioButton src={src} text={text} size="sm" />
     </span>
   );
@@ -63,7 +63,8 @@ export function BilingualLine({ item }: { item: string | { target: string; sourc
   return (
     <>
       <SpokenText text={item.target} src={item.audioSrc} />
-      <span className="muted"> — {item.source}</span>
+      {/* Separator i układ (w linii / pod frazą) zależą od miejsca — patrz .bilingual-source w CSS. */}
+      <span className="bilingual-source">{item.source}</span>
     </>
   );
 }

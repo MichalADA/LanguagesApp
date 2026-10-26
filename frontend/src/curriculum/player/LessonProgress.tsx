@@ -34,9 +34,10 @@ export function LessonProgress({ position, title, meta, closeTo, percent, stages
         </Link>
         <div className="lesson-heading">
           <span className="lesson-position">{position}</span>
-          <h1 className="lesson-title">{title}</h1>
-          <span className="lesson-meta">{meta}</span>
+          <h1 className="lesson-title" lang="hr">{title}</h1>
+          <span className="sr-only">{meta}</span>
         </div>
+        {counter && <p className="lesson-counter">{counter}</p>}
       </div>
       <div className="lesson-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(percent)} aria-label={title}>
         <span style={{ width: `${percent}%` }} />
@@ -50,7 +51,6 @@ export function LessonProgress({ position, title, meta, closeTo, percent, stages
                 className={stageIndex >= 0 && index < stageIndex ? "done" : index === stageIndex ? "on" : ""}
                 aria-current={index === stageIndex ? "step" : undefined}
               >
-                <span className="lesson-stage-n">{index + 1}</span>
                 {stage.label}
               </li>
             ))}
@@ -62,7 +62,6 @@ export function LessonProgress({ position, title, meta, closeTo, percent, stages
           )}
         </>
       )}
-      {counter && <p className="lesson-counter">{counter}</p>}
     </header>
   );
 }
