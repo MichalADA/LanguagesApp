@@ -704,6 +704,11 @@ p { margin: 0; text-wrap: pretty; }
 .today-more { align-self: flex-start; text-decoration: underline; text-decoration-color: var(--border-strong); text-underline-offset: 4px; }
 .today-more:hover { text-decoration-color: currentColor; }
 
+/* Licznik „poznane / wszystkie” (ProgressPage) */
+.level-known { display: flex; align-items: baseline; gap: 6px; font-variant-numeric: tabular-nums lining-nums; }
+.level-known strong { font-family: var(--display); font-size: 52px; font-weight: 500; letter-spacing: -0.02em; line-height: 1; }
+.level-known span { font-size: var(--text-lg); color: var(--text-tertiary); font-weight: 500; }
+
 /* Postęp poziomu — jedna linia, szczegóły po rozwinięciu. */
 .level-line { display: flex; flex-direction: column; gap: var(--space-3); }
 
@@ -1476,6 +1481,7 @@ input[type="range"]::-moz-range-thumb { width: 12px; height: 12px; border-radius
   .plan-step.next { margin: 0 calc(-1 * var(--space-4)); padding-left: var(--space-4); padding-right: var(--space-4); border-radius: 0; }
   .dashboard-rail { grid-template-columns: 1fr; gap: var(--space-7); }
   .dashboard-rail > .ruled { border-top: 1px solid var(--border); padding-top: var(--space-5); }
+  .level-known strong { font-size: 42px; }
   .journey-stats { grid-template-columns: repeat(3, 1fr); }
   .odmiana-summary { grid-template-columns: repeat(2, 1fr); }
   .conj-row { grid-template-columns: 78px 1fr; }
