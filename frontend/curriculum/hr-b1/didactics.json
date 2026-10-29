@@ -30,6 +30,9 @@
     },
     "9": {
       "description": "Mówisz o pracy w zespole: z kim pracujesz (s kolegama, s klijentima), o spotkaniach i projektach (jedna końcówka -ima / -ama), o rozmowie kwalifikacyjnej, pracy zdalnej i ustaleniach ze spotkania."
+    },
+    "10": {
+      "description": "Opisujesz charakter ludzi (i uważasz na fałszywych przyjaciół), łączysz zdania przez koji / koja / koje — także z przyimkami — i mówisz o relacjach: sebe, jedan drugoga, međusobno."
     }
   },
   "lessons": {
@@ -7427,6 +7430,902 @@
         ],
         "minSentences": 3,
         "sample": "Danas smo imali sastanak s klijentima. Razgovarali smo o novom projektu. Dogovoreno je da rok prebacimo na petak. Sljedeći korak je raspodijeliti zadatke."
+      }
+    },
+    "b1-46": {
+      "grammar": {
+        "title": "Kakav je on čovjek?",
+        "text": "Charakter opisujesz przymiotnikiem zgodnym z rodzajem: Marko je iskren, Ana je iskrena. Pytanie: Kakav je…? / Kakva je…? Uwaga na fałszywych przyjaciół: vrijedan to pracowity (a nie „wredny”!), drag to miły, kochany (a nie „drogi” w sensie ceny — to skup). Dumny z kogoś: ponosan na + biernik — Ponosna sam na svoju kćer.",
+        "table": [
+          {
+            "label": "fałszywi przyjaciele",
+            "rows": [
+              {
+                "base": "vrijedan",
+                "form": "Marko je vrijedan.",
+                "meaning": "Marko jest pracowity (nie: wredny)."
+              },
+              {
+                "base": "drag",
+                "form": "Ona je draga osoba.",
+                "meaning": "Ona jest miłą osobą (nie: drogą)."
+              },
+              {
+                "base": "ponosan na",
+                "form": "Ponosna sam na kćer.",
+                "meaning": "Jestem dumna z córki (na + biernik)."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          4,
+          5,
+          9
+        ],
+        "tip": "„Drogi” w sensie ceny to po chorwacku skup; „wredny” to zloban albo podao. vrijedan i drag są komplementami!"
+      },
+      "gap": {
+        "sentence": 4,
+        "word": "na"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 2,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 5,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Marko jest pracowity.",
+          "options": [
+            "Marko je vrijedan.",
+            "Marko je lijen.",
+            "Marko je zloban."
+          ],
+          "correct": 0,
+          "explanation": "vrijedan = pracowity (fałszywy przyjaciel: nie „wredny”!)."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Jestem dumny z syna.",
+          "options": [
+            "Ponosan sam na sina.",
+            "Ponosan sam od sina.",
+            "Ponosan sam sinom."
+          ],
+          "correct": 0,
+          "explanation": "ponosan na + biernik: na sina."
+        }
+      ],
+      "model": {
+        "title": "Nowy kolega",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, kakav je tvoj novi kolega?",
+            "pl": "Marko, jaki jest twój nowy kolega?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jako je vrijedan i pouzdan. Uvijek prvi dođe na posao.",
+            "pl": "Bardzo pracowity i rzetelny. Zawsze pierwszy przychodzi do pracy."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A je li duhovit?",
+            "pl": "A jest dowcipny?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Malo je sramežljiv, ali kad ga upoznaš, jako je drag.",
+            "pl": "Jest trochę nieśmiały, ale kiedy go poznasz, jest bardzo miły."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Znači, nije kao tvoj stari kolega koji je bio tvrdoglav!",
+            "pl": "Czyli nie jest jak twój stary kolega, który był uparty!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Opisz kogoś",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Kakav je tvoj najbolji prijatelj?",
+            "pl": "Jaki jest twój najlepszy przyjaciel?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz przyjaciela albo przyjaciółkę (On je iskren i…).",
+              "accept": [
+                "On je iskren i duhovit."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,3}je (jako |vrlo |stvarno |malo |uvijek )?\\p{L}+( \\p{L}+){0,6}$|^(iskren|iskrena|pouzdan|pouzdana|strpljiv|strpljiva|duhovit|duhovita|vrijedan|vrijedna|drag|draga|ponosan|ponosna|tvrdoglav|tvrdoglava|sramežljiv|sramežljiva|lijen|lijena|hrabar|hrabra|druželjubiv|druželjubiva|simpatičan|simpatična|pametan|pametna)( i \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "A koja je tvoja najveća mana?",
+            "pl": "A jaka jest twoja największa wada?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz szczerze o swojej wadzie (Ponekad sam tvrdoglav…).",
+              "accept": [
+                "Ponekad sam tvrdoglav."
+              ],
+              "open": true,
+              "pattern": "^((ponekad|iskreno|malo|često|možda|ja) )+sam (malo |previše |jako )?\\p{L}+( \\p{L}+){0,4}$|^((ponekad|iskreno|možda) )*(malo |previše |jako )?\\p{L}+ sam( \\p{L}+){0,4}$|^(moja (najveća )?mana je|mana mi je)( \\p{L}+){1,4}$"
+            }
+          },
+          {
+            "say": "Na koga si ponosan?",
+            "pl": "Z kogo jesteś dumny?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, z kogo jesteś dumny / dumna (Ponosan sam na…).",
+              "accept": [
+                4
+              ],
+              "open": true,
+              "pattern": "^(ja sam |jako sam )?(ponosan|ponosna)( sam)? na( \\p{L}+){1,4}$|^na \\p{L}+( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Lijepo!",
+            "pl": "Pięknie!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Opisz w 2 zdaniach charakter bliskiej osoby: zalety i jedną wadę.",
+        "points": [
+          "zalety (iskren, vrijedan, duhovit…)",
+          "wada (ali ponekad…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "iskren",
+              "iskrena",
+              "pouzdan",
+              "pouzdana",
+              "strpljiv",
+              "strpljiva",
+              "duhovit",
+              "duhovita",
+              "vrijedan",
+              "vrijedna",
+              "drag",
+              "draga",
+              "ponosan",
+              "ponosna",
+              "tvrdoglav",
+              "tvrdoglava",
+              "sramežljiv",
+              "sramežljiva",
+              "lijen",
+              "lijena",
+              "hrabar",
+              "hrabra",
+              "druželjubiv",
+              "druželjubiva",
+              "simpatičan",
+              "simpatična",
+              "pametan",
+              "pametna"
+            ],
+            "label": "cechy charakteru"
+          },
+          {
+            "any": [
+              "ali",
+              "ponekad",
+              "malo"
+            ],
+            "label": "wada: ali / ponekad"
+          }
+        ],
+        "sample": "Moja sestra je vrijedna i duhovita. Ali ponekad je malo tvrdoglava."
+      }
+    },
+    "b1-47": {
+      "grammar": {
+        "title": "Prijatelj koji… / kolega kojeg…",
+        "text": "koji / koja / koje to „który / która / które”. Odmienia się jak przymiotnik: rodzaj bierze od rzeczownika, a przypadek od swojej roli w zdaniu względnym. Mianownik: prijateljica koja me podržava. Biernik: film koji gledam (rzecz m. — jak mianownik), kolega kojeg poznajem (osoba m.), knjiga koju čitam (ż.), ljudi koje cijenim (lm.). Z przyimkiem: prijatelj na kojeg se mogu osloniti (osloniti se na + biernik).",
+        "table": [
+          {
+            "label": "koji w bierniku",
+            "rows": [
+              {
+                "base": "rzecz (m.)",
+                "form": "film koji gledam",
+                "meaning": "film, który oglądam"
+              },
+              {
+                "base": "osoba (m.)",
+                "form": "kolega kojeg poznajem",
+                "meaning": "kolega, którego znam"
+              },
+              {
+                "base": "rodzaj żeński",
+                "form": "knjiga koju čitam",
+                "meaning": "książka, którą czytam"
+              },
+              {
+                "base": "liczba mnoga",
+                "form": "ljudi koje cijenim",
+                "meaning": "ludzie, których cenię"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "Jak po polsku: film, KTÓRY oglądam (rzecz) ale kolega, KTÓREGO znam (osoba) — tu kojeg."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "koju"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": [
+            "To je kolega koga poznajem iz škole."
+          ]
+        }
+      ],
+      "comprehend": 6,
+      "order": 5,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne wyrażenie.",
+          "prompt": "kolega, którego znam",
+          "options": [
+            "kolega kojeg poznajem",
+            "kolega koji poznajem",
+            "kolega koju poznajem"
+          ],
+          "correct": 0,
+          "explanation": "osoba, rodzaj męski, biernik → kojeg."
+        },
+        {
+          "instruction": "Wybierz poprawne wyrażenie.",
+          "prompt": "książka, którą czytam",
+          "options": [
+            "knjiga koju čitam",
+            "knjiga koja čitam",
+            "knjiga kojeg čitam"
+          ],
+          "correct": 0,
+          "explanation": "rodzaj żeński, biernik → koju."
+        }
+      ],
+      "listening": "b1-pravi-prijatelj",
+      "dialog": {
+        "title": "Bliscy ludzie",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Imaš li prijatelja na kojeg se možeš osloniti?",
+            "pl": "Masz przyjaciela, na którym możesz polegać?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz i opisz tę osobę (Imam prijatelja koji… / To je… koja…).",
+              "accept": [
+                1,
+                "Imam, to je prijateljica koja me uvijek podržava."
+              ],
+              "open": true,
+              "pattern": "^((imam|da|nemam|naravno) )*((imam )?\\p{L}+ (koji|koja|kojeg|koju|na kojeg|na koju)( \\p{L}+){1,6}|to je \\p{L}+ (koji|koja|kojeg|koju|na kojeg|na koju)( \\p{L}+){1,6}|imam|nemam)$"
+            }
+          },
+          {
+            "say": "Koji film si nedavno gledao?",
+            "pl": "Jaki film ostatnio oglądałeś?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz o filmie albo książce zdaniem z koji / koju (To je film koji…).",
+              "accept": [
+                "To je film koji gledam već treći put.",
+                2
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,5}(koji|koja|koje|koju|kojeg)( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "A tko su ljudi koje najviše cijeniš?",
+            "pl": "A kim są ludzie, których najbardziej cenisz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, kogo najbardziej cenisz (Najviše cijenim…).",
+              "accept": [
+                "Najviše cijenim roditelje."
+              ],
+              "open": true,
+              "pattern": "^((najviše |jako )?cijenim|ljudi koje (najviše )?cijenim su)( \\p{L}+){1,6}$|^(roditelje|prijatelje|svoju \\p{L}+|svog \\p{L}+|iskrene ljude)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "To je lijepo.",
+            "pl": "To piękne."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z koji / koja / kojeg / koju o bliskich ludziach.",
+        "points": [
+          "osoba + koji / koja",
+          "biernik: kojeg / koju"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "koji",
+              "koja",
+              "koje",
+              "kojeg",
+              "koju",
+              "kojem",
+              "kojoj"
+            ],
+            "label": "koji / kojeg / koju"
+          },
+          {
+            "any": [
+              "prijatelj",
+              "prijatelja",
+              "prijateljica",
+              "prijateljicu",
+              "brat",
+              "sestra",
+              "roditelji",
+              "kolega",
+              "osoba",
+              "ljudi"
+            ],
+            "label": "osoba"
+          }
+        ],
+        "sample": "Imam prijateljicu koja me uvijek podržava. To je osoba koju jako cijenim."
+      }
+    },
+    "b1-48": {
+      "grammar": {
+        "title": "S kojom, u kojem, o kojoj",
+        "text": "Gdy przed koji stoi przyimek, przypadek wybiera przyimek — dokładnie jak po polsku. s + narzędnik: prijatelj s kojim se družim, osoba s kojom razgovaram. u / o + miejscownik: grad u kojem živim, kuća u kojoj sam odrastao, tema o kojoj ne volim pričati. na + biernik: prijatelj na kojeg se oslanjam. Uwaga: ovisiti o + miejscownik = zależeć od.",
+        "table": [
+          {
+            "label": "przyimek + koji",
+            "rows": [
+              {
+                "base": "s (narzędnik)",
+                "form": "osoba s kojom razgovaram",
+                "meaning": "osoba, z którą rozmawiam"
+              },
+              {
+                "base": "u (miejscownik m.)",
+                "form": "grad u kojem živim",
+                "meaning": "miasto, w którym mieszkam"
+              },
+              {
+                "base": "u (miejscownik ż.)",
+                "form": "kuća u kojoj sam odrastao",
+                "meaning": "dom, w którym dorastałem"
+              },
+              {
+                "base": "o (miejscownik)",
+                "form": "tema o kojoj ne volim pričati",
+                "meaning": "temat, o którym nie lubię mówić"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "tip": "ovisiti o = zależeć od: Sve ovisi o tome… (wszystko zależy od tego…)."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "kojom"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne wyrażenie.",
+          "prompt": "miasto, w którym mieszkam",
+          "options": [
+            "grad u kojem živim",
+            "grad u koji živim",
+            "grad u kojoj živim"
+          ],
+          "correct": 0,
+          "explanation": "u + miejscownik, rodzaj męski → u kojem."
+        },
+        {
+          "instruction": "Wybierz poprawne wyrażenie.",
+          "prompt": "koleżanka, z którą pracuję",
+          "options": [
+            "kolegica s kojom radim",
+            "kolegica s kojim radim",
+            "kolegica s koju radim"
+          ],
+          "correct": 0,
+          "explanation": "s + narzędnik, rodzaj żeński → s kojom."
+        }
+      ],
+      "model": {
+        "title": "Stare miejsca",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ana, je li ovo ulica u kojoj si odrasla?",
+            "pl": "Ana, to ulica, na której dorastałaś?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Da! A ono je kuća u kojoj je živjela moja najbolja prijateljica.",
+            "pl": "Tak! A tamto to dom, w którym mieszkała moja najlepsza przyjaciółka."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Je li to prijateljica s kojom se još družiš?",
+            "pl": "To ta przyjaciółka, z którą wciąż się spotykasz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Jest. S njom dijelim sve tajne.",
+            "pl": "Tak. Z nią dzielę wszystkie tajemnice."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "To je dragocjeno prijateljstvo.",
+            "pl": "To cenna przyjaźń."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Ważne miejsca i ludzie",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Kakav je grad u kojem živiš?",
+            "pl": "Jakie jest miasto, w którym mieszkasz?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz miasto (Grad u kojem živim je…).",
+              "accept": [
+                5
+              ],
+              "open": true,
+              "pattern": "^((grad|mjesto|selo) u kojem živim (je|nije)|(on )?je|to je)( \\p{L}+){1,6}$|^(\\p{L}+ ){0,2}(je|nije)( \\p{L}+){1,5}$"
+            }
+          },
+          {
+            "say": "S kim najčešće provodiš vrijeme?",
+            "pl": "Z kim najczęściej spędzasz czas?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, z kim spędzasz czas (S prijateljima… / s osobom s kojom…).",
+              "accept": [
+                7
+              ],
+              "open": true,
+              "pattern": "^((najčešće|uglavnom|vikendom|obično) )*((provodim vrijeme|se družim) )?(s|sa) (\\p{L}+ ){0,2}\\p{L}+( (s kojim|s kojom|koji|koja)( \\p{L}+){1,5})?( \\p{L}+){0,3}$|^((najčešće|uglavnom|vikendom|obično) )*se družim (s|sa)( \\p{L}+){1,5}$"
+            }
+          },
+          {
+            "say": "Postoji li tema o kojoj ne voliš pričati?",
+            "pl": "Czy jest temat, o którym nie lubisz rozmawiać?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz o temacie, o którym nie lubisz rozmawiać (To je… o kojoj… / Ne volim pričati o…).",
+              "accept": [
+                4,
+                "Ne volim pričati o politici."
+              ],
+              "open": true,
+              "pattern": "^((da|ima|postoji|iskreno) )*((to je )?\\p{L}+ (o kojoj|o kojem) ne volim (pričati|razgovarati)|ne volim (pričati|razgovarati) o( \\p{L}+){1,3}|(politika|novac|posao)( \\p{L}+){0,4}|ne|nema)$"
+            }
+          },
+          {
+            "say": "Razumijem!",
+            "pl": "Rozumiem!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z koji + przyimek (s kojim, u kojem, o kojoj…).",
+        "points": [
+          "miejsce (u kojem / u kojoj)",
+          "osoba (s kojim / s kojom)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "kojim",
+              "kojom",
+              "kojem",
+              "kojoj",
+              "kojeg",
+              "koju"
+            ],
+            "label": "koji + przyimek"
+          },
+          {
+            "any": [
+              "s",
+              "sa",
+              "u",
+              "o",
+              "na"
+            ],
+            "label": "przyimek"
+          }
+        ],
+        "sample": "Grad u kojem živim je mali, ali lijep. Imam prijateljicu s kojom mogu razgovarati o svemu."
+      }
+    },
+    "b1-49": {
+      "grammar": {
+        "title": "Sebe, sebi, sobom; jedan drugoga",
+        "text": "Zaimek zwrotny działa jak polskie siebie / sobie / sobą i jest taki sam dla każdej osoby: Moraš se brinuti o sebi. Kupila sam sebi haljinu. Zadovoljan je sa sobom. Wzajemność (nawzajem): jedan drugoga / jedna drugu / jedno drugo (dla par mieszanych), w odpowiednim przypadku: pomažu jedan drugome (celownik); przyimek staje w środku: brinu jedna o drugoj. Krócej: međusobno. Nowe pary aspektowe: svađati se → posvađati se, miriti se → pomiriti se, zaljubljivati se → zaljubiti se.",
+        "table": [
+          {
+            "label": "siebie / nawzajem",
+            "rows": [
+              {
+                "base": "sebe (siebie)",
+                "form": "Brini se o sebi.",
+                "meaning": "Dbaj o siebie."
+              },
+              {
+                "base": "sebi (sobie)",
+                "form": "Kupila sam sebi haljinu.",
+                "meaning": "Kupiłam sobie sukienkę."
+              },
+              {
+                "base": "sobom (sobą)",
+                "form": "Zadovoljan je sa sobom.",
+                "meaning": "Jest zadowolony z siebie."
+              },
+              {
+                "base": "nawzajem",
+                "form": "Pomažu jedan drugome.",
+                "meaning": "Pomagają sobie nawzajem."
+              },
+              {
+                "base": "przyimek w środku",
+                "form": "Brinu jedna o drugoj.",
+                "meaning": "Troszczą się o siebie nawzajem."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "tip": "Polskie „sobie nawzajem” = jedan drugome albo međusobno: Međusobno se podržavamo."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "sebi"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 8,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Jest zadowolony z siebie.",
+          "options": [
+            "Zadovoljan je sa sobom.",
+            "Zadovoljan je sa sebe.",
+            "Zadovoljan je s njim."
+          ],
+          "correct": 0,
+          "explanation": "s + narzędnik zaimka zwrotnego: sa sobom (s njim = z nim, z kimś innym)."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Pomagają sobie nawzajem.",
+          "options": [
+            "Pomažu jedan drugome.",
+            "Pomažu sebe.",
+            "Pomažu jedan drugi."
+          ],
+          "correct": 0,
+          "explanation": "wzajemność w celowniku: jedan drugome."
+        }
+      ],
+      "listening": "b1-pomirenje",
+      "dialog": {
+        "title": "Relacje",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Kako se brineš o sebi kad si pod stresom?",
+            "pl": "Jak dbasz o siebie, kiedy jesteś zestresowany?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak dbasz o siebie (Odmaram se… / Kupim sebi…).",
+              "accept": [
+                "Odmaram se i šetam."
+              ],
+              "open": true,
+              "pattern": "^((kad sam pod stresom|obično|uvijek|ja) )*(se )?{pres1}( se)?( \\p{L}+){0,6}$|^(brinem se o sebi|kupim sebi)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Kakav je odnos u tvojoj obitelji?",
+            "pl": "Jakie są relacje w twojej rodzinie?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz relacje (Pomažemo jedni drugima / Međusobno se podržavamo…).",
+              "accept": [
+                9,
+                "Pomažemo jedni drugima."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,4}(jedan drugome|jedni drugima|jedna drugoj|jedno drugom|jedno drugome|međusobno|jedan drugoga|jedno drugo)( \\p{L}+){0,4}$|^(\\p{L}+ ){0,3}(dobar|odličan|loš|super|kompliciran)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "A kad se posvađate, što radite?",
+            "pl": "A kiedy się pokłócicie, co robicie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robicie po kłótni (Brzo se pomirimo…).",
+              "accept": [
+                "Brzo se pomirimo."
+              ],
+              "open": true,
+              "pattern": "^((obično|uvijek|brzo|ponekad) )*(se )?(pomirimo|razgovaramo|ispričamo|ispričam|šutimo)( se)?( \\p{L}+){0,5}$|^((obično|uvijek|brzo) )*ne razgovaramo( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "To je najvažnije.",
+            "pl": "To najważniejsze."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z sebe / sebi / sobom albo jedan drugoga / međusobno.",
+        "points": [
+          "dbanie o siebie (sebe / sebi)",
+          "wzajemność (jedan drugome / međusobno)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "sebe",
+              "sebi",
+              "sobom"
+            ],
+            "label": "sebe / sebi / sobom"
+          },
+          {
+            "any": [
+              "drugoga",
+              "drugome",
+              "drugima",
+              "drugoj",
+              "drugo",
+              "drugom",
+              "međusobno"
+            ],
+            "label": "wzajemność"
+          }
+        ],
+        "sample": "Vikendom se brinem o sebi i dugo spavam. S bratom se dobro slažem, pomažemo jedan drugome."
+      }
+    },
+    "b1-50": {
+      "grammar": {
+        "title": "Relacje — wszystko razem",
+        "text": "Charakter: iskren, pouzdan, vrijedan (pracowity!), drag (miły!). Który: prijatelj koji…, kolega kojeg…, osoba s kojom…, grad u kojem… Siebie: brinuti se o sebi, kupiti sebi, zadovoljan sa sobom. Nawzajem: jedan drugome, jedno drugo, međusobno. Ważne w relacji: povjerenje, poštovanje, razumijevanje, podrška.",
+        "examples": [
+          1,
+          5,
+          6
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które wyrażenie jest poprawne?",
+          "prompt": "przyjaciółka, z którą mieszkam",
+          "options": [
+            "prijateljica s kojom živim",
+            "prijateljica koja živim",
+            "prijateljica s kojim živim"
+          ],
+          "correct": 0,
+          "explanation": "s + narzędnik, rodzaj żeński: s kojom."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Dobra relacja",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Što je za tebe najvažnije u prijateljstvu?",
+            "pl": "Co jest dla ciebie najważniejsze w przyjaźni?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co najważniejsze (Najvažnije je povjerenje / poštovanje…).",
+              "accept": [
+                "Najvažnije je povjerenje."
+              ],
+              "open": true,
+              "pattern": "^((za mene|meni|mislim da) )?((je )?najvažnij[ea] (je |mi je )?\\p{L}+( i \\p{L}+)?|(povjerenje|poštovanje|iskrenost|razumijevanje|podrška)( i (povjerenje|poštovanje|iskrenost|razumijevanje|podrška))?( je najvažnije)?)( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Opiši osobu na koju se možeš osloniti.",
+            "pl": "Opisz osobę, na której możesz polegać."
+          },
+          {
+            "reply": {
+              "prompt": "Opisz tę osobę (To je… koja… / On je…).",
+              "accept": [
+                5
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,6}(koji|koja|koje|kojeg|koju|kojom|kojim)( \\p{L}+){1,8}$|^(\\p{L}+ ){0,3}je (jako |vrlo )?\\p{L}+( i \\p{L}+)?( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "A jesi li ikad bio ljubomoran?",
+            "pl": "A byłeś kiedyś zazdrosny?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz szczerze (Bio sam / Nisam bio… ljubomoran).",
+              "accept": [
+                "Iskreno, ponekad sam bio ljubomoran."
+              ],
+              "open": true,
+              "pattern": "^((iskreno|da|ne) )*((bio|bila) sam (ljubomoran|ljubomorna)|(ponekad|iskreno|ja|nekad) sam (bio|bila) (ljubomoran|ljubomorna)|nisam (nikad )?(bio|bila) (ljubomoran|ljubomorna)|jesam|nisam|nikad)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Hvala na iskrenosti!",
+            "pl": "Dzięki za szczerość!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3–4 zdaniach ważną dla ciebie osobę: charakter, waszą relację i co razem robicie.",
+        "points": [
+          "charakter",
+          "zdanie z koji / koja",
+          "relacja (jedan drugome, međusobno, sebe…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "iskren",
+              "iskrena",
+              "pouzdan",
+              "pouzdana",
+              "strpljiv",
+              "strpljiva",
+              "duhovit",
+              "duhovita",
+              "vrijedan",
+              "vrijedna",
+              "drag",
+              "draga",
+              "ponosan",
+              "ponosna",
+              "tvrdoglav",
+              "tvrdoglava",
+              "sramežljiv",
+              "sramežljiva",
+              "lijen",
+              "lijena",
+              "hrabar",
+              "hrabra",
+              "druželjubiv",
+              "druželjubiva",
+              "simpatičan",
+              "simpatična",
+              "pametan",
+              "pametna"
+            ],
+            "label": "charakter"
+          },
+          {
+            "any": [
+              "koji",
+              "koja",
+              "kojeg",
+              "koju",
+              "kojom",
+              "kojim",
+              "kojem"
+            ],
+            "label": "koji…"
+          },
+          {
+            "any": [
+              "jedan",
+              "jedno",
+              "jedna",
+              "međusobno",
+              "sebe",
+              "sebi",
+              "sobom"
+            ],
+            "label": "sebe / nawzajem"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Moja najbolja prijateljica je iskrena i vrijedna. To je osoba na koju se uvijek mogu osloniti. Poznajemo se dvadeset godina i pomažemo jedna drugoj."
       }
     }
   }

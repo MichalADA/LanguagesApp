@@ -207,11 +207,11 @@ export function conjugation(verb) {
 const ADJ_OVERRIDES = {
   sladak: ["slatka", "slatko"], nizak: ["niska", "nisko"], veseo: ["vesela", "veselo"], kiseo: ["kisela", "kiselo"],
   gorak: ["gorka", "gorko"], dobar: ["dobra", "dobro"], vruć: ["vruća", "vruće"], topao: ["topla", "toplo"],
-  uzak: ["uska", "usko"],
+  uzak: ["uska", "usko"], blizak: ["bliska", "blisko"], hrabar: ["hrabra", "hrabro"],
 };
 const FLEETING_ADJ = new Set([
   "umoran", "sretan", "simpatičan", "gladan", "žedan", "slobodan", "pametan", "zgodan", "tužan", "ukusan", "hladan",
-  "miran", "tipičan", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan", "ljubazan", "naporan",
+  "miran", "tipičan", "ponosan", "vrijedan", "ljubomoran", "zadovoljan", "fleksibilan", "povoljan", "prometan", "živahan", "neispravan", "pogrešan", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan", "ljubazan", "naporan",
 ]);
 
 function adjForms(masc) {

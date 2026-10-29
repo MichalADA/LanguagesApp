@@ -14,9 +14,10 @@
     6,
     7,
     8,
-    9
+    9,
+    10
   ],
-  "characters": 51697,
+  "characters": 57184,
   "items": [
     {
       "text": "A kako ide? Jesi li se naviknuo?",
@@ -16482,6 +16483,7 @@
       "audioPath": "/audio/hr/b1/module-09/imam-fleksibilno-radno-vrijeme.mp3",
       "kinds": [
         "answer",
+        "example",
         "phrase"
       ],
       "modules": [
@@ -18068,6 +18070,2026 @@
       ],
       "modules": [
         9
+      ]
+    },
+    {
+      "text": "A je li duhovit?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/a-je-li-duhovit.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "A jesi li ikad bio ljubomoran?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/a-jesi-li-ikad-bio-ljubomoran-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "A kad se posvađate, što radite?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/a-kad-se-posvadjate-sto-radite.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "A koja je tvoja najveća mana?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/a-koja-je-tvoja-najveca-mana.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "A tko su ljudi koje najviše cijeniš?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/a-tko-su-ljudi-koje-najvise-cijenis-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ana i Marko pomažu jedan drugome.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ana-i-marko-pomazu-jedan-drugome.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ana je jako strpljiva s djecom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ana-je-jako-strpljiva-s-djecom.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ana, je li ovo ulica u kojoj si odrasla?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/ana-je-li-ovo-ulica-u-kojoj-si-odrasla-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Bez povjerenja nema pravog prijateljstva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/bez-povjerenja-nema-pravog-prijateljstva.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "blizak",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/blizak.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Brini se o sebi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/brini-se-o-sebi.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Brinu jedna o drugoj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/brinu-jedna-o-drugoj.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Brzo se pomirimo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/brzo-se-pomirimo.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Budi hrabar!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/budi-hrabar.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Često se svađaju zbog sitnica.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/cesto-se-svadjaju-zbog-sitnica.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "cijenim, cijeniš, cijeni, cijenimo, cijenite, cijene. cijenio, cijenila, cijenili. cijenit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/cijenim-cijenis-cijeni-cijenimo-cijenite-cijene-cijenio-cije.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "cijeniti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/cijeniti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Da! A ono je kuća u kojoj je živjela moja najbolja prijateljica.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/da-a-ono-je-kuca-u-kojoj-je-zivjela-moja-najbolja-prijatelji.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "dijelim, dijeliš, dijeli, dijelimo, dijelite, dijele. dijelio, dijelila, dijelili. dijelit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/dijelim-dijelis-dijeli-dijelimo-dijelite-dijele-dijelio-dije.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "dijeliti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/dijeliti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "dragocjen",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/dragocjen.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "druželjubiv",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/druzeljubiv.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Druženje s ljudima mi daje energiju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/druzenje-s-ljudima-mi-daje-energiju.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "druženje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/druzenje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "družim se, družiš se, druži se, družimo se, družite se, druže se. družio se, družila se, družili se. družit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/druzim-se-druzis-se-druzi-se-druzimo-se-druzite-se-druze-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "družiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/druziti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Dugo se poznajemo i poštujemo jedno drugo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/dugo-se-poznajemo-i-postujemo-jedno-drugo.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "duhovit",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/duhovit.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "film koji gledam",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/film-koji-gledam.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "glupost",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/glupost.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Grad u kojem živim je mali, ali lijep. Imam prijateljicu s kojom mogu razgovarati o svemu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/grad-u-kojem-zivim-je-mali-ali-lijep-imam-prijateljicu-s-koj.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Grad u kojem živim je mali, ali lijep.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/grad-u-kojem-zivim-je-mali-ali-lijep.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "grad u kojem živim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/grad-u-kojem-zivim.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "hrabar",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/hrabar.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Hvala na iskrenosti!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/hvala-na-iskrenosti-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Imam dobar odnos sa susjedima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/imam-dobar-odnos-sa-susjedima.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Imam prijatelja na kojeg se uvijek mogu osloniti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/imam-prijatelja-na-kojeg-se-uvijek-mogu-osloniti.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Imam prijatelje na koje se uvijek mogu osloniti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/imam-prijatelje-na-koje-se-uvijek-mogu-osloniti.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Imam prijateljicu koja me uvijek podržava. To je osoba koju jako cijenim.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/imam-prijateljicu-koja-me-uvijek-podrzava-to-je-osoba-koju-j.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Imaš li prijatelja na kojeg se možeš osloniti?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/imas-li-prijatelja-na-kojeg-se-mozes-osloniti-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "iskren",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/iskren.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Iskreno, ponekad sam bio ljubomoran.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/iskreno-ponekad-sam-bio-ljubomoran.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ivan je duhovit, s njim se uvijek smijemo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ivan-je-duhovit-s-njim-se-uvijek-smijemo.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "question"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Jako je vrijedan i pouzdan. Uvijek prvi dođe na posao.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/jako-je-vrijedan-i-pouzdan-uvijek-prvi-dodje-na-posao-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Je li to prijateljica s kojom se još družiš?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/je-li-to-prijateljica-s-kojom-se-jos-druzis-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "jedan drugoga",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/jedan-drugoga.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Jest. S njom dijelim sve tajne.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/jest-s-njom-dijelim-sve-tajne.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Jučer smo se posvađali, ali smo se brzo pomirili.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/jucer-smo-se-posvadjali-ali-smo-se-brzo-pomirili.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Kakav je grad u kojem živiš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kakav-je-grad-u-kojem-zivis.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Kakav je odnos u tvojoj obitelji?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kakav-je-odnos-u-tvojoj-obitelji.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Kakav je tvoj najbolji prijatelj?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kakav-je-tvoj-najbolji-prijatelj.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Kako se brineš o sebi kad si pod stresom?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kako-se-brines-o-sebi-kad-si-pod-stresom.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Kao dijete sam bila jako sramežljiva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kao-dijete-sam-bila-jako-sramezljiva.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Knjiga koju čitam je jako zanimljiva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/knjiga-koju-citam-je-jako-zanimljiva.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "knjiga koju čitam",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/knjiga-koju-citam.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Koji film si nedavno gledao?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/koji-film-si-nedavno-gledao-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "kolega kojeg poznajem",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kolega-kojeg-poznajem.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "kolegica s kojom radim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kolegica-s-kojom-radim.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Kuća u kojoj sam odrastao još postoji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kuca-u-kojoj-sam-odrastao-jos-postoji.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "kuća u kojoj sam odrastao",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kuca-u-kojoj-sam-odrastao.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Kupila sam sebi haljinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kupila-sam-sebi-haljinu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Kupila sam sebi novu haljinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/kupila-sam-sebi-novu-haljinu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "lijen",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/lijen.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Lijepo!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/lijepo.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ljubav na prvi pogled postoji!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ljubav-na-prvi-pogled-postoji.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ljubomoran je na svakog njezinog prijatelja.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ljubomoran-je-na-svakog-njezinog-prijatelja.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "ljubomoran",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ljubomoran.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ljudi koje cijenim su iskreni.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ljudi-koje-cijenim-su-iskreni.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "ljudi koje cijenim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ljudi-koje-cijenim.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Malo je sramežljiv, ali kad ga upoznaš, jako je drag.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/malo-je-sramezljiv-ali-kad-ga-upoznas-jako-je-drag-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Marko je vrijedan, uvijek prvi dođe na posao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/marko-je-vrijedan-uvijek-prvi-dodje-na-posao.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Marko je vrijedan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/marko-je-vrijedan.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Marko, kakav je tvoj novi kolega?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/marko-kakav-je-tvoj-novi-kolega.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "međuljudski odnosi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/medjuljudski-odnosi.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "međusobno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/medjusobno.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Moj brat je tvrdoglav kao mazga.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/moj-brat-je-tvrdoglav-kao-mazga.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Moj šef je iskren i pouzdan čovjek.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/moj-sef-je-iskren-i-pouzdan-covjek.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Moja najbolja prijateljica je iskrena i vrijedna. To je osoba na koju se uvijek mogu osloniti. Poznajemo se dvadeset godina i pomažemo jedna drugoj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/moja-najbolja-prijateljica-je-iskrena-i-vrijedna-to-je-osoba.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Moja sestra je jako druželjubiva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/moja-sestra-je-jako-druzeljubiva.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Moja sestra je vrijedna i duhovita. Ali ponekad je malo tvrdoglava.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/moja-sestra-je-vrijedna-i-duhovita-ali-ponekad-je-malo-tvrdo.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Moraš se brinuti o sebi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/moras-se-brinuti-o-sebi.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Na koga si ponosan?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/na-koga-si-ponosan.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "na prvi pogled",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/na-prvi-pogled.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Najvažnija osobina prijatelja je iskrenost.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/najvaznija-osobina-prijatelja-je-iskrenost.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Najvažnije je povjerenje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/najvaznije-je-povjerenje.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Najviše cijenim roditelje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/najvise-cijenim-roditelje.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ne zanima me politika.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ne-zanima-me-politika.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Nije lijen, samo je umoran.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/nije-lijen-samo-je-umoran.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Odmaram se i šetam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/odmaram-se-i-setam.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "odnos",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/odnos.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "On je iskren i duhovit.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/on-je-iskren-i-duhovit.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "On mi nije prijatelj, samo poznanik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/on-mi-nije-prijatelj-samo-poznanik.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ona je draga osoba, svi je vole.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ona-je-draga-osoba-svi-je-vole.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ona je draga osoba.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ona-je-draga-osoba.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ona mi je jako bliska osoba.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ona-mi-je-jako-bliska-osoba.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Opiši osobu na koju se možeš osloniti.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/opisi-osobu-na-koju-se-mozes-osloniti-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "oslonim se, osloniš se, osloni se, oslonimo se, oslonite se, oslone se. oslonio se, oslonila se, oslonili se. oslonit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/oslonim-se-oslonis-se-osloni-se-oslonimo-se-oslonite-se-oslo.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "osloniti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/osloniti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "osoba s kojom razgovaram",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/osoba-s-kojom-razgovaram.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "osobina",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/osobina.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "ovisim, ovisiš, ovisi, ovisimo, ovisite, ovise. ovisio, ovisila, ovisili. ovisit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ovisim-ovisis-ovisi-ovisimo-ovisite-ovise-ovisio-ovisila-ovi.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "ovisiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ovisiti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ovo je film koji gledam već treći put.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ovo-je-film-koji-gledam-vec-treci-put.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "podrška",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/podrska.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "podržavam, podržavaš, podržava, podržavamo, podržavate, podržavaju. podržavao, podržavala, podržavali. podržavat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/podrzavam-podrzavas-podrzava-podrzavamo-podrzavate-podrzavaj.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "podržavati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/podrzavati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "politika",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/politika.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Pomažu jedan drugome.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/pomazu-jedan-drugome.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "pomirim se, pomiriš se, pomiri se, pomirimo se, pomirite se, pomire se. pomirio se, pomirila se, pomirili se. pomirit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/pomirim-se-pomiris-se-pomiri-se-pomirimo-se-pomirite-se-pomi.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "pomiriti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/pomiriti-se.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ponekad sam tvrdoglav.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ponekad-sam-tvrdoglav.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ponosan sam na sina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ponosan-sam-na-sina.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "ponosan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ponosan.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ponosna sam na kćer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ponosna-sam-na-kcer.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ponosna sam na svoju kćer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ponosna-sam-na-svoju-kcer.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "postojati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/postojati.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Postoji li tema o kojoj ne voliš pričati?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/postoji-li-tema-o-kojoj-ne-volis-pricati.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "poštovanje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/postovanje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "poštovati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/postovati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "poštujem, poštuješ, poštuje, poštujemo, poštujete, poštuju. poštovao, poštovala, poštovali. poštovat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/postujem-postujes-postuje-postujemo-postujete-postuju-postov.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Posvađali su se zbog gluposti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/posvadjali-su-se-zbog-gluposti.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "posvađam se, posvađaš se, posvađa se, posvađamo se, posvađate se, posvađaju se. posvađao se, posvađala se, posvađali se. posvađat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/posvadjam-se-posvadjas-se-posvadja-se-posvadjamo-se-posvadja.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "posvađati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/posvadjati-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "pouzdan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/pouzdan.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "povjerenje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/povjerenje.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Poznajemo se još iz vrtića.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/poznajemo-se-jos-iz-vrtica.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "poznanik",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/poznanik.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "pravi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/pravi.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Prijatelj s kojim se družim od djetinjstva živi u Zadru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/prijatelj-s-kojim-se-druzim-od-djetinjstva-zivi-u-zadru.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Prijateljica koja me uvijek podržava živi u Splitu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/prijateljica-koja-me-uvijek-podrzava-zivi-u-splitu.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "prijateljica s kojom živim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/prijateljica-s-kojom-zivim.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "prijateljstvo",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/prijateljstvo.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Razumijem!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/razumijem.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Rijetko se viđamo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/rijetko-se-vidjamo.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "rijetko",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/rijetko.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "S kim najčešće provodiš vrijeme?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/s-kim-najcesce-provodis-vrijeme.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "S njom dijelim sve tajne.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/s-njom-dijelim-sve-tajne.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "sebe",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/sebe.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Šef je bio zadovoljan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/sef-je-bio-zadovoljan.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Sestre brinu jedna o drugoj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/sestre-brinu-jedna-o-drugoj.mp3",
+      "kinds": [
+        "question"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "sitnica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/sitnica.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "sjećanje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/sjecanje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "sramežljiv",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/sramezljiv.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Što je za tebe najvažnije u prijateljstvu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/sto-je-za-tebe-najvaznije-u-prijateljstvu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "strpljenje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/strpljenje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "strpljiv",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/strpljiv.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Sve ovisi o tome s kim putuješ.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/sve-ovisi-o-tome-s-kim-putujes.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Ta kuća više ne postoji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/ta-kuca-vise-ne-postoji.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "tajna",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/tajna.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "tema o kojoj ne volim pričati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/tema-o-kojoj-ne-volim-pricati.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "tema",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/tema.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je dragocjeno prijateljstvo.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-dragocjeno-prijateljstvo-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je film koji gledam već treći put.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-film-koji-gledam-vec-treci-put.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je kolega kojeg poznajem iz škole.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-kolega-kojeg-poznajem-iz-skole.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je lijepo.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-lijepo-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je najvažnije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-najvaznije.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je osoba s kojom mogu razgovarati o svemu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-osoba-s-kojom-mogu-razgovarati-o-svemu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je pravi prijatelj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-pravi-prijatelj.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je sjećanje koje mi je jako dragocjeno.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-sjecanje-koje-mi-je-jako-dragocjeno.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "To je tema o kojoj ne volim pričati.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/to-je-tema-o-kojoj-ne-volim-pricati.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Trebam malo razumijevanja i podrške.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/trebam-malo-razumijevanja-i-podrske.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "tužan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/tuzan.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "tvrdoglav",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/tvrdoglav.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "U dobrom odnosu važno je poštovanje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/u-dobrom-odnosu-vazno-je-postovanje.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "U našoj obitelji se međusobno podržavamo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/u-nasoj-obitelji-se-medjusobno-podrzavamo.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Vikendom se brinem o sebi i dugo spavam. S bratom se dobro slažem, pomažemo jedan drugome.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/vikendom-se-brinem-o-sebi-i-dugo-spavam-s-bratom-se-dobro-sl.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Vikendom se družim s prijateljima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/vikendom-se-druzim-s-prijateljima.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Volimo se i poštujemo jedno drugo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/volimo-se-i-postujemo-jedno-drugo.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "vrijedan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/vrijedan.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "vrtić",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/vrtic.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Zadovoljan je sa sobom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/zadovoljan-je-sa-sobom.mp3",
+      "kinds": [
+        "answer",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "zadovoljan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/zadovoljan.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Zaljubili su se na prvi pogled.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/zaljubili-su-se-na-prvi-pogled.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "zaljubim se, zaljubiš se, zaljubi se, zaljubimo se, zaljubite se, zaljube se. zaljubio se, zaljubila se, zaljubili se. zaljubit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/zaljubim-se-zaljubis-se-zaljubi-se-zaljubimo-se-zaljubite-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "zaljubiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/zaljubiti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Zašto si tako tužna?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/zasto-si-tako-tuzna.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        10
+      ]
+    },
+    {
+      "text": "Znači, nije kao tvoj stari kolega koji je bio tvrdoglav!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-10/znaci-nije-kao-tvoj-stari-kolega-koji-je-bio-tvrdoglav.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        10
       ]
     }
   ]

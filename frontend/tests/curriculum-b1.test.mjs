@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije', 'Posao, projekti i tim'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije', 'Posao, projekti i tim', 'Ljudi, karakter i odnosi'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -277,6 +277,22 @@ const OPEN_REPLIES = [
   { lesson: 'b1-09-05', reply: 0, hit: ['Ja ću voditi zapisnik.', 'Mogu ja.', 'Ja mogu.'], miss: ['Zapisnik.'] },
   { lesson: 'b1-09-05', reply: 1, hit: ['Dobro, imamo sastanke s klijentima svaki tjedan.', 'Odlično.', 'Dobro, razgovaramo s partnerima svaki dan.'], miss: ['Klijenti.'] },
   { lesson: 'b1-09-05', reply: 2, hit: ['Sljedeći korak je sastanak s klijentima.', 'Trebamo napisati izvještaj.', 'Moramo raspodijeliti zadatke.'], miss: ['Korak.'] },
+  // Moduł 10: charakter, koji / koja (także z przyimkami), sebe, jedan drugoga.
+  { lesson: 'b1-10-01', reply: 0, hit: ['On je iskren i duhovit.', 'Moja prijateljica je jako strpljiva.', 'Iskren i pouzdan.', 'Marko je vrijedan i drag.'], miss: ['Prijatelj.'] },
+  { lesson: 'b1-10-01', reply: 1, hit: ['Ponekad sam tvrdoglav.', 'Iskreno, malo sam lijena.', 'Tvrdoglava sam.', 'Moja najveća mana je nestrpljivost.'], miss: ['Sam tvrdoglav.'] },
+  { lesson: 'b1-10-01', reply: 2, hit: ['Ponosna sam na svoju kćer.', 'Ponosan sam na brata.', 'Jako sam ponosna na roditelje.', 'Na sina.'], miss: ['Sam ponosan na sina.'] },
+  { lesson: 'b1-10-02', reply: 0, hit: ['Imam prijatelja na kojeg se uvijek mogu osloniti.', 'Imam, to je prijateljica koja me uvijek podržava.', 'Imam brata koji mi uvijek pomaže.', 'Nemam.'], miss: ['Prijatelj.'] },
+  { lesson: 'b1-10-02', reply: 1, hit: ['To je film koji gledam već treći put.', 'Film koji sam gledao je bio odličan.', 'Gledala sam film koji je snimljen u Splitu.'], miss: ['Film.'] },
+  { lesson: 'b1-10-02', reply: 2, hit: ['Najviše cijenim roditelje.', 'Cijenim iskrene ljude.', 'Ljudi koje najviše cijenim su moji prijatelji.'], miss: ['Ljudi.'] },
+  { lesson: 'b1-10-03', reply: 0, hit: ['Grad u kojem živim je mali, ali lijep.', 'Mali je, ali lijep.', 'Moj grad je jako zelen.'], miss: ['Grad.'] },
+  { lesson: 'b1-10-03', reply: 1, hit: ['Vikendom se družim s prijateljima.', 'S obitelji.', 'Najčešće s kolegama s posla.', 'Sa sestrom s kojom živim.'], miss: ['Prijatelji.'] },
+  { lesson: 'b1-10-03', reply: 2, hit: ['To je tema o kojoj ne volim pričati.', 'Ne volim pričati o politici.', 'Politika.', 'Ne.'], miss: ['Volim.'] },
+  { lesson: 'b1-10-04', reply: 0, hit: ['Odmaram se i šetam.', 'Kupim sebi nešto lijepo.', 'Obično čitam knjigu.', 'Kad sam pod stresom, trčim.'], miss: ['Stres.'] },
+  { lesson: 'b1-10-04', reply: 1, hit: ['U našoj obitelji se međusobno podržavamo.', 'Pomažemo jedni drugima.', 'Odnos je jako dobar.'], miss: ['Obitelj.'] },
+  { lesson: 'b1-10-04', reply: 2, hit: ['Brzo se pomirimo.', 'Obično razgovaramo.', 'Ne razgovaramo dva dana.'], miss: ['Svađa.'] },
+  { lesson: 'b1-10-05', reply: 0, hit: ['Najvažnije je povjerenje.', 'Povjerenje i poštovanje.', 'Za mene je najvažnija iskrenost.'], miss: ['Prijatelj.'] },
+  { lesson: 'b1-10-05', reply: 1, hit: ['Imam prijatelje na koje se uvijek mogu osloniti.', 'To je moja sestra koja mi uvijek pomaže.', 'Moj brat je jako pouzdan.'], miss: ['Brat.'] },
+  { lesson: 'b1-10-05', reply: 2, hit: ['Iskreno, ponekad sam bio ljubomoran.', 'Nisam nikad bio ljubomoran.', 'Jesam.', 'Bila sam ljubomorna.'], miss: ['Sam bio ljubomoran.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

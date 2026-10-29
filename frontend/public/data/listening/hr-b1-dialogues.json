@@ -1173,6 +1173,134 @@
         ],
         "correctOptionId": "three"
       }
+    },
+    {
+      "id": "b1-pravi-prijatelj",
+      "level": "B1",
+      "titlePl": "Prawdziwy przyjaciel",
+      "titleEn": "A true friend",
+      "topic": "relacje",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, tko je tvoj najbolji prijatelj?",
+          "textPl": "Marko, kto jest twoim najlepszym przyjacielem?",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ivan, prijatelj kojeg poznajem još iz vrtića.",
+          "textPl": "Ivan, przyjaciel, którego znam jeszcze z przedszkola.",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Kakav je on?",
+          "textPl": "Jaki on jest?",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Iskren je i pouzdan. To je čovjek na kojeg se uvijek mogu osloniti.",
+          "textPl": "Jest szczery i rzetelny. To człowiek, na którym zawsze mogę polegać.",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "To je rijetko. Ja imam puno poznanika, ali malo pravih prijatelja.",
+          "textPl": "To rzadkie. Ja mam wielu znajomych, ale mało prawdziwych przyjaciół.",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Pravo prijateljstvo traži vrijeme i povjerenje.",
+          "textPl": "Prawdziwa przyjaźń wymaga czasu i zaufania.",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Skąd Marko zna Ivana?",
+        "options": [
+          {
+            "id": "kindergarten",
+            "textPl": "Z przedszkola"
+          },
+          {
+            "id": "work",
+            "textPl": "Z pracy"
+          },
+          {
+            "id": "uni",
+            "textPl": "Ze studiów"
+          }
+        ],
+        "correctOptionId": "kindergarten"
+      }
+    },
+    {
+      "id": "b1-pomirenje",
+      "level": "B1",
+      "titlePl": "Pogodzenie się",
+      "titleEn": "Making up",
+      "topic": "relacje",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, jesi li dobro? Izgledaš tužno.",
+          "textPl": "Ana, wszystko dobrze? Wyglądasz na smutną.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Posvađala sam se s Ivanom zbog gluposti.",
+          "textPl": "Pokłóciłam się z Ivanem o głupotę.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Znam da se jako volite. Morate razgovarati jedno s drugim.",
+          "textPl": "Wiem, że bardzo się kochacie. Musicie ze sobą porozmawiać.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Imaš pravo. Ali on je tako tvrdoglav!",
+          "textPl": "Masz rację. Ale on jest taki uparty!",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "I ti si malo tvrdoglava. Nazovi ga i pomirite se.",
+          "textPl": "Ty też jesteś trochę uparta. Zadzwoń do niego i się pogódźcie.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Dobro, nazvat ću ga večeras.",
+          "textPl": "Dobrze, zadzwonię do niego dziś wieczorem.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co radzi Marko?",
+        "options": [
+          {
+            "id": "call",
+            "textPl": "Zadzwonić do Ivana i się pogodzić"
+          },
+          {
+            "id": "silence",
+            "textPl": "Nie odzywać się do Ivana"
+          },
+          {
+            "id": "cinema",
+            "textPl": "Pójść z nim do kina"
+          }
+        ],
+        "correctOptionId": "call"
+      }
     }
   ]
 }
