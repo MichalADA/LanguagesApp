@@ -243,6 +243,26 @@ test('po błędzie widać poprawną odpowiedź i regułę z materiału lekcji', 
   ctx.unmount();
 });
 
+test('„Nie wiem” przy wpisywaniu: pokazuje odpowiedź, puszcza dalej i liczy zadanie jako błąd do poprawy', async () => {
+  storage.clear();
+  const step = { ...translate('t1'), prompt: 'Ile masz lat?', accepted: ['Koliko imaš godina?'] };
+  const content = { lessonId: 'dont-know', vocabulary: [], steps: [step, { id: 'summary', type: 'summary', stage: 'summary', title: 'Koniec', recap: [] }] };
+  const ctx = await mountLesson(options(content));
+  const footer = () => ctx.root().findAll((n) => n.type === 'button' && String(n.props.className).includes('btn-lg'))[0];
+  assert.equal(footer().props.disabled, true, 'bez odpowiedzi „Sprawdź” jest nieaktywne');
+  await ctx.click(ctx.buttonWith(t('curriculum.player.dontKnow')));
+  const feedback = ctx.byClass('div', 'feedback')[0];
+  assert.ok(feedback.props.className.includes('shown'), 'podpowiedź, a nie komunikat o błędzie');
+  assert.ok(ctx.text(feedback).includes('Koliko imaš godina?'), 'widać poprawną odpowiedź');
+  assert.equal(ctx.buttonWith(t('curriculum.player.dontKnow')), undefined, 'po odpowiedzi przycisk znika');
+  assert.equal(footer().props.disabled, false, 'można przejść dalej');
+  await ctx.click(footer());
+  assert.ok(ctx.byClass('div', 'step-summary').length, 'lekcja doszła do podsumowania');
+  assert.ok(ctx.byClass('p', 'summary-verdict').length, 'zadanie liczy się jako błąd');
+  assert.ok(ctx.buttonWith(t('curriculum.player.retryMistakes', { n: 1 })), 'i wraca w poprawie błędów');
+  ctx.unmount();
+});
+
 /* ---------- Słowa z lekcji → FSRS ---------- */
 
 test('generator: słowa lekcji używają istniejących kart słownika, homonimy i zwroty dostają własne karty', () => {

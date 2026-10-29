@@ -76,16 +76,33 @@ function useChecked(accepted: readonly string[], pattern?: string) {
   const { course } = useCourse();
   const [value, setValue] = useState("");
   const [result, setResult] = useState<LessonAnswerCheck | null>(null);
+  const [gaveUp, setGaveUp] = useState(false);
   const check = () => {
     if (!value.trim() || result) return;
     setResult(checkLessonAnswerDetailed(value, accepted, course.validation, pattern));
   };
-  return { value, setValue, verdict: result?.verdict ?? null, expected: result?.expected ?? null, check, characters: course.specialCharacters };
+  // „Nie wiem” = błąd z pokazaną odpowiedzią: zadanie wraca w poprawie błędów, ale nie blokuje lekcji.
+  const giveUp = () => {
+    if (result) return;
+    setGaveUp(true);
+    setResult({ verdict: "miss", expected: null });
+  };
+  return { value, setValue, verdict: result?.verdict ?? null, expected: result?.expected ?? null, check, giveUp, gaveUp, characters: course.specialCharacters };
+}
+
+/** Drugorzędna akcja obok „Sprawdź”, dopóki nie ma odpowiedzi. */
+function DontKnow({ onClick }: { onClick: () => void }) {
+  const t = useT();
+  return (
+    <button type="button" className="btn-ghost" onClick={onClick}>
+      {t("curriculum.player.dontKnow")}
+    </button>
+  );
 }
 
 export function ExerciseTranslation({ step, onNext }: { step: TranslateStep; onNext: Done }) {
   const t = useT();
-  const { value, setValue, verdict, expected, check, characters } = useChecked(step.accepted);
+  const { value, setValue, verdict, expected, check, giveUp, gaveUp, characters } = useChecked(step.accepted);
   const [hint, setHint] = useState(false);
   return (
     <>
@@ -114,7 +131,8 @@ export function ExerciseTranslation({ step, onNext }: { step: TranslateStep; onN
         label={t(verdict ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!verdict && !value.trim()}
         onAction={verdict ? () => onNext(verdict !== "miss") : check}
-        feedback={verdict ? <Feedback verdict={verdict} answer={verdict === "miss" ? step.accepted[0] : expected} audioSrc={step.answerAudioSrc} audioText={step.accepted[0]} rule={step.rule} /> : null}
+        secondary={verdict ? null : <DontKnow onClick={giveUp} />}
+        feedback={verdict ? <Feedback verdict={verdict} gaveUp={gaveUp} answer={verdict === "miss" ? step.accepted[0] : expected} audioSrc={step.answerAudioSrc} audioText={step.accepted[0]} rule={step.rule} /> : null}
       />
     </>
   );
@@ -122,7 +140,7 @@ export function ExerciseTranslation({ step, onNext }: { step: TranslateStep; onN
 
 export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done }) {
   const t = useT();
-  const { value, setValue, verdict, expected, check, characters } = useChecked(step.accepted);
+  const { value, setValue, verdict, expected, check, giveUp, gaveUp, characters } = useChecked(step.accepted);
   // Interpunkcja zaraz po luce („Dobro ___, hvala.”) przykleja się do pola, bez odstępu.
   const [, punct = "", rest = ""] = step.after.match(/^([.,!?;:]*)\s*(.*)$/) ?? [];
   const sentence = (word: string) => [step.before, `${word}${punct}`, rest].filter(Boolean).join(" ");
@@ -137,6 +155,11 @@ export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done 
     setValue(value + char);
     ref.current?.focus();
   };
+  // Po „Nie wiem” luka pokazuje brakujące słowo na miejscu, a nie pustą, „błędną” linię.
+  const dontKnow = () => {
+    giveUp();
+    setValue(step.accepted[0]);
+  };
 
   return (
     <>
@@ -147,7 +170,7 @@ export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done 
           <span className="gap-slot">
           <input
             ref={ref}
-            className={`gap-input ${verdict ?? ""}`}
+            className={`gap-input ${gaveUp ? "shown" : verdict ?? ""}`}
             value={value}
             size={Math.max(3, value.length + 1)}
             aria-label={t("curriculum.player.yourAnswer")}
@@ -175,7 +198,8 @@ export function ExerciseFillGap({ step, onNext }: { step: GapStep; onNext: Done 
         label={t(verdict ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!verdict && !value.trim()}
         onAction={verdict ? () => onNext(verdict !== "miss") : check}
-        feedback={verdict ? <Feedback verdict={verdict} answer={sentence(verdict === "near" && expected ? expected : step.accepted[0])} audioSrc={step.answerAudioSrc} audioText={sentence(step.accepted[0])} rule={step.rule} /> : null}
+        secondary={verdict ? null : <DontKnow onClick={dontKnow} />}
+        feedback={verdict ? <Feedback verdict={verdict} gaveUp={gaveUp} answer={sentence(verdict === "near" && expected ? expected : step.accepted[0])} audioSrc={step.answerAudioSrc} audioText={sentence(step.accepted[0])} rule={step.rule} /> : null}
       />
     </>
   );
@@ -190,6 +214,7 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
   const [answers, setAnswers] = useState<{ text: string; verdict: Verdict }[]>([]);
   const [value, setValue] = useState("");
   const [pendingCheck, setPendingCheck] = useState<LessonAnswerCheck | null>(null);
+  const [gaveUp, setGaveUp] = useState(false);
   const pending = pendingCheck?.verdict ?? null;
 
   // Widoczne tury: wszystko do bieżącej odpowiedzi włącznie.
@@ -203,11 +228,17 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
     if (!turn || !value.trim() || pending) return;
     setPendingCheck(checkLessonAnswerDetailed(value, turn.accepted, course.validation, turn.pattern));
   };
+  const giveUp = () => {
+    if (!turn || pending) return;
+    setGaveUp(true);
+    setPendingCheck({ verdict: "miss", expected: null });
+  };
   const commit = () => {
     if (!pending) return;
-    setAnswers((prev) => [...prev, { text: value.trim(), verdict: pending }]);
+    setAnswers((prev) => [...prev, { text: gaveUp ? "" : value.trim(), verdict: pending }]);
     setValue("");
     setPendingCheck(null);
+    setGaveUp(false);
   };
 
   let replyCounter = 0;
@@ -234,7 +265,7 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
               <li key={index} className={`dialog-line right ${answer.verdict}`}>
                 <span className="dialog-speaker">{t("curriculum.player.you")}</span>
                 <span className="dialog-bubble">
-                  <span className="target">{answer.text}</span>
+                  {answer.text ? <span className="target">{answer.text}</span> : <span className="muted">{t("curriculum.player.dontKnow")}</span>}
                   {answer.verdict === "miss" && (
                     <span className="dialog-translation">
                       → <SpokenText text={item.suggestion} src={item.suggestionAudioSrc} className="" />
@@ -264,10 +295,12 @@ export function ExerciseDialog({ step, onNext }: { step: DialogStep; onNext: Don
         label={t(done || pending ? "curriculum.player.next" : "curriculum.player.check")}
         disabled={!done && !pending && !value.trim()}
         onAction={done ? () => onNext({ correct: answers.filter((answer) => answer.verdict !== "miss").length, total: answers.length }) : pending ? commit : check}
+        secondary={!done && !pending ? <DontKnow onClick={giveUp} /> : null}
         feedback={
           pending && turn ? (
             <Feedback
               verdict={pending}
+              gaveUp={gaveUp}
               answer={pending === "miss" ? turn.suggestion : pendingCheck?.expected}
               // Nagranie wzorcowej odpowiedzi tylko wtedy, gdy to ją widzi uczeń.
               audioSrc={pending === "miss" || pendingCheck?.expected === turn.suggestion ? turn.suggestionAudioSrc : undefined}

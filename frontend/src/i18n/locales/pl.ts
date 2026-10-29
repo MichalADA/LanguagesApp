@@ -345,6 +345,8 @@ export const pl: Dictionary = {
         "check": "Sprawdź",
         "begin": "Zaczynamy",
         "skip": "Pomiń",
+        "dontKnow": "Nie wiem",
+        "shown": "Zapamiętaj, tak to brzmi",
         "finish": "Zakończ",
         "correct": "Dobrze!",
         "near": "Poprawnie",

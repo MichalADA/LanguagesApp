@@ -1787,6 +1787,7 @@ a.lesson-row:hover .lesson-row-link { color: var(--text-primary); }
 .gap-input.hit { border-bottom-color: var(--success); color: var(--success); }
 .gap-input.near { border-bottom-color: var(--burgundy-text); color: var(--burgundy-text); }
 .gap-input.miss { border-bottom-color: var(--error); color: var(--error); }
+.gap-input.shown { border-bottom-color: var(--burgundy-text); color: var(--text-primary); }
 .gap-translation { font-size: 17px; }
 .lesson-stage .charbar { justify-content: flex-start; }
 
@@ -1833,6 +1834,9 @@ a.lesson-row:hover .lesson-row-link { color: var(--text-primary); }
 .feedback.near .feedback-icon { background: var(--burgundy-soft); color: var(--burgundy-text); }
 .feedback.miss strong { color: var(--error); }
 .feedback.miss .feedback-icon { background: var(--error-soft); color: var(--error); }
+/* „Nie wiem” — bez czerwieni: to nie pomyłka, tylko podpowiedź do zapamiętania. */
+.feedback.shown strong { color: var(--text-primary); }
+.feedback.shown .feedback-icon { background: var(--burgundy-soft); color: var(--burgundy-text); }
 .feedback-explanation { color: var(--text-tertiary) !important; }
 
 /* Podsumowanie */

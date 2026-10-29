@@ -60,8 +60,11 @@ export function Feedback({
   audioSrc,
   audioText,
   rule,
+  gaveUp,
 }: {
   verdict: Verdict;
+  /** Uczeń wybrał „Nie wiem” — pokazujemy odpowiedź bez komunikatu o błędzie. */
+  gaveUp?: boolean;
   /** Przy „hit” pomijane; przy „near” — poprawna pisownia; przy „miss” — poprawna odpowiedź. */
   answer?: string | null;
   explanation?: string;
@@ -73,11 +76,11 @@ export function Feedback({
   rule?: string;
 }) {
   const t = useT();
-  const title = verdict === "hit" ? "correct" : verdict === "near" ? "near" : "wrong";
+  const title = gaveUp ? "shown" : verdict === "hit" ? "correct" : verdict === "near" ? "near" : "wrong";
   return (
-    <div className={`feedback ${verdict}`}>
+    <div className={gaveUp ? "feedback shown" : `feedback ${verdict}`}>
       <span className="feedback-icon" aria-hidden="true">
-        <Icon name={verdict === "miss" ? "close" : "check"} size={16} />
+        <Icon name={gaveUp ? "repeat" : verdict === "miss" ? "close" : "check"} size={16} />
       </span>
       <div>
         <strong className="feedback-title">
