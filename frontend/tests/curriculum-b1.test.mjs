@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -184,6 +184,22 @@ const OPEN_REPLIES = [
   { lesson: 'b1-03-04', reply: 2, hit: ['Meni je važnija obitelj.', 'Obitelj.', 'Važnija je plaća.', 'Svejedno mi je.'], miss: ['Obitelj važan.'] },
   { lesson: 'b1-03-05', reply: 0, hit: ['Savršen vikend bi za mene bio na moru.', 'Volio bih dugo spavati i ići na more.', 'Htjela bih samo čitati.'], miss: ['Bih volio spavati.'] },
   { lesson: 'b1-03-05', reply: 1, hit: ['Mogli bismo ići na more, a sljedeći vikend u planine.', 'Dobro, mogli bismo ići u planine.', 'Kako bi bilo da idemo na Plitvice?', 'Napravimo kompromis.'], miss: ['Ne znam.'] },
+  // Moduł 4: objawy, nemoj / nemojte, trebao bi, zdrowy styl życia.
+  { lesson: 'b1-04-01', reply: 0, hit: ['Loše, imam prehladu.', 'Boli me glava i imam vrtoglavicu.', 'Slabo mi je.', 'Osjećam se loše.', 'Potpuno sam iscrpljena.', 'Mislim da imam prehladu.'], miss: ['Prehlada.'] },
+  { lesson: 'b1-04-01', reply: 1, hit: ['Nemam, ali imam mučninu.', 'Imam, trideset osam.', 'Nemam.', 'Mislim da nemam.'], miss: ['Temperatura.'] },
+  { lesson: 'b1-04-01', reply: 2, hit: ['Imam alergiju na mačke.', 'Nisam.', 'Alergična sam na pelud.', 'Ne, nisam.'], miss: ['Alergija.'] },
+  { lesson: 'b1-04-02', reply: 0, hit: ['Nemoj učiti cijelu noć.', 'Nemoj piti kavu.', 'Ne pij kavu navečer.', 'Slušaj, nemoj se brinuti.'], miss: ['Ne učiti.'] },
+  { lesson: 'b1-04-02', reply: 1, hit: ['Nemoj pretjerivati, odmori se.', 'Odmori se.', 'Nemoj se brinuti.', 'Popij čaj i spavaj.'], miss: ['Pretjerivati.'] },
+  { lesson: 'b1-04-02', reply: 2, hit: ['Nemoj čekati, idi liječniku!', 'Idi liječniku.', 'Onda idi odmah kod doktora.'], miss: ['Liječnik.'] },
+  { lesson: 'b1-04-03', reply: 0, hit: ['Trebao bi se odmoriti.', 'Trebao bi manje raditi.', 'Mislim da bi trebao više spavati.', 'Bilo bi dobro da ideš na jogu.'], miss: ['Bi trebao spavati.'] },
+  { lesson: 'b1-04-03', reply: 1, hit: ['Bilo bi dobro da ideš na kontrolu.', 'Da, trebao bi se naručiti kod liječnika.', 'Naravno.'], miss: ['Kontrola.'] },
+  { lesson: 'b1-04-03', reply: 2, hit: ['Ne bi trebao piti kavu navečer.', 'Trebao bi ranije ići spavati.', 'Nemoj gledati mobitel u krevetu.'], miss: ['Kava.'] },
+  { lesson: 'b1-04-04', reply: 0, hit: ['Pokušavam se zdravo hraniti.', 'Svaki dan šetam.', 'Izbjegavam slatkiše.', 'Redovito trčim.'], miss: ['Zdravlje.'] },
+  { lesson: 'b1-04-04', reply: 1, hit: ['Izbjegavam brzu hranu i slatka pića.', 'Uglavnom izbjegavam šećer.', 'Pokušavam izbjegavati stres.'], miss: ['Šećer.'] },
+  { lesson: 'b1-04-04', reply: 2, hit: ['Za opuštanje čitam ili šetam.', 'Navečer slušam glazbu.', 'Vikendom idem na jogu.'], miss: ['Glazba.'] },
+  { lesson: 'b1-04-05', reply: 0, hit: ['Žao mi je! Trebao bi se odmoriti.', 'Joj, nemoj se brinuti.', 'Imaš li temperaturu?', 'Jao!'], miss: ['Prehlada.'] },
+  { lesson: 'b1-04-05', reply: 1, hit: ['Nemoj ići na posao bolestan.', 'Ne idi na posao!', 'Molim te, nemoj ići.'], miss: ['Idi na posao.'] },
+  { lesson: 'b1-04-05', reply: 2, hit: ['Pazi na sebe i brzo ozdravi!', 'Čuvaj se!', 'Drži se!', 'Nema na čemu, brzo ozdravi.'], miss: ['Bok.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

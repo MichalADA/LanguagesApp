@@ -12,6 +12,9 @@
     },
     "3": {
       "description": "Mówisz o marzeniach i planach: czego byś chciał, co moglibyście zrobić razem, co byś zrobił, gdyby…, i co wolałbyś na czyimś miejscu."
+    },
+    "4": {
+      "description": "Opisujesz samopoczucie i objawy, rozumiesz zakazy lekarza (nemojte…), dajesz rady (trebao bi…) i rozmawiasz o zdrowym stylu życia."
     }
   },
   "lessons": {
@@ -2428,6 +2431,794 @@
         ],
         "minSentences": 3,
         "sample": "Moj savršen vikend bi bio na moru. Volio bih dugo spavati i plivati. Mogli bismo zajedno otići u Zadar. Kad bismo imali više dana, išli bismo i na otok."
+      }
+    },
+    "b1-16": {
+      "grammar": {
+        "title": "Imam prehladu, slabo mi je",
+        "text": "Z A2 znasz Boli me glava. Inne objawy: imam + biernik — Imam prehladu, Imam vrtoglavicu, Imam mučninu. Alergia: alergija na + biernik — Imam alergiju na mačke. Część stanów mówi się z celownikiem, jak po polsku „słabo mi”: Slabo mi je, Curi mi nos. Samopoczucie: osjećati se + przysłówek — Osjećam se malo bolje.",
+        "table": [
+          {
+            "label": "jak powiedzieć, co ci dolega",
+            "rows": [
+              {
+                "base": "boli me (A2)",
+                "form": "Boli me glava.",
+                "meaning": "Boli mnie głowa."
+              },
+              {
+                "base": "imam + biernik",
+                "form": "Imam prehladu / vrtoglavicu.",
+                "meaning": "Jestem przeziębiony / Mam zawroty głowy."
+              },
+              {
+                "base": "alergija na",
+                "form": "Imam alergiju na mačke.",
+                "meaning": "Mam alergię na koty."
+              },
+              {
+                "base": "mi (celownik)",
+                "form": "Slabo mi je. Curi mi nos.",
+                "meaning": "Słabo mi. Cieknie mi z nosa."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          7,
+          9
+        ],
+        "tip": "kihati ma nieregularny czas teraźniejszy: kišem, kišeš, kiše (jak polskie kicham → po chorwacku z „š”)."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "na"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 10,
+      "order": 9,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Mam alergię na pyłki.",
+          "options": [
+            "Imam alergiju na pelud.",
+            "Imam alergiju od peluda.",
+            "Imam alergija na pelud."
+          ],
+          "correct": 0,
+          "explanation": "alergija na + biernik; po imam też biernik: alergiju."
+        }
+      ],
+      "model": {
+        "title": "Telefon do koleżanki",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ana, nisi došla na posao. Kako se osjećaš?",
+            "pl": "Ana, nie przyszłaś do pracy. Jak się czujesz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Loše. Imam prehladu, stalno kišem i curi mi nos.",
+            "pl": "Źle. Jestem przeziębiona, ciągle kicham i cieknie mi z nosa."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imaš li temperaturu?",
+            "pl": "Masz gorączkę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Nemam, ali jutros mi je bilo slabo i imala sam vrtoglavicu.",
+            "pl": "Nie, ale rano było mi słabo i miałam zawroty głowy."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Joj, onda ostani u krevetu!",
+            "pl": "Ojej, to zostań w łóżku!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "U lekarza",
+        "partner": "Liječnik",
+        "turns": [
+          {
+            "say": "Dobar dan. Kako se osjećate?",
+            "pl": "Dzień dobry. Jak się pan / pani czuje?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak się czujesz i co ci dolega.",
+              "accept": [
+                "Loše, imam prehladu.",
+                1
+              ],
+              "open": true,
+              "pattern": "^((loše|ne baš dobro|nikako|grozno) )?((osjećam se )?(loše|grozno|slabo|umorno)|(imam|mislim da imam) \\p{L}+|bole? me \\p{L}+|slabo mi je|curi mi nos|stalno kišem|(potpuno )?(iscrpljen|iscrpljena) sam|(potpuno )?sam (iscrpljen|iscrpljena))( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Imate li temperaturu?",
+            "pl": "Ma pan / pani gorączkę?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy masz gorączkę.",
+              "accept": [
+                "Nemam, ali imam mučninu."
+              ],
+              "open": true,
+              "pattern": "^(nemam|imam|da|ne|mislim da (imam|nemam))( temperaturu)?( (ali|i) \\p{L}+( \\p{L}+){0,4})?$|^(imam )?(trideset )?(sedam|osam|devet)( i pol)?$"
+            }
+          },
+          {
+            "say": "Jeste li alergični na nešto?",
+            "pl": "Ma pan / pani na coś alergię?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, na co masz alergię — albo że nie masz (Imam alergiju na…).",
+              "accept": [
+                3,
+                "Nisam."
+              ],
+              "open": true,
+              "pattern": "^(da |nažalost )?(imam alergiju na|alergična sam na|alergičan sam na) \\p{L}+( i \\p{L}+)?$|^(ne|nisam|nemam)( nisam| alergiju| alergija)?( ni na što)?$"
+            }
+          },
+          {
+            "say": "Dobro, sad ću vas pregledati.",
+            "pl": "Dobrze, teraz pana / panią zbadam."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania do kolegi z pracy: jak się czujesz i co ci dolega.",
+        "points": [
+          "samopoczucie (osjećam se…)",
+          "objawy (imam…, boli me…, curi mi nos)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "osjećam",
+              "loše",
+              "bolje",
+              "slabo",
+              "iscrpljen",
+              "iscrpljena"
+            ],
+            "label": "samopoczucie"
+          },
+          {
+            "any": [
+              "imam",
+              "boli",
+              "bole",
+              "curi",
+              "kišem"
+            ],
+            "label": "objawy: imam… / boli me / curi mi nos"
+          }
+        ],
+        "sample": "Danas se osjećam loše. Imam prehladu i curi mi nos, zato ne mogu doći na posao."
+      }
+    },
+    "b1-17": {
+      "grammar": {
+        "title": "Nemoj čekati!",
+        "text": "Z A2 znasz rozkazy: Odmori se! Uzmite lijek! Zakaz to nemoj (do jednej osoby) albo nemojte (do Pana / Pani albo grupy) + bezokolicznik: Nemoj čekati! Nemojte zaboraviti uzeti lijek. Krócej: ne + rozkaz — Ne pij kavu navečer. Po nemoj zwykle stoi czasownik niedokonany: Popij vodu! → Nemoj piti hladno piće. Krótkie słowa idą zaraz po nemoj: Nemoj se brinuti.",
+        "table": [
+          {
+            "label": "rozkaz → zakaz",
+            "rows": [
+              {
+                "base": "ty",
+                "form": "Popij čaj! → Nemoj piti hladno piće!",
+                "meaning": "Wypij herbatę! → Nie pij zimnych napojów!"
+              },
+              {
+                "base": "Pan / Pani, wy",
+                "form": "Uzmite lijek. → Nemojte uzimati lijek na prazan želudac.",
+                "meaning": "Proszę wziąć lek. → Proszę nie brać leku na pusty żołądek."
+              },
+              {
+                "base": "krótko",
+                "form": "Ne pij kavu navečer.",
+                "meaning": "Nie pij kawy wieczorem."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "tip": "nemoj to forma od „nie rób”: dosłownie „nie czyń”. Dlatego po niej zawsze bezokolicznik: nemoj čekati, nemojte ići."
+      },
+      "gap": {
+        "sentence": 10,
+        "word": "nemojte"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 3,
+          "accept": []
+        }
+      ],
+      "comprehend": 5,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Niech pan nie zapomni o leku.",
+          "options": [
+            "Nemojte zaboraviti lijek.",
+            "Nemoj zaboraviti lijek.",
+            "Ne zaboraviti lijek."
+          ],
+          "correct": 0,
+          "explanation": "Do Pana / Pani: nemojte + bezokolicznik."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Nie martw się!",
+          "options": [
+            "Nemoj se brinuti!",
+            "Nemoj brinuti se!",
+            "Ne brini se nemoj!"
+          ],
+          "correct": 0,
+          "explanation": "se stoi na drugim miejscu, zaraz po nemoj."
+        }
+      ],
+      "listening": "b1-kod-lijecnika",
+      "dialog": {
+        "title": "Dobre rady",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Sutra imam ispit, a jako me boli glava. Što da radim?",
+            "pl": "Jutro mam egzamin, a bardzo boli mnie głowa. Co mam robić?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego ma nie robić (Nemoj…).",
+              "accept": [
+                "Nemoj učiti cijelu noć."
+              ],
+              "open": true,
+              "pattern": "^((joj|dobro|slušaj|pa) )?(nemoj( se)? \\p{L}+(?:ti|ći)|ne \\p{L}*[^t](?:j|i))( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "A da popijem tabletu i nastavim učiti?",
+            "pl": "A może wezmę tabletkę i będę się dalej uczyć?"
+          },
+          {
+            "reply": {
+              "prompt": "Doradź: niech nie przesadza i niech odpocznie (Nemoj pretjerivati…, odmori se).",
+              "accept": [
+                "Nemoj pretjerivati, odmori se."
+              ],
+              "open": true,
+              "pattern": "^((dobro|može|možeš|ali) )?(nemoj (pretjerivati|zaboraviti \\p{L}+|se brinuti)|odmori se|popij \\p{L}+|spavaj)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Hvala. A ako mi ne bude bolje?",
+            "pl": "Dzięki. A jeśli nie będzie mi lepiej?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz: nie czekaj, idź do lekarza.",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((onda|tada) )?(nemoj čekati|idi( odmah)? (liječniku|doktoru|kod liječnika|kod doktora))( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "U pravu si. Hvala!",
+            "pl": "Masz rację. Dzięki!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 rady z zakazem dla przyjaciela, który jest przeziębiony (Nemoj…).",
+        "points": [
+          "czego ma nie robić (nemoj…)",
+          "co ma zrobić (pij, odmori se…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "nemoj",
+              "nemojte"
+            ],
+            "label": "nemoj / nemojte"
+          },
+          {
+            "any": [
+              "pij",
+              "odmori",
+              "uzmi",
+              "spavaj",
+              "idi",
+              "ostani",
+              "pijte",
+              "odmorite"
+            ],
+            "label": "rada: pij / odmori se / idi"
+          }
+        ],
+        "sample": "Nemoj ići na posao i nemoj piti hladno piće. Pij puno čaja i odmori se."
+      }
+    },
+    "b1-18": {
+      "grammar": {
+        "title": "Trebao bi se odmoriti",
+        "text": "Radę dajesz trybem przypuszczającym od trebati: trebao / trebala bi + bezokolicznik = powinieneś / powinnaś. Ja: trebao / trebala bih (powinienem / powinnam), my: trebali bismo, grzecznie albo do grupy: trebali biste. Przeczenie: ne bi trebao = nie powinieneś. Łagodniej: Bilo bi dobro da + czas teraźniejszy (dobrze byłoby, żebyś…). Lekarz komuś radzi: savjetovati nekome da… — Savjetovao mi je da više hodam.",
+        "table": [
+          {
+            "label": "powinien",
+            "rows": [
+              {
+                "base": "ja",
+                "form": "trebao / trebala bih",
+                "meaning": "powinienem / powinnam"
+              },
+              {
+                "base": "ty",
+                "form": "trebao / trebala bi",
+                "meaning": "powinieneś / powinnaś"
+              },
+              {
+                "base": "my",
+                "form": "trebali bismo",
+                "meaning": "powinniśmy"
+              },
+              {
+                "base": "Pan / Pani, wy",
+                "form": "trebali biste",
+                "meaning": "powinien pan / powinniście"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          8
+        ],
+        "tip": "Z A2 znasz trebam (potrzebuję / muszę). Trebao bi brzmi łagodniej — to rada, nie obowiązek."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "bi"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 3,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Powinnaś więcej spać.",
+          "options": [
+            "Trebala bi više spavati.",
+            "Trebala si više spavati.",
+            "Trebala bih više spavati."
+          ],
+          "correct": 0,
+          "explanation": "ty (kobieta) → trebala bi. Trebala bih = ja powinnam."
+        }
+      ],
+      "model": {
+        "title": "Za dużo pracy",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, izgledaš umorno. Jesi li dobro?",
+            "pl": "Marko, wyglądasz na zmęczonego. Wszystko dobrze?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Radim po dvanaest sati dnevno i loše spavam.",
+            "pl": "Pracuję po dwanaście godzin dziennie i źle śpię."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Trebao bi se odmoriti. Bilo bi dobro da uzmeš par dana godišnjeg odmora.",
+            "pl": "Powinieneś odpocząć. Dobrze by było, żebyś wziął parę dni urlopu."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Znam, ali imam puno posla.",
+            "pl": "Wiem, ale mam dużo pracy."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ozbiljno: ne bi trebao toliko raditi. Zdravlje je najvažnije.",
+            "pl": "Serio: nie powinieneś tyle pracować. Zdrowie jest najważniejsze."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Co mi radzisz?",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Stalno sam umoran i loše spavam. Što mi savjetuješ?",
+            "pl": "Ciągle jestem zmęczony i źle śpię. Co mi radzisz?"
+          },
+          {
+            "reply": {
+              "prompt": "Doradź mu (Trebao bi…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((mislim da|iskreno|pa) )?((ne )?(trebao|trebala) bi( se)? (više |manje |ranije |češće )?\\p{L}+(?:ti|ći)|bilo bi dobro da)( \\p{L}+){0,6}$|^mislim da (ne )?bi (trebao|trebala)( se)? (više |manje |ranije |češće )?\\p{L}+(?:ti|ći)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "A misliš li da bih trebao ići liječniku?",
+            "pl": "A myślisz, że powinienem iść do lekarza?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, że dobrze byłoby, żeby poszedł na wizytę (Bilo bi dobro da…).",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^((da|naravno|mislim da) )?(bilo bi dobro da (ideš|odeš|se naručiš)|trebao bi (ići|otići|se naručiti))( \\p{L}+){0,4}$|^(da|naravno)$"
+            }
+          },
+          {
+            "say": "Dobro. A kako da bolje spavam?",
+            "pl": "Dobrze. A jak mam lepiej spać?"
+          },
+          {
+            "reply": {
+              "prompt": "Daj radę na sen (Ne bi trebao… / Trebao bi… / Nemoj…).",
+              "accept": [
+                "Ne bi trebao piti kavu navečer."
+              ],
+              "open": true,
+              "pattern": "^((mislim da|iskreno) )?((ne )?(trebao|trebala) bi( se)? (više |manje |ranije |kasnije )?\\p{L}+(?:ti|ći)|(nemoj|ne) \\p{L}+)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Hvala na savjetima!",
+            "pl": "Dzięki za rady!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 rady dla kogoś, kto jest zestresowany (Trebao bi… / Bilo bi dobro da…).",
+        "points": [
+          "rada (trebao / trebala bi…)",
+          "druga rada (bilo bi dobro da… / nemoj…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "trebao",
+              "trebala",
+              "trebali"
+            ],
+            "label": "trebao / trebala bi"
+          },
+          {
+            "any": [
+              "dobro",
+              "savjetujem",
+              "nemoj"
+            ],
+            "label": "bilo bi dobro da / nemoj"
+          }
+        ],
+        "sample": "Trebala bi manje raditi i više spavati. Bilo bi dobro da ideš na jogu."
+      }
+    },
+    "b1-19": {
+      "grammar": {
+        "title": "Kretanje, spavanje, opuštanje",
+        "text": "Wiele słów o zdrowym życiu to rzeczowniki od czasowników na -nje, jak polskie -nie: kretati se → kretanje (ruch), spavati → spavanje (spanie), opustiti se → opuštanje (relaks). Są rodzaju nijakiego: Kretanje je važno. izbjegavati (unikać) łączy się z biernikiem, choć po polsku jest dopełniacz: Izbjegavam brzu hranu. Nowe pary aspektowe: izbjegavati → izbjeći, smanjivati → smanjiti, mijenjati → promijeniti.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "izbjegavati → izbjeći",
+                "form": "Izbjegavam slatkiše. / Nisam uspjela izbjeći gužvu.",
+                "meaning": "Unikam słodyczy. / Nie udało mi się uniknąć korka."
+              },
+              {
+                "base": "smanjivati → smanjiti",
+                "form": "Polako smanjujem kavu. / Moram smanjiti stres.",
+                "meaning": "Powoli ograniczam kawę. / Muszę zmniejszyć stres."
+              },
+              {
+                "base": "mijenjati → promijeniti",
+                "form": "Mijenjam navike. / Promijenila sam prehranu.",
+                "meaning": "Zmieniam nawyki. / Zmieniłam sposób odżywiania."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "tip": "izbjegavati + biernik: izbjegavam brzu hranu (po polsku: unikam fast foodów — dopełniacz)."
+      },
+      "gap": {
+        "sentence": 9,
+        "word": "izbjeći"
+      },
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 10,
+      "order": 2,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Unikam słodyczy.",
+          "options": [
+            "Izbjegavam slatkiše.",
+            "Izbjegavam slatkiša.",
+            "Izbjegavam od slatkiša."
+          ],
+          "correct": 0,
+          "explanation": "izbjegavati + biernik (po polsku dopełniacz: unikam słodyczy)."
+        }
+      ],
+      "listening": "b1-zdrav-zivot",
+      "dialog": {
+        "title": "Zdrowe nawyki",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Što radiš za svoje zdravlje?",
+            "pl": "Co robisz dla swojego zdrowia?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robisz dla zdrowia.",
+              "accept": [
+                2,
+                "Svaki dan šetam."
+              ],
+              "open": true,
+              "pattern": "^((ja|obično|svaki dan|redovito|često) )*((pokušavam|trudim)( se)? (se )?(zdravo |više |redovito )?\\p{L}+(?:ti|ći)|(se )?{pres1}( se)?)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "A što izbjegavaš?",
+            "pl": "A czego unikasz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego unikasz (Izbjegavam…).",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^((ja )?(uglavnom |uvijek |pokušavam )?izbjegavam|(ja )?pokušavam izbjegavati)( \\p{L}+){1,5}$"
+            }
+          },
+          {
+            "say": "A kako se opuštaš?",
+            "pl": "A jak się relaksujesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robisz dla relaksu (Za opuštanje…).",
+              "accept": [
+                7
+              ],
+              "open": true,
+              "pattern": "^((za opuštanje|navečer|vikendom|obično|kad sam pod stresom|ja) )*(se )?{pres1}( se)?( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Super navike!",
+            "pl": "Super nawyki!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania: co robisz dla zdrowia, czego unikasz i co chciałbyś zmienić.",
+        "points": [
+          "co robisz dla zdrowia",
+          "czego unikasz (izbjegavam…)",
+          "co chciałbyś zmienić"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "izbjegavam",
+              "smanjiti",
+              "ograničila",
+              "ograničio",
+              "hranim",
+              "krećem"
+            ],
+            "label": "izbjegavam / ograničiti / hranim se"
+          },
+          {
+            "any": [
+              "trebao",
+              "trebala",
+              "htio",
+              "htjela",
+              "volio",
+              "voljela",
+              "moram"
+            ],
+            "label": "plan zmiany"
+          }
+        ],
+        "sample": "Pokušavam se zdravo hraniti i izbjegavam brzu hranu. Trebala bih se više kretati."
+      }
+    },
+    "b1-20": {
+      "grammar": {
+        "title": "Zdrowie — wszystko razem",
+        "text": "Objawy: Imam prehladu, Slabo mi je. Zakaz: Nemoj ići na posao bolestan. Rada: Trebao bi ostati u krevetu, Bilo bi dobro da piješ puno vode. Życzenia: Pazi na sebe! Brzo ozdravi! Čuvaj se!",
+        "examples": [
+          1,
+          2,
+          3
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Nie pij zimnej wody!",
+          "options": [
+            "Nemoj piti hladnu vodu!",
+            "Nemoj pij hladnu vodu!",
+            "Ne piti hladnu vodu!"
+          ],
+          "correct": 0,
+          "explanation": "nemoj + bezokolicznik (piti) albo krótko: ne + rozkaz (Ne pij…)."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Rada dla przyjaciela",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Bok… Loše se osjećam, imam prehladu i iscrpljen sam.",
+            "pl": "Cześć… Źle się czuję, jestem przeziębiony i wyczerpany."
+          },
+          {
+            "reply": {
+              "prompt": "Okaż współczucie i doradź (np. Žao mi je! Trebao bi…).",
+              "accept": [
+                "Žao mi je! Trebao bi se odmoriti."
+              ],
+              "open": true,
+              "pattern": "^((joj|jao|žao mi je|baš mi je žao) )*(((ne )?(trebao|trebala) bi( se)? \\p{L}+(?:ti|ći)|nemoj( se)? \\p{L}+(?:ti|ći)|bilo bi dobro da|odmori se)( \\p{L}+){0,5}|imaš li temperaturu)$|^(joj|jao|žao mi je|baš mi je žao)$"
+            }
+          },
+          {
+            "say": "Mislim da ću ipak sutra ići na posao.",
+            "pl": "Myślę, że jednak jutro pójdę do pracy."
+          },
+          {
+            "reply": {
+              "prompt": "Odradź mu: niech nie idzie chory do pracy (Nemoj…).",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^((ne|molim te|ozbiljno) )*(nemoj (ići|raditi)|ne idi)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Dobro, ostat ću kod kuće. Hvala!",
+            "pl": "Dobrze, zostanę w domu. Dzięki!"
+          },
+          {
+            "reply": {
+              "prompt": "Pożegnaj się życzeniami (Pazi na sebe, brzo ozdravi!).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((nema na čemu|molim|ništa) )?(pazi na sebe|brzo ozdravi|ozdravi brzo|čuvaj se|drži se)( i (pazi na sebe|brzo ozdravi|ozdravi brzo|čuvaj se|drži se))?$"
+            }
+          },
+          {
+            "say": "Hvala, javit ću ti se!",
+            "pl": "Dzięki, odezwę się!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Napisz w 3–4 zdaniach wiadomość do chorego przyjaciela: współczucie, rady i zakazy, życzenia.",
+        "points": [
+          "współczucie",
+          "rada (trebao bi…) i zakaz (nemoj…)",
+          "życzenia (brzo ozdravi…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "trebao",
+              "trebala",
+              "bilo"
+            ],
+            "label": "rada: trebao bi / bilo bi dobro da"
+          },
+          {
+            "any": [
+              "nemoj",
+              "ne"
+            ],
+            "label": "zakaz: nemoj"
+          },
+          {
+            "any": [
+              "ozdravi",
+              "pazi",
+              "čuvaj"
+            ],
+            "label": "życzenia"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Žao mi je što si bolestan. Trebao bi ostati u krevetu i piti puno čaja. Nemoj ići na posao. Brzo ozdravi!"
       }
     }
   }

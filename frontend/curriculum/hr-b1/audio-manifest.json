@@ -8,9 +8,10 @@
   "modules": [
     1,
     2,
-    3
+    3,
+    4
   ],
-  "characters": 19351,
+  "characters": 24634,
   "items": [
     {
       "text": "A kako ide? Jesi li se naviknuo?",
@@ -6207,6 +6208,1965 @@
       ],
       "modules": [
         3
+      ]
+    },
+    {
+      "text": "A da popijem tabletu i nastavim učiti?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/a-da-popijem-tabletu-i-nastavim-uciti.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "A kako se opuštaš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/a-kako-se-opustas.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "A misliš li da bih trebao ići liječniku?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/a-mislis-li-da-bih-trebao-ici-lijecniku-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "A što izbjegavaš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/a-sto-izbjegavas.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "alergija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/alergija.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Ana, nisi došla na posao. Kako se osjećaš?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/ana-nisi-dosla-na-posao-kako-se-osjecas-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "antibiotik",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/antibiotik.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Bilo bi dobro da ideš na kontrolu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/bilo-bi-dobro-da-ides-na-kontrolu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Bilo bi dobro da piješ puno vode.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/bilo-bi-dobro-da-pijes-puno-vode.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "bilo bi dobro da",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/bilo-bi-dobro-da.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Bok… Loše se osjećam, imam prehladu i iscrpljen sam.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/bok-lose-se-osjecam-imam-prehladu-i-iscrpljen-sam-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Boli me glava i imam vrtoglavicu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/boli-me-glava-i-imam-vrtoglavicu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Boli me glava.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/boli-me-glava.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "briga",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/briga.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "brinem se, brineš se, brine se, brinemo se, brinete se, brinu se. brinuo se, brinula se, brinuli se. brinut ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/brinem-se-brines-se-brine-se-brinemo-se-brinete-se-brinu-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "brinuti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/brinuti-se.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "curi mi nos",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/curi-mi-nos.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "čuvaj se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/cuvaj-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Danas se osjećam loše. Imam prehladu i curi mi nos, zato ne mogu doći na posao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/danas-se-osjecam-lose-imam-prehladu-i-curi-mi-nos-zato-ne-mo.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Dobar dan. Kako se osjećate?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/dobar-dan-kako-se-osjecate-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Dobro. A kako da bolje spavam?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/dobro-a-kako-da-bolje-spavam-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Dobro, ostat ću kod kuće. Hvala!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/dobro-ostat-cu-kod-kuce-hvala-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Dobro, sad ću vas pregledati.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/dobro-sad-cu-vas-pregledati-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "drži se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/drzi-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "ekran",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ekran.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "godišnji odmor",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/godisnji-odmor.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "hranim se, hraniš se, hrani se, hranimo se, hranite se, hrane se. hranio se, hranila se, hranili se. hranit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/hranim-se-hranis-se-hrani-se-hranimo-se-hranite-se-hrane-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "hraniti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/hraniti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Hvala. A ako mi ne bude bolje?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/hvala-a-ako-mi-ne-bude-bolje.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Hvala, javit ću ti se!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/hvala-javit-cu-ti-se-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Hvala na savjetima!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/hvala-na-savjetima-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Imam alergiju na mačke.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/imam-alergiju-na-macke.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Imam alergiju na pelud.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/imam-alergiju-na-pelud.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Imam prehladu, vrtoglavicu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/imam-prehladu-vrtoglavicu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Imam problema s nesanicom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/imam-problema-s-nesanicom.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Imam upalu grla.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/imam-upalu-grla.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Imaš li maramicu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/imas-li-maramicu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Imaš li temperaturu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/imas-li-temperaturu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Imate li temperaturu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/imate-li-temperaturu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "iscrpljen",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/iscrpljen.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Izbjegavam brzu hranu i slatka pića.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/izbjegavam-brzu-hranu-i-slatka-pica.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "izbjegavam, izbjegavaš, izbjegava, izbjegavamo, izbjegavate, izbjegavaju. izbjegavao, izbjegavala, izbjegavali. izbjegavat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/izbjegavam-izbjegavas-izbjegava-izbjegavamo-izbjegavate-izbj.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Izbjegavam slatkiše., Nisam uspjela izbjeći gužvu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/izbjegavam-slatkise-nisam-uspjela-izbjeci-guzvu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Izbjegavam slatkiše.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/izbjegavam-slatkise.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "izbjegavati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/izbjegavati.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Jeste li alergični na nešto?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/jeste-li-alergicni-na-nesto-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "joga",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/joga.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Joj, onda ostani u krevetu!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/joj-onda-ostani-u-krevetu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "kihati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/kihati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "kišem, kišeš, kiše, kišemo, kišete, kišu. kihao, kihala, kihali. kihat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/kisem-kises-kise-kisemo-kisete-kisu-kihao-kihala-kihali-kiha.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "kontrola",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/kontrola.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Kretanje je najbolji lijek protiv stresa.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/kretanje-je-najbolji-lijek-protiv-stresa.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "kretanje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/kretanje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "krevet",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/krevet.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Kupujem svježe namirnice na tržnici.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/kupujem-svjeze-namirnice-na-trznici.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Liječnik mi je propisao antibiotik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/lijecnik-mi-je-propisao-antibiotik.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Liječnik mi je savjetovao da više hodam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/lijecnik-mi-je-savjetovao-da-vise-hodam.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Loše. Imam prehladu, stalno kišem i curi mi nos.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/lose-imam-prehladu-stalno-kisem-i-curi-mi-nos.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Loše, imam prehladu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/lose-imam-prehladu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "maramica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/maramica.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Marko, izgledaš umorno. Jesi li dobro?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/marko-izgledas-umorno-jesi-li-dobro.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Mijenjam navike., Promijenila sam prehranu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/mijenjam-navike-promijenila-sam-prehranu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Mislim da ću ipak sutra ići na posao.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/mislim-da-cu-ipak-sutra-ici-na-posao-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Mislim da imam prehladu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/mislim-da-imam-prehladu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Mogu li ti dati jedan savjet?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/mogu-li-ti-dati-jedan-savjet.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "mučnina",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/mucnina.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "na prazan želudac",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/na-prazan-zeludac.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Na proljeće uvijek kišem zbog alergije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/na-proljece-uvijek-kisem-zbog-alergije.mp3",
+      "kinds": [
+        "question"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nakon posla sam potpuno iscrpljena.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nakon-posla-sam-potpuno-iscrpljena.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "namirnice",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/namirnice.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "naručim se, naručiš se, naruči se, naručimo se, naručite se, naruče se. naručio se, naručila se, naručili se. naručit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/narucim-se-narucis-se-naruci-se-narucimo-se-narucite-se-naru.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "naručiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/naruciti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Ne bi trebao piti kavu navečer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ne-bi-trebao-piti-kavu-navecer.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Ne bi trebao toliko pušiti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ne-bi-trebao-toliko-pusiti.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Ne pij kavu navečer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ne-pij-kavu-navecer.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Ne stavljam sol u salatu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ne-stavljam-sol-u-salatu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemam, ali imam mučninu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemam-ali-imam-mucninu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemam, ali jutros mi je bilo slabo i imala sam vrtoglavicu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemam-ali-jutros-mi-je-bilo-slabo-i-imala-sam-vrtoglavicu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj čekati, idi liječniku!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-cekati-idi-lijecniku.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj ići na posao bolestan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-ici-na-posao-bolestan.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj ići na posao i nemoj piti hladno piće. Pij puno čaja i odmori se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-ici-na-posao-i-nemoj-piti-hladno-pice-pij-puno-caja-i.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj piti hladno piće kad te boli grlo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-piti-hladno-pice-kad-te-boli-grlo.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj piti hladnu vodu!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-piti-hladnu-vodu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj pretjerivati, odmori se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-pretjerivati-odmori-se.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj pretjerivati s treningom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-pretjerivati-s-treningom.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj se brinuti, bit će bolje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-se-brinuti-bit-ce-bolje.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj se brinuti!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-se-brinuti.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj učiti cijelu noć.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-uciti-cijelu-noc.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemoj zanemariti simptome.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj-zanemariti-simptome.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "nemoj",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemoj.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemojte uzimati lijek na prazan želudac.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemojte-uzimati-lijek-na-prazan-zeludac.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemojte zaboraviti lijek.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemojte-zaboraviti-lijek.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nemojte zaboraviti uzeti lijek.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemojte-zaboraviti-uzeti-lijek.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "nemojte",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nemojte.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "nesanica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nesanica.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Nisam uspjela izbjeći gužvu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/nisam-uspjela-izbjeci-guzvu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Od jutros imam mučninu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/od-jutros-imam-mucninu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Odmorite se i nemojte ići na posao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/odmorite-se-i-nemojte-ici-na-posao.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Ograničila sam šećer i sol.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ogranicila-sam-secer-i-sol.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "ograničim, ograničiš, ograniči, ograničimo, ograničite, ograniče. ograničio, ograničila, ograničili. ograničit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ogranicim-ogranicis-ogranici-ogranicimo-ogranicite-ogranice.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "ograničiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ograniciti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Oporavak će trajati tjedan dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/oporavak-ce-trajati-tjedan-dana.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "oporavak",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/oporavak.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "oprez",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/oprez.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "opuštanje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/opustanje.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Osjećam se malo bolje nego jučer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/osjecam-se-malo-bolje-nego-jucer.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Ostani danas u krevetu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ostani-danas-u-krevetu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Ozbiljno: ne bi trebao toliko raditi. Zdravlje je najvažnije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ozbiljno-ne-bi-trebao-toliko-raditi-zdravlje-je-najvaznije.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "ozdraviti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/ozdraviti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Pazi na sebe i brzo ozdravi!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/pazi-na-sebe-i-brzo-ozdravi.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "pazi na sebe",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/pazi-na-sebe.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "pelud",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/pelud.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Pokušavam se zdravo hraniti i izbjegavam brzu hranu. Trebala bih se više kretati.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/pokusavam-se-zdravo-hraniti-i-izbjegavam-brzu-hranu-trebala.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Pokušavam se zdravo hraniti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/pokusavam-se-zdravo-hraniti.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Polako smanjujem kavu., Moram smanjiti stres.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/polako-smanjujem-kavu-moram-smanjiti-stres.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Popij čaj! → Nemoj piti hladno piće!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/popij-caj-nemoj-piti-hladno-pice.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Potreban je oprez.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/potreban-je-oprez.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "prehlada",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/prehlada.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "pretjerivati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/pretjerivati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "pretjerujem, pretjeruješ, pretjeruje, pretjerujemo, pretjerujete, pretjeruju. pretjerivao, pretjerivala, pretjerivali. pretjerivat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/pretjerujem-pretjerujes-pretjeruje-pretjerujemo-pretjerujete.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "pretraga",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/pretraga.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Previše vremena provodim pred ekranom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/previse-vremena-provodim-pred-ekranom.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "propisati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/propisati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "propišem, propišeš, propiše, propišemo, propišete, propišu. propisao, propisala, propisali. propisat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/propisem-propises-propise-propisemo-propisete-propisu-propis.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Radim po dvanaest sati dnevno i loše spavam.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/radim-po-dvanaest-sati-dnevno-i-lose-spavam-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Rezultati pretrage su dobri, nema razloga za brigu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/rezultati-pretrage-su-dobri-nema-razloga-za-brigu.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "savjet",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/savjet.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "savjetovati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/savjetovati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "savjetujem, savjetuješ, savjetuje, savjetujemo, savjetujete, savjetuju. savjetovao, savjetovala, savjetovali. savjetovat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/savjetujem-savjetujes-savjetuje-savjetujemo-savjetujete-savj.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Slabo mi je. Curi mi nos.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/slabo-mi-je-curi-mi-nos.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Slabo mi je, moram sjesti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/slabo-mi-je-moram-sjesti.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "slabo mi je",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/slabo-mi-je.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "sol",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/sol.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "specijalist",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/specijalist.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Stalno kišem i curi mi nos.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/stalno-kisem-i-curi-mi-nos.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Stalno sam umoran i loše spavam. Što mi savjetuješ?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/stalno-sam-umoran-i-lose-spavam-sto-mi-savjetujes-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Što radiš za svoje zdravlje?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/sto-radis-za-svoje-zdravlje.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Super navike!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/super-navike.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Sutra imam ispit, a jako me boli glava. Što da radim?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/sutra-imam-ispit-a-jako-me-boli-glava-sto-da-radim.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Svaki dan pola sata radim tjelovježbu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/svaki-dan-pola-sata-radim-tjelovjezbu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "tjelovježba",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/tjelovjezba.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "To nije tvoja briga.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/to-nije-tvoja-briga.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Toplomjer je u kupaonici.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/toplomjer-je-u-kupaonici.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "toplomjer",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/toplomjer.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Trebala bi manje raditi i više spavati. Bilo bi dobro da ideš na jogu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebala-bi-manje-raditi-i-vise-spavati-bilo-bi-dobro-da-ides.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Trebala bi manje raditi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebala-bi-manje-raditi.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Trebala bi više spavati.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebala-bi-vise-spavati.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Trebali bismo češće ići na kontrolu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebali-bismo-cesce-ici-na-kontrolu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "trebali bismo",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebali-bismo.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Trebali biste se naručiti kod specijalista.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebali-biste-se-naruciti-kod-specijalista.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "trebali biste",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebali-biste.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Trebao bi ostati u krevetu dva dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebao-bi-ostati-u-krevetu-dva-dana.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Trebao bi se odmoriti. Bilo bi dobro da uzmeš par dana godišnjeg odmora.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebao-bi-se-odmoriti-bilo-bi-dobro-da-uzmes-par-dana-godisn.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Trebao bi se odmoriti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebao-bi-se-odmoriti.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "trebao bi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebao-bi.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "trebao, trebala bi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebao-trebala-bi.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "trebao, trebala bih",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/trebao-trebala-bih.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "U pravu si. Hvala!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/u-pravu-si-hvala.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "upala",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/upala.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Utorkom idem na jogu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/utorkom-idem-na-jogu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Uzmi nekoliko dana godišnjeg odmora.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/uzmi-nekoliko-dana-godisnjeg-odmora.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Uzmite lijek. → Nemojte uzimati lijek na prazan želudac.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/uzmite-lijek-nemojte-uzimati-lijek-na-prazan-zeludac.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "vitamin",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/vitamin.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "vrtoglavica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/vrtoglavica.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Za opuštanje čitam ili šetam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/za-opustanje-citam-ili-setam.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "zanemarim, zanemariš, zanemari, zanemarimo, zanemarite, zanemare. zanemario, zanemarila, zanemarili. zanemarit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/zanemarim-zanemaris-zanemari-zanemarimo-zanemarite-zanemare.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "zanemariti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/zanemariti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Žao mi je što si bolestan. Trebao bi ostati u krevetu i piti puno čaja. Nemoj ići na posao. Brzo ozdravi!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/zao-mi-je-sto-si-bolestan-trebao-bi-ostati-u-krevetu-i-piti.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Žao mi je! Trebao bi se odmoriti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/zao-mi-je-trebao-bi-se-odmoriti.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "zdravlje je najvažnije",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/zdravlje-je-najvaznije.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Zimi uzimam vitamin D.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-04/zimi-uzimam-vitamin-d.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        4
+      ]
+    },
+    {
+      "text": "Znam, ali imam puno posla.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-04/znam-ali-imam-puno-posla-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        4
       ]
     }
   ]
