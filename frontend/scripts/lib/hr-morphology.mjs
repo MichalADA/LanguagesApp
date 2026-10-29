@@ -108,7 +108,7 @@ const PRES_OVERRIDES = {
   slagati: ["slažem"],
   // B1
   popiti: ["popijem"], pojesti: ["pojedem"], početi: ["počnem"], počinjati: ["počinjem"], prestati: ["prestanem"], prestajati: ["prestajem"],
-  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"], stizati: ["stižem"], nedostajati: ["nedostajem"], surađivati: ["surađujem"], dopisivati: ["dopisujem"], predavati: ["predajem"],
+  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"], stizati: ["stižem"], nedostajati: ["nedostajem"], surađivati: ["surađujem"], dopisivati: ["dopisujem"], predavati: ["predajem"], prenijeti: ["prenesem"], održati: ["održim"], prikazivati: ["prikazujem"], raspitivati: ["raspitujem"],
   zaobići: ["zaobiđem"], obići: ["obiđem"], ući: ["uđem"], proći: ["prođem"], sići: ["siđem"], popeti: ["popnem"], presjesti: ["presjednem"],
 };
 const PP_OVERRIDES = {
@@ -120,7 +120,7 @@ const PP_OVERRIDES = {
   prevesti: ["preveo", "prevela", "preveli"], podići: ["podigao", "podigla", "podigli"], odrasti: ["odrastao", "odrasla", "odrasli"],
   pojesti: ["pojeo", "pojela", "pojeli"], početi: ["počeo", "počela", "počeli"], obući: ["obukao", "obukla", "obukli"], uspjeti: ["uspio", "uspjela", "uspjeli"], opeći: ["opekao", "opekla", "opekli"], izbjeći: ["izbjegao", "izbjegla", "izbjegli"],
   zaobići: ["zaobišao", "zaobišla", "zaobišli"], obići: ["obišao", "obišla", "obišli"], ući: ["ušao", "ušla", "ušli"], proći: ["prošao", "prošla", "prošli"],
-  sići: ["sišao", "sišla", "sišli"], popeti: ["popeo", "popela", "popeli"], presjesti: ["presjeo", "presjela", "presjeli"],
+  sići: ["sišao", "sišla", "sišli"], popeti: ["popeo", "popela", "popeli"], presjesti: ["presjeo", "presjela", "presjeli"], prenijeti: ["prenio", "prenijela", "prenijeli"],
 };
 
 function present1(inf) {

@@ -1301,6 +1301,198 @@
         ],
         "correctOptionId": "call"
       }
+    },
+    {
+      "id": "b1-vijesti-iz-grada",
+      "level": "B1",
+      "titlePl": "Wiadomości z miasta",
+      "titleEn": "City news",
+      "topic": "media",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, jesi li čuo vijesti?",
+          "textPl": "Marko, słyszałeś wiadomości?",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Nisam. Što se dogodilo?",
+          "textPl": "Nie. Co się stało?",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Gradonačelnik je izjavio da će se novi most otvoriti u svibnju.",
+          "textPl": "Burmistrz oświadczył, że nowy most zostanie otwarty w maju.",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Zanimljivo. Navodno će biti i besplatni autobusi do centra.",
+          "textPl": "Ciekawe. Podobno będą też darmowe autobusy do centrum.",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, i to su najavili. Rekli su da će vožnja biti besplatna mjesec dana.",
+          "textPl": "Tak, to też zapowiedzieli. Powiedzieli, że przejazd będzie darmowy przez miesiąc.",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Super, onda ću ostaviti auto kod kuće!",
+          "textPl": "Super, to zostawię samochód w domu!",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co będzie darmowe przez miesiąc?",
+        "options": [
+          {
+            "id": "bus",
+            "textPl": "Jazda autobusem do centrum"
+          },
+          {
+            "id": "parking",
+            "textPl": "Parking w centrum"
+          },
+          {
+            "id": "museum",
+            "textPl": "Wstęp do muzeum"
+          }
+        ],
+        "correctOptionId": "bus"
+      }
+    },
+    {
+      "id": "b1-informacije-o-koncertu",
+      "level": "B1",
+      "titlePl": "Informacje o koncercie",
+      "titleEn": "Concert information",
+      "topic": "kultura",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Dobar dan, zanima me kada počinje koncert večeras.",
+          "textPl": "Dzień dobry, interesuje mnie, kiedy zaczyna się dzisiejszy koncert.",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Koncert počinje u devet, ali vrata se otvaraju u osam.",
+          "textPl": "Koncert zaczyna się o dziewiątej, ale drzwi otwierają się o ósmej.",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Mogu li vas pitati ima li još ulaznica?",
+          "textPl": "Czy mogę zapytać, czy są jeszcze bilety?",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Nažalost, ne znam ima li ih još. Pitajte na blagajni.",
+          "textPl": "Niestety, nie wiem, czy jeszcze są. Proszę zapytać w kasie.",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "A znate li hoće li koncert biti vani ili unutra?",
+          "textPl": "A wie pani, czy koncert będzie na zewnątrz czy w środku?",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ako bude lijepo vrijeme, bit će vani na trgu.",
+          "textPl": "Jeśli będzie ładna pogoda, będzie na zewnątrz na placu.",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "O której otwierają się drzwi?",
+        "options": [
+          {
+            "id": "eight",
+            "textPl": "O ósmej"
+          },
+          {
+            "id": "nine",
+            "textPl": "O dziewiątej"
+          },
+          {
+            "id": "seven",
+            "textPl": "O siódmej"
+          }
+        ],
+        "correctOptionId": "eight"
+      }
+    },
+    {
+      "id": "b1-filmski-festival",
+      "level": "B1",
+      "titlePl": "Festiwal filmowy",
+      "titleEn": "The film festival",
+      "topic": "kultura",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, znaš li da je novi film snimljen u našem gradu?",
+          "textPl": "Marko, wiesz, że nowy film został nakręcony w naszym mieście?",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Stvarno? Koji film?",
+          "textPl": "Naprawdę? Jaki film?",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onaj o kojem pišu na svim portalima. Redatelj je osvojio nagradu u Puli.",
+          "textPl": "Ten, o którym piszą na wszystkich portalach. Reżyser zdobył nagrodę w Puli.",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Kada se prikazuje u kinu?",
+          "textPl": "Kiedy jest w kinie?",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Premijera je u petak, ali sve karte su već prodane.",
+          "textPl": "Premiera jest w piątek, ale wszystkie bilety są już sprzedane.",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Šteta! Onda ćemo ga gledati sljedeći tjedan.",
+          "textPl": "Szkoda! To obejrzymy go w przyszłym tygodniu.",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Dlaczego nie pójdą na premierę?",
+        "options": [
+          {
+            "id": "sold",
+            "textPl": "Wszystkie bilety są sprzedane"
+          },
+          {
+            "id": "closed",
+            "textPl": "Kino jest zamknięte"
+          },
+          {
+            "id": "notready",
+            "textPl": "Film nie jest jeszcze gotowy"
+          }
+        ],
+        "correctOptionId": "sold"
+      }
     }
   ]
 }

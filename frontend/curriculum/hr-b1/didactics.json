@@ -33,6 +33,9 @@
     },
     "10": {
       "description": "Opisujesz charakter ludzi (i uważasz na fałszywych przyjaciół), łączysz zdania przez koji / koja / koje — także z przyimkami — i mówisz o relacjach: sebe, jedan drugoga, međusobno."
+    },
+    "11": {
+      "description": "Śledzisz wiadomości i wydarzenia kulturalne: przekazujesz, co ktoś powiedział (Rekao je da…), o co pytał (Pitao me je li…) i opisujesz zabytki i filmy w stronie biernej (snimljen, izgrađen)."
     }
   },
   "lessons": {
@@ -8326,6 +8329,789 @@
         ],
         "minSentences": 3,
         "sample": "Moja najbolja prijateljica je iskrena i vrijedna. To je osoba na koju se uvijek mogu osloniti. Poznajemo se dvadeset godina i pomažemo jedna drugoj."
+      }
+    },
+    "b1-51": {
+      "grammar": {
+        "title": "Na portalu, u novinama",
+        "text": "Media: članak (artykuł), naslov (nagłówek), portal, emisija (program), društvene mreže (media społecznościowe). Gdzie? na portalu, na društvenim mrežama, na televiziji, na internetu — ale u novinama (w gazecie). Polskie „w gazecie jest napisane” to U novinama piše da… Opublikować: objaviti — Novinar je objavio članak.",
+        "table": [
+          {
+            "label": "gdzie?",
+            "rows": [
+              {
+                "base": "na + miejscownik",
+                "form": "na portalu, na društvenim mrežama, na televiziji",
+                "meaning": "na portalu, w mediach społecznościowych, w telewizji"
+              },
+              {
+                "base": "u + miejscownik",
+                "form": "u novinama, u vijestima",
+                "meaning": "w gazecie, w wiadomościach"
+              },
+              {
+                "base": "jest napisane",
+                "form": "U novinama piše da…",
+                "meaning": "W gazecie jest napisane, że…"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          3,
+          4,
+          8
+        ],
+        "tip": "Po polsku „w mediach społecznościowych”, po chorwacku na društvenim mrežama (na + miejscownik)."
+      },
+      "gap": {
+        "sentence": 4,
+        "word": "društvenim"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 10,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Przeczytałem to w gazecie.",
+          "options": [
+            "Pročitao sam to u novinama.",
+            "Pročitao sam to na novinama.",
+            "Pročitao sam to u novine."
+          ],
+          "correct": 0,
+          "explanation": "u novinama (miejscownik l.mn.); ale na portalu, na televiziji."
+        }
+      ],
+      "model": {
+        "title": "Ciekawy artykuł",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, jesi li pročitao članak o novom mostu?",
+            "pl": "Marko, przeczytałeś artykuł o nowym moście?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Nisam. Gdje je objavljen?",
+            "pl": "Nie. Gdzie został opublikowany?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Na jednom portalu. Novinar je razgovarao s gradonačelnikom.",
+            "pl": "Na jednym portalu. Dziennikarz rozmawiał z burmistrzem."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja vijesti uglavnom pratim na društvenim mrežama.",
+            "pl": "Ja wiadomości śledzę głównie w mediach społecznościowych."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Pazi, ne vjeruj svemu što piše na internetu!",
+            "pl": "Uważaj, nie wierz we wszystko, co piszą w internecie!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Wiadomości",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Gdje pratiš vijesti?",
+            "pl": "Gdzie śledzisz wiadomości?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie śledzisz wiadomości (na portalu, na društvenim mrežama…).",
+              "accept": [
+                4
+              ],
+              "open": true,
+              "pattern": "^((vijesti|uglavnom|obično|najčešće|ja) )*((pratim|čitam|gledam|slušam)( vijesti)?( \\p{L}+){0,5}|(na|u|preko) \\p{L}+( \\p{L}+){0,4})$"
+            }
+          },
+          {
+            "say": "Što si zadnje pročitao?",
+            "pl": "Co ostatnio przeczytałeś?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co ostatnio przeczytałeś / przeczytałaś (Pročitao sam članak o…).",
+              "accept": [
+                2
+              ],
+              "open": true,
+              "pattern": "^((pročitao|pročitala|čitao|čitala|gledao|gledala) sam|(jutros|jučer|nedavno|ja) sam (pročitao|pročitala|čitao|čitala|gledao|gledala))( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "Objavljuješ li nešto na društvenim mrežama?",
+            "pl": "Publikujesz coś w mediach społecznościowych?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz (Ponekad objavim fotografije… / Ne, samo čitam…).",
+              "accept": [
+                "Ponekad objavim fotografije s putovanja."
+              ],
+              "open": true,
+              "pattern": "^((da|ne|ponekad|rijetko|nikad|često) )*((objavim|objavljujem|samo čitam|samo gledam|ne objavljujem)( \\p{L}+){0,5}|da|ne|ponekad|rijetko|nikad)$"
+            }
+          },
+          {
+            "say": "Zanimljivo!",
+            "pl": "Ciekawe!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o tym, gdzie i jakie wiadomości śledzisz.",
+        "points": [
+          "gdzie (na portalu, u novinama…)",
+          "co ostatnio przeczytałeś / obejrzałeś"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "vijesti",
+              "članak",
+              "članke",
+              "portal",
+              "portalu",
+              "emisiju",
+              "novinama",
+              "mrežama"
+            ],
+            "label": "media"
+          },
+          {
+            "any": [
+              "pratim",
+              "čitam",
+              "gledam",
+              "slušam",
+              "objavim",
+              "pročitao",
+              "pročitala"
+            ],
+            "label": "czynność"
+          }
+        ],
+        "sample": "Vijesti čitam na portalima. Jučer sam pročitala zanimljiv članak o festivalu u Splitu."
+      }
+    },
+    "b1-52": {
+      "grammar": {
+        "title": "Rekao je da…",
+        "text": "Mowa zależna: rekao je / rekla je / izjavio je / tvrdi + da + zdanie. Czas zostaje taki jak w słowach wyjściowych — dokładnie jak po polsku: „Doći ću kasnije.” → Marko je rekao da će doći kasnije. Zmienia się tylko osoba: Ana: „Umorna sam.” → Ana je rekla da je umorna. Gdy nie wiesz na pewno: navodno (podobno), prema vijestima (według wiadomości).",
+        "table": [
+          {
+            "label": "słowa → mowa zależna",
+            "rows": [
+              {
+                "base": "„Doći ću.”",
+                "form": "Rekao je da će doći.",
+                "meaning": "Powiedział, że przyjdzie."
+              },
+              {
+                "base": "„Umorna sam.”",
+                "form": "Rekla je da je umorna.",
+                "meaning": "Powiedziała, że jest zmęczona."
+              },
+              {
+                "base": "„Kupili smo karte.”",
+                "form": "Rekli su da su kupili karte.",
+                "meaning": "Powiedzieli, że kupili bilety."
+              },
+              {
+                "base": "niepewne",
+                "form": "Navodno se otvara novi muzej.",
+                "meaning": "Podobno otwiera się nowe muzeum."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "Inaczej niż po angielsku czasu nie „cofasz”: rekao je da će doći (powiedział, że przyjdzie)."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "da"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 4,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Ana: „Jestem zmęczona.” → Ana powiedziała, że jest zmęczona.",
+          "options": [
+            "Ana je rekla da je umorna.",
+            "Ana je rekla da sam umorna.",
+            "Ana je rekla da je bila umorna."
+          ],
+          "correct": 0,
+          "explanation": "Zmieniasz osobę (sam → je), czas zostaje."
+        }
+      ],
+      "listening": "b1-vijesti-iz-grada",
+      "dialog": {
+        "title": "Co powiedział?",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Što je Marko rekao? Hoće li doći na zabavu?",
+            "pl": "Co powiedział Marko? Przyjdzie na imprezę?"
+          },
+          {
+            "reply": {
+              "prompt": "Przekaż, co powiedział Marko (Rekao je da će doći…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((da|ne) )?(rekao je|kaže|javio je|napisao je)( mi)? da( \\p{L}+){1,6}$|^(marko je rekao|marko kaže)( mi)? da( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "A što je rekla Petra?",
+            "pl": "A co powiedziała Petra?"
+          },
+          {
+            "reply": {
+              "prompt": "Przekaż, co powiedziała Petra (Rekla je da je umorna / da ne može…).",
+              "accept": [
+                "Rekla je da je umorna i da neće doći."
+              ],
+              "open": true,
+              "pattern": "^(rekla je|kaže|javila je|napisala je|petra je rekla|petra kaže)( mi)? da( \\p{L}+){1,8}$"
+            }
+          },
+          {
+            "say": "Šteta. Jesi li čuo nešto o novom kafiću?",
+            "pl": "Szkoda. Słyszałeś coś o nowej kawiarni?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co podobno słyszałeś (Navodno… / Čuo sam da…).",
+              "accept": [
+                "Navodno se otvara u subotu."
+              ],
+              "open": true,
+              "pattern": "^((da|jesam) )?(navodno|prema \\p{L}+( \\p{L}+)?|kažu da|čuo sam da|čula sam da)( \\p{L}+){1,7}$"
+            }
+          },
+          {
+            "say": "Super, idemo zajedno!",
+            "pl": "Super, idziemy razem!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Przekaż w 2 zdaniach, co ktoś ci powiedział (Rekao je da…, Rekla je da…).",
+        "points": [
+          "kto mówił (rekao / rekla / izjavio…)",
+          "da + zdanie"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "rekao",
+              "rekla",
+              "rekli",
+              "kaže",
+              "izjavio",
+              "izjavila",
+              "tvrdi",
+              "priznao",
+              "priznala",
+              "javio",
+              "javila"
+            ],
+            "label": "rekao je / izjavio je…"
+          },
+          {
+            "any": [
+              "da"
+            ],
+            "label": "da"
+          }
+        ],
+        "sample": "Moja sestra je rekla da će doći u subotu. Šef je izjavio da ćemo dobiti novi projekt."
+      }
+    },
+    "b1-53": {
+      "grammar": {
+        "title": "Pitao me jesam li slobodan",
+        "text": "Pytanie zależne tak / nie: po czasowniku dodajesz li, a osoba się zmienia (polskie „czy”). „Jesi li slobodan?” → Pitao me jesam li slobodan. „Je li bio u Zadru?” → Pitala sam ga je li bio u Zadru. Tak samo: Ne znam hoće li doći. Pytanie z zaimkiem pytającym zostaje: „Gdje živite?” → Pitali su nas gdje živimo. W standardzie chorwackim mówisz je li / jesam li, a nie „da li”.",
+        "table": [
+          {
+            "label": "pytanie → pytanie zależne",
+            "rows": [
+              {
+                "base": "„Jesi li slobodan?”",
+                "form": "Pitao me jesam li slobodan.",
+                "meaning": "Zapytał mnie, czy jestem wolny."
+              },
+              {
+                "base": "„Hoće li doći?”",
+                "form": "Ne znam hoće li doći.",
+                "meaning": "Nie wiem, czy przyjdzie."
+              },
+              {
+                "base": "„Gdje živite?”",
+                "form": "Pitali su nas gdje živimo.",
+                "meaning": "Zapytali nas, gdzie mieszkamy."
+              },
+              {
+                "base": "„Zašto nije nazvao?”",
+                "form": "Pitam se zašto nije nazvao.",
+                "meaning": "Zastanawiam się, dlaczego nie zadzwonił."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          6
+        ],
+        "tip": "li stoi zawsze zaraz po czasowniku: jesam li, ima li, hoće li — tak jak w zwykłym pytaniu."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "li"
+      },
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zapytał, czy jestem wolny.",
+          "options": [
+            "Pitao je jesam li slobodan.",
+            "Pitao je da li sam slobodan.",
+            "Pitao je jesi li slobodan."
+          ],
+          "correct": 0,
+          "explanation": "W standardzie: jesam li…; osobę zmieniasz (jesi → jesam)."
+        }
+      ],
+      "listening": "b1-informacije-o-koncertu",
+      "dialog": {
+        "title": "O co pytał?",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Što te pitao novi kolega?",
+            "pl": "O co cię pytał nowy kolega?"
+          },
+          {
+            "reply": {
+              "prompt": "Przekaż jego pytanie (Pitao me jesam li… / gdje…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^pitao (me |nas )?(je )?(\\p{L}+ li|gdje|kada|kad|kako|zašto|što|koliko|tko|odakle)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "A što tebi nije jasno?",
+            "pl": "A co dla ciebie jest niejasne?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, nad czym się zastanawiasz (Pitam se zašto… / Ne znam hoće li…).",
+              "accept": [
+                6
+              ],
+              "open": true,
+              "pattern": "^((iskreno|pa|hm) )?(pitam se|ne znam|nisam siguran|nisam sigurna|zanima me)( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "Jesi li saznao nešto o koncertu?",
+            "pl": "Dowiedziałeś się czegoś o koncercie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego się dowiedziałeś (Saznao sam da…).",
+              "accept": [
+                7
+              ],
+              "open": true,
+              "pattern": "^((jesam|nisam|da|ne) )?((saznao|saznala) sam( da)?( \\p{L}+){1,6}|(još )?nisam (ništa )?(saznao|saznala)( \\p{L}+){0,3}|nisam|jesam)$"
+            }
+          },
+          {
+            "say": "Hvala na informaciji!",
+            "pl": "Dzięki za informację!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z pytaniem zależnym (Pitao me je li…, Ne znam gdje…).",
+        "points": [
+          "kto pytał (pitao / pitala…)",
+          "pytanie z li albo z zaimkiem"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "li",
+              "gdje",
+              "kada",
+              "zašto",
+              "kako",
+              "što"
+            ],
+            "label": "li / zaimek pytający"
+          },
+          {
+            "any": [
+              "pitao",
+              "pitala",
+              "pitali",
+              "znam",
+              "zanima",
+              "pitam",
+              "siguran",
+              "sigurna"
+            ],
+            "label": "pitao me / ne znam / zanima me"
+          }
+        ],
+        "sample": "Šef me pitao jesam li završila izvještaj. Ne znam hoće li sastanak biti sutra."
+      }
+    },
+    "b1-54": {
+      "grammar": {
+        "title": "Snimljen, izgrađen, napisan",
+        "text": "Strona bierna to biti + imiesłów bierny, zgodny z rodzajem jak przymiotnik: Film je snimljen. Katedrala je izgrađena. Knjiga je napisana. Imiesłów kończy się na -n (napisan), -en (otvoren) albo -t (zauzet). Przed -en spółgłoska się zmienia jak w stopniu wyższym: snimiti → snimljen, izgraditi → izgrađen, platiti → plaćen. Gdy nie mówisz, kto coś robi, często używasz se: U Istri se govori talijanski. Festival se održava svakog ljeta.",
+        "table": [
+          {
+            "label": "imiesłów bierny",
+            "rows": [
+              {
+                "base": "napisati → -n",
+                "form": "Knjiga je napisana na hrvatskom.",
+                "meaning": "Książka została napisana po chorwacku."
+              },
+              {
+                "base": "snimiti → -en",
+                "form": "Film je snimljen u Dubrovniku.",
+                "meaning": "Film został nakręcony w Dubrowniku."
+              },
+              {
+                "base": "izgraditi → -en",
+                "form": "Katedrala je izgrađena u 18. stoljeću.",
+                "meaning": "Katedra została zbudowana w XVIII wieku."
+              },
+              {
+                "base": "zauzeti → -t",
+                "form": "Sva mjesta su zauzeta.",
+                "meaning": "Wszystkie miejsca są zajęte."
+              },
+              {
+                "base": "se (bezosobowo)",
+                "form": "U Istri se govori talijanski.",
+                "meaning": "Na Istrii mówi się po włosku."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          10
+        ],
+        "tip": "Zgodność jak w przymiotniku: film je snimljen, serija je snimljena, mjesta su zauzeta."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "izgrađena"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 3,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Książka została napisana po chorwacku.",
+          "options": [
+            "Knjiga je napisana na hrvatskom.",
+            "Knjiga je napisan na hrvatskom.",
+            "Knjiga se napisala na hrvatskom."
+          ],
+          "correct": 0,
+          "explanation": "knjiga (ż.) → napisana (zgodność rodzaju)."
+        }
+      ],
+      "listening": "b1-filmski-festival",
+      "dialog": {
+        "title": "Kultura w mieście",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Kad je izgrađena ova crkva?",
+            "pl": "Kiedy został zbudowany ten kościół?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, kiedy go zbudowano (Izgrađena je u … stoljeću).",
+              "accept": [
+                "Izgrađena je u petnaestom stoljeću."
+              ],
+              "open": true,
+              "pattern": "^((mislim da je|navodno je|crkva je) )?(izgrađena|sagrađena)( je)?( \\p{L}+){1,4}$|^(u )?\\p{L}+ stoljeć(u|a)$"
+            }
+          },
+          {
+            "say": "A gdje je sniman film o kojem svi pričaju?",
+            "pl": "A gdzie był kręcony film, o którym wszyscy mówią?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie nakręcono film (Snimljen je u…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((film je|mislim da je|navodno je) )?snimljen( je)? (u|na) \\p{L}+( \\p{L}+){0,3}$|^(u|na) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Je li muzej otvoren nedjeljom?",
+            "pl": "Czy muzeum jest otwarte w niedziele?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, kiedy muzeum jest otwarte (Otvoren je… / Zatvoren je…).",
+              "accept": [
+                4
+              ],
+              "open": true,
+              "pattern": "^((da|ne|nije|je) )?((muzej je|mislim da je) )?(otvoren|zatvoren)( je)?( \\p{L}+){0,6}$|^(da|ne|je|nije)$"
+            }
+          },
+          {
+            "say": "Odlično, idemo u nedjelju!",
+            "pl": "Świetnie, idziemy w niedzielę!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania w stronie biernej o zabytku albo filmie (je izgrađen / je snimljen…).",
+        "points": [
+          "co i kiedy (je izgrađen / osnovan)",
+          "gdzie (je snimljen / održan)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "izgrađen",
+              "izgrađena",
+              "izgrađeno",
+              "snimljen",
+              "snimljena",
+              "napisan",
+              "napisana",
+              "otvoren",
+              "otvorena",
+              "održan",
+              "održana",
+              "zatvoren",
+              "zatvorena",
+              "zauzeta"
+            ],
+            "label": "imiesłów bierny"
+          },
+          {
+            "any": [
+              "je",
+              "su",
+              "bio",
+              "bila"
+            ],
+            "label": "biti"
+          }
+        ],
+        "sample": "Katedrala u mom gradu je izgrađena u četrnaestom stoljeću. Prošle godine je tamo snimljen jedan film."
+      }
+    },
+    "b1-55": {
+      "grammar": {
+        "title": "Przewodnik — wszystko razem",
+        "text": "Media: članak, portal, vijesti, objaviti. Mowa zależna: Vodič je rekao da…, navodno… Pytanie zależne: Pitali su me je li muzej otvoren. Strona bierna: izgrađen, osnovan, snimljen, otvoren. Polecanie: vrijedi pogledati (warto zobaczyć), poznat po (znany z) + miejscownik.",
+        "examples": [
+          1,
+          3,
+          4
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Przewodnik powiedział, że muzeum jest zamknięte.",
+          "options": [
+            "Vodič je rekao da je muzej zatvoren.",
+            "Vodič je rekao da muzej je zatvoren.",
+            "Vodič je rekao da je muzej zatvorio."
+          ],
+          "correct": 0,
+          "explanation": "je zaraz po da (drugie miejsce) + imiesłów bierny zatvoren."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Przewodnik po mieście",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Što vrijedi pogledati u tvom gradu?",
+            "pl": "Co warto zobaczyć w twoim mieście?"
+          },
+          {
+            "reply": {
+              "prompt": "Poleć coś (Vrijedi pogledati… / Moj grad je poznat po…).",
+              "accept": [
+                6,
+                "Vrijedi pogledati stari grad."
+              ],
+              "open": true,
+              "pattern": "^((u mom gradu|kod nas|svakako) )?(vrijedi (pogledati|vidjeti|posjetiti)|(moj grad|grad) je poznat po|preporučujem|preporučio bih|preporučila bih)( \\p{L}+){1,6}$|^(\\p{L}+ ){1,4}(vrijedi|stvarno vrijedi) (pogledati|vidjeti|posjetiti)$"
+            }
+          },
+          {
+            "say": "Zanimljivo! Kad je to izgrađeno?",
+            "pl": "Ciekawe! Kiedy to zbudowano?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz w stronie biernej (Izgrađeno je… / Osnovan je…).",
+              "accept": [
+                "Izgrađeno je u četrnaestom stoljeću."
+              ],
+              "open": true,
+              "pattern": "^((mislim da je|navodno je) )?(izgrađen|izgrađena|izgrađeno|osnovan|osnovana|osnovano|sagrađen|sagrađena|sagrađeno)( je)?( \\p{L}+){1,5}$|^(u )?\\p{L}+ stoljeć(u|a)$|^(prije|u) \\p{L}+( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "A što kaže vodič, koliko traje obilazak?",
+            "pl": "A co mówi przewodnik, ile trwa zwiedzanie?"
+          },
+          {
+            "reply": {
+              "prompt": "Przekaż, co mówi przewodnik (Vodič kaže da… / Rekao je da…).",
+              "accept": [
+                "Vodič kaže da obilazak traje dva sata."
+              ],
+              "open": true,
+              "pattern": "^((vodič )?(kaže|je rekao|rekao je|tvrdi)( nam)? da( \\p{L}+){1,6}|(obilazak )?traje( \\p{L}+){1,3})$"
+            }
+          },
+          {
+            "say": "Super, idemo sutra!",
+            "pl": "Super, idziemy jutro!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Napisz w 3–4 zdaniach krótki przewodnik po swoim mieście: co warto zobaczyć, kiedy to powstało i co mówią ludzie.",
+        "points": [
+          "co warto zobaczyć (vrijedi pogledati, poznat po)",
+          "kiedy powstało (izgrađen, osnovan)",
+          "co mówią (kažu da…, navodno…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "vrijedi",
+              "poznat",
+              "poznata",
+              "preporučujem"
+            ],
+            "label": "polecenie"
+          },
+          {
+            "any": [
+              "izgrađen",
+              "izgrađena",
+              "izgrađeno",
+              "osnovan",
+              "osnovana",
+              "otvoren",
+              "otvorena",
+              "snimljen"
+            ],
+            "label": "strona bierna"
+          },
+          {
+            "any": [
+              "kaže",
+              "kažu",
+              "rekao",
+              "rekla",
+              "navodno"
+            ],
+            "label": "mowa zależna / navodno"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Moj grad je poznat po starom trgu. Katedrala je izgrađena u četrnaestom stoljeću. Vodiči kažu da je to najljepša crkva u regiji. Svakako je vrijedi pogledati."
       }
     }
   }

@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije', 'Posao, projekti i tim', 'Ljudi, karakter i odnosi'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije', 'Posao, projekti i tim', 'Ljudi, karakter i odnosi', 'Mediji, kultura i događaji'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -294,6 +294,22 @@ const OPEN_REPLIES = [
   { lesson: 'b1-10-05', reply: 0, hit: ['Najvažnije je povjerenje.', 'Povjerenje i poštovanje.', 'Za mene je najvažnija iskrenost.'], miss: ['Prijatelj.'] },
   { lesson: 'b1-10-05', reply: 1, hit: ['Imam prijatelje na koje se uvijek mogu osloniti.', 'To je moja sestra koja mi uvijek pomaže.', 'Moj brat je jako pouzdan.'], miss: ['Brat.'] },
   { lesson: 'b1-10-05', reply: 2, hit: ['Iskreno, ponekad sam bio ljubomoran.', 'Nisam nikad bio ljubomoran.', 'Jesam.', 'Bila sam ljubomorna.'], miss: ['Sam bio ljubomoran.'] },
+  // Moduł 11: media, mowa zależna, pytania zależne, strona bierna.
+  { lesson: 'b1-11-01', reply: 0, hit: ['Vijesti uglavnom pratim na društvenim mrežama.', 'Na portalima.', 'Čitam novine.', 'Uglavnom gledam vijesti na televiziji.'], miss: ['Vijesti.'] },
+  { lesson: 'b1-11-01', reply: 1, hit: ['Jutros sam pročitao zanimljiv članak o Zagrebu.', 'Pročitala sam članak o festivalu.', 'Jučer sam gledao emisiju o putovanjima.'], miss: ['Sam pročitao članak.'] },
+  { lesson: 'b1-11-01', reply: 2, hit: ['Ponekad objavim fotografije s putovanja.', 'Ne, samo čitam.', 'Rijetko.'], miss: ['Fotografije.'] },
+  { lesson: 'b1-11-02', reply: 0, hit: ['Marko je rekao da će doći kasnije.', 'Rekao je da će doći.', 'Kaže da neće doći.', 'Javio je da kasni.'], miss: ['Doći će.'] },
+  { lesson: 'b1-11-02', reply: 1, hit: ['Rekla je da je umorna i da neće doći.', 'Petra kaže da ne može.', 'Napisala je da je bolesna.'], miss: ['Umorna je.'] },
+  { lesson: 'b1-11-02', reply: 2, hit: ['Navodno se otvara u subotu.', 'Čuo sam da je jako lijep.', 'Kažu da imaju odličnu kavu.', 'Prema portalu, otvara se sutra.'], miss: ['Kafić.'] },
+  { lesson: 'b1-11-03', reply: 0, hit: ['Pitao me jesam li slobodan u petak.', 'Pitao me gdje živim.', 'Pitao je imam li vremena.', 'Pitao nas je kada počinje sastanak.'], miss: ['Jesam li slobodan.'] },
+  { lesson: 'b1-11-03', reply: 1, hit: ['Pitam se zašto nije nazvao.', 'Ne znam hoće li doći.', 'Nisam sigurna ima li još karata.', 'Zanima me kada počinje film.'], miss: ['Zašto?'] },
+  { lesson: 'b1-11-03', reply: 2, hit: ['Saznala sam da je koncert otkazan.', 'Nisam ništa saznao.', 'Jesam, saznao sam da počinje u devet.'], miss: ['Koncert.'] },
+  { lesson: 'b1-11-04', reply: 0, hit: ['Izgrađena je u petnaestom stoljeću.', 'U osamnaestom stoljeću.', 'Mislim da je izgrađena prije petsto godina.'], miss: ['Je izgrađena.'] },
+  { lesson: 'b1-11-04', reply: 1, hit: ['Film je snimljen u Dubrovniku.', 'Snimljen je u Splitu.', 'U Dubrovniku.'], miss: ['Je snimljen u Splitu.'] },
+  { lesson: 'b1-11-04', reply: 2, hit: ['Muzej je otvoren svaki dan osim ponedjeljka.', 'Da, otvoren je.', 'Ne, zatvoren je nedjeljom.', 'Nije.'], miss: ['Muzej.'] },
+  { lesson: 'b1-11-05', reply: 0, hit: ['Ovu izložbu stvarno vrijedi pogledati.', 'Vrijedi pogledati stari grad.', 'Moj grad je poznat po katedrali.', 'Preporučujem muzej.'], miss: ['Grad.'] },
+  { lesson: 'b1-11-05', reply: 1, hit: ['Izgrađeno je u četrnaestom stoljeću.', 'Osnovan je prije sto godina.', 'U šesnaestom stoljeću.'], miss: ['Je izgrađeno.'] },
+  { lesson: 'b1-11-05', reply: 2, hit: ['Vodič kaže da obilazak traje dva sata.', 'Rekao je da traje sat vremena.', 'Traje dva sata.'], miss: ['Dva sata.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {
