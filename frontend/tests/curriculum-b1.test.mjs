@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -200,6 +200,21 @@ const OPEN_REPLIES = [
   { lesson: 'b1-04-05', reply: 0, hit: ['Žao mi je! Trebao bi se odmoriti.', 'Joj, nemoj se brinuti.', 'Imaš li temperaturu?', 'Jao!'], miss: ['Prehlada.'] },
   { lesson: 'b1-04-05', reply: 1, hit: ['Nemoj ići na posao bolestan.', 'Ne idi na posao!', 'Molim te, nemoj ići.'], miss: ['Idi na posao.'] },
   { lesson: 'b1-04-05', reply: 2, hit: ['Pazi na sebe i brzo ozdravi!', 'Čuvaj se!', 'Drži se!', 'Nema na čemu, brzo ozdravi.'], miss: ['Bok.'] },
+  // Moduł 5: stopień wyższy i najwyższy, što… to…, strony świata.
+  { lesson: 'b1-05-01', reply: 0, hit: ['Život u manjem gradu je mirniji i jeftiniji nego u Zagrebu.', 'Mislim da je bolje u malom gradu.', 'U velikom gradu je život zanimljiviji.', 'Mali grad je mirniji.'], miss: ['Grad.', 'Mali grad.'] },
+  { lesson: 'b1-05-01', reply: 1, hit: ['Zrak je čišći u planinama.', 'U planinama je zrak čišći nego na moru.', 'Mislim da je na moru čišći.'], miss: ['Planine.'] },
+  { lesson: 'b1-05-01', reply: 2, hit: ['Hrvatski mi je sve lakši.', 'Da, sve lakši!', 'Iskreno, sve je teži.'], miss: ['Hrvatski.'] },
+  { lesson: 'b1-05-02', reply: 0, hit: ['Izvan sezone, jer je jeftinije.', 'U rujnu.', 'Najbolje je ići u lipnju.', 'Na jesen, kad nema gužve.'], miss: ['More.'] },
+  { lesson: 'b1-05-02', reply: 1, hit: ['Što prije, to bolje.', 'Unaprijed.', 'Odmah!', 'Trebamo rezervirati što prije.'], miss: ['Sutra.'] },
+  { lesson: 'b1-05-02', reply: 2, hit: ['Što manje stvari nosiš, to lakše putuješ.', 'Ne, što manje stvari nosimo, to je lakše.'], miss: ['Da, veliki kofer.'] },
+  { lesson: 'b1-05-03', reply: 0, hit: ['Izabrao bih onaj, jer je bliže plaži.', 'Onaj, jer je bliže plaži.', 'Radije bih ovaj, jer je jeftiniji.', 'Izabrala bih prvi.'], miss: ['Plaža.'] },
+  { lesson: 'b1-05-03', reply: 1, hit: ['Kvaliteta je važnija od cijene.', 'Meni je cijena važnija.', 'Važnija je kvaliteta.', 'Cijena.'], miss: ['Važno.'] },
+  { lesson: 'b1-05-04', reply: 0, hit: ['Sa sjevera Poljske, iz Gdanjska.', 'Iz Krakova.', 'Ja sam s juga Poljske.', 'Dolazim iz Varšave.'], miss: ['Poljska.'] },
+  { lesson: 'b1-05-04', reply: 1, hit: ['Zime su hladnije, a ljeta su kraća.', 'Kod nas je hladnije.', 'Klima je slična, ali zime su duže.'], miss: ['Hladno.'] },
+  { lesson: 'b1-05-04', reply: 2, hit: ['Radije bih živio na moru, jer je toplije.', 'Na moru.', 'Ja bih živjela u unutrašnjosti.'], miss: ['More.'] },
+  { lesson: 'b1-05-05', reply: 0, hit: ['S jedne strane, hotel je udobniji.', 'Hotel je bolji, ali je skuplji.', 'Apartman je znatno jeftiniji.'], miss: ['Hotel.'] },
+  { lesson: 'b1-05-05', reply: 1, hit: ['Što duže ostajemo, to se više isplati apartman.', 'Više se isplati apartman.', 'Apartman se više isplati.'], miss: ['Isplati.'] },
+  { lesson: 'b1-05-05', reply: 2, hit: ['Glavni razlog je cijena.', 'Cijena.', 'Zbog cijene.'], miss: ['Razlog.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

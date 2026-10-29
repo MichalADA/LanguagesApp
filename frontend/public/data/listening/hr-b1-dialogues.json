@@ -527,6 +527,134 @@
         ],
         "correctOptionId": "phone"
       }
+    },
+    {
+      "id": "b1-ljeto-ili-jesen",
+      "level": "B1",
+      "titlePl": "Sierpień czy wrzesień?",
+      "titleEn": "August or September?",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, kad idemo na more, u kolovozu ili u rujnu?",
+          "textPl": "Marko, kiedy jedziemy nad morze, w sierpniu czy we wrześniu?",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Radije u rujnu. Izvan sezone je sve jeftinije.",
+          "textPl": "Wolałbym we wrześniu. Poza sezonem wszystko jest tańsze.",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Istina, a i plaže su mirnije.",
+          "textPl": "To prawda, a i plaże są spokojniejsze.",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ali moramo rezervirati unaprijed. Što prije, to bolje.",
+          "textPl": "Ale musimy zarezerwować z wyprzedzeniem. Im wcześniej, tym lepiej.",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Vidjela sam apartman s popustom od petnaest posto.",
+          "textPl": "Widziałam apartament ze zniżką piętnaście procent.",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Super, rezerviraj ga odmah!",
+          "textPl": "Super, rezerwuj go od razu!",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Dlaczego Marko woli wrzesień?",
+        "options": [
+          {
+            "id": "cheaper",
+            "textPl": "Poza sezonem jest taniej"
+          },
+          {
+            "id": "warmer",
+            "textPl": "We wrześniu jest cieplej"
+          },
+          {
+            "id": "holiday",
+            "textPl": "Ma wtedy urlop"
+          }
+        ],
+        "correctOptionId": "cheaper"
+      }
+    },
+    {
+      "id": "b1-sjever-ili-jug",
+      "level": "B1",
+      "titlePl": "Wschód czy zachód?",
+      "titleEn": "East or west?",
+      "topic": "regiony",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, ti si iz Osijeka, zar ne? Kakav je život na istoku?",
+          "textPl": "Ana, ty jesteś z Osijeku, prawda? Jakie jest życie na wschodzie?",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Mirniji je nego u Zagrebu, a stanovi su znatno jeftiniji.",
+          "textPl": "Spokojniejsze niż w Zagrzebiu, a mieszkania są znacznie tańsze.",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "A zima?",
+          "textPl": "A zima?",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Zime su hladne i često ima magle. Zato ljeti idem na jug.",
+          "textPl": "Zimy są zimne i często jest mgła. Dlatego latem jeżdżę na południe.",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ja sam iz Rijeke. Kod nas zimi puše bura, ali je toplije.",
+          "textPl": "Ja jestem z Rijeki. U nas zimą wieje bora, ale jest cieplej.",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onda bih ja zimi radije živjela kod tebe!",
+          "textPl": "To ja zimą wolałabym mieszkać u ciebie!",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co Ana mówi o mieszkaniach na wschodzie?",
+        "options": [
+          {
+            "id": "cheaper",
+            "textPl": "Są znacznie tańsze"
+          },
+          {
+            "id": "expensive",
+            "textPl": "Są droższe niż w Zagrzebiu"
+          },
+          {
+            "id": "bigger",
+            "textPl": "Są większe"
+          }
+        ],
+        "correctOptionId": "cheaper"
+      }
     }
   ]
 }

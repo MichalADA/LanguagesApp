@@ -8,5 +8,5 @@
   "rate": "-8%",
   "pathPrefix": "/audio/hr/b1",
   "maleSpeakers": ["Marko", "Marek", "Ivan", "Konobar", "Liječnik", "Prodavač", "Službenik"],
-  "modules": [1, 2, 3, 4]
+  "modules": [1, 2, 3, 4, 5]
 }

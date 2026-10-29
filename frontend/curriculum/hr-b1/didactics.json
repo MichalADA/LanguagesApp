@@ -15,6 +15,9 @@
     },
     "4": {
       "description": "Opisujesz samopoczucie i objawy, rozumiesz zakazy lekarza (nemojte…), dajesz rady (trebao bi…) i rozmawiasz o zdrowym stylu życia."
+    },
+    "5": {
+      "description": "Porównujesz miasta, regiony, oferty i ceny: stopień wyższy z oboczną spółgłoską, im… tym…, stopień najwyższy ze wzmocnieniem i argumenty za i przeciw."
     }
   },
   "lessons": {
@@ -3219,6 +3222,888 @@
         ],
         "minSentences": 3,
         "sample": "Žao mi je što si bolestan. Trebao bi ostati u krevetu i piti puno čaja. Nemoj ići na posao. Brzo ozdravi!"
+      }
+    },
+    "b1-21": {
+      "grammar": {
+        "title": "Tiši, čišći, svjetliji",
+        "text": "Z A2 znasz veći, jeftiniji, skuplji i porównanie z od (+ dopełniacz) albo nego (+ mianownik). Większość przymiotników dostaje -iji: miran → mirniji, prometan → prometniji. W svijetao → svjetliji ije skraca się do je (jak lijep → ljepši). Krótkie przymiotniki dostają -ji, a spółgłoska się zmienia: tih → tiši, čist → čišći, mlad → mlađi, blizak → bliži. Przysłówki: lako → lakše, teško → teže.",
+        "table": [
+          {
+            "label": "stopień wyższy",
+            "rows": [
+              {
+                "base": "miran → mirniji",
+                "form": "Život je ovdje mirniji.",
+                "meaning": "Życie jest tu spokojniejsze."
+              },
+              {
+                "base": "tih → tiši",
+                "form": "Ova ulica je tiša od glavne.",
+                "meaning": "Ta ulica jest cichsza niż główna."
+              },
+              {
+                "base": "čist → čišći",
+                "form": "More je ovdje čišće.",
+                "meaning": "Morze jest tu czystsze."
+              },
+              {
+                "base": "svijetao → svjetliji",
+                "form": "Novi stan je svjetliji.",
+                "meaning": "Nowe mieszkanie jest jaśniejsze."
+              },
+              {
+                "base": "lako → lakše",
+                "form": "Biciklom se lakše dođe.",
+                "meaning": "Rowerem łatwiej dojechać."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          8
+        ],
+        "tip": "od + dopełniacz (tiša od glavne ulice) albo nego + mianownik (tiša nego glavna ulica) — znaczą to samo."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "od"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 8,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "To mieszkanie jest cichsze.",
+          "options": [
+            "Ovaj stan je tiši.",
+            "Ovaj stan je tihiji.",
+            "Ovaj stan je više tih."
+          ],
+          "correct": 0,
+          "explanation": "tih → tiši (h + j → š)."
+        }
+      ],
+      "model": {
+        "title": "Gdzie zamieszkać?",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Tražim stan. Je li bolje živjeti u centru ili u predgrađu?",
+            "pl": "Szukam mieszkania. Lepiej mieszkać w centrum czy na przedmieściu?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "U centru je živahnije, ali predgrađe je mirnije i tiše.",
+            "pl": "W centrum jest bardziej żywo, ale przedmieście jest spokojniejsze i cichsze."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A cijene?",
+            "pl": "A ceny?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Stanovi u predgrađu su jeftiniji i često svjetliji.",
+            "pl": "Mieszkania na przedmieściu są tańsze i często jaśniejsze."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Onda ću tražiti stan u predgrađu!",
+            "pl": "To będę szukał mieszkania na przedmieściu!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Porównaj",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Gdje je bolje živjeti, u velikom ili u malom gradu?",
+            "pl": "Gdzie lepiej mieszkać, w dużym czy w małym mieście?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie jest lepiej i dlaczego (… je mirniji / jeftiniji …).",
+              "accept": [
+                4
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,10}\\p{L}+(?:iji|ija|ije|ši|ša|še|ći|ća|će|đi|đa|đe|lji|lja|lje|ži|ža|že)( \\p{L}+){0,10}$"
+            }
+          },
+          {
+            "say": "A gdje je čišći zrak, na moru ili u planinama?",
+            "pl": "A gdzie jest czystsze powietrze, nad morzem czy w górach?"
+          },
+          {
+            "reply": {
+              "prompt": "Porównaj (… je čišći nego… / od…).",
+              "accept": [
+                "Zrak je čišći u planinama."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,10}\\p{L}+(?:iji|ija|ije|ši|ša|še|ći|ća|će|đi|đa|đe|lji|lja|lje|ži|ža|že)( \\p{L}+){0,10}$"
+            }
+          },
+          {
+            "say": "Slažem se. A je li ti hrvatski sve lakši?",
+            "pl": "Zgadzam się. A chorwacki jest dla ciebie coraz łatwiejszy?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy chorwacki jest dla ciebie coraz łatwiejszy (sve lakši / sve teži).",
+              "accept": [
+                6
+              ],
+              "open": true,
+              "pattern": "^((da|ne|nije|jest|je|baš|iskreno) )*(hrvatski )?(mi )?(je )?(sve )?(je )?(lakši|teži|bolji|zanimljiviji)( mi je| je)?( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Bravo!",
+            "pl": "Brawo!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Porównaj w 2 zdaniach dwa miejsca, które znasz (miasto, dzielnicę, region).",
+        "points": [
+          "porównanie (od / nego)",
+          "stopień wyższy (mirniji, tiši, čišći…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "od",
+              "nego"
+            ],
+            "label": "od / nego"
+          },
+          {
+            "any": [
+              "mirniji",
+              "mirnije",
+              "mirnija",
+              "tiši",
+              "tiša",
+              "tiše",
+              "čišći",
+              "čišća",
+              "čišće",
+              "veći",
+              "veća",
+              "veće",
+              "manji",
+              "manja",
+              "manje",
+              "jeftiniji",
+              "jeftinija",
+              "jeftinije",
+              "skuplji",
+              "skuplja",
+              "skuplje",
+              "ljepši",
+              "ljepša",
+              "ljepše",
+              "bolji",
+              "bolja",
+              "bolje",
+              "lošiji",
+              "lošije",
+              "lakše",
+              "teže",
+              "svjetliji",
+              "prometniji",
+              "živahniji",
+              "toplije",
+              "hladnije",
+              "hladniji",
+              "sporiji",
+              "zdraviji",
+              "zdravije",
+              "brži",
+              "brže",
+              "bliže",
+              "dalje",
+              "više"
+            ],
+            "label": "stopień wyższy"
+          }
+        ],
+        "sample": "Moj grad je manji i mirniji od Zagreba. Zrak je čišći, ali život je teži jer nema posla."
+      }
+    },
+    "b1-22": {
+      "grammar": {
+        "title": "Što prije, to bolje",
+        "text": "Polskie im… tym… to po chorwacku što… to… — w obu częściach stopień wyższy: Što prije rezerviraš, to je jeftinije. Što je grad veći, to je život skuplji. Stałe zwroty: Što više, to bolje! Što prije, to bolje!",
+        "table": [
+          {
+            "label": "što… to…",
+            "rows": [
+              {
+                "base": "krótko",
+                "form": "Što više, to bolje!",
+                "meaning": "Im więcej, tym lepiej!"
+              },
+              {
+                "base": "z czasownikiem",
+                "form": "Što prije rezerviraš, to je jeftinije.",
+                "meaning": "Im wcześniej zarezerwujesz, tym taniej."
+              },
+              {
+                "base": "z przymiotnikiem",
+                "form": "Što je grad veći, to je život skuplji.",
+                "meaning": "Im większe miasto, tym droższe życie."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          8
+        ],
+        "tip": "Nie myl z što w pytaniu (Što radiš?). Tu što stoi przed stopniem wyższym i zawsze ma parę: to."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "to"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Im wcześniej, tym lepiej.",
+          "options": [
+            "Što prije, to bolje.",
+            "Što prije, što bolje.",
+            "Kako prije, to bolje."
+          ],
+          "correct": 0,
+          "explanation": "im… tym… = što… to…"
+        }
+      ],
+      "listening": "b1-ljeto-ili-jesen",
+      "dialog": {
+        "title": "Planujemy wyjazd",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Kada je najbolje ići na more?",
+            "pl": "Kiedy najlepiej jechać nad morze?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, kiedy najlepiej i dlaczego (izvan sezone, u rujnu…).",
+              "accept": [
+                "Izvan sezone, jer je jeftinije."
+              ],
+              "open": true,
+              "pattern": "^((mislim da je|najbolje je|po meni) )?(ići )?(izvan sezone|u (lipnju|rujnu|svibnju|listopadu|srpnju|kolovozu)|na proljeće|na jesen|ljeti)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "A kada trebamo rezervirati?",
+            "pl": "A kiedy powinniśmy zarezerwować?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz: im wcześniej, tym lepiej (Što prije, to bolje).",
+              "accept": [
+                "Što prije, to bolje."
+              ],
+              "open": true,
+              "pattern": "^(što prije to bolje|(trebamo rezervirati |rezervirajmo )?(unaprijed|odmah|što prije))( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Hoćemo li uzeti veliki kofer?",
+            "pl": "Weźmiemy dużą walizkę?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz: im mniej rzeczy, tym łatwiej (Što manje…, to…).",
+              "accept": [
+                10
+              ],
+              "open": true,
+              "pattern": "^((ne|nemoj|bolje ne) )?što (manje|više) \\p{L}+( \\p{L}+){0,3} to (je )?\\p{L}+( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Dobro, putujemo lagano!",
+            "pl": "Dobrze, podróżujemy na lekko!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z konstrukcją im… tym… (Što…, to…).",
+        "points": [
+          "što + stopień wyższy",
+          "to + stopień wyższy"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "što"
+            ],
+            "label": "što"
+          },
+          {
+            "any": [
+              "to"
+            ],
+            "label": "to"
+          }
+        ],
+        "sample": "Što više učim, to bolje govorim. Što je hotel bliže plaži, to je skuplji."
+      }
+    },
+    "b1-23": {
+      "grammar": {
+        "title": "Daleko najbolji izbor",
+        "text": "Stopień najwyższy znasz z A2: naj- + stopień wyższy (najbliži). Tak samo: najbolji, najljepši, najpovoljniji. O ile coś jest lepsze, mówisz wzmocnieniem: puno / mnogo / znatno skuplji (dużo / znacznie droższy), malo manji (trochę mniejszy). Przed stopniem najwyższym: daleko najbolji = zdecydowanie najlepszy.",
+        "table": [
+          {
+            "label": "wzmocnienia",
+            "rows": [
+              {
+                "base": "dużo",
+                "form": "puno povoljniji",
+                "meaning": "dużo korzystniejszy"
+              },
+              {
+                "base": "znacznie",
+                "form": "znatno skuplji",
+                "meaning": "znacznie droższy"
+              },
+              {
+                "base": "trochę",
+                "form": "malo manji",
+                "meaning": "trochę mniejszy"
+              },
+              {
+                "base": "zdecydowanie",
+                "form": "daleko najbolji",
+                "meaning": "zdecydowanie najlepszy"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "povoljan znaczy „korzystny cenowo” — najpovoljnija ponuda to zwykle najtańsza dobra oferta."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "znatno"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "To zdecydowanie najlepsza restauracja.",
+          "options": [
+            "To je daleko najbolji restoran.",
+            "To je daleko bolji restoran.",
+            "To je najdaleko bolji restoran."
+          ],
+          "correct": 0,
+          "explanation": "daleko + stopień najwyższy: daleko najbolji."
+        }
+      ],
+      "model": {
+        "title": "Którą ofertę wybrać?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Usporedila sam tri hotela u Zadru.",
+            "pl": "Porównałam trzy hotele w Zadarze."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "I? Koji je najbolji?",
+            "pl": "I? Który jest najlepszy?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Prvi je najjeftiniji, ali ima loše recenzije.",
+            "pl": "Pierwszy jest najtańszy, ale ma złe opinie."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A drugi?",
+            "pl": "A drugi?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Drugi je malo skuplji, ali znatno bolji. Ima odličnu ocjenu.",
+            "pl": "Drugi jest trochę droższy, ale znacznie lepszy. Ma świetną ocenę."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Onda je to daleko najbolji izbor!",
+            "pl": "To zdecydowanie najlepszy wybór!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Wybieramy",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Ovaj apartman je jeftiniji, a onaj je bliže plaži. Koji bi ti izabrao?",
+            "pl": "Ten apartament jest tańszy, a tamten bliżej plaży. Który byś wybrał?"
+          },
+          {
+            "reply": {
+              "prompt": "Wybierz i uzasadnij (Izabrao bih…, jer je…).",
+              "accept": [
+                "Izabrao bih onaj, jer je bliže plaži."
+              ],
+              "open": true,
+              "pattern": "^((ja )?bih izabrao|(izabrao|izabrala) bih|radije bih|meni je bolji|bolji je)( \\p{L}+){0,8}$|^(ovaj|onaj|prvi|drugi)( \\p{L}+){0,8}$"
+            }
+          },
+          {
+            "say": "Hm, a što je za tebe važnije, cijena ili kvaliteta?",
+            "pl": "Hm, a co jest dla ciebie ważniejsze, cena czy jakość?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co jest ważniejsze (… je važnija od…).",
+              "accept": [
+                5
+              ],
+              "open": true,
+              "pattern": "^((za mene|meni|mislim da) )?((kvaliteta|cijena|lokacija)( mi)? je (važnija|bitnija)( (od|nego) \\p{L}+)?|(važnija|bitnija) (mi )?je (kvaliteta|cijena|lokacija)|(meni|za mene) je (kvaliteta|cijena|lokacija) (važnija|bitnija)|kvaliteta|cijena|lokacija)$"
+            }
+          },
+          {
+            "say": "Pročitala sam recenzije. Prvi apartman ima ocjenu devet.",
+            "pl": "Przeczytałam opinie. Pierwszy apartament ma ocenę dziewięć."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że to zdecydowanie najlepszy wybór (daleko najbolji izbor).",
+              "accept": [
+                "Onda je to daleko najbolji izbor!"
+              ],
+              "pattern": "^((onda|super|odlično|dobro) )*(je )?(to (je )?)?daleko (najbolji|najbolja|najbolje)( izbor| opcija| ponuda)?$|^(to je )?(najbolji|najbolja) (izbor|opcija|ponuda)$"
+            }
+          },
+          {
+            "say": "Rezerviram!",
+            "pl": "Rezerwuję!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Porównaj w 2 zdaniach dwie oferty (np. hotel, telefon) i powiedz, która jest najlepsza.",
+        "points": [
+          "o ile lepsza (puno / znatno / malo…)",
+          "która najlepsza (naj-)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "puno",
+              "znatno",
+              "malo",
+              "mnogo",
+              "daleko"
+            ],
+            "label": "wzmocnienie: puno / znatno / malo"
+          },
+          {
+            "any": [
+              "najbolji",
+              "najbolja",
+              "najbolje",
+              "najjeftiniji",
+              "najjeftinija",
+              "najpovoljniji",
+              "najpovoljnija",
+              "najljepši",
+              "najljepša",
+              "najbrži",
+              "najbliži",
+              "najmirniji",
+              "najveći",
+              "najmanji",
+              "najskuplji"
+            ],
+            "label": "stopień najwyższy: naj-"
+          }
+        ],
+        "sample": "Drugi hotel je malo skuplji, ali znatno bolji. To je daleko najbolji izbor."
+      }
+    },
+    "b1-24": {
+      "grammar": {
+        "title": "Na sjeveru, na jugu",
+        "text": "Strony świata jak po polsku z na: gdzie? na sjeveru, na jugu, na istoku, na zapadu (miejscownik); dokąd? na sjever, na jug (biernik). Porównując regiony, używasz stopnia wyższego: Na jugu je toplije nego na sjeveru. Nowe pary aspektowe: seliti se → preseliti se, odlučivati → odlučiti, uspoređivati → usporediti.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "seliti se → preseliti se",
+                "form": "Mladi se sele u gradove. / Preselili smo se na jug.",
+                "meaning": "Młodzi przenoszą się do miast. / Przeprowadziliśmy się na południe."
+              },
+              {
+                "base": "odlučivati → odlučiti",
+                "form": "Dugo smo odlučivali. / Odlučili smo.",
+                "meaning": "Długo się zastanawialiśmy. / Zdecydowaliśmy."
+              },
+              {
+                "base": "uspoređivati → usporediti",
+                "form": "Stalno uspoređuje cijene. / Usporedila sam ponude.",
+                "meaning": "Ciągle porównuje ceny. / Porównałam oferty."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          8,
+          9
+        ],
+        "tip": "Gdzie? na jugu (miejscownik). Dokąd? na jug (biernik) — Preselili smo se na jug."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "istoku"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 5,
+      "order": 8,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Mieszkamy na północy.",
+          "options": [
+            "Živimo na sjeveru.",
+            "Živimo na sjever.",
+            "Živimo u sjeveru."
+          ],
+          "correct": 0,
+          "explanation": "Gdzie? na + miejscownik: na sjeveru."
+        }
+      ],
+      "listening": "b1-sjever-ili-jug",
+      "dialog": {
+        "title": "Skąd jesteś?",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Iz kojeg si dijela Poljske?",
+            "pl": "Z której części Polski jesteś?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, z jakiej części kraju jesteś (Sa sjevera… / S juga…).",
+              "accept": [
+                "Sa sjevera Poljske, iz Gdanjska."
+              ],
+              "open": true,
+              "pattern": "^((ja sam|dolazim) )?(sa|s|iz) \\p{L}+( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "A kakva je tamo klima u usporedbi s Hrvatskom?",
+            "pl": "A jaki jest tam klimat w porównaniu z Chorwacją?"
+          },
+          {
+            "reply": {
+              "prompt": "Porównaj klimat (Zime su hladnije…).",
+              "accept": [
+                "Zime su hladnije, a ljeta su kraća."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,10}\\p{L}+(?:iji|ija|ije|ši|ša|še|ći|ća|će|đi|đa|đe|lji|lja|lje|ži|ža|že)( \\p{L}+){0,10}$"
+            }
+          },
+          {
+            "say": "Gdje bi radije živio, na moru ili u unutrašnjosti?",
+            "pl": "Gdzie wolałbyś mieszkać, nad morzem czy w głębi kraju?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie wolałbyś / wolałabyś mieszkać i dlaczego.",
+              "accept": [
+                "Radije bih živio na moru, jer je toplije."
+              ],
+              "open": true,
+              "pattern": "^((ja )?bih radije|radije bih|ja bih)( \\p{L}+){1,8}$|^(na moru|u unutrašnjosti|na selu|u gradu)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Razumijem!",
+            "pl": "Rozumiem!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania: porównaj swój region z jakimś regionem Chorwacji.",
+        "points": [
+          "gdzie leży (na sjeveru, na jugu…)",
+          "porównanie (toplije, hladniji, mirniji…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "sjeveru",
+              "jugu",
+              "istoku",
+              "zapadu",
+              "sjevera",
+              "juga",
+              "istoka",
+              "zapada",
+              "unutrašnjosti",
+              "primorju"
+            ],
+            "label": "strony świata / region"
+          },
+          {
+            "any": [
+              "mirniji",
+              "mirnije",
+              "mirnija",
+              "tiši",
+              "tiša",
+              "tiše",
+              "čišći",
+              "čišća",
+              "čišće",
+              "veći",
+              "veća",
+              "veće",
+              "manji",
+              "manja",
+              "manje",
+              "jeftiniji",
+              "jeftinija",
+              "jeftinije",
+              "skuplji",
+              "skuplja",
+              "skuplje",
+              "ljepši",
+              "ljepša",
+              "ljepše",
+              "bolji",
+              "bolja",
+              "bolje",
+              "lošiji",
+              "lošije",
+              "lakše",
+              "teže",
+              "svjetliji",
+              "prometniji",
+              "živahniji",
+              "toplije",
+              "hladnije",
+              "hladniji",
+              "sporiji",
+              "zdraviji",
+              "zdravije",
+              "brži",
+              "brže",
+              "bliže",
+              "dalje",
+              "više"
+            ],
+            "label": "porównanie"
+          }
+        ],
+        "sample": "Ja sam sa sjevera Poljske. Kod nas su zime hladnije nego u Dalmaciji, a ljeta su kraća."
+      }
+    },
+    "b1-25": {
+      "grammar": {
+        "title": "Porównanie — wszystko razem",
+        "text": "Stopień wyższy: jeftiniji, tiši, čišći + od / nego. Stopień najwyższy: najbolja opcija, daleko najbolji. Wzmocnienia: znatno, puno, malo. Im… tym…: Što duže ostajemo, to se više isplati. Argumenty: s jedne strane… s druge strane…, glavni razlog je…, u svakom slučaju…",
+        "examples": [
+          2,
+          3,
+          4
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Hotel jest znacznie droższy od apartamentu.",
+          "options": [
+            "Hotel je znatno skuplji od apartmana.",
+            "Hotel je znatno skuplji od apartman.",
+            "Hotel je znatno najskuplji od apartmana."
+          ],
+          "correct": 0,
+          "explanation": "od + dopełniacz: od apartmana; stopień wyższy: skuplji."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Hotel czy apartament?",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Za Split imamo dvije opcije: hotel u centru ili apartman izvan grada. Što misliš?",
+            "pl": "W Splicie mamy dwie opcje: hotel w centrum albo apartament za miastem. Co myślisz?"
+          },
+          {
+            "reply": {
+              "prompt": "Porównaj opcje (S jedne strane…, s druge strane…).",
+              "accept": [
+                2,
+                "Hotel je bolji, ali je skuplji."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,10}\\p{L}+(?:iji|ija|ije|ši|ša|še|ći|ća|će|đi|đa|đe|lji|lja|lje|ži|ža|že)( \\p{L}+){0,10}$"
+            }
+          },
+          {
+            "say": "Ostajemo deset dana. Što se više isplati?",
+            "pl": "Zostajemy dziesięć dni. Co się bardziej opłaca?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co się bardziej opłaca (Više se isplati… / Što duže…, to…).",
+              "accept": [
+                4,
+                "Više se isplati apartman."
+              ],
+              "open": true,
+              "pattern": "^((mislim da )?(više )?(se )?isplati( se)?( više)? \\p{L}+( \\p{L}+){0,3}|što (duže|dulje|više) \\p{L}+( \\p{L}+){0,3} to( \\p{L}+){1,5}|(mislim da )?(apartman|hotel)( se)?( više)? isplati( više)?)$"
+            }
+          },
+          {
+            "say": "Dobro, a što je glavni razlog?",
+            "pl": "Dobrze, a co jest głównym powodem?"
+          },
+          {
+            "reply": {
+              "prompt": "Podaj główny powód (Glavni razlog je…).",
+              "accept": [
+                5
+              ],
+              "open": true,
+              "pattern": "^(glavni razlog je|zbog)( \\p{L}+){1,4}$|^(cijena|lokacija|kvaliteta|mir|plaža)( je glavni razlog)?$"
+            }
+          },
+          {
+            "say": "U svakom slučaju, dogovoreno!",
+            "pl": "W każdym razie umowa stoi!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Porównaj w 3–4 zdaniach dwie opcje wyjazdu i wybierz najlepszą.",
+        "points": [
+          "porównanie (od / nego, znatno…)",
+          "argumenty (s jedne strane… s druge strane…)",
+          "wybór i główny powód"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "od",
+              "nego"
+            ],
+            "label": "porównanie: od / nego"
+          },
+          {
+            "any": [
+              "najbolji",
+              "najbolja",
+              "najbolje",
+              "najjeftiniji",
+              "najjeftinija",
+              "najpovoljniji",
+              "najpovoljnija",
+              "najljepši",
+              "najljepša",
+              "najbrži",
+              "najbliži",
+              "najmirniji",
+              "najveći",
+              "najmanji",
+              "najskuplji"
+            ],
+            "label": "stopień najwyższy"
+          },
+          {
+            "any": [
+              "jedne",
+              "druge",
+              "što",
+              "isplati",
+              "razlog"
+            ],
+            "label": "s jedne strane / što… to… / razlog"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "S jedne strane, hotel je udobniji od apartmana. S druge strane, apartman je znatno jeftiniji. Što duže ostajemo, to se više isplati apartman. To je najbolja opcija."
       }
     }
   }

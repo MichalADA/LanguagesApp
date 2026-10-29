@@ -9,9 +9,10 @@
     1,
     2,
     3,
-    4
+    4,
+    5
   ],
-  "characters": 24634,
+  "characters": 29294,
   "items": [
     {
       "text": "A kako ide? Jesi li se naviknuo?",
@@ -8167,6 +8168,1859 @@
       ],
       "modules": [
         4
+      ]
+    },
+    {
+      "text": "A cijene?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/a-cijene-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "A drugi?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/a-drugi-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "A gdje je čišći zrak, na moru ili u planinama?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/a-gdje-je-cisci-zrak-na-moru-ili-u-planinama.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "A kada trebamo rezervirati?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/a-kada-trebamo-rezervirati-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "A kakva je tamo klima u usporedbi s Hrvatskom?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/a-kakva-je-tamo-klima-u-usporedbi-s-hrvatskom-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "akcija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/akcija.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Biciklom se lakše dođe do centra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/biciklom-se-lakse-dodje-do-centra.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Biciklom se lakše dođe.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/biciklom-se-lakse-dodje.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Bravo!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/bravo.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "buka",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/buka.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "bura",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/bura.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Cijena je pala deset posto.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/cijena-je-pala-deset-posto.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "čišći",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/cisci.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "daleko najbolji",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/daleko-najbolji.mp3",
+      "kinds": [
+        "table",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Danas puše jaka bura.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/danas-puse-jaka-bura.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Dobro, a što je glavni razlog?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/dobro-a-sto-je-glavni-razlog.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Dobro, putujemo lagano!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/dobro-putujemo-lagano-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Drugi apartman je malo manji, ali puno povoljniji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/drugi-apartman-je-malo-manji-ali-puno-povoljniji.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Drugi hotel je malo skuplji, ali znatno bolji. To je daleko najbolji izbor.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/drugi-hotel-je-malo-skuplji-ali-znatno-bolji-to-je-daleko-na.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Drugi je malo skuplji, ali znatno bolji. Ima odličnu ocjenu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/drugi-je-malo-skuplji-ali-znatno-bolji-ima-odlicnu-ocjenu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Dugo smo odlučivali, a onda smo se preselili na jug.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/dugo-smo-odlucivali-a-onda-smo-se-preselili-na-jug.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Dugo smo odlučivali., Odlučili smo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/dugo-smo-odlucivali-odlucili-smo.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Gdje bi radije živio, na moru ili u unutrašnjosti?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/gdje-bi-radije-zivio-na-moru-ili-u-unutrasnjosti-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Gdje je bolje živjeti, u velikom ili u malom gradu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/gdje-je-bolje-zivjeti-u-velikom-ili-u-malom-gradu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Glavni razlog je cijena.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/glavni-razlog-je-cijena.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "glavni razlog",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/glavni-razlog.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Hm, a što je za tebe važnije, cijena ili kvaliteta?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/hm-a-sto-je-za-tebe-vaznije-cijena-ili-kvaliteta.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Hoćemo li uzeti veliki kofer?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/hocemo-li-uzeti-veliki-kofer-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Hotel ima četiri zvjezdice i odličnu ocjenu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/hotel-ima-cetiri-zvjezdice-i-odlicnu-ocjenu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Hotel ima odličnu lokaciju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/hotel-ima-odlicnu-lokaciju.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Hotel je znatno skuplji od apartmana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/hotel-je-znatno-skuplji-od-apartmana.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Hrvatski mi je sve lakši.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/hrvatski-mi-je-sve-laksi.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "I? Koji je najbolji?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/i-koji-je-najbolji-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Imamo dvije opcije: hotel ili apartman.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/imamo-dvije-opcije-hotel-ili-apartman.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "isplatiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/isplatiti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "istok",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/istok.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Istra je na zapadu, blizu Italije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/istra-je-na-zapadu-blizu-italije.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Iz kojeg si dijela Poljske?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/iz-kojeg-si-dijela-poljske-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Izabrao bih onaj, jer je bliže plaži.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/izabrao-bih-onaj-jer-je-blize-plazi.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "izbor",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/izbor.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Izvan sezone, jer je jeftinije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/izvan-sezone-jer-je-jeftinije.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Izvan sezone možeš povoljno putovati.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/izvan-sezone-mozes-povoljno-putovati.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "izvan sezone",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/izvan-sezone.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ja sam sa sjevera Poljske. Kod nas su zime hladnije nego u Dalmaciji, a ljeta su kraća.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ja-sam-sa-sjevera-poljske-kod-nas-su-zime-hladnije-nego-u-da.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "jug",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/jug.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Kada je najbolje ići na more?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/kada-je-najbolje-ici-na-more-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Koji je najbrži put do Splita?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/koji-je-najbrzi-put-do-splita.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "kontinentalni",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/kontinentalni.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Kupila sam jaknu upola cijene.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/kupila-sam-jaknu-upola-cijene.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Kupila sam novi tablet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/kupila-sam-novi-tablet.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Kupnja preko interneta je jednostavna.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/kupnja-preko-interneta-je-jednostavna.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "kupnja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/kupnja.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Kvaliteta je važnija od cijene.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/kvaliteta-je-vaznija-od-cijene.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "kvaliteta",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/kvaliteta.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "lagano",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/lagano.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "lakše",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/lakse.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "lokacija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/lokacija.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "malo manji",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/malo-manji.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "mirniji",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/mirniji.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Mladi se sele u gradove., Preselili smo se na jug.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/mladi-se-sele-u-gradove-preselili-smo-se-na-jug.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Mnogi mladi se sele iz sela u gradove.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/mnogi-mladi-se-sele-iz-sela-u-gradove.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Moj grad je manji i mirniji od Zagreba. Zrak je čišći, ali život je teži jer nema posla.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/moj-grad-je-manji-i-mirniji-od-zagreba-zrak-je-cisci-ali-ziv.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "More je ovdje čišće nego u gradu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/more-je-ovdje-cisce-nego-u-gradu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "More je ovdje čišće.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/more-je-ovdje-cisce.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Na akciji su dvije kave po cijeni jedne.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/na-akciji-su-dvije-kave-po-cijeni-jedne.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Na jugu je ljeti puno toplije nego na sjeveru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/na-jugu-je-ljeti-puno-toplije-nego-na-sjeveru.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Na moru je ljeti velika vlaga.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/na-moru-je-ljeti-velika-vlaga.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Na selu je život sporiji, ali zdraviji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/na-selu-je-zivot-sporiji-ali-zdraviji.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "na vrijeme",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/na-vrijeme.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Nova cesta je puno šira.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/nova-cesta-je-puno-sira.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Novi stan je svjetliji i veći.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/novi-stan-je-svjetliji-i-veci.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Novi stan je svjetliji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/novi-stan-je-svjetliji.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Onda ću tražiti stan u predgrađu!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/onda-cu-traziti-stan-u-predgradju-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Onda je to daleko najbolji izbor!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/onda-je-to-daleko-najbolji-izbor-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Onda je to daleko najbolji izbor!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/onda-je-to-daleko-najbolji-izbor.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "opcija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/opcija.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ostajemo deset dana. Što se više isplati?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ostajemo-deset-dana-sto-se-vise-isplati.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ova ulica je tiša od glavne ulice.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ova-ulica-je-tisa-od-glavne-ulice.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ova ulica je tiša od glavne.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ova-ulica-je-tisa-od-glavne.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ovaj apartman je jeftiniji, a onaj je bliže plaži. Koji bi ti izabrao?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ovaj-apartman-je-jeftiniji-a-onaj-je-blize-plazi-koji-bi-ti.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ovaj hotel je daleko najbolji izbor.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ovaj-hotel-je-daleko-najbolji-izbor.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ovaj laptop je znatno skuplji, ali i bolji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ovaj-laptop-je-znatno-skuplji-ali-i-bolji.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ovaj stan je tiši.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ovaj-stan-je-tisi.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "posto",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/posto.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "povoljan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/povoljan.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "povoljno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/povoljno.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "predgrađe",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/predgradje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Prije kupnje uvijek čitam recenzije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/prije-kupnje-uvijek-citam-recenzije.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Primorje ima blažu klimu od kontinentalne Hrvatske.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/primorje-ima-blazu-klimu-od-kontinentalne-hrvatske.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "primorje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/primorje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Pročitala sam recenzije. Prvi apartman ima ocjenu devet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/procitala-sam-recenzije-prvi-apartman-ima-ocjenu-devet.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "prometan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/prometan.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Prvi je najjeftiniji, ali ima loše recenzije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/prvi-je-najjeftiniji-ali-ima-lose-recenzije.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "puno povoljniji",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/puno-povoljniji.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Radije bih živio na moru, jer je toplije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/radije-bih-zivio-na-moru-jer-je-toplije.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Razumijem!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/razumijem-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "recenzija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/recenzija.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Rezerviram!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/rezerviram.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "S druge strane, apartman je znatno jeftiniji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/s-druge-strane-apartman-je-znatno-jeftiniji.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "s druge strane",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/s-druge-strane.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "S jedne strane, hotel je udobniji od apartmana. S druge strane, apartman je znatno jeftiniji. Što duže ostajemo, to se više isplati apartman. To je najbolja opcija.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/s-jedne-strane-hotel-je-udobniji-od-apartmana-s-druge-strane.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "S jedne strane, hotel je udobniji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/s-jedne-strane-hotel-je-udobniji.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "s jedne strane",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/s-jedne-strane.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Sa sjevera Poljske, iz Gdanjska.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sa-sjevera-poljske-iz-gdanjska.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "sezona",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sezona.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "širi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/siri.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "sjever",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sjever.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Slavonija je na istoku Hrvatske.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/slavonija-je-na-istoku-hrvatske.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Slažem se. A je li ti hrvatski sve lakši?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/slazem-se-a-je-li-ti-hrvatski-sve-laksi.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Sniženje traje do kraja mjeseca.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/snizenje-traje-do-kraja-mjeseca.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "sniženje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/snizenje.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Split je prometniji od Zadra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/split-je-prometniji-od-zadra.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Stalno uspoređuje cijene., Usporedila sam ponude.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/stalno-usporedjuje-cijene-usporedila-sam-ponude.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Stanovi u predgrađu su jeftiniji i često svjetliji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/stanovi-u-predgradju-su-jeftiniji-i-cesto-svjetliji.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "stanovnik",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/stanovnik.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Stanovništvo na otocima je sve starije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/stanovnistvo-na-otocima-je-sve-starije.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "stanovništvo",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/stanovnistvo.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Što dulje učim, to bolje razumijem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-dulje-ucim-to-bolje-razumijem.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Što duže ostajemo, to se više isplati apartman.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-duze-ostajemo-to-se-vise-isplati-apartman.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Što je grad veći, to je život skuplji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-je-grad-veci-to-je-zivot-skuplji.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Što manje stvari nosiš, to lakše putuješ.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-manje-stvari-nosis-to-lakse-putujes.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Što prije rezerviraš, to je jeftinije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-prije-rezerviras-to-je-jeftinije.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "što prije, to bolje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-prije-to-bolje.mp3",
+      "kinds": [
+        "answer",
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "što… to…",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-to.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Što više, to bolje!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-vise-to-bolje.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Što više učim, to bolje govorim. Što je hotel bliže plaži, to je skuplji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/sto-vise-ucim-to-bolje-govorim-sto-je-hotel-blize-plazi-to-j.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "svjetliji",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/svjetliji.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "tablet",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/tablet.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "teže",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/teze.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "tiši",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/tisi.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "To je daleko najbolji restoran.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/to-je-daleko-najbolji-restoran.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "To je najpovoljnija ponuda na internetu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/to-je-najpovoljnija-ponuda-na-internetu.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Tražim stan. Je li bolje živjeti u centru ili u predgrađu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-05/trazim-stan-je-li-bolje-zivjeti-u-centru-ili-u-predgradju-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "U centru je velika buka.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/u-centru-je-velika-buka.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "U centru je živahnije, ali predgrađe je mirnije i tiše.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/u-centru-je-zivahnije-ali-predgradje-je-mirnije-i-tise.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "U svakom slučaju, dogovoreno!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/u-svakom-slucaju-dogovoreno.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "u svakom slučaju",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/u-svakom-slucaju.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "U unutrašnjosti su zime hladnije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/u-unutrasnjosti-su-zime-hladnije.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Ulaznice je bolje kupiti na vrijeme.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/ulaznice-je-bolje-kupiti-na-vrijeme.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "unutrašnjost",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/unutrasnjost.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "upola cijene",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/upola-cijene.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Usporedila sam tri hotela u Zadru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/usporedila-sam-tri-hotela-u-zadru.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Usporedila sam tri ponude.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/usporedila-sam-tri-ponude.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "usporedim, usporediš, usporedi, usporedimo, usporedite, usporede. usporedio, usporedila, usporedili. usporedit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/usporedim-usporedis-usporedi-usporedimo-usporedite-usporede.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "usporediti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/usporediti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "vlaga",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/vlaga.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Volim putovati lagano.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/volim-putovati-lagano.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Za Split imamo dvije opcije: hotel u centru ili apartman izvan grada. Što misliš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/za-split-imamo-dvije-opcije-hotel-u-centru-ili-apartman-izva.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Zagreb ima skoro osamsto tisuća stanovnika.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zagreb-ima-skoro-osamsto-tisuca-stanovnika.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Zagreb je živahniji nego što sam mislila.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zagreb-je-zivahniji-nego-sto-sam-mislila.mp3",
+      "kinds": [
+        "question"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "zapad",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zapad.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Zime su hladnije, a ljeta su kraća.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zime-su-hladnije-a-ljeta-su-kraca.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Zimi je teže naći posao na moru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zimi-je-teze-naci-posao-na-moru.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "živahan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zivahan.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Živimo na sjeveru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zivimo-na-sjeveru.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Živimo u mirnom predgrađu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zivimo-u-mirnom-predgradju.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Život je ovdje mirniji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zivot-je-ovdje-mirniji.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Život u manjem gradu je mirniji i jeftiniji nego u Zagrebu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zivot-u-manjem-gradu-je-mirniji-i-jeftiniji-nego-u-zagrebu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "znatno skuplji",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/znatno-skuplji.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "znatno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/znatno.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "Zrak je čišći u planinama.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zrak-je-cisci-u-planinama.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        5
+      ]
+    },
+    {
+      "text": "zvjezdica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-05/zvjezdica.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        5
       ]
     }
   ]
