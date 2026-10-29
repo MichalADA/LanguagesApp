@@ -783,6 +783,140 @@
         ],
         "correctOptionId": "hour"
       }
+    },
+    {
+      "id": "b1-razgledavanje-stana",
+      "level": "B1",
+      "titlePl": "Oglądanie mieszkania",
+      "titleEn": "Viewing a flat",
+      "topic": "mieszkanie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Ovo je dnevni boravak. Ima tri velika prozora.",
+          "textPl": "To jest salon. Ma trzy duże okna.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Lijepo, ali vidim samo dvije utičnice.",
+          "textPl": "Ładnie, ale widzę tylko dwa gniazdka.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, nema puno utičnica, ali možete koristiti produžni kabel.",
+          "textPl": "Tak, nie ma wielu gniazdek, ale może pan używać przedłużacza.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Koliko ima ormara?",
+          "textPl": "Ile jest szaf?",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ima dva ormara i nekoliko polica.",
+          "textPl": "Są dwie szafy i kilka półek.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobro. A koliko stanova ima u zgradi?",
+          "textPl": "Dobrze. A ile mieszkań jest w budynku?",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/06-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Dvanaest stanova, a susjedi su jako mirni.",
+          "textPl": "Dwanaście mieszkań, a sąsiedzi są bardzo spokojni.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/07-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Ile mieszkań jest w budynku?",
+        "options": [
+          {
+            "id": "twelve",
+            "textPl": "Dwanaście"
+          },
+          {
+            "id": "three",
+            "textPl": "Trzy"
+          },
+          {
+            "id": "two",
+            "textPl": "Dwa"
+          }
+        ],
+        "correctOptionId": "twelve"
+      }
+    },
+    {
+      "id": "b1-novi-stan",
+      "level": "B1",
+      "titlePl": "Nowe mieszkanie",
+      "titleEn": "The new flat",
+      "topic": "mieszkanie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, kako napreduje uređenje stana?",
+          "textPl": "Ana, jak idzie urządzanie mieszkania?",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Polako. Obojili smo zidove, ali još nam nedostaje puno stvari.",
+          "textPl": "Powoli. Pomalowaliśmy ściany, ale wciąż brakuje nam wielu rzeczy.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Što vam najviše nedostaje?",
+          "textPl": "Czego najbardziej wam brakuje?",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Stol za kuhinju i nekoliko stolica.",
+          "textPl": "Stołu do kuchni i kilku krzeseł.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Moj brat prodaje rabljeni stol, skoro nov.",
+          "textPl": "Mój brat sprzedaje używany stół, prawie nowy.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Super! Nazvat ću ga danas.",
+          "textPl": "Super! Zadzwonię do niego dziś.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Czego Anie najbardziej brakuje?",
+        "options": [
+          {
+            "id": "table",
+            "textPl": "Stołu do kuchni i krzeseł"
+          },
+          {
+            "id": "paint",
+            "textPl": "Farby do ścian"
+          },
+          {
+            "id": "sofa",
+            "textPl": "Kanapy"
+          }
+        ],
+        "correctOptionId": "table"
+      }
     }
   ]
 }

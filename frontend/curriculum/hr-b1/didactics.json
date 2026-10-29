@@ -21,6 +21,9 @@
     },
     "6": {
       "description": "Podróżujesz po Chorwacji: pytasz dokąd i którędy, rozumiesz wskazówki z czasownikami ruchu (ući, izaći, prijeći, proći), radzisz sobie na autostradzie i w porcie."
+    },
+    "7": {
+      "description": "Wynajmujesz mieszkanie: rozmawiasz o umowie, liczysz pokoje i gniazdka (dopełniacz liczby mnogiej), zgłaszasz usterki, urządzasz się i dogadujesz z właścicielem."
     }
   },
   "lessons": {
@@ -4941,6 +4944,841 @@
         ],
         "minSentences": 3,
         "sample": "Iz Zagreba smo krenuli rano ujutro. Prvo smo išli autocestom do Splita, a onda smo se ukrcali na trajekt. Čim smo se iskrcali, otišli smo na plažu. Konačno smo stigli!"
+      }
+    },
+    "b1-31": {
+      "grammar": {
+        "title": "Ugovor o najmu",
+        "text": "Z A2 znasz stanarina, režije i polog. W umowie dochodzą: najam (najem), ugovor o najmu (umowa o + miejscownik), otkazni rok (okres wypowiedzenia). W rozmowie mówisz stanar (lokator) i vlasnik stana (właściciel), a w samej umowie zobaczysz urzędowe najmoprimac (najemca) i najmodavac (wynajmujący). Przydatne: U ugovoru piše… (w umowie jest napisane…), u visini jedne stanarine (w wysokości jednego czynszu).",
+        "table": [
+          {
+            "label": "w rozmowie / w umowie",
+            "rows": [
+              {
+                "base": "lokator",
+                "form": "stanar / najmoprimac",
+                "meaning": "najemca"
+              },
+              {
+                "base": "właściciel",
+                "form": "vlasnik stana / najmodavac",
+                "meaning": "wynajmujący"
+              },
+              {
+                "base": "umowa",
+                "form": "ugovor o najmu",
+                "meaning": "umowa najmu"
+              },
+              {
+                "base": "wypowiedzenie",
+                "form": "otkazni rok je mjesec dana",
+                "meaning": "okres wypowiedzenia to miesiąc"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "tip": "Grzecznie do właściciela mówisz na Vi: Vidio sam vaš oglas. Koliko iznosi stanarina?"
+      },
+      "gap": {
+        "sentence": 5,
+        "word": "najmu"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 10,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne wyrażenie.",
+          "prompt": "umowa najmu",
+          "options": [
+            "ugovor o najmu",
+            "ugovor od najma",
+            "ugovor za najam"
+          ],
+          "correct": 0,
+          "explanation": "ugovor o + miejscownik: o najmu."
+        }
+      ],
+      "model": {
+        "title": "Telefon w sprawie ogłoszenia",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Dobar dan, zovem zbog oglasa za stan u Ilici.",
+            "pl": "Dzień dobry, dzwonię w sprawie ogłoszenia o mieszkaniu na Ilicy."
+          },
+          {
+            "speaker": "Vlasnik",
+            "hr": "Dobar dan. Stan je još slobodan, od prvog listopada.",
+            "pl": "Dzień dobry. Mieszkanie jest jeszcze wolne, od pierwszego października."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Koliko iznosi stanarina i jesu li režije uključene?",
+            "pl": "Ile wynosi czynsz i czy opłaty są wliczone?"
+          },
+          {
+            "speaker": "Vlasnik",
+            "hr": "Petsto eura, režije nisu uključene. Tražim i polog.",
+            "pl": "Pięćset euro, opłaty nie są wliczone. Wymagam też kaucji."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Razumijem. A koliki je otkazni rok?",
+            "pl": "Rozumiem. A jaki jest okres wypowiedzenia?"
+          },
+          {
+            "speaker": "Vlasnik",
+            "hr": "Mjesec dana. Možete doći pogledati stan sutra.",
+            "pl": "Miesiąc. Może pan przyjść obejrzeć mieszkanie jutro."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Dzwonię w sprawie mieszkania",
+        "partner": "Vlasnik",
+        "turns": [
+          {
+            "say": "Dobar dan, izvolite.",
+            "pl": "Dzień dobry, słucham."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że dzwonisz w sprawie ogłoszenia (Zovem zbog oglasa…).",
+              "accept": [
+                "Dobar dan, zovem zbog oglasa za stan."
+              ],
+              "open": true,
+              "pattern": "^((dobar dan|dobro jutro|oprostite) )?((zovem|javljam se) (zbog|u vezi) (oglasa|stana)|vidio sam vaš oglas|vidjela sam vaš oglas)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Da, stan je još slobodan.",
+            "pl": "Tak, mieszkanie jest jeszcze wolne."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj o czynsz i opłaty (Koliko iznosi stanarina…?).",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^((dobro|super|odlično) )?(koliko (iznosi|je) (stanarina|najam)|jesu li režije uključene|koliko su režije)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Petsto eura plus režije. Tražim i polog.",
+            "pl": "Pięćset euro plus opłaty. Wymagam też kaucji."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj o okres wypowiedzenia albo o zwierzęta (Koliki je otkazni rok? / Jesu li ljubimci dopušteni?).",
+              "accept": [
+                "Koliki je otkazni rok?",
+                8
+              ],
+              "open": true,
+              "pattern": "^((a|dobro|u redu|razumijem) )*(koliki je otkazni rok|koliko traje otkazni rok|jesu li (kućni )?ljubimci dopušteni|smijem li imati (psa|mačku|ljubimca)|na koliko (se )?potpisuje ugovor)( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Mjesec dana. Možete doći pogledati stan sutra.",
+            "pl": "Miesiąc. Może pan przyjść obejrzeć mieszkanie jutro."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 pytania do właściciela mieszkania z ogłoszenia.",
+        "points": [
+          "o koszty (stanarina, režije, polog)",
+          "o umowę (otkazni rok, ljubimci…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "stanarina",
+              "režije",
+              "polog",
+              "ugovor",
+              "najam",
+              "rok"
+            ],
+            "label": "warunki najmu"
+          },
+          {
+            "any": [
+              "koliko",
+              "koliki",
+              "jesu",
+              "je",
+              "smijem",
+              "mogu",
+              "li"
+            ],
+            "label": "pytanie"
+          }
+        ],
+        "sample": "Koliko iznosi stanarina i jesu li režije uključene? Na koliko se potpisuje ugovor o najmu?"
+      }
+    },
+    "b1-32": {
+      "grammar": {
+        "title": "Pet soba, nekoliko ladica",
+        "text": "Po liczebnikach od 5 w górę, po nekoliko (kilka), mnogo / puno (dużo), previše (za dużo), koliko (ile) i po nema stoi dopełniacz liczby mnogiej. Rodzaj męski: -a, krótkie słowa często -ova (prozor → pet prozora, stan → deset stanova). Rodzaj żeński na -a: też -a, więc wygląda jak mianownik l.poj. (soba → pet soba, utičnica → nema utičnica). Niektóre żeńskie mają -i (stvar → previše stvari). Nieregularne: čovjek → puno ljudi.",
+        "table": [
+          {
+            "label": "dopełniacz liczby mnogiej",
+            "rows": [
+              {
+                "base": "prozor (m.)",
+                "form": "mnogo prozora",
+                "meaning": "dużo okien"
+              },
+              {
+                "base": "stan (m.)",
+                "form": "koliko stanova",
+                "meaning": "ile mieszkań"
+              },
+              {
+                "base": "soba (ż.)",
+                "form": "pet soba",
+                "meaning": "pięć pokoi"
+              },
+              {
+                "base": "utičnica (ż.)",
+                "form": "nema utičnica",
+                "meaning": "nie ma gniazdek"
+              },
+              {
+                "base": "stvar (ż.)",
+                "form": "previše stvari",
+                "meaning": "za dużo rzeczy"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          10
+        ],
+        "tip": "2, 3, 4 to inna forma (dvije sobe, tri prozora) — znasz ją z A2. Dopełniacz liczby mnogiej zaczyna się od pięciu: pet soba."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "utičnica"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 3,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Mamy dziesięć okien.",
+          "options": [
+            "Imamo deset prozora.",
+            "Imamo deset prozori.",
+            "Imamo deset prozore."
+          ],
+          "correct": 0,
+          "explanation": "Po 5+ dopełniacz liczby mnogiej: prozora."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Nie ma gniazdek.",
+          "options": [
+            "Nema utičnica.",
+            "Nema utičnicama.",
+            "Nema utičnicu."
+          ],
+          "correct": 0,
+          "explanation": "nema + dopełniacz liczby mnogiej: utičnica."
+        }
+      ],
+      "listening": "b1-razgledavanje-stana",
+      "dialog": {
+        "title": "Opisz mieszkanie",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Koliko soba ima tvoj stan?",
+            "pl": "Ile pokoi ma twoje mieszkanie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, ile pokoi ma twoje mieszkanie.",
+              "accept": [
+                "Moj stan ima tri sobe."
+              ],
+              "open": true,
+              "pattern": "^((moj )?stan ima|imam|ima)( \\p{L}+){1,2} (sobe|soba|sobu)( \\p{L}+){0,5}$|^(jednu|dvije|tri|četiri|pet|šest) (sobu|sobe|soba)$"
+            }
+          },
+          {
+            "say": "A imaš li dovoljno utičnica?",
+            "pl": "A masz wystarczająco gniazdek?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy masz wystarczająco gniazdek (Nemam dovoljno… / Imam…).",
+              "accept": [
+                "Nemam, u kuhinji nema dovoljno utičnica."
+              ],
+              "open": true,
+              "pattern": "^((imam|nemam|da|ne|nažalost) )?((u \\p{L}+( \\p{L}+)? )?(nema|ima|imam|nemam) (dovoljno |puno |malo |previše |samo )?(\\p{L}+ )?utičnic(a|e|u))( \\p{L}+){0,3}$|^(imam|nemam|da|ne)$"
+            }
+          },
+          {
+            "say": "Što ti još treba za stan?",
+            "pl": "Czego jeszcze potrzebujesz do mieszkania?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego potrzebujesz (Trebam nekoliko…, deset…).",
+              "accept": [
+                "Trebam nekoliko vješalica i zavjese."
+              ],
+              "open": true,
+              "pattern": "^(trebam|trebamo|moram kupiti|trebam kupiti|treba mi|trebaju mi|nedostaje mi|nedostaju mi)( još)?( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "Idemo zajedno u kupovinu!",
+            "pl": "Chodźmy razem na zakupy!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Opisz w 2 zdaniach, ile czego jest w twoim mieszkaniu (pet prozora, nekoliko ladica…).",
+        "points": [
+          "liczebnik 5+ / nekoliko / mnogo / nema",
+          "rzeczownik w dopełniaczu liczby mnogiej"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "pet",
+              "šest",
+              "sedam",
+              "osam",
+              "deset",
+              "nekoliko",
+              "mnogo",
+              "puno",
+              "previše",
+              "malo",
+              "nema"
+            ],
+            "label": "liczba / nema"
+          },
+          {
+            "any": [
+              "soba",
+              "prozora",
+              "utičnica",
+              "ladica",
+              "ormara",
+              "stvari",
+              "polica",
+              "stanova",
+              "ljudi",
+              "vješalica",
+              "žarulja"
+            ],
+            "label": "dopełniacz l.mn."
+          }
+        ],
+        "sample": "Moj stan ima pet prozora i nekoliko ormara. U kuhinji nema dovoljno utičnica."
+      }
+    },
+    "b1-33": {
+      "grammar": {
+        "title": "Odvod je začepljen",
+        "text": "Z A2 znasz Pokvario se bojler. Usterkę opisujesz też imiesłowem, który zachowuje się jak przymiotnik i zgadza się z rodzajem: odvod je začepljen, brava je slomljena, okno je razbijeno. Coś pękło: puknuti — Pukla je cijev. Pleśń: ima plijesni (dopełniacz). Prosząc o pomoc, mów grzecznie: Molim vas, pošaljite majstora; Kad bi majstor mogao doći?",
+        "table": [
+          {
+            "label": "opis usterki",
+            "rows": [
+              {
+                "base": "m.",
+                "form": "Odvod je začepljen.",
+                "meaning": "Odpływ jest zatkany."
+              },
+              {
+                "base": "ż.",
+                "form": "Brava je slomljena.",
+                "meaning": "Zamek jest zepsuty."
+              },
+              {
+                "base": "pęknąć",
+                "form": "Pukla je cijev.",
+                "meaning": "Pękła rura."
+              },
+              {
+                "base": "prośba",
+                "form": "Kad bi majstor mogao doći?",
+                "meaning": "Kiedy fachowiec mógłby przyjść?"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          9
+        ],
+        "tip": "slomljen (złamany, zepsuty mechanicznie) vs pokvaren (zepsuty, nie działa) — oba się zgadzają z rodzajem."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "slomljena"
+      },
+      "translate": [
+        {
+          "sentence": 5,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zamek jest zepsuty.",
+          "options": [
+            "Brava je slomljena.",
+            "Brava je slomljen.",
+            "Brava se slomljena."
+          ],
+          "correct": 0,
+          "explanation": "brava (rodzaj żeński) → slomljena."
+        }
+      ],
+      "model": {
+        "title": "Zgłoszenie usterki",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan, ovdje Ana iz stana broj pet. Želim prijaviti kvar.",
+            "pl": "Dzień dobry, tu Ana z mieszkania numer pięć. Chcę zgłosić usterkę."
+          },
+          {
+            "speaker": "Vlasnik",
+            "hr": "Izvolite, što se dogodilo?",
+            "pl": "Słucham, co się stało?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Puknula je cijev ispod sudopera i voda curi po podu.",
+            "pl": "Pękła rura pod zlewem i woda cieknie po podłodze."
+          },
+          {
+            "speaker": "Vlasnik",
+            "hr": "Joj, to je hitno. Zatvorite glavni ventil.",
+            "pl": "Ojej, to pilne. Proszę zakręcić główny zawór."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Već sam zatvorila. Kad bi majstor mogao doći?",
+            "pl": "Już zakręciłam. Kiedy fachowiec mógłby przyjść?"
+          },
+          {
+            "speaker": "Vlasnik",
+            "hr": "Poslat ću majstora za sat vremena.",
+            "pl": "Wyślę fachowca za godzinę."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Usterka",
+        "partner": "Vlasnik",
+        "turns": [
+          {
+            "say": "Halo, izvolite?",
+            "pl": "Halo, słucham?"
+          },
+          {
+            "reply": {
+              "prompt": "Przedstaw się i powiedz, że chcesz zgłosić usterkę.",
+              "accept": [
+                "Dobar dan, želim prijaviti kvar."
+              ],
+              "open": true,
+              "pattern": "^((dobar dan|halo|dobro jutro|ovdje \\p{L}+( iz stana( broj)? \\p{L}+)?) )*((želim|htio bih|htjela bih|moram) prijaviti kvar|imam (problem|kvar))( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Što se dogodilo?",
+            "pl": "Co się stało?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz usterkę (… je začepljen / slomljen, ne radi…, curi…).",
+              "accept": [
+                1,
+                8
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,5}(je |su )?(začepljen|začepljena|začepljeno|slomljen|slomljena|slomljeno|pokvaren|pokvarena|pokvareno|pukla|pukao|puklo|puknula|puknuo)( \\p{L}+){0,6}$|^(\\p{L}+ ){0,5}(ne radi|curi|se pokvario|se pokvarila|se pokvarilo)( \\p{L}+){0,5}$|^(\\p{L}+ ){0,4}ima plijesni( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Razumijem. Poslat ću majstora sutra ujutro.",
+            "pl": "Rozumiem. Wyślę fachowca jutro rano."
+          },
+          {
+            "reply": {
+              "prompt": "Poproś, żeby przyszedł wcześniej — to pilne (To je hitno, …).",
+              "accept": [
+                "To je hitno, može li danas?"
+              ],
+              "open": true,
+              "pattern": "^((ali|nažalost|molim vas) )*(to je (jako )?hitno|može li (danas|ranije|što prije)|kad bi (mogao|mogli) doći (danas|ranije)|pošaljite ga (danas|što prije))( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Dobro, doći će danas poslijepodne.",
+            "pl": "Dobrze, przyjdzie dziś po południu."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz krótką wiadomość do właściciela: jaka jest usterka i o co prosisz (2 zdania).",
+        "points": [
+          "usterka (začepljen, slomljen, ne radi, curi…)",
+          "prośba (Molim vas, pošaljite… / Kad bi…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "začepljen",
+              "začepljena",
+              "slomljen",
+              "slomljena",
+              "pokvario",
+              "pokvarila",
+              "pukla",
+              "pukao",
+              "curi",
+              "radi",
+              "plijesni"
+            ],
+            "label": "usterka"
+          },
+          {
+            "any": [
+              "molim",
+              "pošaljite",
+              "hitno",
+              "možete",
+              "mogao",
+              "mogli"
+            ],
+            "label": "prośba"
+          }
+        ],
+        "sample": "Poštovani, u kupaonici je začepljen odvod i ne radi bojler. Molim vas, pošaljite majstora što prije."
+      }
+    },
+    "b1-34": {
+      "grammar": {
+        "title": "Nedostaje mi stol",
+        "text": "nedostajati = brakować, ale konstrukcja jest inna niż po polsku: to, czego brakuje, stoi w mianowniku, a osoba w celowniku. Nedostaje mi stol (brakuje mi stołu), Nedostaju nam dvije stolice (brakuje nam dwóch krzeseł) — czasownik zgadza się z rzeczą. Nowe pary aspektowe: bojiti → obojiti, uređivati → urediti, mijenjati → promijeniti.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "bojiti → obojiti",
+                "form": "Bojimo zidove. / Obojili smo sobu u plavo.",
+                "meaning": "Malujemy ściany. / Pomalowaliśmy pokój na niebiesko."
+              },
+              {
+                "base": "uređivati → urediti",
+                "form": "Polako uređujemo stan. / Uredila sam kutak.",
+                "meaning": "Powoli urządzamy mieszkanie. / Urządziłam kącik."
+              },
+              {
+                "base": "mijenjati → promijeniti",
+                "form": "Smijemo li mijenjati boju? / Promijenio sam žarulju.",
+                "meaning": "Czy możemy zmieniać kolor? / Wymieniłem żarówkę."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          5,
+          6
+        ],
+        "tip": "Polskie „brakuje mi stołu” (dopełniacz) → po chorwacku nedostaje mi stol (mianownik)."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "Nedostaju"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Brakuje mi lampy.",
+          "options": [
+            "Nedostaje mi lampa.",
+            "Nedostaje mi lampe.",
+            "Nedostajem lampu."
+          ],
+          "correct": 0,
+          "explanation": "nedostajati + mianownik (lampa) i celownik osoby (mi)."
+        }
+      ],
+      "listening": "b1-novi-stan",
+      "dialog": {
+        "title": "Urządzamy się",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Kako ti je novi stan?",
+            "pl": "Jak tam nowe mieszkanie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak ci się podoba i co jest nie tak (… je lijep, ali…).",
+              "accept": [
+                "Lijep je, ali namještaj je star."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,3}(je|su)( \\p{L}+){0,3}( ali( \\p{L}+){1,6})?$|^(super|odlično|lijepo|dobro|nije loše)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Što ti još nedostaje?",
+            "pl": "Czego ci jeszcze brakuje?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego brakuje (Nedostaje mi… / Nedostaju mi…).",
+              "accept": [
+                "Nedostaje mi kauč.",
+                2
+              ],
+              "open": true,
+              "pattern": "^(još (mi|nam) )?(nedostaje|nedostaju)( mi| nam)?( još)?( \\p{L}+){1,5}$"
+            }
+          },
+          {
+            "say": "A hoćeš li bojiti zidove?",
+            "pl": "A będziesz malować ściany?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy pomalujesz ściany (i na jaki kolor).",
+              "accept": [
+                "Hoću, obojit ću ih u bijelo."
+              ],
+              "open": true,
+              "pattern": "^(hoću|neću|da|ne|možda)( (obojit ću|bojit ću)( ih)?( zidove)?( u \\p{L}+)?)?$|^(obojit ću|bojit ću)( ih)?( zidove)?( u \\p{L}+)?$|^((da|ne|možda) )?(moram|moramo) (prvo )?pitati vlasnika( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Javi ako trebaš pomoć!",
+            "pl": "Daj znać, jeśli potrzebujesz pomocy!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o urządzaniu mieszkania: co już zrobiłeś / zrobiłaś i czego jeszcze brakuje.",
+        "points": [
+          "co już zrobione (obojili smo, kupili smo…)",
+          "czego brakuje (nedostaje mi…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "nedostaje",
+              "nedostaju"
+            ],
+            "label": "nedostaje / nedostaju"
+          },
+          {
+            "any": [
+              "obojili",
+              "obojio",
+              "obojila",
+              "uredili",
+              "uredio",
+              "uredila",
+              "kupili",
+              "kupio",
+              "kupila",
+              "promijenio",
+              "promijenila"
+            ],
+            "label": "co już zrobione"
+          }
+        ],
+        "sample": "Obojili smo zidove i kupili rabljeni kauč. Još nam nedostaju stol i dvije stolice."
+      }
+    },
+    "b1-35": {
+      "grammar": {
+        "title": "Rozmowa z właścicielem — wszystko razem",
+        "text": "Najem: stanarina, režije, polog, ugovor o najmu, otkazni rok. Ile czego: pet soba, nema utičnica. Usterka: Odvod je začepljen. Brak: Nedostaje mi stol. Przy wyprowadzce: Želim vas obavijestiti da se selim. Kada ćete mi vratiti polog?",
+        "examples": [
+          1,
+          3,
+          4
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "W budynku jest dziesięć mieszkań.",
+          "options": [
+            "U zgradi ima deset stanova.",
+            "U zgradi ima deset stanovi.",
+            "U zgradi ima deset stana."
+          ],
+          "correct": 0,
+          "explanation": "Po 5+ dopełniacz liczby mnogiej: stanova."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Wyprowadzka",
+        "partner": "Vlasnik",
+        "turns": [
+          {
+            "say": "Dobar dan! Je li sve u redu sa stanom?",
+            "pl": "Dzień dobry! Czy wszystko w porządku z mieszkaniem?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że chcesz poinformować o wyprowadzce (Želim vas obavijestiti…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((dobar dan|sve je u redu|dobro|hvala|da|ali) )*((želim vas obavijestiti|moram vam reći|htio bih vam reći|htjela bih vam reći)( da)?( \\p{L}+){1,6}|(selim se|iselit ću se)( \\p{L}+){0,5})$"
+            }
+          },
+          {
+            "say": "Šteta! Do kada ostajete?",
+            "pl": "Szkoda! Do kiedy pan zostaje?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, do kiedy zostajesz (Do kraja…, do prvog…).",
+              "accept": [
+                "Do kraja mjeseca."
+              ],
+              "open": true,
+              "pattern": "^((ostajem|ostat ću|ostajemo|ostat ćemo) )?do (kraja|prvog|petnaestog|\\p{L}+)( \\p{L}+){0,3}$|^(još )?(mjesec|dva tjedna|tjedan) dana$"
+            }
+          },
+          {
+            "say": "U redu. Prije odlaska ću pogledati stanje stana.",
+            "pl": "W porządku. Przed wyjazdem obejrzę stan mieszkania."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, kiedy odda kaucję (Kada ćete mi vratiti polog?).",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^((dobro|u redu|naravno|a) )*(kada|kad) (ćete mi vratiti polog|mi vraćate polog|ću dobiti polog( natrag)?)$"
+            }
+          },
+          {
+            "say": "Odmah nakon pregleda stana.",
+            "pl": "Zaraz po obejrzeniu mieszkania."
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Napisz w 3–4 zdaniach wiadomość do właściciela: wyprowadzasz się, kiedy, w jakim stanie jest mieszkanie i co z kaucją.",
+        "points": [
+          "wyprowadzka (obavijestiti, selim se)",
+          "termin (do kraja…)",
+          "stan mieszkania i kaucja"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "obavijestiti",
+              "selim",
+              "iseliti",
+              "otkaz"
+            ],
+            "label": "wyprowadzka"
+          },
+          {
+            "any": [
+              "polog",
+              "stanje",
+              "režije",
+              "ugovor"
+            ],
+            "label": "warunki"
+          },
+          {
+            "any": [
+              "do",
+              "kraja",
+              "prvog"
+            ],
+            "label": "termin"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Poštovani, želim vas obavijestiti da se selim do kraja mjeseca. Otkaz ću vam poslati pismeno. Stanje stana je dobro. Kada ćete mi vratiti polog?"
       }
     }
   }

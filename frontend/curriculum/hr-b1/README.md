@@ -1,6 +1,6 @@
 # Kurs chorwackiego B1 — plan poziomu (12 modułów, 60 lekcji)
 
-Status: **gotowe moduły 01–06** (b1-01 – b1-30, z nagraniami); kolejne — plan poniżej. Poziom powstaje tak jak A2:
+Status: **gotowe moduły 01–07** (b1-01 – b1-35, z nagraniami); kolejne — plan poniżej. Poziom powstaje tak jak A2:
 moduł po module, w tym samym formacie i tym samym generatorem:
 
 ```

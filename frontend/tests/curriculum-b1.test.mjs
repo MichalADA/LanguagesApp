@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -229,6 +229,22 @@ const OPEN_REPLIES = [
   { lesson: 'b1-06-05', reply: 0, hit: ['Prvo autocestom do Splita, onda trajektom.', 'Iz Zagreba autocestom.', 'Krenuli smo rano ujutro.'], miss: ['Trajekt.'] },
   { lesson: 'b1-06-05', reply: 1, hit: ['Je, na autocesti je bila kolona.', 'Nije.', 'Bilo je puno ljudi u luci.', 'Da, u luci je bila gužva.'], miss: ['Gužva.'] },
   { lesson: 'b1-06-05', reply: 2, hit: ['Katamaranom, jer je brži od trajekta.', 'Trajektom.', 'Vratio sam se brodom.'], miss: ['Brzo.'] },
+  // Moduł 7: najem, dopełniacz liczby mnogiej, usterki, nedostajati.
+  { lesson: 'b1-07-01', reply: 0, hit: ['Dobar dan, zovem zbog oglasa za stan.', 'Zovem u vezi stana.', 'Vidjela sam vaš oglas na internetu.'], miss: ['Stan.'] },
+  { lesson: 'b1-07-01', reply: 1, hit: ['Koliko iznosi stanarina i jesu li režije uključene?', 'Koliko je stanarina?', 'Jesu li režije uključene?'], miss: ['Novac.'] },
+  { lesson: 'b1-07-01', reply: 2, hit: ['Koliki je otkazni rok?', 'Jesu li kućni ljubimci dopušteni?', 'Smijem li imati psa?', 'A na koliko se potpisuje ugovor?'], miss: ['Pas.'] },
+  { lesson: 'b1-07-02', reply: 0, hit: ['Moj stan ima tri sobe.', 'Stan ima pet soba.', 'Imam dvije sobe i kuhinju.', 'Dvije sobe.'], miss: ['Sobe.'] },
+  { lesson: 'b1-07-02', reply: 1, hit: ['Nemam, u kuhinji nema dovoljno utičnica.', 'Imam dovoljno utičnica.', 'Nemam.', 'U dnevnom boravku ima samo dvije utičnice.'], miss: ['Struja.'] },
+  { lesson: 'b1-07-02', reply: 2, hit: ['Trebam nekoliko vješalica i zavjese.', 'Trebaju mi nove žarulje.', 'Moram kupiti tepih.'], miss: ['Ništa.'] },
+  { lesson: 'b1-07-03', reply: 0, hit: ['Dobar dan, želim prijaviti kvar.', 'Ovdje Ana iz stana broj pet. Želim prijaviti kvar.', 'Imam problem s bojlerom.'], miss: ['Kvar.'] },
+  { lesson: 'b1-07-03', reply: 1, hit: ['Odvod u kupaonici je začepljen.', 'Grijanje ne radi.', 'Pukla je cijev.', 'U kupaonici ima plijesni.', 'Voda curi iz slavine.'], miss: ['Kupaonica.'] },
+  { lesson: 'b1-07-03', reply: 2, hit: ['To je hitno, može li danas?', 'Može li ranije?', 'Molim vas, pošaljite ga danas.', 'To je jako hitno!'], miss: ['Sutra.'] },
+  { lesson: 'b1-07-04', reply: 0, hit: ['Lijep je, ali namještaj je star.', 'Super je!', 'Stan je mali, ali svijetao.', 'Nije loše.'], miss: ['Stan.'] },
+  { lesson: 'b1-07-04', reply: 1, hit: ['Nedostaje mi kauč.', 'Nedostaju nam još dvije stolice.', 'Još mi nedostaje stol.'], miss: ['Mi nedostaje stol.'] },
+  { lesson: 'b1-07-04', reply: 2, hit: ['Hoću, obojit ću ih u bijelo.', 'Neću.', 'Moram prvo pitati vlasnika.', 'Obojit ću zidove u žuto.'], miss: ['Bijelo.'] },
+  { lesson: 'b1-07-05', reply: 0, hit: ['Želim vas obavijestiti da se selim.', 'Sve je u redu, ali moram vam reći da se selim.', 'Selim se sljedeći mjesec.'], miss: ['Stan.'] },
+  { lesson: 'b1-07-05', reply: 1, hit: ['Do kraja mjeseca.', 'Ostajem do prvog studenog.', 'Još mjesec dana.'], miss: ['Mjesec.'] },
+  { lesson: 'b1-07-05', reply: 2, hit: ['Kada ćete mi vratiti polog?', 'Dobro, a kad ću dobiti polog natrag?'], miss: ['Polog.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

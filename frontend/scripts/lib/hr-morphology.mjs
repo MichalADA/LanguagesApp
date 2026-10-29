@@ -108,7 +108,7 @@ const PRES_OVERRIDES = {
   slagati: ["slažem"],
   // B1
   popiti: ["popijem"], pojesti: ["pojedem"], početi: ["počnem"], počinjati: ["počinjem"], prestati: ["prestanem"], prestajati: ["prestajem"],
-  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"], stizati: ["stižem"],
+  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"], stizati: ["stižem"], nedostajati: ["nedostajem"],
   zaobići: ["zaobiđem"], obići: ["obiđem"], ući: ["uđem"], proći: ["prođem"], sići: ["siđem"], popeti: ["popnem"], presjesti: ["presjednem"],
 };
 const PP_OVERRIDES = {
