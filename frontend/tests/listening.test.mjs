@@ -5,8 +5,7 @@ import { access, readFile } from "node:fs/promises";
 const manifests = [
   { level: "A1", minimum: 15, path: new URL("../public/data/listening/hr-a1-dialogues.json", import.meta.url) },
   { level: "A2", minimum: 10, path: new URL("../public/data/listening/hr-a2-dialogues.json", import.meta.url) },
-  // B1 rośnie moduł po module; gra „Słuchanie” pokaże B1, gdy będzie miał tyle dialogów co A2.
-  { level: "B1", minimum: 2, path: new URL("../public/data/listening/hr-b1-dialogues.json", import.meta.url) },
+  { level: "B1", minimum: 20, path: new URL("../public/data/listening/hr-b1-dialogues.json", import.meta.url) },
 ];
 
 test("Croatian listening levels have valid, unique and playable dialogue entries", async () => {

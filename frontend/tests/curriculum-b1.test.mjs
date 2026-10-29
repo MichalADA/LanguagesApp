@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije', 'Posao, projekti i tim', 'Ljudi, karakter i odnosi', 'Mediji, kultura i događaji'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije', 'Posao, projekti i tim', 'Ljudi, karakter i odnosi', 'Mediji, kultura i događaji', 'Što ti misliš? Argumenti i pogled u budućnost'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -97,7 +97,8 @@ test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez 
     const m = String(i + 1).padStart(2, '0');
     assert.equal(module.levelId, 'B1');
     assert.deepEqual(module.lessons.map((l) => l.id), [1, 2, 3, 4, 5].map((n) => `b1-${m}-0${n}`));
-    assert.deepEqual(module.lessons.map((l) => l.kind), ['lesson', 'lesson', 'lesson', 'lesson', 'review']);
+    const kinds = i === 11 ? ['lesson', 'lesson', 'conversation', 'spiral', 'test'] : ['lesson', 'lesson', 'lesson', 'lesson', 'review'];
+    assert.deepEqual(module.lessons.map((l) => l.kind), kinds);
   }
   for (const [id, count] of [['A1', 40], ['A2', 40]]) {
     assert.equal(PL_HR_OUTLINE.levels.find((level) => level.id === id).modules.flatMap((m) => m.lessons).length, count);
@@ -310,6 +311,22 @@ const OPEN_REPLIES = [
   { lesson: 'b1-11-05', reply: 0, hit: ['Ovu izložbu stvarno vrijedi pogledati.', 'Vrijedi pogledati stari grad.', 'Moj grad je poznat po katedrali.', 'Preporučujem muzej.'], miss: ['Grad.'] },
   { lesson: 'b1-11-05', reply: 1, hit: ['Izgrađeno je u četrnaestom stoljeću.', 'Osnovan je prije sto godina.', 'U šesnaestom stoljeću.'], miss: ['Je izgrađeno.'] },
   { lesson: 'b1-11-05', reply: 2, hit: ['Vodič kaže da obilazak traje dva sata.', 'Rekao je da traje sat vremena.', 'Traje dva sata.'], miss: ['Dva sata.'] },
+  // Moduł 12: argumenty, futur II, rozmowa B1, Wielka powtórka.
+  { lesson: 'b1-12-01', reply: 0, hit: ['Učim hrvatski zato što volim Hrvatsku.', 'Jer imam prijatelje u Splitu.', 'Zbog posla.'], miss: ['Hrvatska.'] },
+  { lesson: 'b1-12-01', reply: 1, hit: ['Iako je težak, volim ga.', 'Ponekad je težak, ali ipak mi se sviđa.', 'Iako je gramatika teška, napredujem.'], miss: ['Težak.'] },
+  { lesson: 'b1-12-01', reply: 2, hit: ['Grad je lijep, a osim toga i jeftin.', 'More je prekrasno, a osim toga ljudi su jako ljubazni.', 'Najviše mi se sviđa more.'], miss: ['More.'] },
+  { lesson: 'b1-12-02', reply: 0, hit: ['Kad budem imao vremena, nazvat ću te.', 'Kad budem imao vremena, putovat ću.', 'Putovat ću po svijetu.', 'Ja ću čitati knjige.'], miss: ['Ću putovati.'] },
+  { lesson: 'b1-12-02', reply: 1, hit: ['Kad budem u mirovini, živjet ću na moru.', 'Živjet ću na selu.', 'Na moru.', 'Voljela bih živjeti u Istri.'], miss: ['More.'] },
+  { lesson: 'b1-12-02', reply: 2, hit: ['Ako budem učio svaki dan, tečno ću govoriti.', 'Nastavit ću učiti.', 'Gledat ću hrvatske filmove.', 'Kad budem imala vremena, čitat ću knjige.'], miss: ['Hrvatski.', 'Ću učiti svaki dan.'] },
+  { lesson: 'b1-12-03', reply: 0, hit: ['Mislim da je bolje živjeti na selu jer je mirnije.', 'Po mom mišljenju, u gradu je zanimljivije.', 'Bolje je u gradu.'], miss: ['Selo.'] },
+  { lesson: 'b1-12-03', reply: 1, hit: ['S jedne strane je mirnije, a osim toga je jeftinije.', 'Zrak je čišći, a osim toga ljudi su ljubazniji.', 'Prvo, život je jeftiniji.'], miss: ['Mirno.'] },
+  { lesson: 'b1-12-03', reply: 2, hit: ['Odmah bih se preselio.', 'Sigurno bih prihvatio posao.', 'Preselila bih se u Split.'], miss: ['Bih se preselio.'] },
+  { lesson: 'b1-12-03', reply: 3, hit: ['Kad budem znao bolje hrvatski, radit ću u Hrvatskoj.', 'Tražit ću posao u Zagrebu.', 'Ja ću putovati po Dalmaciji.'], miss: ['Ću raditi.'] },
+  { lesson: 'b1-12-03', reply: 4, hit: ['Iako je grad zanimljiv, selo je ipak zdravije.', 'Dobro, ali osim toga na selu je mirnije.', 'Međutim, u gradu ima više posla.'], miss: ['Grad.'] },
+  { lesson: 'b1-12-03', reply: 5, hit: ['Slažem se, bila je to zanimljiva rasprava.', 'Dobro, oboje imamo pravo.', 'Bilo mi je drago razgovarati.'], miss: ['Bok.'] },
+  { lesson: 'b1-12-04', reply: 0, hit: ['Sad mogu samostalno razgovarati.', 'Naučio sam puno novih riječi.', 'Najviše sam naučila o padežima.'], miss: ['Riječi.'] },
+  { lesson: 'b1-12-04', reply: 1, hit: ['Najteži mi je bio futur II.', 'Najteža mi je bila gramatika.', 'Padeži su mi bili najteži.'], miss: ['Gramatika.'] },
+  { lesson: 'b1-12-04', reply: 2, hit: ['Naravno, nastavit ću s višom razinom.', 'Hoću!', 'Kad budem imao vremena, učit ću dalje.'], miss: ['Ne znam.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {
@@ -368,4 +385,17 @@ test('B1: wszystkie lekcje da się zaliczyć poprawnymi odpowiedziami, a błędn
     assert.equal(right.mistakes, false, `${lesson.id}: poprawne odpowiedzi bez błędów`);
     assert.equal((await walkLesson({ ...options, answers: 'wrong' })).completed, 0, `${lesson.id}: błędne odpowiedzi nie zaliczają`);
   }
+});
+
+test('B1: lekcja 60 to test poziomu z sześcioma sekcjami, a 59 to Wielka powtórka B1', () => {
+  const content = generated.get('b1-12-05').content;
+  assert.equal(content.mode, 'test');
+  const sections = new Set(content.steps.map((s) => s.section).filter(Boolean));
+  assert.deepEqual([...sections].sort(), ['grammar', 'listening', 'production', 'reading', 'translation', 'vocabulary']);
+  assert.ok(content.steps.find((s) => s.type === 'listening').lines.every((l) => l.audio && existsSync(join(PUBLIC, l.audio))));
+  assert.equal(content.steps.at(-1).title, 'Wynik testu B1');
+  const spiral = generated.get('b1-12-04').content;
+  assert.match(spiral.steps[0].body, /całego B1/);
+  assert.ok(spiral.steps.filter((s) => s.type === 'gap').length >= 4);
+  assert.equal(generated.get('b1-12-03').content.steps.find((s) => s.type === 'dialog').turns.filter((t) => t.kind === 'reply').length, 6);
 });

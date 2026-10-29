@@ -1,12 +1,12 @@
 {
-  "$comment": "Konfiguracja poziomu dla scripts/generate-curriculum.mjs (--level hr-b1). B1 powstaje moduł po module (plan: README.md); teraz moduł 1. Słownictwo A1 i A2 jest znane (inherit). Po dodaniu modułu 12: \"special\": { \"58\": \"conversation\", \"59\": \"spiral\", \"60\": \"test\" }.",
+  "$comment": "Konfiguracja poziomu dla scripts/generate-curriculum.mjs (--level hr-b1). Pełny poziom: 12 modułów, lekcje 58–60 to rozmowa, Wielka powtórka i test. Słownictwo A1 i A2 jest znane (inherit).",
   "level": "B1",
   "prefix": "b1",
   "exportName": "HR_B1",
   "csv": "lexodromia_hr_B1_curriculum.csv",
   "listening": "public/data/listening/hr-b1-dialogues.json",
-  "modules": 11,
+  "modules": 12,
   "lessonsPerModule": 5,
-  "special": {},
+  "special": { "58": "conversation", "59": "spiral", "60": "test" },
   "inherit": ["hr-a1", "hr-a2"]
 }

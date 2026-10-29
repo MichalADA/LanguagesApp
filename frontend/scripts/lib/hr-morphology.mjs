@@ -108,7 +108,7 @@ const PRES_OVERRIDES = {
   slagati: ["slažem"],
   // B1
   popiti: ["popijem"], pojesti: ["pojedem"], početi: ["počnem"], počinjati: ["počinjem"], prestati: ["prestanem"], prestajati: ["prestajem"],
-  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"], stizati: ["stižem"], nedostajati: ["nedostajem"], surađivati: ["surađujem"], dopisivati: ["dopisujem"], predavati: ["predajem"], prenijeti: ["prenesem"], održati: ["održim"], prikazivati: ["prikazujem"], raspitivati: ["raspitujem"],
+  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"], stizati: ["stižem"], nedostajati: ["nedostajem"], surađivati: ["surađujem"], dopisivati: ["dopisujem"], predavati: ["predajem"], prenijeti: ["prenesem"], održati: ["održim"], sporazumjeti: ["sporazumijem"], prikazivati: ["prikazujem"], raspitivati: ["raspitujem"],
   zaobići: ["zaobiđem"], obići: ["obiđem"], ući: ["uđem"], proći: ["prođem"], sići: ["siđem"], popeti: ["popnem"], presjesti: ["presjednem"],
 };
 const PP_OVERRIDES = {

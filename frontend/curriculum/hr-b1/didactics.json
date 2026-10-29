@@ -36,6 +36,9 @@
     },
     "11": {
       "description": "Śledzisz wiadomości i wydarzenia kulturalne: przekazujesz, co ktoś powiedział (Rekao je da…), o co pytał (Pitao me je li…) i opisujesz zabytki i filmy w stronie biernej (snimljen, izgrađen)."
+    },
+    "12": {
+      "description": "Argumentujesz (iako, međutim, zato što, osim toga), mówisz o planach z futurem II (kad budem…), prowadzisz całą rozmowę B1, a na koniec robisz Wielką powtórkę i test poziomu B1."
     }
   },
   "lessons": {
@@ -9112,6 +9115,779 @@
         ],
         "minSentences": 3,
         "sample": "Moj grad je poznat po starom trgu. Katedrala je izgrađena u četrnaestom stoljeću. Vodiči kažu da je to najljepša crkva u regiji. Svakako je vrijedi pogledati."
+      }
+    },
+    "b1-56": {
+      "grammar": {
+        "title": "Iako, međutim, osim toga",
+        "text": "Z A2 znasz Mislim da… i jer (bo). Na B1 argumentujesz pełniej. Kontrast: iako (chociaż) — Iako je težak, volim hrvatski; međutim (jednak) zaczyna nowe zdanie — Stan je lijep. Međutim, preskup je; ipak (mimo to). Przyczyna: zato što = jer (dlatego że, ponieważ). Skutek: zbog toga (dlatego). Dodatkowy argument: osim toga (poza tym). Z rzeczownikiem: unatoč + celownik (unatoč kiši = pomimo deszczu), s obzirom na + biernik (s obzirom na cijenu).",
+        "table": [
+          {
+            "label": "spójniki argumentacji",
+            "rows": [
+              {
+                "base": "chociaż",
+                "form": "Iako je hladno, idemo na plažu.",
+                "meaning": "Chociaż jest zimno, idziemy na plażę."
+              },
+              {
+                "base": "jednak",
+                "form": "Stan je lijep. Međutim, preskup je.",
+                "meaning": "Mieszkanie jest ładne. Jednak jest za drogie."
+              },
+              {
+                "base": "ponieważ",
+                "form": "Učim hrvatski zato što volim Hrvatsku.",
+                "meaning": "Uczę się chorwackiego, ponieważ kocham Chorwację."
+              },
+              {
+                "base": "dlatego",
+                "form": "Pada kiša, zbog toga ostajemo kod kuće.",
+                "meaning": "Pada deszcz, dlatego zostajemy w domu."
+              },
+              {
+                "base": "pomimo",
+                "form": "Unatoč kiši, koncert je održan.",
+                "meaning": "Pomimo deszczu koncert się odbył."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "tip": "zato što = ponieważ (przyczyna), zbog toga = dlatego (skutek) — nie myl ich!"
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "Iako"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 4,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Chociaż padało, poszliśmy na spacer.",
+          "options": [
+            "Iako je padala kiša, išli smo u šetnju.",
+            "Međutim je padala kiša, išli smo u šetnju.",
+            "Zato što je padala kiša, išli smo u šetnju."
+          ],
+          "correct": 0,
+          "explanation": "chociaż = iako."
+        },
+        {
+          "instruction": "Wybierz poprawne wyrażenie.",
+          "prompt": "pomimo deszczu",
+          "options": [
+            "unatoč kiši",
+            "unatoč kiše",
+            "unatoč kišu"
+          ],
+          "correct": 0,
+          "explanation": "unatoč + celownik: kiši."
+        }
+      ],
+      "model": {
+        "title": "Morze czy góry?",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, zašto uvijek ideš na more, a ne u planine?",
+            "pl": "Marko, dlaczego zawsze jeździsz nad morze, a nie w góry?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Zato što volim plivati. Osim toga, more me opušta.",
+            "pl": "Dlatego że lubię pływać. Poza tym morze mnie relaksuje."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Iako je more lijepo, ljeti je prevelika gužva.",
+            "pl": "Chociaż morze jest piękne, latem jest za duży tłok."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Istina. Međutim, u rujnu je mirnije.",
+            "pl": "To prawda. Jednak we wrześniu jest spokojniej."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Dobro, ipak ću probati s tobom u rujnu!",
+            "pl": "Dobrze, mimo wszystko spróbuję z tobą we wrześniu!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Za i przeciw",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Zašto učiš hrvatski?",
+            "pl": "Dlaczego uczysz się chorwackiego?"
+          },
+          {
+            "reply": {
+              "prompt": "Podaj powód (Učim hrvatski zato što… / jer…).",
+              "accept": [
+                2
+              ],
+              "open": true,
+              "pattern": "^((učim (ga|hrvatski) )?(zato što|jer|zbog)|zato što|jer)( \\p{L}+){1,7}$"
+            }
+          },
+          {
+            "say": "Je li ti težak?",
+            "pl": "Jest dla ciebie trudny?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz z „chociaż” (Iako je…, …).",
+              "accept": [
+                1,
+                "Iako je težak, volim ga."
+              ],
+              "open": true,
+              "pattern": "^((da|ponekad|malo|iskreno) )*iako( \\p{L}+){1,10}$|^(\\p{L}+ ){1,6}(iako|ali ipak|međutim|ali)( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "A što ti se najviše sviđa u Hrvatskoj?",
+            "pl": "A co ci się najbardziej podoba w Chorwacji?"
+          },
+          {
+            "reply": {
+              "prompt": "Podaj dwa argumenty (…, a osim toga…).",
+              "accept": [
+                5,
+                "More je prekrasno, a osim toga ljudi su jako ljubazni."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){1,6}(osim toga|a i|i još)( \\p{L}+){1,6}$|^(najviše mi se sviđa|sviđa mi se|volim)( \\p{L}+){1,8}$"
+            }
+          },
+          {
+            "say": "Slažem se!",
+            "pl": "Zgadzam się!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania: dlaczego uczysz się chorwackiego (iako, zato što, osim toga).",
+        "points": [
+          "powód (zato što / jer)",
+          "kontrast (iako / međutim)",
+          "dodatkowy argument (osim toga)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "iako",
+              "međutim",
+              "ipak",
+              "unatoč"
+            ],
+            "label": "kontrast"
+          },
+          {
+            "any": [
+              "zato",
+              "jer",
+              "toga",
+              "zbog"
+            ],
+            "label": "przyczyna / skutek"
+          }
+        ],
+        "sample": "Učim hrvatski zato što često putujem u Hrvatsku. Iako je gramatika teška, jezik mi se sviđa. Osim toga, imam prijatelje u Splitu."
+      }
+    },
+    "b1-57": {
+      "grammar": {
+        "title": "Kad budem imao vremena…",
+        "text": "Futur II to budem, budeš, bude, budemo, budete, budu + forma przeszła. Używasz go tylko w zdaniu podrzędnym o przyszłości — po kad, ako, čim, dok — a w zdaniu głównym stoi zwykły futur I: Kad budem imao vremena, nazvat ću te. Budowa jest taka sama jak po polsku: kiedy będę miał = kad budem imao. Znasz to już z A2: Ako bude lijepo… (bude = będzie). Samo budem znaczy „będę” w takim zdaniu: Kad budem u mirovini…",
+        "table": [
+          {
+            "label": "futur II",
+            "rows": [
+              {
+                "base": "ja",
+                "form": "kad budem imao / imala",
+                "meaning": "kiedy będę miał / miała"
+              },
+              {
+                "base": "ty",
+                "form": "ako budeš učio",
+                "meaning": "jeśli będziesz się uczył"
+              },
+              {
+                "base": "on / ona",
+                "form": "kad bude stigao",
+                "meaning": "kiedy przyjedzie"
+              },
+              {
+                "base": "my",
+                "form": "kad budemo uštedjeli",
+                "meaning": "kiedy zaoszczędzimy"
+              },
+              {
+                "base": "oni",
+                "form": "čim budu došli",
+                "meaning": "gdy tylko przyjdą"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          6
+        ],
+        "tip": "W zdaniu głównym nigdy nie ma futuru II: Kad budem imao vremena, NAZVAT ĆU te (futur I)."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "budeš"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 5,
+      "order": 8,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Kiedy będę miał czas, zadzwonię.",
+          "options": [
+            "Kad budem imao vremena, nazvat ću.",
+            "Kad ću imati vremena, nazvat ću.",
+            "Kad sam imao vremena, nazvat ću."
+          ],
+          "correct": 0,
+          "explanation": "Po kad o przyszłości: futur II (budem imao), nie futur I."
+        }
+      ],
+      "listening": "b1-planovi-za-buducnost",
+      "dialog": {
+        "title": "Plany na przyszłość",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Što ćeš raditi kad budeš imao više slobodnog vremena?",
+            "pl": "Co będziesz robić, kiedy będziesz miał więcej wolnego czasu?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobisz (Kad budem imao vremena, …ću…).",
+              "accept": [
+                1,
+                "Kad budem imao vremena, putovat ću."
+              ],
+              "open": true,
+              "pattern": "^((kad|ako|čim) (budem|budemo)( \\p{L}+){1,4} )?((ja|onda|tada|sigurno) (ću|ćemo) \\p{L}+(?:ti|ći)|\\p{L}+(t|ći) (ću|ćemo))( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "A gdje želiš živjeti kad budeš u mirovini?",
+            "pl": "A gdzie chcesz mieszkać, kiedy będziesz na emeryturze?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie zamieszkasz na emeryturze (Kad budem u mirovini, živjet ću…).",
+              "accept": [
+                6
+              ],
+              "open": true,
+              "pattern": "^((kad budem u mirovini|u mirovini|u budućnosti) )?((ja )?(ću|želim) živjeti|živjet ću|želim živjeti|volio bih živjeti|voljela bih živjeti)( \\p{L}+){1,4}$|^(na|u) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "A kako ćeš dalje učiti hrvatski?",
+            "pl": "A jak będziesz dalej uczyć się chorwackiego?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobisz z nauką (Ako budem učio svaki dan…).",
+              "accept": [
+                "Ako budem učio svaki dan, tečno ću govoriti."
+              ],
+              "open": true,
+              "pattern": "^((ako|kad|čim) (budem|budemo)( \\p{L}+){1,4} )?((ja|onda|tada|sigurno) (ću|ćemo) \\p{L}+(?:ti|ći)|\\p{L}+(t|ći) (ću|ćemo)|\\p{L}+ ću \\p{L}+)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Sretno!",
+            "pl": "Powodzenia!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o planach z futurem II (Kad budem…, ako budem…).",
+        "points": [
+          "kad / ako / čim + budem…",
+          "zdanie główne w futurze I (…ću)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "budem",
+              "budeš",
+              "bude",
+              "budemo",
+              "budete",
+              "budu"
+            ],
+            "label": "futur II: budem…"
+          },
+          {
+            "any": [
+              "ću",
+              "ćeš",
+              "će",
+              "ćemo",
+              "ćete"
+            ],
+            "label": "futur I w zdaniu głównym"
+          }
+        ],
+        "sample": "Kad budem uštedjela dovoljno novca, kupit ću stan u Splitu. Ako budem učila svaki dan, tečno ću govoriti hrvatski."
+      }
+    },
+    "b1-58": {
+      "grammar": {
+        "title": "Wszystko, co umiesz na B1",
+        "text": "W tej rozmowie łączysz cały poziom B1: opinię (Mislim da…, po mom mišljenju), argumenty (zato što, osim toga, iako, međutim), tryb przypuszczający (Preselio bih se…), futur II (Kad budem znao…) i grzeczne zakończenie dyskusji (Oboje imamo pravo).",
+        "examples": [
+          1,
+          3,
+          4,
+          6
+        ]
+      },
+      "translate": [
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 6,
+      "dialog": {
+        "title": "Dyskusja",
+        "partner": "Ana",
+        "turns": [
+          {
+            "line": 1
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co myślisz (Mislim da je bolje… jer…).",
+              "accept": [
+                "Mislim da je bolje živjeti na selu jer je mirnije."
+              ],
+              "open": true,
+              "pattern": "^(mislim da|po mom mišljenju|iskreno|za mene)( je)?( \\p{L}+){1,10}$|^(bolje je|u gradu|na selu)( \\p{L}+){0,8}$"
+            }
+          },
+          {
+            "line": 2
+          },
+          {
+            "reply": {
+              "prompt": "Podaj dwa argumenty (S jedne strane…, osim toga…).",
+              "accept": [
+                "S jedne strane je mirnije, a osim toga je jeftinije."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,8}(osim toga|s druge strane|međutim|iako|zato što|jer)( \\p{L}+){1,8}$|^(s jedne strane|prvo)( \\p{L}+){1,10}$"
+            }
+          },
+          {
+            "line": 3
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz w trybie przypuszczającym (Preselio bih se… / Prihvatio bih…).",
+              "accept": [
+                "Odmah bih se preselio."
+              ],
+              "open": true,
+              "pattern": "^((odmah|sigurno|vjerojatno|naravno|ja) )+bih( se)? \\p{L}+( \\p{L}+){0,6}$|^((odmah|sigurno|vjerojatno|naravno) )*\\p{L}+ bih( se)?( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "line": 4
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobisz (Kad budem znao bolje hrvatski, …ću…).",
+              "accept": [
+                "Kad budem znao bolje hrvatski, radit ću u Hrvatskoj."
+              ],
+              "open": true,
+              "pattern": "^((kad|ako|čim) (budem|budemo)( \\p{L}+){1,4} )?((ja|onda|tada|sigurno) (ću|ćemo) \\p{L}+|\\p{L}+(t|ći) (ću|ćemo))( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "line": 5
+          },
+          {
+            "reply": {
+              "prompt": "Przekonaj rozmówcę jeszcze jednym argumentem (Iako…, ipak…).",
+              "accept": [
+                "Iako je grad zanimljiv, selo je ipak zdravije."
+              ],
+              "open": true,
+              "pattern": "^((dobro|u redu|ali) )*(\\p{L}+ ){0,6}(iako|ipak|međutim|osim toga)( \\p{L}+){0,8}$"
+            }
+          },
+          {
+            "line": 6
+          },
+          {
+            "reply": {
+              "prompt": "Zakończ dyskusję uprzejmie (Slažem se… / Bila je to zanimljiva rasprava).",
+              "accept": [
+                "Slažem se, bila je to zanimljiva rasprava."
+              ],
+              "open": true,
+              "pattern": "^(slažem se|dobro|u redu|točno|naravno)( \\p{L}+){0,6}$|^((bila je to|to je bila|ovo je bila) (zanimljiva|dobra|odlična) rasprava|bilo mi je drago( \\p{L}+){0,4})$"
+            }
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 4 zdania: twoje zdanie o życiu w Chorwacji, argumenty, warunek i plan.",
+        "points": [
+          "opinia",
+          "argumenty",
+          "warunek albo plan na przyszłość"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "mislim",
+              "mišljenju",
+              "stav"
+            ],
+            "label": "opinia"
+          },
+          {
+            "any": [
+              "iako",
+              "međutim",
+              "osim",
+              "zato",
+              "jer"
+            ],
+            "label": "argumenty"
+          },
+          {
+            "any": [
+              "bih",
+              "budem",
+              "bude",
+              "ću"
+            ],
+            "label": "warunek / przyszłość"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Mislim da je život u Hrvatskoj jako lijep. Iako su plaće niže, ljudi su opušteniji. Kad bih dobio posao u Splitu, odmah bih se preselio. Kad budem znao bolje hrvatski, tražit ću posao tamo."
+      }
+    },
+    "b1-59": {
+      "grammar": {
+        "title": "Najważniejsze z B1",
+        "text": "Na koniec B1 zestaw obok siebie najważniejsze konstrukcje: aspekt (piti / popiti), dok i čim, tryb przypuszczający (volio bih, kad bih), koji (prijatelj na kojeg se mogu osloniti), futur II (kad budem imao vremena). Reszta to materiał całego poziomu w krótkich seriach.",
+        "examples": [
+          "b1-02:1",
+          "b1-13:1",
+          "b1-47:1",
+          "b1-57:1"
+        ]
+      },
+      "spiral": {
+        "intro": {
+          "body": "Krótkie serie z całego B1: codzienność, wspomnienia, plany, zdrowie, porównania, podróże, mieszkanie, zakupy, praca, relacje, media i argumenty.",
+          "goals": [
+            "przypomnisz sobie słowa ze wszystkich modułów",
+            "uzupełnisz zdania z najważniejszą gramatyką B1",
+            "przetłumaczysz zdania z codziennych sytuacji",
+            "porozmawiasz o swoich postępach i planach"
+          ]
+        },
+        "vocabTitle": "Słowa o postępach w nauce",
+        "recallModules": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "gaps": [
+          "b1-03",
+          "b1-12",
+          "b1-32",
+          "b1-47"
+        ],
+        "translations": [
+          "b1-06",
+          "b1-22",
+          "b1-37",
+          "b1-52"
+        ],
+        "order": "b1-17"
+      },
+      "dialog": {
+        "title": "Po B1",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Bok! Što si najviše naučio na ovoj razini?",
+            "pl": "Cześć! Czego najwięcej nauczyłeś się na tym poziomie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego się nauczyłeś (Naučio sam… / Sad mogu…).",
+              "accept": [
+                "Sad mogu samostalno razgovarati."
+              ],
+              "open": true,
+              "pattern": "^((sad|sada|najviše|puno) )*((naučio|naučila) sam|mogu|znam|razumijem|govorim)( \\p{L}+){0,6}$|^(sad|sada|najviše) sam (naučio|naučila)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Što ti je bilo najteže?",
+            "pl": "Co było dla ciebie najtrudniejsze?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co było najtrudniejsze (i dlaczego).",
+              "accept": [
+                "Najteži mi je bio futur II."
+              ],
+              "open": true,
+              "pattern": "^((najteži|najteža|najteže)( mi)? (je|su)( bio| bila| bilo| bili)?|(\\p{L}+ ){1,3}((mi )?(je|su)|(je|su) mi) (bio |bila |bilo |bili )?(najteži|najteža|najteže))( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Kad budeš imao vremena, hoćeš li nastaviti učiti?",
+            "pl": "Kiedy będziesz miał czas, będziesz dalej się uczyć?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobisz dalej (Kad budem…, nastavit ću…).",
+              "accept": [
+                "Naravno, nastavit ću s višom razinom."
+              ],
+              "open": true,
+              "pattern": "^((naravno|da|sigurno|hoću|svakako) )*((kad|ako|čim) (budem|budemo)( \\p{L}+){1,4} )?((nastavit|učit|upisat|ići) ću|ću (nastaviti|učiti)|hoću)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Svaka čast, bravo!",
+            "pl": "Brawo, gratulacje!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Napisz 3–4 zdania: czego nauczyłeś się na B1, co było trudne i co planujesz dalej.",
+        "points": [
+          "czego się nauczyłeś",
+          "co było trudne (iako…)",
+          "plan (kad budem…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "naučio",
+              "naučila",
+              "mogu",
+              "znam",
+              "razumijem"
+            ],
+            "label": "postępy"
+          },
+          {
+            "any": [
+              "iako",
+              "teško",
+              "najteži",
+              "najteže",
+              "međutim"
+            ],
+            "label": "trudności"
+          },
+          {
+            "any": [
+              "budem",
+              "ću",
+              "bih"
+            ],
+            "label": "plany"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Na ovoj razini sam naučila puno novih riječi. Iako mi je futur II bio težak, sada ga razumijem. Kad budem imala vremena, nastavit ću s razinom B2."
+      }
+    },
+    "b1-60": {
+      "test": {
+        "vocabulary": {
+          "instruction": "Wybierz poprawne znaczenie.",
+          "modules": [
+            1,
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        "reading": {
+          "instruction": 1,
+          "title": "Kasia u Rijeci",
+          "text": [
+            "Zovem se Kasia i već tri godine živim u Rijeci.",
+            "Kad sam stigla, nisam znala ni riječi hrvatskog.",
+            "Danas radim u turističkoj agenciji i svaki dan razgovaram s gostima iz cijelog svijeta.",
+            "Iako je posao ponekad stresan, jako mi se sviđa.",
+            "Vikendom se družim s prijateljima koje sam upoznala na tečaju hrvatskog.",
+            "Kad budem uštedjela dovoljno novca, otvorit ću mali kafić na moru."
+          ],
+          "questions": [
+            {
+              "prompt": "Od kiedy Kasia mieszka w Rijece?",
+              "options": [
+                "Od trzech lat",
+                "Od roku",
+                "Od dzieciństwa"
+              ],
+              "correct": 0
+            },
+            {
+              "prompt": "Gdzie pracuje Kasia?",
+              "options": [
+                "W banku",
+                "W biurze podróży",
+                "W szkole"
+              ],
+              "correct": 1
+            },
+            {
+              "prompt": "Co chce zrobić w przyszłości?",
+              "options": [
+                "Wrócić do Polski",
+                "Pracować w hotelu",
+                "Otworzyć małą kawiarnię nad morzem"
+              ],
+              "correct": 2
+            }
+          ]
+        },
+        "listening": {
+          "instruction": 2,
+          "dialogue": "b1-test-novi-posao",
+          "questions": [
+            {
+              "prompt": "Dlaczego Marko odszedł z poprzedniej pracy?",
+              "options": [
+                "Ciągle pracował po godzinach",
+                "Miał złą pensję",
+                "Nie lubił kolegów"
+              ],
+              "correct": 0
+            },
+            {
+              "prompt": "Ile dni w tygodniu może pracować z domu?",
+              "options": [
+                "Dwa",
+                "Pięć",
+                "Żadnego"
+              ],
+              "correct": 0
+            }
+          ]
+        },
+        "grammar": {
+          "instruction": 4,
+          "lessons": [
+            "b1-08",
+            "b1-13",
+            "b1-42",
+            "b1-54"
+          ]
+        },
+        "translation": {
+          "instruction": 5,
+          "lessons": [
+            "b1-07",
+            "b1-29",
+            "b1-48"
+          ]
+        },
+        "production": {
+          "instruction": 3,
+          "points": [
+            "co robisz teraz i od kiedy",
+            "jedno wspomnienie albo doświadczenie",
+            "plan na przyszłość (kad budem… / volio bih…)"
+          ],
+          "keywords": [
+            {
+              "any": [
+                "živim",
+                "radim",
+                "učim",
+                "već"
+              ],
+              "label": "teraz"
+            },
+            {
+              "any": [
+                "sam",
+                "smo",
+                "bio",
+                "bila"
+              ],
+              "label": "przeszłość"
+            },
+            {
+              "any": [
+                "budem",
+                "ću",
+                "bih"
+              ],
+              "label": "przyszłość / marzenie"
+            }
+          ],
+          "sample": "Već dvije godine radim u Krakovu, ali često putujem u Hrvatsku. Prošlog ljeta sam bila na Visu i doživjela pravu avanturu. Kad budem tečno govorila hrvatski, voljela bih raditi u Splitu.",
+          "minSentences": 3
+        },
+        "finished": 6
       }
     }
   }

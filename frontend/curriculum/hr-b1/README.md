@@ -1,29 +1,31 @@
 # Kurs chorwackiego B1 — plan poziomu (12 modułów, 60 lekcji)
 
-Status: **gotowe moduły 01–11** (b1-01 – b1-55, z nagraniami); kolejne — plan poniżej. Poziom powstaje tak jak A2:
-moduł po module, w tym samym formacie i tym samym generatorem:
+Status: **poziom kompletny** — 12 modułów, 60 lekcji (b1-01 – b1-60), 25 dialogów do słuchania, nagrania wszystkich tekstów.
+Format i generator jak w A2:
 
 ```
-level.json                          ← poziom: B1, prefiks b1, "modules" = liczba gotowych modułów; dziedziczy słownictwo hr-a1 i hr-a2
+level.json                          ← poziom: B1, prefiks b1, 12 modułów × 5 lekcji, lekcje 58–60: rozmowa, spirala, test; dziedziczy słownictwo hr-a1 i hr-a2
 lexodromia_hr_B1_curriculum.csv     ← źródło prawdy: lekcje, słownictwo, zdania, blueprinty
-didactics.json                      ← gramatyka, dialogi z ramami odpowiedzi, zadania swobodne
+didactics.json                      ← gramatyka, dialogi z ramami odpowiedzi, zadania swobodne, spirala i test
 audio.json / audio-manifest.json    ← nagrania w /audio/hr/b1/module-XX/
         │
         ▼  npm run curriculum:b1   (scripts/generate-curriculum.mjs --level hr-b1)
 src/curriculum/data/hr-b1/          ← wygenerowane TypeScript (commitowane, nie edytuj ręcznie)
 ```
 
-- **Nowy moduł:** dopisz lekcje do CSV i `didactics.json`, zwiększ `"modules"` w `level.json`, potem
-  `npm run curriculum:b1` → `python tools/listening/generate_tts.py --course-manifest frontend/curriculum/hr-b1/audio-manifest.json` → `npm run curriculum:b1`.
-  Otwarte repliki dopisz do `OPEN_REPLIES` w `tests/curriculum-b1.test.mjs`.
-- **Dialogi do słuchania:** `public/data/listening/hr-b1-dialogues.json` (nagrania: `python tools/listening/generate_tts.py --manifest frontend/public/data/listening/hr-b1-dialogues.json`).
-  Gra „Słuchanie” pokaże B1 (`AVAILABLE_LISTENING_LEVELS`), gdy dialogów będzie tyle co w A2.
-- **Odmiana:** nieregularne formy nowych czasowników dopisz w `PRES_OVERRIDES` / `PP_OVERRIDES` (`scripts/lib/hr-morphology.mjs`);
-  moduł 01 dodał m.in. popijem, pojedem, počnem, prestanem, obučem, uspijem.
-- **Moduł 01 „Svakodnevica i navike”:** pary aspektowe piti / popiti, čitati / pročitati, obući se (b1-01), dok + niedokonany
-  i szyk Dok je Ana glačala (b1-02), prije nego što krenem / nakon što sam završila / prije spavanja (b1-03),
-  početi / prestati + bezokolicznik, naviknuti se na, uspjeti, sve češće (b1-04), powtórka: typowy tydzień (b1-05).
-  Dialogi do słuchania: b1-kucanski-poslovi (b1-02), b1-nove-navike (b1-04).
+- **Zmiany treści:** popraw CSV i `didactics.json`, potem `npm run curriculum:b1` →
+  `python tools/listening/generate_tts.py --course-manifest frontend/curriculum/hr-b1/audio-manifest.json` → `npm run curriculum:b1`.
+  Otwarte repliki mają listę naturalnych i błędnych odpowiedzi w `tests/curriculum-b1.test.mjs` (`OPEN_REPLIES`).
+- **Dialogi do słuchania:** `public/data/listening/hr-b1-dialogues.json` (25 dialogów; nagrania:
+  `python tools/listening/generate_tts.py --manifest frontend/public/data/listening/hr-b1-dialogues.json`). B1 jest też poziomem w grze „Słuchanie”.
+- **Odmiana:** nieregularne formy nowych czasowników są w `PRES_OVERRIDES` / `PP_OVERRIDES` (`scripts/lib/hr-morphology.mjs`),
+  np. popijem, počnem, prestanem, obučem, uspijem, stižem, uđem / ušao, presjednem, surađujem, prenesem, sporazumijem se.
+- **Dziedziczenie A1 i A2:** rdzeń lekcji B1 nie powtarza słów z A1 / A2 (generator ostrzega, test traktuje to jako błąd);
+  znane słowa wracają w zdaniach i rozgrzewkach.
+- **Moduły:** 01 aspekt i dok · 02 przeszłość, čim / tek kad, szyk krótkich słów · 03 tryb przypuszczający ·
+  04 nemoj / trebao bi · 05 stopień wyższy i što… to… · 06 czasowniki ruchu z przedrostkami · 07 dopełniacz l.mn., najem ·
+  08 da / kako bih, reklamacje · 09 -ima / -ama w pracy · 10 koji, sebe, jedan drugoga · 11 mowa zależna i strona bierna ·
+  12 iako / međutim, futur II, rozmowa, Wielka powtórka i test B1.
 
 ## Zasady
 

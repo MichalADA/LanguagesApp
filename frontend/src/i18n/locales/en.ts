@@ -654,6 +654,10 @@ export const en: Dictionary = {
       "A2": {
         "name": "Longer situations",
         "description": "More detail, longer utterances and harder questions."
+      },
+      "B1": {
+        "name": "Independent conversations",
+        "description": "Work, housing, media and plans — conversations with arguments and reported speech."
       }
     },
     "loading": "Loading dialogues…",

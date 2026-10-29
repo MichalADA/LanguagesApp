@@ -9,7 +9,7 @@ import { HR_B1_MODULES } from "./hr-b1/outline";
  * A1 (8 modułów × 5 lekcji) pochodzi z CSV: curriculum/hr-a1/lexodromia_hr_A1_curriculum.csv,
  * wygenerowanego do src/curriculum/data/hr-a1/ przez `npm run curriculum:a1`.
  * A2 (8 modułów) — tak samo z curriculum/hr-a2/ przez `npm run curriculum:a2`.
- * B1 (moduł po module, plan 12 modułów: curriculum/hr-b1/README.md) — z curriculum/hr-b1/ przez `npm run curriculum:b1`.
+ * B1 (12 modułów, plan: curriculum/hr-b1/README.md) — z curriculum/hr-b1/ przez `npm run curriculum:b1`.
  * Treści edytujesz w CSV i didactics.json — nie w wygenerowanych plikach.
  */
 export const PL_HR_OUTLINE: CourseOutline = {
