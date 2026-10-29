@@ -6,9 +6,10 @@
     "male": "hr-HR-SreckoNeural"
   },
   "modules": [
-    1
+    1,
+    2
   ],
-  "characters": 6784,
+  "characters": 13531,
   "items": [
     {
       "text": "A kako ide? Jesi li se naviknuo?",
@@ -2156,6 +2157,2029 @@
       ],
       "modules": [
         1
+      ]
+    },
+    {
+      "text": "A je li bilo nešto neočekivano?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/a-je-li-bilo-nesto-neocekivano.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "A je li ti Ivan vratio auto?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/a-je-li-ti-ivan-vratio-auto.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "A jesi li se opekao?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/a-jesi-li-se-opekao.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "A jeste li kupili nešto?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/a-jeste-li-kupili-nesto.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "avantura",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/avantura.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Bilo je super!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/bilo-je-super.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Bilo je to jako uzbudljivo putovanje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/bilo-je-to-jako-uzbudljivo-putovanje.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Bio sam na Visu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/bio-sam-na-visu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Bok! Čujem da si bio na moru. Kako je bilo?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/bok-cujem-da-si-bio-na-moru-kako-je-bilo.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čekaj trenutak!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cekaj-trenutak.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čestitali smo joj rođendan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cestitali-smo-joj-rodjendan.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "čestitam, čestitaš, čestita, čestitamo, čestitate, čestitaju. čestitao, čestitala, čestitali. čestitat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cestitam-cestitas-cestita-cestitamo-cestitate-cestitaju-cest.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "čestitati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cestitati.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Često sretam susjede., Slučajno smo sreli prijatelje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cesto-sretam-susjede-slucajno-smo-sreli-prijatelje.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Cijelu večer sam spremala stvari., Spremio sam kofer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cijelu-vecer-sam-spremala-stvari-spremio-sam-kofer.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čim je sunce izašlo, krenuli smo na izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim-je-sunce-izaslo-krenuli-smo-na-izlet.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "čim prije",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim-prije.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čim sam se raspakirala, obukla sam kupaći kostim.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim-sam-se-raspakirala-obukla-sam-kupaci-kostim.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čim sam ušla u sobu, otvorila sam prozor.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim-sam-usla-u-sobu-otvorila-sam-prozor.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čim smo stigli na more, otišli smo na plažu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim-smo-stigli-na-more-otisli-smo-na-plazu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čim smo stigli, otišli smo na plažu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim-smo-stigli-otisli-smo-na-plazu.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čim smo stigli, sjeli smo u hladovinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim-smo-stigli-sjeli-smo-u-hladovinu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Čim smo stigli u Split, otišli smo na plažu. Tek kad smo se vratili u apartman, shvatila sam da sam izgubila naočale.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim-smo-stigli-u-split-otisli-smo-na-plazu-tek-kad-smo-se-vr.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "čim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/cim.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Djeca skupljaju školjke.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/djeca-skupljaju-skoljke.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "dogodovština",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/dogodovstina.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dogovoreno. Uživaj!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/dogovoreno-uzivaj-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dok smo čekali trajekt, ispričao nam je jednu dogodovštinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/dok-smo-cekali-trajekt-ispricao-nam-je-jednu-dogodovstinu.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dok smo čekali trajekt, ispričao nam je…",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/dok-smo-cekali-trajekt-ispricao-nam-je.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Dok smo kupovali suvenire, počela je kiša.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/dok-smo-kupovali-suvenire-pocela-je-kisa.mp3",
+      "kinds": [
+        "example",
+        "question",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "doživim, doživiš, doživi, doživimo, doživite, dožive. doživio, doživjela, doživjeli. doživjet ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/dozivim-dozivis-dozivi-dozivimo-dozivite-dozive-dozivio-dozi.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "doživjeti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/dozivjeti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "dug",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/dug.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "hladovina",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/hladovina.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Hvala što si mi ispričao!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/hvala-sto-si-mi-ispricao-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ispričala sam im sve o putovanju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/ispricala-sam-im-sve-o-putovanju.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ispričam, ispričaš, ispriča, ispričamo, ispričate, ispričaju. ispričao, ispričala, ispričali. ispričat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/ispricam-ispricas-isprica-ispricamo-ispricate-ispricaju-ispr.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ispričati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/ispricati.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Izgubili smo se u starom gradu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/izgubili-smo-se-u-starom-gradu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Iznenada je počela oluja.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/iznenada-je-pocela-oluja.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "iznenada",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/iznenada.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Iznenadila sam se koliko je more čisto.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/iznenadila-sam-se-koliko-je-more-cisto.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "question"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "iznenadim se, iznenadiš se, iznenadi se, iznenadimo se, iznenadite se, iznenade se. iznenadio se, iznenadila se, iznenadili se. iznenadit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/iznenadim-se-iznenadis-se-iznenadi-se-iznenadimo-se-iznenadi.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "iznenaditi se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/iznenaditi-se.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Javi mi se čim prije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/javi-mi-se-cim-prije.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Javi se čim se vratiš!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/javi-se-cim-se-vratis-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Je li bilo nekih problema?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/je-li-bilo-nekih-problema-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Je, vratio mi ga je jučer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/je-vratio-mi-ga-je-jucer.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Jedrili smo do malog otoka.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/jedrili-smo-do-malog-otoka.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "jedrim, jedriš, jedri, jedrimo, jedrite, jedre. jedrio, jedrila, jedrili. jedrit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/jedrim-jedris-jedri-jedrimo-jedrite-jedre-jedrio-jedrila-jed.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "jedriti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/jedriti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Jesam, ispričao sam joj sve.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/jesam-ispricao-sam-joj-sve.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Jesam, poslao sam joj razglednicu iz Splita.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/jesam-poslao-sam-joj-razglednicu-iz-splita-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Jesi li ikad doživio neku avanturu na putovanju?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/jesi-li-ikad-dozivio-neku-avanturu-na-putovanju-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Jesmo, zadnji dan smo kupili maslinovo ulje i lavandu.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/jesmo-zadnji-dan-smo-kupili-maslinovo-ulje-i-lavandu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Jeste li kupili neke suvenire?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/jeste-li-kupili-neke-suvenire.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Kad sam mu ja posudila bicikl, vratio ga je nakon mjesec dana!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/kad-sam-mu-ja-posudila-bicikl-vratio-ga-je-nakon-mjesec-dana.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Kad sam stigao kući, nazvao sam mamu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/kad-sam-stigao-kuci-nazvao-sam-mamu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Kakva priča! Sigurno je nikad nećeš zaboraviti.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/kakva-prica-sigurno-je-nikad-neces-zaboraviti-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "kampiram, kampiraš, kampira, kampiramo, kampirate, kampiraju. kampirao, kampirala, kampirali. kampirat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/kampiram-kampiras-kampira-kampiramo-kampirate-kampiraju-kamp.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "kampirati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/kampirati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "kupaći kostim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/kupaci-kostim.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Kupio sam nove peraje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/kupio-sam-nove-peraje.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "kupovati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/kupovati.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "kupujem, kupuješ, kupuje, kupujemo, kupujete, kupuju. kupovao, kupovala, kupovali. kupovat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/kupujem-kupujes-kupuje-kupujemo-kupujete-kupuju-kupovao-kupo.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Lijepo! A je li ti Marko vratio novac?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/lijepo-a-je-li-ti-marko-vratio-novac.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ljetos smo bili na Visu. Čim smo stigli, otišli smo na plažu. Odjednom je počela oluja. Na kraju smo cijelu večer igrali karte. Ukratko, bilo je savršeno ljeto.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/ljetos-smo-bili-na-visu-cim-smo-stigli-otisli-smo-na-plazu-o.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Marko, jesi li poslao razglednicu baki?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/marko-jesi-li-poslao-razglednicu-baki.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Marko, kako je bilo na moru?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/marko-kako-je-bilo-na-moru.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Maska za ronjenje je u koferu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/maska-za-ronjenje-je-u-koferu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "maska za ronjenje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/maska-za-ronjenje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Na kraju smo našli hotel.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/na-kraju-smo-nasli-hotel.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Na početku smo bili malo umorni.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/na-pocetku-smo-bili-malo-umorni.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "na početku",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/na-pocetku.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Na Visu smo doživjeli pravu avanturu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/na-visu-smo-dozivjeli-pravu-avanturu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nakon nekoliko dana sam se naviknula na vrućinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/nakon-nekoliko-dana-sam-se-naviknula-na-vrucinu.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "nakon nekoliko dana",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/nakon-nekoliko-dana.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Navečer sam spremala stvari za izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/navecer-sam-spremala-stvari-za-izlet.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nazvat ću čim stignem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/nazvat-cu-cim-stignem.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nazvat ću te čim se vratim.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/nazvat-cu-te-cim-se-vratim.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nazvat ću te čim stignem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/nazvat-cu-te-cim-stignem.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "nevjerojatan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/nevjerojatan.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Nije još. Obećao mi je da će ga vratiti sutra.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/nije-jos-obecao-mi-je-da-ce-ga-vratiti-sutra-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "nikad neću zaboraviti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/nikad-necu-zaboraviti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "obećam, obećaš, obeća, obećamo, obećate, obećaju. obećao, obećala, obećali. obećat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/obecam-obecas-obeca-obecamo-obecate-obecaju-obecao-obecala-o.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Obećao sam ti da ću doći.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/obecao-sam-ti-da-cu-doci.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "obećati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/obecati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "objasnim, objasniš, objasni, objasnimo, objasnite, objasne. objasnio, objasnila, objasnili. objasnit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/objasnim-objasnis-objasni-objasnimo-objasnite-objasne-objasn.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Objasnio mi je put do plaže.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/objasnio-mi-je-put-do-plaze.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Objasnio mi je put.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/objasnio-mi-je-put.mp3",
+      "kinds": [
+        "answer",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "objasniti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/objasniti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Odlično, onda zna sve!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/odlicno-onda-zna-sve.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Odmah sam se raspakirala.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/odmah-sam-se-raspakirala.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "odmah",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/odmah.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Oduševili smo se pogledom s tvrđave.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/odusevili-smo-se-pogledom-s-tvrdjave.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Oduševili smo se pogledom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/odusevili-smo-se-pogledom.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "oduševim se, oduševiš se, oduševi se, oduševimo se, oduševite se, oduševe se. oduševio se, oduševila se, oduševili se. oduševit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/odusevim-se-odusevis-se-odusevi-se-odusevimo-se-odusevite-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "oduševiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/oduseviti-se.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "opečem se, opečeš se, opeče se, opečemo se, opečete se, opeču se. opekao se, opekla se, opekli se. opeći ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/opecem-se-opeces-se-opece-se-opecemo-se-opecete-se-opecu-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "opeći se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/opeci-se.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Ozbiljno? Što se dogodilo poslije?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/ozbiljno-sto-se-dogodilo-poslije-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "peraje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/peraje.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Pokazat ću ti slike s mora.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/pokazat-cu-ti-slike-s-mora.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Poklonila sam joj razglednicu iz Splita.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/poklonila-sam-joj-razglednicu-iz-splita.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "poklonim, pokloniš, pokloni, poklonimo, poklonite, poklone. poklonio, poklonila, poklonili. poklonit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/poklonim-poklonis-pokloni-poklonimo-poklonite-poklone-poklon.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Poklonio sam joj knjigu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/poklonio-sam-joj-knjigu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "pokloniti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/pokloniti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "posudim, posudiš, posudi, posudimo, posudite, posude. posudio, posudila, posudili. posudit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/posudim-posudis-posudi-posudimo-posudite-posude-posudio-posu.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Posudio sam mu auto.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/posudio-sam-mu-auto.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Posudio sam mu bicikl. Obećala sam joj da ću doći na rođendan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/posudio-sam-mu-bicikl-obecala-sam-joj-da-cu-doci-na-rodjenda.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "posuditi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/posuditi.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Pozdravi mamu od mene!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/pozdravi-mamu-od-mene.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "pozdraviti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/pozdraviti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "preplanuo",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/preplanuo.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Pričaj! Gdje si bio ovo ljeto?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/pricaj-gdje-si-bio-ovo-ljeto.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "primijetim, primijetiš, primijeti, primijetimo, primijetite, primijete. primijetio, primijetila, primijetili. primijetit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/primijetim-primijetis-primijeti-primijetimo-primijetite-prim.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Primijetio sam da je more jako toplo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/primijetio-sam-da-je-more-jako-toplo.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "primijetiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/primijetiti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Prošle godine smo se izgubili u Dubrovniku. Slučajno smo našli mali restoran. Oduševila sam se hranom!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/prosle-godine-smo-se-izgubili-u-dubrovniku-slucajno-smo-nasl.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Prošlo ljeto smo kampirali u Istri.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/proslo-ljeto-smo-kampirali-u-istri.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Prvi dan jesam, jer sam zaboravio kremu za sunčanje.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/prvi-dan-jesam-jer-sam-zaboravio-kremu-za-suncanje-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Prvi dan sam se opekla na suncu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/prvi-dan-sam-se-opekla-na-suncu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "raspakiram se, raspakiraš se, raspakira se, raspakiramo se, raspakirate se, raspakiraju se. raspakirao se, raspakirala se, raspakirali se. raspakirat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/raspakiram-se-raspakiras-se-raspakira-se-raspakiramo-se-rasp.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "raspakirati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/raspakirati-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "S vidikovca se vidi cijeli grad.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/s-vidikovca-se-vidi-cijeli-grad.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "shvatim, shvatiš, shvati, shvatimo, shvatite, shvate. shvatio, shvatila, shvatili. shvatit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/shvatim-shvatis-shvati-shvatimo-shvatite-shvate-shvatio-shva.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "shvatiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/shvatiti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "školjka",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/skoljka.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "slike",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/slike.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Sljedećeg dana smo krenuli na otok.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/sljedeceg-dana-smo-krenuli-na-otok.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "sljedećeg dana",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/sljedeceg-dana.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Slučajno smo sreli prijatelje iz Poljske.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/slucajno-smo-sreli-prijatelje-iz-poljske.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Smjestili smo se u mali apartman blizu plaže.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/smjestili-smo-se-u-mali-apartman-blizu-plaze.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "smjestim se, smjestiš se, smjesti se, smjestimo se, smjestite se, smjeste se. smjestio se, smjestila se, smjestili se. smjestit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/smjestim-se-smjestis-se-smjesti-se-smjestimo-se-smjestite-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "smjestiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/smjestiti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "spremam, spremaš, sprema, spremamo, spremate, spremaju. spremao, spremala, spremali. spremat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/spremam-spremas-sprema-spremamo-spremate-spremaju-spremao-sp.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "spremati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/spremati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "spremim, spremiš, spremi, spremimo, spremite, spreme. spremio, spremila, spremili. spremit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/spremim-spremis-spremi-spremimo-spremite-spreme-spremio-spre.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Spremio sam kofer za pet minuta.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/spremio-sam-kofer-za-pet-minuta.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "spremiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/spremiti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Stalno se iznenađujem., Iznenadila sam se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/stalno-se-iznenadjujem-iznenadila-sam-se.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Što si poklonio mami za rođendan?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/sto-si-poklonio-mami-za-rodjendan.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Što ste napravili čim ste stigli?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/sto-ste-napravili-cim-ste-stigli-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Što ste napravili prvi dan?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/sto-ste-napravili-prvi-dan.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Što ste radili svaki dan?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/sto-ste-radili-svaki-dan.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Super, jedva čekam vidjeti slike!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/super-jedva-cekam-vidjeti-slike.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Super. Jesi li ispričao Ani o putovanju?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/super-jesi-li-ispricao-ani-o-putovanju.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Super! Svaki dan smo plivali, a jedan dan smo jedrili do malog otoka.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-02/super-svaki-dan-smo-plivali-a-jedan-dan-smo-jedrili-do-malog-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Svaki dan smo kupovali kruh.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/svaki-dan-smo-kupovali-kruh.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Svaki dan smo kupovali ribu., Kupili smo suvenire.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/svaki-dan-smo-kupovali-ribu-kupili-smo-suvenire.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Svaki dan smo kupovali svježu ribu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/svaki-dan-smo-kupovali-svjezu-ribu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Svaki dan smo plivali i jedrili.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/svaki-dan-smo-plivali-i-jedrili.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Svaki dan smo plivali i kupovali svježu ribu. Jedan dan smo posjetili mali otok. Zadnji dan smo kupili suvenire.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/svaki-dan-smo-plivali-i-kupovali-svjezu-ribu-jedan-dan-smo-p.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Taj dan nikad neću zaboraviti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/taj-dan-nikad-necu-zaboraviti.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Tek kad smo stigli u hotel, shvatio sam da nemam putovnicu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/tek-kad-smo-stigli-u-hotel-shvatio-sam-da-nemam-putovnicu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "question"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "tek kad",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/tek-kad.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "trenutak",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/trenutak.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Tvrđava je stara petsto godina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/tvrdjava-je-stara-petsto-godina.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "tvrđava",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/tvrdjava.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "U jednom trenutku je počela jaka kiša.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/u-jednom-trenutku-je-pocela-jaka-kisa.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "u jednom trenutku",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/u-jednom-trenutku.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "U starim gradovima se uvijek gubim.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/u-starim-gradovima-se-uvijek-gubim.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "ukratko",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/ukratko.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Uvijek se gubim., Izgubili smo se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/uvijek-se-gubim-izgubili-smo-se.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "uzbudljiv",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/uzbudljiv.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "vidikovac",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/vidikovac.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Vratili smo se tek kad je počela kiša.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/vratili-smo-se-tek-kad-je-pocela-kisa.mp3",
+      "kinds": [
+        "example",
+        "table"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Vratio mi je dug.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/vratio-mi-je-dug.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "zadnjeg dana",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zadnjeg-dana.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Zadnji dan smo kupili suvenire za obitelj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zadnji-dan-smo-kupili-suvenire-za-obitelj.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Zalutali smo i stigli na prekrasnu plažu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zalutali-smo-i-stigli-na-prekrasnu-plazu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "zalutam, zalutaš, zaluta, zalutamo, zalutate, zalutaju. zalutao, zalutala, zalutali. zalutat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zalutam-zalutas-zaluta-zalutamo-zalutate-zalutaju-zalutao-za.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "zalutati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zalutati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Zamolila me da joj pošaljem slike.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zamolila-me-da-joj-posaljem-slike.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "zamolim, zamoliš, zamoli, zamolimo, zamolite, zamole. zamolio, zamolila, zamolili. zamolit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zamolim-zamolis-zamoli-zamolimo-zamolite-zamole-zamolio-zamo.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "zamoliti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zamoliti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        2
+      ]
+    },
+    {
+      "text": "Zvuči kao savršeno ljeto!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-02/zvuci-kao-savrseno-ljeto.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        2
       ]
     }
   ]

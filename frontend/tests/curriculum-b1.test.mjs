@@ -88,9 +88,11 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-test('B1: poziom dostępny, moduł 1 ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta'];
+
+test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
-  assert.deepEqual(b1.modules.map((m) => [m.id, m.title]), [['b1-01', 'Svakodnevica i navike']]);
+  assert.deepEqual(b1.modules.map((m) => m.title), MODULE_TITLES);
   for (const [i, module] of b1.modules.entries()) {
     const m = String(i + 1).padStart(2, '0');
     assert.equal(module.levelId, 'B1');
@@ -103,8 +105,9 @@ test('B1: poziom dostępny, moduł 1 ma 4 lekcje i powtórkę, A1 i A2 bez zmian
   // Postęp B1 liczy się osobno: nowy uczeń zaczyna od b1-01-01.
   assert.equal(deriveLevel(b1, new Set()).current.lesson.lesson.id, 'b1-01-01');
   assert.equal(nextLessonId(b1, 'b1-01-04'), 'b1-01-05');
-  assert.equal(nextLessonId(b1, 'b1-01-05'), null);
-  assert.equal(lessons.length, 5);
+  for (let m = 1; m < MODULE_TITLES.length; m++) assert.equal(nextLessonId(b1, `b1-0${m}-05`), `b1-0${m + 1}-01`);
+  assert.equal(nextLessonId(b1, lessons.at(-1).id), null);
+  assert.equal(lessons.length, 5 * MODULE_TITLES.length);
 });
 
 test('B1: rdzeń lekcji nie powtarza słów, które uczeń zna z A1 i A2', () => {
@@ -157,6 +160,17 @@ const OPEN_REPLIES = [
   { lesson: 'b1-01-05', reply: 0, hit: ['Moj dan počinje u sedam.', 'Moj tipičan radni dan počinje u sedam.', 'Dan mi počinje oko šest.', 'Ujutro pijem kavu i čitam vijesti.', 'Obično radim od osam do četiri.'], miss: ['U sedam počinje sam.'] },
   { lesson: 'b1-01-05', reply: 1, hit: ['Dok putujem na posao, slušam podcast.', 'Čitam vijesti.', 'Dok idem na posao, slušam glazbu.'], miss: ['Vijesti.'] },
   { lesson: 'b1-01-05', reply: 2, hit: ['Počela sam trčati.', 'Prestao sam pušiti.', 'Ove godine sam počeo učiti hrvatski.', 'Naviknula sam se na rano ustajanje.', 'Ništa posebno.'], miss: ['Sam počela trčati.'] },
+  // Moduł 2: aspekt w przeszłości, čim / tek kad, szyk krótkich słów.
+  { lesson: 'b1-02-01', reply: 0, hit: ['Bilo je super!', 'Odlično!', 'Bilo je jako lijepo.', 'Super, bilo je toplo.'], miss: ['Je bilo super.'] },
+  { lesson: 'b1-02-01', reply: 1, hit: ['Svaki dan smo plivali i jedrili.', 'Svaki dan smo kupovali svježu ribu.', 'Plivali smo i sunčali se.', 'Ujutro smo išli na plažu.', 'Mi smo se kupali svaki dan.'], miss: ['Smo plivali svaki dan.'] },
+  { lesson: 'b1-02-01', reply: 2, hit: ['Zadnji dan smo kupili suvenire za obitelj.', 'Kupili smo suvenire.', 'Jesmo, kupili smo maslinovo ulje.', 'Kupila sam školjke.'], miss: ['Smo kupili suvenire.', 'Kupujemo suvenire.'] },
+  { lesson: 'b1-02-02', reply: 0, hit: ['Čim smo stigli na more, otišli smo na plažu.', 'Odmah smo otišli na plažu.', 'Prvo smo se raspakirali.', 'Otišli smo na plažu.'], miss: ['Smo otišli na plažu.'] },
+  { lesson: 'b1-02-02', reply: 1, hit: ['Tek kad smo stigli u hotel, shvatio sam da nemam putovnicu.', 'Primijetila sam da je more hladno.', 'Shvatili smo da nemamo ključ.', 'Ne, nije bilo problema.'], miss: ['Sam shvatio da nemam ključ.'] },
+  { lesson: 'b1-02-04', reply: 0, hit: ['Slučajno smo sreli prijatelje iz Poljske.', 'Izgubio sam se u Zagrebu.', 'Jednom sam se izgubila u Rimu.', 'Zalutali smo u šumi.', 'Da, doživjeli smo pravu avanturu.'], miss: ['Sam se izgubio u Zagrebu.'] },
+  { lesson: 'b1-02-04', reply: 1, hit: ['Na kraju smo našli hotel.', 'Onda smo pitali policajca.', 'Napokon smo stigli kući.'], miss: ['Smo našli hotel.'] },
+  { lesson: 'b1-02-05', reply: 0, hit: ['Bio sam na Visu.', 'Ljetos sam bila u Istri.', 'Na moru.', 'Bili smo u Dalmaciji.'], miss: ['Sam bio na Visu.'] },
+  { lesson: 'b1-02-05', reply: 1, hit: ['Čim smo stigli, otišli smo na plažu.', 'Prvi dan smo se odmarali.', 'Odmah smo otišli na plažu.'], miss: ['Smo otišli na plažu.'] },
+  { lesson: 'b1-02-05', reply: 2, hit: ['U jednom trenutku je počela jaka kiša.', 'Odjednom je počela oluja.', 'Jednog dana smo se izgubili.', 'Ne.'], miss: ['Je počela kiša.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

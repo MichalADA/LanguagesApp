@@ -6,6 +6,9 @@
   "modules": {
     "1": {
       "description": "Opowiadasz o codzienności: co robisz zwykle, a co już zrobiłeś, co robisz w tym samym czasie, w jakiej kolejności i jak zmieniają się twoje nawyki."
+    },
+    "2": {
+      "description": "Opowiadasz o wakacjach i przygodach: co się działo, a co się wydarzyło, co zrobiłeś, gdy tylko…, gdzie stoją krótkie słówka i jak opowiedzieć całą historię."
     }
   },
   "lessons": {
@@ -837,6 +840,810 @@
         ],
         "minSentences": 3,
         "sample": "Moj tipičan radni dan počinje u sedam. Dok putujem na posao, čitam vijesti. Vikendom spavam duže. Prošle godine sam prestala pušiti i počela sam trčati."
+      }
+    },
+    "b1-06": {
+      "grammar": {
+        "title": "Kupovali smo czy kupili smo?",
+        "text": "W przeszłości aspekt działa jak po polsku. Niedokonany mówi, co się działo albo powtarzało: Svaki dan smo kupovali svježu ribu. Dokonany — jedno zakończone wydarzenie: Zadnji dan smo kupili suvenire. W opowieści niedokonany to tło, a dokonany to wydarzenie, które je przerywa: Dok smo kupovali suvenire, počela je kiša.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany w przeszłości",
+            "rows": [
+              {
+                "base": "kupovati → kupiti",
+                "form": "Svaki dan smo kupovali ribu. / Kupili smo suvenire.",
+                "meaning": "Codziennie kupowaliśmy rybę. / Kupiliśmy pamiątki."
+              },
+              {
+                "base": "spremati → spremiti",
+                "form": "Cijelu večer sam spremala stvari. / Spremio sam kofer.",
+                "meaning": "Cały wieczór pakowałam rzeczy. / Spakowałem walizkę."
+              },
+              {
+                "base": "tło + wydarzenie",
+                "form": "Dok smo kupovali suvenire, počela je kiša.",
+                "meaning": "Kiedy kupowaliśmy pamiątki, zaczął padać deszcz."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          3,
+          5,
+          10
+        ],
+        "tip": "za pet minuta (w pięć minut — z wynikiem) → dokonany: Spremio sam kofer za pet minuta. Cijelu večer, pet sati (przez jakiś czas) → niedokonany: Cijelu večer sam spremala stvari."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "kupili"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 10,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Codziennie kupowaliśmy chleb.",
+          "options": [
+            "Svaki dan smo kupovali kruh.",
+            "Svaki dan smo kupili kruh.",
+            "Svaki dan smo kupujemo kruh."
+          ],
+          "correct": 0,
+          "explanation": "Czynność powtarzana w przeszłości → niedokonany: kupovali smo."
+        }
+      ],
+      "model": {
+        "title": "Wakacje na wyspie",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, kako je bilo na moru?",
+            "pl": "Marko, jak było nad morzem?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! Svaki dan smo plivali, a jedan dan smo jedrili do malog otoka.",
+            "pl": "Super! Codziennie pływaliśmy, a jednego dnia popłynęliśmy żaglówką na małą wyspę."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A jesi li se opekao?",
+            "pl": "A spaliłeś się na słońcu?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Prvi dan jesam, jer sam zaboravio kremu za sunčanje.",
+            "pl": "Pierwszego dnia tak, bo zapomniałem kremu do opalania."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Jeste li kupili neke suvenire?",
+            "pl": "Kupiliście jakieś pamiątki?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jesmo, zadnji dan smo kupili maslinovo ulje i lavandu.",
+            "pl": "Tak, ostatniego dnia kupiliśmy oliwę i lawendę."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Jak było nad morzem?",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Bok! Čujem da si bio na moru. Kako je bilo?",
+            "pl": "Cześć! Słyszę, że byłeś nad morzem. Jak było?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak było (np. Bilo je super!).",
+              "accept": [
+                "Bilo je super!"
+              ],
+              "open": true,
+              "pattern": "^(bilo je )?(jako |stvarno |baš )?(super|odlično|predivno|lijepo|fantastično|dobro|savršeno|prekrasno|toplo|vruće|nevjerojatno)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Što ste radili svaki dan?",
+            "pl": "Co robiliście codziennie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robiliście codziennie (niedokonany: plivali smo, kupovali smo…).",
+              "accept": [
+                "Svaki dan smo plivali i jedrili.",
+                2
+              ],
+              "open": true,
+              "pattern": "^(svaki dan|ujutro|navečer|obično|često|uglavnom|mi|ja) (smo|sam)( se)? {pp}( \\p{L}+){0,5}$|^{pp} (smo|sam)( se)?( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "A jeste li kupili nešto?",
+            "pl": "A kupiliście coś?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co kupiliście (dokonany: kupili smo…).",
+              "accept": [
+                3,
+                "Kupili smo suvenire."
+              ],
+              "open": true,
+              "pattern": "^((jesmo|jesam|da) )?((zadnji dan|zadnjeg dana|na kraju|mi|ja) (smo|sam) (kupili|kupila|kupio|kupile)|(kupili|kupila|kupio|kupile) (smo|sam))( \\p{L}+){1,4}$"
+            }
+          },
+          {
+            "say": "Super, jedva čekam vidjeti slike!",
+            "pl": "Super, nie mogę się doczekać zdjęć!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o ostatnich wakacjach: co robiliście codziennie, a co zrobiliście jeden raz.",
+        "points": [
+          "co robiliście codziennie (niedokonany)",
+          "co zrobiliście jeden raz (dokonany)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "svaki",
+              "često",
+              "obično",
+              "stalno",
+              "uvijek"
+            ],
+            "label": "powtarzalność: svaki dan / često"
+          },
+          {
+            "any": [
+              "kupili",
+              "kupio",
+              "kupila",
+              "spremio",
+              "spremila",
+              "vidjeli",
+              "posjetili",
+              "upoznali",
+              "opekao",
+              "opekla",
+              "otišli",
+              "stigli",
+              "popili",
+              "pojeli",
+              "doživjeli"
+            ],
+            "label": "jedno wydarzenie: kupili smo / posjetili smo"
+          }
+        ],
+        "sample": "Svaki dan smo plivali i kupovali svježu ribu. Jedan dan smo posjetili mali otok. Zadnji dan smo kupili suvenire."
+      }
+    },
+    "b1-07": {
+      "grammar": {
+        "title": "Čim smo stigli…",
+        "text": "čim = gdy tylko (zaraz potem). Po čim zwykle stoi czasownik dokonany: o przeszłości w perfekcie — Čim smo stigli na more, otišli smo na plažu; o przyszłości w czasie teraźniejszym — Nazvat ću te čim stignem (= gdy tylko dotrę). tek kad = dopiero kiedy: Tek kad smo stigli u hotel, shvatio sam… Krótkie słowa stoją zaraz po čim i kad: čim smo, kad je.",
+        "table": [
+          {
+            "label": "čim / tek kad",
+            "rows": [
+              {
+                "base": "przeszłość",
+                "form": "Čim smo stigli, otišli smo na plažu.",
+                "meaning": "Gdy tylko dotarliśmy, poszliśmy na plażę."
+              },
+              {
+                "base": "przyszłość",
+                "form": "Nazvat ću te čim stignem.",
+                "meaning": "Zadzwonię, gdy tylko dotrę."
+              },
+              {
+                "base": "dopiero gdy",
+                "form": "Vratili smo se tek kad je počela kiša.",
+                "meaning": "Wróciliśmy dopiero, kiedy zaczął padać deszcz."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          8,
+          3,
+          9
+        ],
+        "tip": "O przyszłości po čim i kad nie używasz futuru: čim stignem, kad dođem — tak jak po polsku „gdy tylko dotrę”, a nie „gdy tylko będę docierać”."
+      },
+      "gap": {
+        "sentence": 8,
+        "word": "čim"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 3,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zadzwonię, gdy tylko dotrę.",
+          "options": [
+            "Nazvat ću čim stignem.",
+            "Nazvat ću čim ću stići.",
+            "Nazvat ću čim stižem."
+          ],
+          "correct": 0,
+          "explanation": "O przyszłości po čim: dokonany w czasie teraźniejszym — čim stignem (= gdy tylko dotrę)."
+        }
+      ],
+      "listening": "b1-dolazak-u-apartman",
+      "dialog": {
+        "title": "Pierwszy dzień",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Što ste napravili čim ste stigli?",
+            "pl": "Co zrobiliście, gdy tylko dotarliście?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobiliście, gdy tylko dotarliście (Čim smo stigli, …).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^(čim smo (stigli|došli)( \\p{L}+){0,3} )?({pp} (smo|sam)( se)?|(odmah|prvo|mi|ja) (smo|sam)( se)? {pp})( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Je li bilo nekih problema?",
+            "pl": "Były jakieś problemy?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zauważyłeś / zauważyłaś dopiero później (Tek kad smo…, shvatio sam da…).",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^(da |nažalost |pa )?(tek kad (smo|sam|je)( \\p{L}+){1,4} )?((shvatio|shvatila|primijetio|primijetila) (sam|smo)|(shvatili|primijetili) smo)( da)?( \\p{L}+){0,6}$|^(ne|nije|nisu|ništa)( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Javi se čim se vratiš!",
+            "pl": "Odezwij się, gdy tylko wrócisz!"
+          },
+          {
+            "reply": {
+              "prompt": "Obiecaj, że zadzwonisz, gdy tylko wrócisz (Nazvat ću te čim…).",
+              "accept": [
+                "Nazvat ću te čim se vratim."
+              ],
+              "pattern": "^((dobro|može|naravno|hoću) )?(nazvat ću te|javit ću ti se) čim (se vratim|stignem|dođem)( kući)?$|^čim (se vratim|stignem|dođem)( kući)? (nazvat ću te|javit ću ti se)$"
+            }
+          },
+          {
+            "say": "Dogovoreno. Uživaj!",
+            "pl": "Umowa stoi. Baw się dobrze!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co zrobiłeś / zrobiłaś zaraz po przyjeździe na wakacje (čim) i co zauważyłeś dopiero później (tek kad).",
+        "points": [
+          "zaraz po przyjeździe (čim…)",
+          "co zauważyłeś później (tek kad…, shvatio sam…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "čim"
+            ],
+            "label": "čim"
+          },
+          {
+            "any": [
+              "tek",
+              "shvatio",
+              "shvatila",
+              "shvatili",
+              "primijetio",
+              "primijetila",
+              "primijetili"
+            ],
+            "label": "tek kad / shvatio sam"
+          }
+        ],
+        "sample": "Čim smo stigli u Split, otišli smo na plažu. Tek kad smo se vratili u apartman, shvatila sam da sam izgubila naočale."
+      }
+    },
+    "b1-08": {
+      "grammar": {
+        "title": "Krótkie słowa na drugim miejscu",
+        "text": "Krótkie słowa — sam, si, je, smo, ste, su, me, mi, te, ti, ga, mu, joj, se — stoją zawsze na drugim miejscu w zdaniu: po pierwszym słowie albo pierwszej grupie słów. Po spójniku (kad, jer, dok, da, čim) — zaraz po nim: Kad sam stigao kući…, …jer je padala kiša. Gdy jest ich kilka, kolejność jest stała: sam / smo → komu? (mi, ti, mu, joj, nam, im) → kogo? (me, te, ga) → se, a je zawsze na końcu: Posudio sam mu auto. Objasnio mi je put.",
+        "table": [
+          {
+            "label": "gdzie stoi krótkie słowo",
+            "rows": [
+              {
+                "base": "po spójniku",
+                "form": "Kad sam stigao kući, nazvao sam mamu.",
+                "meaning": "Kiedy dotarłem do domu, zadzwoniłem do mamy."
+              },
+              {
+                "base": "sam + komu",
+                "form": "Posudio sam mu auto.",
+                "meaning": "Pożyczyłem mu samochód."
+              },
+              {
+                "base": "komu + je",
+                "form": "Objasnio mi je put.",
+                "meaning": "Wyjaśnił mi drogę."
+              },
+              {
+                "base": "po pierwszej grupie",
+                "form": "Dok smo čekali trajekt, ispričao nam je…",
+                "meaning": "Kiedy czekaliśmy na prom, opowiedział nam…"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          8,
+          9
+        ],
+        "tip": "Nigdy nie zaczynaj zdania od sam, je, mi, ga: nie „Sam mu posudio auto”, tylko Posudio sam mu auto albo Ja sam mu posudio auto."
+      },
+      "gap": {
+        "sentence": 8,
+        "word": "je"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Wyjaśnił mi drogę.",
+          "options": [
+            "Objasnio mi je put.",
+            "Objasnio je mi put.",
+            "Mi je objasnio put."
+          ],
+          "correct": 0,
+          "explanation": "Gdy krótkich słów jest kilka, je idzie na koniec grupy: mi je."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Kiedy dotarłem do domu, zadzwoniłem do mamy.",
+          "options": [
+            "Kad sam stigao kući, nazvao sam mamu.",
+            "Kad stigao sam kući, nazvao sam mamu.",
+            "Kad sam stigao kući, sam nazvao mamu."
+          ],
+          "correct": 0,
+          "explanation": "sam stoi zaraz po kad, a w drugiej części — po pierwszym słowie: nazvao sam."
+        }
+      ],
+      "model": {
+        "title": "Kto komu co oddał",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, jesi li poslao razglednicu baki?",
+            "pl": "Marko, wysłałeś pocztówkę babci?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jesam, poslao sam joj razglednicu iz Splita.",
+            "pl": "Tak, wysłałem jej pocztówkę ze Splitu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A je li ti Ivan vratio auto?",
+            "pl": "A Ivan oddał ci samochód?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Nije još. Obećao mi je da će ga vratiti sutra.",
+            "pl": "Jeszcze nie. Obiecał mi, że odda go jutro."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Kad sam mu ja posudila bicikl, vratio ga je nakon mjesec dana!",
+            "pl": "Kiedy ja pożyczyłam mu rower, oddał go po miesiącu!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Komu i co?",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Što si poklonio mami za rođendan?",
+            "pl": "Co podarowałeś mamie na urodziny?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że podarowałeś / podarowałaś jej książkę (Poklonio sam joj…).",
+              "accept": [
+                "Poklonio sam joj knjigu."
+              ],
+              "pattern": "^(ja sam joj (poklonio|poklonila)|(poklonio|poklonila) sam joj) (knjigu|jednu knjigu|novu knjigu|lijepu knjigu)$"
+            }
+          },
+          {
+            "say": "Lijepo! A je li ti Marko vratio novac?",
+            "pl": "Ładnie! A Marko oddał ci pieniądze?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, że tak — oddał ci je wczoraj (Vratio mi ga je…).",
+              "accept": [
+                "Je, vratio mi ga je jučer."
+              ],
+              "pattern": "^((je|jest|da) )?(vratio mi ga je( jučer)?|jučer mi ga je vratio)$"
+            }
+          },
+          {
+            "say": "Super. Jesi li ispričao Ani o putovanju?",
+            "pl": "Super. Opowiedziałeś Anie o podróży?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że tak — opowiedziałeś / opowiedziałaś jej wszystko.",
+              "accept": [
+                "Jesam, ispričao sam joj sve."
+              ],
+              "pattern": "^((jesam|da) )?((ispričao|ispričala) sam joj sve|sve sam joj (ispričao|ispričala))$"
+            }
+          },
+          {
+            "say": "Odlično, onda zna sve!",
+            "pl": "Świetnie, to wie wszystko!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z krótkimi słowami: komu coś dałeś, pożyczyłeś albo obiecałeś.",
+        "points": [
+          "komu? (mu, joj, ti, im…)",
+          "sam / je na drugim miejscu"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "mu",
+              "joj",
+              "ti",
+              "mi",
+              "im",
+              "vam",
+              "nam"
+            ],
+            "label": "komu: mu / joj / ti"
+          },
+          {
+            "any": [
+              "sam",
+              "smo",
+              "je"
+            ],
+            "label": "sam / smo / je"
+          }
+        ],
+        "sample": "Posudio sam mu bicikl. Obećala sam joj da ću doći na rođendan."
+      }
+    },
+    "b1-09": {
+      "grammar": {
+        "title": "Slučajno smo sreli prijatelje",
+        "text": "Przygodę opowiadasz wydarzeniami w aspekcie dokonanym: Doživjeli smo avanturu, Izgubili smo se, Slučajno smo sreli prijatelje. Uczucia to często czasowniki z se: iznenaditi se (zdziwić się), oduševiti se (zachwycić się). Po oduševiti se stoi narzędnik bez przyimka: Oduševili smo se pogledom. To, co dzieje się zawsze albo często, wyrażasz niedokonanym: U starim gradovima se uvijek gubim.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "gubiti se → izgubiti se",
+                "form": "Uvijek se gubim. / Izgubili smo se.",
+                "meaning": "Zawsze się gubię. / Zgubiliśmy się."
+              },
+              {
+                "base": "sretati → sresti",
+                "form": "Često sretam susjede. / Slučajno smo sreli prijatelje.",
+                "meaning": "Często spotykam sąsiadów. / Przypadkiem spotkaliśmy przyjaciół."
+              },
+              {
+                "base": "iznenađivati se → iznenaditi se",
+                "form": "Stalno se iznenađujem. / Iznenadila sam se.",
+                "meaning": "Ciągle się dziwię. / Zdziwiłam się."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "tip": "oduševiti se + narzędnik: oduševila sam se pogledom, gradom, hranom — bez przyimka, jak polskie „zachwyciłam się widokiem”."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "Izgubili"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 4,
+      "order": 5,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zachwyciliśmy się widokiem.",
+          "options": [
+            "Oduševili smo se pogledom.",
+            "Oduševili smo se s pogledom.",
+            "Oduševili smo se na pogled."
+          ],
+          "correct": 0,
+          "explanation": "oduševiti se + narzędnik, bez przyimka: pogledom."
+        }
+      ],
+      "listening": "b1-izgubljeni-u-dubrovniku",
+      "dialog": {
+        "title": "Opowiedz przygodę",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Jesi li ikad doživio neku avanturu na putovanju?",
+            "pl": "Przeżyłeś kiedyś jakąś przygodę w podróży?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co ci się przydarzyło (np. Izgubio sam se…, Slučajno sam…).",
+              "accept": [
+                2,
+                "Izgubio sam se u Zagrebu."
+              ],
+              "open": true,
+              "pattern": "^(jesam |da |jednom |prošle godine )?({pp} (sam|smo)( se)?|(ja|mi|jednom|slučajno|prošle godine) (sam|smo)( se)? {pp})( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Ozbiljno? Što se dogodilo poslije?",
+            "pl": "Serio? Co się stało potem?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak to się skończyło (Na kraju smo…).",
+              "accept": [
+                "Na kraju smo našli hotel."
+              ],
+              "open": true,
+              "pattern": "^(na kraju|onda|poslije|srećom|zatim|napokon|ja|mi) (smo|sam|je|su)( se)? {pp}( \\p{L}+){0,5}$|^((na kraju|onda|poslije|srećom|zatim|napokon) )?{pp} (smo|sam|je|su)( se)?( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Kakva priča! Sigurno je nikad nećeš zaboraviti.",
+            "pl": "Co za historia! Na pewno nigdy jej nie zapomnisz."
+          },
+          {
+            "reply": {
+              "prompt": "Zgódź się: tego dnia nigdy nie zapomnę.",
+              "accept": [
+                7
+              ],
+              "pattern": "^(da |točno |istina )?(taj dan nikad(a)? neću zaboraviti|nikad(a)? neću zaboraviti taj dan|nikad(a)? ga neću zaboraviti)$"
+            }
+          },
+          {
+            "say": "Hvala što si mi ispričao!",
+            "pl": "Dzięki, że mi opowiedziałeś!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o niezapomnianej podróży: co się wydarzyło i co cię zaskoczyło albo zachwyciło.",
+        "points": [
+          "co się wydarzyło (doživjeli smo, izgubili smo se, slučajno…)",
+          "co cię zaskoczyło albo zachwyciło"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "doživio",
+              "doživjela",
+              "doživjeli",
+              "izgubio",
+              "izgubila",
+              "izgubili",
+              "sreli",
+              "sreo",
+              "srela",
+              "slučajno"
+            ],
+            "label": "wydarzenie: doživjeli / izgubili smo se / slučajno"
+          },
+          {
+            "any": [
+              "iznenadio",
+              "iznenadila",
+              "iznenadili",
+              "oduševio",
+              "oduševila",
+              "oduševili",
+              "nevjerojatno",
+              "nevjerojatan",
+              "nikad"
+            ],
+            "label": "emocje: iznenadila sam se / oduševili smo se"
+          }
+        ],
+        "sample": "Prošle godine smo se izgubili u Dubrovniku. Slučajno smo našli mali restoran. Oduševila sam se hranom!"
+      }
+    },
+    "b1-10": {
+      "grammar": {
+        "title": "Historia po kolei",
+        "text": "Tło opowieści — niedokonany (Svaki dan smo plivali), wydarzenia — dokonany (Odjednom je počela kiša). Kolejność: na početku, sljedećeg dana, odjednom, nakon nekoliko dana, na kraju. Zaraz po wydarzeniu — čim, dopiero później — tek kad. Krótkie słowa zawsze na drugim miejscu: Sljedećeg dana smo krenuli…",
+        "examples": [
+          1,
+          2,
+          3
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Gdy tylko dotarliśmy, poszliśmy na plażę.",
+          "options": [
+            "Čim smo stigli, otišli smo na plažu.",
+            "Čim stigli smo, otišli smo na plažu.",
+            "Čim smo stigli, smo otišli na plažu."
+          ],
+          "correct": 0,
+          "explanation": "smo stoi zaraz po čim, a w drugiej części — po pierwszym słowie: otišli smo."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Opowiedz o lecie",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Pričaj! Gdje si bio ovo ljeto?",
+            "pl": "Opowiadaj! Gdzie byłeś tego lata?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie byłeś / byłaś.",
+              "accept": [
+                "Bio sam na Visu."
+              ],
+              "open": true,
+              "pattern": "^(bio|bila|bili|bile) (sam|smo)( \\p{L}+){1,4}$|^(ovo ljeto|ljetos|u srpnju|u kolovozu|ja|mi) (sam|smo) (bio|bila|bili|bile)( \\p{L}+){1,4}$|^(na|u) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Što ste napravili prvi dan?",
+            "pl": "Co zrobiliście pierwszego dnia?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobiliście zaraz po przyjeździe (Čim smo stigli, …).",
+              "accept": [
+                "Čim smo stigli, otišli smo na plažu."
+              ],
+              "open": true,
+              "pattern": "^(čim smo (stigli|došli)( \\p{L}+){0,3} )?({pp} (smo|sam)( se)?|(odmah|prvo|mi|ja|prvi dan) (smo|sam)( se)? {pp})( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "A je li bilo nešto neočekivano?",
+            "pl": "A było coś nieoczekiwanego?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co się nagle stało (Odjednom… / U jednom trenutku…).",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^(da |je |jest )?(odjednom|iznenada|jednom|jedan dan|jednog dana|u jednom trenutku) ((je|smo|sam|su)( se)? {pp}|{pp} (je|smo|sam|su))( \\p{L}+){0,5}$|^(ne|nije|ništa)$"
+            }
+          },
+          {
+            "say": "Zvuči kao savršeno ljeto!",
+            "pl": "Brzmi jak idealne lato!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opowiedz w 3–4 zdaniach historię z wakacji: początek, wydarzenie i zakończenie.",
+        "points": [
+          "początek (na početku, čim smo stigli…)",
+          "wydarzenie (odjednom, slučajno…)",
+          "zakończenie (na kraju, ukratko…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "čim",
+              "kad",
+              "dok",
+              "tek"
+            ],
+            "label": "čim / kad / dok"
+          },
+          {
+            "any": [
+              "početku",
+              "sljedećeg",
+              "odjednom",
+              "kraju",
+              "zatim",
+              "onda",
+              "ukratko"
+            ],
+            "label": "kolejność: na početku / odjednom / na kraju"
+          },
+          {
+            "any": [
+              "smo",
+              "sam"
+            ],
+            "label": "perfekt: smo / sam"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Ljetos smo bili na Visu. Čim smo stigli, otišli smo na plažu. Odjednom je počela oluja. Na kraju smo cijelu večer igrali karte. Ukratko, bilo je savršeno ljeto."
       }
     }
   }

@@ -143,6 +143,134 @@
         ],
         "correctOptionId": "three"
       }
+    },
+    {
+      "id": "b1-dolazak-u-apartman",
+      "level": "B1",
+      "titlePl": "Przyjazd do apartamentu",
+      "titleEn": "Arriving at the apartment",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, stigli smo! Čim se smjestimo, idemo na plažu.",
+          "textPl": "Ana, dotarliśmy! Gdy tylko się rozgościmy, idziemy na plażę.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Polako, prvo se moramo raspakirati.",
+          "textPl": "Powoli, najpierw musimy się rozpakować.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Hm, tek sad sam primijetio da nemamo ključ od apartmana.",
+          "textPl": "Hm, dopiero teraz zauważyłem, że nie mamy klucza do apartamentu.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Vlasnik je rekao da će doći čim mu pošaljemo poruku.",
+          "textPl": "Właściciel powiedział, że przyjdzie, gdy tylko wyślemy mu wiadomość.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobro, odmah ću mu poslati poruku.",
+          "textPl": "Dobrze, od razu wyślę mu wiadomość.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Super. A ja ću u međuvremenu potražiti dobar restoran.",
+          "textPl": "Super. A ja w międzyczasie poszukam dobrej restauracji.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Na co czekają Ana i Marko?",
+        "options": [
+          {
+            "id": "owner",
+            "textPl": "Na właściciela z kluczem"
+          },
+          {
+            "id": "taxi",
+            "textPl": "Na taksówkę"
+          },
+          {
+            "id": "beach",
+            "textPl": "Na otwarcie plaży"
+          }
+        ],
+        "correctOptionId": "owner"
+      }
+    },
+    {
+      "id": "b1-izgubljeni-u-dubrovniku",
+      "level": "B1",
+      "titlePl": "Zgubieni w Dubrowniku",
+      "titleEn": "Lost in Dubrovnik",
+      "topic": "wspomnienia",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, sjećaš li se kad smo se izgubili u Dubrovniku?",
+          "textPl": "Marko, pamiętasz, jak zgubiliśmy się w Dubrowniku?",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Kako ne! Tražili smo hotel dva sata.",
+          "textPl": "Jak mógłbym nie pamiętać! Szukaliśmy hotelu dwie godziny.",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "A onda smo slučajno ušli u mali restoran na kraju ulice.",
+          "textPl": "A potem przypadkiem weszliśmy do małej restauracji na końcu ulicy.",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "I tamo smo pojeli najbolju ribu u životu!",
+          "textPl": "I tam zjedliśmy najlepszą rybę w życiu!",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Konobar nam je na kraju pokazao put do hotela.",
+          "textPl": "Kelner na koniec pokazał nam drogę do hotelu.",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "To je bila prava avantura. Nikad je neću zaboraviti.",
+          "textPl": "To była prawdziwa przygoda. Nigdy jej nie zapomnę.",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Kto pokazał im drogę do hotelu?",
+        "options": [
+          {
+            "id": "waiter",
+            "textPl": "Kelner"
+          },
+          {
+            "id": "police",
+            "textPl": "Policjant"
+          },
+          {
+            "id": "reception",
+            "textPl": "Recepcjonista"
+          }
+        ],
+        "correctOptionId": "waiter"
+      }
     }
   ]
 }
