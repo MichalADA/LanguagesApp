@@ -142,25 +142,26 @@ export const pl: Dictionary = {
         "intense": "Bardzo intensywnie"
     },
     "todayOf": "Dziś {today} z {goal} XP",
-    "goalMet": "Cel na dziś osiągnięty!",
+    "goalMet": "Cel na dziś zrobiony.",
     "goalLeft": "Jeszcze {n} XP do celu",
-    "streak": "dni z celem z rzędu: {n}",
+    "streak": "seria celu: {n} dni",
     "week": "XP w ostatnim tygodniu",
     "total": "Łącznie {n} XP",
     "changeGoal": "Zmień cel",
     "pending": "Niewysłane XP: {n}. Zapiszemy je, gdy wróci połączenie.",
     "loadError": "Nie udało się pobrać XP.",
     "saveError": "Nie udało się zapisać celu. Spróbuj ponownie.",
-    "howTo": "XP zdobywasz za zaliczone lekcje (pierwszy raz), misje Stories (pierwsze ukończenie) i poprawne odpowiedzi w powtórkach.",
+    "howTo": "XP dostajesz za pierwsze zaliczenie lekcji, ukończoną misję Stories i poprawną odpowiedź w powtórce.",
     "settingsTitle": "Dzienny cel nauki",
     "settingsNote": "Ile chcesz uczyć się każdego dnia. Cel możesz zmienić w dowolnej chwili."
   },
   stories: {
     "eyebrow": "Gra fabularna",
+    "upcoming": "Następne miasta",
     "title": "Lexodromia Stories",
-    "subtitle": "Podróżujesz po Chorwacji, poznajesz mieszkańców i załatwiasz codzienne sprawy po chorwacku. Każde miasto to jeden poziom.",
+    "subtitle": "Każde miasto to jeden poziom. W Splicie meldujesz się w apartamencie, zamawiasz kawę na Rivie i robisz zakupy — pięć misji, wszystko po chorwacku.",
     "noCourse": "Dla tego kursu nie ma jeszcze historii.",
-    "enterCity": "Jedź do: {city}",
+    "enterCity": "Otwórz mapę i misje",
     "allCities": "Wszystkie miasta",
     "missions": "Misje",
     "mapLabel": "Mapa: {city}",
@@ -344,6 +345,8 @@ export const pl: Dictionary = {
         "check": "Sprawdź",
         "begin": "Zaczynamy",
         "skip": "Pomiń",
+        "dontKnow": "Nie wiem",
+        "shown": "Zapamiętaj, tak to brzmi",
         "finish": "Zakończ",
         "correct": "Dobrze!",
         "near": "Poprawnie",
@@ -428,11 +431,7 @@ export const pl: Dictionary = {
     }
 },
   home: {
-    "title": "Twój trening na dziś",
-    "planLesson": "Lekcja kursu",
-    "planLessonMeta": "{title} · około {n} min",
-    "subtitle": "Wybierz krótką sesję i zrób kolejny krok.",
-    "lastMode": "Ostatni tryb",
+    "planLesson": "Lekcja {n}",
     "training": "Od czego zaczynamy?",
     "reviewTitle": "Powtórz słowa",
     "reviewCount": "Na powtórkę czeka {n} słów.",
@@ -449,8 +448,6 @@ export const pl: Dictionary = {
     "sentenceAction": "Ćwicz",
     "gamesTitle": "Wybierz grę",
     "gamesDescription": "Znajdź swój sposób na krótką naukę.",
-    "progressEyebrow": "Krok po kroku",
-    "progressTitle": "Twój materiał do nauki",
     "chooseLevel": "Poziom materiału",
     "loading": "Wczytuję postęp…",
     "error": "Nie udało się wczytać postępu. Możesz nadal przejść do nauki.",
@@ -466,36 +463,32 @@ export const pl: Dictionary = {
     "materialNote": "{n}% materiału opanowane. To postęp w talii, nie ocena biegłości językowej.",
     "accountSource": "Postęp słów na koncie. Opanowanie wylicza FSRS na podstawie ocenianych ćwiczeń.",
     "guestSource": "Postęp gościa w tej przeglądarce. Opanowanie: 3 poprawne odpowiedzi z rzędu.",
-    "planEyebrow": "Plan nauki",
     "planLabel": "Kroki dzisiejszego treningu",
     "planReviews": "Powtórki",
-    "planReviewsMeta": "Słowa, zdania i odmiana — terminy dobiera FSRS",
+    "planReviewsMeta": "Słowa, zdania i odmiana",
     "planReviewsGuest": "Słowa z ostatnią nieudaną próbą",
-    "planReviewsNone": "Nic zaległego — możesz przejść dalej",
+    "planReviewsNone": "Nic zaległego",
     "planNew": "Nowe słowa",
-    "planNewMeta": "Krótka sesja z talii kursu",
+    "planNewMeta": "Najczęstsze słowa, których jeszcze nie znasz",
     "planNewGuest": "Runda Bury — poziom wybierasz na starcie",
     "planSentences": "Zdania",
-    "planSentencesMeta": "Ułóż zdania na poziomie A1, A2 lub B1",
+    "planSentencesMeta": "Z rozsypanych słów · A1–B1",
     "planGames": "Gra",
     "planGamesMeta": "Dowolny tryb z listy gier",
-    "planNext": "Najpierw",
-    "start": "Rozpocznij trening",
-    "startsWith": "Zaczniesz od: {step}",
-    "known": "poznanych słów",
-    "levelOf": "Poziom {level} · {name}",
-    "masteredShort": "opanowane",
-    "details": "Szczegóły postępu",
-    "week": "Ostatnie 7 dni",
-    "explore": "Ucz się po swojemu",
-    "allGames": "Wszystkie gry",
-    "shortcuts": {
-        "flashcards": "Fiszki",
-        "quick": "Szybkie gry",
-        "sentences": "Zdania",
-        "grammar": "Odmiana",
-        "radio": "Radio"
-    }
+    "allGames": "Wszystkie gry i tryby",
+    "headReviews": "Do powtórki: {n} · ok. {m} min",
+    "headLesson": "Następna lekcja:",
+    "headNew": "{n} nowych słów na dziś",
+    "headSentences": "{n} zdań do ułożenia",
+    "headGames": "Nic zaległego — wybierz grę",
+    "aboutMin": "ok. {n} min",
+    "planLessonModule": "Moduł {n}",
+    "planLessonDone": "{done} z {total} lekcji za tobą",
+    "levelLine": "Poziom {level}: {known} z {total} słów poznanych · {pct}% opanowane",
+    "streakDays": "dni nauki z rzędu",
+    "streakToday": "Dziś już zaliczone.",
+    "streakKeep": "Jedna runda dziś utrzyma serię.",
+    "streakStart": "Seria zaczyna się od jednej rundy."
 },
   dashboard: {
     eyebrow: "pulpit",
@@ -565,18 +558,20 @@ export const pl: Dictionary = {
   games: {
     chooseMode: "Wybierz tryb nauki. Wejdź w kategorię, aby zobaczyć dostępne gry.",
     openMode: "Otwórz",
-    backToModes: "← Tryby nauki",
+    backToModes: "Wszystkie gry",
     eyebrow: "gry",
-    title: "Tryby nauki",
+    title: "Gry i tryby",
     subtitle:
-      "Każdy tryb korzysta z tej samej talii i tego samego postępu. Pulę słów wybierasz w grze.",
+      "Wszystkie korzystają z tej samej talii i tego samego postępu.",
     play: "Graj",
-    record: "rekord {score} · rund {rounds}",
-    noRound: "brak rundy",
+    record: "rekord {score} · {rounds} rund",
+    noRound: "jeszcze nie grane",
     prepared: "moduł przygotowany, brak implementacji",
     notReady: "Ten tryb jest jeszcze w planach. Wróć do listy i wybierz aktywną grę.",
     notFound: "Nie ma takiej gry",
     backToList: "← Lista gier",
+    storiesSample: "„Jednu kavu, molim!“",
+    categories: "Pozostałe tryby",
   },
   "gameNames": {
     "bura": "Bura",
@@ -607,23 +602,23 @@ export const pl: Dictionary = {
     },
     "quick": {
       "name": "Szybkie gry",
-      "description": "Krótka nauka bez długich sesji."
+      "description": "Rundy na 2–3 minuty: pary, swipe, tak/nie, rozsypane litery."
     },
     "grammar": {
       "name": "Gramatyka",
-      "description": "Ćwicz odmianę i struktury językowe."
+      "description": "Odmiana czasowników przez osoby: ja sam, ti si, on je…"
     },
     "sentences": {
       "name": "Zdania",
-      "description": "Ćwicz język w kontekście."
+      "description": "Tłumaczenie, układanie, luki i poprawianie zdań."
     },
     "listening": {
       "name": "Słuchanie",
-      "description": "Miejsce na nagrania i ćwiczenia ze słuchu."
+      "description": "Nagrania native speakera — zapisujesz, co słyszysz."
     },
     "radio": {
       "name": "Radio",
-      "description": "Osłuchuj się z naturalnym językiem."
+      "description": "Chorwackie stacje na żywo, do osłuchania się z językiem."
     }
   },
   "quickDescriptions": {
@@ -885,10 +880,11 @@ export const pl: Dictionary = {
     },
     feedback: {
       correct: "Dobrze",
-      near: "Prawie — brakuje znaku diakrytycznego",
-      wrong: "Błędna odpowiedź",
+      near: "Prawie — zgubiony znak diakrytyczny",
+      wrong: "Nie tak.",
       yourAnswer: "Twoja odpowiedź",
       correctAnswer: "Poprawna odpowiedź",
+      falseFriend: "Fałszywy przyjaciel:",
     },
     rate: {
       again: "Nie pamiętam",
@@ -903,15 +899,15 @@ export const pl: Dictionary = {
     session: {
       loading: "Ładuję fiszki…",
       loadError: "Nie udało się rozpocząć sesji.",
-      progress: "Fiszka {current} / {total}",
+      progress: "Fiszka {current} z {total}",
       finished: "Sesja zakończona",
       summary: "{total} kart · {correct} poprawnych · {wrong} błędnych · {newWords} nowych · {requeues} do szybkiej powtórki.",
       backToDashboard: "Wróć do Fiszek",
       oneMoreRound: "Jeszcze jedna runda",
       emptyTitle: "Nic do nauki w tym trybie",
       emptyBody: "Wybierz inny tryb lub wróć jutro — algorytm zaplanuje kolejne powtórki na następne dni.",
-      hudScore: "✓ {correct} · ✗ {wrong}",
-      hudRequeues: "Do powtórzenia dziś: {n}",
+      hudScore: "{correct} dobrze · {wrong} do poprawy",
+      hudRequeues: "{n} wróci w tej sesji",
     },
   },
   review: {

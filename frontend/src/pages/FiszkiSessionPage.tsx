@@ -327,10 +327,10 @@ export function FiszkiSessionPage() {
         ? Math.round((correctCount / (correctCount + wrongCount)) * 100)
         : 0;
     return (
-      <div className="page">
-        <section className="panel panel-pad result-card">
-          <span className="eyebrow">{t("flashcards.session.finished")}</span>
-          <div className="result-score">{accuracy}%</div>
+      <div className="page session-page">
+        <section className="session-result" aria-labelledby="session-result-title">
+          <h1 id="session-result-title" className="session-result-label">{t("flashcards.session.finished")}</h1>
+          <p className="session-result-score">{accuracy}%</p>
           <p className="muted">
             {t("flashcards.session.summary", {
               total: queue.length,
@@ -340,7 +340,7 @@ export function FiszkiSessionPage() {
               requeues: requeueCount,
             })}
           </p>
-          <div className="row" style={{ gap: 10, marginTop: 10 }}>
+          <div className="session-result-actions">
             <button
               type="button"
               className="btn"
@@ -362,29 +362,30 @@ export function FiszkiSessionPage() {
   }
 
   return (
-    <div className="page">
-      <header className="page-head">
-        <div className="row" style={{ justifyContent: "space-between" }}>
-          <span className="eyebrow">
+    <div className="page session-page">
+      <header className="session-top">
+        <div className="session-top-row">
+          <span className="session-count">
             {t("flashcards.session.progress", { current: index + 1, total })}
           </span>
-          <Link to="/fiszki" className="mono dim flashcard-back" style={{ fontSize: 12 }}>
+          <span className="session-score">
+            {t("flashcards.session.hudScore", { correct: correctCount, wrong: wrongCount })}
+            {requeueCount > 0 && <> · {t("flashcards.session.hudRequeues", { n: requeueCount })}</>}
+          </span>
+          <Link to="/fiszki" className="text-link flashcard-back">
             {t("common.back")}
           </Link>
         </div>
-        <div className="bar">
+        <div className="bar session-bar">
           <span style={{ width: `${percent}%` }} />
         </div>
       </header>
 
-      <section
-        className="panel panel-pad game-stage"
-        style={{ minHeight: 300 }}
-      >
-        <span className="eyebrow" style={{ alignSelf: "center" }}>
+      <section className={phase === "reviewing" ? "flashcard is-reviewing" : "flashcard"}>
+        <span className="flashcard-dir">
           {isTargetSide ? t("flashcards.card.plHr") : t("flashcards.card.hrPl")}
         </span>
-        <div className="prompt">{promptText}</div>
+        <div className="prompt" lang={isTargetSide ? "pl" : "hr"}>{promptText}</div>
 
         {phase === "answering" && currentCard && (
           <>
@@ -396,7 +397,7 @@ export function FiszkiSessionPage() {
               characters={characters}
               focusKey={currentCard.item.entry.id}
             />
-            <button type="button" className="btn" onClick={judge}>
+            <button type="button" className="btn flashcard-check" onClick={judge}>
               {t("flashcards.card.check")}
             </button>
           </>
@@ -411,18 +412,6 @@ export function FiszkiSessionPage() {
           />
         )}
       </section>
-
-      <div className="hud" style={{ padding: "0 4px" }}>
-        <span>
-          {t("flashcards.session.hudScore", {
-            correct: correctCount,
-            wrong: wrongCount,
-          })}
-        </span>
-        <span className="mono dim">
-          {t("flashcards.session.hudRequeues", { n: requeueCount })}
-        </span>
-      </div>
     </div>
   );
 }
@@ -446,84 +435,63 @@ function FeedbackBlock({
       ? t("flashcards.feedback.near")
       : t("flashcards.feedback.wrong");
 
-  return (
-    <div
-      className="stack"
-      style={{ gap: 14, width: "100%", alignItems: "center" }}
-    >
-      <span
-        className="eyebrow"
-        style={{
-          color: feedback.correct ? "var(--gold-light)" : "var(--accent-text)",
-        }}
-      >
-        {banner}
-      </span>
+  const verdict = feedback.correct ? "hit" : feedback.near ? "near" : "miss";
 
-      {!feedback.correct && (
-        <div
-          className="answer-compare stack"
-          style={{ gap: 6, alignItems: "center" }}
-        >
-          <div className="dim mono" style={{ fontSize: 13 }}>
-            {t("flashcards.feedback.yourAnswer")}
-          </div>
-          <div style={{ fontSize: 22, fontWeight: 600, color: "var(--muted)" }}>
-            {feedback.typed || "—"}
-          </div>
-          <div className="dim mono" style={{ fontSize: 13, marginTop: 4 }}>
-            {t("flashcards.feedback.correctAnswer")}
-          </div>
-          <div style={{ fontSize: 26, fontWeight: 700 }}>
+  return (
+    <div className={`flashcard-feedback ${verdict}`}>
+      <p className="flashcard-verdict" role="status">{banner}</p>
+
+      {feedback.correct ? (
+        <div className="flashcard-answer" lang={answerLang(feedback.card)}>{feedback.expected}</div>
+      ) : (
+        <>
+          <div className="flashcard-answer" lang={answerLang(feedback.card)}>
+            <span className="sr-only">{t("flashcards.feedback.correctAnswer")}: </span>
             {diff.length > 0
               ? diff.map((seg, i) => (
-                  <span
-                    key={i}
-                    style={{
-                      color: seg.match
-                        ? "var(--gold-light)"
-                        : "var(--accent-text)",
-                    }}
-                  >
+                  <span key={i} className={seg.match ? undefined : "flashcard-diff"}>
                     {seg.text}
                   </span>
                 ))
               : feedback.expected}
           </div>
-        </div>
+          <p className="flashcard-typed">
+            {t("flashcards.feedback.yourAnswer")}: <s>{feedback.typed || "—"}</s>
+          </p>
+        </>
       )}
 
-      {feedback.correct && <div className="answer">{feedback.expected}</div>}
+      <WordDetails entry={entry} t={t} />
 
-      <WordDetails entry={entry} />
-
-      <div
-        className="row flashcard-rate-row"
-        style={{ gap: 8, justifyContent: "center", flexWrap: "wrap" }}
-      >
-        <button type="button" className="btn" onClick={() => onRate("GOOD")}>
-          {t("reviews.next")}
-        </button>
-      </div>
+      <button type="button" className="btn flashcard-next" onClick={() => onRate("GOOD")}>
+        {t("reviews.next")}
+      </button>
     </div>
   );
 }
 
-function WordDetails({ entry }: { entry: VocabularyEntry }) {
+/** Język, w którym wpisuje się odpowiedź — do atrybutu lang (czytniki ekranu, dzielenie wyrazów). */
+function answerLang(card: CardState): string {
+  return card.direction === "SOURCE_TO_TARGET" ? "hr" : "pl";
+}
+
+function WordDetails({
+  entry,
+  t,
+}: {
+  entry: VocabularyEntry;
+  t: (key: string, params?: Record<string, string | number>) => string;
+}) {
   const grammar = [entry.partOfSpeech, entry.grammar]
     .filter(Boolean)
     .join(" · ");
   return (
-    <div className="stack" style={{ gap: 8, width: "100%", maxWidth: 520 }}>
-      {grammar && (
-        <span className="dim" style={{ fontSize: 13, textAlign: "center" }}>
-          {grammar}
-        </span>
-      )}
+    <div className="flashcard-details">
+      {grammar && <span className="flashcard-grammar">{grammar}</span>}
       {(entry.exampleTarget || entry.exampleSource) && (
         <div className="example">
           {entry.exampleTarget && (
-            <div className="example-hr">{entry.exampleTarget}</div>
+            <div className="example-hr" lang="hr">{entry.exampleTarget}</div>
           )}
           {entry.exampleSource && (
             <div className="example-pl">{entry.exampleSource}</div>
@@ -531,7 +499,7 @@ function WordDetails({ entry }: { entry: VocabularyEntry }) {
         </div>
       )}
       {entry.falseFriend && entry.falseFriendNote && (
-        <div className="note-warn">⚠ {entry.falseFriendNote}</div>
+        <div className="note-warn"><strong>{t("flashcards.feedback.falseFriend")}</strong> {entry.falseFriendNote}</div>
       )}
     </div>
   );

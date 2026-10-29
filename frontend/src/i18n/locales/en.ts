@@ -142,25 +142,26 @@ export const en: Dictionary = {
         "intense": "Intense"
     },
     "todayOf": "Today {today} of {goal} XP",
-    "goalMet": "Today's goal reached!",
+    "goalMet": "Today's goal done.",
     "goalLeft": "{n} XP to go",
-    "streak": "goal days in a row: {n}",
+    "streak": "goal streak: {n} days",
     "week": "XP over the last week",
     "total": "Total {n} XP",
     "changeGoal": "Change goal",
     "pending": "Unsent XP: {n}. We will save it once you are back online.",
     "loadError": "Could not load XP.",
     "saveError": "Could not save your goal. Please try again.",
-    "howTo": "Earn XP for passed lessons (first time), Stories missions (first completion) and correct answers in reviews.",
+    "howTo": "You earn XP for passing a lesson the first time, finishing a Stories mission and each correct review answer.",
     "settingsTitle": "Daily learning goal",
     "settingsNote": "How much you want to learn every day. You can change it any time."
   },
   stories: {
     "eyebrow": "Story game",
+    "upcoming": "Next cities",
     "title": "Lexodromia Stories",
-    "subtitle": "Travel around Croatia, meet the locals and handle everyday situations in Croatian. Each city is one level.",
+    "subtitle": "Each city is one level. In Split you check into a flat, order coffee on the Riva and go shopping — five missions, all in Croatian.",
     "noCourse": "There are no stories for this course yet.",
-    "enterCity": "Travel to {city}",
+    "enterCity": "Open the map and missions",
     "allCities": "All cities",
     "missions": "Missions",
     "mapLabel": "Map: {city}",
@@ -344,6 +345,8 @@ export const en: Dictionary = {
         "check": "Check",
         "begin": "Let's start",
         "skip": "Skip",
+        "dontKnow": "I don't know",
+        "shown": "Remember this one",
         "finish": "Finish",
         "correct": "Correct!",
         "near": "Correct",
@@ -428,11 +431,7 @@ export const en: Dictionary = {
     }
 },
   home: {
-    "title": "Your practice for today",
-    "planLesson": "Course lesson",
-    "planLessonMeta": "{title} · about {n} min",
-    "subtitle": "Choose a short session and take the next step.",
-    "lastMode": "Last mode",
+    "planLesson": "Lesson {n}",
     "training": "Where shall we start?",
     "reviewTitle": "Review words",
     "reviewCount": "You have {n} words to review.",
@@ -449,8 +448,6 @@ export const en: Dictionary = {
     "sentenceAction": "Practise",
     "gamesTitle": "Choose a game",
     "gamesDescription": "Find your way to a short practice session.",
-    "progressEyebrow": "Step by step",
-    "progressTitle": "Your learning material",
     "chooseLevel": "Material level",
     "loading": "Loading progress…",
     "error": "Could not load progress. You can still open a learning activity.",
@@ -466,36 +463,32 @@ export const en: Dictionary = {
     "materialNote": "{n}% of the material mastered. This is deck progress, not a language proficiency assessment.",
     "accountSource": "Word progress on your account. Mastery is derived from FSRS across assessed exercises.",
     "guestSource": "Guest progress in this browser. Mastery: 3 correct answers in a row.",
-    "planEyebrow": "Learning plan",
     "planLabel": "Steps of today's practice",
     "planReviews": "Reviews",
-    "planReviewsMeta": "Words, sentences and conjugation — scheduled by FSRS",
+    "planReviewsMeta": "Words, sentences and conjugation",
     "planReviewsGuest": "Words whose last attempt failed",
-    "planReviewsNone": "Nothing due — you can move on",
+    "planReviewsNone": "Nothing due",
     "planNew": "New words",
-    "planNewMeta": "A short session from your course deck",
+    "planNewMeta": "The most common words you don't know yet",
     "planNewGuest": "A round of Bura — choose the level at the start",
     "planSentences": "Sentences",
-    "planSentencesMeta": "Build sentences at A1, A2 or B1",
+    "planSentencesMeta": "From scrambled words · A1–B1",
     "planGames": "Game",
     "planGamesMeta": "Any mode from the game list",
-    "planNext": "First",
-    "start": "Start practice",
-    "startsWith": "You'll start with: {step}",
-    "known": "words encountered",
-    "levelOf": "Level {level} · {name}",
-    "masteredShort": "mastered",
-    "details": "Progress details",
-    "week": "Last 7 days",
-    "explore": "Learn your way",
-    "allGames": "All games",
-    "shortcuts": {
-        "flashcards": "Flashcards",
-        "quick": "Quick games",
-        "sentences": "Sentences",
-        "grammar": "Conjugation",
-        "radio": "Radio"
-    }
+    "allGames": "All games and modes",
+    "headReviews": "To review: {n} · about {m} min",
+    "headLesson": "Next lesson:",
+    "headNew": "{n} new words for today",
+    "headSentences": "{n} sentences to build",
+    "headGames": "Nothing due — pick a game",
+    "aboutMin": "about {n} min",
+    "planLessonModule": "Module {n}",
+    "planLessonDone": "{done} of {total} lessons done",
+    "levelLine": "Level {level}: {known} of {total} words encountered · {pct}% mastered",
+    "streakDays": "days in a row",
+    "streakToday": "Today already counts.",
+    "streakKeep": "One round today keeps the streak.",
+    "streakStart": "A streak starts with one round."
 },
   dashboard: {
     eyebrow: "dashboard",
@@ -565,18 +558,20 @@ export const en: Dictionary = {
   games: {
     chooseMode: "Choose a learning mode. Open a category to see its games.",
     openMode: "Open",
-    backToModes: "← Learning modes",
+    backToModes: "All games",
     eyebrow: "games",
-    title: "Practice modes",
+    title: "Games and modes",
     subtitle:
-      "Every mode uses the same deck and the same progress. You pick the word pool inside the game.",
+      "They all share one deck and one progress record.",
     play: "Play",
-    record: "record {score} · rounds {rounds}",
-    noRound: "no rounds yet",
+    record: "best {score} · {rounds} rounds",
+    noRound: "not played yet",
     prepared: "module scaffolded, not implemented",
     notReady: "This mode is still planned. Go back and pick an active game.",
     notFound: "No such game",
     backToList: "← Game list",
+    storiesSample: "“Jednu kavu, molim!”",
+    categories: "Other modes",
   },
   "gameNames": {
     "bura": "Bura",
@@ -607,23 +602,23 @@ export const en: Dictionary = {
     },
     "quick": {
       "name": "Quick games",
-      "description": "Short practice without long sessions."
+      "description": "2–3 minute rounds: pairs, swipe, true/false, scrambled letters."
     },
     "grammar": {
       "name": "Grammar",
-      "description": "Practise conjugation and language structures."
+      "description": "Verb conjugation by person: ja sam, ti si, on je…"
     },
     "sentences": {
       "name": "Sentences",
-      "description": "Practise language in context."
+      "description": "Translating, building, gap-filling and correcting sentences."
     },
     "listening": {
       "name": "Listening",
-      "description": "A home for recordings and listening practice."
+      "description": "Native speaker recordings — you write down what you hear."
     },
     "radio": {
       "name": "Radio",
-      "description": "Get used to natural spoken language."
+      "description": "Live Croatian stations to get your ear used to the language."
     }
   },
   "quickDescriptions": {
@@ -885,10 +880,11 @@ export const en: Dictionary = {
     },
     feedback: {
       correct: "Correct",
-      near: "Almost — you missed a diacritic",
-      wrong: "Not quite",
+      near: "Almost — a diacritic is missing",
+      wrong: "Not quite.",
       yourAnswer: "Your answer",
       correctAnswer: "Correct answer",
+      falseFriend: "False friend:",
     },
     rate: {
       again: "Forgot",
@@ -903,15 +899,15 @@ export const en: Dictionary = {
     session: {
       loading: "Loading flashcards…",
       loadError: "Could not start the session.",
-      progress: "Card {current} / {total}",
+      progress: "Card {current} of {total}",
       finished: "Session complete",
       summary: "{total} cards · {correct} correct · {wrong} wrong · {newWords} new · {requeues} scheduled for a quick retry.",
       backToDashboard: "Back to flashcards",
       oneMoreRound: "Another round",
       emptyTitle: "Nothing to study in this mode",
       emptyBody: "Pick another mode or come back tomorrow — the scheduler is holding future reviews for the coming days.",
-      hudScore: "✓ {correct} · ✗ {wrong}",
-      hudRequeues: "Retries today: {n}",
+      hudScore: "{correct} right · {wrong} to fix",
+      hudRequeues: "{n} coming back this session",
     },
   },
   review: {
