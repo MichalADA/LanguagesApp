@@ -12,9 +12,10 @@
     4,
     5,
     6,
-    7
+    7,
+    8
   ],
-  "characters": 40683,
+  "characters": 46277,
   "items": [
     {
       "text": "A kako ide? Jesi li se naviknuo?",
@@ -14141,6 +14142,1987 @@
       ],
       "modules": [
         7
+      ]
+    },
+    {
+      "text": "A kako obično plaćaš?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/a-kako-obicno-placas-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "aplikacija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/aplikacija.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "besplatna dostava",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/besplatna-dostava.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Broj je tri, osam, jedan, dva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/broj-je-tri-osam-jedan-dva.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "broj narudžbe",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/broj-narudzbe.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Da, često kupujem odjeću preko interneta.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/da-cesto-kupujem-odjecu-preko-interneta.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Da, kako bismo je mogli ponovno prodati.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/da-kako-bismo-je-mogli-ponovno-prodati-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "da vratim, da dobije",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/da-vratim-da-dobije.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "da",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/da.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Dobar dan, kako vam mogu pomoći?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/dobar-dan-kako-vam-mogu-pomoci-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Dobar dan, kupila sam jaknu, ali je premala. Kako bih je mogla zamijeniti?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dobar-dan-kupila-sam-jaknu-ali-je-premala-kako-bih-je-mogla.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Dobar dan, odjel za reklamacije.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/dobar-dan-odjel-za-reklamacije-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Dobili smo nadoknadu od deset eura.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dobili-smo-nadoknadu-od-deset-eura.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Dobio sam obavijest e-mailom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dobio-sam-obavijest-e-mailom.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Dobio sam pogrešan broj cipela.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dobio-sam-pogresan-broj-cipela.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Dobro, javit ćemo vam se sutra.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/dobro-javit-cemo-vam-se-sutra-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "dodati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dodati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "dokaz o kupnji",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dokaz-o-kupnji.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "dokazati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dokazati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Došla sam da vratim ovu jaknu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dosla-sam-da-vratim-ovu-jaknu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "dostavim, dostaviš, dostavi, dostavimo, dostavite, dostave. dostavio, dostavila, dostavili. dostavit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dostavim-dostavis-dostavi-dostavimo-dostavite-dostave-dostav.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "dostaviti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/dostaviti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Ekran je razbijen.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/ekran-je-razbijen.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "garancija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/garancija.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Htio bih vratiti ovaj proizvod.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/htio-bih-vratiti-ovaj-proizvod.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Idem u poštu da pokupim paket.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/idem-u-postu-da-pokupim-paket.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Imam. Što još trebam?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/imam-sto-jos-trebam.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Imate li račun?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/imate-li-racun-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Imate pravo na povrat novca.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/imate-pravo-na-povrat-novca.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Imate pravo na zamjenu u roku od četrnaest dana.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/imate-pravo-na-zamjenu-u-roku-od-cetrnaest-dana-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Instalirala sam novu aplikaciju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/instalirala-sam-novu-aplikaciju.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "internetska trgovina",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/internetska-trgovina.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Ispunila sam obrazac za povrat.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/ispunila-sam-obrazac-za-povrat.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Ispunite obrazac i priložite račun kao dokaz o kupnji.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/ispunite-obrazac-i-prilozite-racun-kao-dokaz-o-kupnji-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Je, još godinu dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/je-jos-godinu-dana.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Je li proizvod još pod garancijom?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/je-li-proizvod-jos-pod-garancijom-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Je li ti ikad paket kasnio?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/je-li-ti-ikad-paket-kasnio-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kako bi dobio novac natrag, mora poslati paket.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kako-bi-dobio-novac-natrag-mora-poslati-paket.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "kako bi dobio novac",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kako-bi-dobio-novac.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kako bih vratila proizvod, ispunila sam obrazac. Molim vas da mi vratite novac u roku od četrnaest dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kako-bih-vratila-proizvod-ispunila-sam-obrazac-molim-vas-da.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kako bih vratio proizvod, moram ispuniti obrazac.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kako-bih-vratio-proizvod-moram-ispuniti-obrazac.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "kako bih vratio, vratila",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kako-bih-vratio-vratila.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "kako bih",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kako-bih.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kako bismo vam pomogli, trebamo vaše podatke.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kako-bismo-vam-pomogli-trebamo-vase-podatke.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "kako bismo vam pomogli",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kako-bismo-vam-pomogli.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "karticom, pouzećem",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/karticom-pouzecem.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Koji je vaš broj narudžbe?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/koji-je-vas-broj-narudzbe-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Koji je vaš broj narudžbe?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/koji-je-vas-broj-narudzbe.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Koliko je trajala dostava?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/koliko-je-trajala-dostava-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kontaktirala sam korisničku podršku da se raspitam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kontaktirala-sam-korisnicku-podrsku-da-se-raspitam.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "kontaktiram, kontaktiraš, kontaktira, kontaktiramo, kontaktirate, kontaktiraju. kontaktirao, kontaktirala, kontaktirali. kontaktirat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kontaktiram-kontaktiras-kontaktira-kontaktiramo-kontaktirate.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "kontaktirati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kontaktirati.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Korisnička podrška, izvolite.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/korisnicka-podrska-izvolite-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "korisnička podrška",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/korisnicka-podrska.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "košarica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kosarica.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kupuješ li često preko interneta?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/kupujes-li-cesto-preko-interneta-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kurir dostavlja pakete., Dostavit će ga sutra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kurir-dostavlja-pakete-dostavit-ce-ga-sutra.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kurir je ostavio paket kod susjeda.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kurir-je-ostavio-paket-kod-susjeda.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Kurir me nazvao prije dostave.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kurir-me-nazvao-prije-dostave.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "kurir",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/kurir.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "linija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/linija.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Marko, naručila sam nove tenisice preko interneta.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/marko-narucila-sam-nove-tenisice-preko-interneta.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Mobitel je neispravan, ne puni se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/mobitel-je-neispravan-ne-puni-se.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Mobitel je pod garancijom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/mobitel-je-pod-garancijom.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Mogu, preko aplikacije. Kurir dolazi sutra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/mogu-preko-aplikacije-kurir-dolazi-sutra.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Molim vas da mi potvrdite adresu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/molim-vas-da-mi-potvrdite-adresu.mp3",
+      "kinds": [
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Molim vas da mi potvrdite novi termin.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/molim-vas-da-mi-potvrdite-novi-termin.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Molim vas da problem riješite u najkraćem roku.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/molim-vas-da-problem-rijesite-u-najkracem-roku.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Molimo ostanite na liniji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/molimo-ostanite-na-liniji.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Mora li jakna biti u originalnom pakiranju?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/mora-li-jakna-biti-u-originalnom-pakiranju.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Možeš li dodati još jednu majicu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/mozes-li-dodati-jos-jednu-majicu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Možeš li pratiti pošiljku?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/mozes-li-pratiti-posiljku-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Možete li to dokazati?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/mozete-li-to-dokazati.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Na kutiji se vidi oštećenje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/na-kutiji-se-vidi-ostecenje.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Nadam se da ćete brzo riješiti problem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/nadam-se-da-cete-brzo-rijesiti-problem.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "nadoknada",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/nadoknada.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Naravno, poslat ćemo vam e-mail.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/naravno-poslat-cemo-vam-e-mail-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Naručio sam knjigu preko interneta, ali paket još nije stigao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/narucio-sam-knjigu-preko-interneta-ali-paket-jos-nije-stigao.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Narudžba je potvrđena i poslana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/narudzba-je-potvrdjena-i-poslana.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "narudžba",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/narudzba.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "natrag",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/natrag.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Nazovite nas da dogovorimo novi termin.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/nazovite-nas-da-dogovorimo-novi-termin.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Nazovite nas da dogovorimo termin.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/nazovite-nas-da-dogovorimo-termin.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Ne, plaćanje je pouzećem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/ne-placanje-je-pouzecem.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "neispravan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/neispravan.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Novac ćete dobiti za pet dana.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/novac-cete-dobiti-za-pet-dana-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Novi proizvod će vam dostaviti sutra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/novi-proizvod-ce-vam-dostaviti-sutra.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "obavijest",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/obavijest.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Obično plaćam karticom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/obicno-placam-karticom.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "originalno pakiranje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/originalno-pakiranje.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "oštećenje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/ostecenje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Ova internetska trgovina ima besplatnu dostavu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/ova-internetska-trgovina-ima-besplatnu-dostavu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Paket je još u skladištu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/paket-je-jos-u-skladistu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Paket je stigao oštećen, a tablet je neispravan. Uređaj je pod garancijom, pa tražim zamjenu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/paket-je-stigao-ostecen-a-tablet-je-neispravan-uredjaj-je-po.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Paket je stigao oštećen.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/paket-je-stigao-ostecen.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Pišem vam da pitam za svoj paket.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/pisem-vam-da-pitam-za-svoj-paket.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Pišem vam da pitam za svoju narudžbu. Molim vas da mi javite kada će paket stići.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/pisem-vam-da-pitam-za-svoju-narudzbu-molim-vas-da-mi-javite.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Plaćanje pouzećem košta dva eura više.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/placanje-pouzecem-kosta-dva-eura-vise.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "plaćanje pouzećem",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/placanje-pouzecem.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "podaci",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/podaci.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "pogrešan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/pogresan.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "pokupim, pokupiš, pokupi, pokupimo, pokupite, pokupe. pokupio, pokupila, pokupili. pokupit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/pokupim-pokupis-pokupi-pokupimo-pokupite-pokupe-pokupio-poku.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "pokupiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/pokupiti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Pokušat ćemo riješiti problem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/pokusat-cemo-rijesiti-problem.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Pošiljku možete pratiti preko aplikacije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/posiljku-mozete-pratiti-preko-aplikacije.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Poslao sam upit prije tri dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/poslao-sam-upit-prije-tri-dana.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Poslat ćemo ga u servis na popravak.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/poslat-cemo-ga-u-servis-na-popravak.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Poštovani, prošli tjedan sam naručila tablet preko vaše internetske trgovine. Paket je stigao oštećen i tablet je neispravan. Molim vas da mi pošaljete zamjenu u najkraćem roku. Unaprijed hvala na odgovoru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/postovani-prosli-tjedan-sam-narucila-tablet-preko-vase-inter.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "pratiti pošiljku",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/pratiti-posiljku.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "pravo na",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/pravo-na.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "preko interneta, preko aplikacije",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/preko-interneta-preko-aplikacije.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "priložim, priložiš, priloži, priložimo, priložite, prilože. priložio, priložila, priložili. priložit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/prilozim-prilozis-prilozi-prilozimo-prilozite-priloze-priloz.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Priložite račun kao dokaz o kupnji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/prilozite-racun-kao-dokaz-o-kupnji.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "priložiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/priloziti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Proizvod mora biti u originalnom pakiranju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/proizvod-mora-biti-u-originalnom-pakiranju.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Proizvod možete vratiti u roku od četrnaest dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/proizvod-mozete-vratiti-u-roku-od-cetrnaest-dana.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "proizvod",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/proizvod.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Prošli tjedan sam naručila knjigu preko interneta. Platila sam karticom, a kurir je donio paket za tri dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/prosli-tjedan-sam-narucila-knjigu-preko-interneta-platila-sa.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "raspitam se, raspitaš se, raspita se, raspitamo se, raspitate se, raspitaju se. raspitao se, raspitala se, raspitali se. raspitat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/raspitam-se-raspitas-se-raspita-se-raspitamo-se-raspitate-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "raspitati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/raspitati-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "razbijen",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/razbijen.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Recite, u čemu je problem?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/recite-u-cemu-je-problem-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Reklamacije obično rješavaju u roku od tjedan dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/reklamacije-obicno-rjesavaju-u-roku-od-tjedan-dana.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Reklamacije rješavaju brzo., Riješili su problem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/reklamacije-rjesavaju-brzo-rijesili-su-problem.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "reklamirati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/reklamirati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "riješen",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/rijesen.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "riješim, riješiš, riješi, riješimo, riješite, riješe. riješio, riješila, riješili. riješit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/rijesim-rijesis-rijesi-rijesimo-rijesite-rijese-rijesio-rije.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "riješiti problem",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/rijesiti-problem.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "riješiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/rijesiti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Rijetko vraćam stvari., Vratila sam jaknu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/rijetko-vracam-stvari-vratila-sam-jaknu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Rok dostave je pet dana, ali paket još nije stigao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/rok-dostave-je-pet-dana-ali-paket-jos-nije-stigao.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Rok dostave je tri do pet radnih dana.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/rok-dostave-je-tri-do-pet-radnih-dana.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "rok dostave",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/rok-dostave.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "s poštovanjem",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/s-postovanjem.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "servis",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/servis.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "skladište",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/skladiste.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Snimila sam fotografiju kako bih dokazala oštećenje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/snimila-sam-fotografiju-kako-bih-dokazala-ostecenje.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "status",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/status.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Stavila sam dvije majice u košaricu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/stavila-sam-dvije-majice-u-kosaricu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Stavila sam to u košaricu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/stavila-sam-to-u-kosaricu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Što još trebam napraviti kako bih dobio novac natrag?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/sto-jos-trebam-napraviti-kako-bih-dobio-novac-natrag.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Što moram napraviti?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/sto-moram-napraviti.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Što želite: popravak, zamjenu ili povrat novca?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/sto-zelite-popravak-zamjenu-ili-povrat-novca-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Super! Jesi li platila karticom?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/super-jesi-li-platila-karticom-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Tražim zamjenu ili povrat novca.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/trazim-zamjenu-ili-povrat-novca.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Tražim zamjenu, molim vas u najkraćem roku.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/trazim-zamjenu-molim-vas-u-najkracem-roku.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Trenutno nema slobodnih termina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/trenutno-nema-slobodnih-termina.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "trenutno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/trenutno.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "U čemu je problem?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/u-cemu-je-problem-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "u košarici",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/u-kosarici.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "u košaricu",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/u-kosaricu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "u najkraćem roku",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/u-najkracem-roku.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "U prilogu šaljem račun i fotografiju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/u-prilogu-saljem-racun-i-fotografiju.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "U redu. Morate ispuniti obrazac.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/u-redu-morate-ispuniti-obrazac-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "U redu, riješit ćemo to što prije.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/u-redu-rijesit-cemo-to-sto-prije-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "u roku od",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/u-roku-od.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "uložiti reklamaciju",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/uloziti-reklamaciju.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Unaprijed hvala na odgovoru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/unaprijed-hvala-na-odgovoru.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "unaprijed hvala",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/unaprijed-hvala.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Upišite svoje podatke.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/upisite-svoje-podatke.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "upit",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/upit.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Uređaj je još pod garancijom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/uredjaj-je-jos-pod-garancijom.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Uvijek prati pošiljku!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/uvijek-prati-posiljku-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Vaš paket kasni zbog gužve u skladištu.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/vas-paket-kasni-zbog-guzve-u-skladistu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Za narudžbe iznad pedeset eura dostava je besplatna.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/za-narudzbe-iznad-pedeset-eura-dostava-je-besplatna.mp3",
+      "kinds": [
+        "question"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "zamjena",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/zamjena.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Žao mi je. Kako biste htjeli da riješimo problem?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-08/zao-mi-je-kako-biste-htjeli-da-rijesimo-problem-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Zaslon mobitela je jako svijetao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/zaslon-mobitela-je-jako-svijetao.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "zaslon",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/zaslon.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Želim uložiti reklamaciju na neispravan proizvod.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/zelim-uloziti-reklamaciju-na-neispravan-proizvod.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Zovem da pitam za narudžbu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/zovem-da-pitam-za-narudzbu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Zovem da pitam za paket.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/zovem-da-pitam-za-paket.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Zovem da provjerim status narudžbe.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/zovem-da-provjerim-status-narudzbe.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        8
+      ]
+    },
+    {
+      "text": "Zovem da provjerim…",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-08/zovem-da-provjerim.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        8
       ]
     }
   ]

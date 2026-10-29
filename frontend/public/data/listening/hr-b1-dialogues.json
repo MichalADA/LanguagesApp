@@ -917,6 +917,134 @@
         ],
         "correctOptionId": "table"
       }
+    },
+    {
+      "id": "b1-gdje-je-moj-paket",
+      "level": "B1",
+      "titlePl": "Gdzie jest moja paczka?",
+      "titleEn": "Where is my parcel?",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Dobar dan, zovem da provjerim status svoje narudžbe.",
+          "textPl": "Dzień dobry, dzwonię, żeby sprawdzić status mojego zamówienia.",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Naravno. Koji je vaš broj narudžbe?",
+          "textPl": "Oczywiście. Jaki jest pana numer zamówienia?",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Četiri, pet, sedam, dva, jedan.",
+          "textPl": "Cztery, pięć, siedem, dwa, jeden.",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Vaša pošiljka je trenutno u dostavi. Kurir će doći danas do osamnaest sati.",
+          "textPl": "Pana przesyłka jest obecnie w doręczeniu. Kurier przyjedzie dziś do osiemnastej.",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Odlično. Mogu li platiti karticom kad dođe?",
+          "textPl": "Świetnie. Mogę zapłacić kartą, kiedy przyjedzie?",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ne trebate, platili ste već pri narudžbi.",
+          "textPl": "Nie trzeba, zapłacił pan już przy zamówieniu.",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Do której przyjedzie kurier?",
+        "options": [
+          {
+            "id": "six",
+            "textPl": "Do osiemnastej"
+          },
+          {
+            "id": "noon",
+            "textPl": "Do południa"
+          },
+          {
+            "id": "tomorrow",
+            "textPl": "Jutro rano"
+          }
+        ],
+        "correctOptionId": "six"
+      }
+    },
+    {
+      "id": "b1-ostecen-paket",
+      "level": "B1",
+      "titlePl": "Uszkodzona paczka",
+      "titleEn": "A damaged parcel",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Dobar dan, jučer sam dobila paket, ali je kutija bila oštećena.",
+          "textPl": "Dzień dobry, wczoraj dostałam paczkę, ale pudełko było uszkodzone.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Žao mi je. Je li i proizvod oštećen?",
+          "textPl": "Przykro mi. Czy produkt też jest uszkodzony?",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, ekran na tabletu je razbijen.",
+          "textPl": "Tak, ekran tabletu jest rozbity.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Pošaljite nam fotografiju oštećenja, molim.",
+          "textPl": "Proszę przesłać nam zdjęcie uszkodzenia.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Već sam je poslala. Želim zamjenu, a ne povrat novca.",
+          "textPl": "Już je wysłałam. Chcę wymiany, a nie zwrotu pieniędzy.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "U redu, novi tablet ćemo vam dostaviti za dva dana.",
+          "textPl": "W porządku, nowy tablet dostarczymy pani w ciągu dwóch dni.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Czego chce Ana?",
+        "options": [
+          {
+            "id": "swap",
+            "textPl": "Wymiany tabletu"
+          },
+          {
+            "id": "refund",
+            "textPl": "Zwrotu pieniędzy"
+          },
+          {
+            "id": "repair",
+            "textPl": "Naprawy w serwisie"
+          }
+        ],
+        "correctOptionId": "swap"
+      }
     }
   ]
 }

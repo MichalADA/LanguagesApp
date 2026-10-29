@@ -24,6 +24,9 @@
     },
     "7": {
       "description": "Wynajmujesz mieszkanie: rozmawiasz o umowie, liczysz pokoje i gniazdka (dopełniacz liczby mnogiej), zgłaszasz usterki, urządzasz się i dogadujesz z właścicielem."
+    },
+    "8": {
+      "description": "Kupujesz w internecie: zamawiasz, śledzisz przesyłkę, dzwonisz do obsługi klienta (Zovem da…), formalnie zwracasz towar (Kako bih…) i składasz reklamację."
     }
   },
   "lessons": {
@@ -5779,6 +5782,815 @@
         ],
         "minSentences": 3,
         "sample": "Poštovani, želim vas obavijestiti da se selim do kraja mjeseca. Otkaz ću vam poslati pismeno. Stanje stana je dobro. Kada ćete mi vratiti polog?"
+      }
+    },
+    "b1-36": {
+      "grammar": {
+        "title": "Preko interneta, u košaricu",
+        "text": "Zakupy online: naručiti (z A1) preko interneta / preko aplikacije (preko + dopełniacz). Dokąd? u + biernik — Stavila sam majice u košaricu. Gdzie? u + miejscownik — Majice su u košarici. Płatność przy odbiorze to plaćanje pouzećem (narzędnik od pouzeće). Czas dostawy: rok dostave je tri do pet radnih dana.",
+        "table": [
+          {
+            "label": "zakupy online",
+            "rows": [
+              {
+                "base": "przez",
+                "form": "preko interneta / preko aplikacije",
+                "meaning": "przez internet / w aplikacji"
+              },
+              {
+                "base": "dokąd?",
+                "form": "u košaricu",
+                "meaning": "do koszyka"
+              },
+              {
+                "base": "gdzie?",
+                "form": "u košarici",
+                "meaning": "w koszyku"
+              },
+              {
+                "base": "jak płacisz?",
+                "form": "karticom / pouzećem",
+                "meaning": "kartą / przy odbiorze"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "tip": "Narudžba je potvrđena i poslana — to strona bierna (zostało potwierdzone i wysłane). Więcej o niej w module 11."
+      },
+      "gap": {
+        "sentence": 2,
+        "word": "košaricu"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Włożyłam to do koszyka.",
+          "options": [
+            "Stavila sam to u košaricu.",
+            "Stavila sam to u košarici.",
+            "Stavila sam to na košaricu."
+          ],
+          "correct": 0,
+          "explanation": "Dokąd? u + biernik: u košaricu."
+        }
+      ],
+      "model": {
+        "title": "Nowe buty",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, naručila sam nove tenisice preko interneta.",
+            "pl": "Marko, zamówiłam nowe adidasy przez internet."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Koliko je trajala dostava?",
+            "pl": "Ile trwała dostawa?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Rok dostave je pet dana, ali paket još nije stigao.",
+            "pl": "Czas dostawy to pięć dni, ale paczka jeszcze nie dotarła."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Možeš li pratiti pošiljku?",
+            "pl": "Możesz śledzić przesyłkę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Mogu, preko aplikacije. Kurir dolazi sutra.",
+            "pl": "Mogę, w aplikacji. Kurier przyjeżdża jutro."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! Jesi li platila karticom?",
+            "pl": "Super! Płaciłaś kartą?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne, plaćanje je pouzećem.",
+            "pl": "Nie, płatność przy odbiorze."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Zakupy online",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Kupuješ li često preko interneta?",
+            "pl": "Często kupujesz przez internet?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak często i co kupujesz w internecie.",
+              "accept": [
+                "Da, često kupujem odjeću preko interneta."
+              ],
+              "open": true,
+              "pattern": "^((da|ne|rijetko|često|ponekad|ne baš) )*((kupujem|naručujem|naručim)( \\p{L}+){0,5}|rijetko|često|ponekad|nikad)$"
+            }
+          },
+          {
+            "say": "A kako obično plaćaš?",
+            "pl": "A jak zwykle płacisz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak płacisz (karticom, pouzećem…).",
+              "accept": [
+                "Obično plaćam karticom."
+              ],
+              "open": true,
+              "pattern": "^((obično|uvijek|najčešće|ja) )*(plaćam |platim )?(karticom|pouzećem|gotovinom|preko \\p{L}+)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Je li ti ikad paket kasnio?",
+            "pl": "Spóźniła ci się kiedyś paczka?"
+          },
+          {
+            "reply": {
+              "prompt": "Opowiedz o spóźnionej paczce (Naručio sam…, ali paket…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((da|je|jest|jednom|ne|nije) )*((naručio|naručila) sam( \\p{L}+){1,10}|(paket|pošiljka)( \\p{L}+){1,8}|nije|nikad)$"
+            }
+          },
+          {
+            "say": "Uvijek prati pošiljku!",
+            "pl": "Zawsze śledź przesyłkę!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o swoim ostatnim zamówieniu w internecie.",
+        "points": [
+          "co i gdzie zamówiłeś",
+          "płatność i dostawa"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "naručio",
+              "naručila",
+              "narudžba",
+              "narudžbu",
+              "košaricu"
+            ],
+            "label": "zamówienie"
+          },
+          {
+            "any": [
+              "dostava",
+              "dostavu",
+              "kurir",
+              "paket",
+              "pošiljku",
+              "pouzećem",
+              "karticom"
+            ],
+            "label": "dostawa / płatność"
+          }
+        ],
+        "sample": "Prošli tjedan sam naručila knjigu preko interneta. Platila sam karticom, a kurir je donio paket za tri dana."
+      }
+    },
+    "b1-37": {
+      "grammar": {
+        "title": "Zovem da provjerim",
+        "text": "Cel po chorwacku najczęściej wyrażasz przez da + czas teraźniejszy. Polskie „żeby sprawdzić” to da provjerim (żebym sprawdził): Zovem da provjerim status narudžbe. Osoba po da zgadza się z tym, kto ma coś zrobić: Došla sam da vratim jaknu (ja), Nazovite nas da dogovorimo termin (my). Z A2 znasz Molim vas da mi pošaljete… — to ta sama konstrukcja.",
+        "table": [
+          {
+            "label": "da + czas teraźniejszy",
+            "rows": [
+              {
+                "base": "ja",
+                "form": "Zovem da provjerim…",
+                "meaning": "Dzwonię, żeby sprawdzić…"
+              },
+              {
+                "base": "ja",
+                "form": "Idem u poštu da pokupim paket.",
+                "meaning": "Idę na pocztę, żeby odebrać paczkę."
+              },
+              {
+                "base": "my",
+                "form": "Nazovite nas da dogovorimo termin.",
+                "meaning": "Proszę zadzwonić, żebyśmy ustalili termin."
+              },
+              {
+                "base": "Pan / Pani",
+                "form": "Molim vas da mi potvrdite adresu.",
+                "meaning": "Proszę mi potwierdzić adres."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          7,
+          9
+        ],
+        "tip": "Po da nie stawiasz bezokolicznika: nie „da provjeriti”, tylko da provjerim."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "da"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 8,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Dzwonię, żeby zapytać o paczkę.",
+          "options": [
+            "Zovem da pitam za paket.",
+            "Zovem da pitati za paket.",
+            "Zovem za pitati za paket."
+          ],
+          "correct": 0,
+          "explanation": "da + czas teraźniejszy: da pitam."
+        }
+      ],
+      "listening": "b1-gdje-je-moj-paket",
+      "dialog": {
+        "title": "Obsługa klienta",
+        "partner": "Službenik",
+        "turns": [
+          {
+            "say": "Korisnička podrška, izvolite.",
+            "pl": "Obsługa klienta, słucham."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, po co dzwonisz (Zovem da…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((dobar dan|dobro jutro) )?(zovem|javljam se|pišem vam) da( se)? \\p{L}+( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Koji je vaš broj narudžbe?",
+            "pl": "Jaki jest pana numer zamówienia?"
+          },
+          {
+            "reply": {
+              "prompt": "Podaj numer zamówienia (np. Broj je tri, osam, jedan, dva.).",
+              "accept": [
+                "Broj je tri, osam, jedan, dva."
+              ],
+              "open": true,
+              "pattern": "^((moj )?broj (narudžbe )?je )?(nula|jedan|dva|tri|četiri|pet|šest|sedam|osam|devet|\\d+)( (nula|jedan|dva|tri|četiri|pet|šest|sedam|osam|devet|\\d+))*$"
+            }
+          },
+          {
+            "say": "Vaš paket kasni zbog gužve u skladištu.",
+            "pl": "Pana paczka się spóźnia z powodu tłoku w magazynie."
+          },
+          {
+            "reply": {
+              "prompt": "Poproś, żeby potwierdzili nowy termin (Molim vas da mi potvrdite…).",
+              "accept": [
+                "Molim vas da mi potvrdite novi termin."
+              ],
+              "open": true,
+              "pattern": "^((razumijem|dobro|šteta) )*(molim vas da mi (potvrdite|javite|pošaljete)|možete li mi (potvrditi|javiti|poslati))( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Naravno, poslat ćemo vam e-mail.",
+            "pl": "Oczywiście, wyślemy panu maila."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: po co dzwonisz albo piszesz do sklepu (Zovem da…, Pišem vam da…).",
+        "points": [
+          "cel (da + czas teraźniejszy)",
+          "o co prosisz (molim vas da…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "da"
+            ],
+            "label": "da (cel)"
+          },
+          {
+            "any": [
+              "provjerim",
+              "pitam",
+              "vratim",
+              "zamijenim",
+              "javim",
+              "dogovorimo",
+              "potvrdite",
+              "raspitam",
+              "pokupim"
+            ],
+            "label": "czasownik po da"
+          }
+        ],
+        "sample": "Pišem vam da pitam za svoju narudžbu. Molim vas da mi javite kada će paket stići."
+      }
+    },
+    "b1-38": {
+      "grammar": {
+        "title": "Kako bih vratio proizvod…",
+        "text": "Bardziej formalnie cel wyrażasz przez kako bih + forma przeszła (aby…): Kako bih vratio proizvod, moram ispuniti obrazac. bih zmienia się z osobą jak w trybie przypuszczającym: kako bi (ty / on), kako bismo (my), kako biste (Pan / wy). To samo znaczy da bih. W mowie częściej da + czas teraźniejszy z lekcji 2. Przydatne: u roku od četrnaest dana (w ciągu 14 dni), pravo na povrat novca (prawo do zwrotu).",
+        "table": [
+          {
+            "label": "kako + bih / bi / bismo",
+            "rows": [
+              {
+                "base": "ja",
+                "form": "kako bih vratio / vratila",
+                "meaning": "żebym zwrócił / zwróciła"
+              },
+              {
+                "base": "on / ona",
+                "form": "kako bi dobio novac",
+                "meaning": "żeby dostał pieniądze"
+              },
+              {
+                "base": "my",
+                "form": "kako bismo vam pomogli",
+                "meaning": "żebyśmy mogli panu pomóc"
+              },
+              {
+                "base": "w mowie",
+                "form": "da vratim / da dobije",
+                "meaning": "żeby zwrócić / żeby dostał"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          5,
+          8,
+          9
+        ],
+        "tip": "W e-mailu do sklepu brzmi lepiej kako bih…; w rozmowie wystarczy da + czas teraźniejszy."
+      },
+      "gap": {
+        "sentence": 9,
+        "word": "kako"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "comprehend": 5,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Żeby zwrócić produkt, muszę wypełnić formularz.",
+          "options": [
+            "Kako bih vratio proizvod, moram ispuniti obrazac.",
+            "Kako bi vratiti proizvod, moram ispuniti obrazac.",
+            "Kako bih vratim proizvod, moram ispuniti obrazac."
+          ],
+          "correct": 0,
+          "explanation": "kako bih + forma przeszła: kako bih vratio."
+        }
+      ],
+      "model": {
+        "title": "Za mała kurtka",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan, kupila sam jaknu, ali je premala. Kako bih je mogla zamijeniti?",
+            "pl": "Dzień dobry, kupiłam kurtkę, ale jest za mała. Jak mogłabym ją wymienić?"
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Imate pravo na zamjenu u roku od četrnaest dana.",
+            "pl": "Ma pani prawo do wymiany w ciągu czternastu dni."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Što moram napraviti?",
+            "pl": "Co muszę zrobić?"
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Ispunite obrazac i priložite račun kao dokaz o kupnji.",
+            "pl": "Proszę wypełnić formularz i załączyć paragon jako dowód zakupu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Mora li jakna biti u originalnom pakiranju?",
+            "pl": "Czy kurtka musi być w oryginalnym opakowaniu?"
+          },
+          {
+            "speaker": "Službenik",
+            "hr": "Da, kako bismo je mogli ponovno prodati.",
+            "pl": "Tak, żebyśmy mogli ją ponownie sprzedać."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Zwrot",
+        "partner": "Službenik",
+        "turns": [
+          {
+            "say": "Dobar dan, kako vam mogu pomoći?",
+            "pl": "Dzień dobry, w czym mogę pomóc?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że chcesz zwrócić albo wymienić produkt (Htio bih vratiti…).",
+              "accept": [
+                "Htio bih vratiti ovaj proizvod."
+              ],
+              "open": true,
+              "pattern": "^((dobar dan|dobro jutro) )?((htio|htjela|volio|voljela) bih (vratiti|zamijeniti)|želim (vratiti|zamijeniti)|kako bih (vratio|vratila|zamijenio|zamijenila))( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Imate li račun?",
+            "pl": "Ma pan paragon?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy masz paragon, i zapytaj, co jeszcze potrzebne.",
+              "accept": [
+                "Imam. Što još trebam?"
+              ],
+              "open": true,
+              "pattern": "^(imam|nemam|da|ne|evo ga|evo)( \\p{L}+){0,8}$"
+            }
+          },
+          {
+            "say": "U redu. Morate ispuniti obrazac.",
+            "pl": "W porządku. Musi pan wypełnić formularz."
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, co jeszcze musisz zrobić, żeby dostać pieniądze (Što još trebam napraviti kako bih…?).",
+              "accept": [
+                "Što još trebam napraviti kako bih dobio novac natrag?"
+              ],
+              "open": true,
+              "pattern": "^((dobro|u redu|a) )*(što (još )?(trebam|moram) (napraviti|učiniti)( kako bih (dobio|dobila)( \\p{L}+){0,3})?|kada (ću dobiti|dobivam) novac( natrag)?|kako bih (dobio|dobila) novac( natrag)?)$"
+            }
+          },
+          {
+            "say": "Novac ćete dobiti za pet dana.",
+            "pl": "Pieniądze dostanie pan w ciągu pięciu dni."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z formalnej wiadomości do sklepu (Kako bih…, molim vas…).",
+        "points": [
+          "cel (kako bih + forma przeszła)",
+          "prośba"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "kako",
+              "bih",
+              "bismo"
+            ],
+            "label": "kako bih"
+          },
+          {
+            "any": [
+              "vratio",
+              "vratila",
+              "zamijenio",
+              "zamijenila",
+              "dobio",
+              "dobila",
+              "riješili",
+              "dokazao",
+              "dokazala"
+            ],
+            "label": "forma przeszła po bih"
+          }
+        ],
+        "sample": "Kako bih vratila proizvod, ispunila sam obrazac. Molim vas da mi vratite novac u roku od četrnaest dana."
+      }
+    },
+    "b1-39": {
+      "grammar": {
+        "title": "Pod garancijom",
+        "text": "Problem opisujesz przymiotnikiem zgodnym z rodzajem: Paket je stigao oštećen, Mobitel je neispravan, Dobio sam pogrešan broj. Na gwarancji to pod garancijom (pod + narzędnik); jamstvo z A2 znaczy to samo, ale w sklepie częściej usłyszysz garancija. Nowe pary aspektowe: rješavati → riješiti, dostavljati → dostaviti, vraćati → vratiti.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "rješavati → riješiti",
+                "form": "Reklamacije rješavaju brzo. / Riješili su problem.",
+                "meaning": "Reklamacje rozpatrują szybko. / Rozwiązali problem."
+              },
+              {
+                "base": "dostavljati → dostaviti",
+                "form": "Kurir dostavlja pakete. / Dostavit će ga sutra.",
+                "meaning": "Kurier dostarcza paczki. / Dostarczą go jutro."
+              },
+              {
+                "base": "vraćati → vratiti",
+                "form": "Rijetko vraćam stvari. / Vratila sam jaknu.",
+                "meaning": "Rzadko zwracam rzeczy. / Zwróciłam kurtkę."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          4,
+          5,
+          9
+        ],
+        "tip": "pod garancijom = na gwarancji (pod + narzędnik, nie „na”)."
+      },
+      "gap": {
+        "sentence": 5,
+        "word": "garancijom"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 4,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Telefon jest na gwarancji.",
+          "options": [
+            "Mobitel je pod garancijom.",
+            "Mobitel je na garanciji.",
+            "Mobitel je pod garancija."
+          ],
+          "correct": 0,
+          "explanation": "pod + narzędnik: pod garancijom."
+        }
+      ],
+      "listening": "b1-ostecen-paket",
+      "dialog": {
+        "title": "Reklamacja",
+        "partner": "Službenik",
+        "turns": [
+          {
+            "say": "Recite, u čemu je problem?",
+            "pl": "Proszę powiedzieć, na czym polega problem?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz problem (Paket je stigao oštećen / Dobio sam pogrešan…).",
+              "accept": [
+                2,
+                1
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,5}(oštećen|oštećena|oštećeno|neispravan|neispravna|neispravno|pogrešan|pogrešnu|pogrešno|pogrešna|razbijen|razbijena|razbijeno|ne radi|ne puni)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Je li proizvod još pod garancijom?",
+            "pl": "Czy produkt jest jeszcze na gwarancji?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy jest na gwarancji (Je, još godinu dana).",
+              "accept": [
+                "Je, još godinu dana."
+              ],
+              "open": true,
+              "pattern": "^((je|jest|da|nije|ne) )?((još )?(je )?pod garancijom( \\p{L}+){0,3}|još \\p{L}+( \\p{L}+)? (dana|mjeseci|mjesec|godinu|godine)( dana)?|nije|je|jest|da)$"
+            }
+          },
+          {
+            "say": "Što želite: popravak, zamjenu ili povrat novca?",
+            "pl": "Czego pan chce: naprawy, wymiany czy zwrotu pieniędzy?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego oczekujesz (Tražim zamjenu… / Htio bih…).",
+              "accept": [
+                7
+              ],
+              "open": true,
+              "pattern": "^((ja )?(tražim|želim|htio bih|htjela bih|radije bih) )?(zamjenu|popravak|povrat novca|novi \\p{L}+)( ili \\p{L}+( \\p{L}+)?)?( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "U redu, riješit ćemo to što prije.",
+            "pl": "W porządku, załatwimy to jak najszybciej."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania reklamacji: co jest nie tak i czego oczekujesz.",
+        "points": [
+          "problem (oštećen, neispravan, pogrešan…)",
+          "żądanie (zamjena, povrat novca, popravak)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "oštećen",
+              "oštećena",
+              "neispravan",
+              "neispravna",
+              "pogrešan",
+              "pogrešnu",
+              "razbijen",
+              "oštećenje"
+            ],
+            "label": "problem"
+          },
+          {
+            "any": [
+              "zamjenu",
+              "povrat",
+              "popravak",
+              "garancijom",
+              "garancija"
+            ],
+            "label": "żądanie"
+          }
+        ],
+        "sample": "Paket je stigao oštećen, a tablet je neispravan. Uređaj je pod garancijom, pa tražim zamjenu."
+      }
+    },
+    "b1-40": {
+      "grammar": {
+        "title": "Reklamacja — wszystko razem",
+        "text": "Zamówienie: naručiti preko interneta, pratiti pošiljku. Cel: Zovem da provjerim…, Kako bih vratio proizvod… Problem: Paket je stigao oštećen, Proizvod je neispravan. Żądanie: Tražim zamjenu ili povrat novca. Formalny e-mail: Poštovani, … U prilogu šaljem račun. Unaprijed hvala na odgovoru. S poštovanjem, …",
+        "examples": [
+          1,
+          2,
+          4
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Dzwonię, żeby zapytać o zamówienie.",
+          "options": [
+            "Zovem da pitam za narudžbu.",
+            "Zovem kako bih pitam za narudžbu.",
+            "Zovem da pitati za narudžbu."
+          ],
+          "correct": 0,
+          "explanation": "da + czas teraźniejszy (albo kako bih + forma przeszła: kako bih pitao)."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Pełna reklamacja",
+        "partner": "Službenik",
+        "turns": [
+          {
+            "say": "Dobar dan, odjel za reklamacije.",
+            "pl": "Dzień dobry, dział reklamacji."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że chcesz złożyć reklamację i na co.",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((dobar dan|dobro jutro) )?((želim|htio bih|htjela bih) (uložiti reklamaciju|reklamirati)|zovem (zbog|u vezi) reklamacije|zovem da (uložim reklamaciju|reklamiram))( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "U čemu je problem?",
+            "pl": "Na czym polega problem?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz problem (… je neispravan / oštećen …).",
+              "accept": [
+                "Mobitel je neispravan, ne puni se."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,5}(oštećen|oštećena|oštećeno|neispravan|neispravna|neispravno|pogrešan|pogrešnu|pogrešno|pogrešna|razbijen|razbijena|razbijeno|ne radi|ne puni)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Žao mi je. Kako biste htjeli da riješimo problem?",
+            "pl": "Przykro mi. Jak chciałby pan, żebyśmy rozwiązali problem?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego oczekujesz, i poproś o szybkie rozwiązanie.",
+              "accept": [
+                "Tražim zamjenu, molim vas u najkraćem roku."
+              ],
+              "open": true,
+              "pattern": "^((ja )?(tražim|želim|htio bih|htjela bih|radije bih|molim vas) )?((zamjenu|popravak|povrat novca|novi \\p{L}+)|da (mi )?(zamijenite|vratite|popravite))( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Dobro, javit ćemo vam se sutra.",
+            "pl": "Dobrze, odezwiemy się jutro."
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Napisz w 3–4 zdaniach e-mail z reklamacją: co zamówiłeś, jaki jest problem i czego oczekujesz.",
+        "points": [
+          "zamówienie",
+          "problem",
+          "żądanie i grzeczne zakończenie"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "naručio",
+              "naručila",
+              "kupio",
+              "kupila",
+              "narudžbu"
+            ],
+            "label": "zamówienie"
+          },
+          {
+            "any": [
+              "oštećen",
+              "oštećena",
+              "neispravan",
+              "neispravna",
+              "pogrešan",
+              "pogrešnu"
+            ],
+            "label": "problem"
+          },
+          {
+            "any": [
+              "zamjenu",
+              "povrat",
+              "popravak",
+              "kako",
+              "molim"
+            ],
+            "label": "żądanie / cel"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Poštovani, prošli tjedan sam naručila tablet preko vaše internetske trgovine. Paket je stigao oštećen i tablet je neispravan. Molim vas da mi pošaljete zamjenu u najkraćem roku. Unaprijed hvala na odgovoru."
       }
     }
   }

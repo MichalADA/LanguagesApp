@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -245,6 +245,22 @@ const OPEN_REPLIES = [
   { lesson: 'b1-07-05', reply: 0, hit: ['Želim vas obavijestiti da se selim.', 'Sve je u redu, ali moram vam reći da se selim.', 'Selim se sljedeći mjesec.'], miss: ['Stan.'] },
   { lesson: 'b1-07-05', reply: 1, hit: ['Do kraja mjeseca.', 'Ostajem do prvog studenog.', 'Još mjesec dana.'], miss: ['Mjesec.'] },
   { lesson: 'b1-07-05', reply: 2, hit: ['Kada ćete mi vratiti polog?', 'Dobro, a kad ću dobiti polog natrag?'], miss: ['Polog.'] },
+  // Moduł 8: zakupy online, da + czas teraźniejszy, kako bih, reklamacja.
+  { lesson: 'b1-08-01', reply: 0, hit: ['Da, često kupujem odjeću preko interneta.', 'Rijetko.', 'Ponekad naručim knjige.', 'Ne baš, kupujem u trgovini.'], miss: ['Odjeća.'] },
+  { lesson: 'b1-08-01', reply: 1, hit: ['Obično plaćam karticom.', 'Karticom.', 'Pouzećem.', 'Plaćam preko aplikacije.'], miss: ['Novac.'] },
+  { lesson: 'b1-08-01', reply: 2, hit: ['Naručio sam knjigu preko interneta, ali paket još nije stigao.', 'Jednom, paket je kasnio tjedan dana.', 'Nije.'], miss: ['Kurir.'] },
+  { lesson: 'b1-08-02', reply: 0, hit: ['Zovem da provjerim status narudžbe.', 'Dobar dan, zovem da pitam za paket.', 'Javljam se da se raspitam za narudžbu.'], miss: ['Paket.', 'Zovem provjeriti paket.'] },
+  { lesson: 'b1-08-02', reply: 1, hit: ['Broj je tri, osam, jedan, dva.', 'Tri osam jedan dva.', 'Moj broj narudžbe je 4572.'], miss: ['Ne znam.'] },
+  { lesson: 'b1-08-02', reply: 2, hit: ['Molim vas da mi potvrdite novi termin.', 'Možete li mi javiti kad stiže?', 'Razumijem. Molim vas da mi pošaljete poruku.'], miss: ['Termin.'] },
+  { lesson: 'b1-08-03', reply: 0, hit: ['Htio bih vratiti ovaj proizvod.', 'Želim zamijeniti jaknu.', 'Htjela bih zamijeniti veličinu.'], miss: ['Jakna.'] },
+  { lesson: 'b1-08-03', reply: 1, hit: ['Imam. Što još trebam?', 'Evo ga.', 'Nemam, izgubila sam ga.'], miss: ['Račun.'] },
+  { lesson: 'b1-08-03', reply: 2, hit: ['Što još trebam napraviti kako bih dobio novac natrag?', 'Kada ću dobiti novac?', 'A što još moram napraviti?'], miss: ['Novac.'] },
+  { lesson: 'b1-08-04', reply: 0, hit: ['Paket je stigao oštećen.', 'Dobio sam pogrešan broj cipela.', 'Mobitel ne radi.', 'Ekran je razbijen.'], miss: ['Problem.'] },
+  { lesson: 'b1-08-04', reply: 1, hit: ['Je, još godinu dana.', 'Da, pod garancijom je.', 'Nije.', 'Još šest mjeseci.'], miss: ['Garancija.'] },
+  { lesson: 'b1-08-04', reply: 2, hit: ['Tražim zamjenu ili povrat novca.', 'Zamjenu.', 'Htjela bih povrat novca.', 'Radije bih novi mobitel.'], miss: ['Ništa.'] },
+  { lesson: 'b1-08-05', reply: 0, hit: ['Želim uložiti reklamaciju na neispravan proizvod.', 'Zovem zbog reklamacije.', 'Htjela bih reklamirati tablet.'], miss: ['Reklamacija.'] },
+  { lesson: 'b1-08-05', reply: 1, hit: ['Mobitel je neispravan, ne puni se.', 'Paket je stigao oštećen.'], miss: ['Mobitel.'] },
+  { lesson: 'b1-08-05', reply: 2, hit: ['Tražim zamjenu, molim vas u najkraćem roku.', 'Molim vas da mi vratite novac.', 'Želim povrat novca.'], miss: ['Ne znam.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {
