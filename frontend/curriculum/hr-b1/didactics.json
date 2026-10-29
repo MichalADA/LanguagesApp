@@ -9,6 +9,9 @@
     },
     "2": {
       "description": "Opowiadasz o wakacjach i przygodach: co się działo, a co się wydarzyło, co zrobiłeś, gdy tylko…, gdzie stoją krótkie słówka i jak opowiedzieć całą historię."
+    },
+    "3": {
+      "description": "Mówisz o marzeniach i planach: czego byś chciał, co moglibyście zrobić razem, co byś zrobił, gdyby…, i co wolałbyś na czyimś miejscu."
     }
   },
   "lessons": {
@@ -1644,6 +1647,787 @@
         ],
         "minSentences": 3,
         "sample": "Ljetos smo bili na Visu. Čim smo stigli, otišli smo na plažu. Odjednom je počela oluja. Na kraju smo cijelu večer igrali karte. Ukratko, bilo je savršeno ljeto."
+      }
+    },
+    "b1-11": {
+      "grammar": {
+        "title": "Volio bih…",
+        "text": "Tryb przypuszczający to forma przeszła (volio, voljela, htio, htjela) + bih. Znasz go z A2: Htio bih vratiti… Teraz: volio / voljela bih = bardzo bym chciał / chciałabym, rado bih išao = chętnie bym pojechał. Przeczenie: ne bih. bih to krótkie słowo: stoi na drugim miejscu i przed se — Za vikend bih se htjela opustiti.",
+        "table": [
+          {
+            "label": "ja + bih",
+            "rows": [
+              {
+                "base": "chcieć",
+                "form": "htio bih / htjela bih",
+                "meaning": "chciałbym / chciałabym"
+              },
+              {
+                "base": "bardzo chcieć",
+                "form": "volio bih / voljela bih",
+                "meaning": "bardzo bym chciał / chciała"
+              },
+              {
+                "base": "chętnie",
+                "form": "rado bih išao / išla",
+                "meaning": "chętnie bym poszedł / poszła"
+              },
+              {
+                "base": "przeczenie",
+                "form": "ne bih htio / htjela",
+                "meaning": "nie chciałbym / nie chciałabym"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          4,
+          7,
+          10
+        ],
+        "tip": "Polskie -bym to po chorwacku osobne słowo: chciałbym = htio bih, nie „htiobih”. A bih nigdy nie zaczyna zdania."
+      },
+      "gap": {
+        "sentence": 7,
+        "word": "bih"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 3,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Chętnie bym się zrelaksował.",
+          "options": [
+            "Rado bih se opustio.",
+            "Rado se bih opustio.",
+            "Rado bi se opustio."
+          ],
+          "correct": 0,
+          "explanation": "ja → bih, a bih stoi przed se."
+        }
+      ],
+      "model": {
+        "title": "Marzenia",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, imaš li neku veliku želju?",
+            "pl": "Marko, masz jakieś wielkie marzenie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imam. Volio bih jednog dana putovati oko svijeta.",
+            "pl": "Mam. Chciałbym kiedyś podróżować dookoła świata."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja bih voljela imati vlastitu malu kuću na moru.",
+            "pl": "Ja chciałabym mieć własny mały dom nad morzem."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Nije loše! A što bi htjela raditi ovaj vikend?",
+            "pl": "Nieźle! A co chciałabyś robić w ten weekend?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ovaj vikend? Samo bih se htjela opustiti.",
+            "pl": "W ten weekend? Chciałabym się tylko zrelaksować."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Twoje marzenia",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Imaš li neku veliku želju?",
+            "pl": "Masz jakieś wielkie marzenie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co chciałbyś / chciałabyś kiedyś zrobić (Volio bih…).",
+              "accept": [
+                2
+              ],
+              "open": true,
+              "pattern": "^((da|imam) )?((jednog dana |jako |stvarno )?(volio|voljela|htio|htjela) bih( se)?( jednog dana)? \\p{L}+(?:ti|ći)|(jednog dana|ja) bih( se)? (volio|voljela|htio|htjela) \\p{L}+(?:ti|ći)|moja (najveća )?želja je \\p{L}+(?:ti|ći))( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Lijepo! A što bi volio raditi ovaj vikend?",
+            "pl": "Pięknie! A co chciałbyś robić w ten weekend?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co chciałbyś / chciałabyś robić w weekend.",
+              "accept": [
+                7
+              ],
+              "open": true,
+              "pattern": "^((ovaj vikend|za vikend|u subotu|u nedjelju|ja) bih( se)? (volio|voljela|htio|htjela)|(volio|voljela|htio|htjela) bih( se)?|rado bih( se)?) (samo |dugo |malo )?(\\p{L}+(?:ti|ći)|{pp})( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "A što ne bi htio raditi u subotu?",
+            "pl": "A czego nie chciałbyś robić w sobotę?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czego nie chciałbyś / nie chciałabyś robić (Ne bih htio…).",
+              "accept": [
+                10
+              ],
+              "open": true,
+              "pattern": "^((u subotu|za vikend|ja|nikako) )?ne bih (htio|htjela|volio|voljela) \\p{L}+(?:ti|ći)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Razumijem, ni ja!",
+            "pl": "Rozumiem, ja też nie!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: o czym marzysz i co chciałbyś / chciałabyś robić w ten weekend.",
+        "points": [
+          "marzenie (volio / voljela bih…)",
+          "plan na weekend (htio / htjela bih…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "bih"
+            ],
+            "label": "bih"
+          },
+          {
+            "any": [
+              "volio",
+              "voljela",
+              "htio",
+              "htjela",
+              "rado"
+            ],
+            "label": "volio / htjela / rado"
+          }
+        ],
+        "sample": "Jednog dana bih voljela živjeti na moru. Ovaj vikend bih se htjela samo opustiti."
+      }
+    },
+    "b1-12": {
+      "grammar": {
+        "title": "Mogli bismo zajedno!",
+        "text": "Pełna odmiana trybu przypuszczającego: ja bih, ti bi, on / ona bi, mi bismo, vi biste, oni bi + forma przeszła. Propozycje: Mogli bismo otići na piknik (moglibyśmy), Kako bi bilo da odemo…? (a może byśmy…), Bilo bi super… (byłoby super). Pytania: Bi li htio ići s nama? Do kilku osób albo grzecznie: Biste li nam se pridružili?",
+        "table": [
+          {
+            "label": "biti w trybie przypuszczającym",
+            "rows": [
+              {
+                "base": "ja",
+                "form": "bih došao / došla",
+                "meaning": "przyszedłbym / przyszłabym"
+              },
+              {
+                "base": "ti",
+                "form": "bi došao / došla",
+                "meaning": "przyszedłbyś / przyszłabyś"
+              },
+              {
+                "base": "on / ona",
+                "form": "bi došao / došla",
+                "meaning": "przyszedłby / przyszłaby"
+              },
+              {
+                "base": "mi",
+                "form": "bismo došli",
+                "meaning": "przyszlibyśmy"
+              },
+              {
+                "base": "vi",
+                "form": "biste došli",
+                "meaning": "przyszlibyście"
+              },
+              {
+                "base": "oni / one",
+                "form": "bi došli / došle",
+                "meaning": "przyszliby / przyszłyby"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          9
+        ],
+        "tip": "bismo i biste piszesz razem, jednym słowem — jak polskie -byśmy, -byście: mogli bismo = moglibyśmy."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "bismo"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 9,
+      "order": 5,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Moglibyśmy pójść do kina.",
+          "options": [
+            "Mogli bismo ići u kino.",
+            "Mogli bi smo ići u kino.",
+            "Mogli bih ići u kino."
+          ],
+          "correct": 0,
+          "explanation": "mi → bismo, jedno słowo."
+        }
+      ],
+      "listening": "b1-planovi-za-vikend",
+      "dialog": {
+        "title": "Wspólny weekend",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Nemam planova za subotu. Imaš li neku ideju?",
+            "pl": "Nie mam planów na sobotę. Masz jakiś pomysł?"
+          },
+          {
+            "reply": {
+              "prompt": "Zaproponuj coś wspólnego (Mogli bismo… / Kako bi bilo da…?).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((imam|da|pa|hm) )?(mogli bismo|možda bismo mogli|kako bi bilo da|što kažeš da)( zajedno)? (\\p{L}+(?:ti|ći)|{pres1}|odemo|idemo)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Dobra ideja! Bi li Marko htio ići s nama?",
+            "pl": "Dobry pomysł! Czy Marko chciałby pójść z nami?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że Marko chętnie by przyszedł, ale pracuje.",
+              "accept": [
+                "Marko bi rado došao, ali radi."
+              ],
+              "pattern": "^(marko|on) bi (rado (došao|išao)|(htio|volio)( doći| ići)?)( ali( \\p{L}+){1,4})?$"
+            }
+          },
+          {
+            "say": "Šteta. Odgovara li ti subota u deset?",
+            "pl": "Szkoda. Pasuje ci sobota o dziesiątej?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że ci pasuje (Odgovara mi).",
+              "accept": [
+                "Odgovara mi, vidimo se!"
+              ],
+              "pattern": "^((da|može) )?(subota mi odgovara|odgovara mi( subota| u deset)?)( vidimo se)?$|^(da|može|dogovoreno)( vidimo se)?$"
+            }
+          },
+          {
+            "say": "Super, vidimo se!",
+            "pl": "Super, do zobaczenia!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z propozycją dla przyjaciół na weekend (Mogli bismo…, Bi li…?).",
+        "points": [
+          "propozycja (mogli bismo / kako bi bilo da)",
+          "pytanie (bi li… / biste li…?)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "bismo",
+              "biste",
+              "bi"
+            ],
+            "label": "bismo / biste / bi"
+          },
+          {
+            "any": [
+              "mogli",
+              "kako",
+              "odgovara",
+              "htio",
+              "htjela",
+              "rado"
+            ],
+            "label": "propozycja: mogli bismo / kako bi bilo"
+          }
+        ],
+        "sample": "Mogli bismo u subotu otići na piknik. Biste li nam se pridružili?"
+      }
+    },
+    "b1-13": {
+      "grammar": {
+        "title": "Kad bih imao više vremena…",
+        "text": "ako znasz z A2 — to realny warunek: Ako sutra bude lijepo, idemo na izlet. Gdy coś jest mało prawdopodobne albo nierealne, mówisz kad bih + forma przeszła (gdybym…), a w drugiej części też tryb przypuszczający: Kad bih imao više vremena, više bih čitao. Krócej, z czasem teraźniejszym: Da imam više novca, putovala bih. Da sam bogat… = gdybym był bogaty.",
+        "table": [
+          {
+            "label": "warunek",
+            "rows": [
+              {
+                "base": "realny (A2)",
+                "form": "Ako bude lijepo, idemo na izlet.",
+                "meaning": "Jeśli będzie ładnie, jedziemy na wycieczkę."
+              },
+              {
+                "base": "gdybym",
+                "form": "Kad bih imao vremena, čitao bih.",
+                "meaning": "Gdybym miał czas, czytałbym."
+              },
+              {
+                "base": "gdybyśmy",
+                "form": "Kad bismo imali auto, išli bismo…",
+                "meaning": "Gdybyśmy mieli samochód, jeździlibyśmy…"
+              },
+              {
+                "base": "krótko: da",
+                "form": "Da imam novca, putovala bih.",
+                "meaning": "Gdybym miała pieniądze, podróżowałabym."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "tip": "Polskie „gdybym” = kad bih (dosłownie: kiedy bym). Forma bih zmienia się z osobą: kad bi (ty), kad bismo (my)."
+      },
+      "gap": {
+        "sentence": 6,
+        "word": "bismo"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 9,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Gdybym miał czas, pomógłbym ci.",
+          "options": [
+            "Kad bih imao vremena, pomogao bih ti.",
+            "Kad bi imao vremena, pomogao bih ti.",
+            "Kad imam vremena, pomogao bih ti."
+          ],
+          "correct": 0,
+          "explanation": "ja → kad bih + forma przeszła, a w drugiej części …bih."
+        }
+      ],
+      "model": {
+        "title": "Gdybym wygrał…",
+        "lines": [
+          {
+            "speaker": "Marko",
+            "hr": "Ana, što bi napravila kad bi dobila na lutriji?",
+            "pl": "Ana, co byś zrobiła, gdybyś wygrała na loterii?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Kad bih dobila milijun eura, kupila bih kuću na Hvaru.",
+            "pl": "Gdybym wygrała milion euro, kupiłabym dom na Hvarze."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "A bi li napustila posao?",
+            "pl": "A rzuciłabyś pracę?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ne bih! Volim svoj posao. Ali radila bih manje.",
+            "pl": "Nie! Lubię swoją pracę. Ale pracowałabym mniej."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ja bih putovao. Da imam toliko novca, išao bih na Novi Zeland.",
+            "pl": "Ja bym podróżował. Gdybym miał tyle pieniędzy, pojechałbym do Nowej Zelandii."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Gdyby…",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Što bi radio kad bi imao više slobodnog vremena?",
+            "pl": "Co byś robił, gdybyś miał więcej wolnego czasu?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co byś robił / robiła (Kad bih imao vremena, …).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((kad bih|da) (imao|imala|imam)( više)?( slobodnog)? vremena )?({pp} bih|(više|češće|ja|onda) bih {pp})( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "A da dobiješ milijun eura?",
+            "pl": "A gdybyś dostał milion euro?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co byś kupił / zrobił (Kupio bih…).",
+              "accept": [
+                "Kupio bih kuću na moru."
+              ],
+              "open": true,
+              "pattern": "^((onda|sigurno|prvo|ja) bih {pp}|{pp} bih)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Zanimljivo! A bi li napustio posao?",
+            "pl": "Ciekawe! A rzuciłbyś pracę?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy rzuciłbyś / rzuciłabyś pracę (Ne bih… / Bih…).",
+              "accept": [
+                "Ne bih, volim svoj posao."
+              ],
+              "open": true,
+              "pattern": "^(ne bih|bih|da bih|naravno da bih|naravno da ne bih|sigurno ne bih|sigurno bih)( \\p{L}+){0,5}$|^(ne|da)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Ha, pametno!",
+            "pl": "Ha, mądrze!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co byś zrobił / zrobiła, gdybyś miał / miała więcej czasu albo pieniędzy.",
+        "points": [
+          "warunek (kad bih… / da imam…)",
+          "skutek (…bih)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "kad",
+              "da"
+            ],
+            "label": "kad bih / da imam"
+          },
+          {
+            "any": [
+              "bih",
+              "bismo"
+            ],
+            "label": "…bih"
+          }
+        ],
+        "sample": "Kad bih imala više vremena, učila bih talijanski. Da imam više novca, putovala bih po Aziji."
+      }
+    },
+    "b1-14": {
+      "grammar": {
+        "title": "Na tvom mjestu bih…",
+        "text": "Radę albo hipotetyczną decyzję dajesz trybem przypuszczającym: Na tvom mjestu bih prihvatio ponudu (na twoim miejscu przyjąłbym ofertę). Grzecznie: na vašem mjestu. Polskie „wolałbym” to radije bih (dosłownie: chętniej bym) — Radije bih išla vlakom nego autom. Pytanie: Bi li prihvatio…? Nowe pary aspektowe: prihvaćati → prihvatiti, odbijati → odbiti, birati → izabrati.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "prihvaćati → prihvatiti",
+                "form": "Rijetko prihvaćam ponude. / Prihvatio bih ponudu.",
+                "meaning": "Rzadko przyjmuję oferty. / Przyjąłbym ofertę."
+              },
+              {
+                "base": "odbijati → odbiti",
+                "form": "Uvijek odbija pomoć. / Ne bih odbio taj posao.",
+                "meaning": "Zawsze odmawia pomocy. / Nie odrzuciłbym tej pracy."
+              },
+              {
+                "base": "birati → izabrati",
+                "form": "Uvijek biram jeftinije. / Izabrala sam stan.",
+                "meaning": "Zawsze wybieram tańsze. / Wybrałam mieszkanie."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          10
+        ],
+        "tip": "radije bih … nego … = wolałbym … niż …: Radije bih išla vlakom nego autom."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "radije"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 5,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Wolałbym zostać w domu.",
+          "options": [
+            "Radije bih ostao kod kuće.",
+            "Radije sam ostao kod kuće.",
+            "Bih radije ostao kod kuće."
+          ],
+          "correct": 0,
+          "explanation": "wolałbym = radije bih; bih nie zaczyna zdania."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Na twoim miejscu przyjąłbym tę ofertę.",
+          "options": [
+            "Na tvom mjestu bih prihvatio ovu ponudu.",
+            "Na tvom mjestu prihvatio sam ovu ponudu.",
+            "U tvom mjestu bih prihvatio ovu ponudu."
+          ],
+          "correct": 0,
+          "explanation": "na tvom mjestu + bih + forma przeszła."
+        }
+      ],
+      "listening": "b1-teska-odluka",
+      "dialog": {
+        "title": "Doradź mi",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Dobio sam ponudu za posao u Splitu. Što bi ti napravio na mom mjestu?",
+            "pl": "Dostałem ofertę pracy w Splicie. Co ty byś zrobił na moim miejscu?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobiłbyś / zrobiłabyś na jego miejscu (Na tvom mjestu bih…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((na tvom mjestu|ja|iskreno|mislim da)( ja)? (bih|ne bih) {pp}|{pp} bih|ne bih {pp})( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "A ti? Bi li se preselio zbog posla?",
+            "pl": "A ty? Przeprowadziłbyś się dla pracy?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, czy byś się przeprowadził / przeprowadziła — albo co wolałbyś (Radije bih…).",
+              "accept": [
+                "Ne bih, radije bih ostao ovdje."
+              ],
+              "open": true,
+              "pattern": "^((da|ne|možda|iskreno) )?((ne )?bih( se)?( preselio| preselila)?|radije bih( se)? {pp}|ja bih radije {pp})( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Hm, a što ti je važnije, plaća ili obitelj?",
+            "pl": "Hm, a co jest dla ciebie ważniejsze, pensja czy rodzina?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co jest dla ciebie ważniejsze — albo że wszystko ci jedno.",
+              "accept": [
+                "Meni je važnija obitelj."
+              ],
+              "open": true,
+              "pattern": "^((meni|za mene|mislim da) )?(je )?(važnija|važniji|važnije) (je )?(obitelj|plaća|posao|zdravlje|vrijeme)$|^(obitelj|plaća|posao|zdravlje|vrijeme)( je)?( važnija| važniji| važnije)?$|^svejedno mi je$"
+            }
+          },
+          {
+            "say": "Hvala na savjetu!",
+            "pl": "Dzięki za radę!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania z radą dla przyjaciela, który waha się, czy przyjąć nową pracę.",
+        "points": [
+          "co zrobiłbyś na jego miejscu",
+          "co ty byś wolał (radije bih…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "mjestu",
+              "radije"
+            ],
+            "label": "na tvom mjestu / radije"
+          },
+          {
+            "any": [
+              "bih",
+              "bi"
+            ],
+            "label": "bih / bi"
+          }
+        ],
+        "sample": "Na tvom mjestu bih prihvatila ponudu. Ja bih radije radila u većem gradu."
+      }
+    },
+    "b1-15": {
+      "grammar": {
+        "title": "Plany i marzenia — wszystko razem",
+        "text": "Marzenie: Volio bih… / Voljela bih… Propozycja: Mogli bismo…, Kako bi bilo da…? Pytanie: Bi li…? Biste li…? Warunek realny: Ako bude lijepo… Mało prawdopodobny: Kad bismo imali više dana… Preferencja: Radije bih… Na końcu kompromis: Nije loša ideja, može i tako.",
+        "examples": [
+          1,
+          3,
+          4
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Moglibyście przyjść w sobotę?",
+          "options": [
+            "Biste li mogli doći u subotu?",
+            "Bi li mogli doći u subotu?",
+            "Bismo li mogli doći u subotu?"
+          ],
+          "correct": 0,
+          "explanation": "vi → biste: Biste li mogli…?"
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Idealny weekend",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Kakav bi bio tvoj savršen vikend?",
+            "pl": "Jaki byłby twój idealny weekend?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz swój idealny weekend (Volio bih… / Savršen vikend bi…).",
+              "accept": [
+                1,
+                "Volio bih dugo spavati i ići na more."
+              ],
+              "open": true,
+              "pattern": "^savršen vikend (bi )?(za mene )?(bi )?bio( \\p{L}+){1,4}$|^((ja|za vikend) bih( se)? (volio|voljela|htio|htjela)|(volio|voljela|htio|htjela|rado) bih( se)?) (samo |dugo )?(\\p{L}+(?:ti|ći)|{pp})( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Ja bih radije išla u planine. Što kažeš?",
+            "pl": "Ja wolałabym pojechać w góry. Co powiesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Zaproponuj kompromis (Mogli bismo… / Kad bismo…).",
+              "accept": [
+                2,
+                "Mogli bismo ići na more, a sljedeći vikend u planine."
+              ],
+              "open": true,
+              "pattern": "^((dobro|može|hm|pa|nije loša ideja) )*(mogli bismo|možda bismo mogli|kako bi bilo da|kad bismo|napravimo)( \\p{L}+){1,8}$"
+            }
+          },
+          {
+            "say": "Može. Odgovara li ti da krenemo u subotu ujutro?",
+            "pl": "Może być. Pasuje ci, żebyśmy wyruszyli w sobotę rano?"
+          },
+          {
+            "reply": {
+              "prompt": "Zgódź się (Odgovara mi / Može / Nije loša ideja).",
+              "accept": [
+                "Odgovara mi!"
+              ],
+              "pattern": "^((da|može|super|dogovoreno|nije loša ideja|odlično) )*(odgovara mi|može|dogovoreno|nije loša ideja|super|odlično)$"
+            }
+          },
+          {
+            "say": "Super, onda je dogovoreno!",
+            "pl": "Super, to jesteśmy umówieni!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3–4 zdaniach swój idealny weekend i zaproponuj coś przyjacielowi.",
+        "points": [
+          "czego byś chciał (volio / htio bih)",
+          "propozycja (mogli bismo…)",
+          "warunek albo preferencja (kad bih…, radije bih…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "bih"
+            ],
+            "label": "bih"
+          },
+          {
+            "any": [
+              "bismo",
+              "biste",
+              "bi"
+            ],
+            "label": "bismo / bi"
+          },
+          {
+            "any": [
+              "kad",
+              "da",
+              "ako",
+              "radije"
+            ],
+            "label": "kad bih / radije"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Moj savršen vikend bi bio na moru. Volio bih dugo spavati i plivati. Mogli bismo zajedno otići u Zadar. Kad bismo imali više dana, išli bismo i na otok."
       }
     }
   }

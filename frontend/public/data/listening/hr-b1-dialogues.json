@@ -271,6 +271,134 @@
         ],
         "correctOptionId": "waiter"
       }
+    },
+    {
+      "id": "b1-planovi-za-vikend",
+      "level": "B1",
+      "titlePl": "Plany na weekend",
+      "titleEn": "Weekend plans",
+      "topic": "czas wolny",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, imaš li planove za vikend?",
+          "textPl": "Marko, masz plany na weekend?",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Još ne. Mogli bismo nešto raditi zajedno.",
+          "textPl": "Jeszcze nie. Moglibyśmy coś porobić razem.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Kako bi bilo da odemo na piknik u Maksimir?",
+          "textPl": "A może byśmy poszli na piknik do Maksimiru?",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Bilo bi super! Mogli bismo pozvati i Ivana.",
+          "textPl": "Byłoby super! Moglibyśmy zaprosić też Ivana.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Odlično. Ja bih ponijela sendviče, a ti bi mogao kupiti piće.",
+          "textPl": "Świetnie. Ja wzięłabym kanapki, a ty mógłbyś kupić napoje.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dogovoreno. Odgovara li ti subota u podne?",
+          "textPl": "Umowa stoi. Pasuje ci sobota w południe?",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co ma kupić Marko?",
+        "options": [
+          {
+            "id": "drinks",
+            "textPl": "Napoje"
+          },
+          {
+            "id": "sandwiches",
+            "textPl": "Kanapki"
+          },
+          {
+            "id": "tickets",
+            "textPl": "Bilety do parku"
+          }
+        ],
+        "correctOptionId": "drinks"
+      }
+    },
+    {
+      "id": "b1-teska-odluka",
+      "level": "B1",
+      "titlePl": "Trudna decyzja",
+      "titleEn": "A difficult decision",
+      "topic": "praca",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, dobio sam ponudu za posao u Zagrebu.",
+          "textPl": "Ana, dostałem ofertę pracy w Zagrzebiu.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Super! Hoćeš li je prihvatiti?",
+          "textPl": "Super! Przyjmiesz ją?",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ne znam, dvoumim se. Plaća je bolja, ali morao bih se preseliti.",
+          "textPl": "Nie wiem, waham się. Pensja jest lepsza, ale musiałbym się przeprowadzić.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Na tvom mjestu bih prihvatila. Zagreb je lijep grad.",
+          "textPl": "Na twoim miejscu bym przyjęła. Zagrzeb to ładne miasto.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Možda. Ali radije bih ostao blizu obitelji.",
+          "textPl": "Może. Ale wolałbym zostać blisko rodziny.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onda pitaj možeš li raditi od kuće dva dana tjedno.",
+          "textPl": "To zapytaj, czy możesz pracować z domu dwa dni w tygodniu.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Dlaczego Marko się waha?",
+        "options": [
+          {
+            "id": "move",
+            "textPl": "Musiałby się przeprowadzić"
+          },
+          {
+            "id": "salary",
+            "textPl": "Pensja jest gorsza"
+          },
+          {
+            "id": "city",
+            "textPl": "Nie lubi Zagrzebia"
+          }
+        ],
+        "correctOptionId": "move"
+      }
     }
   ]
 }

@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -171,6 +171,19 @@ const OPEN_REPLIES = [
   { lesson: 'b1-02-05', reply: 0, hit: ['Bio sam na Visu.', 'Ljetos sam bila u Istri.', 'Na moru.', 'Bili smo u Dalmaciji.'], miss: ['Sam bio na Visu.'] },
   { lesson: 'b1-02-05', reply: 1, hit: ['Čim smo stigli, otišli smo na plažu.', 'Prvi dan smo se odmarali.', 'Odmah smo otišli na plažu.'], miss: ['Smo otišli na plažu.'] },
   { lesson: 'b1-02-05', reply: 2, hit: ['U jednom trenutku je počela jaka kiša.', 'Odjednom je počela oluja.', 'Jednog dana smo se izgubili.', 'Ne.'], miss: ['Je počela kiša.'] },
+  // Moduł 3: tryb przypuszczający (bih / bismo / biste), kad bih, radije bih.
+  { lesson: 'b1-03-01', reply: 0, hit: ['Volio bih jednog dana živjeti na moru.', 'Voljela bih naučiti jedriti.', 'Moja najveća želja je putovati oko svijeta.', 'Jednog dana bih se volio preseliti u Split.', 'Htjela bih imati vlastiti kafić.'], miss: ['Bih volio živjeti na moru.'] },
+  { lesson: 'b1-03-01', reply: 1, hit: ['Za vikend bih se htjela samo opustiti.', 'Htio bih ići na izlet.', 'Rado bih išao u kino.', 'U subotu bih volio dugo spavati.'], miss: ['Bih htio ići na izlet.'] },
+  { lesson: 'b1-03-01', reply: 2, hit: ['Ne bih htio raditi u subotu.', 'U subotu ne bih htjela čistiti.', 'Ne bih volio ići u grad.'], miss: ['Bih ne htio raditi.'] },
+  { lesson: 'b1-03-02', reply: 0, hit: ['Mogli bismo zajedno otići na piknik.', 'Kako bi bilo da odemo na roštilj?', 'Mogli bismo ići u kino.', 'Možda bismo mogli igrati društvene igre.'], miss: ['Bismo mogli ići u kino.'] },
+  { lesson: 'b1-03-03', reply: 0, hit: ['Kad bih imao više vremena, više bih čitao.', 'Putovala bih.', 'Više bih spavao.', 'Da imam više vremena, učio bih španjolski.'], miss: ['Bih čitao.'] },
+  { lesson: 'b1-03-03', reply: 1, hit: ['Kupio bih kuću na moru.', 'Prvo bih putovala.', 'Sigurno bih pomogao obitelji.'], miss: ['Bih kupio kuću.'] },
+  { lesson: 'b1-03-03', reply: 2, hit: ['Ne bih, volim svoj posao.', 'Bih!', 'Naravno da bih.', 'Ne, nikad.'], miss: ['Nisam.'] },
+  { lesson: 'b1-03-04', reply: 0, hit: ['Na tvom mjestu bih prihvatio ponudu.', 'Ja bih prihvatila.', 'Mislim da bih odbio.', 'Na tvom mjestu ne bih išao.'], miss: ['Bih prihvatio ponudu.'] },
+  { lesson: 'b1-03-04', reply: 1, hit: ['Ne bih, radije bih ostao ovdje.', 'Bih, zašto ne.', 'Radije bih ostala u Zagrebu.', 'Možda bih se preselio.'], miss: ['Sam se preselio.'] },
+  { lesson: 'b1-03-04', reply: 2, hit: ['Meni je važnija obitelj.', 'Obitelj.', 'Važnija je plaća.', 'Svejedno mi je.'], miss: ['Obitelj važan.'] },
+  { lesson: 'b1-03-05', reply: 0, hit: ['Savršen vikend bi za mene bio na moru.', 'Volio bih dugo spavati i ići na more.', 'Htjela bih samo čitati.'], miss: ['Bih volio spavati.'] },
+  { lesson: 'b1-03-05', reply: 1, hit: ['Mogli bismo ići na more, a sljedeći vikend u planine.', 'Dobro, mogli bismo ići u planine.', 'Kako bi bilo da idemo na Plitvice?', 'Napravimo kompromis.'], miss: ['Ne znam.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

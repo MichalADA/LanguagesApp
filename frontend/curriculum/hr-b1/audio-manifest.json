@@ -7,9 +7,10 @@
   },
   "modules": [
     1,
-    2
+    2,
+    3
   ],
-  "characters": 13531,
+  "characters": 19351,
   "items": [
     {
       "text": "A kako ide? Jesi li se naviknuo?",
@@ -4180,6 +4181,2032 @@
       ],
       "modules": [
         2
+      ]
+    },
+    {
+      "text": "A bi li napustila posao?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/a-bi-li-napustila-posao-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "A da dobiješ milijun eura?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/a-da-dobijes-milijun-eura.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "A što ne bi htio raditi u subotu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/a-sto-ne-bi-htio-raditi-u-subotu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "A ti? Bi li se preselio zbog posla?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/a-ti-bi-li-se-preselio-zbog-posla-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ako bude lijepo, idemo na izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ako-bude-lijepo-idemo-na-izlet.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ako sutra bude lijepo, idemo na izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ako-sutra-bude-lijepo-idemo-na-izlet.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ana bi rado došla, ali radi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ana-bi-rado-dosla-ali-radi.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ana, što bi napravila kad bi dobila na lutriji?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/ana-sto-bi-napravila-kad-bi-dobila-na-lutriji-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "bi došao, došla",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bi-dosao-dosla.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "bi došli, došle",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bi-dosli-dosle.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Bi li htio ići s nama?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bi-li-htio-ici-s-nama.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Bi li prihvatio posao u drugom gradu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bi-li-prihvatio-posao-u-drugom-gradu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "bih došao, došla",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bih-dosao-dosla.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Bila je to ugodna večer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bila-je-to-ugodna-vecer.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Bilo bi super vidjeti se opet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bilo-bi-super-vidjeti-se-opet.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "bilo bi super",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bilo-bi-super.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "bismo došli",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bismo-dosli.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "biste došli",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/biste-dosli.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Biste li mogli doći u subotu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/biste-li-mogli-doci-u-subotu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Biste li nam se pridružili?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/biste-li-nam-se-pridruzili.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "bogat",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/bogat.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Često maštam o vlastitoj kući.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/cesto-mastam-o-vlastitoj-kuci.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Da imam novca, putovala bih.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/da-imam-novca-putovala-bih.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Da imam više novca, putovala bih po svijetu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/da-imam-vise-novca-putovala-bih-po-svijetu.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Da sam bogat, ne bih radio.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/da-sam-bogat-ne-bih-radio.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "deka",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/deka.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Dobio sam ponudu za posao u Splitu. Što bi ti napravio na mom mjestu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/dobio-sam-ponudu-za-posao-u-splitu-sto-bi-ti-napravio-na-mom-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Dobitak je bio malen.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/dobitak-je-bio-malen.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "dobitak",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/dobitak.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Dobra ideja! Bi li Marko htio ići s nama?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/dobra-ideja-bi-li-marko-htio-ici-s-nama.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "društvene igre",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/drustvene-igre.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "dvoumim se, dvoumiš se, dvoumi se, dvoumimo se, dvoumite se, dvoume se. dvoumio se, dvoumila se, dvoumili se. dvoumit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/dvoumim-se-dvoumis-se-dvoumi-se-dvoumimo-se-dvoumite-se-dvou.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Dvoumim se između dvije ponude.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/dvoumim-se-izmedju-dvije-ponude.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "dvoumiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/dvoumiti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ha, pametno!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ha-pametno.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Hm, a što ti je važnije, plaća ili obitelj?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/hm-a-sto-ti-je-vaznije-placa-ili-obitelj-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "htio bih, htjela bih",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/htio-bih-htjela-bih.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Htio bih popiti kavu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/htio-bih-popiti-kavu.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Hvala na savjetu!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/hvala-na-savjetu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ideja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ideja.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Imam. Volio bih jednog dana putovati oko svijeta.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/imam-volio-bih-jednog-dana-putovati-oko-svijeta-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Imamo malu vikendicu na selu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/imamo-malu-vikendicu-na-selu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Imaš li neku veliku želju?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/imas-li-neku-veliku-zelju-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Izabrala sam stan bliže poslu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/izabrala-sam-stan-blize-poslu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "izabram, izabraš, izabra, izabramo, izabrate, izabraju. izabrao, izabrala, izabrali. izabrat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/izabram-izabras-izabra-izabramo-izabrate-izabraju-izabrao-iz.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "izabrati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/izabrati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ja bih putovao. Da imam toliko novca, išao bih na Novi Zeland.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/ja-bih-putovao-da-imam-toliko-novca-isao-bih-na-novi-zeland-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ja bih radije išla u planine. Što kažeš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ja-bih-radije-isla-u-planine-sto-kazes.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ja bih radije išla u planine.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ja-bih-radije-isla-u-planine.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ja bih radije ostao kod kuće.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ja-bih-radije-ostao-kod-kuce.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ja bih voljela imati vlastitu malu kuću na moru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ja-bih-voljela-imati-vlastitu-malu-kucu-na-moru.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Jedini nedostatak je gužva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/jedini-nedostatak-je-guzva.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Jednog dana bih se volio preseliti u Split.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/jednog-dana-bih-se-volio-preseliti-u-split.mp3",
+      "kinds": [
+        "question"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Jednog dana bih voljela živjeti na moru. Ovaj vikend bih se htjela samo opustiti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/jednog-dana-bih-voljela-zivjeti-na-moru-ovaj-vikend-bih-se-h.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "jednog dana",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/jednog-dana.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bih dobila milijun eura, kupila bih kuću na Hvaru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bih-dobila-milijun-eura-kupila-bih-kucu-na-hvaru.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bih dobio na lutriji, kupio bih kuću na moru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bih-dobio-na-lutriji-kupio-bih-kucu-na-moru.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bih imala više vremena, učila bih talijanski. Da imam više novca, putovala bih po Aziji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bih-imala-vise-vremena-ucila-bih-talijanski-da-imam-vise.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bih imao više vremena, više bih čitao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bih-imao-vise-vremena-vise-bih-citao.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bih imao vremena, čitao bih.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bih-imao-vremena-citao-bih.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bih imao vremena, pomogao bih ti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bih-imao-vremena-pomogao-bih-ti.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bih mogao, ostvario bih svoj san.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bih-mogao-ostvario-bih-svoj-san.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "kad bih",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bih.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bismo imali auto, išli bismo na more svaki vikend.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bismo-imali-auto-isli-bismo-na-more-svaki-vikend.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bismo imali auto, išli bismo…",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bismo-imali-auto-isli-bismo.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kad bismo imali više dana, išli bismo na otok.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kad-bismo-imali-vise-dana-isli-bismo-na-otok.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kakav bi bio tvoj savršen vikend?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kakav-bi-bio-tvoj-savrsen-vikend.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kako bi bilo da odemo na roštilj?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kako-bi-bilo-da-odemo-na-rostilj.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "kako bi bilo da",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kako-bi-bilo-da.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "kompromis",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kompromis.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "košara",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kosara.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Kupio bih kuću na moru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/kupio-bih-kucu-na-moru.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Lijepo! A što bi volio raditi ovaj vikend?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/lijepo-a-sto-bi-volio-raditi-ovaj-vikend-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ljenčariti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ljencariti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "lutrija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/lutrija.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Marko bi rado došao, ali radi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/marko-bi-rado-dosao-ali-radi.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Marko, imaš li neku veliku želju?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/marko-imas-li-neku-veliku-zelju.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "maštam, maštaš, mašta, maštamo, maštate, maštaju. maštao, maštala, maštali. maštat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/mastam-mastas-masta-mastamo-mastate-mastaju-mastao-mastala-m.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "maštati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/mastati.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Meni je važnija obitelj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/meni-je-vaznija-obitelj.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "milijun",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/milijun.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Mogli bismo ići u kino.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/mogli-bismo-ici-u-kino.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Mogli bismo napraviti zajednički plan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/mogli-bismo-napraviti-zajednicki-plan.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Mogli bismo u subotu otići na piknik. Biste li nam se pridružili?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/mogli-bismo-u-subotu-otici-na-piknik-biste-li-nam-se-pridruz.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Mogli bismo zajedno otići na piknik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/mogli-bismo-zajedno-otici-na-piknik.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Moj savršen vikend bi bio na moru. Volio bih dugo spavati i plivati. Mogli bismo zajedno otići u Zadar. Kad bismo imali više dana, išli bismo i na otok.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/moj-savrsen-vikend-bi-bio-na-moru-volio-bih-dugo-spavati-i-p.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Moja najveća želja je putovati oko svijeta.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/moja-najveca-zelja-je-putovati-oko-svijeta.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "može i tako",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/moze-i-tako.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Može. Odgovara li ti da krenemo u subotu ujutro?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/moze-odgovara-li-ti-da-krenemo-u-subotu-ujutro.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Na tvom mjestu bih prihvatila ponudu. Ja bih radije radila u većem gradu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/na-tvom-mjestu-bih-prihvatila-ponudu-ja-bih-radije-radila-u.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Na tvom mjestu bih prihvatio ovu ponudu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/na-tvom-mjestu-bih-prihvatio-ovu-ponudu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Na tvom mjestu bih prihvatio ponudu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/na-tvom-mjestu-bih-prihvatio-ponudu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "na tvom mjestu",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/na-tvom-mjestu.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Na vašem mjestu ne bih odbio taj posao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/na-vasem-mjestu-ne-bih-odbio-taj-posao.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "napustim, napustiš, napusti, napustimo, napustite, napuste. napustio, napustila, napustili. napustit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/napustim-napustis-napusti-napustimo-napustite-napuste-napust.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "napustiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/napustiti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ne bih htio, htjela",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ne-bih-htio-htjela.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ne bih htio raditi u subotu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ne-bih-htio-raditi-u-subotu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ne bih, radije bih ostao ovdje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ne-bih-radije-bih-ostao-ovdje.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ne bih! Volim svoj posao. Ali radila bih manje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ne-bih-volim-svoj-posao-ali-radila-bih-manje.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ne bih, volim svoj posao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ne-bih-volim-svoj-posao.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "nedostatak",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/nedostatak.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Nemam planova za subotu. Imaš li neku ideju?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/nemam-planova-za-subotu-imas-li-neku-ideju.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "nije loša ideja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/nije-losa-ideja.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Nije loše! A što bi htjela raditi ovaj vikend?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/nije-lose-a-sto-bi-htjela-raditi-ovaj-vikend-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Nikad ne bih napustio svoj grad.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/nikad-ne-bih-napustio-svoj-grad.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "odbim, odbiš, odbi, odbimo, odbite, odbe. odbio, odbila, odbili. odbit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/odbim-odbis-odbi-odbimo-odbite-odbe-odbio-odbila-odbili-odbi.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "odbiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/odbiti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Odgovara li ti subota?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/odgovara-li-ti-subota.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Odgovara mi, vidimo se!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/odgovara-mi-vidimo-se.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Odgovara mi!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/odgovara-mi.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "odgovaram, odgovaraš, odgovara, odgovaramo, odgovarate, odgovaraju. odgovarao, odgovarala, odgovarali. odgovarat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/odgovaram-odgovaras-odgovara-odgovaramo-odgovarate-odgovaraj.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "odgovarati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/odgovarati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "odluka",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/odluka.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "opustim se, opustiš se, opusti se, opustimo se, opustite se, opuste se. opustio se, opustila se, opustili se. opustit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/opustim-se-opustis-se-opusti-se-opustimo-se-opustite-se-opus.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "opustiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/opustiti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ostvarim, ostvariš, ostvari, ostvarimo, ostvarite, ostvare. ostvario, ostvarila, ostvarili. ostvarit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ostvarim-ostvaris-ostvari-ostvarimo-ostvarite-ostvare-ostvar.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ostvariti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ostvariti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ovaj vikend? Samo bih se htjela opustiti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ovaj-vikend-samo-bih-se-htjela-opustiti.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "piknik",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/piknik.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "planine",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/planine.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Ponijet ću sendviče.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ponijet-cu-sendvice.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ponijeti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ponijeti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ponuda",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ponuda.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Predložila sam da igramo društvene igre.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/predlozila-sam-da-igramo-drustvene-igre.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "predložim, predložiš, predloži, predložimo, predložite, predlože. predložio, predložila, predložili. predložit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/predlozim-predlozis-predlozi-predlozimo-predlozite-predloze.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "predložiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/predloziti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "prednost",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/prednost.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "pridružim se, pridružiš se, pridruži se, pridružimo se, pridružite se, pridruže se. pridružio se, pridružila se, pridružili se. pridružit ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/pridruzim-se-pridruzis-se-pridruzi-se-pridruzimo-se-pridruzi.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "pridružiti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/pridruziti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "prihvatim, prihvatiš, prihvati, prihvatimo, prihvatite, prihvate. prihvatio, prihvatila, prihvatili. prihvatit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/prihvatim-prihvatis-prihvati-prihvatimo-prihvatite-prihvate.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "prihvatiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/prihvatiti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Radije bih išla vlakom nego autom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/radije-bih-isla-vlakom-nego-autom.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Radije bih ostao kod kuće.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/radije-bih-ostao-kod-kuce.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "radije",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/radije.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "rado bih išao, išla",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/rado-bih-isao-isla.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Rado bih išao s vama na izlet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/rado-bih-isao-s-vama-na-izlet.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Rado bih se opustio.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/rado-bih-se-opustio.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Razumijem, ni ja!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-03/razumijem-ni-ja-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Rijetko prihvaćam ponude., Prihvatio bih ponudu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/rijetko-prihvacam-ponude-prihvatio-bih-ponudu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "san",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/san.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Savršen vikend bi za mene bio na moru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/savrsen-vikend-bi-za-mene-bio-na-moru.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "savršen",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/savrsen.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Sjeli smo na deku u parku.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/sjeli-smo-na-deku-u-parku.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "skromno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/skromno.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Stavila sam hranu u košaru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/stavila-sam-hranu-u-kosaru.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Šteta. Odgovara li ti subota u deset?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/steta-odgovara-li-ti-subota-u-deset.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Što bi napravio s milijun eura?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/sto-bi-napravio-s-milijun-eura.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Što bi radio kad bi imao više slobodnog vremena?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/sto-bi-radio-kad-bi-imao-vise-slobodnog-vremena.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Što bi ti napravila na mom mjestu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/sto-bi-ti-napravila-na-mom-mjestu.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Super, onda je dogovoreno!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/super-onda-je-dogovoreno.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Super, vidimo se!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/super-vidimo-se.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Svejedno mi je, izaberi ti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/svejedno-mi-je-izaberi-ti.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "svejedno mi je",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/svejedno-mi-je.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "svijet",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/svijet.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Svjetsko putovanje je moj san.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/svjetsko-putovanje-je-moj-san.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "svjetsko putovanje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/svjetsko-putovanje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "To je bila teška odluka.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/to-je-bila-teska-odluka.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "To je odlična ideja!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/to-je-odlicna-ideja.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "U nedjelju volim ljenčariti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/u-nedjelju-volim-ljencariti.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "ugodan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/ugodan.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Uvijek biram jeftinije., Izabrala sam stan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/uvijek-biram-jeftinije-izabrala-sam-stan.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Uvijek odbija pomoć., Ne bih odbio taj posao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/uvijek-odbija-pomoc-ne-bih-odbio-taj-posao.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Velika prednost je dobra plaća.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/velika-prednost-je-dobra-placa.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "vikendica",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/vikendica.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "vlastiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/vlastiti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Volio bih jednog dana živjeti na moru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/volio-bih-jednog-dana-zivjeti-na-moru.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "volio bih, voljela bih",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/volio-bih-voljela-bih.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "volio bih",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/volio-bih.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Voljela bih naučiti jedriti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/voljela-bih-nauciti-jedriti.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Volontirala bih da imam vremena.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/volontirala-bih-da-imam-vremena.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "volontiram, volontiraš, volontira, volontiramo, volontirate, volontiraju. volontirao, volontirala, volontirali. volontirat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/volontiram-volontiras-volontira-volontiramo-volontirate-volo.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "volontirati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/volontirati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Za vikend bih se htjela samo opustiti.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/za-vikend-bih-se-htjela-samo-opustiti.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "zajednički",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/zajednicki.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Zanimljivo! A bi li napustio posao?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/zanimljivo-a-bi-li-napustio-posao.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "želja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/zelja.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        3
+      ]
+    },
+    {
+      "text": "Živimo skromno, ali sretno.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-03/zivimo-skromno-ali-sretno.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        3
       ]
     }
   ]

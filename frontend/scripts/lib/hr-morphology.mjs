@@ -417,5 +417,5 @@ export function genderizePattern(pattern, pairs) {
 }
 
 /** Klityki: zdanie z nimi nie może dostać wariantu z „Ja” na początku bez zmiany szyku. */
-export const CLITICS = new Set(["sam", "si", "je", "smo", "ste", "su", "se", "ću", "ćeš", "će", "ćemo", "ćete", "bih", "li", "mi", "ti", "ga", "joj", "mu", "me", "te", "nas", "nam", "vas", "vam", "ih"]);
+export const CLITICS = new Set(["sam", "si", "je", "smo", "ste", "su", "se", "ću", "ćeš", "će", "ćemo", "ćete", "bih", "bi", "bismo", "biste", "li", "mi", "ti", "ga", "joj", "mu", "me", "te", "nas", "nam", "vas", "vam", "ih"]);
 export const tokens = (text) => low(text).replace(/[.,!?;:„”"…«»()]/g, " ").split(/\s+/).filter(Boolean);
