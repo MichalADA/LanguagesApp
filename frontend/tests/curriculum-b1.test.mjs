@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -215,6 +215,20 @@ const OPEN_REPLIES = [
   { lesson: 'b1-05-05', reply: 0, hit: ['S jedne strane, hotel je udobniji.', 'Hotel je bolji, ali je skuplji.', 'Apartman je znatno jeftiniji.'], miss: ['Hotel.'] },
   { lesson: 'b1-05-05', reply: 1, hit: ['Što duže ostajemo, to se više isplati apartman.', 'Više se isplati apartman.', 'Apartman se više isplati.'], miss: ['Isplati.'] },
   { lesson: 'b1-05-05', reply: 2, hit: ['Glavni razlog je cijena.', 'Cijena.', 'Zbog cijene.'], miss: ['Razlog.'] },
+  // Moduł 6: kamo / kuda / odakle, czasowniki ruchu z przedrostkami, autostrada i prom.
+  { lesson: 'b1-06-01', reply: 0, hit: ['Idem u Dalmaciju.', 'Ovo ljeto idem na Hvar.', 'Putujemo u Istru.', 'Ići ću u Split.', 'Na more.'], miss: ['Dalmacija.'] },
+  { lesson: 'b1-06-01', reply: 1, hit: ['Iz Krakova.', 'Krećem iz Varšave.', 'Polazimo iz Zagreba ujutro.'], miss: ['Krakov.'] },
+  { lesson: 'b1-06-01', reply: 2, hit: ['Autocestom, jer je brže.', 'Uz obalu.', 'Ići ću preko Zagreba.'], miss: ['Brzo.'] },
+  { lesson: 'b1-06-02', reply: 1, hit: ['Dakle, prijeći most i skrenuti desno?', 'Prijeći most i skrenuti desno.', 'Znači, prijeđem most i skrenem desno?'], miss: ['Most.'] },
+  { lesson: 'b1-06-03', reply: 0, hit: ['Na sljedećem odmorištu.', 'Mogli bismo stati na benzinskoj postaji.', 'Stanimo na prvom odmorištu.'], miss: ['Kava.'] },
+  { lesson: 'b1-06-03', reply: 1, hit: ['Platit ću karticom.', 'Karticom.', 'Gotovinom.', 'Možemo platiti mobitelom.'], miss: ['Novac.'] },
+  { lesson: 'b1-06-03', reply: 2, hit: ['Dok čekamo, možemo popiti kavu.', 'Možemo ići na sladoled.', 'Nema veze, idemo u šetnju.'], miss: ['Kava.'] },
+  { lesson: 'b1-06-04', reply: 0, hit: ['Polazi u deset i petnaest.', 'U deset.', 'Sljedeći polazi za pola sata.', 'Za dvadeset minuta.'], miss: ['Autobus.'] },
+  { lesson: 'b1-06-04', reply: 1, hit: ['U Zagrebu moramo presjesti na drugi vlak.', 'Ne moramo.', 'Moramo presjesti u Karlovcu.', 'Ne, ne treba.'], miss: ['Vlak.'] },
+  { lesson: 'b1-06-04', reply: 2, hit: ['Ako uhvatimo autobus u deset, stići ćemo na vrijeme.', 'Stići ćemo, ne brini.', 'Hoćemo, sigurno.'], miss: ['Vrijeme.'] },
+  { lesson: 'b1-06-05', reply: 0, hit: ['Prvo autocestom do Splita, onda trajektom.', 'Iz Zagreba autocestom.', 'Krenuli smo rano ujutro.'], miss: ['Trajekt.'] },
+  { lesson: 'b1-06-05', reply: 1, hit: ['Je, na autocesti je bila kolona.', 'Nije.', 'Bilo je puno ljudi u luci.', 'Da, u luci je bila gužva.'], miss: ['Gužva.'] },
+  { lesson: 'b1-06-05', reply: 2, hit: ['Katamaranom, jer je brži od trajekta.', 'Trajektom.', 'Vratio sam se brodom.'], miss: ['Brzo.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

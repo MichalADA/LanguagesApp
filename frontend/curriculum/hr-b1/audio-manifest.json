@@ -10,9 +10,10 @@
     2,
     3,
     4,
-    5
+    5,
+    6
   ],
-  "characters": 29294,
+  "characters": 35762,
   "items": [
     {
       "text": "A kako ide? Jesi li se naviknuo?",
@@ -10021,6 +10022,2175 @@
       ],
       "modules": [
         5
+      ]
+    },
+    {
+      "text": "A kako si se vratio?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/a-kako-si-se-vratio.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "A kuda ćemo ići, autocestom ili uz obalu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/a-kuda-cemo-ici-autocestom-ili-uz-obalu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "A kuda ćeš ići, autocestom ili uz obalu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/a-kuda-ces-ici-autocestom-ili-uz-obalu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "A moramo li negdje presjesti?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/a-moramo-li-negdje-presjesti-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Ako uhvatimo autobus u deset, stići ćemo na vrijeme.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/ako-uhvatimo-autobus-u-deset-stici-cemo-na-vrijeme.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Autobus obično stiže kasno., Danas je stigao na vrijeme.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/autobus-obicno-stize-kasno-danas-je-stigao-na-vrijeme.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Autobus obično stiže s malim kašnjenjem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/autobus-obicno-stize-s-malim-kasnjenjem.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "autocesta",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/autocesta.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Autocestom, jer je brže.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/autocestom-jer-je-brze.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Benzinska postaja je odmah nakon tunela.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/benzinska-postaja-je-odmah-nakon-tunela.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "benzinska postaja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/benzinska-postaja.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "blagajna",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/blagajna.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Cestarina od Zagreba do Splita nije jeftina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/cestarina-od-zagreba-do-splita-nije-jeftina.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "cestarina",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/cestarina.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Čim smo se iskrcali, otišli smo na plažu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/cim-smo-se-iskrcali-otisli-smo-na-plazu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Dakle, prijeći most i skrenuti desno?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/dakle-prijeci-most-i-skrenuti-desno.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Danas je stigao na vrijeme!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/danas-je-stigao-na-vrijeme.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Dobar dan, mogu li vam pomoći?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/dobar-dan-mogu-li-vam-pomoci.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Dobra ideja!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/dobra-ideja.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Dobro. Kako ćemo platiti cestarinu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/dobro-kako-cemo-platiti-cestarinu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Dok čekamo, možemo popiti kavu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/dok-cekamo-mozemo-popiti-kavu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "dolazim, dolaziš, dolazi, dolazimo, dolazite, dolaze. dolazio, dolazila, dolazili. dolazit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/dolazim-dolazis-dolazi-dolazimo-dolazite-dolaze-dolazio-dola.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "dolaziti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/dolaziti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Gdje ćemo spavati večeras?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/gdje-cemo-spavati-veceras.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Gdje ćemo spavati?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/gdje-cemo-spavati.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Gdje ćemo stati na pauzu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/gdje-cemo-stati-na-pauzu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Gužvu smo zaobišli preko sela.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/guzvu-smo-zaobisli-preko-sela.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Hvala! A gdje se ulazi na trajekt?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/hvala-a-gdje-se-ulazi-na-trajekt.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Idem u Dalmaciju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/idem-u-dalmaciju.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Idemo onda!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/idemo-onda-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Idemo u krivom smjeru!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/idemo-u-krivom-smjeru.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Idite kroz podzemni prolaz.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/idite-kroz-podzemni-prolaz.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Imam, ne brini.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/imam-ne-brini-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Imaš li karticu za cestarinu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/imas-li-karticu-za-cestarinu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Iskrcali smo se u Supetru.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/iskrcali-smo-se-u-supetru.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "iskrcam se, iskrcaš se, iskrca se, iskrcamo se, iskrcate se, iskrcaju se. iskrcao se, iskrcala se, iskrcali se. iskrcat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/iskrcam-se-iskrcas-se-iskrca-se-iskrcamo-se-iskrcate-se-iskr.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "iskrcati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/iskrcati-se.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Iz Krakova.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/iz-krakova.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Iz Zagreba smo krenuli rano ujutro. Prvo smo išli autocestom do Splita, a onda smo se ukrcali na trajekt. Čim smo se iskrcali, otišli smo na plažu. Konačno smo stigli!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/iz-zagreba-smo-krenuli-rano-ujutro-prvo-smo-isli-autocestom.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Iz Zagreba smo krenuli rano ujutro.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/iz-zagreba-smo-krenuli-rano-ujutro.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Izađite na sljedećoj stanici.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/izadjite-na-sljedecoj-stanici.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "izlaz s autoceste",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/izlaz-s-autoceste.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Je li bilo gužve?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/je-li-bilo-guzve.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Je, na autocesti je bila kolona.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/je-na-autocesti-je-bila-kolona.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Jesi li pogledao red vožnje? Kad polazi autobus?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/jesi-li-pogledao-red-voznje-kad-polazi-autobus-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Još sat vremena, ali na autocesti je kolona.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/jos-sat-vremena-ali-na-autocesti-je-kolona-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Jučer sam prešao most pješice.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/jucer-sam-presao-most-pjesice.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kako mogu doći do trajektne luke?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kako-mogu-doci-do-trajektne-luke.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kako si putovao na Brač?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kako-si-putovao-na-brac.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kamion je blokirao cestu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kamion-je-blokirao-cestu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "kamion",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kamion.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kamo ideš ovaj vikend?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kamo-ides-ovaj-vikend.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kamo ideš?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kamo-ides.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kamo putuješ ovo ljeto?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/kamo-putujes-ovo-ljeto-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Karte se kupuju na blagajni.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/karte-se-kupuju-na-blagajni.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Katamaran je brži od trajekta, ali skuplji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/katamaran-je-brzi-od-trajekta-ali-skuplji.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "katamaran",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/katamaran.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Katamaranom, jer je brži od trajekta.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/katamaranom-jer-je-brzi-od-trajekta.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "kolona",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kolona.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "konačno",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/konacno.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Krećem iz Krakova i idem u Split. Ići ću autocestom preko Zagreba, a vraćat ću se uz obalu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/krecem-iz-krakova-i-idem-u-split-ici-cu-autocestom-preko-zag.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kroz ovaj tunel prolazi puno kamiona.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kroz-ovaj-tunel-prolazi-puno-kamiona.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kroz tunel prolazi puno kamiona., Prošli smo kroz tunel.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kroz-tunel-prolazi-puno-kamiona-prosli-smo-kroz-tunel.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kuda ste išli, autocestom ili uz obalu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kuda-ste-isli-autocestom-ili-uz-obalu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Kuda ste išli do Splita, autocestom ili uz obalu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kuda-ste-isli-do-splita-autocestom-ili-uz-obalu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "kuda",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/kuda.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "luka",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/luka.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Marko, kamo idemo prvo, u Zadar ili u Šibenik?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/marko-kamo-idemo-prvo-u-zadar-ili-u-sibenik.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Marko, koliko još do Splita?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/marko-koliko-jos-do-splita.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Moj autobus obično stiže s kašnjenjem. Jučer sam ga propustio, ali sam uhvatio tramvaj i stigao sam na vrijeme.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/moj-autobus-obicno-stize-s-kasnjenjem-jucer-sam-ga-propustio.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Moram natočiti gorivo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/moram-natociti-gorivo.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Morate prijeći most i skrenuti desno prema trajektnoj luci.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/morate-prijeci-most-i-skrenuti-desno-prema-trajektnoj-luci.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Morate ući na trajekt pola sata prije polaska.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/morate-uci-na-trajekt-pola-sata-prije-polaska.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Može. I moram natočiti gorivo prije naplatne postaje.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/moze-i-moram-natociti-gorivo-prije-naplatne-postaje-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Na autocesti je bila duga kolona, pa smo stali na odmorištu. U luci smo čekali ukrcaj sat vremena.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/na-autocesti-je-bila-duga-kolona-pa-smo-stali-na-odmoristu-u.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Na autocesti je bila kolona od deset kilometara.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/na-autocesti-je-bila-kolona-od-deset-kilometara.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "na autocesti, na odmorištu, na palubi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/na-autocesti-na-odmoristu-na-palubi.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Na Brač smo išli trajektom za Supetar.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/na-brac-smo-isli-trajektom-za-supetar.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Na naplatnoj postaji možete platiti karticom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/na-naplatnoj-postaji-mozete-platiti-karticom.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Na putu za Split svratili smo u Šibenik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/na-putu-za-split-svratili-smo-u-sibenik.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Na sljedećem odmorištu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/na-sljedecem-odmoristu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Na ulazu broj dva. Sretan put!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/na-ulazu-broj-dva-sretan-put.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Nakon tri sata vožnje stigli smo u splitsku luku.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/nakon-tri-sata-voznje-stigli-smo-u-splitsku-luku.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "naplatna postaja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/naplatna-postaja.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Naše odredište je Dubrovnik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/nase-odrediste-je-dubrovnik.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "natočiti gorivo",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/natociti-gorivo.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Ne ulazite!, Ušli smo u luku.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/ne-ulazite-usli-smo-u-luku.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "obići",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/obici.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "obiđem, obiđeš, obiđe, obiđemo, obiđete, obiđu. obišao, obišla, obišli. obići ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/obidjem-obidjes-obidje-obidjemo-obidjete-obidju-obisao-obisl.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Obišli smo cijeli stari grad pješice.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/obisli-smo-cijeli-stari-grad-pjesice.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Odakle dolazite?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/odakle-dolazite.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Odakle krećeš?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/odakle-kreces-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "odlazim, odlaziš, odlazi, odlazimo, odlazite, odlaze. odlazio, odlazila, odlazili. odlazit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/odlazim-odlazis-odlazi-odlazimo-odlazite-odlaze-odlazio-odla.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "odlaziti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/odlaziti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Odlično putovanje!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/odlicno-putovanje.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "odmorište",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/odmoriste.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "odredište",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/odrediste.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Onda idemo autocestom, a vraćamo se uz obalu!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/onda-idemo-autocestom-a-vracamo-se-uz-obalu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Onda stanimo na odmorištu. Trebam kavu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/onda-stanimo-na-odmoristu-trebam-kavu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Ovdje ne ulazite, to je izlaz!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/ovdje-ne-ulazite-to-je-izlaz.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "paluba",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/paluba.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "peron",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/peron.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "pješački prijelaz",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/pjesacki-prijelaz.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Platit ću karticom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/platit-cu-karticom.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "podzemni prolaz",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/podzemni-prolaz.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Pogledaj red vožnje na internetu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/pogledaj-red-voznje-na-internetu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "pojas",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/pojas.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Polazi u deset i petnaest.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/polazi-u-deset-i-petnaest.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "polazim, polaziš, polazi, polazimo, polazite, polaze. polazio, polazila, polazili. polazit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/polazim-polazis-polazi-polazimo-polazite-polaze-polazio-pola.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "polaziti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/polaziti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Popeli smo se na vrh tvrđave.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/popeli-smo-se-na-vrh-tvrdjave.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "popeti se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/popeti-se.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "popnem se, popneš se, popne se, popnemo se, popnete se, popnu se. popeo se, popela se, popeli se. popet ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/popnem-se-popnes-se-popne-se-popnemo-se-popnete-se-popnu-se.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Požuri, kasnimo!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/pozuri-kasnimo.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "požuriti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/pozuriti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "prelazim, prelaziš, prelazi, prelazimo, prelazite, prelaze. prelazio, prelazila, prelazili. prelazit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prelazim-prelazis-prelazi-prelazimo-prelazite-prelaze-prelaz.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "prelaziti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prelaziti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "presjednem, presjedneš, presjedne, presjednemo, presjednete, presjednu. presjeo, presjela, presjeli. presjest ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/presjednem-presjednes-presjedne-presjednemo-presjednete-pres.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "presjesti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/presjesti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prijeđite cestu i skrenite lijevo. Prođite pored pošte i izađite na trg.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prijedjite-cestu-i-skrenite-lijevo-prodjite-pored-poste-i-iz.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prijeđite cestu na pješačkom prijelazu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prijedjite-cestu-na-pjesackom-prijelazu.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prijeđite cestu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prijedjite-cestu.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prijeđite most i skrenite desno. Onda prođite pored crkve.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prijedjite-most-i-skrenite-desno-onda-prodjite-pored-crkve.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prijeđite most.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prijedjite-most.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "pristanište",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/pristaniste.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "proći",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/proci.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "prođem, prođeš, prođe, prođemo, prođete, prođu. prošao, prošla, prošli. proći ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prodjem-prodjes-prodje-prodjemo-prodjete-prodju-prosao-prosl.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prođite pored crkve i nastavite ravno.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prodjite-pored-crkve-i-nastavite-ravno.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prođite pored crkve.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prodjite-pored-crkve.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prolaz do luke je zatvoren.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prolaz-do-luke-je-zatvoren.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "prolaz",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prolaz.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "prolazim, prolaziš, prolazi, prolazimo, prolazite, prolaze. prolazio, prolazila, prolazili. prolazit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prolazim-prolazis-prolazi-prolazimo-prolazite-prolaze-prolaz.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "prolaziti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prolaziti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prvo autocestom do Splita, onda trajektom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/prvo-autocestom-do-splita-onda-trajektom.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Prvo u Zadar. Na putu možemo svratiti u Nin.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/prvo-u-zadar-na-putu-mozemo-svratiti-u-nin-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "red vožnje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/red-voznje.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "sat vožnje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/sat-voznje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "sići",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/sici.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "siđem, siđeš, siđe, siđemo, siđete, siđu. sišao, sišla, sišli. sići ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/sidjem-sidjes-sidje-sidjemo-sidjete-sidju-sisao-sisla-sisli.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Siđite do plaže.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/sidjite-do-plaze.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Siđite niz stepenice do plaže.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/sidjite-niz-stepenice-do-plaze.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Sjedili smo na palubi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/sjedili-smo-na-palubi.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "smjer",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/smjer.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Sretan put!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/sretan-put-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Stali smo na odmorištu i popili kavu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/stali-smo-na-odmoristu-i-popili-kavu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Stepenice vode do plaže.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/stepenice-vode-do-plaze.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "stepenice",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/stepenice.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "stizati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/stizati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "stižem, stižeš, stiže, stižemo, stižete, stižu. stizao, stizala, stizali. stizat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/stizem-stizes-stize-stizemo-stizete-stizu-stizao-stizala-sti.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Super. Nadam se da ćemo stići na vrijeme.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/super-nadam-se-da-cemo-stici-na-vrijeme-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Svaki dan prelazim most biciklom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/svaki-dan-prelazim-most-biciklom.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Svaki dan prelazim most., Jučer sam prešao most.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/svaki-dan-prelazim-most-jucer-sam-presao-most.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "svratim, svratiš, svrati, svratimo, svratite, svrate. svratio, svratila, svratili. svratit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/svratim-svratis-svrati-svratimo-svratite-svrate-svratio-svra.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "svratiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/svratiti.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Tijekom vožnje smo sjedili na palubi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/tijekom-voznje-smo-sjedili-na-palubi.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Točno. Luka je odmah iza crkve.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/tocno-luka-je-odmah-iza-crkve.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Trajekt kasni zbog jakog vjetra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/trajekt-kasni-zbog-jakog-vjetra.mp3",
+      "kinds": [
+        "question"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Trajekt odlazi svaka dva sata.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/trajekt-odlazi-svaka-dva-sata.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "trajektna linija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/trajektna-linija.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "u luci",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/u-luci.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "U sezoni na trajekt čeka puno vozila.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/u-sezoni-na-trajekt-ceka-puno-vozila.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "U Zagrebu moramo presjesti na drugi vlak.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/u-zagrebu-moramo-presjesti-na-drugi-vlak.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "ući na trajekt",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/uci-na-trajekt.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "ući",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/uci.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "uđem, uđeš, uđe, uđemo, uđete, uđu. ušao, ušla, ušli. ući ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/udjem-udjes-udje-udjemo-udjete-udju-usao-usla-usli-uci-cu.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Uhvatili smo zadnji autobus.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/uhvatili-smo-zadnji-autobus.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "uhvatim, uhvatiš, uhvati, uhvatimo, uhvatite, uhvate. uhvatio, uhvatila, uhvatili. uhvatit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/uhvatim-uhvatis-uhvati-uhvatimo-uhvatite-uhvate-uhvatio-uhva.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "uhvatiti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/uhvatiti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Ukrcali smo se na trajekt u zadnji čas.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/ukrcali-smo-se-na-trajekt-u-zadnji-cas.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "ukrcam se, ukrcaš se, ukrca se, ukrcamo se, ukrcate se, ukrcaju se. ukrcao se, ukrcala se, ukrcali se. ukrcat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/ukrcam-se-ukrcas-se-ukrca-se-ukrcamo-se-ukrcate-se-ukrcaju-s.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "ukrcati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/ukrcati-se.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "ulazim, ulaziš, ulazi, ulazimo, ulazite, ulaze. ulazio, ulazila, ulazili. ulazit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/ulazim-ulazis-ulazi-ulazimo-ulazite-ulaze-ulazio-ulazila-ula.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "ulaziti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/ulaziti.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Ušla sam u trgovinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/usla-sam-u-trgovinu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Uz obalu je ljepše, ali autocestom je brže.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-06/uz-obalu-je-ljepse-ali-autocestom-je-brze-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "uz obalu",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/uz-obalu.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Valovi su danas visoki.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/valovi-su-danas-visoki.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "valovi",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/valovi.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Vežite pojas, molim.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vezite-pojas-molim.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Vidi, trajekt kasni pola sata!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vidi-trajekt-kasni-pola-sata.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Vlak polazi svaki dan u sedam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vlak-polazi-svaki-dan-u-sedam.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Vlak polazi u sedam., Pošli smo rano.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vlak-polazi-u-sedam-posli-smo-rano.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Vlak stoji na trećem peronu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vlak-stoji-na-trecem-peronu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Vlak za Rijeku polazi svaki dan u sedam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vlak-za-rijeku-polazi-svaki-dan-u-sedam.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Vozili smo se uz obalu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vozili-smo-se-uz-obalu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "vozilo",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vozilo.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "vraćam se, vraćaš se, vraća se, vraćamo se, vraćate se, vraćaju se. vraćao se, vraćala se, vraćali se. vraćat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vracam-se-vracas-se-vraca-se-vracamo-se-vracate-se-vracaju-s.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "Vraćamo se u nedjelju navečer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vracamo-se-u-nedjelju-navecer.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "vraćati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/vracati-se.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "zaobići",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/zaobici.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        6
+      ]
+    },
+    {
+      "text": "zaobiđem, zaobiđeš, zaobiđe, zaobiđemo, zaobiđete, zaobiđu. zaobišao, zaobišla, zaobišli. zaobići ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-06/zaobidjem-zaobidjes-zaobidje-zaobidjemo-zaobidjete-zaobidju.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        6
       ]
     }
   ]

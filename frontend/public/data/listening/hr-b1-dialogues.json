@@ -655,6 +655,134 @@
         ],
         "correctOptionId": "cheaper"
       }
+    },
+    {
+      "id": "b1-u-trajektnoj-luci",
+      "level": "B1",
+      "titlePl": "W porcie promowym",
+      "titleEn": "At the ferry port",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Oprostite, gdje se ulazi na trajekt za Brač?",
+          "textPl": "Przepraszam, gdzie się wjeżdża na prom na Brač?",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Prođite pored blagajne i skrenite lijevo.",
+          "textPl": "Proszę przejechać obok kasy i skręcić w lewo.",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Moram li izaći iz auta tijekom vožnje?",
+          "textPl": "Czy muszę wysiąść z auta w czasie rejsu?",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, za vrijeme vožnje putnici moraju izaći iz auta i popeti se na palubu.",
+          "textPl": "Tak, w czasie rejsu pasażerowie muszą wysiąść z auta i wejść na pokład.",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Hvala. A kad počinje ukrcaj?",
+          "textPl": "Dziękuję. A kiedy zaczyna się wjazd na prom?",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ukrcaj počinje pola sata prije polaska.",
+          "textPl": "Wjazd zaczyna się pół godziny przed odpłynięciem.",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co muszą zrobić pasażerowie w czasie rejsu?",
+        "options": [
+          {
+            "id": "deck",
+            "textPl": "Wysiąść z auta i wejść na pokład"
+          },
+          {
+            "id": "car",
+            "textPl": "Zostać w aucie"
+          },
+          {
+            "id": "ticket",
+            "textPl": "Kupić bilet na pokładzie"
+          }
+        ],
+        "correctOptionId": "deck"
+      }
+    },
+    {
+      "id": "b1-propustili-smo-vlak",
+      "level": "B1",
+      "titlePl": "Uciekł nam pociąg",
+      "titleEn": "We missed the train",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, požuri! Vlak polazi za pet minuta.",
+          "textPl": "Marko, pospiesz się! Pociąg odjeżdża za pięć minut.",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Evo me! Gdje je peron?",
+          "textPl": "Już jestem! Gdzie jest peron?",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Moramo proći kroz podzemni prolaz.",
+          "textPl": "Musimy przejść przejściem podziemnym.",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ajme, vlak je upravo otišao!",
+          "textPl": "O nie, pociąg właśnie odjechał!",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ništa, pogledat ću red vožnje. Sljedeći polazi za sat vremena.",
+          "textPl": "Nic, sprawdzę rozkład jazdy. Następny odjeżdża za godzinę.",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobro, ali u Zagrebu ćemo morati presjesti.",
+          "textPl": "Dobrze, ale w Zagrzebiu będziemy musieli się przesiąść.",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Kiedy odjeżdża następny pociąg?",
+        "options": [
+          {
+            "id": "hour",
+            "textPl": "Za godzinę"
+          },
+          {
+            "id": "five",
+            "textPl": "Za pięć minut"
+          },
+          {
+            "id": "tomorrow",
+            "textPl": "Jutro rano"
+          }
+        ],
+        "correctOptionId": "hour"
+      }
     }
   ]
 }

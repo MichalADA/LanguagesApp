@@ -18,6 +18,9 @@
     },
     "5": {
       "description": "Porównujesz miasta, regiony, oferty i ceny: stopień wyższy z oboczną spółgłoską, im… tym…, stopień najwyższy ze wzmocnieniem i argumenty za i przeciw."
+    },
+    "6": {
+      "description": "Podróżujesz po Chorwacji: pytasz dokąd i którędy, rozumiesz wskazówki z czasownikami ruchu (ući, izaći, prijeći, proći), radzisz sobie na autostradzie i w porcie."
     }
   },
   "lessons": {
@@ -4104,6 +4107,840 @@
         ],
         "minSentences": 3,
         "sample": "S jedne strane, hotel je udobniji od apartmana. S druge strane, apartman je znatno jeftiniji. Što duže ostajemo, to se više isplati apartman. To je najbolja opcija."
+      }
+    },
+    "b1-26": {
+      "grammar": {
+        "title": "Gdje, kamo, kuda, odakle?",
+        "text": "Cztery pytania o miejsce: gdje? = gdzie (miejsce, miejscownik: u Splitu), kamo? = dokąd (kierunek, biernik: u Split), kuda? = którędy (droga: autocestom, uz obalu), odakle? = skąd (iz + dopełniacz: iz Zagreba). Znane ići, doći, otići mówią o jednym wyjeździe. Rozkłady i to, co się powtarza, wyrażasz niedokonanymi: Trajekt odlazi svaka dva sata. Turisti dolaze iz cijele Europe.",
+        "table": [
+          {
+            "label": "pytania o miejsce",
+            "rows": [
+              {
+                "base": "gdje?",
+                "form": "Gdje ćemo spavati?",
+                "meaning": "Gdzie będziemy spać?"
+              },
+              {
+                "base": "kamo?",
+                "form": "Kamo ideš ovaj vikend?",
+                "meaning": "Dokąd jedziesz w ten weekend?"
+              },
+              {
+                "base": "kuda?",
+                "form": "Kuda ste išli, autocestom ili uz obalu?",
+                "meaning": "Którędy jechaliście, autostradą czy wybrzeżem?"
+              },
+              {
+                "base": "odakle?",
+                "form": "Odakle dolazite?",
+                "meaning": "Skąd pan przyjeżdża?"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          6
+        ],
+        "tip": "W mowie potocznej często usłyszysz „Gdje ideš?” zamiast „Kamo ideš?”. Zrozumiesz oba, ale kamo jest staranniejsze."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "Kuda"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 8,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne pytanie.",
+          "prompt": "Dokąd jedziesz?",
+          "options": [
+            "Kamo ideš?",
+            "Odakle ideš?",
+            "Kuda si?"
+          ],
+          "correct": 0,
+          "explanation": "dokąd = kamo; odakle = skąd, kuda = którędy."
+        }
+      ],
+      "model": {
+        "title": "W drodze",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, kamo idemo prvo, u Zadar ili u Šibenik?",
+            "pl": "Marko, dokąd jedziemy najpierw, do Zadaru czy do Szybenika?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Prvo u Zadar. Na putu možemo svratiti u Nin.",
+            "pl": "Najpierw do Zadaru. Po drodze możemy wpaść do Ninu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A kuda ćemo ići, autocestom ili uz obalu?",
+            "pl": "A którędy pojedziemy, autostradą czy wzdłuż wybrzeża?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Uz obalu je ljepše, ali autocestom je brže.",
+            "pl": "Wzdłuż wybrzeża jest ładniej, ale autostradą szybciej."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Onda idemo autocestom, a vraćamo se uz obalu!",
+            "pl": "To jedziemy autostradą, a wracamy wzdłuż wybrzeża!"
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Dokąd i którędy?",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Kamo putuješ ovo ljeto?",
+            "pl": "Dokąd podróżujesz tego lata?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, dokąd jedziesz (Idem u… / na…).",
+              "accept": [
+                "Idem u Dalmaciju."
+              ],
+              "open": true,
+              "pattern": "^((ovo ljeto|ljetos|u kolovozu|ja) )?(idem|idemo|putujem|putujemo|ići ću|ići ćemo|putovat ću)( \\p{L}+){0,2} (u|na) \\p{L}+( \\p{L}+){0,4}$|^(u|na) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "Odakle krećeš?",
+            "pl": "Skąd wyruszasz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, skąd wyruszasz (Iz…).",
+              "accept": [
+                "Iz Krakova."
+              ],
+              "open": true,
+              "pattern": "^((krećem|krećemo|polazim|polazimo|putujem|ja krećem) )?iz \\p{L}+( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "A kuda ćeš ići, autocestom ili uz obalu?",
+            "pl": "A którędy pojedziesz, autostradą czy wzdłuż wybrzeża?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, którędy pojedziesz (autocestom / uz obalu / preko…).",
+              "accept": [
+                "Autocestom, jer je brže."
+              ],
+              "open": true,
+              "pattern": "^((ići ću|idem|vozit ću|ja ću ići|mislim) )?(autocestom|uz obalu|preko \\p{L}+|kroz \\p{L}+|cestom)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "Sretan put!",
+            "pl": "Szczęśliwej podróży!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o planowanej podróży: dokąd, skąd i którędy pojedziesz.",
+        "points": [
+          "skąd i dokąd (iz… u…)",
+          "którędy (autocestom, uz obalu, preko…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "iz",
+              "odakle"
+            ],
+            "label": "skąd: iz…"
+          },
+          {
+            "any": [
+              "autocestom",
+              "preko",
+              "kroz",
+              "uz",
+              "kuda"
+            ],
+            "label": "którędy: autocestom / preko…"
+          }
+        ],
+        "sample": "Krećem iz Krakova i idem u Split. Ići ću autocestom preko Zagreba, a vraćat ću se uz obalu."
+      }
+    },
+    "b1-27": {
+      "grammar": {
+        "title": "Ući, izaći, prijeći, proći",
+        "text": "Przedrostki działają prawie jak po polsku: u- = w- (ući = wejść), iz- = wy- (izaći = wyjść, wysiąść), pri- / pre- = prze- na drugą stronę (prijeći cestu = przejść przez ulicę), pro- = przez albo obok (proći pored crkve = przejść obok kościoła), si- = z- (sići = zejść). Wskazówki na Vi: Izađite, Prijeđite, Prođite, Siđite. W czasie przeszłym wszystkie mają -šao / -šla: ušao, izašao, prešao, prošao, sišao.",
+        "table": [
+          {
+            "label": "przedrostek + ići",
+            "rows": [
+              {
+                "base": "u- (w-)",
+                "form": "ući na trajekt",
+                "meaning": "wjechać na prom"
+              },
+              {
+                "base": "iz- (wy-)",
+                "form": "Izađite na sljedećoj stanici.",
+                "meaning": "Proszę wysiąść na następnym przystanku."
+              },
+              {
+                "base": "pri- / pre- (prze-)",
+                "form": "Prijeđite cestu.",
+                "meaning": "Proszę przejść przez ulicę."
+              },
+              {
+                "base": "pro- (obok, przez)",
+                "form": "Prođite pored crkve.",
+                "meaning": "Proszę przejść obok kościoła."
+              },
+              {
+                "base": "si- (z-)",
+                "form": "Siđite do plaže.",
+                "meaning": "Proszę zejść na plażę."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "tip": "prijeći = na drugą stronę (most, cestu), proći = obok albo przez coś (pored crkve, kroz tunel)."
+      },
+      "gap": {
+        "sentence": 4,
+        "word": "prijeći"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 9,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Proszę wysiąść na następnym przystanku.",
+          "options": [
+            "Izađite na sljedećoj stanici.",
+            "Uđite na sljedećoj stanici.",
+            "Prođite na sljedećoj stanici."
+          ],
+          "correct": 0,
+          "explanation": "wy- = iz-: izaći (wyjść, wysiąść)."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Weszłam do sklepu.",
+          "options": [
+            "Ušla sam u trgovinu.",
+            "Izašla sam u trgovinu.",
+            "Ušla sam na trgovinu."
+          ],
+          "correct": 0,
+          "explanation": "w- = u-: ući u + biernik."
+        }
+      ],
+      "listening": "b1-u-trajektnoj-luci",
+      "dialog": {
+        "title": "Pytam o drogę",
+        "partner": "Prolaznik",
+        "turns": [
+          {
+            "say": "Dobar dan, mogu li vam pomoći?",
+            "pl": "Dzień dobry, mogę pomóc?"
+          },
+          {
+            "reply": {
+              "prompt": "Zapytaj, jak dojść do portu promowego (Kako mogu doći do…?).",
+              "accept": [
+                "Kako mogu doći do trajektne luke?"
+              ],
+              "pattern": "^((da|oprostite|molim vas) )*(kako (mogu )?(doći|stići) do|kuda (se ide|trebam ići) do) (trajektne luke|luke|trajekta)$|^gdje je (trajektna luka|luka)$"
+            }
+          },
+          {
+            "say": "Prijeđite most i skrenite desno. Onda prođite pored crkve.",
+            "pl": "Proszę przejść przez most i skręcić w prawo. Potem proszę przejść obok kościoła."
+          },
+          {
+            "reply": {
+              "prompt": "Powtórz, żeby się upewnić (Prijeći most, skrenuti desno…?).",
+              "accept": [
+                "Dakle, prijeći most i skrenuti desno?"
+              ],
+              "open": true,
+              "pattern": "^((dakle|znači|aha|dobro) )?(prijeći|da prijeđem|prijeđem)( most)?( i)?( skrenuti| skrenem)?( desno)?( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Točno. Luka je odmah iza crkve.",
+            "pl": "Dokładnie. Port jest zaraz za kościołem."
+          },
+          {
+            "reply": {
+              "prompt": "Podziękuj i zapytaj, gdzie wchodzi się na prom (Gdje se ulazi na trajekt?).",
+              "accept": [
+                "Hvala! A gdje se ulazi na trajekt?"
+              ],
+              "pattern": "^((hvala|hvala vam|hvala lijepa|a) )*gdje se (ulazi|ukrcava) na trajekt$"
+            }
+          },
+          {
+            "say": "Na ulazu broj dva. Sretan put!",
+            "pl": "Przy wjeździe numer dwa. Szczęśliwej podróży!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania ze wskazówkami drogi dla turysty (Prijeđite…, skrenite…, prođite…).",
+        "points": [
+          "kierunek (skrenite lijevo / desno)",
+          "przedrostek (prijeđite, prođite, izađite…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "prijeđite",
+              "prođite",
+              "izađite",
+              "uđite",
+              "siđite",
+              "skrenite",
+              "prijeđi",
+              "prođi",
+              "izađi",
+              "uđi",
+              "siđi",
+              "skreni"
+            ],
+            "label": "rozkaz: prijeđite / prođite…"
+          },
+          {
+            "any": [
+              "most",
+              "cestu",
+              "stanici",
+              "pored",
+              "lijevo",
+              "desno",
+              "ravno"
+            ],
+            "label": "orientacja"
+          }
+        ],
+        "sample": "Prijeđite cestu i skrenite lijevo. Prođite pored pošte i izađite na trg."
+      }
+    },
+    "b1-28": {
+      "grammar": {
+        "title": "Na autocesti, u luci",
+        "text": "Większość miejsc w podróży łączy się z na + miejscownik: na autocesti, na naplatnoj postaji, na odmorištu, na benzinskoj postaji, na palubi. Port to u luci. Korek na trasie to kolona (sznur aut), a tłok w mieście albo na plaży — gužva. cestarina to opłata za autostradę, płacona na naplatnoj postaji.",
+        "table": [
+          {
+            "label": "gdzie?",
+            "rows": [
+              {
+                "base": "na + miejscownik",
+                "form": "na autocesti, na odmorištu, na palubi",
+                "meaning": "na autostradzie, na MOP-ie, na pokładzie"
+              },
+              {
+                "base": "u + miejscownik",
+                "form": "u luci",
+                "meaning": "w porcie"
+              },
+              {
+                "base": "s / sa + dopełniacz",
+                "form": "izlaz s autoceste",
+                "meaning": "zjazd z autostrady"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          7
+        ],
+        "tip": "na autocesti = na autostradzie, ale autocestom = autostradą (którędy, narzędnik)."
+      },
+      "gap": {
+        "sentence": 7,
+        "word": "palubi"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Siedzieliśmy na pokładzie.",
+          "options": [
+            "Sjedili smo na palubi.",
+            "Sjedili smo u palubi.",
+            "Sjedili smo na paluba."
+          ],
+          "correct": 0,
+          "explanation": "na + miejscownik: na palubi."
+        }
+      ],
+      "model": {
+        "title": "W trasie",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, koliko još do Splita?",
+            "pl": "Marko, ile jeszcze do Splitu?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Još sat vremena, ali na autocesti je kolona.",
+            "pl": "Jeszcze godzinę, ale na autostradzie jest korek."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Onda stanimo na odmorištu. Trebam kavu.",
+            "pl": "To zatrzymajmy się na MOP-ie. Potrzebuję kawy."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Može. I moram natočiti gorivo prije naplatne postaje.",
+            "pl": "Może być. I muszę zatankować przed bramkami."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Imaš li karticu za cestarinu?",
+            "pl": "Masz kartę na opłatę za autostradę?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Imam, ne brini.",
+            "pl": "Mam, nie martw się."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Postój",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Gdje ćemo stati na pauzu?",
+            "pl": "Gdzie zatrzymamy się na przerwę?"
+          },
+          {
+            "reply": {
+              "prompt": "Zaproponuj miejsce postoju (Na odmorištu… / Na benzinskoj postaji…).",
+              "accept": [
+                "Na sljedećem odmorištu."
+              ],
+              "open": true,
+              "pattern": "^((mogli bismo stati|stanimo|možemo stati|mislim) )?(na )?((sljedećem|prvom|idućem) )?(odmorištu|benzinskoj postaji|benzinskoj)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Dobro. Kako ćemo platiti cestarinu?",
+            "pl": "Dobrze. Jak zapłacimy za autostradę?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak zapłacisz (karticom / gotovinom).",
+              "accept": [
+                "Platit ću karticom."
+              ],
+              "open": true,
+              "pattern": "^((platit ću|platit ćemo|možemo platiti|plaćam|ja ću platiti) )?(karticom|gotovinom|u gotovini|mobitelom)( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Vidi, trajekt kasni pola sata!",
+            "pl": "Patrz, prom ma pół godziny opóźnienia!"
+          },
+          {
+            "reply": {
+              "prompt": "Zaproponuj, co robicie w tym czasie (Dok čekamo, možemo…).",
+              "accept": [
+                "Dok čekamo, možemo popiti kavu."
+              ],
+              "open": true,
+              "pattern": "^((dobro|nema veze|šteta|joj) )?(dok čekamo |u međuvremenu )?(možemo|mogli bismo|idemo|hajdemo)( \\p{L}+){1,5}$"
+            }
+          },
+          {
+            "say": "Dobra ideja!",
+            "pl": "Dobry pomysł!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o podróży samochodem nad morze: co działo się na autostradzie albo w porcie.",
+        "points": [
+          "autostrada (kolona, cestarina, odmorište)",
+          "prom / port (ukrcaj, paluba, luka)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "autocesti",
+              "autocestom",
+              "koloni",
+              "kolona",
+              "cestarinu",
+              "cestarina",
+              "odmorištu",
+              "postaji"
+            ],
+            "label": "autostrada"
+          },
+          {
+            "any": [
+              "trajekt",
+              "trajektu",
+              "luci",
+              "palubi",
+              "ukrcaj"
+            ],
+            "label": "prom / port"
+          }
+        ],
+        "sample": "Na autocesti je bila duga kolona, pa smo stali na odmorištu. U luci smo čekali ukrcaj sat vremena."
+      }
+    },
+    "b1-29": {
+      "grammar": {
+        "title": "Polazi czy pođe? Stiže czy stigao je?",
+        "text": "Czasowniki ruchu tworzą pary jak inne: niedokonany mówi o rozkładach, nawykach i tym, co trwa (Vlak polazi u sedam, Svaki dan prelazim most), dokonany — o jednym wydarzeniu z wynikiem (Danas je stigao na vrijeme, Jučer sam prešao most).",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "polaziti → poći",
+                "form": "Vlak polazi u sedam. / Pošli smo rano.",
+                "meaning": "Pociąg odjeżdża o siódmej. / Wyruszyliśmy wcześnie."
+              },
+              {
+                "base": "stizati → stići",
+                "form": "Autobus obično stiže kasno. / Danas je stigao na vrijeme.",
+                "meaning": "Autobus zwykle przyjeżdża późno. / Dziś przyjechał na czas."
+              },
+              {
+                "base": "prelaziti → prijeći",
+                "form": "Svaki dan prelazim most. / Jučer sam prešao most.",
+                "meaning": "Codziennie przejeżdżam most. / Wczoraj przeszedłem most."
+              },
+              {
+                "base": "ulaziti → ući",
+                "form": "Ne ulazite! / Ušli smo u luku.",
+                "meaning": "Proszę nie wchodzić! / Wpłynęliśmy do portu."
+              },
+              {
+                "base": "prolaziti → proći",
+                "form": "Kroz tunel prolazi puno kamiona. / Prošli smo kroz tunel.",
+                "meaning": "Przez tunel jedzie dużo ciężarówek. / Przejechaliśmy przez tunel."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "tip": "Zakaz na tablicy to zwykle niedokonany: Ne ulazite! (Nie wchodzić!), jak nemoj + niedokonany z modułu 4."
+      },
+      "gap": {
+        "sentence": 5,
+        "word": "prešao"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 8,
+          "accept": []
+        }
+      ],
+      "comprehend": 10,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Pociąg odjeżdża codziennie o siódmej.",
+          "options": [
+            "Vlak polazi svaki dan u sedam.",
+            "Vlak pođe svaki dan u sedam.",
+            "Vlak je pošao svaki dan u sedam."
+          ],
+          "correct": 0,
+          "explanation": "Rozkład, regularnie → niedokonany: polazi."
+        }
+      ],
+      "listening": "b1-propustili-smo-vlak",
+      "dialog": {
+        "title": "Na dworcu",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Jesi li pogledao red vožnje? Kad polazi autobus?",
+            "pl": "Sprawdziłeś rozkład jazdy? Kiedy odjeżdża autobus?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, kiedy odjeżdża autobus (Polazi u…).",
+              "accept": [
+                "Polazi u deset i petnaest."
+              ],
+              "open": true,
+              "pattern": "^((jesam|da) )?((autobus |prvi |sljedeći )?(polazi|kreće|ide)|(u|za) \\p{L}+)( \\p{L}+){0,5}$"
+            }
+          },
+          {
+            "say": "A moramo li negdje presjesti?",
+            "pl": "A musimy się gdzieś przesiadać?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, gdzie trzeba się przesiąść (Moramo presjesti u…) — albo że nie.",
+              "accept": [
+                8
+              ],
+              "open": true,
+              "pattern": "^((da|ne) )?((u \\p{L}+ )?(moramo|trebamo|treba) presjesti( u \\p{L}+)?( \\p{L}+){0,4}|ne moramo( presjesti)?|ne treba)$|^(da|ne)( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Super. Nadam se da ćemo stići na vrijeme.",
+            "pl": "Super. Mam nadzieję, że zdążymy."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że zdążycie, jeśli złapiecie autobus (Ako uhvatimo…, stići ćemo…).",
+              "accept": [
+                "Ako uhvatimo autobus u deset, stići ćemo na vrijeme."
+              ],
+              "open": true,
+              "pattern": "^((sigurno|naravno|mislim da|da) )?(ako uhvatimo( \\p{L}+){1,4} )?(stići ćemo|stignemo|hoćemo)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Idemo onda!",
+            "pl": "To chodźmy!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co dzieje się zwykle w twojej podróży do pracy albo szkoły (niedokonany) i co stało się raz (dokonany).",
+        "points": [
+          "zwykle (polazi, stiže, prelazim…)",
+          "jeden raz (stigao, uhvatili, presjeli…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "polazi",
+              "stiže",
+              "dolazi",
+              "prelazim",
+              "prolazi",
+              "ulazim",
+              "izlazim"
+            ],
+            "label": "regularnie: polazi / stiže"
+          },
+          {
+            "any": [
+              "stigao",
+              "stigla",
+              "stigli",
+              "prešao",
+              "prešla",
+              "uhvatili",
+              "uhvatio",
+              "uhvatila",
+              "presjeli",
+              "izašli",
+              "ušli"
+            ],
+            "label": "raz: stigao / uhvatili"
+          }
+        ],
+        "sample": "Moj autobus obično stiže s kašnjenjem. Jučer sam ga propustio, ali sam uhvatio tramvaj i stigao sam na vrijeme."
+      }
+    },
+    "b1-30": {
+      "grammar": {
+        "title": "Podróż — wszystko razem",
+        "text": "Pytania: Kamo? Kuda? Odakle? Przedrostki: ući, izaći, prijeći, proći, sići, ukrcati se, iskrcati se. Rozkład → niedokonany (Trajekt polazi u osam), wydarzenie → dokonany (Konačno smo stigli!). Słownictwo: autocesta, kolona, cestarina, luka, trajekt, katamaran.",
+        "examples": [
+          2,
+          4,
+          5
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Proszę przejść przez most.",
+          "options": [
+            "Prijeđite most.",
+            "Izađite most.",
+            "Uđite most."
+          ],
+          "correct": 0,
+          "explanation": "na drugą stronę = pri- / pre-: prijeći most."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Jak dojechać na wyspę?",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Kako si putovao na Brač?",
+            "pl": "Jak podróżowałeś na Brač?"
+          },
+          {
+            "reply": {
+              "prompt": "Opowiedz o trasie (Prvo autocestom…, onda trajektom…).",
+              "accept": [
+                "Prvo autocestom do Splita, onda trajektom."
+              ],
+              "open": true,
+              "pattern": "^(prvo|najprije|iz \\p{L}+|krenuli smo|krenuo sam|krenula sam|išli smo|išao sam|išla sam|vozili smo se)( \\p{L}+){1,10}$"
+            }
+          },
+          {
+            "say": "Je li bilo gužve?",
+            "pl": "Był tłok?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czy był korek albo kolejka do promu.",
+              "accept": [
+                "Je, na autocesti je bila kolona."
+              ],
+              "open": true,
+              "pattern": "^((da|je|jest|nije|ne) )*((na autocesti|u luci|na trajektu|kod naplatne postaje)( je)? (bila|bilo)( je)?( \\p{L}+){1,4}|(bila je|bilo je|nije bilo)( \\p{L}+){1,5}|je|jest|nije|ne|da)$"
+            }
+          },
+          {
+            "say": "A kako si se vratio?",
+            "pl": "A jak wróciłeś?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, czym wróciłeś (katamaranom, trajektom…) i porównaj.",
+              "accept": [
+                "Katamaranom, jer je brži od trajekta."
+              ],
+              "open": true,
+              "pattern": "^((vratio sam se|vratila sam se|vratili smo se) )?(katamaranom|trajektom|brodom|autobusom|avionom|autom|vlakom)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Odlično putovanje!",
+            "pl": "Świetna podróż!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3–4 zdaniach podróż na chorwacką wyspę: trasa, przesiadki i przyjazd.",
+        "points": [
+          "trasa (autocestom, preko…)",
+          "prom albo katamaran (ukrcali smo se…)",
+          "przyjazd (konačno smo stigli…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "autocestom",
+              "trajektom",
+              "katamaranom",
+              "preko",
+              "kroz",
+              "uz"
+            ],
+            "label": "trasa"
+          },
+          {
+            "any": [
+              "prešli",
+              "prešao",
+              "prešla",
+              "ušli",
+              "izašli",
+              "iskrcali",
+              "ukrcali",
+              "stigli",
+              "stigao",
+              "stigla",
+              "presjeli"
+            ],
+            "label": "czasowniki ruchu"
+          },
+          {
+            "any": [
+              "čim",
+              "prvo",
+              "onda",
+              "zatim",
+              "konačno",
+              "nakon"
+            ],
+            "label": "kolejność"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Iz Zagreba smo krenuli rano ujutro. Prvo smo išli autocestom do Splita, a onda smo se ukrcali na trajekt. Čim smo se iskrcali, otišli smo na plažu. Konačno smo stigli!"
       }
     }
   }

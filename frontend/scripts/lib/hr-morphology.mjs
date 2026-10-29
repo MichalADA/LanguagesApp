@@ -108,7 +108,8 @@ const PRES_OVERRIDES = {
   slagati: ["slažem"],
   // B1
   popiti: ["popijem"], pojesti: ["pojedem"], početi: ["počnem"], počinjati: ["počinjem"], prestati: ["prestanem"], prestajati: ["prestajem"],
-  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"],
+  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"], stizati: ["stižem"],
+  zaobići: ["zaobiđem"], obići: ["obiđem"], ući: ["uđem"], proći: ["prođem"], sići: ["siđem"], popeti: ["popnem"], presjesti: ["presjednem"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
@@ -118,6 +119,8 @@ const PP_OVERRIDES = {
   uzeti: ["uzeo", "uzela", "uzeli"], pomoći: ["pomogao", "pomogla", "pomogli"], izaći: ["izašao", "izašla", "izašli"],
   prevesti: ["preveo", "prevela", "preveli"], podići: ["podigao", "podigla", "podigli"], odrasti: ["odrastao", "odrasla", "odrasli"],
   pojesti: ["pojeo", "pojela", "pojeli"], početi: ["počeo", "počela", "počeli"], obući: ["obukao", "obukla", "obukli"], uspjeti: ["uspio", "uspjela", "uspjeli"], opeći: ["opekao", "opekla", "opekli"], izbjeći: ["izbjegao", "izbjegla", "izbjegli"],
+  zaobići: ["zaobišao", "zaobišla", "zaobišli"], obići: ["obišao", "obišla", "obišli"], ući: ["ušao", "ušla", "ušli"], proći: ["prošao", "prošla", "prošli"],
+  sići: ["sišao", "sišla", "sišli"], popeti: ["popeo", "popela", "popeli"], presjesti: ["presjeo", "presjela", "presjeli"],
 };
 
 function present1(inf) {
