@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "language": "hr",
+  "sourceLanguage": "pl",
+  "generatedWith": {
+    "provider": "Microsoft Edge online voices via edge-tts",
+    "voices": {
+      "ana": "hr-HR-GabrijelaNeural",
+      "marko": "hr-HR-SreckoNeural"
+    }
+  },
+  "dialogues": [
+    {
+      "id": "b1-kucanski-poslovi",
+      "level": "B1",
+      "titlePl": "Obowiązki domowe",
+      "titleEn": "Household chores",
+      "topic": "dom",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, dok ja usisavam, možeš li ti oprati suđe?",
+          "textPl": "Marko, kiedy ja będę odkurzać, możesz pozmywać naczynia?",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Mogu, ali prvo moram završiti jedan e-mail.",
+          "textPl": "Mogę, ale najpierw muszę skończyć jednego maila.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Dobro. U međuvremenu ću glačati košulje.",
+          "textPl": "Dobrze. W międzyczasie wyprasuję koszule.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Hvala ti! Dok ti glačaš, ja ću skuhati ručak.",
+          "textPl": "Dzięki! Kiedy ty będziesz prasować, ja ugotuję obiad.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Odlično. Onda ćemo ručati u jedan.",
+          "textPl": "Świetnie. To zjemy obiad o pierwszej.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dogovoreno. Smeta li ti glazba dok radiš?",
+          "textPl": "Umowa stoi. Przeszkadza ci muzyka, kiedy pracujesz?",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/06-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ne smeta, samo neka ne bude preglasno.",
+          "textPl": "Nie przeszkadza, byle nie za głośno.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/07-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co zrobi Marko, kiedy Ana będzie prasować?",
+        "options": [
+          {
+            "id": "lunch",
+            "textPl": "Ugotuje obiad"
+          },
+          {
+            "id": "shopping",
+            "textPl": "Pójdzie na zakupy"
+          },
+          {
+            "id": "windows",
+            "textPl": "Umyje okna"
+          }
+        ],
+        "correctOptionId": "lunch"
+      }
+    },
+    {
+      "id": "b1-nove-navike",
+      "level": "B1",
+      "titlePl": "Nowe nawyki",
+      "titleEn": "New habits",
+      "topic": "zdrowie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, izgledaš odlično! Što radiš?",
+          "textPl": "Ana, świetnie wyglądasz! Co robisz?",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Hvala! Prije dva mjeseca počela sam trčati tri puta tjedno.",
+          "textPl": "Dzięki! Dwa miesiące temu zaczęłam biegać trzy razy w tygodniu.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Svaka čast! Ja stalno želim početi, ali nikad ne uspijem.",
+          "textPl": "Brawo! Ja ciągle chcę zacząć, ale nigdy mi się nie udaje.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "I meni je bilo teško, ali sad sam se naviknula i ustajem u šest.",
+          "textPl": "Mnie też było trudno, ale teraz się przyzwyczaiłam i wstaję o szóstej.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "U šest? Ja se ne mogu naviknuti na rano ustajanje.",
+          "textPl": "O szóstej? Ja nie mogę się przyzwyczaić do wczesnego wstawania.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onda trči navečer! Najvažnije je ne prestati.",
+          "textPl": "To biegaj wieczorem! Najważniejsze, żeby nie przestać.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Jak często biega Ana?",
+        "options": [
+          {
+            "id": "three",
+            "textPl": "Trzy razy w tygodniu"
+          },
+          {
+            "id": "daily",
+            "textPl": "Codziennie rano"
+          },
+          {
+            "id": "weekend",
+            "textPl": "Tylko w weekendy"
+          }
+        ],
+        "correctOptionId": "three"
+      }
+    }
+  ]
+}

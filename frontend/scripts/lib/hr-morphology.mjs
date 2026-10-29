@@ -106,6 +106,9 @@ const PRES_OVERRIDES = {
   trajati: ["trajem"], izaći: ["izađem"], kašljati: ["kašljem"], disati: ["dišem"], kretati: ["krećem"], poslati: ["pošaljem"],
   prevesti: ["prevedem"], stajati: ["stojim"], podići: ["podignem"], potpisati: ["potpišem"], odrasti: ["odrastem"],
   slagati: ["slažem"],
+  // B1
+  popiti: ["popijem"], pojesti: ["pojedem"], početi: ["počnem"], počinjati: ["počinjem"], prestati: ["prestanem"], prestajati: ["prestajem"],
+  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
@@ -114,6 +117,7 @@ const PP_OVERRIDES = {
   otići: ["otišao", "otišla", "otišli"], provesti: ["proveo", "provela", "proveli"], sresti: ["sreo", "srela", "sreli"],
   uzeti: ["uzeo", "uzela", "uzeli"], pomoći: ["pomogao", "pomogla", "pomogli"], izaći: ["izašao", "izašla", "izašli"],
   prevesti: ["preveo", "prevela", "preveli"], podići: ["podigao", "podigla", "podigli"], odrasti: ["odrastao", "odrasla", "odrasli"],
+  pojesti: ["pojeo", "pojela", "pojeli"], početi: ["počeo", "počela", "počeli"], obući: ["obukao", "obukla", "obukli"], uspjeti: ["uspio", "uspjela", "uspjeli"],
 };
 
 function present1(inf) {
@@ -204,7 +208,7 @@ const ADJ_OVERRIDES = {
 };
 const FLEETING_ADJ = new Set([
   "umoran", "sretan", "simpatičan", "gladan", "žedan", "slobodan", "pametan", "zgodan", "tužan", "ukusan", "hladan",
-  "miran", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan", "ljubazan", "naporan",
+  "miran", "tipičan", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan", "ljubazan", "naporan",
 ]);
 
 function adjForms(masc) {

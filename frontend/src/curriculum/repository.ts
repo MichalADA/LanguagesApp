@@ -2,6 +2,7 @@ import type { CourseOutline, GeneratedLesson, LessonContent, LessonMaterial } fr
 import { PL_HR_OUTLINE } from "./data/a1";
 import { HR_A1_LESSONS } from "./data/hr-a1/lessons";
 import { HR_A2_LESSONS } from "./data/hr-a2/lessons";
+import { HR_B1_LESSONS } from "./data/hr-b1/lessons";
 
 /**
  * Warstwa dostępu do danych kursu. DZIŚ: mock w pamięci.
@@ -24,6 +25,7 @@ const OUTLINES: Record<string, CourseOutline> = {
 const LESSON_LOADERS: Record<string, () => Promise<GeneratedLesson>> = {
   ...HR_A1_LESSONS,
   ...HR_A2_LESSONS,
+  ...HR_B1_LESSONS,
 };
 
 export async function fetchCourseOutline(courseId: string): Promise<CourseOutline | null> {

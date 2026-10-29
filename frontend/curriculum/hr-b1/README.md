@@ -1,9 +1,29 @@
 # Kurs chorwackiego B1 — plan poziomu (12 modułów, 60 lekcji)
 
-Status: **specyfikacja** — treści lekcji jeszcze nie ma. Poziom powstaje tak jak A2: moduł po module, w tym samym formacie
-(`level.json`, `lexodromia_hr_B1_curriculum.csv`, `didactics.json`, `audio.json`) i tym samym generatorem
-(`scripts/generate-curriculum.mjs --level hr-b1`). `level.json` dodajemy razem z pierwszym gotowym modułem
-(`"modules": 1`, `"inherit": ["hr-a1", "hr-a2"]`), bo generator wymaga pełnej treści każdej zadeklarowanej lekcji.
+Status: **moduł 01 gotowy** (b1-01 – b1-05, z nagraniami); moduły 02–12 — plan poniżej. Poziom powstaje tak jak A2:
+moduł po module, w tym samym formacie i tym samym generatorem:
+
+```
+level.json                          ← poziom: B1, prefiks b1, "modules" = liczba gotowych modułów; dziedziczy słownictwo hr-a1 i hr-a2
+lexodromia_hr_B1_curriculum.csv     ← źródło prawdy: lekcje, słownictwo, zdania, blueprinty
+didactics.json                      ← gramatyka, dialogi z ramami odpowiedzi, zadania swobodne
+audio.json / audio-manifest.json    ← nagrania w /audio/hr/b1/module-XX/
+        │
+        ▼  npm run curriculum:b1   (scripts/generate-curriculum.mjs --level hr-b1)
+src/curriculum/data/hr-b1/          ← wygenerowane TypeScript (commitowane, nie edytuj ręcznie)
+```
+
+- **Nowy moduł:** dopisz lekcje do CSV i `didactics.json`, zwiększ `"modules"` w `level.json`, potem
+  `npm run curriculum:b1` → `python tools/listening/generate_tts.py --course-manifest frontend/curriculum/hr-b1/audio-manifest.json` → `npm run curriculum:b1`.
+  Otwarte repliki dopisz do `OPEN_REPLIES` w `tests/curriculum-b1.test.mjs`.
+- **Dialogi do słuchania:** `public/data/listening/hr-b1-dialogues.json` (nagrania: `python tools/listening/generate_tts.py --manifest frontend/public/data/listening/hr-b1-dialogues.json`).
+  Gra „Słuchanie” pokaże B1 (`AVAILABLE_LISTENING_LEVELS`), gdy dialogów będzie tyle co w A2.
+- **Odmiana:** nieregularne formy nowych czasowników dopisz w `PRES_OVERRIDES` / `PP_OVERRIDES` (`scripts/lib/hr-morphology.mjs`);
+  moduł 01 dodał m.in. popijem, pojedem, počnem, prestanem, obučem, uspijem.
+- **Moduł 01 „Svakodnevica i navike”:** pary aspektowe piti / popiti, čitati / pročitati, obući se (b1-01), dok + niedokonany
+  i szyk Dok je Ana glačala (b1-02), prije nego što krenem / nakon što sam završila / prije spavanja (b1-03),
+  početi / prestati + bezokolicznik, naviknuti se na, uspjeti, sve češće (b1-04), powtórka: typowy tydzień (b1-05).
+  Dialogi do słuchania: b1-kucanski-poslovi (b1-02), b1-nove-navike (b1-04).
 
 ## Zasady
 
@@ -65,17 +85,17 @@ Status: **specyfikacja** — treści lekcji jeszcze nie ma. Poziom powstaje tak 
 - b1-30 *Putovanje na otok* — konsolidacja: relacja z trasy i przesiadek.
 
 **Moduł 07 `Stanovanje i dogovor s vlasnikom`** — dopełniacz liczby mnogiej
-- b1-31 *Tražim stan* — rozgrzewka z a2-27 (stanarina, režije) → umowa (polog, ugovor, najmoprimac, najmodavac).
+- b1-31 *Tražim stan* — rozgrzewka z a2-27 (stanarina, režije) → umowa (polog, ugovor, stanar, vlasnik stana; najmoprimac / najmodavac tylko do rozpoznania w umowie).
 - b1-32 *Koliko soba, koliko utičnica?* — dopełniacz lm. po liczebnikach, `nema`, `mnogo / nekoliko` (końcówki -a, -i).
 - b1-33 *Sitni kvarovi u stanu* — rozwinięcie a2-29: zgłoszenie usterki (curi voda, ne radi grijanje, poslati majstora).
 - b1-34 *Uređenje i namještaj* — czego brakuje i co trzeba (nedostaje, promijeniti, popraviti).
-- b1-35 *Razgovor s najmodavcem* — konsolidacja: telefon do właściciela.
+- b1-35 *Razgovor s vlasnikom stana* — konsolidacja: telefon do właściciela.
 
 **Moduł 08 `Online kupovina i reklamacije`** — zdania celowe z `da` i `kako bih`
 - b1-36 *Narudžba preko interneta* — rozgrzewka z a2-24 / a2-31 → e-commerce (naručiti, košarica, dostava, pratiti pošiljku, plaćanje pouzećem).
 - b1-37 *Zovem da provjerim…* — `da` + czas teraźniejszy (pol. „żeby” + bezokolicznik).
 - b1-38 *Kako bih vratio proizvod…* — `kako bih / kako bismo` w kontakcie z obsługą klienta.
-- b1-39 *Oštećen paket i jamstvo* — problemy z zamówieniem (oštećen, pogrešan broj, jamstvo, povrat novca).
+- b1-39 *Oštećen paket i garancija* — problemy z zamówieniem (oštećen, pogrešan broj, garancija aktywnie, jamstvo biernie, povrat novca).
 - b1-40 *Rješavanje reklamacije* — konsolidacja: pełny proces reklamacji online.
 
 ### Faza 3: Praca, relacje, media i egzamin B1 (b1-41 – b1-60)
@@ -88,7 +108,7 @@ Status: **specyfikacja** — treści lekcji jeszcze nie ma. Poziom powstaje tak 
 - b1-45 *Na poslovnom sastanku* — konsolidacja: rozmowa w zespole.
 
 **Moduł 10 `Ljudi, karakter i odnosi`** — `koji` oraz zaimki zwrotne i wzajemne
-- b1-46 *Kakav je on čovjek?* — cechy charakteru (iskren, pouzdan, strpljiv, tvrdoglav, ponosan) + fałszywi przyjaciele.
+- b1-46 *Kakav je on čovjek?* — cechy charakteru (iskren, pouzdan, strpljiv, tvrdoglav, ponosan) + fałszywi przyjaciele: vrijedan (pracowity ≠ wredny), drag (kochany ≠ drogi = skup).
 - b1-47 *Prijatelj koji mi pomaže* — koji / koja / koje w mianowniku i bierniku (film koji gledam vs prijatelj kojeg poznajem).
 - b1-48 *Osoba s kojom razgovaram* — koji z przyimkami (s kojim, u kojem, o kojoj).
 - b1-49 *Brinuti se o sebi i pomagati jedan drugome* — sebe / sebi / sobom; jedan drugoga / jedno drugo.
@@ -120,15 +140,14 @@ Poza 1–3000 lub brak w datasecie — do decyzji przy pisaniu modułu:
 - **Druga połowa par aspektowych** (popiti, pojesti, pročitati, početi, izaći, prijeći, snimiti) — dopuszczalne (zasada wyżej).
 - **Słowa tematyczne spoza datasetu:** uspomena, naviknuti se, iscrpljen, kretanje, paluba, majstor, košarica, pouzeće,
   životopis, natječaj, vještina, odjel, međutim — przydatne na B1; wejdą jako słowa lekcji, z wpisem do datasetu przy okazji.
-- **Za trudne / urzędowe:** najmoprimac, najmodavac (b1-31, b1-35) — w mowie potocznej `stanar` i `vlasnik stana` (vlasnik 1079);
-  proponuję tytuł b1-35 *Razgovor s vlasnikom stana* i najmoprimac / najmodavac tylko biernie (w umowie).
-- **Jamstvo vs garancija:** w datasecie jest `garancija` (1300) i `imam jamstvo` (3499) — uczymy obu, garancija aktywnie.
+- **Urzędowe (decyzja):** najmoprimac, najmodavac — tylko biernie w umowie; aktywnie `stanar` i `vlasnik stana` (vlasnik 1079).
+- **Jamstvo vs garancija (decyzja):** `garancija` (1300) aktywnie, `jamstvo` (3499) biernie.
 - **vrtoglavica** (3996), **iznenaditi** (4660), **curiti** (4544) — powyżej 3000, ale naturalne w temacie; zostają jako słowa lekcji.
 
 ## Uwagi merytoryczne
 
-- **b1-46, fałszywi przyjaciele:** `ponosan` (dumny) nie jest fałszywym przyjacielem. Lepsze przykłady: `vrijedan`
-  (pracowity / cenny ≠ wredny), `drag` (miły, kochany ≠ drogi = skup), `zahvalan` (wdzięczny). Dataset ma pola
+- **b1-46, fałszywi przyjaciele (decyzja):** `ponosan` (dumny) zostaje jako zwykła cecha — nie jest fałszywym przyjacielem.
+  Fałszywi przyjaciele: `vrijedan` (pracowity / cenny ≠ wredny), `drag` (kochany, miły ≠ drogi = skup). Dataset ma pola
   `FalseFriend` / `FalseFriendNote` — warto je wykorzystać.
 - **b1-21:** w jotacji uwaga na `svijetao → svjetliji` (ije → je) i `tih → tiši`, `čist → čišći`; to nowość względem a2-23.
 - **b1-42:** końcówka D / L / I lm. to -ima (r. m. i n.) oraz -ama (r. ż.); przymiotniki -im / -ima — jedna tabela na trzy przypadki.

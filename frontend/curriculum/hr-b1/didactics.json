@@ -1,0 +1,843 @@
+{
+  "$comment": "Warstwa dydaktyczna kursu HR B1 (format jak curriculum/hr-a2/didactics.json): objaśnienia gramatyki, dialogi z ramami odpowiedzi, zadania swobodne. Treści autorskie — wymagają przeglądu native speakera.",
+  "version": 1,
+  "corrections": [],
+  "extraAccepted": {},
+  "modules": {
+    "1": {
+      "description": "Opowiadasz o codzienności: co robisz zwykle, a co już zrobiłeś, co robisz w tym samym czasie, w jakiej kolejności i jak zmieniają się twoje nawyki."
+    }
+  },
+  "lessons": {
+    "b1-01": {
+      "grammar": {
+        "title": "Pijem kavu czy popila sam kavu?",
+        "text": "Tak jak po polsku, chorwackie czasowniki tworzą pary. Niedokonany (piti, jesti, čitati) mówi o nawyku albo o tym, co trwa: Svako jutro pijem kavu. Dokonany (popiti, pojesti, pročitati) mówi o jednej zakończonej czynności, która ma wynik: Danas sam popila dvije kave. Dokonany zwykle powstaje przez dodanie przedrostka: po-, pro-, s-, iz-.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "piti → popiti",
+                "form": "pijem kavu / popila sam kavu",
+                "meaning": "piję kawę / wypiłam kawę"
+              },
+              {
+                "base": "jesti → pojesti",
+                "form": "jedem doručak / pojeo sam doručak",
+                "meaning": "jem śniadanie / zjadłem śniadanie"
+              },
+              {
+                "base": "čitati → pročitati",
+                "form": "čitam vijesti / pročitao sam vijesti",
+                "meaning": "czytam wiadomości / przeczytałem wiadomości"
+              },
+              {
+                "base": "kuhati → skuhati",
+                "form": "kuham ručak / skuhala sam ručak",
+                "meaning": "gotuję obiad / ugotowałam obiad"
+              },
+              {
+                "base": "tuširati se → istuširati se",
+                "form": "tuširam se / istuširao sam se",
+                "meaning": "biorę prysznic / wziąłem prysznic"
+              },
+              {
+                "base": "oblačiti se → obući se",
+                "form": "oblačim se / obukla sam se",
+                "meaning": "ubieram się / ubrałam się"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "tip": "To, co robisz właśnie teraz, to zawsze niedokonany: Sad pijem kavu. Formy dokonane w czasie teraźniejszym (popijem, pročitam) poznasz w lekcji 3 — znaczą tyle co polskie wypiję, przeczytam."
+      },
+      "gap": {
+        "sentence": 7,
+        "word": "skuhao"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": [
+            "Danas sam popio dvije kave."
+          ]
+        },
+        {
+          "sentence": 6,
+          "accept": [
+            "Istuširao sam se i obukao brzo."
+          ]
+        }
+      ],
+      "comprehend": 9,
+      "order": 4,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Teraz piję kawę.",
+          "options": [
+            "Sad pijem kavu.",
+            "Sad popijem kavu.",
+            "Sad sam popio kavu."
+          ],
+          "correct": 0,
+          "explanation": "To, co trwa teraz, to proces — czasownik niedokonany: pijem."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zjadłam już śniadanie.",
+          "options": [
+            "Već sam pojela doručak.",
+            "Već pojedem doručak.",
+            "Već sam pojesti doručak."
+          ],
+          "correct": 0,
+          "explanation": "Zakończona czynność z wynikiem: dokonany pojesti w perfekcie — pojela sam."
+        }
+      ],
+      "model": {
+        "title": "Poranek Marka",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobro jutro! Jesi li dobro spavao?",
+            "pl": "Dzień dobry! Dobrze spałeś?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ne baš. Probudio sam se u pet i više nisam spavao.",
+            "pl": "Nie bardzo. Obudziłem się o piątej i już nie spałem."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Joj! Jesi li barem doručkovao?",
+            "pl": "Ojej! Zjadłeś chociaż śniadanie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jesam. Skuhao sam kavu, pojeo sendvič i pročitao vijesti.",
+            "pl": "Tak. Zaparzyłem kawę, zjadłem kanapkę i przeczytałem wiadomości."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja obično pijem kavu tek na poslu.",
+            "pl": "Ja zwykle piję kawę dopiero w pracy."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Twój poranek",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Dobro jutro! Kad si se danas probudio?",
+            "pl": "Dzień dobry! Kiedy się dziś obudziłeś?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, o której się obudziłeś / obudziłaś.",
+              "accept": [
+                "Probudio sam se u sedam."
+              ],
+              "open": true,
+              "pattern": "^(probudio|probudila) sam se( danas| jutros)?( u| oko) \\p{L}+( \\p{L}+)?$|^(danas|jutros|ja) sam se (probudio|probudila)( u| oko) \\p{L}+( \\p{L}+)?$|^(u|oko) \\p{L}+( \\p{L}+)?$"
+            }
+          },
+          {
+            "say": "A što si popio za doručak?",
+            "pl": "A co wypiłeś na śniadanie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co wypiłeś / wypiłaś (popio / popila sam…).",
+              "accept": [
+                "Popio sam kavu."
+              ],
+              "open": true,
+              "pattern": "^(popio|popila) sam( \\p{L}+){1,4}$|^(ja|jutros|danas|samo) sam (popio|popila)( \\p{L}+){1,4}$"
+            }
+          },
+          {
+            "say": "Ja sam jutros u vlaku pročitala sve vijesti.",
+            "pl": "Ja dziś rano w pociągu przeczytałam wszystkie wiadomości."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, że ty zwykle czytasz wiadomości na telefonie.",
+              "accept": [
+                "Ja obično čitam vijesti na mobitelu."
+              ],
+              "pattern": "^(ja )?(obično|uvijek|svako jutro) čitam vijesti na (mobitelu|telefonu)$|^vijesti (ja )?(obično|uvijek) čitam na (mobitelu|telefonu)$|^(ja )?čitam vijesti (obično |uvijek )?na (mobitelu|telefonu)$"
+            }
+          },
+          {
+            "say": "Super. Vidimo se na kavi!",
+            "pl": "Super. Do zobaczenia na kawie!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania: co robisz zwykle rano, a co dziś już zrobiłeś / zrobiłaś.",
+        "points": [
+          "co robisz zwykle (niedokonany: pijem, čitam)",
+          "co dziś już zrobiłeś / zrobiłaś (dokonany: popio, pojela…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "obično",
+              "svako",
+              "svaki",
+              "uvijek"
+            ],
+            "label": "nawyk: obično / svako jutro"
+          },
+          {
+            "any": [
+              "popio",
+              "popila",
+              "pojeo",
+              "pojela",
+              "pročitao",
+              "pročitala",
+              "skuhao",
+              "skuhala",
+              "istuširao",
+              "istuširala",
+              "obukao",
+              "obukla",
+              "probudio",
+              "probudila"
+            ],
+            "label": "dokonany: popio / pojela…"
+          }
+        ],
+        "sample": "Obično pijem kavu i čitam vijesti. Jutros sam se probudila rano, skuhala kavu i pojela doručak."
+      }
+    },
+    "b1-02": {
+      "grammar": {
+        "title": "Dok pijem kavu, čitam vijesti",
+        "text": "dok = podczas gdy, kiedy (w tym samym czasie). Obie czynności trwają, więc po dok zwykle stoją czasowniki niedokonane: Dok kuham, slušam podcast. W przeszłości: Dok sam čekala autobus, zvala sam mamu. Krótkie formy sam, si, je, smo… stoją zaraz po dok, na drugim miejscu w zdaniu: Dok je Ana glačala, djeca su spavala. Dwie osoby, dwie czynności naraz: a — Marko usisava, a ja perem suđe.",
+        "table": [
+          {
+            "label": "dok + czasownik niedokonany",
+            "rows": [
+              {
+                "base": "teraz / zwykle",
+                "form": "Dok kuham, slušam podcast.",
+                "meaning": "Kiedy gotuję, słucham podcastu."
+              },
+              {
+                "base": "przeszłość",
+                "form": "Dok sam čekala autobus, zvala sam mamu.",
+                "meaning": "Kiedy czekałam na autobus, dzwoniłam do mamy."
+              },
+              {
+                "base": "ktoś inny",
+                "form": "Dok je Ana glačala, djeca su spavala.",
+                "meaning": "Kiedy Ana prasowała, dzieci spały."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          6,
+          4
+        ],
+        "tip": "Nie mów „Dok Ana je glačala” — je idzie zaraz po dok: Dok je Ana glačala. Krótki moment (gdy tylko przyszedłem) to inna konstrukcja: čim — poznasz ją w module 2."
+      },
+      "gap": {
+        "sentence": 8,
+        "word": "dok"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 9,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Kiedy Ana prasowała, dzieci spały.",
+          "options": [
+            "Dok je Ana glačala, djeca su spavala.",
+            "Dok Ana je glačala, djeca su spavala.",
+            "Dok Ana glačala je, djeca su spavala."
+          ],
+          "correct": 0,
+          "explanation": "Krótka forma je stoi na drugim miejscu — zaraz po dok."
+        }
+      ],
+      "listening": "b1-kucanski-poslovi",
+      "dialog": {
+        "title": "Dwie rzeczy naraz",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Što obično radiš dok putuješ na posao?",
+            "pl": "Co zwykle robisz, kiedy jedziesz do pracy?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robisz w tym czasie (np. słuchasz podcastu, czytasz wiadomości).",
+              "accept": [
+                "Dok putujem na posao, slušam podcast.",
+                "Slušam glazbu."
+              ],
+              "open": true,
+              "pattern": "^(dok (putujem|idem|se vozim)( na posao| do posla| autobusom| vlakom)? )?(obično |uvijek |najčešće |ja )*{pres1}( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Ja ne mogu čitati u autobusu. A što radiš kod kuće dok kuhaš?",
+            "pl": "Ja nie mogę czytać w autobusie. A co robisz w domu, kiedy gotujesz?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robisz, kiedy gotujesz (dok kuham, …).",
+              "accept": [
+                2
+              ],
+              "open": true,
+              "pattern": "^(dok kuham )?(obično |uvijek |ja )*{pres1}( \\p{L}+){0,4}$|^(obično |uvijek |ja )*{pres1}( \\p{L}+){0,4} dok kuham$"
+            }
+          },
+          {
+            "say": "A tko kod vas pere suđe?",
+            "pl": "A kto u was zmywa naczynia?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz: Ja zmywam naczynia, a Ana odkurza.",
+              "accept": [
+                "Ja perem suđe, a Ana usisava."
+              ],
+              "pattern": "^(ja )?perem (suđe|posuđe) a ana usisava$|^ana usisava a ja perem (suđe|posuđe)$"
+            }
+          },
+          {
+            "say": "Dobra podjela posla! Bok!",
+            "pl": "Dobry podział pracy! Cześć!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o tym, co robisz w tym samym czasie (dok…).",
+        "points": [
+          "co robisz, kiedy… (dok + czasownik)",
+          "druga czynność w tym samym czasie"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "dok"
+            ],
+            "label": "dok"
+          },
+          {
+            "any": [
+              "slušam",
+              "čitam",
+              "gledam",
+              "kuham",
+              "pijem",
+              "pišem",
+              "radim",
+              "učim",
+              "zovem",
+              "razgovaram",
+              "pjevam",
+              "mislim"
+            ],
+            "label": "czynność w czasie teraźniejszym"
+          }
+        ],
+        "sample": "Dok kuham, slušam podcast. Dok putujem na posao, čitam vijesti."
+      }
+    },
+    "b1-03": {
+      "grammar": {
+        "title": "Prije nego što krenem…",
+        "text": "prije nego što = zanim, nakon što = po tym, jak. Jak po polsku mówisz „zanim wyjdę” (forma dokonana), tak po chorwacku: prije nego što krenem, prije nego što izađem. Forma krenem, izađem, popijem to dokonany w czasie teraźniejszym — znaczy tyle co polskie wyjdę, wypiję, nie „teraz”. Po nakon što o przeszłości stoi perfekt: Nakon što sam završila posao, otišla sam u trgovinu. Z rzeczownikiem krócej, w dopełniaczu: prije spavanja, nakon doručka.",
+        "table": [
+          {
+            "label": "z czasownikiem / z rzeczownikiem",
+            "rows": [
+              {
+                "base": "zanim",
+                "form": "prije nego što krenem",
+                "meaning": "zanim wyjdę"
+              },
+              {
+                "base": "przed",
+                "form": "prije spavanja",
+                "meaning": "przed snem"
+              },
+              {
+                "base": "po tym, jak",
+                "form": "nakon što sam završila",
+                "meaning": "po tym, jak skończyłam"
+              },
+              {
+                "base": "po",
+                "form": "nakon doručka",
+                "meaning": "po śniadaniu"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          5,
+          8
+        ],
+        "tip": "Popijem kavu prije nego što krenem — o nawyku (codziennie najpierw kawa, potem wyjście). O tym, co robisz w tej chwili, mówisz niedokonanym: Sad pijem kavu."
+      },
+      "gap": {
+        "sentence": 7,
+        "word": "nego"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": [
+            "Kad sam završila posao, otišla sam u trgovinu."
+          ]
+        }
+      ],
+      "comprehend": 7,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Zanim wyjdę, zamknę drzwi na klucz.",
+          "options": [
+            "Prije nego što izađem, zaključat ću vrata.",
+            "Prije nego što sam izađem, zaključat ću vrata.",
+            "Prije izaći, zaključat ću vrata."
+          ],
+          "correct": 0,
+          "explanation": "Po prije nego što stoi dokonany w czasie teraźniejszym: izađem (= wyjdę)."
+        }
+      ],
+      "model": {
+        "title": "Taksówka już jedzie",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, jesi li spreman? Taksi dolazi za pet minuta.",
+            "pl": "Marko, jesteś gotowy? Taksówka przyjeżdża za pięć minut."
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Skoro. Prije nego što krenemo, moram napuniti mobitel.",
+            "pl": "Prawie. Zanim wyjedziemy, muszę naładować telefon."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Napunit ćeš ga u taksiju. Jesi li isključio svjetlo?",
+            "pl": "Naładujesz go w taksówce. Wyłączyłeś światło?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jesam. A tko će zaključati vrata?",
+            "pl": "Tak. A kto zamknie drzwi na klucz?"
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Ja ću ih zaključati nakon što izađemo.",
+            "pl": "Ja je zamknę, kiedy wyjdziemy."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Wychodzimy!",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Jesi li spreman? Krećemo za deset minuta.",
+            "pl": "Jesteś gotowy? Wychodzimy za dziesięć minut."
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co musisz jeszcze zrobić, zanim wyjdziecie (prije nego što krenemo, moram…).",
+              "accept": [
+                "Prije nego što krenemo, moram napuniti mobitel."
+              ],
+              "open": true,
+              "pattern": "^((skoro|još ne|ne još|samo malo|čekaj) )?(prije nego što (krenemo|odemo|izađemo) )?(moram|trebam) (još )?{inf}( \\p{L}+){0,3}$|^((skoro|još ne|ne još|samo malo|čekaj) )?(moram|trebam) (još )?{inf}( \\p{L}+){0,3} prije nego što (krenemo|odemo|izađemo)$"
+            }
+          },
+          {
+            "say": "Dobro. Jesi li isključio računalo?",
+            "pl": "Dobrze. Wyłączyłeś komputer?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, że tak — wyłączyłeś / wyłączyłaś.",
+              "accept": [
+                "Jesam, isključio sam ga."
+              ],
+              "pattern": "^(jesam|da)( (isključio|isključila) sam (ga|računalo))?$|^(da )?(isključio|isključila) sam (ga|računalo)$"
+            }
+          },
+          {
+            "say": "Super. Što ćeš napraviti nakon što izađemo?",
+            "pl": "Super. Co zrobisz, kiedy wyjdziemy?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zrobisz po tym, jak wyjdziecie (nakon što izađemo, …).",
+              "accept": [
+                "Nakon što izađemo, zaključat ću vrata."
+              ],
+              "open": true,
+              "pattern": "^nakon što (izađemo|krenemo|odemo) ((ja )?(ću|ćemo) {inf}|{inft} (ću|ćemo))( \\p{L}+){0,3}$|^((ja )?(ću|ćemo) {inf}|{inft} (ću|ćemo))( \\p{L}+){0,3} nakon što (izađemo|krenemo|odemo)$"
+            }
+          },
+          {
+            "say": "Odlično, idemo!",
+            "pl": "Świetnie, idziemy!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: co robisz, zanim rano wyjdziesz z domu, i co robisz po pracy.",
+        "points": [
+          "zanim wyjdziesz (prije nego što…)",
+          "po pracy (nakon posla / nakon što…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "prije"
+            ],
+            "label": "prije nego što / prije + dopełniacz"
+          },
+          {
+            "any": [
+              "nakon"
+            ],
+            "label": "nakon što / nakon + dopełniacz"
+          }
+        ],
+        "sample": "Prije nego što izađem iz kuće, popijem kavu i zaključam vrata. Nakon posla idem u trgovinu."
+      }
+    },
+    "b1-04": {
+      "grammar": {
+        "title": "Prestao sam pušiti",
+        "text": "Zmiana nawyku to, jak po polsku, czasownik + bezokolicznik: početi trčati (zacząć biegać), prestati pušiti (przestać palić). naviknuti se na + biernik: Naviknula sam se na hrvatsku kavu. odviknuti se od + dopełniacz: odviknuti se od mobitela. Polskie „udało mi się” to po chorwacku osoba + uspjeti: Uspjela sam ustati u šest (dosłownie: zdołałam wstać). Nowe pary aspektowe: počinjati → početi, prestajati → prestati, navikavati se → naviknuti se.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "počinjati → početi",
+                "form": "Počinjem sutra. / Počela sam trčati.",
+                "meaning": "Zaczynam jutro. / Zaczęłam biegać."
+              },
+              {
+                "base": "prestajati → prestati",
+                "form": "Kiša prestaje. / Prestao sam pušiti.",
+                "meaning": "Deszcz przestaje padać. / Przestałem palić."
+              },
+              {
+                "base": "navikavati se → naviknuti se",
+                "form": "Polako se navikavam. / Naviknula sam se.",
+                "meaning": "Powoli się przyzwyczajam. / Przyzwyczaiłam się."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          2,
+          7,
+          5
+        ],
+        "tip": "sve + stopień wyższy znasz z A2 (sve bolje). Tak samo: sve češće = coraz częściej, sve rjeđe = coraz rzadziej."
+      },
+      "gap": {
+        "sentence": 6,
+        "word": "uspio"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 9,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 3,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Udało mi się wstać o szóstej.",
+          "options": [
+            "Uspjela sam ustati u šest.",
+            "Uspjela sam ustala u šest.",
+            "Sam uspjela ustati u šest."
+          ],
+          "correct": 0,
+          "explanation": "Po uspjeti stoi bezokolicznik (ustati), a sam nie zaczyna zdania."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Przyzwyczaiłam się do upału.",
+          "options": [
+            "Naviknula sam se na vrućinu.",
+            "Naviknula sam vrućinu.",
+            "Naviknula sam se od vrućine."
+          ],
+          "correct": 0,
+          "explanation": "naviknuti se na + biernik (od + dopełniacz jest przy odviknuti se)."
+        }
+      ],
+      "listening": "b1-nove-navike",
+      "dialog": {
+        "title": "Nowe nawyki",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Što si ove godine počeo raditi?",
+            "pl": "Co zacząłeś robić w tym roku?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zacząłeś / zaczęłaś robić (počeo / počela sam + bezokolicznik).",
+              "accept": [
+                "Počeo sam trčati.",
+                9
+              ],
+              "open": true,
+              "pattern": "^(počeo|počela) sam( češće| rjeđe| više| ponovno)? {inf}( \\p{L}+){0,3}$|^(ove godine|nedavno|prošle godine|ja) sam (počeo|počela)( češće| rjeđe| više| ponovno)? {inf}( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Svaka čast! A što si prestao raditi?",
+            "pl": "Brawo! A co przestałeś robić?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co przestałeś / przestałaś robić.",
+              "accept": [
+                "Prestao sam pušiti.",
+                1
+              ],
+              "open": true,
+              "pattern": "^(prestao|prestala) sam {inf}( \\p{L}+){0,3}$|^(prošle godine|ove godine|nedavno|ja) sam (prestao|prestala) {inf}( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "A kako ide? Jesi li se naviknuo?",
+            "pl": "A jak idzie? Przyzwyczaiłeś się?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz, że tak, już się przyzwyczaiłeś / przyzwyczaiłaś (albo że jeszcze nie).",
+              "accept": [
+                "Jesam, već sam se naviknuo."
+              ],
+              "open": true,
+              "pattern": "^(da |jesam )?(već |potpuno )?(naviknuo|naviknula|navikao|navikla) sam se( na to)?$|^(da |jesam )?(već|potpuno|ja) sam se (naviknuo|naviknula|navikao|navikla)( na to)?$|^(jesam|nisam|još nisam|ne još|nisam još)$|^(ne )?(još )?nisam se (još )?(naviknuo|naviknula|navikao|navikla)( na to)?$|^(ne )?još se nisam (naviknuo|naviknula|navikao|navikla)( na to)?$"
+            }
+          },
+          {
+            "say": "Bravo! Samo tako nastavi!",
+            "pl": "Brawo! Tak trzymaj!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o swoich nawykach: co zacząłeś / zaczęłaś robić, co przestałeś / przestałaś i do czego się przyzwyczaiłeś / przyzwyczaiłaś.",
+        "points": [
+          "co zacząłeś albo przestałeś robić",
+          "do czego się przyzwyczaiłeś / co robisz częściej lub rzadziej"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "počeo",
+              "počela",
+              "počinjem",
+              "prestao",
+              "prestala",
+              "prestajem"
+            ],
+            "label": "početi / prestati"
+          },
+          {
+            "any": [
+              "naviknuo",
+              "naviknula",
+              "navikao",
+              "navikla",
+              "navikavam",
+              "češće",
+              "rjeđe",
+              "uspio",
+              "uspjela"
+            ],
+            "label": "naviknuti se / češće / uspjeti"
+          }
+        ],
+        "sample": "Prošle godine sam prestala pušiti. Sada sve češće trčim i naviknula sam se na rano ustajanje."
+      }
+    },
+    "b1-05": {
+      "grammar": {
+        "title": "Mój tydzień — wszystko razem",
+        "text": "Nawyk — niedokonany: Vikendom spavam duže. Jedna zakończona czynność — dokonany: Pročitala sam knjigu. W tym samym czasie — dok: Dok kuham, slušam podcast. Kolejność — prije nego što krenem, nakon što sam završila. Zmiana — počela sam, prestao sam, naviknuo sam se.",
+        "examples": [
+          1,
+          3,
+          5
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Kiedy jem śniadanie, czytam wiadomości.",
+          "options": [
+            "Dok doručkujem, čitam vijesti.",
+            "Dok doručkujem, pročitao sam vijesti.",
+            "Dok sam doručkujem, čitam vijesti."
+          ],
+          "correct": 0,
+          "explanation": "dok + dwie trwające czynności → oba czasowniki niedokonane, w tym samym czasie."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 4,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Jak wygląda twój tydzień?",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Kako izgleda tvoj tipičan radni dan?",
+            "pl": "Jak wygląda twój typowy dzień roboczy?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, o której zaczyna się twój dzień albo co robisz rano.",
+              "accept": [
+                "Moj dan počinje u sedam.",
+                1
+              ],
+              "open": true,
+              "pattern": "^(moj )?((tipičan |radni )*dan) (mi )?počinje( u| oko) \\p{L}+( \\p{L}+)?$|^(ujutro |obično |svako jutro |radnim danom |ja )*{pres1}( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "A što radiš dok putuješ na posao?",
+            "pl": "A co robisz, kiedy jedziesz do pracy?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robisz w drodze do pracy (dok…).",
+              "accept": [
+                "Dok putujem na posao, slušam podcast."
+              ],
+              "open": true,
+              "pattern": "^(dok (putujem|idem|se vozim)( na posao| do posla| autobusom| vlakom)? )?(obično |uvijek |ja )*{pres1}( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Je li se nešto promijenilo u zadnje vrijeme?",
+            "pl": "Czy coś się ostatnio zmieniło?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co zacząłeś / przestałeś robić albo do czego się przyzwyczaiłeś / przyzwyczaiłaś.",
+              "accept": [
+                "Počela sam trčati.",
+                "Prestao sam pušiti."
+              ],
+              "open": true,
+              "pattern": "^(da )?(počeo|počela|prestao|prestala) sam( češće| rjeđe| više)? {inf}( \\p{L}+){0,3}$|^(da )?(ove godine|nedavno|prošle godine|ja) sam (počeo|počela|prestao|prestala)( češće| rjeđe| više)? {inf}( \\p{L}+){0,3}$|^(da )?(naviknuo|naviknula|navikao|navikla) sam se na( \\p{L}+){1,3}$|^(ne|nije|ništa|ne baš|ništa posebno)$"
+            }
+          },
+          {
+            "say": "Svaka čast! Vidimo se u subotu.",
+            "pl": "Brawo! Do zobaczenia w sobotę."
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Opisz w 3–4 zdaniach swój typowy tydzień i jedną zmianę w twoich nawykach.",
+        "points": [
+          "co robisz zwykle (rano, w pracy, w weekend)",
+          "co robisz w tym samym czasie (dok)",
+          "co się zmieniło (počeo / prestao / naviknuo se)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "obično",
+              "svaki",
+              "svako",
+              "radnim",
+              "vikendom",
+              "uvijek"
+            ],
+            "label": "nawyk: obično / vikendom"
+          },
+          {
+            "any": [
+              "dok"
+            ],
+            "label": "dok"
+          },
+          {
+            "any": [
+              "počeo",
+              "počela",
+              "prestao",
+              "prestala",
+              "naviknuo",
+              "naviknula",
+              "navikao",
+              "navikla",
+              "nakon",
+              "prije"
+            ],
+            "label": "zmiana / kolejność"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Moj tipičan radni dan počinje u sedam. Dok putujem na posao, čitam vijesti. Vikendom spavam duže. Prošle godine sam prestala pušiti i počela sam trčati."
+      }
+    }
+  }
+}
