@@ -1045,6 +1045,134 @@
         ],
         "correctOptionId": "swap"
       }
+    },
+    {
+      "id": "b1-novi-projekt",
+      "level": "B1",
+      "titlePl": "Nowy projekt",
+      "titleEn": "A new project",
+      "topic": "praca",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, kako ide novi projekt?",
+          "textPl": "Marko, jak idzie nowy projekt?",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobro, ali imam previše sastanaka. Svaki dan sam na sastancima s klijentima.",
+          "textPl": "Dobrze, ale mam za dużo spotkań. Codziennie jestem na spotkaniach z klientami.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "A tko piše izvještaje?",
+          "textPl": "A kto pisze raporty?",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ja, i šaljem ih svim kolegama u odjelu.",
+          "textPl": "Ja, i wysyłam je wszystkim kolegom w dziale.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Trebao bi zamoliti voditelja da ti da pomoćnika.",
+          "textPl": "Powinieneś poprosić kierownika, żeby dał ci asystenta.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Već sam ga zamolio. Sljedeći mjesec dolaze dva nova kolege.",
+          "textPl": "Już go poprosiłem. W przyszłym miesiącu przychodzi dwóch nowych kolegów.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co Marko robi codziennie?",
+        "options": [
+          {
+            "id": "meetings",
+            "textPl": "Ma spotkania z klientami"
+          },
+          {
+            "id": "reports",
+            "textPl": "Pisze raporty dla szefa"
+          },
+          {
+            "id": "job",
+            "textPl": "Szuka nowej pracy"
+          }
+        ],
+        "correctOptionId": "meetings"
+      }
+    },
+    {
+      "id": "b1-rad-od-kuce",
+      "level": "B1",
+      "titlePl": "Praca z domu",
+      "titleEn": "Working from home",
+      "topic": "praca",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, radiš li i dalje od kuće?",
+          "textPl": "Ana, nadal pracujesz z domu?",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, tri dana tjedno. Imam fleksibilno radno vrijeme.",
+          "textPl": "Tak, trzy dni w tygodniu. Mam elastyczne godziny pracy.",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Super. Ja moram svaki dan u ured.",
+          "textPl": "Super. Ja muszę codziennie do biura.",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ali ti imaš kolege blizu. Meni ponekad nedostaje razgovor s ljudima.",
+          "textPl": "Ale ty masz kolegów blisko. Mnie czasem brakuje rozmowy z ludźmi.",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Istina. A kako imate sastanke?",
+          "textPl": "To prawda. A jak macie spotkania?",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Preko videopoziva, svaki ponedjeljak u devet.",
+          "textPl": "Przez wideorozmowę, w każdy poniedziałek o dziewiątej.",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Ile dni w tygodniu Ana pracuje z domu?",
+        "options": [
+          {
+            "id": "three",
+            "textPl": "Trzy"
+          },
+          {
+            "id": "five",
+            "textPl": "Pięć"
+          },
+          {
+            "id": "one",
+            "textPl": "Jeden"
+          }
+        ],
+        "correctOptionId": "three"
+      }
     }
   ]
 }

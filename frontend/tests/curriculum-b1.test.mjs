@@ -88,7 +88,7 @@ test('B1: generator — wygenerowane pliki są aktualne względem CSV', () => {
   assert.doesNotMatch(run.stderr, /Ostrzeżenia/, run.stderr);
 });
 
-const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije'];
+const MODULE_TITLES = ['Svakodnevica i navike', 'Uspomene i prošla ljeta', 'Želje i vikend planovi', 'Zdravlje, forma i savjeti', 'Uspoređivanje: Gdje je bolje?', 'Na putu: Trajekt, autocesta i smještaj', 'Stanovanje i dogovor s vlasnikom', 'Online kupovina i reklamacije', 'Posao, projekti i tim'];
 
 test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez zmian', () => {
   assert.equal(b1.available, true);
@@ -261,6 +261,22 @@ const OPEN_REPLIES = [
   { lesson: 'b1-08-05', reply: 0, hit: ['Želim uložiti reklamaciju na neispravan proizvod.', 'Zovem zbog reklamacije.', 'Htjela bih reklamirati tablet.'], miss: ['Reklamacija.'] },
   { lesson: 'b1-08-05', reply: 1, hit: ['Mobitel je neispravan, ne puni se.', 'Paket je stigao oštećen.'], miss: ['Mobitel.'] },
   { lesson: 'b1-08-05', reply: 2, hit: ['Tražim zamjenu, molim vas u najkraćem roku.', 'Molim vas da mi vratite novac.', 'Želim povrat novca.'], miss: ['Ne znam.'] },
+  // Moduł 9: -ima / -ama, rozmowa o pracę, praca zdalna, spotkanie.
+  { lesson: 'b1-09-01', reply: 0, hit: ['Radim s kolegama iz marketinga.', 'S klijentima.', 'Surađujem s partnerima iz Njemačke.', 'Radim sama.'], miss: ['Kolege.'] },
+  { lesson: 'b1-09-01', reply: 1, hit: ['Često imam sastanke s klijentima.', 'S partnerima.', 'Svaki tjedan imam sastanke sa šefom.'], miss: ['Klijenti.'] },
+  { lesson: 'b1-09-01', reply: 2, hit: ['Suradnja s klijentima je jako dobra.', 'Suradnja je odlična.', 'Odlična!', 'Nije loša.'], miss: ['Tim.'] },
+  { lesson: 'b1-09-02', reply: 0, hit: ['Na sastancima uvijek pričamo o novim projektima.', 'Pišem izvještaje.', 'Imam puno sastanaka.', 'Ovaj tjedan sam na poslovnom putovanju.'], miss: ['Posao.'] },
+  { lesson: 'b1-09-02', reply: 1, hit: ['Šaljem ih svim kolegama u odjelu.', 'Klijentima.', 'Šaljem izvještaje šefu.', 'Direktoru.'], miss: ['Izvještaj.'] },
+  { lesson: 'b1-09-02', reply: 2, hit: ['Razgovaramo o novim projektima.', 'O rokovima.', 'Uglavnom pričamo o klijentima i projektima.'], miss: ['Projekti.'] },
+  { lesson: 'b1-09-03', reply: 0, hit: ['Zato što volim raditi s ljudima.', 'Jer tražim novi izazov.', 'Vaša tvrtka ima odličan tim.'], miss: ['Posao.'] },
+  { lesson: 'b1-09-03', reply: 1, hit: ['Moja jaka strana je timski rad.', 'Dobar sam u komunikaciji.', 'Timski rad.', 'Jaka strana mi je organizacija.'], miss: ['Strana.'] },
+  { lesson: 'b1-09-03', reply: 2, hit: ['Imam pet godina radnog iskustva u turizmu.', 'Tri godine.', 'Nemam puno iskustva.', 'Radim kao konobar već dvije godine.'], miss: ['Iskustvo.'] },
+  { lesson: 'b1-09-04', reply: 0, hit: ['Dva dana tjedno radim od kuće.', 'U uredu.', 'Radim kombinirano.', 'Uglavnom radim od kuće.'], miss: ['Kuća.'] },
+  { lesson: 'b1-09-04', reply: 1, hit: ['U uredu je lakše surađivati s kolegama.', 'Od kuće mi je lakše.', 'Mislim da je ured bolji.'], miss: ['Ured.'] },
+  { lesson: 'b1-09-04', reply: 2, hit: ['Ovaj mjesec sam preopterećena poslom.', 'Moram predati izvještaj do petka.', 'Da, imam puno posla.', 'Ne.'], miss: ['Posao.'] },
+  { lesson: 'b1-09-05', reply: 0, hit: ['Ja ću voditi zapisnik.', 'Mogu ja.', 'Ja mogu.'], miss: ['Zapisnik.'] },
+  { lesson: 'b1-09-05', reply: 1, hit: ['Dobro, imamo sastanke s klijentima svaki tjedan.', 'Odlično.', 'Dobro, razgovaramo s partnerima svaki dan.'], miss: ['Klijenti.'] },
+  { lesson: 'b1-09-05', reply: 2, hit: ['Sljedeći korak je sastanak s klijentima.', 'Trebamo napisati izvještaj.', 'Moramo raspodijeliti zadatke.'], miss: ['Korak.'] },
 ];
 
 test('B1: otwarte repliki przyjmują naturalne odpowiedzi i odrzucają błędny szyk', () => {

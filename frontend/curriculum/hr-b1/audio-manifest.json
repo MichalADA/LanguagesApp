@@ -13,9 +13,10 @@
     5,
     6,
     7,
-    8
+    8,
+    9
   ],
-  "characters": 46277,
+  "characters": 51697,
   "items": [
     {
       "text": "A kako ide? Jesi li se naviknuo?",
@@ -16123,6 +16124,1950 @@
       ],
       "modules": [
         8
+      ]
+    },
+    {
+      "text": "A koliko radnog iskustva imate?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/a-koliko-radnog-iskustva-imate.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "A o čemu razgovarate na sastancima?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/a-o-cemu-razgovarate-na-sastancima.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "A s kim često imaš sastanke?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/a-s-kim-cesto-imas-sastanke-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "A s kim imaš najviše sastanaka?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/a-s-kim-imas-najvise-sastanaka.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "A slaba strana?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/a-slaba-strana.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Ana će voditi zapisnik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/ana-ce-voditi-zapisnik.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Buka me ometa.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/buka-me-ometa.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Često imam sastanke s klijentima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/cesto-imam-sastanke-s-klijentima.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Često sam na poslovnim putovanjima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/cesto-sam-na-poslovnim-putovanjima.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Često se dopisujem sa stranim klijentima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/cesto-se-dopisujem-sa-stranim-klijentima.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Danas imam važan sastanak s novim klijentima i kolegama.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/danas-imam-vazan-sastanak-s-novim-klijentima-i-kolegama.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Danas smo imali sastanak s klijentima. Razgovarali smo o novom projektu. Dogovoreno je da rok prebacimo na petak. Sljedeći korak je raspodijeliti zadatke.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/danas-smo-imali-sastanak-s-klijentima-razgovarali-smo-o-novo.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "dati otkaz",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dati-otkaz.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Direktor je danas na sastanku.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/direktor-je-danas-na-sastanku.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "direktor",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/direktor.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "dnevni red",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dnevni-red.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Dobar dan. Zašto ste se prijavili na naš natječaj?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dobar-dan-zasto-ste-se-prijavili-na-nas-natjecaj.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Dobro, imamo sastanke s klijentima svaki tjedan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dobro-imamo-sastanke-s-klijentima-svaki-tjedan.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Dobro jutro svima. Tko će voditi zapisnik?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/dobro-jutro-svima-tko-ce-voditi-zapisnik-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Dogovoreno. Hvala svima!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/dogovoreno-hvala-svima-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Dogovoreno je da rok prebacimo na petak.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dogovoreno-je-da-rok-prebacimo-na-petak.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "dogovoreno je",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dogovoreno-je.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "dopisivati se",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dopisivati-se.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "dopisujem se, dopisuješ se, dopisuje se, dopisujemo se, dopisujete se, dopisuju se. dopisivao se, dopisivala se, dopisivali se. dopisivat ću se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dopisujem-se-dopisujes-se-dopisuje-se-dopisujemo-se-dopisuje.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Drago mi je!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/drago-mi-je-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Drži se!",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/drzi-se-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "dužnost",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/duznost.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Dva dana tjedno radim od kuće.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/dva-dana-tjedno-radim-od-kuce.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "fleksibilan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/fleksibilan.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Hvala. Probni rad traje tri mjeseca.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/hvala-probni-rad-traje-tri-mjeseca.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Hvala vam, javit ćemo vam se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/hvala-vam-javit-cemo-vam-se.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Imam fleksibilno radno vrijeme.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/imam-fleksibilno-radno-vrijeme.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Imam pet godina radnog iskustva u turizmu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/imam-pet-godina-radnog-iskustva-u-turizmu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Imam pet godina radnog iskustva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/imam-pet-godina-radnog-iskustva.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Imam tri godine radnog iskustva u turizmu. Moja jaka strana je timski rad. Jako sam motivirana i volim nove izazove.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/imam-tri-godine-radnog-iskustva-u-turizmu-moja-jaka-strana-j.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Imamo puno stranih gostiju.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/imamo-puno-stranih-gostiju.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "izazov",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/izazov.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "izvještaj",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/izvjestaj.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Ja ću voditi zapisnik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/ja-cu-voditi-zapisnik.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "jaka strana",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/jaka-strana.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Jako je dobar. Redovito razgovara sa svim zaposlenicima.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/jako-je-dobar-redovito-razgovara-sa-svim-zaposlenicima-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Jako sam motiviran i volim nove izazove.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/jako-sam-motiviran-i-volim-nove-izazove.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Je li ti puno posla ovaj mjesec?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/je-li-ti-puno-posla-ovaj-mjesec-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Jedna od mojih dužnosti je pisanje izvještaja.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/jedna-od-mojih-duznosti-je-pisanje-izvjestaja.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Kada mogu očekivati vaš odgovor?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kada-mogu-ocekivati-vas-odgovor.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Kakva je suradnja u timu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/kakva-je-suradnja-u-timu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "kandidat",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kandidat.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Kantina je na prvom katu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kantina-je-na-prvom-katu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "kantina",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kantina.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "klijent",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/klijent.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Kod kuće imam dužu pauzu za ručak.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kod-kuce-imam-duzu-pauzu-za-rucak.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Koja je vaša jaka strana?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/koja-je-vasa-jaka-strana.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Koji je sljedeći korak?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/koji-je-sljedeci-korak-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Kolega je dao otkaz jer je našao bolji posao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kolega-je-dao-otkaz-jer-je-nasao-bolji-posao.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "kolektiv",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kolektiv.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "kombinirano",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kombinirano.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Kome šalješ izvještaje?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kome-saljes-izvjestaje.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "kritičan",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/kritican.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Ljudi često daju otkaz., Kolega je dao otkaz.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/ljudi-cesto-daju-otkaz-kolega-je-dao-otkaz.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "marketing",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/marketing.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Marko, kako ti je u novom timu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/marko-kako-ti-je-u-novom-timu.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Moja jaka strana je timski rad.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/moja-jaka-strana-je-timski-rad.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase",
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Moja slaba strana je to što ponekad radim presporo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/moja-slaba-strana-je-to-sto-ponekad-radim-presporo.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Moram odgovoriti klijentima do petka.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/moram-odgovoriti-klijentima-do-petka.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Moram odgovoriti klijentima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/moram-odgovoriti-klijentima.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Moram predati izvještaj do petka.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/moram-predati-izvjestaj-do-petka.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "motiviran",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/motiviran.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Na sastancima razgovaramo o novim projektima. Svaki petak šaljem izvještaje svim kolegama.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/na-sastancima-razgovaramo-o-novim-projektima-svaki-petak-sal.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "na sastancima, u tvrtkama",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/na-sastancima-u-tvrtkama.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Na sastancima uvijek pričamo o novim projektima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/na-sastancima-uvijek-pricamo-o-novim-projektima.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Naš kolektiv ima osam zaposlenika.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/nas-kolektiv-ima-osam-zaposlenika.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Naš tim surađuje s partnerima iz Njemačke.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/nas-tim-suradjuje-s-partnerima-iz-njemacke.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "natječaj",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/natjecaj.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Novi posao je veliki izazov.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/novi-posao-je-veliki-izazov.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "o novim projektima",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/o-novim-projektima.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "odjel",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/odjel.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Odlično. Kako ide suradnja s klijentima?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/odlicno-kako-ide-suradnja-s-klijentima-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "ometati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/ometati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Ovaj mjesec sam preopterećena poslom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/ovaj-mjesec-sam-preopterecena-poslom.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "partner",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/partner.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "pauza",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/pauza.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Pisanje izvještaja mi oduzima puno vremena.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/pisanje-izvjestaja-mi-oduzima-puno-vremena.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "pisanje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/pisanje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Pomažem novim kolegama u prvim tjednima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/pomazem-novim-kolegama-u-prvim-tjednima.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "pomoćnik",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/pomocnik.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Ponekad sam previše kritičan.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/ponekad-sam-previse-kritican-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Ponekad sam previše kritičan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/ponekad-sam-previse-kritican.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Poslodavac traži kandidate s radnim iskustvom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/poslodavac-trazi-kandidate-s-radnim-iskustvom.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "poslodavac",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/poslodavac.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "poslovni",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/poslovni.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "poslovno putovanje",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/poslovno-putovanje.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "prebacim, prebaciš, prebaci, prebacimo, prebacite, prebace. prebacio, prebacila, prebacili. prebacit ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/prebacim-prebacis-prebaci-prebacimo-prebacite-prebace-prebac.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "prebaciti",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/prebaciti.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "predajem, predaješ, predaje, predajemo, predajete, predaju. predavao, predavala, predavali. predavat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/predajem-predajes-predaje-predajemo-predajete-predaju-predav.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "predavati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/predavati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "pregovaram, pregovaraš, pregovara, pregovaramo, pregovarate, pregovaraju. pregovarao, pregovarala, pregovarali. pregovarat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/pregovaram-pregovaras-pregovara-pregovaramo-pregovarate-preg.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Pregovaramo s poslovnim partnerima iz Italije.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/pregovaramo-s-poslovnim-partnerima-iz-italije.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "pregovarati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/pregovarati.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "preopterećen",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/preopterecen.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "prezentacija",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/prezentacija.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Prijavio sam se jer volim raditi s ljudima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/prijavio-sam-se-jer-volim-raditi-s-ljudima.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Probni rad traje tri mjeseca.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/probni-rad-traje-tri-mjeseca.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "probni rad",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/probni-rad.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Prva točka dnevnog reda je novi projekt.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/prva-tocka-dnevnog-reda-je-novi-projekt.mp3",
+      "kinds": [
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Putovanje na posao traje sat vremena.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/putovanje-na-posao-traje-sat-vremena.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "putovanje na posao",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/putovanje-na-posao.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "rad od kuće",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/rad-od-kuce.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radim kombinirano, od kuće i u uredu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radim-kombinirano-od-kuce-i-u-uredu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radim s klijentima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radim-s-klijentima.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radim s kolegama iz cijele Hrvatske. Svaki tjedan imam sastanke s klijentima i partnerima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radim-s-kolegama-iz-cijele-hrvatske-svaki-tjedan-imam-sastan.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radim s kolegama iz marketinga.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radim-s-kolegama-iz-marketinga.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radim s kolegom iz Splita.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radim-s-kolegom-iz-splita.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radim u marketingu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radim-u-marketingu.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radio sam u velikim i malim tvrtkama.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radio-sam-u-velikim-i-malim-tvrtkama.mp3",
+      "kinds": [
+        "answer",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radiš li od kuće ili u uredu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/radis-li-od-kuce-ili-u-uredu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Radno iskustvo je važnije od diplome.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radno-iskustvo-je-vaznije-od-diplome.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "radno iskustvo",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/radno-iskustvo.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Raspodijelili smo zadatke među kolegama.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/raspodijelili-smo-zadatke-medju-kolegama.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "raspodijeliti zadatke",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/raspodijeliti-zadatke.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Razgovaram s kolegicama.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/razgovaram-s-kolegicama.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Razgovaramo o novim projektima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/razgovaramo-o-novim-projektima.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Razgovaramo o projektima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/razgovaramo-o-projektima.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Rok smo prebacili na sljedeći tjedan.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/rok-smo-prebacili-na-sljedeci-tjedan.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Ručam s kolegama u kantini.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/rucam-s-kolegama-u-kantini.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "S kim radiš na novom projektu?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/s-kim-radis-na-novom-projektu-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "S klijentima. Često se dopisujem i sa stranim partnerima.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/s-klijentima-cesto-se-dopisujem-i-sa-stranim-partnerima-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "s klijentom → s klijentima",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/s-klijentom-s-klijentima.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "s kolegicom → s kolegicama",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/s-kolegicom-s-kolegicama.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "s kolegom → s kolegama",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/s-kolegom-s-kolegama.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "s poslovnim partnerima",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/s-poslovnim-partnerima.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "s timom → s timovima",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/s-timom-s-timovima.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Šaljem ih svim kolegama u odjelu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/saljem-ih-svim-kolegama-u-odjelu.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Šaljem izvještaje svim kolegama u odjelu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/saljem-izvjestaje-svim-kolegama-u-odjelu.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Sastanak imamo preko videopoziva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/sastanak-imamo-preko-videopoziva.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "slaba strana",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/slaba-strana.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Sljedeći korak je sastanak s klijentima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/sljedeci-korak-je-sastanak-s-klijentima.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "sljedeći korak",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/sljedeci-korak.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Stalno prebacujemo rokove., Prebacili smo rok.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/stalno-prebacujemo-rokove-prebacili-smo-rok.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Što radiš na poslu ovaj tjedan?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/sto-radis-na-poslu-ovaj-tjedan.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Što ti je bolje?",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/sto-ti-je-bolje-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "strani",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/strani.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Super! Radim s kolegama iz Zagreba i Splita.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/super-radim-s-kolegama-iz-zagreba-i-splita-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "surađivati",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/suradjivati.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "surađujem, surađuješ, surađuje, surađujemo, surađujete, surađuju. surađivao, surađivala, surađivali. surađivat ću.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/suradjujem-suradjujes-suradjuje-suradjujemo-suradjujete-sura.mp3",
+      "kinds": [
+        "conjugation"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Suradnja s klijentima je jako dobra.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/suradnja-s-klijentima-je-jako-dobra.mp3",
+      "kinds": [
+        "answer",
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "suradnja",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/suradnja.mp3",
+      "kinds": [
+        "answer",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Sutra imam prezentaciju pred direktorima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/sutra-imam-prezentaciju-pred-direktorima.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Svaki tjedan predajem izvještaj., Moram predati izvještaj do petka.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/svaki-tjedan-predajem-izvjestaj-moram-predati-izvjestaj-do-p.mp3",
+      "kinds": [
+        "table"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Svaki tjedan predajem izvještaj šefu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/svaki-tjedan-predajem-izvjestaj-sefu.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Svaki tjedan predajem izvještaj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/svaki-tjedan-predajem-izvjestaj.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "tim",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/tim.mp3",
+      "kinds": [
+        "question",
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Timski rad. Imam pet godina radnog iskustva u velikim tvrtkama.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/timski-rad-imam-pet-godina-radnog-iskustva-u-velikim-tvrtkam-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "timski rad",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/timski-rad.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Tražimo kandidate s iskustvom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/trazimo-kandidate-s-iskustvom.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Trebam pomoćnika za ovaj projekt.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/trebam-pomocnika-za-ovaj-projekt.mp3",
+      "kinds": [
+        "example"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Tri dana tjedno radim od kuće, a dva u uredu. Ovaj tjedan moram predati izvještaj do petka.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/tri-dana-tjedno-radim-od-kuce-a-dva-u-uredu-ovaj-tjedan-mora.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "U uredu je lakše surađivati s kolegama.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/u-uredu-je-lakse-suradjivati-s-kolegama.mp3",
+      "kinds": [
+        "answer",
+        "question"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "videopoziv",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/videopoziv.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Vidio sam vaš natječaj za radno mjesto programera.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/vidio-sam-vas-natjecaj-za-radno-mjesto-programera.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Voditelj projekta razgovara sa zaposlenicima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/voditelj-projekta-razgovara-sa-zaposlenicima.mp3",
+      "kinds": [
+        "example",
+        "question"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "voditelj projekta",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/voditelj-projekta.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Volim raditi s kolegicama iz marketinga.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/volim-raditi-s-kolegicama-iz-marketinga.mp3",
+      "kinds": [
+        "answer",
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Volim raditi s ljudima, a vaša tvrtka ima odličan tim.",
+      "voice": "hr-HR-SreckoNeural",
+      "audioPath": "/audio/hr/b1/module-09/volim-raditi-s-ljudima-a-vasa-tvrtka-ima-odlican-tim-m.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Zaključak je da trebamo više ljudi.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/zakljucak-je-da-trebamo-vise-ljudi.mp3",
+      "kinds": [
+        "example",
+        "phrase"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "zaključak",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/zakljucak.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "zapisnik",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/zapisnik.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "zaposlenik",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/zaposlenik.mp3",
+      "kinds": [
+        "vocabulary"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Zašto ste se prijavili na naš natječaj?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/zasto-ste-se-prijavili-na-nas-natjecaj.mp3",
+      "kinds": [
+        "dialog",
+        "question"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Zato što volim raditi s ljudima.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/zato-sto-volim-raditi-s-ljudima.mp3",
+      "kinds": [
+        "answer"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Zvuči zanimljivo. A voditelj projekta?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/zvuci-zanimljivo-a-voditelj-projekta.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
+      ]
+    },
+    {
+      "text": "Zvuči zanimljivo!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "audioPath": "/audio/hr/b1/module-09/zvuci-zanimljivo.mp3",
+      "kinds": [
+        "dialog"
+      ],
+      "modules": [
+        9
       ]
     }
   ]

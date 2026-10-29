@@ -5,7 +5,7 @@
   "exportName": "HR_B1",
   "csv": "lexodromia_hr_B1_curriculum.csv",
   "listening": "public/data/listening/hr-b1-dialogues.json",
-  "modules": 8,
+  "modules": 9,
   "lessonsPerModule": 5,
   "special": {},
   "inherit": ["hr-a1", "hr-a2"]

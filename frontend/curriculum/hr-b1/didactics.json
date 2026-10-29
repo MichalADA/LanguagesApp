@@ -27,6 +27,9 @@
     },
     "8": {
       "description": "Kupujesz w internecie: zamawiasz, śledzisz przesyłkę, dzwonisz do obsługi klienta (Zovem da…), formalnie zwracasz towar (Kako bih…) i składasz reklamację."
+    },
+    "9": {
+      "description": "Mówisz o pracy w zespole: z kim pracujesz (s kolegama, s klijentima), o spotkaniach i projektach (jedna końcówka -ima / -ama), o rozmowie kwalifikacyjnej, pracy zdalnej i ustaleniach ze spotkania."
     }
   },
   "lessons": {
@@ -6591,6 +6594,839 @@
         ],
         "minSentences": 3,
         "sample": "Poštovani, prošli tjedan sam naručila tablet preko vaše internetske trgovine. Paket je stigao oštećen i tablet je neispravan. Molim vas da mi pošaljete zamjenu u najkraćem roku. Unaprijed hvala na odgovoru."
+      }
+    },
+    "b1-41": {
+      "grammar": {
+        "title": "S kolegom → s kolegama",
+        "text": "Z A2 znasz narzędnik liczby pojedynczej: raditi s kolegom, s kupcem. W liczbie mnogiej narzędnik ma końcówkę -ima (rodzaj męski i nijaki: s klijentima, s partnerima, s timovima) albo -ama (rodzaj żeński: s kolegicama). kolega odmienia się jak rzeczownik żeński: s kolegama. Przymiotnik: -im w lp. (s novim klijentom), -ima w lmn. (s novim klijentima).",
+        "table": [
+          {
+            "label": "narzędnik: z kim?",
+            "rows": [
+              {
+                "base": "klijent (m.)",
+                "form": "s klijentom → s klijentima",
+                "meaning": "z klientem → z klientami"
+              },
+              {
+                "base": "tim (m.)",
+                "form": "s timom → s timovima",
+                "meaning": "z zespołem → z zespołami"
+              },
+              {
+                "base": "kolegica (ż.)",
+                "form": "s kolegicom → s kolegicama",
+                "meaning": "z koleżanką → z koleżankami"
+              },
+              {
+                "base": "kolega (m. na -a)",
+                "form": "s kolegom → s kolegama",
+                "meaning": "z kolegą → z kolegami"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          3,
+          4,
+          6
+        ],
+        "tip": "Przed s / z na początku wyrazu mówisz sa: sa zaposlenicima, sa stranim klijentima."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "kolegicama"
+      },
+      "translate": [
+        {
+          "sentence": 2,
+          "accept": []
+        },
+        {
+          "sentence": 5,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 7,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Pracuję z klientami.",
+          "options": [
+            "Radim s klijentima.",
+            "Radim s klijentama.",
+            "Radim s klijenti."
+          ],
+          "correct": 0,
+          "explanation": "rodzaj męski → -ima: s klijentima."
+        },
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Rozmawiam z koleżankami.",
+          "options": [
+            "Razgovaram s kolegicama.",
+            "Razgovaram s kolegicima.",
+            "Razgovaram s kolegice."
+          ],
+          "correct": 0,
+          "explanation": "rodzaj żeński → -ama: s kolegicama."
+        }
+      ],
+      "model": {
+        "title": "Nowy zespół",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Marko, kako ti je u novom timu?",
+            "pl": "Marko, jak ci w nowym zespole?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Super! Radim s kolegama iz Zagreba i Splita.",
+            "pl": "Super! Pracuję z kolegami z Zagrzebia i Splitu."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A s kim imaš najviše sastanaka?",
+            "pl": "A z kim masz najwięcej spotkań?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "S klijentima. Često se dopisujem i sa stranim partnerima.",
+            "pl": "Z klientami. Często koresponduję też z zagranicznymi partnerami."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Zvuči zanimljivo. A voditelj projekta?",
+            "pl": "Brzmi ciekawie. A kierownik projektu?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Jako je dobar. Redovito razgovara sa svim zaposlenicima.",
+            "pl": "Bardzo dobry. Regularnie rozmawia ze wszystkimi pracownikami."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Z kim pracujesz?",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "S kim radiš na novom projektu?",
+            "pl": "Z kim pracujesz przy nowym projekcie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, z kim pracujesz (s kolegama, s klijentima…).",
+              "accept": [
+                "Radim s kolegama iz marketinga."
+              ],
+              "open": true,
+              "pattern": "^((radim|surađujem|ja radim) )?(s|sa) (\\p{L}+ )?\\p{L}+(ima|ama|om|em)( \\p{L}+){0,4}$|^(radim )?(sam|sama)( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "A s kim često imaš sastanke?",
+            "pl": "A z kim często masz spotkania?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, z kim masz spotkania (s klijentima, s partnerima…).",
+              "accept": [
+                "Često imam sastanke s klijentima."
+              ],
+              "open": true,
+              "pattern": "^((često|obično|svaki tjedan|ponekad|ja) )*(imam sastanke )?(s|sa) (\\p{L}+ )?\\p{L}+(ima|ama|om|em)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Kakva je suradnja u timu?",
+            "pl": "Jak wygląda współpraca w zespole?"
+          },
+          {
+            "reply": {
+              "prompt": "Opisz współpracę w zespole.",
+              "accept": [
+                5,
+                "Suradnja je odlična."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,3}(je|nije|su)( \\p{L}+){1,5}$|^(odlična|dobra|super|loša|nije loša|odlično|dobro)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "Drago mi je!",
+            "pl": "Cieszę się!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania: z kim pracujesz i z kim masz spotkania.",
+        "points": [
+          "s / sa + narzędnik liczby mnogiej",
+          "praca w zespole"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "s",
+              "sa"
+            ],
+            "label": "s / sa"
+          },
+          {
+            "any": [
+              "kolegama",
+              "klijentima",
+              "kolegicama",
+              "partnerima",
+              "zaposlenicima",
+              "sastancima",
+              "projektima",
+              "tvrtkama",
+              "direktorima",
+              "suradnicima",
+              "timovima",
+              "ljudima",
+              "kupcima"
+            ],
+            "label": "narzędnik l.mn. (-ima / -ama)"
+          }
+        ],
+        "sample": "Radim s kolegama iz cijele Hrvatske. Svaki tjedan imam sastanke s klijentima i partnerima."
+      }
+    },
+    "b1-42": {
+      "grammar": {
+        "title": "Jedna końcówka na trzy przypadki",
+        "text": "W liczbie mnogiej celownik (komu?), miejscownik (o kim? gdzie?) i narzędnik (z kim?) mają tę samą końcówkę: -ima w rodzaju męskim i nijakim, -ama w żeńskim. Šaljem izvještaje kolegama (komu), Na sastancima pričamo o projektima (gdzie, o czym), Pregovaramo s partnerima (z kim). Przymiotniki: -im / -ima — novim kolegama, na poslovnim putovanjima.",
+        "table": [
+          {
+            "label": "-ima / -ama",
+            "rows": [
+              {
+                "base": "komu? (celownik)",
+                "form": "Moram odgovoriti klijentima.",
+                "meaning": "Muszę odpowiedzieć klientom."
+              },
+              {
+                "base": "gdzie? (miejscownik)",
+                "form": "na sastancima, u tvrtkama",
+                "meaning": "na spotkaniach, w firmach"
+              },
+              {
+                "base": "o czym? (miejscownik)",
+                "form": "o novim projektima",
+                "meaning": "o nowych projektach"
+              },
+              {
+                "base": "z kim? (narzędnik)",
+                "form": "s poslovnim partnerima",
+                "meaning": "z partnerami biznesowymi"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "tip": "kolegama znaczy więc: kolegom, o kolegach i z kolegami — kontekst mówi, który przypadek."
+      },
+      "gap": {
+        "sentence": 1,
+        "word": "sastancima"
+      },
+      "translate": [
+        {
+          "sentence": 3,
+          "accept": []
+        },
+        {
+          "sentence": 8,
+          "accept": []
+        }
+      ],
+      "comprehend": 6,
+      "order": 10,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Rozmawiamy o projektach.",
+          "options": [
+            "Razgovaramo o projektima.",
+            "Razgovaramo o projektama.",
+            "Razgovaramo o projekte."
+          ],
+          "correct": 0,
+          "explanation": "rodzaj męski → -ima: o projektima."
+        }
+      ],
+      "listening": "b1-novi-projekt",
+      "dialog": {
+        "title": "Twój tydzień w pracy",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Što radiš na poslu ovaj tjedan?",
+            "pl": "Co robisz w pracy w tym tygodniu?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, co robisz (na sastancima…, pišem izvještaje…).",
+              "accept": [
+                1,
+                "Pišem izvještaje."
+              ],
+              "open": true,
+              "pattern": "^((ovaj tjedan|uglavnom|ja|svaki dan) )*(se )?{pres1}( se)?( \\p{L}+){0,6}$|^((ovaj tjedan|uglavnom|svaki dan) )*(sam|imam) \\p{L}+( \\p{L}+){0,5}$|^((ovaj tjedan|uglavnom|svaki dan) )*(na sastancima|na sastanku)( \\p{L}+){0,6}$"
+            }
+          },
+          {
+            "say": "Kome šalješ izvještaje?",
+            "pl": "Komu wysyłasz raporty?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, komu wysyłasz raporty (svim kolegama, klijentima…).",
+              "accept": [
+                "Šaljem ih svim kolegama u odjelu."
+              ],
+              "open": true,
+              "pattern": "^((šaljem ih|šaljem izvještaje|ja ih šaljem|šaljem) )?((svim|našim|novim|mojim|stranim) )?(\\p{L}+(ima|ama)|šefu|direktoru|voditelju|kolegi|klijentu)( \\p{L}+){0,4}$"
+            }
+          },
+          {
+            "say": "A o čemu razgovarate na sastancima?",
+            "pl": "A o czym rozmawiacie na spotkaniach?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, o czym rozmawiacie (o projektima, o rokovima…).",
+              "accept": [
+                "Razgovaramo o novim projektima."
+              ],
+              "open": true,
+              "pattern": "^((obično|uglavnom|najčešće|na sastancima) )*(razgovaramo |pričamo )?o (\\p{L}+ )?\\p{L}+( i (o )?(\\p{L}+ )?\\p{L}+)?( \\p{L}+){0,3}$"
+            }
+          },
+          {
+            "say": "Zvuči zanimljivo!",
+            "pl": "Brzmi ciekawie!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o swojej pracy z formami -ima / -ama (na sastancima, s kolegama, klijentima…).",
+        "points": [
+          "komu / z kim (kolegama, klijentima…)",
+          "gdzie / o czym (na sastancima, o projektima…)"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "kolegama",
+              "klijentima",
+              "kolegicama",
+              "partnerima",
+              "zaposlenicima",
+              "sastancima",
+              "projektima",
+              "tvrtkama",
+              "direktorima",
+              "suradnicima",
+              "timovima",
+              "ljudima",
+              "kupcima"
+            ],
+            "label": "-ima / -ama"
+          },
+          {
+            "any": [
+              "sastancima",
+              "sastanku",
+              "odjelu",
+              "tvrtki",
+              "tvrtkama",
+              "projektima",
+              "putovanjima"
+            ],
+            "label": "miejsce / temat"
+          }
+        ],
+        "sample": "Na sastancima razgovaramo o novim projektima. Svaki petak šaljem izvještaje svim kolegama."
+      }
+    },
+    "b1-43": {
+      "grammar": {
+        "title": "Moja jaka strana je…",
+        "text": "Z A2 znasz iskustvo, životopis i vještine. Na rozmowie przydadzą się: prijaviti se na natječaj (zgłosić się na ogłoszenie), Moja jaka strana je… / Moja slaba strana je… (mocna / słaba strona), kandidati s radnim iskustvom (s + narzędnik), pet godina radnog iskustva (dopełniacz po liczebniku). Do rekrutera mówisz na Vi: Kada mogu očekivati vaš odgovor?",
+        "table": [
+          {
+            "label": "na rozmowie",
+            "rows": [
+              {
+                "base": "motywacja",
+                "form": "Prijavio sam se jer volim raditi s ljudima.",
+                "meaning": "Zgłosiłem się, bo lubię pracować z ludźmi."
+              },
+              {
+                "base": "mocna strona",
+                "form": "Moja jaka strana je timski rad.",
+                "meaning": "Moją mocną stroną jest praca zespołowa."
+              },
+              {
+                "base": "doświadczenie",
+                "form": "Imam pet godina radnog iskustva.",
+                "meaning": "Mam pięć lat doświadczenia zawodowego."
+              },
+              {
+                "base": "pytanie",
+                "form": "Kada mogu očekivati vaš odgovor?",
+                "meaning": "Kiedy mogę spodziewać się odpowiedzi?"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          2,
+          3,
+          5,
+          8
+        ],
+        "tip": "jaka strana / slaba strana = mocna / słaba strona (dosłownie: silna / słaba strona)."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "jaka"
+      },
+      "translate": [
+        {
+          "sentence": 5,
+          "accept": []
+        },
+        {
+          "sentence": 8,
+          "accept": []
+        }
+      ],
+      "comprehend": 7,
+      "order": 6,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Szukamy kandydatów z doświadczeniem.",
+          "options": [
+            "Tražimo kandidate s iskustvom.",
+            "Tražimo kandidati s iskustvom.",
+            "Tražimo kandidate s iskustvo."
+          ],
+          "correct": 0,
+          "explanation": "tražiti + biernik (kandidate), s + narzędnik (s iskustvom)."
+        }
+      ],
+      "model": {
+        "title": "Rozmowa kwalifikacyjna",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "hr": "Dobar dan. Zašto ste se prijavili na naš natječaj?",
+            "pl": "Dzień dobry. Dlaczego zgłosił się pan na nasze ogłoszenie?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Volim raditi s ljudima, a vaša tvrtka ima odličan tim.",
+            "pl": "Lubię pracować z ludźmi, a pani firma ma świetny zespół."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Koja je vaša jaka strana?",
+            "pl": "Jaka jest pana mocna strona?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Timski rad. Imam pet godina radnog iskustva u velikim tvrtkama.",
+            "pl": "Praca zespołowa. Mam pięć lat doświadczenia w dużych firmach."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "A slaba strana?",
+            "pl": "A słaba strona?"
+          },
+          {
+            "speaker": "Marko",
+            "hr": "Ponekad sam previše kritičan.",
+            "pl": "Czasem jestem zbyt krytyczny."
+          },
+          {
+            "speaker": "Ana",
+            "hr": "Hvala. Probni rad traje tri mjeseca.",
+            "pl": "Dziękuję. Okres próbny trwa trzy miesiące."
+          }
+        ]
+      },
+      "dialog": {
+        "title": "Rozmowa o pracę",
+        "partner": "Ana",
+        "turns": [
+          {
+            "say": "Zašto ste se prijavili na naš natječaj?",
+            "pl": "Dlaczego zgłosił się pan na nasze ogłoszenie?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, dlaczego się zgłosiłeś / zgłosiłaś.",
+              "accept": [
+                "Zato što volim raditi s ljudima."
+              ],
+              "open": true,
+              "pattern": "^(zato što|jer|prijavio sam se jer|prijavila sam se jer|zbog)( \\p{L}+){1,8}$|^(volim|želim|htio bih|htjela bih|imam|vaša tvrtka|tražim)( \\p{L}+){1,8}$"
+            }
+          },
+          {
+            "say": "Koja je vaša jaka strana?",
+            "pl": "Jaka jest pana mocna strona?"
+          },
+          {
+            "reply": {
+              "prompt": "Podaj swoją mocną stronę (Moja jaka strana je…).",
+              "accept": [
+                3
+              ],
+              "open": true,
+              "pattern": "^((moja )?jaka strana (mi )?je|dobar sam u|dobra sam u|jako sam)( \\p{L}+){1,5}$|^(timski rad|komunikacija|organizacija|točnost|strpljenje|kreativnost)$"
+            }
+          },
+          {
+            "say": "A koliko radnog iskustva imate?",
+            "pl": "A ile ma pan doświadczenia zawodowego?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, ile masz doświadczenia (Imam … godina radnog iskustva…).",
+              "accept": [
+                8
+              ],
+              "open": true,
+              "pattern": "^(imam )?(\\p{L}+ )?(godinu|godine|godina|mjeseci|mjesec)( dana)?( radnog)?( iskustva)?( \\p{L}+){0,4}$|^nemam( puno)?( radnog)? iskustva( \\p{L}+){0,4}$|^radim( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "Hvala vam, javit ćemo vam se.",
+            "pl": "Dziękujemy, odezwiemy się do pana."
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2–3 zdania o sobie jak na rozmowie o pracę: doświadczenie, mocna strona, motywacja.",
+        "points": [
+          "doświadczenie",
+          "mocna strona",
+          "motywacja"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "iskustva",
+              "iskustvo",
+              "radim",
+              "radio",
+              "radila"
+            ],
+            "label": "doświadczenie"
+          },
+          {
+            "any": [
+              "jaka",
+              "strana",
+              "motiviran",
+              "motivirana",
+              "timski"
+            ],
+            "label": "mocna strona / motywacja"
+          }
+        ],
+        "sample": "Imam tri godine radnog iskustva u turizmu. Moja jaka strana je timski rad. Jako sam motivirana i volim nove izazove."
+      }
+    },
+    "b1-44": {
+      "grammar": {
+        "title": "Predajem / predao sam",
+        "text": "Organizacja pracy: rad od kuće (praca z domu), fleksibilno radno vrijeme, sastanak preko videopoziva (preko + dopełniacz). Nowe pary aspektowe: predavati → predati (oddawać / oddać raport), davati → dati (otkaz), prebacivati → prebaciti (przenosić / przenieść termin). Uwaga: dati otkaz = złożyć wypowiedzenie (robi to pracownik), dobiti otkaz = zostać zwolnionym.",
+        "table": [
+          {
+            "label": "niedokonany → dokonany",
+            "rows": [
+              {
+                "base": "predavati → predati",
+                "form": "Svaki tjedan predajem izvještaj. / Moram predati izvještaj do petka.",
+                "meaning": "Co tydzień oddaję raport. / Muszę oddać raport do piątku."
+              },
+              {
+                "base": "davati → dati",
+                "form": "Ljudi često daju otkaz. / Kolega je dao otkaz.",
+                "meaning": "Ludzie często się zwalniają. / Kolega złożył wypowiedzenie."
+              },
+              {
+                "base": "prebacivati → prebaciti",
+                "form": "Stalno prebacujemo rokove. / Prebacili smo rok.",
+                "meaning": "Ciągle przesuwamy terminy. / Przesunęliśmy termin."
+              }
+            ]
+          }
+        ],
+        "examples": [
+          1,
+          3,
+          4,
+          9
+        ],
+        "tip": "dati otkaz (złożyć wypowiedzenie) ≠ dobiti otkaz (zostać zwolnionym)."
+      },
+      "gap": {
+        "sentence": 3,
+        "word": "predati"
+      },
+      "translate": [
+        {
+          "sentence": 1,
+          "accept": []
+        },
+        {
+          "sentence": 7,
+          "accept": []
+        }
+      ],
+      "comprehend": 8,
+      "order": 4,
+      "choices": [
+        {
+          "instruction": "Wybierz poprawne zdanie.",
+          "prompt": "Co tydzień oddaję raport.",
+          "options": [
+            "Svaki tjedan predajem izvještaj.",
+            "Svaki tjedan predati izvještaj.",
+            "Svaki tjedan sam predao izvještaj."
+          ],
+          "correct": 0,
+          "explanation": "Co tydzień, regularnie → niedokonany w czasie teraźniejszym: predajem."
+        }
+      ],
+      "listening": "b1-rad-od-kuce",
+      "dialog": {
+        "title": "Praca zdalna",
+        "partner": "Marko",
+        "turns": [
+          {
+            "say": "Radiš li od kuće ili u uredu?",
+            "pl": "Pracujesz z domu czy w biurze?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, gdzie pracujesz (od kuće, u uredu, kombinirano…).",
+              "accept": [
+                1
+              ],
+              "open": true,
+              "pattern": "^((uglavnom|obično|ponekad|\\p{L}+ dana tjedno) )*(radim )?(od kuće|u uredu|i od kuće i u uredu|kombinirano)( \\p{L}+){0,5}$|^((uglavnom|obično|ponekad|\\p{L}+ dana tjedno) )*radim( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "Što ti je bolje?",
+            "pl": "Co jest dla ciebie lepsze?"
+          },
+          {
+            "reply": {
+              "prompt": "Porównaj (Od kuće mi je lakše…, u uredu je…).",
+              "accept": [
+                8,
+                "Od kuće mi je lakše."
+              ],
+              "open": true,
+              "pattern": "^(\\p{L}+ ){0,8}\\p{L}+(?:iji|ija|ije|ši|ša|še|ći|ća|će|lji|lja|lje|ži|ža|že)( \\p{L}+){0,8}$"
+            }
+          },
+          {
+            "say": "Je li ti puno posla ovaj mjesec?",
+            "pl": "Masz dużo pracy w tym miesiącu?"
+          },
+          {
+            "reply": {
+              "prompt": "Odpowiedz (Preopterećen sam… / Moram predati… do…).",
+              "accept": [
+                6,
+                3
+              ],
+              "open": true,
+              "pattern": "^((da|jest|je|ne|nije|ma|ovaj mjesec) )*((jako |malo )?(sam )?(preopterećen|preopterećena)( sam)?|moram predati|imam (puno|previše|malo))( \\p{L}+){0,5}$|^(da|ne|nije|jest)$"
+            }
+          },
+          {
+            "say": "Drži se!",
+            "pl": "Trzymaj się!"
+          }
+        ]
+      },
+      "free": {
+        "instruction": "Napisz 2 zdania o organizacji twojej pracy (z domu / z biura, terminy, raporty).",
+        "points": [
+          "gdzie i jak pracujesz",
+          "terminy i obowiązki"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "kuće",
+              "uredu",
+              "videopoziva",
+              "fleksibilno",
+              "fleksibilan",
+              "kombinirano"
+            ],
+            "label": "gdzie / jak pracujesz"
+          },
+          {
+            "any": [
+              "predati",
+              "predajem",
+              "rok",
+              "izvještaj",
+              "sastanak",
+              "prebacili"
+            ],
+            "label": "zadania i terminy"
+          }
+        ],
+        "sample": "Tri dana tjedno radim od kuće, a dva u uredu. Ovaj tjedan moram predati izvještaj do petka."
+      }
+    },
+    "b1-45": {
+      "grammar": {
+        "title": "Spotkanie — wszystko razem",
+        "text": "Z kim? s kolegama, s klijentima. Komu? kolegama, klijentima. Gdzie / o czym? na sastancima, o projektima. Na spotkaniu: dnevni red (agenda), zapisnik (protokół), zaključak je da… (wniosek jest taki, że…), sljedeći korak je… (następny krok to…), dogovoreno je da… (ustalono, że…).",
+        "examples": [
+          3,
+          4,
+          5
+        ]
+      },
+      "choices": [
+        {
+          "instruction": "Które zdanie jest poprawne?",
+          "prompt": "Rozdzieliliśmy zadania między kolegów.",
+          "options": [
+            "Raspodijelili smo zadatke među kolegama.",
+            "Raspodijelili smo zadatke među kolege.",
+            "Raspodijelili smo zadatke među kolegima."
+          ],
+          "correct": 0,
+          "explanation": "među + narzędnik; kolega → kolegama."
+        }
+      ],
+      "translate": [
+        {
+          "sentence": 6,
+          "accept": []
+        }
+      ],
+      "dialog": {
+        "title": "Spotkanie zespołu",
+        "partner": "Šef",
+        "turns": [
+          {
+            "say": "Dobro jutro svima. Tko će voditi zapisnik?",
+            "pl": "Dzień dobry wszystkim. Kto będzie prowadził protokół?"
+          },
+          {
+            "reply": {
+              "prompt": "Zgłoś się (Ja ću voditi zapisnik).",
+              "accept": [
+                "Ja ću voditi zapisnik."
+              ],
+              "open": true,
+              "pattern": "^((dobro jutro|može) )*(ja ću (voditi zapisnik|ga voditi|to napraviti)|mogu ja|ja mogu( voditi zapisnik)?)$"
+            }
+          },
+          {
+            "say": "Odlično. Kako ide suradnja s klijentima?",
+            "pl": "Świetnie. Jak idzie współpraca z klientami?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jak idzie współpraca (… s klijentima…).",
+              "accept": [
+                "Dobro, imamo sastanke s klijentima svaki tjedan."
+              ],
+              "open": true,
+              "pattern": "^((dobro|odlično|super|loše|nije loše) )?(\\p{L}+ ){0,8}\\p{L}+(ima|ama)( \\p{L}+){0,4}$|^(dobro|odlično|super|loše|nije loše)$"
+            }
+          },
+          {
+            "say": "Koji je sljedeći korak?",
+            "pl": "Jaki jest następny krok?"
+          },
+          {
+            "reply": {
+              "prompt": "Powiedz, jaki jest następny krok (Sljedeći korak je…).",
+              "accept": [
+                5
+              ],
+              "open": true,
+              "pattern": "^(sljedeći korak je|mislim da je sljedeći korak|trebamo|moramo)( \\p{L}+){1,6}$"
+            }
+          },
+          {
+            "say": "Dogovoreno. Hvala svima!",
+            "pl": "Ustalone. Dziękuję wszystkim!"
+          }
+        ]
+      },
+      "canDo": {
+        "instruction": "Napisz w 3–4 zdaniach krótką notatkę ze spotkania: kto był, o czym rozmawialiście i co ustalono.",
+        "points": [
+          "kto był (s kolegama, s klijentima…)",
+          "o czym rozmawialiście (o projektima…)",
+          "co ustalono i następny krok"
+        ],
+        "keywords": [
+          {
+            "any": [
+              "sastanku",
+              "sastanak",
+              "kolegama",
+              "klijentima",
+              "timom",
+              "partnerima"
+            ],
+            "label": "spotkanie / kto"
+          },
+          {
+            "any": [
+              "razgovarali",
+              "pričali",
+              "dogovorili",
+              "dogovoreno",
+              "zaključak"
+            ],
+            "label": "co ustalono"
+          },
+          {
+            "any": [
+              "korak",
+              "rok",
+              "zadatke",
+              "predati"
+            ],
+            "label": "następne kroki"
+          }
+        ],
+        "minSentences": 3,
+        "sample": "Danas smo imali sastanak s klijentima. Razgovarali smo o novom projektu. Dogovoreno je da rok prebacimo na petak. Sljedeći korak je raspodijeliti zadatke."
       }
     }
   }
