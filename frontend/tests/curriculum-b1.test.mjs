@@ -105,7 +105,8 @@ test('B1: poziom dostępny, każdy moduł ma 4 lekcje i powtórkę, A1 i A2 bez 
   // Postęp B1 liczy się osobno: nowy uczeń zaczyna od b1-01-01.
   assert.equal(deriveLevel(b1, new Set()).current.lesson.lesson.id, 'b1-01-01');
   assert.equal(nextLessonId(b1, 'b1-01-04'), 'b1-01-05');
-  for (let m = 1; m < MODULE_TITLES.length; m++) assert.equal(nextLessonId(b1, `b1-0${m}-05`), `b1-0${m + 1}-01`);
+  const pad = (n) => String(n).padStart(2, '0');
+  for (let m = 1; m < MODULE_TITLES.length; m++) assert.equal(nextLessonId(b1, `b1-${pad(m)}-05`), `b1-${pad(m + 1)}-01`);
   assert.equal(nextLessonId(b1, lessons.at(-1).id), null);
   assert.equal(lessons.length, 5 * MODULE_TITLES.length);
 });
