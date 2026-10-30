@@ -1,6 +1,6 @@
 import type { ListeningLevel, ListeningManifest } from "./types";
 
-export const AVAILABLE_LISTENING_LEVELS = ["A1", "A2"] as const satisfies readonly ListeningLevel[];
+export const AVAILABLE_LISTENING_LEVELS = ["A1", "A2", "B1"] as const satisfies readonly ListeningLevel[];
 
 export async function loadListeningManifest(level: ListeningLevel, signal?: AbortSignal): Promise<ListeningManifest> {
   if (!AVAILABLE_LISTENING_LEVELS.includes(level as (typeof AVAILABLE_LISTENING_LEVELS)[number])) {

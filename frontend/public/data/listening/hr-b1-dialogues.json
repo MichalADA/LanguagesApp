@@ -1,0 +1,1626 @@
+{
+  "version": 1,
+  "language": "hr",
+  "sourceLanguage": "pl",
+  "generatedWith": {
+    "provider": "Microsoft Edge online voices via edge-tts",
+    "voices": {
+      "ana": "hr-HR-GabrijelaNeural",
+      "marko": "hr-HR-SreckoNeural"
+    }
+  },
+  "dialogues": [
+    {
+      "id": "b1-kucanski-poslovi",
+      "level": "B1",
+      "titlePl": "Obowiązki domowe",
+      "titleEn": "Household chores",
+      "topic": "dom",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, dok ja usisavam, možeš li ti oprati suđe?",
+          "textPl": "Marko, kiedy ja będę odkurzać, możesz pozmywać naczynia?",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Mogu, ali prvo moram završiti jedan e-mail.",
+          "textPl": "Mogę, ale najpierw muszę skończyć jednego maila.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Dobro. U međuvremenu ću glačati košulje.",
+          "textPl": "Dobrze. W międzyczasie wyprasuję koszule.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Hvala ti! Dok ti glačaš, ja ću skuhati ručak.",
+          "textPl": "Dzięki! Kiedy ty będziesz prasować, ja ugotuję obiad.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Odlično. Onda ćemo ručati u jedan.",
+          "textPl": "Świetnie. To zjemy obiad o pierwszej.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dogovoreno. Smeta li ti glazba dok radiš?",
+          "textPl": "Umowa stoi. Przeszkadza ci muzyka, kiedy pracujesz?",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/06-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ne smeta, samo neka ne bude preglasno.",
+          "textPl": "Nie przeszkadza, byle nie za głośno.",
+          "audioPath": "/audio/listening/hr-b1/b1-kucanski-poslovi/07-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co zrobi Marko, kiedy Ana będzie prasować?",
+        "options": [
+          {
+            "id": "lunch",
+            "textPl": "Ugotuje obiad"
+          },
+          {
+            "id": "shopping",
+            "textPl": "Pójdzie na zakupy"
+          },
+          {
+            "id": "windows",
+            "textPl": "Umyje okna"
+          }
+        ],
+        "correctOptionId": "lunch"
+      }
+    },
+    {
+      "id": "b1-nove-navike",
+      "level": "B1",
+      "titlePl": "Nowe nawyki",
+      "titleEn": "New habits",
+      "topic": "zdrowie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, izgledaš odlično! Što radiš?",
+          "textPl": "Ana, świetnie wyglądasz! Co robisz?",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Hvala! Prije dva mjeseca počela sam trčati tri puta tjedno.",
+          "textPl": "Dzięki! Dwa miesiące temu zaczęłam biegać trzy razy w tygodniu.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Svaka čast! Ja stalno želim početi, ali nikad ne uspijem.",
+          "textPl": "Brawo! Ja ciągle chcę zacząć, ale nigdy mi się nie udaje.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "I meni je bilo teško, ali sad sam se naviknula i ustajem u šest.",
+          "textPl": "Mnie też było trudno, ale teraz się przyzwyczaiłam i wstaję o szóstej.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "U šest? Ja se ne mogu naviknuti na rano ustajanje.",
+          "textPl": "O szóstej? Ja nie mogę się przyzwyczaić do wczesnego wstawania.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onda trči navečer! Najvažnije je ne prestati.",
+          "textPl": "To biegaj wieczorem! Najważniejsze, żeby nie przestać.",
+          "audioPath": "/audio/listening/hr-b1/b1-nove-navike/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Jak często biega Ana?",
+        "options": [
+          {
+            "id": "three",
+            "textPl": "Trzy razy w tygodniu"
+          },
+          {
+            "id": "daily",
+            "textPl": "Codziennie rano"
+          },
+          {
+            "id": "weekend",
+            "textPl": "Tylko w weekendy"
+          }
+        ],
+        "correctOptionId": "three"
+      }
+    },
+    {
+      "id": "b1-dolazak-u-apartman",
+      "level": "B1",
+      "titlePl": "Przyjazd do apartamentu",
+      "titleEn": "Arriving at the apartment",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, stigli smo! Čim se smjestimo, idemo na plažu.",
+          "textPl": "Ana, dotarliśmy! Gdy tylko się rozgościmy, idziemy na plażę.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Polako, prvo se moramo raspakirati.",
+          "textPl": "Powoli, najpierw musimy się rozpakować.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Hm, tek sad sam primijetio da nemamo ključ od apartmana.",
+          "textPl": "Hm, dopiero teraz zauważyłem, że nie mamy klucza do apartamentu.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Vlasnik je rekao da će doći čim mu pošaljemo poruku.",
+          "textPl": "Właściciel powiedział, że przyjdzie, gdy tylko wyślemy mu wiadomość.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobro, odmah ću mu poslati poruku.",
+          "textPl": "Dobrze, od razu wyślę mu wiadomość.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Super. A ja ću u međuvremenu potražiti dobar restoran.",
+          "textPl": "Super. A ja w międzyczasie poszukam dobrej restauracji.",
+          "audioPath": "/audio/listening/hr-b1/b1-dolazak-u-apartman/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Na co czekają Ana i Marko?",
+        "options": [
+          {
+            "id": "owner",
+            "textPl": "Na właściciela z kluczem"
+          },
+          {
+            "id": "taxi",
+            "textPl": "Na taksówkę"
+          },
+          {
+            "id": "beach",
+            "textPl": "Na otwarcie plaży"
+          }
+        ],
+        "correctOptionId": "owner"
+      }
+    },
+    {
+      "id": "b1-izgubljeni-u-dubrovniku",
+      "level": "B1",
+      "titlePl": "Zgubieni w Dubrowniku",
+      "titleEn": "Lost in Dubrovnik",
+      "topic": "wspomnienia",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, sjećaš li se kad smo se izgubili u Dubrovniku?",
+          "textPl": "Marko, pamiętasz, jak zgubiliśmy się w Dubrowniku?",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Kako ne! Tražili smo hotel dva sata.",
+          "textPl": "Jak mógłbym nie pamiętać! Szukaliśmy hotelu dwie godziny.",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "A onda smo slučajno ušli u mali restoran na kraju ulice.",
+          "textPl": "A potem przypadkiem weszliśmy do małej restauracji na końcu ulicy.",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "I tamo smo pojeli najbolju ribu u životu!",
+          "textPl": "I tam zjedliśmy najlepszą rybę w życiu!",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Konobar nam je na kraju pokazao put do hotela.",
+          "textPl": "Kelner na koniec pokazał nam drogę do hotelu.",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "To je bila prava avantura. Nikad je neću zaboraviti.",
+          "textPl": "To była prawdziwa przygoda. Nigdy jej nie zapomnę.",
+          "audioPath": "/audio/listening/hr-b1/b1-izgubljeni-u-dubrovniku/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Kto pokazał im drogę do hotelu?",
+        "options": [
+          {
+            "id": "waiter",
+            "textPl": "Kelner"
+          },
+          {
+            "id": "police",
+            "textPl": "Policjant"
+          },
+          {
+            "id": "reception",
+            "textPl": "Recepcjonista"
+          }
+        ],
+        "correctOptionId": "waiter"
+      }
+    },
+    {
+      "id": "b1-planovi-za-vikend",
+      "level": "B1",
+      "titlePl": "Plany na weekend",
+      "titleEn": "Weekend plans",
+      "topic": "czas wolny",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, imaš li planove za vikend?",
+          "textPl": "Marko, masz plany na weekend?",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Još ne. Mogli bismo nešto raditi zajedno.",
+          "textPl": "Jeszcze nie. Moglibyśmy coś porobić razem.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Kako bi bilo da odemo na piknik u Maksimir?",
+          "textPl": "A może byśmy poszli na piknik do Maksimiru?",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Bilo bi super! Mogli bismo pozvati i Ivana.",
+          "textPl": "Byłoby super! Moglibyśmy zaprosić też Ivana.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Odlično. Ja bih ponijela sendviče, a ti bi mogao kupiti piće.",
+          "textPl": "Świetnie. Ja wzięłabym kanapki, a ty mógłbyś kupić napoje.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dogovoreno. Odgovara li ti subota u podne?",
+          "textPl": "Umowa stoi. Pasuje ci sobota w południe?",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-vikend/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co ma kupić Marko?",
+        "options": [
+          {
+            "id": "drinks",
+            "textPl": "Napoje"
+          },
+          {
+            "id": "sandwiches",
+            "textPl": "Kanapki"
+          },
+          {
+            "id": "tickets",
+            "textPl": "Bilety do parku"
+          }
+        ],
+        "correctOptionId": "drinks"
+      }
+    },
+    {
+      "id": "b1-teska-odluka",
+      "level": "B1",
+      "titlePl": "Trudna decyzja",
+      "titleEn": "A difficult decision",
+      "topic": "praca",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, dobio sam ponudu za posao u Zagrebu.",
+          "textPl": "Ana, dostałem ofertę pracy w Zagrzebiu.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Super! Hoćeš li je prihvatiti?",
+          "textPl": "Super! Przyjmiesz ją?",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ne znam, dvoumim se. Plaća je bolja, ali morao bih se preseliti.",
+          "textPl": "Nie wiem, waham się. Pensja jest lepsza, ale musiałbym się przeprowadzić.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Na tvom mjestu bih prihvatila. Zagreb je lijep grad.",
+          "textPl": "Na twoim miejscu bym przyjęła. Zagrzeb to ładne miasto.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Možda. Ali radije bih ostao blizu obitelji.",
+          "textPl": "Może. Ale wolałbym zostać blisko rodziny.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onda pitaj možeš li raditi od kuće dva dana tjedno.",
+          "textPl": "To zapytaj, czy możesz pracować z domu dwa dni w tygodniu.",
+          "audioPath": "/audio/listening/hr-b1/b1-teska-odluka/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Dlaczego Marko się waha?",
+        "options": [
+          {
+            "id": "move",
+            "textPl": "Musiałby się przeprowadzić"
+          },
+          {
+            "id": "salary",
+            "textPl": "Pensja jest gorsza"
+          },
+          {
+            "id": "city",
+            "textPl": "Nie lubi Zagrzebia"
+          }
+        ],
+        "correctOptionId": "move"
+      }
+    },
+    {
+      "id": "b1-kod-lijecnika",
+      "level": "B1",
+      "titlePl": "U lekarza",
+      "titleEn": "At the doctor's",
+      "topic": "zdrowie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Dobar dan, doktore. Već tri dana me boli grlo.",
+          "textPl": "Dzień dobry, panie doktorze. Od trzech dni boli mnie gardło.",
+          "audioPath": "/audio/listening/hr-b1/b1-kod-lijecnika/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Otvorite usta, molim. Da, grlo je crveno, imate upalu.",
+          "textPl": "Proszę otworzyć usta. Tak, gardło jest czerwone, ma pani zapalenie.",
+          "audioPath": "/audio/listening/hr-b1/b1-kod-lijecnika/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Trebam li antibiotik?",
+          "textPl": "Potrzebuję antybiotyku?",
+          "audioPath": "/audio/listening/hr-b1/b1-kod-lijecnika/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ne, nemojte odmah uzimati antibiotik. Pijte puno čaja i odmarajte se.",
+          "textPl": "Nie, proszę od razu nie brać antybiotyku. Proszę pić dużo herbaty i odpoczywać.",
+          "audioPath": "/audio/listening/hr-b1/b1-kod-lijecnika/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Mogu li ići na posao?",
+          "textPl": "Mogę iść do pracy?",
+          "audioPath": "/audio/listening/hr-b1/b1-kod-lijecnika/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Nemojte ići na posao barem dva dana. Ako ne bude bolje, dođite opet.",
+          "textPl": "Proszę nie iść do pracy przynajmniej dwa dni. Jeśli nie będzie lepiej, proszę przyjść ponownie.",
+          "audioPath": "/audio/listening/hr-b1/b1-kod-lijecnika/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co lekarz radzi Anie?",
+        "options": [
+          {
+            "id": "tea",
+            "textPl": "Pić herbatę i odpoczywać"
+          },
+          {
+            "id": "antibiotic",
+            "textPl": "Brać antybiotyk"
+          },
+          {
+            "id": "work",
+            "textPl": "Iść jutro do pracy"
+          }
+        ],
+        "correctOptionId": "tea"
+      }
+    },
+    {
+      "id": "b1-zdrav-zivot",
+      "level": "B1",
+      "titlePl": "Zdrowe życie",
+      "titleEn": "Healthy living",
+      "topic": "zdrowie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, kako uspijevaš imati toliko energije?",
+          "textPl": "Ana, jak ci się udaje mieć tyle energii?",
+          "audioPath": "/audio/listening/hr-b1/b1-zdrav-zivot/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Pazim na prehranu i svaki dan se krećem barem pola sata.",
+          "textPl": "Dbam o dietę i codziennie ruszam się przynajmniej pół godziny.",
+          "audioPath": "/audio/listening/hr-b1/b1-zdrav-zivot/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ja stalno jedem brzu hranu jer nemam vremena kuhati.",
+          "textPl": "Ja ciągle jem fast food, bo nie mam czasu gotować.",
+          "audioPath": "/audio/listening/hr-b1/b1-zdrav-zivot/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Probaj kuhati nedjeljom za cijeli tjedan.",
+          "textPl": "Spróbuj gotować w niedziele na cały tydzień.",
+          "audioPath": "/audio/listening/hr-b1/b1-zdrav-zivot/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobra ideja. A što radiš protiv stresa?",
+          "textPl": "Dobry pomysł. A co robisz przeciw stresowi?",
+          "audioPath": "/audio/listening/hr-b1/b1-zdrav-zivot/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Izbjegavam mobitel navečer i rano idem spavati.",
+          "textPl": "Unikam telefonu wieczorem i wcześnie chodzę spać.",
+          "audioPath": "/audio/listening/hr-b1/b1-zdrav-zivot/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co Ana robi przeciw stresowi?",
+        "options": [
+          {
+            "id": "phone",
+            "textPl": "Unika telefonu wieczorem i wcześnie chodzi spać"
+          },
+          {
+            "id": "cook",
+            "textPl": "Gotuje w niedziele"
+          },
+          {
+            "id": "fastfood",
+            "textPl": "Je fast food"
+          }
+        ],
+        "correctOptionId": "phone"
+      }
+    },
+    {
+      "id": "b1-ljeto-ili-jesen",
+      "level": "B1",
+      "titlePl": "Sierpień czy wrzesień?",
+      "titleEn": "August or September?",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, kad idemo na more, u kolovozu ili u rujnu?",
+          "textPl": "Marko, kiedy jedziemy nad morze, w sierpniu czy we wrześniu?",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Radije u rujnu. Izvan sezone je sve jeftinije.",
+          "textPl": "Wolałbym we wrześniu. Poza sezonem wszystko jest tańsze.",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Istina, a i plaže su mirnije.",
+          "textPl": "To prawda, a i plaże są spokojniejsze.",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ali moramo rezervirati unaprijed. Što prije, to bolje.",
+          "textPl": "Ale musimy zarezerwować z wyprzedzeniem. Im wcześniej, tym lepiej.",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Vidjela sam apartman s popustom od petnaest posto.",
+          "textPl": "Widziałam apartament ze zniżką piętnaście procent.",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Super, rezerviraj ga odmah!",
+          "textPl": "Super, rezerwuj go od razu!",
+          "audioPath": "/audio/listening/hr-b1/b1-ljeto-ili-jesen/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Dlaczego Marko woli wrzesień?",
+        "options": [
+          {
+            "id": "cheaper",
+            "textPl": "Poza sezonem jest taniej"
+          },
+          {
+            "id": "warmer",
+            "textPl": "We wrześniu jest cieplej"
+          },
+          {
+            "id": "holiday",
+            "textPl": "Ma wtedy urlop"
+          }
+        ],
+        "correctOptionId": "cheaper"
+      }
+    },
+    {
+      "id": "b1-sjever-ili-jug",
+      "level": "B1",
+      "titlePl": "Wschód czy zachód?",
+      "titleEn": "East or west?",
+      "topic": "regiony",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, ti si iz Osijeka, zar ne? Kakav je život na istoku?",
+          "textPl": "Ana, ty jesteś z Osijeku, prawda? Jakie jest życie na wschodzie?",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Mirniji je nego u Zagrebu, a stanovi su znatno jeftiniji.",
+          "textPl": "Spokojniejsze niż w Zagrzebiu, a mieszkania są znacznie tańsze.",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "A zima?",
+          "textPl": "A zima?",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Zime su hladne i često ima magle. Zato ljeti idem na jug.",
+          "textPl": "Zimy są zimne i często jest mgła. Dlatego latem jeżdżę na południe.",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ja sam iz Rijeke. Kod nas zimi puše bura, ali je toplije.",
+          "textPl": "Ja jestem z Rijeki. U nas zimą wieje bora, ale jest cieplej.",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onda bih ja zimi radije živjela kod tebe!",
+          "textPl": "To ja zimą wolałabym mieszkać u ciebie!",
+          "audioPath": "/audio/listening/hr-b1/b1-sjever-ili-jug/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co Ana mówi o mieszkaniach na wschodzie?",
+        "options": [
+          {
+            "id": "cheaper",
+            "textPl": "Są znacznie tańsze"
+          },
+          {
+            "id": "expensive",
+            "textPl": "Są droższe niż w Zagrzebiu"
+          },
+          {
+            "id": "bigger",
+            "textPl": "Są większe"
+          }
+        ],
+        "correctOptionId": "cheaper"
+      }
+    },
+    {
+      "id": "b1-u-trajektnoj-luci",
+      "level": "B1",
+      "titlePl": "W porcie promowym",
+      "titleEn": "At the ferry port",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Oprostite, gdje se ulazi na trajekt za Brač?",
+          "textPl": "Przepraszam, gdzie się wjeżdża na prom na Brač?",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Prođite pored blagajne i skrenite lijevo.",
+          "textPl": "Proszę przejechać obok kasy i skręcić w lewo.",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Moram li izaći iz auta tijekom vožnje?",
+          "textPl": "Czy muszę wysiąść z auta w czasie rejsu?",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, za vrijeme vožnje putnici moraju izaći iz auta i popeti se na palubu.",
+          "textPl": "Tak, w czasie rejsu pasażerowie muszą wysiąść z auta i wejść na pokład.",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Hvala. A kad počinje ukrcaj?",
+          "textPl": "Dziękuję. A kiedy zaczyna się wjazd na prom?",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ukrcaj počinje pola sata prije polaska.",
+          "textPl": "Wjazd zaczyna się pół godziny przed odpłynięciem.",
+          "audioPath": "/audio/listening/hr-b1/b1-u-trajektnoj-luci/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co muszą zrobić pasażerowie w czasie rejsu?",
+        "options": [
+          {
+            "id": "deck",
+            "textPl": "Wysiąść z auta i wejść na pokład"
+          },
+          {
+            "id": "car",
+            "textPl": "Zostać w aucie"
+          },
+          {
+            "id": "ticket",
+            "textPl": "Kupić bilet na pokładzie"
+          }
+        ],
+        "correctOptionId": "deck"
+      }
+    },
+    {
+      "id": "b1-propustili-smo-vlak",
+      "level": "B1",
+      "titlePl": "Uciekł nam pociąg",
+      "titleEn": "We missed the train",
+      "topic": "podróże",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, požuri! Vlak polazi za pet minuta.",
+          "textPl": "Marko, pospiesz się! Pociąg odjeżdża za pięć minut.",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Evo me! Gdje je peron?",
+          "textPl": "Już jestem! Gdzie jest peron?",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Moramo proći kroz podzemni prolaz.",
+          "textPl": "Musimy przejść przejściem podziemnym.",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ajme, vlak je upravo otišao!",
+          "textPl": "O nie, pociąg właśnie odjechał!",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ništa, pogledat ću red vožnje. Sljedeći polazi za sat vremena.",
+          "textPl": "Nic, sprawdzę rozkład jazdy. Następny odjeżdża za godzinę.",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobro, ali u Zagrebu ćemo morati presjesti.",
+          "textPl": "Dobrze, ale w Zagrzebiu będziemy musieli się przesiąść.",
+          "audioPath": "/audio/listening/hr-b1/b1-propustili-smo-vlak/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Kiedy odjeżdża następny pociąg?",
+        "options": [
+          {
+            "id": "hour",
+            "textPl": "Za godzinę"
+          },
+          {
+            "id": "five",
+            "textPl": "Za pięć minut"
+          },
+          {
+            "id": "tomorrow",
+            "textPl": "Jutro rano"
+          }
+        ],
+        "correctOptionId": "hour"
+      }
+    },
+    {
+      "id": "b1-razgledavanje-stana",
+      "level": "B1",
+      "titlePl": "Oglądanie mieszkania",
+      "titleEn": "Viewing a flat",
+      "topic": "mieszkanie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Ovo je dnevni boravak. Ima tri velika prozora.",
+          "textPl": "To jest salon. Ma trzy duże okna.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Lijepo, ali vidim samo dvije utičnice.",
+          "textPl": "Ładnie, ale widzę tylko dwa gniazdka.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, nema puno utičnica, ali možete koristiti produžni kabel.",
+          "textPl": "Tak, nie ma wielu gniazdek, ale może pan używać przedłużacza.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Koliko ima ormara?",
+          "textPl": "Ile jest szaf?",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ima dva ormara i nekoliko polica.",
+          "textPl": "Są dwie szafy i kilka półek.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobro. A koliko stanova ima u zgradi?",
+          "textPl": "Dobrze. A ile mieszkań jest w budynku?",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/06-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Dvanaest stanova, a susjedi su jako mirni.",
+          "textPl": "Dwanaście mieszkań, a sąsiedzi są bardzo spokojni.",
+          "audioPath": "/audio/listening/hr-b1/b1-razgledavanje-stana/07-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Ile mieszkań jest w budynku?",
+        "options": [
+          {
+            "id": "twelve",
+            "textPl": "Dwanaście"
+          },
+          {
+            "id": "three",
+            "textPl": "Trzy"
+          },
+          {
+            "id": "two",
+            "textPl": "Dwa"
+          }
+        ],
+        "correctOptionId": "twelve"
+      }
+    },
+    {
+      "id": "b1-novi-stan",
+      "level": "B1",
+      "titlePl": "Nowe mieszkanie",
+      "titleEn": "The new flat",
+      "topic": "mieszkanie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, kako napreduje uređenje stana?",
+          "textPl": "Ana, jak idzie urządzanie mieszkania?",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Polako. Obojili smo zidove, ali još nam nedostaje puno stvari.",
+          "textPl": "Powoli. Pomalowaliśmy ściany, ale wciąż brakuje nam wielu rzeczy.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Što vam najviše nedostaje?",
+          "textPl": "Czego najbardziej wam brakuje?",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Stol za kuhinju i nekoliko stolica.",
+          "textPl": "Stołu do kuchni i kilku krzeseł.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Moj brat prodaje rabljeni stol, skoro nov.",
+          "textPl": "Mój brat sprzedaje używany stół, prawie nowy.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Super! Nazvat ću ga danas.",
+          "textPl": "Super! Zadzwonię do niego dziś.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-stan/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Czego Anie najbardziej brakuje?",
+        "options": [
+          {
+            "id": "table",
+            "textPl": "Stołu do kuchni i krzeseł"
+          },
+          {
+            "id": "paint",
+            "textPl": "Farby do ścian"
+          },
+          {
+            "id": "sofa",
+            "textPl": "Kanapy"
+          }
+        ],
+        "correctOptionId": "table"
+      }
+    },
+    {
+      "id": "b1-gdje-je-moj-paket",
+      "level": "B1",
+      "titlePl": "Gdzie jest moja paczka?",
+      "titleEn": "Where is my parcel?",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Dobar dan, zovem da provjerim status svoje narudžbe.",
+          "textPl": "Dzień dobry, dzwonię, żeby sprawdzić status mojego zamówienia.",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Naravno. Koji je vaš broj narudžbe?",
+          "textPl": "Oczywiście. Jaki jest pana numer zamówienia?",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Četiri, pet, sedam, dva, jedan.",
+          "textPl": "Cztery, pięć, siedem, dwa, jeden.",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Vaša pošiljka je trenutno u dostavi. Kurir će doći danas do osamnaest sati.",
+          "textPl": "Pana przesyłka jest obecnie w doręczeniu. Kurier przyjedzie dziś do osiemnastej.",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Odlično. Mogu li platiti karticom kad dođe?",
+          "textPl": "Świetnie. Mogę zapłacić kartą, kiedy przyjedzie?",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ne trebate, platili ste već pri narudžbi.",
+          "textPl": "Nie trzeba, zapłacił pan już przy zamówieniu.",
+          "audioPath": "/audio/listening/hr-b1/b1-gdje-je-moj-paket/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Do której przyjedzie kurier?",
+        "options": [
+          {
+            "id": "six",
+            "textPl": "Do osiemnastej"
+          },
+          {
+            "id": "noon",
+            "textPl": "Do południa"
+          },
+          {
+            "id": "tomorrow",
+            "textPl": "Jutro rano"
+          }
+        ],
+        "correctOptionId": "six"
+      }
+    },
+    {
+      "id": "b1-ostecen-paket",
+      "level": "B1",
+      "titlePl": "Uszkodzona paczka",
+      "titleEn": "A damaged parcel",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Dobar dan, jučer sam dobila paket, ali je kutija bila oštećena.",
+          "textPl": "Dzień dobry, wczoraj dostałam paczkę, ale pudełko było uszkodzone.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Žao mi je. Je li i proizvod oštećen?",
+          "textPl": "Przykro mi. Czy produkt też jest uszkodzony?",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, ekran na tabletu je razbijen.",
+          "textPl": "Tak, ekran tabletu jest rozbity.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Pošaljite nam fotografiju oštećenja, molim.",
+          "textPl": "Proszę przesłać nam zdjęcie uszkodzenia.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Već sam je poslala. Želim zamjenu, a ne povrat novca.",
+          "textPl": "Już je wysłałam. Chcę wymiany, a nie zwrotu pieniędzy.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "U redu, novi tablet ćemo vam dostaviti za dva dana.",
+          "textPl": "W porządku, nowy tablet dostarczymy pani w ciągu dwóch dni.",
+          "audioPath": "/audio/listening/hr-b1/b1-ostecen-paket/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Czego chce Ana?",
+        "options": [
+          {
+            "id": "swap",
+            "textPl": "Wymiany tabletu"
+          },
+          {
+            "id": "refund",
+            "textPl": "Zwrotu pieniędzy"
+          },
+          {
+            "id": "repair",
+            "textPl": "Naprawy w serwisie"
+          }
+        ],
+        "correctOptionId": "swap"
+      }
+    },
+    {
+      "id": "b1-novi-projekt",
+      "level": "B1",
+      "titlePl": "Nowy projekt",
+      "titleEn": "A new project",
+      "topic": "praca",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, kako ide novi projekt?",
+          "textPl": "Marko, jak idzie nowy projekt?",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobro, ali imam previše sastanaka. Svaki dan sam na sastancima s klijentima.",
+          "textPl": "Dobrze, ale mam za dużo spotkań. Codziennie jestem na spotkaniach z klientami.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "A tko piše izvještaje?",
+          "textPl": "A kto pisze raporty?",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ja, i šaljem ih svim kolegama u odjelu.",
+          "textPl": "Ja, i wysyłam je wszystkim kolegom w dziale.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Trebao bi zamoliti voditelja da ti da pomoćnika.",
+          "textPl": "Powinieneś poprosić kierownika, żeby dał ci asystenta.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Već sam ga zamolio. Sljedeći mjesec dolaze dva nova kolege.",
+          "textPl": "Już go poprosiłem. W przyszłym miesiącu przychodzi dwóch nowych kolegów.",
+          "audioPath": "/audio/listening/hr-b1/b1-novi-projekt/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co Marko robi codziennie?",
+        "options": [
+          {
+            "id": "meetings",
+            "textPl": "Ma spotkania z klientami"
+          },
+          {
+            "id": "reports",
+            "textPl": "Pisze raporty dla szefa"
+          },
+          {
+            "id": "job",
+            "textPl": "Szuka nowej pracy"
+          }
+        ],
+        "correctOptionId": "meetings"
+      }
+    },
+    {
+      "id": "b1-rad-od-kuce",
+      "level": "B1",
+      "titlePl": "Praca z domu",
+      "titleEn": "Working from home",
+      "topic": "praca",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, radiš li i dalje od kuće?",
+          "textPl": "Ana, nadal pracujesz z domu?",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, tri dana tjedno. Imam fleksibilno radno vrijeme.",
+          "textPl": "Tak, trzy dni w tygodniu. Mam elastyczne godziny pracy.",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Super. Ja moram svaki dan u ured.",
+          "textPl": "Super. Ja muszę codziennie do biura.",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ali ti imaš kolege blizu. Meni ponekad nedostaje razgovor s ljudima.",
+          "textPl": "Ale ty masz kolegów blisko. Mnie czasem brakuje rozmowy z ludźmi.",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Istina. A kako imate sastanke?",
+          "textPl": "To prawda. A jak macie spotkania?",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Preko videopoziva, svaki ponedjeljak u devet.",
+          "textPl": "Przez wideorozmowę, w każdy poniedziałek o dziewiątej.",
+          "audioPath": "/audio/listening/hr-b1/b1-rad-od-kuce/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Ile dni w tygodniu Ana pracuje z domu?",
+        "options": [
+          {
+            "id": "three",
+            "textPl": "Trzy"
+          },
+          {
+            "id": "five",
+            "textPl": "Pięć"
+          },
+          {
+            "id": "one",
+            "textPl": "Jeden"
+          }
+        ],
+        "correctOptionId": "three"
+      }
+    },
+    {
+      "id": "b1-pravi-prijatelj",
+      "level": "B1",
+      "titlePl": "Prawdziwy przyjaciel",
+      "titleEn": "A true friend",
+      "topic": "relacje",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, tko je tvoj najbolji prijatelj?",
+          "textPl": "Marko, kto jest twoim najlepszym przyjacielem?",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ivan, prijatelj kojeg poznajem još iz vrtića.",
+          "textPl": "Ivan, przyjaciel, którego znam jeszcze z przedszkola.",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Kakav je on?",
+          "textPl": "Jaki on jest?",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Iskren je i pouzdan. To je čovjek na kojeg se uvijek mogu osloniti.",
+          "textPl": "Jest szczery i rzetelny. To człowiek, na którym zawsze mogę polegać.",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "To je rijetko. Ja imam puno poznanika, ali malo pravih prijatelja.",
+          "textPl": "To rzadkie. Ja mam wielu znajomych, ale mało prawdziwych przyjaciół.",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Pravo prijateljstvo traži vrijeme i povjerenje.",
+          "textPl": "Prawdziwa przyjaźń wymaga czasu i zaufania.",
+          "audioPath": "/audio/listening/hr-b1/b1-pravi-prijatelj/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Skąd Marko zna Ivana?",
+        "options": [
+          {
+            "id": "kindergarten",
+            "textPl": "Z przedszkola"
+          },
+          {
+            "id": "work",
+            "textPl": "Z pracy"
+          },
+          {
+            "id": "uni",
+            "textPl": "Ze studiów"
+          }
+        ],
+        "correctOptionId": "kindergarten"
+      }
+    },
+    {
+      "id": "b1-pomirenje",
+      "level": "B1",
+      "titlePl": "Pogodzenie się",
+      "titleEn": "Making up",
+      "topic": "relacje",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, jesi li dobro? Izgledaš tužno.",
+          "textPl": "Ana, wszystko dobrze? Wyglądasz na smutną.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Posvađala sam se s Ivanom zbog gluposti.",
+          "textPl": "Pokłóciłam się z Ivanem o głupotę.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Znam da se jako volite. Morate razgovarati jedno s drugim.",
+          "textPl": "Wiem, że bardzo się kochacie. Musicie ze sobą porozmawiać.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Imaš pravo. Ali on je tako tvrdoglav!",
+          "textPl": "Masz rację. Ale on jest taki uparty!",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "I ti si malo tvrdoglava. Nazovi ga i pomirite se.",
+          "textPl": "Ty też jesteś trochę uparta. Zadzwoń do niego i się pogódźcie.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Dobro, nazvat ću ga večeras.",
+          "textPl": "Dobrze, zadzwonię do niego dziś wieczorem.",
+          "audioPath": "/audio/listening/hr-b1/b1-pomirenje/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co radzi Marko?",
+        "options": [
+          {
+            "id": "call",
+            "textPl": "Zadzwonić do Ivana i się pogodzić"
+          },
+          {
+            "id": "silence",
+            "textPl": "Nie odzywać się do Ivana"
+          },
+          {
+            "id": "cinema",
+            "textPl": "Pójść z nim do kina"
+          }
+        ],
+        "correctOptionId": "call"
+      }
+    },
+    {
+      "id": "b1-vijesti-iz-grada",
+      "level": "B1",
+      "titlePl": "Wiadomości z miasta",
+      "titleEn": "City news",
+      "topic": "media",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, jesi li čuo vijesti?",
+          "textPl": "Marko, słyszałeś wiadomości?",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Nisam. Što se dogodilo?",
+          "textPl": "Nie. Co się stało?",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Gradonačelnik je izjavio da će se novi most otvoriti u svibnju.",
+          "textPl": "Burmistrz oświadczył, że nowy most zostanie otwarty w maju.",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Zanimljivo. Navodno će biti i besplatni autobusi do centra.",
+          "textPl": "Ciekawe. Podobno będą też darmowe autobusy do centrum.",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Da, i to su najavili. Rekli su da će vožnja biti besplatna mjesec dana.",
+          "textPl": "Tak, to też zapowiedzieli. Powiedzieli, że przejazd będzie darmowy przez miesiąc.",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Super, onda ću ostaviti auto kod kuće!",
+          "textPl": "Super, to zostawię samochód w domu!",
+          "audioPath": "/audio/listening/hr-b1/b1-vijesti-iz-grada/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co będzie darmowe przez miesiąc?",
+        "options": [
+          {
+            "id": "bus",
+            "textPl": "Jazda autobusem do centrum"
+          },
+          {
+            "id": "parking",
+            "textPl": "Parking w centrum"
+          },
+          {
+            "id": "museum",
+            "textPl": "Wstęp do muzeum"
+          }
+        ],
+        "correctOptionId": "bus"
+      }
+    },
+    {
+      "id": "b1-informacije-o-koncertu",
+      "level": "B1",
+      "titlePl": "Informacje o koncercie",
+      "titleEn": "Concert information",
+      "topic": "kultura",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Dobar dan, zanima me kada počinje koncert večeras.",
+          "textPl": "Dzień dobry, interesuje mnie, kiedy zaczyna się dzisiejszy koncert.",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Koncert počinje u devet, ali vrata se otvaraju u osam.",
+          "textPl": "Koncert zaczyna się o dziewiątej, ale drzwi otwierają się o ósmej.",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Mogu li vas pitati ima li još ulaznica?",
+          "textPl": "Czy mogę zapytać, czy są jeszcze bilety?",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Nažalost, ne znam ima li ih još. Pitajte na blagajni.",
+          "textPl": "Niestety, nie wiem, czy jeszcze są. Proszę zapytać w kasie.",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "A znate li hoće li koncert biti vani ili unutra?",
+          "textPl": "A wie pani, czy koncert będzie na zewnątrz czy w środku?",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ako bude lijepo vrijeme, bit će vani na trgu.",
+          "textPl": "Jeśli będzie ładna pogoda, będzie na zewnątrz na placu.",
+          "audioPath": "/audio/listening/hr-b1/b1-informacije-o-koncertu/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "O której otwierają się drzwi?",
+        "options": [
+          {
+            "id": "eight",
+            "textPl": "O ósmej"
+          },
+          {
+            "id": "nine",
+            "textPl": "O dziewiątej"
+          },
+          {
+            "id": "seven",
+            "textPl": "O siódmej"
+          }
+        ],
+        "correctOptionId": "eight"
+      }
+    },
+    {
+      "id": "b1-filmski-festival",
+      "level": "B1",
+      "titlePl": "Festiwal filmowy",
+      "titleEn": "The film festival",
+      "topic": "kultura",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, znaš li da je novi film snimljen u našem gradu?",
+          "textPl": "Marko, wiesz, że nowy film został nakręcony w naszym mieście?",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Stvarno? Koji film?",
+          "textPl": "Naprawdę? Jaki film?",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onaj o kojem pišu na svim portalima. Redatelj je osvojio nagradu u Puli.",
+          "textPl": "Ten, o którym piszą na wszystkich portalach. Reżyser zdobył nagrodę w Puli.",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Kada se prikazuje u kinu?",
+          "textPl": "Kiedy jest w kinie?",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Premijera je u petak, ali sve karte su već prodane.",
+          "textPl": "Premiera jest w piątek, ale wszystkie bilety są już sprzedane.",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Šteta! Onda ćemo ga gledati sljedeći tjedan.",
+          "textPl": "Szkoda! To obejrzymy go w przyszłym tygodniu.",
+          "audioPath": "/audio/listening/hr-b1/b1-filmski-festival/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Dlaczego nie pójdą na premierę?",
+        "options": [
+          {
+            "id": "sold",
+            "textPl": "Wszystkie bilety są sprzedane"
+          },
+          {
+            "id": "closed",
+            "textPl": "Kino jest zamknięte"
+          },
+          {
+            "id": "notready",
+            "textPl": "Film nie jest jeszcze gotowy"
+          }
+        ],
+        "correctOptionId": "sold"
+      }
+    },
+    {
+      "id": "b1-planovi-za-buducnost",
+      "level": "B1",
+      "titlePl": "Plany na przyszłość",
+      "titleEn": "Plans for the future",
+      "topic": "plany",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Ana, što ćeš raditi kad budeš završila fakultet?",
+          "textPl": "Ana, co będziesz robić, kiedy skończysz studia?",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-buducnost/01-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Čim budem diplomirala, tražit ću posao u Zagrebu.",
+          "textPl": "Gdy tylko obronię dyplom, będę szukać pracy w Zagrzebiu.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-buducnost/02-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "A ako ne budeš odmah našla posao?",
+          "textPl": "A jeśli nie znajdziesz od razu pracy?",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-buducnost/03-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onda ću godinu dana volontirati u inozemstvu.",
+          "textPl": "To przez rok będę wolontariuszką za granicą.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-buducnost/04-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Zvuči odlično. Ja ću štedjeti, a kad budem imao dovoljno, kupit ću stan.",
+          "textPl": "Brzmi świetnie. Ja będę oszczędzać, a kiedy będę miał dość, kupię mieszkanie.",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-buducnost/05-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Javi mi kad ga budeš kupio, doći ću na kavu!",
+          "textPl": "Daj znać, kiedy je kupisz, przyjdę na kawę!",
+          "audioPath": "/audio/listening/hr-b1/b1-planovi-za-buducnost/06-ana.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Co zrobi Ana, jeśli nie znajdzie od razu pracy?",
+        "options": [
+          {
+            "id": "volunteer",
+            "textPl": "Będzie wolontariuszką za granicą"
+          },
+          {
+            "id": "home",
+            "textPl": "Wróci do domu"
+          },
+          {
+            "id": "study",
+            "textPl": "Będzie dalej studiować"
+          }
+        ],
+        "correctOptionId": "volunteer"
+      }
+    },
+    {
+      "id": "b1-test-novi-posao",
+      "level": "B1",
+      "titlePl": "Nowa praca",
+      "titleEn": "A new job",
+      "topic": "praca",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Marko, čujem da si promijenio posao!",
+          "textPl": "Marko, słyszę, że zmieniłeś pracę!",
+          "audioPath": "/audio/listening/hr-b1/b1-test-novi-posao/01-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Jesam. Od ponedjeljka radim u jednoj tvrtki u Zagrebu.",
+          "textPl": "Tak. Od poniedziałku pracuję w pewnej firmie w Zagrzebiu.",
+          "audioPath": "/audio/listening/hr-b1/b1-test-novi-posao/02-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Čestitam! A zašto si otišao s prethodnog posla?",
+          "textPl": "Gratuluję! A dlaczego odszedłeś z poprzedniej pracy?",
+          "audioPath": "/audio/listening/hr-b1/b1-test-novi-posao/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Iako je plaća bila dobra, stalno sam radio prekovremeno.",
+          "textPl": "Chociaż pensja była dobra, ciągle pracowałem po godzinach.",
+          "audioPath": "/audio/listening/hr-b1/b1-test-novi-posao/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "A kakav je novi tim?",
+          "textPl": "A jaki jest nowy zespół?",
+          "audioPath": "/audio/listening/hr-b1/b1-test-novi-posao/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Kolege su jako ljubazni, a dva dana tjedno mogu raditi od kuće.",
+          "textPl": "Koledzy są bardzo uprzejmi, a dwa dni w tygodniu mogę pracować z domu.",
+          "audioPath": "/audio/listening/hr-b1/b1-test-novi-posao/06-marko.mp3"
+        }
+      ],
+      "question": {
+        "promptPl": "Dlaczego Marko odszedł z poprzedniej pracy?",
+        "options": [
+          {
+            "id": "overtime",
+            "textPl": "Ciągle pracował po godzinach"
+          },
+          {
+            "id": "salary",
+            "textPl": "Miał złą pensję"
+          },
+          {
+            "id": "colleagues",
+            "textPl": "Nie lubił kolegów"
+          }
+        ],
+        "correctOptionId": "overtime"
+      }
+    }
+  ]
+}

@@ -106,6 +106,10 @@ const PRES_OVERRIDES = {
   trajati: ["trajem"], izaći: ["izađem"], kašljati: ["kašljem"], disati: ["dišem"], kretati: ["krećem"], poslati: ["pošaljem"],
   prevesti: ["prevedem"], stajati: ["stojim"], podići: ["podignem"], potpisati: ["potpišem"], odrasti: ["odrastem"],
   slagati: ["slažem"],
+  // B1
+  popiti: ["popijem"], pojesti: ["pojedem"], početi: ["počnem"], počinjati: ["počinjem"], prestati: ["prestanem"], prestajati: ["prestajem"],
+  obući: ["obučem"], prati: ["perem"], oprati: ["operem"], uspjeti: ["uspijem"], zaspati: ["zaspim"], opeći: ["opečem"], kihati: ["kišem"], pretjerivati: ["pretjerujem"], propisati: ["propišem"], izbjeći: ["izbjegnem"], stizati: ["stižem"], nedostajati: ["nedostajem"], surađivati: ["surađujem"], dopisivati: ["dopisujem"], predavati: ["predajem"], prenijeti: ["prenesem"], održati: ["održim"], sporazumjeti: ["sporazumijem"], prikazivati: ["prikazujem"], raspitivati: ["raspitujem"],
+  zaobići: ["zaobiđem"], obići: ["obiđem"], ući: ["uđem"], proći: ["prođem"], sići: ["siđem"], popeti: ["popnem"], presjesti: ["presjednem"],
 };
 const PP_OVERRIDES = {
   jesti: ["jeo", "jela", "jeli"], ići: ["išao", "išla", "išli"], naći: ["našao", "našla", "našli"], pronaći: ["pronašao", "pronašla", "pronašli"],
@@ -114,6 +118,9 @@ const PP_OVERRIDES = {
   otići: ["otišao", "otišla", "otišli"], provesti: ["proveo", "provela", "proveli"], sresti: ["sreo", "srela", "sreli"],
   uzeti: ["uzeo", "uzela", "uzeli"], pomoći: ["pomogao", "pomogla", "pomogli"], izaći: ["izašao", "izašla", "izašli"],
   prevesti: ["preveo", "prevela", "preveli"], podići: ["podigao", "podigla", "podigli"], odrasti: ["odrastao", "odrasla", "odrasli"],
+  pojesti: ["pojeo", "pojela", "pojeli"], početi: ["počeo", "počela", "počeli"], obući: ["obukao", "obukla", "obukli"], uspjeti: ["uspio", "uspjela", "uspjeli"], opeći: ["opekao", "opekla", "opekli"], izbjeći: ["izbjegao", "izbjegla", "izbjegli"],
+  zaobići: ["zaobišao", "zaobišla", "zaobišli"], obići: ["obišao", "obišla", "obišli"], ući: ["ušao", "ušla", "ušli"], proći: ["prošao", "prošla", "prošli"],
+  sići: ["sišao", "sišla", "sišli"], popeti: ["popeo", "popela", "popeli"], presjesti: ["presjeo", "presjela", "presjeli"], prenijeti: ["prenio", "prenijela", "prenijeli"],
 };
 
 function present1(inf) {
@@ -200,11 +207,11 @@ export function conjugation(verb) {
 const ADJ_OVERRIDES = {
   sladak: ["slatka", "slatko"], nizak: ["niska", "nisko"], veseo: ["vesela", "veselo"], kiseo: ["kisela", "kiselo"],
   gorak: ["gorka", "gorko"], dobar: ["dobra", "dobro"], vruć: ["vruća", "vruće"], topao: ["topla", "toplo"],
-  uzak: ["uska", "usko"],
+  uzak: ["uska", "usko"], blizak: ["bliska", "blisko"], hrabar: ["hrabra", "hrabro"],
 };
 const FLEETING_ADJ = new Set([
   "umoran", "sretan", "simpatičan", "gladan", "žedan", "slobodan", "pametan", "zgodan", "tužan", "ukusan", "hladan",
-  "miran", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan", "ljubazan", "naporan",
+  "miran", "tipičan", "ponosan", "vrijedan", "ljubomoran", "zadovoljan", "fleksibilan", "povoljan", "prometan", "živahan", "neispravan", "pogrešan", "zabavan", "dosadan", "ozbiljan", "alergičan", "udoban", "moderan", "elegantan", "jednostavan", "besplatan", "ljubazan", "naporan",
 ]);
 
 function adjForms(masc) {
@@ -413,5 +420,5 @@ export function genderizePattern(pattern, pairs) {
 }
 
 /** Klityki: zdanie z nimi nie może dostać wariantu z „Ja” na początku bez zmiany szyku. */
-export const CLITICS = new Set(["sam", "si", "je", "smo", "ste", "su", "se", "ću", "ćeš", "će", "ćemo", "ćete", "bih", "li", "mi", "ti", "ga", "joj", "mu", "me", "te", "nas", "nam", "vas", "vam", "ih"]);
+export const CLITICS = new Set(["sam", "si", "je", "smo", "ste", "su", "se", "ću", "ćeš", "će", "ćemo", "ćete", "bih", "bi", "bismo", "biste", "li", "mi", "ti", "ga", "joj", "mu", "me", "te", "nas", "nam", "vas", "vam", "ih"]);
 export const tokens = (text) => low(text).replace(/[.,!?;:„”"…«»()]/g, " ").split(/\s+/).filter(Boolean);

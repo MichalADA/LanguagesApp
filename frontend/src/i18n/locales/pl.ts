@@ -654,6 +654,10 @@ export const pl: Dictionary = {
       "A2": {
         "name": "Dłuższe sytuacje",
         "description": "Więcej szczegółów, dłuższe wypowiedzi i trudniejsze pytania."
+      },
+      "B1": {
+        "name": "Samodzielne rozmowy",
+        "description": "Praca, mieszkanie, media i plany — rozmowy z argumentami i mową zależną."
       }
     },
     "loading": "Wczytuję dialogi…",
