@@ -59,6 +59,7 @@ export const pl: Dictionary = {
     games: "Gry",
     review: "Powtórki",
     flashcards: "Fiszki",
+    stories: "Stories",
     stats: "Statystyki",
     progress: "Postęp",
     courses: "Języki",

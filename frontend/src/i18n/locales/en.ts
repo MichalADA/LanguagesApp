@@ -59,6 +59,7 @@ export const en: Dictionary = {
     games: "Games",
     review: "Review",
     flashcards: "Flashcards",
+    stories: "Stories",
     stats: "Statistics",
     progress: "Progress",
     courses: "Languages",
