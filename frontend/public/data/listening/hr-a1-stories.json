@@ -1,0 +1,534 @@
+{
+  "version": 1,
+  "language": "hr",
+  "sourceLanguage": "pl",
+  "generatedWith": {
+    "provider": "elevenlabs",
+    "model": "eleven_multilingual_v2",
+    "rate": "-10%",
+    "voices": {
+      "narrator": "O9XgmQnaZveORWl6mTHm",
+      "ana": "4vkn1E85GfXGoH86xgU7",
+      "marko": "jJ1MUnCKtrOI23TlUUHc",
+      "marta": "eqAqnItEUARzEkoDCTJ1",
+      "luka": "FEuh1dGiuX8Don6bZygL",
+      "ivana": "FXlzTee7Zx2caYKIAwBF",
+      "petar": "ocaele7kOTNS1wQzhbSM",
+      "tomo": "jVBTQrP67HZEE22UqQGF",
+      "mia": "jEKeTj7nqDtk1QSNwXkO",
+      "baka": "7IVTG9LKLYndnFiFDLU2"
+    }
+  },
+  "speakers": {
+    "narrator": "Narrator",
+    "ana": "Ana",
+    "marko": "Marko",
+    "marta": "Marta",
+    "luka": "Luka",
+    "ivana": "Ivana",
+    "petar": "Petar",
+    "tomo": "Tomo",
+    "mia": "Mia",
+    "baka": "Baka"
+  },
+  "stories": [
+    {
+      "id": "a1-prvi-dan-u-splitu",
+      "level": "A1",
+      "titlePl": "Pierwszy dzień w Splicie",
+      "titleEn": "First day in Split",
+      "topic": "podróż i kawiarnia",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "textHr": "Ovo je Marta. Marta je iz Poljske.",
+          "textPl": "To jest Marta. Marta jest z Polski.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/01-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Ona ima dvadeset i pet godina i živi u Krakovu.",
+          "textPl": "Ma dwadzieścia pięć lat i mieszka w Krakowie.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/02-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Danas je Marta u Splitu. Sunčano je i toplo.",
+          "textPl": "Dziś Marta jest w Splicie. Jest słonecznie i ciepło.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/03-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Marta ide u kafić na rivi.",
+          "textPl": "Marta idzie do kawiarni na nabrzeżu.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/04-narrator.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Dobar dan! Izvolite.",
+          "textPl": "Dzień dobry! Słucham.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/05-ana.mp3"
+        },
+        {
+          "speaker": "marta",
+          "textHr": "Dobar dan! Jednu kavu s mlijekom, molim.",
+          "textPl": "Dzień dobry! Jedną kawę z mlekiem, proszę.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/06-marta.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Naravno. Odakle ste?",
+          "textPl": "Oczywiście. Skąd Pani jest?",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/07-ana.mp3"
+        },
+        {
+          "speaker": "marta",
+          "textHr": "Iz Poljske sam. Ovo je moj prvi dan u Splitu.",
+          "textPl": "Jestem z Polski. To mój pierwszy dzień w Splicie.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/08-marta.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Dobro došli! Split je jako lijep grad.",
+          "textPl": "Witamy! Split to bardzo piękne miasto.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/09-ana.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Marta pije kavu i gleda more. Sretna je.",
+          "textPl": "Marta pije kawę i patrzy na morze. Jest szczęśliwa.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-prvi-dan-u-splitu/10-narrator.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Skąd jest Marta?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Z Niemiec"
+            },
+            {
+              "id": "a",
+              "textPl": "Z Polski"
+            },
+            {
+              "id": "b",
+              "textPl": "Z Chorwacji"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co zamawia Marta?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Kawę z mlekiem"
+            },
+            {
+              "id": "b",
+              "textPl": "Herbatę"
+            },
+            {
+              "id": "c",
+              "textPl": "Wodę"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Ile lat ma Marta?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "35"
+            },
+            {
+              "id": "c",
+              "textPl": "52"
+            },
+            {
+              "id": "a",
+              "textPl": "25"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1-moja-obitelj",
+      "level": "A1",
+      "titlePl": "Moja rodzina",
+      "titleEn": "My family",
+      "topic": "rodzina",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "luka",
+          "textHr": "Bok! Ja sam Luka. Živim u Zagrebu.",
+          "textPl": "Cześć! Jestem Luka. Mieszkam w Zagrzebiu.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/01-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Imam veliku obitelj.",
+          "textPl": "Mam dużą rodzinę.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/02-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Moj otac se zove Ivan. On je liječnik i radi u bolnici.",
+          "textPl": "Mój ojciec ma na imię Ivan. Jest lekarzem i pracuje w szpitalu.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/03-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Moja majka se zove Vesna. Ona je učiteljica.",
+          "textPl": "Moja mama ma na imię Vesna. Jest nauczycielką.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/04-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Imam jednu sestru i jednog brata.",
+          "textPl": "Mam jedną siostrę i jednego brata.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/05-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Moja sestra Ana ima dvadeset godina. Ona je studentica.",
+          "textPl": "Moja siostra Ana ma dwadzieścia lat. Jest studentką.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/06-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Moj brat Filip je mlađi. Ima deset godina i voli nogomet.",
+          "textPl": "Mój brat Filip jest młodszy. Ma dziesięć lat i lubi piłkę nożną.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/07-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Imamo i psa. Pas se zove Rex.",
+          "textPl": "Mamy też psa. Pies wabi się Rex.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/08-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Nedjeljom ručamo zajedno kod bake i djeda.",
+          "textPl": "W niedziele jemy razem obiad u babci i dziadka.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moja-obitelj/09-luka.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Kim jest ojciec Luki?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Lekarzem"
+            },
+            {
+              "id": "b",
+              "textPl": "Nauczycielem"
+            },
+            {
+              "id": "c",
+              "textPl": "Inżynierem"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Ile lat ma Filip?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "20"
+            },
+            {
+              "id": "c",
+              "textPl": "12"
+            },
+            {
+              "id": "a",
+              "textPl": "10"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Gdzie rodzina je obiad w niedzielę?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "U Luki w domu"
+            },
+            {
+              "id": "a",
+              "textPl": "U babci i dziadka"
+            },
+            {
+              "id": "b",
+              "textPl": "W restauracji"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1-subota-na-trznici",
+      "level": "A1",
+      "titlePl": "Sobota na targu",
+      "titleEn": "Saturday at the market",
+      "topic": "zakupy",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "textHr": "Subota je. Ivana ide na tržnicu.",
+          "textPl": "Jest sobota. Ivana idzie na targ.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/01-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Na tržnici ima puno voća i povrća.",
+          "textPl": "Na targu jest dużo owoców i warzyw.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/02-narrator.mp3"
+        },
+        {
+          "speaker": "petar",
+          "textHr": "Dobro jutro! Što trebate?",
+          "textPl": "Dzień dobry! Czego Pani potrzebuje?",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/03-petar.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Dobro jutro! Imate li jabuke?",
+          "textPl": "Dzień dobry! Ma Pan jabłka?",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/04-ivana.mp3"
+        },
+        {
+          "speaker": "petar",
+          "textHr": "Imamo! Jabuke su dva eura kilogram.",
+          "textPl": "Mamy! Jabłka kosztują dwa euro za kilogram.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/05-petar.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Dobro. Dva kilograma jabuka, molim. I jedan kilogram rajčica.",
+          "textPl": "Dobrze. Dwa kilogramy jabłek, proszę. I kilogram pomidorów.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/06-ivana.mp3"
+        },
+        {
+          "speaker": "petar",
+          "textHr": "Izvolite. To je šest eura.",
+          "textPl": "Proszę. Razem sześć euro.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/07-petar.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Mogu li platiti karticom?",
+          "textPl": "Czy mogę zapłacić kartą?",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/08-ivana.mp3"
+        },
+        {
+          "speaker": "petar",
+          "textHr": "Nažalost, ne. Samo gotovinom.",
+          "textPl": "Niestety nie. Tylko gotówką.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/09-petar.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Nema problema. Izvolite, deset eura.",
+          "textPl": "Nie ma problemu. Proszę, dziesięć euro.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/10-ivana.mp3"
+        },
+        {
+          "speaker": "petar",
+          "textHr": "Hvala! Evo četiri eura. Ugodan vikend!",
+          "textPl": "Dziękuję! Proszę, cztery euro reszty. Miłego weekendu!",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-subota-na-trznici/11-petar.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Ile kosztuje kilogram jabłek?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "10 €"
+            },
+            {
+              "id": "a",
+              "textPl": "2 €"
+            },
+            {
+              "id": "b",
+              "textPl": "6 €"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Ile kilogramów jabłek kupuje Ivana?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Dwa"
+            },
+            {
+              "id": "b",
+              "textPl": "Jeden"
+            },
+            {
+              "id": "c",
+              "textPl": "Trzy"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Jak płaci Ivana?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "Kartą"
+            },
+            {
+              "id": "c",
+              "textPl": "Telefonem"
+            },
+            {
+              "id": "a",
+              "textPl": "Gotówką"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1-kisna-nedjelja",
+      "level": "A1",
+      "titlePl": "Deszczowa niedziela",
+      "titleEn": "A rainy Sunday",
+      "topic": "pogoda i plany",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "textHr": "Nedjelja je. Vani pada kiša i hladno je.",
+          "textPl": "Jest niedziela. Na dworze pada deszcz i jest zimno.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/01-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Tomo je kod kuće. Zove prijateljicu Miju.",
+          "textPl": "Tomo jest w domu. Dzwoni do przyjaciółki Mii.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/02-narrator.mp3"
+        },
+        {
+          "speaker": "tomo",
+          "textHr": "Bok, Mia! Što radiš danas?",
+          "textPl": "Cześć, Mia! Co dziś robisz?",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/03-tomo.mp3"
+        },
+        {
+          "speaker": "mia",
+          "textHr": "Bok! Ništa posebno. Čitam knjigu. A ti?",
+          "textPl": "Cześć! Nic szczególnego. Czytam książkę. A ty?",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/04-mia.mp3"
+        },
+        {
+          "speaker": "tomo",
+          "textHr": "Gledam televiziju. Dosadno je. Hoćemo li u kino?",
+          "textPl": "Oglądam telewizję. Nudno jest. Pójdziemy do kina?",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/05-tomo.mp3"
+        },
+        {
+          "speaker": "mia",
+          "textHr": "Može! Koji film?",
+          "textPl": "Jasne! Jaki film?",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/06-mia.mp3"
+        },
+        {
+          "speaker": "tomo",
+          "textHr": "Nova komedija. Počinje u šest.",
+          "textPl": "Nowa komedia. Zaczyna się o szóstej.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/07-tomo.mp3"
+        },
+        {
+          "speaker": "mia",
+          "textHr": "Super! Vidimo se u pola šest ispred kina.",
+          "textPl": "Super! Widzimy się o wpół do szóstej przed kinem.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/08-mia.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Kiša pada, ali Tomo i Mia su sretni.",
+          "textPl": "Pada deszcz, ale Tomo i Mia są szczęśliwi.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-kisna-nedjelja/09-narrator.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Jaka jest pogoda?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Pada śnieg"
+            },
+            {
+              "id": "a",
+              "textPl": "Pada deszcz"
+            },
+            {
+              "id": "b",
+              "textPl": "Świeci słońce"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co robi Mia, kiedy dzwoni Tomo?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Czyta książkę"
+            },
+            {
+              "id": "b",
+              "textPl": "Ogląda telewizję"
+            },
+            {
+              "id": "c",
+              "textPl": "Gotuje"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "O której się spotykają?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "O 18:00"
+            },
+            {
+              "id": "c",
+              "textPl": "O 16:30"
+            },
+            {
+              "id": "a",
+              "textPl": "O 17:30"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    }
+  ]
+}

@@ -218,11 +218,57 @@ async def generate_course(args: argparse.Namespace) -> None:
         raise SystemExit(1)
 
 
+async def generate_stories(args: argparse.Namespace, payload: dict) -> None:
+    """Listening stories (hr-*-stories.json): narrator + characters, ElevenLabs voices per speaker."""
+    meta = payload["generatedWith"]
+    if meta.get("provider") != PAID_PROVIDER:
+        raise SystemExit(f"Stories manifest must use {PAID_PROVIDER}.")
+    voices, model, rate = meta["voices"], meta.get("model", ELEVENLABS_DEFAULT_MODEL), meta.get("rate", "+0%")
+    stories = payload["stories"]
+    if args.dialogue:
+        stories = [item for item in stories if item["id"] == args.dialogue]
+        if not stories:
+            raise SystemExit(f"Unknown story id: {args.dialogue}")
+    pending, found, existing = [], 0, 0
+    for story in stories:
+        for line in story["lines"]:
+            found += 1
+            voice = voices.get(line["speaker"])
+            if not voice:
+                raise ValueError(f"No voice configured for speaker {line['speaker']!r}")
+            target = output_path(args.public_dir, line["audioPath"])
+            if target.exists() and not args.force:
+                existing += 1
+                continue
+            pending.append((line["textHr"], voice, target, None, None))
+    characters = sum(len(item[0]) for item in pending)
+    api_key = os.environ.get("ELEVENLABS_API_KEY")
+    balance = elevenlabs_credits(api_key) if api_key else "ELEVENLABS_API_KEY not set"
+    print(f"Provider: {PAID_PROVIDER} (PAID) · model {model} · rate {rate} · {balance}")
+    print(f"Found {found} lines · {existing} recordings exist · {len(pending)} to generate ({characters} characters)")
+    print(f"Estimated cost: ~{characters} credits")
+    if args.dry_run or not pending:
+        return
+    if not args.allow_paid:
+        raise SystemExit("This manifest uses a paid provider; re-run with --allow-paid to spend credits.")
+    if not api_key:
+        raise SystemExit("ELEVENLABS_API_KEY is not set.")
+    errors = await synthesize_elevenlabs(args, pending, rate, model)
+    print(f"Done: found {found}, existing {existing}, new {len(pending) - len(errors)}, errors {len(errors)}")
+    for message in errors:
+        print(f"  error: {message}")
+    if errors:
+        raise SystemExit(1)
+
+
 async def generate(args: argparse.Namespace) -> None:
     if args.course_manifest:
         await generate_course(args)
         return
     payload = json.loads(args.manifest.read_text(encoding="utf-8"))
+    if "stories" in payload:
+        await generate_stories(args, payload)
+        return
     voices = payload["generatedWith"]["voices"]
     dialogues = payload["dialogues"]
     if args.dialogue:

@@ -38,3 +38,37 @@ test("Croatian listening levels have valid, unique and playable dialogue entries
     }
   }
 });
+
+test("Croatian listening stories: narrated, several questions, every speaker voiced, every line recorded", async () => {
+  const ids = new Set();
+  for (const level of ["A1", "A2", "B1"]) {
+    const lv = level.toLowerCase();
+    const data = JSON.parse(await readFile(new URL(`../public/data/listening/hr-${lv}-stories.json`, import.meta.url), "utf8"));
+    assert.equal(data.version, 1);
+    assert.equal(data.language, "hr");
+    assert.equal(data.generatedWith.provider, "elevenlabs");
+    assert.ok(data.stories.length >= 4, `${level}: co najmniej 4 historie`);
+    for (const story of data.stories) {
+      assert.match(story.id, new RegExp(`^${lv}-[a-z0-9-]+$`));
+      assert.equal(story.level, level);
+      assert.ok(!ids.has(story.id));
+      ids.add(story.id);
+      assert.equal(story.reviewStatus, "needs-native-review");
+      assert.ok(story.lines.length >= 8, `${story.id}: historia ma co najmniej 8 kwestii`);
+      assert.ok(story.questions.length >= 3, `${story.id}: co najmniej 3 pytania`);
+      for (const question of story.questions) {
+        assert.equal(new Set(question.options.map(option => option.id)).size, question.options.length);
+        assert.ok(question.options.some(option => option.id === question.correctOptionId), `${story.id}: ${question.promptPl}`);
+      }
+      // Poprawna odpowiedź nie stoi zawsze na tym samym miejscu.
+      assert.ok(new Set(story.questions.map(question => question.options.findIndex(option => option.id === question.correctOptionId))).size > 1 || story.questions.length < 2);
+      story.lines.forEach((line, index) => {
+        assert.ok(data.generatedWith.voices[line.speaker], `${story.id}: brak głosu dla ${line.speaker}`);
+        assert.ok(data.speakers[line.speaker], `${story.id}: brak imienia dla ${line.speaker}`);
+        assert.ok(line.textHr.trim() && line.textPl.trim());
+        assert.equal(line.audioPath, `/audio/listening/hr-${lv}/stories/${story.id}/${String(index + 1).padStart(2, "0")}-${line.speaker}.mp3`);
+      });
+      for (const line of story.lines) await access(new URL(`../public${line.audioPath}`, import.meta.url));
+    }
+  }
+});

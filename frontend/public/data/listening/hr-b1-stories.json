@@ -1,0 +1,522 @@
+{
+  "version": 1,
+  "language": "hr",
+  "sourceLanguage": "pl",
+  "generatedWith": {
+    "provider": "elevenlabs",
+    "model": "eleven_multilingual_v2",
+    "rate": "+0%",
+    "voices": {
+      "narrator": "O9XgmQnaZveORWl6mTHm",
+      "ana": "4vkn1E85GfXGoH86xgU7",
+      "marko": "jJ1MUnCKtrOI23TlUUHc",
+      "marta": "eqAqnItEUARzEkoDCTJ1",
+      "luka": "FEuh1dGiuX8Don6bZygL",
+      "ivana": "FXlzTee7Zx2caYKIAwBF",
+      "petar": "ocaele7kOTNS1wQzhbSM",
+      "tomo": "jVBTQrP67HZEE22UqQGF",
+      "mia": "jEKeTj7nqDtk1QSNwXkO",
+      "baka": "7IVTG9LKLYndnFiFDLU2"
+    }
+  },
+  "speakers": {
+    "narrator": "Narrator",
+    "ana": "Ana",
+    "marko": "Marko",
+    "marta": "Marta",
+    "luka": "Luka",
+    "ivana": "Ivana",
+    "petar": "Petar",
+    "tomo": "Tomo",
+    "mia": "Mia",
+    "baka": "Baka"
+  },
+  "stories": [
+    {
+      "id": "b1-selidba-u-zagreb",
+      "level": "B1",
+      "titlePl": "Przeprowadzka do Zagrzebia",
+      "titleEn": "Moving to Zagreb",
+      "topic": "przeprowadzka i nowe życie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "luka",
+          "textHr": "Prije dvije godine odlučio sam se preseliti iz malog mjesta u Slavoniji u Zagreb.",
+          "textPl": "Dwa lata temu postanowiłem przeprowadzić się z małej miejscowości w Slawonii do Zagrzebia.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/01-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Odluka nije bila laka, jer sam cijeli život živio blizu obitelji.",
+          "textPl": "Decyzja nie była łatwa, bo całe życie mieszkałem blisko rodziny.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/02-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Ali u mom gradu nije bilo posla za informatičare, a u Zagrebu sam brzo dobio dobru ponudu.",
+          "textPl": "Ale w moim mieście nie było pracy dla informatyków, a w Zagrzebiu szybko dostałem dobrą ofertę.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/03-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Prvih nekoliko mjeseci bilo mi je teško. Nikoga nisam poznavao, a stanovi su bili skuplji nego što sam očekivao.",
+          "textPl": "Pierwsze miesiące były trudne. Nikogo nie znałem, a mieszkania były droższe, niż się spodziewałem.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/04-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Iznajmio sam malu garsonijeru na Trešnjevci, daleko od centra.",
+          "textPl": "Wynająłem małą kawalerkę na Trešnjevce, daleko od centrum.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/05-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Sve se promijenilo kad sam se učlanio u planinarsko društvo.",
+          "textPl": "Wszystko się zmieniło, kiedy zapisałem się do klubu górskiego.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/06-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Svakog vikenda idemo na Sljeme ili u Gorski kotar, a neki od tih ljudi postali su moji najbolji prijatelji.",
+          "textPl": "W każdy weekend chodzimy na Sljeme albo do Gorskiego kotaru, a niektórzy z tych ludzi zostali moimi najlepszymi przyjaciółmi.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/07-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Danas mi nedostaje samo mamina kuhinja, pa idem kući barem jednom mjesečno.",
+          "textPl": "Dziś brakuje mi tylko kuchni mamy, więc jeżdżę do domu przynajmniej raz w miesiącu.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/08-luka.mp3"
+        },
+        {
+          "speaker": "luka",
+          "textHr": "Kad bih morao ponovno odlučiti, napravio bih isto.",
+          "textPl": "Gdybym musiał decydować jeszcze raz, zrobiłbym to samo.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-selidba-u-zagreb/09-luka.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Dlaczego Luka przeprowadził się do Zagrzebia?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "Dla dziewczyny"
+            },
+            {
+              "id": "c",
+              "textPl": "Na studia"
+            },
+            {
+              "id": "a",
+              "textPl": "Z powodu pracy"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co pomogło mu poznać ludzi?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Sąsiedzi"
+            },
+            {
+              "id": "a",
+              "textPl": "Klub górski"
+            },
+            {
+              "id": "b",
+              "textPl": "Koledzy z pracy"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Czego mu dziś brakuje?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Kuchni mamy"
+            },
+            {
+              "id": "b",
+              "textPl": "Morza"
+            },
+            {
+              "id": "c",
+              "textPl": "Dużego mieszkania"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "b1-neocekivani-gost",
+      "level": "B1",
+      "titlePl": "Niespodziewany gość",
+      "titleEn": "An unexpected guest",
+      "topic": "sąsiedzi i przypadek",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "textHr": "Bila je kišna listopadska večer. Ivana je sama sjedila u stanu i čitala knjigu.",
+          "textPl": "Był deszczowy październikowy wieczór. Ivana siedziała sama w mieszkaniu i czytała książkę.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/01-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Odjednom je netko pozvonio na vrata. Bilo je skoro jedanaest sati.",
+          "textPl": "Nagle ktoś zadzwonił do drzwi. Była prawie jedenasta.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/02-narrator.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Tko je?",
+          "textPl": "Kto tam?",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/03-ivana.mp3"
+        },
+        {
+          "speaker": "petar",
+          "textHr": "Oprostite što smetam tako kasno. Ja sam Petar, vaš novi susjed s trećeg kata.",
+          "textPl": "Przepraszam, że przeszkadzam tak późno. Jestem Petar, Pani nowy sąsiad z trzeciego piętra.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/04-petar.mp3"
+        },
+        {
+          "speaker": "petar",
+          "textHr": "Zaključao sam se izvan stana, a mobitel mi je ostao unutra. Mogu li nazvati bravara s vašeg telefona?",
+          "textPl": "Zatrzasnąłem się poza mieszkaniem, a komórka została w środku. Czy mogę zadzwonić do ślusarza z Pani telefonu?",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/05-petar.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Naravno, uđite. Pokisli ste do kože! Želite li čaj dok čekate?",
+          "textPl": "Oczywiście, proszę wejść. Przemókł Pan do suchej nitki! Napije się Pan herbaty, zanim przyjdzie pomoc?",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/06-ivana.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Bravar je rekao da će doći za sat vremena, pa su Ivana i Petar razgovarali uz čaj.",
+          "textPl": "Ślusarz powiedział, że przyjdzie za godzinę, więc Ivana i Petar rozmawiali przy herbacie.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/07-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Ispostavilo se da su oboje odrasli u Osijeku i išli u istu srednju školu.",
+          "textPl": "Okazało się, że oboje dorastali w Osijeku i chodzili do tej samej szkoły średniej.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/08-narrator.mp3"
+        },
+        {
+          "speaker": "petar",
+          "textHr": "Nevjerojatno! Kako je svijet malen.",
+          "textPl": "Niesamowite! Jaki ten świat mały.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/09-petar.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Od te večeri Ivana i Petar često zajedno piju kavu. Ponekad i kad ne pada kiša.",
+          "textPl": "Od tamtego wieczoru Ivana i Petar często razem piją kawę. Czasem nawet wtedy, gdy nie pada.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-neocekivani-gost/10-narrator.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Dlaczego Petar zadzwonił do drzwi Ivany?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "Szukał swojego kota"
+            },
+            {
+              "id": "c",
+              "textPl": "Chciał pożyczyć cukier"
+            },
+            {
+              "id": "a",
+              "textPl": "Zatrzasnął się poza mieszkaniem"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Kiedy miał przyjść ślusarz?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Za dziesięć minut"
+            },
+            {
+              "id": "a",
+              "textPl": "Za godzinę"
+            },
+            {
+              "id": "b",
+              "textPl": "Następnego dnia"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co łączy Ivanę i Petara?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Dorastali w Osijeku i chodzili do tej samej szkoły"
+            },
+            {
+              "id": "b",
+              "textPl": "Pracują w tej samej firmie"
+            },
+            {
+              "id": "c",
+              "textPl": "Są kuzynami"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "b1-volonterka",
+      "level": "B1",
+      "titlePl": "Wolontariuszka",
+      "titleEn": "The volunteer",
+      "topic": "wolontariat",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Već tri godine svake subote volontiram u skloništu za napuštene životinje.",
+          "textPl": "Od trzech lat w każdą sobotę jestem wolontariuszką w schronisku dla porzuconych zwierząt.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/01-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Sve je počelo kad sam na ulici pronašla malog, gladnog psa.",
+          "textPl": "Wszystko zaczęło się, kiedy znalazłam na ulicy małego, głodnego psa.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/02-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Odnijela sam ga u sklonište i ondje upoznala ljude koji su mi postali kao druga obitelj.",
+          "textPl": "Zaniosłam go do schroniska i poznałam tam ludzi, którzy stali się dla mnie jak druga rodzina.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/03-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Moj posao je šetati pse, čistiti kaveze i pomagati veterinarki.",
+          "textPl": "Moja praca to wyprowadzanie psów, sprzątanie klatek i pomaganie pani weterynarz.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/04-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Najteže mi je kad neka životinja dugo čeka novi dom.",
+          "textPl": "Najtrudniej jest mi wtedy, gdy jakieś zwierzę długo czeka na nowy dom.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/05-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ali najljepši je trenutak kad obitelj dođe po psa ili mačku i svi su sretni.",
+          "textPl": "Ale najpiękniejsza chwila jest wtedy, gdy rodzina przychodzi po psa albo kota i wszyscy są szczęśliwi.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/06-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Prošli mjesec organizirali smo sajam na kojem smo skupili dovoljno novca za novi krov.",
+          "textPl": "W zeszłym miesiącu zorganizowaliśmy kiermasz, na którym zebraliśmy dość pieniędzy na nowy dach.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/07-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Onaj mali pas s ulice? Zove se Buba i sada živi sa mnom.",
+          "textPl": "Ten mały pies z ulicy? Wabi się Buba i teraz mieszka ze mną.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/08-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Svima preporučujem volontiranje — dobiješ puno više nego što daš.",
+          "textPl": "Każdemu polecam wolontariat — dostajesz dużo więcej, niż dajesz.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-volonterka/09-ana.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Jak zaczęła się przygoda Any ze schroniskiem?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "Przeczytała ogłoszenie"
+            },
+            {
+              "id": "c",
+              "textPl": "Namówiła ją koleżanka"
+            },
+            {
+              "id": "a",
+              "textPl": "Znalazła na ulicy głodnego psa"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Na co zebrano pieniądze na kiermaszu?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Na samochód"
+            },
+            {
+              "id": "a",
+              "textPl": "Na nowy dach"
+            },
+            {
+              "id": "b",
+              "textPl": "Na karmę"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Gdzie dziś mieszka Buba?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "U Any"
+            },
+            {
+              "id": "b",
+              "textPl": "W schronisku"
+            },
+            {
+              "id": "c",
+              "textPl": "U pani weterynarz"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "b1-propusteni-vlak",
+      "level": "B1",
+      "titlePl": "Spóźnieni na pociąg",
+      "titleEn": "The missed train",
+      "topic": "podróż i rozwiązywanie problemów",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "textHr": "Marko i Tomo planirali su vikend u Rijeci. Vlak iz Zagreba polazio je u sedam i petnaest.",
+          "textPl": "Marko i Tomo planowali weekend w Rijece. Pociąg z Zagrzebia odjeżdżał o siódmej piętnaście.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/01-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Ali Tomo je zaboravio navesti budilicu, pa su na kolodvor stigli u sedam i dvadeset.",
+          "textPl": "Ale Tomo zapomniał nastawić budzik, więc dotarli na dworzec o siódmej dwadzieścia.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/02-narrator.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ne mogu vjerovati! Vlak je upravo otišao. Što ćemo sada?",
+          "textPl": "Nie mogę uwierzyć! Pociąg właśnie odjechał. Co teraz zrobimy?",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/03-marko.mp3"
+        },
+        {
+          "speaker": "tomo",
+          "textHr": "Oprosti, stvarno mi je žao. Idem pitati na šalteru ima li još koji vlak.",
+          "textPl": "Przepraszam, naprawdę mi przykro. Pójdę zapytać w kasie, czy jest jeszcze jakiś pociąg.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/04-tomo.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Na šalteru su im rekli da sljedeći vlak ide tek u podne, ali da autobus polazi za četrdeset minuta.",
+          "textPl": "W kasie powiedziano im, że następny pociąg jedzie dopiero w południe, ale autobus odjeżdża za czterdzieści minut.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/05-narrator.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Autobus je brži i jeftiniji. Uzmimo autobus.",
+          "textPl": "Autobus jest szybszy i tańszy. Weźmy autobus.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/06-marko.mp3"
+        },
+        {
+          "speaker": "tomo",
+          "textHr": "Dogovoreno. A ja ću ti platiti kartu, jer sam ja kriv.",
+          "textPl": "Umowa stoi. A ja zapłacę za twój bilet, bo to moja wina.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/07-tomo.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Na kraju su u Rijeku stigli samo sat vremena kasnije nego što su planirali.",
+          "textPl": "W końcu dotarli do Rijeki tylko godzinę później, niż planowali.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/08-narrator.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Znaš što? Možda je ovo bio najbolji početak vikenda.",
+          "textPl": "Wiesz co? Może to był najlepszy początek weekendu.",
+          "audioPath": "/audio/listening/hr-b1/stories/b1-propusteni-vlak/09-marko.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Dlaczego spóźnili się na pociąg?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Tomo zapomniał nastawić budzik"
+            },
+            {
+              "id": "b",
+              "textPl": "Był korek na drodze"
+            },
+            {
+              "id": "c",
+              "textPl": "Pomylili godzinę odjazdu"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Czym pojechali do Rijeki?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "Następnym pociągiem"
+            },
+            {
+              "id": "c",
+              "textPl": "Samochodem"
+            },
+            {
+              "id": "a",
+              "textPl": "Autobusem"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Kto zapłacił za bilet Marka?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Nikt — bilet był darmowy"
+            },
+            {
+              "id": "a",
+              "textPl": "Tomo"
+            },
+            {
+              "id": "b",
+              "textPl": "Marko sam"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    }
+  ]
+}

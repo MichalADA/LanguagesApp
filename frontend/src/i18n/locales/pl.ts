@@ -641,6 +641,19 @@ export const pl: Dictionary = {
     "false-friends": "Fałszywi przyjaciele — w przygotowaniu."
   },
   "listening": {
+    "kindLabel": "Rodzaj słuchanek",
+    "kinds": {
+      "dialogues": { "name": "Dialogi", "description": "Krótkie rozmowy Any i Marka z codziennych sytuacji — jedno pytanie do każdej." },
+      "stories": { "name": "Historie", "description": "Opowiadania z narratorem i postaciami, nagrane naturalnymi głosami — kilka pytań do każdej historii." }
+    },
+    "storyLevels": {
+      "A1": { "name": "Proste historie", "description": "Krótkie zdania, czas teraźniejszy: podróż, rodzina, targ i plany." },
+      "A2": { "name": "Opowieści z przeszłości", "description": "Czas przeszły i więcej szczegółów: wyjazdy, praca, gotowanie u babci." },
+      "B1": { "name": "Historie z życia", "description": "Dłuższe opowieści z refleksją: przeprowadzka, przypadkowe spotkanie, wolontariat." }
+    },
+    "chooseStory": "Historia",
+    "score": "Wynik: {n} / {total}",
+    "storiesNote": "Historie nagrane głosami ElevenLabs. Teksty wymagają jeszcze oceny osoby mówiącej po chorwacku jako językiem ojczystym.",
     "chooseLevelEyebrow": "poziom słuchania",
     "chooseLevel": "Wybierz poziom",
     "chooseLevelDescription": "Każdy poziom ma własne dialogi, słownictwo i stopień trudności.",

@@ -641,6 +641,19 @@ export const en: Dictionary = {
     "false-friends": "False friends — coming soon."
   },
   "listening": {
+    "kindLabel": "Listening type",
+    "kinds": {
+      "dialogues": { "name": "Dialogues", "description": "Short everyday conversations between Ana and Marko — one question each." },
+      "stories": { "name": "Stories", "description": "Narrated stories with characters and natural voices — several questions per story." }
+    },
+    "storyLevels": {
+      "A1": { "name": "Simple stories", "description": "Short sentences in the present tense: travel, family, the market and plans." },
+      "A2": { "name": "Stories from the past", "description": "Past tense and more detail: trips, work, cooking at grandma's." },
+      "B1": { "name": "Life stories", "description": "Longer stories with reflection: moving, a chance meeting, volunteering." }
+    },
+    "chooseStory": "Story",
+    "score": "Score: {n} / {total}",
+    "storiesNote": "Stories recorded with ElevenLabs voices. The texts still need review by a native Croatian speaker.",
     "chooseLevelEyebrow": "listening level",
     "chooseLevel": "Choose a level",
     "chooseLevelDescription": "Each level has its own dialogues, vocabulary and difficulty.",

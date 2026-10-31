@@ -78,3 +78,16 @@ cd frontend && npm run stories:audio
 `--dry-run` prints the character count, the estimated credit cost and (if the key may read it) the remaining
 balance. Only HTTP 429/5xx responses are retried; existing files are skipped, so re-running after a partial
 failure only pays for the missing clips.
+
+## Listening stories (ElevenLabs)
+
+`frontend/public/data/listening/hr-{a1,a2,b1}-stories.json` hold narrated stories (narrator + characters, several
+questions each). `generatedWith` names the provider (`elevenlabs`), model, speed (`rate`) and the voice_id of every
+speaker; `speakers` maps speaker ids to display names. Audio lands in `/audio/listening/hr-<level>/stories/<id>/`.
+
+```bash
+python tools/listening/generate_tts.py --manifest frontend/public/data/listening/hr-a1-stories.json --dry-run
+python tools/listening/generate_tts.py --manifest frontend/public/data/listening/hr-a1-stories.json --allow-paid
+```
+
+`--dialogue <story-id>` regenerates a single story. `npm test` checks that every line has a voice, a name and a file.
