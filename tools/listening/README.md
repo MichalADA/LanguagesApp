@@ -60,3 +60,21 @@ cd frontend && npm run stories:audio && cd ..
 python tools/listening/generate_tts.py --course-manifest frontend/curriculum/stories/split-a1-audio-manifest.json
 cd frontend && npm run stories:audio
 ```
+
+### ElevenLabs (paid) for Stories
+
+A story with an `elevenlabs` block in `frontend/scripts/stories-audio.mjs` (model + voice_id per speaker) writes a
+manifest with `"provider": "elevenlabs"`. Every line gets its own recording in that character's voice (no reuse of
+course audio) under `/audio/hr/stories/<story>/elevenlabs/<speaker>/`. The rate maps to ElevenLabs voice speed
+(`-8%` → 0.92); pitch is ignored. Generation needs `ELEVENLABS_API_KEY` in the environment and `--allow-paid`:
+
+```bash
+cd frontend && npm run stories:audio && cd ..
+python tools/listening/generate_tts.py --course-manifest frontend/curriculum/stories/split-a1-audio-manifest.json --dry-run
+python tools/listening/generate_tts.py --course-manifest frontend/curriculum/stories/split-a1-audio-manifest.json --allow-paid
+cd frontend && npm run stories:audio
+```
+
+`--dry-run` prints the character count, the estimated credit cost and (if the key may read it) the remaining
+balance. Only HTTP 429/5xx responses are retried; existing files are skipped, so re-running after a partial
+failure only pays for the missing clips.

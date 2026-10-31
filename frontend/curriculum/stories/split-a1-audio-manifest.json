@@ -1,732 +1,1051 @@
 {
-  "provider": "edge-tts",
+  "provider": "elevenlabs",
+  "model": "eleven_multilingual_v2",
   "rate": "-8%",
   "story": "split-a1",
   "items": [
     {
       "speaker": "ana",
       "text": "A šećer?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/a-secer.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/a-secer.mp3"
     },
     {
       "speaker": "ana",
       "text": "Ah, kavu! Nema problema.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/ah-kavu-nema-problema.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/ah-kavu-nema-problema.mp3"
     },
     {
       "speaker": "ana",
       "text": "Čekajte! Što želite? Čaj ili kavu?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/cekajte-sto-zelite-caj-ili-kavu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/cekajte-sto-zelite-caj-ili-kavu.mp3"
+    },
+    {
+      "speaker": "ana",
+      "text": "Dobro jutro!",
+      "voice": "4vkn1E85GfXGoH86xgU7",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/dobro-jutro.mp3"
     },
     {
       "speaker": "ana",
       "text": "Doviđenja! Vidimo se sutra!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/dovidjenja-vidimo-se-sutra.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/dovidjenja-vidimo-se-sutra.mp3"
     },
     {
       "speaker": "ana",
       "text": "Ha-ha! S mlijekom ili bez mlijeka?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/ha-ha-s-mlijekom-ili-bez-mlijeka.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/ha-ha-s-mlijekom-ili-bez-mlijeka.mp3"
     },
     {
       "speaker": "ana",
       "text": "Hvala! Evo, dva eura i pedeset centi.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/hvala-evo-dva-eura-i-pedeset-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/hvala-evo-dva-eura-i-pedeset-centi.mp3"
     },
     {
       "speaker": "ana",
       "text": "Izvolite: bijela kava bez šećera.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/izvolite-bijela-kava-bez-secera.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/izvolite-bijela-kava-bez-secera.mp3"
     },
     {
       "speaker": "ana",
       "text": "Izvolite: kava bez šećera.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/izvolite-kava-bez-secera.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/izvolite-kava-bez-secera.mp3"
+    },
+    {
+      "speaker": "ana",
+      "text": "Izvolite.",
+      "voice": "4vkn1E85GfXGoH86xgU7",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/izvolite.mp3"
     },
     {
       "speaker": "ana",
       "text": "Jedan čaj, može!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/jedan-caj-moze.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/jedan-caj-moze.mp3"
+    },
+    {
+      "speaker": "ana",
+      "text": "Još nešto?",
+      "voice": "4vkn1E85GfXGoH86xgU7",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/jos-nesto.mp3"
     },
     {
       "speaker": "ana",
       "text": "Kava je dva eura i pedeset centi. Voda je besplatna.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/kava-je-dva-eura-i-pedeset-centi-voda-je-besplatna.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/kava-je-dva-eura-i-pedeset-centi-voda-je-besplatna.mp3"
     },
     {
       "speaker": "ana",
       "text": "Molim?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/molim.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/molim.mp3"
     },
     {
       "speaker": "ana",
       "text": "Molim? Jednu kavu?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/molim-jednu-kavu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/molim-jednu-kavu.mp3"
     },
     {
       "speaker": "ana",
       "text": "Molim? Karticom ili gotovinom?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/molim-karticom-ili-gotovinom.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/molim-karticom-ili-gotovinom.mp3"
     },
     {
       "speaker": "ana",
       "text": "Molim? Šećer — da ili ne?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/molim-secer-da-ili-ne.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/molim-secer-da-ili-ne.mp3"
     },
     {
       "speaker": "ana",
       "text": "Naravno! Izvolite.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/naravno-izvolite.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/naravno-izvolite.mp3"
     },
     {
       "speaker": "ana",
       "text": "Naravno.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/naravno.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/naravno.mp3"
     },
     {
       "speaker": "ana",
       "text": "Ne — dva eura i pedeset centi.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/ne-dva-eura-i-pedeset-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/ne-dva-eura-i-pedeset-centi.mp3"
     },
     {
       "speaker": "ana",
       "text": "Ne, ne — dva eura i pedeset centi!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/ne-ne-dva-eura-i-pedeset-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/ne-ne-dva-eura-i-pedeset-centi.mp3"
     },
     {
       "speaker": "ana",
       "text": "Pedeset? To je puno!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/pedeset-to-je-puno.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/pedeset-to-je-puno.mp3"
     },
     {
       "speaker": "ana",
       "text": "S mlijekom ili bez?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "4vkn1E85GfXGoH86xgU7",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/ana/s-mlijekom-ili-bez.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ana/s-mlijekom-ili-bez.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Aha… A što trebate?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/aha-a-sto-trebate.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/aha-a-sto-trebate.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Dobar dan! Izvolite.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/dobar-dan-izvolite.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/dobar-dan-izvolite.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Hvala! Doviđenja i ugodan dan!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/hvala-dovidjenja-i-ugodan-dan.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/hvala-dovidjenja-i-ugodan-dan.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Imamo! Svjež kruh je ovdje.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/imamo-svjez-kruh-je-ovdje.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/imamo-svjez-kruh-je-ovdje.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Još nešto?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/jos-nesto.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/jos-nesto.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Mlijeko je ovdje, a voda je tamo.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/mlijeko-je-ovdje-a-voda-je-tamo.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/mlijeko-je-ovdje-a-voda-je-tamo.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Molim? Mlijeko? Vodu?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/molim-mlijeko-vodu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/molim-mlijeko-vodu.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Ne — pet eura i deset centi.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/ne-pet-eura-i-deset-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/ne-pet-eura-i-deset-centi.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Ne — samo pet eura.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/ne-samo-pet-eura.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/ne-samo-pet-eura.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Što još trebate?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/sto-jos-trebate.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/sto-jos-trebate.mp3"
     },
     {
       "speaker": "ivana",
       "text": "To je pet eura i deset centi.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/to-je-pet-eura-i-deset-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/to-je-pet-eura-i-deset-centi.mp3"
     },
     {
       "speaker": "ivana",
       "text": "To je pet eura.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/to-je-pet-eura.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/to-je-pet-eura.mp3"
     },
     {
       "speaker": "ivana",
       "text": "Trebate li vrećicu?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "FXlzTee7Zx2caYKIAwBF",
       "rate": "-12%",
-      "pitch": "-12Hz",
-      "audioPath": "/audio/hr/stories/split-a1/ivana/trebate-li-vrecicu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/ivana/trebate-li-vrecicu.mp3"
     },
     {
       "speaker": "marko",
       "text": "Apartman je broj sedam, na drugom katu.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/apartman-je-broj-sedam-na-drugom-katu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/apartman-je-broj-sedam-na-drugom-katu.mp3"
     },
     {
       "speaker": "marko",
       "text": "Bok! Kako si?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/bok-kako-si.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/bok-kako-si.mp3"
     },
     {
       "speaker": "marko",
       "text": "Dobar dan! Dobro došli u Split!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/dobar-dan-dobro-dosli-u-split.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/dobar-dan-dobro-dosli-u-split.mp3"
     },
     {
       "speaker": "marko",
       "text": "Doviđenja? Ne, ne! Dobro došli!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/dovidjenja-ne-ne-dobro-dosli.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/dovidjenja-ne-ne-dobro-dosli.mp3"
     },
     {
       "speaker": "marko",
       "text": "Drago mi je! Odakle si?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/drago-mi-je-odakle-si.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/drago-mi-je-odakle-si.mp3"
     },
     {
       "speaker": "marko",
       "text": "Evo! Ovo je ključ od apartmana.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/evo-ovo-je-kljuc-od-apartmana.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/evo-ovo-je-kljuc-od-apartmana.mp3"
     },
     {
       "speaker": "marko",
       "text": "Ha-ha! Dobar dan i tebi. Ali kako si?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/ha-ha-dobar-dan-i-tebi-ali-kako-si.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/ha-ha-dobar-dan-i-tebi-ali-kako-si.mp3"
     },
     {
       "speaker": "marko",
       "text": "Iz Poljske! Super. Imaš rezervaciju?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/iz-poljske-super-imas-rezervaciju.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/iz-poljske-super-imas-rezervaciju.mp3"
     },
     {
       "speaker": "marko",
       "text": "Ja sam Marko. Kako se zoveš?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/ja-sam-marko-kako-se-zoves.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/ja-sam-marko-kako-se-zoves.mp3"
     },
     {
       "speaker": "marko",
       "text": "Ključ je kod mene. Vidimo se!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/kljuc-je-kod-mene-vidimo-se.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/kljuc-je-kod-mene-vidimo-se.mp3"
     },
     {
       "speaker": "marko",
       "text": "Kupaonica je lijevo.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/kupaonica-je-lijevo.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/kupaonica-je-lijevo.mp3"
     },
     {
       "speaker": "marko",
       "text": "Laku noć? Ali sada je dan!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/laku-noc-ali-sada-je-dan.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/laku-noc-ali-sada-je-dan.mp3"
     },
     {
       "speaker": "marko",
       "text": "Molim? Ja se zovem Marko. A ti?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/molim-ja-se-zovem-marko-a-ti.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/molim-ja-se-zovem-marko-a-ti.mp3"
     },
     {
       "speaker": "marko",
       "text": "Molim? Ključ? Gdje je ključ?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/molim-kljuc-gdje-je-kljuc.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/molim-kljuc-gdje-je-kljuc.mp3"
     },
     {
       "speaker": "marko",
       "text": "Ne desno — lijevo!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/ne-desno-lijevo.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/ne-desno-lijevo.mp3"
     },
     {
       "speaker": "marko",
       "text": "Ne, ne: broj sedam. Sedam!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/ne-ne-broj-sedam-sedam.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/ne-ne-broj-sedam-sedam.mp3"
     },
     {
       "speaker": "marko",
       "text": "Ne? Ali ovdje je rezervacija na tvoje ime!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/ne-ali-ovdje-je-rezervacija-na-tvoje-ime.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/ne-ali-ovdje-je-rezervacija-na-tvoje-ime.mp3"
     },
     {
       "speaker": "marko",
       "text": "Nema problema. Vidimo se!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/nema-problema-vidimo-se.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/nema-problema-vidimo-se.mp3"
     },
     {
       "speaker": "marko",
       "text": "Odakle? Iz Hrvatske? Iz Poljske?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/odakle-iz-hrvatske-iz-poljske.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/odakle-iz-hrvatske-iz-poljske.mp3"
     },
     {
       "speaker": "marko",
       "text": "Odlično! Još nešto: gdje živiš u Poljskoj?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/odlicno-jos-nesto-gdje-zivis-u-poljskoj.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/odlicno-jos-nesto-gdje-zivis-u-poljskoj.mp3"
     },
     {
       "speaker": "marko",
       "text": "Polako: broj — sedam. Sedam!",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/polako-broj-sedam-sedam.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/polako-broj-sedam-sedam.mp3"
     },
     {
       "speaker": "marko",
       "text": "Polako: kako — se — zoveš? Tvoje ime?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/polako-kako-se-zoves-tvoje-ime.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/polako-kako-se-zoves-tvoje-ime.mp3"
     },
     {
       "speaker": "marko",
       "text": "Super! Prijava je gotova.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/super-prijava-je-gotova.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/super-prijava-je-gotova.mp3"
     },
     {
       "speaker": "marko",
       "text": "Super! Što trebaš?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/super-sto-trebas.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/super-sto-trebas.mp3"
     },
     {
       "speaker": "marko",
       "text": "Tako je, sedam! Imaš li pitanje?",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "jJ1MUnCKtrOI23TlUUHc",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/marko/tako-je-sedam-imas-li-pitanje.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/marko/tako-je-sedam-imas-li-pitanje.mp3"
     },
     {
       "speaker": "narrator",
       "text": "Apartman. Marko je tu.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "O9XgmQnaZveORWl6mTHm",
       "rate": "-14%",
-      "pitch": "-8Hz",
-      "audioPath": "/audio/hr/stories/split-a1/narrator/apartman-marko-je-tu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/narrator/apartman-marko-je-tu.mp3"
     },
     {
       "speaker": "narrator",
       "text": "Kafić na rivi. Miriše kava.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "O9XgmQnaZveORWl6mTHm",
       "rate": "-14%",
-      "pitch": "-8Hz",
-      "audioPath": "/audio/hr/stories/split-a1/narrator/kafic-na-rivi-mirise-kava.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/narrator/kafic-na-rivi-mirise-kava.mp3"
     },
     {
       "speaker": "narrator",
       "text": "Split. Sunce, more i apartman u starom gradu.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "O9XgmQnaZveORWl6mTHm",
       "rate": "-14%",
-      "pitch": "-8Hz",
-      "audioPath": "/audio/hr/stories/split-a1/narrator/split-sunce-more-i-apartman-u-starom-gradu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/narrator/split-sunce-more-i-apartman-u-starom-gradu.mp3"
     },
     {
       "speaker": "narrator",
       "text": "Trgovina je blizu apartmana.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "O9XgmQnaZveORWl6mTHm",
       "rate": "-14%",
-      "pitch": "-8Hz",
-      "audioPath": "/audio/hr/stories/split-a1/narrator/trgovina-je-blizu-apartmana.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/narrator/trgovina-je-blizu-apartmana.mp3"
     },
     {
       "speaker": "narrator",
       "text": "Vrijeme je za plaćanje.",
-      "voice": "hr-HR-SreckoNeural",
+      "voice": "O9XgmQnaZveORWl6mTHm",
       "rate": "-14%",
-      "pitch": "-8Hz",
-      "audioPath": "/audio/hr/stories/split-a1/narrator/vrijeme-je-za-placanje.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/narrator/vrijeme-je-za-placanje.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "apartman",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/apartman.mp3"
     },
     {
       "speaker": "player",
       "text": "Bez mlijeka, hvala.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/bez-mlijeka-hvala.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/bez-mlijeka-hvala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Bez šećera, molim.",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/bez-secera-molim.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "broj",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/broj.mp3"
     },
     {
       "speaker": "player",
       "text": "Broj sedam?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/broj-sedam.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/broj-sedam.mp3"
     },
     {
       "speaker": "player",
       "text": "Broj sedamnaest?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/broj-sedamnaest.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/broj-sedamnaest.mp3"
     },
     {
       "speaker": "player",
       "text": "Broj šest?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/broj-sest.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/broj-sest.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "čaj",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/caj.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "čaša",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/casa.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Čašu vode, molim.",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/casu-vode-molim.mp3"
     },
     {
       "speaker": "player",
       "text": "Da, imam rezervaciju.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/da-imam-rezervaciju.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/da-imam-rezervaciju.mp3"
     },
     {
       "speaker": "player",
       "text": "Da, molim.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/da-molim.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/da-molim.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "desno",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/desno.mp3"
     },
     {
       "speaker": "player",
       "text": "Desno? Hvala!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/desno-hvala.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/desno-hvala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "dobar dan",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dobar-dan.mp3"
     },
     {
       "speaker": "player",
       "text": "Dobar dan sam.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/dobar-dan-sam.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dobar-dan-sam.mp3"
     },
     {
       "speaker": "player",
       "text": "Dobar dan!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/dobar-dan.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dobar-dan.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Dobar tek!",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dobar-tek.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Dobro sam, hvala.",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dobro-sam-hvala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "doviđenja",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dovidjenja.mp3"
     },
     {
       "speaker": "player",
       "text": "Doviđenja!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/dovidjenja.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dovidjenja.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "drago mi je",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/drago-mi-je.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "dva",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dva.mp3"
     },
     {
       "speaker": "player",
       "text": "Dva eura i pedeset centi?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/dva-eura-i-pedeset-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dva-eura-i-pedeset-centi.mp3"
     },
     {
       "speaker": "player",
       "text": "Dva eura i pedeset centi. Hvala!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/dva-eura-i-pedeset-centi-hvala.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dva-eura-i-pedeset-centi-hvala.mp3"
     },
     {
       "speaker": "player",
       "text": "Dva eura i petnaest centi?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/dva-eura-i-petnaest-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dva-eura-i-petnaest-centi.mp3"
     },
     {
       "speaker": "player",
       "text": "Dvanaest eura i pedeset centi?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/dvanaest-eura-i-pedeset-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/dvanaest-eura-i-pedeset-centi.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "euro",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/euro.mp3"
     },
     {
       "speaker": "player",
       "text": "Evo, pedeset eura.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/evo-pedeset-eura.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/evo-pedeset-eura.mp3"
     },
     {
       "speaker": "player",
       "text": "Evo, pet eura.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/evo-pet-eura.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/evo-pet-eura.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "gdje",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/gdje.mp3"
     },
     {
       "speaker": "player",
       "text": "Gdje je kupaonica?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/gdje-je-kupaonica.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/gdje-je-kupaonica.mp3"
     },
     {
       "speaker": "player",
       "text": "Gdje je moj ključ?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/gdje-je-moj-kljuc.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/gdje-je-moj-kljuc.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Hvala, doviđenja!",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/hvala-dovidjenja.mp3"
     },
     {
       "speaker": "player",
       "text": "Imam kruh.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/imam-kruh.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/imam-kruh.mp3"
     },
     {
       "speaker": "player",
       "text": "Imate li kruh?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/imate-li-kruh.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/imate-li-kruh.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Imate li…?",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/imate-li.mp3"
     },
     {
       "speaker": "player",
       "text": "Izvolite, deset eura i pet centi.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/izvolite-deset-eura-i-pet-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/izvolite-deset-eura-i-pet-centi.mp3"
     },
     {
       "speaker": "player",
       "text": "Izvolite, pet eura i deset centi.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/izvolite-pet-eura-i-deset-centi.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/izvolite-pet-eura-i-deset-centi.mp3"
     },
     {
       "speaker": "player",
       "text": "Izvolite, pet eura.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/izvolite-pet-eura.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/izvolite-pet-eura.mp3"
     },
     {
       "speaker": "player",
       "text": "Izvolite, petnaest eura.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/izvolite-petnaest-eura.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/izvolite-petnaest-eura.mp3"
     },
     {
       "speaker": "player",
       "text": "Ja sam iz Poljske.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/ja-sam-iz-poljske.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/ja-sam-iz-poljske.mp3"
     },
     {
       "speaker": "player",
       "text": "Jedan čaj, molim.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/jedan-caj-molim.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/jedan-caj-molim.mp3"
     },
     {
       "speaker": "player",
       "text": "Jedna kava molim.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/jedna-kava-molim.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/jedna-kava-molim.mp3"
     },
     {
       "speaker": "player",
       "text": "Jednu kavu, molim.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/jednu-kavu-molim.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/jednu-kavu-molim.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "kartica",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/kartica.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "kava",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/kava.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "ključ",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/kljuc.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "koliko",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/koliko.mp3"
     },
     {
       "speaker": "player",
       "text": "Koliko košta kava?",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/koliko-kosta-kava.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/koliko-kosta-kava.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "koštati",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/kostati.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "kruh",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/kruh.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "kupaonica",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/kupaonica.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Laku noć!",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/laku-noc.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "lijevo",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/lijevo.mp3"
     },
     {
       "speaker": "player",
       "text": "Lijevo? Hvala!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/lijevo-hvala.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/lijevo-hvala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "mlijeko",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/mlijeko.mp3"
     },
     {
       "speaker": "player",
       "text": "Mlijeko je kava.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/mlijeko-je-kava.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/mlijeko-je-kava.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Mogu li platiti karticom?",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/mogu-li-platiti-karticom.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "molim",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/molim.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Molim jednu kavu.",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/molim-jednu-kavu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Ne razumijem.",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/ne-razumijem.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Ne, hvala.",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/ne-hvala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "odakle",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/odakle.mp3"
     },
     {
       "speaker": "player",
       "text": "Odlično sam!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/odlicno-sam.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/odlicno-sam.mp3"
     },
     {
       "speaker": "player",
       "text": "Oprostite, ne čaj, nego kavu, molim.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/oprostite-ne-caj-nego-kavu-molim.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/oprostite-ne-caj-nego-kavu-molim.mp3"
     },
     {
       "speaker": "player",
       "text": "Pedeset centi? Hvala!",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/pedeset-centi-hvala.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/pedeset-centi-hvala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "pet",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/pet.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "račun",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/racun.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Račun, molim.",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/racun-molim.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "rezervacija",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/rezervacija.mp3"
     },
     {
       "speaker": "player",
       "text": "S mlijekom, molim.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/s-mlijekom-molim.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/s-mlijekom-molim.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "šećer",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/secer.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "sedam",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/sedam.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "To je sve.",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/to-je-sve.mp3"
     },
     {
       "speaker": "player",
       "text": "Trebam mlijeko i vodu.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/trebam-mlijeko-i-vodu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/trebam-mlijeko-i-vodu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "trebati",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/trebati.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "trgovina",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/trgovina.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "voda",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/voda.mp3"
     },
     {
       "speaker": "player",
       "text": "Volim kruh.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/volim-kruh.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/volim-kruh.mp3"
     },
     {
       "speaker": "player",
       "text": "Živim u Krakovu.",
-      "voice": "hr-HR-GabrijelaNeural",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
       "rate": "-8%",
-      "audioPath": "/audio/hr/stories/split-a1/player/zivim-u-krakovu.mp3"
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/zivim-u-krakovu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "živjeti",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/zivjeti.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "zvati se",
+      "voice": "eqAqnItEUARzEkoDCTJ1",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/split-a1/elevenlabs/player/zvati-se.mp3"
     }
   ]
 }

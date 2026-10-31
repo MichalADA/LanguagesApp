@@ -11,6 +11,11 @@
  *   python tools/listening/generate_tts.py --course-manifest frontend/curriculum/stories/<historia>-audio-manifest.json
  * a potem ponownie `npm run stories:audio`. W audio.ts trafiają tylko pliki, które istnieją —
  * brak nagrania oznacza brak głosu, nigdy błąd 404. Teksty z {name} nie są nagrywane.
+ *
+ * Historia z polem `elevenlabs` (model + voice_id per mówiący) jest nagrywana w ElevenLabs (płatne):
+ * każda wypowiedź dostaje własne nagranie (bez reużycia nagrań kursu, żeby głos postaci był spójny),
+ * pliki trafiają do /audio/hr/stories/<historia>/elevenlabs/<mówiący>/, a generowanie wymaga --allow-paid:
+ *   python tools/listening/generate_tts.py --course-manifest frontend/curriculum/stories/<historia>-audio-manifest.json --allow-paid
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
@@ -28,7 +33,26 @@ const COURSE_RATE = "-8%";
 /** Gracz nie ma postaci — jego wzorcowe odpowiedzi czyta neutralny głos kursu. */
 const PLAYER = { gender: "female" };
 
-const STORIES = [{ dir: "split-a1", exportName: "SPLIT_A1", courseManifests: ["curriculum/hr-a1/audio-manifest.json"] }];
+/** Głosy ElevenLabs (voice_id z biblioteki, język chorwacki). */
+const EL = {
+  sara: "4vkn1E85GfXGoH86xgU7", // Sara – Sharp and Professional
+  tomislav: "O9XgmQnaZveORWl6mTHm", // Tomislav – Calm, Clear and Narrative
+  ivan: "jJ1MUnCKtrOI23TlUUHc", // Ivan – Clear Croatian Narrator
+  nina: "FXlzTee7Zx2caYKIAwBF", // Nina – Calm, Warm & Resonant
+  mila: "eqAqnItEUARzEkoDCTJ1", // Mila – Pleasant and gentle
+};
+
+const STORIES = [
+  {
+    dir: "split-a1",
+    exportName: "SPLIT_A1",
+    courseManifests: ["curriculum/hr-a1/audio-manifest.json"],
+    elevenlabs: {
+      model: "eleven_multilingual_v2",
+      voices: { narrator: EL.tomislav, marko: EL.ivan, ana: EL.sara, ivana: EL.nina, player: EL.mila },
+    },
+  },
+];
 
 function loadTs(file, cache = new Map()) {
   if (cache.has(file)) return cache.get(file);
@@ -47,7 +71,7 @@ function loadTs(file, cache = new Map()) {
 const json = (value) => `${JSON.stringify(value, null, 2)}\n`;
 let stale = 0;
 
-for (const { dir, exportName, courseManifests } of STORIES) {
+for (const { dir, exportName, courseManifests, elevenlabs } of STORIES) {
   const story = loadTs(join(ROOT, "src/stories/data", dir, "story.ts"))[exportName];
   const profiles = { narrator: story.narratorVoice, player: PLAYER, ...Object.fromEntries(story.npcs.map((n) => [n.id, n.voice])) };
 
@@ -82,6 +106,17 @@ for (const { dir, exportName, courseManifests } of STORIES) {
     .map(({ speaker, text }) => {
       const profile = profiles[speaker];
       if (!profile) throw new Error(`${dir}: brak profilu głosu dla „${speaker}”`);
+      if (elevenlabs) {
+        const voice = elevenlabs.voices[speaker];
+        if (!voice) throw new Error(`${dir}: brak głosu ElevenLabs dla „${speaker}”`);
+        return {
+          speaker,
+          text,
+          voice,
+          rate: profile.rate ?? COURSE_RATE,
+          audioPath: `/audio/hr/stories/${dir}/elevenlabs/${speaker}/${slugify(text)}.mp3`,
+        };
+      }
       const voice = VOICES[profile.gender];
       const plain = !profile.pitch && (profile.rate ?? COURSE_RATE) === COURSE_RATE;
       const reused = plain ? course.get(`${voice}|${text}`) : undefined;
@@ -95,7 +130,9 @@ for (const { dir, exportName, courseManifests } of STORIES) {
         ...(reused ? { reused: true } : {}),
       };
     });
-  const manifest = { provider: "edge-tts", rate: COURSE_RATE, story: story.id, items: items.filter((i) => !i.reused) };
+  const manifest = elevenlabs
+    ? { provider: "elevenlabs", model: elevenlabs.model, rate: COURSE_RATE, story: story.id, items }
+    : { provider: "edge-tts", rate: COURSE_RATE, story: story.id, items: items.filter((i) => !i.reused) };
 
   const audio = {};
   for (const item of items) {
