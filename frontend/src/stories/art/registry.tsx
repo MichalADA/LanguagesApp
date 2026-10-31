@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { Mood } from "../types";
 import { CharacterPortrait } from "./Portrait";
+import { ZagrebMap, ZgBoutiqueScene, ZgCafeScene, ZgClinicScene, ZgFlatScene, ZgOfficeScene, ZgPostScene, ZgUpperTownScene } from "./ZagrebScenes";
 import { ApartmentScene, BakeryScene, BeachScene, CafeScene, MarketScene, PlaceholderScene, PortScene, ShopScene, SplitMap, StationScene } from "./Scenes";
 
 /**
@@ -21,11 +22,19 @@ export const BACKGROUNDS: Record<string, ArtAsset> = {
   plaza: { kind: "svg", render: () => <BeachScene /> },
   luka: { kind: "svg", render: () => <PortScene /> },
   kolodvor: { kind: "svg", render: () => <StationScene /> },
+  "zg-stan": { kind: "svg", render: () => <ZgFlatScene /> },
+  "zg-kafic": { kind: "svg", render: () => <ZgCafeScene /> },
+  "zg-ured": { kind: "svg", render: () => <ZgOfficeScene /> },
+  "zg-ambulanta": { kind: "svg", render: () => <ZgClinicScene /> },
+  "zg-butik": { kind: "svg", render: () => <ZgBoutiqueScene /> },
+  "zg-posta": { kind: "svg", render: () => <ZgPostScene /> },
+  "zg-gornji-grad": { kind: "svg", render: () => <ZgUpperTownScene /> },
   placeholder: { kind: "svg", render: () => <PlaceholderScene /> },
 };
 
 export const MAPS: Record<string, ArtAsset> = {
   "split-map": { kind: "svg", render: () => <SplitMap /> },
+  "zagreb-map": { kind: "svg", render: () => <ZagrebMap /> },
 };
 
 export const PORTRAITS: Record<string, PortraitAsset> = {
@@ -37,6 +46,12 @@ export const PORTRAITS: Record<string, PortraitAsset> = {
   toni: { kind: "svg", character: "toni" },
   petra: { kind: "svg", character: "petra" },
   davor: { kind: "svg", character: "davor" },
+  ljubica: { kind: "svg", character: "ljubica" },
+  zoran: { kind: "svg", character: "zoran" },
+  babic: { kind: "svg", character: "babic" },
+  lana: { kind: "svg", character: "lana" },
+  dragan: { kind: "svg", character: "dragan" },
+  maja: { kind: "svg", character: "maja" },
 };
 
 /** Tło albo mapa — z bezpiecznym zastępnikiem, gdy id nie ma w rejestrze. */

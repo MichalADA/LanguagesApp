@@ -58,6 +58,7 @@ const { validateStory, validateGraph } = src('src/stories/validate.ts');
 const progressLib = src('src/stories/progress.ts');
 const repo = src('src/stories/repository.ts');
 const { SPLIT_A1 } = src('src/stories/data/split-a1/story.ts');
+const { ZAGREB_A2 } = src('src/stories/data/zagreb-a2/story.ts');
 const { STORIES } = src('src/stories/data/index.ts');
 const builders = src('src/stories/data/builders.ts');
 const { PORTRAITS } = src('src/stories/art/registry.tsx');
@@ -114,7 +115,7 @@ test('Split A1: 8 lokacji z misjami, 8 postaci, 10 misji i poprawna struktura ws
   for (const n of SPLIT_A1.npcs) assert.ok(PORTRAITS[n.portrait], `${n.id}: brak portretu`);
   assert.equal(SPLIT_A1.languageReview, 'unverified', 'treść nie jest oznaczona jako sprawdzona przez native speakera');
   // Architektura miast: A1 grywalne, A2 i B1 zapowiedziane.
-  assert.deepEqual(STORIES.map((s) => [s.city.hr, s.level, Boolean(s.load)]), [['Split', 'A1', true], ['Zagreb', 'A2', false], ['Dubrovnik', 'B1', false]]);
+  assert.deepEqual(STORIES.map((s) => [s.city.hr, s.level, Boolean(s.load)]), [['Split', 'A1', true], ['Zagreb', 'A2', true], ['Dubrovnik', 'B1', false]]);
 });
 
 test('każda misja ma progresję rozpoznanie → układanie → wpisywanie i kilka interakcji', () => {
@@ -485,4 +486,78 @@ test('UI: misja w kawiarni rozegrana w scenie — wybór, kafelki, wpisywanie, t
   await click(buttonText(t('stories.continue'))); // Naravno! Izvolite.
   assert.equal(view.root.findAll((n) => n.props?.className === 'done').length, 1, 'misja zakończona');
   act(() => view.unmount());
+});
+
+
+/* ---------- Zagrzeb A2 ---------- */
+
+test('Zagrzeb A2: poprawna historia — 7 lokacji, 6 postaci, 8 misji, własne tła, portrety i mapa', () => {
+  assert.deepEqual(validateStory(ZAGREB_A2), []);
+  assert.equal(ZAGREB_A2.level, 'A2');
+  assert.equal(ZAGREB_A2.missions.length, 8);
+  assert.equal(ZAGREB_A2.npcs.length, 6);
+  assert.equal(ZAGREB_A2.locations.length, 7);
+  assert.equal(ZAGREB_A2.languageReview, 'unverified');
+  assert.equal(ZAGREB_A2.map, 'zagreb-map');
+  for (const l of ZAGREB_A2.locations) assert.ok(!l.comingSoon && l.background.startsWith('zg-'), l.id);
+  for (const n of ZAGREB_A2.npcs) assert.ok(PORTRAITS[n.portrait], `${n.id}: brak portretu`);
+  for (const m of ZAGREB_A2.missions) {
+    const nodes = Object.values(m.dialogue.graph.nodes);
+    assert.ok(nodes.filter((n) => ['choice', 'build', 'type'].includes(n.kind)).length >= 4, `${m.id}: co najmniej 4 interakcje`);
+    assert.ok(nodes.some((n) => n.kind === 'type') && nodes.some((n) => n.kind === 'build'), `${m.id}: układanie i wpisywanie`);
+  }
+});
+
+test('Zagrzeb A2: każda misja kończy się na 100% z odhaczonymi celami, błędy nie blokują postępu', () => {
+  for (const m of ZAGREB_A2.missions) {
+    const run = play(m);
+    assert.equal(engine.scoreOf(run).percent, 100, m.id);
+    for (const o of m.objectives) assert.ok(engine.evaluate(o.done, run.flags, []), `${m.id}: cel „${o.text}” nie został odhaczony`);
+    assert.ok(engine.scoreOf(play(m, { policy: 'wrong-first' })).percent < 100, m.id);
+    assert.ok(play(m, { policy: 'stubborn' }).finished, m.id);
+  }
+  // Alternatywne poprawne odpowiedzi też prowadzą do końca.
+  assert.equal(engine.scoreOf(play(ZAGREB_A2.missions.find((m) => m.id === 'm7-vikend'), { prefer: ['idea'] })).percent, 100);
+});
+
+test('Zagrzeb A2: odblokowanie po kolei — start w mieszkaniu i kawiarni, Górne Miasto na końcu', () => {
+  const p = progressLib.emptyProgress('zagreb-a2');
+  const open = ZAGREB_A2.missions.filter((m) => progressLib.missionStatus(ZAGREB_A2, p, m, false) === 'available').map((m) => m.id);
+  assert.deepEqual(open, ['m1-stan', 'm7-vikend']);
+  assert.equal(progressLib.isLocationUnlocked(ZAGREB_A2.locations.find((l) => l.id === 'gornji-grad'), p, false), false);
+  assert.ok(ZAGREB_A2.missions.every((m) => progressLib.missionStatus(ZAGREB_A2, p, m, true) === 'available'), 'tryb testowy');
+});
+
+test('Zagrzeb A2: słownictwo misji to karty FSRS z lekcji A2', () => {
+  const lessonRefs = new Map();
+  const dir = join(SRC, 'curriculum/data/hr-a2');
+  for (const m of readdirSync(dir).filter((f) => f.startsWith('module'))) {
+    for (const f of readdirSync(join(dir, m))) {
+      const text = readFileSync(join(dir, m, f), 'utf8');
+      if (!text.includes('content: ')) continue;
+      const content = JSON.parse(text.slice(text.indexOf('content: ') + 9, text.indexOf(',\n  material:')));
+      for (const v of content.vocabulary) lessonRefs.set(v.target, v.review);
+    }
+  }
+  const phrases = src('src/curriculum/data/hr-a2/review-items.ts').HR_A2_REVIEW_ITEMS;
+  for (const m of ZAGREB_A2.missions) {
+    for (const w of m.vocabulary) assert.deepEqual(w.review, lessonRefs.get(w.hr), `${m.id}: „${w.hr}” ma inną kartę niż w lekcji A2`);
+    for (const n of Object.values(m.dialogue.graph.nodes)) {
+      if ((n.kind === 'build' || n.kind === 'type') && n.practice) {
+        const ref = m.vocabulary.find((w) => w.hr === n.practice).review;
+        assert.ok(ref.itemType === 'WORD' || phrases[ref.itemId], `${m.id}/${n.id}: ćwiczone słowo musi mieć kartę możliwą do powtórki`);
+      }
+    }
+  }
+});
+
+test('Zagrzeb A2: każda kwestia postaci i narratora ma nagranie', () => {
+  const { ZAGREB_A2_AUDIO } = src('src/stories/data/zagreb-a2/audio.ts');
+  const { audioFor } = src('src/stories/integration.ts');
+  for (const entry of Object.values(ZAGREB_A2_AUDIO)) for (const p of Object.values(entry)) assert.ok(existsSync(join(ROOT, 'public', p)), p);
+  for (const m of ZAGREB_A2.missions) {
+    for (const n of Object.values(m.dialogue.graph.nodes)) {
+      if (n.kind === 'say') assert.ok(audioFor(ZAGREB_A2_AUDIO, n.text.hr, n.speaker), `${m.id}/${n.id}: brak głosu „${n.text.hr}”`);
+    }
+  }
 });

@@ -116,7 +116,7 @@ def elevenlabs_credits(api_key: str) -> str:
 
 
 def elevenlabs_synthesize(api_key: str, model: str, text: str, voice_id: str, speed: float) -> bytes:
-    """One TTS call. Retries only on 429/5xx (not billed); any other error is reported, never retried."""
+    """One TTS call. Retries only on 409 (voice being added), 429 and 5xx (not billed); other errors are reported."""
     body = {
         "text": text,
         "model_id": model,
@@ -128,7 +128,7 @@ def elevenlabs_synthesize(api_key: str, model: str, text: str, voice_id: str, sp
             return elevenlabs_request(path, api_key, body)
         except urllib.error.HTTPError as error:
             detail = error.read().decode(errors="replace")[:300]
-            if error.code in (429, 500, 502, 503, 504) and attempt < 4:
+            if error.code in (409, 429, 500, 502, 503, 504) and attempt < 4:
                 time.sleep(2 ** (attempt + 1))
                 continue
             raise RuntimeError(f"HTTP {error.code}: {detail}") from None

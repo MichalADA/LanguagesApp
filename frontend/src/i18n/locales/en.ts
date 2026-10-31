@@ -159,7 +159,7 @@ export const en: Dictionary = {
     "eyebrow": "Story game",
     "upcoming": "Next cities",
     "title": "Lexodromia Stories",
-    "subtitle": "Each city is one level. In Split you check into a flat, order coffee on the Riva, haggle at the market and take the ferry to Brač — ten missions, all in Croatian.",
+    "subtitle": "Each city is one level. In Split (A1) you check into a flat, order coffee on the Riva and take the ferry to Brač. In Zagreb (A2) you rent a flat, start a job and see a doctor. All in Croatian.",
     "noCourse": "There are no stories for this course yet.",
     "enterCity": "Open the map and missions",
     "allCities": "All cities",

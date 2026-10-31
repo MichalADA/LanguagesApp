@@ -11,10 +11,20 @@ export const STORIES: StoryEntry[] = [
     level: "A1",
     tagline: "Pierwsze dni w Dalmacji: meldunek, kawa na nabrzeżu, targ, plaża i prom na wyspy.",
     courseId: "pl-hr",
+    map: "split-map",
     load: () => import("./split-a1/story").then((m) => m.SPLIT_A1),
     loadAudio: () => import("./split-a1/audio").then((m) => m.SPLIT_A1_AUDIO),
   },
-  { id: "zagreb-a2", city: { hr: "Zagreb", pl: "Zagrzeb" }, level: "A2", tagline: "Stolica, tramwaje i pierwsza praca.", courseId: "pl-hr" },
+  {
+    id: "zagreb-a2",
+    city: { hr: "Zagreb", pl: "Zagrzeb" },
+    level: "A2",
+    tagline: "Stolica, tramwaje i pierwsza praca: mieszkanie, biuro, lekarz, zakupy na Ilicy i kawa na Cvjetnym trgu.",
+    courseId: "pl-hr",
+    map: "zagreb-map",
+    load: () => import("./zagreb-a2/story").then((m) => m.ZAGREB_A2),
+    loadAudio: () => import("./zagreb-a2/audio").then((m) => m.ZAGREB_A2_AUDIO),
+  },
   { id: "dubrovnik-b1", city: { hr: "Dubrovnik", pl: "Dubrownik" }, level: "B1", tagline: "Mury, turyści i rozmowy o wszystkim.", courseId: "pl-hr" },
 ];
 

@@ -159,7 +159,7 @@ export const pl: Dictionary = {
     "eyebrow": "Gra fabularna",
     "upcoming": "Następne miasta",
     "title": "Lexodromia Stories",
-    "subtitle": "Każde miasto to jeden poziom. W Splicie meldujesz się w apartamencie, zamawiasz kawę na Rivie, targujesz się na targu i płyniesz promem na Brač — dziesięć misji, wszystko po chorwacku.",
+    "subtitle": "Każde miasto to jeden poziom. W Splicie (A1) meldujesz się w apartamencie, zamawiasz kawę na Rivie i płyniesz promem na Brač. W Zagrzebiu (A2) wynajmujesz mieszkanie, zaczynasz pracę i idziesz do lekarza. Wszystko po chorwacku.",
     "noCourse": "Dla tego kursu nie ma jeszcze historii.",
     "enterCity": "Otwórz mapę i misje",
     "allCities": "Wszystkie miasta",

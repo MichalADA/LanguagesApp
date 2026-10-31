@@ -45,6 +45,13 @@ const EL = {
   mihael: "jVBTQrP67HZEE22UqQGF", // Mihael – HQ Croatian Radio TV Voice over (młody)
   ida: "d3l4f3HgkE3P6Fo91lYA", // Ida – Clear & Confident
   branimir: "WxQSzlR1UORgKEiMk1n4", // Branimir – Professional Croatian Studio
+  karlo: "pTD8166KADi6ZFJ5FEXi", // Karlo – calm clear friendly voice
+  ivanaCalm: "JDYfAX20MbYfJGIjPTZz", // Ivana – Calm, Slow, Friendly
+  sini: "7rIwwKpExfJ59KPHgRnT", // Sini – Calm, Clear and Professional
+  elena: "iahPPG34ls0Mm3W0DBhh", // Elena – Confident and articulate
+  anaWarm: "rmUck1qkzTjuEjdC6Cav", // Ana – Pleasant and warm
+  provox: "F2kYsMGahtg8auErVXgY", // ProVox – Wise & Gentle
+  ivanaEnergetic: "jEKeTj7nqDtk1QSNwXkO", // Ivana – Energetic and spirited
 };
 
 const STORIES = [
@@ -65,6 +72,24 @@ const STORIES = [
         toni: EL.mihael,
         petra: EL.ida,
         davor: EL.branimir,
+      },
+    },
+  },
+  {
+    dir: "zagreb-a2",
+    exportName: "ZAGREB_A2",
+    courseManifests: ["curriculum/hr-a2/audio-manifest.json"],
+    elevenlabs: {
+      model: "eleven_multilingual_v2",
+      voices: {
+        narrator: EL.karlo,
+        player: EL.mila,
+        ljubica: EL.ivanaCalm,
+        zoran: EL.sini,
+        babic: EL.elena,
+        lana: EL.anaWarm,
+        dragan: EL.provox,
+        maja: EL.ivanaEnergetic,
       },
     },
   },

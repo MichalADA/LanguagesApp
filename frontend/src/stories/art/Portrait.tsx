@@ -20,7 +20,7 @@ export interface CharacterLook {
   glasses?: boolean;
   apron?: string;
   /** Mały rekwizyt: klucze (Marko), filiżanka (Ana), plakietka (Ivana), bochenek, koszyk, bilet, okulary przeciwsłoneczne. */
-  prop?: "keys" | "cup" | "badge" | "bread" | "basket" | "ticket";
+  prop?: "keys" | "cup" | "badge" | "bread" | "basket" | "ticket" | "stethoscope" | "envelope";
   /** Okulary przeciwsłoneczne zamiast oczu w neutralnym nastroju (Toni). */
   sunglasses?: boolean;
   /** Czapka piekarza. */
@@ -55,6 +55,30 @@ export const LOOKS: Record<string, CharacterLook> = {
   petra: {
     skin: "#f2cdb0", skinShade: "#d9ab8b", hair: "#2b2b33", hairShade: "#1c1c22", hairStyle: "curly",
     outfit: "#1f4e79", outfitShade: "#173c5e", accent: "#f3ead8", prop: "ticket",
+  },
+  ljubica: {
+    skin: "#efc3a2", skinShade: "#d4a281", hair: "#c9b48f", hairShade: "#a38f6c", hairStyle: "bob",
+    outfit: "#7a5a8c", outfitShade: "#624872", accent: "#e8c547", glasses: true, prop: "keys",
+  },
+  zoran: {
+    skin: "#e0b18c", skinShade: "#c4906a", hair: "#4a4a4f", hairShade: "#33333a", hairStyle: "short",
+    outfit: "#2b3a55", outfitShade: "#1f2b40", accent: "#f3ead8", beard: true, prop: "badge",
+  },
+  babic: {
+    skin: "#f0c9a8", skinShade: "#d6a886", hair: "#3a2a24", hairShade: "#271c18", hairStyle: "bun",
+    outfit: "#f7f7f2", outfitShade: "#dcdcd4", accent: "#2f8fb1", glasses: true, prop: "stethoscope",
+  },
+  lana: {
+    skin: "#f4d1b6", skinShade: "#dbae8f", hair: "#a3432b", hairShade: "#7f321f", hairStyle: "curly",
+    outfit: "#2f2f2f", outfitShade: "#1f1f1f", accent: "#d9534f", prop: "badge",
+  },
+  dragan: {
+    skin: "#dcac86", skinShade: "#be8c66", hair: "#b5b0a8", hairShade: "#8e8981", hairStyle: "short",
+    outfit: "#e8c547", outfitShade: "#c9a72f", accent: "#1f4e79", beard: true, glasses: true, prop: "envelope",
+  },
+  maja: {
+    skin: "#f2cdb0", skinShade: "#d8aa8a", hair: "#e3c27a", hairShade: "#bf9e57", hairStyle: "bob",
+    outfit: "#4f8a4a", outfitShade: "#3f6f3b", accent: "#f3ead8", prop: "cup",
   },
   davor: {
     skin: "#dcae8a", skinShade: "#bf8f6b", hair: "#5a4636", hairShade: "#3f3126", hairStyle: "short",
@@ -197,6 +221,24 @@ function Prop({ look }: { look: CharacterLook }) {
         <path d="M50 0 v34" stroke="#2f8fb1" strokeWidth="2" strokeDasharray="4 3" />
         <rect x="8" y="10" width="34" height="4" rx="2" fill="#1f4e79" />
         <rect x="8" y="18" width="22" height="3" rx="1.5" fill="#9bb7c8" />
+      </g>
+    );
+  }
+  if (look.prop === "stethoscope") {
+    return (
+      <g fill="none" stroke="#3b3b3b" strokeWidth="6" strokeLinecap="round">
+        <path d="M156 384 q-14 70 30 96 q44 26 60 -20" />
+        <path d="M244 384 q10 40 2 76" />
+        <circle cx="246" cy="470" r="14" fill="#9a9a96" stroke="#3b3b3b" />
+      </g>
+    );
+  }
+  if (look.prop === "envelope") {
+    return (
+      <g transform="translate(248 432) rotate(6)">
+        <rect width="72" height="46" rx="4" fill="#f3ead8" stroke="#a89a80" strokeWidth="3" />
+        <path d="M0 0 l36 26 l36 -26" fill="none" stroke="#a89a80" strokeWidth="3" />
+        <rect x="52" y="6" width="14" height="16" fill="#d9534f" />
       </g>
     );
   }
