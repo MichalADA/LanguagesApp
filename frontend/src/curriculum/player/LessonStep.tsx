@@ -210,6 +210,7 @@ export function SummaryView({
   onRetry,
   onRestart,
   reviewStatus,
+  practice,
 }: {
   step: SummaryStep;
   content: LessonContent;
@@ -219,6 +220,7 @@ export function SummaryView({
   onRetry: () => void;
   onRestart: () => void;
   reviewStatus?: ReactNode;
+  practice?: ReactNode;
 }) {
   const t = useT();
   const { passed, mistakes } = evaluation;
@@ -272,6 +274,8 @@ export function SummaryView({
           {t("curriculum.player.backToModule")}
         </Link>
       </div>
+
+      {passed && practice}
 
       {step.canDo && step.canDo.length > 0 && (
         <section className="summary-can-do">

@@ -697,6 +697,20 @@ export const pl: Dictionary = {
     "radio": "Słuchaj chorwackiego radia i osłuchuj się z naturalnym językiem.",
     "false-friends": "Fałszywi przyjaciele — w przygotowaniu."
   },
+  "practice": {
+    "afterLesson": "Utrwal lekcję",
+    "onHome": "Poćwicz też",
+    "listening": "Słuchanie",
+    "grammar": "Gramatyka",
+    "go": "Przejdź",
+    "grammarAll": "Ściągi i ćwiczenia",
+    "grammarHint": "Ściąga do tematu z Twojego modułu: tabela, reguły i przykłady.",
+    "listeningKind": { "dialogues": "Krótkie dialogi", "stories": "Historie z narratorem" },
+    "listeningHint": {
+      "dialogues": "Posłuchaj rozmowy i odpowiedz na pytanie.",
+      "stories": "Dłuższe nagranie, kilka pytań i słowniczek."
+    }
+  },
   "listening": {
     "kindLabel": "Rodzaj słuchanek",
     "kinds": {

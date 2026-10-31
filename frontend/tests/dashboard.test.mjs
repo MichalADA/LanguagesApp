@@ -21,7 +21,16 @@ async function setup(fetcher, status = 'authenticated', locale = 'pl', reviewSta
   const entries = [{id:'a',block:'one'}, {id:'b',block:'two'}];
   const writes = [];
   const request = () => {};
+  const i18n = {useI18n: () => ({locale,t: (key,params) => { const value=lookup(dictionaries[locale],key); assert.ok(value,key);return interpolate(value,params); }})};
+  const link = ({to,children,...props}) => React.createElement('a',{href:to,...props},children);
+  const cheatsheets = await compile('../src/grammar/cheatsheets.ts');
+  const suggestions = await compile('../src/practice/suggestions.ts', {'@/grammar/cheatsheets': cheatsheets});
+  const practice = await compile('../src/practice/PracticeSuggestions.tsx', {
+    'react-router-dom': {Link: link}, '@/components/Icon': {Icon: () => null},
+    '@/i18n': {useT: () => i18n.useI18n().t}, './suggestions': suggestions,
+  });
   const { Dashboard } = await compile('../src/pages/Dashboard.tsx', {
+    '@/practice/PracticeSuggestions': practice,
     'react-router-dom': { Link: ({to,children,...props}) => React.createElement('a',{href:to,...props},children) },
     '@/vocabulary/VocabularyProvider': {useVocabulary: () => ({entries,loading:false,error:null})},
     '@/progress/ProgressProvider': {useProgress: () => ({state:{},current:{activeDays:[],lastActivity:null},courseId:course.id,ready:true})},
@@ -122,4 +131,10 @@ test('with an active course the daily plan is reviews → next lesson; the lesso
   const busy=await setup(async()=>cards,'authenticated','pl',async()=>({due:5}),curriculum);
   assert.equal(cta(busy.view).props.href,'/powtorki','due reviews (incl. lesson words) come first');
   act(()=>busy.view.unmount());
+});
+
+test('home suggests listening and grammar next to the daily plan', async () => {
+  const {view}=await setup(async()=>cards);
+  assert.ok(link(view,'/gry/listening?level=A1&kind=stories'), 'karta słuchania');
+  assert.ok(view.root.findAllByType('a').some(n => String(n.props.href).startsWith('/gramatyka#')), 'karta gramatyki');
 });

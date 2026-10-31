@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { useI18n, useT } from "@/i18n";
 import { AVAILABLE_LISTENING_LEVELS, LISTENING_KINDS, loadListeningManifest } from "./loader";
 import { questionsOf, type ListeningDialogue, type ListeningKind, type ListeningLevel } from "./types";
@@ -8,8 +9,16 @@ const SPEEDS = [0.75, 1, 1.25] as const;
 export function ListeningGame() {
   const t = useT();
   const { locale } = useI18n();
-  const [kind, setKind] = useState<ListeningKind>("dialogues");
-  const [selectedLevel, setSelectedLevel] = useState<ListeningLevel | null>(null);
+  // Link z podpowiedzi (np. /gry/listening?level=A1&kind=stories) otwiera od razu właściwy zestaw.
+  const [params] = useSearchParams();
+  const paramKind = params.get("kind");
+  const paramLevel = params.get("level");
+  const [kind, setKind] = useState<ListeningKind>(
+    LISTENING_KINDS.find(value => value === paramKind) ?? "dialogues",
+  );
+  const [selectedLevel, setSelectedLevel] = useState<ListeningLevel | null>(
+    AVAILABLE_LISTENING_LEVELS.find(value => value === paramLevel) ?? null,
+  );
   const [dialogues, setDialogues] = useState<ListeningDialogue[]>([]);
   const [speakers, setSpeakers] = useState<Record<string, string>>({});
   const [selectedId, setSelectedId] = useState("");

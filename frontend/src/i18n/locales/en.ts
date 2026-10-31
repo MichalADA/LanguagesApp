@@ -697,6 +697,20 @@ export const en: Dictionary = {
     "radio": "Listen to Croatian radio and get used to natural speech.",
     "false-friends": "False friends — coming soon."
   },
+  "practice": {
+    "afterLesson": "Reinforce the lesson",
+    "onHome": "Practise too",
+    "listening": "Listening",
+    "grammar": "Grammar",
+    "go": "Go",
+    "grammarAll": "Cheat sheets and drills",
+    "grammarHint": "A cheat sheet for your current module: table, rules and examples.",
+    "listeningKind": { "dialogues": "Short dialogues", "stories": "Narrated stories" },
+    "listeningHint": {
+      "dialogues": "Listen to a conversation and answer a question.",
+      "stories": "A longer recording, several questions and a glossary."
+    }
+  },
   "listening": {
     "kindLabel": "Listening type",
     "kinds": {

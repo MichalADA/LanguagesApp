@@ -15,6 +15,7 @@ import { currentStreak, todayKey } from "@/utils/date";
 import { useCurriculum } from "@/curriculum/CurriculumProvider";
 import { coursePaths } from "@/curriculum/components/format";
 import { DailyGoalCard } from "@/xp/DailyGoal";
+import { PracticeSuggestions } from "@/practice/PracticeSuggestions";
 
 interface PlanStep {
   key: string;
@@ -206,6 +207,16 @@ export function Dashboard() {
         )}
         <Link className="text-link today-more" to="/gry">{t("home.allGames")}</Link>
       </section>
+
+      {hasSentences && (
+        <PracticeSuggestions
+          level="A1"
+          module={currentView?.module?.module?.order}
+          lessonNumber={currentView?.lesson.number ?? 0}
+          title={t("practice.onHome")}
+          className="home-practice"
+        />
+      )}
 
       <section className="level-line ruled" aria-labelledby="level-title" aria-busy={loading}>
         {loading && <p className="loading" role="status">{t("home.loading")}</p>}

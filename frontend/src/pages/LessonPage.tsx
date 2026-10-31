@@ -14,6 +14,7 @@ import { sessionKey } from "@/curriculum/session";
 import { useAuth } from "@/auth/useAuth";
 import { useCourse } from "@/courses/CourseProvider";
 import type { LessonContent } from "@/curriculum/types";
+import { PracticeSuggestions } from "@/practice/PracticeSuggestions";
 
 /** /lekcja/:lessonId — pełnoekranowy tryb skupienia, bez sidebaru. */
 export function LessonPage() {
@@ -140,6 +141,14 @@ export function LessonPage() {
       alreadyCompleted={row.status === "completed"}
       onComplete={onComplete}
       reviewStatus={reviewStatus}
+      practice={course.id === "pl-hr" ? (
+        <PracticeSuggestions
+          level={level.id}
+          module={moduleView.module.order}
+          lessonNumber={row.number}
+          title={t("practice.afterLesson")}
+        />
+      ) : undefined}
     />
   );
 }
