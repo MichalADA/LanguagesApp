@@ -159,7 +159,7 @@ export const pl: Dictionary = {
     "eyebrow": "Gra fabularna",
     "upcoming": "Następne miasta",
     "title": "Lexodromia Stories",
-    "subtitle": "Każde miasto to jeden poziom. W Splicie meldujesz się w apartamencie, zamawiasz kawę na Rivie i robisz zakupy — pięć misji, wszystko po chorwacku.",
+    "subtitle": "Każde miasto to jeden poziom. W Splicie meldujesz się w apartamencie, zamawiasz kawę na Rivie, targujesz się na targu i płyniesz promem na Brač — dziesięć misji, wszystko po chorwacku.",
     "noCourse": "Dla tego kursu nie ma jeszcze historii.",
     "enterCity": "Otwórz mapę i misje",
     "allCities": "Wszystkie miasta",
@@ -680,7 +680,7 @@ export const pl: Dictionary = {
     "stop": "Zatrzymaj",
     "speed": "Prędkość",
     "line": "kwestia {n} / {total}",
-    "audioError": "Nie udało się odtworzyć nagrania. Wygeneruj pliki TTS zgodnie z instrukcją w tools/listening.",
+    "audioError": "Nie udało się odtworzyć nagrania.",
     "transcript": "Transkrypcja",
     "show": "Pokaż tekst",
     "hide": "Ukryj tekst",
@@ -690,7 +690,7 @@ export const pl: Dictionary = {
     "check": "Sprawdź",
     "correct": "Dobrze!",
     "wrong": "Nie tym razem — posłuchaj jeszcze raz.",
-    "pilotNote": "Pilotażowe dialogi TTS. Teksty i wymowa wymagają jeszcze oceny osoby mówiącej po chorwacku jako językiem ojczystym."
+    "pilotNote": "Dialogi nagrane głosami ElevenLabs. Teksty wymagają jeszcze oceny osoby mówiącej po chorwacku jako językiem ojczystym."
   },
   "quick": {
     "result": "Wynik",

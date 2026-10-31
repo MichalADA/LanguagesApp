@@ -219,12 +219,12 @@ async def generate_course(args: argparse.Namespace) -> None:
 
 
 async def generate_stories(args: argparse.Namespace, payload: dict) -> None:
-    """Listening stories (hr-*-stories.json): narrator + characters, ElevenLabs voices per speaker."""
+    """ElevenLabs listening manifests: stories (hr-*-stories.json) and dialogues with provider "elevenlabs"."""
     meta = payload["generatedWith"]
     if meta.get("provider") != PAID_PROVIDER:
         raise SystemExit(f"Stories manifest must use {PAID_PROVIDER}.")
     voices, model, rate = meta["voices"], meta.get("model", ELEVENLABS_DEFAULT_MODEL), meta.get("rate", "+0%")
-    stories = payload["stories"]
+    stories = payload["stories"] if "stories" in payload else payload["dialogues"]
     if args.dialogue:
         stories = [item for item in stories if item["id"] == args.dialogue]
         if not stories:
@@ -266,7 +266,7 @@ async def generate(args: argparse.Namespace) -> None:
         await generate_course(args)
         return
     payload = json.loads(args.manifest.read_text(encoding="utf-8"))
-    if "stories" in payload:
+    if "stories" in payload or payload["generatedWith"].get("provider") == PAID_PROVIDER:
         await generate_stories(args, payload)
         return
     voices = payload["generatedWith"]["voices"]

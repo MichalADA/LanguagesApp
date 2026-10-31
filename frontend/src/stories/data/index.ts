@@ -9,7 +9,7 @@ export const STORIES: StoryEntry[] = [
     id: "split-a1",
     city: { hr: "Split", pl: "Split" },
     level: "A1",
-    tagline: "Pierwsze dni w Dalmacji: meldunek, kawa na nabrzeżu i zakupy za rogiem.",
+    tagline: "Pierwsze dni w Dalmacji: meldunek, kawa na nabrzeżu, targ, plaża i prom na wyspy.",
     courseId: "pl-hr",
     load: () => import("./split-a1/story").then((m) => m.SPLIT_A1),
     loadAudio: () => import("./split-a1/audio").then((m) => m.SPLIT_A1_AUDIO),

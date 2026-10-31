@@ -159,7 +159,7 @@ export const en: Dictionary = {
     "eyebrow": "Story game",
     "upcoming": "Next cities",
     "title": "Lexodromia Stories",
-    "subtitle": "Each city is one level. In Split you check into a flat, order coffee on the Riva and go shopping — five missions, all in Croatian.",
+    "subtitle": "Each city is one level. In Split you check into a flat, order coffee on the Riva, haggle at the market and take the ferry to Brač — ten missions, all in Croatian.",
     "noCourse": "There are no stories for this course yet.",
     "enterCity": "Open the map and missions",
     "allCities": "All cities",
@@ -690,7 +690,7 @@ export const en: Dictionary = {
     "check": "Check",
     "correct": "Correct!",
     "wrong": "Not this time — listen once more.",
-    "pilotNote": "Pilot TTS dialogues. The wording and pronunciation still need review by a native Croatian speaker."
+    "pilotNote": "Dialogues recorded with ElevenLabs voices. The texts still need review by a native Croatian speaker."
   },
   "quick": {
     "result": "Result",
