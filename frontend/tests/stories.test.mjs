@@ -370,9 +370,9 @@ test('głosy postaci: każda kwestia ma nagranie głosem mówiącego; mapa i man
   }
   // Ten sam tekst brzmi głosem tej postaci, która go mówi (Ana i Ivana mają różną barwę).
   assert.notEqual(audioFor(SPLIT_A1_AUDIO, 'Još nešto?', 'ana'), audioFor(SPLIT_A1_AUDIO, 'Još nešto?', 'ivana'));
-  assert.match(audioFor(SPLIT_A1_AUDIO, 'Još nešto?', 'ivana'), /\/stories\/split-a1\/ivana\//);
-  // Nagrania kursu wykorzystane, gdy tekst i głos są identyczne.
-  assert.equal(audioFor(SPLIT_A1_AUDIO, 'Dobro jutro!', 'ana'), '/audio/hr/a1/module-01/dobro-jutro.mp3');
+  assert.match(audioFor(SPLIT_A1_AUDIO, 'Još nešto?', 'ivana'), /\/stories\/split-a1\/elevenlabs\/ivana\//);
+  // Głosy ElevenLabs: każda postać ma własne nagranie, także tekstów obecnych w kursie.
+  assert.equal(audioFor(SPLIT_A1_AUDIO, 'Dobro jutro!', 'ana'), '/audio/hr/stories/split-a1/elevenlabs/ana/dobro-jutro.mp3');
   assert.equal(audioFor(SPLIT_A1_AUDIO, 'Dobro jutro!', 'marko'), undefined, 'Marko nie mówi tej kwestii');
 });
 
@@ -417,10 +417,10 @@ test('UI: misja w kawiarni rozegrana w scenie — wybór, kafelki, wpisywanie, t
   // Narrator → Ana: imię, nagranie w jej głosie, tłumaczenie ukryte domyślnie.
   await click(buttonText(t('stories.continue')));
   assert.equal(text(byClass('vn-nametag')[0]), 'Ana');
-  assert.ok(view.root.findAll((n) => n.props?.['data-src'] === '/audio/hr/a1/module-01/dobro-jutro.mp3').length, 'nagranie wypowiedzi');
+  assert.ok(view.root.findAll((n) => n.props?.['data-src'] === '/audio/hr/stories/split-a1/elevenlabs/ana/dobro-jutro.mp3').length, 'nagranie wypowiedzi');
   // Postać mówi sama: narrator, potem Ana — bez klikania odsłuchu.
-  assert.ok(played.some((p) => p.includes('/stories/split-a1/narrator/')), 'głos narratora');
-  assert.equal(played.at(-1), '/audio/hr/a1/module-01/dobro-jutro.mp3', 'głos Any');
+  assert.ok(played.some((p) => p.includes('/stories/split-a1/elevenlabs/narrator/')), 'głos narratora');
+  assert.equal(played.at(-1), '/audio/hr/stories/split-a1/elevenlabs/ana/dobro-jutro.mp3', 'głos Any');
   // Przełącznik „Bez głosu” zatrzymuje i wycisza kolejne kwestie.
   await click(buttonText(t('stories.voiceOn')));
   assert.equal(played.at(-1), 'stop');
