@@ -59,6 +59,8 @@ export const en: Dictionary = {
     games: "Games",
     review: "Review",
     flashcards: "Flashcards",
+    stories: "Stories",
+    grammar: "Grammar",
     stats: "Statistics",
     progress: "Progress",
     courses: "Languages",
@@ -67,6 +69,36 @@ export const en: Dictionary = {
     more: "More",
     mobileLabel: "Main navigation",
     close: "Close",
+  },
+  grammar: {
+    title: "Grammar",
+    subtitle: "Drills and cheat sheets: conjugation, cases, tenses, clitic order, aspect and comparison — linked to the course modules.",
+    drills: "Drills",
+    sheets: "Cheat sheets",
+    traps: "Watch out",
+    practice: "Practise: {game}",
+  },
+  drill: {
+    eyebrow: "Grammar",
+    roundInfo: "Round: {n} of {total} tasks, the troublesome ones first.",
+    best: "best: {score}",
+    start: "Start",
+    sheet: "See the cheat sheet",
+    progress: "{n} / {total}",
+    order: "Build the sentence from the tiles.",
+    check: "Check",
+    undo: "Undo",
+    placeholder: "Type the missing form…",
+    correctIs: "Correct:",
+    yours: "your answer:",
+    next: "Next",
+    finish: "Result",
+    result: "Round over",
+    score: "{score} points",
+    summary: "Correct: {hits}, almost (no diacritics): {near}, out of {total}. Longest streak: {streak}.",
+    again: "Again",
+    back: "Grammar",
+    verdict: { hit: "Correct!", near: "Almost — diacritics missing.", miss: "Not this time." },
   },
   auth: {
     login: "Sign in",
@@ -159,7 +191,7 @@ export const en: Dictionary = {
     "eyebrow": "Story game",
     "upcoming": "Next cities",
     "title": "Lexodromia Stories",
-    "subtitle": "Each city is one level. In Split you check into a flat, order coffee on the Riva and go shopping — five missions, all in Croatian.",
+    "subtitle": "Each city is one level. In Split (A1) you check into a flat, order coffee on the Riva and take the ferry to Brač. In Zagreb (A2) you rent a flat, start a job and see a doctor. In Dubrovnik (B1) you spend the summer working at a travel agency. All in Croatian.",
     "noCourse": "There are no stories for this course yet.",
     "enterCity": "Open the map and missions",
     "allCities": "All cities",
@@ -532,10 +564,30 @@ export const en: Dictionary = {
       description:
         "No timer. Every correct answer brings you closer to the next town on the road from Zagreb to Dubrovnik.",
     },
+    padezi: {
+      tagline: "Put the noun in the right case",
+      description: "Type the missing word in the right form: u školu or u školi, s mlijekom, bez šećera. A rule after every task.",
+    },
+    enklitike: {
+      tagline: "Build sentences: se, sam, mi, ga in second position",
+      description: "Build the sentence from tiles so that the clitics (se, sam, mi, ga, je, ću) land in the right place.",
+    },
+    vid: {
+      tagline: "Perfective or imperfective?",
+      description: "Choose the right aspect: pijem or popijem, čitala or pročitala. Habit, process or result?",
+    },
+    komparacija: {
+      tagline: "Bigger, better, best",
+      description: "Type the comparative or superlative: veći, bolji, skuplji, najbolji — irregular forms included.",
+    },
+    vremena: {
+      tagline: "Past, future and conditional",
+      description: "Type the past (perfekt), future or conditional form: smo bili, ću ići, volio bih.",
+    },
     odmiana: {
       tagline: "Drilling verb forms person by person",
       description:
-        "Practise Croatian present-tense verb forms. Type the right form before the round runs out.",
+        "Practise Croatian verb forms person by person — present, past and future. Type the right form before the round runs out.",
     },
     flashcards: {
       tagline: "Classic flashcards with review",
@@ -578,6 +630,11 @@ export const en: Dictionary = {
     "stories": "Stories",
     "trasa": "Journey",
     "odmiana": "Conjugation",
+    "padezi": "Cases",
+    "enklitike": "Word order",
+    "vid": "Aspect",
+    "komparacija": "Comparison",
+    "vremena": "Tenses",
     "flashcards": "Flashcards",
     "multiple-choice": "Four answers",
     "pairs": "Pairs",
@@ -641,6 +698,19 @@ export const en: Dictionary = {
     "false-friends": "False friends — coming soon."
   },
   "listening": {
+    "kindLabel": "Listening type",
+    "kinds": {
+      "dialogues": { "name": "Dialogues", "description": "Short everyday conversations between Ana and Marko — one question each." },
+      "stories": { "name": "Stories", "description": "Narrated stories with characters and natural voices — several questions per story." }
+    },
+    "storyLevels": {
+      "A1": { "name": "Simple stories", "description": "Short sentences in the present tense: travel, family, the market and plans." },
+      "A2": { "name": "Stories from the past", "description": "Past tense and more detail: trips, work, cooking at grandma's." },
+      "B1": { "name": "Life stories", "description": "Longer stories with reflection: moving, a chance meeting, volunteering." }
+    },
+    "chooseStory": "Story",
+    "score": "Score: {n} / {total}",
+    "storiesNote": "Stories recorded with ElevenLabs voices. The texts still need review by a native Croatian speaker.",
     "chooseLevelEyebrow": "listening level",
     "chooseLevel": "Choose a level",
     "chooseLevelDescription": "Each level has its own dialogues, vocabulary and difficulty.",
@@ -677,7 +747,7 @@ export const en: Dictionary = {
     "check": "Check",
     "correct": "Correct!",
     "wrong": "Not this time — listen once more.",
-    "pilotNote": "Pilot TTS dialogues. The wording and pronunciation still need review by a native Croatian speaker."
+    "pilotNote": "Dialogues recorded with ElevenLabs voices. The texts still need review by a native Croatian speaker."
   },
   "quick": {
     "result": "Result",
@@ -785,6 +855,13 @@ export const en: Dictionary = {
     ahead: "ahead",
   },
   odmiana: {
+    stepTense: "Tense",
+    tense: { present: "Present", past: "Past", future: "Future" },
+    tenseNote: {
+      present: "Person by person: čitam, čitaš, čita…",
+      past: "Perfekt: sam radio, si radio, je radio… The feminine form (sam radila) is accepted too.",
+      future: "Future: ću raditi or radit ću — both word orders are correct.",
+    },
     stepLevel: "1 — difficulty",
     stepMode: "2 — question mode",
     level: { easy: "Easy", normal: "Normal", hard: "Hard" },

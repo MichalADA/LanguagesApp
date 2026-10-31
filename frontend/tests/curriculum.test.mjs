@@ -251,6 +251,10 @@ test('postęp: nowy użytkownik zaczyna od lekcji 1, lekcja liczy się raz, kole
   assert.equal(view.completedCount, 12);
   assert.equal(view.current.lesson.lesson.id, 'a1-03-03');
   assert.equal(view.modules[3].status, 'locked');
+  // Tryb testowy „odblokuj wszystko”: nic nie jest zamknięte, postęp i bieżąca lekcja bez zmian.
+  const open = deriveLevel(a1, first12, true);
+  assert.ok(open.modules.every((m) => m.status !== 'locked' && m.lessons.every((l) => l.status !== 'locked')));
+  assert.deepEqual([open.completedCount, open.current.lesson.lesson.id], [12, 'a1-03-03']);
   // Set nie dubluje ponownie ukończonej lekcji.
   assert.equal(deriveLevel(a1, new Set([...first12, 'a1-01-01'])).completedCount, 12);
   const all = deriveLevel(a1, new Set(lessons.map((l) => l.id)));

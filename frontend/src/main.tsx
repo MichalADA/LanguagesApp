@@ -10,7 +10,11 @@ import { ProgressProvider } from "@/progress/ProgressProvider";
 import { AuthProvider } from "@/auth/AuthContext";
 import { CurriculumProvider } from "@/curriculum/CurriculumProvider";
 import { XpProvider } from "@/xp/XpProvider";
+import { initUnlockAll } from "@/dev/unlockAll";
+import { UnlockAllBadge } from "@/dev/UnlockAllBadge";
 import "./styles.css";
+
+initUnlockAll();
 
 /**
  * Kolejność providerów jest znacząca: słownik i postęp zależą od aktywnego kursu.
@@ -27,6 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                   <XpProvider>
                     <CurriculumProvider>
                       <App />
+                      <UnlockAllBadge />
                     </CurriculumProvider>
                   </XpProvider>
                 </ProgressProvider>

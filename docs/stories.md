@@ -1,7 +1,7 @@
 # Lexodromia Stories
 
 Gra fabularna: gracz podróżuje po Chorwacji, rozmawia z postaciami i wykonuje misje po chorwacku.
-Każdy poziom CEFR to osobne, grywalne miasto: A1 Split, A2 Zagreb, B1 Dubrovnik (po 5 misji).
+Każdy poziom CEFR to osobne miasto: A1 Split, A2 Zagreb i B1 Dubrovnik — wszystkie grywalne.
 Bez AI: dialogi są napisane wcześniej, a odpowiedzi sprawdzane deterministycznie.
 
 ## Trasy
@@ -11,18 +11,6 @@ Bez AI: dialogi są napisane wcześniej, a odpowiedzi sprawdzane deterministyczn
 | `/stories` | wybór miasta (wpis „Stories” w sekcji Gry) |
 | `/stories/split-a1` | mapa miasta jako hub: lokacje, postacie, misje, odblokowania |
 | `/stories/split-a1/m3-coffee` | misja w trybie skupienia: odprawa → scena → podsumowanie |
-
-## Miasta
-
-| Miasto | Postacie | Misje (materiał lekcji) |
-| --- | --- | --- |
-| Split A1 | Marko, Ana, Ivana | meldunek, klucz, kawa, zakupy (moduły A1) |
-| Zagreb A2 | Luka, Petra, Sanja, Maja, Dario | najem mieszkania (A2-6), rozmowa o pracę na „Vi” (A2-4), apteka (A2-3), kurtka na Ilicy (A2-5), weekend w czasie przeszłym + zaproszenie (A2-1, 2) |
-| Dubrovnik B1 | gospođa Mara, Nikola, Ante, Jelena | zgłaszanie usterek (B1-7), mury i strona bierna (B1-11, 5), prom na Lopud (B1-6), wywiad: „iako”, mowa zależna (B1-11, 12), rada dla przyjaciela w trybie przypuszczającym (B1-3, 4, 12) |
-
-Wyższy poziom = dłuższe wypowiedzi postaci i więcej rozgałęzień (test pilnuje A1 < A2 < B1).
-Opcje gracza unikają form zależnych od płci; gdzie się nie da (gledao / gledala, imao / imala),
-kafelki i wpisywanie akceptują obie formy.
 
 ## Architektura (`frontend/src/stories/`)
 
@@ -35,7 +23,7 @@ progress.ts     statusy misji i lokacji, nagroda tylko za pierwsze ukończenie
 repository.ts   zapis: gość → localStorage, konto → backend z kolejką (eventId)
 integration.ts  nagrania kursu, FSRS (/reviews/answer), kolejka nowych kart (/reviews/enroll)
 art/            ilustracje SVG + rejestr assetów (registry.tsx)
-data/           treść: data/index.ts (miasta), data/<miasto>/{story,missions,audio}.ts
+data/           treść: data/index.ts (miasta), data/split-a1/{story,missions,audio}.ts
 pages/, components/  hub, mapa miasta, misja, scena visual novel
 ```
 
@@ -81,8 +69,10 @@ Postacie mówią: każda nowa kwestia (także narratora) odtwarza się automatyc
 jest przełącznik „Głos / Bez głosu” (zapamiętywany) i przycisk ponownego odsłuchu przy kwestii.
 Bez animacji ust.
 
-- Profil głosu postaci jest w danych (`story.ts`: `npc.voice`, `narratorVoice`) — chorwackie głosy
-  edge-tts (damski Gabrijela, męski Srećko); Ivanę odróżnia od Any niższa wysokość i wolniejsze tempo.
+- Split A1 jest nagrany w ElevenLabs (płatne): każda postać ma własny głos z chorwackiej biblioteki,
+  przypisany w `scripts/stories-audio.mjs` (`elevenlabs.voices`, voice_id per mówiący). Generowanie wymaga
+  `ELEVENLABS_API_KEY` i flagi `--allow-paid` (szczegóły: `tools/listening/README.md`).
+- Historie bez bloku `elevenlabs` używają profilu z danych (`npc.voice`, `narratorVoice`) i głosów edge-tts.
 - `npm run stories:audio` zbiera wszystkie kwestie (postacie, narrator, wzorcowe odpowiedzi gracza),
   wykorzystuje nagrania kursu przy identycznym tekście i głosie, a resztę zapisuje do
   `curriculum/stories/<historia>-audio-manifest.json`. Synteza (jednorazowo, pliki trafiają do repo):
@@ -98,12 +88,29 @@ placeholdery produkcyjne. Podmiana na docelowe pliki: wpis w `art/registry.tsx`,
 
 ## Nowe miasto / lokacja / misja
 
-1. Lokacja: wpis w `story.locations` (tło z rejestru, pozycja na mapie, `unlock`). Zapowiedziane
-   miejsca (`comingSoon`: np. port i plaża w Splicie, Dolac i Jarun w Zagrzebiu, Lokrum i Srđ
-   w Dubrowniku) czekają na misje.
+1. Lokacja: wpis w `story.locations` (tło z rejestru, pozycja na mapie, `unlock`). Split A1 ma 8 lokacji
+   i 10 misji: apartament, kawiarnia, sklep, piekarnia (Josip), targ (Mare), plaża (Toni), port (Petra)
+   i dworzec (Davor). `comingSoon` zostaje dla przyszłych miejsc.
 2. Misja: obiekt `Mission` w `data/<miasto>/missions.ts` (graf przez `data/builders.ts`).
 3. Miasto: katalog `data/<miasto>/` + wpis w `data/index.ts` (+ manifest nagrań w `scripts/stories-audio.mjs`).
 4. `npm run stories:audio`, `npm test` (walidacja zatrzyma błędny scenariusz).
+
+## Zagrzeb A2
+
+`data/zagreb-a2/`: 7 lokacji (mieszkanie, Cvjetni trg, biuro, przychodnia, Ilica, poczta, Górne Miasto),
+6 postaci i 8 misji opartych na modułach kursu A2 (perfekt, musieć/móc, zdrowie, praca, ubrania i
+stopniowanie, mieszkanie, poczta, opinie). Słownictwo misji to karty z lekcji A2. Gracz mówi w czasie
+przeszłym tylko w liczbie mnogiej („bili smo”) albo krótko („Jesam.”), bo imiesłów zależy od płci.
+Tła i mapa: `art/ZagrebScenes.tsx`. Głosy ElevenLabs: `scripts/stories-audio.mjs`.
+
+## Dubrownik B1
+
+`data/dubrovnik-b1/`: 7 lokacji (port Gruž, apartament, agencja, apteka, mury, Stradun, plaża Banje),
+6 postaci i 8 misji opartych na modułach kursu B1: grzeczne prośby w trybie warunkowym, usterki
+i kaucja, zebranie zespołu z argumentami, rady w aptece, porównywanie wycieczek, historia miasta,
+festiwal i propozycje, pożegnanie z planami na przyszłość. Gracz unika form zależnych od płci:
+„Biste li mi mogli…?”, „Ako mi bude trebao…”, „Kako bi bilo da…”, czas przyszły i liczba mnoga.
+Tła i mapa: `art/DubrovnikScenes.tsx`.
 
 ## Przyszłe dialogi AI
 
@@ -113,5 +120,5 @@ Misje, cele, flagi świata, nagrody i zapis postępu nie zależą od sposobu pro
 
 ## Weryfikacja językowa
 
-Treść chorwacka opiera się na materiale lekcji A1, A2 i B1, ale **nie została sprawdzona przez native speakera**
+Treść chorwacka opiera się na materiale lekcji A1, ale **nie została sprawdzona przez native speakera**
 (`story.languageReview: "unverified"`, informacja widoczna na mapie miasta).

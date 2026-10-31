@@ -2464,3 +2464,53 @@ a.games-row:hover { background: rgba(244, 232, 228, 0.03); color: var(--text-pri
 .vn-voice:focus-visible { outline: 2px solid var(--burgundy-focus); outline-offset: 2px; }
 .vn-voice + .vn-xp { margin-left: 0; }
 @media (max-width: 560px) { .vn-voice span { display: none; } .vn-voice { padding: 8px; } }
+
+/* ---------- Gramatyka: ściągi ---------- */
+.grammar-page { display: flex; flex-direction: column; gap: var(--space-8, 40px); }
+.grammar-sheets { display: flex; flex-direction: column; border-top: 1px solid var(--border); }
+.grammar-sheet { border-bottom: 1px solid var(--border); }
+.grammar-sheet > summary { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-2) var(--space-6); padding: var(--space-4) 0; cursor: pointer; list-style: none; }
+.grammar-sheet > summary::-webkit-details-marker { display: none; }
+.grammar-sheet > summary::after { content: "+"; color: var(--text-tertiary); font-size: var(--text-lg); margin-left: auto; }
+.grammar-sheet[open] > summary::after { content: "−"; }
+.grammar-sheet-title { font-size: var(--text-lg); font-weight: 600; }
+.grammar-sheet-meta { font-size: var(--text-sm); color: var(--text-tertiary); }
+.grammar-sheet-body { display: flex; flex-direction: column; gap: var(--space-4); padding: 0 0 var(--space-6); max-width: 900px; color: var(--text-secondary); line-height: 1.55; }
+.grammar-table-wrap { overflow-x: auto; }
+.grammar-table { border-collapse: collapse; min-width: 100%; font-size: var(--text-sm); }
+.grammar-table caption { text-align: left; padding-bottom: var(--space-2); color: var(--text-tertiary); font-size: var(--text-sm); }
+.grammar-table th, .grammar-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.grammar-table thead th { color: var(--text-tertiary); font-weight: 500; }
+.grammar-table tbody th { color: var(--text-secondary); font-weight: 500; white-space: nowrap; }
+.grammar-table td { color: var(--text-primary); }
+.grammar-rules { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+.grammar-examples { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.grammar-examples li { display: flex; flex-direction: column; }
+.grammar-examples strong { color: var(--text-primary); font-weight: 600; }
+.grammar-traps { padding: var(--space-4); border-radius: var(--radius-sm); background: var(--burgundy-soft); }
+.grammar-traps ul { margin-top: 6px; padding-left: 1.2em; }
+
+/* ---------- Gramatyka: ćwiczenia ---------- */
+.drill-menu, .drill-over, .drill-play { max-width: 760px; }
+.drill-actions { gap: var(--space-4); align-items: center; flex-wrap: wrap; }
+.drill-head { justify-content: space-between; align-items: center; gap: var(--space-3); }
+.drill-score { margin-left: auto; }
+.drill-sentence { font-size: var(--text-xl, 24px); line-height: 1.5; color: var(--text-primary); }
+.drill-gap { display: inline-block; min-width: 4ch; padding: 0 8px; margin: 0 4px; border-bottom: 2px dashed var(--text-tertiary); color: var(--text-tertiary); }
+.drill-gap.hit, .drill-gap.near { color: var(--success, #7fb069); border-bottom-color: currentColor; }
+.drill-gap.miss { color: var(--error, #e26b5e); border-bottom-color: currentColor; }
+.drill-input { display: flex; flex-direction: column; gap: var(--space-3); align-items: flex-start; }
+.drill-input > :first-child { width: 100%; }
+.drill-options { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.drill-option { font-size: var(--text-lg); }
+.drill-option.right { border-color: var(--success, #7fb069); color: var(--success, #7fb069); }
+.drill-option.wrong { border-color: var(--error, #e26b5e); color: var(--error, #e26b5e); }
+.drill-instruction { color: var(--text-primary); font-weight: 600; }
+.drill-built { min-height: 52px; padding: 12px 16px; border-radius: var(--radius-sm); background: var(--surface-inset); font-size: var(--text-lg); color: var(--text-primary); }
+.drill-tiles { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.drill-feedback { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; padding: var(--space-4); border-radius: var(--radius-sm); background: var(--surface-inset); }
+.drill-feedback.hit > strong:first-child, .drill-feedback.near > strong:first-child { color: var(--success, #7fb069); }
+.drill-feedback.miss > strong:first-child { color: var(--error, #e26b5e); }
+.drill-feedback .btn { margin-top: var(--space-2); }
+.drill-missed { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.drill-missed li { display: flex; flex-direction: column; }

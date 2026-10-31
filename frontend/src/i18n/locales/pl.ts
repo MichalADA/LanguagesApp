@@ -59,6 +59,8 @@ export const pl: Dictionary = {
     games: "Gry",
     review: "Powtórki",
     flashcards: "Fiszki",
+    stories: "Stories",
+    grammar: "Gramatyka",
     stats: "Statystyki",
     progress: "Postęp",
     courses: "Języki",
@@ -67,6 +69,36 @@ export const pl: Dictionary = {
     more: "Więcej",
     mobileLabel: "Nawigacja główna",
     close: "Zamknij",
+  },
+  grammar: {
+    title: "Gramatyka",
+    subtitle: "Ćwiczenia i ściągi: odmiana, przypadki, czasy, szyk krótkich słówek, aspekt i stopniowanie — z odniesieniem do modułów kursu.",
+    drills: "Ćwiczenia",
+    sheets: "Ściągi",
+    traps: "Uwaga, pułapka",
+    practice: "Ćwicz: {game}",
+  },
+  drill: {
+    eyebrow: "Gramatyka",
+    roundInfo: "Runda: {n} z {total} zadań, najpierw te, które sprawiają kłopot.",
+    best: "rekord: {score}",
+    start: "Zaczynam",
+    sheet: "Zobacz ściągę",
+    progress: "{n} / {total}",
+    order: "Ułóż zdanie z kafelków.",
+    check: "Sprawdź",
+    undo: "Cofnij",
+    placeholder: "Wpisz brakującą formę…",
+    correctIs: "Poprawnie:",
+    yours: "twoja odpowiedź:",
+    next: "Dalej",
+    finish: "Wynik",
+    result: "Koniec rundy",
+    score: "{score} punktów",
+    summary: "Dobrze: {hits}, prawie (bez znaków): {near}, z {total} zadań. Najdłuższa seria: {streak}.",
+    again: "Jeszcze raz",
+    back: "Gramatyka",
+    verdict: { hit: "Dobrze!", near: "Prawie — brakuje znaków diakrytycznych.", miss: "Nie tym razem." },
   },
   auth: {
     login: "Zaloguj się",
@@ -159,7 +191,7 @@ export const pl: Dictionary = {
     "eyebrow": "Gra fabularna",
     "upcoming": "Następne miasta",
     "title": "Lexodromia Stories",
-    "subtitle": "Każde miasto to jeden poziom. W Splicie meldujesz się w apartamencie, zamawiasz kawę na Rivie i robisz zakupy — pięć misji, wszystko po chorwacku.",
+    "subtitle": "Każde miasto to jeden poziom. W Splicie (A1) meldujesz się w apartamencie, zamawiasz kawę na Rivie i płyniesz promem na Brač. W Zagrzebiu (A2) wynajmujesz mieszkanie, zaczynasz pracę i idziesz do lekarza. W Dubrowniku (B1) pracujesz latem w agencji turystycznej. Wszystko po chorwacku.",
     "noCourse": "Dla tego kursu nie ma jeszcze historii.",
     "enterCity": "Otwórz mapę i misje",
     "allCities": "Wszystkie miasta",
@@ -532,10 +564,30 @@ export const pl: Dictionary = {
       description:
         "Bez timera. Każda poprawna odpowiedź przybliża cię do następnego miasta na trasie z Zagrzebia do Dubrownika.",
     },
+    padezi: {
+      tagline: "Wstaw rzeczownik w dobrym przypadku",
+      description: "Wpisz brakujące słowo w odpowiedniej formie: u školu czy u školi, s mlijekom, bez šećera. Po każdym zadaniu — reguła.",
+    },
+    enklitike: {
+      tagline: "Ułóż zdanie: se, sam, mi, ga na drugim miejscu",
+      description: "Ułóż zdanie z kafelków tak, żeby krótkie słówka (se, sam, mi, ga, je, ću) stały na właściwym miejscu.",
+    },
+    vid: {
+      tagline: "Dokonany czy niedokonany?",
+      description: "Wybierz właściwy aspekt: pijem czy popijem, čitala czy pročitala. Nawyk, proces czy rezultat?",
+    },
+    komparacija: {
+      tagline: "Większy, lepszy, najlepszy",
+      description: "Wpisz stopień wyższy lub najwyższy: veći, bolji, skuplji, najbolji — z nieregularnymi formami.",
+    },
+    vremena: {
+      tagline: "Przeszły, przyszły i warunkowy",
+      description: "Wpisz formę w czasie przeszłym (perfekt), przyszłym albo w trybie warunkowym: smo bili, ću ići, volio bih.",
+    },
     odmiana: {
       tagline: "Ćwiczenie odmiany czasowników przez osoby",
       description:
-        "Ćwicz odmianę chorwackich czasowników przez osoby. Wpisz poprawną formę, zanim skończy się runda.",
+        "Ćwicz odmianę chorwackich czasowników przez osoby — w czasie teraźniejszym, przeszłym i przyszłym. Wpisz poprawną formę, zanim skończy się runda.",
     },
     flashcards: {
       tagline: "Klasyczne fiszki z powtórkami",
@@ -578,6 +630,11 @@ export const pl: Dictionary = {
     "stories": "Stories",
     "trasa": "Trasa",
     "odmiana": "Odmiana",
+    "padezi": "Przypadki",
+    "enklitike": "Szyk zdania",
+    "vid": "Aspekt",
+    "komparacija": "Stopniowanie",
+    "vremena": "Czasy",
     "flashcards": "Fiszki",
     "multiple-choice": "Cztery odpowiedzi",
     "pairs": "Pary",
@@ -641,6 +698,19 @@ export const pl: Dictionary = {
     "false-friends": "Fałszywi przyjaciele — w przygotowaniu."
   },
   "listening": {
+    "kindLabel": "Rodzaj słuchanek",
+    "kinds": {
+      "dialogues": { "name": "Dialogi", "description": "Krótkie rozmowy Any i Marka z codziennych sytuacji — jedno pytanie do każdej." },
+      "stories": { "name": "Historie", "description": "Opowiadania z narratorem i postaciami, nagrane naturalnymi głosami — kilka pytań do każdej historii." }
+    },
+    "storyLevels": {
+      "A1": { "name": "Proste historie", "description": "Krótkie zdania, czas teraźniejszy: podróż, rodzina, targ i plany." },
+      "A2": { "name": "Opowieści z przeszłości", "description": "Czas przeszły i więcej szczegółów: wyjazdy, praca, gotowanie u babci." },
+      "B1": { "name": "Historie z życia", "description": "Dłuższe opowieści z refleksją: przeprowadzka, przypadkowe spotkanie, wolontariat." }
+    },
+    "chooseStory": "Historia",
+    "score": "Wynik: {n} / {total}",
+    "storiesNote": "Historie nagrane głosami ElevenLabs. Teksty wymagają jeszcze oceny osoby mówiącej po chorwacku jako językiem ojczystym.",
     "chooseLevelEyebrow": "poziom słuchania",
     "chooseLevel": "Wybierz poziom",
     "chooseLevelDescription": "Każdy poziom ma własne dialogi, słownictwo i stopień trudności.",
@@ -667,7 +737,7 @@ export const pl: Dictionary = {
     "stop": "Zatrzymaj",
     "speed": "Prędkość",
     "line": "kwestia {n} / {total}",
-    "audioError": "Nie udało się odtworzyć nagrania. Wygeneruj pliki TTS zgodnie z instrukcją w tools/listening.",
+    "audioError": "Nie udało się odtworzyć nagrania.",
     "transcript": "Transkrypcja",
     "show": "Pokaż tekst",
     "hide": "Ukryj tekst",
@@ -677,7 +747,7 @@ export const pl: Dictionary = {
     "check": "Sprawdź",
     "correct": "Dobrze!",
     "wrong": "Nie tym razem — posłuchaj jeszcze raz.",
-    "pilotNote": "Pilotażowe dialogi TTS. Teksty i wymowa wymagają jeszcze oceny osoby mówiącej po chorwacku jako językiem ojczystym."
+    "pilotNote": "Dialogi nagrane głosami ElevenLabs. Teksty wymagają jeszcze oceny osoby mówiącej po chorwacku jako językiem ojczystym."
   },
   "quick": {
     "result": "Wynik",
@@ -785,6 +855,13 @@ export const pl: Dictionary = {
     ahead: "przed tobą",
   },
   odmiana: {
+    stepTense: "Czas",
+    tense: { present: "Teraźniejszy", past: "Przeszły", future: "Przyszły" },
+    tenseNote: {
+      present: "Odmiana przez osoby: čitam, čitaš, čita…",
+      past: "Perfekt: sam radio, si radio, je radio… Forma żeńska (sam radila) też jest poprawna.",
+      future: "Futur: ću raditi albo radit ću — obie kolejności są poprawne.",
+    },
     stepLevel: "1 — poziom trudności",
     stepMode: "2 — tryb pytania",
     level: { easy: "Łatwy", normal: "Normalny", hard: "Trudny" },

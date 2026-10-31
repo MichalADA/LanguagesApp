@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 import type { Mood } from "../types";
 import { CharacterPortrait } from "./Portrait";
-import { DubrovnikHarborScene, DubrovnikMap, DubrovnikRocksScene, DubrovnikStradunScene, DubrovnikWallsScene } from "./DubrovnikScenes";
-import { ApartmentScene, CafeScene, PlaceholderScene, ShopScene, SplitMap } from "./Scenes";
-import { ZagrebCafeScene, ZagrebFlatScene, ZagrebIlicaScene, ZagrebMap, ZagrebOfficeScene, ZagrebPharmacyScene } from "./ZagrebScenes";
+import { DbAgencyScene, DbBeachScene, DbFlatScene, DbPharmacyScene, DbPortScene, DbStradunScene, DbWallsScene, DubrovnikMap } from "./DubrovnikScenes";
+import { ZagrebMap, ZgBoutiqueScene, ZgCafeScene, ZgClinicScene, ZgFlatScene, ZgOfficeScene, ZgPostScene, ZgUpperTownScene } from "./ZagrebScenes";
+import { ApartmentScene, BakeryScene, BeachScene, CafeScene, MarketScene, PlaceholderScene, PortScene, ShopScene, SplitMap, StationScene } from "./Scenes";
 
 /**
  * Rejestr grafik Stories — jedyne miejsce, które wie, czym jest tło, portret czy mapa.
@@ -18,16 +18,26 @@ export const BACKGROUNDS: Record<string, ArtAsset> = {
   apartman: { kind: "svg", render: () => <ApartmentScene /> },
   kafic: { kind: "svg", render: () => <CafeScene /> },
   trgovina: { kind: "svg", render: () => <ShopScene /> },
+  pekara: { kind: "svg", render: () => <BakeryScene /> },
+  trznica: { kind: "svg", render: () => <MarketScene /> },
+  plaza: { kind: "svg", render: () => <BeachScene /> },
+  luka: { kind: "svg", render: () => <PortScene /> },
+  kolodvor: { kind: "svg", render: () => <StationScene /> },
+  "zg-stan": { kind: "svg", render: () => <ZgFlatScene /> },
+  "zg-kafic": { kind: "svg", render: () => <ZgCafeScene /> },
+  "zg-ured": { kind: "svg", render: () => <ZgOfficeScene /> },
+  "zg-ambulanta": { kind: "svg", render: () => <ZgClinicScene /> },
+  "zg-butik": { kind: "svg", render: () => <ZgBoutiqueScene /> },
+  "zg-posta": { kind: "svg", render: () => <ZgPostScene /> },
+  "zg-gornji-grad": { kind: "svg", render: () => <ZgUpperTownScene /> },
+  "db-luka": { kind: "svg", render: () => <DbPortScene /> },
+  "db-apartman": { kind: "svg", render: () => <DbFlatScene /> },
+  "db-agencija": { kind: "svg", render: () => <DbAgencyScene /> },
+  "db-ljekarna": { kind: "svg", render: () => <DbPharmacyScene /> },
+  "db-zidine": { kind: "svg", render: () => <DbWallsScene /> },
+  "db-stradun": { kind: "svg", render: () => <DbStradunScene /> },
+  "db-banje": { kind: "svg", render: () => <DbBeachScene /> },
   placeholder: { kind: "svg", render: () => <PlaceholderScene /> },
-  "zg-stan": { kind: "svg", render: () => <ZagrebFlatScene /> },
-  "zg-ured": { kind: "svg", render: () => <ZagrebOfficeScene /> },
-  "zg-ljekarna": { kind: "svg", render: () => <ZagrebPharmacyScene /> },
-  "zg-ilica": { kind: "svg", render: () => <ZagrebIlicaScene /> },
-  "zg-kafic": { kind: "svg", render: () => <ZagrebCafeScene /> },
-  "du-zidine": { kind: "svg", render: () => <DubrovnikWallsScene /> },
-  "du-luka": { kind: "svg", render: () => <DubrovnikHarborScene /> },
-  "du-stradun": { kind: "svg", render: () => <DubrovnikStradunScene /> },
-  "du-stijene": { kind: "svg", render: () => <DubrovnikRocksScene /> },
 };
 
 export const MAPS: Record<string, ArtAsset> = {
@@ -40,7 +50,23 @@ export const PORTRAITS: Record<string, PortraitAsset> = {
   marko: { kind: "svg", character: "marko" },
   ana: { kind: "svg", character: "ana" },
   ivana: { kind: "svg", character: "ivana" },
-  ...Object.fromEntries(["luka", "petra", "sanja", "maja", "dario", "mara", "nikola", "ante", "jelena"].map((id) => [id, { kind: "svg", character: id } as PortraitAsset])),
+  josip: { kind: "svg", character: "josip" },
+  mare: { kind: "svg", character: "mare" },
+  toni: { kind: "svg", character: "toni" },
+  petra: { kind: "svg", character: "petra" },
+  davor: { kind: "svg", character: "davor" },
+  ljubica: { kind: "svg", character: "ljubica" },
+  zoran: { kind: "svg", character: "zoran" },
+  babic: { kind: "svg", character: "babic" },
+  lana: { kind: "svg", character: "lana" },
+  dragan: { kind: "svg", character: "dragan" },
+  maja: { kind: "svg", character: "maja" },
+  ante: { kind: "svg", character: "ante" },
+  nikola: { kind: "svg", character: "nikola" },
+  vesna: { kind: "svg", character: "vesna" },
+  jelena: { kind: "svg", character: "jelena" },
+  ivo: { kind: "svg", character: "ivo" },
+  tea: { kind: "svg", character: "tea" },
 };
 
 /** Tło albo mapa — z bezpiecznym zastępnikiem, gdy id nie ma w rejestrze. */

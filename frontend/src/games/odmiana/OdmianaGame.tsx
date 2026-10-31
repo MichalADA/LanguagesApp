@@ -27,7 +27,9 @@ import {
   pickVerb,
   pointsFor,
   roundLength,
+  tensePool,
 } from "./logic";
+import { TENSES, type Tense } from "@/grammar/types";
 import type { Level, Mode } from "./logic";
 
 type Phase = "menu" | "play" | "over";
@@ -68,6 +70,7 @@ export function OdmianaGame() {
   const [phase, setPhase] = useState<Phase>("menu");
   const [level, setLevel] = useState<Level>(DEFAULT_LEVEL);
   const [mode, setMode] = useState<Mode>("single");
+  const [tense, setTense] = useState<Tense>("present");
 
   const [question, setQuestion] = useState<Question | null>(null);
   const [typed, setTyped] = useState("");
@@ -89,7 +92,7 @@ export function OdmianaGame() {
   const fieldRefs = useRef<Record<string, HTMLInputElement | null>>({});
 
   const statOf = useCallback((key: string) => current.forms[key], [current.forms]);
-  const pool = useMemo(() => levelPool(verbs, level), [verbs, level]);
+  const pool = useMemo(() => levelPool(tensePool(verbs, tense), level), [verbs, level, tense]);
   const total = roundLength(mode, settings.roundLength);
   const record = current.games[ODMIANA_ID];
 
@@ -156,7 +159,8 @@ export function OdmianaGame() {
         },
       ]);
       const ok = verdict !== "miss";
-      recordLearning({
+      // Powtórki na serwerze znają tylko czas teraźniejszy — inne czasy liczą się w postępie lokalnym.
+      if (!verb.tense) recordLearning({
         wordRef: formKey(verb.id, person),
         answer: answer.trim(),
         correct: ok,
@@ -287,6 +291,23 @@ export function OdmianaGame() {
         </div>
 
         <div className="stack" style={{ gap: 10 }}>
+          <span className="eyebrow">{t("odmiana.stepTense")}</span>
+          <div className="row" style={{ gap: 8 }}>
+            {TENSES.map((id) => (
+              <button
+                key={id}
+                type="button"
+                className={tense === id ? "chip on" : "chip"}
+                onClick={() => setTense(id)}
+              >
+                {t(`odmiana.tense.${id}`)}
+              </button>
+            ))}
+          </div>
+          <span className="stat-note">{t(`odmiana.tenseNote.${tense}`)}</span>
+        </div>
+
+        <div className="stack" style={{ gap: 10 }}>
           <span className="eyebrow">{t("odmiana.stepMode")}</span>
           <div className="row" style={{ gap: 8 }}>
             {(["single", "full"] as Mode[]).map((id) => (
@@ -395,6 +416,7 @@ export function OdmianaGame() {
           <span className="dim">
             {Math.min(asked + 1, total)} / {total}
           </span>
+          {tense !== "present" && <span className="badge">{t(`odmiana.tense.${tense}`)}</span>}
           <span className="badge">{t(`odmiana.level.${level}`)}</span>
         </div>
       </div>

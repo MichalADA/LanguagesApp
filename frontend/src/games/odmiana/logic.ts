@@ -2,7 +2,7 @@ import type { Course } from "@/courses/types";
 import type { Verdict } from "@/services/validation";
 import { canonical, foldDiacritics } from "@/services/validation";
 import type { FormProgress } from "@/progress/types";
-import type { PersonId, VerbEntry } from "@/grammar/types";
+import type { PersonId, Tense, VerbEntry } from "@/grammar/types";
 import { PERSONS, formKey, personDef } from "@/grammar/types";
 
 export const ODMIANA_ID = "odmiana";
@@ -49,8 +49,66 @@ const ALTERNATES: Record<string, Partial<Record<PersonId, string[]>>> = {
 };
 
 export function acceptedForms(verb: VerbEntry, person: PersonId): string[] {
-  const extra = ALTERNATES[verb.infinitive]?.[person] ?? [];
+  const extra = (verb.alternates ?? ALTERNATES[verb.infinitive])?.[person] ?? [];
   return [verb.forms[person], ...extra].filter(Boolean);
+}
+
+const BITI: Record<PersonId, string> = { ja: "sam", ti: "si", on: "je", mi: "smo", vi: "ste", oni: "su" };
+const HTJETI: Record<PersonId, string> = { ja: "ću", ti: "ćeš", on: "će", mi: "ćemo", vi: "ćete", oni: "će" };
+
+/** Bezokolicznik bez „se” i informacja, czy czasownik jest zwrotny. */
+function splitReflexive(infinitive: string): { base: string; reflexive: boolean } {
+  const reflexive = / se$/.test(infinitive);
+  return { base: infinitive.replace(/ se$/, ""), reflexive };
+}
+
+/** Bezokolicznik przed „ću”: -ti traci -i (radit ću), -ći zostaje (ići ću). */
+export function futureStem(infinitive: string): string {
+  return infinitive.endsWith("ti") ? infinitive.slice(0, -1) : infinitive;
+}
+
+/**
+ * Czasownik w czasie przeszłym (perfekt) albo przyszłym (futur I) — liczony z bezokolicznika
+ * i imiesłowu z datasetu. Forma główna jest męska; żeńska i inna kolejność słów to warianty.
+ * „Se” stoi po formie „biti” / „htjeti”; w 3. os. lp. czasu przeszłego „je” znika (on se smijao).
+ */
+export function inTense(verb: VerbEntry, tense: Tense): VerbEntry | null {
+  if (tense === "present") return verb;
+  const { base, reflexive } = splitReflexive(verb.infinitive);
+  const se = reflexive ? " se" : "";
+  const forms = {} as Record<PersonId, string>;
+  const alternates: Partial<Record<PersonId, string[]>> = {};
+  if (tense === "future") {
+    for (const p of PERSONS) {
+      forms[p.id] = `${HTJETI[p.id]}${se} ${base}`;
+      alternates[p.id] = [`${futureStem(base)} ${HTJETI[p.id]}${se}`];
+    }
+  } else {
+    if (!verb.past) return null;
+    const { masculine, feminine } = verb.past;
+    const plural = feminine.replace(/la$/, "li");
+    const pluralF = feminine.replace(/la$/, "le");
+    const neuter = feminine.replace(/la$/, "lo");
+    for (const p of PERSONS) {
+      const aux = BITI[p.id];
+      const singular = p.id === "ja" || p.id === "ti" || p.id === "on";
+      const [m, f] = singular ? [masculine, feminine] : [plural, pluralF];
+      const others = p.id === "on" ? [f, neuter] : [f];
+      if (reflexive && p.id === "on") {
+        forms[p.id] = `se ${m}`;
+        alternates[p.id] = [...others.map((x) => `se ${x}`), `${m} se`, ...others.map((x) => `${x} se`)];
+      } else {
+        forms[p.id] = `${aux}${se} ${m}`;
+        alternates[p.id] = [...others.map((x) => `${aux}${se} ${x}`), `${m} ${aux}${se}`, ...others.map((x) => `${x} ${aux}${se}`)];
+      }
+    }
+  }
+  return { ...verb, id: `${verb.id}:${tense}`, tense, forms, alternates };
+}
+
+/** Pula czasowników w danym czasie (w przeszłym — tylko te z imiesłowem w datasetcie). */
+export function tensePool(verbs: readonly VerbEntry[], tense: Tense): VerbEntry[] {
+  return verbs.map((v) => inTense(v, tense)).filter((v): v is VerbEntry => v !== null);
 }
 
 /**
@@ -189,5 +247,6 @@ export function pickVerb(
 
 /** Etykieta formy do statystyk i ekranu wyniku, np. „ići — oni". */
 export function formLabel(verb: VerbEntry, person: PersonId): string {
-  return `${verb.infinitive} — ${personDef(person).pronoun.split(" / ")[0]}`;
+  const tense = verb.tense === "past" ? " (perfekt)" : verb.tense === "future" ? " (futur)" : "";
+  return `${verb.infinitive}${tense} — ${personDef(person).pronoun.split(" / ")[0]}`;
 }

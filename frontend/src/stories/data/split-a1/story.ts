@@ -7,7 +7,7 @@ export const SPLIT_A1: Story = {
   courseId: "pl-hr",
   level: "A1",
   city: { hr: "Split", pl: "Split" },
-  tagline: "Pierwsze dni w Dalmacji: meldunek, kawa na nabrzeżu i zakupy za rogiem.",
+  tagline: "Pierwsze dni w Dalmacji: meldunek, kawa na nabrzeżu, targ, plaża i prom na wyspy.",
   map: "split-map",
   languageReview: "unverified",
   // Narrator czyta wolniej i niżej niż Marko — słychać, że to nie postać.
@@ -16,6 +16,11 @@ export const SPLIT_A1: Story = {
     { id: "marko", name: "Marko", role: "właściciel apartamentu", portrait: "marko", voice: { gender: "male" } },
     { id: "ana", name: "Ana", role: "baristka", portrait: "ana", voice: { gender: "female" } },
     { id: "ivana", name: "Ivana", role: "sprzedawczyni", portrait: "ivana", voice: { gender: "female", pitch: "-12Hz", rate: "-12%" } },
+    { id: "josip", name: "Josip", role: "piekarz", portrait: "josip", voice: { gender: "male" } },
+    { id: "mare", name: "Mare", role: "sprzedawczyni na targu", portrait: "mare", voice: { gender: "female" } },
+    { id: "toni", name: "Toni", role: "wypożycza leżaki", portrait: "toni", voice: { gender: "male" } },
+    { id: "petra", name: "Petra", role: "kasjerka w porcie", portrait: "petra", voice: { gender: "female" } },
+    { id: "davor", name: "Davor", role: "informacja na dworcu", portrait: "davor", voice: { gender: "male" } },
   ],
   locations: [
     { id: "apartman", name: { hr: "Apartman", pl: "Apartament" }, description: "Twój pokój na starym mieście. Marko zna tu każdy kamień.", background: "apartman", map: { x: 34, y: 42 } },
@@ -34,12 +39,11 @@ export const SPLIT_A1: Story = {
       map: { x: 20, y: 70 },
       unlock: { mission: "m2-key" },
     },
-    // Zapowiedziane lokacje — architektura gotowa, misje w kolejnych etapach.
-    { id: "luka", name: { hr: "Luka", pl: "Port" }, description: "Promy na wyspy.", background: "placeholder", map: { x: 80, y: 74 }, comingSoon: true },
-    { id: "plaza", name: { hr: "Plaža", pl: "Plaża" }, description: "Bačvice i picigin.", background: "placeholder", map: { x: 88, y: 46 }, comingSoon: true },
-    { id: "kolodvor", name: { hr: "Kolodvor", pl: "Dworzec" }, description: "Pociągi i autobusy.", background: "placeholder", map: { x: 70, y: 86 }, comingSoon: true },
-    { id: "pekara", name: { hr: "Pekara", pl: "Piekarnia" }, description: "Burek o poranku.", background: "placeholder", map: { x: 48, y: 30 }, comingSoon: true },
-    { id: "trznica", name: { hr: "Tržnica", pl: "Targ" }, description: "Owoce, warzywa i targowanie się.", background: "placeholder", map: { x: 62, y: 22 }, comingSoon: true },
+    { id: "pekara", name: { hr: "Pekara", pl: "Piekarnia" }, description: "Burek o poranku. Josip piecze tu od trzydziestu lat.", background: "pekara", map: { x: 48, y: 30 }, unlock: { mission: "m2-key" } },
+    { id: "trznica", name: { hr: "Tržnica", pl: "Targ" }, description: "Owoce, warzywa i targowanie się z panią Mare.", background: "trznica", map: { x: 62, y: 22 }, unlock: { mission: "m5-shop" } },
+    { id: "plaza", name: { hr: "Plaža", pl: "Plaża" }, description: "Bačvice: piasek, płytka woda i picigin.", background: "plaza", map: { x: 88, y: 46 }, unlock: { mission: "m4-price" } },
+    { id: "luka", name: { hr: "Luka", pl: "Port" }, description: "Promy na wyspy — Brač, Hvar, Šolta.", background: "luka", map: { x: 80, y: 74 }, unlock: { mission: "m8-beach" } },
+    { id: "kolodvor", name: { hr: "Kolodvor", pl: "Dworzec" }, description: "Autobusy do całej Chorwacji.", background: "kolodvor", map: { x: 70, y: 86 }, unlock: { mission: "m9-ferry" } },
   ],
   missions: SPLIT_MISSIONS,
 };

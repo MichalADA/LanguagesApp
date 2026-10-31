@@ -5,7 +5,7 @@ import { STORIES } from "../data";
 import { Art, MAPS } from "../art/registry";
 
 /**
- * /stories — wybór miasta. Każdy poziom CEFR to osobne miasto; grywalne są Split (A1), Zagrzeb (A2) i Dubrownik (B1).
+ * /stories — wybór miasta. Każdy poziom CEFR to osobne miasto; grywalne są Split (A1) i Zagrzeb (A2).
  * Grywalne miasto to karta z mapą (obiekt, który się „bierze do ręki”), zapowiedzi to cicha lista.
  */
 export function StoriesHub() {

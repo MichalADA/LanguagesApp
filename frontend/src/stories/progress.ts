@@ -1,3 +1,4 @@
+import { isUnlockAll } from "@/dev/unlockAll";
 import { evaluate } from "./engine";
 import type { Mission, Story, StoryLocation } from "./types";
 
@@ -27,17 +28,18 @@ export const completedIds = (progress: StoryProgress) => progress.missions.map((
 
 export type MissionStatus = "locked" | "available" | "completed";
 
-export function missionStatus(story: Story, progress: StoryProgress, mission: Mission): MissionStatus {
+/** W trybie testowym (dev/unlockAll.ts) wszystkie misje i lokacje są dostępne (poza zapowiedzianymi). */
+export function missionStatus(story: Story, progress: StoryProgress, mission: Mission, unlockAll = isUnlockAll()): MissionStatus {
   const done = completedIds(progress);
   if (done.includes(mission.id)) return "completed";
   const location = story.locations.find((l) => l.id === mission.locationId);
-  if (!location || !isLocationUnlocked(location, progress)) return "locked";
-  return mission.requires.every((id) => done.includes(id)) ? "available" : "locked";
+  if (!location || !isLocationUnlocked(location, progress, unlockAll)) return "locked";
+  return unlockAll || mission.requires.every((id) => done.includes(id)) ? "available" : "locked";
 }
 
-export function isLocationUnlocked(location: StoryLocation, progress: StoryProgress): boolean {
+export function isLocationUnlocked(location: StoryLocation, progress: StoryProgress, unlockAll = isUnlockAll()): boolean {
   if (location.comingSoon) return false;
-  return !location.unlock || evaluate(location.unlock, progress.flags, completedIds(progress));
+  return unlockAll || !location.unlock || evaluate(location.unlock, progress.flags, completedIds(progress));
 }
 
 /** Pierwsza dostępna, nieukończona misja w kolejności historii (albo null — wszystko zrobione). */

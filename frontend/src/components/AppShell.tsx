@@ -25,6 +25,8 @@ const NAV_GROUPS: NavItem[][] = [
     { to: "/kurs", key: "nav.course", icon: "route", tab: true },
     { to: "/powtorki", key: "nav.review", icon: "repeat", tab: true },
     { to: "/fiszki", key: "nav.flashcards", icon: "cards", tab: true },
+    { to: "/stories", key: "nav.stories", icon: "map" },
+    { to: "/gramatyka", key: "nav.grammar", icon: "text" },
     { to: "/gry", key: "nav.games", icon: "play" },
   ],
   [

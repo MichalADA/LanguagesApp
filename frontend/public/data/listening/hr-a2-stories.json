@@ -1,0 +1,522 @@
+{
+  "version": 1,
+  "language": "hr",
+  "sourceLanguage": "pl",
+  "generatedWith": {
+    "provider": "elevenlabs",
+    "model": "eleven_multilingual_v2",
+    "rate": "-5%",
+    "voices": {
+      "narrator": "O9XgmQnaZveORWl6mTHm",
+      "ana": "4vkn1E85GfXGoH86xgU7",
+      "marko": "jJ1MUnCKtrOI23TlUUHc",
+      "marta": "eqAqnItEUARzEkoDCTJ1",
+      "luka": "FEuh1dGiuX8Don6bZygL",
+      "ivana": "FXlzTee7Zx2caYKIAwBF",
+      "petar": "ocaele7kOTNS1wQzhbSM",
+      "tomo": "jVBTQrP67HZEE22UqQGF",
+      "mia": "jEKeTj7nqDtk1QSNwXkO",
+      "baka": "7IVTG9LKLYndnFiFDLU2"
+    }
+  },
+  "speakers": {
+    "narrator": "Narrator",
+    "ana": "Ana",
+    "marko": "Marko",
+    "marta": "Marta",
+    "luka": "Luka",
+    "ivana": "Ivana",
+    "petar": "Petar",
+    "tomo": "Tomo",
+    "mia": "Mia",
+    "baka": "Baka"
+  },
+  "stories": [
+    {
+      "id": "a2-izgubljeni-kofer",
+      "level": "A2",
+      "titlePl": "Zgubiona walizka",
+      "titleEn": "The lost suitcase",
+      "topic": "podróż samolotem",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "textHr": "Marko je prošli tjedan putovao avionom iz Varšave u Zagreb.",
+          "textPl": "W zeszłym tygodniu Marko leciał samolotem z Warszawy do Zagrzebia.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/01-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Kad je stigao, dugo je čekao svoj kofer, ali kofer nije došao.",
+          "textPl": "Kiedy przyleciał, długo czekał na swoją walizkę, ale walizka nie przyjechała.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/02-narrator.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Dobar dan. Moj kofer nije stigao. Što mogu učiniti?",
+          "textPl": "Dzień dobry. Moja walizka nie dotarła. Co mogę zrobić?",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/03-marko.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Žao mi je. Kako izgleda vaš kofer?",
+          "textPl": "Przykro mi. Jak wygląda Pana walizka?",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/04-ivana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Velik je i plav. Na njemu je crvena traka.",
+          "textPl": "Jest duża i niebieska. Ma czerwoną wstążkę.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/05-marko.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Što je unutra?",
+          "textPl": "Co jest w środku?",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/06-ivana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Odjeća, knjige i poklon za moju sestru.",
+          "textPl": "Ubrania, książki i prezent dla mojej siostry.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/07-marko.mp3"
+        },
+        {
+          "speaker": "ivana",
+          "textHr": "Dobro. Možda je kofer ostao u Varšavi. Napišite ovdje svoju adresu i broj telefona.",
+          "textPl": "Dobrze. Może walizka została w Warszawie. Proszę tu wpisać swój adres i numer telefonu.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/08-ivana.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Sljedeći dan, u devet ujutro, netko je zazvonio na vratima.",
+          "textPl": "Następnego dnia, o dziewiątej rano, ktoś zadzwonił do drzwi.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/09-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Bio je to kurir s plavim koferom. Marko je bio jako sretan.",
+          "textPl": "To był kurier z niebieską walizką. Marko był bardzo szczęśliwy.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-izgubljeni-kofer/10-narrator.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Jakiego koloru jest walizka Marka?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "Czerwona"
+            },
+            {
+              "id": "c",
+              "textPl": "Czarna"
+            },
+            {
+              "id": "a",
+              "textPl": "Niebieska"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co było w walizce oprócz ubrań?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Dokumenty"
+            },
+            {
+              "id": "a",
+              "textPl": "Książki i prezent dla siostry"
+            },
+            {
+              "id": "b",
+              "textPl": "Laptop"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Kiedy walizka wróciła?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Następnego dnia rano"
+            },
+            {
+              "id": "b",
+              "textPl": "Po tygodniu"
+            },
+            {
+              "id": "c",
+              "textPl": "Tego samego wieczoru"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a2-fritule-kod-bake",
+      "level": "A2",
+      "titlePl": "Fritule u babci",
+      "titleEn": "Fritule at grandma's",
+      "topic": "gotowanie i rodzina",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "textHr": "Mia je u subotu posjetila baku na selu.",
+          "textPl": "W sobotę Mia odwiedziła babcię na wsi.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/01-narrator.mp3"
+        },
+        {
+          "speaker": "baka",
+          "textHr": "Mia, dušo, danas ćemo zajedno praviti fritule.",
+          "textPl": "Mia, kochanie, dziś razem zrobimy fritule.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/02-baka.mp3"
+        },
+        {
+          "speaker": "mia",
+          "textHr": "Super! Što trebamo?",
+          "textPl": "Super! Czego potrzebujemy?",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/03-mia.mp3"
+        },
+        {
+          "speaker": "baka",
+          "textHr": "Brašno, jaja, mlijeko, malo šećera i jogurt. I jedan limun.",
+          "textPl": "Mąki, jajek, mleka, trochę cukru i jogurtu. I jednej cytryny.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/04-baka.mp3"
+        },
+        {
+          "speaker": "mia",
+          "textHr": "Bako, nemamo jaja!",
+          "textPl": "Babciu, nie mamy jajek!",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/05-mia.mp3"
+        },
+        {
+          "speaker": "baka",
+          "textHr": "Nema problema. Susjeda Ruža ima kokoši. Idi do nje.",
+          "textPl": "Nie ma problemu. Sąsiadka Ruža ma kury. Idź do niej.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/06-baka.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Mia je otišla do susjede i donijela šest jaja.",
+          "textPl": "Mia poszła do sąsiadki i przyniosła sześć jajek.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/07-narrator.mp3"
+        },
+        {
+          "speaker": "baka",
+          "textHr": "Bravo! Sada sve pomiješaj, a ja ću zagrijati ulje.",
+          "textPl": "Brawo! Teraz wszystko wymieszaj, a ja rozgrzeję olej.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/08-baka.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Za pola sata fritule su bile gotove. Bile su slatke i jako ukusne.",
+          "textPl": "Po pół godzinie fritule były gotowe. Były słodkie i bardzo smaczne.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/09-narrator.mp3"
+        },
+        {
+          "speaker": "mia",
+          "textHr": "Bako, ovo je najbolji kolač na svijetu!",
+          "textPl": "Babciu, to najlepsze ciastko na świecie!",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-fritule-kod-bake/10-mia.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Gdzie mieszka babcia?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "W Zagrzebiu"
+            },
+            {
+              "id": "c",
+              "textPl": "Nad morzem"
+            },
+            {
+              "id": "a",
+              "textPl": "Na wsi"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Czego zabrakło?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Cukru"
+            },
+            {
+              "id": "a",
+              "textPl": "Jajek"
+            },
+            {
+              "id": "b",
+              "textPl": "Mleka"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Ile jajek przyniosła Mia?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Sześć"
+            },
+            {
+              "id": "b",
+              "textPl": "Dwa"
+            },
+            {
+              "id": "c",
+              "textPl": "Dziesięć"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a2-prvi-radni-dan",
+      "level": "A2",
+      "titlePl": "Pierwszy dzień w pracy",
+      "titleEn": "First day at work",
+      "topic": "praca",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "ana",
+          "textHr": "Prošlog ponedjeljka počela sam raditi u novoj tvrtki u Rijeci.",
+          "textPl": "W zeszły poniedziałek zaczęłam pracę w nowej firmie w Rijece.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/01-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Ustala sam u šest jer sam bila nervozna.",
+          "textPl": "Wstałam o szóstej, bo byłam zdenerwowana.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/02-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Autobus je kasnio, pa sam stigla u ured u devet i deset.",
+          "textPl": "Autobus się spóźnił, więc dotarłam do biura o dziewiątej dziesięć.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/03-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Šef se zove gospodin Horvat. Bio je vrlo ljubazan i nije se ljutio.",
+          "textPl": "Szef nazywa się pan Horvat. Był bardzo uprzejmy i się nie gniewał.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/04-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Pokazao mi je moj stol, računalo i kuhinju.",
+          "textPl": "Pokazał mi moje biurko, komputer i kuchnię.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/05-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "U podne sam ručala s novim kolegama. Pričali smo o hobijima.",
+          "textPl": "W południe jadłam obiad z nowymi kolegami. Rozmawialiśmy o hobby.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/06-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Kolegica Petra također voli planinarenje, kao i ja.",
+          "textPl": "Koleżanka Petra też lubi wędrówki po górach, tak jak ja.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/07-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "U subotu ćemo zajedno ići na Učku.",
+          "textPl": "W sobotę razem pojedziemy na Učkę.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/08-ana.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Mislim da će mi se ovaj posao jako svidjeti.",
+          "textPl": "Myślę, że ta praca bardzo mi się spodoba.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-prvi-radni-dan/09-ana.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Dlaczego Ana spóźniła się do biura?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Zgubiła się w mieście"
+            },
+            {
+              "id": "a",
+              "textPl": "Autobus się spóźnił"
+            },
+            {
+              "id": "b",
+              "textPl": "Zaspała"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co lubi Petra?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Wędrówki po górach"
+            },
+            {
+              "id": "b",
+              "textPl": "Pływanie"
+            },
+            {
+              "id": "c",
+              "textPl": "Gotowanie"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co Ana i Petra zrobią w sobotę?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "Pójdą do kina"
+            },
+            {
+              "id": "c",
+              "textPl": "Będą pracować"
+            },
+            {
+              "id": "a",
+              "textPl": "Pojadą razem na Učkę"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a2-ljeto-na-visu",
+      "level": "A2",
+      "titlePl": "Lato na Visie",
+      "titleEn": "Summer on Vis",
+      "topic": "wakacje",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "textHr": "Ana i Marko su ljetos bili deset dana na otoku Visu.",
+          "textPl": "Tego lata Ana i Marko spędzili dziesięć dni na wyspie Vis.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-ljeto-na-visu/01-narrator.mp3"
+        },
+        {
+          "speaker": "narrator",
+          "textHr": "Iz Splita su putovali trajektom dva i pol sata.",
+          "textPl": "Ze Splitu płynęli promem dwie i pół godziny.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-ljeto-na-visu/02-narrator.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Svako jutro smo plivali u moru prije doručka.",
+          "textPl": "Każdego ranka pływaliśmy w morzu przed śniadaniem.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-ljeto-na-visu/03-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Jednog dana smo iznajmili skuter i obišli cijeli otok.",
+          "textPl": "Pewnego dnia wypożyczyliśmy skuter i objechaliśmy całą wyspę.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-ljeto-na-visu/04-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Najviše mi se svidjela Stiniva — mala plaža između visokih stijena.",
+          "textPl": "Najbardziej spodobała mi się Stiniva — mała plaża między wysokimi skałami.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-ljeto-na-visu/05-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Meni je najbolja bila hrana. Svaku večer smo jeli svježu ribu.",
+          "textPl": "Dla mnie najlepsze było jedzenie. Każdego wieczoru jedliśmy świeżą rybę.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-ljeto-na-visu/06-marko.mp3"
+        },
+        {
+          "speaker": "ana",
+          "textHr": "Samo zadnji dan nije bio lijep. Puhao je jak vjetar i trajekt je kasnio tri sata.",
+          "textPl": "Tylko ostatni dzień nie był ładny. Wiał silny wiatr i prom spóźnił się trzy godziny.",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-ljeto-na-visu/07-ana.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ali sljedeće godine se sigurno vraćamo!",
+          "textPl": "Ale w przyszłym roku na pewno wracamy!",
+          "audioPath": "/audio/listening/hr-a2/stories/a2-ljeto-na-visu/08-marko.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Jak długo byli na Visie?",
+          "options": [
+            {
+              "id": "b",
+              "textPl": "Tydzień"
+            },
+            {
+              "id": "c",
+              "textPl": "Dwa i pół dnia"
+            },
+            {
+              "id": "a",
+              "textPl": "Dziesięć dni"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co najbardziej podobało się Markowi?",
+          "options": [
+            {
+              "id": "c",
+              "textPl": "Jazda skuterem"
+            },
+            {
+              "id": "a",
+              "textPl": "Jedzenie"
+            },
+            {
+              "id": "b",
+              "textPl": "Plaża Stiniva"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co się stało ostatniego dnia?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Wiał silny wiatr i prom się spóźnił"
+            },
+            {
+              "id": "b",
+              "textPl": "Cały dzień padał deszcz"
+            },
+            {
+              "id": "c",
+              "textPl": "Zgubili skuter"
+            }
+          ],
+          "correctOptionId": "a"
+        }
+      ]
+    }
+  ]
+}

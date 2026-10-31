@@ -3,10 +3,12 @@
   "language": "hr",
   "sourceLanguage": "pl",
   "generatedWith": {
-    "provider": "Microsoft Edge online voices via edge-tts",
+    "provider": "elevenlabs",
+    "model": "eleven_multilingual_v2",
+    "rate": "+0%",
     "voices": {
-      "ana": "hr-HR-GabrijelaNeural",
-      "marko": "hr-HR-SreckoNeural"
+      "ana": "4vkn1E85GfXGoH86xgU7",
+      "marko": "DAGnQ7r9sMtV0Q44g1Mi"
     }
   },
   "dialogues": [

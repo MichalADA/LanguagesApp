@@ -1,503 +1,647 @@
 import type { Mission, MissionWord } from "../../types";
-import { branch, build, choice, end, flag, graph, option, say, type } from "../builders";
+import { build, choice, end, flag, graph, option, say, type } from "../builders";
 
 /**
- * Dubrovnik B1 — pięć misji. Zdania opierają się na materiale lekcji B1: zgłaszanie usterek (moduł 7),
- * strona bierna i kultura (11), podróż promem (6), mowa zależna i argumentowanie (11–12),
- * tryb przypuszczający i rady (3–4, 10, 12). Dłuższe wypowiedzi, więcej rozgałęzień niż w A1/A2.
- * Opcje gracza unikają form zależnych od płci (albo akceptują obie: imao / imala).
- * Treść chorwacka NIE jest jeszcze sprawdzona przez native speakera (story.languageReview).
+ * Dubrownik B1 — osiem misji opartych na modułach kursu B1: podróż (prom, autobus), mieszkanie
+ * i usterki, praca w zespole, zdrowie i rady, porównywanie, kultura i media, plany i argumenty.
+ * Gracz nie używa form zależnych od płci (imiesłów, „volio/voljela bih”): mówi w liczbie mnogiej,
+ * w czasie przyszłym, bezosobowo („Bilo bi super…”, „Ako mi bude trebao…”) albo grzecznie do rozmówcy
+ * („Biste li mi mogli…?”). Treść chorwacka NIE jest jeszcze sprawdzona przez native speakera.
  *
- * Słownictwo: te same karty FSRS co w lekcjach B1 (i A2 — „curiti”, „propustiti”).
+ * Słownictwo: te same karty FSRS co w lekcjach B1 (test porównuje z danymi generatora kursu).
  */
 
 const w = (hr: string, pl: string, itemType: "WORD" | "PHRASE", itemId: string): MissionWord => ({ hr, pl, review: { itemType, itemId } });
 
-/* ------------------------------------------------------------------ */
-/* 1. Kvar u apartmanu — gospođa Mara, apartament na Pločach           */
-/* ------------------------------------------------------------------ */
-
-const repair: Mission = {
-  id: "m1-repair",
+/* 1. Dolazak u Dubrovnik — Ante, port Gruž */
+const arrival: Mission = {
+  id: "m1-dolazak",
   order: 1,
-  title: { hr: "Kvar u apartmanu", pl: "Usterka w apartamencie" },
-  locationId: "ploce",
-  npcId: "mara",
-  goal: "Zgłosisz dwie usterki właścicielce, opiszesz je dokładnie i umówisz wizytę fachowca.",
-  story: "Pierwszy poranek w Dubrowniku. Widok z okna na stare miasto jest piękny, ale odpływ w łazience jest zatkany, a pod zlewem stoi kałuża. Pani Mara, właścicielka, właśnie wchodzi po schodach.",
+  title: { hr: "Dolazak u Dubrovnik", pl: "Przyjazd do Dubrownika" },
+  locationId: "luka",
+  npcId: "ante",
+  goal: "Grzecznie zapytasz o autobus, zrozumiesz wskazówki, zdążysz przed zmrokiem i podziękujesz z planem na przyszłość.",
+  story: "Na lato dostałeś pracę w agencji turystycznej w Dubrowniku. Katamaran ze Splitu właśnie przybił do portu Gruž, a do Starego Miasta jest jeszcze kawałek drogi. Przy nabrzeżu czeka taksówkarz Ante.",
   objectives: [
-    { text: "Powiedz, że coś jest nie tak", done: { flag: "started-report" } },
-    { text: "Zgłoś zatkany odpływ", done: { flag: "reported-drain" } },
-    { text: "Zgłoś przeciek", done: { flag: "reported-leak" } },
-    { text: "Umów wizytę fachowca", done: { flag: "agreed-time" } },
+    { text: "Grzecznie zapytaj o przystanek", done: { flag: "asked-way" } },
+    { text: "Zdąż na autobus", done: { flag: "caught-bus" } },
+    { text: "Pożegnaj się z Ante", done: { flag: "thanked-ante" } },
   ],
   requires: [],
-  xp: 50,
-  vocabulary: [
-    w("prijaviti kvar", "zgłosić usterkę", "PHRASE", "pl-hr:phrase:prijaviti kvar"),
-    w("začepljen", "zatkany", "PHRASE", "pl-hr:phrase:začepljen"),
-    w("odvod", "odpływ", "WORD", "pl-hr:3669"),
-    w("sudoper", "zlew", "WORD", "pl-hr:3700"),
-    w("curiti", "cieknąć", "PHRASE", "pl-hr:phrase:curiti"),
-    w("prethodni", "poprzedni", "WORD", "pl-hr:1359"),
-    w("obavijestiti", "powiadomić / poinformować", "PHRASE", "pl-hr:phrase:obavijestiti"),
-  ],
-  dialogue: {
-    kind: "scripted",
-    graph: graph("view", [
-      say("view", "narrator", "Dubrovnik. Apartman u Pločama, s pogledom na stari grad. Ali nešto nije u redu.", "Dubrownik. Apartament na Pločach z widokiem na stare miasto. Ale coś jest nie tak.", "problem"),
-      say("problem", "narrator", "Odvod u kupaonici je začepljen, a ispod sudopera curi voda.", "Odpływ w łazience jest zatkany, a spod zlewu cieknie woda.", "hello"),
-      say("hello", "mara", "Dobro jutro! Jeste li se dobro naspavali? Je li sve u redu sa stanom?", "Dzień dobry! Wyspał/a się Pan/Pani? Wszystko w porządku z mieszkaniem?", "c-start", { mood: "happy" }),
-      choice("c-start", "Powiedz, że niestety nie i że chcesz zgłosić usterki.", [
-        option("report", "Nažalost, nije. Moram prijaviti dva kvara.", "Niestety nie. Muszę zgłosić dwie usterki.", "correct", "what", { effects: [flag("started-report")] }),
-        option("perfect", "Da, sve je savršeno, hvala!", "Tak, wszystko idealnie, dziękuję!", "wrong", "perfect", {
-          explanation: "Przecież odpływ jest zatkany, a woda cieknie! Zgłoś usterki: Nažalost, nije. Moram prijaviti dva kvara.",
-        }),
-      ]),
-      say("perfect", "mara", "Savršeno? Drago mi je! Ali čekajte… zašto je pod u kuhinji mokar?", "Idealnie? Cieszę się! Ale chwileczkę… czemu podłoga w kuchni jest mokra?", "c-start", { mood: "puzzled" }),
-      say("what", "mara", "Joj! Recite mi, što se dogodilo?", "Ojej! Proszę powiedzieć, co się stało?", "b-drain", { mood: "puzzled" }),
-      build("b-drain", {
-        instruction: "Powiedz, że odpływ w łazience jest zatkany.",
-        translation: "Odpływ w łazience jest zatkany.",
-        tokens: ["Odvod", "u", "kupaonici", "je", "začepljen", "začepljena", "kupaonica"],
-        accepted: ["Odvod u kupaonici je začepljen."],
-        explanation: "„Odvod” (odpływ) jest rodzaju męskiego → začepljen. Po „u” miejscownik: kupaonica → u kupaonici.",
-        practice: "začepljen",
-        next: "again",
-        onWrong: "drain-what",
-      }),
-      say("drain-what", "mara", "Polako. Što je s kupaonicom?", "Powoli. Co z łazienką?", "b-drain", { mood: "puzzled" }),
-      say("again", "mara", "Opet? Prethodni stanar je imao isti problem. A drugi kvar?", "Znowu? Poprzedni lokator miał ten sam problem. A druga usterka?", "t-leak", { effects: [flag("reported-drain")] }),
-      type("t-leak", {
-        instruction: "Napisz, że spod zlewu cieknie woda.",
-        translation: "Spod zlewu cieknie woda.",
-        accepted: ["Ispod sudopera curi voda.", "Voda curi ispod sudopera.", "Curi voda ispod sudopera."],
-        hint: "Ispod sudopera …",
-        explanation: "„Ispod” wymaga dopełniacza: sudoper → ispod sudopera. Cieknie: curi (od curiti).",
-        practice: "sudoper",
-        next: "plumber",
-      }),
-      say("plumber", "mara", "To nije dobro. Zvat ću majstora još danas.", "To niedobrze. Zadzwonię po fachowca jeszcze dziś.", "when", { effects: [flag("reported-leak")] }),
-      say("when", "mara", "Biste li mogli biti u apartmanu poslijepodne, kad majstor dođe?", "Czy mógłby Pan / mogłaby Pani być w apartamencie po południu, kiedy przyjdzie fachowiec?", "c-time"),
-      choice("c-time", "Umów się z panią Marą na wizytę fachowca.", [
-        option("today", "Mogu biti ovdje do tri sata.", "Mogę tu być do trzeciej.", "correct", "two", { effects: [flag("agreed-time")] }),
-        option("tomorrow", "Nažalost, poslijepodne nisam tu. Može li majstor doći sutra ujutro?", "Niestety po południu mnie nie ma. Czy fachowiec może przyjść jutro rano?", "correct", "nine", {
-          effects: [flag("agreed-time")],
-        }),
-        option("yesterday", "Majstor je mogao doći jučer.", "Fachowiec mógł przyjść wczoraj.", "wrong", "yesterday", {
-          explanation: "„Jučer” (wczoraj) już minęło — umów się na dziś albo na jutro, np.: Mogu biti ovdje do tri sata.",
-        }),
-      ]),
-      say("yesterday", "mara", "Jučer? Ha-ha, to bi bilo lijepo, ali ne ide.", "Wczoraj? Ha-ha, byłoby miło, ale tak się nie da.", "c-time", { mood: "puzzled" }),
-      say("two", "mara", "Odlično, majstor dolazi u dva.", "Świetnie, fachowiec przyjdzie o drugiej.", "sorry", { mood: "happy" }),
-      say("nine", "mara", "Može i tako. Majstor dolazi sutra u devet.", "Może być i tak. Fachowiec przyjdzie jutro o dziewiątej.", "sorry"),
-      say("sorry", "mara", "Oprostite zbog neugodnosti. Ako bude još problema, javite mi odmah.", "Przepraszam za kłopot. Jeśli będą jeszcze problemy, proszę od razu dać znać.", "c-bye"),
-      choice("c-bye", "Podziękuj i obiecaj, że dasz znać.", [
-        option("thanks", "Hvala Vam! Obavijestit ću Vas ako nešto ne bude u redu.", "Dziękuję! Powiadomię Panią, jeśli coś nie będzie w porządku.", "correct", "enjoy"),
-        option("deposit", "Hvala! Onda mi vratite polog.", "Dziękuję! To proszę mi oddać kaucję.", "wrong", "deposit", {
-          explanation: "Za wcześnie na zwrot kaucji 🙂 Kaucję (polog) oddaje się po wyprowadzce. Podziękuj: Hvala Vam! Obavijestit ću Vas…",
-        }),
-      ]),
-      say("deposit", "mara", "Polog? Pa tek ste stigli!", "Kaucję? Przecież dopiero Pan/Pani przyjechał/a!", "c-bye", { mood: "puzzled" }),
-      say("enjoy", "mara", "Uživajte u Dubrovniku!", "Proszę cieszyć się Dubrownikiem!", "end", { mood: "happy" }),
-      end(),
-    ]),
-  },
-  debrief: [
-    "Zgłaszasz usterki: Moram prijaviti dva kvara. Odvod u kupaonici je začepljen.",
-    "Opisujesz, gdzie jest problem — z dopełniaczem: ispod sudopera curi voda.",
-    "Umawiasz termin i obiecujesz kontakt: Obavijestit ću Vas ako nešto ne bude u redu.",
-  ],
-};
-
-/* ------------------------------------------------------------------ */
-/* 2. Šetnja po zidinama — Nikola, mury miejskie                       */
-/* ------------------------------------------------------------------ */
-
-const walls: Mission = {
-  id: "m2-walls",
-  order: 2,
-  title: { hr: "Šetnja po zidinama", pl: "Spacer po murach" },
-  locationId: "zidine",
-  npcId: "nikola",
-  goal: "Zrozumiesz przewodnika mówiącego o historii, wyrazisz własne zdanie z porównaniem i zadasz pytanie w stronie biernej.",
-  story: "Mury Dubrownika to prawie dwa kilometry kamienia nad morzem. Zapisujesz się na wycieczkę z Nikolą — lokalnym przewodnikiem, który opowiada szybko i z pasją.",
-  objectives: [
-    { text: "Zrozum historię murów", done: { flag: "learned-history" } },
-    { text: "Wyraź opinię o mieście", done: { flag: "gave-opinion" } },
-    { text: "Zadaj pytanie przewodnikowi", done: { flag: "asked-question" } },
-  ],
-  requires: ["m1-repair"],
-  xp: 50,
-  vocabulary: [
-    w("vodič", "przewodnik", "WORD", "pl-hr:970"),
-    w("izgraditi", "zbudować", "WORD", "pl-hr:2099"),
-    w("stoljeće", "wiek (stulecie)", "WORD", "pl-hr:1018"),
-    w("tvrđava", "twierdza", "PHRASE", "pl-hr:phrase:tvrđava"),
-    w("izvan sezone", "poza sezonem", "PHRASE", "pl-hr:phrase:izvan sezone"),
-    w("mirniji", "spokojniejszy", "PHRASE", "pl-hr:phrase:mirniji"),
-    w("snimiti", "nakręcić / nagrać", "PHRASE", "pl-hr:phrase:snimiti"),
-  ],
-  dialogue: {
-    kind: "scripted",
-    graph: graph("walls", [
-      say("walls", "narrator", "Gradske zidine. Gotovo dva kilometra kamena oko staroga grada.", "Mury miejskie. Prawie dwa kilometry kamienia wokół starego miasta.", "hello"),
-      say("hello", "nikola", "Dobar dan svima! Ja sam Nikola, vaš vodič. Jeste li prvi put u Dubrovniku?", "Dzień dobry wszystkim! Jestem Nikola, wasz przewodnik. Jesteście pierwszy raz w Dubrowniku?", "c-first", { mood: "happy" }),
-      choice("c-first", "Odpowiedz, że jesteś tu pierwszy raz.", [
-        option("first", "Da, prvi put! Već dugo želim vidjeti zidine.", "Tak, pierwszy raz! Od dawna chcę zobaczyć mury.", "correct", "built"),
-        option("time", "Da, prva vrijeme.", "Tak, „pierwszy czas”.", "wrong", "time", {
-          explanation: "„Pierwszy raz” to po chorwacku „prvi put”, nie „prva vrijeme” (vrijeme — czas, pogoda).",
-        }),
-      ]),
-      say("time", "nikola", "Prva vrijeme? Mislite — prvi put? Dobro došli!", "„Pierwszy czas”? Chodzi o — pierwszy raz? Witamy!", "c-first", { mood: "puzzled" }),
-      say("built", "nikola", "Zidine su izgrađene između dvanaestog i sedamnaestog stoljeća.", "Mury budowano między dwunastym a siedemnastym wiekiem.", "minceta"),
-      say("minceta", "nikola", "Najviša točka je tvrđava Minčeta. Odande je pogled najljepši.", "Najwyższym punktem jest twierdza Minčeta. Stamtąd widok jest najpiękniejszy.", "c-history"),
-      choice("c-history", "Upewnij się, że dobrze zrozumiałeś, jak stare są mury.", [
-        option("old", "Znači, zidine su starije od osamsto godina?", "Czyli mury mają ponad osiemset lat?", "correct", "film", { effects: [flag("learned-history")] }),
-        option("new", "Znači, zidine su izgrađene u dvadesetom stoljeću?", "Czyli mury zbudowano w XX wieku?", "wrong", "history-again", {
-          explanation: "Nikola mówi o wiekach XII–XVII: „između dvanaestog i sedamnaestog stoljeća”, nie o dwudziestym.",
-        }),
-      ]),
-      say("history-again", "nikola", "Ne, ne — puno, puno starije!", "Nie, nie — dużo, dużo starsze!", "c-history", { mood: "puzzled" }),
-      say("film", "nikola", "Znate li da je ovdje snimljeno puno filmova i serija? Zato ljeti dolaze mnogi turisti.", "Czy wiecie, że nakręcono tu mnóstwo filmów i seriali? Dlatego latem przyjeżdża tylu turystów.", "season"),
-      say("season", "nikola", "Ali ja mislim da je grad ljepši izvan sezone. Što Vi mislite — zašto?", "Ale ja uważam, że miasto jest piękniejsze poza sezonem. Jak Pan/Pani myśli — dlaczego?", "b-season"),
-      build("b-season", {
-        instruction: "Powiedz, że poza sezonem miasto jest spokojniejsze i tańsze.",
-        translation: "Poza sezonem miasto jest spokojniejsze i tańsze.",
-        tokens: ["Izvan", "sezone", "je", "grad", "mirniji", "i", "jeftiniji", "mirno", "sezona"],
-        accepted: ["Izvan sezone je grad mirniji i jeftiniji.", "Izvan sezone grad je mirniji i jeftiniji.", "Grad je izvan sezone mirniji i jeftiniji."],
-        explanation: "Stopień wyższy: miran → mirniji, jeftin → jeftiniji. „Izvan” wymaga dopełniacza: sezona → izvan sezone.",
-        practice: "izvan sezone",
-        next: "crowd",
-        onWrong: "season-what",
-      }),
-      say("season-what", "nikola", "Hm? Kakav je grad izvan sezone?", "Hm? Jakie jest miasto poza sezonem?", "b-season", { mood: "puzzled" }),
-      say("crowd", "nikola", "Točno! I na Stradunu je manje gužve.", "Dokładnie! I na Stradunie jest mniejszy tłok.", "ask", { mood: "happy", effects: [flag("gave-opinion")] }),
-      say("ask", "nikola", "Sad smo kod Minčete. Pitajte me što god želite!", "Jesteśmy przy Minčecie. Pytajcie, o co chcecie!", "t-ask"),
-      type("t-ask", {
-        instruction: "Zapytaj, kiedy zbudowano twierdzę.",
-        translation: "Kiedy zbudowano twierdzę?",
-        accepted: ["Kada je izgrađena tvrđava?", "Kad je izgrađena tvrđava?", "Kada je tvrđava izgrađena?", "Kad je tvrđava izgrađena?", "Kada je izgrađena Minčeta?", "Kad je izgrađena Minčeta?"],
-        hint: "Kada je izgrađena …?",
-        explanation: "Strona bierna: biti + imiesłów bierny — tvrđava je izgrađena (twierdza została zbudowana). Pytanie: Kada je izgrađena tvrđava?",
-        practice: "izgraditi",
-        next: "answer",
-      }),
-      say("answer", "nikola", "Dobro pitanje! Izgrađena je u četrnaestom stoljeću, a kasnije je proširena.", "Dobre pytanie! Zbudowano ją w XIV wieku, a później rozbudowano.", "thanks", { effects: [flag("asked-question")] }),
-      say("thanks", "nikola", "Hvala svima na pažnji! Kako vam se svidjela tura?", "Dziękuję wszystkim za uwagę! Jak się wam podobała wycieczka?", "c-thanks"),
-      choice("c-thanks", "Podziękuj i powiedz, że było ciekawie.", [
-        option("great", "Hvala Vama, bilo je stvarno zanimljivo!", "Dziękuję, było naprawdę ciekawie!", "correct", "bye"),
-        option("me", "Hvala, bila sam stvarno zanimljiva!", "Dziękuję, byłam naprawdę interesująca!", "wrong", "me", {
-          explanation: "„Bila sam zanimljiva” znaczy „byłam interesująca” — o sobie, nie o wycieczce! Powiedz bezosobowo: Bilo je stvarno zanimljivo!",
-        }),
-      ]),
-      say("me", "nikola", "Ha-ha, sigurno jeste! Ali mislite — tura je bila zanimljiva?", "Ha-ha, na pewno! Ale chodzi o to, że wycieczka była ciekawa?", "c-thanks", { mood: "puzzled" }),
-      say("bye", "nikola", "Drago mi je! Vidimo se u gradu!", "Cieszę się! Do zobaczenia w mieście!", "end", { mood: "happy" }),
-      end(),
-    ]),
-  },
-  debrief: [
-    "Rozumiesz stronę bierną: zidine su izgrađene… — mury zostały zbudowane.",
-    "Porównujesz: izvan sezone grad je mirniji i jeftiniji.",
-    "Pytasz w stronie biernej: Kada je izgrađena tvrđava?",
-  ],
-};
-
-/* ------------------------------------------------------------------ */
-/* 3. Brod za Lopud — Ante, port Gruž                                  */
-/* ------------------------------------------------------------------ */
-
-const ferry: Mission = {
-  id: "m3-ferry",
-  order: 3,
-  title: { hr: "Brod za Lopud", pl: "Statek na Lopud" },
-  locationId: "gruz",
-  npcId: "ante",
-  goal: "Kupisz bilet na wyspę, wybierzesz między katamaranem a promem i dowiesz się, jak wrócić na czas.",
-  story: "Chcesz spędzić dzień na wyspie Lopud. W porcie Gruž rozkład jest tylko po chorwacku, a pan Ante w kasie mówi szybko — i nie lubi powtarzać.",
-  objectives: [
-    { text: "Kup bilet", done: { flag: "has-ticket" } },
-    { text: "Dowiedz się, skąd i kiedy wsiadasz", done: { flag: "knows-boarding" } },
-    { text: "Zapytaj o powrót", done: { flag: "knows-return" } },
-  ],
-  requires: ["m1-repair"],
-  xp: 50,
+  xp: 60,
   vocabulary: [
     w("luka", "port", "WORD", "pl-hr:1173"),
     w("katamaran", "katamaran", "WORD", "pl-hr:4070"),
-    w("pristanište", "przystań", "PHRASE", "pl-hr:phrase:pristanište"),
-    w("polaziti", "odjeżdżać", "PHRASE", "pl-hr:phrase:polaziti"),
-    w("red vožnje", "rozkład jazdy", "PHRASE", "pl-hr:phrase:red vožnje"),
-    w("što prije, to bolje", "im wcześniej, tym lepiej", "PHRASE", "pl-hr:phrase:što prije to bolje"),
-    w("propustiti", "przegapić / uciec (o pociągu)", "PHRASE", "pl-hr:phrase:propustiti"),
+    w("stizati", "przybywać / zdążać", "WORD", "pl-hr:347"),
+    w("prije nego što", "zanim", "WORD", "pl-hr:2347"),
+    w("požuriti", "pospieszyć się", "PHRASE", "pl-hr:phrase:požuriti"),
   ],
   dialogue: {
     kind: "scripted",
     graph: graph("port", [
-      say("port", "narrator", "Luka Gruž, rano ujutro. Red vožnje je samo na hrvatskom.", "Port Gruž, wczesnym rankiem. Rozkład jest tylko po chorwacku.", "hello"),
-      say("hello", "ante", "Dobro jutro! Kamo putujete?", "Dzień dobry! Dokąd Pan/Pani płynie?", "b-ticket"),
-      build("b-ticket", {
-        instruction: "Poproś o jeden bilet na Lopud.",
-        translation: "Potrzebuję jednego biletu na Lopud.",
-        tokens: ["Trebam", "jednu", "kartu", "za", "Lopud", "na", "karta"],
-        accepted: ["Trebam jednu kartu za Lopud.", "Trebam kartu za Lopud."],
-        explanation: "Bilet DO jakiegoś miejsca: karta za + nazwa — Trebam (jednu) kartu za Lopud. Po „trebam” biernik: karta → kartu.",
-        next: "options",
-        onWrong: "ticket-what",
+      say("port", "narrator", "Luka Gruž, kasno poslijepodne. Katamaran iz Splita upravo je pristao.", "Port Gruž, późne popołudnie. Katamaran ze Splitu właśnie przybił do brzegu.", "taxi"),
+      say("taxi", "ante", "Dobar dan! Taksi? Do Staroga grada je petnaest eura.", "Dzień dobry! Taksówka? Do Starego Miasta piętnaście euro.", "c-polite", { mood: "happy" }),
+      choice("c-polite", "Odmów grzecznie i zapytaj o przystanek autobusowy.", [
+        option("polite", "Hvala, ali radije ću ići autobusom. Biste li mi mogli reći gdje je stanica?", "Dziękuję, ale wolę pojechać autobusem. Czy mógłby mi Pan powiedzieć, gdzie jest przystanek?", "correct", "stop", { effects: [flag("asked-way")] }),
+        option("rude", "Ne. Dajte mi stanicu!", "Nie. Dawaj przystanek!", "wrong", "rude", { explanation: "„Dajte mi…” brzmi jak rozkaz. Grzecznie pytasz w trybie warunkowym: Biste li mi mogli reći gdje je stanica?" }),
+      ]),
+      say("rude", "ante", "Ajme, polako! Može to i malo ljubaznije.", "Ojej, spokojnie! Można to powiedzieć trochę uprzejmiej.", "c-polite", { mood: "puzzled" }),
+      say("stop", "ante", "Naravno. Stanica je odmah preko ceste. Do Pila voze jedinica, sedmica i osmica, a karta kod vozača je skuplja nego na kiosku.", "Oczywiście. Przystanek jest zaraz po drugiej stronie ulicy. Na Pile jeżdżą jedynka, siódemka i ósemka, a bilet u kierowcy jest droższy niż w kiosku.", "c-bus"),
+      choice("c-bus", "Upewnij się, że dobrze zrozumiałeś.", [
+        option("kiosk", "Znači, kartu je bolje kupiti na kiosku?", "Czyli bilet lepiej kupić w kiosku?", "correct", "where"),
+        option("free", "Znači, autobus je besplatan?", "Czyli autobus jest za darmo?", "wrong", "bus-again", { explanation: "Ante mówi, że bilet u kierowcy jest droższy (skuplja) niż w kiosku — za darmo nie jest." }),
+        option("eighteen", "Znači, vozi samo broj osamnaest?", "Czyli jeździ tylko numer osiemnaście?", "wrong", "bus-again", { explanation: "Ante wymienił jedynkę, siódemkę i ósemkę (jedinica, sedmica, osmica) — nie osiemnastkę." }),
+      ]),
+      say("bus-again", "ante", "Ne, ne — jedinica, sedmica ili osmica. Karta je jeftinija na kiosku.", "Nie, nie — jedynka, siódemka albo ósemka. Bilet jest tańszy w kiosku.", "c-bus", { mood: "puzzled" }),
+      say("where", "ante", "Tako je. A kamo točno idete? Uskoro će pasti mrak.", "Zgadza się. A dokąd dokładnie Pan/Pani jedzie? Niedługo zrobi się ciemno.", "b-dark"),
+      build("b-dark", {
+        instruction: "Powiedz, że musisz dotrzeć na Pile, zanim zrobi się ciemno.",
+        translation: "Muszę dotrzeć na Pile, zanim zapadnie zmrok.",
+        tokens: ["Moram", "stići", "do", "Pila", "prije", "nego", "što", "padne", "mrak", "poslije", "Pile"],
+        accepted: ["Moram stići do Pila prije nego što padne mrak."],
+        explanation: "„Zanim” to „prije nego što”; po nim czasownik dokonany: prije nego što padne mrak. „Do Pila” — dopełniacz od „Pile”.",
+        practice: "prije nego što",
+        next: "hurry",
+        onWrong: "dark-what",
       }),
-      say("ticket-what", "ante", "Molim? Za koji otok?", "Słucham? Na którą wyspę?", "b-ticket", { mood: "puzzled" }),
-      say("options", "ante", "Za Lopud imate katamaran u deset i trajekt u jedanaest i petnaest. Katamaran je brži, ali karta je skuplja.", "Na Lopud ma Pan/Pani katamaran o dziesiątej i prom o jedenastej piętnaście. Katamaran jest szybszy, ale bilet droższy.", "c-boat"),
-      choice("c-boat", "Wybierz statek i uzasadnij wybór.", [
-        option("cat", "Uzet ću katamaran — što prije, to bolje.", "Wezmę katamaran — im wcześniej, tym lepiej.", "correct", "cat", { effects: [flag("has-ticket"), flag("took-catamaran")] }),
-        option("ferry", "Uzet ću trajekt — ne žurim se, a jeftiniji je.", "Wezmę prom — nie spieszę się, a jest tańszy.", "correct", "ferry", { effects: [flag("has-ticket")] }),
-        option("slow", "Uzet ću katamaran, jer je sporiji.", "Wezmę katamaran, bo jest wolniejszy.", "wrong", "slow", {
-          explanation: "Ante powiedział, że katamaran jest szybszy (brži), a nie wolniejszy (sporiji).",
-        }),
+      say("dark-what", "ante", "Molim? Do Pila — kada?", "Słucham? Na Pile — kiedy?", "b-dark", { mood: "puzzled" }),
+      say("hurry", "ante", "Onda požurite! Sljedeći autobus polazi za pet minuta, a idući tek za pola sata.", "To proszę się pospieszyć! Następny autobus odjeżdża za pięć minut, a kolejny dopiero za pół godziny.", "c-hurry"),
+      choice("c-hurry", "Zdecyduj, co robisz.", [
+        option("run", "Za pet minuta? Onda trčim na kiosk!", "Za pięć minut? To biegnę do kiosku!", "correct", "t-thanks", { effects: [flag("caught-bus")] }),
+        option("fifty", "Za pedeset minuta? Imam vremena.", "Za pięćdziesiąt minut? Mam czas.", "wrong", "hurry-again", { explanation: "„Pet minuta” to 5 minut, a nie 50 (pedeset). Trzeba się spieszyć!" }),
       ]),
-      say("slow", "ante", "Sporiji? Ne, ne — katamaran je brži!", "Wolniejszy? Nie, nie — katamaran jest szybszy!", "c-boat", { mood: "puzzled" }),
-      say("cat", "ante", "Dobar izbor. To je dvanaest eura.", "Dobry wybór. To dwanaście euro.", "boarding"),
-      say("ferry", "ante", "Može. Karta za trajekt je šest eura.", "Może być. Bilet na prom kosztuje sześć euro.", "boarding"),
-      say("boarding", "ante", "Ukrcaj počinje deset minuta prije polaska, na drugom pristaništu.", "Wejście na pokład zaczyna się dziesięć minut przed odjazdem, na drugiej przystani.", "c-boarding"),
-      choice("c-boarding", "Powtórz, gdzie i kiedy wsiadasz.", [
-        option("right", "Znači, na drugom pristaništu, deset minuta prije polaska.", "Czyli na drugiej przystani, dziesięć minut przed odjazdem.", "correct", "b-return", {
-          effects: [flag("knows-boarding")],
-        }),
-        option("tenth", "Znači, na desetom pristaništu, dvije minute prije?", "Czyli na dziesiątej przystani, dwie minuty przed?", "wrong", "boarding-again", {
-          explanation: "Odwrotnie: „na drugom pristaništu” — na DRUGIEJ przystani, „deset minuta prije polaska” — DZIESIĘĆ minut przed odjazdem.",
-        }),
-      ]),
-      say("boarding-again", "ante", "Ne! Drugo pristanište, deset minuta prije polaska.", "Nie! Druga przystań, dziesięć minut przed odjazdem.", "c-boarding", { mood: "puzzled" }),
-      branch("b-return", [{ when: { flag: "took-catamaran" }, next: "careful-cat" }], "careful-ferry"),
-      say("careful-cat", "ante", "I pazite na povratak — izvan sezone nema puno brodova.", "I proszę uważać na powrót — poza sezonem nie ma wielu statków.", "t-return"),
-      say("careful-ferry", "ante", "I pazite na povratak — trajekt je spor, a izvan sezone nema puno brodova.", "I proszę uważać na powrót — prom jest wolny, a poza sezonem nie ma wielu statków.", "t-return"),
-      type("t-return", {
-        instruction: "Zapytaj, kiedy odpływa ostatni statek z powrotem.",
-        translation: "Kiedy odpływa ostatni statek z powrotem?",
+      say("hurry-again", "ante", "Pedeset? Ne — pet minuta! Požurite!", "Pięćdziesiąt? Nie — pięć minut! Proszę się pospieszyć!", "c-hurry", { mood: "puzzled" }),
+      type("t-thanks", {
+        instruction: "Podziękuj i powiedz, że jeśli będziesz potrzebować taksówki, zadzwonisz do niego.",
+        translation: "Dziękuję! Jeśli będę potrzebować taksówki, zadzwonię do Pana.",
         accepted: [
-          "Kada polazi zadnji brod natrag?",
-          "Kad polazi zadnji brod natrag?",
-          "Kada polazi zadnji brod?",
-          "Kad polazi zadnji brod?",
-          "U koliko sati polazi zadnji brod?",
-          "U koliko sati polazi zadnji brod natrag?",
+          "Hvala! Ako mi bude trebao taksi, nazvat ću vas.",
+          "Hvala vam! Ako mi bude trebao taksi, nazvat ću vas.",
+          "Ako mi bude trebao taksi, nazvat ću vas.",
+          "Hvala! Ako mi bude trebao taksi, javit ću vam se.",
+          "Ako mi bude trebao taksi, javit ću vam se.",
         ],
-        hint: "Kada polazi … brod …?",
-        explanation: "Odpływać według rozkładu: polaziti → polazi. Ostatni statek z powrotem: zadnji brod natrag.",
-        practice: "polaziti",
-        next: "six",
+        hint: "Ako mi bude trebao taksi, …",
+        explanation: "Warunek w przyszłości: „Ako mi bude trebao taksi” (dosł. jeśli będzie mi potrzebna taksówka), potem czas przyszły: nazvat ću vas.",
+        next: "welcome",
       }),
-      say("six", "ante", "U šest navečer. Ako ga propustite, ostajete na otoku do jutra!", "O szóstej wieczorem. Jeśli go Pan/Pani przegapi, zostaje na wyspie do rana!", "c-bye", { effects: [flag("knows-return")] }),
-      choice("c-bye", "Zareaguj na ostrzeżenie.", [
-        option("thanks", "Hvala na upozorenju! Bit ću na pristaništu na vrijeme.", "Dzięki za ostrzeżenie! Będę na przystani na czas.", "correct", "bye"),
-        option("stay", "Odlično, onda ću propustiti brod i ostati na otoku!", "Świetnie, to przegapię statek i zostanę na wyspie!", "neutral", "stay"),
-      ]),
-      say("stay", "ante", "Ha-ha, i to je opcija! Na Lopudu ima lijepih hotela.", "Ha-ha, to też jakaś opcja! Na Lopudzie są ładne hotele.", "bye", { mood: "happy" }),
-      say("bye", "ante", "Sretan put!", "Szczęśliwej podróży!", "end", { mood: "happy" }),
+      say("welcome", "ante", "Dogovoreno! Dobro došli u Dubrovnik!", "Umowa stoi! Witamy w Dubrowniku!", "end", { mood: "happy", effects: [flag("thanked-ante")] }),
       end(),
     ]),
   },
   debrief: [
-    "Kupujesz bilet: Trebam jednu kartu za Lopud.",
-    "Uzasadniasz wybór porównaniem: katamaran je brži, trajekt je jeftiniji — što prije, to bolje.",
-    "Pytasz o rozkład: Kada polazi zadnji brod natrag? — i nie przegapiasz (ne propustiš) powrotu.",
+    "Grzecznie pytasz w trybie warunkowym: Biste li mi mogli reći gdje je stanica?",
+    "Łączysz zdania: Moram stići do Pila prije nego što padne mrak.",
+    "Planujesz warunkowo: Ako mi bude trebao taksi, nazvat ću vas.",
   ],
 };
 
-/* ------------------------------------------------------------------ */
-/* 4. Intervju na Stradunu — Jelena, Stradun                           */
-/* ------------------------------------------------------------------ */
-
-const interview: Mission = {
-  id: "m4-interview",
-  order: 4,
-  title: { hr: "Intervju na Stradunu", pl: "Wywiad na Stradunie" },
-  locationId: "stradun",
-  npcId: "jelena",
-  goal: "Udzielisz wywiadu: powiesz, skąd jesteś, wyrazisz zdanie z „iako”, skomentujesz cudze słowa w mowie zależnej i dasz radę turystom.",
-  story: "Trwa Letni Festiwal Dubrownika. Na Stradunie zatrzymuje Cię dziennikarka lokalnego portalu z mikrofonem. Wywiad po chorwacku — teraz albo nigdy.",
+/* 2. Problem u apartmanu — Nikola, apartament */
+const flatProblem: Mission = {
+  id: "m2-apartman",
+  order: 2,
+  title: { hr: "Problem u apartmanu", pl: "Problem w apartamencie" },
+  locationId: "apartman",
+  npcId: "nikola",
+  goal: "Zgłosisz usterki, grzecznie poprosisz o szybką naprawę, zadbasz o kaucję i poprosisz o potwierdzenie na piśmie.",
+  story: "Apartament w Starym Mieście wygląda jak z pocztówki — kamienne ściany, widok na dachy. Ale w łazience czuć wilgoć, a woda nie chce spływać. Właściciel, pan Nikola, wpada wieczorem zapytać, czy wszystko w porządku.",
   objectives: [
-    { text: "Przedstaw się", done: { flag: "introduced" } },
-    { text: "Wyraź opinię o festiwalu", done: { flag: "gave-opinion" } },
-    { text: "Skomentuj słowa burmistrza", done: { flag: "understood-mayor" } },
-    { text: "Doradź turystom", done: { flag: "interview-done" } },
+    { text: "Zgłoś usterki", done: { flag: "reported" } },
+    { text: "Poproś o szybką naprawę", done: { flag: "asked-repair" } },
+    { text: "Zabezpiecz kaucję", done: { flag: "deposit-safe" } },
   ],
-  requires: ["m2-walls"],
-  xp: 50,
+  requires: ["m1-dolazak"],
+  xp: 60,
   vocabulary: [
-    w("novinar", "dziennikarz", "WORD", "pl-hr:1594"),
-    w("festival", "festiwal", "PHRASE", "pl-hr:phrase:festival"),
-    w("iako", "chociaż", "WORD", "pl-hr:870"),
-    w("izjaviti", "oświadczyć", "PHRASE", "pl-hr:phrase:izjaviti"),
-    w("gradonačelnik", "burmistrz", "PHRASE", "pl-hr:phrase:gradonačelnik"),
-    w("navodno", "podobno", "WORD", "pl-hr:2336"),
-    w("sumnjati", "wątpić / podejrzewać", "WORD", "pl-hr:1731"),
-    w("objaviti", "opublikować", "WORD", "pl-hr:1598"),
+    w("plijesan", "pleśń", "PHRASE", "pl-hr:phrase:plijesan"),
+    w("začepljen", "zatkany", "PHRASE", "pl-hr:phrase:začepljen"),
+    w("odvod", "odpływ", "WORD", "pl-hr:3669"),
+    w("jamčevina", "kaucja", "PHRASE", "pl-hr:phrase:jamčevina"),
+    w("pismeno", "na piśmie", "PHRASE", "pl-hr:phrase:pismeno"),
   ],
   dialogue: {
     kind: "scripted",
-    graph: graph("stradun", [
-      say("stradun", "narrator", "Stradun, Dubrovačke ljetne igre. Novinarka s mikrofonom ide ravno prema tebi.", "Stradun, Letni Festiwal w Dubrowniku. Dziennikarka z mikrofonem idzie prosto do ciebie.", "hello"),
-      say("hello", "jelena", "Dobra večer! Jelena, s lokalnog portala. Imate li minutu za kratki intervju?", "Dobry wieczór! Jelena, z lokalnego portalu. Ma Pan/Pani minutę na krótki wywiad?", "c-start", { mood: "happy" }),
-      choice("c-start", "Zgódź się na wywiad.", [
-        option("yes", "Naravno, ali moj hrvatski nije savršen.", "Oczywiście, ale mój chorwacki nie jest idealny.", "correct", "where"),
-        option("journalist", "Naravno, ali ja nisam novinar.", "Oczywiście, ale ja nie jestem dziennikarzem.", "wrong", "journalist", {
-          explanation: "Jelena nie pyta, czy jesteś dziennikarzem — to ona przeprowadza wywiad. Wystarczy się zgodzić: Naravno!",
-        }),
-        option("slow", "Možete li govoriti malo sporije?", "Może Pani mówić trochę wolniej?", "neutral", "slower"),
+    graph: graph("flat", [
+      say("flat", "narrator", "Apartman u Starom gradu: kameni zidovi, pogled na krovove — i miris vlage.", "Apartament w Starym Mieście: kamienne ściany, widok na dachy — i zapach wilgoci.", "hello"),
+      say("hello", "nikola", "Dobra večer! Je li sve u redu s apartmanom?", "Dobry wieczór! Czy z apartamentem wszystko w porządku?", "c-problem", { mood: "happy" }),
+      choice("c-problem", "Zgłoś usterki.", [
+        option("report", "Nažalost, nije. U kupaonici je plijesan, a odvod je začepljen.", "Niestety nie. W łazience jest pleśń, a odpływ jest zatkany.", "correct", "old-house", { effects: [flag("reported")] }),
+        option("praise", "Nažalost, nije. Kupaonica je jako čista i svijetla.", "Niestety nie. Łazienka jest bardzo czysta i jasna.", "wrong", "problem-what", { explanation: "To pochwała, a nie problem. Zgłoś usterki: U kupaonici je plijesan, a odvod je začepljen." }),
       ]),
-      say("journalist", "jelena", "Znam, znam — novinarka sam ja! Samo želim čuti Vaše mišljenje.", "Wiem, wiem — to ja jestem dziennikarką! Chcę tylko usłyszeć Pana/Pani zdanie.", "c-start", { mood: "puzzled" }),
-      say("slower", "jelena", "Naravno. Imate li — minutu — za intervju?", "Oczywiście. Ma Pan/Pani — minutę — na wywiad?", "c-start"),
-      say("where", "jelena", "Govorite odlično! Odakle ste i što Vas je dovelo u Dubrovnik?", "Mówi Pan/Pani świetnie! Skąd Pan/Pani jest i co sprowadziło Pana/Panią do Dubrownika?", "t-where", { mood: "happy" }),
-      type("t-where", {
-        instruction: "Powiedz, skąd jesteś i że jesteś tu z powodu festiwalu.",
-        translation: "Jestem z Polski. Jestem tu z powodu festiwalu.",
-        accepted: ["Ja sam iz Poljske. Ovdje sam zbog festivala.", "Iz Poljske sam. Ovdje sam zbog festivala.", "Iz Poljske sam i ovdje sam zbog festivala."],
-        pattern: "^(ja sam )?iz \\p{L}+( sam)?( i)? ovdje sam zbog \\p{L}+( \\p{L}+)?$",
-        hint: "Iz … sam. Ovdje sam zbog …",
-        explanation: "„Zbog” (z powodu) + dopełniacz: festival → zbog festivala. Kraj po „iz” też w dopełniaczu: iz Poljske.",
-        next: "opinion",
+      say("problem-what", "nikola", "Pa onda je sve u redu? Ne razumijem.", "To w takim razie wszystko w porządku? Nie rozumiem.", "c-problem", { mood: "puzzled" }),
+      say("old-house", "nikola", "Plijesan? Joj… To je zbog vlage, kuća je stara. Odvod ću popraviti sutra ili prekosutra.", "Pleśń? Ojej… To przez wilgoć, dom jest stary. Odpływ naprawię jutro albo pojutrze.", "b-today"),
+      build("b-today", {
+        instruction: "Grzecznie poproś, żeby przysłał fachowca jeszcze dziś.",
+        translation: "Czy mógłby Pan przysłać fachowca jeszcze dziś?",
+        tokens: ["Biste", "li", "mogli", "poslati", "majstora", "još", "danas", "majstor", "možete"],
+        accepted: ["Biste li mogli poslati majstora još danas?"],
+        explanation: "Grzeczna prośba w trybie warunkowym: Biste li mogli…? Fachowiec w bierniku: majstor → poslati majstora.",
+        next: "neighbour",
+        onWrong: "today-what",
       }),
-      say("opinion", "jelena", "Lijepo! Kako Vam se sviđa festival?", "Pięknie! Jak się Panu/Pani podoba festiwal?", "c-opinion", { effects: [flag("introduced")] }),
-      choice("c-opinion", "Wyraź opinię — ze zdaniem z „iako” (chociaż).", [
-        option("price", "Iako je ulaznica skupa, predstava je vrijedila svakog centa.", "Chociaż bilet jest drogi, przedstawienie było warte każdego centa.", "correct", "mayor", {
-          effects: [flag("gave-opinion")],
-        }),
-        option("crowd", "Odličan je, iako je na Stradunu prevelika gužva.", "Jest świetny, chociaż na Stradunie jest zbyt duży tłok.", "correct", "mayor", { effects: [flag("gave-opinion")] }),
-        option("same", "Iako je predstava odlična, sviđa mi se.", "Chociaż przedstawienie jest świetne, podoba mi się.", "wrong", "same", {
-          explanation: "„Iako” (chociaż) łączy przeciwieństwa: minus, a mimo to plus. Np.: Iako je ulaznica skupa, predstava je vrijedila svakog centa.",
-        }),
+      say("today-what", "nikola", "Molim? Danas ili sutra?", "Słucham? Dziś czy jutro?", "b-today", { mood: "puzzled" }),
+      say("neighbour", "nikola", "Danas je teško, nedjelja je… Ali dobro, nazvat ću susjeda, on je vodoinstalater.", "Dziś trudno, jest niedziela… Ale dobrze, zadzwonię do sąsiada, jest hydraulikiem.", "c-fault", { effects: [flag("asked-repair")] }),
+      choice("c-fault", "Zadbaj o kaucję: pleśń była przed Tobą.", [
+        option("not-mine", "Hvala. Ali molim vas, zapišite da plijesan nije moja krivnja.", "Dziękuję. Ale proszę zapisać, że pleśń to nie moja wina.", "correct", "deposit"),
+        option("mine", "Hvala. Plijesan je moja krivnja.", "Dziękuję. Pleśń to moja wina.", "wrong", "fault-what", { explanation: "Mówisz, że pleśń to Twoja wina — a była przed Tobą! Zadbaj o kaucję: … plijesan nije moja krivnja." }),
       ]),
-      say("same", "jelena", "Iako je odlična… sviđa Vam se? Mislite — jer je odlična?", "Chociaż jest świetne… podoba się? Chodzi o to, że — bo jest świetne?", "c-opinion", { mood: "puzzled" }),
-      say("mayor", "jelena", "Gradonačelnik je jučer izjavio da će sljedeće godine ulaznice biti jeftinije. Vjerujete li mu?", "Burmistrz oświadczył wczoraj, że w przyszłym roku bilety będą tańsze. Wierzy mu Pan/Pani?", "c-mayor"),
-      choice("c-mayor", "Skomentuj słowa burmistrza.", [
-        option("hope", "Ako je rekao da će biti jeftinije, nadam se da je to istina.", "Jeśli powiedział, że będą tańsze, mam nadzieję, że to prawda.", "correct", "advice", {
-          effects: [flag("understood-mayor")],
-        }),
-        option("doubt", "Iskreno, sumnjam. Navodno to kaže svake godine.", "Szczerze mówiąc, wątpię. Podobno mówi to co roku.", "correct", "advice", { effects: [flag("understood-mayor")] }),
-        option("free", "Gradonačelnik je rekao da su ulaznice besplatne?", "Burmistrz powiedział, że bilety są darmowe?", "wrong", "mayor-again", {
-          explanation: "Burmistrz powiedział, że bilety BĘDĄ TAŃSZE (da će biti jeftinije), a nie że są darmowe (besplatne).",
-        }),
-      ]),
-      say("mayor-again", "jelena", "Ne, ne — rekao je da će biti jeftinije, ne besplatne.", "Nie, nie — powiedział, że będą tańsze, nie darmowe.", "c-mayor", { mood: "puzzled" }),
-      say("advice", "jelena", "I za kraj: što biste poručili turistima koji tek dolaze?", "I na koniec: co przekazał(a)by Pan/Pani turystom, którzy dopiero przyjeżdżają?", "b-advice"),
-      build("b-advice", {
-        instruction: "Poradź: niech przyjadą poza sezonem, kiedy miasto jest spokojniejsze.",
-        translation: "Niech przyjadą poza sezonem, kiedy miasto jest spokojniejsze.",
-        tokens: ["Neka", "dođu", "izvan", "sezone", "kad", "je", "grad", "mirniji", "sezona", "dolaze"],
-        accepted: ["Neka dođu izvan sezone, kad je grad mirniji."],
-        explanation: "„Neka” + czas teraźniejszy to rada albo życzenie wobec innych: Neka dođu… (niech przyjadą). Grad je mirniji — spokojniejszy.",
-        next: "published",
-        onWrong: "advice-what",
+      say("fault-what", "nikola", "Vaša? Ma ne, bila je tu i prije vas!", "Pana/Pani? Ależ nie, była tu jeszcze przed Panem/Panią!", "c-fault", { mood: "puzzled" }),
+      say("deposit", "nikola", "Naravno, plijesan je bila i prije. Jamčevinu ćete dobiti natrag u cijelosti.", "Oczywiście, pleśń była już wcześniej. Kaucję dostanie Pan/Pani z powrotem w całości.", "t-writing"),
+      type("t-writing", {
+        instruction: "Poproś, żeby potwierdził to na piśmie.",
+        translation: "Czy może Pan mi to potwierdzić na piśmie?",
+        accepted: ["Možete li mi to potvrditi pismeno?", "Možete li mi to poslati pismeno?", "Biste li mi to mogli potvrditi pismeno?", "Možete li mi to potvrditi e-mailom?", "Molim vas da mi to potvrdite pismeno."],
+        hint: "Možete li mi to potvrditi …?",
+        explanation: "„Na piśmie” to „pismeno”. Ustalenia z właścicielem warto mieć na piśmie: Možete li mi to potvrditi pismeno?",
+        next: "night",
       }),
-      say("advice-what", "jelena", "Molim? Kada bi trebali doći?", "Słucham? Kiedy powinni przyjechać?", "b-advice", { mood: "puzzled" }),
-      say("published", "jelena", "Odlično, hvala Vam! Intervju će biti objavljen sutra na portalu.", "Świetnie, dziękuję! Wywiad zostanie opublikowany jutro na portalu.", "follow", {
-        mood: "happy",
-        effects: [flag("interview-done")],
-      }),
-      say("follow", "jelena", "Pratite nas na društvenim mrežama! Laku noć!", "Proszę nas obserwować w mediach społecznościowych! Dobranoc!", "end"),
+      say("night", "nikola", "Naravno, poslat ću vam poruku večeras. Laku noć!", "Oczywiście, wyślę Panu/Pani wiadomość dziś wieczorem. Dobranoc!", "end", { mood: "happy", effects: [flag("deposit-safe")] }),
       end(),
     ]),
   },
   debrief: [
-    "Podajesz powód: Ovdje sam zbog festivala — zbog + dopełniacz.",
-    "Wyrażasz zdanie z zastrzeżeniem: Iako je ulaznica skupa, predstava je vrijedila svakog centa.",
-    "Rozumiesz mowę zależną: Gradonačelnik je izjavio da će ulaznice biti jeftinije.",
-    "Doradzasz innym: Neka dođu izvan sezone.",
+    "Opisujesz usterki: U kupaonici je plijesan, a odvod je začepljen.",
+    "Prosisz grzecznie, ale stanowczo: Biste li mogli poslati majstora još danas?",
+    "Dbasz o kaucję (jamčevina): Možete li mi to potvrditi pismeno?",
   ],
 };
 
-/* ------------------------------------------------------------------ */
-/* 5. Savjet prijatelju — Nikola, bar na skałach                       */
-/* ------------------------------------------------------------------ */
-
-const advice: Mission = {
-  id: "m5-advice",
-  order: 5,
-  title: { hr: "Savjet prijatelju", pl: "Rada dla przyjaciela" },
-  locationId: "stijene",
-  npcId: "nikola",
-  goal: "Wysłuchasz przyjaciela, dopytasz o szczegóły, doradzisz mu w trybie przypuszczającym i opowiesz o własnych planach.",
-  story: "Wieczór w barze na skałach pod murami. Nikola, przewodnik, z którym się zaprzyjaźniłeś, jest dziś wyjątkowo cichy. Dostał ofertę pracy w Zagrzebiu — i nie wie, co zrobić.",
+/* 3. Novi projekt — Vesna, agencja turystyczna */
+const project: Mission = {
+  id: "m3-projekt",
+  order: 3,
+  title: { hr: "Novi projekt", pl: "Nowy projekt" },
+  locationId: "agencija",
+  npcId: "vesna",
+  goal: "Na zebraniu zespołu zgłosisz się do zadania, podasz argumenty za i przeciw i ustalisz, kto pisze protokół.",
+  story: "Pierwszy poniedziałek w agencji turystycznej przy Stradunie. Szefowa, Vesna, zwołuje zebranie: jest nowy klient i mało czasu.",
   objectives: [
-    { text: "Wysłuchaj Nikoli", done: { flag: "listened" } },
-    { text: "Daj mu radę", done: { flag: "gave-advice" } },
-    { text: "Opowiedz o swoich planach", done: { flag: "shared-plans" } },
+    { text: "Zgłoś się do zadania", done: { flag: "volunteered" } },
+    { text: "Podaj argumenty", done: { flag: "argued" } },
+    { text: "Ustal sprawę protokołu", done: { flag: "minutes" } },
   ],
-  requires: ["m3-ferry", "m4-interview"],
+  requires: ["m1-dolazak"],
   xp: 60,
   vocabulary: [
-    w("savjet", "rada", "WORD", "pl-hr:455"),
-    w("ponuda", "oferta", "WORD", "pl-hr:701"),
-    w("prihvatiti", "przyjąć", "WORD", "pl-hr:1627"),
-    w("trebao bi", "powinieneś", "PHRASE", "pl-hr:phrase:trebao bi"),
-    w("na tvom mjestu", "na twoim miejscu", "PHRASE", "pl-hr:phrase:na tvom mjestu"),
+    w("klijent", "klient", "WORD", "pl-hr:502"),
+    w("prezentacija", "prezentacja", "WORD", "pl-hr:1278"),
     w("s jedne strane", "z jednej strony", "WORD", "pl-hr:3190"),
     w("s druge strane", "z drugiej strony", "WORD", "pl-hr:3191"),
-    w("odluka", "decyzja", "WORD", "pl-hr:464"),
+    w("zapisnik", "protokół (ze spotkania)", "PHRASE", "pl-hr:phrase:zapisnik"),
+    w("timski rad", "praca zespołowa", "PHRASE", "pl-hr:phrase:timski rad"),
+  ],
+  dialogue: {
+    kind: "scripted",
+    graph: graph("meeting", [
+      say("meeting", "narrator", "Turistička agencija blizu Straduna. Ponedjeljak, devet sati: sastanak tima.", "Agencja turystyczna przy Stradunie. Poniedziałek, dziewiąta: zebranie zespołu.", "client"),
+      say("client", "vesna", "Dobro jutro svima! Imamo novog klijenta: hotel na Lapadu želi izlete za svoje goste. Rok je kraj mjeseca.", "Dzień dobry wszystkim! Mamy nowego klienta: hotel na Lapadzie chce wycieczek dla swoich gości. Termin to koniec miesiąca.", "c-react"),
+      choice("c-react", "Zareaguj na nowy projekt.", [
+        option("first-step", "Zvuči zanimljivo. Koji je prvi korak?", "Brzmi ciekawie. Jaki jest pierwszy krok?", "correct", "who"),
+        option("pause", "Nemam vremena, idem na pauzu.", "Nie mam czasu, idę na przerwę.", "wrong", "react-what", { explanation: "Na zebraniu nie odmawia się tak wprost. Zapytaj o pierwszy krok: Koji je prvi korak?" }),
+      ]),
+      say("react-what", "vesna", "Pauza? Sastanak je tek počeo!", "Przerwa? Zebranie dopiero się zaczęło!", "c-react", { mood: "puzzled" }),
+      say("who", "vesna", "Prvo trebamo prezentaciju za klijenta. Tko bi je mogao pripremiti?", "Najpierw potrzebujemy prezentacji dla klienta. Kto mógłby ją przygotować?", "b-volunteer"),
+      build("b-volunteer", {
+        instruction: "Zgłoś się: przygotujesz prezentację do czwartku.",
+        translation: "Mogę ja przygotować prezentację do czwartku.",
+        tokens: ["Mogu", "ja", "pripremiti", "prezentaciju", "do", "četvrtka", "prezentacija", "četvrtak"],
+        accepted: ["Mogu ja pripremiti prezentaciju do četvrtka.", "Ja mogu pripremiti prezentaciju do četvrtka."],
+        explanation: "Prezentacja w bierniku: prezentacija → prezentaciju. „Do czwartku” — do četvrtka (dopełniacz).",
+        practice: "prezentacija",
+        next: "prices",
+        onWrong: "volunteer-what",
+      }),
+      say("volunteer-what", "vesna", "Molim? Do kada?", "Słucham? Do kiedy?", "b-volunteer", { mood: "puzzled" }),
+      say("prices", "vesna", "Odlično, hvala! Još jedno pitanje: konkurencija je jeftinija. Trebamo li sniziti cijene?", "Świetnie, dziękuję! Jeszcze jedno pytanie: konkurencja jest tańsza. Powinniśmy obniżyć ceny?", "c-opinion", { effects: [flag("volunteered")] }),
+      choice("c-opinion", "Podaj swoje zdanie z argumentem.", [
+        option("both-sides", "S jedne strane, niže cijene privlače goste, ali s druge strane, kvaliteta nam je važnija.", "Z jednej strony niższe ceny przyciągają gości, ale z drugiej strony ważniejsza jest dla nas jakość.", "correct", "agreed", { effects: [flag("argued")] }),
+        option("although", "Mislim da ne. Iako smo skuplji, imamo bolje vodiče.", "Myślę, że nie. Chociaż jesteśmy drożsi, mamy lepszych przewodników.", "correct", "agreed", { effects: [flag("argued")] }),
+        option("illogical", "Da, jer je kvaliteta skupa i zato loša.", "Tak, bo jakość jest droga i dlatego zła.", "wrong", "opinion-what", { explanation: "Ten argument się nie trzyma. Spróbuj: S jedne strane…, ali s druge strane… albo: Iako smo skuplji, …" }),
+      ]),
+      say("opinion-what", "vesna", "Hm, to baš nema smisla. Možete li ponovno?", "Hm, to nie ma sensu. Może Pan/Pani jeszcze raz?", "c-opinion", { mood: "puzzled" }),
+      say("agreed", "vesna", "Dobar argument. Dogovoreno je: cijene ostaju iste.", "Dobry argument. Ustalone: ceny zostają bez zmian.", "t-minutes"),
+      type("t-minutes", {
+        instruction: "Zapytaj, kto pisze protokół z zebrania.",
+        translation: "Kto pisze protokół?",
+        accepted: ["Tko piše zapisnik?", "Tko će pisati zapisnik?", "Tko vodi zapisnik?", "Tko će voditi zapisnik?", "Tko piše zapisnik sa sastanka?"],
+        hint: "Tko … zapisnik?",
+        explanation: "Protokół z zebrania to „zapisnik”: Tko piše zapisnik? albo: Tko vodi zapisnik?",
+        next: "you",
+      }),
+      say("you", "vesna", "Dobro pitanje — vi ste novi, pa ćete ga danas pisati vi! Ha-ha.", "Dobre pytanie — jest Pan/Pani nowy/nowa, więc dziś pisze Pan/Pani! Ha-ha.", "c-ok", { mood: "happy" }),
+      choice("c-ok", "Przyjmij zadanie i powiedz, kiedy wyślesz protokół.", [
+        option("noon", "Nema problema, poslat ću ga svima do podneva.", "Nie ma problemu, wyślę go wszystkim do południa.", "correct", "luck", { effects: [flag("minutes")] }),
+        option("past", "Nema problema, poslat ću ga prekjučer.", "Nie ma problemu, wyślę go przedwczoraj.", "wrong", "ok-what", { explanation: "„Prekjučer” to przedwczoraj — nie łączy się z czasem przyszłym. Wyślesz go dziś: do podneva." }),
+      ]),
+      say("ok-what", "vesna", "Prekjučer? Ha-ha, to bi bilo čudo!", "Przedwczoraj? Ha-ha, to byłby cud!", "c-ok", { mood: "puzzled" }),
+      say("luck", "vesna", "Super. Timski rad, to volim! Sretno svima!", "Super. Praca zespołowa — to lubię! Powodzenia wszystkim!", "end", { mood: "happy" }),
+      end(),
+    ]),
+  },
+  debrief: [
+    "Zgłaszasz się do zadania: Mogu ja pripremiti prezentaciju do četvrtka.",
+    "Ważysz argumenty: S jedne strane…, ali s druge strane… / Iako smo skuplji, …",
+    "Organizujesz pracę: Tko piše zapisnik? — Poslat ću ga svima do podneva.",
+  ],
+};
+
+/* 4. U ljekarni — Jelena, apteka */
+const pharmacy: Mission = {
+  id: "m4-ljekarna",
+  order: 4,
+  title: { hr: "U ljekarni", pl: "W aptece" },
+  locationId: "ljekarna",
+  npcId: "jelena",
+  goal: "Opiszesz poparzenie słoneczne i alergię, zrozumiesz dawkowanie, poprosisz o radę i zrozumiesz zalecenia.",
+  story: "Pierwszy wolny dzień spędziłeś na plaży — za długo. Plecy pieką, a do tego cieknie Ci z nosa. Idziesz do apteki przy bramie Pile, gdzie pracuje farmaceutka Jelena.",
+  objectives: [
+    { text: "Opisz dolegliwości", done: { flag: "symptoms" } },
+    { text: "Zrozum dawkowanie", done: { flag: "dosage" } },
+    { text: "Zrozum zalecenia", done: { flag: "advice" } },
+  ],
+  requires: ["m3-projekt"],
+  xp: 60,
+  vocabulary: [
+    w("alergija", "alergia", "WORD", "pl-hr:1128"),
+    w("curi mi nos", "cieknie mi z nosa", "PHRASE", "pl-hr:phrase:curi mi nos"),
+    w("savjet", "rada", "WORD", "pl-hr:455"),
+    w("nemojte", "nie (proszę nie…)", "PHRASE", "pl-hr:phrase:nemojte"),
+    w("pretjerivati", "przesadzać", "WORD", "pl-hr:1429"),
+    w("bilo bi dobro da", "dobrze byłoby, żeby", "PHRASE", "pl-hr:phrase:bilo bi dobro da"),
+  ],
+  dialogue: {
+    kind: "scripted",
+    graph: graph("hot", [
+      say("hot", "narrator", "Ljekarna kod Pila. Vani je trideset i pet stupnjeva.", "Apteka przy Pile. Na zewnątrz trzydzieści pięć stopni.", "hello"),
+      say("hello", "jelena", "Dobar dan! Kako vam mogu pomoći?", "Dzień dobry! W czym mogę pomóc?", "c-what"),
+      choice("c-what", "Opisz, co Ci dolega.", [
+        option("burnt", "Izgorjela su mi leđa na suncu, a i curi mi nos.", "Spaliły mi się plecy na słońcu, a do tego cieknie mi z nosa.", "correct", "allergy", { effects: [flag("symptoms")] }),
+        option("sun", "Izgorjelo mi je sunce.", "Spaliło mi się słońce.", "wrong", "what-again", { explanation: "Odwrotnie! To plecy się spaliły, nie słońce: Izgorjela su mi leđa na suncu." }),
+      ]),
+      say("what-again", "jelena", "Sunce? Ha-ha, sunce je dobro. Što je izgorjelo?", "Słońce? Ha-ha, słońce ma się dobrze. Co się spaliło?", "c-what", { mood: "puzzled" }),
+      say("allergy", "jelena", "Joj, vidim. A nos? Imate li neku alergiju?", "Ojej, widzę. A nos? Ma Pan/Pani jakąś alergię?", "b-allergy"),
+      build("b-allergy", {
+        instruction: "Powiedz, że masz alergię na pyłki.",
+        translation: "Mam alergię na pyłki.",
+        tokens: ["Imam", "alergiju", "na", "pelud", "alergija", "od", "peludi"],
+        accepted: ["Imam alergiju na pelud."],
+        explanation: "„Alergia na…” to „alergija na” + biernik: imam alergiju na pelud.",
+        practice: "alergija",
+        next: "medicine",
+        onWrong: "allergy-what",
+      }),
+      say("allergy-what", "jelena", "Molim? Na što ste alergični?", "Słucham? Na co jest Pan/Pani uczulony/uczulona?", "b-allergy", { mood: "puzzled" }),
+      say("medicine", "jelena", "Za leđa vam preporučujem ovaj gel, a za alergiju tablete. Uzimajte jednu dnevno, navečer, jer izazivaju umor.", "Na plecy polecam ten żel, a na alergię tabletki. Jedną dziennie, wieczorem, bo powodują zmęczenie.", "c-dose"),
+      choice("c-dose", "Upewnij się, jak brać tabletki.", [
+        option("evening", "Znači, jednu tabletu navečer?", "Czyli jedną tabletkę wieczorem?", "correct", "more", { effects: [flag("dosage")] }),
+        option("morning", "Znači, jednu tabletu ujutro, prije posla?", "Czyli jedną tabletkę rano, przed pracą?", "wrong", "dose-again", { explanation: "Jelena powiedziała „navečer” — wieczorem, bo tabletki powodują zmęczenie (umor)." }),
+        option("three", "Znači, tri tablete dnevno?", "Czyli trzy tabletki dziennie?", "wrong", "dose-again", { explanation: "Tylko jedną dziennie (jednu dnevno), wieczorem." }),
+      ]),
+      say("dose-again", "jelena", "Ne — samo jednu, i to navečer.", "Nie — tylko jedną, i to wieczorem.", "c-dose", { mood: "puzzled" }),
+      say("more", "jelena", "Tako je. I nemojte biti na suncu između jedanaest i četiri.", "Zgadza się. I proszę nie przebywać na słońcu między jedenastą a szesnastą.", "t-advice"),
+      type("t-advice", {
+        instruction: "Zapytaj, czy ma jeszcze jakąś radę.",
+        translation: "Ma Pani jeszcze jakąś radę?",
+        accepted: ["Imate li još neki savjet?", "Što bi još bilo dobro?", "Što mi još savjetujete?", "Što još savjetujete?", "Što još preporučujete?"],
+        hint: "Imate li još neki …?",
+        explanation: "Rada to „savjet”: Imate li još neki savjet? Albo bezosobowo: Što bi još bilo dobro?",
+        practice: "savjet",
+        next: "rest",
+      }),
+      say("rest", "jelena", "Pijte puno vode i nemojte pretjerivati s kupanjem. Bilo bi dobro da tri dana mirujete.", "Proszę pić dużo wody i nie przesadzać z kąpielami. Dobrze byłoby przez trzy dni odpoczywać.", "c-understood"),
+      choice("c-understood", "Pokaż, że zrozumiałeś zalecenia.", [
+        option("rest", "U redu, tri dana bez plaže. Hvala na savjetu!", "W porządku, trzy dni bez plaży. Dziękuję za radę!", "correct", "bye", { effects: [flag("advice")] }),
+        option("beach", "U redu, tri dana na plaži. Hvala!", "W porządku, trzy dni na plaży. Dziękuję!", "wrong", "understood-what", { explanation: "Jelena radzi odwrotnie: trzy dni odpoczynku, bez słońca i plaży (tri dana mirujete)." }),
+      ]),
+      say("understood-what", "jelena", "Na plaži? Nemojte, molim vas! Odmor, voda, hlad.", "Na plaży? Proszę tego nie robić! Odpoczynek, woda, cień.", "c-understood", { mood: "puzzled" }),
+      say("bye", "jelena", "Nema na čemu. Brzo ozdravite!", "Nie ma za co. Szybkiego powrotu do zdrowia!", "end", { mood: "happy" }),
+      end(),
+    ]),
+  },
+  debrief: [
+    "Opisujesz dolegliwości bez form zależnych od płci: Izgorjela su mi leđa. Curi mi nos.",
+    "Rozumiesz dawkowanie (jednu dnevno, navečer) i zakazy: Nemojte biti na suncu…",
+    "Prosisz o radę: Imate li još neki savjet? — i rozumiesz: Bilo bi dobro da mirujete.",
+  ],
+};
+
+/* 5. Lokrum ili Elafiti? — Ante, port */
+const excursion: Mission = {
+  id: "m5-izlet",
+  order: 5,
+  title: { hr: "Lokrum ili Elafiti?", pl: "Lokrum czy Elafity?" },
+  locationId: "luka",
+  npcId: "ante",
+  goal: "Porównasz dwie wycieczki, zapytasz o cenę za osobę i wybierzesz jedną, uzasadniając decyzję.",
+  story: "Agencja potrzebuje wycieczki dla gości hotelu z Lapadu. Okazuje się, że Ante, taksówkarz z portu, ma też łódź — i chętnie opowie, gdzie warto płynąć.",
+  objectives: [
+    { text: "Porównaj wycieczki", done: { flag: "compared" } },
+    { text: "Zapytaj o cenę", done: { flag: "asked-price" } },
+    { text: "Wybierz z uzasadnieniem", done: { flag: "chose" } },
+  ],
+  requires: ["m3-projekt"],
+  xp: 60,
+  vocabulary: [
+    w("usporediti", "porównać", "WORD", "pl-hr:939"),
+    w("izbor", "wybór", "WORD", "pl-hr:463"),
+    w("posto", "procent", "WORD", "pl-hr:759"),
+    w("izvan sezone", "poza sezonem", "PHRASE", "pl-hr:phrase:izvan sezone"),
+    w("sezona", "sezon", "WORD", "pl-hr:954"),
+  ],
+  dialogue: {
+    kind: "scripted",
+    graph: graph("boat", [
+      say("boat", "narrator", "Agencija treba izlet za goste hotela. Ante, koji ima i brod, čeka u luci.", "Agencja potrzebuje wycieczki dla gości hotelu. Ante, który ma też łódź, czeka w porcie.", "again"),
+      say("again", "ante", "Opet vi! Čujem da tražite izlet za goste. Lokrum ili Elafiti?", "To znowu Pan/Pani! Słyszę, że szuka Pan/Pani wycieczki dla gości. Lokrum czy Elafity?", "c-ask", { mood: "happy" }),
+      choice("c-ask", "Zapytaj, co jest lepsze dla rodzin z dziećmi.", [
+        option("better", "Što je bolje za obitelji s djecom?", "Co jest lepsze dla rodzin z dziećmi?", "correct", "compare"),
+        option("good", "Što je dobar za obitelji s djecom?", "(„dobar” zamiast „bolje”)", "wrong", "ask-what", { explanation: "Porównujesz dwie opcje, więc stopień wyższy: bolje (lepiej / lepsze). Z „što” — rodzaj nijaki: Što je bolje…?" }),
+      ]),
+      say("ask-what", "ante", "Dobar? Oba su dobra! Ali što je bolje?", "Dobry? Oba są dobre! Ale co jest lepsze?", "c-ask", { mood: "puzzled" }),
+      say("compare", "ante", "Lokrum je bliži — samo deset minuta brodom — i jeftiniji. Ali Elafiti su mirniji i imaju ljepše plaže.", "Lokrum jest bliżej — tylko dziesięć minut łodzią — i taniej. Ale Elafity są spokojniejsze i mają piękniejsze plaże.", "c-compare"),
+      choice("c-compare", "Podsumuj porównanie.", [
+        option("right", "Znači, Lokrum je bliži, a Elafiti su mirniji.", "Czyli Lokrum jest bliżej, a Elafity są spokojniejsze.", "correct", "lunch", { effects: [flag("compared")] }),
+        option("wrong", "Znači, Lokrum je dalji i skuplji.", "Czyli Lokrum jest dalej i drożej.", "wrong", "compare-again", { explanation: "Odwrotnie: Lokrum jest bliżej (bliži) i taniej (jeftiniji)." }),
+      ]),
+      say("compare-again", "ante", "Ne, ne — Lokrum je bliži i jeftiniji!", "Nie, nie — Lokrum jest bliżej i taniej!", "c-compare", { mood: "puzzled" }),
+      say("lunch", "ante", "Točno. Izlet na Elafite traje cijeli dan, s ručkom na brodu.", "Dokładnie. Wycieczka na Elafity trwa cały dzień, z obiadem na łodzi.", "b-price"),
+      build("b-price", {
+        instruction: "Zapytaj, ile kosztuje wycieczka za osobę.",
+        translation: "Ile kosztuje wycieczka za osobę?",
+        tokens: ["Koliko", "košta", "izlet", "po", "osobi", "osoba", "košti"],
+        accepted: ["Koliko košta izlet po osobi?"],
+        explanation: "„Za osobę” to „po osobi” — po + miejscownik.",
+        next: "prices",
+        onWrong: "price-what",
+      }),
+      say("price-what", "ante", "Molim? Cijena po osobi?", "Słucham? Cena za osobę?", "b-price", { mood: "puzzled" }),
+      say("prices", "ante", "Lokrum je petnaest eura, Elafiti pedeset, ali s ručkom. Izvan sezone je sve dvadeset posto jeftinije.", "Lokrum piętnaście euro, Elafity pięćdziesiąt, ale z obiadem. Poza sezonem wszystko jest o dwadzieścia procent tańsze.", "t-choose", { effects: [flag("asked-price")] }),
+      type("t-choose", {
+        instruction: "Wybierz wycieczkę i dodaj argument (… jer … albo Iako …, …).",
+        translation: "Weźmiemy Elafity, bo są spokojniejsze. / Chociaż są droższe, weźmiemy Elafity.",
+        accepted: [
+          "Uzet ćemo Elafite, jer su mirniji.",
+          "Uzet ćemo Elafite, jer imaju ljepše plaže.",
+          "Uzet ćemo Lokrum, jer je bliži.",
+          "Uzet ćemo Lokrum, jer je jeftiniji.",
+          "Iako su skuplji, uzet ćemo Elafite.",
+          "Iako je manji, uzet ćemo Lokrum.",
+        ],
+        pattern: "^(iako .+ )?uzet ćemo (lokrum|elafite)( jer .+)?$",
+        hint: "Uzet ćemo …, jer …",
+        explanation: "Decyzja z argumentem: Uzet ćemo Elafite, jer su mirniji. Albo z ustępstwem: Iako su skuplji, uzet ćemo Elafite.",
+        next: "deal",
+      }),
+      say("deal", "ante", "Dobar izbor! Javite mi broj gostiju do petka.", "Dobry wybór! Proszę dać mi znać, ilu będzie gości, do piątku.", "c-confirm", { effects: [flag("chose")] }),
+      choice("c-confirm", "Potwierdź termin.", [
+        option("friday", "Javit ću vam do petka. Hvala!", "Dam znać do piątku. Dziękuję!", "correct", "end"),
+        option("last", "Javit ću vam prošlog petka.", "Dam znać w zeszły piątek.", "wrong", "confirm-what", { explanation: "„Prošlog petka” to w zeszły piątek — nie łączy się z przyszłością. Javit ću vam do petka." }),
+      ]),
+      say("confirm-what", "ante", "Prošlog petka? To je bilo prije tjedan dana!", "W zeszły piątek? To było tydzień temu!", "c-confirm", { mood: "puzzled" }),
+      end(),
+    ]),
+  },
+  debrief: [
+    "Porównujesz: Lokrum je bliži i jeftiniji, a Elafiti su mirniji i imaju ljepše plaže.",
+    "Pytasz o cenę za osobę: Koliko košta izlet po osobi?",
+    "Decydujesz z argumentem: Uzet ćemo Elafite, jer… / Iako su skuplji, …",
+  ],
+};
+
+/* 6. Na zidinama — Ivo, mury miejskie */
+const walls: Mission = {
+  id: "m6-zidine",
+  order: 6,
+  title: { hr: "Na zidinama", pl: "Na murach" },
+  locationId: "zidine",
+  npcId: "ivo",
+  goal: "Zrozumiesz opowieść przewodnika o historii miasta, zapytasz o plotkę i podzielisz się opinią.",
+  story: "Zanim zaczniesz oprowadzać gości, musisz sam poznać miasto. Ivo, najstarszy przewodnik w agencji, zabiera Cię na mury miejskie.",
+  objectives: [
+    { text: "Zrozum, jak stare są mury", done: { flag: "age" } },
+    { text: "Zapytaj o seriale", done: { flag: "asked-series" } },
+    { text: "Wyraź opinię", done: { flag: "opinion" } },
+  ],
+  requires: ["m5-izlet"],
+  xp: 60,
+  vocabulary: [
+    w("stoljeće", "stulecie / wiek", "WORD", "pl-hr:1018"),
+    w("vodič", "przewodnik", "WORD", "pl-hr:970"),
+    w("poznat po", "znany z", "PHRASE", "pl-hr:phrase:poznat po"),
+    w("navodno", "podobno", "WORD", "pl-hr:2336"),
+    w("izgraditi", "zbudować", "WORD", "pl-hr:2099"),
+    w("vrijedi pogledati", "warto zobaczyć", "PHRASE", "pl-hr:phrase:vrijedi pogledati"),
+  ],
+  dialogue: {
+    kind: "scripted",
+    graph: graph("walls", [
+      say("walls", "narrator", "Gradske zidine. Gotovo dva kilometra kamena, a ispod — more i krovovi Staroga grada.", "Mury miejskie. Prawie dwa kilometry kamienia, a poniżej — morze i dachy Starego Miasta.", "history"),
+      say("history", "ivo", "Dobro došli na zidine! Izgrađene su uglavnom od trinaestog do sedamnaestog stoljeća.", "Witamy na murach! Zbudowano je głównie między trzynastym a siedemnastym wiekiem.", "c-century", { mood: "happy" }),
+      choice("c-century", "Pokaż, że zrozumiałeś.", [
+        option("centuries", "Znači, stare su nekoliko stoljeća?", "Czyli mają kilkaset lat?", "correct", "republic", { effects: [flag("age")] }),
+        option("last-year", "Znači, izgrađene su prošle godine?", "Czyli zbudowano je w zeszłym roku?", "wrong", "century-what", { explanation: "Ivo mówi o wiekach XIII–XVII (stoljeće — stulecie), nie o zeszłym roku." }),
+      ]),
+      say("century-what", "ivo", "Prošle godine? Ha-ha, ne — prije sedamsto godina!", "W zeszłym roku? Ha-ha, nie — siedemset lat temu!", "c-century", { mood: "puzzled" }),
+      say("republic", "ivo", "Tako je. Dubrovnik je stoljećima bio slobodna republika. Bio je poznat po diplomaciji, a ne po vojsci.", "Zgadza się. Dubrownik przez stulecia był wolną republiką. Słynął z dyplomacji, a nie z wojska.", "b-known"),
+      build("b-known", {
+        instruction: "Powtórz najważniejsze: z czego słynął Dubrownik?",
+        translation: "Dubrownik słynął z dyplomacji.",
+        tokens: ["Dubrovnik", "je", "bio", "poznat", "po", "diplomaciji", "diplomacija", "poznata"],
+        accepted: ["Dubrovnik je bio poznat po diplomaciji."],
+        explanation: "„Znany z…” to „poznat po” + miejscownik: po diplomaciji. Dubrovnik — rodzaj męski: bio poznat.",
+        next: "series",
+        onWrong: "known-what",
+      }),
+      say("known-what", "ivo", "Molim? Po čemu je bio poznat?", "Słucham? Z czego słynął?", "b-known", { mood: "puzzled" }),
+      say("series", "ivo", "A danas je poznat po serijama. Navodno ovdje svake godine dolazi više od milijun turista.", "A dziś słynie z seriali. Podobno co roku przyjeżdża tu ponad milion turystów.", "t-true"),
+      type("t-true", {
+        instruction: "Zapytaj, czy to prawda, że kręcono tu serial.",
+        translation: "Czy to prawda, że kręcono tu serial?",
+        accepted: ["Je li istina da su ovdje snimali seriju?", "Je li istina da se ovdje snimala serija?", "Je li točno da su ovdje snimali seriju?", "Jesu li ovdje stvarno snimali seriju?"],
+        hint: "Je li istina da …?",
+        explanation: "„Czy to prawda, że…?” — Je li istina da…? Kręcić film albo serial to „snimati”: snimali su seriju.",
+        next: "older",
+      }),
+      say("older", "ivo", "Istina je! Ali ja uvijek kažem: zidine su starije od svake serije. Ha-ha.", "Prawda! Ale ja zawsze mówię: mury są starsze od każdego serialu. Ha-ha.", "c-opinion", { effects: [flag("asked-series")] }),
+      choice("c-opinion", "Podziel się opinią o mieście.", [
+        option("worth", "Iako ima puno turista, vrijedi pogledati.", "Chociaż jest dużo turystów, warto zobaczyć.", "correct", "thanks", { effects: [flag("opinion")] }),
+        option("history", "Slažem se — povijest je zanimljivija od serija.", "Zgadzam się — historia jest ciekawsza od seriali.", "correct", "thanks", { effects: [flag("opinion")] }),
+        option("logic", "Iako ima puno turista, zato je grad prazan.", "Chociaż jest dużo turystów, dlatego miasto jest puste.", "wrong", "opinion-what", { explanation: "„Iako” (chociaż) wprowadza kontrast, a „zato” (dlatego) tu nie pasuje. Powiedz: Iako ima puno turista, vrijedi pogledati." }),
+      ]),
+      say("opinion-what", "ivo", "Prazan? S milijun turista? Ha-ha, ne bih rekao!", "Puste? Z milionem turystów? Ha-ha, nie powiedziałbym!", "c-opinion", { mood: "puzzled" }),
+      say("thanks", "ivo", "Lijepo rečeno. Hvala što ste bili s nama!", "Pięknie powiedziane. Dziękuję, że był Pan / była Pani z nami!", "end", { mood: "happy" }),
+      end(),
+    ]),
+  },
+  debrief: [
+    "Rozumiesz historię: Zidine su izgrađene od 13. do 17. stoljeća.",
+    "Mówisz, z czego coś słynie: Dubrovnik je bio poznat po diplomaciji.",
+    "Pytasz o plotkę: Je li istina da…? — i zestawiasz: Iako ima puno turista, vrijedi pogledati.",
+  ],
+};
+
+/* 7. Ljetne igre — Tea, Stradun */
+const festival: Mission = {
+  id: "m7-festival",
+  order: 7,
+  title: { hr: "Ljetne igre", pl: "Letni festiwal" },
+  locationId: "stradun",
+  npcId: "tea",
+  goal: "Porozmawiasz o festiwalu, wpadniesz na pomysł z biletami, umówisz się i zaproponujesz kolację.",
+  story: "Wieczór na Stradunie. Tea, koleżanka z agencji, przybiega z nowiną: zaczęły się Dubrovačke ljetne igre — letni festiwal teatru i muzyki pod gołym niebem.",
+  objectives: [
+    { text: "Porozmawiaj o festiwalu", done: { flag: "festival" } },
+    { text: "Zdobądź bilety", done: { flag: "tickets" } },
+    { text: "Zaproponuj kolację", done: { flag: "dinner" } },
+  ],
+  requires: ["m2-apartman"],
+  xp: 60,
+  vocabulary: [
+    w("događaj", "wydarzenie", "WORD", "pl-hr:1044"),
+    w("portal", "portal (internetowy)", "WORD", "pl-hr:1597"),
+    w("blagajna", "kasa", "WORD", "pl-hr:2580"),
+    w("kako bi bilo da", "jak by było, gdyby…", "PHRASE", "pl-hr:phrase:kako bi bilo da"),
+    w("bilo bi super", "byłoby super", "PHRASE", "pl-hr:phrase:bilo bi super"),
+  ],
+  dialogue: {
+    kind: "scripted",
+    graph: graph("evening", [
+      say("evening", "narrator", "Stradun navečer. Kamen je još topao, a s Luže se čuje glazba.", "Stradun wieczorem. Kamień jest jeszcze ciepły, a z placu Luža słychać muzykę.", "news"),
+      say("news", "tea", "Hej! Znaš li da su počele Dubrovačke ljetne igre?", "Hej! Wiesz, że zaczął się Dubrownicki Festiwal Letni?", "c-know", { mood: "happy" }),
+      choice("c-know", "Odpowiedz na nowinę.", [
+        option("what", "Ne znam ništa o tome. Što se događa?", "Nic o tym nie wiem. Co się dzieje?", "correct", "hamlet", { effects: [flag("festival")] }),
+        option("portal", "Da, piše o tome na gradskom portalu. Ima li još karata?", "Tak, piszą o tym na portalu miejskim. Są jeszcze bilety?", "correct", "hamlet", { effects: [flag("festival")] }),
+        option("past", "Da, festival je bio prošle godine.", "Tak, festiwal był w zeszłym roku.", "wrong", "know-what", { explanation: "Tea mówi, że festiwal właśnie się zaczął (su počele) — trwa teraz, nie był w zeszłym roku." }),
+      ]),
+      say("know-what", "tea", "Prošle godine? Ne — počele su jučer!", "W zeszłym roku? Nie — zaczął się wczoraj!", "c-know", { mood: "puzzled" }),
+      say("hamlet", "tea", "U subotu je premijera Hamleta na tvrđavi Lovrijenac! Navodno su karte već rasprodane.", "W sobotę jest premiera Hamleta na twierdzy Lovrijenac! Podobno bilety są już wyprzedane.", "b-tickets"),
+      build("b-tickets", {
+        instruction: "Zasugeruj, że może są jeszcze bilety w kasie.",
+        translation: "Może są jeszcze bilety w kasie.",
+        tokens: ["Možda", "ima", "karata", "na", "blagajni", "karte", "blagajna"],
+        accepted: ["Možda ima karata na blagajni."],
+        explanation: "„Są (jakieś)” to „ima” + dopełniacz liczby mnogiej: karte → ima karata. „W kasie” — na blagajni (miejscownik).",
+        practice: "blagajna",
+        next: "when",
+        onWrong: "tickets-what",
+      }),
+      say("tickets-what", "tea", "Molim? Gdje ima karata?", "Słucham? Gdzie są bilety?", "b-tickets", { mood: "puzzled" }),
+      say("when", "tea", "Pametno! Idemo sutra ujutro na blagajnu?", "Sprytnie! Idziemy jutro rano do kasy?", "c-time"),
+      choice("c-time", "Umów się na godzinę.", [
+        option("nine", "Može, ali ne prerano. Kako bi bilo da se nađemo u devet?", "Jasne, ale nie za wcześnie. Może spotkamy się o dziewiątej?", "correct", "got-them"),
+        option("yesterday", "Može. Kako bi bilo da se nađemo jučer u devet?", "Jasne. Może spotkamy się wczoraj o dziewiątej?", "wrong", "time-what", { explanation: "„Jučer” (wczoraj) nie pasuje do planów na jutro. Kako bi bilo da se nađemo u devet?" }),
+      ]),
+      say("time-what", "tea", "Jučer? Ha-ha, kad bi to bilo moguće!", "Wczoraj? Ha-ha, gdyby to było możliwe!", "c-time", { mood: "puzzled" }),
+      say("got-them", "narrator", "Sljedeće jutro, na blagajni: zadnje dvije karte!", "Następnego ranka w kasie: ostatnie dwa bilety!", "yay", { effects: [flag("tickets")] }),
+      say("yay", "tea", "Imamo karte! Nevjerojatno. Ovo će biti događaj ljeta!", "Mamy bilety! Niesamowite. To będzie wydarzenie lata!", "t-dinner", { mood: "happy" }),
+      type("t-dinner", {
+        instruction: "Zaproponuj, żebyście po przedstawieniu poszli na kolację.",
+        translation: "Może po przedstawieniu pójdziemy na kolację?",
+        accepted: [
+          "Kako bi bilo da poslije predstave odemo na večeru?",
+          "Bilo bi super da poslije predstave odemo na večeru.",
+          "Hoćemo li poslije predstave na večeru?",
+          "Idemo poslije predstave na večeru?",
+          "Poslije predstave idemo na večeru?",
+        ],
+        hint: "Kako bi bilo da poslije predstave …?",
+        explanation: "Propozycja: Kako bi bilo da… (jak by było, gdyby…) + czas teraźniejszy: … odemo na večeru.",
+        practice: "kako bi bilo da",
+        next: "konoba",
+      }),
+      say("konoba", "tea", "Dogovoreno! Znam jednu malu konobu iza katedrale.", "Umowa stoi! Znam małą knajpkę za katedrą.", "end", { mood: "happy", effects: [flag("dinner")] }),
+      end(),
+    ]),
+  },
+  debrief: [
+    "Rozmawiasz o wydarzeniach: Piše o tome na gradskom portalu. Navodno su karte rasprodane.",
+    "Szukasz rozwiązania: Možda ima karata na blagajni.",
+    "Proponujesz: Kako bi bilo da se nađemo u devet? … da poslije predstave odemo na večeru?",
+  ],
+};
+
+/* 8. Kraj ljeta — Tea, plaża Banje */
+const farewell: Mission = {
+  id: "m8-kraj-ljeta",
+  order: 8,
+  title: { hr: "Kraj ljeta", pl: "Koniec lata" },
+  locationId: "banje",
+  npcId: "tea",
+  goal: "Podsumujesz lato, opowiesz o planach, przyjmiesz komplement skromnie, uargumentujesz opinię i obiecasz kontakt.",
+  story: "Ostatni dzień lata. Jutro wracasz do domu. Z Teą idziecie na plażę Banje, skąd widać mury, Lokrum i zachód słońca.",
+  objectives: [
+    { text: "Podsumuj lato", done: { flag: "summer" } },
+    { text: "Opowiedz o planach", done: { flag: "plans" } },
+    { text: "Uargumentuj opinię i pożegnaj się", done: { flag: "goodbye" } },
+  ],
+  requires: ["m6-zidine", "m7-festival"],
+  xp: 80,
+  vocabulary: [
+    w("nikad neću zaboraviti", "nigdy nie zapomnę", "PHRASE", "pl-hr:phrase:nikad neću zaboraviti"),
+    w("timski rad", "praca zespołowa", "PHRASE", "pl-hr:phrase:timski rad"),
+    w("iako", "chociaż", "WORD", "pl-hr:870"),
+    w("argument", "argument", "WORD", "pl-hr:1728"),
+    w("budućnost", "przyszłość", "WORD", "pl-hr:1375"),
+    w("prijateljstvo", "przyjaźń", "PHRASE", "pl-hr:phrase:prijateljstvo"),
   ],
   dialogue: {
     kind: "scripted",
     graph: graph("sunset", [
-      say("sunset", "narrator", "Bar na stijenama ispod zidina. Sunce zalazi, a Nikola je neobično tih.", "Bar na skałach pod murami. Słońce zachodzi, a Nikola jest niezwykle cichy.", "ask"),
-      say("ask", "nikola", "Mogu li te nešto pitati? Trebam savjet.", "Mogę cię o coś zapytać? Potrzebuję rady.", "c-ask"),
-      choice("c-ask", "Zachęć Nikolę, żeby opowiedział (jesteście na „ty”).", [
-        option("tell", "Naravno, reci. Što se dogodilo?", "Jasne, mów. Co się stało?", "correct", "offer"),
-        option("formal", "Naravno, recite. Što se dogodilo?", "Oczywiście, proszę powiedzieć. Co się stało?", "wrong", "formal", {
-          explanation: "Z Nikolą jesteście już na „ty” — „recite” brzmi zbyt oficjalnie. Powiedz: Naravno, reci.",
-        }),
+      say("sunset", "narrator", "Plaža Banje, zadnji dan ljeta. Sunce zalazi iza Lokruma.", "Plaża Banje, ostatni dzień lata. Słońce zachodzi za Lokrumem.", "leaving"),
+      say("leaving", "tea", "Ne mogu vjerovati da sutra odlaziš. Kakvo je bilo ovo ljeto?", "Nie mogę uwierzyć, że jutro wyjeżdżasz. Jakie było to lato?", "c-summer"),
+      choice("c-summer", "Podsumuj lato.", [
+        option("never", "Nevjerojatno. Nikad neću zaboraviti Dubrovnik.", "Niesamowite. Nigdy nie zapomnę Dubrownika.", "correct", "next", { effects: [flag("summer")] }),
+        option("forget", "Nevjerojatno. Zaboravit ću Dubrovnik već sutra.", "Niesamowite. Zapomnę Dubrownik już jutro.", "wrong", "summer-what", { explanation: "Mówisz, że zapomnisz Dubrownik już jutro — chyba nie o to chodzi! Nikad neću zaboraviti Dubrovnik." }),
       ]),
-      say("formal", "nikola", "Recite? Pa nismo na turi, ha-ha!", "„Proszę powiedzieć”? Przecież nie jesteśmy na wycieczce, ha-ha!", "c-ask", { mood: "puzzled" }),
-      say("offer", "nikola", "Dobio sam ponudu za posao u Zagrebu. Bolja plaća, ali morao bih se preseliti.", "Dostałem ofertę pracy w Zagrzebiu. Lepsza pensja, ale musiałbym się przeprowadzić.", "sides"),
-      say("sides", "nikola", "S jedne strane, to je velika prilika. S druge strane, ovdje su mi obitelj, more… sve.", "Z jednej strony to wielka szansa. Z drugiej strony tu jest moja rodzina, morze… wszystko.", "c-follow"),
-      choice("c-follow", "Dopytaj o ofertę.", [
-        option("like", "Što ti se najviše sviđa u toj ponudi?", "Co ci się najbardziej podoba w tej ofercie?", "correct", "like", { effects: [flag("listened")] }),
-        option("remote", "Bi li mogao raditi na daljinu?", "Czy mógłbyś pracować zdalnie?", "correct", "remote", { effects: [flag("listened")] }),
-        option("sorry", "Dobio si ponudu? Žao mi je!", "Dostałeś ofertę? Przykro mi!", "wrong", "sorry", {
-          explanation: "Oferta pracy to raczej dobra wiadomość — „žao mi je” (przykro mi) nie pasuje. Dopytaj: Što ti se najviše sviđa u toj ponudi?",
-        }),
-      ]),
-      say("sorry", "nikola", "Žao ti je? Pa nije baš loša vijest…", "Przykro ci? No, to nie jest aż tak zła wiadomość…", "c-follow", { mood: "puzzled" }),
-      say("like", "nikola", "Posao je zanimljiv, a tim je odličan. Ali Zagreb… zimi je tamo hladno i sivo.", "Praca jest ciekawa, a zespół świetny. Ale Zagrzeb… zimą jest tam zimno i szaro.", "what-do"),
-      say("remote", "nikola", "Pitao sam. Mogu dva dana tjedno, ostalo u uredu.", "Pytałem. Mogę dwa dni w tygodniu, resztę w biurze.", "what-do"),
-      say("what-do", "nikola", "Što misliš, što bih trebao napraviti?", "Jak myślisz, co powinienem zrobić?", "t-advice"),
-      type("t-advice", {
-        instruction: "Doradź Nikoli: przyjąć ofertę czy zostać?",
-        translation: "Myślę, że powinieneś przyjąć ofertę. / Na twoim miejscu przyjąłbym ofertę.",
-        accepted: ["Mislim da bi trebao prihvatiti ponudu.", "Trebao bi prihvatiti ponudu.", "Mislim da bi trebao ostati u Dubrovniku.", "Na tvom mjestu bih prihvatio ponudu."],
-        pattern: "^(mislim da bi trebao|trebao bi|na tvom mjestu bih) .+$",
-        hint: "Mislim da bi trebao … / Na tvom mjestu bih …",
-        explanation: "Rada: (Mislim da) bi trebao + bezokolicznik — powinieneś… Albo: Na tvom mjestu bih prihvatio/prihvatila… (na twoim miejscu…).",
-        practice: "trebao bi",
-        next: "sense",
+      say("summer-what", "tea", "Već sutra? Hej, to nije baš lijepo!", "Już jutro? Hej, to nie było zbyt miłe!", "c-summer", { mood: "puzzled" }),
+      say("next", "tea", "Ni mi tebe. A što ćeš raditi kad se vratiš kući?", "My ciebie też nie. A co będziesz robić, kiedy wrócisz do domu?", "b-plan"),
+      build("b-plan", {
+        instruction: "Powiedz, że jeśli wszystko pójdzie dobrze, wrócisz następnego lata.",
+        translation: "Jeśli wszystko pójdzie dobrze, wrócę następnego lata.",
+        tokens: ["Ako", "sve", "bude", "dobro", "vratit", "ću", "se", "sljedećeg", "ljeta", "bilo", "sljedeće"],
+        accepted: ["Ako sve bude dobro, vratit ću se sljedećeg ljeta."],
+        explanation: "Warunek w przyszłości: Ako + bude…, potem czas przyszły: vratit ću se. „Następnego lata” — sljedećeg ljeta (dopełniacz).",
+        next: "praise",
+        onWrong: "plan-what",
       }),
-      say("sense", "nikola", "Hm, ima smisla. Iako mi neće biti lako.", "Hm, to ma sens. Chociaż nie będzie mi łatwo.", "decide", { effects: [flag("gave-advice")] }),
-      say("decide", "nikola", "Znaš što? Kad donesem odluku, ti ćeš prvi saznati. A što je s tobom? Kakvi su tvoji planovi?", "Wiesz co? Kiedy podejmę decyzję, dowiesz się pierwszy. A co z tobą? Jakie masz plany?", "b-plans"),
-      build("b-plans", {
-        instruction: "Powiedz, że kiedy będziesz miał(a) więcej czasu, wrócisz do Dubrownika.",
-        translation: "Kiedy będę miał(a) więcej czasu, wrócę do Dubrownika.",
-        tokens: ["Kad", "budem", "imao", "imala", "više", "vremena", "vratit", "ću", "se", "u", "Dubrovnik", "bude"],
-        accepted: ["Kad budem imao više vremena, vratit ću se u Dubrovnik.", "Kad budem imala više vremena, vratit ću se u Dubrovnik."],
-        explanation: "Przyszłość w zdaniu z „kad”: kad budem imao / imala (kiedy będę miał / miała), a potem czas przyszły: vratit ću se.",
-        next: "cheers",
-        onWrong: "plans-what",
-      }),
-      say("plans-what", "nikola", "Molim? Kada ćeš se vratiti?", "Słucham? Kiedy wrócisz?", "b-plans", { mood: "puzzled" }),
-      say("cheers", "nikola", "To je najljepše što sam danas čuo! Živjeli!", "To najpiękniejsze, co dziś usłyszałem! Na zdrowie!", "c-cheers", { mood: "happy", effects: [flag("shared-plans")] }),
-      choice("c-cheers", "Wznieś toast.", [
-        option("cheers", "Živjeli! Za nove početke!", "Na zdrowie! Za nowe początki!", "correct", "end"),
-        option("meal", "Dobar tek!", "Smacznego!", "wrong", "meal", {
-          explanation: "„Dobar tek” mówimy przed jedzeniem (smacznego). Przy toaście: Živjeli!",
-        }),
+      say("plan-what", "tea", "Molim? Vraćaš se? Kada?", "Słucham? Wracasz? Kiedy?", "b-plan", { mood: "puzzled" }),
+      say("praise", "tea", "Stvarno? Super! Vesna kaže da je tvoja prezentacija bila najbolja ove godine.", "Naprawdę? Super! Vesna mówi, że twoja prezentacja była najlepsza w tym roku.", "c-modest", { mood: "happy", effects: [flag("plans")] }),
+      choice("c-modest", "Przyjmij komplement skromnie.", [
+        option("team", "Ma, to je bio timski rad. Bez vas ne bi uspjelo.", "E tam, to była praca zespołowa. Bez was by się nie udało.", "correct", "city"),
+        option("arrogant", "Naravno, bez mene vi niste ništa.", "Oczywiście, beze mnie jesteście niczym.", "wrong", "modest-what", { explanation: "To brzmi arogancko. Skromnie: Ma, to je bio timski rad. Bez vas ne bi uspjelo." }),
       ]),
-      say("meal", "nikola", "Dobar tek? Ali mi samo pijemo, ha-ha!", "Smacznego? Ale my tylko pijemy, ha-ha!", "c-cheers", { mood: "puzzled" }),
+      say("modest-what", "tea", "Ajme! Šališ se, nadam se?", "Ojej! Mam nadzieję, że żartujesz?", "c-modest", { mood: "puzzled" }),
+      say("city", "tea", "Ha-ha, uvijek tako skromno! A reci: je li bolje živjeti ovdje ili u velikom gradu?", "Ha-ha, zawsze tak skromnie! A powiedz: lepiej żyć tutaj czy w dużym mieście?", "t-argue"),
+      type("t-argue", {
+        instruction: "Wyraź opinię z argumentem: Mislim da je bolje…, jer… albo Iako…, …",
+        translation: "Myślę, że lepiej żyć tutaj, bo morze jest blisko. / Chociaż Dubrownik jest drogi, tu jest piękniej.",
+        accepted: [
+          "Mislim da je bolje živjeti ovdje, jer je more blizu.",
+          "Mislim da je bolje živjeti u velikom gradu, jer ima više posla.",
+          "Iako je Dubrovnik skup, ovdje je ljepše.",
+          "Iako u velikom gradu ima više posla, ovdje je ljepše.",
+        ],
+        pattern: "^(mislim da je bolje živjeti (ovdje|u velikom gradu) jer .+|iako .+ (ovdje|tamo|u velikom gradu) je (ljepše|bolje)( .+)?)$",
+        hint: "Mislim da je bolje živjeti …, jer …",
+        explanation: "Opinia z uzasadnieniem: Mislim da je bolje…, jer… Albo z ustępstwem: Iako je Dubrovnik skup, ovdje je ljepše.",
+        practice: "iako",
+        next: "friends",
+      }),
+      say("friends", "tea", "Dobar argument. Znaš što? Ostanimo prijatelji — bez obzira na to gdje živimo.", "Dobry argument. Wiesz co? Zostańmy przyjaciółmi — bez względu na to, gdzie mieszkamy.", "c-promise"),
+      choice("c-promise", "Obiecaj, że zostaniecie w kontakcie.", [
+        option("future", "Naravno! Pisat ćemo si i opet ćemo se vidjeti.", "Oczywiście! Będziemy do siebie pisać i znowu się zobaczymy.", "correct", "bye", { effects: [flag("goodbye")] }),
+        option("past", "Naravno! Pisali smo si i vidjeli smo se.", "Oczywiście! Pisaliśmy do siebie i widzieliśmy się.", "wrong", "promise-what", { explanation: "To czas przeszły — a obietnica dotyczy przyszłości: Pisat ćemo si i opet ćemo se vidjeti." }),
+      ]),
+      say("promise-what", "tea", "Jesmo? Ja govorim o budućnosti!", "Tak? Ja mówię o przyszłości!", "c-promise", { mood: "puzzled" }),
+      say("bye", "tea", "Dogovoreno. Sretan put — i do viđenja, Dubrovniče!", "Umowa stoi. Szczęśliwej podróży — i do zobaczenia, Dubrowniku!", "end", { mood: "happy" }),
       end(),
     ]),
   },
   debrief: [
-    "Ważysz argumenty: s jedne strane… s druge strane…",
-    "Doradzasz: Mislim da bi trebao prihvatiti ponudu. Na tvom mjestu bih…",
-    "Mówisz o przyszłości z „kad”: Kad budem imao/imala više vremena, vratit ću se.",
+    "Podsumowujesz: Nikad neću zaboraviti Dubrovnik.",
+    "Planujesz warunkowo: Ako sve bude dobro, vratit ću se sljedećeg ljeta.",
+    "Argumentujesz: Mislim da je bolje…, jer… / Iako…, … — i obiecujesz: Pisat ćemo si.",
   ],
 };
 
-export const DUBROVNIK_MISSIONS: Mission[] = [repair, walls, ferry, interview, advice];
+export const DUBROVNIK_MISSIONS: Mission[] = [arrival, flatProblem, project, pharmacy, excursion, walls, festival, farewell];

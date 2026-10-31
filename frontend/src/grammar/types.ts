@@ -43,7 +43,16 @@ export interface VerbEntry {
   tags: string[];
   /** Czasownik z rdzenia języka — pula łatwego poziomu. */
   core: boolean;
+  /** Imiesłów na -l (rodzaj męski i żeński) — podstawa czasu przeszłego. */
+  past?: { masculine: string; feminine: string };
+  /** Wariant czasownika w innym czasie (gra Odmiana); brak = czas teraźniejszy. */
+  tense?: Tense;
+  /** Równoprawne warianty form (np. kolejność słów, rodzaj żeński) — dla wariantów czasowych. */
+  alternates?: Partial<Record<PersonId, string[]>>;
 }
+
+export type Tense = "present" | "past" | "future";
+export const TENSES: readonly Tense[] = ["present", "past", "future"];
 
 /** Klucz postępu pojedynczej formy: czasownik + osoba. */
 export function formKey(verbId: string, person: PersonId): string {

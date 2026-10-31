@@ -29,6 +29,8 @@ export function parseVerbDataset(course: Course, text: string): VerbEntry[] {
     type: idx(col.type),
     note: idx(col.note),
     tags: idx(col.tags),
+    pastMasculine: col.pastMasculine ? idx(col.pastMasculine) : -1,
+    pastFeminine: col.pastFeminine ? idx(col.pastFeminine) : -1,
   };
 
   if (map.infinitive < 0) {
@@ -73,6 +75,9 @@ export function parseVerbDataset(course: Course, text: string): VerbEntry[] {
       note: at(cols, map.note),
       tags,
       core: tags.includes(config.coreTag),
+      ...(at(cols, map.pastMasculine) && at(cols, map.pastFeminine)
+        ? { past: { masculine: at(cols, map.pastMasculine), feminine: at(cols, map.pastFeminine) } }
+        : {}),
     });
   }
 

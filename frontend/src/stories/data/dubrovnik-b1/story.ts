@@ -1,32 +1,32 @@
 import type { Story } from "../../types";
 import { DUBROVNIK_MISSIONS } from "./missions";
 
-/** Dubrovnik — miasto poziomu B1. */
+/** Dubrownik — miasto poziomu B1. */
 export const DUBROVNIK_B1: Story = {
   id: "dubrovnik-b1",
   courseId: "pl-hr",
   level: "B1",
   city: { hr: "Dubrovnik", pl: "Dubrownik" },
-  tagline: "Mury, turyści i rozmowy o wszystkim: usterki, prom na wyspę, wywiad na Stradunie i rada dla przyjaciela.",
+  tagline: "Letnia praca w agencji turystycznej: usterki w apartamencie, zebrania, wycieczki, mury i festiwal.",
   map: "dubrovnik-map",
   languageReview: "unverified",
-  narratorVoice: { gender: "male", pitch: "-8Hz", rate: "-14%" },
+  narratorVoice: { gender: "male" },
   npcs: [
-    { id: "mara", name: "gospođa Mara", role: "właścicielka apartamentu", portrait: "mara", voice: { gender: "female", pitch: "-16Hz", rate: "-14%" } },
-    { id: "nikola", name: "Nikola", role: "przewodnik po mieście", portrait: "nikola", voice: { gender: "male", pitch: "+4Hz", rate: "-2%" } },
-    { id: "ante", name: "Ante", role: "kasjer w porcie", portrait: "ante", voice: { gender: "male", pitch: "-14Hz", rate: "-6%" } },
-    { id: "jelena", name: "Jelena", role: "dziennikarka portalu", portrait: "jelena", voice: { gender: "female", pitch: "+6Hz", rate: "-2%" } },
+    { id: "ante", name: "Ante", role: "taksówkarz i właściciel łodzi", portrait: "ante", voice: { gender: "male" } },
+    { id: "nikola", name: "Nikola", role: "właściciel apartamentu", portrait: "nikola", voice: { gender: "male" } },
+    { id: "vesna", name: "Vesna", role: "szefowa agencji", portrait: "vesna", voice: { gender: "female" } },
+    { id: "jelena", name: "Jelena", role: "farmaceutka", portrait: "jelena", voice: { gender: "female" } },
+    { id: "ivo", name: "Ivo", role: "przewodnik", portrait: "ivo", voice: { gender: "male" } },
+    { id: "tea", name: "Tea", role: "koleżanka z agencji", portrait: "tea", voice: { gender: "female" } },
   ],
   locations: [
-    { id: "ploce", name: { hr: "Apartman u Pločama", pl: "Apartament na Pločach" }, description: "Kamienny dom za Bramą Ploče, z widokiem na port i Lokrum.", background: "apartman", map: { x: 74, y: 44 } },
-    { id: "zidine", name: { hr: "Gradske zidine", pl: "Mury miejskie" }, description: "Prawie dwa kilometry murów nad morzem. Najlepszy widok — z Minčety.", background: "du-zidine", map: { x: 50, y: 34 }, unlock: { mission: "m1-repair" } },
-    { id: "gruz", name: { hr: "Luka Gruž", pl: "Port Gruž" }, description: "Promy i katamarany na wyspy Elafickie.", background: "du-luka", map: { x: 14, y: 22 }, unlock: { mission: "m1-repair" } },
-    { id: "stradun", name: { hr: "Stradun", pl: "Stradun" }, description: "Główna ulica starego miasta. Latem — festiwal i tłumy.", background: "du-stradun", map: { x: 56, y: 52 }, unlock: { mission: "m2-walls" } },
-    { id: "stijene", name: { hr: "Bar na stijenama", pl: "Bar na skałach" }, description: "Stoliki na skałach pod murami, przez dziurę w murze.", background: "du-stijene", map: { x: 44, y: 70 }, unlock: { mission: "m4-interview" } },
-    // Zapowiedziane lokacje — misje w kolejnych etapach.
-    { id: "lokrum", name: { hr: "Lokrum", pl: "Lokrum" }, description: "Wyspa z pawiami i ogrodem botanicznym.", background: "placeholder", map: { x: 86, y: 76 }, comingSoon: true },
-    { id: "srd", name: { hr: "Srđ", pl: "Srđ" }, description: "Kolejka linowa i panorama miasta.", background: "placeholder", map: { x: 62, y: 12 }, comingSoon: true },
-    { id: "trznica", name: { hr: "Gundulićeva poljana", pl: "Targ" }, description: "Poranny targ: figi, lawenda i kandyzowane skórki.", background: "placeholder", map: { x: 40, y: 46 }, comingSoon: true },
+    { id: "luka", name: { hr: "Luka Gruž", pl: "Port Gruž" }, description: "Katamarany, promy i łodzie wycieczkowe. Ante zna tu każdego kapitana.", background: "db-luka", map: { x: 18, y: 30 } },
+    { id: "apartman", name: { hr: "Apartman", pl: "Apartament" }, description: "Kamienny apartament w Starym Mieście — piękny, ale wilgotny.", background: "db-apartman", map: { x: 73, y: 45 }, unlock: { mission: "m1-dolazak" } },
+    { id: "agencija", name: { hr: "Agencija", pl: "Agencja" }, description: "Agencja turystyczna przy Stradunie. Szefowa Vesna nie lubi spóźnień.", background: "db-agencija", map: { x: 60, y: 61 }, unlock: { mission: "m1-dolazak" } },
+    { id: "ljekarna", name: { hr: "Ljekarna", pl: "Apteka" }, description: "Apteka przy bramie Pile — latem pełna turystów ze spieczoną skórą.", background: "db-ljekarna", map: { x: 38, y: 52 }, unlock: { mission: "m3-projekt" } },
+    { id: "zidine", name: { hr: "Zidine", pl: "Mury" }, description: "Prawie dwa kilometry murów miejskich nad morzem.", background: "db-zidine", map: { x: 78, y: 66 }, unlock: { mission: "m5-izlet" } },
+    { id: "stradun", name: { hr: "Stradun", pl: "Stradun" }, description: "Główna ulica Starego Miasta, wypolerowana stopami turystów.", background: "db-stradun", map: { x: 55, y: 46 }, unlock: { mission: "m2-apartman" } },
+    { id: "banje", name: { hr: "Banje", pl: "Plaża Banje" }, description: "Plaża z widokiem na mury i wyspę Lokrum.", background: "db-banje", map: { x: 91, y: 56 }, unlock: { mission: "m7-festival" } },
   ],
   missions: DUBROVNIK_MISSIONS,
 };
