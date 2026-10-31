@@ -64,6 +64,8 @@ export const COURSE_PL_HR: Course = {
       type: "Type",
       note: "Note",
       tags: "Tags",
+      pastMasculine: "PastMasculine",
+      pastFeminine: "PastFeminine",
     },
     coreTag: "core",
   },

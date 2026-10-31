@@ -587,7 +587,7 @@ export const en: Dictionary = {
     odmiana: {
       tagline: "Drilling verb forms person by person",
       description:
-        "Practise Croatian present-tense verb forms. Type the right form before the round runs out.",
+        "Practise Croatian verb forms person by person — present, past and future. Type the right form before the round runs out.",
     },
     flashcards: {
       tagline: "Classic flashcards with review",
@@ -855,6 +855,13 @@ export const en: Dictionary = {
     ahead: "ahead",
   },
   odmiana: {
+    stepTense: "Tense",
+    tense: { present: "Present", past: "Past", future: "Future" },
+    tenseNote: {
+      present: "Person by person: čitam, čitaš, čita…",
+      past: "Perfekt: sam radio, si radio, je radio… The feminine form (sam radila) is accepted too.",
+      future: "Future: ću raditi or radit ću — both word orders are correct.",
+    },
     stepLevel: "1 — difficulty",
     stepMode: "2 — question mode",
     level: { easy: "Easy", normal: "Normal", hard: "Hard" },

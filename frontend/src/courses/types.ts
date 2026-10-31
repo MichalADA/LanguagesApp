@@ -69,6 +69,9 @@ export interface GrammarDatasetConfig {
     type: string;
     note: string;
     tags: string;
+    /** Imiesłów czasu przeszłego (opcjonalnie — bez niego gra oferuje tylko czas teraźniejszy i przyszły). */
+    pastMasculine?: string;
+    pastFeminine?: string;
   };
   /** Tag wyznaczający pulę „łatwego" poziomu. */
   coreTag: string;

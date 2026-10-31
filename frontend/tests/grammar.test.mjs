@@ -84,3 +84,63 @@ test('runda: bez powtórzeń, mylone zadania częściej', () => {
   assert.ok(logic.weightFor(mastered) < 0.5);
   assert.equal(logic.drillKey('padezi', 'u-skolu'), 'drill:padezi:u-skolu');
 });
+
+/* ---------- Odmiana: czas przeszły i przyszły ---------- */
+
+const grammarTypes = await compile('../src/grammar/types.ts');
+const odmiana = await compile('../src/games/odmiana/logic.ts', { '@/services/validation': validation, '@/grammar/types': grammarTypes });
+const course = { validation: rules };
+
+const verb = (infinitive, masculine, feminine, extra = {}) => ({
+  id: `pl-hr:verb:${infinitive}`, courseId: 'pl-hr', rank: 1, infinitive, translation: '', exampleTarget: '', exampleSource: '', type: 'irregular_or_difficult', note: '', tags: [], core: true,
+  forms: { ja: 'x', ti: 'x', on: 'x', mi: 'x', vi: 'x', oni: 'x' }, past: { masculine, feminine }, ...extra,
+});
+
+test('Odmiana: czas przeszły — biti + imiesłów, rodzaj żeński i odwrotna kolejność też poprawne', () => {
+  const raditi = odmiana.inTense(verb('raditi', 'radio', 'radila'), 'past');
+  assert.equal(raditi.id, 'pl-hr:verb:raditi:past');
+  assert.deepEqual(raditi.forms, { ja: 'sam radio', ti: 'si radio', on: 'je radio', mi: 'smo radili', vi: 'ste radili', oni: 'su radili' });
+  for (const ok of ['sam radio', 'sam radila', 'radila sam', 'Radio sam']) assert.equal(odmiana.judgeForm(course, raditi, 'ja', ok), 'hit', ok);
+  assert.equal(odmiana.judgeForm(course, raditi, 'on', 'je radilo'), 'hit');
+  assert.equal(odmiana.judgeForm(course, raditi, 'mi', 'smo radile'), 'hit');
+  assert.equal(odmiana.judgeForm(course, raditi, 'ja', 'radim'), 'miss');
+  const ici = odmiana.inTense(verb('ići', 'išao', 'išla'), 'past');
+  assert.equal(ici.forms.oni, 'su išli');
+  assert.equal(odmiana.judgeForm(course, ici, 'ja', 'sam isao'), 'near', 'brak diakrytyków to „prawie”');
+});
+
+test('Odmiana: czasowniki zwrotne — „se” po biti, w 3. osobie bez „je”', () => {
+  const smijati = odmiana.inTense(verb('smijati se', 'smijao', 'smijala'), 'past');
+  assert.equal(smijati.forms.ja, 'sam se smijao');
+  assert.equal(smijati.forms.on, 'se smijao');
+  assert.equal(odmiana.judgeForm(course, smijati, 'on', 'smijala se'), 'hit');
+  const future = odmiana.inTense(verb('smijati se', 'smijao', 'smijala'), 'future');
+  assert.equal(future.forms.ja, 'ću se smijati');
+  assert.equal(odmiana.judgeForm(course, future, 'ja', 'smijat ću se'), 'hit');
+});
+
+test('Odmiana: czas przyszły — ću + bezokolicznik albo skrócony bezokolicznik + ću; -ći bez skracania', () => {
+  const raditi = odmiana.inTense(verb('raditi', 'radio', 'radila'), 'future');
+  assert.equal(raditi.forms.mi, 'ćemo raditi');
+  assert.equal(odmiana.judgeForm(course, raditi, 'mi', 'radit ćemo'), 'hit');
+  assert.equal(odmiana.judgeForm(course, raditi, 'mi', 'raditi ćemo'), 'miss');
+  const ici = odmiana.inTense(verb('ići', 'išao', 'išla'), 'future');
+  assert.equal(odmiana.judgeForm(course, ici, 'ja', 'ići ću'), 'hit');
+  // Bez imiesłowu w datasetcie czasownik nie trafia do puli czasu przeszłego, ale do przyszłego tak.
+  const bare = { ...verb('znati', 'znao', 'znala'), past: undefined };
+  assert.equal(odmiana.tensePool([bare], 'past').length, 0);
+  assert.equal(odmiana.tensePool([bare], 'future').length, 1);
+  assert.equal(odmiana.formLabel(raditi, 'mi'), 'raditi (futur) — mi');
+});
+
+test('dataset czasowników: każdy ma imiesłów rodzaju męskiego i żeńskiego', async () => {
+  const text = await readFile(new URL('../public/data/chorwacki_czasowniki_PL-HR.csv', import.meta.url), 'utf8');
+  const [head, ...rows] = text.trim().split('\n').map((l) => l.split(';'));
+  const m = head.indexOf('PastMasculine');
+  const f = head.indexOf('PastFeminine');
+  assert.ok(m > 0 && f > 0);
+  for (const row of rows) {
+    assert.match(row[m], /(o|io|ao|eo|uo)$/u, `${row[1]}: ${row[m]}`);
+    assert.match(row[f], /la$/u, `${row[1]}: ${row[f]}`);
+  }
+});

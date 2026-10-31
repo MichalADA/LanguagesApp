@@ -587,7 +587,7 @@ export const pl: Dictionary = {
     odmiana: {
       tagline: "Ćwiczenie odmiany czasowników przez osoby",
       description:
-        "Ćwicz odmianę chorwackich czasowników przez osoby. Wpisz poprawną formę, zanim skończy się runda.",
+        "Ćwicz odmianę chorwackich czasowników przez osoby — w czasie teraźniejszym, przeszłym i przyszłym. Wpisz poprawną formę, zanim skończy się runda.",
     },
     flashcards: {
       tagline: "Klasyczne fiszki z powtórkami",
@@ -855,6 +855,13 @@ export const pl: Dictionary = {
     ahead: "przed tobą",
   },
   odmiana: {
+    stepTense: "Czas",
+    tense: { present: "Teraźniejszy", past: "Przeszły", future: "Przyszły" },
+    tenseNote: {
+      present: "Odmiana przez osoby: čitam, čitaš, čita…",
+      past: "Perfekt: sam radio, si radio, je radio… Forma żeńska (sam radila) też jest poprawna.",
+      future: "Futur: ću raditi albo radit ću — obie kolejności są poprawne.",
+    },
     stepLevel: "1 — poziom trudności",
     stepMode: "2 — tryb pytania",
     level: { easy: "Łatwy", normal: "Normalny", hard: "Trudny" },

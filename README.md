@@ -208,7 +208,7 @@ Odmiana czasownika to inne dane niż słowo z talii, więc ma własną, równole
 
 | Warstwa | Plik | Uwagi |
 | --- | --- | --- |
-| Dataset | `public/data/chorwacki_czasowniki_PL-HR.csv` | ~100 czasowników nieregularnych i trudnych, CSV `;`, pełna odmiana czasu teraźniejszego |
+| Dataset | `public/data/chorwacki_czasowniki_PL-HR.csv` | ~100 czasowników nieregularnych i trudnych, CSV `;`, pełna odmiana czasu teraźniejszego + imiesłów czasu przeszłego (`PastMasculine`, `PastFeminine`) |
 | Mapowanie kolumn | `Course.grammar` w `courses/registry.ts` | kurs bez tej sekcji po prostu nie oferuje gier gramatycznych |
 | Parser | `grammar/adapter.ts` | kolumny po nazwach z nagłówka, jak przy słownictwie |
 | Kontekst | `grammar/GrammarProvider.tsx` | `useGrammar()` → `{ verbs, loading, error, available }` |
@@ -221,6 +221,18 @@ niemal znikają. `applyGrammarRound` zapisuje rundę tym samym kanałem co gry s
 rekordy gier, licznik prób), więc Pulpit i Statystyki widzą Odmianę bez zmian w tych ekranach.
 `formsToReview` jest gotowym wejściem dla Powtórek i Dzisiejszego treningu, a pola `nextReview` /
 `interval` / `stability` czekają na SRS w tym samym miejscu co przy słowach.
+
+Odmiana ma trzy czasy: teraźniejszy (z datasetu), przeszły (biti + imiesłów z datasetu) i przyszły
+(ću + bezokolicznik) — `inTense` w `games/odmiana/logic.ts`. Forma żeńska i odwrotna kolejność słów
+są poprawne. Wyniki czasu przeszłego i przyszłego zapisują się w postępie lokalnym (klucz `…:past:ja`),
+ale nie trafiają do powtórek na serwerze, które znają tylko czas teraźniejszy.
+
+### Strona Gramatyka (`/gramatyka`)
+
+Ściągi (`grammar/cheatsheets.ts`: 8 tematów z tabelami, regułami, przykładami i pułapkami) oraz gry:
+Odmiana i pięć zestawów zadań na wspólnym silniku `grammar/GrammarDrill.tsx` (`grammar/drills.ts`):
+Przypadki, Szyk zdania, Aspekt, Stopniowanie, Czasy. Zadania: luka, wybór, kafelki; runda 10 zadań
+ważona postępem (klucz `drill:<temat>:<id>`), wynik zapisuje `recordGrammarRound`.
 
 Prototyp do klikania bez uruchamiania Vite: `../Odmiana - odmiana czasowników.dc.html` w katalogu głównym repo.
 
