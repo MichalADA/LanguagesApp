@@ -29,6 +29,18 @@ npm run typecheck
 Backend udostępnia Swagger pod `http://localhost:3000/api/docs`, a readiness check pod
 `http://localhost:3000/health/ready`.
 
+### Tryb testowy: odblokuj wszystko
+
+Do testowania bez przechodzenia kursu po kolei — odblokowuje wszystkie lekcje i moduły kursu oraz
+wszystkie lokacje i misje Stories. Postęp, XP i powtórki działają normalnie. Ustawienie jest
+zapamiętywane w tej przeglądarce, a w rogu ekranu widać żółty znacznik z przyciskiem „Wyłącz”.
+
+- włącz: dopisz `?unlockAll=1` do adresu, np. `http://localhost:8080/?unlockAll=1`
+  (albo w konsoli przeglądarki: `lexodromia.unlockAll()`),
+- wyłącz: `?unlockAll=0`, przycisk „Wyłącz” albo `lexodromia.lockAgain()`.
+
+Kod: `frontend/src/dev/unlockAll.ts`. Backend nie sprawdza kolejności, więc nic więcej nie trzeba.
+
 ---
 
 ## Trzy niezależne pojęcia językowe

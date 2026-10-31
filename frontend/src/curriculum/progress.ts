@@ -1,3 +1,4 @@
+import { isUnlockAll } from "@/dev/unlockAll";
 import type { CourseLesson, CourseLevel, CourseModule, LessonStatus, ModuleStatus } from "./types";
 
 export interface LessonView {
@@ -34,8 +35,9 @@ export interface LevelView {
  * - current   — pierwsza nieukończona lekcja w kolejności kursu,
  * - available — pozostałe lekcje bieżącego i wcześniejszych modułów,
  * - locked    — lekcje w modułach po bieżącym (widoczne, ale jeszcze zamknięte).
+ * W trybie testowym (dev/unlockAll.ts) nic nie jest zamknięte.
  */
-export function deriveLevel(level: CourseLevel, completed: ReadonlySet<string>): LevelView {
+export function deriveLevel(level: CourseLevel, completed: ReadonlySet<string>, unlockAll = isUnlockAll()): LevelView {
   const flat = level.modules.flatMap((module) => module.lessons);
   const currentLesson = flat.find((lesson) => !completed.has(lesson.id)) ?? null;
   const currentModuleOrder = currentLesson
@@ -49,7 +51,7 @@ export function deriveLevel(level: CourseLevel, completed: ReadonlySet<string>):
       let status: LessonStatus;
       if (completed.has(lesson.id)) status = "completed";
       else if (lesson.id === currentLesson?.id) status = "current";
-      else if (module.order <= currentModuleOrder) status = "available";
+      else if (unlockAll || module.order <= currentModuleOrder) status = "available";
       else status = "locked";
       return { lesson, status, number };
     });
@@ -57,7 +59,7 @@ export function deriveLevel(level: CourseLevel, completed: ReadonlySet<string>):
     let status: ModuleStatus;
     if (completedCount === lessons.length) status = "completed";
     else if (module.order === currentModuleOrder || completedCount > 0) status = "in_progress";
-    else if (module.order < currentModuleOrder) status = "not_started";
+    else if (unlockAll || module.order < currentModuleOrder) status = "not_started";
     else status = "locked";
     return {
       module,

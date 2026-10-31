@@ -266,6 +266,9 @@ test('progresja: odblokowanie lokacji i misji, nagroda tylko raz, najlepszy wyni
   assert.deepEqual(status(), { ...locked, 'm1-welcome': 'available', 'm3-coffee': 'available' });
   assert.deepEqual(['apartman', 'kafic', 'trgovina', 'pekara', 'trznica', 'plaza', 'luka', 'kolodvor'].map(loc), [true, true, false, false, false, false, false, false]);
   assert.equal(progressLib.nextMission(SPLIT_A1, p).id, 'm1-welcome');
+  // Tryb testowy „odblokuj wszystko”: każda misja i lokacja dostępna od razu.
+  assert.ok(SPLIT_A1.missions.every((m) => progressLib.missionStatus(SPLIT_A1, p, m, true) === 'available'));
+  assert.ok(SPLIT_A1.locations.every((l) => progressLib.isLocationUnlocked(l, p, true)));
 
   let r = progressLib.completeMission(p, mission('m1-welcome'), 60, ['met-marko']);
   assert.deepEqual([r.firstCompletion, r.xpAwarded], [true, 30]);
