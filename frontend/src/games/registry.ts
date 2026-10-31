@@ -7,6 +7,8 @@ import { QUICK_GAME_IDS } from "@/quick-games/helpers";
 import { SentenceGameSession } from "@/sentences/SentenceGameSession";
 import { SENTENCE_MODES } from "@/sentences/types";
 import { ListeningGame } from "@/listening/ListeningGame";
+import { GrammarDrill } from "@/grammar/GrammarDrill";
+import { DRILL_TOPICS } from "@/grammar/drills";
 
 export const GAME_CATEGORIES = ["main", "quick", "grammar", "sentences", "listening", "radio"] as const;
 export interface GameModule {
@@ -32,6 +34,9 @@ export const GAMES: GameModule[] = [
   existing("bura", "quick", BuraGame),
   { ...existing("trasa", "main", TrasaGame), requiresRoute: true },
   existing("odmiana", "grammar", OdmianaGame),
+  ...DRILL_TOPICS.map((topic): GameModule => ({
+    ...existing(topic.id, "grammar", () => createElement(GrammarDrill, { topicId: topic.id })),
+  })),
   // Lexodromia Stories — przygoda językowa z postaciami (własne trasy /stories, tryb skupienia w misji).
   { id: "stories", category: "main", nameKey: "gameNames.stories", taglineKey: "gameList.stories.tagline", descriptionKey: "gameList.stories.description", status: "active", href: "/stories" },
   { id: "flashcards", category: "main", nameKey: "gameNames.flashcards", taglineKey: "gameList.flashcards.tagline", descriptionKey: "gameList.flashcards.description", status: "active", href: "/fiszki" },

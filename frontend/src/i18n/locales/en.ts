@@ -78,6 +78,28 @@ export const en: Dictionary = {
     traps: "Watch out",
     practice: "Practise: {game}",
   },
+  drill: {
+    eyebrow: "Grammar",
+    roundInfo: "Round: {n} of {total} tasks, the troublesome ones first.",
+    best: "best: {score}",
+    start: "Start",
+    sheet: "See the cheat sheet",
+    progress: "{n} / {total}",
+    order: "Build the sentence from the tiles.",
+    check: "Check",
+    undo: "Undo",
+    placeholder: "Type the missing form…",
+    correctIs: "Correct:",
+    yours: "your answer:",
+    next: "Next",
+    finish: "Result",
+    result: "Round over",
+    score: "{score} points",
+    summary: "Correct: {hits}, almost (no diacritics): {near}, out of {total}. Longest streak: {streak}.",
+    again: "Again",
+    back: "Grammar",
+    verdict: { hit: "Correct!", near: "Almost — diacritics missing.", miss: "Not this time." },
+  },
   auth: {
     login: "Sign in",
     loginPending: "Signing in…",
@@ -542,6 +564,26 @@ export const en: Dictionary = {
       description:
         "No timer. Every correct answer brings you closer to the next town on the road from Zagreb to Dubrovnik.",
     },
+    padezi: {
+      tagline: "Put the noun in the right case",
+      description: "Type the missing word in the right form: u školu or u školi, s mlijekom, bez šećera. A rule after every task.",
+    },
+    enklitike: {
+      tagline: "Build sentences: se, sam, mi, ga in second position",
+      description: "Build the sentence from tiles so that the clitics (se, sam, mi, ga, je, ću) land in the right place.",
+    },
+    vid: {
+      tagline: "Perfective or imperfective?",
+      description: "Choose the right aspect: pijem or popijem, čitala or pročitala. Habit, process or result?",
+    },
+    komparacija: {
+      tagline: "Bigger, better, best",
+      description: "Type the comparative or superlative: veći, bolji, skuplji, najbolji — irregular forms included.",
+    },
+    vremena: {
+      tagline: "Past, future and conditional",
+      description: "Type the past (perfekt), future or conditional form: smo bili, ću ići, volio bih.",
+    },
     odmiana: {
       tagline: "Drilling verb forms person by person",
       description:
@@ -588,6 +630,11 @@ export const en: Dictionary = {
     "stories": "Stories",
     "trasa": "Journey",
     "odmiana": "Conjugation",
+    "padezi": "Cases",
+    "enklitike": "Word order",
+    "vid": "Aspect",
+    "komparacija": "Comparison",
+    "vremena": "Tenses",
     "flashcards": "Flashcards",
     "multiple-choice": "Four answers",
     "pairs": "Pairs",

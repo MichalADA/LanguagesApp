@@ -78,6 +78,28 @@ export const pl: Dictionary = {
     traps: "Uwaga, pułapka",
     practice: "Ćwicz: {game}",
   },
+  drill: {
+    eyebrow: "Gramatyka",
+    roundInfo: "Runda: {n} z {total} zadań, najpierw te, które sprawiają kłopot.",
+    best: "rekord: {score}",
+    start: "Zaczynam",
+    sheet: "Zobacz ściągę",
+    progress: "{n} / {total}",
+    order: "Ułóż zdanie z kafelków.",
+    check: "Sprawdź",
+    undo: "Cofnij",
+    placeholder: "Wpisz brakującą formę…",
+    correctIs: "Poprawnie:",
+    yours: "twoja odpowiedź:",
+    next: "Dalej",
+    finish: "Wynik",
+    result: "Koniec rundy",
+    score: "{score} punktów",
+    summary: "Dobrze: {hits}, prawie (bez znaków): {near}, z {total} zadań. Najdłuższa seria: {streak}.",
+    again: "Jeszcze raz",
+    back: "Gramatyka",
+    verdict: { hit: "Dobrze!", near: "Prawie — brakuje znaków diakrytycznych.", miss: "Nie tym razem." },
+  },
   auth: {
     login: "Zaloguj się",
     loginPending: "Logowanie…",
@@ -542,6 +564,26 @@ export const pl: Dictionary = {
       description:
         "Bez timera. Każda poprawna odpowiedź przybliża cię do następnego miasta na trasie z Zagrzebia do Dubrownika.",
     },
+    padezi: {
+      tagline: "Wstaw rzeczownik w dobrym przypadku",
+      description: "Wpisz brakujące słowo w odpowiedniej formie: u školu czy u školi, s mlijekom, bez šećera. Po każdym zadaniu — reguła.",
+    },
+    enklitike: {
+      tagline: "Ułóż zdanie: se, sam, mi, ga na drugim miejscu",
+      description: "Ułóż zdanie z kafelków tak, żeby krótkie słówka (se, sam, mi, ga, je, ću) stały na właściwym miejscu.",
+    },
+    vid: {
+      tagline: "Dokonany czy niedokonany?",
+      description: "Wybierz właściwy aspekt: pijem czy popijem, čitala czy pročitala. Nawyk, proces czy rezultat?",
+    },
+    komparacija: {
+      tagline: "Większy, lepszy, najlepszy",
+      description: "Wpisz stopień wyższy lub najwyższy: veći, bolji, skuplji, najbolji — z nieregularnymi formami.",
+    },
+    vremena: {
+      tagline: "Przeszły, przyszły i warunkowy",
+      description: "Wpisz formę w czasie przeszłym (perfekt), przyszłym albo w trybie warunkowym: smo bili, ću ići, volio bih.",
+    },
     odmiana: {
       tagline: "Ćwiczenie odmiany czasowników przez osoby",
       description:
@@ -588,6 +630,11 @@ export const pl: Dictionary = {
     "stories": "Stories",
     "trasa": "Trasa",
     "odmiana": "Odmiana",
+    "padezi": "Przypadki",
+    "enklitike": "Szyk zdania",
+    "vid": "Aspekt",
+    "komparacija": "Stopniowanie",
+    "vremena": "Czasy",
     "flashcards": "Fiszki",
     "multiple-choice": "Cztery odpowiedzi",
     "pairs": "Pary",
