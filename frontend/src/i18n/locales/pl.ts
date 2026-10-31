@@ -741,6 +741,7 @@ export const pl: Dictionary = {
     "transcript": "Transkrypcja",
     "show": "Pokaż tekst",
     "hide": "Ukryj tekst",
+    "glossary": "Słowniczek",
     "listenFirst": "Najpierw posłuchaj bez tekstu. Transkrypcję możesz odsłonić w dowolnym momencie.",
     "playLine": "Odtwórz kwestię {n}",
     "question": "Sprawdź zrozumienie",

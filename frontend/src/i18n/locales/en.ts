@@ -741,6 +741,7 @@ export const en: Dictionary = {
     "transcript": "Transcript",
     "show": "Show text",
     "hide": "Hide text",
+    "glossary": "Glossary",
     "listenFirst": "Listen without text first. You can reveal the transcript at any time.",
     "playLine": "Play line {n}",
     "question": "Check comprehension",

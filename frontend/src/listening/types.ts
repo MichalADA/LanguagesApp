@@ -22,6 +22,11 @@ export interface ListeningQuestion {
   correctOptionId: string;
 }
 
+export interface ListeningGlossaryEntry {
+  hr: string;
+  pl: string;
+}
+
 export interface ListeningDialogue {
   id: string;
   level: ListeningLevel;
@@ -34,6 +39,8 @@ export interface ListeningDialogue {
   question?: ListeningQuestion;
   /** …historie kilka. */
   questions?: ListeningQuestion[];
+  /** Opcjonalny słowniczek (np. monologi A1). */
+  glossary?: ListeningGlossaryEntry[];
 }
 
 export interface ListeningManifest {

@@ -204,6 +204,16 @@ export function ListeningGame() {
       </div>}
     </section>
 
+    {dialogue.glossary?.length ? <section className="panel panel-pad stack">
+      <h2>{t("listening.glossary")}</h2>
+      <dl className="listening-glossary">
+        {dialogue.glossary.map(entry => <div key={entry.hr} className="listening-glossary-entry">
+          <dt lang="hr">{entry.hr}</dt>
+          <dd lang="pl">{entry.pl}</dd>
+        </div>)}
+      </dl>
+    </section> : null}
+
     <section className="panel panel-pad stack listening-question">
       <span className="eyebrow">{t("listening.question")}</span>
       {questions.map((question, index) => {

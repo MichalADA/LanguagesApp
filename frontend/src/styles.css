@@ -948,6 +948,11 @@ input[type="range"]::-moz-range-thumb { width: 12px; height: 12px; border-radius
 .listening-speed { color: var(--text-secondary); }
 .listening-error, .listening-bad { color: var(--error); }
 .listening-good { color: var(--success); }
+.listening-glossary { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 18px; margin: 0; }
+.listening-glossary-entry { display: flex; flex-wrap: wrap; gap: 6px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.listening-glossary-entry dt { font-weight: 600; }
+.listening-glossary-entry dt::after { content: " –"; font-weight: 400; }
+.listening-glossary-entry dd { margin: 0; }
 .listening-lines { display: flex; flex-direction: column; gap: 6px; }
 .listening-line {
   display: grid;
