@@ -58,6 +58,10 @@ const { validateStory, validateGraph } = src('src/stories/validate.ts');
 const progressLib = src('src/stories/progress.ts');
 const repo = src('src/stories/repository.ts');
 const { SPLIT_A1 } = src('src/stories/data/split-a1/story.ts');
+const { ZAGREB_A2 } = src('src/stories/data/zagreb-a2/story.ts');
+const { DUBROVNIK_B1 } = src('src/stories/data/dubrovnik-b1/story.ts');
+const ALL = [SPLIT_A1, ZAGREB_A2, DUBROVNIK_B1];
+const allMissions = () => ALL.flatMap((story) => story.missions.map((m) => ({ story, m })));
 const { STORIES } = src('src/stories/data/index.ts');
 const builders = src('src/stories/data/builders.ts');
 const rules = course.validation;
@@ -110,12 +114,36 @@ test('Split A1: 3 lokacje z misjami, 3 postacie, 5 misji i poprawna struktura ws
   assert.deepEqual(SPLIT_A1.locations.filter((l) => !l.comingSoon).map((l) => l.id), ['apartman', 'kafic', 'trgovina']);
   assert.ok(SPLIT_A1.locations.filter((l) => l.comingSoon).length >= 5, 'przygotowane miejsca na port, plażę, dworzec, piekarnię i targ');
   assert.equal(SPLIT_A1.languageReview, 'unverified', 'treść nie jest oznaczona jako sprawdzona przez native speakera');
-  // Architektura miast: A1 grywalne, A2 i B1 zapowiedziane.
-  assert.deepEqual(STORIES.map((s) => [s.city.hr, s.level, Boolean(s.load)]), [['Split', 'A1', true], ['Zagreb', 'A2', false], ['Dubrovnik', 'B1', false]]);
+  // Architektura miast: każdy poziom CEFR to grywalne miasto.
+  assert.deepEqual(STORIES.map((s) => [s.city.hr, s.level, Boolean(s.load), s.map]), [['Split', 'A1', true, 'split-map'], ['Zagreb', 'A2', true, 'zagreb-map'], ['Dubrovnik', 'B1', true, 'dubrovnik-map']]);
+});
+
+test('Zagreb A2 i Dubrovnik B1: po 5 misji, własne postacie, lokacje, grafiki i poprawne dialogi', async () => {
+  const { BACKGROUNDS, MAPS, PORTRAITS } = src('src/stories/art/registry.tsx');
+  for (const story of [ZAGREB_A2, DUBROVNIK_B1]) {
+    assert.deepEqual(validateStory(story), [], story.id);
+    assert.equal(story.missions.length, 5, story.id);
+    assert.ok(story.npcs.length >= 4, `${story.id}: co najmniej 4 postacie`);
+    assert.equal(story.languageReview, 'unverified');
+    const entry = STORIES.find((s) => s.id === story.id);
+    assert.equal((await entry.load()).id, story.id);
+    assert.equal(entry.level, story.level);
+    assert.ok(MAPS[story.map], `${story.id}: mapa w rejestrze`);
+    for (const n of story.npcs) assert.ok(PORTRAITS[n.portrait], `${story.id}: portret ${n.portrait}`);
+    for (const l of story.locations) if (!l.comingSoon) assert.ok(BACKGROUNDS[l.background], `${story.id}: tło ${l.background}`);
+    // Misje odblokowują się po kolei, a pierwsza lokacja jest dostępna od początku.
+    assert.deepEqual(story.missions.filter((m) => !m.requires.length).length, 1, story.id);
+  }
+  // Wyższy poziom = dłuższe wypowiedzi postaci.
+  const avg = (story) => {
+    const lines = story.missions.flatMap((m) => Object.values(m.dialogue.graph.nodes).filter((n) => n.kind === 'say' && n.speaker !== 'narrator'));
+    return lines.reduce((sum, n) => sum + n.text.hr.split(/\s+/).length, 0) / lines.length;
+  };
+  assert.ok(avg(SPLIT_A1) < avg(ZAGREB_A2) && avg(ZAGREB_A2) < avg(DUBROVNIK_B1), 'A1 < A2 < B1');
 });
 
 test('każda misja ma progresję rozpoznanie → układanie → wpisywanie i kilka interakcji', () => {
-  for (const m of SPLIT_A1.missions) {
+  for (const { m } of allMissions()) {
     const nodes = Object.values(m.dialogue.graph.nodes);
     const kinds = new Set(nodes.map((n) => n.kind));
     assert.ok(kinds.has('choice') && kinds.has('type'), `${m.id}: wybór i wpisywanie`);
@@ -123,8 +151,8 @@ test('każda misja ma progresję rozpoznanie → układanie → wpisywanie i kil
     assert.ok(nodes.some((n) => n.kind === 'choice' && n.options.some((o) => o.verdict === 'wrong')), `${m.id}: błędne odpowiedzi z reakcją`);
     assert.ok(m.objectives.length >= 2 && m.debrief.length >= 2 && m.goal && m.story, `${m.id}: cel, historia, podsumowanie`);
   }
-  // W całym mieście są też zadania z układaniem zdania (w 4 z 5 misji).
-  assert.ok(SPLIT_A1.missions.filter((m) => Object.values(m.dialogue.graph.nodes).some((n) => n.kind === 'build')).length >= 4);
+  // W każdym mieście są też zadania z układaniem zdania (w 4 z 5 misji).
+  for (const story of ALL) assert.ok(story.missions.filter((m) => Object.values(m.dialogue.graph.nodes).some((n) => n.kind === 'build')).length >= 4, story.id);
 });
 
 test('walidacja wykrywa błędy w scenariuszu', () => {
@@ -151,15 +179,53 @@ test('walidacja wykrywa błędy w scenariuszu', () => {
 /* ---------- Silnik ---------- */
 
 test('silnik: każda misja kończy się przy poprawnych odpowiedziach z wynikiem 100% i ustawia flagi celów', () => {
-  for (const m of SPLIT_A1.missions) {
+  for (const { story, m } of allMissions()) {
     const run = play(m);
-    assert.equal(engine.scoreOf(run).percent, 100, m.id);
-    for (const o of m.objectives) assert.ok(engine.evaluate(o.done, run.flags, []), `${m.id}: cel „${o.text}” nie został odhaczony`);
+    assert.equal(engine.scoreOf(run).percent, 100, `${story.id}/${m.id}`);
+    for (const o of m.objectives) assert.ok(engine.evaluate(o.done, run.flags, []), `${story.id}/${m.id}: cel „${o.text}” nie został odhaczony`);
+    // Każda wzorcowa odpowiedź przechodzi przez walidację odpowiedzi (także wariant z ramą zdania).
+    for (const n of Object.values(m.dialogue.graph.nodes)) {
+      if (n.kind !== 'build' && n.kind !== 'type') continue;
+      for (const a of n.accepted) {
+        const world = { flags: [], completed: [], vars };
+        const r = engine.answer(m.dialogue.graph, { ...engine.startRun(m.dialogue.graph, world), nodeId: n.id }, { kind: 'text', value: engine.fill(a, vars) }, world, rules);
+        assert.notEqual(r.pending.feedback.verdict, 'wrong', `${m.id}/${n.id}: „${a}”`);
+      }
+    }
+  }
+});
+
+test('silnik: alternatywne ścieżki w A2 i B1 też prowadzą do celu', () => {
+  const zg = (id) => ZAGREB_A2.missions.find((m) => m.id === id);
+  const du = (id) => DUBROVNIK_B1.missions.find((m) => m.id === id);
+  const paths = [
+    [zg('m4-jacket'), ['black'], 'Evo veće crne. Ova je malo skuplja, ali danas je na popustu.'],
+    [zg('m5-weekend'), ['busy'], 'Šteta! Izložba traje cijeli mjesec. Idemo sljedeći petak? Nađemo se ispred muzeja u pola sedam?'],
+    [du('m1-repair'), ['tomorrow'], 'Može i tako. Majstor dolazi sutra u devet.'],
+    [du('m3-ferry'), ['ferry'], 'I pazite na povratak — trajekt je spor, a izvan sezone nema puno brodova.'],
+    [du('m5-advice'), ['remote'], 'Pitao sam. Mogu dva dana tjedno, ostalo u uredu.'],
+  ];
+  for (const [m, prefer, line] of paths) {
+    const run = play(m, { prefer });
+    assert.ok(run.transcript.some((e) => e.text.hr === line), `${m.id}: alternatywna ścieżka (${prefer})`);
+    for (const o of m.objectives) assert.ok(engine.evaluate(o.done, run.flags, []), `${m.id}/${prefer}: cel „${o.text}”`);
+  }
+  // Rama zdania przyjmuje własne odpowiedzi gracza (inny dzień, rozmiar, rada).
+  const open = [
+    [zg('m1-flat'), 't-move', 'Mogu se useliti u srijedu.'],
+    [zg('m4-jacket'), 't-size', 'Nosim XL.'],
+    [du('m4-interview'), 't-where', 'Iz Češke sam. Ovdje sam zbog mora.'],
+    [du('m5-advice'), 't-advice', 'Na tvom mjestu bih ostala u Dubrovniku.'],
+  ];
+  for (const [m, nodeId, value] of open) {
+    const world = { flags: [], completed: [], vars };
+    const r = engine.answer(m.dialogue.graph, { ...engine.startRun(m.dialogue.graph, world), nodeId }, { kind: 'text', value }, world, rules);
+    assert.equal(r.pending.feedback.verdict, 'correct', `${m.id}/${nodeId}: „${value}”`);
   }
 });
 
 test('silnik: błędy prowadzą do reakcji postaci, ale nigdy nie blokują postępu', () => {
-  for (const m of SPLIT_A1.missions) {
+  for (const { m } of allMissions()) {
     const wrongFirst = play(m, { policy: 'wrong-first' });
     const score = engine.scoreOf(wrongFirst);
     assert.ok(score.percent < 100, `${m.id}: błędy obniżają wynik`);
@@ -337,16 +403,22 @@ test('zapis konta: backend, kolejka z tym samym eventId po błędzie sieci, bez 
 
 test('słownictwo misji używa tych samych kart FSRS co lekcje kursu (bez duplikatów)', () => {
   const lessonRefs = new Map();
-  const dir = join(SRC, 'curriculum/data/hr-a1');
-  for (const m of readdirSync(dir).filter((f) => f.startsWith('module'))) {
-    for (const f of readdirSync(join(dir, m))) {
-      const text = readFileSync(join(dir, m, f), 'utf8');
-      const content = JSON.parse(text.slice(text.indexOf('content: ') + 9, text.indexOf(',\n  material:')));
-      for (const v of content.vocabulary) lessonRefs.set(v.target, v.review);
+  for (const level of ['hr-a1', 'hr-a2', 'hr-b1']) {
+    const dir = join(SRC, 'curriculum/data', level);
+    for (const m of readdirSync(dir).filter((f) => f.startsWith('module'))) {
+      for (const f of readdirSync(join(dir, m))) {
+        const text = readFileSync(join(dir, m, f), 'utf8');
+        const content = JSON.parse(text.slice(text.indexOf('content: ') + 9, text.indexOf(',\n  material:')));
+        for (const v of content.vocabulary) lessonRefs.set(v.target, v.review);
+      }
     }
   }
-  const phrases = src('src/curriculum/data/hr-a1/review-items.ts').HR_A1_REVIEW_ITEMS;
-  for (const m of SPLIT_A1.missions) {
+  const phrases = {
+    ...src('src/curriculum/data/hr-a1/review-items.ts').HR_A1_REVIEW_ITEMS,
+    ...src('src/curriculum/data/hr-a2/review-items.ts').HR_A2_REVIEW_ITEMS,
+    ...src('src/curriculum/data/hr-b1/review-items.ts').HR_B1_REVIEW_ITEMS,
+  };
+  for (const { m } of allMissions()) {
     for (const w of m.vocabulary) assert.deepEqual(w.review, lessonRefs.get(w.hr), `${m.id}: „${w.hr}” ma inną kartę niż w lekcji`);
     for (const n of Object.values(m.dialogue.graph.nodes)) {
       if ((n.kind === 'build' || n.kind === 'type') && n.practice) {
@@ -362,10 +434,17 @@ test('głosy postaci: każda kwestia ma nagranie głosem mówiącego; mapa i man
   assert.equal(run.status, 0, run.stderr);
   const { SPLIT_A1_AUDIO } = src('src/stories/data/split-a1/audio.ts');
   const { audioFor } = src('src/stories/integration.ts');
-  for (const entry of Object.values(SPLIT_A1_AUDIO)) for (const p of Object.values(entry)) assert.ok(existsSync(join(ROOT, 'public', p)), p);
-  for (const m of SPLIT_A1.missions) {
-    for (const n of Object.values(m.dialogue.graph.nodes)) {
-      if (n.kind === 'say') assert.ok(audioFor(SPLIT_A1_AUDIO, n.text.hr, n.speaker), `${m.id}/${n.id}: brak głosu „${n.text.hr}”`);
+  const audio = {
+    'split-a1': SPLIT_A1_AUDIO,
+    'zagreb-a2': src('src/stories/data/zagreb-a2/audio.ts').ZAGREB_A2_AUDIO,
+    'dubrovnik-b1': src('src/stories/data/dubrovnik-b1/audio.ts').DUBROVNIK_B1_AUDIO,
+  };
+  for (const story of ALL) {
+    for (const entry of Object.values(audio[story.id])) for (const p of Object.values(entry)) assert.ok(existsSync(join(ROOT, 'public', p)), p);
+    for (const m of story.missions) {
+      for (const n of Object.values(m.dialogue.graph.nodes)) {
+        if (n.kind === 'say') assert.ok(audioFor(audio[story.id], n.text.hr, n.speaker), `${story.id}/${m.id}/${n.id}: brak głosu „${n.text.hr}”`);
+      }
     }
   }
   // Ten sam tekst brzmi głosem tej postaci, która go mówi (Ana i Ivana mają różną barwę).

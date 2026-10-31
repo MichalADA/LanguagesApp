@@ -5,7 +5,7 @@ import { STORIES } from "../data";
 import { Art, MAPS } from "../art/registry";
 
 /**
- * /stories — wybór miasta. Każdy poziom CEFR to osobne miasto; dziś grywalny jest Split (A1).
+ * /stories — wybór miasta. Każdy poziom CEFR to osobne miasto; grywalne są Split (A1), Zagrzeb (A2) i Dubrownik (B1).
  * Grywalne miasto to karta z mapą (obiekt, który się „bierze do ręki”), zapowiedzi to cicha lista.
  */
 export function StoriesHub() {
@@ -27,7 +27,7 @@ export function StoriesHub() {
         <>
           {open.map((s) => (
             <Link key={s.id} to={`/stories/${s.id}`} className="stories-city">
-              <div className="stories-city-art"><Art id="split-map" registry={MAPS} /></div>
+              <div className="stories-city-art"><Art id={s.map ?? "split-map"} registry={MAPS} /></div>
               <div className="stories-city-body">
                 <span className="stories-city-level">{s.level}</span>
                 <h2 lang="hr">{s.city.hr}</h2>

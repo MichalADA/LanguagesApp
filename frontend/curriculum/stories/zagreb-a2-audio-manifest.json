@@ -1,0 +1,928 @@
+{
+  "provider": "edge-tts",
+  "rate": "-8%",
+  "story": "zagreb-a2",
+  "items": [
+    {
+      "speaker": "dario",
+      "text": "Bok! Kako ti je prošao vikend?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/bok-kako-ti-je-prosao-vikend.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Dogovoreno! Idemo, kasnimo na posao!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/dogovoreno-idemo-kasnimo-na-posao.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Ideš? Ali subota je već bila!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/ides-ali-subota-je-vec-bila.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Jarun? Lijepo! Ja sam bio kod roditelja u Varaždinu. A u nedjelju?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/jarun-lijepo-ja-sam-bio-kod-roditelja-u-varazdinu-a-u-nedjel.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Jučer? Izložba je tek u petak!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/jucer-izlozba-je-tek-u-petak.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Molim? Što je bilo u nedjelju?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/molim-sto-je-bilo-u-nedjelju.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Pametno — prije novog tjedna treba se odmoriti.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/pametno-prije-novog-tjedna-treba-se-odmoriti.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Slušaj, u petak se otvara izložba u Muzeju suvremene umjetnosti. Imam dvije ulaznice. Ideš sa mnom?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/slusaj-u-petak-se-otvara-izlozba-u-muzeju-suvremene-umjetnos.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Smo biti? Misliš — bili smo?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/smo-biti-mislis-bili-smo.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "Šteta! Izložba traje cijeli mjesec. Idemo sljedeći petak? Nađemo se ispred muzeja u pola sedam?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/steta-izlozba-traje-cijeli-mjesec-idemo-sljedeci-petak-nadje.mp3"
+    },
+    {
+      "speaker": "dario",
+      "text": "U sedam navečer. Nađemo se ispred muzeja u pola sedam?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-4%",
+      "pitch": "-4Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/dario/u-sedam-navecer-nadjemo-se-ispred-muzeja-u-pola-sedam.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Besplatne? Ha-ha, nažalost nisu!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/besplatne-ha-ha-nazalost-nisu.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Dobar dan! Vi ste sigurno zbog oglasa za stan?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/dobar-dan-vi-ste-sigurno-zbog-oglasa-za-stan.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Evo moj broj telefona. Javite se ako imate pitanja!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/evo-moj-broj-telefona-javite-se-ako-imate-pitanja.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Molim? Pitate za cijenu?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/molim-pitate-za-cijenu.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Može! Onda se vidimo tada i potpisujemo ugovor.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/moze-onda-se-vidimo-tada-i-potpisujemo-ugovor.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Ne, ne — polog je kao jedna stanarina. Petsto eura.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/ne-ne-polog-je-kao-jedna-stanarina-petsto-eura.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Nisu. Režije su otprilike osamdeset eura: struja, voda i grijanje. Internet je uključen.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/nisu-rezije-su-otprilike-osamdeset-eura-struja-voda-i-grijan.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Odlično! Uđite slobodno. Ovo je dnevni boravak, a tamo je spavaća soba.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/odlicno-udjite-slobodno-ovo-je-dnevni-boravak-a-tamo-je-spav.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Polako: jeste li Vi tu zbog oglasa? Zbog stana?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/polako-jeste-li-vi-tu-zbog-oglasa-zbog-stana.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Režije su struja, voda, grijanje i internet.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/rezije-su-struja-voda-grijanje-i-internet.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Stan je namješten i ima terasu. Što Vas zanima?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/stan-je-namjesten-i-ima-terasu-sto-vas-zanima.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Stanarina je petsto eura mjesečno.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/stanarina-je-petsto-eura-mjesecno.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Tako je. Kada se želite useliti?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/tako-je-kada-se-zelite-useliti.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Tražim i polog u visini jedne stanarine.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/trazim-i-polog-u-visini-jedne-stanarine.mp3"
+    },
+    {
+      "speaker": "luka",
+      "text": "Vi ste oglas? Ha-ha! Mislite — zbog oglasa ste?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-8%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/luka/vi-ste-oglas-ha-ha-mislite-zbog-oglasa-ste.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Bok! Mogu li Vam pomoći?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/bok-mogu-li-vam-pomoci.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Evo veće crne. Ova je malo skuplja, ali danas je na popustu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/evo-vece-crne-ova-je-malo-skuplja-ali-danas-je-na-popustu.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Evo veće plave. Ova je malo skuplja, ali danas je na popustu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/evo-vece-plave-ova-je-malo-skuplja-ali-danas-je-na-popustu.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Hm, sigurno? Rukavi su Vam prekratki.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/hm-sigurno-rukavi-su-vam-prekratki.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Imamo ove dvije: crnu i plavu. Koja Vam se sviđa?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/imamo-ove-dvije-crnu-i-plavu-koja-vam-se-svidja.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Izvolite, kabina za presvlačenje je tamo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/izvolite-kabina-za-presvlacenje-je-tamo.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Jaknu? Hlače? Što tražite?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/jaknu-hlace-sto-trazite.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Kako Vam stoji?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/kako-vam-stoji.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Koja je Vaša veličina?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/koja-je-vasa-velicina.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Koštala je sto eura, a sada je osamdeset.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/kostala-je-sto-eura-a-sada-je-osamdeset.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Molim? Vi se sviđate? Ha-ha. Koja jakna?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/molim-vi-se-svidjate-ha-ha-koja-jakna.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Ne, ne — sada je samo osamdeset eura!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/ne-ne-sada-je-samo-osamdeset-eura.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "Odličan izbor! Platite na blagajni.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/odlican-izbor-platite-na-blagajni.mp3"
+    },
+    {
+      "speaker": "maja",
+      "text": "U redu, ali popust vrijedi samo danas!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-4%",
+      "pitch": "+10Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/maja/u-redu-ali-popust-vrijedi-samo-danas.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Ilica, najduža ulica u Zagrebu. Zima je ovdje hladnija nego na moru.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/narrator/ilica-najduza-ulica-u-zagrebu-zima-je-ovdje-hladnija-nego-na.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Ljekarna na uglu. Jutros te boli grlo.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/narrator/ljekarna-na-uglu-jutros-te-boli-grlo.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Ponedjeljak ujutro, Tkalčićeva ulica. Kolega Dario te čeka na kavi prije posla.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/narrator/ponedjeljak-ujutro-tkalciceva-ulica-kolega-dario-te-ceka-na.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Probaš jaknu. Rukavi su prekratki, a jakna je tijesna.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/narrator/probas-jaknu-rukavi-su-prekratki-a-jakna-je-tijesna.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Ured u centru grada. Petra vodi razgovore za posao.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/narrator/ured-u-centru-grada-petra-vodi-razgovore-za-posao.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Zagreb. Prvi dan u glavnom gradu — i prvi pogled na stan.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/narrator/zagreb-prvi-dan-u-glavnom-gradu-i-prvi-pogled-na-stan.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Bok? Ha-ha… Pa dobro.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/bok-ha-ha-pa-dobro.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Dobar dan, izvolite sjesti. Hvala što ste došli.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/dobar-dan-izvolite-sjesti-hvala-sto-ste-dosli.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Doviđenja i sretno!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/dovidjenja-i-sretno.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Imate li Vi neko pitanje za nas?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/imate-li-vi-neko-pitanje-za-nas.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Javit ćemo Vam se do petka. Pošaljite nam još i životopis e-mailom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/javit-cemo-vam-se-do-petka-posaljite-nam-jos-i-zivotopis-e-m.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Ne svaki dan — dva dana tjedno.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/ne-svaki-dan-dva-dana-tjedno.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Odlično. Posao je na puno radno vrijeme, ali dva dana tjedno možete raditi na daljinu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/odlicno-posao-je-na-puno-radno-vrijeme-ali-dva-dana-tjedno-m.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Oprostite, čime se bavite?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/oprostite-cime-se-bavite.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Ovaj… dobro, hvala. Ali ovo je ipak razgovor za posao.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/ovaj-dobro-hvala-ali-ovo-je-ipak-razgovor-za-posao.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Početna plaća je tisuću i petsto eura neto.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/pocetna-placa-je-tisucu-i-petsto-eura-neto.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Predstavite se ukratko. Čime se bavite?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/predstavite-se-ukratko-cime-se-bavite.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Tri godine? Ha-ha, izgledate malo starije!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/tri-godine-ha-ha-izgledate-malo-starije.mp3"
+    },
+    {
+      "speaker": "petra",
+      "text": "Zanimljivo! Koliko iskustva imate?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/petra/zanimljivo-koliko-iskustva-imate.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Bavim se marketingom.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/bavim-se-marketingom.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Bok, Petra! Kako si?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/bok-petra-kako-si.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Boli me grlo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/boli-me-grlo.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Čujemo se, bok!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/cujemo-se-bok.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Da, boli me.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/da-boli-me.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Da, ja sam oglas.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/da-ja-sam-oglas.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Da, na penicilin.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/da-na-penicilin.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Da, zbog oglasa sam. Čuli smo se jučer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/da-zbog-oglasa-sam-culi-smo-se-jucer.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Dobar dan. Hvala Vama na pozivu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/dobar-dan-hvala-vama-na-pozivu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Dva dana tjedno od kuće? To je super.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/dva-dana-tjedno-od-kuce-to-je-super.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Dvaput dnevno, nakon jela. Hvala!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/dvaput-dnevno-nakon-jela-hvala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Dvaput tjedno, prije jela?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/dvaput-tjedno-prije-jela.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Hvala, samo gledam.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/hvala-samo-gledam.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Imam tri godine iskustva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/imam-tri-godine-iskustva.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Imam tri godine.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/imam-tri-godine.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Jednom dnevno, prije jela?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/jednom-dnevno-prije-jela.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Jesu li režije besplatne?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/jesu-li-rezije-besplatne.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Kolika je plaća?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/kolika-je-placa.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Kolika je stanarina?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/kolika-je-stanarina.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Malo je uska. Imate li manju?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/malo-je-uska-imate-li-manju.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Malo je uska. Imate li veću?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/malo-je-uska-imate-li-vecu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Mogu se useliti u ponedjeljak.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/mogu-se-useliti-u-ponedjeljak.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Moja veličina je M.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/moja-velicina-je-m.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Može, ali jučer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/moze-ali-jucer.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Može! U koliko sati počinje?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/moze-u-koliko-sati-pocinje.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Možete li ponoviti, molim Vas?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/mozete-li-ponoviti-molim-vas.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Naravno, poslat ću ga danas. Hvala i doviđenja!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/naravno-poslat-cu-ga-danas-hvala-i-dovidjenja.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Nažalost, u petak ne mogu. Imam obvezu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/nazalost-u-petak-ne-mogu-imam-obvezu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Ne, nemam nikakvih alergija.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/ne-nemam-nikakvih-alergija.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Nemam temperaturu, ali malo kašalj.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/nemam-temperaturu-ali-malo-kasalj.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Nemam temperaturu, ali malo kašljem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/nemam-temperaturu-ali-malo-kasljem.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Oprostite, što su režije?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/oprostite-sto-su-rezije.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Osamdeset eura? To je jeftinije nego u drugoj trgovini. Uzet ću je!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/osamdeset-eura-to-je-jeftinije-nego-u-drugoj-trgovini-uzet-c.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Polako, molim Vas. Ne razumijem.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/polako-molim-vas-ne-razumijem.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Radim u marketingu već pet godina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/radim-u-marketingu-vec-pet-godina.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Sto eura? To je preskupo.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/sto-eura-to-je-preskupo.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Stoji mi savršeno!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/stoji-mi-savrseno.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Super! U subotu idem na Jarun.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/super-u-subotu-idem-na-jarun.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Super! U subotu smo bili na Jarunu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/super-u-subotu-smo-bili-na-jarunu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Super! U subotu smo biti na Jarunu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/super-u-subotu-smo-biti-na-jarunu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Svaki dan na daljinu? Super!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/svaki-dan-na-daljinu-super.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Sviđa mi se crna.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/svidja-mi-se-crna.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Sviđa mi se plava.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/svidja-mi-se-plava.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Sviđam se plava.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/svidjam-se-plava.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Tražim zimsku jaknu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/trazim-zimsku-jaknu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Trebam i flaster.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/trebam-i-flaster.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "U nedjelju sam cijeli dan gledao filmove.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/u-nedjelju-sam-cijeli-dan-gledao-filmove.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Znači, nema pologa?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/znaci-nema-pologa.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Znači, polog je osamdeset eura?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/znaci-polog-je-osamdeset-eura.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Znači, polog je petsto eura?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/zagreb-a2/player/znaci-polog-je-petsto-eura.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Brzo ozdravite!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/brzo-ozdravite.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Dobro da ste rekli. U ovim tabletama nema penicilina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/dobro-da-ste-rekli-u-ovim-tabletama-nema-penicilina.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Dobro jutro! Izvolite, kako Vam mogu pomoći?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/dobro-jutro-izvolite-kako-vam-mogu-pomoci.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Imate li temperaturu? I kašljete li — ovako: khm, khm?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/imate-li-temperaturu-i-kasljete-li-ovako-khm-khm.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Imate li temperaturu? Kašljete li?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/imate-li-temperaturu-kasljete-li.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Jeste li alergični na neki lijek?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/jeste-li-alergicni-na-neki-lijek.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Kašalj? Znači — kašljete?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/kasalj-znaci-kasljete.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Naravno, izvolite. Sve skupa je dvanaest eura.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/naravno-izvolite-sve-skupa-je-dvanaest-eura.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Ne — dvaput dnevno, nakon jela.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/ne-dvaput-dnevno-nakon-jela.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Onda Vam preporučujem ove tablete za grlo i sirup protiv kašlja.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/onda-vam-preporucujem-ove-tablete-za-grlo-i-sirup-protiv-kas.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Pitam za alergije — na lijekove.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/pitam-za-alergije-na-lijekove.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Što Vas boli? Glava? Grlo?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/sto-vas-boli-glava-grlo.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "Tablete uzimajte dvaput dnevno, nakon jela.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/tablete-uzimajte-dvaput-dnevno-nakon-jela.mp3"
+    },
+    {
+      "speaker": "sanja",
+      "text": "U redu. Još nešto?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-12%",
+      "pitch": "-12Hz",
+      "audioPath": "/audio/hr/stories/zagreb-a2/sanja/u-redu-jos-nesto.mp3"
+    }
+  ]
+}

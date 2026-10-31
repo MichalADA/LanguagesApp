@@ -1,0 +1,883 @@
+{
+  "provider": "edge-tts",
+  "rate": "-8%",
+  "story": "dubrovnik-b1",
+  "items": [
+    {
+      "speaker": "ante",
+      "text": "Dobar izbor. To je dvanaest eura.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/dobar-izbor-to-je-dvanaest-eura.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Dobro jutro! Kamo putujete?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/dobro-jutro-kamo-putujete.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Ha-ha, i to je opcija! Na Lopudu ima lijepih hotela.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/ha-ha-i-to-je-opcija-na-lopudu-ima-lijepih-hotela.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "I pazite na povratak — izvan sezone nema puno brodova.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/i-pazite-na-povratak-izvan-sezone-nema-puno-brodova.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "I pazite na povratak — trajekt je spor, a izvan sezone nema puno brodova.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/i-pazite-na-povratak-trajekt-je-spor-a-izvan-sezone-nema-pun.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Molim? Za koji otok?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/molim-za-koji-otok.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Može. Karta za trajekt je šest eura.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/moze-karta-za-trajekt-je-sest-eura.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Ne! Drugo pristanište, deset minuta prije polaska.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/ne-drugo-pristaniste-deset-minuta-prije-polaska.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Sporiji? Ne, ne — katamaran je brži!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/sporiji-ne-ne-katamaran-je-brzi.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Sretan put!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/sretan-put.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "U šest navečer. Ako ga propustite, ostajete na otoku do jutra!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/u-sest-navecer-ako-ga-propustite-ostajete-na-otoku-do-jutra.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Ukrcaj počinje deset minuta prije polaska, na drugom pristaništu.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/ukrcaj-pocinje-deset-minuta-prije-polaska-na-drugom-pristani.mp3"
+    },
+    {
+      "speaker": "ante",
+      "text": "Za Lopud imate katamaran u deset i trajekt u jedanaest i petnaest. Katamaran je brži, ali karta je skuplja.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-6%",
+      "pitch": "-14Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/ante/za-lopud-imate-katamaran-u-deset-i-trajekt-u-jedanaest-i-pet.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Dobra večer! Jelena, s lokalnog portala. Imate li minutu za kratki intervju?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/dobra-vecer-jelena-s-lokalnog-portala-imate-li-minutu-za-kra.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Govorite odlično! Odakle ste i što Vas je dovelo u Dubrovnik?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/govorite-odlicno-odakle-ste-i-sto-vas-je-dovelo-u-dubrovnik.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Gradonačelnik je jučer izjavio da će sljedeće godine ulaznice biti jeftinije. Vjerujete li mu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/gradonacelnik-je-jucer-izjavio-da-ce-sljedece-godine-ulaznic.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "I za kraj: što biste poručili turistima koji tek dolaze?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/i-za-kraj-sto-biste-porucili-turistima-koji-tek-dolaze.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Iako je odlična… sviđa Vam se? Mislite — jer je odlična?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/iako-je-odlicna-svidja-vam-se-mislite-jer-je-odlicna.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Lijepo! Kako Vam se sviđa festival?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/lijepo-kako-vam-se-svidja-festival.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Molim? Kada bi trebali doći?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/molim-kada-bi-trebali-doci.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Naravno. Imate li — minutu — za intervju?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/naravno-imate-li-minutu-za-intervju.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Ne, ne — rekao je da će biti jeftinije, ne besplatne.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/ne-ne-rekao-je-da-ce-biti-jeftinije-ne-besplatne.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Odlično, hvala Vam! Intervju će biti objavljen sutra na portalu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/odlicno-hvala-vam-intervju-ce-biti-objavljen-sutra-na-portal.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Pratite nas na društvenim mrežama! Laku noć!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/pratite-nas-na-drustvenim-mrezama-laku-noc.mp3"
+    },
+    {
+      "speaker": "jelena",
+      "text": "Znam, znam — novinarka sam ja! Samo želim čuti Vaše mišljenje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-2%",
+      "pitch": "+6Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/jelena/znam-znam-novinarka-sam-ja-samo-zelim-cuti-vase-misljenje.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Biste li mogli biti u apartmanu poslijepodne, kad majstor dođe?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/biste-li-mogli-biti-u-apartmanu-poslijepodne-kad-majstor-dod.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Dobro jutro! Jeste li se dobro naspavali? Je li sve u redu sa stanom?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/dobro-jutro-jeste-li-se-dobro-naspavali-je-li-sve-u-redu-sa.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Joj! Recite mi, što se dogodilo?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/joj-recite-mi-sto-se-dogodilo.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Jučer? Ha-ha, to bi bilo lijepo, ali ne ide.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/jucer-ha-ha-to-bi-bilo-lijepo-ali-ne-ide.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Može i tako. Majstor dolazi sutra u devet.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/moze-i-tako-majstor-dolazi-sutra-u-devet.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Odlično, majstor dolazi u dva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/odlicno-majstor-dolazi-u-dva.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Opet? Prethodni stanar je imao isti problem. A drugi kvar?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/opet-prethodni-stanar-je-imao-isti-problem-a-drugi-kvar.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Oprostite zbog neugodnosti. Ako bude još problema, javite mi odmah.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/oprostite-zbog-neugodnosti-ako-bude-jos-problema-javite-mi-o.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Polako. Što je s kupaonicom?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/polako-sto-je-s-kupaonicom.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Polog? Pa tek ste stigli!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/polog-pa-tek-ste-stigli.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Savršeno? Drago mi je! Ali čekajte… zašto je pod u kuhinji mokar?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/savrseno-drago-mi-je-ali-cekajte-zasto-je-pod-u-kuhinji-moka.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "To nije dobro. Zvat ću majstora još danas.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/to-nije-dobro-zvat-cu-majstora-jos-danas.mp3"
+    },
+    {
+      "speaker": "mara",
+      "text": "Uživajte u Dubrovniku!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-14%",
+      "pitch": "-16Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/mara/uzivajte-u-dubrovniku.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Bar na stijenama ispod zidina. Sunce zalazi, a Nikola je neobično tih.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/narrator/bar-na-stijenama-ispod-zidina-sunce-zalazi-a-nikola-je-neobi.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Dubrovnik. Apartman u Pločama, s pogledom na stari grad. Ali nešto nije u redu.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/narrator/dubrovnik-apartman-u-plocama-s-pogledom-na-stari-grad-ali-ne.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Gradske zidine. Gotovo dva kilometra kamena oko staroga grada.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/narrator/gradske-zidine-gotovo-dva-kilometra-kamena-oko-staroga-grada.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Luka Gruž, rano ujutro. Red vožnje je samo na hrvatskom.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/narrator/luka-gruz-rano-ujutro-red-voznje-je-samo-na-hrvatskom.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Odvod u kupaonici je začepljen, a ispod sudopera curi voda.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/narrator/odvod-u-kupaonici-je-zacepljen-a-ispod-sudopera-curi-voda.mp3"
+    },
+    {
+      "speaker": "narrator",
+      "text": "Stradun, Dubrovačke ljetne igre. Novinarka s mikrofonom ide ravno prema tebi.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-14%",
+      "pitch": "-8Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/narrator/stradun-dubrovacke-ljetne-igre-novinarka-s-mikrofonom-ide-ra.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Ali ja mislim da je grad ljepši izvan sezone. Što Vi mislite — zašto?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/ali-ja-mislim-da-je-grad-ljepsi-izvan-sezone-sto-vi-mislite.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Dobar dan svima! Ja sam Nikola, vaš vodič. Jeste li prvi put u Dubrovniku?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/dobar-dan-svima-ja-sam-nikola-vas-vodic-jeste-li-prvi-put-u.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Dobar tek? Ali mi samo pijemo, ha-ha!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/dobar-tek-ali-mi-samo-pijemo-ha-ha.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Dobio sam ponudu za posao u Zagrebu. Bolja plaća, ali morao bih se preseliti.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/dobio-sam-ponudu-za-posao-u-zagrebu-bolja-placa-ali-morao-bi.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Dobro pitanje! Izgrađena je u četrnaestom stoljeću, a kasnije je proširena.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/dobro-pitanje-izgradjena-je-u-cetrnaestom-stoljecu-a-kasnije.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Drago mi je! Vidimo se u gradu!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/drago-mi-je-vidimo-se-u-gradu.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Ha-ha, sigurno jeste! Ali mislite — tura je bila zanimljiva?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/ha-ha-sigurno-jeste-ali-mislite-tura-je-bila-zanimljiva.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Hm, ima smisla. Iako mi neće biti lako.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/hm-ima-smisla-iako-mi-nece-biti-lako.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Hm? Kakav je grad izvan sezone?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/hm-kakav-je-grad-izvan-sezone.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Hvala svima na pažnji! Kako vam se svidjela tura?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/hvala-svima-na-paznji-kako-vam-se-svidjela-tura.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Mogu li te nešto pitati? Trebam savjet.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/mogu-li-te-nesto-pitati-trebam-savjet.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Molim? Kada ćeš se vratiti?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/molim-kada-ces-se-vratiti.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Najviša točka je tvrđava Minčeta. Odande je pogled najljepši.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/najvisa-tocka-je-tvrdjava-minceta-odande-je-pogled-najljepsi.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Ne, ne — puno, puno starije!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/ne-ne-puno-puno-starije.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Pitao sam. Mogu dva dana tjedno, ostalo u uredu.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/pitao-sam-mogu-dva-dana-tjedno-ostalo-u-uredu.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Posao je zanimljiv, a tim je odličan. Ali Zagreb… zimi je tamo hladno i sivo.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/posao-je-zanimljiv-a-tim-je-odlican-ali-zagreb-zimi-je-tamo.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Prva vrijeme? Mislite — prvi put? Dobro došli!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/prva-vrijeme-mislite-prvi-put-dobro-dosli.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Recite? Pa nismo na turi, ha-ha!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/recite-pa-nismo-na-turi-ha-ha.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "S jedne strane, to je velika prilika. S druge strane, ovdje su mi obitelj, more… sve.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/s-jedne-strane-to-je-velika-prilika-s-druge-strane-ovdje-su.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Sad smo kod Minčete. Pitajte me što god želite!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/sad-smo-kod-mincete-pitajte-me-sto-god-zelite.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Što misliš, što bih trebao napraviti?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/sto-mislis-sto-bih-trebao-napraviti.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "To je najljepše što sam danas čuo! Živjeli!",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/to-je-najljepse-sto-sam-danas-cuo-zivjeli.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Točno! I na Stradunu je manje gužve.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/tocno-i-na-stradunu-je-manje-guzve.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Žao ti je? Pa nije baš loša vijest…",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/zao-ti-je-pa-nije-bas-losa-vijest.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Zidine su izgrađene između dvanaestog i sedamnaestog stoljeća.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/zidine-su-izgradjene-izmedju-dvanaestog-i-sedamnaestog-stolj.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Znaš što? Kad donesem odluku, ti ćeš prvi saznati. A što je s tobom? Kakvi su tvoji planovi?",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/znas-sto-kad-donesem-odluku-ti-ces-prvi-saznati-a-sto-je-s-t.mp3"
+    },
+    {
+      "speaker": "nikola",
+      "text": "Znate li da je ovdje snimljeno puno filmova i serija? Zato ljeti dolaze mnogi turisti.",
+      "voice": "hr-HR-SreckoNeural",
+      "rate": "-2%",
+      "pitch": "+4Hz",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/nikola/znate-li-da-je-ovdje-snimljeno-puno-filmova-i-serija-zato-lj.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Ako je rekao da će biti jeftinije, nadam se da je to istina.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/ako-je-rekao-da-ce-biti-jeftinije-nadam-se-da-je-to-istina.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Bi li mogao raditi na daljinu?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/bi-li-mogao-raditi-na-daljinu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Da, prva vrijeme.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/da-prva-vrijeme.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Da, prvi put! Već dugo želim vidjeti zidine.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/da-prvi-put-vec-dugo-zelim-vidjeti-zidine.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Da, sve je savršeno, hvala!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/da-sve-je-savrseno-hvala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Dobio si ponudu? Žao mi je!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/dobio-si-ponudu-zao-mi-je.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Gradonačelnik je rekao da su ulaznice besplatne?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/gradonacelnik-je-rekao-da-su-ulaznice-besplatne.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Hvala na upozorenju! Bit ću na pristaništu na vrijeme.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/hvala-na-upozorenju-bit-cu-na-pristanistu-na-vrijeme.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Hvala Vam! Obavijestit ću Vas ako nešto ne bude u redu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/hvala-vam-obavijestit-cu-vas-ako-nesto-ne-bude-u-redu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Hvala Vama, bilo je stvarno zanimljivo!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/hvala-vama-bilo-je-stvarno-zanimljivo.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Hvala, bila sam stvarno zanimljiva!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/hvala-bila-sam-stvarno-zanimljiva.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Hvala! Onda mi vratite polog.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/hvala-onda-mi-vratite-polog.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Iako je predstava odlična, sviđa mi se.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/iako-je-predstava-odlicna-svidja-mi-se.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Iako je ulaznica skupa, predstava je vrijedila svakog centa.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/iako-je-ulaznica-skupa-predstava-je-vrijedila-svakog-centa.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Iskreno, sumnjam. Navodno to kaže svake godine.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/iskreno-sumnjam-navodno-to-kaze-svake-godine.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Ispod sudopera curi voda.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/ispod-sudopera-curi-voda.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Izvan sezone je grad mirniji i jeftiniji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/izvan-sezone-je-grad-mirniji-i-jeftiniji.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Ja sam iz Poljske. Ovdje sam zbog festivala.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/ja-sam-iz-poljske-ovdje-sam-zbog-festivala.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Kad budem imao više vremena, vratit ću se u Dubrovnik.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/kad-budem-imao-vise-vremena-vratit-cu-se-u-dubrovnik.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Kada je izgrađena tvrđava?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/kada-je-izgradjena-tvrdjava.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Kada polazi zadnji brod natrag?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/kada-polazi-zadnji-brod-natrag.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Majstor je mogao doći jučer.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/majstor-je-mogao-doci-jucer.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Mislim da bi trebao prihvatiti ponudu.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/mislim-da-bi-trebao-prihvatiti-ponudu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Mogu biti ovdje do tri sata.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/mogu-biti-ovdje-do-tri-sata.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Možete li govoriti malo sporije?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/mozete-li-govoriti-malo-sporije.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Naravno, ali ja nisam novinar.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/naravno-ali-ja-nisam-novinar.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Naravno, ali moj hrvatski nije savršen.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/naravno-ali-moj-hrvatski-nije-savrsen.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Naravno, reci. Što se dogodilo?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/naravno-reci-sto-se-dogodilo.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Naravno, recite. Što se dogodilo?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/naravno-recite-sto-se-dogodilo.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Nažalost, nije. Moram prijaviti dva kvara.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/nazalost-nije-moram-prijaviti-dva-kvara.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Nažalost, poslijepodne nisam tu. Može li majstor doći sutra ujutro?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/nazalost-poslijepodne-nisam-tu-moze-li-majstor-doci-sutra-uj.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Neka dođu izvan sezone, kad je grad mirniji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/neka-dodju-izvan-sezone-kad-je-grad-mirniji.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Odličan je, iako je na Stradunu prevelika gužva.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/odlican-je-iako-je-na-stradunu-prevelika-guzva.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Odlično, onda ću propustiti brod i ostati na otoku!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/odlicno-onda-cu-propustiti-brod-i-ostati-na-otoku.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Što ti se najviše sviđa u toj ponudi?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/sto-ti-se-najvise-svidja-u-toj-ponudi.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Trebam jednu kartu za Lopud.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/trebam-jednu-kartu-za-lopud.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Uzet ću katamaran — što prije, to bolje.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/uzet-cu-katamaran-sto-prije-to-bolje.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Uzet ću katamaran, jer je sporiji.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/uzet-cu-katamaran-jer-je-sporiji.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Uzet ću trajekt — ne žurim se, a jeftiniji je.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/uzet-cu-trajekt-ne-zurim-se-a-jeftiniji-je.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Živjeli! Za nove početke!",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/zivjeli-za-nove-pocetke.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Znači, na desetom pristaništu, dvije minute prije?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/znaci-na-desetom-pristanistu-dvije-minute-prije.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Znači, na drugom pristaništu, deset minuta prije polaska.",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/znaci-na-drugom-pristanistu-deset-minuta-prije-polaska.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Znači, zidine su izgrađene u dvadesetom stoljeću?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/znaci-zidine-su-izgradjene-u-dvadesetom-stoljecu.mp3"
+    },
+    {
+      "speaker": "player",
+      "text": "Znači, zidine su starije od osamsto godina?",
+      "voice": "hr-HR-GabrijelaNeural",
+      "rate": "-8%",
+      "audioPath": "/audio/hr/stories/dubrovnik-b1/player/znaci-zidine-su-starije-od-osamsto-godina.mp3"
+    }
+  ]
+}

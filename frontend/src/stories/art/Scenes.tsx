@@ -4,7 +4,7 @@
  * podmienia się w art/registry.tsx (np. na pliki z public/stories/…), sceny tego nie zauważą.
  */
 
-const SKY = (
+export const SKY = (
   <defs>
     <linearGradient id="st-sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stopColor="#8fc3e3" />
@@ -29,9 +29,9 @@ const SKY = (
   </defs>
 );
 
-const svgProps = { viewBox: "0 0 1600 900", preserveAspectRatio: "xMidYMid slice", "aria-hidden": true, className: "scene-art" } as const;
+export const svgProps = { viewBox: "0 0 1600 900", preserveAspectRatio: "xMidYMid slice", "aria-hidden": true, className: "scene-art" } as const;
 
-function Palm({ x, y, s = 1 }: { x: number; y: number; s?: number }) {
+export function Palm({ x, y, s = 1 }: { x: number; y: number; s?: number }) {
   return (
     <g transform={`translate(${x} ${y}) scale(${s})`}>
       <path d="M0 0 q-10 -160 14 -300" stroke="#8a6a46" strokeWidth="16" fill="none" strokeLinecap="round" />
@@ -42,7 +42,7 @@ function Palm({ x, y, s = 1 }: { x: number; y: number; s?: number }) {
   );
 }
 
-function Shutter({ x, y, w, h }: { x: number; y: number; w: number; h: number }) {
+export function Shutter({ x, y, w, h }: { x: number; y: number; w: number; h: number }) {
   return (
     <g>
       <rect x={x} y={y} width={w} height={h} rx="4" fill="#4f7d63" />
