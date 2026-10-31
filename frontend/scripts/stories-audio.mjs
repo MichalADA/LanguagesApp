@@ -52,6 +52,10 @@ const EL = {
   anaWarm: "rmUck1qkzTjuEjdC6Cav", // Ana – Pleasant and warm
   provox: "F2kYsMGahtg8auErVXgY", // ProVox – Wise & Gentle
   ivanaEnergetic: "jEKeTj7nqDtk1QSNwXkO", // Ivana – Energetic and spirited
+  hronigma: "fig0OacgTXhKNFpywQvp", // Hronigma Narator – Calm Documentary
+  markoBaritone: "peXmQaCErbfrWCM5FqjH", // Marko – topao baritonski glas
+  lukaPleasant: "olecVpv03asgm9w2Vs6l", // Luka – Pleasant and approachable
+  nikolaBalkan: "DAGnQ7r9sMtV0Q44g1Mi", // Nikola – Balkan Pro
 };
 
 const STORIES = [
@@ -90,6 +94,24 @@ const STORIES = [
         lana: EL.anaWarm,
         dragan: EL.provox,
         maja: EL.ivanaEnergetic,
+      },
+    },
+  },
+  {
+    dir: "dubrovnik-b1",
+    exportName: "DUBROVNIK_B1",
+    courseManifests: ["curriculum/hr-b1/audio-manifest.json"],
+    elevenlabs: {
+      model: "eleven_multilingual_v2",
+      voices: {
+        narrator: EL.hronigma,
+        player: EL.mila,
+        ante: EL.markoBaritone,
+        nikola: EL.lukaPleasant,
+        vesna: EL.milena,
+        jelena: EL.ida,
+        ivo: EL.nikolaBalkan,
+        tea: EL.anaWarm,
       },
     },
   },

@@ -1,7 +1,7 @@
 # Lexodromia Stories
 
 Gra fabularna: gracz podróżuje po Chorwacji, rozmawia z postaciami i wykonuje misje po chorwacku.
-Każdy poziom CEFR to osobne miasto (A1 Split i A2 Zagreb — grywalne, B1 Dubrovnik — zapowiedziany).
+Każdy poziom CEFR to osobne miasto: A1 Split, A2 Zagreb i B1 Dubrovnik — wszystkie grywalne.
 Bez AI: dialogi są napisane wcześniej, a odpowiedzi sprawdzane deterministycznie.
 
 ## Trasy
@@ -102,6 +102,15 @@ placeholdery produkcyjne. Podmiana na docelowe pliki: wpis w `art/registry.tsx`,
 stopniowanie, mieszkanie, poczta, opinie). Słownictwo misji to karty z lekcji A2. Gracz mówi w czasie
 przeszłym tylko w liczbie mnogiej („bili smo”) albo krótko („Jesam.”), bo imiesłów zależy od płci.
 Tła i mapa: `art/ZagrebScenes.tsx`. Głosy ElevenLabs: `scripts/stories-audio.mjs`.
+
+## Dubrownik B1
+
+`data/dubrovnik-b1/`: 7 lokacji (port Gruž, apartament, agencja, apteka, mury, Stradun, plaża Banje),
+6 postaci i 8 misji opartych na modułach kursu B1: grzeczne prośby w trybie warunkowym, usterki
+i kaucja, zebranie zespołu z argumentami, rady w aptece, porównywanie wycieczek, historia miasta,
+festiwal i propozycje, pożegnanie z planami na przyszłość. Gracz unika form zależnych od płci:
+„Biste li mi mogli…?”, „Ako mi bude trebao…”, „Kako bi bilo da…”, czas przyszły i liczba mnoga.
+Tła i mapa: `art/DubrovnikScenes.tsx`.
 
 ## Przyszłe dialogi AI
 

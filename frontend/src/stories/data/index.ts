@@ -25,7 +25,16 @@ export const STORIES: StoryEntry[] = [
     load: () => import("./zagreb-a2/story").then((m) => m.ZAGREB_A2),
     loadAudio: () => import("./zagreb-a2/audio").then((m) => m.ZAGREB_A2_AUDIO),
   },
-  { id: "dubrovnik-b1", city: { hr: "Dubrovnik", pl: "Dubrownik" }, level: "B1", tagline: "Mury, turyści i rozmowy o wszystkim.", courseId: "pl-hr" },
+  {
+    id: "dubrovnik-b1",
+    city: { hr: "Dubrovnik", pl: "Dubrownik" },
+    level: "B1",
+    tagline: "Letnia praca w agencji turystycznej: usterki w apartamencie, zebrania, wycieczki, mury i festiwal.",
+    courseId: "pl-hr",
+    map: "dubrovnik-map",
+    load: () => import("./dubrovnik-b1/story").then((m) => m.DUBROVNIK_B1),
+    loadAudio: () => import("./dubrovnik-b1/audio").then((m) => m.DUBROVNIK_B1_AUDIO),
+  },
 ];
 
 export const findStoryEntry = (id: string | undefined) => STORIES.find((s) => s.id === id);

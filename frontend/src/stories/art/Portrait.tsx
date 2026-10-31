@@ -20,7 +20,7 @@ export interface CharacterLook {
   glasses?: boolean;
   apron?: string;
   /** Mały rekwizyt: klucze (Marko), filiżanka (Ana), plakietka (Ivana), bochenek, koszyk, bilet, okulary przeciwsłoneczne. */
-  prop?: "keys" | "cup" | "badge" | "bread" | "basket" | "ticket" | "stethoscope" | "envelope";
+  prop?: "keys" | "cup" | "badge" | "bread" | "basket" | "ticket" | "stethoscope" | "envelope" | "folder" | "pills";
   /** Okulary przeciwsłoneczne zamiast oczu w neutralnym nastroju (Toni). */
   sunglasses?: boolean;
   /** Czapka piekarza. */
@@ -79,6 +79,30 @@ export const LOOKS: Record<string, CharacterLook> = {
   maja: {
     skin: "#f2cdb0", skinShade: "#d8aa8a", hair: "#e3c27a", hairShade: "#bf9e57", hairStyle: "bob",
     outfit: "#4f8a4a", outfitShade: "#3f6f3b", accent: "#f3ead8", prop: "cup",
+  },
+  ante: {
+    skin: "#c88d60", skinShade: "#a8704a", hair: "#2a201b", hairShade: "#1a1411", hairStyle: "short",
+    outfit: "#f3ead8", outfitShade: "#dcd0b8", accent: "#1f4e79", beard: true, sunglasses: true, prop: "keys",
+  },
+  nikola: {
+    skin: "#e0b08a", skinShade: "#c48f68", hair: "#6b5a4a", hairShade: "#4c3f33", hairStyle: "short",
+    outfit: "#5f7a5b", outfitShade: "#4b6248", accent: "#f2c14e", glasses: true, prop: "keys",
+  },
+  vesna: {
+    skin: "#efc6a5", skinShade: "#d4a483", hair: "#1f1a17", hairShade: "#141110", hairStyle: "bob",
+    outfit: "#8f2440", outfitShade: "#721c33", accent: "#f3ead8", prop: "folder",
+  },
+  jelena: {
+    skin: "#f2cfb2", skinShade: "#d9ad8d", hair: "#8a5a3c", hairShade: "#6b442c", hairStyle: "bun",
+    outfit: "#f7f7f2", outfitShade: "#dcdcd4", accent: "#4f8a4a", glasses: true, prop: "pills",
+  },
+  ivo: {
+    skin: "#d9a982", skinShade: "#bc8a63", hair: "#e6e2da", hairShade: "#bdb8ae", hairStyle: "short",
+    outfit: "#3f5f8f", outfitShade: "#324c73", accent: "#e8c547", beard: true, prop: "badge",
+  },
+  tea: {
+    skin: "#e8b48c", skinShade: "#cc946c", hair: "#3a2418", hairShade: "#271810", hairStyle: "curly",
+    outfit: "#e8823a", outfitShade: "#c96a28", accent: "#f3ead8", prop: "ticket",
   },
   davor: {
     skin: "#dcae8a", skinShade: "#bf8f6b", hair: "#5a4636", hairShade: "#3f3126", hairStyle: "short",
@@ -221,6 +245,24 @@ function Prop({ look }: { look: CharacterLook }) {
         <path d="M50 0 v34" stroke="#2f8fb1" strokeWidth="2" strokeDasharray="4 3" />
         <rect x="8" y="10" width="34" height="4" rx="2" fill="#1f4e79" />
         <rect x="8" y="18" width="22" height="3" rx="1.5" fill="#9bb7c8" />
+      </g>
+    );
+  }
+  if (look.prop === "folder") {
+    return (
+      <g transform="translate(246 430) rotate(-6)">
+        <rect width="74" height="54" rx="4" fill="#2f6f74" />
+        <rect x="6" y="-6" width="30" height="10" rx="3" fill="#2f6f74" />
+        <rect x="10" y="14" width="54" height="5" rx="2" fill="#f3ead8" opacity="0.8" />
+        <rect x="10" y="26" width="38" height="5" rx="2" fill="#f3ead8" opacity="0.8" />
+      </g>
+    );
+  }
+  if (look.prop === "pills") {
+    return (
+      <g transform="translate(252 430)">
+        <rect width="58" height="40" rx="6" fill="#fff" stroke="#9bc4b6" strokeWidth="3" />
+        <path d="M29 8 v24 M17 20 h24" stroke="#4f8a4a" strokeWidth="7" />
       </g>
     );
   }

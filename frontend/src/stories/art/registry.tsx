@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { Mood } from "../types";
 import { CharacterPortrait } from "./Portrait";
+import { DbAgencyScene, DbBeachScene, DbFlatScene, DbPharmacyScene, DbPortScene, DbStradunScene, DbWallsScene, DubrovnikMap } from "./DubrovnikScenes";
 import { ZagrebMap, ZgBoutiqueScene, ZgCafeScene, ZgClinicScene, ZgFlatScene, ZgOfficeScene, ZgPostScene, ZgUpperTownScene } from "./ZagrebScenes";
 import { ApartmentScene, BakeryScene, BeachScene, CafeScene, MarketScene, PlaceholderScene, PortScene, ShopScene, SplitMap, StationScene } from "./Scenes";
 
@@ -29,12 +30,20 @@ export const BACKGROUNDS: Record<string, ArtAsset> = {
   "zg-butik": { kind: "svg", render: () => <ZgBoutiqueScene /> },
   "zg-posta": { kind: "svg", render: () => <ZgPostScene /> },
   "zg-gornji-grad": { kind: "svg", render: () => <ZgUpperTownScene /> },
+  "db-luka": { kind: "svg", render: () => <DbPortScene /> },
+  "db-apartman": { kind: "svg", render: () => <DbFlatScene /> },
+  "db-agencija": { kind: "svg", render: () => <DbAgencyScene /> },
+  "db-ljekarna": { kind: "svg", render: () => <DbPharmacyScene /> },
+  "db-zidine": { kind: "svg", render: () => <DbWallsScene /> },
+  "db-stradun": { kind: "svg", render: () => <DbStradunScene /> },
+  "db-banje": { kind: "svg", render: () => <DbBeachScene /> },
   placeholder: { kind: "svg", render: () => <PlaceholderScene /> },
 };
 
 export const MAPS: Record<string, ArtAsset> = {
   "split-map": { kind: "svg", render: () => <SplitMap /> },
   "zagreb-map": { kind: "svg", render: () => <ZagrebMap /> },
+  "dubrovnik-map": { kind: "svg", render: () => <DubrovnikMap /> },
 };
 
 export const PORTRAITS: Record<string, PortraitAsset> = {
@@ -52,6 +61,12 @@ export const PORTRAITS: Record<string, PortraitAsset> = {
   lana: { kind: "svg", character: "lana" },
   dragan: { kind: "svg", character: "dragan" },
   maja: { kind: "svg", character: "maja" },
+  ante: { kind: "svg", character: "ante" },
+  nikola: { kind: "svg", character: "nikola" },
+  vesna: { kind: "svg", character: "vesna" },
+  jelena: { kind: "svg", character: "jelena" },
+  ivo: { kind: "svg", character: "ivo" },
+  tea: { kind: "svg", character: "tea" },
 };
 
 /** Tło albo mapa — z bezpiecznym zastępnikiem, gdy id nie ma w rejestrze. */
