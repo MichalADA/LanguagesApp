@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import type { Mood } from "../types";
 import { CharacterPortrait } from "./Portrait";
-import { ApartmentScene, CafeScene, PlaceholderScene, ShopScene, SplitMap } from "./Scenes";
+import { ApartmentScene, BakeryScene, BeachScene, CafeScene, MarketScene, PlaceholderScene, PortScene, ShopScene, SplitMap, StationScene } from "./Scenes";
 
 /**
  * Rejestr grafik Stories — jedyne miejsce, które wie, czym jest tło, portret czy mapa.
@@ -16,6 +16,11 @@ export const BACKGROUNDS: Record<string, ArtAsset> = {
   apartman: { kind: "svg", render: () => <ApartmentScene /> },
   kafic: { kind: "svg", render: () => <CafeScene /> },
   trgovina: { kind: "svg", render: () => <ShopScene /> },
+  pekara: { kind: "svg", render: () => <BakeryScene /> },
+  trznica: { kind: "svg", render: () => <MarketScene /> },
+  plaza: { kind: "svg", render: () => <BeachScene /> },
+  luka: { kind: "svg", render: () => <PortScene /> },
+  kolodvor: { kind: "svg", render: () => <StationScene /> },
   placeholder: { kind: "svg", render: () => <PlaceholderScene /> },
 };
 
@@ -27,6 +32,11 @@ export const PORTRAITS: Record<string, PortraitAsset> = {
   marko: { kind: "svg", character: "marko" },
   ana: { kind: "svg", character: "ana" },
   ivana: { kind: "svg", character: "ivana" },
+  josip: { kind: "svg", character: "josip" },
+  mare: { kind: "svg", character: "mare" },
+  toni: { kind: "svg", character: "toni" },
+  petra: { kind: "svg", character: "petra" },
+  davor: { kind: "svg", character: "davor" },
 };
 
 /** Tło albo mapa — z bezpiecznym zastępnikiem, gdy id nie ma w rejestrze. */

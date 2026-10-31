@@ -60,6 +60,7 @@ const repo = src('src/stories/repository.ts');
 const { SPLIT_A1 } = src('src/stories/data/split-a1/story.ts');
 const { STORIES } = src('src/stories/data/index.ts');
 const builders = src('src/stories/data/builders.ts');
+const { PORTRAITS } = src('src/stories/art/registry.tsx');
 const rules = course.validation;
 const vars = { name: 'Michał' };
 const mission = (id) => SPLIT_A1.missions.find((m) => m.id === id);
@@ -103,12 +104,14 @@ function play(m, { policy = 'right', world = { flags: [], completed: [], vars },
 
 /* ---------- Dane ---------- */
 
-test('Split A1: 3 lokacje z misjami, 3 postacie, 5 misji i poprawna struktura wszystkich dialogów', () => {
+test('Split A1: 8 lokacji z misjami, 8 postaci, 10 misji i poprawna struktura wszystkich dialogów', () => {
   assert.deepEqual(validateStory(SPLIT_A1), []);
-  assert.equal(SPLIT_A1.missions.length, 5);
-  assert.equal(SPLIT_A1.npcs.length, 3);
-  assert.deepEqual(SPLIT_A1.locations.filter((l) => !l.comingSoon).map((l) => l.id), ['apartman', 'kafic', 'trgovina']);
-  assert.ok(SPLIT_A1.locations.filter((l) => l.comingSoon).length >= 5, 'przygotowane miejsca na port, plażę, dworzec, piekarnię i targ');
+  assert.equal(SPLIT_A1.missions.length, 10);
+  assert.equal(SPLIT_A1.npcs.length, 8);
+  assert.deepEqual(SPLIT_A1.locations.filter((l) => !l.comingSoon).map((l) => l.id), ['apartman', 'kafic', 'trgovina', 'pekara', 'trznica', 'plaza', 'luka', 'kolodvor']);
+  // Każda lokacja ma własne tło i postać z portretem (bez placeholderów).
+  for (const l of SPLIT_A1.locations) assert.notEqual(l.background, 'placeholder', l.id);
+  for (const n of SPLIT_A1.npcs) assert.ok(PORTRAITS[n.portrait], `${n.id}: brak portretu`);
   assert.equal(SPLIT_A1.languageReview, 'unverified', 'treść nie jest oznaczona jako sprawdzona przez native speakera');
   // Architektura miast: A1 grywalne, A2 i B1 zapowiedziane.
   assert.deepEqual(STORIES.map((s) => [s.city.hr, s.level, Boolean(s.load)]), [['Split', 'A1', true], ['Zagreb', 'A2', false], ['Dubrovnik', 'B1', false]]);
@@ -123,8 +126,8 @@ test('każda misja ma progresję rozpoznanie → układanie → wpisywanie i kil
     assert.ok(nodes.some((n) => n.kind === 'choice' && n.options.some((o) => o.verdict === 'wrong')), `${m.id}: błędne odpowiedzi z reakcją`);
     assert.ok(m.objectives.length >= 2 && m.debrief.length >= 2 && m.goal && m.story, `${m.id}: cel, historia, podsumowanie`);
   }
-  // W całym mieście są też zadania z układaniem zdania (w 4 z 5 misji).
-  assert.ok(SPLIT_A1.missions.filter((m) => Object.values(m.dialogue.graph.nodes).some((n) => n.kind === 'build')).length >= 4);
+  // W całym mieście są też zadania z układaniem zdania (w 9 z 10 misji).
+  assert.ok(SPLIT_A1.missions.filter((m) => Object.values(m.dialogue.graph.nodes).some((n) => n.kind === 'build')).length >= 9);
 });
 
 test('walidacja wykrywa błędy w scenariuszu', () => {
@@ -259,8 +262,9 @@ test('progresja: odblokowanie lokacji i misji, nagroda tylko raz, najlepszy wyni
   const status = () => Object.fromEntries(SPLIT_A1.missions.map((m) => [m.id, progressLib.missionStatus(SPLIT_A1, p, m)]));
   const loc = (id) => progressLib.isLocationUnlocked(SPLIT_A1.locations.find((l) => l.id === id), p);
   // Od początku: apartament i kawiarnia (od razu można porozmawiać z Aną); sklep wymaga klucza.
-  assert.deepEqual(status(), { 'm1-welcome': 'available', 'm2-key': 'locked', 'm3-coffee': 'available', 'm4-price': 'locked', 'm5-shop': 'locked' });
-  assert.deepEqual([loc('apartman'), loc('kafic'), loc('trgovina'), loc('luka')], [true, true, false, false]);
+  const locked = Object.fromEntries(['m2-key', 'm4-price', 'm5-shop', 'm6-bakery', 'm7-market', 'm8-beach', 'm9-ferry', 'm10-station'].map((id) => [id, 'locked']));
+  assert.deepEqual(status(), { ...locked, 'm1-welcome': 'available', 'm3-coffee': 'available' });
+  assert.deepEqual(['apartman', 'kafic', 'trgovina', 'pekara', 'trznica', 'plaza', 'luka', 'kolodvor'].map(loc), [true, true, false, false, false, false, false, false]);
   assert.equal(progressLib.nextMission(SPLIT_A1, p).id, 'm1-welcome');
 
   let r = progressLib.completeMission(p, mission('m1-welcome'), 60, ['met-marko']);
@@ -274,6 +278,9 @@ test('progresja: odblokowanie lokacji i misji, nagroda tylko raz, najlepszy wyni
   assert.deepEqual(r.progress.missions[0].plays, 2);
   p = progressLib.completeMission(r.progress, mission('m2-key'), 80, []).progress;
   assert.equal(loc('trgovina'), true, 'sklep po kluczu');
+  assert.equal(loc('pekara'), true, 'piekarnia po kluczu');
+  assert.equal(status()['m6-bakery'], 'available');
+  assert.equal(loc('luka'), false, 'port dopiero po plaży');
   assert.equal(p.xp, 60);
   // Zmanipulowany zapis: XP liczone z misji, śmieci odrzucone.
   const dirty = progressLib.sanitizeProgress('split-a1', { flags: ['a', 1, 'a'], xp: 99999, missions: [p.missions[0], p.missions[0], { missionId: 3 }] });

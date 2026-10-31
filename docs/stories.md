@@ -69,8 +69,10 @@ Postacie mówią: każda nowa kwestia (także narratora) odtwarza się automatyc
 jest przełącznik „Głos / Bez głosu” (zapamiętywany) i przycisk ponownego odsłuchu przy kwestii.
 Bez animacji ust.
 
-- Profil głosu postaci jest w danych (`story.ts`: `npc.voice`, `narratorVoice`) — chorwackie głosy
-  edge-tts (damski Gabrijela, męski Srećko); Ivanę odróżnia od Any niższa wysokość i wolniejsze tempo.
+- Split A1 jest nagrany w ElevenLabs (płatne): każda postać ma własny głos z chorwackiej biblioteki,
+  przypisany w `scripts/stories-audio.mjs` (`elevenlabs.voices`, voice_id per mówiący). Generowanie wymaga
+  `ELEVENLABS_API_KEY` i flagi `--allow-paid` (szczegóły: `tools/listening/README.md`).
+- Historie bez bloku `elevenlabs` używają profilu z danych (`npc.voice`, `narratorVoice`) i głosów edge-tts.
 - `npm run stories:audio` zbiera wszystkie kwestie (postacie, narrator, wzorcowe odpowiedzi gracza),
   wykorzystuje nagrania kursu przy identycznym tekście i głosie, a resztę zapisuje do
   `curriculum/stories/<historia>-audio-manifest.json`. Synteza (jednorazowo, pliki trafiają do repo):
@@ -86,8 +88,9 @@ placeholdery produkcyjne. Podmiana na docelowe pliki: wpis w `art/registry.tsx`,
 
 ## Nowe miasto / lokacja / misja
 
-1. Lokacja: wpis w `story.locations` (tło z rejestru, pozycja na mapie, `unlock`). Zapowiedziane
-   miejsca Splitu (`comingSoon`: port, plaża, dworzec, piekarnia, targ) czekają na misje.
+1. Lokacja: wpis w `story.locations` (tło z rejestru, pozycja na mapie, `unlock`). Split A1 ma 8 lokacji
+   i 10 misji: apartament, kawiarnia, sklep, piekarnia (Josip), targ (Mare), plaża (Toni), port (Petra)
+   i dworzec (Davor). `comingSoon` zostaje dla przyszłych miejsc.
 2. Misja: obiekt `Mission` w `data/<miasto>/missions.ts` (graf przez `data/builders.ts`).
 3. Miasto: katalog `data/<miasto>/` + wpis w `data/index.ts` (+ manifest nagrań w `scripts/stories-audio.mjs`).
 4. `npm run stories:audio`, `npm test` (walidacja zatrzyma błędny scenariusz).

@@ -198,6 +198,263 @@ export function ShopScene() {
   );
 }
 
+/** Piekarnia: kamienny piec, kosze z chlebem, lada z burkiem i ciastami. */
+export function BakeryScene() {
+  return (
+    <svg {...svgProps}>
+      {SKY}
+      <rect width="1600" height="900" fill="url(#st-stone)" />
+      {Array.from({ length: 6 }, (_, row) =>
+        Array.from({ length: 9 }, (_, col) => (
+          <rect key={`${row}-${col}`} x={col * 180 + (row % 2) * 90 - 40} y={row * 80} width="170" height="72" rx="6" fill="#e6d4b2" opacity="0.55" />
+        )),
+      )}
+      <rect y="0" width="1600" height="80" fill="#7a4a2e" />
+      <text x="800" y="56" textAnchor="middle" fill="#f3ead8" fontSize="40" fontFamily="Georgia, serif" letterSpacing="8">PEKARA</text>
+      {/* Piec */}
+      <path d="M1060 520 v-200 q0 -150 180 -150 q180 0 180 150 v200z" fill="#b5654a" />
+      <path d="M1140 520 v-110 q0 -90 100 -90 q100 0 100 90 v110z" fill="#2c1d17" />
+      <path d="M1160 520 v-70 q0 -60 80 -60 q80 0 80 60 v70z" fill="#e8823a" opacity="0.85" />
+      <path d="M1180 520 q20 -60 40 -10 q20 -70 40 -6 q20 -50 40 16z" fill="#f2c14e" />
+      {/* Półki z chlebem */}
+      {[220, 360].map((y) => (
+        <g key={y}>
+          <rect x="120" y={y} width="760" height="16" rx="4" fill="#8f6440" />
+          {[160, 300, 440, 580, 720].map((x, i) => (
+            <ellipse key={x} cx={x + 50} cy={y - 26} rx={i % 2 ? 56 : 64} ry="28" fill={i % 2 ? "#b9773a" : "#d39b5c"} />
+          ))}
+        </g>
+      ))}
+      {/* Lada z gablotą */}
+      <rect x="80" y="520" width="1440" height="380" fill="#7a4a2e" />
+      <rect x="80" y="506" width="1440" height="28" rx="8" fill="#a77c52" />
+      <rect x="160" y="440" width="820" height="80" rx="10" fill="#d8eef5" opacity="0.6" stroke="#a77c52" strokeWidth="6" />
+      {/* Burek (spirala) i ciasta */}
+      {[260, 420].map((x) => (
+        <g key={x}>
+          <circle cx={x} cy="486" r="36" fill="#e0b072" />
+          <path d={`M${x} 486 m-24 0 a24 24 0 1 1 48 0 a16 16 0 1 1 -32 0 a8 8 0 1 1 16 0`} fill="none" stroke="#b9773a" strokeWidth="4" />
+        </g>
+      ))}
+      {[600, 740, 880].map((x) => (
+        <g key={x}>
+          <rect x={x - 40} y="464" width="80" height="40" rx="6" fill="#f3ead8" />
+          <rect x={x - 40} y="464" width="80" height="14" rx="6" fill="#8f2440" />
+        </g>
+      ))}
+      <rect x="1430" y="436" width="150" height="70" rx="8" fill="#3b3b3b" />
+      <rect x="1446" y="450" width="118" height="28" rx="4" fill="#8fd18f" />
+      <text x="1505" y="471" textAnchor="middle" fill="#1d3d1d" fontSize="20" fontFamily="monospace">6,00 €</text>
+    </svg>
+  );
+}
+
+/** Targ: płócienne markizy nad straganami, skrzynki owoców i warzyw, mury pałacu w tle. */
+export function MarketScene() {
+  const awning = (x: number, color: string) => (
+    <g key={x}>
+      <path d={`M${x} 330 l40 -90 h360 l40 90z`} fill={color} />
+      {Array.from({ length: 6 }, (_, i) => (
+        <path key={i} d={`M${x + i * 73} 330 q37 30 73 0`} fill={color} />
+      ))}
+      <rect x={x + 30} y="330" width="10" height="320" fill="#6b5236" />
+      <rect x={x + 400} y="330" width="10" height="320" fill="#6b5236" />
+    </g>
+  );
+  const crate = (x: number, y: number, fill: string, r = 18) => (
+    <g key={`${x}-${y}`}>
+      <rect x={x} y={y} width="170" height="70" rx="6" fill="#a77c52" />
+      {Array.from({ length: 8 }, (_, j) => (
+        <circle key={j} cx={x + 22 + (j % 4) * 42} cy={y + 4 + Math.floor(j / 4) * 22} r={r} fill={fill} />
+      ))}
+    </g>
+  );
+  return (
+    <svg {...svgProps}>
+      {SKY}
+      <rect width="1600" height="900" fill="url(#st-sky)" />
+      {/* Mury pałacu Dioklecjana */}
+      <rect y="150" width="1600" height="360" fill="url(#st-stone)" />
+      {Array.from({ length: 16 }, (_, i) => (
+        <rect key={i} x={i * 100 + 10} y="120" width="60" height="40" fill="#e6d4b2" />
+      ))}
+      {[200, 700, 1200].map((x) => (
+        <path key={x} d={`M${x} 420 v-110 q0 -50 50 -50 q50 0 50 50 v110z`} fill="#b59a6c" opacity="0.7" />
+      ))}
+      <rect y="640" width="1600" height="260" fill="#cdb38b" />
+      {awning(60, "#d9534f")}
+      {awning(580, "#f2c14e")}
+      {awning(1100, "#4f8a4a")}
+      {/* Stoły straganów */}
+      {[60, 580, 1100].map((x) => (
+        <rect key={x} x={x} y="560" width="440" height="24" rx="6" fill="#8f6440" />
+      ))}
+      {crate(80, 492, "#d9534f")}
+      {crate(310, 492, "#e8c547")}
+      {crate(600, 492, "#7fb069")}
+      {crate(830, 492, "#e8823a")}
+      {crate(1120, 492, "#4f8a4a", 16)}
+      {crate(1350, 492, "#8f2440", 14)}
+      {/* Tabliczki z cenami */}
+      {[["jabuke 3 €/kg", 160], ["naranče 2 €/kg", 680], ["povrće", 1200]].map(([t, x]) => (
+        <g key={t as string}>
+          <rect x={x as number} y="420" width="150" height="44" rx="6" fill="#2c2321" />
+          <text x={(x as number) + 75} y="449" textAnchor="middle" fill="#f3ead8" fontSize="20" fontFamily="Georgia, serif">{t}</text>
+        </g>
+      ))}
+      {/* Skrzynki na ziemi */}
+      {crate(240, 760, "#d9534f")}
+      {crate(1180, 760, "#e8c547")}
+    </svg>
+  );
+}
+
+/** Plaża Bačvice: piasek, płytka zatoka, leżaki z parasolami, piłka do picigina. */
+export function BeachScene() {
+  const umbrella = (x: number, color: string) => (
+    <g key={x}>
+      <rect x={x - 5} y="470" width="10" height="250" fill="#f3ead8" />
+      <path d={`M${x - 150} 490 q150 -130 300 0z`} fill={color} />
+      {[-100, -50, 0, 50, 100].map((d) => (
+        <path key={d} d={`M${x + d - 25} 490 q25 18 50 0`} fill={color} />
+      ))}
+    </g>
+  );
+  const sunbed = (x: number) => (
+    <g key={x}>
+      <path d={`M${x} 760 h220 l40 -70 h-30 l-30 50 h-200z`} fill="#f3ead8" stroke="#c8b8a0" strokeWidth="4" />
+      <rect x={x + 10} y="760" width="8" height="40" fill="#a77c52" />
+      <rect x={x + 200} y="760" width="8" height="40" fill="#a77c52" />
+      <rect x={x + 20} y="738" width="150" height="16" rx="6" fill="#2f8fb1" opacity="0.8" />
+    </g>
+  );
+  return (
+    <svg {...svgProps}>
+      {SKY}
+      <rect width="1600" height="900" fill="url(#st-sky)" />
+      <circle cx="1300" cy="140" r="140" fill="url(#st-sun)" />
+      <circle cx="1300" cy="140" r="54" fill="#fff3c4" />
+      <path d="M0 360 q240 -60 520 -10 q200 -40 400 10 v40 h-920z" fill="#8ea37c" opacity="0.8" />
+      <rect y="380" width="1600" height="240" fill="url(#st-sea)" />
+      {[440, 500, 560].map((y, i) => (
+        <path key={y} d={`M${100 + i * 200} ${y} q60 -16 120 0 M${900 + i * 120} ${y + 20} q60 -16 120 0`} stroke="#bfe3f0" strokeWidth="4" fill="none" opacity="0.7" />
+      ))}
+      <path d="M0 600 q400 -50 800 -10 q400 40 800 -20 v330 h-1600z" fill="#ecd9a8" />
+      <path d="M0 610 q400 -50 800 -10 q400 40 800 -20" stroke="#f7f3e6" strokeWidth="10" fill="none" opacity="0.8" />
+      {umbrella(360, "#d9534f")}
+      {umbrella(1220, "#2f8fb1")}
+      {sunbed(220)}
+      {sunbed(1080)}
+      {/* Piłka do picigina i ręcznik */}
+      <circle cx="760" cy="780" r="26" fill="#f2c14e" />
+      <path d="M738 770 q22 20 44 0" stroke="#e8823a" strokeWidth="4" fill="none" />
+      <rect x="560" y="820" width="200" height="60" rx="8" fill="#8f2440" transform="rotate(-6 660 850)" />
+      <rect x="560" y="836" width="200" height="10" fill="#f3ead8" transform="rotate(-6 660 850)" />
+      <Palm x={60} y={700} s={0.9} />
+    </svg>
+  );
+}
+
+/** Port: nabrzeże, prom z otwartą rampą, kasa biletowa z rozkładem rejsów. */
+export function PortScene() {
+  return (
+    <svg {...svgProps}>
+      {SKY}
+      <rect width="1600" height="900" fill="url(#st-sky)" />
+      <path d="M0 360 q200 -80 420 -30 q260 -60 520 -10 q300 -50 660 10 v80 h-1600z" fill="#8ea37c" opacity="0.75" />
+      <rect y="400" width="1600" height="300" fill="url(#st-sea)" />
+      {/* Prom */}
+      <path d="M760 560 h760 l-60 110 h-660z" fill="#f7f7f2" />
+      <rect x="760" y="600" width="760" height="22" fill="#1f4e79" />
+      <rect x="880" y="470" width="520" height="90" rx="8" fill="#f7f7f2" />
+      {Array.from({ length: 8 }, (_, i) => (
+        <rect key={i} x={904 + i * 62} y="490" width="40" height="28" rx="4" fill="#a6d0e4" />
+      ))}
+      <rect x="1240" y="400" width="44" height="72" fill="#d9534f" />
+      <rect x="1240" y="400" width="44" height="14" fill="#2c2321" />
+      <path d="M760 640 l-140 60 h40 l120 -40z" fill="#9a9a96" />
+      <text x="1140" y="652" textAnchor="middle" fill="#1f4e79" fontSize="30" fontFamily="Georgia, serif" letterSpacing="4">BRAČ</text>
+      {/* Nabrzeże */}
+      <rect y="690" width="1600" height="210" fill="#cdbfa6" />
+      <rect y="690" width="1600" height="14" fill="#a89a80" />
+      {[120, 520].map((x) => (
+        <g key={x}>
+          <rect x={x} y="660" width="34" height="40" rx="8" fill="#3b3b3b" />
+          <rect x={x - 6} y="656" width="46" height="10" rx="4" fill="#5c5650" />
+        </g>
+      ))}
+      {/* Kasa biletowa */}
+      <rect x="40" y="300" width="560" height="400" fill="url(#st-stone)" />
+      <rect x="20" y="270" width="600" height="50" fill="#1f4e79" />
+      <text x="320" y="306" textAnchor="middle" fill="#f3ead8" fontSize="30" fontFamily="Georgia, serif" letterSpacing="4">KARTE · TICKETS</text>
+      <rect x="100" y="360" width="200" height="160" rx="8" fill="#a6d0e4" stroke="#7a4a2e" strokeWidth="8" />
+      <rect x="340" y="350" width="220" height="230" rx="6" fill="#2c2321" />
+      <text x="450" y="384" textAnchor="middle" fill="#f2c14e" fontSize="22" fontFamily="monospace">POLASCI</text>
+      {[["Brač", "11:00"], ["Hvar", "12:30"], ["Šolta", "14:15"], ["Vis", "17:00"]].map(([d, t], i) => (
+        <g key={d}>
+          <text x="360" y={426 + i * 38} fill="#efe2c8" fontSize="22" fontFamily="monospace">{d}</text>
+          <text x="540" y={426 + i * 38} textAnchor="end" fill="#8fd18f" fontSize="22" fontFamily="monospace">{t}</text>
+        </g>
+      ))}
+      <rect x="80" y="560" width="480" height="140" fill="#7a4a2e" />
+      <rect x="80" y="548" width="480" height="20" rx="6" fill="#a77c52" />
+    </svg>
+  );
+}
+
+/** Dworzec autobusowy: wiata, tablica odjazdów, autobus przy stanowisku 3. */
+export function StationScene() {
+  return (
+    <svg {...svgProps}>
+      {SKY}
+      <rect width="1600" height="900" fill="url(#st-sky)" />
+      <rect y="380" width="1600" height="160" fill="url(#st-sea)" opacity="0.8" />
+      <rect y="520" width="1600" height="380" fill="#9a958c" />
+      {Array.from({ length: 8 }, (_, i) => (
+        <rect key={i} x={i * 210 + 40} y="700" width="120" height="12" rx="4" fill="#f3ead8" opacity="0.7" />
+      ))}
+      {/* Wiata */}
+      <rect x="0" y="160" width="1600" height="40" fill="#5c5650" />
+      {[80, 560, 1040, 1520].map((x) => (
+        <rect key={x} x={x} y="200" width="20" height="440" fill="#6f6a62" />
+      ))}
+      {/* Autobus */}
+      <rect x="760" y="380" width="760" height="270" rx="30" fill="#f7f7f2" />
+      <rect x="760" y="560" width="760" height="40" fill="#2f8fb1" />
+      {Array.from({ length: 6 }, (_, i) => (
+        <rect key={i} x={800 + i * 116} y="410" width="96" height="110" rx="10" fill="#a6d0e4" />
+      ))}
+      <rect x="1440" y="410" width="60" height="150" rx="8" fill="#a6d0e4" />
+      <rect x="1250" y="396" width="200" height="10" fill="#3b3b3b" />
+      <text x="1000" y="590" textAnchor="middle" fill="#f7f7f2" fontSize="26" fontFamily="Georgia, serif" letterSpacing="4">ZAGREB</text>
+      {[880, 1380].map((x) => (
+        <g key={x}>
+          <circle cx={x} cy="650" r="46" fill="#2c2321" />
+          <circle cx={x} cy="650" r="20" fill="#9a9a96" />
+        </g>
+      ))}
+      {/* Stanowisko 3 */}
+      <rect x="640" y="230" width="90" height="90" rx="10" fill="#1f4e79" />
+      <text x="685" y="296" textAnchor="middle" fill="#f3ead8" fontSize="60" fontFamily="Georgia, serif">3</text>
+      {/* Tablica odjazdów i okienko informacji */}
+      <rect x="60" y="240" width="520" height="290" rx="8" fill="#2c2321" />
+      <text x="320" y="282" textAnchor="middle" fill="#f2c14e" fontSize="24" fontFamily="monospace">POLASCI · DEPARTURES</text>
+      {[["Zagreb", "09:30", "3", "+10"], ["Rijeka", "10:15", "5", ""], ["Dubrovnik", "11:00", "1", ""], ["Zadar", "12:45", "2", ""]].map(([d, t, p, late], i) => (
+        <g key={d}>
+          <text x="84" y={330 + i * 50} fill="#efe2c8" fontSize="24" fontFamily="monospace">{d}</text>
+          <text x="370" y={330 + i * 50} fill="#8fd18f" fontSize="24" fontFamily="monospace">{t}</text>
+          <text x="470" y={330 + i * 50} fill="#efe2c8" fontSize="24" fontFamily="monospace">{p}</text>
+          {late && <text x="560" y={330 + i * 50} textAnchor="end" fill="#e8823a" fontSize="22" fontFamily="monospace">{late}</text>}
+        </g>
+      ))}
+      <rect x="60" y="560" width="520" height="340" fill="#8f2440" />
+      <rect x="60" y="548" width="520" height="22" rx="6" fill="#721c33" />
+      <circle cx="320" cy="640" r="34" fill="#f3ead8" />
+      <text x="320" y="656" textAnchor="middle" fill="#8f2440" fontSize="44" fontFamily="Georgia, serif">i</text>
+    </svg>
+  );
+}
+
 /** Zapowiedziana lokacja / brak grafiki: spokojne tło w kolorach Lexodromii. */
 export function PlaceholderScene() {
   return (

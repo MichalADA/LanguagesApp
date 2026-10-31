@@ -40,6 +40,11 @@ const EL = {
   ivan: "jJ1MUnCKtrOI23TlUUHc", // Ivan – Clear Croatian Narrator
   nina: "FXlzTee7Zx2caYKIAwBF", // Nina – Calm, Warm & Resonant
   mila: "eqAqnItEUARzEkoDCTJ1", // Mila – Pleasant and gentle
+  boris: "ocaele7kOTNS1wQzhbSM", // Boris – Deep, Calm and Narrative
+  milena: "7IVTG9LKLYndnFiFDLU2", // Milena – Balkan Pro
+  mihael: "jVBTQrP67HZEE22UqQGF", // Mihael – HQ Croatian Radio TV Voice over (młody)
+  ida: "d3l4f3HgkE3P6Fo91lYA", // Ida – Clear & Confident
+  branimir: "WxQSzlR1UORgKEiMk1n4", // Branimir – Professional Croatian Studio
 };
 
 const STORIES = [
@@ -49,7 +54,18 @@ const STORIES = [
     courseManifests: ["curriculum/hr-a1/audio-manifest.json"],
     elevenlabs: {
       model: "eleven_multilingual_v2",
-      voices: { narrator: EL.tomislav, marko: EL.ivan, ana: EL.sara, ivana: EL.nina, player: EL.mila },
+      voices: {
+        narrator: EL.tomislav,
+        marko: EL.ivan,
+        ana: EL.sara,
+        ivana: EL.nina,
+        player: EL.mila,
+        josip: EL.boris,
+        mare: EL.milena,
+        toni: EL.mihael,
+        petra: EL.ida,
+        davor: EL.branimir,
+      },
     },
   },
 ];

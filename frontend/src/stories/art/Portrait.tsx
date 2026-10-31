@@ -12,15 +12,19 @@ export interface CharacterLook {
   hair: string;
   hairShade: string;
   /** Kształt fryzury. */
-  hairStyle: "curly" | "bun" | "bob";
+  hairStyle: "curly" | "bun" | "bob" | "short";
   outfit: string;
   outfitShade: string;
   accent: string;
   beard?: boolean;
   glasses?: boolean;
   apron?: string;
-  /** Mały rekwizyt: klucze (Marko), filiżanka (Ana), plakietka (Ivana). */
-  prop?: "keys" | "cup" | "badge";
+  /** Mały rekwizyt: klucze (Marko), filiżanka (Ana), plakietka (Ivana), bochenek, koszyk, bilet, okulary przeciwsłoneczne. */
+  prop?: "keys" | "cup" | "badge" | "bread" | "basket" | "ticket";
+  /** Okulary przeciwsłoneczne zamiast oczu w neutralnym nastroju (Toni). */
+  sunglasses?: boolean;
+  /** Czapka piekarza. */
+  bakerHat?: boolean;
 }
 
 export const LOOKS: Record<string, CharacterLook> = {
@@ -36,9 +40,40 @@ export const LOOKS: Record<string, CharacterLook> = {
     skin: "#e9bd9a", skinShade: "#cf9c78", hair: "#9a5a3c", hairShade: "#7a442c", hairStyle: "bob",
     outfit: "#2f6f74", outfitShade: "#245a5e", accent: "#f2c14e", glasses: true, prop: "badge",
   },
+  josip: {
+    skin: "#e6b38e", skinShade: "#c9916c", hair: "#9a9a96", hairShade: "#6f6f6b", hairStyle: "short",
+    outfit: "#f6f1e6", outfitShade: "#dcd3c0", accent: "#c98b4b", beard: true, apron: "#e9dfc9", bakerHat: true, prop: "bread",
+  },
+  mare: {
+    skin: "#e8b995", skinShade: "#cc9872", hair: "#cfcac2", hairShade: "#a8a29a", hairStyle: "bun",
+    outfit: "#3f5f8f", outfitShade: "#324c73", accent: "#d9534f", apron: "#c7d8c0", prop: "basket",
+  },
+  toni: {
+    skin: "#c98f62", skinShade: "#a8714a", hair: "#1f1a17", hairShade: "#141110", hairStyle: "short",
+    outfit: "#e8c547", outfitShade: "#c9a72f", accent: "#2f8fb1", sunglasses: true,
+  },
+  petra: {
+    skin: "#f2cdb0", skinShade: "#d9ab8b", hair: "#2b2b33", hairShade: "#1c1c22", hairStyle: "curly",
+    outfit: "#1f4e79", outfitShade: "#173c5e", accent: "#f3ead8", prop: "ticket",
+  },
+  davor: {
+    skin: "#dcae8a", skinShade: "#bf8f6b", hair: "#5a4636", hairShade: "#3f3126", hairStyle: "short",
+    outfit: "#8f2440", outfitShade: "#721c33", accent: "#f2c14e", glasses: true, prop: "badge",
+  },
 };
 
 function Eyes({ mood, look }: { mood: Mood; look: CharacterLook }) {
+  if (look.sunglasses && mood !== "puzzled") {
+    return (
+      <g>
+        <rect x="138" y="218" width="58" height="38" rx="14" fill="#1d2b33" />
+        <rect x="204" y="218" width="58" height="38" rx="14" fill="#1d2b33" />
+        <path d="M196 232 h8" stroke="#1d2b33" strokeWidth="6" />
+        <path d="M150 226 l14 0" stroke="#5f7f8f" strokeWidth="4" strokeLinecap="round" />
+        <path d="M216 226 l14 0" stroke="#5f7f8f" strokeWidth="4" strokeLinecap="round" />
+      </g>
+    );
+  }
   if (mood === "happy") {
     return (
       <g stroke="#2a1d17" strokeWidth="6" strokeLinecap="round" fill="none">
@@ -98,7 +133,21 @@ function HairFront({ look }: { look: CharacterLook }) {
   if (look.hairStyle === "bun") {
     return <path d="M122 220 q-6 -96 78 -100 q84 4 78 100 q-24 -54 -78 -58 q-40 4 -60 30 q-10 12 -18 28z" fill={look.hair} />;
   }
+  if (look.hairStyle === "short") {
+    return <path d="M116 214 q-6 -96 84 -100 q90 4 84 100 q-8 -30 -30 -44 q-50 14 -108 2 q-22 14 -30 42z" fill={look.hair} />;
+  }
   return <path d="M116 228 q-8 -112 84 -112 q92 0 84 112 q-14 -40 -46 -58 q-34 22 -92 22 q-20 14 -30 36z" fill={look.hair} />;
+}
+
+function BakerHat() {
+  return (
+    <g>
+      <rect x="130" y="112" width="140" height="44" rx="10" fill="#fbf8f1" stroke="#e2dacb" strokeWidth="4" />
+      <circle cx="150" cy="96" r="34" fill="#fbf8f1" />
+      <circle cx="200" cy="80" r="40" fill="#fbf8f1" />
+      <circle cx="250" cy="96" r="34" fill="#fbf8f1" />
+    </g>
+  );
 }
 
 function Prop({ look }: { look: CharacterLook }) {
@@ -119,6 +168,35 @@ function Prop({ look }: { look: CharacterLook }) {
         <path d="M0 0 h44 l-6 34 h-32z" fill="#fff" stroke="#d9cbb3" strokeWidth="3" />
         <path d="M44 8 q16 2 10 16 q-4 6 -12 4" fill="none" stroke="#d9cbb3" strokeWidth="4" />
         <path d="M14 -10 q-6 -10 2 -18 M28 -10 q-6 -10 2 -18" stroke="#c8b8a0" strokeWidth="3" fill="none" strokeLinecap="round" />
+      </g>
+    );
+  }
+  if (look.prop === "bread") {
+    return (
+      <g transform="translate(244 432)">
+        <ellipse cx="34" cy="20" rx="44" ry="22" fill="#c98b4b" />
+        <path d="M8 14 q8 -8 14 4 M28 8 q8 -8 14 4 M48 10 q8 -8 14 4" stroke="#9a6532" strokeWidth="4" fill="none" strokeLinecap="round" />
+      </g>
+    );
+  }
+  if (look.prop === "basket") {
+    return (
+      <g transform="translate(244 432)">
+        <path d="M6 18 q30 -46 60 0" fill="none" stroke="#8a6a46" strokeWidth="6" />
+        <circle cx="22" cy="18" r="12" fill="#d9534f" />
+        <circle cx="42" cy="14" r="12" fill="#7fb069" />
+        <circle cx="56" cy="22" r="10" fill="#e8c547" />
+        <path d="M0 20 h72 l-8 34 h-56z" fill="#b98a5e" stroke="#8a6a46" strokeWidth="3" />
+      </g>
+    );
+  }
+  if (look.prop === "ticket") {
+    return (
+      <g transform="translate(250 432) rotate(-8)">
+        <rect width="70" height="34" rx="4" fill="#f3ead8" stroke="#2f8fb1" strokeWidth="3" />
+        <path d="M50 0 v34" stroke="#2f8fb1" strokeWidth="2" strokeDasharray="4 3" />
+        <rect x="8" y="10" width="34" height="4" rx="2" fill="#1f4e79" />
+        <rect x="8" y="18" width="22" height="3" rx="1.5" fill="#9bb7c8" />
       </g>
     );
   }
@@ -166,6 +244,7 @@ export function CharacterPortrait({ id, mood = "neutral", title }: { id: string;
       <path d="M200 246 q-8 26 2 30" fill="none" stroke={look.skinShade} strokeWidth="5" strokeLinecap="round" />
       <Mouth mood={mood} />
       <HairFront look={look} />
+      {look.bakerHat && <BakerHat />}
       <Prop look={look} />
     </svg>
   );
