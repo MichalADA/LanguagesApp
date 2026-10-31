@@ -23,6 +23,7 @@ import { useCourse } from "@/courses/CourseProvider";
 import { CoursePage } from "@/pages/CoursePage";
 import { ModulePage } from "@/pages/ModulePage";
 import { LessonPage } from "@/pages/LessonPage";
+import { GrammarPage } from "@/pages/GrammarPage";
 
 function ShellLayout() {
   return (
@@ -72,6 +73,7 @@ export default function App() {
           <Route path="/kurs/:levelId/modul/:moduleOrder" element={<ModulePage />} />
           <Route path="/gry" element={<GamesPage />} />
           <Route path="/stories" element={<StoriesHub />} />
+          <Route path="/gramatyka" element={<GrammarPage />} />
           <Route path="/stories/:storyId" element={<CityPage />} />
           <Route path="/radio" element={<RadioPage />} />
           <Route path="/gry/kategoria/:categoryId" element={<GamesPage />} />

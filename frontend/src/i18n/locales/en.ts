@@ -60,6 +60,7 @@ export const en: Dictionary = {
     review: "Review",
     flashcards: "Flashcards",
     stories: "Stories",
+    grammar: "Grammar",
     stats: "Statistics",
     progress: "Progress",
     courses: "Languages",
@@ -68,6 +69,14 @@ export const en: Dictionary = {
     more: "More",
     mobileLabel: "Main navigation",
     close: "Close",
+  },
+  grammar: {
+    title: "Grammar",
+    subtitle: "Drills and cheat sheets: conjugation, cases, tenses, clitic order, aspect and comparison — linked to the course modules.",
+    drills: "Drills",
+    sheets: "Cheat sheets",
+    traps: "Watch out",
+    practice: "Practise: {game}",
   },
   auth: {
     login: "Sign in",

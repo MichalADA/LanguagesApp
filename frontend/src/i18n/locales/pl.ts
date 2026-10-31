@@ -60,6 +60,7 @@ export const pl: Dictionary = {
     review: "Powtórki",
     flashcards: "Fiszki",
     stories: "Stories",
+    grammar: "Gramatyka",
     stats: "Statystyki",
     progress: "Postęp",
     courses: "Języki",
@@ -68,6 +69,14 @@ export const pl: Dictionary = {
     more: "Więcej",
     mobileLabel: "Nawigacja główna",
     close: "Zamknij",
+  },
+  grammar: {
+    title: "Gramatyka",
+    subtitle: "Ćwiczenia i ściągi: odmiana, przypadki, czasy, szyk krótkich słówek, aspekt i stopniowanie — z odniesieniem do modułów kursu.",
+    drills: "Ćwiczenia",
+    sheets: "Ściągi",
+    traps: "Uwaga, pułapka",
+    practice: "Ćwicz: {game}",
   },
   auth: {
     login: "Zaloguj się",
