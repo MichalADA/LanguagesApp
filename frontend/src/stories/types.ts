@@ -216,6 +216,8 @@ export interface StoryEntry {
   level: Story["level"];
   tagline: string;
   courseId: string;
+  /** Id mapy w rejestrze grafik (karta miasta na ekranie wyboru). */
+  map?: string;
   load?: () => Promise<Story>;
   /** Nagrania wypowiedzi per mówiący (generowane: npm run stories:audio). */
   loadAudio?: () => Promise<StoryAudio>;

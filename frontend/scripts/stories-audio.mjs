@@ -28,7 +28,11 @@ const COURSE_RATE = "-8%";
 /** Gracz nie ma postaci — jego wzorcowe odpowiedzi czyta neutralny głos kursu. */
 const PLAYER = { gender: "female" };
 
-const STORIES = [{ dir: "split-a1", exportName: "SPLIT_A1", courseManifests: ["curriculum/hr-a1/audio-manifest.json"] }];
+const STORIES = [
+  { dir: "split-a1", exportName: "SPLIT_A1", courseManifests: ["curriculum/hr-a1/audio-manifest.json"] },
+  { dir: "zagreb-a2", exportName: "ZAGREB_A2", courseManifests: ["curriculum/hr-a2/audio-manifest.json", "curriculum/hr-a1/audio-manifest.json"] },
+  { dir: "dubrovnik-b1", exportName: "DUBROVNIK_B1", courseManifests: ["curriculum/hr-b1/audio-manifest.json", "curriculum/hr-a2/audio-manifest.json", "curriculum/hr-a1/audio-manifest.json"] },
+];
 
 function loadTs(file, cache = new Map()) {
   if (cache.has(file)) return cache.get(file);
