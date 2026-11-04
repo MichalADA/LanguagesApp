@@ -27,6 +27,7 @@ const NAV_GROUPS: NavItem[][] = [
     { to: "/fiszki", key: "nav.flashcards", icon: "cards", tab: true },
     { to: "/stories", key: "nav.stories", icon: "map" },
     { to: "/gramatyka", key: "nav.grammar", icon: "text" },
+    { to: "/rozmowa", key: "nav.assistant", icon: "chat" },
     { to: "/gry", key: "nav.games", icon: "play" },
   ],
   [

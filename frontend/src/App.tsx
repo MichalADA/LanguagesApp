@@ -25,6 +25,7 @@ import { ModulePage } from "@/pages/ModulePage";
 import { LessonPage } from "@/pages/LessonPage";
 import { GrammarPage } from "@/pages/GrammarPage";
 import { PlacementPage } from "@/pages/PlacementPage";
+import { AssistantPage } from "@/assistant/AssistantPage";
 
 function ShellLayout() {
   return (
@@ -76,6 +77,7 @@ export default function App() {
           <Route path="/gry" element={<GamesPage />} />
           <Route path="/stories" element={<StoriesHub />} />
           <Route path="/gramatyka" element={<GrammarPage />} />
+          <Route path="/rozmowa" element={<AssistantPage />} />
           <Route path="/stories/:storyId" element={<CityPage />} />
           <Route path="/radio" element={<RadioPage />} />
           <Route path="/gry/kategoria/:categoryId" element={<GamesPage />} />
