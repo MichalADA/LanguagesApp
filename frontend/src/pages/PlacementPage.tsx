@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Icon } from "@/components/Icon";
 import { useT } from "@/i18n";
@@ -9,87 +9,130 @@ import { LessonProgress } from "@/curriculum/player/LessonProgress";
 import { ExerciseFillGap, ExerciseMultipleChoice, ExerciseTranslation, type StepScore } from "@/curriculum/player/Exercises";
 import { fetchLessonContent } from "@/curriculum/repository";
 import {
-  moduleVerdict,
-  pickModuleQuestions,
+  chooseItem,
+  estimate,
+  initialPosterior,
+  MAX_QUESTIONS,
+  MIN_QUESTIONS,
+  modulePool,
   placementLessons,
   placementModules,
-  QUESTIONS_PER_MODULE,
-  type PlacementModule,
+  shouldStop,
+  STOP_CONFIDENCE,
+  update,
+  type Estimate,
+  type Item,
+  type ModulePool,
   type PlacementQuestion,
 } from "@/curriculum/placement";
 
 type Phase = "intro" | "running" | "result";
 
-/** /test-poziomujacy — pełnoekranowy test: od którego modułu zacząć kurs. */
+interface Asked {
+  item: Item;
+  question: PlacementQuestion;
+}
+
+/** Wolne zadania: każdy moduł ma swoją pulę; moduł bez wczytanej puli zakładamy jako pełny. */
+function candidates(modules: number, pools: Record<number, ModulePool>, used: Record<number, { choice: number; typed: number }>): Item[] {
+  const items: Item[] = [];
+  for (let m = 0; m < modules; m += 1) {
+    const pool = pools[m];
+    const taken = used[m] ?? { choice: 0, typed: 0 };
+    const choice = pool ? pool.choice[taken.choice] : null;
+    if (!pool || choice) items.push({ module: m, kind: "choice", options: choice?.options.length ?? 3 });
+    if (!pool || pool.typed[taken.typed]) items.push({ module: m, kind: "typed" });
+  }
+  return items;
+}
+
+/** /test-poziomujacy — adaptacyjny test (algorytm w curriculum/placement.ts). */
 export function PlacementPage() {
   const t = useT();
   const navigate = useNavigate();
   const { status, outline, markCompleted, completed } = useCurriculum();
   const modules = useMemo(() => (outline ? placementModules(outline) : []), [outline]);
   const [phase, setPhase] = useState<Phase>("intro");
-  const [index, setIndex] = useState(0);
-  const [questions, setQuestions] = useState<{ index: number; items: PlacementQuestion[] } | null>(null);
+  const [posterior, setPosterior] = useState<number[]>([]);
+  // Pula modułu tasowana raz na test — indeksy w `used` muszą wskazywać zawsze te same zadania.
+  const pools = useRef<Record<number, ModulePool>>({});
+  const [used, setUsed] = useState<Record<number, { choice: number; typed: number }>>({});
+  const [asked, setAsked] = useState(0);
+  const [current, setCurrent] = useState<Asked | null>(null);
   const [loadFailed, setLoadFailed] = useState(false);
-  const [qIndex, setQIndex] = useState(0);
-  const [correct, setCorrect] = useState(0);
-  const [passed, setPassed] = useState<PlacementModule[]>([]);
-  const [stoppedAt, setStoppedAt] = useState<PlacementModule | null>(null);
+  const [result, setResult] = useState<Estimate | null>(null);
 
-  // Zadania modułu ładujemy dopiero, gdy do niego dochodzimy (każda lekcja to osobny plik).
-  useEffect(() => {
-    if (phase !== "running" || !modules[index]) return;
-    let alive = true;
-    setLoadFailed(false);
-    Promise.all(modules[index].module.lessons.map((lesson) => fetchLessonContent(lesson.id)))
-      .then((contents) => alive && setQuestions({ index, items: pickModuleQuestions(contents) }))
-      .catch(() => alive && setLoadFailed(true));
-    return () => {
-      alive = false;
-    };
-  }, [phase, index, modules]);
+  const loadPool = useCallback(
+    async (m: number): Promise<ModulePool> => {
+      const cached = pools.current[m];
+      if (cached) return cached;
+      const contents = await Promise.all(modules[m].module.lessons.map((lesson) => fetchLessonContent(lesson.id)));
+      const pool = modulePool(contents);
+      pools.current[m] = pool;
+      return pool;
+    },
+    [modules],
+  );
 
-  const current = modules[index];
-  const items = questions?.index === index ? questions.items : null;
-
-  // Moduł bez zadań (nie powinno się zdarzyć) nie blokuje testu.
-  useEffect(() => {
-    if (phase === "running" && items && !items.length) advance(true);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [items, phase]);
-
-  function finish(at: PlacementModule | null) {
-    setStoppedAt(at);
-    setPhase("result");
-  }
-
-  function advance(modulePassed: boolean) {
-    if (!current) return;
-    if (!modulePassed) return finish(current);
-    setPassed((prev) => [...prev, current]);
-    setQIndex(0);
-    setCorrect(0);
-    if (index + 1 >= modules.length) return finish(null);
-    setIndex(index + 1);
-  }
-
-  function answer(result: boolean | StepScore) {
-    if (!items) return;
-    const ok = typeof result === "boolean" ? result : result.total > 0 && result.correct === result.total;
-    const nextCorrect = correct + (ok ? 1 : 0);
-    const verdict = moduleVerdict(nextCorrect, qIndex + 1, items.length);
-    if (verdict) return advance(verdict === "pass");
-    setCorrect(nextCorrect);
-    setQIndex(qIndex + 1);
-  }
+  /** Następne zadanie: maksymalny przyrost informacji; gdy w module brak danego rodzaju — drugi rodzaj. */
+  const next = useCallback(
+    async (post: number[], usedNow: Record<number, { choice: number; typed: number }>) => {
+      let pending = candidates(modules.length, pools.current, usedNow);
+      for (let attempt = 0; attempt < 6 && pending.length; attempt += 1) {
+        const item = chooseItem(post, pending);
+        if (!item) break;
+        const pool = await loadPool(item.module);
+        const taken = usedNow[item.module] ?? { choice: 0, typed: 0 };
+        const question = item.kind === "choice" ? pool.choice[taken.choice] : pool.typed[taken.typed];
+        if (question) {
+          const options = question.type === "choice" ? question.options.length : undefined;
+          setCurrent({ item: { ...item, options }, question });
+          return;
+        }
+        pending = pending.filter((candidate) => !(candidate.module === item.module && candidate.kind === item.kind));
+      }
+      setResult(estimate(post));
+      setPhase("result");
+    },
+    [modules.length, loadPool],
+  );
 
   function start() {
-    setIndex(0);
-    setQIndex(0);
-    setCorrect(0);
-    setPassed([]);
-    setStoppedAt(null);
-    setQuestions(null);
+    const prior = initialPosterior(modules.length);
+    setPosterior(prior);
+    setUsed({});
+    setAsked(0);
+    setResult(null);
+    setCurrent(null);
+    setLoadFailed(false);
+    pools.current = {};
     setPhase("running");
+    next(prior, {}).catch(() => setLoadFailed(true));
+  }
+
+  function answer(outcome: boolean | StepScore) {
+    if (!current) return;
+    const ok = typeof outcome === "boolean" ? outcome : outcome.total > 0 && outcome.correct === outcome.total;
+    const post = update(posterior, current.item, ok);
+    const m = current.item.module;
+    const taken = used[m] ?? { choice: 0, typed: 0 };
+    const usedNext = { ...used, [m]: { ...taken, [current.item.kind]: taken[current.item.kind] + 1 } };
+    const count = asked + 1;
+    setPosterior(post);
+    setUsed(usedNext);
+    setAsked(count);
+    setCurrent(null);
+    if (shouldStop(post, count)) {
+      setResult(estimate(post));
+      setPhase("result");
+      return;
+    }
+    next(post, usedNext).catch(() => setLoadFailed(true));
+  }
+
+  function stopNow() {
+    setResult(estimate(posterior));
+    setPhase("result");
   }
 
   if (status !== "ready" || !outline) {
@@ -102,25 +145,22 @@ export function PlacementPage() {
     );
   }
 
-  const header = {
-    position: t("placement.title"),
-    title: current ? `${current.levelId} · ${current.module.title}` : t("placement.title"),
-    meta: t("placement.lede"),
-    closeTo: "/",
-  };
+  const header = { position: t("placement.title"), title: t("placement.title"), meta: t("placement.lede"), closeTo: "/" };
+  const describe = (index: number) =>
+    index >= modules.length ? t("placement.endOfCourse") : `${modules[index].levelId} · ${t("placement.module", { n: modules[index].module.order })}`;
 
   if (phase === "intro") {
     const levels = [...new Set(modules.map((item) => item.levelId))].join(" → ");
     return (
       <div className="lesson-shell">
-        <LessonProgress {...header} title={t("placement.title")} percent={0} />
+        <LessonProgress {...header} percent={0} />
         <main className="lesson-stage lesson-message placement">
           <span className="eyebrow">{levels}</span>
           <h2 className="display lesson-message-title">{t("placement.heading")}</h2>
-          <p className="step-lede">{t("placement.lede")}</p>
+          <p className="step-lede">{t("placement.lede", { min: MIN_QUESTIONS, max: MAX_QUESTIONS })}</p>
           <ul className="placement-rules">
-            <li>{t("placement.ruleModules", { n: QUESTIONS_PER_MODULE })}</li>
-            <li>{t("placement.ruleStop")}</li>
+            <li>{t("placement.ruleAdaptive")}</li>
+            <li>{t("placement.ruleStop", { pct: Math.round(STOP_CONFIDENCE * 100) })}</li>
             <li>{t("placement.ruleHonest")}</li>
           </ul>
           {completed.size > 0 && <p className="meta">{t("placement.keepsProgress")}</p>}
@@ -137,8 +177,9 @@ export function PlacementPage() {
     );
   }
 
-  if (phase === "result") {
-    const startModule = stoppedAt;
+  if (phase === "result" && result) {
+    const passed = modules.slice(0, result.start);
+    const startModule = modules[result.start] ?? null;
     const firstLesson = startModule?.module.lessons[0];
     const skipped = placementLessons(passed).length;
     const apply = () => {
@@ -153,22 +194,21 @@ export function PlacementPage() {
           <span className="eyebrow">{t("placement.resultEyebrow")}</span>
           {startModule ? (
             <>
-              <h2 className="display lesson-message-title">
-                {startModule.levelId} · {t("placement.module", { n: startModule.module.order })}
-              </h2>
+              <h2 className="display lesson-message-title">{describe(result.start)}</h2>
               <p className="step-lede">{startModule.module.title}</p>
-              <p className="muted">
-                {passed.length
-                  ? t("placement.resultPassed", { modules: passed.length, lessons: skipped })
-                  : t("placement.resultFromStart")}
-              </p>
             </>
           ) : (
-            <>
-              <h2 className="display lesson-message-title">{t("placement.resultAll")}</h2>
-              <p className="muted">{t("placement.resultPassed", { modules: passed.length, lessons: skipped })}</p>
-            </>
+            <h2 className="display lesson-message-title">{t("placement.resultAll")}</h2>
           )}
+          <p className="muted">
+            {passed.length ? t("placement.resultPassed", { modules: passed.length, lessons: skipped }) : t("placement.resultFromStart")}
+          </p>
+          <dl className="placement-stats">
+            <div><dt>{t("placement.statQuestions")}</dt><dd>{asked}</dd></div>
+            <div><dt>{t("placement.statConfidence")}</dt><dd>{Math.round(result.confidence * 100)}%</dd></div>
+            <div><dt>{t("placement.statRange")}</dt><dd>{result.low === result.high ? describe(result.low) : `${describe(result.low)} – ${describe(result.high)}`}</dd></div>
+          </dl>
+          {result.confidence < STOP_CONFIDENCE && <p className="meta">{t("placement.lowConfidence")}</p>}
           {passed.length > 0 && <p className="meta">{t("placement.resultNote")}</p>}
           <div className="summary-actions">
             <button type="button" className="btn btn-lg" onClick={apply}>
@@ -186,32 +226,35 @@ export function PlacementPage() {
     );
   }
 
-  const question = items?.[qIndex];
-  const percent = modules.length ? ((index + (items?.length ? qIndex / items.length : 0)) / modules.length) * 100 : 0;
+  const confidence = posterior.length ? estimate(posterior).confidence : 0;
+  const question = current?.question;
+  const key = `${asked}-${current?.item.module}-${current?.item.kind}`;
   return (
     <div className="lesson-shell">
       <LessonProgress
         {...header}
-        percent={percent}
-        counter={t("placement.counter", { n: index + 1, total: modules.length })}
+        percent={Math.min(100, (asked / MAX_QUESTIONS) * 100)}
+        counter={t("placement.counter", { n: asked + 1, max: MAX_QUESTIONS })}
       />
       <main className="lesson-stage">
         <div className="placement-bar">
-          <span className="meta">{t("placement.question", { n: qIndex + 1, total: items?.length ?? QUESTIONS_PER_MODULE })}</span>
-          <button type="button" className="linklike" onClick={() => finish(current ?? null)}>
-            {t("placement.stopHere")}
-          </button>
+          <span className="meta">{t("placement.confidence", { pct: Math.round(confidence * 100) })}</span>
+          {asked > 0 && (
+            <button type="button" className="linklike" onClick={stopNow}>
+              {t("placement.stopHere")}
+            </button>
+          )}
         </div>
         {loadFailed ? (
           <p role="alert">{t("placement.loadError")}</p>
         ) : !question ? (
           <span className="loading" role="status">{t("curriculum.loading")}</span>
         ) : question.type === "choice" ? (
-          <ExerciseMultipleChoice key={`${index}-${qIndex}`} step={question} onNext={answer} />
+          <ExerciseMultipleChoice key={key} step={question} onNext={answer} />
         ) : question.type === "gap" ? (
-          <ExerciseFillGap key={`${index}-${qIndex}`} step={question} onNext={answer} />
+          <ExerciseFillGap key={key} step={question} onNext={answer} />
         ) : (
-          <ExerciseTranslation key={`${index}-${qIndex}`} step={question} onNext={answer} />
+          <ExerciseTranslation key={key} step={question} onNext={answer} />
         )}
       </main>
     </div>
