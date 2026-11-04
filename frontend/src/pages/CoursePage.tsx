@@ -14,7 +14,11 @@ export function CoursePage() {
   const { t, locale } = useI18n();
   const { course } = useCourse();
   const { status, outline, levelView } = useCurriculum();
-  const [levelId, setLevelId] = useState<CefrLevelId>("A1");
+  // Domyślnie poziom, na którym faktycznie jesteś (pierwszy z nieukończoną lekcją).
+  const [picked, setPicked] = useState<CefrLevelId | null>(null);
+  const currentLevel = outline?.levels.find((level) => levelView(level.id)?.current)?.id ?? "A1";
+  const levelId = picked ?? currentLevel;
+  const setLevelId = setPicked;
   // Ręcznie przełączone moduły; domyślnie otwarty jest tylko bieżący.
   const [toggled, setToggled] = useState<Record<string, boolean>>({});
   const view = status === "ready" ? levelView(levelId) : null;

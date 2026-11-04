@@ -24,6 +24,7 @@ import { CoursePage } from "@/pages/CoursePage";
 import { ModulePage } from "@/pages/ModulePage";
 import { LessonPage } from "@/pages/LessonPage";
 import { GrammarPage } from "@/pages/GrammarPage";
+import { PlacementPage } from "@/pages/PlacementPage";
 
 function ShellLayout() {
   return (
@@ -66,6 +67,7 @@ export default function App() {
         <Route path="/start" element={<StartRoute />} />
         {/* Lekcja ma własny układ skupienia — bez sidebaru i topbaru. */}
         <Route path="/lekcja/:lessonId" element={<LessonPage />} />
+        <Route path="/test-poziomujacy" element={<PlacementPage />} />
         <Route path="/stories/:storyId/:missionId" element={<MissionPage />} />
         <Route element={<ShellLayout />}>
           <Route path="/" element={<HomeRoute />} />

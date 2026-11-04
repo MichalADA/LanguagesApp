@@ -46,7 +46,13 @@ export function Dashboard() {
   const [level, setLevel] = useState<LearningLevelId>("A1");
   const curriculum = useCurriculum();
   // Kurs to główna ścieżka — pokazujemy go nad treningiem, gdy dla języka istnieje.
-  const courseView = curriculum.status === "ready" ? curriculum.levelView("A1") : null;
+  // Bieżący poziom = pierwszy z nieukończoną lekcją (po teście poziomującym może to być A2 albo B1).
+  const levelIds = curriculum.outline?.levels.map(item => item.id) ?? ["A1" as const];
+  const courseView = curriculum.status === "ready"
+    ? levelIds.map(id => curriculum.levelView(id)).find(view => view?.current) ?? curriculum.levelView(levelIds[0] ?? "A1")
+    : null;
+  // Nic jeszcze nie ukończono — podpowiadamy test poziomujący zamiast zaczynania od zera.
+  const offerPlacement = curriculum.status === "ready" && curriculum.completed?.size === 0;
   const account = status === "authenticated";
   const key = `${user?.id}:${course.id}`;
 
@@ -144,7 +150,9 @@ export function Dashboard() {
         title: t("home.planLesson", { n: currentView.lesson.number ?? currentLesson.order ?? 1 }),
         target: currentLesson.title,
         meta: [
-          currentView.module?.module ? t("home.planLessonModule", { n: currentView.module.module.order }) : null,
+          currentView.module?.module
+            ? [courseView?.level?.id, t("home.planLessonModule", { n: currentView.module.module.order })].filter(Boolean).join(" · ")
+            : null,
           t("home.aboutMin", { n: currentLesson.estimatedMinutes }),
           courseView?.total ? t("home.planLessonDone", { done: courseView.completedCount, total: courseView.total }) : null,
         ].filter(Boolean).join(" · "),
@@ -205,12 +213,18 @@ export function Dashboard() {
             <button className="linklike" onClick={() => setRetry(n => n + 1)}>{t("reviews.retry")}</button>
           </div>
         )}
+        {offerPlacement && (
+          <p className="placement-cta">
+            <span>{t("placement.homeHint")}</span>
+            <Link className="text-link" to="/test-poziomujacy">{t("placement.homeCta")} →</Link>
+          </p>
+        )}
         <Link className="text-link today-more" to="/gry">{t("home.allGames")}</Link>
       </section>
 
       {hasSentences && (
         <PracticeSuggestions
-          level="A1"
+          level={courseView?.level?.id ?? "A1"}
           module={currentView?.module?.module?.order}
           lessonNumber={currentView?.lesson.number ?? 0}
           title={t("practice.onHome")}
