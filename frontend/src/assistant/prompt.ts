@@ -9,14 +9,28 @@ export const GRAMMAR_TOPICS = ["prezent", "padezi", "enklitike", "perfekt", "fut
  */
 export const RESPONSE_SCHEMA = {
   type: "object",
+  // Kolejność ma znaczenie: model generuje pola po kolei. Krótka poprawka najpierw (zwykle ""),
+  // potem odpowiedź — ją pokazujemy na żywo. Tłumaczenie nie jest generowane (na CPU to +40% czasu);
+  // dostaje się je na żądanie (TRANSLATION_SCHEMA).
   properties: {
     correction: { type: "string" },
     topic: { type: "string", enum: [...GRAMMAR_TOPICS, "none"] },
     reply: { type: "string" },
-    translation: { type: "string" },
   },
-  required: ["correction", "topic", "reply", "translation"],
+  required: ["correction", "topic", "reply"],
 } as const;
+
+export const TRANSLATION_SCHEMA = {
+  type: "object",
+  properties: { translation: { type: "string" } },
+  required: ["translation"],
+} as const;
+
+/**
+ * Prośba o tłumaczenie doklejana na końcu tej samej rozmowy — wspólny początek promptu
+ * zostaje w pamięci podręcznej Ollamy, więc ani tłumaczenie, ani następna odpowiedź nie czytają wszystkiego od nowa.
+ */
+export const TRANSLATE_REQUEST = 'Translate your last "reply" into Polish. Answer only with {"translation": "..."}.';
 
 /** Ile ostatnich wiadomości trafia do modelu — na CPU każdy token wejścia kosztuje czas. */
 export const HISTORY_LIMIT = 16;
@@ -44,7 +58,6 @@ export function systemPrompt({ level, scenario, words }: PromptContext): string 
     words.length ? `- Prefer words the learner already knows: ${words.join(", ")}.` : "",
     '- "correction": if the learner\'s last message has a grammar or spelling mistake, the whole corrected sentence in Croatian, otherwise "". Do not explain the rule.',
     `- "topic": the grammar area of that mistake (${GRAMMAR_TOPICS.join(", ")}), or "none".`,
-    '- "translation": the Polish translation of "reply".',
     "Answer only with the JSON object.",
   ]
     .filter(Boolean)
@@ -52,13 +65,53 @@ export function systemPrompt({ level, scenario, words }: PromptContext): string 
 }
 
 /** Kwestia asystenta zapisana w historii tak, jak model ją zwraca — stały prefiks = cache promptu w Ollamie. */
-export const serializeTurn = (turn: AssistantTurn) => JSON.stringify(turn);
+export const serializeTurn = (turn: AssistantTurn) =>
+  JSON.stringify({ correction: turn.correction, topic: turn.topic, reply: turn.reply });
 
 export function openerTurn(scenario: Scenario): AssistantTurn {
   return { correction: "", topic: "none", reply: scenario.opener.hr, translation: scenario.opener.pl };
 }
 
 /** Odpowiedź modelu → AssistantTurn. Gdy JSON się nie uda (np. inny serwer), cały tekst traktujemy jako odpowiedź. */
+/**
+ * Wartość pola tekstowego z niepełnego JSON-a (strumień): `{"correction":"","topic":"none","reply":"Bok, ka`
+ * → "Bok, ka". Null, dopóki pole się nie zaczęło.
+ */
+export function partialField(raw: string, key: string): string | null {
+  const match = new RegExp(`"${key}"\\s*:\\s*"`).exec(raw);
+  if (!match) return null;
+  let out = "";
+  for (let i = match.index + match[0].length; i < raw.length; i += 1) {
+    const ch = raw[i];
+    if (ch === '"') return out;
+    if (ch !== "\\") {
+      out += ch;
+      continue;
+    }
+    const next = raw[i + 1];
+    if (next === undefined) return out;
+    if (next === "u") {
+      const hex = raw.slice(i + 2, i + 6);
+      if (hex.length < 4) return out;
+      out += String.fromCharCode(parseInt(hex, 16));
+      i += 5;
+      continue;
+    }
+    out += next === "n" ? "\n" : next === "t" ? "\t" : next;
+    i += 1;
+  }
+  return out;
+}
+
+export function parseTranslation(raw: string): string {
+  try {
+    const data = JSON.parse(raw) as { translation?: unknown };
+    return typeof data.translation === "string" ? data.translation.trim() : "";
+  } catch {
+    return partialField(raw, "translation")?.trim() ?? "";
+  }
+}
+
 export function parseTurn(raw: string): AssistantTurn {
   try {
     const data = JSON.parse(raw) as Partial<AssistantTurn>;

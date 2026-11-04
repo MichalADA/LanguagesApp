@@ -7,8 +7,19 @@ import { useCourse } from "@/courses/CourseProvider";
 import { useCurriculum } from "@/curriculum/CurriculumProvider";
 import { fetchLessonContent } from "@/curriculum/repository";
 import { CHEATSHEETS } from "@/grammar/cheatsheets";
-import { chat, listModels, OllamaUnavailableError } from "./ollama";
-import { buildMessages, isRealCorrection, openerTurn, parseTurn, serializeTurn, systemPrompt } from "./prompt";
+import { chat, listModels, OllamaUnavailableError, warmUp } from "./ollama";
+import {
+  buildMessages,
+  isRealCorrection,
+  openerTurn,
+  parseTranslation,
+  parseTurn,
+  partialField,
+  serializeTurn,
+  systemPrompt,
+  TRANSLATE_REQUEST,
+  TRANSLATION_SCHEMA,
+} from "./prompt";
 import { findScenario, SCENARIOS } from "./scenarios";
 import { readSettings, writeSettings } from "./settings";
 import type { AssistantSettings, AssistantTurn, ChatMessage } from "./types";
@@ -23,6 +34,10 @@ interface Bubble {
   turn?: AssistantTurn;
   /** Tylko uczeń: poprawka z odpowiedzi, która przyszła po tej wiadomości. */
   correction?: { text: string; topic: string };
+  /** Tylko asystent: długość historii razem z tą kwestią — prefiks do tłumaczenia na żądanie. */
+  historyLength?: number;
+  /** Odpowiedź jeszcze spływa strumieniem. */
+  streaming?: boolean;
 }
 
 const MAX_WORDS = 30;
@@ -62,13 +77,15 @@ export function AssistantPage() {
   const [recheck, setRecheck] = useState(0);
   const [scenarioId, setScenarioId] = useState(SCENARIOS[0].id);
   const scenario = findScenario(scenarioId);
-  const [bubbles, setBubbles] = useState<Bubble[]>(() => [{ id: 0, role: "assistant", text: scenario.opener.hr, turn: openerTurn(scenario) }]);
+  const [bubbles, setBubbles] = useState<Bubble[]>(() => [{ id: 0, role: "assistant", text: scenario.opener.hr, turn: openerTurn(scenario), historyLength: 1 }]);
   const [history, setHistory] = useState<ChatMessage[]>(() => [{ role: "assistant", content: serializeTurn(openerTurn(scenario)) }]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [failure, setFailure] = useState<string | null>(null);
   const [shown, setShown] = useState<Record<number, boolean>>({});
   const [words, setWords] = useState<string[]>([]);
+  const [warm, setWarm] = useState<"idle" | "loading" | "ready">("idle");
+  const [translating, setTranslating] = useState<number | null>(null);
   const abort = useRef<AbortController | null>(null);
   const nextId = useRef(1);
   const logEnd = useRef<HTMLDivElement>(null);
@@ -116,6 +133,19 @@ export function AssistantPage() {
   const system = useMemo(() => systemPrompt({ level, scenario, words }), [level, scenario, words]);
   const modelInstalled = connection.state === "ok" && connection.models.some((name) => name === settings.model || name === `${settings.model}:latest`);
 
+  // Rozgrzewka: model ładuje się i czyta instrukcję, zanim uczeń skończy pisać pierwsze zdanie.
+  const opening = history.length === 1 ? history : null;
+  useEffect(() => {
+    if (!modelInstalled || !opening) return;
+    const controller = new AbortController();
+    setWarm("loading");
+    warmUp(settings, buildMessages(system, opening), controller.signal)
+      .then(() => setWarm("ready"))
+      .catch(() => !controller.signal.aborted && setWarm("idle"));
+    return () => controller.abort();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [modelInstalled, system, settings.model, settings.baseUrl, opening === null]);
+
   function updateSettings(next: AssistantSettings) {
     setSettings(next);
     writeSettings(next);
@@ -125,7 +155,7 @@ export function AssistantPage() {
     abort.current?.abort();
     const next = findScenario(id);
     setScenarioId(next.id);
-    setBubbles([{ id: nextId.current++, role: "assistant", text: next.opener.hr, turn: openerTurn(next) }]);
+    setBubbles([{ id: nextId.current++, role: "assistant", text: next.opener.hr, turn: openerTurn(next), historyLength: 1 }]);
     setHistory([{ role: "assistant", content: serializeTurn(openerTurn(next)) }]);
     setShown({});
     setFailure(null);
@@ -137,6 +167,7 @@ export function AssistantPage() {
     const text = input.trim();
     if (!text || busy) return;
     const userBubble: Bubble = { id: nextId.current++, role: "user", text };
+    const botId = nextId.current++;
     const nextHistory: ChatMessage[] = [...history, { role: "user", content: text }];
     setBubbles((prev) => [...prev, userBubble]);
     setHistory(nextHistory);
@@ -145,28 +176,72 @@ export function AssistantPage() {
     setFailure(null);
     const controller = new AbortController();
     abort.current = controller;
-    try {
-      const raw = await chat(settings, buildMessages(system, nextHistory), controller.signal);
-      const turn = parseTurn(raw);
-      setHistory((prev) => [...prev, { role: "assistant", content: serializeTurn(turn) }]);
-      setBubbles((prev) => [
-        ...prev.map((bubble) =>
-          bubble.id === userBubble.id && isRealCorrection(text, turn.correction)
-            ? { ...bubble, correction: { text: turn.correction, topic: turn.topic } }
-            : bubble,
+    // Poprawka jest w JSON-ie przed odpowiedzią — gdy zaczyna się „reply”, poprawka jest już kompletna.
+    const applyCorrection = (correction: string, topic: string) =>
+      setBubbles((prev) =>
+        prev.map((bubble) =>
+          bubble.id === userBubble.id && isRealCorrection(text, correction) ? { ...bubble, correction: { text: correction, topic } } : bubble,
         ),
-        { id: nextId.current++, role: "assistant", text: turn.reply, turn },
-      ]);
+      );
+    let started = false;
+    try {
+      const raw = await chat(settings, buildMessages(system, nextHistory), {
+        signal: controller.signal,
+        onText: (soFar) => {
+          const reply = partialField(soFar, "reply");
+          if (reply === null) return;
+          if (!started) {
+            started = true;
+            applyCorrection(partialField(soFar, "correction") ?? "", partialField(soFar, "topic") ?? "none");
+            setBubbles((prev) => [...prev, { id: botId, role: "assistant", text: reply, streaming: true }]);
+            return;
+          }
+          setBubbles((prev) => prev.map((bubble) => (bubble.id === botId ? { ...bubble, text: reply } : bubble)));
+        },
+      });
+      const turn = parseTurn(raw);
+      const length = nextHistory.length + 1;
+      setHistory((prev) => [...prev, { role: "assistant", content: serializeTurn(turn) }]);
+      applyCorrection(turn.correction, turn.topic);
+      setBubbles((prev) => {
+        const done: Bubble = { id: botId, role: "assistant", text: turn.reply, turn, historyLength: length };
+        return prev.some((bubble) => bubble.id === botId) ? prev.map((bubble) => (bubble.id === botId ? done : bubble)) : [...prev, done];
+      });
     } catch (error) {
       if ((error as Error).name === "AbortError") return;
       setFailure(error instanceof OllamaUnavailableError ? t("assistant.offlineShort") : (error as Error).message);
-      // Wiadomość ucznia zostaje w oknie, ale nie w historii dla modelu — można wysłać ponownie.
+      // Wiadomość ucznia wraca do pola i znika z historii — można wysłać ponownie.
       setHistory((prev) => prev.slice(0, -1));
       setInput(text);
-      setBubbles((prev) => prev.filter((bubble) => bubble.id !== userBubble.id));
+      setBubbles((prev) => prev.filter((bubble) => bubble.id !== userBubble.id && bubble.id !== botId));
     } finally {
       if (abort.current === controller) abort.current = null;
       setBusy(false);
+    }
+  }
+
+  /** Tłumaczenie na żądanie — dopisane do tej samej rozmowy, więc model nie czyta jej od nowa. */
+  async function translate(bubble: Bubble) {
+    if (!bubble.turn || bubble.turn.translation || busy || translating !== null || !bubble.historyLength) {
+      setShown((prev) => ({ ...prev, [bubble.id]: !prev[bubble.id] }));
+      return;
+    }
+    setTranslating(bubble.id);
+    try {
+      const prefix = history.slice(0, bubble.historyLength);
+      const raw = await chat(settings, buildMessages(system, [...prefix, { role: "user", content: TRANSLATE_REQUEST }]), {
+        format: TRANSLATION_SCHEMA,
+        maxTokens: 120,
+      });
+      const translation = parseTranslation(raw);
+      setBubbles((prev) =>
+        prev.map((item) => (item.id === bubble.id && item.turn ? { ...item, turn: { ...item.turn, translation } } : item)),
+      );
+      setShown((prev) => ({ ...prev, [bubble.id]: true }));
+    } catch (error) {
+      setFailure(error instanceof OllamaUnavailableError ? t("assistant.offlineShort") : (error as Error).message);
+    } finally {
+      setTranslating(null);
     }
   }
 
@@ -175,10 +250,11 @@ export function AssistantPage() {
     abort.current = null;
     setBusy(false);
     // Bez odpowiedzi — ostatnia wiadomość ucznia wraca do pola, żeby jej nie zgubić.
-    const last = bubbles[bubbles.length - 1];
+    const withoutStream = bubbles.filter((bubble) => !bubble.streaming);
+    const last = withoutStream[withoutStream.length - 1];
     if (last?.role === "user") {
       setInput(last.text);
-      setBubbles((prev) => prev.slice(0, -1));
+      setBubbles(withoutStream.slice(0, -1));
       setHistory((prev) => prev.slice(0, -1));
     }
   }
@@ -208,7 +284,10 @@ export function AssistantPage() {
       <section className="assistant-status" aria-live="polite">
         {connection.state === "checking" && <span className="meta">{t("assistant.checking")}</span>}
         {connection.state === "ok" && modelInstalled && (
-          <span className="assistant-pill ok">● {t("assistant.connected", { model: settings.model })}</span>
+          <span className="assistant-pill ok">
+            ● {t("assistant.connected", { model: settings.model })}
+            {warm === "loading" && <span className="meta"> · {t("assistant.warming")}</span>}
+          </span>
         )}
         {connection.state === "ok" && !modelInstalled && (
           <div className="inline-alert" role="alert">
@@ -264,9 +343,16 @@ export function AssistantPage() {
             <article key={bubble.id} className="assistant-bubble bot">
               <p lang="hr">{bubble.text}</p>
               <div className="assistant-tools">
-                {bubble.turn?.translation && (
-                  <button type="button" className="linklike" onClick={() => setShown((prev) => ({ ...prev, [bubble.id]: !prev[bubble.id] }))}>
-                    {t(shown[bubble.id] ? "assistant.hideTranslation" : "assistant.showTranslation")}
+                {bubble.turn && (
+                  <button
+                    type="button"
+                    className="linklike"
+                    disabled={translating === bubble.id || (!bubble.turn.translation && busy)}
+                    onClick={() => void translate(bubble)}
+                  >
+                    {translating === bubble.id
+                      ? t("assistant.translating")
+                      : t(shown[bubble.id] ? "assistant.hideTranslation" : "assistant.showTranslation")}
                   </button>
                 )}
                 {speak && (
@@ -294,7 +380,7 @@ export function AssistantPage() {
             </article>
           ),
         )}
-        {busy && (
+        {busy && !bubbles.some((bubble) => bubble.streaming) && (
           <p className="assistant-typing meta" role="status">
             {t("assistant.typing")}{" "}
             <button type="button" className="linklike" onClick={cancel}>{t("assistant.cancel")}</button>

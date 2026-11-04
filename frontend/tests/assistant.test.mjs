@@ -51,7 +51,7 @@ test('history sent to the model is the system prompt plus the latest messages', 
   assert.equal(messages.at(-1).content, '29');
 });
 
-test('chat() sends a non-streaming request with the JSON schema and keeps the model loaded', async () => {
+test('chat() asks for a stream with the JSON schema (correction before reply, no translation) and keeps the model loaded', async () => {
   const calls = [];
   globalThis.fetch = async (url, init) => {
     calls.push({ url, body: JSON.parse(init.body) });
@@ -60,13 +60,40 @@ test('chat() sends a non-streaming request with the JSON schema and keeps the mo
   const raw = await ollama.chat({ provider: 'ollama', baseUrl: 'http://localhost:11434/', model: 'gemma3:12b' }, [{ role: 'user', content: 'Bok' }]);
   assert.equal(raw, '{"reply":"Bok"}');
   assert.equal(calls[0].url, 'http://localhost:11434/api/chat');
-  assert.equal(calls[0].body.stream, false);
+  assert.equal(calls[0].body.stream, true);
   assert.equal(calls[0].body.model, 'gemma3:12b');
-  assert.deepEqual(calls[0].body.format.required, ['correction', 'topic', 'reply', 'translation']);
+  assert.deepEqual(Object.keys(calls[0].body.format.properties), ['correction', 'topic', 'reply']);
   assert.equal(calls[0].body.keep_alive, '30m');
 });
 
 test('an unreachable Ollama is reported as OllamaUnavailableError', async () => {
   globalThis.fetch = async () => { throw new TypeError('Failed to fetch'); };
   await assert.rejects(() => ollama.listModels({ provider: 'ollama', baseUrl: 'http://localhost:11434', model: 'x' }), ollama.OllamaUnavailableError);
+});
+
+test('partialField reads a string field from an unfinished JSON stream', () => {
+  assert.equal(prompt.partialField('{"correction":"","topic":"none","rep', 'reply'), null);
+  assert.equal(prompt.partialField('{"correction":"","topic":"none","reply":"Bok, ka', 'reply'), 'Bok, ka');
+  assert.equal(prompt.partialField('{"reply":"Rekla je \\"da\\" i oti', 'reply'), 'Rekla je "da" i oti');
+  assert.equal(prompt.partialField('{"reply":"\\u0161to"}', 'reply'), 'što');
+  assert.equal(prompt.partialField('{"correction":"Išao sam.","topic":"padezi","reply":"', 'correction'), 'Išao sam.');
+});
+
+test('chat() streams NDJSON chunks and reports the text so far', async () => {
+  const lines = ['{"message":{"content":"{\\"correction\\":\\"\\","}}', '{"message":{"content":"\\"topic\\":\\"none\\",\\"reply\\":\\"Bo"}}', '{"message":{"content":"k!\\"}"},"done":true}'];
+  const encoder = new TextEncoder();
+  globalThis.fetch = async () => ({
+    ok: true,
+    body: new ReadableStream({ start(c) { c.enqueue(encoder.encode(lines[0] + '\n' + lines[1].slice(0, 20))); c.enqueue(encoder.encode(lines[1].slice(20) + '\n' + lines[2] + '\n')); c.close(); } }),
+  });
+  const seen = [];
+  const raw = await ollama.chat({ provider: 'ollama', baseUrl: 'http://localhost:11434', model: 'm' }, [], { onText: (t) => seen.push(prompt.partialField(t, 'reply')) });
+  assert.equal(prompt.parseTurn(raw).reply, 'Bok!');
+  assert.deepEqual(seen.filter(Boolean), ['Bo', 'Bok!']);
+});
+
+test('the translation is requested inside the same conversation (shared prefix)', () => {
+  assert.match(prompt.TRANSLATE_REQUEST, /Polish/);
+  assert.equal(prompt.parseTranslation('{"translation":" Cześć! "}'), 'Cześć!');
+  assert.equal(prompt.parseTranslation('{"translation":"Cze'), 'Cze');
 });
