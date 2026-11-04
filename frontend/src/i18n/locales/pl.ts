@@ -698,6 +698,9 @@ export const pl: Dictionary = {
     "false-friends": "Fałszywi przyjaciele — w przygotowaniu."
   },
   "placement": {
+    "railText": "Znasz już trochę chorwackiego? Około 10 pytań wskaże moduł, od którego warto zacząć.",
+    "railTextProgress": "Umiesz więcej, niż pokazuje postęp? Test wskaże, ile modułów możesz pominąć.",
+    "railCta": "Rozwiąż test poziomujący",
     "title": "Test poziomujący",
     "heading": "Od czego zacząć?",
     "lede": "Test dobiera zadania do Twoich odpowiedzi — zwykle wystarczy {min}–{max} pytań. Na końcu dostaniesz moduł, od którego warto zacząć.",

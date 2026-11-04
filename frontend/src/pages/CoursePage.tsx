@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Icon } from "@/components/Icon";
 import { useI18n } from "@/i18n";
 import { useCourse } from "@/courses/CourseProvider";
 import { useCurriculum } from "@/curriculum/CurriculumProvider";
@@ -13,7 +15,7 @@ import type { CefrLevelId } from "@/curriculum/types";
 export function CoursePage() {
   const { t, locale } = useI18n();
   const { course } = useCourse();
-  const { status, outline, levelView } = useCurriculum();
+  const { status, outline, levelView, completed } = useCurriculum();
   // Domyślnie poziom, na którym faktycznie jesteś (pierwszy z nieukończoną lekcją).
   const [picked, setPicked] = useState<CefrLevelId | null>(null);
   const currentLevel = outline?.levels.find((level) => levelView(level.id)?.current)?.id ?? "A1";
@@ -33,6 +35,13 @@ export function CoursePage() {
       </header>
 
       <CourseStates />
+
+      {status === "ready" && completed.size === 0 && (
+        <p className="placement-cta">
+          <span>{t("placement.homeHint")}</span>
+          <Link className="text-link" to="/test-poziomujacy">{t("placement.railCta")} →</Link>
+        </p>
+      )}
 
       {outline && (
         <LevelSelector levels={outline.levels} selected={levelId} onSelect={setLevelId} />
@@ -65,6 +74,14 @@ export function CoursePage() {
               <CourseProgress view={view} />
             </div>
             <ContinueCourse view={view} variant="rail" />
+            {/* Test poziomujący — zawsze pod ręką; przed pierwszą lekcją jako zachęta, potem jako „przeskocz dalej”. */}
+            <div className="surface placement-rail">
+              <span className="eyebrow">{t("placement.title")}</span>
+              <p>{t(completed.size ? "placement.railTextProgress" : "placement.railText")}</p>
+              <Link className={completed.size ? "btn-ghost" : "btn"} to="/test-poziomujacy">
+                {t("placement.railCta")} <Icon name="arrowRight" size={16} />
+              </Link>
+            </div>
             <p className="meta course-rail-note">{t("curriculum.trainingNote")}</p>
           </aside>
         </div>

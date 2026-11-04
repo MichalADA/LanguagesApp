@@ -698,6 +698,9 @@ export const en: Dictionary = {
     "false-friends": "False friends — coming soon."
   },
   "placement": {
+    "railText": "Already know some Croatian? About 10 questions show the module worth starting from.",
+    "railTextProgress": "Know more than your progress shows? The test tells you how many modules you can skip.",
+    "railCta": "Take the placement test",
     "title": "Placement test",
     "heading": "Where should you start?",
     "lede": "The test adapts to your answers — usually {min}–{max} questions are enough. At the end you get the module worth starting from.",
