@@ -16,7 +16,8 @@
       "petar": "ocaele7kOTNS1wQzhbSM",
       "tomo": "jVBTQrP67HZEE22UqQGF",
       "mia": "jEKeTj7nqDtk1QSNwXkO",
-      "baka": "7IVTG9LKLYndnFiFDLU2"
+      "baka": "7IVTG9LKLYndnFiFDLU2",
+      "jelena": "V5O4WAcdw7w3Ccfvma8Z"
     }
   },
   "speakers": {
@@ -29,7 +30,8 @@
     "petar": "Petar",
     "tomo": "Tomo",
     "mia": "Mia",
-    "baka": "Baka"
+    "baka": "Baka",
+    "jelena": "Jelena"
   },
   "stories": [
     {
@@ -527,6 +529,528 @@
             }
           ],
           "correctOptionId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1-moj-zivot",
+      "level": "A1",
+      "titlePl": "Moje życie",
+      "titleEn": "My life",
+      "topic": "o sobie i rodzinie",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "marko",
+          "textHr": "Zdravo! Zovem se Marko Horvat.",
+          "textPl": "Cześć! Nazywam się Marko Horvat.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/01-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Imam trideset pet godina. Ja sam iz Hrvatske.",
+          "textPl": "Mam trzydzieści pięć lat. Jestem z Chorwacji.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/02-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Živim u Zagrebu, u malom stanu u centru grada.",
+          "textPl": "Mieszkam w Zagrzebiu, w małym mieszkaniu w centrum miasta.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/03-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Stan ima dvije sobe, kuhinju i kupaonicu.",
+          "textPl": "Mieszkanie ma dwa pokoje, kuchnię i łazienkę.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/04-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Oženjen sam. Moja žena se zove Ana.",
+          "textPl": "Jestem żonaty. Moja żona ma na imię Ana.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/05-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ona ima trideset dvije godine. Ana je učiteljica i radi u školi.",
+          "textPl": "Ma trzydzieści dwa lata. Ana jest nauczycielką i pracuje w szkole.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/06-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Imamo jedno dijete, sina Luku. Luka ima pet godina.",
+          "textPl": "Mamy jedno dziecko, syna Lukę. Luka ma pięć lat.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/07-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Ja sam inženjer. Radim u velikoj firmi.",
+          "textPl": "Jestem inżynierem. Pracuję w dużej firmie.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/08-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Svaki dan idem na posao tramvajem. Radim od osam do četiri.",
+          "textPl": "Codziennie jeżdżę do pracy tramwajem. Pracuję od ósmej do czwartej.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/09-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "U slobodno vrijeme volim čitati knjige i gledati nogomet.",
+          "textPl": "W wolnym czasie lubię czytać książki i oglądać piłkę nożną.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/10-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Vikendom idemo u park ili kod mojih roditelja.",
+          "textPl": "W weekendy chodzimy do parku albo do moich rodziców.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/11-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Moji roditelji žive na moru, u Splitu. Ljeti idemo tamo na odmor.",
+          "textPl": "Moi rodzice mieszkają nad morzem, w Splicie. Latem jeździmy tam na urlop.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/12-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Volim kavu. Svako jutro pijem kavu s mlijekom. Ne volim čaj.",
+          "textPl": "Lubię kawę. Każdego ranka piję kawę z mlekiem. Nie lubię herbaty.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/13-marko.mp3"
+        },
+        {
+          "speaker": "marko",
+          "textHr": "Sretan sam. Volim svoj život!",
+          "textPl": "Jestem szczęśliwy. Kocham swoje życie!",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-zivot/14-marko.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Ile lat ma Marko?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Trzydzieści dwa"
+            },
+            {
+              "id": "b",
+              "textPl": "Trzydzieści pięć"
+            },
+            {
+              "id": "c",
+              "textPl": "Pięć"
+            }
+          ],
+          "correctOptionId": "b"
+        },
+        {
+          "promptPl": "Gdzie mieszka Marko?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "W małym mieszkaniu w centrum Zagrzebia"
+            },
+            {
+              "id": "b",
+              "textPl": "W domu nad morzem w Splicie"
+            },
+            {
+              "id": "c",
+              "textPl": "U rodziców pod Zagrzebiem"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Co robi Ana?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Jest inżynierką w dużej firmie"
+            },
+            {
+              "id": "b",
+              "textPl": "Pracuje w kawiarni"
+            },
+            {
+              "id": "c",
+              "textPl": "Jest nauczycielką i pracuje w szkole"
+            }
+          ],
+          "correctOptionId": "c"
+        },
+        {
+          "promptPl": "Jak Marko jeździ do pracy?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Samochodem"
+            },
+            {
+              "id": "b",
+              "textPl": "Tramwajem"
+            },
+            {
+              "id": "c",
+              "textPl": "Rowerem"
+            }
+          ],
+          "correctOptionId": "b"
+        },
+        {
+          "promptPl": "Gdzie mieszkają jego rodzice?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "W Zagrzebiu"
+            },
+            {
+              "id": "b",
+              "textPl": "W Polsce"
+            },
+            {
+              "id": "c",
+              "textPl": "Nad morzem, w Splicie"
+            }
+          ],
+          "correctOptionId": "c"
+        }
+      ],
+      "glossary": [
+        {
+          "hr": "zovem se",
+          "pl": "nazywam się"
+        },
+        {
+          "hr": "imam … godina",
+          "pl": "mam … lat"
+        },
+        {
+          "hr": "stan",
+          "pl": "mieszkanie"
+        },
+        {
+          "hr": "soba / kuhinja / kupaonica",
+          "pl": "pokój / kuchnia / łazienka"
+        },
+        {
+          "hr": "oženjen sam",
+          "pl": "jestem żonaty"
+        },
+        {
+          "hr": "firma",
+          "pl": "firma"
+        },
+        {
+          "hr": "posao",
+          "pl": "praca"
+        },
+        {
+          "hr": "slobodno vrijeme",
+          "pl": "wolny czas"
+        },
+        {
+          "hr": "nogomet",
+          "pl": "piłka nożna"
+        },
+        {
+          "hr": "more",
+          "pl": "morze"
+        },
+        {
+          "hr": "ljeti",
+          "pl": "latem"
+        },
+        {
+          "hr": "odmor",
+          "pl": "urlop, wypoczynek"
+        },
+        {
+          "hr": "mlijeko",
+          "pl": "mleko"
+        },
+        {
+          "hr": "sretan",
+          "pl": "szczęśliwy"
+        }
+      ]
+    },
+    {
+      "id": "a1-moj-dan",
+      "level": "A1",
+      "titlePl": "Mój dzień",
+      "titleEn": "My day",
+      "topic": "dzień powszedni",
+      "reviewStatus": "needs-native-review",
+      "lines": [
+        {
+          "speaker": "jelena",
+          "textHr": "Dobar dan! Ja sam Jelena Kovač.",
+          "textPl": "Dzień dobry! Jestem Jelena Kovač.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/01-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Imam četrdeset dvije godine i živim u Osijeku.",
+          "textPl": "Mam czterdzieści dwa lata i mieszkam w Osijeku.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/02-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Osijek je grad na istoku Hrvatske, na rijeci Dravi.",
+          "textPl": "Osijek to miasto na wschodzie Chorwacji, nad rzeką Drawą.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/03-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Ja sam medicinska sestra. Radim u bolnici.",
+          "textPl": "Jestem pielęgniarką. Pracuję w szpitalu.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/04-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Moj dan počinje rano. Ustajem u šest sati.",
+          "textPl": "Mój dzień zaczyna się wcześnie. Wstaję o szóstej.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/05-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Za doručak jedem kruh sa sirom i pijem čaj.",
+          "textPl": "Na śniadanie jem chleb z serem i piję herbatę.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/06-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Na posao idem biciklom. Bolnica nije daleko.",
+          "textPl": "Do pracy jeżdżę rowerem. Szpital nie jest daleko.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/07-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Imam muža Ivana i dvije kćeri, Saru i Petru.",
+          "textPl": "Mam męża Ivana i dwie córki, Sarę i Petrę.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/08-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Sara ima dvanaest godina, a Petra deset.",
+          "textPl": "Sara ma dwanaście lat, a Petra dziesięć.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/09-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Imamo i psa. Zove se Medo.",
+          "textPl": "Mamy też psa. Nazywa się Medo.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/10-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Navečer kuham večeru. Volim kuhati!",
+          "textPl": "Wieczorem gotuję kolację. Lubię gotować!",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/11-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Poslije večere šetam psa uz rijeku.",
+          "textPl": "Po kolacji spaceruję z psem nad rzeką.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/12-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "Ne volim zimu jer je hladno. Volim proljeće.",
+          "textPl": "Nie lubię zimy, bo jest zimno. Lubię wiosnę.",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/13-jelena.mp3"
+        },
+        {
+          "speaker": "jelena",
+          "textHr": "U deset sati idem spavati. Laku noć!",
+          "textPl": "O dziesiątej idę spać. Dobranoc!",
+          "audioPath": "/audio/listening/hr-a1/stories/a1-moj-dan/14-jelena.mp3"
+        }
+      ],
+      "questions": [
+        {
+          "promptPl": "Gdzie pracuje Jelena?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "W szkole"
+            },
+            {
+              "id": "b",
+              "textPl": "W szpitalu"
+            },
+            {
+              "id": "c",
+              "textPl": "W sklepie"
+            }
+          ],
+          "correctOptionId": "b"
+        },
+        {
+          "promptPl": "O której Jelena wstaje?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "O szóstej"
+            },
+            {
+              "id": "b",
+              "textPl": "O siódmej"
+            },
+            {
+              "id": "c",
+              "textPl": "O ósmej"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Jak Jelena jeździ do pracy?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Tramwajem"
+            },
+            {
+              "id": "b",
+              "textPl": "Samochodem"
+            },
+            {
+              "id": "c",
+              "textPl": "Rowerem"
+            }
+          ],
+          "correctOptionId": "c"
+        },
+        {
+          "promptPl": "Ile dzieci ma Jelena?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Jedno — syna"
+            },
+            {
+              "id": "b",
+              "textPl": "Dwie córki"
+            },
+            {
+              "id": "c",
+              "textPl": "Troje dzieci"
+            }
+          ],
+          "correctOptionId": "b"
+        },
+        {
+          "promptPl": "Jak nazywa się pies?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Medo"
+            },
+            {
+              "id": "b",
+              "textPl": "Ivan"
+            },
+            {
+              "id": "c",
+              "textPl": "Luka"
+            }
+          ],
+          "correctOptionId": "a"
+        },
+        {
+          "promptPl": "Której pory roku Jelena nie lubi?",
+          "options": [
+            {
+              "id": "a",
+              "textPl": "Lata"
+            },
+            {
+              "id": "b",
+              "textPl": "Wiosny"
+            },
+            {
+              "id": "c",
+              "textPl": "Zimy"
+            }
+          ],
+          "correctOptionId": "c"
+        }
+      ],
+      "glossary": [
+        {
+          "hr": "medicinska sestra",
+          "pl": "pielęgniarka"
+        },
+        {
+          "hr": "bolnica",
+          "pl": "szpital"
+        },
+        {
+          "hr": "rijeka",
+          "pl": "rzeka"
+        },
+        {
+          "hr": "istok",
+          "pl": "wschód"
+        },
+        {
+          "hr": "ustajem",
+          "pl": "wstaję"
+        },
+        {
+          "hr": "doručak",
+          "pl": "śniadanie"
+        },
+        {
+          "hr": "kruh / sir",
+          "pl": "chleb / ser"
+        },
+        {
+          "hr": "bicikl",
+          "pl": "rower"
+        },
+        {
+          "hr": "muž",
+          "pl": "mąż"
+        },
+        {
+          "hr": "kći (dvije kćeri)",
+          "pl": "córka (dwie córki)"
+        },
+        {
+          "hr": "pas (psa)",
+          "pl": "pies (psa)"
+        },
+        {
+          "hr": "navečer",
+          "pl": "wieczorem"
+        },
+        {
+          "hr": "večera",
+          "pl": "kolacja"
+        },
+        {
+          "hr": "kuhati",
+          "pl": "gotować"
+        },
+        {
+          "hr": "šetati",
+          "pl": "spacerować"
+        },
+        {
+          "hr": "zima / proljeće",
+          "pl": "zima / wiosna"
+        },
+        {
+          "hr": "hladno",
+          "pl": "zimno"
+        },
+        {
+          "hr": "laku noć",
+          "pl": "dobranoc"
         }
       ]
     }

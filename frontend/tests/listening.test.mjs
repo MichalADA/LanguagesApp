@@ -68,6 +68,11 @@ test("Croatian listening stories: narrated, several questions, every speaker voi
         assert.ok(line.textHr.trim() && line.textPl.trim());
         assert.equal(line.audioPath, `/audio/listening/hr-${lv}/stories/${story.id}/${String(index + 1).padStart(2, "0")}-${line.speaker}.mp3`);
       });
+      if (story.glossary) {
+        assert.ok(story.glossary.length >= 5, `${story.id}: słowniczek ma co najmniej 5 haseł`);
+        assert.equal(new Set(story.glossary.map(entry => entry.hr)).size, story.glossary.length);
+        for (const entry of story.glossary) assert.ok(entry.hr.trim() && entry.pl.trim());
+      }
       for (const line of story.lines) await access(new URL(`../public${line.audioPath}`, import.meta.url));
     }
   }

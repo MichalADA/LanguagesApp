@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { useT } from "@/i18n";
 import { GAMES, findGame } from "@/games/registry";
 import { CHEATSHEETS, type CheatSheet } from "@/grammar/cheatsheets";
@@ -10,6 +11,17 @@ import { CHEATSHEETS, type CheatSheet } from "@/grammar/cheatsheets";
 export function GrammarPage() {
   const t = useT();
   const drills = GAMES.filter((g) => g.category === "grammar" && g.status === "active");
+  // /gramatyka#perfekt (podpowiedź po lekcji) — rozwija i pokazuje tę ściągę.
+  const { hash } = useLocation();
+  const openId = decodeURIComponent(hash.replace(/^#/, ""));
+  useEffect(() => {
+    if (!openId) return;
+    const sheet = document.getElementById(openId);
+    if (sheet instanceof HTMLDetailsElement) {
+      sheet.open = true;
+      sheet.scrollIntoView({ block: "start" });
+    }
+  }, [openId]);
 
   return (
     <div className="page grammar-page">

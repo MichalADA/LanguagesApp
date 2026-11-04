@@ -27,6 +27,8 @@ interface CurriculumContextValue {
   levelView: (levelId: CefrLevelId) => LevelView | null;
   /** Ukończenie lekcji: zapis postępu i (dla słów obowiązkowych) nowe karty FSRS. */
   completeLesson: (lessonId: string, vocabulary?: LessonVocabularyItem[]) => void;
+  /** Wynik testu poziomującego: lekcje zaliczone „z góry” — bez XP i bez dopisywania słów do powtórek. */
+  markCompleted: (lessonIds: readonly string[]) => void;
   reviewSync: ReviewSyncState;
   /** Ponowna próba wysłania słów, które czekają na zapis w FSRS. */
   syncReviews: () => void;
@@ -127,6 +129,20 @@ export function CurriculumProvider({ children }: { children: ReactNode }) {
     [key, owner, course.id, syncReviews, award, current],
   );
 
+  const markCompleted = useCallback(
+    (lessonIds: readonly string[]) => {
+      setData((prev) => {
+        if (!prev || prev.key !== key) return prev;
+        const missing = lessonIds.filter((id) => !prev.completed.includes(id));
+        if (!missing.length) return prev;
+        const next = [...prev.completed, ...missing];
+        void saveCompletedLessons(owner, course.id, next);
+        return { ...prev, completed: next };
+      });
+    },
+    [key, owner, course.id],
+  );
+
   const value = useMemo<CurriculumContextValue>(
     () => ({
       status: failed === key ? "error" : !current ? "loading" : current.outline ? "ready" : "unavailable",
@@ -134,11 +150,12 @@ export function CurriculumProvider({ children }: { children: ReactNode }) {
       completed,
       levelView,
       completeLesson,
+      markCompleted,
       reviewSync,
       syncReviews,
       retry: () => setAttempt((n) => n + 1),
     }),
-    [failed, key, current, completed, levelView, completeLesson, reviewSync, syncReviews],
+    [failed, key, current, completed, levelView, completeLesson, markCompleted, reviewSync, syncReviews],
   );
 
   return <CurriculumContext.Provider value={value}>{children}</CurriculumContext.Provider>;

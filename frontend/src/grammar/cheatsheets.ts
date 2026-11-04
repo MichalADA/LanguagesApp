@@ -15,6 +15,8 @@ export interface CheatSheet {
   level: "A1" | "A1–A2" | "A2" | "A2–B1" | "B1";
   /** Gdzie temat pojawia się w kursie. */
   course: string;
+  /** To samo co `course`, ale do liczenia: moduły kursu (per poziom), w których temat się pojawia. */
+  modules: Partial<Record<"A1" | "A2" | "B1", number[]>>;
   intro: string;
   tables: CheatTable[];
   rules: string[];
@@ -31,6 +33,7 @@ export const CHEATSHEETS: CheatSheet[] = [
     title: "Czas teraźniejszy",
     level: "A1",
     course: "A1 · moduły 1–3",
+    modules: { A1: [1, 2, 3] },
     intro: "Czasowniki dzielą się na trzy grupy według końcówki w 1. osobie: -am, -em, -im. Końcówki osób są prawie takie same — różni się tylko samogłoska.",
     tables: [
       {
@@ -76,6 +79,7 @@ export const CHEATSHEETS: CheatSheet[] = [
     title: "Przypadki",
     level: "A1–A2",
     course: "A1 · moduły 4–5, A2 · moduły 5–7",
+    modules: { A1: [4, 5], A2: [5, 6, 7] },
     intro: "Chorwacki ma siedem przypadków — tyle samo co polski i działają bardzo podobnie. Największa różnica: lokativ i dativ mają w liczbie pojedynczej tę samą końcówkę.",
     tables: [
       {
@@ -122,6 +126,7 @@ export const CHEATSHEETS: CheatSheet[] = [
     title: "Szyk krótkich słówek (enklityki)",
     level: "A1–A2",
     course: "A1 · moduł 1, A2 · moduł 1",
+    modules: { A1: [1], A2: [1] },
     intro: "Krótkie, nieakcentowane słówka (sam, si, se, mi, ga, je, ću…) stoją zawsze na drugim miejscu w zdaniu — po pierwszym wyrazie albo po pierwszej grupie wyrazów. Gdy jest ich kilka, idą w stałej kolejności.",
     tables: [
       {
@@ -151,6 +156,7 @@ export const CHEATSHEETS: CheatSheet[] = [
     title: "Czas przeszły (perfekt)",
     level: "A2",
     course: "A1 · moduł 8, A2 · moduł 1",
+    modules: { A1: [8], A2: [1] },
     intro: "Czas przeszły = krótka forma „biti” + imiesłów na -l (radio, radila…). Imiesłów zgadza się z rodzajem i liczbą osoby, jak polskie „robił / robiła”.",
     tables: [
       {
@@ -198,6 +204,7 @@ export const CHEATSHEETS: CheatSheet[] = [
     title: "Czas przyszły",
     level: "A1–A2",
     course: "A1 · moduł 8, A2 · moduł 2, B1 · moduł 3",
+    modules: { A1: [8], A2: [2], B1: [3] },
     intro: "Czas przyszły (futur I) = krótka forma „htjeti” (ću, ćeš, će…) + bezokolicznik. Gdy bezokolicznik stoi na początku, traci końcowe -i i zlewa się z „ću” w wymowie.",
     tables: [
       {
@@ -230,6 +237,7 @@ export const CHEATSHEETS: CheatSheet[] = [
     title: "Aspekt: dokonany i niedokonany",
     level: "B1",
     course: "B1 · moduły 1–2",
+    modules: { B1: [1, 2] },
     intro: "Jak w polskim, większość czasowników ma parę: niedokonany (proces, nawyk) i dokonany (jednorazowa czynność z rezultatem). Pary tworzy się zwykle przedrostkiem albo zmianą tematu.",
     tables: [
       {
@@ -266,6 +274,7 @@ export const CHEATSHEETS: CheatSheet[] = [
     title: "Tryb warunkowy",
     level: "A2–B1",
     course: "A2 · moduł 2, B1 · moduły 3–4",
+    modules: { A2: [2], B1: [3, 4] },
     intro: "Tryb warunkowy = bih, bi, bi, bismo, biste, bi + imiesłów na -l. Służy do życzeń, grzecznych próśb i sytuacji hipotetycznych — jak polskie „-bym”.",
     tables: [
       {
@@ -298,6 +307,7 @@ export const CHEATSHEETS: CheatSheet[] = [
     title: "Stopniowanie przymiotników",
     level: "A2",
     course: "A2 · moduły 3 i 5, B1 · moduł 5",
+    modules: { A2: [3, 5], B1: [5] },
     intro: "Stopień wyższy tworzy się końcówką -iji, -ji albo -ši; przy -ji spółgłoska często się zmienia. Najwyższy to „naj-” + stopień wyższy.",
     tables: [
       {

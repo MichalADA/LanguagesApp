@@ -33,6 +33,8 @@ interface Props {
   onComplete: () => void;
   /** Stan zapisu słów w powtórkach FSRS — pokazywany w podsumowaniu. */
   reviewStatus?: ReactNode;
+  /** Podpowiedź, co dalej poćwiczyć (słuchanie, gramatyka) — na ekranie zaliczonej lekcji. */
+  practice?: ReactNode;
 }
 
 type Next = (result?: boolean | StepScore) => void;
@@ -59,7 +61,7 @@ function initialState(storageKey: string, content: LessonContent, alreadyComplet
  * kryteriów; błędne odpowiedzi można przećwiczyć w osobnej rundzie.
  * Tryb testu (content.mode === "test") liczy wynik osobno dla każdej sekcji.
  */
-export function LessonPlayer({ content, header, nextHref, moduleHref, storageKey, alreadyCompleted = false, onComplete, reviewStatus }: Props) {
+export function LessonPlayer({ content, header, nextHref, moduleHref, storageKey, alreadyCompleted = false, onComplete, reviewStatus, practice }: Props) {
   const t = useT();
   const [initial] = useState(() => initialState(storageKey, content, alreadyCompleted));
   const [index, setIndex] = useState(initial.index);
@@ -150,6 +152,7 @@ export function LessonPlayer({ content, header, nextHref, moduleHref, storageKey
         onRetry={startRetry}
         onRestart={restart}
         reviewStatus={reviewStatus}
+        practice={practice}
       />
     );
   } else {
